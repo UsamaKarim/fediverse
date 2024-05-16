@@ -1,0 +1,6 @@
+# melos_managed_dependency_overrides: hive,hive_generator
+dependency_overrides:
+  hive:
+    path: ../hive/hive
+  hive_generator:
+    path: ../hive/hive_generator

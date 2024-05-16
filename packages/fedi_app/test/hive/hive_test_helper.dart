@@ -34,7 +34,7 @@ BoxImpl _getBox({
 @GenerateMocks(
   [],
   customMocks: [
-    MockSpec<StorageBackend>(returnNullOnMissingStub: true),
+    MockSpec<StorageBackend>(),
   ],
 )
 class HiveMockHelper {
@@ -49,8 +49,7 @@ class HiveMockHelper {
   static Future testHiveSaveAndLoad<T extends IJsonObj>(
     T Function({
       required String seed,
-    })
-        testHiveObjectCreator, {
+    }) testHiveObjectCreator, {
     bool skipHiveInit = false,
   }) async {
     if (!skipHiveInit) {

@@ -58,22 +58,25 @@ class FediStepperWidget<T extends IFediStepperItem> extends StatelessWidget {
             }
           },
           onStepTapped: fediStepperBloc.goToStepAtIndex,
-          controlsBuilder: (
-            BuildContext context, {
-            VoidCallback? onStepContinue,
-            VoidCallback? onStepCancel,
-          }) =>
-              Row(
+          controlsBuilder:
+              (BuildContext context, ControlsDetails controlsDetails
+                      // {
+                      // VoidCallback? onStepContinue,
+                      // VoidCallback? onStepCancel,
+                      // }
+                      ) =>
+                  Row(
             children: <Widget>[
               if (!isLast)
                 _FediStepperNextActionButtonWidget(
-                  onStepContinue: isHaveErrors ? null : onStepContinue,
+                  onStepContinue:
+                      isHaveErrors ? null : controlsDetails.onStepContinue,
                 ),
               if (isLast) _FediStepperSubmitActionButtonWidget<T>(),
               const FediSmallHorizontalSpacer(),
               if (!isFirst)
                 _FediStepperBackActionButtonWidget(
-                  onStepCancel: onStepCancel,
+                  onStepCancel: controlsDetails.onStepCancel,
                 ),
             ],
           ),

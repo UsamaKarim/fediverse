@@ -33,9 +33,8 @@ import 'package:fedi_app/app/url/url_helper.dart';
 import 'package:fedi_app/file/file_size_helper.dart';
 import 'package:fedi_app/generated/l10n.dart';
 import 'package:fedi_app/ui/callback/on_click_ui_callback.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_html/style.dart';
+import 'package:flutter_html/flutter_html.dart';
 import 'package:intl/intl.dart';
 import 'package:logging/logging.dart';
 import 'package:provider/provider.dart';
@@ -372,7 +371,7 @@ class _InstanceDetailsDescriptionWidget extends StatelessWidget {
                 var htmlTextBloc = HtmlTextBloc(
                   inputData: htmlTextInputData,
                   settings: HtmlTextSettings(
-                    paragraphDisplay: Display.BLOCK,
+                    paragraphDisplay: Display.block,
                     fontSize: textStyle.fontSize,
                     color: textStyle.color,
                     lineHeight: textStyle.height,

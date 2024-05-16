@@ -4,8 +4,6 @@ import 'package:fedi_app/app/ui/progress/fedi_circular_progress_indicator.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
-import 'package:flutter_html/html_parser.dart';
-import 'package:flutter_html/image_render.dart';
 import 'package:html/dom.dart' as dom;
 import 'package:logging/logging.dart';
 
@@ -45,16 +43,16 @@ class HtmlTextHtmlBodyWidget extends StatelessWidget {
     return Html(
       data: htmlData.text,
       shrinkWrap: htmlTextBloc.settings.shrinkWrap,
-      customImageRenders: {
-        networkSourceMatcher(): networkImageRender(
-          loadingWidget: () => const FediCircularProgressIndicator(
-            size: 18.0,
-          ),
-        ),
-      },
-      onImageTap: (
+      // customImageRenders: {
+      //   networkSourceMatcher(): networkImageRender(
+      //     loadingWidget: () => const FediCircularProgressIndicator(
+      //       size: 18.0,
+      //     ),
+      //   ),
+      // },
+      onAnchorTap: (
         String? url,
-        RenderContext context,
+        // RenderContext context,
         Map<String, String> attributes,
         dom.Element? element,
       ) {
@@ -63,7 +61,7 @@ class HtmlTextHtmlBodyWidget extends StatelessWidget {
       style: htmlTextBloc.htmlStyles,
       onLinkTap: (
         String? url,
-        RenderContext context,
+        // RenderContext context,
         Map<String, String> attributes,
         dom.Element? element,
       ) {

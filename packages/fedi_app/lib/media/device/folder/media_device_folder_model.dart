@@ -3,5 +3,5 @@ abstract class IMediaDeviceFolder {
 
   String get name;
 
-  int get assetCount;
+  Future<int> get assetCount;
 }

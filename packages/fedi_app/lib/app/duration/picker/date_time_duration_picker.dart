@@ -15,9 +15,9 @@ Future<DurationPickerResult> showDateTimeDurationPicker({
   required Duration? maxDuration,
   required bool isDeletePossible,
 }) async {
-  var minDateTimeJiffy = Jiffy();
-  var maxDateTimeJiffy = Jiffy();
-  var currentDateTimeJiffy = Jiffy();
+  var minDateTimeJiffy = Jiffy.now();
+  var maxDateTimeJiffy = Jiffy.now();
+  var currentDateTimeJiffy = Jiffy.now();
 
   DateTime? minDateTime;
   DateTime? maxDateTime;
@@ -25,19 +25,19 @@ Future<DurationPickerResult> showDateTimeDurationPicker({
 
   if (minDuration != null) {
     // ignore: avoid-ignoring-return-values
-    minDateTimeJiffy.add(duration: minDuration);
+    minDateTimeJiffy.addDuration(minDuration);
     minDateTime = minDateTimeJiffy.dateTime;
   }
 
   if (maxDuration != null) {
     // ignore: avoid-ignoring-return-values
-    maxDateTimeJiffy.add(duration: maxDuration);
+    maxDateTimeJiffy.addDuration(maxDuration);
     maxDateTime = maxDateTimeJiffy.dateTime;
   }
 
   if (currentDuration != null) {
     // ignore: avoid-ignoring-return-values
-    currentDateTimeJiffy.add(duration: currentDuration);
+    currentDateTimeJiffy.addDuration(currentDuration);
     currentDateTime = currentDateTimeJiffy.dateTime;
   }
 

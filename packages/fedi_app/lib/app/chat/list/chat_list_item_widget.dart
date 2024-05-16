@@ -45,12 +45,18 @@ class ChatListItemWidget extends StatelessWidget {
     var chatBloc = IChatBloc.of(context);
 
     return Slidable(
-      actionPane: const SlidableDrawerActionPane(),
+      // actionPane: const SlidableDrawerActionPane(),
       // ignore: no-magic-number
-      actionExtentRatio: 0.25,
-      secondaryActions: <Widget>[
-        if (chatBloc.isDeletePossible) const _ChatListItemDeleteActionWidget(),
-      ],
+      // actionExtentRatio: 0.25,
+      endActionPane: ActionPane(
+        motion: const ScrollMotion(),
+        children: [
+          if (chatBloc.isDeletePossible)
+            const _ChatListItemDeleteActionWidget(),
+        ],
+      ),
+      // [
+      // ],
       child: GestureDetector(
         behavior: HitTestBehavior.translucent,
         onTap: () {
@@ -63,10 +69,10 @@ class ChatListItemWidget extends StatelessWidget {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Expanded(
+                const Expanded(
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
-                    children: const <Widget>[
+                    children: <Widget>[
                       ChatAvatarWidget(),
                       FediBigHorizontalSpacer(),
                       Flexible(
@@ -129,10 +135,10 @@ class _ChatListItemPreviewWidget extends StatelessWidget {
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) => Column(
+  Widget build(BuildContext context) => const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: const <Widget>[
+        children: <Widget>[
           ChatTitleWidget(),
           _ChatListItemLastMessageWidget(),
         ],
@@ -316,10 +322,10 @@ class _ChatListItemDeleteActionWidget extends StatelessWidget {
     var chatBloc = IChatBloc.of(context);
     var paginationListBloc = IPaginationListBloc.of(context);
 
-    return IconSlideAction(
+    return SlidableAction(
       icon: FediIcons.delete,
-      color: IFediUiColorTheme.of(context).error,
-      onTap: () async {
+      backgroundColor: IFediUiColorTheme.of(context).error,
+      onPressed: (context) async {
         var success = await FediActionsDialog(
           title: S.of(context).app_chat_action_delete_dialog_title,
           contentText: S.of(context).app_chat_action_delete_dialog_content,

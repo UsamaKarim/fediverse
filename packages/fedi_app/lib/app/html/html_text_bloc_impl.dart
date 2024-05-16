@@ -4,7 +4,7 @@ import 'package:easy_dispose/easy_dispose.dart';
 import 'package:fedi_app/app/html/html_text_bloc.dart';
 import 'package:fedi_app/app/html/html_text_model.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_html/style.dart';
+import 'package:flutter_html/flutter_html.dart';
 import 'package:html_unescape/html_unescape.dart';
 import 'package:logging/logging.dart';
 
@@ -125,14 +125,14 @@ Map<String, Style> _calculateHtmlStyles({
 }) {
   var fontSizeValue = settings.fontSize;
 
-  var fontSizeObject = FontSize(fontSizeValue);
+  var fontSizeObject = FontSize(fontSizeValue!);
 
   return {
     'html': Style(
-      display: settings.shrinkWrap ? Display.INLINE : Display.BLOCK,
-      padding: EdgeInsets.zero,
+      display: settings.shrinkWrap ? Display.inline : Display.block,
+      padding: HtmlPaddings.zero,
       // ignore: no-equal-arguments
-      margin: EdgeInsets.zero,
+      margin: Margins.zero,
       // textOverflow: settings.textOverflow,
       // textMaxLines: settings.textMaxLines,
       fontSize: fontSizeObject,
@@ -141,28 +141,28 @@ Map<String, Style> _calculateHtmlStyles({
       textAlign: settings.textAlign,
     ),
     'body': Style(
-      display: settings.shrinkWrap ? Display.INLINE : Display.BLOCK,
-      padding: EdgeInsets.zero,
+      display: settings.shrinkWrap ? Display.inline : Display.block,
+      padding: HtmlPaddings.zero,
       // ignore: no-equal-arguments
-      margin: EdgeInsets.zero,
+      margin: Margins.zero,
       // textOverflow: settings.textOverflow,
       // textMaxLines: settings.textMaxLines,
       textAlign: settings.textAlign,
     ),
     'img': Style(
-      display: Display.INLINE,
-      width: settings.imageSize,
+      display: Display.inline,
+      width: Width(settings.imageSize),
       // ignore: no-equal-arguments
-      height: settings.imageSize,
-      padding: EdgeInsets.zero,
+      height: Height(settings.imageSize),
+      padding: HtmlPaddings.zero,
       // ignore: no-equal-arguments
-      margin: EdgeInsets.zero,
+      margin: Margins.zero,
       textAlign: settings.textAlign,
     ),
     'p': Style(
-      padding: EdgeInsets.zero,
+      padding: HtmlPaddings.zero,
       // ignore: no-equal-arguments
-      margin: EdgeInsets.zero,
+      margin: Margins.zero,
       // lineHeight: settings.lineHeight,
       display: settings.paragraphDisplay,
       fontSize: fontSizeObject,
@@ -176,11 +176,11 @@ Map<String, Style> _calculateHtmlStyles({
       color: settings.linkColor,
     ),
     'text': Style(
-      padding: EdgeInsets.zero,
+      padding: HtmlPaddings.zero,
       // ignore: no-equal-arguments
-      margin: EdgeInsets.zero,
+      margin: Margins.zero,
       // lineHeight: settings.lineHeight,
-      display: Display.INLINE,
+      display: Display.inline,
       fontSize: fontSizeObject,
       fontWeight: settings.fontWeight,
       color: settings.color,

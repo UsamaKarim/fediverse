@@ -33,17 +33,17 @@ class IncomeShareService extends AsyncInitLoadingBloc
   }
 
   Future<void> loadInitialEvent() async {
-    var initialMedias = await ReceiveSharingIntent.getInitialMedia();
+    var initialMedias = await ReceiveSharingIntent.instance.getInitialMedia();
 
-    var initialText = await ReceiveSharingIntent.getInitialText();
+    // var initialText = await ReceiveSharingIntent.instance.getInitialText();
 
     var mappedMedias =
         initialMedias.isNotEmpty ? initialMedias.map(_mapMedia).toList() : null;
 
-    if (mappedMedias?.isNotEmpty == true || initialText?.isNotEmpty == true) {
+    if (mappedMedias?.isNotEmpty == true) {
       lastReceivedShareEvent = IncomeShareEvent(
         medias: mappedMedias,
-        text: initialText,
+        text: '',
       );
     }
 
@@ -57,12 +57,12 @@ class IncomeShareService extends AsyncInitLoadingBloc
   }
 
   void _listenShareTextEvents() {
-    ReceiveSharingIntent.getTextStream().listen(
-      (String value) {
+    ReceiveSharingIntent.instance.getMediaStream().listen(
+      (List<SharedMediaFile> value) {
         _logger.finest(() => 'getTextStream $value');
         lastReceivedShareEvent = IncomeShareEvent(
           medias: null,
-          text: value,
+          text: 'Not implemented',
         );
         incomeShareEventStreamController.add(
           lastReceivedShareEvent!,
@@ -75,7 +75,7 @@ class IncomeShareService extends AsyncInitLoadingBloc
   }
 
   void _listenShareMediaEvents() {
-    ReceiveSharingIntent.getMediaStream().listen(
+    ReceiveSharingIntent.instance.getMediaStream().listen(
       (List<SharedMediaFile> value) {
         var medias = value.map(_mapMedia).toList();
 
@@ -101,7 +101,7 @@ class IncomeShareService extends AsyncInitLoadingBloc
   @override
   Future<void> reset() async {
     lastReceivedShareEvent = null;
-    ReceiveSharingIntent.reset();
+    await ReceiveSharingIntent.instance.reset();
   }
 }
 
@@ -109,15 +109,17 @@ IncomeShareEventMedia _mapMedia(SharedMediaFile media) {
   IncomeShareEventMediaType type;
 
   switch (media.type) {
-    case SharedMediaType.IMAGE:
+    case SharedMediaType.image:
       type = IncomeShareEventMediaType.image;
       break;
-    case SharedMediaType.VIDEO:
+    case SharedMediaType.video:
       type = IncomeShareEventMediaType.video;
       break;
-    case SharedMediaType.FILE:
+    case SharedMediaType.file:
       type = IncomeShareEventMediaType.file;
       break;
+    default:
+      throw Exception('Unknown media type');
   }
 
   return IncomeShareEventMedia(

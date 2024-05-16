@@ -1,0 +1,18 @@
+# melos_managed_dependency_overrides: fediverse_api,fediverse_api_login_cmd,hive,mastodon_api,mastodon_api_login_cmd,pleroma_api,pleroma_api_login_cmd,unifedi_api
+dependency_overrides:
+  fediverse_api:
+    path: ../fediverse_api
+  fediverse_api_login_cmd:
+    path: ../fediverse_api_login_cmd
+  hive:
+    path: ../hive/hive
+  mastodon_api:
+    path: ../mastodon_api
+  mastodon_api_login_cmd:
+    path: ../mastodon_api_login_cmd
+  pleroma_api:
+    path: ../pleroma_api
+  pleroma_api_login_cmd:
+    path: ../pleroma_api_login_cmd
+  unifedi_api:
+    path: ../unifedi_api

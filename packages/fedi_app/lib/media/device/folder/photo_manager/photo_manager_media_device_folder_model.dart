@@ -21,5 +21,5 @@ class PhotoManagerMediaDeviceFolder
   String get name => assetPathEntity.name;
 
   @override
-  int get assetCount => assetPathEntity.assetCount;
+  Future<int> get assetCount => assetPathEntity.assetCountAsync;
 }

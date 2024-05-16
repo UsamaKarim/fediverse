@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:flutter_html/style.dart';
+import 'package:flutter_html/flutter_html.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 
@@ -42,7 +42,7 @@ class HtmlTextSettings with _$HtmlTextSettings {
     @Default(20.0) double customEmojiImageSize,
     // ignore: no-magic-number
     @Default(20.0) double imageSize,
-    @Default(Display.INLINE) Display paragraphDisplay,
+    @Default(Display.inline) Display paragraphDisplay,
     required double textScaleFactor,
   }) = _HtmlTextSettings;
 }

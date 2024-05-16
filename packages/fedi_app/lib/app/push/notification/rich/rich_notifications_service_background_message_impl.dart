@@ -99,39 +99,39 @@ class RichNotificationsServiceBackgroundMessage extends AsyncInitLoadingBloc
       _logger.severe(() => 'failed to awesomeNotifications.initialize');
     }
 
-    awesomeNotifications.createdStream.listen(
-      (ReceivedNotification receivedNotification) {
-        _handlePushMessage(
-          receivedNotification: receivedNotification,
-          notificationAction: null,
-          notificationActionInput: null,
-          pushMessageType: PushMessageType.background,
-        );
-      },
-    ).disposeWith(this);
+    // awesomeNotifications.createdStream.listen(
+    //   (ReceivedNotification receivedNotification) {
+    //     _handlePushMessage(
+    //       receivedNotification: receivedNotification,
+    //       notificationAction: null,
+    //       notificationActionInput: null,
+    //       pushMessageType: PushMessageType.background,
+    //     );
+    //   },
+    // ).disposeWith(this);
 
-    awesomeNotifications.actionStream.listen(
-      (ReceivedAction receivedAction) {
-        var buttonKeyPressed = receivedAction.buttonKeyPressed;
+    // awesomeNotifications.actionStream.listen(
+    //   (ReceivedAction receivedAction) {
+    //     var buttonKeyPressed = receivedAction.buttonKeyPressed;
 
-        if (buttonKeyPressed.isEmpty) {
-          // user simple click on notification (not on action)
-          _handlePushMessage(
-            receivedNotification: receivedAction,
-            notificationAction: null,
-            notificationActionInput: null,
-            pushMessageType: PushMessageType.launch,
-          );
-        } else {
-          _handlePushMessage(
-            receivedNotification: receivedAction,
-            notificationAction: buttonKeyPressed,
-            notificationActionInput: receivedAction.buttonKeyInput,
-            pushMessageType: PushMessageType.action,
-          );
-        }
-      },
-    ).disposeWith(this);
+    //     if (buttonKeyPressed.isEmpty) {
+    //       // user simple click on notification (not on action)
+    //       _handlePushMessage(
+    //         receivedNotification: receivedAction,
+    //         notificationAction: null,
+    //         notificationActionInput: null,
+    //         pushMessageType: PushMessageType.launch,
+    //       );
+    //     } else {
+    //       _handlePushMessage(
+    //         receivedNotification: receivedAction,
+    //         notificationAction: buttonKeyPressed,
+    //         notificationActionInput: receivedAction.buttonKeyInput,
+    //         pushMessageType: PushMessageType.action,
+    //       );
+    //     }
+    //   },
+    // ).disposeWith(this);
   }
 
   void _handlePushMessage({
@@ -727,14 +727,15 @@ Future<void> _createPushNotification({
     largeIcon: unifediApiNotification.account?.avatar,
     bigPicture: mediaAttachment?.url,
     customSound: null,
-    autoCancel: true,
+
+    // autoCancel: true,
     color: lightFediUiTheme.colorTheme.darkGrey,
     backgroundColor: lightFediUiTheme.colorTheme.white,
     payload: notificationPayloadData.toPayload(),
     notificationLayout: layout,
     hideLargeIconOnExpand: false,
     ticker: null,
-    createdDate: unifediApiNotification.createdAt.toIso8601String(),
+    // createdDate: unifediApiNotification.createdAt.toIso8601String(),
   );
   var success = await AwesomeNotifications().createNotification(
     content: notificationContent,
@@ -745,8 +746,8 @@ Future<void> _createPushNotification({
           label: localizationContext
               .app_push_richNotification_action_acceptFollowRequest,
           enabled: true,
-          autoCancel: true,
-          buttonType: ActionButtonType.Default,
+          // autoCancel: true,
+          // buttonType: ActionButtonType.Default,
         ),
       if (isFollowRequestType)
         NotificationActionButton(
@@ -754,16 +755,16 @@ Future<void> _createPushNotification({
           label: localizationContext
               .app_push_richNotification_action_rejectFollowRequest,
           enabled: true,
-          autoCancel: true,
-          buttonType: ActionButtonType.Default,
+          // autoCancel: true,
+          // buttonType: ActionButtonType.Default,
         ),
       if (isChatMentionType || isMentionType)
         NotificationActionButton(
           key: NotificationActionType.reply.toJsonValue(),
           label: localizationContext.app_push_richNotification_action_reply,
           enabled: true,
-          autoCancel: true,
-          buttonType: ActionButtonType.InputField,
+          // autoCancel: true,
+          // buttonType: ActionButtonType.InputField,
         ),
     ],
   );
@@ -978,7 +979,7 @@ class NotificationPayloadData with _$NotificationPayloadData {
         ),
       };
 
-  static NotificationPayloadData fromPayload(Map<String, String> payload) {
+  static NotificationPayloadData fromPayload(Map<String, String?> payload) {
     var acct = payload[_notificationContentPayloadAcctKey]!;
     var serverHost = payload[_notificationContentPayloadServerHostKey]!;
     var notificationJsonString =

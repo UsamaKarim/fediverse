@@ -37,7 +37,7 @@ BoxImpl _getBox({
 @GenerateMocks(
   [],
   customMocks: [
-    MockSpec<StorageBackend>(returnNullOnMissingStub: true),
+    MockSpec<StorageBackend>(onMissingStub: OnMissingStub.returnDefault),
   ],
 )
 class HiveTestHelper {
@@ -52,8 +52,7 @@ class HiveTestHelper {
   static Future<void> testHiveSaveAndLoad<T extends IFediverseApiObject>(
     T Function({
       required String seed,
-    })
-        testHiveObjectCreator, {
+    }) testHiveObjectCreator, {
     required List<NestedTypeRegistryAdapter> nestedTypeRegistryAdapters,
   }) async {
     var hiveImpl = HiveImpl();

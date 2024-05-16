@@ -53,7 +53,7 @@ class PhotoManagerMediaDeviceFileMetadata
 
         return PhotoManagerMediaDeviceFile(
           metadata: this,
-          reCompressedFile: reCompressedFile,
+          reCompressedFile: File(reCompressedFile!.path),
         );
       } else {
         return PhotoManagerMediaDeviceFile(
@@ -69,7 +69,7 @@ class PhotoManagerMediaDeviceFileMetadata
     }
   }
 
-  Future<File?> _compressToJpeg(File file) async {
+  Future<XFile?> _compressToJpeg(File file) async {
     var originPath = file.absolute.path;
     final extDir = await getTemporaryDirectory();
     var timestamp = DateTime.now().millisecondsSinceEpoch.toString();

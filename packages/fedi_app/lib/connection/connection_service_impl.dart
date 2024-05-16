@@ -48,9 +48,8 @@ class ConnectionService extends DisposableOwner implements IConnectionService {
     _updateConnectivity(newState);
   }
 
-  void _updateConnectivity(ConnectivityResult newState) {
+  void _updateConnectivity(List<ConnectivityResult> newState) {
     _logger.fine(() => 'newState $newState');
-
-    _connectionStateSubject.add(newState);
+    newState.forEach(_connectionStateSubject.add);
   }
 }

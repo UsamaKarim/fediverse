@@ -1,0 +1,12 @@
+# melos_managed_dependency_overrides: fediverse_api,fediverse_api_test_utils,hive,hive_generator,mastodon_api
+dependency_overrides:
+  fediverse_api:
+    path: ../fediverse_api
+  fediverse_api_test_utils:
+    path: ../fediverse_api_test_utils
+  hive:
+    path: ../hive/hive
+  hive_generator:
+    path: ../hive/hive_generator
+  mastodon_api:
+    path: ../mastodon_api

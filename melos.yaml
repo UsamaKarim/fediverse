@@ -1,7 +1,11 @@
-name: Fediverse
+name: fediverse
 
 packages:
   - packages/**
+
+ignore:
+  - 'packages/**/**/example'
+
 
 scripts:
 

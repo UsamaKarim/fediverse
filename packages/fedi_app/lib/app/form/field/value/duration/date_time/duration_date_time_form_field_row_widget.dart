@@ -133,9 +133,9 @@ class __DurationDateTimeValueFormFieldRowPickerWidgetState
     var fieldBloc = IDurationDateTimeValueFormFieldBloc.of(context);
 
     if (currentDurationDateTime != null) {
-      var minDateTimeJiffy = Jiffy();
-      var maxDateTimeJiffy = Jiffy();
-      var currentDateTimeJiffy = Jiffy();
+      var minDateTimeJiffy = Jiffy.now();
+      var maxDateTimeJiffy = Jiffy.now();
+      var currentDateTimeJiffy = Jiffy.now();
 
       DateTime? minDateTime;
       DateTime? maxDateTime;
@@ -143,19 +143,19 @@ class __DurationDateTimeValueFormFieldRowPickerWidgetState
 
       if (fieldBloc.minDuration != null) {
         // ignore: avoid-ignoring-return-values
-        minDateTimeJiffy.add(duration: fieldBloc.minDuration!);
+        minDateTimeJiffy.addDuration(fieldBloc.minDuration!);
         minDateTime = minDateTimeJiffy.dateTime;
       }
 
       if (fieldBloc.maxDuration != null) {
         // ignore: avoid-ignoring-return-values
-        maxDateTimeJiffy.add(duration: fieldBloc.maxDuration!);
+        maxDateTimeJiffy.addDuration(fieldBloc.maxDuration!);
         maxDateTime = maxDateTimeJiffy.dateTime;
       }
 
       if (fieldBloc.currentValueDuration != null) {
         // ignore: avoid-ignoring-return-values
-        currentDateTimeJiffy.add(duration: fieldBloc.currentValueDuration!);
+        currentDateTimeJiffy.addDuration(fieldBloc.currentValueDuration!);
         currentDateTime = currentDateTimeJiffy.dateTime;
       }
 

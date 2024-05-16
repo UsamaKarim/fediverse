@@ -37,7 +37,7 @@ abstract class PaginationListWidget<T> extends StatelessWidget {
     this.refreshOnFirstLoad = true,
   }) : super(key: key);
 
-  ScrollView buildItemsCollectionView({
+  Widget buildItemsCollectionView({
     required BuildContext context,
     required List<T> items,
     required Widget? header,

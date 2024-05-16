@@ -11,7 +11,7 @@ import 'package:fedi_app/app/ui/theme/fedi_ui_theme_model.dart';
 import 'package:fedi_app/app/url/url_helper.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_html/style.dart';
+import 'package:flutter_html/flutter_html.dart';
 import 'package:provider/provider.dart';
 
 class AccountNoteWidget extends StatelessWidget {
@@ -52,7 +52,7 @@ class AccountNoteWidget extends StatelessWidget {
             var htmlTextBloc = HtmlTextBloc(
               inputData: htmlTextInputData,
               settings: HtmlTextSettings(
-                paragraphDisplay: Display.BLOCK,
+                paragraphDisplay: Display.block,
                 fontSize: textStyle.fontSize,
                 color: textStyle.color,
                 lineHeight: textStyle.height,

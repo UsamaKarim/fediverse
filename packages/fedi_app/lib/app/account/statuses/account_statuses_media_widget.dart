@@ -21,7 +21,7 @@ class AccountStatusesMediaWidget extends AccountStatusesWidget {
         );
 
   @override
-  ScrollView buildItemsCollectionView({
+  Widget buildItemsCollectionView({
     required BuildContext context,
     required List<IStatus> items,
     required Widget? header,

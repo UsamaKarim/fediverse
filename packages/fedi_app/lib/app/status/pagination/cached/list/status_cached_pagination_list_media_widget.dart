@@ -1,3 +1,4 @@
+import 'package:collection/collection.dart';
 import 'package:easy_dispose_provider/easy_dispose_provider.dart';
 import 'package:fedi_app/app/instance/location/instance_location_model.dart';
 import 'package:fedi_app/app/status/list/status_list_bloc.dart';
@@ -47,7 +48,7 @@ class StatusCachedPaginationListMediaWidget
     return timelinePaginationListBloc;
   }
 
-  static ScrollView buildStaggeredMediaGridView({
+  static Widget buildStaggeredMediaGridView({
     required BuildContext context,
     required List<IStatus> items,
     required Widget? header,
@@ -71,35 +72,65 @@ class StatusCachedPaginationListMediaWidget
       length += 1;
     }
 
-    return StaggeredGridView.countBuilder(
+    return StaggeredGrid.count(
       // ignore: no-magic-number
       crossAxisCount: 4,
-      itemCount: length,
-      itemBuilder: (BuildContext context, int index) {
-        if (header != null && index == 0) {
-          return header;
-        } else if (footer != null && index == length - 1) {
-          return footer;
-        }
-        var itemIndex = index;
-        if (header != null) {
-          itemIndex -= 1;
-        }
+      // itemCount: length,
+      children: [
+        ...statusesWithMediaAttachment.mapIndexed(
+          (index, element) {
+            if (header != null && index == 0) {
+              return header;
+            } else if (footer != null && index == length - 1) {
+              return footer;
+            }
+            var itemIndex = index;
+            if (header != null) {
+              itemIndex -= 1;
+            }
 
-        _logger.finest(() => 'itemBuilder itemIndex=$itemIndex');
+            _logger.finest(() => 'itemBuilder itemIndex=$itemIndex');
 
-        var statusWithMediaAttachment = statusesWithMediaAttachment[itemIndex];
+            var statusWithMediaAttachment =
+                statusesWithMediaAttachment[itemIndex];
 
-        return Provider<StatusWithMediaAttachment>.value(
-          value: statusWithMediaAttachment,
-          child: _StatusCachedPaginationListMediaItemWidget(
-            isLocal: isLocal,
-          ),
-        );
-      },
-      staggeredTileBuilder: (int index) =>
-          // ignore: no-magic-number
-          StaggeredTile.count(2, index.isEven ? 2 : 1),
+            return Provider<StatusWithMediaAttachment>.value(
+              value: statusWithMediaAttachment,
+              child: _StatusCachedPaginationListMediaItemWidget(
+                isLocal: isLocal,
+              ),
+            );
+          },
+          // staggeredTileBuilder: (int index) =>
+          //     // ignore: no-magic-number
+          //     StaggeredTile.count(2, index.isEven ? 2 : 1),
+        )
+      ],
+      //   itemBuilder: (BuildContext context, int index) {
+      //     if (header != null && index == 0) {
+      //       return header;
+      //     } else if (footer != null && index == length - 1) {
+      //       return footer;
+      //     }
+      //     var itemIndex = index;
+      //     if (header != null) {
+      //       itemIndex -= 1;
+      //     }
+
+      //     _logger.finest(() => 'itemBuilder itemIndex=$itemIndex');
+
+      //     var statusWithMediaAttachment = statusesWithMediaAttachment[itemIndex];
+
+      //     return Provider<StatusWithMediaAttachment>.value(
+      //       value: statusWithMediaAttachment,
+      //       child: _StatusCachedPaginationListMediaItemWidget(
+      //         isLocal: isLocal,
+      //       ),
+      //     );
+      //   },
+      //   // staggeredTileBuilder: (int index) =>
+      //   //     // ignore: no-magic-number
+      //   //     StaggeredTile.count(2, index.isEven ? 2 : 1),
     );
   }
 
@@ -143,7 +174,7 @@ class StatusCachedPaginationListMediaWidget
       .toList();
 
   @override
-  ScrollView buildItemsCollectionView({
+  Widget buildItemsCollectionView({
     required BuildContext context,
     required List<IStatus> items,
     required Widget? header,

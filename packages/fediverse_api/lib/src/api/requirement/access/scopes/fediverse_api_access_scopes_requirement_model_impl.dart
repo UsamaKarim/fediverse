@@ -1,3 +1,4 @@
+import 'package:collection/collection.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:hive/hive.dart';
 
@@ -19,7 +20,7 @@ class FediverseApiAccessScopesRequirement
   const factory FediverseApiAccessScopesRequirement({
     @HiveField(0)
     @JsonKey(name: 'scopes_variants')
-        required List<FediverseApiAccessScopes> scopesVariants,
+    required List<FediverseApiAccessScopes> scopesVariants,
   }) = _FediverseApiAccessScopesRequirement;
 
   factory FediverseApiAccessScopesRequirement.fromJson(

@@ -1,0 +1,6 @@
+# melos_managed_dependency_overrides: fediverse_api,hive
+dependency_overrides:
+  fediverse_api:
+    path: ../fediverse_api
+  hive:
+    path: ../hive/hive

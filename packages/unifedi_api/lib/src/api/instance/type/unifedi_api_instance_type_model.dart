@@ -1,3 +1,4 @@
+import 'package:collection/collection.dart';
 import 'package:fediverse_api/fediverse_api_utils.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:mastodon_api/mastodon_api.dart';

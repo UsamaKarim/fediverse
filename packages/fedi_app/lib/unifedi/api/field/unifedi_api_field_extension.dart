@@ -1,4 +1,4 @@
-import 'package:flutter_html/html_parser.dart';
+import 'package:html/parser.dart';
 import 'package:logging/logging.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 
@@ -8,7 +8,7 @@ extension IUnifediApiFieldExtension on IUnifediApiField {
   String? get valueAsRawUrl {
     if (value?.isNotEmpty == true) {
       try {
-        var parsed = HtmlParser.parseHTML(value!);
+        var parsed = parse(value!);
         var allLinkElements = parsed.getElementsByTagName('a');
         if (allLinkElements.isNotEmpty) {
           return allLinkElements.first.attributes['href'];
