@@ -1,3 +1,5 @@
+import 'package:collection/collection.dart';
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/database/dao/remote/populated_app_remote_database_dao.dart';
 import 'package:fedi_app/app/pending/pending_model.dart';
@@ -5,7 +7,6 @@ import 'package:fedi_app/app/status/database/status_database_model.dart';
 import 'package:fedi_app/app/status/repository/status_repository_model.dart';
 import 'package:fedi_app/app/status/status_model.dart';
 import 'package:fedi_app/repository/repository_model.dart';
-import 'package:moor/moor.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 
 part 'status_database_dao.g.dart';
@@ -25,7 +26,7 @@ var _statusListsAliasId = 'statusLists';
 var _conversationStatusesAliasId = 'conversationStatuses';
 var _homeTimelineStatusesAliasId = 'homeTimelineStatuses';
 
-@UseDao(
+@DriftAccessor(
   tables: [
     DbStatuses,
   ],
@@ -124,7 +125,7 @@ class StatusDao extends PopulatedAppRemoteDatabaseDao<
       (select(db.dbStatuses)
             ..where(
               (status) => status.oldPendingRemoteId.equals(
-                oldPendingRemoteId,
+                oldPendingRemoteId!,
               ),
             ))
           .join(
@@ -318,7 +319,7 @@ class StatusDao extends PopulatedAppRemoteDatabaseDao<
     SimpleSelectStatement<$DbStatusesTable, DbStatus> query,
     String? accountRemoteId,
   ) =>
-      query.where((status) => status.accountRemoteId.equals(accountRemoteId));
+      query.where((status) => status.accountRemoteId.equals(accountRemoteId!));
 
   void addOnlyNoNsfwSensitiveWhere(
     SimpleSelectStatement<$DbStatusesTable, DbStatus> query,
@@ -375,7 +376,7 @@ class StatusDao extends PopulatedAppRemoteDatabaseDao<
       query.where(
         (status) =>
             status.inReplyToAccountRemoteId.isNull() |
-            status.inReplyToAccountRemoteId.equals(accountRemoteId),
+            status.inReplyToAccountRemoteId.equals(accountRemoteId!),
       );
 
   void addOnlyNoRepliesWhere(
@@ -398,8 +399,8 @@ class StatusDao extends PopulatedAppRemoteDatabaseDao<
         .map((visibility) => visibility.stringValue)
         .toList();
 
-    query
-        .where((status) => status.visibility.isNotIn(excludeVisibilityStrings));
+    query.where((status) =>
+        status.visibility.isNotIn(excludeVisibilityStrings.whereNotNull()));
   }
 
   void orderBy(
@@ -421,7 +422,7 @@ class StatusDao extends PopulatedAppRemoteDatabaseDao<
                 }
 
                 return OrderingTerm(
-                  expression: expression,
+                  expression: expression as Expression<Object>,
                   mode: orderTerm.orderingMode,
                 );
               },

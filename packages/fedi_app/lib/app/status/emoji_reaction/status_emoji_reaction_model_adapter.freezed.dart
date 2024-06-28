@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'status_emoji_reaction_model_adapter.dart';
 
@@ -11,22 +12,7 @@ part of 'status_emoji_reaction_model_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$StatusEmojiReactionAdapterTearOff {
-  const _$StatusEmojiReactionAdapterTearOff();
-
-  _StatusEmojiReactionAdapter call(
-      {required IUnifediApiEmojiReaction unifediApiEmojiReaction}) {
-    return _StatusEmojiReactionAdapter(
-      unifediApiEmojiReaction: unifediApiEmojiReaction,
-    );
-  }
-}
-
-/// @nodoc
-const $StatusEmojiReactionAdapter = _$StatusEmojiReactionAdapterTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$StatusEmojiReactionAdapter {
@@ -42,61 +28,66 @@ mixin _$StatusEmojiReactionAdapter {
 abstract class $StatusEmojiReactionAdapterCopyWith<$Res> {
   factory $StatusEmojiReactionAdapterCopyWith(StatusEmojiReactionAdapter value,
           $Res Function(StatusEmojiReactionAdapter) then) =
-      _$StatusEmojiReactionAdapterCopyWithImpl<$Res>;
+      _$StatusEmojiReactionAdapterCopyWithImpl<$Res,
+          StatusEmojiReactionAdapter>;
+  @useResult
   $Res call({IUnifediApiEmojiReaction unifediApiEmojiReaction});
 }
 
 /// @nodoc
-class _$StatusEmojiReactionAdapterCopyWithImpl<$Res>
+class _$StatusEmojiReactionAdapterCopyWithImpl<$Res,
+        $Val extends StatusEmojiReactionAdapter>
     implements $StatusEmojiReactionAdapterCopyWith<$Res> {
   _$StatusEmojiReactionAdapterCopyWithImpl(this._value, this._then);
 
-  final StatusEmojiReactionAdapter _value;
   // ignore: unused_field
-  final $Res Function(StatusEmojiReactionAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? unifediApiEmojiReaction = freezed,
+    Object? unifediApiEmojiReaction = null,
   }) {
     return _then(_value.copyWith(
-      unifediApiEmojiReaction: unifediApiEmojiReaction == freezed
+      unifediApiEmojiReaction: null == unifediApiEmojiReaction
           ? _value.unifediApiEmojiReaction
           : unifediApiEmojiReaction // ignore: cast_nullable_to_non_nullable
               as IUnifediApiEmojiReaction,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$StatusEmojiReactionAdapterCopyWith<$Res>
+abstract class _$$StatusEmojiReactionAdapterImplCopyWith<$Res>
     implements $StatusEmojiReactionAdapterCopyWith<$Res> {
-  factory _$StatusEmojiReactionAdapterCopyWith(
-          _StatusEmojiReactionAdapter value,
-          $Res Function(_StatusEmojiReactionAdapter) then) =
-      __$StatusEmojiReactionAdapterCopyWithImpl<$Res>;
+  factory _$$StatusEmojiReactionAdapterImplCopyWith(
+          _$StatusEmojiReactionAdapterImpl value,
+          $Res Function(_$StatusEmojiReactionAdapterImpl) then) =
+      __$$StatusEmojiReactionAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({IUnifediApiEmojiReaction unifediApiEmojiReaction});
 }
 
 /// @nodoc
-class __$StatusEmojiReactionAdapterCopyWithImpl<$Res>
-    extends _$StatusEmojiReactionAdapterCopyWithImpl<$Res>
-    implements _$StatusEmojiReactionAdapterCopyWith<$Res> {
-  __$StatusEmojiReactionAdapterCopyWithImpl(_StatusEmojiReactionAdapter _value,
-      $Res Function(_StatusEmojiReactionAdapter) _then)
-      : super(_value, (v) => _then(v as _StatusEmojiReactionAdapter));
+class __$$StatusEmojiReactionAdapterImplCopyWithImpl<$Res>
+    extends _$StatusEmojiReactionAdapterCopyWithImpl<$Res,
+        _$StatusEmojiReactionAdapterImpl>
+    implements _$$StatusEmojiReactionAdapterImplCopyWith<$Res> {
+  __$$StatusEmojiReactionAdapterImplCopyWithImpl(
+      _$StatusEmojiReactionAdapterImpl _value,
+      $Res Function(_$StatusEmojiReactionAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _StatusEmojiReactionAdapter get _value =>
-      super._value as _StatusEmojiReactionAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? unifediApiEmojiReaction = freezed,
+    Object? unifediApiEmojiReaction = null,
   }) {
-    return _then(_StatusEmojiReactionAdapter(
-      unifediApiEmojiReaction: unifediApiEmojiReaction == freezed
+    return _then(_$StatusEmojiReactionAdapterImpl(
+      unifediApiEmojiReaction: null == unifediApiEmojiReaction
           ? _value.unifediApiEmojiReaction
           : unifediApiEmojiReaction // ignore: cast_nullable_to_non_nullable
               as IUnifediApiEmojiReaction,
@@ -106,8 +97,9 @@ class __$StatusEmojiReactionAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_StatusEmojiReactionAdapter extends _StatusEmojiReactionAdapter {
-  const _$_StatusEmojiReactionAdapter({required this.unifediApiEmojiReaction})
+class _$StatusEmojiReactionAdapterImpl extends _StatusEmojiReactionAdapter {
+  const _$StatusEmojiReactionAdapterImpl(
+      {required this.unifediApiEmojiReaction})
       : super._();
 
   @override
@@ -119,10 +111,10 @@ class _$_StatusEmojiReactionAdapter extends _StatusEmojiReactionAdapter {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _StatusEmojiReactionAdapter &&
+            other is _$StatusEmojiReactionAdapterImpl &&
             (identical(
                     other.unifediApiEmojiReaction, unifediApiEmojiReaction) ||
                 other.unifediApiEmojiReaction == unifediApiEmojiReaction));
@@ -133,21 +125,22 @@ class _$_StatusEmojiReactionAdapter extends _StatusEmojiReactionAdapter {
 
   @JsonKey(ignore: true)
   @override
-  _$StatusEmojiReactionAdapterCopyWith<_StatusEmojiReactionAdapter>
-      get copyWith => __$StatusEmojiReactionAdapterCopyWithImpl<
-          _StatusEmojiReactionAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$StatusEmojiReactionAdapterImplCopyWith<_$StatusEmojiReactionAdapterImpl>
+      get copyWith => __$$StatusEmojiReactionAdapterImplCopyWithImpl<
+          _$StatusEmojiReactionAdapterImpl>(this, _$identity);
 }
 
 abstract class _StatusEmojiReactionAdapter extends StatusEmojiReactionAdapter {
   const factory _StatusEmojiReactionAdapter(
-          {required IUnifediApiEmojiReaction unifediApiEmojiReaction}) =
-      _$_StatusEmojiReactionAdapter;
+          {required final IUnifediApiEmojiReaction unifediApiEmojiReaction}) =
+      _$StatusEmojiReactionAdapterImpl;
   const _StatusEmojiReactionAdapter._() : super._();
 
   @override
   IUnifediApiEmojiReaction get unifediApiEmojiReaction;
   @override
   @JsonKey(ignore: true)
-  _$StatusEmojiReactionAdapterCopyWith<_StatusEmojiReactionAdapter>
+  _$$StatusEmojiReactionAdapterImplCopyWith<_$StatusEmojiReactionAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

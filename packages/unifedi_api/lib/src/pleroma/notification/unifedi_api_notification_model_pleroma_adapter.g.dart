@@ -45,16 +45,16 @@ class UnifediApiNotificationPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiNotificationPleromaAdapter
-    _$$_UnifediApiNotificationPleromaAdapterFromJson(
+_$UnifediApiNotificationPleromaAdapterImpl
+    _$$UnifediApiNotificationPleromaAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiNotificationPleromaAdapter(
+        _$UnifediApiNotificationPleromaAdapterImpl(
           PleromaApiNotification.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiNotificationPleromaAdapterToJson(
-        _$_UnifediApiNotificationPleromaAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiNotificationPleromaAdapterImplToJson(
+        _$UnifediApiNotificationPleromaAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'fediverse_api_feature_requirement_state_sealed.dart';
 
@@ -11,32 +12,7 @@ part of 'fediverse_api_feature_requirement_state_sealed.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$FediverseApiFeatureRequirementStateTearOff {
-  const _$FediverseApiFeatureRequirementStateTearOff();
-
-  _Accessible accessible() {
-    return const _Accessible();
-  }
-
-  _Forbidden forbidden(List<IFediverseApiFeatureRequirementReason> reasons) {
-    return _Forbidden(
-      reasons,
-    );
-  }
-
-  _Unknown unknown(List<IFediverseApiFeatureRequirementReason> reasons) {
-    return _Unknown(
-      reasons,
-    );
-  }
-}
-
-/// @nodoc
-const $FediverseApiFeatureRequirementState =
-    _$FediverseApiFeatureRequirementStateTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$FediverseApiFeatureRequirementState {
@@ -53,10 +29,10 @@ mixin _$FediverseApiFeatureRequirementState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? accessible,
-    TResult Function(List<IFediverseApiFeatureRequirementReason> reasons)?
+    TResult? Function()? accessible,
+    TResult? Function(List<IFediverseApiFeatureRequirementReason> reasons)?
         forbidden,
-    TResult Function(List<IFediverseApiFeatureRequirementReason> reasons)?
+    TResult? Function(List<IFediverseApiFeatureRequirementReason> reasons)?
         unknown,
   }) =>
       throw _privateConstructorUsedError;
@@ -79,9 +55,9 @@ mixin _$FediverseApiFeatureRequirementState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Accessible value)? accessible,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Accessible value)? accessible,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_Unknown value)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -99,42 +75,42 @@ abstract class $FediverseApiFeatureRequirementStateCopyWith<$Res> {
   factory $FediverseApiFeatureRequirementStateCopyWith(
           FediverseApiFeatureRequirementState value,
           $Res Function(FediverseApiFeatureRequirementState) then) =
-      _$FediverseApiFeatureRequirementStateCopyWithImpl<$Res>;
+      _$FediverseApiFeatureRequirementStateCopyWithImpl<$Res,
+          FediverseApiFeatureRequirementState>;
 }
 
 /// @nodoc
-class _$FediverseApiFeatureRequirementStateCopyWithImpl<$Res>
+class _$FediverseApiFeatureRequirementStateCopyWithImpl<$Res,
+        $Val extends FediverseApiFeatureRequirementState>
     implements $FediverseApiFeatureRequirementStateCopyWith<$Res> {
   _$FediverseApiFeatureRequirementStateCopyWithImpl(this._value, this._then);
 
-  final FediverseApiFeatureRequirementState _value;
   // ignore: unused_field
-  final $Res Function(FediverseApiFeatureRequirementState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$AccessibleCopyWith<$Res> {
-  factory _$AccessibleCopyWith(
-          _Accessible value, $Res Function(_Accessible) then) =
-      __$AccessibleCopyWithImpl<$Res>;
+abstract class _$$AccessibleImplCopyWith<$Res> {
+  factory _$$AccessibleImplCopyWith(
+          _$AccessibleImpl value, $Res Function(_$AccessibleImpl) then) =
+      __$$AccessibleImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$AccessibleCopyWithImpl<$Res>
-    extends _$FediverseApiFeatureRequirementStateCopyWithImpl<$Res>
-    implements _$AccessibleCopyWith<$Res> {
-  __$AccessibleCopyWithImpl(
-      _Accessible _value, $Res Function(_Accessible) _then)
-      : super(_value, (v) => _then(v as _Accessible));
-
-  @override
-  _Accessible get _value => super._value as _Accessible;
+class __$$AccessibleImplCopyWithImpl<$Res>
+    extends _$FediverseApiFeatureRequirementStateCopyWithImpl<$Res,
+        _$AccessibleImpl> implements _$$AccessibleImplCopyWith<$Res> {
+  __$$AccessibleImplCopyWithImpl(
+      _$AccessibleImpl _value, $Res Function(_$AccessibleImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Accessible implements _Accessible {
-  const _$_Accessible();
+class _$AccessibleImpl implements _Accessible {
+  const _$AccessibleImpl();
 
   @override
   String toString() {
@@ -142,9 +118,9 @@ class _$_Accessible implements _Accessible {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _Accessible);
+        (other.runtimeType == runtimeType && other is _$AccessibleImpl);
   }
 
   @override
@@ -167,10 +143,10 @@ class _$_Accessible implements _Accessible {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? accessible,
-    TResult Function(List<IFediverseApiFeatureRequirementReason> reasons)?
+    TResult? Function()? accessible,
+    TResult? Function(List<IFediverseApiFeatureRequirementReason> reasons)?
         forbidden,
-    TResult Function(List<IFediverseApiFeatureRequirementReason> reasons)?
+    TResult? Function(List<IFediverseApiFeatureRequirementReason> reasons)?
         unknown,
   }) {
     return accessible?.call();
@@ -205,9 +181,9 @@ class _$_Accessible implements _Accessible {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Accessible value)? accessible,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Accessible value)? accessible,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return accessible?.call(this);
   }
@@ -228,34 +204,34 @@ class _$_Accessible implements _Accessible {
 }
 
 abstract class _Accessible implements FediverseApiFeatureRequirementState {
-  const factory _Accessible() = _$_Accessible;
+  const factory _Accessible() = _$AccessibleImpl;
 }
 
 /// @nodoc
-abstract class _$ForbiddenCopyWith<$Res> {
-  factory _$ForbiddenCopyWith(
-          _Forbidden value, $Res Function(_Forbidden) then) =
-      __$ForbiddenCopyWithImpl<$Res>;
+abstract class _$$ForbiddenImplCopyWith<$Res> {
+  factory _$$ForbiddenImplCopyWith(
+          _$ForbiddenImpl value, $Res Function(_$ForbiddenImpl) then) =
+      __$$ForbiddenImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({List<IFediverseApiFeatureRequirementReason> reasons});
 }
 
 /// @nodoc
-class __$ForbiddenCopyWithImpl<$Res>
-    extends _$FediverseApiFeatureRequirementStateCopyWithImpl<$Res>
-    implements _$ForbiddenCopyWith<$Res> {
-  __$ForbiddenCopyWithImpl(_Forbidden _value, $Res Function(_Forbidden) _then)
-      : super(_value, (v) => _then(v as _Forbidden));
+class __$$ForbiddenImplCopyWithImpl<$Res>
+    extends _$FediverseApiFeatureRequirementStateCopyWithImpl<$Res,
+        _$ForbiddenImpl> implements _$$ForbiddenImplCopyWith<$Res> {
+  __$$ForbiddenImplCopyWithImpl(
+      _$ForbiddenImpl _value, $Res Function(_$ForbiddenImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Forbidden get _value => super._value as _Forbidden;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? reasons = freezed,
+    Object? reasons = null,
   }) {
-    return _then(_Forbidden(
-      reasons == freezed
-          ? _value.reasons
+    return _then(_$ForbiddenImpl(
+      null == reasons
+          ? _value._reasons
           : reasons // ignore: cast_nullable_to_non_nullable
               as List<IFediverseApiFeatureRequirementReason>,
     ));
@@ -264,11 +240,18 @@ class __$ForbiddenCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Forbidden implements _Forbidden {
-  const _$_Forbidden(this.reasons);
+class _$ForbiddenImpl implements _Forbidden {
+  const _$ForbiddenImpl(
+      final List<IFediverseApiFeatureRequirementReason> reasons)
+      : _reasons = reasons;
 
+  final List<IFediverseApiFeatureRequirementReason> _reasons;
   @override
-  final List<IFediverseApiFeatureRequirementReason> reasons;
+  List<IFediverseApiFeatureRequirementReason> get reasons {
+    if (_reasons is EqualUnmodifiableListView) return _reasons;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_reasons);
+  }
 
   @override
   String toString() {
@@ -276,21 +259,22 @@ class _$_Forbidden implements _Forbidden {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Forbidden &&
-            const DeepCollectionEquality().equals(other.reasons, reasons));
+            other is _$ForbiddenImpl &&
+            const DeepCollectionEquality().equals(other._reasons, _reasons));
   }
 
   @override
   int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(reasons));
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_reasons));
 
   @JsonKey(ignore: true)
   @override
-  _$ForbiddenCopyWith<_Forbidden> get copyWith =>
-      __$ForbiddenCopyWithImpl<_Forbidden>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ForbiddenImplCopyWith<_$ForbiddenImpl> get copyWith =>
+      __$$ForbiddenImplCopyWithImpl<_$ForbiddenImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -309,10 +293,10 @@ class _$_Forbidden implements _Forbidden {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? accessible,
-    TResult Function(List<IFediverseApiFeatureRequirementReason> reasons)?
+    TResult? Function()? accessible,
+    TResult? Function(List<IFediverseApiFeatureRequirementReason> reasons)?
         forbidden,
-    TResult Function(List<IFediverseApiFeatureRequirementReason> reasons)?
+    TResult? Function(List<IFediverseApiFeatureRequirementReason> reasons)?
         unknown,
   }) {
     return forbidden?.call(reasons);
@@ -347,9 +331,9 @@ class _$_Forbidden implements _Forbidden {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Accessible value)? accessible,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Accessible value)? accessible,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return forbidden?.call(this);
   }
@@ -371,38 +355,40 @@ class _$_Forbidden implements _Forbidden {
 
 abstract class _Forbidden implements FediverseApiFeatureRequirementState {
   const factory _Forbidden(
-      List<IFediverseApiFeatureRequirementReason> reasons) = _$_Forbidden;
+          final List<IFediverseApiFeatureRequirementReason> reasons) =
+      _$ForbiddenImpl;
 
   List<IFediverseApiFeatureRequirementReason> get reasons;
   @JsonKey(ignore: true)
-  _$ForbiddenCopyWith<_Forbidden> get copyWith =>
+  _$$ForbiddenImplCopyWith<_$ForbiddenImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$UnknownCopyWith<$Res> {
-  factory _$UnknownCopyWith(_Unknown value, $Res Function(_Unknown) then) =
-      __$UnknownCopyWithImpl<$Res>;
+abstract class _$$UnknownImplCopyWith<$Res> {
+  factory _$$UnknownImplCopyWith(
+          _$UnknownImpl value, $Res Function(_$UnknownImpl) then) =
+      __$$UnknownImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({List<IFediverseApiFeatureRequirementReason> reasons});
 }
 
 /// @nodoc
-class __$UnknownCopyWithImpl<$Res>
-    extends _$FediverseApiFeatureRequirementStateCopyWithImpl<$Res>
-    implements _$UnknownCopyWith<$Res> {
-  __$UnknownCopyWithImpl(_Unknown _value, $Res Function(_Unknown) _then)
-      : super(_value, (v) => _then(v as _Unknown));
+class __$$UnknownImplCopyWithImpl<$Res>
+    extends _$FediverseApiFeatureRequirementStateCopyWithImpl<$Res,
+        _$UnknownImpl> implements _$$UnknownImplCopyWith<$Res> {
+  __$$UnknownImplCopyWithImpl(
+      _$UnknownImpl _value, $Res Function(_$UnknownImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Unknown get _value => super._value as _Unknown;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? reasons = freezed,
+    Object? reasons = null,
   }) {
-    return _then(_Unknown(
-      reasons == freezed
-          ? _value.reasons
+    return _then(_$UnknownImpl(
+      null == reasons
+          ? _value._reasons
           : reasons // ignore: cast_nullable_to_non_nullable
               as List<IFediverseApiFeatureRequirementReason>,
     ));
@@ -411,11 +397,17 @@ class __$UnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Unknown implements _Unknown {
-  const _$_Unknown(this.reasons);
+class _$UnknownImpl implements _Unknown {
+  const _$UnknownImpl(final List<IFediverseApiFeatureRequirementReason> reasons)
+      : _reasons = reasons;
 
+  final List<IFediverseApiFeatureRequirementReason> _reasons;
   @override
-  final List<IFediverseApiFeatureRequirementReason> reasons;
+  List<IFediverseApiFeatureRequirementReason> get reasons {
+    if (_reasons is EqualUnmodifiableListView) return _reasons;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_reasons);
+  }
 
   @override
   String toString() {
@@ -423,21 +415,22 @@ class _$_Unknown implements _Unknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Unknown &&
-            const DeepCollectionEquality().equals(other.reasons, reasons));
+            other is _$UnknownImpl &&
+            const DeepCollectionEquality().equals(other._reasons, _reasons));
   }
 
   @override
   int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(reasons));
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_reasons));
 
   @JsonKey(ignore: true)
   @override
-  _$UnknownCopyWith<_Unknown> get copyWith =>
-      __$UnknownCopyWithImpl<_Unknown>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnknownImplCopyWith<_$UnknownImpl> get copyWith =>
+      __$$UnknownImplCopyWithImpl<_$UnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -456,10 +449,10 @@ class _$_Unknown implements _Unknown {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? accessible,
-    TResult Function(List<IFediverseApiFeatureRequirementReason> reasons)?
+    TResult? Function()? accessible,
+    TResult? Function(List<IFediverseApiFeatureRequirementReason> reasons)?
         forbidden,
-    TResult Function(List<IFediverseApiFeatureRequirementReason> reasons)?
+    TResult? Function(List<IFediverseApiFeatureRequirementReason> reasons)?
         unknown,
   }) {
     return unknown?.call(reasons);
@@ -494,9 +487,9 @@ class _$_Unknown implements _Unknown {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Accessible value)? accessible,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Accessible value)? accessible,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return unknown?.call(this);
   }
@@ -517,11 +510,12 @@ class _$_Unknown implements _Unknown {
 }
 
 abstract class _Unknown implements FediverseApiFeatureRequirementState {
-  const factory _Unknown(List<IFediverseApiFeatureRequirementReason> reasons) =
-      _$_Unknown;
+  const factory _Unknown(
+          final List<IFediverseApiFeatureRequirementReason> reasons) =
+      _$UnknownImpl;
 
   List<IFediverseApiFeatureRequirementReason> get reasons;
   @JsonKey(ignore: true)
-  _$UnknownCopyWith<_Unknown> get copyWith =>
+  _$$UnknownImplCopyWith<_$UnknownImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

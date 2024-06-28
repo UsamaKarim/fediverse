@@ -57,9 +57,9 @@ class UnifediApiInstanceFederationAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiInstanceFederation _$$_UnifediApiInstanceFederationFromJson(
+_$UnifediApiInstanceFederationImpl _$$UnifediApiInstanceFederationImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiInstanceFederation(
+    _$UnifediApiInstanceFederationImpl(
       enabled: json['enabled'] as bool?,
       exclusions: json['exclusions'] as bool?,
       mrfObjectAge: json['mrf_object_age'] == null
@@ -74,8 +74,8 @@ _$_UnifediApiInstanceFederation _$$_UnifediApiInstanceFederationFromJson(
           .toList(),
     );
 
-Map<String, dynamic> _$$_UnifediApiInstanceFederationToJson(
-    _$_UnifediApiInstanceFederation instance) {
+Map<String, dynamic> _$$UnifediApiInstanceFederationImplToJson(
+    _$UnifediApiInstanceFederationImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

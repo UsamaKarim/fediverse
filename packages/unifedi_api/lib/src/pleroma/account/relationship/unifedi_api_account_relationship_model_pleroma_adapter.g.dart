@@ -46,16 +46,16 @@ class UnifediApiAccountRelationshipPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiAccountRelationshipPleromaAdapter
-    _$$_UnifediApiAccountRelationshipPleromaAdapterFromJson(
+_$UnifediApiAccountRelationshipPleromaAdapterImpl
+    _$$UnifediApiAccountRelationshipPleromaAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiAccountRelationshipPleromaAdapter(
+        _$UnifediApiAccountRelationshipPleromaAdapterImpl(
           PleromaApiAccountRelationship.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiAccountRelationshipPleromaAdapterToJson(
-        _$_UnifediApiAccountRelationshipPleromaAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiAccountRelationshipPleromaAdapterImplToJson(
+        _$UnifediApiAccountRelationshipPleromaAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

@@ -126,8 +126,9 @@ class MastodonApiStatusAdapter extends TypeAdapter<MastodonApiStatus> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiStatus _$$_MastodonApiStatusFromJson(Map<String, dynamic> json) =>
-    _$_MastodonApiStatus(
+_$MastodonApiStatusImpl _$$MastodonApiStatusImplFromJson(
+        Map<String, dynamic> json) =>
+    _$MastodonApiStatusImpl(
       id: json['id'] as String,
       createdAt: DateTime.parse(json['created_at'] as String),
       inReplyToId: json['in_reply_to_id'] as String?,
@@ -136,9 +137,9 @@ _$_MastodonApiStatus _$$_MastodonApiStatusFromJson(Map<String, dynamic> json) =>
       spoilerText: json['spoiler_text'] as String?,
       uri: json['uri'] as String,
       url: json['url'] as String?,
-      repliesCount: json['replies_count'] as int?,
-      reblogsCount: json['reblogs_count'] as int?,
-      favouritesCount: json['favourites_count'] as int?,
+      repliesCount: (json['replies_count'] as num?)?.toInt(),
+      reblogsCount: (json['reblogs_count'] as num?)?.toInt(),
+      favouritesCount: (json['favourites_count'] as num?)?.toInt(),
       favourited: json['favourited'] as bool?,
       reblogged: json['reblogged'] as bool?,
       muted: json['muted'] as bool?,
@@ -177,8 +178,8 @@ _$_MastodonApiStatus _$$_MastodonApiStatusFromJson(Map<String, dynamic> json) =>
       visibility: json['visibility'] as String,
     );
 
-Map<String, dynamic> _$$_MastodonApiStatusToJson(
-    _$_MastodonApiStatus instance) {
+Map<String, dynamic> _$$MastodonApiStatusImplToJson(
+    _$MastodonApiStatusImpl instance) {
   final val = <String, dynamic>{
     'id': instance.id,
     'created_at': instance.createdAt.toIso8601String(),

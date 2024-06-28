@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_instance_federation_model_impl.dart';
 
@@ -11,47 +12,12 @@ part of 'unifedi_api_instance_federation_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiInstanceFederation _$UnifediApiInstanceFederationFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiInstanceFederation.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiInstanceFederationTearOff {
-  const _$UnifediApiInstanceFederationTearOff();
-
-  _UnifediApiInstanceFederation call(
-      {@HiveField(0)
-          required bool? enabled,
-      @HiveField(1)
-          required bool? exclusions,
-      @HiveField(2)
-      @JsonKey(name: 'mrf_object_age')
-          required UnifediApiInstanceFederationMfrObjectAge? mrfObjectAge,
-      @HiveField(3)
-      @JsonKey(name: 'mrf_policies')
-          required List<String>? mrfPolicies,
-      @HiveField(4)
-      @JsonKey(name: 'quarantined_instances')
-          required List<String>? quarantinedInstances}) {
-    return _UnifediApiInstanceFederation(
-      enabled: enabled,
-      exclusions: exclusions,
-      mrfObjectAge: mrfObjectAge,
-      mrfPolicies: mrfPolicies,
-      quarantinedInstances: quarantinedInstances,
-    );
-  }
-
-  UnifediApiInstanceFederation fromJson(Map<String, Object?> json) {
-    return UnifediApiInstanceFederation.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiInstanceFederation = _$UnifediApiInstanceFederationTearOff();
 
 /// @nodoc
 mixin _$UnifediApiInstanceFederation {
@@ -81,34 +47,35 @@ abstract class $UnifediApiInstanceFederationCopyWith<$Res> {
   factory $UnifediApiInstanceFederationCopyWith(
           UnifediApiInstanceFederation value,
           $Res Function(UnifediApiInstanceFederation) then) =
-      _$UnifediApiInstanceFederationCopyWithImpl<$Res>;
+      _$UnifediApiInstanceFederationCopyWithImpl<$Res,
+          UnifediApiInstanceFederation>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-          bool? enabled,
-      @HiveField(1)
-          bool? exclusions,
+      {@HiveField(0) bool? enabled,
+      @HiveField(1) bool? exclusions,
       @HiveField(2)
       @JsonKey(name: 'mrf_object_age')
-          UnifediApiInstanceFederationMfrObjectAge? mrfObjectAge,
-      @HiveField(3)
-      @JsonKey(name: 'mrf_policies')
-          List<String>? mrfPolicies,
+      UnifediApiInstanceFederationMfrObjectAge? mrfObjectAge,
+      @HiveField(3) @JsonKey(name: 'mrf_policies') List<String>? mrfPolicies,
       @HiveField(4)
       @JsonKey(name: 'quarantined_instances')
-          List<String>? quarantinedInstances});
+      List<String>? quarantinedInstances});
 
   $UnifediApiInstanceFederationMfrObjectAgeCopyWith<$Res>? get mrfObjectAge;
 }
 
 /// @nodoc
-class _$UnifediApiInstanceFederationCopyWithImpl<$Res>
+class _$UnifediApiInstanceFederationCopyWithImpl<$Res,
+        $Val extends UnifediApiInstanceFederation>
     implements $UnifediApiInstanceFederationCopyWith<$Res> {
   _$UnifediApiInstanceFederationCopyWithImpl(this._value, this._then);
 
-  final UnifediApiInstanceFederation _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiInstanceFederation) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? enabled = freezed,
@@ -118,30 +85,31 @@ class _$UnifediApiInstanceFederationCopyWithImpl<$Res>
     Object? quarantinedInstances = freezed,
   }) {
     return _then(_value.copyWith(
-      enabled: enabled == freezed
+      enabled: freezed == enabled
           ? _value.enabled
           : enabled // ignore: cast_nullable_to_non_nullable
               as bool?,
-      exclusions: exclusions == freezed
+      exclusions: freezed == exclusions
           ? _value.exclusions
           : exclusions // ignore: cast_nullable_to_non_nullable
               as bool?,
-      mrfObjectAge: mrfObjectAge == freezed
+      mrfObjectAge: freezed == mrfObjectAge
           ? _value.mrfObjectAge
           : mrfObjectAge // ignore: cast_nullable_to_non_nullable
               as UnifediApiInstanceFederationMfrObjectAge?,
-      mrfPolicies: mrfPolicies == freezed
+      mrfPolicies: freezed == mrfPolicies
           ? _value.mrfPolicies
           : mrfPolicies // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      quarantinedInstances: quarantinedInstances == freezed
+      quarantinedInstances: freezed == quarantinedInstances
           ? _value.quarantinedInstances
           : quarantinedInstances // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiInstanceFederationMfrObjectAgeCopyWith<$Res>? get mrfObjectAge {
     if (_value.mrfObjectAge == null) {
       return null;
@@ -149,51 +117,46 @@ class _$UnifediApiInstanceFederationCopyWithImpl<$Res>
 
     return $UnifediApiInstanceFederationMfrObjectAgeCopyWith<$Res>(
         _value.mrfObjectAge!, (value) {
-      return _then(_value.copyWith(mrfObjectAge: value));
+      return _then(_value.copyWith(mrfObjectAge: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiInstanceFederationCopyWith<$Res>
+abstract class _$$UnifediApiInstanceFederationImplCopyWith<$Res>
     implements $UnifediApiInstanceFederationCopyWith<$Res> {
-  factory _$UnifediApiInstanceFederationCopyWith(
-          _UnifediApiInstanceFederation value,
-          $Res Function(_UnifediApiInstanceFederation) then) =
-      __$UnifediApiInstanceFederationCopyWithImpl<$Res>;
+  factory _$$UnifediApiInstanceFederationImplCopyWith(
+          _$UnifediApiInstanceFederationImpl value,
+          $Res Function(_$UnifediApiInstanceFederationImpl) then) =
+      __$$UnifediApiInstanceFederationImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-          bool? enabled,
-      @HiveField(1)
-          bool? exclusions,
+      {@HiveField(0) bool? enabled,
+      @HiveField(1) bool? exclusions,
       @HiveField(2)
       @JsonKey(name: 'mrf_object_age')
-          UnifediApiInstanceFederationMfrObjectAge? mrfObjectAge,
-      @HiveField(3)
-      @JsonKey(name: 'mrf_policies')
-          List<String>? mrfPolicies,
+      UnifediApiInstanceFederationMfrObjectAge? mrfObjectAge,
+      @HiveField(3) @JsonKey(name: 'mrf_policies') List<String>? mrfPolicies,
       @HiveField(4)
       @JsonKey(name: 'quarantined_instances')
-          List<String>? quarantinedInstances});
+      List<String>? quarantinedInstances});
 
   @override
   $UnifediApiInstanceFederationMfrObjectAgeCopyWith<$Res>? get mrfObjectAge;
 }
 
 /// @nodoc
-class __$UnifediApiInstanceFederationCopyWithImpl<$Res>
-    extends _$UnifediApiInstanceFederationCopyWithImpl<$Res>
-    implements _$UnifediApiInstanceFederationCopyWith<$Res> {
-  __$UnifediApiInstanceFederationCopyWithImpl(
-      _UnifediApiInstanceFederation _value,
-      $Res Function(_UnifediApiInstanceFederation) _then)
-      : super(_value, (v) => _then(v as _UnifediApiInstanceFederation));
+class __$$UnifediApiInstanceFederationImplCopyWithImpl<$Res>
+    extends _$UnifediApiInstanceFederationCopyWithImpl<$Res,
+        _$UnifediApiInstanceFederationImpl>
+    implements _$$UnifediApiInstanceFederationImplCopyWith<$Res> {
+  __$$UnifediApiInstanceFederationImplCopyWithImpl(
+      _$UnifediApiInstanceFederationImpl _value,
+      $Res Function(_$UnifediApiInstanceFederationImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiInstanceFederation get _value =>
-      super._value as _UnifediApiInstanceFederation;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? enabled = freezed,
@@ -202,25 +165,25 @@ class __$UnifediApiInstanceFederationCopyWithImpl<$Res>
     Object? mrfPolicies = freezed,
     Object? quarantinedInstances = freezed,
   }) {
-    return _then(_UnifediApiInstanceFederation(
-      enabled: enabled == freezed
+    return _then(_$UnifediApiInstanceFederationImpl(
+      enabled: freezed == enabled
           ? _value.enabled
           : enabled // ignore: cast_nullable_to_non_nullable
               as bool?,
-      exclusions: exclusions == freezed
+      exclusions: freezed == exclusions
           ? _value.exclusions
           : exclusions // ignore: cast_nullable_to_non_nullable
               as bool?,
-      mrfObjectAge: mrfObjectAge == freezed
+      mrfObjectAge: freezed == mrfObjectAge
           ? _value.mrfObjectAge
           : mrfObjectAge // ignore: cast_nullable_to_non_nullable
               as UnifediApiInstanceFederationMfrObjectAge?,
-      mrfPolicies: mrfPolicies == freezed
-          ? _value.mrfPolicies
+      mrfPolicies: freezed == mrfPolicies
+          ? _value._mrfPolicies
           : mrfPolicies // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      quarantinedInstances: quarantinedInstances == freezed
-          ? _value.quarantinedInstances
+      quarantinedInstances: freezed == quarantinedInstances
+          ? _value._quarantinedInstances
           : quarantinedInstances // ignore: cast_nullable_to_non_nullable
               as List<String>?,
     ));
@@ -229,24 +192,24 @@ class __$UnifediApiInstanceFederationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiInstanceFederation implements _UnifediApiInstanceFederation {
-  const _$_UnifediApiInstanceFederation(
-      {@HiveField(0)
-          required this.enabled,
-      @HiveField(1)
-          required this.exclusions,
-      @HiveField(2)
-      @JsonKey(name: 'mrf_object_age')
-          required this.mrfObjectAge,
+class _$UnifediApiInstanceFederationImpl
+    implements _UnifediApiInstanceFederation {
+  const _$UnifediApiInstanceFederationImpl(
+      {@HiveField(0) required this.enabled,
+      @HiveField(1) required this.exclusions,
+      @HiveField(2) @JsonKey(name: 'mrf_object_age') required this.mrfObjectAge,
       @HiveField(3)
       @JsonKey(name: 'mrf_policies')
-          required this.mrfPolicies,
+      required final List<String>? mrfPolicies,
       @HiveField(4)
       @JsonKey(name: 'quarantined_instances')
-          required this.quarantinedInstances});
+      required final List<String>? quarantinedInstances})
+      : _mrfPolicies = mrfPolicies,
+        _quarantinedInstances = quarantinedInstances;
 
-  factory _$_UnifediApiInstanceFederation.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiInstanceFederationFromJson(json);
+  factory _$UnifediApiInstanceFederationImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$UnifediApiInstanceFederationImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -258,14 +221,30 @@ class _$_UnifediApiInstanceFederation implements _UnifediApiInstanceFederation {
   @HiveField(2)
   @JsonKey(name: 'mrf_object_age')
   final UnifediApiInstanceFederationMfrObjectAge? mrfObjectAge;
+  final List<String>? _mrfPolicies;
   @override
   @HiveField(3)
   @JsonKey(name: 'mrf_policies')
-  final List<String>? mrfPolicies;
+  List<String>? get mrfPolicies {
+    final value = _mrfPolicies;
+    if (value == null) return null;
+    if (_mrfPolicies is EqualUnmodifiableListView) return _mrfPolicies;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  final List<String>? _quarantinedInstances;
   @override
   @HiveField(4)
   @JsonKey(name: 'quarantined_instances')
-  final List<String>? quarantinedInstances;
+  List<String>? get quarantinedInstances {
+    final value = _quarantinedInstances;
+    if (value == null) return null;
+    if (_quarantinedInstances is EqualUnmodifiableListView)
+      return _quarantinedInstances;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   @override
   String toString() {
@@ -273,62 +252,65 @@ class _$_UnifediApiInstanceFederation implements _UnifediApiInstanceFederation {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiInstanceFederation &&
+            other is _$UnifediApiInstanceFederationImpl &&
             (identical(other.enabled, enabled) || other.enabled == enabled) &&
             (identical(other.exclusions, exclusions) ||
                 other.exclusions == exclusions) &&
             (identical(other.mrfObjectAge, mrfObjectAge) ||
                 other.mrfObjectAge == mrfObjectAge) &&
             const DeepCollectionEquality()
-                .equals(other.mrfPolicies, mrfPolicies) &&
+                .equals(other._mrfPolicies, _mrfPolicies) &&
             const DeepCollectionEquality()
-                .equals(other.quarantinedInstances, quarantinedInstances));
+                .equals(other._quarantinedInstances, _quarantinedInstances));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       enabled,
       exclusions,
       mrfObjectAge,
-      const DeepCollectionEquality().hash(mrfPolicies),
-      const DeepCollectionEquality().hash(quarantinedInstances));
+      const DeepCollectionEquality().hash(_mrfPolicies),
+      const DeepCollectionEquality().hash(_quarantinedInstances));
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiInstanceFederationCopyWith<_UnifediApiInstanceFederation>
-      get copyWith => __$UnifediApiInstanceFederationCopyWithImpl<
-          _UnifediApiInstanceFederation>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiInstanceFederationImplCopyWith<
+          _$UnifediApiInstanceFederationImpl>
+      get copyWith => __$$UnifediApiInstanceFederationImplCopyWithImpl<
+          _$UnifediApiInstanceFederationImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiInstanceFederationToJson(this);
+    return _$$UnifediApiInstanceFederationImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiInstanceFederation
     implements UnifediApiInstanceFederation {
   const factory _UnifediApiInstanceFederation(
-          {@HiveField(0)
-              required bool? enabled,
-          @HiveField(1)
-              required bool? exclusions,
+          {@HiveField(0) required final bool? enabled,
+          @HiveField(1) required final bool? exclusions,
           @HiveField(2)
           @JsonKey(name: 'mrf_object_age')
-              required UnifediApiInstanceFederationMfrObjectAge? mrfObjectAge,
+          required final UnifediApiInstanceFederationMfrObjectAge? mrfObjectAge,
           @HiveField(3)
           @JsonKey(name: 'mrf_policies')
-              required List<String>? mrfPolicies,
+          required final List<String>? mrfPolicies,
           @HiveField(4)
           @JsonKey(name: 'quarantined_instances')
-              required List<String>? quarantinedInstances}) =
-      _$_UnifediApiInstanceFederation;
+          required final List<String>? quarantinedInstances}) =
+      _$UnifediApiInstanceFederationImpl;
 
   factory _UnifediApiInstanceFederation.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiInstanceFederation.fromJson;
+      _$UnifediApiInstanceFederationImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -350,6 +332,7 @@ abstract class _UnifediApiInstanceFederation
   List<String>? get quarantinedInstances;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiInstanceFederationCopyWith<_UnifediApiInstanceFederation>
+  _$$UnifediApiInstanceFederationImplCopyWith<
+          _$UnifediApiInstanceFederationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

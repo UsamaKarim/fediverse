@@ -81,26 +81,26 @@ class MastodonApiAccountRelationshipAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiAccountRelationship _$$_MastodonApiAccountRelationshipFromJson(
-        Map<String, dynamic> json) =>
-    _$_MastodonApiAccountRelationship(
-      blocking: json['blocking'] as bool?,
-      domainBlocking: json['domain_blocking'] as bool?,
-      endorsed: json['endorsed'] as bool?,
-      followedBy: json['followed_by'] as bool?,
-      following: json['following'] as bool?,
-      id: json['id'] as String?,
-      muting: json['muting'] as bool?,
-      mutingNotifications: json['muting_notifications'] as bool?,
-      requested: json['requested'] as bool?,
-      showingReblogs: json['showing_reblogs'] as bool?,
-      blockedBy: json['blocked_by'] as bool?,
-      note: json['note'] as String?,
-      notifying: json['notifying'] as bool?,
-    );
+_$MastodonApiAccountRelationshipImpl
+    _$$MastodonApiAccountRelationshipImplFromJson(Map<String, dynamic> json) =>
+        _$MastodonApiAccountRelationshipImpl(
+          blocking: json['blocking'] as bool?,
+          domainBlocking: json['domain_blocking'] as bool?,
+          endorsed: json['endorsed'] as bool?,
+          followedBy: json['followed_by'] as bool?,
+          following: json['following'] as bool?,
+          id: json['id'] as String?,
+          muting: json['muting'] as bool?,
+          mutingNotifications: json['muting_notifications'] as bool?,
+          requested: json['requested'] as bool?,
+          showingReblogs: json['showing_reblogs'] as bool?,
+          blockedBy: json['blocked_by'] as bool?,
+          note: json['note'] as String?,
+          notifying: json['notifying'] as bool?,
+        );
 
-Map<String, dynamic> _$$_MastodonApiAccountRelationshipToJson(
-    _$_MastodonApiAccountRelationship instance) {
+Map<String, dynamic> _$$MastodonApiAccountRelationshipImplToJson(
+    _$MastodonApiAccountRelationshipImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

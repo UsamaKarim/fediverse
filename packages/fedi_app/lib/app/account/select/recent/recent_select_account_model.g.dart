@@ -45,16 +45,16 @@ class RecentSelectAccountListAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_RecentSelectAccountList _$$_RecentSelectAccountListFromJson(
+_$RecentSelectAccountListImpl _$$RecentSelectAccountListImplFromJson(
         Map<String, dynamic> json) =>
-    _$_RecentSelectAccountList(
+    _$RecentSelectAccountListImpl(
       recentItems: (json['recentItems'] as List<dynamic>?)
           ?.map((e) => UnifediApiAccount.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
-Map<String, dynamic> _$$_RecentSelectAccountListToJson(
-    _$_RecentSelectAccountList instance) {
+Map<String, dynamic> _$$RecentSelectAccountListImplToJson(
+    _$RecentSelectAccountListImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

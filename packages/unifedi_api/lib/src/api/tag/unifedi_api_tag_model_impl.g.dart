@@ -59,8 +59,8 @@ class UnifediApiTagAdapter extends TypeAdapter<UnifediApiTag> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiTag _$$_UnifediApiTagFromJson(Map<String, dynamic> json) =>
-    _$_UnifediApiTag(
+_$UnifediApiTagImpl _$$UnifediApiTagImplFromJson(Map<String, dynamic> json) =>
+    _$UnifediApiTagImpl(
       name: json['name'] as String,
       url: json['url'] as String?,
       history: json['history'] == null
@@ -71,10 +71,10 @@ _$_UnifediApiTag _$$_UnifediApiTagFromJson(Map<String, dynamic> json) =>
       lastStatusAt: json['last_status_at'] == null
           ? null
           : DateTime.parse(json['last_status_at'] as String),
-      statusesCount: json['statuses_count'] as int?,
+      statusesCount: (json['statuses_count'] as num?)?.toInt(),
     );
 
-Map<String, dynamic> _$$_UnifediApiTagToJson(_$_UnifediApiTag instance) {
+Map<String, dynamic> _$$UnifediApiTagImplToJson(_$UnifediApiTagImpl instance) {
   final val = <String, dynamic>{
     'name': instance.name,
   };

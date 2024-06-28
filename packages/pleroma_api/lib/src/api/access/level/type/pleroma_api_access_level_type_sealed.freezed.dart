@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_access_level_type_sealed.dart';
 
@@ -11,49 +12,12 @@ part of 'pleroma_api_access_level_type_sealed.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$PleromaApiAccessLevelTypeTearOff {
-  const _$PleromaApiAccessLevelTypeTearOff();
-
-  _Public public(
-      {int level = PleromaApiAccessLevelType.publicLevelIntValue,
-      String stringValue = PleromaApiAccessLevelType.publicLevelStringValue}) {
-    return _Public(
-      level: level,
-      stringValue: stringValue,
-    );
-  }
-
-  _Application application(
-      {int level = PleromaApiAccessLevelType.applicationLevelIntValue,
-      String stringValue =
-          PleromaApiAccessLevelType.applicationLevelStringValue}) {
-    return _Application(
-      level: level,
-      stringValue: stringValue,
-    );
-  }
-
-  _Valid user(
-      {int level = PleromaApiAccessLevelType.userLevelIntValue,
-      String stringValue = PleromaApiAccessLevelType.userLevelStringValue}) {
-    return _Valid(
-      level: level,
-      stringValue: stringValue,
-    );
-  }
-}
-
-/// @nodoc
-const $PleromaApiAccessLevelType = _$PleromaApiAccessLevelTypeTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$PleromaApiAccessLevelType {
   int get level => throw _privateConstructorUsedError;
   String get stringValue => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(int level, String stringValue) public,
@@ -63,9 +27,9 @@ mixin _$PleromaApiAccessLevelType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int level, String stringValue)? public,
-    TResult Function(int level, String stringValue)? application,
-    TResult Function(int level, String stringValue)? user,
+    TResult? Function(int level, String stringValue)? public,
+    TResult? Function(int level, String stringValue)? application,
+    TResult? Function(int level, String stringValue)? user,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -85,9 +49,9 @@ mixin _$PleromaApiAccessLevelType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Public value)? public,
-    TResult Function(_Application value)? application,
-    TResult Function(_Valid value)? user,
+    TResult? Function(_Public value)? public,
+    TResult? Function(_Application value)? application,
+    TResult? Function(_Valid value)? user,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -108,67 +72,72 @@ mixin _$PleromaApiAccessLevelType {
 abstract class $PleromaApiAccessLevelTypeCopyWith<$Res> {
   factory $PleromaApiAccessLevelTypeCopyWith(PleromaApiAccessLevelType value,
           $Res Function(PleromaApiAccessLevelType) then) =
-      _$PleromaApiAccessLevelTypeCopyWithImpl<$Res>;
+      _$PleromaApiAccessLevelTypeCopyWithImpl<$Res, PleromaApiAccessLevelType>;
+  @useResult
   $Res call({int level, String stringValue});
 }
 
 /// @nodoc
-class _$PleromaApiAccessLevelTypeCopyWithImpl<$Res>
+class _$PleromaApiAccessLevelTypeCopyWithImpl<$Res,
+        $Val extends PleromaApiAccessLevelType>
     implements $PleromaApiAccessLevelTypeCopyWith<$Res> {
   _$PleromaApiAccessLevelTypeCopyWithImpl(this._value, this._then);
 
-  final PleromaApiAccessLevelType _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiAccessLevelType) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? level = freezed,
-    Object? stringValue = freezed,
+    Object? level = null,
+    Object? stringValue = null,
   }) {
     return _then(_value.copyWith(
-      level: level == freezed
+      level: null == level
           ? _value.level
           : level // ignore: cast_nullable_to_non_nullable
               as int,
-      stringValue: stringValue == freezed
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PublicCopyWith<$Res>
+abstract class _$$PublicImplCopyWith<$Res>
     implements $PleromaApiAccessLevelTypeCopyWith<$Res> {
-  factory _$PublicCopyWith(_Public value, $Res Function(_Public) then) =
-      __$PublicCopyWithImpl<$Res>;
+  factory _$$PublicImplCopyWith(
+          _$PublicImpl value, $Res Function(_$PublicImpl) then) =
+      __$$PublicImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int level, String stringValue});
 }
 
 /// @nodoc
-class __$PublicCopyWithImpl<$Res>
-    extends _$PleromaApiAccessLevelTypeCopyWithImpl<$Res>
-    implements _$PublicCopyWith<$Res> {
-  __$PublicCopyWithImpl(_Public _value, $Res Function(_Public) _then)
-      : super(_value, (v) => _then(v as _Public));
+class __$$PublicImplCopyWithImpl<$Res>
+    extends _$PleromaApiAccessLevelTypeCopyWithImpl<$Res, _$PublicImpl>
+    implements _$$PublicImplCopyWith<$Res> {
+  __$$PublicImplCopyWithImpl(
+      _$PublicImpl _value, $Res Function(_$PublicImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Public get _value => super._value as _Public;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? level = freezed,
-    Object? stringValue = freezed,
+    Object? level = null,
+    Object? stringValue = null,
   }) {
-    return _then(_Public(
-      level: level == freezed
+    return _then(_$PublicImpl(
+      level: null == level
           ? _value.level
           : level // ignore: cast_nullable_to_non_nullable
               as int,
-      stringValue: stringValue == freezed
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -178,16 +147,16 @@ class __$PublicCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Public implements _Public {
-  const _$_Public(
+class _$PublicImpl implements _Public {
+  const _$PublicImpl(
       {this.level = PleromaApiAccessLevelType.publicLevelIntValue,
       this.stringValue = PleromaApiAccessLevelType.publicLevelStringValue});
 
-  @JsonKey(defaultValue: PleromaApiAccessLevelType.publicLevelIntValue)
   @override
+  @JsonKey()
   final int level;
-  @JsonKey(defaultValue: PleromaApiAccessLevelType.publicLevelStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -196,10 +165,10 @@ class _$_Public implements _Public {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Public &&
+            other is _$PublicImpl &&
             (identical(other.level, level) || other.level == level) &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
@@ -210,8 +179,9 @@ class _$_Public implements _Public {
 
   @JsonKey(ignore: true)
   @override
-  _$PublicCopyWith<_Public> get copyWith =>
-      __$PublicCopyWithImpl<_Public>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PublicImplCopyWith<_$PublicImpl> get copyWith =>
+      __$$PublicImplCopyWithImpl<_$PublicImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -226,9 +196,9 @@ class _$_Public implements _Public {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int level, String stringValue)? public,
-    TResult Function(int level, String stringValue)? application,
-    TResult Function(int level, String stringValue)? user,
+    TResult? Function(int level, String stringValue)? public,
+    TResult? Function(int level, String stringValue)? application,
+    TResult? Function(int level, String stringValue)? user,
   }) {
     return public?.call(level, stringValue);
   }
@@ -260,9 +230,9 @@ class _$_Public implements _Public {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Public value)? public,
-    TResult Function(_Application value)? application,
-    TResult Function(_Valid value)? user,
+    TResult? Function(_Public value)? public,
+    TResult? Function(_Application value)? application,
+    TResult? Function(_Valid value)? user,
   }) {
     return public?.call(this);
   }
@@ -283,7 +253,8 @@ class _$_Public implements _Public {
 }
 
 abstract class _Public implements PleromaApiAccessLevelType {
-  const factory _Public({int level, String stringValue}) = _$_Public;
+  const factory _Public({final int level, final String stringValue}) =
+      _$PublicImpl;
 
   @override
   int get level;
@@ -291,41 +262,41 @@ abstract class _Public implements PleromaApiAccessLevelType {
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$PublicCopyWith<_Public> get copyWith => throw _privateConstructorUsedError;
+  _$$PublicImplCopyWith<_$PublicImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ApplicationCopyWith<$Res>
+abstract class _$$ApplicationImplCopyWith<$Res>
     implements $PleromaApiAccessLevelTypeCopyWith<$Res> {
-  factory _$ApplicationCopyWith(
-          _Application value, $Res Function(_Application) then) =
-      __$ApplicationCopyWithImpl<$Res>;
+  factory _$$ApplicationImplCopyWith(
+          _$ApplicationImpl value, $Res Function(_$ApplicationImpl) then) =
+      __$$ApplicationImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int level, String stringValue});
 }
 
 /// @nodoc
-class __$ApplicationCopyWithImpl<$Res>
-    extends _$PleromaApiAccessLevelTypeCopyWithImpl<$Res>
-    implements _$ApplicationCopyWith<$Res> {
-  __$ApplicationCopyWithImpl(
-      _Application _value, $Res Function(_Application) _then)
-      : super(_value, (v) => _then(v as _Application));
+class __$$ApplicationImplCopyWithImpl<$Res>
+    extends _$PleromaApiAccessLevelTypeCopyWithImpl<$Res, _$ApplicationImpl>
+    implements _$$ApplicationImplCopyWith<$Res> {
+  __$$ApplicationImplCopyWithImpl(
+      _$ApplicationImpl _value, $Res Function(_$ApplicationImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Application get _value => super._value as _Application;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? level = freezed,
-    Object? stringValue = freezed,
+    Object? level = null,
+    Object? stringValue = null,
   }) {
-    return _then(_Application(
-      level: level == freezed
+    return _then(_$ApplicationImpl(
+      level: null == level
           ? _value.level
           : level // ignore: cast_nullable_to_non_nullable
               as int,
-      stringValue: stringValue == freezed
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -335,17 +306,17 @@ class __$ApplicationCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Application implements _Application {
-  const _$_Application(
+class _$ApplicationImpl implements _Application {
+  const _$ApplicationImpl(
       {this.level = PleromaApiAccessLevelType.applicationLevelIntValue,
       this.stringValue =
           PleromaApiAccessLevelType.applicationLevelStringValue});
 
-  @JsonKey(defaultValue: PleromaApiAccessLevelType.applicationLevelIntValue)
   @override
+  @JsonKey()
   final int level;
-  @JsonKey(defaultValue: PleromaApiAccessLevelType.applicationLevelStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -354,10 +325,10 @@ class _$_Application implements _Application {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Application &&
+            other is _$ApplicationImpl &&
             (identical(other.level, level) || other.level == level) &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
@@ -368,8 +339,9 @@ class _$_Application implements _Application {
 
   @JsonKey(ignore: true)
   @override
-  _$ApplicationCopyWith<_Application> get copyWith =>
-      __$ApplicationCopyWithImpl<_Application>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ApplicationImplCopyWith<_$ApplicationImpl> get copyWith =>
+      __$$ApplicationImplCopyWithImpl<_$ApplicationImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -384,9 +356,9 @@ class _$_Application implements _Application {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int level, String stringValue)? public,
-    TResult Function(int level, String stringValue)? application,
-    TResult Function(int level, String stringValue)? user,
+    TResult? Function(int level, String stringValue)? public,
+    TResult? Function(int level, String stringValue)? application,
+    TResult? Function(int level, String stringValue)? user,
   }) {
     return application?.call(level, stringValue);
   }
@@ -418,9 +390,9 @@ class _$_Application implements _Application {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Public value)? public,
-    TResult Function(_Application value)? application,
-    TResult Function(_Valid value)? user,
+    TResult? Function(_Public value)? public,
+    TResult? Function(_Application value)? application,
+    TResult? Function(_Valid value)? user,
   }) {
     return application?.call(this);
   }
@@ -441,7 +413,8 @@ class _$_Application implements _Application {
 }
 
 abstract class _Application implements PleromaApiAccessLevelType {
-  const factory _Application({int level, String stringValue}) = _$_Application;
+  const factory _Application({final int level, final String stringValue}) =
+      _$ApplicationImpl;
 
   @override
   int get level;
@@ -449,40 +422,41 @@ abstract class _Application implements PleromaApiAccessLevelType {
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$ApplicationCopyWith<_Application> get copyWith =>
+  _$$ApplicationImplCopyWith<_$ApplicationImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ValidCopyWith<$Res>
+abstract class _$$ValidImplCopyWith<$Res>
     implements $PleromaApiAccessLevelTypeCopyWith<$Res> {
-  factory _$ValidCopyWith(_Valid value, $Res Function(_Valid) then) =
-      __$ValidCopyWithImpl<$Res>;
+  factory _$$ValidImplCopyWith(
+          _$ValidImpl value, $Res Function(_$ValidImpl) then) =
+      __$$ValidImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int level, String stringValue});
 }
 
 /// @nodoc
-class __$ValidCopyWithImpl<$Res>
-    extends _$PleromaApiAccessLevelTypeCopyWithImpl<$Res>
-    implements _$ValidCopyWith<$Res> {
-  __$ValidCopyWithImpl(_Valid _value, $Res Function(_Valid) _then)
-      : super(_value, (v) => _then(v as _Valid));
+class __$$ValidImplCopyWithImpl<$Res>
+    extends _$PleromaApiAccessLevelTypeCopyWithImpl<$Res, _$ValidImpl>
+    implements _$$ValidImplCopyWith<$Res> {
+  __$$ValidImplCopyWithImpl(
+      _$ValidImpl _value, $Res Function(_$ValidImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Valid get _value => super._value as _Valid;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? level = freezed,
-    Object? stringValue = freezed,
+    Object? level = null,
+    Object? stringValue = null,
   }) {
-    return _then(_Valid(
-      level: level == freezed
+    return _then(_$ValidImpl(
+      level: null == level
           ? _value.level
           : level // ignore: cast_nullable_to_non_nullable
               as int,
-      stringValue: stringValue == freezed
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -492,16 +466,16 @@ class __$ValidCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Valid implements _Valid {
-  const _$_Valid(
+class _$ValidImpl implements _Valid {
+  const _$ValidImpl(
       {this.level = PleromaApiAccessLevelType.userLevelIntValue,
       this.stringValue = PleromaApiAccessLevelType.userLevelStringValue});
 
-  @JsonKey(defaultValue: PleromaApiAccessLevelType.userLevelIntValue)
   @override
+  @JsonKey()
   final int level;
-  @JsonKey(defaultValue: PleromaApiAccessLevelType.userLevelStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -510,10 +484,10 @@ class _$_Valid implements _Valid {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Valid &&
+            other is _$ValidImpl &&
             (identical(other.level, level) || other.level == level) &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
@@ -524,8 +498,9 @@ class _$_Valid implements _Valid {
 
   @JsonKey(ignore: true)
   @override
-  _$ValidCopyWith<_Valid> get copyWith =>
-      __$ValidCopyWithImpl<_Valid>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ValidImplCopyWith<_$ValidImpl> get copyWith =>
+      __$$ValidImplCopyWithImpl<_$ValidImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -540,9 +515,9 @@ class _$_Valid implements _Valid {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int level, String stringValue)? public,
-    TResult Function(int level, String stringValue)? application,
-    TResult Function(int level, String stringValue)? user,
+    TResult? Function(int level, String stringValue)? public,
+    TResult? Function(int level, String stringValue)? application,
+    TResult? Function(int level, String stringValue)? user,
   }) {
     return user?.call(level, stringValue);
   }
@@ -574,9 +549,9 @@ class _$_Valid implements _Valid {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Public value)? public,
-    TResult Function(_Application value)? application,
-    TResult Function(_Valid value)? user,
+    TResult? Function(_Public value)? public,
+    TResult? Function(_Application value)? application,
+    TResult? Function(_Valid value)? user,
   }) {
     return user?.call(this);
   }
@@ -597,7 +572,8 @@ class _$_Valid implements _Valid {
 }
 
 abstract class _Valid implements PleromaApiAccessLevelType {
-  const factory _Valid({int level, String stringValue}) = _$_Valid;
+  const factory _Valid({final int level, final String stringValue}) =
+      _$ValidImpl;
 
   @override
   int get level;
@@ -605,5 +581,6 @@ abstract class _Valid implements PleromaApiAccessLevelType {
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$ValidCopyWith<_Valid> get copyWith => throw _privateConstructorUsedError;
+  _$$ValidImplCopyWith<_$ValidImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }

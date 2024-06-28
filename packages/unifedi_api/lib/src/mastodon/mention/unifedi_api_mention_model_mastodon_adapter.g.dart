@@ -45,14 +45,15 @@ class UnifediApiMentionMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiMentionMastodonAdapter
-    _$$_UnifediApiMentionMastodonAdapterFromJson(Map<String, dynamic> json) =>
-        _$_UnifediApiMentionMastodonAdapter(
+_$UnifediApiMentionMastodonAdapterImpl
+    _$$UnifediApiMentionMastodonAdapterImplFromJson(
+            Map<String, dynamic> json) =>
+        _$UnifediApiMentionMastodonAdapterImpl(
           MastodonApiMention.fromJson(json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiMentionMastodonAdapterToJson(
-        _$_UnifediApiMentionMastodonAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiMentionMastodonAdapterImplToJson(
+        _$UnifediApiMentionMastodonAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

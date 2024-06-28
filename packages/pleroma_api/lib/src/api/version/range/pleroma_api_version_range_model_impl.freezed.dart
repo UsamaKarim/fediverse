@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_version_range_model_impl.dart';
 
@@ -11,43 +12,12 @@ part of 'pleroma_api_version_range_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiVersionRange _$PleromaApiVersionRangeFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiVersionRange.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiVersionRangeTearOff {
-  const _$PleromaApiVersionRangeTearOff();
-
-  _PleromaApiVersionRange call(
-      {@HiveField(0)
-          required PleromaApiVersion? min,
-      @HiveField(1)
-          required PleromaApiVersion? max,
-      @HiveField(2)
-      @JsonKey(name: 'min_inclusive')
-          bool minInclusive = true,
-      @HiveField(3)
-      @JsonKey(name: 'max_inclusive')
-          bool maxInclusive = false}) {
-    return _PleromaApiVersionRange(
-      min: min,
-      max: max,
-      minInclusive: minInclusive,
-      maxInclusive: maxInclusive,
-    );
-  }
-
-  PleromaApiVersionRange fromJson(Map<String, Object?> json) {
-    return PleromaApiVersionRange.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiVersionRange = _$PleromaApiVersionRangeTearOff();
 
 /// @nodoc
 mixin _$PleromaApiVersionRange {
@@ -72,7 +42,8 @@ mixin _$PleromaApiVersionRange {
 abstract class $PleromaApiVersionRangeCopyWith<$Res> {
   factory $PleromaApiVersionRangeCopyWith(PleromaApiVersionRange value,
           $Res Function(PleromaApiVersionRange) then) =
-      _$PleromaApiVersionRangeCopyWithImpl<$Res>;
+      _$PleromaApiVersionRangeCopyWithImpl<$Res, PleromaApiVersionRange>;
+  @useResult
   $Res call(
       {@HiveField(0) PleromaApiVersion? min,
       @HiveField(1) PleromaApiVersion? max,
@@ -84,71 +55,78 @@ abstract class $PleromaApiVersionRangeCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiVersionRangeCopyWithImpl<$Res>
+class _$PleromaApiVersionRangeCopyWithImpl<$Res,
+        $Val extends PleromaApiVersionRange>
     implements $PleromaApiVersionRangeCopyWith<$Res> {
   _$PleromaApiVersionRangeCopyWithImpl(this._value, this._then);
 
-  final PleromaApiVersionRange _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiVersionRange) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? min = freezed,
     Object? max = freezed,
-    Object? minInclusive = freezed,
-    Object? maxInclusive = freezed,
+    Object? minInclusive = null,
+    Object? maxInclusive = null,
   }) {
     return _then(_value.copyWith(
-      min: min == freezed
+      min: freezed == min
           ? _value.min
           : min // ignore: cast_nullable_to_non_nullable
               as PleromaApiVersion?,
-      max: max == freezed
+      max: freezed == max
           ? _value.max
           : max // ignore: cast_nullable_to_non_nullable
               as PleromaApiVersion?,
-      minInclusive: minInclusive == freezed
+      minInclusive: null == minInclusive
           ? _value.minInclusive
           : minInclusive // ignore: cast_nullable_to_non_nullable
               as bool,
-      maxInclusive: maxInclusive == freezed
+      maxInclusive: null == maxInclusive
           ? _value.maxInclusive
           : maxInclusive // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiVersionCopyWith<$Res>? get min {
     if (_value.min == null) {
       return null;
     }
 
     return $PleromaApiVersionCopyWith<$Res>(_value.min!, (value) {
-      return _then(_value.copyWith(min: value));
+      return _then(_value.copyWith(min: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiVersionCopyWith<$Res>? get max {
     if (_value.max == null) {
       return null;
     }
 
     return $PleromaApiVersionCopyWith<$Res>(_value.max!, (value) {
-      return _then(_value.copyWith(max: value));
+      return _then(_value.copyWith(max: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiVersionRangeCopyWith<$Res>
+abstract class _$$PleromaApiVersionRangeImplCopyWith<$Res>
     implements $PleromaApiVersionRangeCopyWith<$Res> {
-  factory _$PleromaApiVersionRangeCopyWith(_PleromaApiVersionRange value,
-          $Res Function(_PleromaApiVersionRange) then) =
-      __$PleromaApiVersionRangeCopyWithImpl<$Res>;
+  factory _$$PleromaApiVersionRangeImplCopyWith(
+          _$PleromaApiVersionRangeImpl value,
+          $Res Function(_$PleromaApiVersionRangeImpl) then) =
+      __$$PleromaApiVersionRangeImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) PleromaApiVersion? min,
       @HiveField(1) PleromaApiVersion? max,
@@ -162,37 +140,37 @@ abstract class _$PleromaApiVersionRangeCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiVersionRangeCopyWithImpl<$Res>
-    extends _$PleromaApiVersionRangeCopyWithImpl<$Res>
-    implements _$PleromaApiVersionRangeCopyWith<$Res> {
-  __$PleromaApiVersionRangeCopyWithImpl(_PleromaApiVersionRange _value,
-      $Res Function(_PleromaApiVersionRange) _then)
-      : super(_value, (v) => _then(v as _PleromaApiVersionRange));
+class __$$PleromaApiVersionRangeImplCopyWithImpl<$Res>
+    extends _$PleromaApiVersionRangeCopyWithImpl<$Res,
+        _$PleromaApiVersionRangeImpl>
+    implements _$$PleromaApiVersionRangeImplCopyWith<$Res> {
+  __$$PleromaApiVersionRangeImplCopyWithImpl(
+      _$PleromaApiVersionRangeImpl _value,
+      $Res Function(_$PleromaApiVersionRangeImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiVersionRange get _value => super._value as _PleromaApiVersionRange;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? min = freezed,
     Object? max = freezed,
-    Object? minInclusive = freezed,
-    Object? maxInclusive = freezed,
+    Object? minInclusive = null,
+    Object? maxInclusive = null,
   }) {
-    return _then(_PleromaApiVersionRange(
-      min: min == freezed
+    return _then(_$PleromaApiVersionRangeImpl(
+      min: freezed == min
           ? _value.min
           : min // ignore: cast_nullable_to_non_nullable
               as PleromaApiVersion?,
-      max: max == freezed
+      max: freezed == max
           ? _value.max
           : max // ignore: cast_nullable_to_non_nullable
               as PleromaApiVersion?,
-      minInclusive: minInclusive == freezed
+      minInclusive: null == minInclusive
           ? _value.minInclusive
           : minInclusive // ignore: cast_nullable_to_non_nullable
               as bool,
-      maxInclusive: maxInclusive == freezed
+      maxInclusive: null == maxInclusive
           ? _value.maxInclusive
           : maxInclusive // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -202,15 +180,15 @@ class __$PleromaApiVersionRangeCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiVersionRange implements _PleromaApiVersionRange {
-  const _$_PleromaApiVersionRange(
+class _$PleromaApiVersionRangeImpl implements _PleromaApiVersionRange {
+  const _$PleromaApiVersionRangeImpl(
       {@HiveField(0) required this.min,
       @HiveField(1) required this.max,
       @HiveField(2) @JsonKey(name: 'min_inclusive') this.minInclusive = true,
       @HiveField(3) @JsonKey(name: 'max_inclusive') this.maxInclusive = false});
 
-  factory _$_PleromaApiVersionRange.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiVersionRangeFromJson(json);
+  factory _$PleromaApiVersionRangeImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiVersionRangeImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -233,10 +211,10 @@ class _$_PleromaApiVersionRange implements _PleromaApiVersionRange {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiVersionRange &&
+            other is _$PleromaApiVersionRangeImpl &&
             (identical(other.min, min) || other.min == min) &&
             (identical(other.max, max) || other.max == max) &&
             (identical(other.minInclusive, minInclusive) ||
@@ -245,32 +223,37 @@ class _$_PleromaApiVersionRange implements _PleromaApiVersionRange {
                 other.maxInclusive == maxInclusive));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, min, max, minInclusive, maxInclusive);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiVersionRangeCopyWith<_PleromaApiVersionRange> get copyWith =>
-      __$PleromaApiVersionRangeCopyWithImpl<_PleromaApiVersionRange>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiVersionRangeImplCopyWith<_$PleromaApiVersionRangeImpl>
+      get copyWith => __$$PleromaApiVersionRangeImplCopyWithImpl<
+          _$PleromaApiVersionRangeImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiVersionRangeToJson(this);
+    return _$$PleromaApiVersionRangeImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiVersionRange implements PleromaApiVersionRange {
   const factory _PleromaApiVersionRange(
-          {@HiveField(0) required PleromaApiVersion? min,
-          @HiveField(1) required PleromaApiVersion? max,
-          @HiveField(2) @JsonKey(name: 'min_inclusive') bool minInclusive,
-          @HiveField(3) @JsonKey(name: 'max_inclusive') bool maxInclusive}) =
-      _$_PleromaApiVersionRange;
+      {@HiveField(0) required final PleromaApiVersion? min,
+      @HiveField(1) required final PleromaApiVersion? max,
+      @HiveField(2) @JsonKey(name: 'min_inclusive') final bool minInclusive,
+      @HiveField(3)
+      @JsonKey(name: 'max_inclusive')
+      final bool maxInclusive}) = _$PleromaApiVersionRangeImpl;
 
   factory _PleromaApiVersionRange.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiVersionRange.fromJson;
+      _$PleromaApiVersionRangeImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -288,6 +271,6 @@ abstract class _PleromaApiVersionRange implements PleromaApiVersionRange {
   bool get maxInclusive;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiVersionRangeCopyWith<_PleromaApiVersionRange> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PleromaApiVersionRangeImplCopyWith<_$PleromaApiVersionRangeImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

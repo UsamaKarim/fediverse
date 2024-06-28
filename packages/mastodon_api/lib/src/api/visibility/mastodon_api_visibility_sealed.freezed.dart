@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_visibility_sealed.dart';
 
@@ -11,54 +12,11 @@ part of 'mastodon_api_visibility_sealed.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$MastodonApiVisibilityTearOff {
-  const _$MastodonApiVisibilityTearOff();
-
-  _Public public(
-      {String stringValue = MastodonApiVisibility.publicStringValue}) {
-    return _Public(
-      stringValue: stringValue,
-    );
-  }
-
-  _Unlisted unlisted(
-      {String stringValue = MastodonApiVisibility.unlistedStringValue}) {
-    return _Unlisted(
-      stringValue: stringValue,
-    );
-  }
-
-  _Direct direct(
-      {String stringValue = MastodonApiVisibility.directStringValue}) {
-    return _Direct(
-      stringValue: stringValue,
-    );
-  }
-
-  _Private private(
-      {String stringValue = MastodonApiVisibility.privateStringValue}) {
-    return _Private(
-      stringValue: stringValue,
-    );
-  }
-
-  _Unknown unknown({required String stringValue}) {
-    return _Unknown(
-      stringValue: stringValue,
-    );
-  }
-}
-
-/// @nodoc
-const $MastodonApiVisibility = _$MastodonApiVisibilityTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$MastodonApiVisibility {
   String get stringValue => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String stringValue) public,
@@ -70,11 +28,11 @@ mixin _$MastodonApiVisibility {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? public,
-    TResult Function(String stringValue)? unlisted,
-    TResult Function(String stringValue)? direct,
-    TResult Function(String stringValue)? private,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? public,
+    TResult? Function(String stringValue)? unlisted,
+    TResult? Function(String stringValue)? direct,
+    TResult? Function(String stringValue)? private,
+    TResult? Function(String stringValue)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -98,11 +56,11 @@ mixin _$MastodonApiVisibility {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Public value)? public,
-    TResult Function(_Unlisted value)? unlisted,
-    TResult Function(_Direct value)? direct,
-    TResult Function(_Private value)? private,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Public value)? public,
+    TResult? Function(_Unlisted value)? unlisted,
+    TResult? Function(_Direct value)? direct,
+    TResult? Function(_Private value)? private,
+    TResult? Function(_Unknown value)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -125,57 +83,62 @@ mixin _$MastodonApiVisibility {
 abstract class $MastodonApiVisibilityCopyWith<$Res> {
   factory $MastodonApiVisibilityCopyWith(MastodonApiVisibility value,
           $Res Function(MastodonApiVisibility) then) =
-      _$MastodonApiVisibilityCopyWithImpl<$Res>;
+      _$MastodonApiVisibilityCopyWithImpl<$Res, MastodonApiVisibility>;
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class _$MastodonApiVisibilityCopyWithImpl<$Res>
+class _$MastodonApiVisibilityCopyWithImpl<$Res,
+        $Val extends MastodonApiVisibility>
     implements $MastodonApiVisibilityCopyWith<$Res> {
   _$MastodonApiVisibilityCopyWithImpl(this._value, this._then);
 
-  final MastodonApiVisibility _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiVisibility) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
     return _then(_value.copyWith(
-      stringValue: stringValue == freezed
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PublicCopyWith<$Res>
+abstract class _$$PublicImplCopyWith<$Res>
     implements $MastodonApiVisibilityCopyWith<$Res> {
-  factory _$PublicCopyWith(_Public value, $Res Function(_Public) then) =
-      __$PublicCopyWithImpl<$Res>;
+  factory _$$PublicImplCopyWith(
+          _$PublicImpl value, $Res Function(_$PublicImpl) then) =
+      __$$PublicImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$PublicCopyWithImpl<$Res>
-    extends _$MastodonApiVisibilityCopyWithImpl<$Res>
-    implements _$PublicCopyWith<$Res> {
-  __$PublicCopyWithImpl(_Public _value, $Res Function(_Public) _then)
-      : super(_value, (v) => _then(v as _Public));
+class __$$PublicImplCopyWithImpl<$Res>
+    extends _$MastodonApiVisibilityCopyWithImpl<$Res, _$PublicImpl>
+    implements _$$PublicImplCopyWith<$Res> {
+  __$$PublicImplCopyWithImpl(
+      _$PublicImpl _value, $Res Function(_$PublicImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Public get _value => super._value as _Public;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Public(
-      stringValue: stringValue == freezed
+    return _then(_$PublicImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -185,11 +148,12 @@ class __$PublicCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Public implements _Public {
-  const _$_Public({this.stringValue = MastodonApiVisibility.publicStringValue});
+class _$PublicImpl implements _Public {
+  const _$PublicImpl(
+      {this.stringValue = MastodonApiVisibility.publicStringValue});
 
-  @JsonKey(defaultValue: MastodonApiVisibility.publicStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -198,10 +162,10 @@ class _$_Public implements _Public {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Public &&
+            other is _$PublicImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -211,8 +175,9 @@ class _$_Public implements _Public {
 
   @JsonKey(ignore: true)
   @override
-  _$PublicCopyWith<_Public> get copyWith =>
-      __$PublicCopyWithImpl<_Public>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PublicImplCopyWith<_$PublicImpl> get copyWith =>
+      __$$PublicImplCopyWithImpl<_$PublicImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -229,11 +194,11 @@ class _$_Public implements _Public {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? public,
-    TResult Function(String stringValue)? unlisted,
-    TResult Function(String stringValue)? direct,
-    TResult Function(String stringValue)? private,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? public,
+    TResult? Function(String stringValue)? unlisted,
+    TResult? Function(String stringValue)? direct,
+    TResult? Function(String stringValue)? private,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return public?.call(stringValue);
   }
@@ -269,11 +234,11 @@ class _$_Public implements _Public {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Public value)? public,
-    TResult Function(_Unlisted value)? unlisted,
-    TResult Function(_Direct value)? direct,
-    TResult Function(_Private value)? private,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Public value)? public,
+    TResult? Function(_Unlisted value)? unlisted,
+    TResult? Function(_Direct value)? direct,
+    TResult? Function(_Private value)? private,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return public?.call(this);
   }
@@ -296,40 +261,42 @@ class _$_Public implements _Public {
 }
 
 abstract class _Public implements MastodonApiVisibility {
-  const factory _Public({String stringValue}) = _$_Public;
+  const factory _Public({final String stringValue}) = _$PublicImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$PublicCopyWith<_Public> get copyWith => throw _privateConstructorUsedError;
+  _$$PublicImplCopyWith<_$PublicImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$UnlistedCopyWith<$Res>
+abstract class _$$UnlistedImplCopyWith<$Res>
     implements $MastodonApiVisibilityCopyWith<$Res> {
-  factory _$UnlistedCopyWith(_Unlisted value, $Res Function(_Unlisted) then) =
-      __$UnlistedCopyWithImpl<$Res>;
+  factory _$$UnlistedImplCopyWith(
+          _$UnlistedImpl value, $Res Function(_$UnlistedImpl) then) =
+      __$$UnlistedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$UnlistedCopyWithImpl<$Res>
-    extends _$MastodonApiVisibilityCopyWithImpl<$Res>
-    implements _$UnlistedCopyWith<$Res> {
-  __$UnlistedCopyWithImpl(_Unlisted _value, $Res Function(_Unlisted) _then)
-      : super(_value, (v) => _then(v as _Unlisted));
+class __$$UnlistedImplCopyWithImpl<$Res>
+    extends _$MastodonApiVisibilityCopyWithImpl<$Res, _$UnlistedImpl>
+    implements _$$UnlistedImplCopyWith<$Res> {
+  __$$UnlistedImplCopyWithImpl(
+      _$UnlistedImpl _value, $Res Function(_$UnlistedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Unlisted get _value => super._value as _Unlisted;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Unlisted(
-      stringValue: stringValue == freezed
+    return _then(_$UnlistedImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -339,12 +306,12 @@ class __$UnlistedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Unlisted implements _Unlisted {
-  const _$_Unlisted(
+class _$UnlistedImpl implements _Unlisted {
+  const _$UnlistedImpl(
       {this.stringValue = MastodonApiVisibility.unlistedStringValue});
 
-  @JsonKey(defaultValue: MastodonApiVisibility.unlistedStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -353,10 +320,10 @@ class _$_Unlisted implements _Unlisted {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Unlisted &&
+            other is _$UnlistedImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -366,8 +333,9 @@ class _$_Unlisted implements _Unlisted {
 
   @JsonKey(ignore: true)
   @override
-  _$UnlistedCopyWith<_Unlisted> get copyWith =>
-      __$UnlistedCopyWithImpl<_Unlisted>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnlistedImplCopyWith<_$UnlistedImpl> get copyWith =>
+      __$$UnlistedImplCopyWithImpl<_$UnlistedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -384,11 +352,11 @@ class _$_Unlisted implements _Unlisted {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? public,
-    TResult Function(String stringValue)? unlisted,
-    TResult Function(String stringValue)? direct,
-    TResult Function(String stringValue)? private,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? public,
+    TResult? Function(String stringValue)? unlisted,
+    TResult? Function(String stringValue)? direct,
+    TResult? Function(String stringValue)? private,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return unlisted?.call(stringValue);
   }
@@ -424,11 +392,11 @@ class _$_Unlisted implements _Unlisted {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Public value)? public,
-    TResult Function(_Unlisted value)? unlisted,
-    TResult Function(_Direct value)? direct,
-    TResult Function(_Private value)? private,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Public value)? public,
+    TResult? Function(_Unlisted value)? unlisted,
+    TResult? Function(_Direct value)? direct,
+    TResult? Function(_Private value)? private,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return unlisted?.call(this);
   }
@@ -451,41 +419,42 @@ class _$_Unlisted implements _Unlisted {
 }
 
 abstract class _Unlisted implements MastodonApiVisibility {
-  const factory _Unlisted({String stringValue}) = _$_Unlisted;
+  const factory _Unlisted({final String stringValue}) = _$UnlistedImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$UnlistedCopyWith<_Unlisted> get copyWith =>
+  _$$UnlistedImplCopyWith<_$UnlistedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$DirectCopyWith<$Res>
+abstract class _$$DirectImplCopyWith<$Res>
     implements $MastodonApiVisibilityCopyWith<$Res> {
-  factory _$DirectCopyWith(_Direct value, $Res Function(_Direct) then) =
-      __$DirectCopyWithImpl<$Res>;
+  factory _$$DirectImplCopyWith(
+          _$DirectImpl value, $Res Function(_$DirectImpl) then) =
+      __$$DirectImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$DirectCopyWithImpl<$Res>
-    extends _$MastodonApiVisibilityCopyWithImpl<$Res>
-    implements _$DirectCopyWith<$Res> {
-  __$DirectCopyWithImpl(_Direct _value, $Res Function(_Direct) _then)
-      : super(_value, (v) => _then(v as _Direct));
+class __$$DirectImplCopyWithImpl<$Res>
+    extends _$MastodonApiVisibilityCopyWithImpl<$Res, _$DirectImpl>
+    implements _$$DirectImplCopyWith<$Res> {
+  __$$DirectImplCopyWithImpl(
+      _$DirectImpl _value, $Res Function(_$DirectImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Direct get _value => super._value as _Direct;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Direct(
-      stringValue: stringValue == freezed
+    return _then(_$DirectImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -495,11 +464,12 @@ class __$DirectCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Direct implements _Direct {
-  const _$_Direct({this.stringValue = MastodonApiVisibility.directStringValue});
+class _$DirectImpl implements _Direct {
+  const _$DirectImpl(
+      {this.stringValue = MastodonApiVisibility.directStringValue});
 
-  @JsonKey(defaultValue: MastodonApiVisibility.directStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -508,10 +478,10 @@ class _$_Direct implements _Direct {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Direct &&
+            other is _$DirectImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -521,8 +491,9 @@ class _$_Direct implements _Direct {
 
   @JsonKey(ignore: true)
   @override
-  _$DirectCopyWith<_Direct> get copyWith =>
-      __$DirectCopyWithImpl<_Direct>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DirectImplCopyWith<_$DirectImpl> get copyWith =>
+      __$$DirectImplCopyWithImpl<_$DirectImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -539,11 +510,11 @@ class _$_Direct implements _Direct {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? public,
-    TResult Function(String stringValue)? unlisted,
-    TResult Function(String stringValue)? direct,
-    TResult Function(String stringValue)? private,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? public,
+    TResult? Function(String stringValue)? unlisted,
+    TResult? Function(String stringValue)? direct,
+    TResult? Function(String stringValue)? private,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return direct?.call(stringValue);
   }
@@ -579,11 +550,11 @@ class _$_Direct implements _Direct {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Public value)? public,
-    TResult Function(_Unlisted value)? unlisted,
-    TResult Function(_Direct value)? direct,
-    TResult Function(_Private value)? private,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Public value)? public,
+    TResult? Function(_Unlisted value)? unlisted,
+    TResult? Function(_Direct value)? direct,
+    TResult? Function(_Private value)? private,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return direct?.call(this);
   }
@@ -606,40 +577,42 @@ class _$_Direct implements _Direct {
 }
 
 abstract class _Direct implements MastodonApiVisibility {
-  const factory _Direct({String stringValue}) = _$_Direct;
+  const factory _Direct({final String stringValue}) = _$DirectImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$DirectCopyWith<_Direct> get copyWith => throw _privateConstructorUsedError;
+  _$$DirectImplCopyWith<_$DirectImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$PrivateCopyWith<$Res>
+abstract class _$$PrivateImplCopyWith<$Res>
     implements $MastodonApiVisibilityCopyWith<$Res> {
-  factory _$PrivateCopyWith(_Private value, $Res Function(_Private) then) =
-      __$PrivateCopyWithImpl<$Res>;
+  factory _$$PrivateImplCopyWith(
+          _$PrivateImpl value, $Res Function(_$PrivateImpl) then) =
+      __$$PrivateImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$PrivateCopyWithImpl<$Res>
-    extends _$MastodonApiVisibilityCopyWithImpl<$Res>
-    implements _$PrivateCopyWith<$Res> {
-  __$PrivateCopyWithImpl(_Private _value, $Res Function(_Private) _then)
-      : super(_value, (v) => _then(v as _Private));
+class __$$PrivateImplCopyWithImpl<$Res>
+    extends _$MastodonApiVisibilityCopyWithImpl<$Res, _$PrivateImpl>
+    implements _$$PrivateImplCopyWith<$Res> {
+  __$$PrivateImplCopyWithImpl(
+      _$PrivateImpl _value, $Res Function(_$PrivateImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Private get _value => super._value as _Private;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Private(
-      stringValue: stringValue == freezed
+    return _then(_$PrivateImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -649,12 +622,12 @@ class __$PrivateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Private implements _Private {
-  const _$_Private(
+class _$PrivateImpl implements _Private {
+  const _$PrivateImpl(
       {this.stringValue = MastodonApiVisibility.privateStringValue});
 
-  @JsonKey(defaultValue: MastodonApiVisibility.privateStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -663,10 +636,10 @@ class _$_Private implements _Private {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Private &&
+            other is _$PrivateImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -676,8 +649,9 @@ class _$_Private implements _Private {
 
   @JsonKey(ignore: true)
   @override
-  _$PrivateCopyWith<_Private> get copyWith =>
-      __$PrivateCopyWithImpl<_Private>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PrivateImplCopyWith<_$PrivateImpl> get copyWith =>
+      __$$PrivateImplCopyWithImpl<_$PrivateImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -694,11 +668,11 @@ class _$_Private implements _Private {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? public,
-    TResult Function(String stringValue)? unlisted,
-    TResult Function(String stringValue)? direct,
-    TResult Function(String stringValue)? private,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? public,
+    TResult? Function(String stringValue)? unlisted,
+    TResult? Function(String stringValue)? direct,
+    TResult? Function(String stringValue)? private,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return private?.call(stringValue);
   }
@@ -734,11 +708,11 @@ class _$_Private implements _Private {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Public value)? public,
-    TResult Function(_Unlisted value)? unlisted,
-    TResult Function(_Direct value)? direct,
-    TResult Function(_Private value)? private,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Public value)? public,
+    TResult? Function(_Unlisted value)? unlisted,
+    TResult? Function(_Direct value)? direct,
+    TResult? Function(_Private value)? private,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return private?.call(this);
   }
@@ -761,41 +735,42 @@ class _$_Private implements _Private {
 }
 
 abstract class _Private implements MastodonApiVisibility {
-  const factory _Private({String stringValue}) = _$_Private;
+  const factory _Private({final String stringValue}) = _$PrivateImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$PrivateCopyWith<_Private> get copyWith =>
+  _$$PrivateImplCopyWith<_$PrivateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$UnknownCopyWith<$Res>
+abstract class _$$UnknownImplCopyWith<$Res>
     implements $MastodonApiVisibilityCopyWith<$Res> {
-  factory _$UnknownCopyWith(_Unknown value, $Res Function(_Unknown) then) =
-      __$UnknownCopyWithImpl<$Res>;
+  factory _$$UnknownImplCopyWith(
+          _$UnknownImpl value, $Res Function(_$UnknownImpl) then) =
+      __$$UnknownImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$UnknownCopyWithImpl<$Res>
-    extends _$MastodonApiVisibilityCopyWithImpl<$Res>
-    implements _$UnknownCopyWith<$Res> {
-  __$UnknownCopyWithImpl(_Unknown _value, $Res Function(_Unknown) _then)
-      : super(_value, (v) => _then(v as _Unknown));
+class __$$UnknownImplCopyWithImpl<$Res>
+    extends _$MastodonApiVisibilityCopyWithImpl<$Res, _$UnknownImpl>
+    implements _$$UnknownImplCopyWith<$Res> {
+  __$$UnknownImplCopyWithImpl(
+      _$UnknownImpl _value, $Res Function(_$UnknownImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Unknown get _value => super._value as _Unknown;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Unknown(
-      stringValue: stringValue == freezed
+    return _then(_$UnknownImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -805,8 +780,8 @@ class __$UnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Unknown implements _Unknown {
-  const _$_Unknown({required this.stringValue});
+class _$UnknownImpl implements _Unknown {
+  const _$UnknownImpl({required this.stringValue});
 
   @override
   final String stringValue;
@@ -817,10 +792,10 @@ class _$_Unknown implements _Unknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Unknown &&
+            other is _$UnknownImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -830,8 +805,9 @@ class _$_Unknown implements _Unknown {
 
   @JsonKey(ignore: true)
   @override
-  _$UnknownCopyWith<_Unknown> get copyWith =>
-      __$UnknownCopyWithImpl<_Unknown>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnknownImplCopyWith<_$UnknownImpl> get copyWith =>
+      __$$UnknownImplCopyWithImpl<_$UnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -848,11 +824,11 @@ class _$_Unknown implements _Unknown {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? public,
-    TResult Function(String stringValue)? unlisted,
-    TResult Function(String stringValue)? direct,
-    TResult Function(String stringValue)? private,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? public,
+    TResult? Function(String stringValue)? unlisted,
+    TResult? Function(String stringValue)? direct,
+    TResult? Function(String stringValue)? private,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return unknown?.call(stringValue);
   }
@@ -888,11 +864,11 @@ class _$_Unknown implements _Unknown {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Public value)? public,
-    TResult Function(_Unlisted value)? unlisted,
-    TResult Function(_Direct value)? direct,
-    TResult Function(_Private value)? private,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Public value)? public,
+    TResult? Function(_Unlisted value)? unlisted,
+    TResult? Function(_Direct value)? direct,
+    TResult? Function(_Private value)? private,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return unknown?.call(this);
   }
@@ -915,12 +891,12 @@ class _$_Unknown implements _Unknown {
 }
 
 abstract class _Unknown implements MastodonApiVisibility {
-  const factory _Unknown({required String stringValue}) = _$_Unknown;
+  const factory _Unknown({required final String stringValue}) = _$UnknownImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$UnknownCopyWith<_Unknown> get copyWith =>
+  _$$UnknownImplCopyWith<_$UnknownImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

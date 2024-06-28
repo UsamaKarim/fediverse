@@ -48,17 +48,18 @@ class UnifediApiInstanceFederationMfrObjectAgePleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiInstanceFederationMfrObjectAgePleromaAdapter
-    _$$_UnifediApiInstanceFederationMfrObjectAgePleromaAdapterFromJson(
+_$UnifediApiInstanceFederationMfrObjectAgePleromaAdapterImpl
+    _$$UnifediApiInstanceFederationMfrObjectAgePleromaAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiInstanceFederationMfrObjectAgePleromaAdapter(
+        _$UnifediApiInstanceFederationMfrObjectAgePleromaAdapterImpl(
           PleromaApiInstanceFederationMfrObjectAge.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String,
-    dynamic> _$$_UnifediApiInstanceFederationMfrObjectAgePleromaAdapterToJson(
-        _$_UnifediApiInstanceFederationMfrObjectAgePleromaAdapter instance) =>
-    <String, dynamic>{
-      'value': instance.value.toJson(),
-    };
+Map<String, dynamic>
+    _$$UnifediApiInstanceFederationMfrObjectAgePleromaAdapterImplToJson(
+            _$UnifediApiInstanceFederationMfrObjectAgePleromaAdapterImpl
+                instance) =>
+        <String, dynamic>{
+          'value': instance.value.toJson(),
+        };

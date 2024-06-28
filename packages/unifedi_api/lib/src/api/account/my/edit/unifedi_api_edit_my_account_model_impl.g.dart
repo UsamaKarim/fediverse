@@ -126,9 +126,9 @@ class UnifediApiEditMyAccountAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiEditMyAccount _$$_UnifediApiEditMyAccountFromJson(
+_$UnifediApiEditMyAccountImpl _$$UnifediApiEditMyAccountImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiEditMyAccount(
+    _$UnifediApiEditMyAccountImpl(
       fieldsAttributes: (json['fields_attributes'] as List<dynamic>?)
           ?.map((e) => UnifediApiField.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -164,8 +164,8 @@ _$_UnifediApiEditMyAccount _$$_UnifediApiEditMyAccountFromJson(
       deleteBackgroundImage: json['delete_background_image'] as bool?,
     );
 
-Map<String, dynamic> _$$_UnifediApiEditMyAccountToJson(
-    _$_UnifediApiEditMyAccount instance) {
+Map<String, dynamic> _$$UnifediApiEditMyAccountImplToJson(
+    _$UnifediApiEditMyAccountImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

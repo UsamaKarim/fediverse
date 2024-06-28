@@ -46,16 +46,16 @@ class UnifediApiMediaAttachmentFocusMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiMediaAttachmentFocusMastodonAdapter
-    _$$_UnifediApiMediaAttachmentFocusMastodonAdapterFromJson(
+_$UnifediApiMediaAttachmentFocusMastodonAdapterImpl
+    _$$UnifediApiMediaAttachmentFocusMastodonAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiMediaAttachmentFocusMastodonAdapter(
+        _$UnifediApiMediaAttachmentFocusMastodonAdapterImpl(
           MastodonApiMediaAttachmentFocus.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiMediaAttachmentFocusMastodonAdapterToJson(
-        _$_UnifediApiMediaAttachmentFocusMastodonAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiMediaAttachmentFocusMastodonAdapterImplToJson(
+        _$UnifediApiMediaAttachmentFocusMastodonAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

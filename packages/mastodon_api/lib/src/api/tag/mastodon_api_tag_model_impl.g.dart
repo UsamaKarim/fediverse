@@ -50,8 +50,8 @@ class MastodonApiTagAdapter extends TypeAdapter<MastodonApiTag> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiTag _$$_MastodonApiTagFromJson(Map<String, dynamic> json) =>
-    _$_MastodonApiTag(
+_$MastodonApiTagImpl _$$MastodonApiTagImplFromJson(Map<String, dynamic> json) =>
+    _$MastodonApiTagImpl(
       name: json['name'] as String,
       url: json['url'] as String,
       history: (json['history'] as List<dynamic>?)
@@ -60,7 +60,8 @@ _$_MastodonApiTag _$$_MastodonApiTagFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$_MastodonApiTagToJson(_$_MastodonApiTag instance) {
+Map<String, dynamic> _$$MastodonApiTagImplToJson(
+    _$MastodonApiTagImpl instance) {
   final val = <String, dynamic>{
     'name': instance.name,
     'url': instance.url,

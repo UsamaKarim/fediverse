@@ -46,16 +46,17 @@ class FediverseApiInstanceMetadataVersionRequirementAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_FediverseApiInstanceMetadataVersionRequirement
-    _$$_FediverseApiInstanceMetadataVersionRequirementFromJson(
+_$FediverseApiInstanceMetadataVersionRequirementImpl
+    _$$FediverseApiInstanceMetadataVersionRequirementImplFromJson(
             Map<String, dynamic> json) =>
-        _$_FediverseApiInstanceMetadataVersionRequirement(
+        _$FediverseApiInstanceMetadataVersionRequirementImpl(
           versionRange: FediverseApiVersionRange.fromJson(
               json['version_range'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_FediverseApiInstanceMetadataVersionRequirementToJson(
-        _$_FediverseApiInstanceMetadataVersionRequirement instance) =>
-    <String, dynamic>{
-      'version_range': instance.versionRange.toJson(),
-    };
+Map<String, dynamic>
+    _$$FediverseApiInstanceMetadataVersionRequirementImplToJson(
+            _$FediverseApiInstanceMetadataVersionRequirementImpl instance) =>
+        <String, dynamic>{
+          'version_range': instance.versionRange.toJson(),
+        };

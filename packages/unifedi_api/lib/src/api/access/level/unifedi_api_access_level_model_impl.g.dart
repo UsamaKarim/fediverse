@@ -44,14 +44,14 @@ class UnifediApiAccessLevelAdapter extends TypeAdapter<UnifediApiAccessLevel> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiAccessLevel _$$_UnifediApiAccessLevelFromJson(
+_$UnifediApiAccessLevelImpl _$$UnifediApiAccessLevelImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiAccessLevel(
+    _$UnifediApiAccessLevelImpl(
       stringValue: json['string_value'] as String,
     );
 
-Map<String, dynamic> _$$_UnifediApiAccessLevelToJson(
-        _$_UnifediApiAccessLevel instance) =>
+Map<String, dynamic> _$$UnifediApiAccessLevelImplToJson(
+        _$UnifediApiAccessLevelImpl instance) =>
     <String, dynamic>{
       'string_value': instance.stringValue,
     };

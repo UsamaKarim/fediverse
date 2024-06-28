@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_media_attachment_size_model_pleroma_adapter.dart';
 
@@ -11,34 +12,13 @@ part of 'unifedi_api_media_attachment_size_model_pleroma_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiMediaAttachmentSizePleromaAdapter
     _$UnifediApiMediaAttachmentSizePleromaAdapterFromJson(
         Map<String, dynamic> json) {
   return _UnifediApiMediaAttachmentSizePleromaAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiMediaAttachmentSizePleromaAdapterTearOff {
-  const _$UnifediApiMediaAttachmentSizePleromaAdapterTearOff();
-
-  _UnifediApiMediaAttachmentSizePleromaAdapter call(
-      @HiveField(0) PleromaApiMediaAttachmentSize value) {
-    return _UnifediApiMediaAttachmentSizePleromaAdapter(
-      value,
-    );
-  }
-
-  UnifediApiMediaAttachmentSizePleromaAdapter fromJson(
-      Map<String, Object?> json) {
-    return UnifediApiMediaAttachmentSizePleromaAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiMediaAttachmentSizePleromaAdapter =
-    _$UnifediApiMediaAttachmentSizePleromaAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiMediaAttachmentSizePleromaAdapter {
@@ -57,50 +37,58 @@ abstract class $UnifediApiMediaAttachmentSizePleromaAdapterCopyWith<$Res> {
   factory $UnifediApiMediaAttachmentSizePleromaAdapterCopyWith(
           UnifediApiMediaAttachmentSizePleromaAdapter value,
           $Res Function(UnifediApiMediaAttachmentSizePleromaAdapter) then) =
-      _$UnifediApiMediaAttachmentSizePleromaAdapterCopyWithImpl<$Res>;
+      _$UnifediApiMediaAttachmentSizePleromaAdapterCopyWithImpl<$Res,
+          UnifediApiMediaAttachmentSizePleromaAdapter>;
+  @useResult
   $Res call({@HiveField(0) PleromaApiMediaAttachmentSize value});
 
   $PleromaApiMediaAttachmentSizeCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiMediaAttachmentSizePleromaAdapterCopyWithImpl<$Res>
+class _$UnifediApiMediaAttachmentSizePleromaAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiMediaAttachmentSizePleromaAdapter>
     implements $UnifediApiMediaAttachmentSizePleromaAdapterCopyWith<$Res> {
   _$UnifediApiMediaAttachmentSizePleromaAdapterCopyWithImpl(
       this._value, this._then);
 
-  final UnifediApiMediaAttachmentSizePleromaAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiMediaAttachmentSizePleromaAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiMediaAttachmentSize,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiMediaAttachmentSizeCopyWith<$Res> get value {
     return $PleromaApiMediaAttachmentSizeCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiMediaAttachmentSizePleromaAdapterCopyWith<$Res>
+abstract class _$$UnifediApiMediaAttachmentSizePleromaAdapterImplCopyWith<$Res>
     implements $UnifediApiMediaAttachmentSizePleromaAdapterCopyWith<$Res> {
-  factory _$UnifediApiMediaAttachmentSizePleromaAdapterCopyWith(
-          _UnifediApiMediaAttachmentSizePleromaAdapter value,
-          $Res Function(_UnifediApiMediaAttachmentSizePleromaAdapter) then) =
-      __$UnifediApiMediaAttachmentSizePleromaAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiMediaAttachmentSizePleromaAdapterImplCopyWith(
+          _$UnifediApiMediaAttachmentSizePleromaAdapterImpl value,
+          $Res Function(_$UnifediApiMediaAttachmentSizePleromaAdapterImpl)
+              then) =
+      __$$UnifediApiMediaAttachmentSizePleromaAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) PleromaApiMediaAttachmentSize value});
 
   @override
@@ -108,25 +96,23 @@ abstract class _$UnifediApiMediaAttachmentSizePleromaAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiMediaAttachmentSizePleromaAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiMediaAttachmentSizePleromaAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiMediaAttachmentSizePleromaAdapterCopyWith<$Res> {
-  __$UnifediApiMediaAttachmentSizePleromaAdapterCopyWithImpl(
-      _UnifediApiMediaAttachmentSizePleromaAdapter _value,
-      $Res Function(_UnifediApiMediaAttachmentSizePleromaAdapter) _then)
-      : super(_value,
-            (v) => _then(v as _UnifediApiMediaAttachmentSizePleromaAdapter));
+class __$$UnifediApiMediaAttachmentSizePleromaAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiMediaAttachmentSizePleromaAdapterCopyWithImpl<$Res,
+        _$UnifediApiMediaAttachmentSizePleromaAdapterImpl>
+    implements
+        _$$UnifediApiMediaAttachmentSizePleromaAdapterImplCopyWith<$Res> {
+  __$$UnifediApiMediaAttachmentSizePleromaAdapterImplCopyWithImpl(
+      _$UnifediApiMediaAttachmentSizePleromaAdapterImpl _value,
+      $Res Function(_$UnifediApiMediaAttachmentSizePleromaAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiMediaAttachmentSizePleromaAdapter get _value =>
-      super._value as _UnifediApiMediaAttachmentSizePleromaAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiMediaAttachmentSizePleromaAdapter(
-      value == freezed
+    return _then(_$UnifediApiMediaAttachmentSizePleromaAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiMediaAttachmentSize,
@@ -136,14 +122,15 @@ class __$UnifediApiMediaAttachmentSizePleromaAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiMediaAttachmentSizePleromaAdapter
+class _$UnifediApiMediaAttachmentSizePleromaAdapterImpl
     extends _UnifediApiMediaAttachmentSizePleromaAdapter {
-  const _$_UnifediApiMediaAttachmentSizePleromaAdapter(@HiveField(0) this.value)
+  const _$UnifediApiMediaAttachmentSizePleromaAdapterImpl(
+      @HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiMediaAttachmentSizePleromaAdapter.fromJson(
+  factory _$UnifediApiMediaAttachmentSizePleromaAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiMediaAttachmentSizePleromaAdapterFromJson(json);
+      _$$UnifediApiMediaAttachmentSizePleromaAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -155,47 +142,52 @@ class _$_UnifediApiMediaAttachmentSizePleromaAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiMediaAttachmentSizePleromaAdapter &&
+            other is _$UnifediApiMediaAttachmentSizePleromaAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiMediaAttachmentSizePleromaAdapterCopyWith<
-          _UnifediApiMediaAttachmentSizePleromaAdapter>
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiMediaAttachmentSizePleromaAdapterImplCopyWith<
+          _$UnifediApiMediaAttachmentSizePleromaAdapterImpl>
       get copyWith =>
-          __$UnifediApiMediaAttachmentSizePleromaAdapterCopyWithImpl<
-              _UnifediApiMediaAttachmentSizePleromaAdapter>(this, _$identity);
+          __$$UnifediApiMediaAttachmentSizePleromaAdapterImplCopyWithImpl<
+                  _$UnifediApiMediaAttachmentSizePleromaAdapterImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiMediaAttachmentSizePleromaAdapterToJson(this);
+    return _$$UnifediApiMediaAttachmentSizePleromaAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiMediaAttachmentSizePleromaAdapter
     extends UnifediApiMediaAttachmentSizePleromaAdapter {
   const factory _UnifediApiMediaAttachmentSizePleromaAdapter(
-          @HiveField(0) PleromaApiMediaAttachmentSize value) =
-      _$_UnifediApiMediaAttachmentSizePleromaAdapter;
+          @HiveField(0) final PleromaApiMediaAttachmentSize value) =
+      _$UnifediApiMediaAttachmentSizePleromaAdapterImpl;
   const _UnifediApiMediaAttachmentSizePleromaAdapter._() : super._();
 
   factory _UnifediApiMediaAttachmentSizePleromaAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiMediaAttachmentSizePleromaAdapter.fromJson;
+      _$UnifediApiMediaAttachmentSizePleromaAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   PleromaApiMediaAttachmentSize get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiMediaAttachmentSizePleromaAdapterCopyWith<
-          _UnifediApiMediaAttachmentSizePleromaAdapter>
+  _$$UnifediApiMediaAttachmentSizePleromaAdapterImplCopyWith<
+          _$UnifediApiMediaAttachmentSizePleromaAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

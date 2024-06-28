@@ -45,16 +45,16 @@ class PleromaApiFrontendConfigurationsMastoFeAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiFrontendConfigurationsMastoFe
-    _$$_PleromaApiFrontendConfigurationsMastoFeFromJson(
+_$PleromaApiFrontendConfigurationsMastoFeImpl
+    _$$PleromaApiFrontendConfigurationsMastoFeImplFromJson(
             Map<String, dynamic> json) =>
-        _$_PleromaApiFrontendConfigurationsMastoFe(
+        _$PleromaApiFrontendConfigurationsMastoFeImpl(
           showInstanceSpecificPanel:
               json['show_instance_specific_panel'] as bool?,
         );
 
-Map<String, dynamic> _$$_PleromaApiFrontendConfigurationsMastoFeToJson(
-    _$_PleromaApiFrontendConfigurationsMastoFe instance) {
+Map<String, dynamic> _$$PleromaApiFrontendConfigurationsMastoFeImplToJson(
+    _$PleromaApiFrontendConfigurationsMastoFeImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

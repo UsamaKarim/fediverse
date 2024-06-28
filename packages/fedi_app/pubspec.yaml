@@ -16,7 +16,7 @@ version: 3.2.0+5276
 publish_to: none
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: '>=2.13.0 <3.0.0'
 
 dependencies:
   flutter:
@@ -40,7 +40,7 @@ dependencies:
   firebase_crashlytics: ^3.5.5
 
   # handle init urls. Used for login/register and navigation from notification
-  uni_links: 0.5.1
+  uni_links: ^0.5.1
 
   # launch browser to view links
   url_launcher: ^6.2.6
@@ -71,10 +71,11 @@ dependencies:
   # minutes/hours picker
   # duration_picker: 1.0.1
   # it is duration_picker 1.0.1 with naming & visibility enhancments
-  duration_picker:
-    git:
-      url: https://github.com/xal/duration_picker.git
-      ref: ea2decc7d3f6cf2ebb7ff01570268045da71f647
+  # duration_time_picker: ^1.0.1
+  duration_picker: ^1.2.0
+    # git:
+      # url: https://github.com/xal/duration_picker.git
+      # ref: ea2decc7d3f6cf2ebb7ff01570268045da71f647
 
   # media grid
   flutter_staggered_grid_view: ^0.7.0
@@ -91,7 +92,7 @@ dependencies:
   # positioned list view
   scrollable_positioned_list: ^0.3.8
   # edit images during account editing
-  image_cropper: ^5.0.1
+  image_cropper: ^6.0.0
   # cache images locally
   cached_network_image: ^3.3.1
   # cache manager for cached_network_image. Use to set up cache settings
@@ -109,36 +110,36 @@ dependencies:
   # flutter_datetime_picker: 1.5.1
   # it is 1.5.1 with fixes for null-safety compile warnings
   # Realank is official author. He just didn't release new version yet
-  flutter_datetime_picker:
-    git:
-      url: https://github.com/Realank/flutter_datetime_picker.git
-      ref: eb9701172da23121d8632369e5a6c4382bcc5e45
+  flutter_datetime_picker_plus: ^2.2.0
+    # git:
+      # url: https://github.com/Realank/flutter_datetime_picker.git
+      # ref: eb9701172da23121d8632369e5a6c4382bcc5e45
 
   # annotations to generate json from & to methods
-  json_annotation: ^4.3.0
+  json_annotation: ^4.9.0
 
   # advanced logging
-  logging: ^1.0.2
+  logging: ^1.2.0
 
   # dependency injection framework
-  provider: ^6.0.1
+  provider: ^6.1.2
 
   # fancy permission handler
   permission_handler: ^11.3.1
 
   # native kotlin/swift image convert & compress
-  flutter_image_compress: ^2.2.0
+  flutter_image_compress: ^2.3.0
 
   # commandline script to pull database from emulator
   # adb exec-out run-as com.fediverse.app cat ./databases/jffdev@fedi.app.sqlite > database.sqlite
   # sqlite orm
-  moor: ^4.6.1+1
+  drift: ^2.18.0
 
   # sqlite3_flutter_libs required for moor ffi
   sqlite3_flutter_libs: ^0.5.21
 
   # database inspector for debugging. Use with Moor Inspector Intellij Idea Plugin
-  moor_inspector: 0.3.1
+  drift_local_storage_inspector: ^0.7.0
 
   # check internet connection state
   connectivity_plus: ^6.0.3
@@ -186,7 +187,7 @@ dependencies:
   html_unescape: 2.0.0
 
   # extended text fields with highlight mentions support
-  extended_text_field: ^14.0.0
+  extended_text_field: ^15.0.0
 
   # detect keyboard visibility
   flutter_keyboard_visibility: ^6.0.0
@@ -201,7 +202,7 @@ dependencies:
   in_app_review: ^2.0.9
 
   # better dateTime manipulation (especially for add duration to dateTime)
-  jiffy: ^6.2.1
+  jiffy: ^6.3.1
 
   # collections extensions
   collection: ^1.18.0
@@ -225,7 +226,7 @@ dependencies:
   package_info_plus: ^8.0.0
 
   # rich notification with possible integration with FCM
-  awesome_notifications: ^0.8.2
+  awesome_notifications: ^0.8.3
 
   # Disposable logic
   easy_dispose: 1.1.0
@@ -282,9 +283,9 @@ dev_dependencies:
   # build tool to generate json from & to methods
   json_serializable: 6.8.0
   # sql orm generator
-  moor_generator: ^4.6.0+1
+  drift_dev: ^2.18.0
   # required by sqlparser. Otherwise strange errors -
-  sqlparser: ^0.22.0
+  sqlparser: ^0.36.0
 
   # object serialization generator
   hive_generator:
@@ -318,10 +319,10 @@ dev_dependencies:
   freezed: ^2.5.2
 
 dependency_overrides: 
-  http: ^1.2.1
-  meta: ^1.15.0
-  analyzer: ^6.3.0
-  intl: ^0.18.1
+  # http: ^1.2.1
+  # meta: ^1.15.0
+  # analyzer: ^6.3.0
+  # intl: ^0.18.1
 
 
 # For information on the generic Dart part of this file, see the

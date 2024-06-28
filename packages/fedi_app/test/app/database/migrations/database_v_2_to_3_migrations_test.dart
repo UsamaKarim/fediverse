@@ -1,9 +1,9 @@
 import 'dart:io';
 
+import 'package:drift/native.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/status/post/post_status_model.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:moor/ffi.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 
 // ignore_for_file: no-magic-number, avoid-late-keyword
@@ -15,7 +15,7 @@ void main() {
     var filePath = 'test_resources/app/database/fedi2_database_dump_v2.sqlite';
     var file = File(filePath);
     dbFile = await file.copy(filePath + '.temp');
-    database = AppDatabase(VmDatabase(dbFile));
+    database = AppDatabase(NativeDatabase(dbFile));
   });
 
   tearDown(() async {

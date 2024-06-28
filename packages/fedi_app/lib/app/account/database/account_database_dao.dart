@@ -1,10 +1,10 @@
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/account/account_model.dart';
 import 'package:fedi_app/app/account/database/account_database_model.dart';
 import 'package:fedi_app/app/account/repository/account_repository_model.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/database/dao/remote/populated_app_remote_database_dao.dart';
 import 'package:fedi_app/repository/repository_model.dart';
-import 'package:moor/moor.dart';
 
 part 'account_database_dao.g.dart';
 
@@ -16,9 +16,7 @@ var _statusFavouritedAccounts = 'statusFavouritedAccounts';
 var _conversationAccountsAliasId = 'conversationAccounts';
 var _chatAccountsAliasId = 'chatAccountsAliasId';
 
-@UseDao(
-  tables: [DbAccounts],
-)
+@DriftAccessor(tables: [DbAccounts])
 class AccountDao extends PopulatedAppRemoteDatabaseDao<
     DbAccount,
     DbAccountPopulated,
@@ -71,7 +69,7 @@ class AccountDao extends PopulatedAppRemoteDatabaseDao<
         orderTerms
             .map(
               (orderTerm) => ($DbAccountsTable item) {
-                GeneratedColumn<String?> expression;
+                GeneratedColumn<String> expression;
                 switch (orderTerm.orderType) {
                   case AccountOrderType.remoteId:
                     expression = item.remoteId;

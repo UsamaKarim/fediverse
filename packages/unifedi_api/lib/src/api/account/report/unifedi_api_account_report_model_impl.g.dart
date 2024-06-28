@@ -51,9 +51,9 @@ class UnifediApiAccountReportAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiAccountReport _$$_UnifediApiAccountReportFromJson(
+_$UnifediApiAccountReportImpl _$$UnifediApiAccountReportImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiAccountReport(
+    _$UnifediApiAccountReportImpl(
       account: json['account'] == null
           ? null
           : UnifediApiAccount.fromJson(json['account'] as Map<String, dynamic>),
@@ -65,8 +65,8 @@ _$_UnifediApiAccountReport _$$_UnifediApiAccountReportFromJson(
           : UnifediApiAccount.fromJson(json['user'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_UnifediApiAccountReportToJson(
-    _$_UnifediApiAccountReport instance) {
+Map<String, dynamic> _$$UnifediApiAccountReportImplToJson(
+    _$UnifediApiAccountReportImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

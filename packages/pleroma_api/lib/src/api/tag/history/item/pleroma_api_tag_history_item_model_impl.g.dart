@@ -51,28 +51,19 @@ class PleromaApiTagHistoryItemAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiTagHistoryItem _$$_PleromaApiTagHistoryItemFromJson(
+_$PleromaApiTagHistoryItemImpl _$$PleromaApiTagHistoryItemImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiTagHistoryItem(
+    _$PleromaApiTagHistoryItemImpl(
       accounts: JsonParseHelper.fromStringToInt(json['accounts'] as String),
       dayInUnixTimestamp:
           JsonParseHelper.fromStringToInt(json['day'] as String),
       uses: JsonParseHelper.fromStringToInt(json['uses'] as String),
     );
 
-Map<String, dynamic> _$$_PleromaApiTagHistoryItemToJson(
-    _$_PleromaApiTagHistoryItem instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('accounts', JsonParseHelper.toStringFromInt(instance.accounts));
-  writeNotNull(
-      'day', JsonParseHelper.toStringFromInt(instance.dayInUnixTimestamp));
-  writeNotNull('uses', JsonParseHelper.toStringFromInt(instance.uses));
-  return val;
-}
+Map<String, dynamic> _$$PleromaApiTagHistoryItemImplToJson(
+        _$PleromaApiTagHistoryItemImpl instance) =>
+    <String, dynamic>{
+      'accounts': JsonParseHelper.toStringFromInt(instance.accounts),
+      'day': JsonParseHelper.toStringFromInt(instance.dayInUnixTimestamp),
+      'uses': JsonParseHelper.toStringFromInt(instance.uses),
+    };

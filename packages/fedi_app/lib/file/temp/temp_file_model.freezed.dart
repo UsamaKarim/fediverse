@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'temp_file_model.dart';
 
@@ -11,23 +12,7 @@ part of 'temp_file_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$DownloadTempFileRequestTearOff {
-  const _$DownloadTempFileRequestTearOff();
-
-  _DownloadTempFileRequest call(
-      {required String url, required String filenameWithExtension}) {
-    return _DownloadTempFileRequest(
-      url: url,
-      filenameWithExtension: filenameWithExtension,
-    );
-  }
-}
-
-/// @nodoc
-const $DownloadTempFileRequest = _$DownloadTempFileRequestTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$DownloadTempFileRequest {
@@ -43,70 +28,75 @@ mixin _$DownloadTempFileRequest {
 abstract class $DownloadTempFileRequestCopyWith<$Res> {
   factory $DownloadTempFileRequestCopyWith(DownloadTempFileRequest value,
           $Res Function(DownloadTempFileRequest) then) =
-      _$DownloadTempFileRequestCopyWithImpl<$Res>;
+      _$DownloadTempFileRequestCopyWithImpl<$Res, DownloadTempFileRequest>;
+  @useResult
   $Res call({String url, String filenameWithExtension});
 }
 
 /// @nodoc
-class _$DownloadTempFileRequestCopyWithImpl<$Res>
+class _$DownloadTempFileRequestCopyWithImpl<$Res,
+        $Val extends DownloadTempFileRequest>
     implements $DownloadTempFileRequestCopyWith<$Res> {
   _$DownloadTempFileRequestCopyWithImpl(this._value, this._then);
 
-  final DownloadTempFileRequest _value;
   // ignore: unused_field
-  final $Res Function(DownloadTempFileRequest) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? url = freezed,
-    Object? filenameWithExtension = freezed,
+    Object? url = null,
+    Object? filenameWithExtension = null,
   }) {
     return _then(_value.copyWith(
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      filenameWithExtension: filenameWithExtension == freezed
+      filenameWithExtension: null == filenameWithExtension
           ? _value.filenameWithExtension
           : filenameWithExtension // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$DownloadTempFileRequestCopyWith<$Res>
+abstract class _$$DownloadTempFileRequestImplCopyWith<$Res>
     implements $DownloadTempFileRequestCopyWith<$Res> {
-  factory _$DownloadTempFileRequestCopyWith(_DownloadTempFileRequest value,
-          $Res Function(_DownloadTempFileRequest) then) =
-      __$DownloadTempFileRequestCopyWithImpl<$Res>;
+  factory _$$DownloadTempFileRequestImplCopyWith(
+          _$DownloadTempFileRequestImpl value,
+          $Res Function(_$DownloadTempFileRequestImpl) then) =
+      __$$DownloadTempFileRequestImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String url, String filenameWithExtension});
 }
 
 /// @nodoc
-class __$DownloadTempFileRequestCopyWithImpl<$Res>
-    extends _$DownloadTempFileRequestCopyWithImpl<$Res>
-    implements _$DownloadTempFileRequestCopyWith<$Res> {
-  __$DownloadTempFileRequestCopyWithImpl(_DownloadTempFileRequest _value,
-      $Res Function(_DownloadTempFileRequest) _then)
-      : super(_value, (v) => _then(v as _DownloadTempFileRequest));
+class __$$DownloadTempFileRequestImplCopyWithImpl<$Res>
+    extends _$DownloadTempFileRequestCopyWithImpl<$Res,
+        _$DownloadTempFileRequestImpl>
+    implements _$$DownloadTempFileRequestImplCopyWith<$Res> {
+  __$$DownloadTempFileRequestImplCopyWithImpl(
+      _$DownloadTempFileRequestImpl _value,
+      $Res Function(_$DownloadTempFileRequestImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _DownloadTempFileRequest get _value =>
-      super._value as _DownloadTempFileRequest;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? url = freezed,
-    Object? filenameWithExtension = freezed,
+    Object? url = null,
+    Object? filenameWithExtension = null,
   }) {
-    return _then(_DownloadTempFileRequest(
-      url: url == freezed
+    return _then(_$DownloadTempFileRequestImpl(
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      filenameWithExtension: filenameWithExtension == freezed
+      filenameWithExtension: null == filenameWithExtension
           ? _value.filenameWithExtension
           : filenameWithExtension // ignore: cast_nullable_to_non_nullable
               as String,
@@ -116,8 +106,8 @@ class __$DownloadTempFileRequestCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DownloadTempFileRequest implements _DownloadTempFileRequest {
-  const _$_DownloadTempFileRequest(
+class _$DownloadTempFileRequestImpl implements _DownloadTempFileRequest {
+  const _$DownloadTempFileRequestImpl(
       {required this.url, required this.filenameWithExtension});
 
   @override
@@ -131,10 +121,10 @@ class _$_DownloadTempFileRequest implements _DownloadTempFileRequest {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DownloadTempFileRequest &&
+            other is _$DownloadTempFileRequestImpl &&
             (identical(other.url, url) || other.url == url) &&
             (identical(other.filenameWithExtension, filenameWithExtension) ||
                 other.filenameWithExtension == filenameWithExtension));
@@ -145,15 +135,17 @@ class _$_DownloadTempFileRequest implements _DownloadTempFileRequest {
 
   @JsonKey(ignore: true)
   @override
-  _$DownloadTempFileRequestCopyWith<_DownloadTempFileRequest> get copyWith =>
-      __$DownloadTempFileRequestCopyWithImpl<_DownloadTempFileRequest>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DownloadTempFileRequestImplCopyWith<_$DownloadTempFileRequestImpl>
+      get copyWith => __$$DownloadTempFileRequestImplCopyWithImpl<
+          _$DownloadTempFileRequestImpl>(this, _$identity);
 }
 
 abstract class _DownloadTempFileRequest implements DownloadTempFileRequest {
   const factory _DownloadTempFileRequest(
-      {required String url,
-      required String filenameWithExtension}) = _$_DownloadTempFileRequest;
+          {required final String url,
+          required final String filenameWithExtension}) =
+      _$DownloadTempFileRequestImpl;
 
   @override
   String get url;
@@ -161,6 +153,6 @@ abstract class _DownloadTempFileRequest implements DownloadTempFileRequest {
   String get filenameWithExtension;
   @override
   @JsonKey(ignore: true)
-  _$DownloadTempFileRequestCopyWith<_DownloadTempFileRequest> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$DownloadTempFileRequestImplCopyWith<_$DownloadTempFileRequestImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

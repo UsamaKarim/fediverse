@@ -48,15 +48,16 @@ class UnifediApiInstanceStatusLimitsAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiInstanceStatusLimits _$$_UnifediApiInstanceStatusLimitsFromJson(
-        Map<String, dynamic> json) =>
-    _$_UnifediApiInstanceStatusLimits(
-      maxTootChars: json['max_toot_chars'] as int?,
-      maxMediaAttachmentsCount: json['max_media_attachments_count'] as int?,
-    );
+_$UnifediApiInstanceStatusLimitsImpl
+    _$$UnifediApiInstanceStatusLimitsImplFromJson(Map<String, dynamic> json) =>
+        _$UnifediApiInstanceStatusLimitsImpl(
+          maxTootChars: (json['max_toot_chars'] as num?)?.toInt(),
+          maxMediaAttachmentsCount:
+              (json['max_media_attachments_count'] as num?)?.toInt(),
+        );
 
-Map<String, dynamic> _$$_UnifediApiInstanceStatusLimitsToJson(
-    _$_UnifediApiInstanceStatusLimits instance) {
+Map<String, dynamic> _$$UnifediApiInstanceStatusLimitsImplToJson(
+    _$UnifediApiInstanceStatusLimitsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

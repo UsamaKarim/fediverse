@@ -47,15 +47,15 @@ class UnifediApiPollOptionAdapter extends TypeAdapter<UnifediApiPollOption> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiPollOption _$$_UnifediApiPollOptionFromJson(
+_$UnifediApiPollOptionImpl _$$UnifediApiPollOptionImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiPollOption(
+    _$UnifediApiPollOptionImpl(
       title: json['title'] as String,
-      votesCount: json['votes_count'] as int?,
+      votesCount: (json['votes_count'] as num?)?.toInt(),
     );
 
-Map<String, dynamic> _$$_UnifediApiPollOptionToJson(
-    _$_UnifediApiPollOption instance) {
+Map<String, dynamic> _$$UnifediApiPollOptionImplToJson(
+    _$UnifediApiPollOptionImpl instance) {
   final val = <String, dynamic>{
     'title': instance.title,
   };

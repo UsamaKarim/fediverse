@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'filter_repository_model.dart';
 
@@ -11,24 +12,7 @@ part of 'filter_repository_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$FilterRepositoryFiltersTearOff {
-  const _$FilterRepositoryFiltersTearOff();
-
-  _FilterRepositoryFilters call(
-      {List<UnifediApiFilterContextType>? onlyWithContextTypes,
-      bool? notExpired}) {
-    return _FilterRepositoryFilters(
-      onlyWithContextTypes: onlyWithContextTypes,
-      notExpired: notExpired,
-    );
-  }
-}
-
-/// @nodoc
-const $FilterRepositoryFilters = _$FilterRepositoryFiltersTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$FilterRepositoryFilters {
@@ -45,74 +29,79 @@ mixin _$FilterRepositoryFilters {
 abstract class $FilterRepositoryFiltersCopyWith<$Res> {
   factory $FilterRepositoryFiltersCopyWith(FilterRepositoryFilters value,
           $Res Function(FilterRepositoryFilters) then) =
-      _$FilterRepositoryFiltersCopyWithImpl<$Res>;
+      _$FilterRepositoryFiltersCopyWithImpl<$Res, FilterRepositoryFilters>;
+  @useResult
   $Res call(
       {List<UnifediApiFilterContextType>? onlyWithContextTypes,
       bool? notExpired});
 }
 
 /// @nodoc
-class _$FilterRepositoryFiltersCopyWithImpl<$Res>
+class _$FilterRepositoryFiltersCopyWithImpl<$Res,
+        $Val extends FilterRepositoryFilters>
     implements $FilterRepositoryFiltersCopyWith<$Res> {
   _$FilterRepositoryFiltersCopyWithImpl(this._value, this._then);
 
-  final FilterRepositoryFilters _value;
   // ignore: unused_field
-  final $Res Function(FilterRepositoryFilters) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? onlyWithContextTypes = freezed,
     Object? notExpired = freezed,
   }) {
     return _then(_value.copyWith(
-      onlyWithContextTypes: onlyWithContextTypes == freezed
+      onlyWithContextTypes: freezed == onlyWithContextTypes
           ? _value.onlyWithContextTypes
           : onlyWithContextTypes // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiFilterContextType>?,
-      notExpired: notExpired == freezed
+      notExpired: freezed == notExpired
           ? _value.notExpired
           : notExpired // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$FilterRepositoryFiltersCopyWith<$Res>
+abstract class _$$FilterRepositoryFiltersImplCopyWith<$Res>
     implements $FilterRepositoryFiltersCopyWith<$Res> {
-  factory _$FilterRepositoryFiltersCopyWith(_FilterRepositoryFilters value,
-          $Res Function(_FilterRepositoryFilters) then) =
-      __$FilterRepositoryFiltersCopyWithImpl<$Res>;
+  factory _$$FilterRepositoryFiltersImplCopyWith(
+          _$FilterRepositoryFiltersImpl value,
+          $Res Function(_$FilterRepositoryFiltersImpl) then) =
+      __$$FilterRepositoryFiltersImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {List<UnifediApiFilterContextType>? onlyWithContextTypes,
       bool? notExpired});
 }
 
 /// @nodoc
-class __$FilterRepositoryFiltersCopyWithImpl<$Res>
-    extends _$FilterRepositoryFiltersCopyWithImpl<$Res>
-    implements _$FilterRepositoryFiltersCopyWith<$Res> {
-  __$FilterRepositoryFiltersCopyWithImpl(_FilterRepositoryFilters _value,
-      $Res Function(_FilterRepositoryFilters) _then)
-      : super(_value, (v) => _then(v as _FilterRepositoryFilters));
+class __$$FilterRepositoryFiltersImplCopyWithImpl<$Res>
+    extends _$FilterRepositoryFiltersCopyWithImpl<$Res,
+        _$FilterRepositoryFiltersImpl>
+    implements _$$FilterRepositoryFiltersImplCopyWith<$Res> {
+  __$$FilterRepositoryFiltersImplCopyWithImpl(
+      _$FilterRepositoryFiltersImpl _value,
+      $Res Function(_$FilterRepositoryFiltersImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _FilterRepositoryFilters get _value =>
-      super._value as _FilterRepositoryFilters;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? onlyWithContextTypes = freezed,
     Object? notExpired = freezed,
   }) {
-    return _then(_FilterRepositoryFilters(
-      onlyWithContextTypes: onlyWithContextTypes == freezed
-          ? _value.onlyWithContextTypes
+    return _then(_$FilterRepositoryFiltersImpl(
+      onlyWithContextTypes: freezed == onlyWithContextTypes
+          ? _value._onlyWithContextTypes
           : onlyWithContextTypes // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiFilterContextType>?,
-      notExpired: notExpired == freezed
+      notExpired: freezed == notExpired
           ? _value.notExpired
           : notExpired // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -122,12 +111,23 @@ class __$FilterRepositoryFiltersCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_FilterRepositoryFilters implements _FilterRepositoryFilters {
-  const _$_FilterRepositoryFilters(
-      {this.onlyWithContextTypes, this.notExpired});
+class _$FilterRepositoryFiltersImpl implements _FilterRepositoryFilters {
+  const _$FilterRepositoryFiltersImpl(
+      {final List<UnifediApiFilterContextType>? onlyWithContextTypes,
+      this.notExpired})
+      : _onlyWithContextTypes = onlyWithContextTypes;
 
+  final List<UnifediApiFilterContextType>? _onlyWithContextTypes;
   @override
-  final List<UnifediApiFilterContextType>? onlyWithContextTypes;
+  List<UnifediApiFilterContextType>? get onlyWithContextTypes {
+    final value = _onlyWithContextTypes;
+    if (value == null) return null;
+    if (_onlyWithContextTypes is EqualUnmodifiableListView)
+      return _onlyWithContextTypes;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   final bool? notExpired;
 
@@ -137,31 +137,32 @@ class _$_FilterRepositoryFilters implements _FilterRepositoryFilters {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _FilterRepositoryFilters &&
+            other is _$FilterRepositoryFiltersImpl &&
             const DeepCollectionEquality()
-                .equals(other.onlyWithContextTypes, onlyWithContextTypes) &&
+                .equals(other._onlyWithContextTypes, _onlyWithContextTypes) &&
             (identical(other.notExpired, notExpired) ||
                 other.notExpired == notExpired));
   }
 
   @override
   int get hashCode => Object.hash(runtimeType,
-      const DeepCollectionEquality().hash(onlyWithContextTypes), notExpired);
+      const DeepCollectionEquality().hash(_onlyWithContextTypes), notExpired);
 
   @JsonKey(ignore: true)
   @override
-  _$FilterRepositoryFiltersCopyWith<_FilterRepositoryFilters> get copyWith =>
-      __$FilterRepositoryFiltersCopyWithImpl<_FilterRepositoryFilters>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$FilterRepositoryFiltersImplCopyWith<_$FilterRepositoryFiltersImpl>
+      get copyWith => __$$FilterRepositoryFiltersImplCopyWithImpl<
+          _$FilterRepositoryFiltersImpl>(this, _$identity);
 }
 
 abstract class _FilterRepositoryFilters implements FilterRepositoryFilters {
   const factory _FilterRepositoryFilters(
-      {List<UnifediApiFilterContextType>? onlyWithContextTypes,
-      bool? notExpired}) = _$_FilterRepositoryFilters;
+      {final List<UnifediApiFilterContextType>? onlyWithContextTypes,
+      final bool? notExpired}) = _$FilterRepositoryFiltersImpl;
 
   @override
   List<UnifediApiFilterContextType>? get onlyWithContextTypes;
@@ -169,26 +170,9 @@ abstract class _FilterRepositoryFilters implements FilterRepositoryFilters {
   bool? get notExpired;
   @override
   @JsonKey(ignore: true)
-  _$FilterRepositoryFiltersCopyWith<_FilterRepositoryFilters> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$FilterRepositoryFiltersImplCopyWith<_$FilterRepositoryFiltersImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$FilterOrderingTermDataTearOff {
-  const _$FilterOrderingTermDataTearOff();
-
-  _FilterOrderingTermData call(
-      {required FilterOrderType orderType,
-      required moor.OrderingMode orderingMode}) {
-    return _FilterOrderingTermData(
-      orderType: orderType,
-      orderingMode: orderingMode,
-    );
-  }
-}
-
-/// @nodoc
-const $FilterOrderingTermData = _$FilterOrderingTermDataTearOff();
 
 /// @nodoc
 mixin _$FilterOrderingTermData {
@@ -204,69 +188,75 @@ mixin _$FilterOrderingTermData {
 abstract class $FilterOrderingTermDataCopyWith<$Res> {
   factory $FilterOrderingTermDataCopyWith(FilterOrderingTermData value,
           $Res Function(FilterOrderingTermData) then) =
-      _$FilterOrderingTermDataCopyWithImpl<$Res>;
+      _$FilterOrderingTermDataCopyWithImpl<$Res, FilterOrderingTermData>;
+  @useResult
   $Res call({FilterOrderType orderType, moor.OrderingMode orderingMode});
 }
 
 /// @nodoc
-class _$FilterOrderingTermDataCopyWithImpl<$Res>
+class _$FilterOrderingTermDataCopyWithImpl<$Res,
+        $Val extends FilterOrderingTermData>
     implements $FilterOrderingTermDataCopyWith<$Res> {
   _$FilterOrderingTermDataCopyWithImpl(this._value, this._then);
 
-  final FilterOrderingTermData _value;
   // ignore: unused_field
-  final $Res Function(FilterOrderingTermData) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? orderType = freezed,
-    Object? orderingMode = freezed,
+    Object? orderType = null,
+    Object? orderingMode = null,
   }) {
     return _then(_value.copyWith(
-      orderType: orderType == freezed
+      orderType: null == orderType
           ? _value.orderType
           : orderType // ignore: cast_nullable_to_non_nullable
               as FilterOrderType,
-      orderingMode: orderingMode == freezed
+      orderingMode: null == orderingMode
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
               as moor.OrderingMode,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$FilterOrderingTermDataCopyWith<$Res>
+abstract class _$$FilterOrderingTermDataImplCopyWith<$Res>
     implements $FilterOrderingTermDataCopyWith<$Res> {
-  factory _$FilterOrderingTermDataCopyWith(_FilterOrderingTermData value,
-          $Res Function(_FilterOrderingTermData) then) =
-      __$FilterOrderingTermDataCopyWithImpl<$Res>;
+  factory _$$FilterOrderingTermDataImplCopyWith(
+          _$FilterOrderingTermDataImpl value,
+          $Res Function(_$FilterOrderingTermDataImpl) then) =
+      __$$FilterOrderingTermDataImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({FilterOrderType orderType, moor.OrderingMode orderingMode});
 }
 
 /// @nodoc
-class __$FilterOrderingTermDataCopyWithImpl<$Res>
-    extends _$FilterOrderingTermDataCopyWithImpl<$Res>
-    implements _$FilterOrderingTermDataCopyWith<$Res> {
-  __$FilterOrderingTermDataCopyWithImpl(_FilterOrderingTermData _value,
-      $Res Function(_FilterOrderingTermData) _then)
-      : super(_value, (v) => _then(v as _FilterOrderingTermData));
+class __$$FilterOrderingTermDataImplCopyWithImpl<$Res>
+    extends _$FilterOrderingTermDataCopyWithImpl<$Res,
+        _$FilterOrderingTermDataImpl>
+    implements _$$FilterOrderingTermDataImplCopyWith<$Res> {
+  __$$FilterOrderingTermDataImplCopyWithImpl(
+      _$FilterOrderingTermDataImpl _value,
+      $Res Function(_$FilterOrderingTermDataImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _FilterOrderingTermData get _value => super._value as _FilterOrderingTermData;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? orderType = freezed,
-    Object? orderingMode = freezed,
+    Object? orderType = null,
+    Object? orderingMode = null,
   }) {
-    return _then(_FilterOrderingTermData(
-      orderType: orderType == freezed
+    return _then(_$FilterOrderingTermDataImpl(
+      orderType: null == orderType
           ? _value.orderType
           : orderType // ignore: cast_nullable_to_non_nullable
               as FilterOrderType,
-      orderingMode: orderingMode == freezed
+      orderingMode: null == orderingMode
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
               as moor.OrderingMode,
@@ -276,8 +266,8 @@ class __$FilterOrderingTermDataCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_FilterOrderingTermData implements _FilterOrderingTermData {
-  const _$_FilterOrderingTermData(
+class _$FilterOrderingTermDataImpl implements _FilterOrderingTermData {
+  const _$FilterOrderingTermDataImpl(
       {required this.orderType, required this.orderingMode});
 
   @override
@@ -291,10 +281,10 @@ class _$_FilterOrderingTermData implements _FilterOrderingTermData {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _FilterOrderingTermData &&
+            other is _$FilterOrderingTermDataImpl &&
             (identical(other.orderType, orderType) ||
                 other.orderType == orderType) &&
             (identical(other.orderingMode, orderingMode) ||
@@ -306,15 +296,17 @@ class _$_FilterOrderingTermData implements _FilterOrderingTermData {
 
   @JsonKey(ignore: true)
   @override
-  _$FilterOrderingTermDataCopyWith<_FilterOrderingTermData> get copyWith =>
-      __$FilterOrderingTermDataCopyWithImpl<_FilterOrderingTermData>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$FilterOrderingTermDataImplCopyWith<_$FilterOrderingTermDataImpl>
+      get copyWith => __$$FilterOrderingTermDataImplCopyWithImpl<
+          _$FilterOrderingTermDataImpl>(this, _$identity);
 }
 
 abstract class _FilterOrderingTermData implements FilterOrderingTermData {
   const factory _FilterOrderingTermData(
-      {required FilterOrderType orderType,
-      required moor.OrderingMode orderingMode}) = _$_FilterOrderingTermData;
+          {required final FilterOrderType orderType,
+          required final moor.OrderingMode orderingMode}) =
+      _$FilterOrderingTermDataImpl;
 
   @override
   FilterOrderType get orderType;
@@ -322,6 +314,6 @@ abstract class _FilterOrderingTermData implements FilterOrderingTermData {
   moor.OrderingMode get orderingMode;
   @override
   @JsonKey(ignore: true)
-  _$FilterOrderingTermDataCopyWith<_FilterOrderingTermData> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$FilterOrderingTermDataImplCopyWith<_$FilterOrderingTermDataImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

@@ -45,14 +45,14 @@ class WebSocketsChannelConfigAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_WebSocketsChannelConfig _$$_WebSocketsChannelConfigFromJson(
+_$WebSocketsChannelConfigImpl _$$WebSocketsChannelConfigImplFromJson(
         Map<String, dynamic> json) =>
-    _$_WebSocketsChannelConfig(
+    _$WebSocketsChannelConfigImpl(
       url: json['url'] as String,
     );
 
-Map<String, dynamic> _$$_WebSocketsChannelConfigToJson(
-        _$_WebSocketsChannelConfig instance) =>
+Map<String, dynamic> _$$WebSocketsChannelConfigImplToJson(
+        _$WebSocketsChannelConfigImpl instance) =>
     <String, dynamic>{
       'url': instance.url,
     };

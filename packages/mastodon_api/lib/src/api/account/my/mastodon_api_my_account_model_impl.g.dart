@@ -110,19 +110,19 @@ class MastodonApiMyAccountAdapter extends TypeAdapter<MastodonApiMyAccount> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiMyAccount _$$_MastodonApiMyAccountFromJson(
+_$MastodonApiMyAccountImpl _$$MastodonApiMyAccountImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiMyAccount(
+    _$MastodonApiMyAccountImpl(
       username: json['username'] as String,
       url: json['url'] as String,
-      statusesCount: json['statuses_count'] as int,
+      statusesCount: (json['statuses_count'] as num).toInt(),
       note: json['note'] as String?,
       locked: json['locked'] as bool,
       id: json['id'] as String,
       headerStatic: json['header_static'] as String,
       header: json['header'] as String,
-      followingCount: json['following_count'] as int,
-      followersCount: json['followers_count'] as int,
+      followingCount: (json['following_count'] as num).toInt(),
+      followersCount: (json['followers_count'] as num).toInt(),
       fields: (json['fields'] as List<dynamic>?)
           ?.map((e) => MastodonApiField.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -149,8 +149,8 @@ _$_MastodonApiMyAccount _$$_MastodonApiMyAccountFromJson(
           : DateTime.parse(json['mute_expires_at'] as String),
     );
 
-Map<String, dynamic> _$$_MastodonApiMyAccountToJson(
-    _$_MastodonApiMyAccount instance) {
+Map<String, dynamic> _$$MastodonApiMyAccountImplToJson(
+    _$MastodonApiMyAccountImpl instance) {
   final val = <String, dynamic>{
     'username': instance.username,
     'url': instance.url,

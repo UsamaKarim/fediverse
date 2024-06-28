@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_notification_model_pleroma_adapter.dart';
 
@@ -11,32 +12,12 @@ part of 'unifedi_api_notification_model_pleroma_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiNotificationPleromaAdapter
     _$UnifediApiNotificationPleromaAdapterFromJson(Map<String, dynamic> json) {
   return _UnifediApiNotificationPleromaAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiNotificationPleromaAdapterTearOff {
-  const _$UnifediApiNotificationPleromaAdapterTearOff();
-
-  _UnifediApiNotificationPleromaAdapter call(
-      @HiveField(0) PleromaApiNotification value) {
-    return _UnifediApiNotificationPleromaAdapter(
-      value,
-    );
-  }
-
-  UnifediApiNotificationPleromaAdapter fromJson(Map<String, Object?> json) {
-    return UnifediApiNotificationPleromaAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiNotificationPleromaAdapter =
-    _$UnifediApiNotificationPleromaAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiNotificationPleromaAdapter {
@@ -55,49 +36,56 @@ abstract class $UnifediApiNotificationPleromaAdapterCopyWith<$Res> {
   factory $UnifediApiNotificationPleromaAdapterCopyWith(
           UnifediApiNotificationPleromaAdapter value,
           $Res Function(UnifediApiNotificationPleromaAdapter) then) =
-      _$UnifediApiNotificationPleromaAdapterCopyWithImpl<$Res>;
+      _$UnifediApiNotificationPleromaAdapterCopyWithImpl<$Res,
+          UnifediApiNotificationPleromaAdapter>;
+  @useResult
   $Res call({@HiveField(0) PleromaApiNotification value});
 
   $PleromaApiNotificationCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiNotificationPleromaAdapterCopyWithImpl<$Res>
+class _$UnifediApiNotificationPleromaAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiNotificationPleromaAdapter>
     implements $UnifediApiNotificationPleromaAdapterCopyWith<$Res> {
   _$UnifediApiNotificationPleromaAdapterCopyWithImpl(this._value, this._then);
 
-  final UnifediApiNotificationPleromaAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiNotificationPleromaAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiNotification,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiNotificationCopyWith<$Res> get value {
     return $PleromaApiNotificationCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiNotificationPleromaAdapterCopyWith<$Res>
+abstract class _$$UnifediApiNotificationPleromaAdapterImplCopyWith<$Res>
     implements $UnifediApiNotificationPleromaAdapterCopyWith<$Res> {
-  factory _$UnifediApiNotificationPleromaAdapterCopyWith(
-          _UnifediApiNotificationPleromaAdapter value,
-          $Res Function(_UnifediApiNotificationPleromaAdapter) then) =
-      __$UnifediApiNotificationPleromaAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiNotificationPleromaAdapterImplCopyWith(
+          _$UnifediApiNotificationPleromaAdapterImpl value,
+          $Res Function(_$UnifediApiNotificationPleromaAdapterImpl) then) =
+      __$$UnifediApiNotificationPleromaAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) PleromaApiNotification value});
 
   @override
@@ -105,24 +93,22 @@ abstract class _$UnifediApiNotificationPleromaAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiNotificationPleromaAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiNotificationPleromaAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiNotificationPleromaAdapterCopyWith<$Res> {
-  __$UnifediApiNotificationPleromaAdapterCopyWithImpl(
-      _UnifediApiNotificationPleromaAdapter _value,
-      $Res Function(_UnifediApiNotificationPleromaAdapter) _then)
-      : super(_value, (v) => _then(v as _UnifediApiNotificationPleromaAdapter));
+class __$$UnifediApiNotificationPleromaAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiNotificationPleromaAdapterCopyWithImpl<$Res,
+        _$UnifediApiNotificationPleromaAdapterImpl>
+    implements _$$UnifediApiNotificationPleromaAdapterImplCopyWith<$Res> {
+  __$$UnifediApiNotificationPleromaAdapterImplCopyWithImpl(
+      _$UnifediApiNotificationPleromaAdapterImpl _value,
+      $Res Function(_$UnifediApiNotificationPleromaAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiNotificationPleromaAdapter get _value =>
-      super._value as _UnifediApiNotificationPleromaAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiNotificationPleromaAdapter(
-      value == freezed
+    return _then(_$UnifediApiNotificationPleromaAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiNotification,
@@ -132,14 +118,14 @@ class __$UnifediApiNotificationPleromaAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiNotificationPleromaAdapter
+class _$UnifediApiNotificationPleromaAdapterImpl
     extends _UnifediApiNotificationPleromaAdapter {
-  const _$_UnifediApiNotificationPleromaAdapter(@HiveField(0) this.value)
+  const _$UnifediApiNotificationPleromaAdapterImpl(@HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiNotificationPleromaAdapter.fromJson(
+  factory _$UnifediApiNotificationPleromaAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiNotificationPleromaAdapterFromJson(json);
+      _$$UnifediApiNotificationPleromaAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -151,46 +137,50 @@ class _$_UnifediApiNotificationPleromaAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiNotificationPleromaAdapter &&
+            other is _$UnifediApiNotificationPleromaAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiNotificationPleromaAdapterCopyWith<
-          _UnifediApiNotificationPleromaAdapter>
-      get copyWith => __$UnifediApiNotificationPleromaAdapterCopyWithImpl<
-          _UnifediApiNotificationPleromaAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiNotificationPleromaAdapterImplCopyWith<
+          _$UnifediApiNotificationPleromaAdapterImpl>
+      get copyWith => __$$UnifediApiNotificationPleromaAdapterImplCopyWithImpl<
+          _$UnifediApiNotificationPleromaAdapterImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiNotificationPleromaAdapterToJson(this);
+    return _$$UnifediApiNotificationPleromaAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiNotificationPleromaAdapter
     extends UnifediApiNotificationPleromaAdapter {
   const factory _UnifediApiNotificationPleromaAdapter(
-          @HiveField(0) PleromaApiNotification value) =
-      _$_UnifediApiNotificationPleromaAdapter;
+          @HiveField(0) final PleromaApiNotification value) =
+      _$UnifediApiNotificationPleromaAdapterImpl;
   const _UnifediApiNotificationPleromaAdapter._() : super._();
 
   factory _UnifediApiNotificationPleromaAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiNotificationPleromaAdapter.fromJson;
+      _$UnifediApiNotificationPleromaAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   PleromaApiNotification get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiNotificationPleromaAdapterCopyWith<
-          _UnifediApiNotificationPleromaAdapter>
+  _$$UnifediApiNotificationPleromaAdapterImplCopyWith<
+          _$UnifediApiNotificationPleromaAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

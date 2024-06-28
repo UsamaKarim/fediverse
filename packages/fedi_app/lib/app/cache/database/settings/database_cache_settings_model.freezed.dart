@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'database_cache_settings_model.dart';
 
@@ -11,37 +12,12 @@ part of 'database_cache_settings_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 DatabaseCacheSettings _$DatabaseCacheSettingsFromJson(
     Map<String, dynamic> json) {
   return _DatabaseCacheSettings.fromJson(json);
 }
-
-/// @nodoc
-class _$DatabaseCacheSettingsTearOff {
-  const _$DatabaseCacheSettingsTearOff();
-
-  _DatabaseCacheSettings call(
-      {@HiveField(2)
-      @JsonKey(name: 'entries_count_by_type_limit_type')
-          required String entriesCountByTypeLimitTypeString,
-      @HiveField(3)
-      @JsonKey(name: 'age_limit_in_microseconds_type')
-          required String ageLimitTypeString}) {
-    return _DatabaseCacheSettings(
-      entriesCountByTypeLimitTypeString: entriesCountByTypeLimitTypeString,
-      ageLimitTypeString: ageLimitTypeString,
-    );
-  }
-
-  DatabaseCacheSettings fromJson(Map<String, Object?> json) {
-    return DatabaseCacheSettings.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $DatabaseCacheSettings = _$DatabaseCacheSettingsTearOff();
 
 /// @nodoc
 mixin _$DatabaseCacheSettings {
@@ -63,83 +39,88 @@ mixin _$DatabaseCacheSettings {
 abstract class $DatabaseCacheSettingsCopyWith<$Res> {
   factory $DatabaseCacheSettingsCopyWith(DatabaseCacheSettings value,
           $Res Function(DatabaseCacheSettings) then) =
-      _$DatabaseCacheSettingsCopyWithImpl<$Res>;
+      _$DatabaseCacheSettingsCopyWithImpl<$Res, DatabaseCacheSettings>;
+  @useResult
   $Res call(
       {@HiveField(2)
       @JsonKey(name: 'entries_count_by_type_limit_type')
-          String entriesCountByTypeLimitTypeString,
+      String entriesCountByTypeLimitTypeString,
       @HiveField(3)
       @JsonKey(name: 'age_limit_in_microseconds_type')
-          String ageLimitTypeString});
+      String ageLimitTypeString});
 }
 
 /// @nodoc
-class _$DatabaseCacheSettingsCopyWithImpl<$Res>
+class _$DatabaseCacheSettingsCopyWithImpl<$Res,
+        $Val extends DatabaseCacheSettings>
     implements $DatabaseCacheSettingsCopyWith<$Res> {
   _$DatabaseCacheSettingsCopyWithImpl(this._value, this._then);
 
-  final DatabaseCacheSettings _value;
   // ignore: unused_field
-  final $Res Function(DatabaseCacheSettings) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? entriesCountByTypeLimitTypeString = freezed,
-    Object? ageLimitTypeString = freezed,
+    Object? entriesCountByTypeLimitTypeString = null,
+    Object? ageLimitTypeString = null,
   }) {
     return _then(_value.copyWith(
-      entriesCountByTypeLimitTypeString: entriesCountByTypeLimitTypeString ==
-              freezed
+      entriesCountByTypeLimitTypeString: null ==
+              entriesCountByTypeLimitTypeString
           ? _value.entriesCountByTypeLimitTypeString
           : entriesCountByTypeLimitTypeString // ignore: cast_nullable_to_non_nullable
               as String,
-      ageLimitTypeString: ageLimitTypeString == freezed
+      ageLimitTypeString: null == ageLimitTypeString
           ? _value.ageLimitTypeString
           : ageLimitTypeString // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$DatabaseCacheSettingsCopyWith<$Res>
+abstract class _$$DatabaseCacheSettingsImplCopyWith<$Res>
     implements $DatabaseCacheSettingsCopyWith<$Res> {
-  factory _$DatabaseCacheSettingsCopyWith(_DatabaseCacheSettings value,
-          $Res Function(_DatabaseCacheSettings) then) =
-      __$DatabaseCacheSettingsCopyWithImpl<$Res>;
+  factory _$$DatabaseCacheSettingsImplCopyWith(
+          _$DatabaseCacheSettingsImpl value,
+          $Res Function(_$DatabaseCacheSettingsImpl) then) =
+      __$$DatabaseCacheSettingsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(2)
       @JsonKey(name: 'entries_count_by_type_limit_type')
-          String entriesCountByTypeLimitTypeString,
+      String entriesCountByTypeLimitTypeString,
       @HiveField(3)
       @JsonKey(name: 'age_limit_in_microseconds_type')
-          String ageLimitTypeString});
+      String ageLimitTypeString});
 }
 
 /// @nodoc
-class __$DatabaseCacheSettingsCopyWithImpl<$Res>
-    extends _$DatabaseCacheSettingsCopyWithImpl<$Res>
-    implements _$DatabaseCacheSettingsCopyWith<$Res> {
-  __$DatabaseCacheSettingsCopyWithImpl(_DatabaseCacheSettings _value,
-      $Res Function(_DatabaseCacheSettings) _then)
-      : super(_value, (v) => _then(v as _DatabaseCacheSettings));
+class __$$DatabaseCacheSettingsImplCopyWithImpl<$Res>
+    extends _$DatabaseCacheSettingsCopyWithImpl<$Res,
+        _$DatabaseCacheSettingsImpl>
+    implements _$$DatabaseCacheSettingsImplCopyWith<$Res> {
+  __$$DatabaseCacheSettingsImplCopyWithImpl(_$DatabaseCacheSettingsImpl _value,
+      $Res Function(_$DatabaseCacheSettingsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _DatabaseCacheSettings get _value => super._value as _DatabaseCacheSettings;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? entriesCountByTypeLimitTypeString = freezed,
-    Object? ageLimitTypeString = freezed,
+    Object? entriesCountByTypeLimitTypeString = null,
+    Object? ageLimitTypeString = null,
   }) {
-    return _then(_DatabaseCacheSettings(
-      entriesCountByTypeLimitTypeString: entriesCountByTypeLimitTypeString ==
-              freezed
+    return _then(_$DatabaseCacheSettingsImpl(
+      entriesCountByTypeLimitTypeString: null ==
+              entriesCountByTypeLimitTypeString
           ? _value.entriesCountByTypeLimitTypeString
           : entriesCountByTypeLimitTypeString // ignore: cast_nullable_to_non_nullable
               as String,
-      ageLimitTypeString: ageLimitTypeString == freezed
+      ageLimitTypeString: null == ageLimitTypeString
           ? _value.ageLimitTypeString
           : ageLimitTypeString // ignore: cast_nullable_to_non_nullable
               as String,
@@ -149,18 +130,18 @@ class __$DatabaseCacheSettingsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_DatabaseCacheSettings extends _DatabaseCacheSettings {
-  const _$_DatabaseCacheSettings(
+class _$DatabaseCacheSettingsImpl extends _DatabaseCacheSettings {
+  const _$DatabaseCacheSettingsImpl(
       {@HiveField(2)
       @JsonKey(name: 'entries_count_by_type_limit_type')
-          required this.entriesCountByTypeLimitTypeString,
+      required this.entriesCountByTypeLimitTypeString,
       @HiveField(3)
       @JsonKey(name: 'age_limit_in_microseconds_type')
-          required this.ageLimitTypeString})
+      required this.ageLimitTypeString})
       : super._();
 
-  factory _$_DatabaseCacheSettings.fromJson(Map<String, dynamic> json) =>
-      _$$_DatabaseCacheSettingsFromJson(json);
+  factory _$DatabaseCacheSettingsImpl.fromJson(Map<String, dynamic> json) =>
+      _$$DatabaseCacheSettingsImplFromJson(json);
 
   @override
   @HiveField(2)
@@ -177,10 +158,10 @@ class _$_DatabaseCacheSettings extends _DatabaseCacheSettings {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DatabaseCacheSettings &&
+            other is _$DatabaseCacheSettingsImpl &&
             (identical(other.entriesCountByTypeLimitTypeString,
                     entriesCountByTypeLimitTypeString) ||
                 other.entriesCountByTypeLimitTypeString ==
@@ -189,19 +170,23 @@ class _$_DatabaseCacheSettings extends _DatabaseCacheSettings {
                 other.ageLimitTypeString == ageLimitTypeString));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType, entriesCountByTypeLimitTypeString, ageLimitTypeString);
 
   @JsonKey(ignore: true)
   @override
-  _$DatabaseCacheSettingsCopyWith<_DatabaseCacheSettings> get copyWith =>
-      __$DatabaseCacheSettingsCopyWithImpl<_DatabaseCacheSettings>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DatabaseCacheSettingsImplCopyWith<_$DatabaseCacheSettingsImpl>
+      get copyWith => __$$DatabaseCacheSettingsImplCopyWithImpl<
+          _$DatabaseCacheSettingsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_DatabaseCacheSettingsToJson(this);
+    return _$$DatabaseCacheSettingsImplToJson(
+      this,
+    );
   }
 }
 
@@ -209,14 +194,14 @@ abstract class _DatabaseCacheSettings extends DatabaseCacheSettings {
   const factory _DatabaseCacheSettings(
       {@HiveField(2)
       @JsonKey(name: 'entries_count_by_type_limit_type')
-          required String entriesCountByTypeLimitTypeString,
+      required final String entriesCountByTypeLimitTypeString,
       @HiveField(3)
       @JsonKey(name: 'age_limit_in_microseconds_type')
-          required String ageLimitTypeString}) = _$_DatabaseCacheSettings;
+      required final String ageLimitTypeString}) = _$DatabaseCacheSettingsImpl;
   const _DatabaseCacheSettings._() : super._();
 
   factory _DatabaseCacheSettings.fromJson(Map<String, dynamic> json) =
-      _$_DatabaseCacheSettings.fromJson;
+      _$DatabaseCacheSettingsImpl.fromJson;
 
   @override
   @HiveField(2)
@@ -228,6 +213,6 @@ abstract class _DatabaseCacheSettings extends DatabaseCacheSettings {
   String get ageLimitTypeString;
   @override
   @JsonKey(ignore: true)
-  _$DatabaseCacheSettingsCopyWith<_DatabaseCacheSettings> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$DatabaseCacheSettingsImplCopyWith<_$DatabaseCacheSettingsImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

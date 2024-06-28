@@ -54,17 +54,17 @@ class UnifediApiMediaAttachmentSizeAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiMediaAttachmentSize _$$_UnifediApiMediaAttachmentSizeFromJson(
-        Map<String, dynamic> json) =>
-    _$_UnifediApiMediaAttachmentSize(
-      width: json['width'] as int,
-      height: json['height'] as int,
-      size: json['size'] as String?,
-      aspect: (json['aspect'] as num?)?.toDouble(),
-    );
+_$UnifediApiMediaAttachmentSizeImpl
+    _$$UnifediApiMediaAttachmentSizeImplFromJson(Map<String, dynamic> json) =>
+        _$UnifediApiMediaAttachmentSizeImpl(
+          width: (json['width'] as num).toInt(),
+          height: (json['height'] as num).toInt(),
+          size: json['size'] as String?,
+          aspect: (json['aspect'] as num?)?.toDouble(),
+        );
 
-Map<String, dynamic> _$$_UnifediApiMediaAttachmentSizeToJson(
-    _$_UnifediApiMediaAttachmentSize instance) {
+Map<String, dynamic> _$$UnifediApiMediaAttachmentSizeImplToJson(
+    _$UnifediApiMediaAttachmentSizeImpl instance) {
   final val = <String, dynamic>{
     'width': instance.width,
     'height': instance.height,

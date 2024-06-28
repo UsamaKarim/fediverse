@@ -65,9 +65,9 @@ class PleromaApiChatMessageAdapter extends TypeAdapter<PleromaApiChatMessage> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiChatMessage _$$_PleromaApiChatMessageFromJson(
+_$PleromaApiChatMessageImpl _$$PleromaApiChatMessageImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiChatMessage(
+    _$PleromaApiChatMessageImpl(
       id: json['id'] as String,
       chatId: json['chat_id'] as String,
       accountId: json['account_id'] as String,
@@ -85,8 +85,8 @@ _$_PleromaApiChatMessage _$$_PleromaApiChatMessageFromJson(
           : PleromaApiCard.fromJson(json['card'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_PleromaApiChatMessageToJson(
-    _$_PleromaApiChatMessage instance) {
+Map<String, dynamic> _$$PleromaApiChatMessageImplToJson(
+    _$PleromaApiChatMessageImpl instance) {
   final val = <String, dynamic>{
     'id': instance.id,
     'chat_id': instance.chatId,

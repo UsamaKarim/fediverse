@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_announcement_emoji_reaction_model_mastodon_adapter.dart';
 
@@ -11,34 +12,13 @@ part of 'unifedi_api_announcement_emoji_reaction_model_mastodon_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiAnnouncementEmojiReactionMastodonAdapter
     _$UnifediApiAnnouncementEmojiReactionMastodonAdapterFromJson(
         Map<String, dynamic> json) {
   return _UnifediApiAnnouncementEmojiReactionMastodonAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiAnnouncementEmojiReactionMastodonAdapterTearOff {
-  const _$UnifediApiAnnouncementEmojiReactionMastodonAdapterTearOff();
-
-  _UnifediApiAnnouncementEmojiReactionMastodonAdapter call(
-      @HiveField(0) MastodonApiAnnouncementEmojiReaction value) {
-    return _UnifediApiAnnouncementEmojiReactionMastodonAdapter(
-      value,
-    );
-  }
-
-  UnifediApiAnnouncementEmojiReactionMastodonAdapter fromJson(
-      Map<String, Object?> json) {
-    return UnifediApiAnnouncementEmojiReactionMastodonAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiAnnouncementEmojiReactionMastodonAdapter =
-    _$UnifediApiAnnouncementEmojiReactionMastodonAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiAnnouncementEmojiReactionMastodonAdapter {
@@ -60,55 +40,64 @@ abstract class $UnifediApiAnnouncementEmojiReactionMastodonAdapterCopyWith<
           UnifediApiAnnouncementEmojiReactionMastodonAdapter value,
           $Res Function(UnifediApiAnnouncementEmojiReactionMastodonAdapter)
               then) =
-      _$UnifediApiAnnouncementEmojiReactionMastodonAdapterCopyWithImpl<$Res>;
+      _$UnifediApiAnnouncementEmojiReactionMastodonAdapterCopyWithImpl<$Res,
+          UnifediApiAnnouncementEmojiReactionMastodonAdapter>;
+  @useResult
   $Res call({@HiveField(0) MastodonApiAnnouncementEmojiReaction value});
 
   $MastodonApiAnnouncementEmojiReactionCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiAnnouncementEmojiReactionMastodonAdapterCopyWithImpl<$Res>
+class _$UnifediApiAnnouncementEmojiReactionMastodonAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiAnnouncementEmojiReactionMastodonAdapter>
     implements
         $UnifediApiAnnouncementEmojiReactionMastodonAdapterCopyWith<$Res> {
   _$UnifediApiAnnouncementEmojiReactionMastodonAdapterCopyWithImpl(
       this._value, this._then);
 
-  final UnifediApiAnnouncementEmojiReactionMastodonAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiAnnouncementEmojiReactionMastodonAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiAnnouncementEmojiReaction,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiAnnouncementEmojiReactionCopyWith<$Res> get value {
     return $MastodonApiAnnouncementEmojiReactionCopyWith<$Res>(_value.value,
         (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiAnnouncementEmojiReactionMastodonAdapterCopyWith<
+abstract class _$$UnifediApiAnnouncementEmojiReactionMastodonAdapterImplCopyWith<
         $Res>
     implements
         $UnifediApiAnnouncementEmojiReactionMastodonAdapterCopyWith<$Res> {
-  factory _$UnifediApiAnnouncementEmojiReactionMastodonAdapterCopyWith(
-          _UnifediApiAnnouncementEmojiReactionMastodonAdapter value,
-          $Res Function(_UnifediApiAnnouncementEmojiReactionMastodonAdapter)
+  factory _$$UnifediApiAnnouncementEmojiReactionMastodonAdapterImplCopyWith(
+          _$UnifediApiAnnouncementEmojiReactionMastodonAdapterImpl value,
+          $Res Function(
+                  _$UnifediApiAnnouncementEmojiReactionMastodonAdapterImpl)
               then) =
-      __$UnifediApiAnnouncementEmojiReactionMastodonAdapterCopyWithImpl<$Res>;
+      __$$UnifediApiAnnouncementEmojiReactionMastodonAdapterImplCopyWithImpl<
+          $Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) MastodonApiAnnouncementEmojiReaction value});
 
   @override
@@ -116,29 +105,26 @@ abstract class _$UnifediApiAnnouncementEmojiReactionMastodonAdapterCopyWith<
 }
 
 /// @nodoc
-class __$UnifediApiAnnouncementEmojiReactionMastodonAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiAnnouncementEmojiReactionMastodonAdapterCopyWithImpl<
+class __$$UnifediApiAnnouncementEmojiReactionMastodonAdapterImplCopyWithImpl<
         $Res>
+    extends _$UnifediApiAnnouncementEmojiReactionMastodonAdapterCopyWithImpl<
+        $Res, _$UnifediApiAnnouncementEmojiReactionMastodonAdapterImpl>
     implements
-        _$UnifediApiAnnouncementEmojiReactionMastodonAdapterCopyWith<$Res> {
-  __$UnifediApiAnnouncementEmojiReactionMastodonAdapterCopyWithImpl(
-      _UnifediApiAnnouncementEmojiReactionMastodonAdapter _value,
-      $Res Function(_UnifediApiAnnouncementEmojiReactionMastodonAdapter) _then)
-      : super(
-            _value,
-            (v) => _then(
-                v as _UnifediApiAnnouncementEmojiReactionMastodonAdapter));
+        _$$UnifediApiAnnouncementEmojiReactionMastodonAdapterImplCopyWith<
+            $Res> {
+  __$$UnifediApiAnnouncementEmojiReactionMastodonAdapterImplCopyWithImpl(
+      _$UnifediApiAnnouncementEmojiReactionMastodonAdapterImpl _value,
+      $Res Function(_$UnifediApiAnnouncementEmojiReactionMastodonAdapterImpl)
+          _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiAnnouncementEmojiReactionMastodonAdapter get _value =>
-      super._value as _UnifediApiAnnouncementEmojiReactionMastodonAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiAnnouncementEmojiReactionMastodonAdapter(
-      value == freezed
+    return _then(_$UnifediApiAnnouncementEmojiReactionMastodonAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiAnnouncementEmojiReaction,
@@ -148,15 +134,15 @@ class __$UnifediApiAnnouncementEmojiReactionMastodonAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiAnnouncementEmojiReactionMastodonAdapter
+class _$UnifediApiAnnouncementEmojiReactionMastodonAdapterImpl
     extends _UnifediApiAnnouncementEmojiReactionMastodonAdapter {
-  const _$_UnifediApiAnnouncementEmojiReactionMastodonAdapter(
+  const _$UnifediApiAnnouncementEmojiReactionMastodonAdapterImpl(
       @HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiAnnouncementEmojiReactionMastodonAdapter.fromJson(
+  factory _$UnifediApiAnnouncementEmojiReactionMastodonAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiAnnouncementEmojiReactionMastodonAdapterFromJson(json);
+      _$$UnifediApiAnnouncementEmojiReactionMastodonAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -168,48 +154,52 @@ class _$_UnifediApiAnnouncementEmojiReactionMastodonAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiAnnouncementEmojiReactionMastodonAdapter &&
+            other is _$UnifediApiAnnouncementEmojiReactionMastodonAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiAnnouncementEmojiReactionMastodonAdapterCopyWith<
-          _UnifediApiAnnouncementEmojiReactionMastodonAdapter>
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiAnnouncementEmojiReactionMastodonAdapterImplCopyWith<
+          _$UnifediApiAnnouncementEmojiReactionMastodonAdapterImpl>
       get copyWith =>
-          __$UnifediApiAnnouncementEmojiReactionMastodonAdapterCopyWithImpl<
-                  _UnifediApiAnnouncementEmojiReactionMastodonAdapter>(
+          __$$UnifediApiAnnouncementEmojiReactionMastodonAdapterImplCopyWithImpl<
+                  _$UnifediApiAnnouncementEmojiReactionMastodonAdapterImpl>(
               this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiAnnouncementEmojiReactionMastodonAdapterToJson(this);
+    return _$$UnifediApiAnnouncementEmojiReactionMastodonAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiAnnouncementEmojiReactionMastodonAdapter
     extends UnifediApiAnnouncementEmojiReactionMastodonAdapter {
   const factory _UnifediApiAnnouncementEmojiReactionMastodonAdapter(
-          @HiveField(0) MastodonApiAnnouncementEmojiReaction value) =
-      _$_UnifediApiAnnouncementEmojiReactionMastodonAdapter;
+          @HiveField(0) final MastodonApiAnnouncementEmojiReaction value) =
+      _$UnifediApiAnnouncementEmojiReactionMastodonAdapterImpl;
   const _UnifediApiAnnouncementEmojiReactionMastodonAdapter._() : super._();
 
   factory _UnifediApiAnnouncementEmojiReactionMastodonAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiAnnouncementEmojiReactionMastodonAdapter.fromJson;
+      _$UnifediApiAnnouncementEmojiReactionMastodonAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   MastodonApiAnnouncementEmojiReaction get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiAnnouncementEmojiReactionMastodonAdapterCopyWith<
-          _UnifediApiAnnouncementEmojiReactionMastodonAdapter>
+  _$$UnifediApiAnnouncementEmojiReactionMastodonAdapterImplCopyWith<
+          _$UnifediApiAnnouncementEmojiReactionMastodonAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

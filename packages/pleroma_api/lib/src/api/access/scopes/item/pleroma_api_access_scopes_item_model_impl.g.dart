@@ -48,15 +48,15 @@ class PleromaApiAccessScopesItemAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiAccessScopesItem _$$_PleromaApiAccessScopesItemFromJson(
+_$PleromaApiAccessScopesItemImpl _$$PleromaApiAccessScopesItemImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiAccessScopesItem(
+    _$PleromaApiAccessScopesItemImpl(
       permission: json['permission'] as String,
       target: json['target'] as String,
     );
 
-Map<String, dynamic> _$$_PleromaApiAccessScopesItemToJson(
-        _$_PleromaApiAccessScopesItem instance) =>
+Map<String, dynamic> _$$PleromaApiAccessScopesItemImplToJson(
+        _$PleromaApiAccessScopesItemImpl instance) =>
     <String, dynamic>{
       'permission': instance.permission,
       'target': instance.target,

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_access_scopes_item_model_impl.dart';
 
@@ -11,33 +12,12 @@ part of 'pleroma_api_access_scopes_item_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiAccessScopesItem _$PleromaApiAccessScopesItemFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiAccessScopesItem.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiAccessScopesItemTearOff {
-  const _$PleromaApiAccessScopesItemTearOff();
-
-  _PleromaApiAccessScopesItem call(
-      {@HiveField(0) required String permission,
-      @HiveField(1) required String target}) {
-    return _PleromaApiAccessScopesItem(
-      permission: permission,
-      target: target,
-    );
-  }
-
-  PleromaApiAccessScopesItem fromJson(Map<String, Object?> json) {
-    return PleromaApiAccessScopesItem.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiAccessScopesItem = _$PleromaApiAccessScopesItemTearOff();
 
 /// @nodoc
 mixin _$PleromaApiAccessScopesItem {
@@ -56,71 +36,76 @@ mixin _$PleromaApiAccessScopesItem {
 abstract class $PleromaApiAccessScopesItemCopyWith<$Res> {
   factory $PleromaApiAccessScopesItemCopyWith(PleromaApiAccessScopesItem value,
           $Res Function(PleromaApiAccessScopesItem) then) =
-      _$PleromaApiAccessScopesItemCopyWithImpl<$Res>;
+      _$PleromaApiAccessScopesItemCopyWithImpl<$Res,
+          PleromaApiAccessScopesItem>;
+  @useResult
   $Res call({@HiveField(0) String permission, @HiveField(1) String target});
 }
 
 /// @nodoc
-class _$PleromaApiAccessScopesItemCopyWithImpl<$Res>
+class _$PleromaApiAccessScopesItemCopyWithImpl<$Res,
+        $Val extends PleromaApiAccessScopesItem>
     implements $PleromaApiAccessScopesItemCopyWith<$Res> {
   _$PleromaApiAccessScopesItemCopyWithImpl(this._value, this._then);
 
-  final PleromaApiAccessScopesItem _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiAccessScopesItem) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? permission = freezed,
-    Object? target = freezed,
+    Object? permission = null,
+    Object? target = null,
   }) {
     return _then(_value.copyWith(
-      permission: permission == freezed
+      permission: null == permission
           ? _value.permission
           : permission // ignore: cast_nullable_to_non_nullable
               as String,
-      target: target == freezed
+      target: null == target
           ? _value.target
           : target // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiAccessScopesItemCopyWith<$Res>
+abstract class _$$PleromaApiAccessScopesItemImplCopyWith<$Res>
     implements $PleromaApiAccessScopesItemCopyWith<$Res> {
-  factory _$PleromaApiAccessScopesItemCopyWith(
-          _PleromaApiAccessScopesItem value,
-          $Res Function(_PleromaApiAccessScopesItem) then) =
-      __$PleromaApiAccessScopesItemCopyWithImpl<$Res>;
+  factory _$$PleromaApiAccessScopesItemImplCopyWith(
+          _$PleromaApiAccessScopesItemImpl value,
+          $Res Function(_$PleromaApiAccessScopesItemImpl) then) =
+      __$$PleromaApiAccessScopesItemImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) String permission, @HiveField(1) String target});
 }
 
 /// @nodoc
-class __$PleromaApiAccessScopesItemCopyWithImpl<$Res>
-    extends _$PleromaApiAccessScopesItemCopyWithImpl<$Res>
-    implements _$PleromaApiAccessScopesItemCopyWith<$Res> {
-  __$PleromaApiAccessScopesItemCopyWithImpl(_PleromaApiAccessScopesItem _value,
-      $Res Function(_PleromaApiAccessScopesItem) _then)
-      : super(_value, (v) => _then(v as _PleromaApiAccessScopesItem));
+class __$$PleromaApiAccessScopesItemImplCopyWithImpl<$Res>
+    extends _$PleromaApiAccessScopesItemCopyWithImpl<$Res,
+        _$PleromaApiAccessScopesItemImpl>
+    implements _$$PleromaApiAccessScopesItemImplCopyWith<$Res> {
+  __$$PleromaApiAccessScopesItemImplCopyWithImpl(
+      _$PleromaApiAccessScopesItemImpl _value,
+      $Res Function(_$PleromaApiAccessScopesItemImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiAccessScopesItem get _value =>
-      super._value as _PleromaApiAccessScopesItem;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? permission = freezed,
-    Object? target = freezed,
+    Object? permission = null,
+    Object? target = null,
   }) {
-    return _then(_PleromaApiAccessScopesItem(
-      permission: permission == freezed
+    return _then(_$PleromaApiAccessScopesItemImpl(
+      permission: null == permission
           ? _value.permission
           : permission // ignore: cast_nullable_to_non_nullable
               as String,
-      target: target == freezed
+      target: null == target
           ? _value.target
           : target // ignore: cast_nullable_to_non_nullable
               as String,
@@ -130,13 +115,14 @@ class __$PleromaApiAccessScopesItemCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiAccessScopesItem implements _PleromaApiAccessScopesItem {
-  const _$_PleromaApiAccessScopesItem(
+class _$PleromaApiAccessScopesItemImpl implements _PleromaApiAccessScopesItem {
+  const _$PleromaApiAccessScopesItemImpl(
       {@HiveField(0) required this.permission,
       @HiveField(1) required this.target});
 
-  factory _$_PleromaApiAccessScopesItem.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiAccessScopesItemFromJson(json);
+  factory _$PleromaApiAccessScopesItemImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$PleromaApiAccessScopesItemImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -151,38 +137,43 @@ class _$_PleromaApiAccessScopesItem implements _PleromaApiAccessScopesItem {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiAccessScopesItem &&
+            other is _$PleromaApiAccessScopesItemImpl &&
             (identical(other.permission, permission) ||
                 other.permission == permission) &&
             (identical(other.target, target) || other.target == target));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, permission, target);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiAccessScopesItemCopyWith<_PleromaApiAccessScopesItem>
-      get copyWith => __$PleromaApiAccessScopesItemCopyWithImpl<
-          _PleromaApiAccessScopesItem>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiAccessScopesItemImplCopyWith<_$PleromaApiAccessScopesItemImpl>
+      get copyWith => __$$PleromaApiAccessScopesItemImplCopyWithImpl<
+          _$PleromaApiAccessScopesItemImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiAccessScopesItemToJson(this);
+    return _$$PleromaApiAccessScopesItemImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiAccessScopesItem
     implements PleromaApiAccessScopesItem {
   const factory _PleromaApiAccessScopesItem(
-      {@HiveField(0) required String permission,
-      @HiveField(1) required String target}) = _$_PleromaApiAccessScopesItem;
+          {@HiveField(0) required final String permission,
+          @HiveField(1) required final String target}) =
+      _$PleromaApiAccessScopesItemImpl;
 
   factory _PleromaApiAccessScopesItem.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiAccessScopesItem.fromJson;
+      _$PleromaApiAccessScopesItemImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -192,6 +183,6 @@ abstract class _PleromaApiAccessScopesItem
   String get target;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiAccessScopesItemCopyWith<_PleromaApiAccessScopesItem>
+  _$$PleromaApiAccessScopesItemImplCopyWith<_$PleromaApiAccessScopesItemImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

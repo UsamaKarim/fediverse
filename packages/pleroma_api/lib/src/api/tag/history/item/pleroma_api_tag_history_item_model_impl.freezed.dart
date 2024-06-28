@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_tag_history_item_model_impl.dart';
 
@@ -11,41 +12,12 @@ part of 'pleroma_api_tag_history_item_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiTagHistoryItem _$PleromaApiTagHistoryItemFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiTagHistoryItem.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiTagHistoryItemTearOff {
-  const _$PleromaApiTagHistoryItemTearOff();
-
-  _PleromaApiTagHistoryItem call(
-      {@HiveField(0)
-      @JsonKey(fromJson: JsonParseHelper.fromStringToInt, toJson: JsonParseHelper.toStringFromInt)
-          required int accounts,
-      @HiveField(1)
-      @JsonKey(name: 'day', fromJson: JsonParseHelper.fromStringToInt, toJson: JsonParseHelper.toStringFromInt)
-          required int dayInUnixTimestamp,
-      @HiveField(2)
-      @JsonKey(fromJson: JsonParseHelper.fromStringToInt, toJson: JsonParseHelper.toStringFromInt)
-          required int uses}) {
-    return _PleromaApiTagHistoryItem(
-      accounts: accounts,
-      dayInUnixTimestamp: dayInUnixTimestamp,
-      uses: uses,
-    );
-  }
-
-  PleromaApiTagHistoryItem fromJson(Map<String, Object?> json) {
-    return PleromaApiTagHistoryItem.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiTagHistoryItem = _$PleromaApiTagHistoryItemTearOff();
 
 /// @nodoc
 mixin _$PleromaApiTagHistoryItem {
@@ -76,98 +48,117 @@ mixin _$PleromaApiTagHistoryItem {
 abstract class $PleromaApiTagHistoryItemCopyWith<$Res> {
   factory $PleromaApiTagHistoryItemCopyWith(PleromaApiTagHistoryItem value,
           $Res Function(PleromaApiTagHistoryItem) then) =
-      _$PleromaApiTagHistoryItemCopyWithImpl<$Res>;
+      _$PleromaApiTagHistoryItemCopyWithImpl<$Res, PleromaApiTagHistoryItem>;
+  @useResult
   $Res call(
       {@HiveField(0)
-      @JsonKey(fromJson: JsonParseHelper.fromStringToInt, toJson: JsonParseHelper.toStringFromInt)
-          int accounts,
+      @JsonKey(
+          fromJson: JsonParseHelper.fromStringToInt,
+          toJson: JsonParseHelper.toStringFromInt)
+      int accounts,
       @HiveField(1)
-      @JsonKey(name: 'day', fromJson: JsonParseHelper.fromStringToInt, toJson: JsonParseHelper.toStringFromInt)
-          int dayInUnixTimestamp,
+      @JsonKey(
+          name: 'day',
+          fromJson: JsonParseHelper.fromStringToInt,
+          toJson: JsonParseHelper.toStringFromInt)
+      int dayInUnixTimestamp,
       @HiveField(2)
-      @JsonKey(fromJson: JsonParseHelper.fromStringToInt, toJson: JsonParseHelper.toStringFromInt)
-          int uses});
+      @JsonKey(
+          fromJson: JsonParseHelper.fromStringToInt,
+          toJson: JsonParseHelper.toStringFromInt)
+      int uses});
 }
 
 /// @nodoc
-class _$PleromaApiTagHistoryItemCopyWithImpl<$Res>
+class _$PleromaApiTagHistoryItemCopyWithImpl<$Res,
+        $Val extends PleromaApiTagHistoryItem>
     implements $PleromaApiTagHistoryItemCopyWith<$Res> {
   _$PleromaApiTagHistoryItemCopyWithImpl(this._value, this._then);
 
-  final PleromaApiTagHistoryItem _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiTagHistoryItem) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? accounts = freezed,
-    Object? dayInUnixTimestamp = freezed,
-    Object? uses = freezed,
+    Object? accounts = null,
+    Object? dayInUnixTimestamp = null,
+    Object? uses = null,
   }) {
     return _then(_value.copyWith(
-      accounts: accounts == freezed
+      accounts: null == accounts
           ? _value.accounts
           : accounts // ignore: cast_nullable_to_non_nullable
               as int,
-      dayInUnixTimestamp: dayInUnixTimestamp == freezed
+      dayInUnixTimestamp: null == dayInUnixTimestamp
           ? _value.dayInUnixTimestamp
           : dayInUnixTimestamp // ignore: cast_nullable_to_non_nullable
               as int,
-      uses: uses == freezed
+      uses: null == uses
           ? _value.uses
           : uses // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiTagHistoryItemCopyWith<$Res>
+abstract class _$$PleromaApiTagHistoryItemImplCopyWith<$Res>
     implements $PleromaApiTagHistoryItemCopyWith<$Res> {
-  factory _$PleromaApiTagHistoryItemCopyWith(_PleromaApiTagHistoryItem value,
-          $Res Function(_PleromaApiTagHistoryItem) then) =
-      __$PleromaApiTagHistoryItemCopyWithImpl<$Res>;
+  factory _$$PleromaApiTagHistoryItemImplCopyWith(
+          _$PleromaApiTagHistoryItemImpl value,
+          $Res Function(_$PleromaApiTagHistoryItemImpl) then) =
+      __$$PleromaApiTagHistoryItemImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0)
-      @JsonKey(fromJson: JsonParseHelper.fromStringToInt, toJson: JsonParseHelper.toStringFromInt)
-          int accounts,
+      @JsonKey(
+          fromJson: JsonParseHelper.fromStringToInt,
+          toJson: JsonParseHelper.toStringFromInt)
+      int accounts,
       @HiveField(1)
-      @JsonKey(name: 'day', fromJson: JsonParseHelper.fromStringToInt, toJson: JsonParseHelper.toStringFromInt)
-          int dayInUnixTimestamp,
+      @JsonKey(
+          name: 'day',
+          fromJson: JsonParseHelper.fromStringToInt,
+          toJson: JsonParseHelper.toStringFromInt)
+      int dayInUnixTimestamp,
       @HiveField(2)
-      @JsonKey(fromJson: JsonParseHelper.fromStringToInt, toJson: JsonParseHelper.toStringFromInt)
-          int uses});
+      @JsonKey(
+          fromJson: JsonParseHelper.fromStringToInt,
+          toJson: JsonParseHelper.toStringFromInt)
+      int uses});
 }
 
 /// @nodoc
-class __$PleromaApiTagHistoryItemCopyWithImpl<$Res>
-    extends _$PleromaApiTagHistoryItemCopyWithImpl<$Res>
-    implements _$PleromaApiTagHistoryItemCopyWith<$Res> {
-  __$PleromaApiTagHistoryItemCopyWithImpl(_PleromaApiTagHistoryItem _value,
-      $Res Function(_PleromaApiTagHistoryItem) _then)
-      : super(_value, (v) => _then(v as _PleromaApiTagHistoryItem));
+class __$$PleromaApiTagHistoryItemImplCopyWithImpl<$Res>
+    extends _$PleromaApiTagHistoryItemCopyWithImpl<$Res,
+        _$PleromaApiTagHistoryItemImpl>
+    implements _$$PleromaApiTagHistoryItemImplCopyWith<$Res> {
+  __$$PleromaApiTagHistoryItemImplCopyWithImpl(
+      _$PleromaApiTagHistoryItemImpl _value,
+      $Res Function(_$PleromaApiTagHistoryItemImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiTagHistoryItem get _value =>
-      super._value as _PleromaApiTagHistoryItem;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? accounts = freezed,
-    Object? dayInUnixTimestamp = freezed,
-    Object? uses = freezed,
+    Object? accounts = null,
+    Object? dayInUnixTimestamp = null,
+    Object? uses = null,
   }) {
-    return _then(_PleromaApiTagHistoryItem(
-      accounts: accounts == freezed
+    return _then(_$PleromaApiTagHistoryItemImpl(
+      accounts: null == accounts
           ? _value.accounts
           : accounts // ignore: cast_nullable_to_non_nullable
               as int,
-      dayInUnixTimestamp: dayInUnixTimestamp == freezed
+      dayInUnixTimestamp: null == dayInUnixTimestamp
           ? _value.dayInUnixTimestamp
           : dayInUnixTimestamp // ignore: cast_nullable_to_non_nullable
               as int,
-      uses: uses == freezed
+      uses: null == uses
           ? _value.uses
           : uses // ignore: cast_nullable_to_non_nullable
               as int,
@@ -177,20 +168,27 @@ class __$PleromaApiTagHistoryItemCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiTagHistoryItem implements _PleromaApiTagHistoryItem {
-  const _$_PleromaApiTagHistoryItem(
+class _$PleromaApiTagHistoryItemImpl implements _PleromaApiTagHistoryItem {
+  const _$PleromaApiTagHistoryItemImpl(
       {@HiveField(0)
-      @JsonKey(fromJson: JsonParseHelper.fromStringToInt, toJson: JsonParseHelper.toStringFromInt)
-          required this.accounts,
+      @JsonKey(
+          fromJson: JsonParseHelper.fromStringToInt,
+          toJson: JsonParseHelper.toStringFromInt)
+      required this.accounts,
       @HiveField(1)
-      @JsonKey(name: 'day', fromJson: JsonParseHelper.fromStringToInt, toJson: JsonParseHelper.toStringFromInt)
-          required this.dayInUnixTimestamp,
+      @JsonKey(
+          name: 'day',
+          fromJson: JsonParseHelper.fromStringToInt,
+          toJson: JsonParseHelper.toStringFromInt)
+      required this.dayInUnixTimestamp,
       @HiveField(2)
-      @JsonKey(fromJson: JsonParseHelper.fromStringToInt, toJson: JsonParseHelper.toStringFromInt)
-          required this.uses});
+      @JsonKey(
+          fromJson: JsonParseHelper.fromStringToInt,
+          toJson: JsonParseHelper.toStringFromInt)
+      required this.uses});
 
-  factory _$_PleromaApiTagHistoryItem.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiTagHistoryItemFromJson(json);
+  factory _$PleromaApiTagHistoryItemImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiTagHistoryItemImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -218,10 +216,10 @@ class _$_PleromaApiTagHistoryItem implements _PleromaApiTagHistoryItem {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiTagHistoryItem &&
+            other is _$PleromaApiTagHistoryItemImpl &&
             (identical(other.accounts, accounts) ||
                 other.accounts == accounts) &&
             (identical(other.dayInUnixTimestamp, dayInUnixTimestamp) ||
@@ -229,36 +227,47 @@ class _$_PleromaApiTagHistoryItem implements _PleromaApiTagHistoryItem {
             (identical(other.uses, uses) || other.uses == uses));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, accounts, dayInUnixTimestamp, uses);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiTagHistoryItemCopyWith<_PleromaApiTagHistoryItem> get copyWith =>
-      __$PleromaApiTagHistoryItemCopyWithImpl<_PleromaApiTagHistoryItem>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiTagHistoryItemImplCopyWith<_$PleromaApiTagHistoryItemImpl>
+      get copyWith => __$$PleromaApiTagHistoryItemImplCopyWithImpl<
+          _$PleromaApiTagHistoryItemImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiTagHistoryItemToJson(this);
+    return _$$PleromaApiTagHistoryItemImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiTagHistoryItem implements PleromaApiTagHistoryItem {
   const factory _PleromaApiTagHistoryItem(
       {@HiveField(0)
-      @JsonKey(fromJson: JsonParseHelper.fromStringToInt, toJson: JsonParseHelper.toStringFromInt)
-          required int accounts,
+      @JsonKey(
+          fromJson: JsonParseHelper.fromStringToInt,
+          toJson: JsonParseHelper.toStringFromInt)
+      required final int accounts,
       @HiveField(1)
-      @JsonKey(name: 'day', fromJson: JsonParseHelper.fromStringToInt, toJson: JsonParseHelper.toStringFromInt)
-          required int dayInUnixTimestamp,
+      @JsonKey(
+          name: 'day',
+          fromJson: JsonParseHelper.fromStringToInt,
+          toJson: JsonParseHelper.toStringFromInt)
+      required final int dayInUnixTimestamp,
       @HiveField(2)
-      @JsonKey(fromJson: JsonParseHelper.fromStringToInt, toJson: JsonParseHelper.toStringFromInt)
-          required int uses}) = _$_PleromaApiTagHistoryItem;
+      @JsonKey(
+          fromJson: JsonParseHelper.fromStringToInt,
+          toJson: JsonParseHelper.toStringFromInt)
+      required final int uses}) = _$PleromaApiTagHistoryItemImpl;
 
   factory _PleromaApiTagHistoryItem.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiTagHistoryItem.fromJson;
+      _$PleromaApiTagHistoryItemImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -281,6 +290,6 @@ abstract class _PleromaApiTagHistoryItem implements PleromaApiTagHistoryItem {
   int get uses;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiTagHistoryItemCopyWith<_PleromaApiTagHistoryItem> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PleromaApiTagHistoryItemImplCopyWith<_$PleromaApiTagHistoryItemImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

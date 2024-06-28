@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_my_account_model_impl.dart';
 
@@ -11,106 +12,11 @@ part of 'mastodon_api_my_account_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiMyAccount _$MastodonApiMyAccountFromJson(Map<String, dynamic> json) {
   return _MastodonApiMyAccount.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiMyAccountTearOff {
-  const _$MastodonApiMyAccountTearOff();
-
-  _MastodonApiMyAccount call(
-      {@HiveField(0)
-          required String username,
-      @HiveField(1)
-          required String url,
-      @HiveField(2)
-      @JsonKey(name: 'statuses_count')
-          required int statusesCount,
-      @HiveField(3)
-          required String? note,
-      @HiveField(4)
-          required bool locked,
-      @HiveField(5)
-          required String id,
-      @HiveField(6)
-      @JsonKey(name: 'header_static')
-          required String headerStatic,
-      @HiveField(7)
-          required String header,
-      @HiveField(8)
-      @JsonKey(name: 'following_count')
-          required int followingCount,
-      @HiveField(9)
-      @JsonKey(name: 'followers_count')
-          required int followersCount,
-      @HiveField(10)
-          required List<MastodonApiField>? fields,
-      @HiveField(11)
-          required List<MastodonApiEmoji>? emojis,
-      @HiveField(12)
-      @JsonKey(name: 'display_name')
-          required String? displayName,
-      @HiveField(13)
-      @JsonKey(name: 'created_at')
-          required DateTime createdAt,
-      @HiveField(14)
-          required bool? bot,
-      @HiveField(15)
-      @JsonKey(name: 'avatar_static')
-          required String avatarStatic,
-      @HiveField(16)
-          required String avatar,
-      @HiveField(17)
-          required String acct,
-      @HiveField(20)
-      @JsonKey(name: 'last_status_at')
-          required DateTime? lastStatusAt,
-      @HiveField(21)
-          required MastodonApiMyAccountSource? source,
-      @HiveField(22)
-          required bool? discoverable,
-      @HiveField(23)
-          required bool? suspended,
-      @JsonKey(name: 'mute_expires_at')
-      @HiveField(24)
-          required DateTime? muteExpiresAt}) {
-    return _MastodonApiMyAccount(
-      username: username,
-      url: url,
-      statusesCount: statusesCount,
-      note: note,
-      locked: locked,
-      id: id,
-      headerStatic: headerStatic,
-      header: header,
-      followingCount: followingCount,
-      followersCount: followersCount,
-      fields: fields,
-      emojis: emojis,
-      displayName: displayName,
-      createdAt: createdAt,
-      bot: bot,
-      avatarStatic: avatarStatic,
-      avatar: avatar,
-      acct: acct,
-      lastStatusAt: lastStatusAt,
-      source: source,
-      discoverable: discoverable,
-      suspended: suspended,
-      muteExpiresAt: muteExpiresAt,
-    );
-  }
-
-  MastodonApiMyAccount fromJson(Map<String, Object?> json) {
-    return MastodonApiMyAccount.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiMyAccount = _$MastodonApiMyAccountTearOff();
 
 /// @nodoc
 mixin _$MastodonApiMyAccount {
@@ -180,96 +86,70 @@ mixin _$MastodonApiMyAccount {
 abstract class $MastodonApiMyAccountCopyWith<$Res> {
   factory $MastodonApiMyAccountCopyWith(MastodonApiMyAccount value,
           $Res Function(MastodonApiMyAccount) then) =
-      _$MastodonApiMyAccountCopyWithImpl<$Res>;
+      _$MastodonApiMyAccountCopyWithImpl<$Res, MastodonApiMyAccount>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-          String username,
-      @HiveField(1)
-          String url,
-      @HiveField(2)
-      @JsonKey(name: 'statuses_count')
-          int statusesCount,
-      @HiveField(3)
-          String? note,
-      @HiveField(4)
-          bool locked,
-      @HiveField(5)
-          String id,
-      @HiveField(6)
-      @JsonKey(name: 'header_static')
-          String headerStatic,
-      @HiveField(7)
-          String header,
-      @HiveField(8)
-      @JsonKey(name: 'following_count')
-          int followingCount,
-      @HiveField(9)
-      @JsonKey(name: 'followers_count')
-          int followersCount,
-      @HiveField(10)
-          List<MastodonApiField>? fields,
-      @HiveField(11)
-          List<MastodonApiEmoji>? emojis,
-      @HiveField(12)
-      @JsonKey(name: 'display_name')
-          String? displayName,
-      @HiveField(13)
-      @JsonKey(name: 'created_at')
-          DateTime createdAt,
-      @HiveField(14)
-          bool? bot,
-      @HiveField(15)
-      @JsonKey(name: 'avatar_static')
-          String avatarStatic,
-      @HiveField(16)
-          String avatar,
-      @HiveField(17)
-          String acct,
-      @HiveField(20)
-      @JsonKey(name: 'last_status_at')
-          DateTime? lastStatusAt,
-      @HiveField(21)
-          MastodonApiMyAccountSource? source,
-      @HiveField(22)
-          bool? discoverable,
-      @HiveField(23)
-          bool? suspended,
+      {@HiveField(0) String username,
+      @HiveField(1) String url,
+      @HiveField(2) @JsonKey(name: 'statuses_count') int statusesCount,
+      @HiveField(3) String? note,
+      @HiveField(4) bool locked,
+      @HiveField(5) String id,
+      @HiveField(6) @JsonKey(name: 'header_static') String headerStatic,
+      @HiveField(7) String header,
+      @HiveField(8) @JsonKey(name: 'following_count') int followingCount,
+      @HiveField(9) @JsonKey(name: 'followers_count') int followersCount,
+      @HiveField(10) List<MastodonApiField>? fields,
+      @HiveField(11) List<MastodonApiEmoji>? emojis,
+      @HiveField(12) @JsonKey(name: 'display_name') String? displayName,
+      @HiveField(13) @JsonKey(name: 'created_at') DateTime createdAt,
+      @HiveField(14) bool? bot,
+      @HiveField(15) @JsonKey(name: 'avatar_static') String avatarStatic,
+      @HiveField(16) String avatar,
+      @HiveField(17) String acct,
+      @HiveField(20) @JsonKey(name: 'last_status_at') DateTime? lastStatusAt,
+      @HiveField(21) MastodonApiMyAccountSource? source,
+      @HiveField(22) bool? discoverable,
+      @HiveField(23) bool? suspended,
       @JsonKey(name: 'mute_expires_at')
       @HiveField(24)
-          DateTime? muteExpiresAt});
+      DateTime? muteExpiresAt});
 
   $MastodonApiMyAccountSourceCopyWith<$Res>? get source;
 }
 
 /// @nodoc
-class _$MastodonApiMyAccountCopyWithImpl<$Res>
+class _$MastodonApiMyAccountCopyWithImpl<$Res,
+        $Val extends MastodonApiMyAccount>
     implements $MastodonApiMyAccountCopyWith<$Res> {
   _$MastodonApiMyAccountCopyWithImpl(this._value, this._then);
 
-  final MastodonApiMyAccount _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiMyAccount) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? username = freezed,
-    Object? url = freezed,
-    Object? statusesCount = freezed,
+    Object? username = null,
+    Object? url = null,
+    Object? statusesCount = null,
     Object? note = freezed,
-    Object? locked = freezed,
-    Object? id = freezed,
-    Object? headerStatic = freezed,
-    Object? header = freezed,
-    Object? followingCount = freezed,
-    Object? followersCount = freezed,
+    Object? locked = null,
+    Object? id = null,
+    Object? headerStatic = null,
+    Object? header = null,
+    Object? followingCount = null,
+    Object? followersCount = null,
     Object? fields = freezed,
     Object? emojis = freezed,
     Object? displayName = freezed,
-    Object? createdAt = freezed,
+    Object? createdAt = null,
     Object? bot = freezed,
-    Object? avatarStatic = freezed,
-    Object? avatar = freezed,
-    Object? acct = freezed,
+    Object? avatarStatic = null,
+    Object? avatar = null,
+    Object? acct = null,
     Object? lastStatusAt = freezed,
     Object? source = freezed,
     Object? discoverable = freezed,
@@ -277,308 +157,278 @@ class _$MastodonApiMyAccountCopyWithImpl<$Res>
     Object? muteExpiresAt = freezed,
   }) {
     return _then(_value.copyWith(
-      username: username == freezed
+      username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      statusesCount: statusesCount == freezed
+      statusesCount: null == statusesCount
           ? _value.statusesCount
           : statusesCount // ignore: cast_nullable_to_non_nullable
               as int,
-      note: note == freezed
+      note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
               as String?,
-      locked: locked == freezed
+      locked: null == locked
           ? _value.locked
           : locked // ignore: cast_nullable_to_non_nullable
               as bool,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      headerStatic: headerStatic == freezed
+      headerStatic: null == headerStatic
           ? _value.headerStatic
           : headerStatic // ignore: cast_nullable_to_non_nullable
               as String,
-      header: header == freezed
+      header: null == header
           ? _value.header
           : header // ignore: cast_nullable_to_non_nullable
               as String,
-      followingCount: followingCount == freezed
+      followingCount: null == followingCount
           ? _value.followingCount
           : followingCount // ignore: cast_nullable_to_non_nullable
               as int,
-      followersCount: followersCount == freezed
+      followersCount: null == followersCount
           ? _value.followersCount
           : followersCount // ignore: cast_nullable_to_non_nullable
               as int,
-      fields: fields == freezed
+      fields: freezed == fields
           ? _value.fields
           : fields // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiField>?,
-      emojis: emojis == freezed
+      emojis: freezed == emojis
           ? _value.emojis
           : emojis // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiEmoji>?,
-      displayName: displayName == freezed
+      displayName: freezed == displayName
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
               as String?,
-      createdAt: createdAt == freezed
+      createdAt: null == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      bot: bot == freezed
+      bot: freezed == bot
           ? _value.bot
           : bot // ignore: cast_nullable_to_non_nullable
               as bool?,
-      avatarStatic: avatarStatic == freezed
+      avatarStatic: null == avatarStatic
           ? _value.avatarStatic
           : avatarStatic // ignore: cast_nullable_to_non_nullable
               as String,
-      avatar: avatar == freezed
+      avatar: null == avatar
           ? _value.avatar
           : avatar // ignore: cast_nullable_to_non_nullable
               as String,
-      acct: acct == freezed
+      acct: null == acct
           ? _value.acct
           : acct // ignore: cast_nullable_to_non_nullable
               as String,
-      lastStatusAt: lastStatusAt == freezed
+      lastStatusAt: freezed == lastStatusAt
           ? _value.lastStatusAt
           : lastStatusAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      source: source == freezed
+      source: freezed == source
           ? _value.source
           : source // ignore: cast_nullable_to_non_nullable
               as MastodonApiMyAccountSource?,
-      discoverable: discoverable == freezed
+      discoverable: freezed == discoverable
           ? _value.discoverable
           : discoverable // ignore: cast_nullable_to_non_nullable
               as bool?,
-      suspended: suspended == freezed
+      suspended: freezed == suspended
           ? _value.suspended
           : suspended // ignore: cast_nullable_to_non_nullable
               as bool?,
-      muteExpiresAt: muteExpiresAt == freezed
+      muteExpiresAt: freezed == muteExpiresAt
           ? _value.muteExpiresAt
           : muteExpiresAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiMyAccountSourceCopyWith<$Res>? get source {
     if (_value.source == null) {
       return null;
     }
 
     return $MastodonApiMyAccountSourceCopyWith<$Res>(_value.source!, (value) {
-      return _then(_value.copyWith(source: value));
+      return _then(_value.copyWith(source: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiMyAccountCopyWith<$Res>
+abstract class _$$MastodonApiMyAccountImplCopyWith<$Res>
     implements $MastodonApiMyAccountCopyWith<$Res> {
-  factory _$MastodonApiMyAccountCopyWith(_MastodonApiMyAccount value,
-          $Res Function(_MastodonApiMyAccount) then) =
-      __$MastodonApiMyAccountCopyWithImpl<$Res>;
+  factory _$$MastodonApiMyAccountImplCopyWith(_$MastodonApiMyAccountImpl value,
+          $Res Function(_$MastodonApiMyAccountImpl) then) =
+      __$$MastodonApiMyAccountImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-          String username,
-      @HiveField(1)
-          String url,
-      @HiveField(2)
-      @JsonKey(name: 'statuses_count')
-          int statusesCount,
-      @HiveField(3)
-          String? note,
-      @HiveField(4)
-          bool locked,
-      @HiveField(5)
-          String id,
-      @HiveField(6)
-      @JsonKey(name: 'header_static')
-          String headerStatic,
-      @HiveField(7)
-          String header,
-      @HiveField(8)
-      @JsonKey(name: 'following_count')
-          int followingCount,
-      @HiveField(9)
-      @JsonKey(name: 'followers_count')
-          int followersCount,
-      @HiveField(10)
-          List<MastodonApiField>? fields,
-      @HiveField(11)
-          List<MastodonApiEmoji>? emojis,
-      @HiveField(12)
-      @JsonKey(name: 'display_name')
-          String? displayName,
-      @HiveField(13)
-      @JsonKey(name: 'created_at')
-          DateTime createdAt,
-      @HiveField(14)
-          bool? bot,
-      @HiveField(15)
-      @JsonKey(name: 'avatar_static')
-          String avatarStatic,
-      @HiveField(16)
-          String avatar,
-      @HiveField(17)
-          String acct,
-      @HiveField(20)
-      @JsonKey(name: 'last_status_at')
-          DateTime? lastStatusAt,
-      @HiveField(21)
-          MastodonApiMyAccountSource? source,
-      @HiveField(22)
-          bool? discoverable,
-      @HiveField(23)
-          bool? suspended,
+      {@HiveField(0) String username,
+      @HiveField(1) String url,
+      @HiveField(2) @JsonKey(name: 'statuses_count') int statusesCount,
+      @HiveField(3) String? note,
+      @HiveField(4) bool locked,
+      @HiveField(5) String id,
+      @HiveField(6) @JsonKey(name: 'header_static') String headerStatic,
+      @HiveField(7) String header,
+      @HiveField(8) @JsonKey(name: 'following_count') int followingCount,
+      @HiveField(9) @JsonKey(name: 'followers_count') int followersCount,
+      @HiveField(10) List<MastodonApiField>? fields,
+      @HiveField(11) List<MastodonApiEmoji>? emojis,
+      @HiveField(12) @JsonKey(name: 'display_name') String? displayName,
+      @HiveField(13) @JsonKey(name: 'created_at') DateTime createdAt,
+      @HiveField(14) bool? bot,
+      @HiveField(15) @JsonKey(name: 'avatar_static') String avatarStatic,
+      @HiveField(16) String avatar,
+      @HiveField(17) String acct,
+      @HiveField(20) @JsonKey(name: 'last_status_at') DateTime? lastStatusAt,
+      @HiveField(21) MastodonApiMyAccountSource? source,
+      @HiveField(22) bool? discoverable,
+      @HiveField(23) bool? suspended,
       @JsonKey(name: 'mute_expires_at')
       @HiveField(24)
-          DateTime? muteExpiresAt});
+      DateTime? muteExpiresAt});
 
   @override
   $MastodonApiMyAccountSourceCopyWith<$Res>? get source;
 }
 
 /// @nodoc
-class __$MastodonApiMyAccountCopyWithImpl<$Res>
-    extends _$MastodonApiMyAccountCopyWithImpl<$Res>
-    implements _$MastodonApiMyAccountCopyWith<$Res> {
-  __$MastodonApiMyAccountCopyWithImpl(
-      _MastodonApiMyAccount _value, $Res Function(_MastodonApiMyAccount) _then)
-      : super(_value, (v) => _then(v as _MastodonApiMyAccount));
+class __$$MastodonApiMyAccountImplCopyWithImpl<$Res>
+    extends _$MastodonApiMyAccountCopyWithImpl<$Res, _$MastodonApiMyAccountImpl>
+    implements _$$MastodonApiMyAccountImplCopyWith<$Res> {
+  __$$MastodonApiMyAccountImplCopyWithImpl(_$MastodonApiMyAccountImpl _value,
+      $Res Function(_$MastodonApiMyAccountImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiMyAccount get _value => super._value as _MastodonApiMyAccount;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? username = freezed,
-    Object? url = freezed,
-    Object? statusesCount = freezed,
+    Object? username = null,
+    Object? url = null,
+    Object? statusesCount = null,
     Object? note = freezed,
-    Object? locked = freezed,
-    Object? id = freezed,
-    Object? headerStatic = freezed,
-    Object? header = freezed,
-    Object? followingCount = freezed,
-    Object? followersCount = freezed,
+    Object? locked = null,
+    Object? id = null,
+    Object? headerStatic = null,
+    Object? header = null,
+    Object? followingCount = null,
+    Object? followersCount = null,
     Object? fields = freezed,
     Object? emojis = freezed,
     Object? displayName = freezed,
-    Object? createdAt = freezed,
+    Object? createdAt = null,
     Object? bot = freezed,
-    Object? avatarStatic = freezed,
-    Object? avatar = freezed,
-    Object? acct = freezed,
+    Object? avatarStatic = null,
+    Object? avatar = null,
+    Object? acct = null,
     Object? lastStatusAt = freezed,
     Object? source = freezed,
     Object? discoverable = freezed,
     Object? suspended = freezed,
     Object? muteExpiresAt = freezed,
   }) {
-    return _then(_MastodonApiMyAccount(
-      username: username == freezed
+    return _then(_$MastodonApiMyAccountImpl(
+      username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      statusesCount: statusesCount == freezed
+      statusesCount: null == statusesCount
           ? _value.statusesCount
           : statusesCount // ignore: cast_nullable_to_non_nullable
               as int,
-      note: note == freezed
+      note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
               as String?,
-      locked: locked == freezed
+      locked: null == locked
           ? _value.locked
           : locked // ignore: cast_nullable_to_non_nullable
               as bool,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      headerStatic: headerStatic == freezed
+      headerStatic: null == headerStatic
           ? _value.headerStatic
           : headerStatic // ignore: cast_nullable_to_non_nullable
               as String,
-      header: header == freezed
+      header: null == header
           ? _value.header
           : header // ignore: cast_nullable_to_non_nullable
               as String,
-      followingCount: followingCount == freezed
+      followingCount: null == followingCount
           ? _value.followingCount
           : followingCount // ignore: cast_nullable_to_non_nullable
               as int,
-      followersCount: followersCount == freezed
+      followersCount: null == followersCount
           ? _value.followersCount
           : followersCount // ignore: cast_nullable_to_non_nullable
               as int,
-      fields: fields == freezed
-          ? _value.fields
+      fields: freezed == fields
+          ? _value._fields
           : fields // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiField>?,
-      emojis: emojis == freezed
-          ? _value.emojis
+      emojis: freezed == emojis
+          ? _value._emojis
           : emojis // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiEmoji>?,
-      displayName: displayName == freezed
+      displayName: freezed == displayName
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
               as String?,
-      createdAt: createdAt == freezed
+      createdAt: null == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      bot: bot == freezed
+      bot: freezed == bot
           ? _value.bot
           : bot // ignore: cast_nullable_to_non_nullable
               as bool?,
-      avatarStatic: avatarStatic == freezed
+      avatarStatic: null == avatarStatic
           ? _value.avatarStatic
           : avatarStatic // ignore: cast_nullable_to_non_nullable
               as String,
-      avatar: avatar == freezed
+      avatar: null == avatar
           ? _value.avatar
           : avatar // ignore: cast_nullable_to_non_nullable
               as String,
-      acct: acct == freezed
+      acct: null == acct
           ? _value.acct
           : acct // ignore: cast_nullable_to_non_nullable
               as String,
-      lastStatusAt: lastStatusAt == freezed
+      lastStatusAt: freezed == lastStatusAt
           ? _value.lastStatusAt
           : lastStatusAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      source: source == freezed
+      source: freezed == source
           ? _value.source
           : source // ignore: cast_nullable_to_non_nullable
               as MastodonApiMyAccountSource?,
-      discoverable: discoverable == freezed
+      discoverable: freezed == discoverable
           ? _value.discoverable
           : discoverable // ignore: cast_nullable_to_non_nullable
               as bool?,
-      suspended: suspended == freezed
+      suspended: freezed == suspended
           ? _value.suspended
           : suspended // ignore: cast_nullable_to_non_nullable
               as bool?,
-      muteExpiresAt: muteExpiresAt == freezed
+      muteExpiresAt: freezed == muteExpiresAt
           ? _value.muteExpiresAt
           : muteExpiresAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
@@ -588,66 +438,46 @@ class __$MastodonApiMyAccountCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiMyAccount implements _MastodonApiMyAccount {
-  const _$_MastodonApiMyAccount(
-      {@HiveField(0)
-          required this.username,
-      @HiveField(1)
-          required this.url,
+class _$MastodonApiMyAccountImpl implements _MastodonApiMyAccount {
+  const _$MastodonApiMyAccountImpl(
+      {@HiveField(0) required this.username,
+      @HiveField(1) required this.url,
       @HiveField(2)
       @JsonKey(name: 'statuses_count')
-          required this.statusesCount,
-      @HiveField(3)
-          required this.note,
-      @HiveField(4)
-          required this.locked,
-      @HiveField(5)
-          required this.id,
-      @HiveField(6)
-      @JsonKey(name: 'header_static')
-          required this.headerStatic,
-      @HiveField(7)
-          required this.header,
+      required this.statusesCount,
+      @HiveField(3) required this.note,
+      @HiveField(4) required this.locked,
+      @HiveField(5) required this.id,
+      @HiveField(6) @JsonKey(name: 'header_static') required this.headerStatic,
+      @HiveField(7) required this.header,
       @HiveField(8)
       @JsonKey(name: 'following_count')
-          required this.followingCount,
+      required this.followingCount,
       @HiveField(9)
       @JsonKey(name: 'followers_count')
-          required this.followersCount,
-      @HiveField(10)
-          required this.fields,
-      @HiveField(11)
-          required this.emojis,
-      @HiveField(12)
-      @JsonKey(name: 'display_name')
-          required this.displayName,
-      @HiveField(13)
-      @JsonKey(name: 'created_at')
-          required this.createdAt,
-      @HiveField(14)
-          required this.bot,
-      @HiveField(15)
-      @JsonKey(name: 'avatar_static')
-          required this.avatarStatic,
-      @HiveField(16)
-          required this.avatar,
-      @HiveField(17)
-          required this.acct,
+      required this.followersCount,
+      @HiveField(10) required final List<MastodonApiField>? fields,
+      @HiveField(11) required final List<MastodonApiEmoji>? emojis,
+      @HiveField(12) @JsonKey(name: 'display_name') required this.displayName,
+      @HiveField(13) @JsonKey(name: 'created_at') required this.createdAt,
+      @HiveField(14) required this.bot,
+      @HiveField(15) @JsonKey(name: 'avatar_static') required this.avatarStatic,
+      @HiveField(16) required this.avatar,
+      @HiveField(17) required this.acct,
       @HiveField(20)
       @JsonKey(name: 'last_status_at')
-          required this.lastStatusAt,
-      @HiveField(21)
-          required this.source,
-      @HiveField(22)
-          required this.discoverable,
-      @HiveField(23)
-          required this.suspended,
+      required this.lastStatusAt,
+      @HiveField(21) required this.source,
+      @HiveField(22) required this.discoverable,
+      @HiveField(23) required this.suspended,
       @JsonKey(name: 'mute_expires_at')
       @HiveField(24)
-          required this.muteExpiresAt});
+      required this.muteExpiresAt})
+      : _fields = fields,
+        _emojis = emojis;
 
-  factory _$_MastodonApiMyAccount.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiMyAccountFromJson(json);
+  factory _$MastodonApiMyAccountImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MastodonApiMyAccountImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -683,12 +513,28 @@ class _$_MastodonApiMyAccount implements _MastodonApiMyAccount {
   @HiveField(9)
   @JsonKey(name: 'followers_count')
   final int followersCount;
+  final List<MastodonApiField>? _fields;
   @override
   @HiveField(10)
-  final List<MastodonApiField>? fields;
+  List<MastodonApiField>? get fields {
+    final value = _fields;
+    if (value == null) return null;
+    if (_fields is EqualUnmodifiableListView) return _fields;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  final List<MastodonApiEmoji>? _emojis;
   @override
   @HiveField(11)
-  final List<MastodonApiEmoji>? emojis;
+  List<MastodonApiEmoji>? get emojis {
+    final value = _emojis;
+    if (value == null) return null;
+    if (_emojis is EqualUnmodifiableListView) return _emojis;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(12)
   @JsonKey(name: 'display_name')
@@ -734,10 +580,10 @@ class _$_MastodonApiMyAccount implements _MastodonApiMyAccount {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiMyAccount &&
+            other is _$MastodonApiMyAccountImpl &&
             (identical(other.username, username) ||
                 other.username == username) &&
             (identical(other.url, url) || other.url == url) &&
@@ -753,8 +599,8 @@ class _$_MastodonApiMyAccount implements _MastodonApiMyAccount {
                 other.followingCount == followingCount) &&
             (identical(other.followersCount, followersCount) ||
                 other.followersCount == followersCount) &&
-            const DeepCollectionEquality().equals(other.fields, fields) &&
-            const DeepCollectionEquality().equals(other.emojis, emojis) &&
+            const DeepCollectionEquality().equals(other._fields, _fields) &&
+            const DeepCollectionEquality().equals(other._emojis, _emojis) &&
             (identical(other.displayName, displayName) ||
                 other.displayName == displayName) &&
             (identical(other.createdAt, createdAt) ||
@@ -775,6 +621,7 @@ class _$_MastodonApiMyAccount implements _MastodonApiMyAccount {
                 other.muteExpiresAt == muteExpiresAt));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -788,8 +635,8 @@ class _$_MastodonApiMyAccount implements _MastodonApiMyAccount {
         header,
         followingCount,
         followersCount,
-        const DeepCollectionEquality().hash(fields),
-        const DeepCollectionEquality().hash(emojis),
+        const DeepCollectionEquality().hash(_fields),
+        const DeepCollectionEquality().hash(_emojis),
         displayName,
         createdAt,
         bot,
@@ -805,76 +652,66 @@ class _$_MastodonApiMyAccount implements _MastodonApiMyAccount {
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiMyAccountCopyWith<_MastodonApiMyAccount> get copyWith =>
-      __$MastodonApiMyAccountCopyWithImpl<_MastodonApiMyAccount>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiMyAccountImplCopyWith<_$MastodonApiMyAccountImpl>
+      get copyWith =>
+          __$$MastodonApiMyAccountImplCopyWithImpl<_$MastodonApiMyAccountImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiMyAccountToJson(this);
+    return _$$MastodonApiMyAccountImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiMyAccount implements MastodonApiMyAccount {
   const factory _MastodonApiMyAccount(
-      {@HiveField(0)
-          required String username,
-      @HiveField(1)
-          required String url,
+      {@HiveField(0) required final String username,
+      @HiveField(1) required final String url,
       @HiveField(2)
       @JsonKey(name: 'statuses_count')
-          required int statusesCount,
-      @HiveField(3)
-          required String? note,
-      @HiveField(4)
-          required bool locked,
-      @HiveField(5)
-          required String id,
+      required final int statusesCount,
+      @HiveField(3) required final String? note,
+      @HiveField(4) required final bool locked,
+      @HiveField(5) required final String id,
       @HiveField(6)
       @JsonKey(name: 'header_static')
-          required String headerStatic,
-      @HiveField(7)
-          required String header,
+      required final String headerStatic,
+      @HiveField(7) required final String header,
       @HiveField(8)
       @JsonKey(name: 'following_count')
-          required int followingCount,
+      required final int followingCount,
       @HiveField(9)
       @JsonKey(name: 'followers_count')
-          required int followersCount,
-      @HiveField(10)
-          required List<MastodonApiField>? fields,
-      @HiveField(11)
-          required List<MastodonApiEmoji>? emojis,
+      required final int followersCount,
+      @HiveField(10) required final List<MastodonApiField>? fields,
+      @HiveField(11) required final List<MastodonApiEmoji>? emojis,
       @HiveField(12)
       @JsonKey(name: 'display_name')
-          required String? displayName,
+      required final String? displayName,
       @HiveField(13)
       @JsonKey(name: 'created_at')
-          required DateTime createdAt,
-      @HiveField(14)
-          required bool? bot,
+      required final DateTime createdAt,
+      @HiveField(14) required final bool? bot,
       @HiveField(15)
       @JsonKey(name: 'avatar_static')
-          required String avatarStatic,
-      @HiveField(16)
-          required String avatar,
-      @HiveField(17)
-          required String acct,
+      required final String avatarStatic,
+      @HiveField(16) required final String avatar,
+      @HiveField(17) required final String acct,
       @HiveField(20)
       @JsonKey(name: 'last_status_at')
-          required DateTime? lastStatusAt,
-      @HiveField(21)
-          required MastodonApiMyAccountSource? source,
-      @HiveField(22)
-          required bool? discoverable,
-      @HiveField(23)
-          required bool? suspended,
+      required final DateTime? lastStatusAt,
+      @HiveField(21) required final MastodonApiMyAccountSource? source,
+      @HiveField(22) required final bool? discoverable,
+      @HiveField(23) required final bool? suspended,
       @JsonKey(name: 'mute_expires_at')
       @HiveField(24)
-          required DateTime? muteExpiresAt}) = _$_MastodonApiMyAccount;
+      required final DateTime? muteExpiresAt}) = _$MastodonApiMyAccountImpl;
 
   factory _MastodonApiMyAccount.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiMyAccount.fromJson;
+      _$MastodonApiMyAccountImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -956,6 +793,6 @@ abstract class _MastodonApiMyAccount implements MastodonApiMyAccount {
   DateTime? get muteExpiresAt;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiMyAccountCopyWith<_MastodonApiMyAccount> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$MastodonApiMyAccountImplCopyWith<_$MastodonApiMyAccountImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

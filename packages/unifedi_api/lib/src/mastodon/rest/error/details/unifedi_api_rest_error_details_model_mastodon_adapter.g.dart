@@ -46,16 +46,16 @@ class UnifediApiRestErrorDetailsMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiRestErrorDetailsMastodonAdapter
-    _$$_UnifediApiRestErrorDetailsMastodonAdapterFromJson(
+_$UnifediApiRestErrorDetailsMastodonAdapterImpl
+    _$$UnifediApiRestErrorDetailsMastodonAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiRestErrorDetailsMastodonAdapter(
+        _$UnifediApiRestErrorDetailsMastodonAdapterImpl(
           MastodonApiRestErrorDetails.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiRestErrorDetailsMastodonAdapterToJson(
-        _$_UnifediApiRestErrorDetailsMastodonAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiRestErrorDetailsMastodonAdapterImplToJson(
+        _$UnifediApiRestErrorDetailsMastodonAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

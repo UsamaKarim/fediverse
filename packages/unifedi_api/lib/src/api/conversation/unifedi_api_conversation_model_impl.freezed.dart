@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_conversation_model_impl.dart';
 
@@ -11,45 +12,12 @@ part of 'unifedi_api_conversation_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiConversation _$UnifediApiConversationFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiConversation.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiConversationTearOff {
-  const _$UnifediApiConversationTearOff();
-
-  _UnifediApiConversation call(
-      {@HiveField(0)
-          required bool? unread,
-      @HiveField(1)
-      @JsonKey(name: 'last_status')
-          required UnifediApiStatus? lastStatus,
-      @HiveField(2)
-          required String id,
-      @HiveField(3)
-          required List<UnifediApiAccount> accounts,
-      @HiveField(4)
-          required List<UnifediApiAccount>? recipients}) {
-    return _UnifediApiConversation(
-      unread: unread,
-      lastStatus: lastStatus,
-      id: id,
-      accounts: accounts,
-      recipients: recipients,
-    );
-  }
-
-  UnifediApiConversation fromJson(Map<String, Object?> json) {
-    return UnifediApiConversation.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiConversation = _$UnifediApiConversationTearOff();
 
 /// @nodoc
 mixin _$UnifediApiConversation {
@@ -75,7 +43,8 @@ mixin _$UnifediApiConversation {
 abstract class $UnifediApiConversationCopyWith<$Res> {
   factory $UnifediApiConversationCopyWith(UnifediApiConversation value,
           $Res Function(UnifediApiConversation) then) =
-      _$UnifediApiConversationCopyWithImpl<$Res>;
+      _$UnifediApiConversationCopyWithImpl<$Res, UnifediApiConversation>;
+  @useResult
   $Res call(
       {@HiveField(0) bool? unread,
       @HiveField(1) @JsonKey(name: 'last_status') UnifediApiStatus? lastStatus,
@@ -87,65 +56,71 @@ abstract class $UnifediApiConversationCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UnifediApiConversationCopyWithImpl<$Res>
+class _$UnifediApiConversationCopyWithImpl<$Res,
+        $Val extends UnifediApiConversation>
     implements $UnifediApiConversationCopyWith<$Res> {
   _$UnifediApiConversationCopyWithImpl(this._value, this._then);
 
-  final UnifediApiConversation _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiConversation) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? unread = freezed,
     Object? lastStatus = freezed,
-    Object? id = freezed,
-    Object? accounts = freezed,
+    Object? id = null,
+    Object? accounts = null,
     Object? recipients = freezed,
   }) {
     return _then(_value.copyWith(
-      unread: unread == freezed
+      unread: freezed == unread
           ? _value.unread
           : unread // ignore: cast_nullable_to_non_nullable
               as bool?,
-      lastStatus: lastStatus == freezed
+      lastStatus: freezed == lastStatus
           ? _value.lastStatus
           : lastStatus // ignore: cast_nullable_to_non_nullable
               as UnifediApiStatus?,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      accounts: accounts == freezed
+      accounts: null == accounts
           ? _value.accounts
           : accounts // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiAccount>,
-      recipients: recipients == freezed
+      recipients: freezed == recipients
           ? _value.recipients
           : recipients // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiAccount>?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiStatusCopyWith<$Res>? get lastStatus {
     if (_value.lastStatus == null) {
       return null;
     }
 
     return $UnifediApiStatusCopyWith<$Res>(_value.lastStatus!, (value) {
-      return _then(_value.copyWith(lastStatus: value));
+      return _then(_value.copyWith(lastStatus: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiConversationCopyWith<$Res>
+abstract class _$$UnifediApiConversationImplCopyWith<$Res>
     implements $UnifediApiConversationCopyWith<$Res> {
-  factory _$UnifediApiConversationCopyWith(_UnifediApiConversation value,
-          $Res Function(_UnifediApiConversation) then) =
-      __$UnifediApiConversationCopyWithImpl<$Res>;
+  factory _$$UnifediApiConversationImplCopyWith(
+          _$UnifediApiConversationImpl value,
+          $Res Function(_$UnifediApiConversationImpl) then) =
+      __$$UnifediApiConversationImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) bool? unread,
       @HiveField(1) @JsonKey(name: 'last_status') UnifediApiStatus? lastStatus,
@@ -158,43 +133,43 @@ abstract class _$UnifediApiConversationCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiConversationCopyWithImpl<$Res>
-    extends _$UnifediApiConversationCopyWithImpl<$Res>
-    implements _$UnifediApiConversationCopyWith<$Res> {
-  __$UnifediApiConversationCopyWithImpl(_UnifediApiConversation _value,
-      $Res Function(_UnifediApiConversation) _then)
-      : super(_value, (v) => _then(v as _UnifediApiConversation));
+class __$$UnifediApiConversationImplCopyWithImpl<$Res>
+    extends _$UnifediApiConversationCopyWithImpl<$Res,
+        _$UnifediApiConversationImpl>
+    implements _$$UnifediApiConversationImplCopyWith<$Res> {
+  __$$UnifediApiConversationImplCopyWithImpl(
+      _$UnifediApiConversationImpl _value,
+      $Res Function(_$UnifediApiConversationImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiConversation get _value => super._value as _UnifediApiConversation;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? unread = freezed,
     Object? lastStatus = freezed,
-    Object? id = freezed,
-    Object? accounts = freezed,
+    Object? id = null,
+    Object? accounts = null,
     Object? recipients = freezed,
   }) {
-    return _then(_UnifediApiConversation(
-      unread: unread == freezed
+    return _then(_$UnifediApiConversationImpl(
+      unread: freezed == unread
           ? _value.unread
           : unread // ignore: cast_nullable_to_non_nullable
               as bool?,
-      lastStatus: lastStatus == freezed
+      lastStatus: freezed == lastStatus
           ? _value.lastStatus
           : lastStatus // ignore: cast_nullable_to_non_nullable
               as UnifediApiStatus?,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      accounts: accounts == freezed
-          ? _value.accounts
+      accounts: null == accounts
+          ? _value._accounts
           : accounts // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiAccount>,
-      recipients: recipients == freezed
-          ? _value.recipients
+      recipients: freezed == recipients
+          ? _value._recipients
           : recipients // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiAccount>?,
     ));
@@ -203,16 +178,18 @@ class __$UnifediApiConversationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiConversation implements _UnifediApiConversation {
-  const _$_UnifediApiConversation(
+class _$UnifediApiConversationImpl implements _UnifediApiConversation {
+  const _$UnifediApiConversationImpl(
       {@HiveField(0) required this.unread,
       @HiveField(1) @JsonKey(name: 'last_status') required this.lastStatus,
       @HiveField(2) required this.id,
-      @HiveField(3) required this.accounts,
-      @HiveField(4) required this.recipients});
+      @HiveField(3) required final List<UnifediApiAccount> accounts,
+      @HiveField(4) required final List<UnifediApiAccount>? recipients})
+      : _accounts = accounts,
+        _recipients = recipients;
 
-  factory _$_UnifediApiConversation.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiConversationFromJson(json);
+  factory _$UnifediApiConversationImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiConversationImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -224,12 +201,25 @@ class _$_UnifediApiConversation implements _UnifediApiConversation {
   @override
   @HiveField(2)
   final String id;
+  final List<UnifediApiAccount> _accounts;
   @override
   @HiveField(3)
-  final List<UnifediApiAccount> accounts;
+  List<UnifediApiAccount> get accounts {
+    if (_accounts is EqualUnmodifiableListView) return _accounts;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_accounts);
+  }
+
+  final List<UnifediApiAccount>? _recipients;
   @override
   @HiveField(4)
-  final List<UnifediApiAccount>? recipients;
+  List<UnifediApiAccount>? get recipients {
+    final value = _recipients;
+    if (value == null) return null;
+    if (_recipients is EqualUnmodifiableListView) return _recipients;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   @override
   String toString() {
@@ -237,57 +227,57 @@ class _$_UnifediApiConversation implements _UnifediApiConversation {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiConversation &&
+            other is _$UnifediApiConversationImpl &&
             (identical(other.unread, unread) || other.unread == unread) &&
             (identical(other.lastStatus, lastStatus) ||
                 other.lastStatus == lastStatus) &&
             (identical(other.id, id) || other.id == id) &&
-            const DeepCollectionEquality().equals(other.accounts, accounts) &&
+            const DeepCollectionEquality().equals(other._accounts, _accounts) &&
             const DeepCollectionEquality()
-                .equals(other.recipients, recipients));
+                .equals(other._recipients, _recipients));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       unread,
       lastStatus,
       id,
-      const DeepCollectionEquality().hash(accounts),
-      const DeepCollectionEquality().hash(recipients));
+      const DeepCollectionEquality().hash(_accounts),
+      const DeepCollectionEquality().hash(_recipients));
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiConversationCopyWith<_UnifediApiConversation> get copyWith =>
-      __$UnifediApiConversationCopyWithImpl<_UnifediApiConversation>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiConversationImplCopyWith<_$UnifediApiConversationImpl>
+      get copyWith => __$$UnifediApiConversationImplCopyWithImpl<
+          _$UnifediApiConversationImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiConversationToJson(this);
+    return _$$UnifediApiConversationImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiConversation implements UnifediApiConversation {
   const factory _UnifediApiConversation(
-          {@HiveField(0)
-              required bool? unread,
+          {@HiveField(0) required final bool? unread,
           @HiveField(1)
           @JsonKey(name: 'last_status')
-              required UnifediApiStatus? lastStatus,
-          @HiveField(2)
-              required String id,
-          @HiveField(3)
-              required List<UnifediApiAccount> accounts,
-          @HiveField(4)
-              required List<UnifediApiAccount>? recipients}) =
-      _$_UnifediApiConversation;
+          required final UnifediApiStatus? lastStatus,
+          @HiveField(2) required final String id,
+          @HiveField(3) required final List<UnifediApiAccount> accounts,
+          @HiveField(4) required final List<UnifediApiAccount>? recipients}) =
+      _$UnifediApiConversationImpl;
 
   factory _UnifediApiConversation.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiConversation.fromJson;
+      _$UnifediApiConversationImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -307,6 +297,6 @@ abstract class _UnifediApiConversation implements UnifediApiConversation {
   List<UnifediApiAccount>? get recipients;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiConversationCopyWith<_UnifediApiConversation> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$UnifediApiConversationImplCopyWith<_$UnifediApiConversationImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

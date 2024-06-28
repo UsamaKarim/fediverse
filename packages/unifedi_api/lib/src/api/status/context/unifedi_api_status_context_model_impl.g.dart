@@ -48,9 +48,9 @@ class UnifediApiStatusContextAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiStatusContext _$$_UnifediApiStatusContextFromJson(
+_$UnifediApiStatusContextImpl _$$UnifediApiStatusContextImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiStatusContext(
+    _$UnifediApiStatusContextImpl(
       descendants: (json['descendants'] as List<dynamic>)
           .map((e) => UnifediApiStatus.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -59,8 +59,8 @@ _$_UnifediApiStatusContext _$$_UnifediApiStatusContextFromJson(
           .toList(),
     );
 
-Map<String, dynamic> _$$_UnifediApiStatusContextToJson(
-        _$_UnifediApiStatusContext instance) =>
+Map<String, dynamic> _$$UnifediApiStatusContextImplToJson(
+        _$UnifediApiStatusContextImpl instance) =>
     <String, dynamic>{
       'descendants': instance.descendants.map((e) => e.toJson()).toList(),
       'ancestors': instance.ancestors.map((e) => e.toJson()).toList(),

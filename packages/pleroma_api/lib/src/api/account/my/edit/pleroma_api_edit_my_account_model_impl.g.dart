@@ -126,9 +126,9 @@ class PleromaApiEditMyAccountAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiEditMyAccount _$$_PleromaApiEditMyAccountFromJson(
+_$PleromaApiEditMyAccountImpl _$$PleromaApiEditMyAccountImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiEditMyAccount(
+    _$PleromaApiEditMyAccountImpl(
       fieldsAttributes: (json['fields_attributes'] as List<dynamic>?)
           ?.map((e) => PleromaApiField.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -166,8 +166,8 @@ _$_PleromaApiEditMyAccount _$$_PleromaApiEditMyAccountFromJson(
           json['delete_pleroma_background_image'] as bool?,
     );
 
-Map<String, dynamic> _$$_PleromaApiEditMyAccountToJson(
-    _$_PleromaApiEditMyAccount instance) {
+Map<String, dynamic> _$$PleromaApiEditMyAccountImplToJson(
+    _$PleromaApiEditMyAccountImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

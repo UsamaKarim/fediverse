@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'rest_response_error_exception_impl.dart';
 
@@ -11,22 +12,7 @@ part of 'rest_response_error_exception_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$RestResponseErrorExceptionTearOff {
-  const _$RestResponseErrorExceptionTearOff();
-
-  _RestResponseErrorException call(
-      {required RestResponseError restResponseError}) {
-    return _RestResponseErrorException(
-      restResponseError: restResponseError,
-    );
-  }
-}
-
-/// @nodoc
-const $RestResponseErrorException = _$RestResponseErrorExceptionTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$RestResponseErrorException {
@@ -41,49 +27,56 @@ mixin _$RestResponseErrorException {
 abstract class $RestResponseErrorExceptionCopyWith<$Res> {
   factory $RestResponseErrorExceptionCopyWith(RestResponseErrorException value,
           $Res Function(RestResponseErrorException) then) =
-      _$RestResponseErrorExceptionCopyWithImpl<$Res>;
+      _$RestResponseErrorExceptionCopyWithImpl<$Res,
+          RestResponseErrorException>;
+  @useResult
   $Res call({RestResponseError restResponseError});
 
   $RestResponseErrorCopyWith<$Res> get restResponseError;
 }
 
 /// @nodoc
-class _$RestResponseErrorExceptionCopyWithImpl<$Res>
+class _$RestResponseErrorExceptionCopyWithImpl<$Res,
+        $Val extends RestResponseErrorException>
     implements $RestResponseErrorExceptionCopyWith<$Res> {
   _$RestResponseErrorExceptionCopyWithImpl(this._value, this._then);
 
-  final RestResponseErrorException _value;
   // ignore: unused_field
-  final $Res Function(RestResponseErrorException) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? restResponseError = freezed,
+    Object? restResponseError = null,
   }) {
     return _then(_value.copyWith(
-      restResponseError: restResponseError == freezed
+      restResponseError: null == restResponseError
           ? _value.restResponseError
           : restResponseError // ignore: cast_nullable_to_non_nullable
               as RestResponseError,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $RestResponseErrorCopyWith<$Res> get restResponseError {
     return $RestResponseErrorCopyWith<$Res>(_value.restResponseError, (value) {
-      return _then(_value.copyWith(restResponseError: value));
+      return _then(_value.copyWith(restResponseError: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$RestResponseErrorExceptionCopyWith<$Res>
+abstract class _$$RestResponseErrorExceptionImplCopyWith<$Res>
     implements $RestResponseErrorExceptionCopyWith<$Res> {
-  factory _$RestResponseErrorExceptionCopyWith(
-          _RestResponseErrorException value,
-          $Res Function(_RestResponseErrorException) then) =
-      __$RestResponseErrorExceptionCopyWithImpl<$Res>;
+  factory _$$RestResponseErrorExceptionImplCopyWith(
+          _$RestResponseErrorExceptionImpl value,
+          $Res Function(_$RestResponseErrorExceptionImpl) then) =
+      __$$RestResponseErrorExceptionImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({RestResponseError restResponseError});
 
   @override
@@ -91,23 +84,22 @@ abstract class _$RestResponseErrorExceptionCopyWith<$Res>
 }
 
 /// @nodoc
-class __$RestResponseErrorExceptionCopyWithImpl<$Res>
-    extends _$RestResponseErrorExceptionCopyWithImpl<$Res>
-    implements _$RestResponseErrorExceptionCopyWith<$Res> {
-  __$RestResponseErrorExceptionCopyWithImpl(_RestResponseErrorException _value,
-      $Res Function(_RestResponseErrorException) _then)
-      : super(_value, (v) => _then(v as _RestResponseErrorException));
+class __$$RestResponseErrorExceptionImplCopyWithImpl<$Res>
+    extends _$RestResponseErrorExceptionCopyWithImpl<$Res,
+        _$RestResponseErrorExceptionImpl>
+    implements _$$RestResponseErrorExceptionImplCopyWith<$Res> {
+  __$$RestResponseErrorExceptionImplCopyWithImpl(
+      _$RestResponseErrorExceptionImpl _value,
+      $Res Function(_$RestResponseErrorExceptionImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _RestResponseErrorException get _value =>
-      super._value as _RestResponseErrorException;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? restResponseError = freezed,
+    Object? restResponseError = null,
   }) {
-    return _then(_RestResponseErrorException(
-      restResponseError: restResponseError == freezed
+    return _then(_$RestResponseErrorExceptionImpl(
+      restResponseError: null == restResponseError
           ? _value.restResponseError
           : restResponseError // ignore: cast_nullable_to_non_nullable
               as RestResponseError,
@@ -117,8 +109,8 @@ class __$RestResponseErrorExceptionCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_RestResponseErrorException implements _RestResponseErrorException {
-  const _$_RestResponseErrorException({required this.restResponseError});
+class _$RestResponseErrorExceptionImpl implements _RestResponseErrorException {
+  const _$RestResponseErrorExceptionImpl({required this.restResponseError});
 
   @override
   final RestResponseError restResponseError;
@@ -129,10 +121,10 @@ class _$_RestResponseErrorException implements _RestResponseErrorException {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _RestResponseErrorException &&
+            other is _$RestResponseErrorExceptionImpl &&
             (identical(other.restResponseError, restResponseError) ||
                 other.restResponseError == restResponseError));
   }
@@ -142,21 +134,22 @@ class _$_RestResponseErrorException implements _RestResponseErrorException {
 
   @JsonKey(ignore: true)
   @override
-  _$RestResponseErrorExceptionCopyWith<_RestResponseErrorException>
-      get copyWith => __$RestResponseErrorExceptionCopyWithImpl<
-          _RestResponseErrorException>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$RestResponseErrorExceptionImplCopyWith<_$RestResponseErrorExceptionImpl>
+      get copyWith => __$$RestResponseErrorExceptionImplCopyWithImpl<
+          _$RestResponseErrorExceptionImpl>(this, _$identity);
 }
 
 abstract class _RestResponseErrorException
     implements RestResponseErrorException {
   const factory _RestResponseErrorException(
-          {required RestResponseError restResponseError}) =
-      _$_RestResponseErrorException;
+          {required final RestResponseError restResponseError}) =
+      _$RestResponseErrorExceptionImpl;
 
   @override
   RestResponseError get restResponseError;
   @override
   @JsonKey(ignore: true)
-  _$RestResponseErrorExceptionCopyWith<_RestResponseErrorException>
+  _$$RestResponseErrorExceptionImplCopyWith<_$RestResponseErrorExceptionImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

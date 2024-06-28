@@ -45,16 +45,16 @@ class UnifediApiPaginationMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiPaginationMastodonAdapter
-    _$$_UnifediApiPaginationMastodonAdapterFromJson(
+_$UnifediApiPaginationMastodonAdapterImpl
+    _$$UnifediApiPaginationMastodonAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiPaginationMastodonAdapter(
+        _$UnifediApiPaginationMastodonAdapterImpl(
           MastodonApiPagination.fromJson(
               json['value_pagination'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiPaginationMastodonAdapterToJson(
-        _$_UnifediApiPaginationMastodonAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiPaginationMastodonAdapterImplToJson(
+        _$UnifediApiPaginationMastodonAdapterImpl instance) =>
     <String, dynamic>{
       'value_pagination': instance.valuePagination.toJson(),
     };

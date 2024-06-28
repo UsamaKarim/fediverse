@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'filter_model.dart';
 
@@ -11,22 +12,7 @@ part of 'filter_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$FilterStateTearOff {
-  const _$FilterStateTearOff();
-
-  _FilterState call({required bool? dismissed, required bool? unread}) {
-    return _FilterState(
-      dismissed: dismissed,
-      unread: unread,
-    );
-  }
-}
-
-/// @nodoc
-const $FilterState = _$FilterStateTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$FilterState {
@@ -42,67 +28,71 @@ mixin _$FilterState {
 abstract class $FilterStateCopyWith<$Res> {
   factory $FilterStateCopyWith(
           FilterState value, $Res Function(FilterState) then) =
-      _$FilterStateCopyWithImpl<$Res>;
+      _$FilterStateCopyWithImpl<$Res, FilterState>;
+  @useResult
   $Res call({bool? dismissed, bool? unread});
 }
 
 /// @nodoc
-class _$FilterStateCopyWithImpl<$Res> implements $FilterStateCopyWith<$Res> {
+class _$FilterStateCopyWithImpl<$Res, $Val extends FilterState>
+    implements $FilterStateCopyWith<$Res> {
   _$FilterStateCopyWithImpl(this._value, this._then);
 
-  final FilterState _value;
   // ignore: unused_field
-  final $Res Function(FilterState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? dismissed = freezed,
     Object? unread = freezed,
   }) {
     return _then(_value.copyWith(
-      dismissed: dismissed == freezed
+      dismissed: freezed == dismissed
           ? _value.dismissed
           : dismissed // ignore: cast_nullable_to_non_nullable
               as bool?,
-      unread: unread == freezed
+      unread: freezed == unread
           ? _value.unread
           : unread // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$FilterStateCopyWith<$Res>
+abstract class _$$FilterStateImplCopyWith<$Res>
     implements $FilterStateCopyWith<$Res> {
-  factory _$FilterStateCopyWith(
-          _FilterState value, $Res Function(_FilterState) then) =
-      __$FilterStateCopyWithImpl<$Res>;
+  factory _$$FilterStateImplCopyWith(
+          _$FilterStateImpl value, $Res Function(_$FilterStateImpl) then) =
+      __$$FilterStateImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({bool? dismissed, bool? unread});
 }
 
 /// @nodoc
-class __$FilterStateCopyWithImpl<$Res> extends _$FilterStateCopyWithImpl<$Res>
-    implements _$FilterStateCopyWith<$Res> {
-  __$FilterStateCopyWithImpl(
-      _FilterState _value, $Res Function(_FilterState) _then)
-      : super(_value, (v) => _then(v as _FilterState));
+class __$$FilterStateImplCopyWithImpl<$Res>
+    extends _$FilterStateCopyWithImpl<$Res, _$FilterStateImpl>
+    implements _$$FilterStateImplCopyWith<$Res> {
+  __$$FilterStateImplCopyWithImpl(
+      _$FilterStateImpl _value, $Res Function(_$FilterStateImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _FilterState get _value => super._value as _FilterState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? dismissed = freezed,
     Object? unread = freezed,
   }) {
-    return _then(_FilterState(
-      dismissed: dismissed == freezed
+    return _then(_$FilterStateImpl(
+      dismissed: freezed == dismissed
           ? _value.dismissed
           : dismissed // ignore: cast_nullable_to_non_nullable
               as bool?,
-      unread: unread == freezed
+      unread: freezed == unread
           ? _value.unread
           : unread // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -112,8 +102,8 @@ class __$FilterStateCopyWithImpl<$Res> extends _$FilterStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_FilterState implements _FilterState {
-  const _$_FilterState({required this.dismissed, required this.unread});
+class _$FilterStateImpl implements _FilterState {
+  const _$FilterStateImpl({required this.dismissed, required this.unread});
 
   @override
   final bool? dismissed;
@@ -126,10 +116,10 @@ class _$_FilterState implements _FilterState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _FilterState &&
+            other is _$FilterStateImpl &&
             (identical(other.dismissed, dismissed) ||
                 other.dismissed == dismissed) &&
             (identical(other.unread, unread) || other.unread == unread));
@@ -140,13 +130,15 @@ class _$_FilterState implements _FilterState {
 
   @JsonKey(ignore: true)
   @override
-  _$FilterStateCopyWith<_FilterState> get copyWith =>
-      __$FilterStateCopyWithImpl<_FilterState>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$FilterStateImplCopyWith<_$FilterStateImpl> get copyWith =>
+      __$$FilterStateImplCopyWithImpl<_$FilterStateImpl>(this, _$identity);
 }
 
 abstract class _FilterState implements FilterState {
   const factory _FilterState(
-      {required bool? dismissed, required bool? unread}) = _$_FilterState;
+      {required final bool? dismissed,
+      required final bool? unread}) = _$FilterStateImpl;
 
   @override
   bool? get dismissed;
@@ -154,24 +146,9 @@ abstract class _FilterState implements FilterState {
   bool? get unread;
   @override
   @JsonKey(ignore: true)
-  _$FilterStateCopyWith<_FilterState> get copyWith =>
+  _$$FilterStateImplCopyWith<_$FilterStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$DbFilterPopulatedWrapperTearOff {
-  const _$DbFilterPopulatedWrapperTearOff();
-
-  _DbFilterPopulatedWrapper call(
-      {required DbFilterPopulated dbFilterPopulated}) {
-    return _DbFilterPopulatedWrapper(
-      dbFilterPopulated: dbFilterPopulated,
-    );
-  }
-}
-
-/// @nodoc
-const $DbFilterPopulatedWrapper = _$DbFilterPopulatedWrapperTearOff();
 
 /// @nodoc
 mixin _$DbFilterPopulatedWrapper {
@@ -186,48 +163,55 @@ mixin _$DbFilterPopulatedWrapper {
 abstract class $DbFilterPopulatedWrapperCopyWith<$Res> {
   factory $DbFilterPopulatedWrapperCopyWith(DbFilterPopulatedWrapper value,
           $Res Function(DbFilterPopulatedWrapper) then) =
-      _$DbFilterPopulatedWrapperCopyWithImpl<$Res>;
+      _$DbFilterPopulatedWrapperCopyWithImpl<$Res, DbFilterPopulatedWrapper>;
+  @useResult
   $Res call({DbFilterPopulated dbFilterPopulated});
 
   $DbFilterPopulatedCopyWith<$Res> get dbFilterPopulated;
 }
 
 /// @nodoc
-class _$DbFilterPopulatedWrapperCopyWithImpl<$Res>
+class _$DbFilterPopulatedWrapperCopyWithImpl<$Res,
+        $Val extends DbFilterPopulatedWrapper>
     implements $DbFilterPopulatedWrapperCopyWith<$Res> {
   _$DbFilterPopulatedWrapperCopyWithImpl(this._value, this._then);
 
-  final DbFilterPopulatedWrapper _value;
   // ignore: unused_field
-  final $Res Function(DbFilterPopulatedWrapper) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dbFilterPopulated = freezed,
+    Object? dbFilterPopulated = null,
   }) {
     return _then(_value.copyWith(
-      dbFilterPopulated: dbFilterPopulated == freezed
+      dbFilterPopulated: null == dbFilterPopulated
           ? _value.dbFilterPopulated
           : dbFilterPopulated // ignore: cast_nullable_to_non_nullable
               as DbFilterPopulated,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $DbFilterPopulatedCopyWith<$Res> get dbFilterPopulated {
     return $DbFilterPopulatedCopyWith<$Res>(_value.dbFilterPopulated, (value) {
-      return _then(_value.copyWith(dbFilterPopulated: value));
+      return _then(_value.copyWith(dbFilterPopulated: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$DbFilterPopulatedWrapperCopyWith<$Res>
+abstract class _$$DbFilterPopulatedWrapperImplCopyWith<$Res>
     implements $DbFilterPopulatedWrapperCopyWith<$Res> {
-  factory _$DbFilterPopulatedWrapperCopyWith(_DbFilterPopulatedWrapper value,
-          $Res Function(_DbFilterPopulatedWrapper) then) =
-      __$DbFilterPopulatedWrapperCopyWithImpl<$Res>;
+  factory _$$DbFilterPopulatedWrapperImplCopyWith(
+          _$DbFilterPopulatedWrapperImpl value,
+          $Res Function(_$DbFilterPopulatedWrapperImpl) then) =
+      __$$DbFilterPopulatedWrapperImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({DbFilterPopulated dbFilterPopulated});
 
   @override
@@ -235,23 +219,22 @@ abstract class _$DbFilterPopulatedWrapperCopyWith<$Res>
 }
 
 /// @nodoc
-class __$DbFilterPopulatedWrapperCopyWithImpl<$Res>
-    extends _$DbFilterPopulatedWrapperCopyWithImpl<$Res>
-    implements _$DbFilterPopulatedWrapperCopyWith<$Res> {
-  __$DbFilterPopulatedWrapperCopyWithImpl(_DbFilterPopulatedWrapper _value,
-      $Res Function(_DbFilterPopulatedWrapper) _then)
-      : super(_value, (v) => _then(v as _DbFilterPopulatedWrapper));
+class __$$DbFilterPopulatedWrapperImplCopyWithImpl<$Res>
+    extends _$DbFilterPopulatedWrapperCopyWithImpl<$Res,
+        _$DbFilterPopulatedWrapperImpl>
+    implements _$$DbFilterPopulatedWrapperImplCopyWith<$Res> {
+  __$$DbFilterPopulatedWrapperImplCopyWithImpl(
+      _$DbFilterPopulatedWrapperImpl _value,
+      $Res Function(_$DbFilterPopulatedWrapperImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _DbFilterPopulatedWrapper get _value =>
-      super._value as _DbFilterPopulatedWrapper;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dbFilterPopulated = freezed,
+    Object? dbFilterPopulated = null,
   }) {
-    return _then(_DbFilterPopulatedWrapper(
-      dbFilterPopulated: dbFilterPopulated == freezed
+    return _then(_$DbFilterPopulatedWrapperImpl(
+      dbFilterPopulated: null == dbFilterPopulated
           ? _value.dbFilterPopulated
           : dbFilterPopulated // ignore: cast_nullable_to_non_nullable
               as DbFilterPopulated,
@@ -261,8 +244,8 @@ class __$DbFilterPopulatedWrapperCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DbFilterPopulatedWrapper extends _DbFilterPopulatedWrapper {
-  const _$_DbFilterPopulatedWrapper({required this.dbFilterPopulated})
+class _$DbFilterPopulatedWrapperImpl extends _DbFilterPopulatedWrapper {
+  const _$DbFilterPopulatedWrapperImpl({required this.dbFilterPopulated})
       : super._();
 
   @override
@@ -274,10 +257,10 @@ class _$_DbFilterPopulatedWrapper extends _DbFilterPopulatedWrapper {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DbFilterPopulatedWrapper &&
+            other is _$DbFilterPopulatedWrapperImpl &&
             (identical(other.dbFilterPopulated, dbFilterPopulated) ||
                 other.dbFilterPopulated == dbFilterPopulated));
   }
@@ -287,38 +270,25 @@ class _$_DbFilterPopulatedWrapper extends _DbFilterPopulatedWrapper {
 
   @JsonKey(ignore: true)
   @override
-  _$DbFilterPopulatedWrapperCopyWith<_DbFilterPopulatedWrapper> get copyWith =>
-      __$DbFilterPopulatedWrapperCopyWithImpl<_DbFilterPopulatedWrapper>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DbFilterPopulatedWrapperImplCopyWith<_$DbFilterPopulatedWrapperImpl>
+      get copyWith => __$$DbFilterPopulatedWrapperImplCopyWithImpl<
+          _$DbFilterPopulatedWrapperImpl>(this, _$identity);
 }
 
 abstract class _DbFilterPopulatedWrapper extends DbFilterPopulatedWrapper {
   const factory _DbFilterPopulatedWrapper(
-          {required DbFilterPopulated dbFilterPopulated}) =
-      _$_DbFilterPopulatedWrapper;
+          {required final DbFilterPopulated dbFilterPopulated}) =
+      _$DbFilterPopulatedWrapperImpl;
   const _DbFilterPopulatedWrapper._() : super._();
 
   @override
   DbFilterPopulated get dbFilterPopulated;
   @override
   @JsonKey(ignore: true)
-  _$DbFilterPopulatedWrapperCopyWith<_DbFilterPopulatedWrapper> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$DbFilterPopulatedWrapperImplCopyWith<_$DbFilterPopulatedWrapperImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$DbFilterPopulatedTearOff {
-  const _$DbFilterPopulatedTearOff();
-
-  _DbFilterPopulated call({required DbFilter dbFilter}) {
-    return _DbFilterPopulated(
-      dbFilter: dbFilter,
-    );
-  }
-}
-
-/// @nodoc
-const $DbFilterPopulated = _$DbFilterPopulatedTearOff();
 
 /// @nodoc
 mixin _$DbFilterPopulated {
@@ -333,59 +303,61 @@ mixin _$DbFilterPopulated {
 abstract class $DbFilterPopulatedCopyWith<$Res> {
   factory $DbFilterPopulatedCopyWith(
           DbFilterPopulated value, $Res Function(DbFilterPopulated) then) =
-      _$DbFilterPopulatedCopyWithImpl<$Res>;
+      _$DbFilterPopulatedCopyWithImpl<$Res, DbFilterPopulated>;
+  @useResult
   $Res call({DbFilter dbFilter});
 }
 
 /// @nodoc
-class _$DbFilterPopulatedCopyWithImpl<$Res>
+class _$DbFilterPopulatedCopyWithImpl<$Res, $Val extends DbFilterPopulated>
     implements $DbFilterPopulatedCopyWith<$Res> {
   _$DbFilterPopulatedCopyWithImpl(this._value, this._then);
 
-  final DbFilterPopulated _value;
   // ignore: unused_field
-  final $Res Function(DbFilterPopulated) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? dbFilter = freezed,
   }) {
     return _then(_value.copyWith(
-      dbFilter: dbFilter == freezed
+      dbFilter: freezed == dbFilter
           ? _value.dbFilter
           : dbFilter // ignore: cast_nullable_to_non_nullable
               as DbFilter,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$DbFilterPopulatedCopyWith<$Res>
+abstract class _$$DbFilterPopulatedImplCopyWith<$Res>
     implements $DbFilterPopulatedCopyWith<$Res> {
-  factory _$DbFilterPopulatedCopyWith(
-          _DbFilterPopulated value, $Res Function(_DbFilterPopulated) then) =
-      __$DbFilterPopulatedCopyWithImpl<$Res>;
+  factory _$$DbFilterPopulatedImplCopyWith(_$DbFilterPopulatedImpl value,
+          $Res Function(_$DbFilterPopulatedImpl) then) =
+      __$$DbFilterPopulatedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({DbFilter dbFilter});
 }
 
 /// @nodoc
-class __$DbFilterPopulatedCopyWithImpl<$Res>
-    extends _$DbFilterPopulatedCopyWithImpl<$Res>
-    implements _$DbFilterPopulatedCopyWith<$Res> {
-  __$DbFilterPopulatedCopyWithImpl(
-      _DbFilterPopulated _value, $Res Function(_DbFilterPopulated) _then)
-      : super(_value, (v) => _then(v as _DbFilterPopulated));
+class __$$DbFilterPopulatedImplCopyWithImpl<$Res>
+    extends _$DbFilterPopulatedCopyWithImpl<$Res, _$DbFilterPopulatedImpl>
+    implements _$$DbFilterPopulatedImplCopyWith<$Res> {
+  __$$DbFilterPopulatedImplCopyWithImpl(_$DbFilterPopulatedImpl _value,
+      $Res Function(_$DbFilterPopulatedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _DbFilterPopulated get _value => super._value as _DbFilterPopulated;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? dbFilter = freezed,
   }) {
-    return _then(_DbFilterPopulated(
-      dbFilter: dbFilter == freezed
+    return _then(_$DbFilterPopulatedImpl(
+      dbFilter: freezed == dbFilter
           ? _value.dbFilter
           : dbFilter // ignore: cast_nullable_to_non_nullable
               as DbFilter,
@@ -395,8 +367,8 @@ class __$DbFilterPopulatedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DbFilterPopulated extends _DbFilterPopulated {
-  const _$_DbFilterPopulated({required this.dbFilter}) : super._();
+class _$DbFilterPopulatedImpl extends _DbFilterPopulated {
+  const _$DbFilterPopulatedImpl({required this.dbFilter}) : super._();
 
   @override
   final DbFilter dbFilter;
@@ -407,10 +379,10 @@ class _$_DbFilterPopulated extends _DbFilterPopulated {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DbFilterPopulated &&
+            other is _$DbFilterPopulatedImpl &&
             const DeepCollectionEquality().equals(other.dbFilter, dbFilter));
   }
 
@@ -420,19 +392,21 @@ class _$_DbFilterPopulated extends _DbFilterPopulated {
 
   @JsonKey(ignore: true)
   @override
-  _$DbFilterPopulatedCopyWith<_DbFilterPopulated> get copyWith =>
-      __$DbFilterPopulatedCopyWithImpl<_DbFilterPopulated>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DbFilterPopulatedImplCopyWith<_$DbFilterPopulatedImpl> get copyWith =>
+      __$$DbFilterPopulatedImplCopyWithImpl<_$DbFilterPopulatedImpl>(
+          this, _$identity);
 }
 
 abstract class _DbFilterPopulated extends DbFilterPopulated {
-  const factory _DbFilterPopulated({required DbFilter dbFilter}) =
-      _$_DbFilterPopulated;
+  const factory _DbFilterPopulated({required final DbFilter dbFilter}) =
+      _$DbFilterPopulatedImpl;
   const _DbFilterPopulated._() : super._();
 
   @override
   DbFilter get dbFilter;
   @override
   @JsonKey(ignore: true)
-  _$DbFilterPopulatedCopyWith<_DbFilterPopulated> get copyWith =>
+  _$$DbFilterPopulatedImplCopyWith<_$DbFilterPopulatedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

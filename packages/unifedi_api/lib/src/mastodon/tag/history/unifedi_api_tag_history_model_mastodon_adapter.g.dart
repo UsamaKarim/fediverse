@@ -80,32 +80,32 @@ class UnifediApiTagHistoryItemMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiTagHistoryMastodonAdapter
-    _$$_UnifediApiTagHistoryMastodonAdapterFromJson(
+_$UnifediApiTagHistoryMastodonAdapterImpl
+    _$$UnifediApiTagHistoryMastodonAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiTagHistoryMastodonAdapter(
+        _$UnifediApiTagHistoryMastodonAdapterImpl(
           (json['value'] as List<dynamic>)
               .map((e) =>
                   MastodonApiTagHistoryItem.fromJson(e as Map<String, dynamic>))
               .toList(),
         );
 
-Map<String, dynamic> _$$_UnifediApiTagHistoryMastodonAdapterToJson(
-        _$_UnifediApiTagHistoryMastodonAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiTagHistoryMastodonAdapterImplToJson(
+        _$UnifediApiTagHistoryMastodonAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.map((e) => e.toJson()).toList(),
     };
 
-_$_UnifediApiTagHistoryItemMastodonAdapter
-    _$$_UnifediApiTagHistoryItemMastodonAdapterFromJson(
+_$UnifediApiTagHistoryItemMastodonAdapterImpl
+    _$$UnifediApiTagHistoryItemMastodonAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiTagHistoryItemMastodonAdapter(
+        _$UnifediApiTagHistoryItemMastodonAdapterImpl(
           MastodonApiTagHistoryItem.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiTagHistoryItemMastodonAdapterToJson(
-        _$_UnifediApiTagHistoryItemMastodonAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiTagHistoryItemMastodonAdapterImplToJson(
+        _$UnifediApiTagHistoryItemMastodonAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

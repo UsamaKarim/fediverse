@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:drift/native.dart';
 import 'package:fedi_app/app/account/account_model.dart';
 import 'package:fedi_app/app/account/my/local_preferences/my_account_local_preference_bloc.dart';
 import 'package:fedi_app/app/account/my/local_preferences/my_account_local_preference_bloc_impl.dart';
@@ -25,7 +26,6 @@ import 'package:fediverse_api/fediverse_api.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
-import 'package:moor/ffi.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 
 import '../../rxdart/rxdart_test_helper.dart';
@@ -62,7 +62,7 @@ void main() {
 
   setUp(
     () async {
-      database = AppDatabase(VmDatabase.memory());
+      database = AppDatabase(NativeDatabase.memory());
       accountRepository = AccountRepository(appDatabase: database);
       statusRepository = StatusRepository(
         appDatabase: database,

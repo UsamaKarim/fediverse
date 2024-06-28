@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_marker_model_impl.dart';
 
@@ -11,39 +12,11 @@ part of 'mastodon_api_marker_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiMarker _$MastodonApiMarkerFromJson(Map<String, dynamic> json) {
   return _MastodonApiMarker.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiMarkerTearOff {
-  const _$MastodonApiMarkerTearOff();
-
-  _MastodonApiMarker call(
-      {@HiveField(0)
-      @JsonKey(name: 'updated_last_read_id')
-          required String? lastReadId,
-      @HiveField(1)
-          required int version,
-      @HiveField(2)
-      @JsonKey(name: 'updated_at')
-          required DateTime? updatedAt}) {
-    return _MastodonApiMarker(
-      lastReadId: lastReadId,
-      version: version,
-      updatedAt: updatedAt,
-    );
-  }
-
-  MastodonApiMarker fromJson(Map<String, Object?> json) {
-    return MastodonApiMarker.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiMarker = _$MastodonApiMarkerTearOff();
 
 /// @nodoc
 mixin _$MastodonApiMarker {
@@ -66,7 +39,8 @@ mixin _$MastodonApiMarker {
 abstract class $MastodonApiMarkerCopyWith<$Res> {
   factory $MastodonApiMarkerCopyWith(
           MastodonApiMarker value, $Res Function(MastodonApiMarker) then) =
-      _$MastodonApiMarkerCopyWithImpl<$Res>;
+      _$MastodonApiMarkerCopyWithImpl<$Res, MastodonApiMarker>;
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'updated_last_read_id') String? lastReadId,
       @HiveField(1) int version,
@@ -74,44 +48,47 @@ abstract class $MastodonApiMarkerCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MastodonApiMarkerCopyWithImpl<$Res>
+class _$MastodonApiMarkerCopyWithImpl<$Res, $Val extends MastodonApiMarker>
     implements $MastodonApiMarkerCopyWith<$Res> {
   _$MastodonApiMarkerCopyWithImpl(this._value, this._then);
 
-  final MastodonApiMarker _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiMarker) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? lastReadId = freezed,
-    Object? version = freezed,
+    Object? version = null,
     Object? updatedAt = freezed,
   }) {
     return _then(_value.copyWith(
-      lastReadId: lastReadId == freezed
+      lastReadId: freezed == lastReadId
           ? _value.lastReadId
           : lastReadId // ignore: cast_nullable_to_non_nullable
               as String?,
-      version: version == freezed
+      version: null == version
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
               as int,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiMarkerCopyWith<$Res>
+abstract class _$$MastodonApiMarkerImplCopyWith<$Res>
     implements $MastodonApiMarkerCopyWith<$Res> {
-  factory _$MastodonApiMarkerCopyWith(
-          _MastodonApiMarker value, $Res Function(_MastodonApiMarker) then) =
-      __$MastodonApiMarkerCopyWithImpl<$Res>;
+  factory _$$MastodonApiMarkerImplCopyWith(_$MastodonApiMarkerImpl value,
+          $Res Function(_$MastodonApiMarkerImpl) then) =
+      __$$MastodonApiMarkerImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'updated_last_read_id') String? lastReadId,
       @HiveField(1) int version,
@@ -119,32 +96,30 @@ abstract class _$MastodonApiMarkerCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MastodonApiMarkerCopyWithImpl<$Res>
-    extends _$MastodonApiMarkerCopyWithImpl<$Res>
-    implements _$MastodonApiMarkerCopyWith<$Res> {
-  __$MastodonApiMarkerCopyWithImpl(
-      _MastodonApiMarker _value, $Res Function(_MastodonApiMarker) _then)
-      : super(_value, (v) => _then(v as _MastodonApiMarker));
+class __$$MastodonApiMarkerImplCopyWithImpl<$Res>
+    extends _$MastodonApiMarkerCopyWithImpl<$Res, _$MastodonApiMarkerImpl>
+    implements _$$MastodonApiMarkerImplCopyWith<$Res> {
+  __$$MastodonApiMarkerImplCopyWithImpl(_$MastodonApiMarkerImpl _value,
+      $Res Function(_$MastodonApiMarkerImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiMarker get _value => super._value as _MastodonApiMarker;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? lastReadId = freezed,
-    Object? version = freezed,
+    Object? version = null,
     Object? updatedAt = freezed,
   }) {
-    return _then(_MastodonApiMarker(
-      lastReadId: lastReadId == freezed
+    return _then(_$MastodonApiMarkerImpl(
+      lastReadId: freezed == lastReadId
           ? _value.lastReadId
           : lastReadId // ignore: cast_nullable_to_non_nullable
               as String?,
-      version: version == freezed
+      version: null == version
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
               as int,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
@@ -154,19 +129,16 @@ class __$MastodonApiMarkerCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiMarker implements _MastodonApiMarker {
-  const _$_MastodonApiMarker(
+class _$MastodonApiMarkerImpl implements _MastodonApiMarker {
+  const _$MastodonApiMarkerImpl(
       {@HiveField(0)
       @JsonKey(name: 'updated_last_read_id')
-          required this.lastReadId,
-      @HiveField(1)
-          required this.version,
-      @HiveField(2)
-      @JsonKey(name: 'updated_at')
-          required this.updatedAt});
+      required this.lastReadId,
+      @HiveField(1) required this.version,
+      @HiveField(2) @JsonKey(name: 'updated_at') required this.updatedAt});
 
-  factory _$_MastodonApiMarker.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiMarkerFromJson(json);
+  factory _$MastodonApiMarkerImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MastodonApiMarkerImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -186,10 +158,10 @@ class _$_MastodonApiMarker implements _MastodonApiMarker {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiMarker &&
+            other is _$MastodonApiMarkerImpl &&
             (identical(other.lastReadId, lastReadId) ||
                 other.lastReadId == lastReadId) &&
             (identical(other.version, version) || other.version == version) &&
@@ -197,17 +169,22 @@ class _$_MastodonApiMarker implements _MastodonApiMarker {
                 other.updatedAt == updatedAt));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, lastReadId, version, updatedAt);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiMarkerCopyWith<_MastodonApiMarker> get copyWith =>
-      __$MastodonApiMarkerCopyWithImpl<_MastodonApiMarker>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiMarkerImplCopyWith<_$MastodonApiMarkerImpl> get copyWith =>
+      __$$MastodonApiMarkerImplCopyWithImpl<_$MastodonApiMarkerImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiMarkerToJson(this);
+    return _$$MastodonApiMarkerImplToJson(
+      this,
+    );
   }
 }
 
@@ -215,15 +192,14 @@ abstract class _MastodonApiMarker implements MastodonApiMarker {
   const factory _MastodonApiMarker(
       {@HiveField(0)
       @JsonKey(name: 'updated_last_read_id')
-          required String? lastReadId,
-      @HiveField(1)
-          required int version,
+      required final String? lastReadId,
+      @HiveField(1) required final int version,
       @HiveField(2)
       @JsonKey(name: 'updated_at')
-          required DateTime? updatedAt}) = _$_MastodonApiMarker;
+      required final DateTime? updatedAt}) = _$MastodonApiMarkerImpl;
 
   factory _MastodonApiMarker.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiMarker.fromJson;
+      _$MastodonApiMarkerImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -238,6 +214,6 @@ abstract class _MastodonApiMarker implements MastodonApiMarker {
   DateTime? get updatedAt;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiMarkerCopyWith<_MastodonApiMarker> get copyWith =>
+  _$$MastodonApiMarkerImplCopyWith<_$MastodonApiMarkerImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

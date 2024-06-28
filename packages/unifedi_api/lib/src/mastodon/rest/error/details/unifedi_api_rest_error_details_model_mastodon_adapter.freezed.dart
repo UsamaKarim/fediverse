@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_rest_error_details_model_mastodon_adapter.dart';
 
@@ -11,34 +12,13 @@ part of 'unifedi_api_rest_error_details_model_mastodon_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiRestErrorDetailsMastodonAdapter
     _$UnifediApiRestErrorDetailsMastodonAdapterFromJson(
         Map<String, dynamic> json) {
   return _UnifediApiRestErrorDetailsMastodonAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiRestErrorDetailsMastodonAdapterTearOff {
-  const _$UnifediApiRestErrorDetailsMastodonAdapterTearOff();
-
-  _UnifediApiRestErrorDetailsMastodonAdapter call(
-      @HiveField(0) MastodonApiRestErrorDetails value) {
-    return _UnifediApiRestErrorDetailsMastodonAdapter(
-      value,
-    );
-  }
-
-  UnifediApiRestErrorDetailsMastodonAdapter fromJson(
-      Map<String, Object?> json) {
-    return UnifediApiRestErrorDetailsMastodonAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiRestErrorDetailsMastodonAdapter =
-    _$UnifediApiRestErrorDetailsMastodonAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiRestErrorDetailsMastodonAdapter {
@@ -57,50 +37,57 @@ abstract class $UnifediApiRestErrorDetailsMastodonAdapterCopyWith<$Res> {
   factory $UnifediApiRestErrorDetailsMastodonAdapterCopyWith(
           UnifediApiRestErrorDetailsMastodonAdapter value,
           $Res Function(UnifediApiRestErrorDetailsMastodonAdapter) then) =
-      _$UnifediApiRestErrorDetailsMastodonAdapterCopyWithImpl<$Res>;
+      _$UnifediApiRestErrorDetailsMastodonAdapterCopyWithImpl<$Res,
+          UnifediApiRestErrorDetailsMastodonAdapter>;
+  @useResult
   $Res call({@HiveField(0) MastodonApiRestErrorDetails value});
 
   $MastodonApiRestErrorDetailsCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiRestErrorDetailsMastodonAdapterCopyWithImpl<$Res>
+class _$UnifediApiRestErrorDetailsMastodonAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiRestErrorDetailsMastodonAdapter>
     implements $UnifediApiRestErrorDetailsMastodonAdapterCopyWith<$Res> {
   _$UnifediApiRestErrorDetailsMastodonAdapterCopyWithImpl(
       this._value, this._then);
 
-  final UnifediApiRestErrorDetailsMastodonAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiRestErrorDetailsMastodonAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiRestErrorDetails,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiRestErrorDetailsCopyWith<$Res> get value {
     return $MastodonApiRestErrorDetailsCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiRestErrorDetailsMastodonAdapterCopyWith<$Res>
+abstract class _$$UnifediApiRestErrorDetailsMastodonAdapterImplCopyWith<$Res>
     implements $UnifediApiRestErrorDetailsMastodonAdapterCopyWith<$Res> {
-  factory _$UnifediApiRestErrorDetailsMastodonAdapterCopyWith(
-          _UnifediApiRestErrorDetailsMastodonAdapter value,
-          $Res Function(_UnifediApiRestErrorDetailsMastodonAdapter) then) =
-      __$UnifediApiRestErrorDetailsMastodonAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiRestErrorDetailsMastodonAdapterImplCopyWith(
+          _$UnifediApiRestErrorDetailsMastodonAdapterImpl value,
+          $Res Function(_$UnifediApiRestErrorDetailsMastodonAdapterImpl) then) =
+      __$$UnifediApiRestErrorDetailsMastodonAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) MastodonApiRestErrorDetails value});
 
   @override
@@ -108,25 +95,22 @@ abstract class _$UnifediApiRestErrorDetailsMastodonAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiRestErrorDetailsMastodonAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiRestErrorDetailsMastodonAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiRestErrorDetailsMastodonAdapterCopyWith<$Res> {
-  __$UnifediApiRestErrorDetailsMastodonAdapterCopyWithImpl(
-      _UnifediApiRestErrorDetailsMastodonAdapter _value,
-      $Res Function(_UnifediApiRestErrorDetailsMastodonAdapter) _then)
-      : super(_value,
-            (v) => _then(v as _UnifediApiRestErrorDetailsMastodonAdapter));
+class __$$UnifediApiRestErrorDetailsMastodonAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiRestErrorDetailsMastodonAdapterCopyWithImpl<$Res,
+        _$UnifediApiRestErrorDetailsMastodonAdapterImpl>
+    implements _$$UnifediApiRestErrorDetailsMastodonAdapterImplCopyWith<$Res> {
+  __$$UnifediApiRestErrorDetailsMastodonAdapterImplCopyWithImpl(
+      _$UnifediApiRestErrorDetailsMastodonAdapterImpl _value,
+      $Res Function(_$UnifediApiRestErrorDetailsMastodonAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiRestErrorDetailsMastodonAdapter get _value =>
-      super._value as _UnifediApiRestErrorDetailsMastodonAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiRestErrorDetailsMastodonAdapter(
-      value == freezed
+    return _then(_$UnifediApiRestErrorDetailsMastodonAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiRestErrorDetails,
@@ -136,14 +120,15 @@ class __$UnifediApiRestErrorDetailsMastodonAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiRestErrorDetailsMastodonAdapter
+class _$UnifediApiRestErrorDetailsMastodonAdapterImpl
     extends _UnifediApiRestErrorDetailsMastodonAdapter {
-  const _$_UnifediApiRestErrorDetailsMastodonAdapter(@HiveField(0) this.value)
+  const _$UnifediApiRestErrorDetailsMastodonAdapterImpl(
+      @HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiRestErrorDetailsMastodonAdapter.fromJson(
+  factory _$UnifediApiRestErrorDetailsMastodonAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiRestErrorDetailsMastodonAdapterFromJson(json);
+      _$$UnifediApiRestErrorDetailsMastodonAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -155,46 +140,52 @@ class _$_UnifediApiRestErrorDetailsMastodonAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiRestErrorDetailsMastodonAdapter &&
+            other is _$UnifediApiRestErrorDetailsMastodonAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiRestErrorDetailsMastodonAdapterCopyWith<
-          _UnifediApiRestErrorDetailsMastodonAdapter>
-      get copyWith => __$UnifediApiRestErrorDetailsMastodonAdapterCopyWithImpl<
-          _UnifediApiRestErrorDetailsMastodonAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiRestErrorDetailsMastodonAdapterImplCopyWith<
+          _$UnifediApiRestErrorDetailsMastodonAdapterImpl>
+      get copyWith =>
+          __$$UnifediApiRestErrorDetailsMastodonAdapterImplCopyWithImpl<
+                  _$UnifediApiRestErrorDetailsMastodonAdapterImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiRestErrorDetailsMastodonAdapterToJson(this);
+    return _$$UnifediApiRestErrorDetailsMastodonAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiRestErrorDetailsMastodonAdapter
     extends UnifediApiRestErrorDetailsMastodonAdapter {
   const factory _UnifediApiRestErrorDetailsMastodonAdapter(
-          @HiveField(0) MastodonApiRestErrorDetails value) =
-      _$_UnifediApiRestErrorDetailsMastodonAdapter;
+          @HiveField(0) final MastodonApiRestErrorDetails value) =
+      _$UnifediApiRestErrorDetailsMastodonAdapterImpl;
   const _UnifediApiRestErrorDetailsMastodonAdapter._() : super._();
 
   factory _UnifediApiRestErrorDetailsMastodonAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiRestErrorDetailsMastodonAdapter.fromJson;
+      _$UnifediApiRestErrorDetailsMastodonAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   MastodonApiRestErrorDetails get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiRestErrorDetailsMastodonAdapterCopyWith<
-          _UnifediApiRestErrorDetailsMastodonAdapter>
+  _$$UnifediApiRestErrorDetailsMastodonAdapterImplCopyWith<
+          _$UnifediApiRestErrorDetailsMastodonAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

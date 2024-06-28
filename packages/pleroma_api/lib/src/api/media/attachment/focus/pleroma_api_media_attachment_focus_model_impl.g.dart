@@ -48,15 +48,15 @@ class PleromaApiMediaAttachmentFocusAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiMediaAttachmentFocus _$$_PleromaApiMediaAttachmentFocusFromJson(
-        Map<String, dynamic> json) =>
-    _$_PleromaApiMediaAttachmentFocus(
-      x: (json['x'] as num).toDouble(),
-      y: (json['y'] as num).toDouble(),
-    );
+_$PleromaApiMediaAttachmentFocusImpl
+    _$$PleromaApiMediaAttachmentFocusImplFromJson(Map<String, dynamic> json) =>
+        _$PleromaApiMediaAttachmentFocusImpl(
+          x: (json['x'] as num).toDouble(),
+          y: (json['y'] as num).toDouble(),
+        );
 
-Map<String, dynamic> _$$_PleromaApiMediaAttachmentFocusToJson(
-        _$_PleromaApiMediaAttachmentFocus instance) =>
+Map<String, dynamic> _$$PleromaApiMediaAttachmentFocusImplToJson(
+        _$PleromaApiMediaAttachmentFocusImpl instance) =>
     <String, dynamic>{
       'x': instance.x,
       'y': instance.y,

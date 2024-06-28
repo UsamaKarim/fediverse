@@ -45,15 +45,15 @@ class PleromaMyAccountWrapperOldAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaMyAccountWrapperOld _$$_PleromaMyAccountWrapperOldFromJson(
+_$PleromaMyAccountWrapperOldImpl _$$PleromaMyAccountWrapperOldImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaMyAccountWrapperOld(
+    _$PleromaMyAccountWrapperOldImpl(
       pleromaAccount: PleromaApiMyAccount.fromJson(
           json['remote_account'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_PleromaMyAccountWrapperOldToJson(
-        _$_PleromaMyAccountWrapperOld instance) =>
+Map<String, dynamic> _$$PleromaMyAccountWrapperOldImplToJson(
+        _$PleromaMyAccountWrapperOldImpl instance) =>
     <String, dynamic>{
       'remote_account': instance.pleromaAccount.toJson(),
     };

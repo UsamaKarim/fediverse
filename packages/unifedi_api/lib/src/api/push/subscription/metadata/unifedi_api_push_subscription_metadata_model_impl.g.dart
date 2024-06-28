@@ -48,10 +48,10 @@ class UnifediApiPushSubscriptionMetadataAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiPushSubscribeRequestSubscription
-    _$$_UnifediApiPushSubscribeRequestSubscriptionFromJson(
+_$UnifediApiPushSubscribeRequestSubscriptionImpl
+    _$$UnifediApiPushSubscribeRequestSubscriptionImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiPushSubscribeRequestSubscription(
+        _$UnifediApiPushSubscribeRequestSubscriptionImpl(
           endpoint: json['endpoint'] as String?,
           keys: json['keys'] == null
               ? null
@@ -59,8 +59,8 @@ _$_UnifediApiPushSubscribeRequestSubscription
                   json['keys'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiPushSubscribeRequestSubscriptionToJson(
-    _$_UnifediApiPushSubscribeRequestSubscription instance) {
+Map<String, dynamic> _$$UnifediApiPushSubscribeRequestSubscriptionImplToJson(
+    _$UnifediApiPushSubscribeRequestSubscriptionImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

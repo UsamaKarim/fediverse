@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_schedule_post_status_model_mastodon_adapter.dart';
 
@@ -11,34 +12,13 @@ part of 'unifedi_api_schedule_post_status_model_mastodon_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiSchedulePostStatusMastodonAdapter
     _$UnifediApiSchedulePostStatusMastodonAdapterFromJson(
         Map<String, dynamic> json) {
   return _UnifediApiSchedulePostStatusMastodonAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiSchedulePostStatusMastodonAdapterTearOff {
-  const _$UnifediApiSchedulePostStatusMastodonAdapterTearOff();
-
-  _UnifediApiSchedulePostStatusMastodonAdapter call(
-      @HiveField(0) MastodonApiSchedulePostStatus value) {
-    return _UnifediApiSchedulePostStatusMastodonAdapter(
-      value,
-    );
-  }
-
-  UnifediApiSchedulePostStatusMastodonAdapter fromJson(
-      Map<String, Object?> json) {
-    return UnifediApiSchedulePostStatusMastodonAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiSchedulePostStatusMastodonAdapter =
-    _$UnifediApiSchedulePostStatusMastodonAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiSchedulePostStatusMastodonAdapter {
@@ -57,50 +37,58 @@ abstract class $UnifediApiSchedulePostStatusMastodonAdapterCopyWith<$Res> {
   factory $UnifediApiSchedulePostStatusMastodonAdapterCopyWith(
           UnifediApiSchedulePostStatusMastodonAdapter value,
           $Res Function(UnifediApiSchedulePostStatusMastodonAdapter) then) =
-      _$UnifediApiSchedulePostStatusMastodonAdapterCopyWithImpl<$Res>;
+      _$UnifediApiSchedulePostStatusMastodonAdapterCopyWithImpl<$Res,
+          UnifediApiSchedulePostStatusMastodonAdapter>;
+  @useResult
   $Res call({@HiveField(0) MastodonApiSchedulePostStatus value});
 
   $MastodonApiSchedulePostStatusCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiSchedulePostStatusMastodonAdapterCopyWithImpl<$Res>
+class _$UnifediApiSchedulePostStatusMastodonAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiSchedulePostStatusMastodonAdapter>
     implements $UnifediApiSchedulePostStatusMastodonAdapterCopyWith<$Res> {
   _$UnifediApiSchedulePostStatusMastodonAdapterCopyWithImpl(
       this._value, this._then);
 
-  final UnifediApiSchedulePostStatusMastodonAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiSchedulePostStatusMastodonAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiSchedulePostStatus,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiSchedulePostStatusCopyWith<$Res> get value {
     return $MastodonApiSchedulePostStatusCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiSchedulePostStatusMastodonAdapterCopyWith<$Res>
+abstract class _$$UnifediApiSchedulePostStatusMastodonAdapterImplCopyWith<$Res>
     implements $UnifediApiSchedulePostStatusMastodonAdapterCopyWith<$Res> {
-  factory _$UnifediApiSchedulePostStatusMastodonAdapterCopyWith(
-          _UnifediApiSchedulePostStatusMastodonAdapter value,
-          $Res Function(_UnifediApiSchedulePostStatusMastodonAdapter) then) =
-      __$UnifediApiSchedulePostStatusMastodonAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiSchedulePostStatusMastodonAdapterImplCopyWith(
+          _$UnifediApiSchedulePostStatusMastodonAdapterImpl value,
+          $Res Function(_$UnifediApiSchedulePostStatusMastodonAdapterImpl)
+              then) =
+      __$$UnifediApiSchedulePostStatusMastodonAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) MastodonApiSchedulePostStatus value});
 
   @override
@@ -108,25 +96,23 @@ abstract class _$UnifediApiSchedulePostStatusMastodonAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiSchedulePostStatusMastodonAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiSchedulePostStatusMastodonAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiSchedulePostStatusMastodonAdapterCopyWith<$Res> {
-  __$UnifediApiSchedulePostStatusMastodonAdapterCopyWithImpl(
-      _UnifediApiSchedulePostStatusMastodonAdapter _value,
-      $Res Function(_UnifediApiSchedulePostStatusMastodonAdapter) _then)
-      : super(_value,
-            (v) => _then(v as _UnifediApiSchedulePostStatusMastodonAdapter));
+class __$$UnifediApiSchedulePostStatusMastodonAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiSchedulePostStatusMastodonAdapterCopyWithImpl<$Res,
+        _$UnifediApiSchedulePostStatusMastodonAdapterImpl>
+    implements
+        _$$UnifediApiSchedulePostStatusMastodonAdapterImplCopyWith<$Res> {
+  __$$UnifediApiSchedulePostStatusMastodonAdapterImplCopyWithImpl(
+      _$UnifediApiSchedulePostStatusMastodonAdapterImpl _value,
+      $Res Function(_$UnifediApiSchedulePostStatusMastodonAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiSchedulePostStatusMastodonAdapter get _value =>
-      super._value as _UnifediApiSchedulePostStatusMastodonAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiSchedulePostStatusMastodonAdapter(
-      value == freezed
+    return _then(_$UnifediApiSchedulePostStatusMastodonAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiSchedulePostStatus,
@@ -136,14 +122,15 @@ class __$UnifediApiSchedulePostStatusMastodonAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiSchedulePostStatusMastodonAdapter
+class _$UnifediApiSchedulePostStatusMastodonAdapterImpl
     extends _UnifediApiSchedulePostStatusMastodonAdapter {
-  const _$_UnifediApiSchedulePostStatusMastodonAdapter(@HiveField(0) this.value)
+  const _$UnifediApiSchedulePostStatusMastodonAdapterImpl(
+      @HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiSchedulePostStatusMastodonAdapter.fromJson(
+  factory _$UnifediApiSchedulePostStatusMastodonAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiSchedulePostStatusMastodonAdapterFromJson(json);
+      _$$UnifediApiSchedulePostStatusMastodonAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -155,47 +142,52 @@ class _$_UnifediApiSchedulePostStatusMastodonAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiSchedulePostStatusMastodonAdapter &&
+            other is _$UnifediApiSchedulePostStatusMastodonAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiSchedulePostStatusMastodonAdapterCopyWith<
-          _UnifediApiSchedulePostStatusMastodonAdapter>
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiSchedulePostStatusMastodonAdapterImplCopyWith<
+          _$UnifediApiSchedulePostStatusMastodonAdapterImpl>
       get copyWith =>
-          __$UnifediApiSchedulePostStatusMastodonAdapterCopyWithImpl<
-              _UnifediApiSchedulePostStatusMastodonAdapter>(this, _$identity);
+          __$$UnifediApiSchedulePostStatusMastodonAdapterImplCopyWithImpl<
+                  _$UnifediApiSchedulePostStatusMastodonAdapterImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiSchedulePostStatusMastodonAdapterToJson(this);
+    return _$$UnifediApiSchedulePostStatusMastodonAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiSchedulePostStatusMastodonAdapter
     extends UnifediApiSchedulePostStatusMastodonAdapter {
   const factory _UnifediApiSchedulePostStatusMastodonAdapter(
-          @HiveField(0) MastodonApiSchedulePostStatus value) =
-      _$_UnifediApiSchedulePostStatusMastodonAdapter;
+          @HiveField(0) final MastodonApiSchedulePostStatus value) =
+      _$UnifediApiSchedulePostStatusMastodonAdapterImpl;
   const _UnifediApiSchedulePostStatusMastodonAdapter._() : super._();
 
   factory _UnifediApiSchedulePostStatusMastodonAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiSchedulePostStatusMastodonAdapter.fromJson;
+      _$UnifediApiSchedulePostStatusMastodonAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   MastodonApiSchedulePostStatus get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiSchedulePostStatusMastodonAdapterCopyWith<
-          _UnifediApiSchedulePostStatusMastodonAdapter>
+  _$$UnifediApiSchedulePostStatusMastodonAdapterImplCopyWith<
+          _$UnifediApiSchedulePostStatusMastodonAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

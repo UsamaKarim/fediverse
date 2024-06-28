@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_chat_model_pleroma_adapter.dart';
 
@@ -11,30 +12,12 @@ part of 'unifedi_api_chat_model_pleroma_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiChatPleromaAdapter _$UnifediApiChatPleromaAdapterFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiChatPleromaAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiChatPleromaAdapterTearOff {
-  const _$UnifediApiChatPleromaAdapterTearOff();
-
-  _UnifediApiChatPleromaAdapter call(@HiveField(0) PleromaApiChat value) {
-    return _UnifediApiChatPleromaAdapter(
-      value,
-    );
-  }
-
-  UnifediApiChatPleromaAdapter fromJson(Map<String, Object?> json) {
-    return UnifediApiChatPleromaAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiChatPleromaAdapter = _$UnifediApiChatPleromaAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiChatPleromaAdapter {
@@ -52,49 +35,56 @@ abstract class $UnifediApiChatPleromaAdapterCopyWith<$Res> {
   factory $UnifediApiChatPleromaAdapterCopyWith(
           UnifediApiChatPleromaAdapter value,
           $Res Function(UnifediApiChatPleromaAdapter) then) =
-      _$UnifediApiChatPleromaAdapterCopyWithImpl<$Res>;
+      _$UnifediApiChatPleromaAdapterCopyWithImpl<$Res,
+          UnifediApiChatPleromaAdapter>;
+  @useResult
   $Res call({@HiveField(0) PleromaApiChat value});
 
   $PleromaApiChatCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiChatPleromaAdapterCopyWithImpl<$Res>
+class _$UnifediApiChatPleromaAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiChatPleromaAdapter>
     implements $UnifediApiChatPleromaAdapterCopyWith<$Res> {
   _$UnifediApiChatPleromaAdapterCopyWithImpl(this._value, this._then);
 
-  final UnifediApiChatPleromaAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiChatPleromaAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiChat,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiChatCopyWith<$Res> get value {
     return $PleromaApiChatCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiChatPleromaAdapterCopyWith<$Res>
+abstract class _$$UnifediApiChatPleromaAdapterImplCopyWith<$Res>
     implements $UnifediApiChatPleromaAdapterCopyWith<$Res> {
-  factory _$UnifediApiChatPleromaAdapterCopyWith(
-          _UnifediApiChatPleromaAdapter value,
-          $Res Function(_UnifediApiChatPleromaAdapter) then) =
-      __$UnifediApiChatPleromaAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiChatPleromaAdapterImplCopyWith(
+          _$UnifediApiChatPleromaAdapterImpl value,
+          $Res Function(_$UnifediApiChatPleromaAdapterImpl) then) =
+      __$$UnifediApiChatPleromaAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) PleromaApiChat value});
 
   @override
@@ -102,24 +92,22 @@ abstract class _$UnifediApiChatPleromaAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiChatPleromaAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiChatPleromaAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiChatPleromaAdapterCopyWith<$Res> {
-  __$UnifediApiChatPleromaAdapterCopyWithImpl(
-      _UnifediApiChatPleromaAdapter _value,
-      $Res Function(_UnifediApiChatPleromaAdapter) _then)
-      : super(_value, (v) => _then(v as _UnifediApiChatPleromaAdapter));
+class __$$UnifediApiChatPleromaAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiChatPleromaAdapterCopyWithImpl<$Res,
+        _$UnifediApiChatPleromaAdapterImpl>
+    implements _$$UnifediApiChatPleromaAdapterImplCopyWith<$Res> {
+  __$$UnifediApiChatPleromaAdapterImplCopyWithImpl(
+      _$UnifediApiChatPleromaAdapterImpl _value,
+      $Res Function(_$UnifediApiChatPleromaAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiChatPleromaAdapter get _value =>
-      super._value as _UnifediApiChatPleromaAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiChatPleromaAdapter(
-      value == freezed
+    return _then(_$UnifediApiChatPleromaAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiChat,
@@ -129,11 +117,13 @@ class __$UnifediApiChatPleromaAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiChatPleromaAdapter extends _UnifediApiChatPleromaAdapter {
-  const _$_UnifediApiChatPleromaAdapter(@HiveField(0) this.value) : super._();
+class _$UnifediApiChatPleromaAdapterImpl extends _UnifediApiChatPleromaAdapter {
+  const _$UnifediApiChatPleromaAdapterImpl(@HiveField(0) this.value)
+      : super._();
 
-  factory _$_UnifediApiChatPleromaAdapter.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiChatPleromaAdapterFromJson(json);
+  factory _$UnifediApiChatPleromaAdapterImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$UnifediApiChatPleromaAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -145,42 +135,49 @@ class _$_UnifediApiChatPleromaAdapter extends _UnifediApiChatPleromaAdapter {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiChatPleromaAdapter &&
+            other is _$UnifediApiChatPleromaAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiChatPleromaAdapterCopyWith<_UnifediApiChatPleromaAdapter>
-      get copyWith => __$UnifediApiChatPleromaAdapterCopyWithImpl<
-          _UnifediApiChatPleromaAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiChatPleromaAdapterImplCopyWith<
+          _$UnifediApiChatPleromaAdapterImpl>
+      get copyWith => __$$UnifediApiChatPleromaAdapterImplCopyWithImpl<
+          _$UnifediApiChatPleromaAdapterImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiChatPleromaAdapterToJson(this);
+    return _$$UnifediApiChatPleromaAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiChatPleromaAdapter
     extends UnifediApiChatPleromaAdapter {
   const factory _UnifediApiChatPleromaAdapter(
-      @HiveField(0) PleromaApiChat value) = _$_UnifediApiChatPleromaAdapter;
+          @HiveField(0) final PleromaApiChat value) =
+      _$UnifediApiChatPleromaAdapterImpl;
   const _UnifediApiChatPleromaAdapter._() : super._();
 
   factory _UnifediApiChatPleromaAdapter.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiChatPleromaAdapter.fromJson;
+      _$UnifediApiChatPleromaAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   PleromaApiChat get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiChatPleromaAdapterCopyWith<_UnifediApiChatPleromaAdapter>
+  _$$UnifediApiChatPleromaAdapterImplCopyWith<
+          _$UnifediApiChatPleromaAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

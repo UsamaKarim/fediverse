@@ -80,31 +80,32 @@ class UnifediApiTagHistoryItemPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiTagHistoryPleromaAdapter
-    _$$_UnifediApiTagHistoryPleromaAdapterFromJson(Map<String, dynamic> json) =>
-        _$_UnifediApiTagHistoryPleromaAdapter(
+_$UnifediApiTagHistoryPleromaAdapterImpl
+    _$$UnifediApiTagHistoryPleromaAdapterImplFromJson(
+            Map<String, dynamic> json) =>
+        _$UnifediApiTagHistoryPleromaAdapterImpl(
           (json['value'] as List<dynamic>)
               .map((e) =>
                   PleromaApiTagHistoryItem.fromJson(e as Map<String, dynamic>))
               .toList(),
         );
 
-Map<String, dynamic> _$$_UnifediApiTagHistoryPleromaAdapterToJson(
-        _$_UnifediApiTagHistoryPleromaAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiTagHistoryPleromaAdapterImplToJson(
+        _$UnifediApiTagHistoryPleromaAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.map((e) => e.toJson()).toList(),
     };
 
-_$_UnifediApiTagHistoryItemPleromaAdapter
-    _$$_UnifediApiTagHistoryItemPleromaAdapterFromJson(
+_$UnifediApiTagHistoryItemPleromaAdapterImpl
+    _$$UnifediApiTagHistoryItemPleromaAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiTagHistoryItemPleromaAdapter(
+        _$UnifediApiTagHistoryItemPleromaAdapterImpl(
           PleromaApiTagHistoryItem.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiTagHistoryItemPleromaAdapterToJson(
-        _$_UnifediApiTagHistoryItemPleromaAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiTagHistoryItemPleromaAdapterImplToJson(
+        _$UnifediApiTagHistoryItemPleromaAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

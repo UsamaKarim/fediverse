@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'push_relay_settings_model.dart';
 
@@ -11,32 +12,11 @@ part of 'push_relay_settings_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PushRelaySettings _$PushRelaySettingsFromJson(Map<String, dynamic> json) {
   return _PushRelaySettings.fromJson(json);
 }
-
-/// @nodoc
-class _$PushRelaySettingsTearOff {
-  const _$PushRelaySettingsTearOff();
-
-  _PushRelaySettings call(
-      {@HiveField(0)
-      @JsonKey(name: 'push_relay_base_url')
-          required String pushRelayBaseUrl}) {
-    return _PushRelaySettings(
-      pushRelayBaseUrl: pushRelayBaseUrl,
-    );
-  }
-
-  PushRelaySettings fromJson(Map<String, Object?> json) {
-    return PushRelaySettings.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PushRelaySettings = _$PushRelaySettingsTearOff();
 
 /// @nodoc
 mixin _$PushRelaySettings {
@@ -54,65 +34,67 @@ mixin _$PushRelaySettings {
 abstract class $PushRelaySettingsCopyWith<$Res> {
   factory $PushRelaySettingsCopyWith(
           PushRelaySettings value, $Res Function(PushRelaySettings) then) =
-      _$PushRelaySettingsCopyWithImpl<$Res>;
+      _$PushRelaySettingsCopyWithImpl<$Res, PushRelaySettings>;
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'push_relay_base_url')
-          String pushRelayBaseUrl});
+      String pushRelayBaseUrl});
 }
 
 /// @nodoc
-class _$PushRelaySettingsCopyWithImpl<$Res>
+class _$PushRelaySettingsCopyWithImpl<$Res, $Val extends PushRelaySettings>
     implements $PushRelaySettingsCopyWith<$Res> {
   _$PushRelaySettingsCopyWithImpl(this._value, this._then);
 
-  final PushRelaySettings _value;
   // ignore: unused_field
-  final $Res Function(PushRelaySettings) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? pushRelayBaseUrl = freezed,
+    Object? pushRelayBaseUrl = null,
   }) {
     return _then(_value.copyWith(
-      pushRelayBaseUrl: pushRelayBaseUrl == freezed
+      pushRelayBaseUrl: null == pushRelayBaseUrl
           ? _value.pushRelayBaseUrl
           : pushRelayBaseUrl // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PushRelaySettingsCopyWith<$Res>
+abstract class _$$PushRelaySettingsImplCopyWith<$Res>
     implements $PushRelaySettingsCopyWith<$Res> {
-  factory _$PushRelaySettingsCopyWith(
-          _PushRelaySettings value, $Res Function(_PushRelaySettings) then) =
-      __$PushRelaySettingsCopyWithImpl<$Res>;
+  factory _$$PushRelaySettingsImplCopyWith(_$PushRelaySettingsImpl value,
+          $Res Function(_$PushRelaySettingsImpl) then) =
+      __$$PushRelaySettingsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'push_relay_base_url')
-          String pushRelayBaseUrl});
+      String pushRelayBaseUrl});
 }
 
 /// @nodoc
-class __$PushRelaySettingsCopyWithImpl<$Res>
-    extends _$PushRelaySettingsCopyWithImpl<$Res>
-    implements _$PushRelaySettingsCopyWith<$Res> {
-  __$PushRelaySettingsCopyWithImpl(
-      _PushRelaySettings _value, $Res Function(_PushRelaySettings) _then)
-      : super(_value, (v) => _then(v as _PushRelaySettings));
+class __$$PushRelaySettingsImplCopyWithImpl<$Res>
+    extends _$PushRelaySettingsCopyWithImpl<$Res, _$PushRelaySettingsImpl>
+    implements _$$PushRelaySettingsImplCopyWith<$Res> {
+  __$$PushRelaySettingsImplCopyWithImpl(_$PushRelaySettingsImpl _value,
+      $Res Function(_$PushRelaySettingsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PushRelaySettings get _value => super._value as _PushRelaySettings;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? pushRelayBaseUrl = freezed,
+    Object? pushRelayBaseUrl = null,
   }) {
-    return _then(_PushRelaySettings(
-      pushRelayBaseUrl: pushRelayBaseUrl == freezed
+    return _then(_$PushRelaySettingsImpl(
+      pushRelayBaseUrl: null == pushRelayBaseUrl
           ? _value.pushRelayBaseUrl
           : pushRelayBaseUrl // ignore: cast_nullable_to_non_nullable
               as String,
@@ -122,15 +104,15 @@ class __$PushRelaySettingsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PushRelaySettings extends _PushRelaySettings {
-  const _$_PushRelaySettings(
+class _$PushRelaySettingsImpl extends _PushRelaySettings {
+  const _$PushRelaySettingsImpl(
       {@HiveField(0)
       @JsonKey(name: 'push_relay_base_url')
-          required this.pushRelayBaseUrl})
+      required this.pushRelayBaseUrl})
       : super._();
 
-  factory _$_PushRelaySettings.fromJson(Map<String, dynamic> json) =>
-      _$$_PushRelaySettingsFromJson(json);
+  factory _$PushRelaySettingsImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PushRelaySettingsImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -143,25 +125,30 @@ class _$_PushRelaySettings extends _PushRelaySettings {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PushRelaySettings &&
+            other is _$PushRelaySettingsImpl &&
             (identical(other.pushRelayBaseUrl, pushRelayBaseUrl) ||
                 other.pushRelayBaseUrl == pushRelayBaseUrl));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, pushRelayBaseUrl);
 
   @JsonKey(ignore: true)
   @override
-  _$PushRelaySettingsCopyWith<_PushRelaySettings> get copyWith =>
-      __$PushRelaySettingsCopyWithImpl<_PushRelaySettings>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PushRelaySettingsImplCopyWith<_$PushRelaySettingsImpl> get copyWith =>
+      __$$PushRelaySettingsImplCopyWithImpl<_$PushRelaySettingsImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PushRelaySettingsToJson(this);
+    return _$$PushRelaySettingsImplToJson(
+      this,
+    );
   }
 }
 
@@ -169,11 +156,11 @@ abstract class _PushRelaySettings extends PushRelaySettings {
   const factory _PushRelaySettings(
       {@HiveField(0)
       @JsonKey(name: 'push_relay_base_url')
-          required String pushRelayBaseUrl}) = _$_PushRelaySettings;
+      required final String pushRelayBaseUrl}) = _$PushRelaySettingsImpl;
   const _PushRelaySettings._() : super._();
 
   factory _PushRelaySettings.fromJson(Map<String, dynamic> json) =
-      _$_PushRelaySettings.fromJson;
+      _$PushRelaySettingsImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -181,6 +168,6 @@ abstract class _PushRelaySettings extends PushRelaySettings {
   String get pushRelayBaseUrl;
   @override
   @JsonKey(ignore: true)
-  _$PushRelaySettingsCopyWith<_PushRelaySettings> get copyWith =>
+  _$$PushRelaySettingsImplCopyWith<_$PushRelaySettingsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

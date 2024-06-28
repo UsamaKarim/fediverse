@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_account_report_model_impl.dart';
 
@@ -11,35 +12,12 @@ part of 'unifedi_api_account_report_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiAccountReport _$UnifediApiAccountReportFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiAccountReport.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiAccountReportTearOff {
-  const _$UnifediApiAccountReportTearOff();
-
-  _UnifediApiAccountReport call(
-      {@HiveField(0) required UnifediApiAccount? account,
-      @HiveField(1) required List<UnifediApiStatus>? statuses,
-      @HiveField(2) required UnifediApiAccount? user}) {
-    return _UnifediApiAccountReport(
-      account: account,
-      statuses: statuses,
-      user: user,
-    );
-  }
-
-  UnifediApiAccountReport fromJson(Map<String, Object?> json) {
-    return UnifediApiAccountReport.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiAccountReport = _$UnifediApiAccountReportTearOff();
 
 /// @nodoc
 mixin _$UnifediApiAccountReport {
@@ -60,7 +38,8 @@ mixin _$UnifediApiAccountReport {
 abstract class $UnifediApiAccountReportCopyWith<$Res> {
   factory $UnifediApiAccountReportCopyWith(UnifediApiAccountReport value,
           $Res Function(UnifediApiAccountReport) then) =
-      _$UnifediApiAccountReportCopyWithImpl<$Res>;
+      _$UnifediApiAccountReportCopyWithImpl<$Res, UnifediApiAccountReport>;
+  @useResult
   $Res call(
       {@HiveField(0) UnifediApiAccount? account,
       @HiveField(1) List<UnifediApiStatus>? statuses,
@@ -71,14 +50,17 @@ abstract class $UnifediApiAccountReportCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UnifediApiAccountReportCopyWithImpl<$Res>
+class _$UnifediApiAccountReportCopyWithImpl<$Res,
+        $Val extends UnifediApiAccountReport>
     implements $UnifediApiAccountReportCopyWith<$Res> {
   _$UnifediApiAccountReportCopyWithImpl(this._value, this._then);
 
-  final UnifediApiAccountReport _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiAccountReport) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? account = freezed,
@@ -86,51 +68,55 @@ class _$UnifediApiAccountReportCopyWithImpl<$Res>
     Object? user = freezed,
   }) {
     return _then(_value.copyWith(
-      account: account == freezed
+      account: freezed == account
           ? _value.account
           : account // ignore: cast_nullable_to_non_nullable
               as UnifediApiAccount?,
-      statuses: statuses == freezed
+      statuses: freezed == statuses
           ? _value.statuses
           : statuses // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiStatus>?,
-      user: user == freezed
+      user: freezed == user
           ? _value.user
           : user // ignore: cast_nullable_to_non_nullable
               as UnifediApiAccount?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiAccountCopyWith<$Res>? get account {
     if (_value.account == null) {
       return null;
     }
 
     return $UnifediApiAccountCopyWith<$Res>(_value.account!, (value) {
-      return _then(_value.copyWith(account: value));
+      return _then(_value.copyWith(account: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiAccountCopyWith<$Res>? get user {
     if (_value.user == null) {
       return null;
     }
 
     return $UnifediApiAccountCopyWith<$Res>(_value.user!, (value) {
-      return _then(_value.copyWith(user: value));
+      return _then(_value.copyWith(user: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiAccountReportCopyWith<$Res>
+abstract class _$$UnifediApiAccountReportImplCopyWith<$Res>
     implements $UnifediApiAccountReportCopyWith<$Res> {
-  factory _$UnifediApiAccountReportCopyWith(_UnifediApiAccountReport value,
-          $Res Function(_UnifediApiAccountReport) then) =
-      __$UnifediApiAccountReportCopyWithImpl<$Res>;
+  factory _$$UnifediApiAccountReportImplCopyWith(
+          _$UnifediApiAccountReportImpl value,
+          $Res Function(_$UnifediApiAccountReportImpl) then) =
+      __$$UnifediApiAccountReportImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) UnifediApiAccount? account,
       @HiveField(1) List<UnifediApiStatus>? statuses,
@@ -143,33 +129,32 @@ abstract class _$UnifediApiAccountReportCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiAccountReportCopyWithImpl<$Res>
-    extends _$UnifediApiAccountReportCopyWithImpl<$Res>
-    implements _$UnifediApiAccountReportCopyWith<$Res> {
-  __$UnifediApiAccountReportCopyWithImpl(_UnifediApiAccountReport _value,
-      $Res Function(_UnifediApiAccountReport) _then)
-      : super(_value, (v) => _then(v as _UnifediApiAccountReport));
+class __$$UnifediApiAccountReportImplCopyWithImpl<$Res>
+    extends _$UnifediApiAccountReportCopyWithImpl<$Res,
+        _$UnifediApiAccountReportImpl>
+    implements _$$UnifediApiAccountReportImplCopyWith<$Res> {
+  __$$UnifediApiAccountReportImplCopyWithImpl(
+      _$UnifediApiAccountReportImpl _value,
+      $Res Function(_$UnifediApiAccountReportImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiAccountReport get _value =>
-      super._value as _UnifediApiAccountReport;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? account = freezed,
     Object? statuses = freezed,
     Object? user = freezed,
   }) {
-    return _then(_UnifediApiAccountReport(
-      account: account == freezed
+    return _then(_$UnifediApiAccountReportImpl(
+      account: freezed == account
           ? _value.account
           : account // ignore: cast_nullable_to_non_nullable
               as UnifediApiAccount?,
-      statuses: statuses == freezed
-          ? _value.statuses
+      statuses: freezed == statuses
+          ? _value._statuses
           : statuses // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiStatus>?,
-      user: user == freezed
+      user: freezed == user
           ? _value.user
           : user // ignore: cast_nullable_to_non_nullable
               as UnifediApiAccount?,
@@ -179,21 +164,30 @@ class __$UnifediApiAccountReportCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiAccountReport implements _UnifediApiAccountReport {
-  const _$_UnifediApiAccountReport(
+class _$UnifediApiAccountReportImpl implements _UnifediApiAccountReport {
+  const _$UnifediApiAccountReportImpl(
       {@HiveField(0) required this.account,
-      @HiveField(1) required this.statuses,
-      @HiveField(2) required this.user});
+      @HiveField(1) required final List<UnifediApiStatus>? statuses,
+      @HiveField(2) required this.user})
+      : _statuses = statuses;
 
-  factory _$_UnifediApiAccountReport.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiAccountReportFromJson(json);
+  factory _$UnifediApiAccountReportImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiAccountReportImplFromJson(json);
 
   @override
   @HiveField(0)
   final UnifediApiAccount? account;
+  final List<UnifediApiStatus>? _statuses;
   @override
   @HiveField(1)
-  final List<UnifediApiStatus>? statuses;
+  List<UnifediApiStatus>? get statuses {
+    final value = _statuses;
+    if (value == null) return null;
+    if (_statuses is EqualUnmodifiableListView) return _statuses;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(2)
   final UnifediApiAccount? user;
@@ -204,40 +198,44 @@ class _$_UnifediApiAccountReport implements _UnifediApiAccountReport {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiAccountReport &&
+            other is _$UnifediApiAccountReportImpl &&
             (identical(other.account, account) || other.account == account) &&
-            const DeepCollectionEquality().equals(other.statuses, statuses) &&
+            const DeepCollectionEquality().equals(other._statuses, _statuses) &&
             (identical(other.user, user) || other.user == user));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, account,
-      const DeepCollectionEquality().hash(statuses), user);
+      const DeepCollectionEquality().hash(_statuses), user);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiAccountReportCopyWith<_UnifediApiAccountReport> get copyWith =>
-      __$UnifediApiAccountReportCopyWithImpl<_UnifediApiAccountReport>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiAccountReportImplCopyWith<_$UnifediApiAccountReportImpl>
+      get copyWith => __$$UnifediApiAccountReportImplCopyWithImpl<
+          _$UnifediApiAccountReportImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiAccountReportToJson(this);
+    return _$$UnifediApiAccountReportImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiAccountReport implements UnifediApiAccountReport {
   const factory _UnifediApiAccountReport(
-          {@HiveField(0) required UnifediApiAccount? account,
-          @HiveField(1) required List<UnifediApiStatus>? statuses,
-          @HiveField(2) required UnifediApiAccount? user}) =
-      _$_UnifediApiAccountReport;
+          {@HiveField(0) required final UnifediApiAccount? account,
+          @HiveField(1) required final List<UnifediApiStatus>? statuses,
+          @HiveField(2) required final UnifediApiAccount? user}) =
+      _$UnifediApiAccountReportImpl;
 
   factory _UnifediApiAccountReport.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiAccountReport.fromJson;
+      _$UnifediApiAccountReportImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -250,6 +248,6 @@ abstract class _UnifediApiAccountReport implements UnifediApiAccountReport {
   UnifediApiAccount? get user;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiAccountReportCopyWith<_UnifediApiAccountReport> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$UnifediApiAccountReportImplCopyWith<_$UnifediApiAccountReportImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

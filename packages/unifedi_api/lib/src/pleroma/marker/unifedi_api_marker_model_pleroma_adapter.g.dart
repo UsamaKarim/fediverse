@@ -45,14 +45,14 @@ class UnifediApiMarkerPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiMarkerPleromaAdapter _$$_UnifediApiMarkerPleromaAdapterFromJson(
-        Map<String, dynamic> json) =>
-    _$_UnifediApiMarkerPleromaAdapter(
-      PleromaApiMarker.fromJson(json['value'] as Map<String, dynamic>),
-    );
+_$UnifediApiMarkerPleromaAdapterImpl
+    _$$UnifediApiMarkerPleromaAdapterImplFromJson(Map<String, dynamic> json) =>
+        _$UnifediApiMarkerPleromaAdapterImpl(
+          PleromaApiMarker.fromJson(json['value'] as Map<String, dynamic>),
+        );
 
-Map<String, dynamic> _$$_UnifediApiMarkerPleromaAdapterToJson(
-        _$_UnifediApiMarkerPleromaAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiMarkerPleromaAdapterImplToJson(
+        _$UnifediApiMarkerPleromaAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

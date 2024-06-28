@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_access_model_impl.dart';
 
@@ -11,42 +12,11 @@ part of 'pleroma_api_access_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiAccess _$PleromaApiAccessFromJson(Map<String, dynamic> json) {
   return _PleromaApiAccess.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiAccessTearOff {
-  const _$PleromaApiAccessTearOff();
-
-  _PleromaApiAccess call(
-      {@HiveField(0)
-          required String url,
-      @HiveField(1)
-          required PleromaApiInstance? instance,
-      @HiveField(4)
-      @JsonKey(name: 'application_access_token')
-          required PleromaApiAccessApplicationToken? applicationAccessToken,
-      @HiveField(5)
-      @JsonKey(name: 'user_access_token')
-          required PleromaApiAccessUserToken? userAccessToken}) {
-    return _PleromaApiAccess(
-      url: url,
-      instance: instance,
-      applicationAccessToken: applicationAccessToken,
-      userAccessToken: userAccessToken,
-    );
-  }
-
-  PleromaApiAccess fromJson(Map<String, Object?> json) {
-    return PleromaApiAccess.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiAccess = _$PleromaApiAccessTearOff();
 
 /// @nodoc
 mixin _$PleromaApiAccess {
@@ -73,18 +43,17 @@ mixin _$PleromaApiAccess {
 abstract class $PleromaApiAccessCopyWith<$Res> {
   factory $PleromaApiAccessCopyWith(
           PleromaApiAccess value, $Res Function(PleromaApiAccess) then) =
-      _$PleromaApiAccessCopyWithImpl<$Res>;
+      _$PleromaApiAccessCopyWithImpl<$Res, PleromaApiAccess>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-          String url,
-      @HiveField(1)
-          PleromaApiInstance? instance,
+      {@HiveField(0) String url,
+      @HiveField(1) PleromaApiInstance? instance,
       @HiveField(4)
       @JsonKey(name: 'application_access_token')
-          PleromaApiAccessApplicationToken? applicationAccessToken,
+      PleromaApiAccessApplicationToken? applicationAccessToken,
       @HiveField(5)
       @JsonKey(name: 'user_access_token')
-          PleromaApiAccessUserToken? userAccessToken});
+      PleromaApiAccessUserToken? userAccessToken});
 
   $PleromaApiInstanceCopyWith<$Res>? get instance;
   $PleromaApiAccessApplicationTokenCopyWith<$Res>? get applicationAccessToken;
@@ -92,53 +61,57 @@ abstract class $PleromaApiAccessCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiAccessCopyWithImpl<$Res>
+class _$PleromaApiAccessCopyWithImpl<$Res, $Val extends PleromaApiAccess>
     implements $PleromaApiAccessCopyWith<$Res> {
   _$PleromaApiAccessCopyWithImpl(this._value, this._then);
 
-  final PleromaApiAccess _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiAccess) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? url = freezed,
+    Object? url = null,
     Object? instance = freezed,
     Object? applicationAccessToken = freezed,
     Object? userAccessToken = freezed,
   }) {
     return _then(_value.copyWith(
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      instance: instance == freezed
+      instance: freezed == instance
           ? _value.instance
           : instance // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstance?,
-      applicationAccessToken: applicationAccessToken == freezed
+      applicationAccessToken: freezed == applicationAccessToken
           ? _value.applicationAccessToken
           : applicationAccessToken // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccessApplicationToken?,
-      userAccessToken: userAccessToken == freezed
+      userAccessToken: freezed == userAccessToken
           ? _value.userAccessToken
           : userAccessToken // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccessUserToken?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiInstanceCopyWith<$Res>? get instance {
     if (_value.instance == null) {
       return null;
     }
 
     return $PleromaApiInstanceCopyWith<$Res>(_value.instance!, (value) {
-      return _then(_value.copyWith(instance: value));
+      return _then(_value.copyWith(instance: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiAccessApplicationTokenCopyWith<$Res>? get applicationAccessToken {
     if (_value.applicationAccessToken == null) {
       return null;
@@ -146,11 +119,12 @@ class _$PleromaApiAccessCopyWithImpl<$Res>
 
     return $PleromaApiAccessApplicationTokenCopyWith<$Res>(
         _value.applicationAccessToken!, (value) {
-      return _then(_value.copyWith(applicationAccessToken: value));
+      return _then(_value.copyWith(applicationAccessToken: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiAccessUserTokenCopyWith<$Res>? get userAccessToken {
     if (_value.userAccessToken == null) {
       return null;
@@ -158,29 +132,28 @@ class _$PleromaApiAccessCopyWithImpl<$Res>
 
     return $PleromaApiAccessUserTokenCopyWith<$Res>(_value.userAccessToken!,
         (value) {
-      return _then(_value.copyWith(userAccessToken: value));
+      return _then(_value.copyWith(userAccessToken: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiAccessCopyWith<$Res>
+abstract class _$$PleromaApiAccessImplCopyWith<$Res>
     implements $PleromaApiAccessCopyWith<$Res> {
-  factory _$PleromaApiAccessCopyWith(
-          _PleromaApiAccess value, $Res Function(_PleromaApiAccess) then) =
-      __$PleromaApiAccessCopyWithImpl<$Res>;
+  factory _$$PleromaApiAccessImplCopyWith(_$PleromaApiAccessImpl value,
+          $Res Function(_$PleromaApiAccessImpl) then) =
+      __$$PleromaApiAccessImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-          String url,
-      @HiveField(1)
-          PleromaApiInstance? instance,
+      {@HiveField(0) String url,
+      @HiveField(1) PleromaApiInstance? instance,
       @HiveField(4)
       @JsonKey(name: 'application_access_token')
-          PleromaApiAccessApplicationToken? applicationAccessToken,
+      PleromaApiAccessApplicationToken? applicationAccessToken,
       @HiveField(5)
       @JsonKey(name: 'user_access_token')
-          PleromaApiAccessUserToken? userAccessToken});
+      PleromaApiAccessUserToken? userAccessToken});
 
   @override
   $PleromaApiInstanceCopyWith<$Res>? get instance;
@@ -191,37 +164,35 @@ abstract class _$PleromaApiAccessCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiAccessCopyWithImpl<$Res>
-    extends _$PleromaApiAccessCopyWithImpl<$Res>
-    implements _$PleromaApiAccessCopyWith<$Res> {
-  __$PleromaApiAccessCopyWithImpl(
-      _PleromaApiAccess _value, $Res Function(_PleromaApiAccess) _then)
-      : super(_value, (v) => _then(v as _PleromaApiAccess));
+class __$$PleromaApiAccessImplCopyWithImpl<$Res>
+    extends _$PleromaApiAccessCopyWithImpl<$Res, _$PleromaApiAccessImpl>
+    implements _$$PleromaApiAccessImplCopyWith<$Res> {
+  __$$PleromaApiAccessImplCopyWithImpl(_$PleromaApiAccessImpl _value,
+      $Res Function(_$PleromaApiAccessImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiAccess get _value => super._value as _PleromaApiAccess;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? url = freezed,
+    Object? url = null,
     Object? instance = freezed,
     Object? applicationAccessToken = freezed,
     Object? userAccessToken = freezed,
   }) {
-    return _then(_PleromaApiAccess(
-      url: url == freezed
+    return _then(_$PleromaApiAccessImpl(
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      instance: instance == freezed
+      instance: freezed == instance
           ? _value.instance
           : instance // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstance?,
-      applicationAccessToken: applicationAccessToken == freezed
+      applicationAccessToken: freezed == applicationAccessToken
           ? _value.applicationAccessToken
           : applicationAccessToken // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccessApplicationToken?,
-      userAccessToken: userAccessToken == freezed
+      userAccessToken: freezed == userAccessToken
           ? _value.userAccessToken
           : userAccessToken // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccessUserToken?,
@@ -231,22 +202,20 @@ class __$PleromaApiAccessCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiAccess extends _PleromaApiAccess {
-  const _$_PleromaApiAccess(
-      {@HiveField(0)
-          required this.url,
-      @HiveField(1)
-          required this.instance,
+class _$PleromaApiAccessImpl extends _PleromaApiAccess {
+  const _$PleromaApiAccessImpl(
+      {@HiveField(0) required this.url,
+      @HiveField(1) required this.instance,
       @HiveField(4)
       @JsonKey(name: 'application_access_token')
-          required this.applicationAccessToken,
+      required this.applicationAccessToken,
       @HiveField(5)
       @JsonKey(name: 'user_access_token')
-          required this.userAccessToken})
+      required this.userAccessToken})
       : super._();
 
-  factory _$_PleromaApiAccess.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiAccessFromJson(json);
+  factory _$PleromaApiAccessImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiAccessImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -269,10 +238,10 @@ class _$_PleromaApiAccess extends _PleromaApiAccess {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiAccess &&
+            other is _$PleromaApiAccessImpl &&
             (identical(other.url, url) || other.url == url) &&
             (identical(other.instance, instance) ||
                 other.instance == instance) &&
@@ -282,38 +251,41 @@ class _$_PleromaApiAccess extends _PleromaApiAccess {
                 other.userAccessToken == userAccessToken));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType, url, instance, applicationAccessToken, userAccessToken);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiAccessCopyWith<_PleromaApiAccess> get copyWith =>
-      __$PleromaApiAccessCopyWithImpl<_PleromaApiAccess>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiAccessImplCopyWith<_$PleromaApiAccessImpl> get copyWith =>
+      __$$PleromaApiAccessImplCopyWithImpl<_$PleromaApiAccessImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiAccessToJson(this);
+    return _$$PleromaApiAccessImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiAccess extends PleromaApiAccess {
   const factory _PleromaApiAccess(
-          {@HiveField(0)
-              required String url,
-          @HiveField(1)
-              required PleromaApiInstance? instance,
-          @HiveField(4)
-          @JsonKey(name: 'application_access_token')
-              required PleromaApiAccessApplicationToken? applicationAccessToken,
-          @HiveField(5)
-          @JsonKey(name: 'user_access_token')
-              required PleromaApiAccessUserToken? userAccessToken}) =
-      _$_PleromaApiAccess;
+      {@HiveField(0) required final String url,
+      @HiveField(1) required final PleromaApiInstance? instance,
+      @HiveField(4)
+      @JsonKey(name: 'application_access_token')
+      required final PleromaApiAccessApplicationToken? applicationAccessToken,
+      @HiveField(5)
+      @JsonKey(name: 'user_access_token')
+      required final PleromaApiAccessUserToken?
+          userAccessToken}) = _$PleromaApiAccessImpl;
   const _PleromaApiAccess._() : super._();
 
   factory _PleromaApiAccess.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiAccess.fromJson;
+      _$PleromaApiAccessImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -331,6 +303,6 @@ abstract class _PleromaApiAccess extends PleromaApiAccess {
   PleromaApiAccessUserToken? get userAccessToken;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiAccessCopyWith<_PleromaApiAccess> get copyWith =>
+  _$$PleromaApiAccessImplCopyWith<_$PleromaApiAccessImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

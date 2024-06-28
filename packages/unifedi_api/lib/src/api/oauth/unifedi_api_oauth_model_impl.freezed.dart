@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_oauth_model_impl.dart';
 
@@ -11,36 +12,11 @@ part of 'unifedi_api_oauth_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiOAuthToken _$UnifediApiOAuthTokenFromJson(Map<String, dynamic> json) {
   return _UnifediApiOAuthToken.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiOAuthTokenTearOff {
-  const _$UnifediApiOAuthTokenTearOff();
-
-  _UnifediApiOAuthToken call(
-      {@HiveField(0) @JsonKey(name: 'access_token') required String accessToken,
-      @HiveField(1) @JsonKey(name: 'token_type') required String tokenType,
-      @HiveField(2) required String? id,
-      @HiveField(3) required String? me}) {
-    return _UnifediApiOAuthToken(
-      accessToken: accessToken,
-      tokenType: tokenType,
-      id: id,
-      me: me,
-    );
-  }
-
-  UnifediApiOAuthToken fromJson(Map<String, Object?> json) {
-    return UnifediApiOAuthToken.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiOAuthToken = _$UnifediApiOAuthTokenTearOff();
 
 /// @nodoc
 mixin _$UnifediApiOAuthToken {
@@ -65,7 +41,8 @@ mixin _$UnifediApiOAuthToken {
 abstract class $UnifediApiOAuthTokenCopyWith<$Res> {
   factory $UnifediApiOAuthTokenCopyWith(UnifediApiOAuthToken value,
           $Res Function(UnifediApiOAuthToken) then) =
-      _$UnifediApiOAuthTokenCopyWithImpl<$Res>;
+      _$UnifediApiOAuthTokenCopyWithImpl<$Res, UnifediApiOAuthToken>;
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'access_token') String accessToken,
       @HiveField(1) @JsonKey(name: 'token_type') String tokenType,
@@ -74,49 +51,53 @@ abstract class $UnifediApiOAuthTokenCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UnifediApiOAuthTokenCopyWithImpl<$Res>
+class _$UnifediApiOAuthTokenCopyWithImpl<$Res,
+        $Val extends UnifediApiOAuthToken>
     implements $UnifediApiOAuthTokenCopyWith<$Res> {
   _$UnifediApiOAuthTokenCopyWithImpl(this._value, this._then);
 
-  final UnifediApiOAuthToken _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiOAuthToken) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? accessToken = freezed,
-    Object? tokenType = freezed,
+    Object? accessToken = null,
+    Object? tokenType = null,
     Object? id = freezed,
     Object? me = freezed,
   }) {
     return _then(_value.copyWith(
-      accessToken: accessToken == freezed
+      accessToken: null == accessToken
           ? _value.accessToken
           : accessToken // ignore: cast_nullable_to_non_nullable
               as String,
-      tokenType: tokenType == freezed
+      tokenType: null == tokenType
           ? _value.tokenType
           : tokenType // ignore: cast_nullable_to_non_nullable
               as String,
-      id: id == freezed
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String?,
-      me: me == freezed
+      me: freezed == me
           ? _value.me
           : me // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiOAuthTokenCopyWith<$Res>
+abstract class _$$UnifediApiOAuthTokenImplCopyWith<$Res>
     implements $UnifediApiOAuthTokenCopyWith<$Res> {
-  factory _$UnifediApiOAuthTokenCopyWith(_UnifediApiOAuthToken value,
-          $Res Function(_UnifediApiOAuthToken) then) =
-      __$UnifediApiOAuthTokenCopyWithImpl<$Res>;
+  factory _$$UnifediApiOAuthTokenImplCopyWith(_$UnifediApiOAuthTokenImpl value,
+          $Res Function(_$UnifediApiOAuthTokenImpl) then) =
+      __$$UnifediApiOAuthTokenImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'access_token') String accessToken,
       @HiveField(1) @JsonKey(name: 'token_type') String tokenType,
@@ -125,37 +106,35 @@ abstract class _$UnifediApiOAuthTokenCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiOAuthTokenCopyWithImpl<$Res>
-    extends _$UnifediApiOAuthTokenCopyWithImpl<$Res>
-    implements _$UnifediApiOAuthTokenCopyWith<$Res> {
-  __$UnifediApiOAuthTokenCopyWithImpl(
-      _UnifediApiOAuthToken _value, $Res Function(_UnifediApiOAuthToken) _then)
-      : super(_value, (v) => _then(v as _UnifediApiOAuthToken));
+class __$$UnifediApiOAuthTokenImplCopyWithImpl<$Res>
+    extends _$UnifediApiOAuthTokenCopyWithImpl<$Res, _$UnifediApiOAuthTokenImpl>
+    implements _$$UnifediApiOAuthTokenImplCopyWith<$Res> {
+  __$$UnifediApiOAuthTokenImplCopyWithImpl(_$UnifediApiOAuthTokenImpl _value,
+      $Res Function(_$UnifediApiOAuthTokenImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiOAuthToken get _value => super._value as _UnifediApiOAuthToken;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? accessToken = freezed,
-    Object? tokenType = freezed,
+    Object? accessToken = null,
+    Object? tokenType = null,
     Object? id = freezed,
     Object? me = freezed,
   }) {
-    return _then(_UnifediApiOAuthToken(
-      accessToken: accessToken == freezed
+    return _then(_$UnifediApiOAuthTokenImpl(
+      accessToken: null == accessToken
           ? _value.accessToken
           : accessToken // ignore: cast_nullable_to_non_nullable
               as String,
-      tokenType: tokenType == freezed
+      tokenType: null == tokenType
           ? _value.tokenType
           : tokenType // ignore: cast_nullable_to_non_nullable
               as String,
-      id: id == freezed
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String?,
-      me: me == freezed
+      me: freezed == me
           ? _value.me
           : me // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -165,15 +144,15 @@ class __$UnifediApiOAuthTokenCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiOAuthToken implements _UnifediApiOAuthToken {
-  const _$_UnifediApiOAuthToken(
+class _$UnifediApiOAuthTokenImpl implements _UnifediApiOAuthToken {
+  const _$UnifediApiOAuthTokenImpl(
       {@HiveField(0) @JsonKey(name: 'access_token') required this.accessToken,
       @HiveField(1) @JsonKey(name: 'token_type') required this.tokenType,
       @HiveField(2) required this.id,
       @HiveField(3) required this.me});
 
-  factory _$_UnifediApiOAuthToken.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiOAuthTokenFromJson(json);
+  factory _$UnifediApiOAuthTokenImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiOAuthTokenImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -196,10 +175,10 @@ class _$_UnifediApiOAuthToken implements _UnifediApiOAuthToken {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiOAuthToken &&
+            other is _$UnifediApiOAuthTokenImpl &&
             (identical(other.accessToken, accessToken) ||
                 other.accessToken == accessToken) &&
             (identical(other.tokenType, tokenType) ||
@@ -208,30 +187,39 @@ class _$_UnifediApiOAuthToken implements _UnifediApiOAuthToken {
             (identical(other.me, me) || other.me == me));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, accessToken, tokenType, id, me);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiOAuthTokenCopyWith<_UnifediApiOAuthToken> get copyWith =>
-      __$UnifediApiOAuthTokenCopyWithImpl<_UnifediApiOAuthToken>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiOAuthTokenImplCopyWith<_$UnifediApiOAuthTokenImpl>
+      get copyWith =>
+          __$$UnifediApiOAuthTokenImplCopyWithImpl<_$UnifediApiOAuthTokenImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiOAuthTokenToJson(this);
+    return _$$UnifediApiOAuthTokenImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiOAuthToken implements UnifediApiOAuthToken {
   const factory _UnifediApiOAuthToken(
-      {@HiveField(0) @JsonKey(name: 'access_token') required String accessToken,
-      @HiveField(1) @JsonKey(name: 'token_type') required String tokenType,
-      @HiveField(2) required String? id,
-      @HiveField(3) required String? me}) = _$_UnifediApiOAuthToken;
+      {@HiveField(0)
+      @JsonKey(name: 'access_token')
+      required final String accessToken,
+      @HiveField(1)
+      @JsonKey(name: 'token_type')
+      required final String tokenType,
+      @HiveField(2) required final String? id,
+      @HiveField(3) required final String? me}) = _$UnifediApiOAuthTokenImpl;
 
   factory _UnifediApiOAuthToken.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiOAuthToken.fromJson;
+      _$UnifediApiOAuthTokenImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -249,6 +237,6 @@ abstract class _UnifediApiOAuthToken implements UnifediApiOAuthToken {
   String? get me;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiOAuthTokenCopyWith<_UnifediApiOAuthToken> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$UnifediApiOAuthTokenImplCopyWith<_$UnifediApiOAuthTokenImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

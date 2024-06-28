@@ -45,15 +45,16 @@ class PleromaApiAccessLevelRequirementAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiAccessLevelRequirement
-    _$$_PleromaApiAccessLevelRequirementFromJson(Map<String, dynamic> json) =>
-        _$_PleromaApiAccessLevelRequirement(
+_$PleromaApiAccessLevelRequirementImpl
+    _$$PleromaApiAccessLevelRequirementImplFromJson(
+            Map<String, dynamic> json) =>
+        _$PleromaApiAccessLevelRequirementImpl(
           requiredLevel: PleromaApiAccessLevel.fromJson(
               json['requiredLevel'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_PleromaApiAccessLevelRequirementToJson(
-        _$_PleromaApiAccessLevelRequirement instance) =>
+Map<String, dynamic> _$$PleromaApiAccessLevelRequirementImplToJson(
+        _$PleromaApiAccessLevelRequirementImpl instance) =>
     <String, dynamic>{
       'requiredLevel': instance.requiredLevel.toJson(),
     };

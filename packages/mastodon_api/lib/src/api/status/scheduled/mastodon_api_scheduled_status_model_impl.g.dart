@@ -55,9 +55,9 @@ class MastodonApiScheduledStatusAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiScheduledStatus _$$_MastodonApiScheduledStatusFromJson(
+_$MastodonApiScheduledStatusImpl _$$MastodonApiScheduledStatusImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiScheduledStatus(
+    _$MastodonApiScheduledStatusImpl(
       id: json['id'] as String,
       mediaAttachments: (json['media_attachments'] as List<dynamic>?)
           ?.map((e) =>
@@ -68,8 +68,8 @@ _$_MastodonApiScheduledStatus _$$_MastodonApiScheduledStatusFromJson(
       scheduledAt: DateTime.parse(json['scheduled_at'] as String),
     );
 
-Map<String, dynamic> _$$_MastodonApiScheduledStatusToJson(
-    _$_MastodonApiScheduledStatus instance) {
+Map<String, dynamic> _$$MastodonApiScheduledStatusImplToJson(
+    _$MastodonApiScheduledStatusImpl instance) {
   final val = <String, dynamic>{
     'id': instance.id,
   };

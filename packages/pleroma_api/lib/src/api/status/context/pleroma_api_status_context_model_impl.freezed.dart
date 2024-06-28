@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_status_context_model_impl.dart';
 
@@ -11,33 +12,12 @@ part of 'pleroma_api_status_context_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiStatusContext _$PleromaApiStatusContextFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiStatusContext.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiStatusContextTearOff {
-  const _$PleromaApiStatusContextTearOff();
-
-  _PleromaApiStatusContext call(
-      {@HiveField(0) required List<PleromaApiStatus> descendants,
-      @HiveField(1) required List<PleromaApiStatus> ancestors}) {
-    return _PleromaApiStatusContext(
-      descendants: descendants,
-      ancestors: ancestors,
-    );
-  }
-
-  PleromaApiStatusContext fromJson(Map<String, Object?> json) {
-    return PleromaApiStatusContext.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiStatusContext = _$PleromaApiStatusContextTearOff();
 
 /// @nodoc
 mixin _$PleromaApiStatusContext {
@@ -56,75 +36,80 @@ mixin _$PleromaApiStatusContext {
 abstract class $PleromaApiStatusContextCopyWith<$Res> {
   factory $PleromaApiStatusContextCopyWith(PleromaApiStatusContext value,
           $Res Function(PleromaApiStatusContext) then) =
-      _$PleromaApiStatusContextCopyWithImpl<$Res>;
+      _$PleromaApiStatusContextCopyWithImpl<$Res, PleromaApiStatusContext>;
+  @useResult
   $Res call(
       {@HiveField(0) List<PleromaApiStatus> descendants,
       @HiveField(1) List<PleromaApiStatus> ancestors});
 }
 
 /// @nodoc
-class _$PleromaApiStatusContextCopyWithImpl<$Res>
+class _$PleromaApiStatusContextCopyWithImpl<$Res,
+        $Val extends PleromaApiStatusContext>
     implements $PleromaApiStatusContextCopyWith<$Res> {
   _$PleromaApiStatusContextCopyWithImpl(this._value, this._then);
 
-  final PleromaApiStatusContext _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiStatusContext) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? descendants = freezed,
-    Object? ancestors = freezed,
+    Object? descendants = null,
+    Object? ancestors = null,
   }) {
     return _then(_value.copyWith(
-      descendants: descendants == freezed
+      descendants: null == descendants
           ? _value.descendants
           : descendants // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiStatus>,
-      ancestors: ancestors == freezed
+      ancestors: null == ancestors
           ? _value.ancestors
           : ancestors // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiStatus>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiStatusContextCopyWith<$Res>
+abstract class _$$PleromaApiStatusContextImplCopyWith<$Res>
     implements $PleromaApiStatusContextCopyWith<$Res> {
-  factory _$PleromaApiStatusContextCopyWith(_PleromaApiStatusContext value,
-          $Res Function(_PleromaApiStatusContext) then) =
-      __$PleromaApiStatusContextCopyWithImpl<$Res>;
+  factory _$$PleromaApiStatusContextImplCopyWith(
+          _$PleromaApiStatusContextImpl value,
+          $Res Function(_$PleromaApiStatusContextImpl) then) =
+      __$$PleromaApiStatusContextImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) List<PleromaApiStatus> descendants,
       @HiveField(1) List<PleromaApiStatus> ancestors});
 }
 
 /// @nodoc
-class __$PleromaApiStatusContextCopyWithImpl<$Res>
-    extends _$PleromaApiStatusContextCopyWithImpl<$Res>
-    implements _$PleromaApiStatusContextCopyWith<$Res> {
-  __$PleromaApiStatusContextCopyWithImpl(_PleromaApiStatusContext _value,
-      $Res Function(_PleromaApiStatusContext) _then)
-      : super(_value, (v) => _then(v as _PleromaApiStatusContext));
+class __$$PleromaApiStatusContextImplCopyWithImpl<$Res>
+    extends _$PleromaApiStatusContextCopyWithImpl<$Res,
+        _$PleromaApiStatusContextImpl>
+    implements _$$PleromaApiStatusContextImplCopyWith<$Res> {
+  __$$PleromaApiStatusContextImplCopyWithImpl(
+      _$PleromaApiStatusContextImpl _value,
+      $Res Function(_$PleromaApiStatusContextImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiStatusContext get _value =>
-      super._value as _PleromaApiStatusContext;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? descendants = freezed,
-    Object? ancestors = freezed,
+    Object? descendants = null,
+    Object? ancestors = null,
   }) {
-    return _then(_PleromaApiStatusContext(
-      descendants: descendants == freezed
-          ? _value.descendants
+    return _then(_$PleromaApiStatusContextImpl(
+      descendants: null == descendants
+          ? _value._descendants
           : descendants // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiStatus>,
-      ancestors: ancestors == freezed
-          ? _value.ancestors
+      ancestors: null == ancestors
+          ? _value._ancestors
           : ancestors // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiStatus>,
     ));
@@ -133,20 +118,33 @@ class __$PleromaApiStatusContextCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiStatusContext implements _PleromaApiStatusContext {
-  const _$_PleromaApiStatusContext(
-      {@HiveField(0) required this.descendants,
-      @HiveField(1) required this.ancestors});
+class _$PleromaApiStatusContextImpl implements _PleromaApiStatusContext {
+  const _$PleromaApiStatusContextImpl(
+      {@HiveField(0) required final List<PleromaApiStatus> descendants,
+      @HiveField(1) required final List<PleromaApiStatus> ancestors})
+      : _descendants = descendants,
+        _ancestors = ancestors;
 
-  factory _$_PleromaApiStatusContext.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiStatusContextFromJson(json);
+  factory _$PleromaApiStatusContextImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiStatusContextImplFromJson(json);
 
+  final List<PleromaApiStatus> _descendants;
   @override
   @HiveField(0)
-  final List<PleromaApiStatus> descendants;
+  List<PleromaApiStatus> get descendants {
+    if (_descendants is EqualUnmodifiableListView) return _descendants;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_descendants);
+  }
+
+  final List<PleromaApiStatus> _ancestors;
   @override
   @HiveField(1)
-  final List<PleromaApiStatus> ancestors;
+  List<PleromaApiStatus> get ancestors {
+    if (_ancestors is EqualUnmodifiableListView) return _ancestors;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_ancestors);
+  }
 
   @override
   String toString() {
@@ -154,41 +152,46 @@ class _$_PleromaApiStatusContext implements _PleromaApiStatusContext {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiStatusContext &&
+            other is _$PleromaApiStatusContextImpl &&
             const DeepCollectionEquality()
-                .equals(other.descendants, descendants) &&
-            const DeepCollectionEquality().equals(other.ancestors, ancestors));
+                .equals(other._descendants, _descendants) &&
+            const DeepCollectionEquality()
+                .equals(other._ancestors, _ancestors));
   }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(descendants),
-      const DeepCollectionEquality().hash(ancestors));
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiStatusContextCopyWith<_PleromaApiStatusContext> get copyWith =>
-      __$PleromaApiStatusContextCopyWithImpl<_PleromaApiStatusContext>(
-          this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(_descendants),
+      const DeepCollectionEquality().hash(_ancestors));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiStatusContextImplCopyWith<_$PleromaApiStatusContextImpl>
+      get copyWith => __$$PleromaApiStatusContextImplCopyWithImpl<
+          _$PleromaApiStatusContextImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiStatusContextToJson(this);
+    return _$$PleromaApiStatusContextImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiStatusContext implements PleromaApiStatusContext {
   const factory _PleromaApiStatusContext(
-          {@HiveField(0) required List<PleromaApiStatus> descendants,
-          @HiveField(1) required List<PleromaApiStatus> ancestors}) =
-      _$_PleromaApiStatusContext;
+          {@HiveField(0) required final List<PleromaApiStatus> descendants,
+          @HiveField(1) required final List<PleromaApiStatus> ancestors}) =
+      _$PleromaApiStatusContextImpl;
 
   factory _PleromaApiStatusContext.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiStatusContext.fromJson;
+      _$PleromaApiStatusContextImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -198,6 +201,6 @@ abstract class _PleromaApiStatusContext implements PleromaApiStatusContext {
   List<PleromaApiStatus> get ancestors;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiStatusContextCopyWith<_PleromaApiStatusContext> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PleromaApiStatusContextImplCopyWith<_$PleromaApiStatusContextImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

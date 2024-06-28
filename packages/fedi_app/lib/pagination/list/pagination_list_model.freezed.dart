@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pagination_list_model.dart';
 
@@ -11,23 +12,7 @@ part of 'pagination_list_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$PaginationListLoadingErrorTearOff {
-  const _$PaginationListLoadingErrorTearOff();
-
-  _PaginationListLoadingError call(
-      {required dynamic error, required StackTrace? stackTrace}) {
-    return _PaginationListLoadingError(
-      error: error,
-      stackTrace: stackTrace,
-    );
-  }
-}
-
-/// @nodoc
-const $PaginationListLoadingError = _$PaginationListLoadingErrorTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$PaginationListLoadingError {
@@ -43,71 +28,76 @@ mixin _$PaginationListLoadingError {
 abstract class $PaginationListLoadingErrorCopyWith<$Res> {
   factory $PaginationListLoadingErrorCopyWith(PaginationListLoadingError value,
           $Res Function(PaginationListLoadingError) then) =
-      _$PaginationListLoadingErrorCopyWithImpl<$Res>;
+      _$PaginationListLoadingErrorCopyWithImpl<$Res,
+          PaginationListLoadingError>;
+  @useResult
   $Res call({dynamic error, StackTrace? stackTrace});
 }
 
 /// @nodoc
-class _$PaginationListLoadingErrorCopyWithImpl<$Res>
+class _$PaginationListLoadingErrorCopyWithImpl<$Res,
+        $Val extends PaginationListLoadingError>
     implements $PaginationListLoadingErrorCopyWith<$Res> {
   _$PaginationListLoadingErrorCopyWithImpl(this._value, this._then);
 
-  final PaginationListLoadingError _value;
   // ignore: unused_field
-  final $Res Function(PaginationListLoadingError) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? error = freezed,
     Object? stackTrace = freezed,
   }) {
     return _then(_value.copyWith(
-      error: error == freezed
+      error: freezed == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as dynamic,
-      stackTrace: stackTrace == freezed
+      stackTrace: freezed == stackTrace
           ? _value.stackTrace
           : stackTrace // ignore: cast_nullable_to_non_nullable
               as StackTrace?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PaginationListLoadingErrorCopyWith<$Res>
+abstract class _$$PaginationListLoadingErrorImplCopyWith<$Res>
     implements $PaginationListLoadingErrorCopyWith<$Res> {
-  factory _$PaginationListLoadingErrorCopyWith(
-          _PaginationListLoadingError value,
-          $Res Function(_PaginationListLoadingError) then) =
-      __$PaginationListLoadingErrorCopyWithImpl<$Res>;
+  factory _$$PaginationListLoadingErrorImplCopyWith(
+          _$PaginationListLoadingErrorImpl value,
+          $Res Function(_$PaginationListLoadingErrorImpl) then) =
+      __$$PaginationListLoadingErrorImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({dynamic error, StackTrace? stackTrace});
 }
 
 /// @nodoc
-class __$PaginationListLoadingErrorCopyWithImpl<$Res>
-    extends _$PaginationListLoadingErrorCopyWithImpl<$Res>
-    implements _$PaginationListLoadingErrorCopyWith<$Res> {
-  __$PaginationListLoadingErrorCopyWithImpl(_PaginationListLoadingError _value,
-      $Res Function(_PaginationListLoadingError) _then)
-      : super(_value, (v) => _then(v as _PaginationListLoadingError));
+class __$$PaginationListLoadingErrorImplCopyWithImpl<$Res>
+    extends _$PaginationListLoadingErrorCopyWithImpl<$Res,
+        _$PaginationListLoadingErrorImpl>
+    implements _$$PaginationListLoadingErrorImplCopyWith<$Res> {
+  __$$PaginationListLoadingErrorImplCopyWithImpl(
+      _$PaginationListLoadingErrorImpl _value,
+      $Res Function(_$PaginationListLoadingErrorImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PaginationListLoadingError get _value =>
-      super._value as _PaginationListLoadingError;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? error = freezed,
     Object? stackTrace = freezed,
   }) {
-    return _then(_PaginationListLoadingError(
-      error: error == freezed
+    return _then(_$PaginationListLoadingErrorImpl(
+      error: freezed == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as dynamic,
-      stackTrace: stackTrace == freezed
+      stackTrace: freezed == stackTrace
           ? _value.stackTrace
           : stackTrace // ignore: cast_nullable_to_non_nullable
               as StackTrace?,
@@ -117,8 +107,8 @@ class __$PaginationListLoadingErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PaginationListLoadingError implements _PaginationListLoadingError {
-  const _$_PaginationListLoadingError(
+class _$PaginationListLoadingErrorImpl implements _PaginationListLoadingError {
+  const _$PaginationListLoadingErrorImpl(
       {required this.error, required this.stackTrace});
 
   @override
@@ -132,10 +122,10 @@ class _$_PaginationListLoadingError implements _PaginationListLoadingError {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PaginationListLoadingError &&
+            other is _$PaginationListLoadingErrorImpl &&
             const DeepCollectionEquality().equals(other.error, error) &&
             (identical(other.stackTrace, stackTrace) ||
                 other.stackTrace == stackTrace));
@@ -147,16 +137,18 @@ class _$_PaginationListLoadingError implements _PaginationListLoadingError {
 
   @JsonKey(ignore: true)
   @override
-  _$PaginationListLoadingErrorCopyWith<_PaginationListLoadingError>
-      get copyWith => __$PaginationListLoadingErrorCopyWithImpl<
-          _PaginationListLoadingError>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PaginationListLoadingErrorImplCopyWith<_$PaginationListLoadingErrorImpl>
+      get copyWith => __$$PaginationListLoadingErrorImplCopyWithImpl<
+          _$PaginationListLoadingErrorImpl>(this, _$identity);
 }
 
 abstract class _PaginationListLoadingError
     implements PaginationListLoadingError {
   const factory _PaginationListLoadingError(
-      {required dynamic error,
-      required StackTrace? stackTrace}) = _$_PaginationListLoadingError;
+          {required final dynamic error,
+          required final StackTrace? stackTrace}) =
+      _$PaginationListLoadingErrorImpl;
 
   @override
   dynamic get error;
@@ -164,6 +156,6 @@ abstract class _PaginationListLoadingError
   StackTrace? get stackTrace;
   @override
   @JsonKey(ignore: true)
-  _$PaginationListLoadingErrorCopyWith<_PaginationListLoadingError>
+  _$$PaginationListLoadingErrorImplCopyWith<_$PaginationListLoadingErrorImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

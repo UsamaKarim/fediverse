@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_emoji_reaction_model_impl.dart';
 
@@ -11,41 +12,12 @@ part of 'unifedi_api_emoji_reaction_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiEmojiReaction _$UnifediApiEmojiReactionFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiEmojiReaction.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiEmojiReactionTearOff {
-  const _$UnifediApiEmojiReactionTearOff();
-
-  _UnifediApiEmojiReaction call(
-      {@HiveField(0) required String name,
-      @HiveField(1) required int count,
-      @HiveField(2) required bool me,
-      @HiveField(3) required List<UnifediApiAccount>? accounts,
-      @HiveField(4) required String? url,
-      @HiveField(5) required String? staticUrl}) {
-    return _UnifediApiEmojiReaction(
-      name: name,
-      count: count,
-      me: me,
-      accounts: accounts,
-      url: url,
-      staticUrl: staticUrl,
-    );
-  }
-
-  UnifediApiEmojiReaction fromJson(Map<String, Object?> json) {
-    return UnifediApiEmojiReaction.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiEmojiReaction = _$UnifediApiEmojiReactionTearOff();
 
 /// @nodoc
 mixin _$UnifediApiEmojiReaction {
@@ -72,7 +44,8 @@ mixin _$UnifediApiEmojiReaction {
 abstract class $UnifediApiEmojiReactionCopyWith<$Res> {
   factory $UnifediApiEmojiReactionCopyWith(UnifediApiEmojiReaction value,
           $Res Function(UnifediApiEmojiReaction) then) =
-      _$UnifediApiEmojiReactionCopyWithImpl<$Res>;
+      _$UnifediApiEmojiReactionCopyWithImpl<$Res, UnifediApiEmojiReaction>;
+  @useResult
   $Res call(
       {@HiveField(0) String name,
       @HiveField(1) int count,
@@ -83,59 +56,64 @@ abstract class $UnifediApiEmojiReactionCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UnifediApiEmojiReactionCopyWithImpl<$Res>
+class _$UnifediApiEmojiReactionCopyWithImpl<$Res,
+        $Val extends UnifediApiEmojiReaction>
     implements $UnifediApiEmojiReactionCopyWith<$Res> {
   _$UnifediApiEmojiReactionCopyWithImpl(this._value, this._then);
 
-  final UnifediApiEmojiReaction _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiEmojiReaction) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? count = freezed,
-    Object? me = freezed,
+    Object? name = null,
+    Object? count = null,
+    Object? me = null,
     Object? accounts = freezed,
     Object? url = freezed,
     Object? staticUrl = freezed,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      count: count == freezed
+      count: null == count
           ? _value.count
           : count // ignore: cast_nullable_to_non_nullable
               as int,
-      me: me == freezed
+      me: null == me
           ? _value.me
           : me // ignore: cast_nullable_to_non_nullable
               as bool,
-      accounts: accounts == freezed
+      accounts: freezed == accounts
           ? _value.accounts
           : accounts // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiAccount>?,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
-      staticUrl: staticUrl == freezed
+      staticUrl: freezed == staticUrl
           ? _value.staticUrl
           : staticUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiEmojiReactionCopyWith<$Res>
+abstract class _$$UnifediApiEmojiReactionImplCopyWith<$Res>
     implements $UnifediApiEmojiReactionCopyWith<$Res> {
-  factory _$UnifediApiEmojiReactionCopyWith(_UnifediApiEmojiReaction value,
-          $Res Function(_UnifediApiEmojiReaction) then) =
-      __$UnifediApiEmojiReactionCopyWithImpl<$Res>;
+  factory _$$UnifediApiEmojiReactionImplCopyWith(
+          _$UnifediApiEmojiReactionImpl value,
+          $Res Function(_$UnifediApiEmojiReactionImpl) then) =
+      __$$UnifediApiEmojiReactionImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) String name,
       @HiveField(1) int count,
@@ -146,48 +124,47 @@ abstract class _$UnifediApiEmojiReactionCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiEmojiReactionCopyWithImpl<$Res>
-    extends _$UnifediApiEmojiReactionCopyWithImpl<$Res>
-    implements _$UnifediApiEmojiReactionCopyWith<$Res> {
-  __$UnifediApiEmojiReactionCopyWithImpl(_UnifediApiEmojiReaction _value,
-      $Res Function(_UnifediApiEmojiReaction) _then)
-      : super(_value, (v) => _then(v as _UnifediApiEmojiReaction));
+class __$$UnifediApiEmojiReactionImplCopyWithImpl<$Res>
+    extends _$UnifediApiEmojiReactionCopyWithImpl<$Res,
+        _$UnifediApiEmojiReactionImpl>
+    implements _$$UnifediApiEmojiReactionImplCopyWith<$Res> {
+  __$$UnifediApiEmojiReactionImplCopyWithImpl(
+      _$UnifediApiEmojiReactionImpl _value,
+      $Res Function(_$UnifediApiEmojiReactionImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiEmojiReaction get _value =>
-      super._value as _UnifediApiEmojiReaction;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? count = freezed,
-    Object? me = freezed,
+    Object? name = null,
+    Object? count = null,
+    Object? me = null,
     Object? accounts = freezed,
     Object? url = freezed,
     Object? staticUrl = freezed,
   }) {
-    return _then(_UnifediApiEmojiReaction(
-      name: name == freezed
+    return _then(_$UnifediApiEmojiReactionImpl(
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      count: count == freezed
+      count: null == count
           ? _value.count
           : count // ignore: cast_nullable_to_non_nullable
               as int,
-      me: me == freezed
+      me: null == me
           ? _value.me
           : me // ignore: cast_nullable_to_non_nullable
               as bool,
-      accounts: accounts == freezed
-          ? _value.accounts
+      accounts: freezed == accounts
+          ? _value._accounts
           : accounts // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiAccount>?,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
-      staticUrl: staticUrl == freezed
+      staticUrl: freezed == staticUrl
           ? _value.staticUrl
           : staticUrl // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -197,17 +174,18 @@ class __$UnifediApiEmojiReactionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiEmojiReaction implements _UnifediApiEmojiReaction {
-  const _$_UnifediApiEmojiReaction(
+class _$UnifediApiEmojiReactionImpl implements _UnifediApiEmojiReaction {
+  const _$UnifediApiEmojiReactionImpl(
       {@HiveField(0) required this.name,
       @HiveField(1) required this.count,
       @HiveField(2) required this.me,
-      @HiveField(3) required this.accounts,
+      @HiveField(3) required final List<UnifediApiAccount>? accounts,
       @HiveField(4) required this.url,
-      @HiveField(5) required this.staticUrl});
+      @HiveField(5) required this.staticUrl})
+      : _accounts = accounts;
 
-  factory _$_UnifediApiEmojiReaction.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiEmojiReactionFromJson(json);
+  factory _$UnifediApiEmojiReactionImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiEmojiReactionImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -218,9 +196,17 @@ class _$_UnifediApiEmojiReaction implements _UnifediApiEmojiReaction {
   @override
   @HiveField(2)
   final bool me;
+  final List<UnifediApiAccount>? _accounts;
   @override
   @HiveField(3)
-  final List<UnifediApiAccount>? accounts;
+  List<UnifediApiAccount>? get accounts {
+    final value = _accounts;
+    if (value == null) return null;
+    if (_accounts is EqualUnmodifiableListView) return _accounts;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(4)
   final String? url;
@@ -234,46 +220,51 @@ class _$_UnifediApiEmojiReaction implements _UnifediApiEmojiReaction {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiEmojiReaction &&
+            other is _$UnifediApiEmojiReactionImpl &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.count, count) || other.count == count) &&
             (identical(other.me, me) || other.me == me) &&
-            const DeepCollectionEquality().equals(other.accounts, accounts) &&
+            const DeepCollectionEquality().equals(other._accounts, _accounts) &&
             (identical(other.url, url) || other.url == url) &&
             (identical(other.staticUrl, staticUrl) ||
                 other.staticUrl == staticUrl));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, name, count, me,
-      const DeepCollectionEquality().hash(accounts), url, staticUrl);
+      const DeepCollectionEquality().hash(_accounts), url, staticUrl);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiEmojiReactionCopyWith<_UnifediApiEmojiReaction> get copyWith =>
-      __$UnifediApiEmojiReactionCopyWithImpl<_UnifediApiEmojiReaction>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiEmojiReactionImplCopyWith<_$UnifediApiEmojiReactionImpl>
+      get copyWith => __$$UnifediApiEmojiReactionImplCopyWithImpl<
+          _$UnifediApiEmojiReactionImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiEmojiReactionToJson(this);
+    return _$$UnifediApiEmojiReactionImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiEmojiReaction implements UnifediApiEmojiReaction {
   const factory _UnifediApiEmojiReaction(
-      {@HiveField(0) required String name,
-      @HiveField(1) required int count,
-      @HiveField(2) required bool me,
-      @HiveField(3) required List<UnifediApiAccount>? accounts,
-      @HiveField(4) required String? url,
-      @HiveField(5) required String? staticUrl}) = _$_UnifediApiEmojiReaction;
+          {@HiveField(0) required final String name,
+          @HiveField(1) required final int count,
+          @HiveField(2) required final bool me,
+          @HiveField(3) required final List<UnifediApiAccount>? accounts,
+          @HiveField(4) required final String? url,
+          @HiveField(5) required final String? staticUrl}) =
+      _$UnifediApiEmojiReactionImpl;
 
   factory _UnifediApiEmojiReaction.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiEmojiReaction.fromJson;
+      _$UnifediApiEmojiReactionImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -295,6 +286,6 @@ abstract class _UnifediApiEmojiReaction implements UnifediApiEmojiReaction {
   String? get staticUrl;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiEmojiReactionCopyWith<_UnifediApiEmojiReaction> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$UnifediApiEmojiReactionImplCopyWith<_$UnifediApiEmojiReactionImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'websockets_channel_handler_type_model.dart';
 
@@ -11,36 +12,11 @@ part of 'websockets_channel_handler_type_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$WebSocketsChannelHandlerTypeTearOff {
-  const _$WebSocketsChannelHandlerTypeTearOff();
-
-  _Background background(
-      {String stringValue =
-          WebSocketsChannelHandlerType.backgroundStringValue}) {
-    return _Background(
-      stringValue: stringValue,
-    );
-  }
-
-  _Foreground foreground(
-      {String stringValue =
-          WebSocketsChannelHandlerType.foregroundStringValue}) {
-    return _Foreground(
-      stringValue: stringValue,
-    );
-  }
-}
-
-/// @nodoc
-const $WebSocketsChannelHandlerType = _$WebSocketsChannelHandlerTypeTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$WebSocketsChannelHandlerType {
   String get stringValue => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String stringValue) background,
@@ -49,8 +25,8 @@ mixin _$WebSocketsChannelHandlerType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? background,
-    TResult Function(String stringValue)? foreground,
+    TResult? Function(String stringValue)? background,
+    TResult? Function(String stringValue)? foreground,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -68,8 +44,8 @@ mixin _$WebSocketsChannelHandlerType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Background value)? background,
-    TResult Function(_Foreground value)? foreground,
+    TResult? Function(_Background value)? background,
+    TResult? Function(_Foreground value)? foreground,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -90,59 +66,63 @@ abstract class $WebSocketsChannelHandlerTypeCopyWith<$Res> {
   factory $WebSocketsChannelHandlerTypeCopyWith(
           WebSocketsChannelHandlerType value,
           $Res Function(WebSocketsChannelHandlerType) then) =
-      _$WebSocketsChannelHandlerTypeCopyWithImpl<$Res>;
+      _$WebSocketsChannelHandlerTypeCopyWithImpl<$Res,
+          WebSocketsChannelHandlerType>;
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class _$WebSocketsChannelHandlerTypeCopyWithImpl<$Res>
+class _$WebSocketsChannelHandlerTypeCopyWithImpl<$Res,
+        $Val extends WebSocketsChannelHandlerType>
     implements $WebSocketsChannelHandlerTypeCopyWith<$Res> {
   _$WebSocketsChannelHandlerTypeCopyWithImpl(this._value, this._then);
 
-  final WebSocketsChannelHandlerType _value;
   // ignore: unused_field
-  final $Res Function(WebSocketsChannelHandlerType) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
     return _then(_value.copyWith(
-      stringValue: stringValue == freezed
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$BackgroundCopyWith<$Res>
+abstract class _$$BackgroundImplCopyWith<$Res>
     implements $WebSocketsChannelHandlerTypeCopyWith<$Res> {
-  factory _$BackgroundCopyWith(
-          _Background value, $Res Function(_Background) then) =
-      __$BackgroundCopyWithImpl<$Res>;
+  factory _$$BackgroundImplCopyWith(
+          _$BackgroundImpl value, $Res Function(_$BackgroundImpl) then) =
+      __$$BackgroundImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$BackgroundCopyWithImpl<$Res>
-    extends _$WebSocketsChannelHandlerTypeCopyWithImpl<$Res>
-    implements _$BackgroundCopyWith<$Res> {
-  __$BackgroundCopyWithImpl(
-      _Background _value, $Res Function(_Background) _then)
-      : super(_value, (v) => _then(v as _Background));
+class __$$BackgroundImplCopyWithImpl<$Res>
+    extends _$WebSocketsChannelHandlerTypeCopyWithImpl<$Res, _$BackgroundImpl>
+    implements _$$BackgroundImplCopyWith<$Res> {
+  __$$BackgroundImplCopyWithImpl(
+      _$BackgroundImpl _value, $Res Function(_$BackgroundImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Background get _value => super._value as _Background;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Background(
-      stringValue: stringValue == freezed
+    return _then(_$BackgroundImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -152,12 +132,12 @@ class __$BackgroundCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Background implements _Background {
-  const _$_Background(
+class _$BackgroundImpl implements _Background {
+  const _$BackgroundImpl(
       {this.stringValue = WebSocketsChannelHandlerType.backgroundStringValue});
 
-  @JsonKey(defaultValue: WebSocketsChannelHandlerType.backgroundStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -166,10 +146,10 @@ class _$_Background implements _Background {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Background &&
+            other is _$BackgroundImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -179,8 +159,9 @@ class _$_Background implements _Background {
 
   @JsonKey(ignore: true)
   @override
-  _$BackgroundCopyWith<_Background> get copyWith =>
-      __$BackgroundCopyWithImpl<_Background>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$BackgroundImplCopyWith<_$BackgroundImpl> get copyWith =>
+      __$$BackgroundImplCopyWithImpl<_$BackgroundImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -194,8 +175,8 @@ class _$_Background implements _Background {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? background,
-    TResult Function(String stringValue)? foreground,
+    TResult? Function(String stringValue)? background,
+    TResult? Function(String stringValue)? foreground,
   }) {
     return background?.call(stringValue);
   }
@@ -225,8 +206,8 @@ class _$_Background implements _Background {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Background value)? background,
-    TResult Function(_Foreground value)? foreground,
+    TResult? Function(_Background value)? background,
+    TResult? Function(_Foreground value)? foreground,
   }) {
     return background?.call(this);
   }
@@ -246,43 +227,42 @@ class _$_Background implements _Background {
 }
 
 abstract class _Background implements WebSocketsChannelHandlerType {
-  const factory _Background({String stringValue}) = _$_Background;
+  const factory _Background({final String stringValue}) = _$BackgroundImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$BackgroundCopyWith<_Background> get copyWith =>
+  _$$BackgroundImplCopyWith<_$BackgroundImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ForegroundCopyWith<$Res>
+abstract class _$$ForegroundImplCopyWith<$Res>
     implements $WebSocketsChannelHandlerTypeCopyWith<$Res> {
-  factory _$ForegroundCopyWith(
-          _Foreground value, $Res Function(_Foreground) then) =
-      __$ForegroundCopyWithImpl<$Res>;
+  factory _$$ForegroundImplCopyWith(
+          _$ForegroundImpl value, $Res Function(_$ForegroundImpl) then) =
+      __$$ForegroundImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$ForegroundCopyWithImpl<$Res>
-    extends _$WebSocketsChannelHandlerTypeCopyWithImpl<$Res>
-    implements _$ForegroundCopyWith<$Res> {
-  __$ForegroundCopyWithImpl(
-      _Foreground _value, $Res Function(_Foreground) _then)
-      : super(_value, (v) => _then(v as _Foreground));
+class __$$ForegroundImplCopyWithImpl<$Res>
+    extends _$WebSocketsChannelHandlerTypeCopyWithImpl<$Res, _$ForegroundImpl>
+    implements _$$ForegroundImplCopyWith<$Res> {
+  __$$ForegroundImplCopyWithImpl(
+      _$ForegroundImpl _value, $Res Function(_$ForegroundImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Foreground get _value => super._value as _Foreground;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Foreground(
-      stringValue: stringValue == freezed
+    return _then(_$ForegroundImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -292,12 +272,12 @@ class __$ForegroundCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Foreground implements _Foreground {
-  const _$_Foreground(
+class _$ForegroundImpl implements _Foreground {
+  const _$ForegroundImpl(
       {this.stringValue = WebSocketsChannelHandlerType.foregroundStringValue});
 
-  @JsonKey(defaultValue: WebSocketsChannelHandlerType.foregroundStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -306,10 +286,10 @@ class _$_Foreground implements _Foreground {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Foreground &&
+            other is _$ForegroundImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -319,8 +299,9 @@ class _$_Foreground implements _Foreground {
 
   @JsonKey(ignore: true)
   @override
-  _$ForegroundCopyWith<_Foreground> get copyWith =>
-      __$ForegroundCopyWithImpl<_Foreground>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ForegroundImplCopyWith<_$ForegroundImpl> get copyWith =>
+      __$$ForegroundImplCopyWithImpl<_$ForegroundImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -334,8 +315,8 @@ class _$_Foreground implements _Foreground {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? background,
-    TResult Function(String stringValue)? foreground,
+    TResult? Function(String stringValue)? background,
+    TResult? Function(String stringValue)? foreground,
   }) {
     return foreground?.call(stringValue);
   }
@@ -365,8 +346,8 @@ class _$_Foreground implements _Foreground {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Background value)? background,
-    TResult Function(_Foreground value)? foreground,
+    TResult? Function(_Background value)? background,
+    TResult? Function(_Foreground value)? foreground,
   }) {
     return foreground?.call(this);
   }
@@ -386,12 +367,12 @@ class _$_Foreground implements _Foreground {
 }
 
 abstract class _Foreground implements WebSocketsChannelHandlerType {
-  const factory _Foreground({String stringValue}) = _$_Foreground;
+  const factory _Foreground({final String stringValue}) = _$ForegroundImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$ForegroundCopyWith<_Foreground> get copyWith =>
+  _$$ForegroundImplCopyWith<_$ForegroundImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

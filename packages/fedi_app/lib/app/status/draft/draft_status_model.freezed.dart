@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'draft_status_model.dart';
 
@@ -11,21 +12,7 @@ part of 'draft_status_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$DbDraftStatusPopulatedTearOff {
-  const _$DbDraftStatusPopulatedTearOff();
-
-  _DbDraftStatusPopulated call({required DbDraftStatus dbDraftStatus}) {
-    return _DbDraftStatusPopulated(
-      dbDraftStatus: dbDraftStatus,
-    );
-  }
-}
-
-/// @nodoc
-const $DbDraftStatusPopulated = _$DbDraftStatusPopulatedTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$DbDraftStatusPopulated {
@@ -40,59 +27,65 @@ mixin _$DbDraftStatusPopulated {
 abstract class $DbDraftStatusPopulatedCopyWith<$Res> {
   factory $DbDraftStatusPopulatedCopyWith(DbDraftStatusPopulated value,
           $Res Function(DbDraftStatusPopulated) then) =
-      _$DbDraftStatusPopulatedCopyWithImpl<$Res>;
+      _$DbDraftStatusPopulatedCopyWithImpl<$Res, DbDraftStatusPopulated>;
+  @useResult
   $Res call({DbDraftStatus dbDraftStatus});
 }
 
 /// @nodoc
-class _$DbDraftStatusPopulatedCopyWithImpl<$Res>
+class _$DbDraftStatusPopulatedCopyWithImpl<$Res,
+        $Val extends DbDraftStatusPopulated>
     implements $DbDraftStatusPopulatedCopyWith<$Res> {
   _$DbDraftStatusPopulatedCopyWithImpl(this._value, this._then);
 
-  final DbDraftStatusPopulated _value;
   // ignore: unused_field
-  final $Res Function(DbDraftStatusPopulated) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? dbDraftStatus = freezed,
   }) {
     return _then(_value.copyWith(
-      dbDraftStatus: dbDraftStatus == freezed
+      dbDraftStatus: freezed == dbDraftStatus
           ? _value.dbDraftStatus
           : dbDraftStatus // ignore: cast_nullable_to_non_nullable
               as DbDraftStatus,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$DbDraftStatusPopulatedCopyWith<$Res>
+abstract class _$$DbDraftStatusPopulatedImplCopyWith<$Res>
     implements $DbDraftStatusPopulatedCopyWith<$Res> {
-  factory _$DbDraftStatusPopulatedCopyWith(_DbDraftStatusPopulated value,
-          $Res Function(_DbDraftStatusPopulated) then) =
-      __$DbDraftStatusPopulatedCopyWithImpl<$Res>;
+  factory _$$DbDraftStatusPopulatedImplCopyWith(
+          _$DbDraftStatusPopulatedImpl value,
+          $Res Function(_$DbDraftStatusPopulatedImpl) then) =
+      __$$DbDraftStatusPopulatedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({DbDraftStatus dbDraftStatus});
 }
 
 /// @nodoc
-class __$DbDraftStatusPopulatedCopyWithImpl<$Res>
-    extends _$DbDraftStatusPopulatedCopyWithImpl<$Res>
-    implements _$DbDraftStatusPopulatedCopyWith<$Res> {
-  __$DbDraftStatusPopulatedCopyWithImpl(_DbDraftStatusPopulated _value,
-      $Res Function(_DbDraftStatusPopulated) _then)
-      : super(_value, (v) => _then(v as _DbDraftStatusPopulated));
+class __$$DbDraftStatusPopulatedImplCopyWithImpl<$Res>
+    extends _$DbDraftStatusPopulatedCopyWithImpl<$Res,
+        _$DbDraftStatusPopulatedImpl>
+    implements _$$DbDraftStatusPopulatedImplCopyWith<$Res> {
+  __$$DbDraftStatusPopulatedImplCopyWithImpl(
+      _$DbDraftStatusPopulatedImpl _value,
+      $Res Function(_$DbDraftStatusPopulatedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _DbDraftStatusPopulated get _value => super._value as _DbDraftStatusPopulated;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? dbDraftStatus = freezed,
   }) {
-    return _then(_DbDraftStatusPopulated(
-      dbDraftStatus: dbDraftStatus == freezed
+    return _then(_$DbDraftStatusPopulatedImpl(
+      dbDraftStatus: freezed == dbDraftStatus
           ? _value.dbDraftStatus
           : dbDraftStatus // ignore: cast_nullable_to_non_nullable
               as DbDraftStatus,
@@ -102,8 +95,8 @@ class __$DbDraftStatusPopulatedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DbDraftStatusPopulated extends _DbDraftStatusPopulated {
-  const _$_DbDraftStatusPopulated({required this.dbDraftStatus}) : super._();
+class _$DbDraftStatusPopulatedImpl extends _DbDraftStatusPopulated {
+  const _$DbDraftStatusPopulatedImpl({required this.dbDraftStatus}) : super._();
 
   @override
   final DbDraftStatus dbDraftStatus;
@@ -114,10 +107,10 @@ class _$_DbDraftStatusPopulated extends _DbDraftStatusPopulated {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DbDraftStatusPopulated &&
+            other is _$DbDraftStatusPopulatedImpl &&
             const DeepCollectionEquality()
                 .equals(other.dbDraftStatus, dbDraftStatus));
   }
@@ -128,38 +121,25 @@ class _$_DbDraftStatusPopulated extends _DbDraftStatusPopulated {
 
   @JsonKey(ignore: true)
   @override
-  _$DbDraftStatusPopulatedCopyWith<_DbDraftStatusPopulated> get copyWith =>
-      __$DbDraftStatusPopulatedCopyWithImpl<_DbDraftStatusPopulated>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DbDraftStatusPopulatedImplCopyWith<_$DbDraftStatusPopulatedImpl>
+      get copyWith => __$$DbDraftStatusPopulatedImplCopyWithImpl<
+          _$DbDraftStatusPopulatedImpl>(this, _$identity);
 }
 
 abstract class _DbDraftStatusPopulated extends DbDraftStatusPopulated {
   const factory _DbDraftStatusPopulated(
-      {required DbDraftStatus dbDraftStatus}) = _$_DbDraftStatusPopulated;
+          {required final DbDraftStatus dbDraftStatus}) =
+      _$DbDraftStatusPopulatedImpl;
   const _DbDraftStatusPopulated._() : super._();
 
   @override
   DbDraftStatus get dbDraftStatus;
   @override
   @JsonKey(ignore: true)
-  _$DbDraftStatusPopulatedCopyWith<_DbDraftStatusPopulated> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$DbDraftStatusPopulatedImplCopyWith<_$DbDraftStatusPopulatedImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$DbDraftStatusPopulatedWrapperTearOff {
-  const _$DbDraftStatusPopulatedWrapperTearOff();
-
-  _DbDraftStatusPopulatedWrapper call(
-      {required DbDraftStatusPopulated dbDraftStatusPopulated}) {
-    return _DbDraftStatusPopulatedWrapper(
-      dbDraftStatusPopulated: dbDraftStatusPopulated,
-    );
-  }
-}
-
-/// @nodoc
-const $DbDraftStatusPopulatedWrapper = _$DbDraftStatusPopulatedWrapperTearOff();
 
 /// @nodoc
 mixin _$DbDraftStatusPopulatedWrapper {
@@ -176,50 +156,57 @@ abstract class $DbDraftStatusPopulatedWrapperCopyWith<$Res> {
   factory $DbDraftStatusPopulatedWrapperCopyWith(
           DbDraftStatusPopulatedWrapper value,
           $Res Function(DbDraftStatusPopulatedWrapper) then) =
-      _$DbDraftStatusPopulatedWrapperCopyWithImpl<$Res>;
+      _$DbDraftStatusPopulatedWrapperCopyWithImpl<$Res,
+          DbDraftStatusPopulatedWrapper>;
+  @useResult
   $Res call({DbDraftStatusPopulated dbDraftStatusPopulated});
 
   $DbDraftStatusPopulatedCopyWith<$Res> get dbDraftStatusPopulated;
 }
 
 /// @nodoc
-class _$DbDraftStatusPopulatedWrapperCopyWithImpl<$Res>
+class _$DbDraftStatusPopulatedWrapperCopyWithImpl<$Res,
+        $Val extends DbDraftStatusPopulatedWrapper>
     implements $DbDraftStatusPopulatedWrapperCopyWith<$Res> {
   _$DbDraftStatusPopulatedWrapperCopyWithImpl(this._value, this._then);
 
-  final DbDraftStatusPopulatedWrapper _value;
   // ignore: unused_field
-  final $Res Function(DbDraftStatusPopulatedWrapper) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dbDraftStatusPopulated = freezed,
+    Object? dbDraftStatusPopulated = null,
   }) {
     return _then(_value.copyWith(
-      dbDraftStatusPopulated: dbDraftStatusPopulated == freezed
+      dbDraftStatusPopulated: null == dbDraftStatusPopulated
           ? _value.dbDraftStatusPopulated
           : dbDraftStatusPopulated // ignore: cast_nullable_to_non_nullable
               as DbDraftStatusPopulated,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $DbDraftStatusPopulatedCopyWith<$Res> get dbDraftStatusPopulated {
     return $DbDraftStatusPopulatedCopyWith<$Res>(_value.dbDraftStatusPopulated,
         (value) {
-      return _then(_value.copyWith(dbDraftStatusPopulated: value));
+      return _then(_value.copyWith(dbDraftStatusPopulated: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$DbDraftStatusPopulatedWrapperCopyWith<$Res>
+abstract class _$$DbDraftStatusPopulatedWrapperImplCopyWith<$Res>
     implements $DbDraftStatusPopulatedWrapperCopyWith<$Res> {
-  factory _$DbDraftStatusPopulatedWrapperCopyWith(
-          _DbDraftStatusPopulatedWrapper value,
-          $Res Function(_DbDraftStatusPopulatedWrapper) then) =
-      __$DbDraftStatusPopulatedWrapperCopyWithImpl<$Res>;
+  factory _$$DbDraftStatusPopulatedWrapperImplCopyWith(
+          _$DbDraftStatusPopulatedWrapperImpl value,
+          $Res Function(_$DbDraftStatusPopulatedWrapperImpl) then) =
+      __$$DbDraftStatusPopulatedWrapperImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({DbDraftStatusPopulated dbDraftStatusPopulated});
 
   @override
@@ -227,24 +214,22 @@ abstract class _$DbDraftStatusPopulatedWrapperCopyWith<$Res>
 }
 
 /// @nodoc
-class __$DbDraftStatusPopulatedWrapperCopyWithImpl<$Res>
-    extends _$DbDraftStatusPopulatedWrapperCopyWithImpl<$Res>
-    implements _$DbDraftStatusPopulatedWrapperCopyWith<$Res> {
-  __$DbDraftStatusPopulatedWrapperCopyWithImpl(
-      _DbDraftStatusPopulatedWrapper _value,
-      $Res Function(_DbDraftStatusPopulatedWrapper) _then)
-      : super(_value, (v) => _then(v as _DbDraftStatusPopulatedWrapper));
+class __$$DbDraftStatusPopulatedWrapperImplCopyWithImpl<$Res>
+    extends _$DbDraftStatusPopulatedWrapperCopyWithImpl<$Res,
+        _$DbDraftStatusPopulatedWrapperImpl>
+    implements _$$DbDraftStatusPopulatedWrapperImplCopyWith<$Res> {
+  __$$DbDraftStatusPopulatedWrapperImplCopyWithImpl(
+      _$DbDraftStatusPopulatedWrapperImpl _value,
+      $Res Function(_$DbDraftStatusPopulatedWrapperImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _DbDraftStatusPopulatedWrapper get _value =>
-      super._value as _DbDraftStatusPopulatedWrapper;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dbDraftStatusPopulated = freezed,
+    Object? dbDraftStatusPopulated = null,
   }) {
-    return _then(_DbDraftStatusPopulatedWrapper(
-      dbDraftStatusPopulated: dbDraftStatusPopulated == freezed
+    return _then(_$DbDraftStatusPopulatedWrapperImpl(
+      dbDraftStatusPopulated: null == dbDraftStatusPopulated
           ? _value.dbDraftStatusPopulated
           : dbDraftStatusPopulated // ignore: cast_nullable_to_non_nullable
               as DbDraftStatusPopulated,
@@ -254,8 +239,10 @@ class __$DbDraftStatusPopulatedWrapperCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DbDraftStatusPopulatedWrapper extends _DbDraftStatusPopulatedWrapper {
-  const _$_DbDraftStatusPopulatedWrapper({required this.dbDraftStatusPopulated})
+class _$DbDraftStatusPopulatedWrapperImpl
+    extends _DbDraftStatusPopulatedWrapper {
+  const _$DbDraftStatusPopulatedWrapperImpl(
+      {required this.dbDraftStatusPopulated})
       : super._();
 
   @override
@@ -267,10 +254,10 @@ class _$_DbDraftStatusPopulatedWrapper extends _DbDraftStatusPopulatedWrapper {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DbDraftStatusPopulatedWrapper &&
+            other is _$DbDraftStatusPopulatedWrapperImpl &&
             (identical(other.dbDraftStatusPopulated, dbDraftStatusPopulated) ||
                 other.dbDraftStatusPopulated == dbDraftStatusPopulated));
   }
@@ -280,22 +267,25 @@ class _$_DbDraftStatusPopulatedWrapper extends _DbDraftStatusPopulatedWrapper {
 
   @JsonKey(ignore: true)
   @override
-  _$DbDraftStatusPopulatedWrapperCopyWith<_DbDraftStatusPopulatedWrapper>
-      get copyWith => __$DbDraftStatusPopulatedWrapperCopyWithImpl<
-          _DbDraftStatusPopulatedWrapper>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DbDraftStatusPopulatedWrapperImplCopyWith<
+          _$DbDraftStatusPopulatedWrapperImpl>
+      get copyWith => __$$DbDraftStatusPopulatedWrapperImplCopyWithImpl<
+          _$DbDraftStatusPopulatedWrapperImpl>(this, _$identity);
 }
 
 abstract class _DbDraftStatusPopulatedWrapper
     extends DbDraftStatusPopulatedWrapper {
   const factory _DbDraftStatusPopulatedWrapper(
-          {required DbDraftStatusPopulated dbDraftStatusPopulated}) =
-      _$_DbDraftStatusPopulatedWrapper;
+          {required final DbDraftStatusPopulated dbDraftStatusPopulated}) =
+      _$DbDraftStatusPopulatedWrapperImpl;
   const _DbDraftStatusPopulatedWrapper._() : super._();
 
   @override
   DbDraftStatusPopulated get dbDraftStatusPopulated;
   @override
   @JsonKey(ignore: true)
-  _$DbDraftStatusPopulatedWrapperCopyWith<_DbDraftStatusPopulatedWrapper>
+  _$$DbDraftStatusPopulatedWrapperImplCopyWith<
+          _$DbDraftStatusPopulatedWrapperImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

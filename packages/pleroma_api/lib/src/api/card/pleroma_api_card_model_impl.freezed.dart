@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_card_model_impl.dart';
 
@@ -11,74 +12,11 @@ part of 'pleroma_api_card_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiCard _$PleromaApiCardFromJson(Map<String, dynamic> json) {
   return _PleromaApiCard.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiCardTearOff {
-  const _$PleromaApiCardTearOff();
-
-  _PleromaApiCard call(
-      {@HiveField(0)
-      @JsonKey(name: 'author_name')
-          required String? authorName,
-      @HiveField(1)
-      @JsonKey(name: 'author_url')
-          required String? authorUrl,
-      @HiveField(2)
-          required String? description,
-      @HiveField(3)
-      @JsonKey(name: 'embed_url')
-          required String? embedUrl,
-      @HiveField(4)
-      @JsonKey(fromJson: JsonParseHelper.intFromJsonOrNullOnError)
-          required int? height,
-      @HiveField(5)
-      @JsonKey(fromJson: JsonParseHelper.intFromJsonOrNullOnError)
-          required int? width,
-      @HiveField(6)
-          required String? html,
-      @HiveField(7)
-          required String? image,
-      @HiveField(8)
-      @JsonKey(name: 'provider_name')
-          required String? providerName,
-      @HiveField(9)
-      @JsonKey(name: 'provider_url')
-          required String? providerUrl,
-      @HiveField(10)
-          required String? title,
-      @HiveField(11)
-          required String type,
-      @HiveField(12)
-          required String? url}) {
-    return _PleromaApiCard(
-      authorName: authorName,
-      authorUrl: authorUrl,
-      description: description,
-      embedUrl: embedUrl,
-      height: height,
-      width: width,
-      html: html,
-      image: image,
-      providerName: providerName,
-      providerUrl: providerUrl,
-      title: title,
-      type: type,
-      url: url,
-    );
-  }
-
-  PleromaApiCard fromJson(Map<String, Object?> json) {
-    return PleromaApiCard.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiCard = _$PleromaApiCardTearOff();
 
 /// @nodoc
 mixin _$PleromaApiCard {
@@ -126,52 +64,39 @@ mixin _$PleromaApiCard {
 abstract class $PleromaApiCardCopyWith<$Res> {
   factory $PleromaApiCardCopyWith(
           PleromaApiCard value, $Res Function(PleromaApiCard) then) =
-      _$PleromaApiCardCopyWithImpl<$Res>;
+      _$PleromaApiCardCopyWithImpl<$Res, PleromaApiCard>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-      @JsonKey(name: 'author_name')
-          String? authorName,
-      @HiveField(1)
-      @JsonKey(name: 'author_url')
-          String? authorUrl,
-      @HiveField(2)
-          String? description,
-      @HiveField(3)
-      @JsonKey(name: 'embed_url')
-          String? embedUrl,
+      {@HiveField(0) @JsonKey(name: 'author_name') String? authorName,
+      @HiveField(1) @JsonKey(name: 'author_url') String? authorUrl,
+      @HiveField(2) String? description,
+      @HiveField(3) @JsonKey(name: 'embed_url') String? embedUrl,
       @HiveField(4)
       @JsonKey(fromJson: JsonParseHelper.intFromJsonOrNullOnError)
-          int? height,
+      int? height,
       @HiveField(5)
       @JsonKey(fromJson: JsonParseHelper.intFromJsonOrNullOnError)
-          int? width,
-      @HiveField(6)
-          String? html,
-      @HiveField(7)
-          String? image,
-      @HiveField(8)
-      @JsonKey(name: 'provider_name')
-          String? providerName,
-      @HiveField(9)
-      @JsonKey(name: 'provider_url')
-          String? providerUrl,
-      @HiveField(10)
-          String? title,
-      @HiveField(11)
-          String type,
-      @HiveField(12)
-          String? url});
+      int? width,
+      @HiveField(6) String? html,
+      @HiveField(7) String? image,
+      @HiveField(8) @JsonKey(name: 'provider_name') String? providerName,
+      @HiveField(9) @JsonKey(name: 'provider_url') String? providerUrl,
+      @HiveField(10) String? title,
+      @HiveField(11) String type,
+      @HiveField(12) String? url});
 }
 
 /// @nodoc
-class _$PleromaApiCardCopyWithImpl<$Res>
+class _$PleromaApiCardCopyWithImpl<$Res, $Val extends PleromaApiCard>
     implements $PleromaApiCardCopyWith<$Res> {
   _$PleromaApiCardCopyWithImpl(this._value, this._then);
 
-  final PleromaApiCard _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiCard) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? authorName = freezed,
@@ -185,120 +110,103 @@ class _$PleromaApiCardCopyWithImpl<$Res>
     Object? providerName = freezed,
     Object? providerUrl = freezed,
     Object? title = freezed,
-    Object? type = freezed,
+    Object? type = null,
     Object? url = freezed,
   }) {
     return _then(_value.copyWith(
-      authorName: authorName == freezed
+      authorName: freezed == authorName
           ? _value.authorName
           : authorName // ignore: cast_nullable_to_non_nullable
               as String?,
-      authorUrl: authorUrl == freezed
+      authorUrl: freezed == authorUrl
           ? _value.authorUrl
           : authorUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      embedUrl: embedUrl == freezed
+      embedUrl: freezed == embedUrl
           ? _value.embedUrl
           : embedUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      height: height == freezed
+      height: freezed == height
           ? _value.height
           : height // ignore: cast_nullable_to_non_nullable
               as int?,
-      width: width == freezed
+      width: freezed == width
           ? _value.width
           : width // ignore: cast_nullable_to_non_nullable
               as int?,
-      html: html == freezed
+      html: freezed == html
           ? _value.html
           : html // ignore: cast_nullable_to_non_nullable
               as String?,
-      image: image == freezed
+      image: freezed == image
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
               as String?,
-      providerName: providerName == freezed
+      providerName: freezed == providerName
           ? _value.providerName
           : providerName // ignore: cast_nullable_to_non_nullable
               as String?,
-      providerUrl: providerUrl == freezed
+      providerUrl: freezed == providerUrl
           ? _value.providerUrl
           : providerUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      title: title == freezed
+      title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiCardCopyWith<$Res>
+abstract class _$$PleromaApiCardImplCopyWith<$Res>
     implements $PleromaApiCardCopyWith<$Res> {
-  factory _$PleromaApiCardCopyWith(
-          _PleromaApiCard value, $Res Function(_PleromaApiCard) then) =
-      __$PleromaApiCardCopyWithImpl<$Res>;
+  factory _$$PleromaApiCardImplCopyWith(_$PleromaApiCardImpl value,
+          $Res Function(_$PleromaApiCardImpl) then) =
+      __$$PleromaApiCardImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-      @JsonKey(name: 'author_name')
-          String? authorName,
-      @HiveField(1)
-      @JsonKey(name: 'author_url')
-          String? authorUrl,
-      @HiveField(2)
-          String? description,
-      @HiveField(3)
-      @JsonKey(name: 'embed_url')
-          String? embedUrl,
+      {@HiveField(0) @JsonKey(name: 'author_name') String? authorName,
+      @HiveField(1) @JsonKey(name: 'author_url') String? authorUrl,
+      @HiveField(2) String? description,
+      @HiveField(3) @JsonKey(name: 'embed_url') String? embedUrl,
       @HiveField(4)
       @JsonKey(fromJson: JsonParseHelper.intFromJsonOrNullOnError)
-          int? height,
+      int? height,
       @HiveField(5)
       @JsonKey(fromJson: JsonParseHelper.intFromJsonOrNullOnError)
-          int? width,
-      @HiveField(6)
-          String? html,
-      @HiveField(7)
-          String? image,
-      @HiveField(8)
-      @JsonKey(name: 'provider_name')
-          String? providerName,
-      @HiveField(9)
-      @JsonKey(name: 'provider_url')
-          String? providerUrl,
-      @HiveField(10)
-          String? title,
-      @HiveField(11)
-          String type,
-      @HiveField(12)
-          String? url});
+      int? width,
+      @HiveField(6) String? html,
+      @HiveField(7) String? image,
+      @HiveField(8) @JsonKey(name: 'provider_name') String? providerName,
+      @HiveField(9) @JsonKey(name: 'provider_url') String? providerUrl,
+      @HiveField(10) String? title,
+      @HiveField(11) String type,
+      @HiveField(12) String? url});
 }
 
 /// @nodoc
-class __$PleromaApiCardCopyWithImpl<$Res>
-    extends _$PleromaApiCardCopyWithImpl<$Res>
-    implements _$PleromaApiCardCopyWith<$Res> {
-  __$PleromaApiCardCopyWithImpl(
-      _PleromaApiCard _value, $Res Function(_PleromaApiCard) _then)
-      : super(_value, (v) => _then(v as _PleromaApiCard));
+class __$$PleromaApiCardImplCopyWithImpl<$Res>
+    extends _$PleromaApiCardCopyWithImpl<$Res, _$PleromaApiCardImpl>
+    implements _$$PleromaApiCardImplCopyWith<$Res> {
+  __$$PleromaApiCardImplCopyWithImpl(
+      _$PleromaApiCardImpl _value, $Res Function(_$PleromaApiCardImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiCard get _value => super._value as _PleromaApiCard;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? authorName = freezed,
@@ -312,59 +220,59 @@ class __$PleromaApiCardCopyWithImpl<$Res>
     Object? providerName = freezed,
     Object? providerUrl = freezed,
     Object? title = freezed,
-    Object? type = freezed,
+    Object? type = null,
     Object? url = freezed,
   }) {
-    return _then(_PleromaApiCard(
-      authorName: authorName == freezed
+    return _then(_$PleromaApiCardImpl(
+      authorName: freezed == authorName
           ? _value.authorName
           : authorName // ignore: cast_nullable_to_non_nullable
               as String?,
-      authorUrl: authorUrl == freezed
+      authorUrl: freezed == authorUrl
           ? _value.authorUrl
           : authorUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      embedUrl: embedUrl == freezed
+      embedUrl: freezed == embedUrl
           ? _value.embedUrl
           : embedUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      height: height == freezed
+      height: freezed == height
           ? _value.height
           : height // ignore: cast_nullable_to_non_nullable
               as int?,
-      width: width == freezed
+      width: freezed == width
           ? _value.width
           : width // ignore: cast_nullable_to_non_nullable
               as int?,
-      html: html == freezed
+      html: freezed == html
           ? _value.html
           : html // ignore: cast_nullable_to_non_nullable
               as String?,
-      image: image == freezed
+      image: freezed == image
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
               as String?,
-      providerName: providerName == freezed
+      providerName: freezed == providerName
           ? _value.providerName
           : providerName // ignore: cast_nullable_to_non_nullable
               as String?,
-      providerUrl: providerUrl == freezed
+      providerUrl: freezed == providerUrl
           ? _value.providerUrl
           : providerUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      title: title == freezed
+      title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -374,44 +282,28 @@ class __$PleromaApiCardCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiCard implements _PleromaApiCard {
-  const _$_PleromaApiCard(
-      {@HiveField(0)
-      @JsonKey(name: 'author_name')
-          required this.authorName,
-      @HiveField(1)
-      @JsonKey(name: 'author_url')
-          required this.authorUrl,
-      @HiveField(2)
-          required this.description,
-      @HiveField(3)
-      @JsonKey(name: 'embed_url')
-          required this.embedUrl,
+class _$PleromaApiCardImpl implements _PleromaApiCard {
+  const _$PleromaApiCardImpl(
+      {@HiveField(0) @JsonKey(name: 'author_name') required this.authorName,
+      @HiveField(1) @JsonKey(name: 'author_url') required this.authorUrl,
+      @HiveField(2) required this.description,
+      @HiveField(3) @JsonKey(name: 'embed_url') required this.embedUrl,
       @HiveField(4)
       @JsonKey(fromJson: JsonParseHelper.intFromJsonOrNullOnError)
-          required this.height,
+      required this.height,
       @HiveField(5)
       @JsonKey(fromJson: JsonParseHelper.intFromJsonOrNullOnError)
-          required this.width,
-      @HiveField(6)
-          required this.html,
-      @HiveField(7)
-          required this.image,
-      @HiveField(8)
-      @JsonKey(name: 'provider_name')
-          required this.providerName,
-      @HiveField(9)
-      @JsonKey(name: 'provider_url')
-          required this.providerUrl,
-      @HiveField(10)
-          required this.title,
-      @HiveField(11)
-          required this.type,
-      @HiveField(12)
-          required this.url});
+      required this.width,
+      @HiveField(6) required this.html,
+      @HiveField(7) required this.image,
+      @HiveField(8) @JsonKey(name: 'provider_name') required this.providerName,
+      @HiveField(9) @JsonKey(name: 'provider_url') required this.providerUrl,
+      @HiveField(10) required this.title,
+      @HiveField(11) required this.type,
+      @HiveField(12) required this.url});
 
-  factory _$_PleromaApiCard.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiCardFromJson(json);
+  factory _$PleromaApiCardImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiCardImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -466,10 +358,10 @@ class _$_PleromaApiCard implements _PleromaApiCard {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiCard &&
+            other is _$PleromaApiCardImpl &&
             (identical(other.authorName, authorName) ||
                 other.authorName == authorName) &&
             (identical(other.authorUrl, authorUrl) ||
@@ -491,6 +383,7 @@ class _$_PleromaApiCard implements _PleromaApiCard {
             (identical(other.url, url) || other.url == url));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -510,12 +403,16 @@ class _$_PleromaApiCard implements _PleromaApiCard {
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiCardCopyWith<_PleromaApiCard> get copyWith =>
-      __$PleromaApiCardCopyWithImpl<_PleromaApiCard>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiCardImplCopyWith<_$PleromaApiCardImpl> get copyWith =>
+      __$$PleromaApiCardImplCopyWithImpl<_$PleromaApiCardImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiCardToJson(this);
+    return _$$PleromaApiCardImplToJson(
+      this,
+    );
   }
 }
 
@@ -523,40 +420,32 @@ abstract class _PleromaApiCard implements PleromaApiCard {
   const factory _PleromaApiCard(
       {@HiveField(0)
       @JsonKey(name: 'author_name')
-          required String? authorName,
+      required final String? authorName,
       @HiveField(1)
       @JsonKey(name: 'author_url')
-          required String? authorUrl,
-      @HiveField(2)
-          required String? description,
-      @HiveField(3)
-      @JsonKey(name: 'embed_url')
-          required String? embedUrl,
+      required final String? authorUrl,
+      @HiveField(2) required final String? description,
+      @HiveField(3) @JsonKey(name: 'embed_url') required final String? embedUrl,
       @HiveField(4)
       @JsonKey(fromJson: JsonParseHelper.intFromJsonOrNullOnError)
-          required int? height,
+      required final int? height,
       @HiveField(5)
       @JsonKey(fromJson: JsonParseHelper.intFromJsonOrNullOnError)
-          required int? width,
-      @HiveField(6)
-          required String? html,
-      @HiveField(7)
-          required String? image,
+      required final int? width,
+      @HiveField(6) required final String? html,
+      @HiveField(7) required final String? image,
       @HiveField(8)
       @JsonKey(name: 'provider_name')
-          required String? providerName,
+      required final String? providerName,
       @HiveField(9)
       @JsonKey(name: 'provider_url')
-          required String? providerUrl,
-      @HiveField(10)
-          required String? title,
-      @HiveField(11)
-          required String type,
-      @HiveField(12)
-          required String? url}) = _$_PleromaApiCard;
+      required final String? providerUrl,
+      @HiveField(10) required final String? title,
+      @HiveField(11) required final String type,
+      @HiveField(12) required final String? url}) = _$PleromaApiCardImpl;
 
   factory _PleromaApiCard.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiCard.fromJson;
+      _$PleromaApiCardImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -606,6 +495,6 @@ abstract class _PleromaApiCard implements PleromaApiCard {
   String? get url;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiCardCopyWith<_PleromaApiCard> get copyWith =>
+  _$$PleromaApiCardImplCopyWith<_$PleromaApiCardImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

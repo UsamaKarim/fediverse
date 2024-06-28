@@ -48,17 +48,17 @@ class UnifediApiInstanceMetadataVersionRequirementPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiInstanceMetadataVersionRequirementPleromaAdapter
-    _$$_UnifediApiInstanceMetadataVersionRequirementPleromaAdapterFromJson(
+_$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImpl
+    _$$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiInstanceMetadataVersionRequirementPleromaAdapter(
+        _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImpl(
           PleromaApiInstanceMetadataVersionRequirement.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
 Map<String, dynamic>
-    _$$_UnifediApiInstanceMetadataVersionRequirementPleromaAdapterToJson(
-            _$_UnifediApiInstanceMetadataVersionRequirementPleromaAdapter
+    _$$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImplToJson(
+            _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImpl
                 instance) =>
         <String, dynamic>{
           'value': instance.value.toJson(),

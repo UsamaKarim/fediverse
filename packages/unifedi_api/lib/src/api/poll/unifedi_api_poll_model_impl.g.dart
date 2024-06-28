@@ -68,8 +68,8 @@ class UnifediApiPollAdapter extends TypeAdapter<UnifediApiPoll> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiPoll _$$_UnifediApiPollFromJson(Map<String, dynamic> json) =>
-    _$_UnifediApiPoll(
+_$UnifediApiPollImpl _$$UnifediApiPollImplFromJson(Map<String, dynamic> json) =>
+    _$UnifediApiPollImpl(
       expired: json['expired'] as bool,
       expiresAt: json['expires_at'] == null
           ? null
@@ -79,14 +79,16 @@ _$_UnifediApiPoll _$$_UnifediApiPollFromJson(Map<String, dynamic> json) =>
       options: (json['options'] as List<dynamic>)
           .map((e) => UnifediApiPollOption.fromJson(e as Map<String, dynamic>))
           .toList(),
-      ownVotes:
-          (json['own_votes'] as List<dynamic>?)?.map((e) => e as int).toList(),
+      ownVotes: (json['own_votes'] as List<dynamic>?)
+          ?.map((e) => (e as num).toInt())
+          .toList(),
       voted: json['voted'] as bool?,
-      votersCount: json['voters_count'] as int?,
-      votesCount: json['votes_count'] as int?,
+      votersCount: (json['voters_count'] as num?)?.toInt(),
+      votesCount: (json['votes_count'] as num?)?.toInt(),
     );
 
-Map<String, dynamic> _$$_UnifediApiPollToJson(_$_UnifediApiPoll instance) {
+Map<String, dynamic> _$$UnifediApiPollImplToJson(
+    _$UnifediApiPollImpl instance) {
   final val = <String, dynamic>{
     'expired': instance.expired,
   };

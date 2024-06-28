@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_instance_media_limits_model_pleroma_adapter.dart';
 
@@ -11,34 +12,13 @@ part of 'unifedi_api_instance_media_limits_model_pleroma_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiInstanceMediaLimitsPleromaAdapter
     _$UnifediApiInstanceMediaLimitsPleromaAdapterFromJson(
         Map<String, dynamic> json) {
   return _UnifediApiInstanceMediaLimitsPleromaAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiInstanceMediaLimitsPleromaAdapterTearOff {
-  const _$UnifediApiInstanceMediaLimitsPleromaAdapterTearOff();
-
-  _UnifediApiInstanceMediaLimitsPleromaAdapter call(
-      @HiveField(0) PleromaApiInstance value) {
-    return _UnifediApiInstanceMediaLimitsPleromaAdapter(
-      value,
-    );
-  }
-
-  UnifediApiInstanceMediaLimitsPleromaAdapter fromJson(
-      Map<String, Object?> json) {
-    return UnifediApiInstanceMediaLimitsPleromaAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiInstanceMediaLimitsPleromaAdapter =
-    _$UnifediApiInstanceMediaLimitsPleromaAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiInstanceMediaLimitsPleromaAdapter {
@@ -57,50 +37,58 @@ abstract class $UnifediApiInstanceMediaLimitsPleromaAdapterCopyWith<$Res> {
   factory $UnifediApiInstanceMediaLimitsPleromaAdapterCopyWith(
           UnifediApiInstanceMediaLimitsPleromaAdapter value,
           $Res Function(UnifediApiInstanceMediaLimitsPleromaAdapter) then) =
-      _$UnifediApiInstanceMediaLimitsPleromaAdapterCopyWithImpl<$Res>;
+      _$UnifediApiInstanceMediaLimitsPleromaAdapterCopyWithImpl<$Res,
+          UnifediApiInstanceMediaLimitsPleromaAdapter>;
+  @useResult
   $Res call({@HiveField(0) PleromaApiInstance value});
 
   $PleromaApiInstanceCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiInstanceMediaLimitsPleromaAdapterCopyWithImpl<$Res>
+class _$UnifediApiInstanceMediaLimitsPleromaAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiInstanceMediaLimitsPleromaAdapter>
     implements $UnifediApiInstanceMediaLimitsPleromaAdapterCopyWith<$Res> {
   _$UnifediApiInstanceMediaLimitsPleromaAdapterCopyWithImpl(
       this._value, this._then);
 
-  final UnifediApiInstanceMediaLimitsPleromaAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiInstanceMediaLimitsPleromaAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstance,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiInstanceCopyWith<$Res> get value {
     return $PleromaApiInstanceCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiInstanceMediaLimitsPleromaAdapterCopyWith<$Res>
+abstract class _$$UnifediApiInstanceMediaLimitsPleromaAdapterImplCopyWith<$Res>
     implements $UnifediApiInstanceMediaLimitsPleromaAdapterCopyWith<$Res> {
-  factory _$UnifediApiInstanceMediaLimitsPleromaAdapterCopyWith(
-          _UnifediApiInstanceMediaLimitsPleromaAdapter value,
-          $Res Function(_UnifediApiInstanceMediaLimitsPleromaAdapter) then) =
-      __$UnifediApiInstanceMediaLimitsPleromaAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiInstanceMediaLimitsPleromaAdapterImplCopyWith(
+          _$UnifediApiInstanceMediaLimitsPleromaAdapterImpl value,
+          $Res Function(_$UnifediApiInstanceMediaLimitsPleromaAdapterImpl)
+              then) =
+      __$$UnifediApiInstanceMediaLimitsPleromaAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) PleromaApiInstance value});
 
   @override
@@ -108,25 +96,23 @@ abstract class _$UnifediApiInstanceMediaLimitsPleromaAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiInstanceMediaLimitsPleromaAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiInstanceMediaLimitsPleromaAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiInstanceMediaLimitsPleromaAdapterCopyWith<$Res> {
-  __$UnifediApiInstanceMediaLimitsPleromaAdapterCopyWithImpl(
-      _UnifediApiInstanceMediaLimitsPleromaAdapter _value,
-      $Res Function(_UnifediApiInstanceMediaLimitsPleromaAdapter) _then)
-      : super(_value,
-            (v) => _then(v as _UnifediApiInstanceMediaLimitsPleromaAdapter));
+class __$$UnifediApiInstanceMediaLimitsPleromaAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiInstanceMediaLimitsPleromaAdapterCopyWithImpl<$Res,
+        _$UnifediApiInstanceMediaLimitsPleromaAdapterImpl>
+    implements
+        _$$UnifediApiInstanceMediaLimitsPleromaAdapterImplCopyWith<$Res> {
+  __$$UnifediApiInstanceMediaLimitsPleromaAdapterImplCopyWithImpl(
+      _$UnifediApiInstanceMediaLimitsPleromaAdapterImpl _value,
+      $Res Function(_$UnifediApiInstanceMediaLimitsPleromaAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiInstanceMediaLimitsPleromaAdapter get _value =>
-      super._value as _UnifediApiInstanceMediaLimitsPleromaAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiInstanceMediaLimitsPleromaAdapter(
-      value == freezed
+    return _then(_$UnifediApiInstanceMediaLimitsPleromaAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstance,
@@ -136,14 +122,15 @@ class __$UnifediApiInstanceMediaLimitsPleromaAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiInstanceMediaLimitsPleromaAdapter
+class _$UnifediApiInstanceMediaLimitsPleromaAdapterImpl
     extends _UnifediApiInstanceMediaLimitsPleromaAdapter {
-  const _$_UnifediApiInstanceMediaLimitsPleromaAdapter(@HiveField(0) this.value)
+  const _$UnifediApiInstanceMediaLimitsPleromaAdapterImpl(
+      @HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiInstanceMediaLimitsPleromaAdapter.fromJson(
+  factory _$UnifediApiInstanceMediaLimitsPleromaAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiInstanceMediaLimitsPleromaAdapterFromJson(json);
+      _$$UnifediApiInstanceMediaLimitsPleromaAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -155,47 +142,52 @@ class _$_UnifediApiInstanceMediaLimitsPleromaAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiInstanceMediaLimitsPleromaAdapter &&
+            other is _$UnifediApiInstanceMediaLimitsPleromaAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiInstanceMediaLimitsPleromaAdapterCopyWith<
-          _UnifediApiInstanceMediaLimitsPleromaAdapter>
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiInstanceMediaLimitsPleromaAdapterImplCopyWith<
+          _$UnifediApiInstanceMediaLimitsPleromaAdapterImpl>
       get copyWith =>
-          __$UnifediApiInstanceMediaLimitsPleromaAdapterCopyWithImpl<
-              _UnifediApiInstanceMediaLimitsPleromaAdapter>(this, _$identity);
+          __$$UnifediApiInstanceMediaLimitsPleromaAdapterImplCopyWithImpl<
+                  _$UnifediApiInstanceMediaLimitsPleromaAdapterImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiInstanceMediaLimitsPleromaAdapterToJson(this);
+    return _$$UnifediApiInstanceMediaLimitsPleromaAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiInstanceMediaLimitsPleromaAdapter
     extends UnifediApiInstanceMediaLimitsPleromaAdapter {
   const factory _UnifediApiInstanceMediaLimitsPleromaAdapter(
-          @HiveField(0) PleromaApiInstance value) =
-      _$_UnifediApiInstanceMediaLimitsPleromaAdapter;
+          @HiveField(0) final PleromaApiInstance value) =
+      _$UnifediApiInstanceMediaLimitsPleromaAdapterImpl;
   const _UnifediApiInstanceMediaLimitsPleromaAdapter._() : super._();
 
   factory _UnifediApiInstanceMediaLimitsPleromaAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiInstanceMediaLimitsPleromaAdapter.fromJson;
+      _$UnifediApiInstanceMediaLimitsPleromaAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   PleromaApiInstance get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiInstanceMediaLimitsPleromaAdapterCopyWith<
-          _UnifediApiInstanceMediaLimitsPleromaAdapter>
+  _$$UnifediApiInstanceMediaLimitsPleromaAdapterImplCopyWith<
+          _$UnifediApiInstanceMediaLimitsPleromaAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

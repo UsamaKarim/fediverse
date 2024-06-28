@@ -52,17 +52,17 @@ class PleromaApiAccountRelationshipFollowUpdateItemAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiAccountRelationshipFollowUpdateItem
-    _$$_PleromaApiAccountRelationshipFollowUpdateItemFromJson(
+_$PleromaApiAccountRelationshipFollowUpdateItemImpl
+    _$$PleromaApiAccountRelationshipFollowUpdateItemImplFromJson(
             Map<String, dynamic> json) =>
-        _$_PleromaApiAccountRelationshipFollowUpdateItem(
+        _$PleromaApiAccountRelationshipFollowUpdateItemImpl(
           accountId: json['id'] as String,
-          followerCount: json['follower_count'] as int?,
-          followingCount: json['following_count'] as int?,
+          followerCount: (json['follower_count'] as num?)?.toInt(),
+          followingCount: (json['following_count'] as num?)?.toInt(),
         );
 
-Map<String, dynamic> _$$_PleromaApiAccountRelationshipFollowUpdateItemToJson(
-    _$_PleromaApiAccountRelationshipFollowUpdateItem instance) {
+Map<String, dynamic> _$$PleromaApiAccountRelationshipFollowUpdateItemImplToJson(
+    _$PleromaApiAccountRelationshipFollowUpdateItemImpl instance) {
   final val = <String, dynamic>{
     'id': instance.accountId,
   };

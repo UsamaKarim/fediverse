@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'media_image_source_model.dart';
 
@@ -11,22 +12,7 @@ part of 'media_image_source_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$MediaImageSourceTearOff {
-  const _$MediaImageSourceTearOff();
-
-  _MediaImageSource call({File? file, String? url}) {
-    return _MediaImageSource(
-      file: file,
-      url: url,
-    );
-  }
-}
-
-/// @nodoc
-const $MediaImageSource = _$MediaImageSourceTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$MediaImageSource {
@@ -42,69 +28,71 @@ mixin _$MediaImageSource {
 abstract class $MediaImageSourceCopyWith<$Res> {
   factory $MediaImageSourceCopyWith(
           MediaImageSource value, $Res Function(MediaImageSource) then) =
-      _$MediaImageSourceCopyWithImpl<$Res>;
+      _$MediaImageSourceCopyWithImpl<$Res, MediaImageSource>;
+  @useResult
   $Res call({File? file, String? url});
 }
 
 /// @nodoc
-class _$MediaImageSourceCopyWithImpl<$Res>
+class _$MediaImageSourceCopyWithImpl<$Res, $Val extends MediaImageSource>
     implements $MediaImageSourceCopyWith<$Res> {
   _$MediaImageSourceCopyWithImpl(this._value, this._then);
 
-  final MediaImageSource _value;
   // ignore: unused_field
-  final $Res Function(MediaImageSource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? file = freezed,
     Object? url = freezed,
   }) {
     return _then(_value.copyWith(
-      file: file == freezed
+      file: freezed == file
           ? _value.file
           : file // ignore: cast_nullable_to_non_nullable
               as File?,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MediaImageSourceCopyWith<$Res>
+abstract class _$$MediaImageSourceImplCopyWith<$Res>
     implements $MediaImageSourceCopyWith<$Res> {
-  factory _$MediaImageSourceCopyWith(
-          _MediaImageSource value, $Res Function(_MediaImageSource) then) =
-      __$MediaImageSourceCopyWithImpl<$Res>;
+  factory _$$MediaImageSourceImplCopyWith(_$MediaImageSourceImpl value,
+          $Res Function(_$MediaImageSourceImpl) then) =
+      __$$MediaImageSourceImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({File? file, String? url});
 }
 
 /// @nodoc
-class __$MediaImageSourceCopyWithImpl<$Res>
-    extends _$MediaImageSourceCopyWithImpl<$Res>
-    implements _$MediaImageSourceCopyWith<$Res> {
-  __$MediaImageSourceCopyWithImpl(
-      _MediaImageSource _value, $Res Function(_MediaImageSource) _then)
-      : super(_value, (v) => _then(v as _MediaImageSource));
+class __$$MediaImageSourceImplCopyWithImpl<$Res>
+    extends _$MediaImageSourceCopyWithImpl<$Res, _$MediaImageSourceImpl>
+    implements _$$MediaImageSourceImplCopyWith<$Res> {
+  __$$MediaImageSourceImplCopyWithImpl(_$MediaImageSourceImpl _value,
+      $Res Function(_$MediaImageSourceImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MediaImageSource get _value => super._value as _MediaImageSource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? file = freezed,
     Object? url = freezed,
   }) {
-    return _then(_MediaImageSource(
-      file: file == freezed
+    return _then(_$MediaImageSourceImpl(
+      file: freezed == file
           ? _value.file
           : file // ignore: cast_nullable_to_non_nullable
               as File?,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -114,8 +102,8 @@ class __$MediaImageSourceCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_MediaImageSource implements _MediaImageSource {
-  const _$_MediaImageSource({this.file, this.url})
+class _$MediaImageSourceImpl implements _MediaImageSource {
+  const _$MediaImageSourceImpl({this.file, this.url})
       : assert(
           !(file != null && url != null),
           'Cant use file and url in same time',
@@ -136,10 +124,10 @@ class _$_MediaImageSource implements _MediaImageSource {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MediaImageSource &&
+            other is _$MediaImageSourceImpl &&
             (identical(other.file, file) || other.file == file) &&
             (identical(other.url, url) || other.url == url));
   }
@@ -149,13 +137,15 @@ class _$_MediaImageSource implements _MediaImageSource {
 
   @JsonKey(ignore: true)
   @override
-  _$MediaImageSourceCopyWith<_MediaImageSource> get copyWith =>
-      __$MediaImageSourceCopyWithImpl<_MediaImageSource>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MediaImageSourceImplCopyWith<_$MediaImageSourceImpl> get copyWith =>
+      __$$MediaImageSourceImplCopyWithImpl<_$MediaImageSourceImpl>(
+          this, _$identity);
 }
 
 abstract class _MediaImageSource implements MediaImageSource {
-  const factory _MediaImageSource({File? file, String? url}) =
-      _$_MediaImageSource;
+  const factory _MediaImageSource({final File? file, final String? url}) =
+      _$MediaImageSourceImpl;
 
   @override
   File? get file;
@@ -163,6 +153,6 @@ abstract class _MediaImageSource implements MediaImageSource {
   String? get url;
   @override
   @JsonKey(ignore: true)
-  _$MediaImageSourceCopyWith<_MediaImageSource> get copyWith =>
+  _$$MediaImageSourceImplCopyWith<_$MediaImageSourceImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

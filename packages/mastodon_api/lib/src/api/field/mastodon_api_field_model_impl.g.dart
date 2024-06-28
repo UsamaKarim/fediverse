@@ -50,8 +50,9 @@ class MastodonApiFieldAdapter extends TypeAdapter<MastodonApiField> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiField _$$_MastodonApiFieldFromJson(Map<String, dynamic> json) =>
-    _$_MastodonApiField(
+_$MastodonApiFieldImpl _$$MastodonApiFieldImplFromJson(
+        Map<String, dynamic> json) =>
+    _$MastodonApiFieldImpl(
       name: json['name'] as String?,
       value: json['value'] as String?,
       verifiedAt: json['verified_at'] == null
@@ -59,7 +60,8 @@ _$_MastodonApiField _$$_MastodonApiFieldFromJson(Map<String, dynamic> json) =>
           : DateTime.parse(json['verified_at'] as String),
     );
 
-Map<String, dynamic> _$$_MastodonApiFieldToJson(_$_MastodonApiField instance) {
+Map<String, dynamic> _$$MastodonApiFieldImplToJson(
+    _$MastodonApiFieldImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

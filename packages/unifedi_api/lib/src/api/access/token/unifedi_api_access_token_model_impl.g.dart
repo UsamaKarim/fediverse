@@ -47,17 +47,17 @@ class UnifediApiAccessTokenAdapter extends TypeAdapter<UnifediApiAccessToken> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiAccessToken _$$_UnifediApiAccessTokenFromJson(
+_$UnifediApiAccessTokenImpl _$$UnifediApiAccessTokenImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiAccessToken(
+    _$UnifediApiAccessTokenImpl(
       oauthToken: UnifediApiOAuthToken.fromJson(
           json['oauth_token'] as Map<String, dynamic>),
       scopes: UnifediApiAccessScopes.fromJson(
           json['scopes'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_UnifediApiAccessTokenToJson(
-        _$_UnifediApiAccessToken instance) =>
+Map<String, dynamic> _$$UnifediApiAccessTokenImplToJson(
+        _$UnifediApiAccessTokenImpl instance) =>
     <String, dynamic>{
       'oauth_token': instance.oauthToken.toJson(),
       'scopes': instance.scopes.toJson(),

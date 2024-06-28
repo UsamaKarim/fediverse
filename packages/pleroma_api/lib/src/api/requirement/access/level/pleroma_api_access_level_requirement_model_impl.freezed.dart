@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_access_level_requirement_model_impl.dart';
 
@@ -11,34 +12,12 @@ part of 'pleroma_api_access_level_requirement_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiAccessLevelRequirement _$PleromaApiAccessLevelRequirementFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiAccessLevelRequirement.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiAccessLevelRequirementTearOff {
-  const _$PleromaApiAccessLevelRequirementTearOff();
-
-  _PleromaApiAccessLevelRequirement call(
-      {@HiveField(0)
-      @JsonKey(name: 'requiredLevel')
-          required PleromaApiAccessLevel requiredLevel}) {
-    return _PleromaApiAccessLevelRequirement(
-      requiredLevel: requiredLevel,
-    );
-  }
-
-  PleromaApiAccessLevelRequirement fromJson(Map<String, Object?> json) {
-    return PleromaApiAccessLevelRequirement.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiAccessLevelRequirement =
-    _$PleromaApiAccessLevelRequirementTearOff();
 
 /// @nodoc
 mixin _$PleromaApiAccessLevelRequirement {
@@ -57,80 +36,85 @@ abstract class $PleromaApiAccessLevelRequirementCopyWith<$Res> {
   factory $PleromaApiAccessLevelRequirementCopyWith(
           PleromaApiAccessLevelRequirement value,
           $Res Function(PleromaApiAccessLevelRequirement) then) =
-      _$PleromaApiAccessLevelRequirementCopyWithImpl<$Res>;
+      _$PleromaApiAccessLevelRequirementCopyWithImpl<$Res,
+          PleromaApiAccessLevelRequirement>;
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'requiredLevel')
-          PleromaApiAccessLevel requiredLevel});
+      PleromaApiAccessLevel requiredLevel});
 
   $PleromaApiAccessLevelCopyWith<$Res> get requiredLevel;
 }
 
 /// @nodoc
-class _$PleromaApiAccessLevelRequirementCopyWithImpl<$Res>
+class _$PleromaApiAccessLevelRequirementCopyWithImpl<$Res,
+        $Val extends PleromaApiAccessLevelRequirement>
     implements $PleromaApiAccessLevelRequirementCopyWith<$Res> {
   _$PleromaApiAccessLevelRequirementCopyWithImpl(this._value, this._then);
 
-  final PleromaApiAccessLevelRequirement _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiAccessLevelRequirement) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? requiredLevel = freezed,
+    Object? requiredLevel = null,
   }) {
     return _then(_value.copyWith(
-      requiredLevel: requiredLevel == freezed
+      requiredLevel: null == requiredLevel
           ? _value.requiredLevel
           : requiredLevel // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccessLevel,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiAccessLevelCopyWith<$Res> get requiredLevel {
     return $PleromaApiAccessLevelCopyWith<$Res>(_value.requiredLevel, (value) {
-      return _then(_value.copyWith(requiredLevel: value));
+      return _then(_value.copyWith(requiredLevel: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiAccessLevelRequirementCopyWith<$Res>
+abstract class _$$PleromaApiAccessLevelRequirementImplCopyWith<$Res>
     implements $PleromaApiAccessLevelRequirementCopyWith<$Res> {
-  factory _$PleromaApiAccessLevelRequirementCopyWith(
-          _PleromaApiAccessLevelRequirement value,
-          $Res Function(_PleromaApiAccessLevelRequirement) then) =
-      __$PleromaApiAccessLevelRequirementCopyWithImpl<$Res>;
+  factory _$$PleromaApiAccessLevelRequirementImplCopyWith(
+          _$PleromaApiAccessLevelRequirementImpl value,
+          $Res Function(_$PleromaApiAccessLevelRequirementImpl) then) =
+      __$$PleromaApiAccessLevelRequirementImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'requiredLevel')
-          PleromaApiAccessLevel requiredLevel});
+      PleromaApiAccessLevel requiredLevel});
 
   @override
   $PleromaApiAccessLevelCopyWith<$Res> get requiredLevel;
 }
 
 /// @nodoc
-class __$PleromaApiAccessLevelRequirementCopyWithImpl<$Res>
-    extends _$PleromaApiAccessLevelRequirementCopyWithImpl<$Res>
-    implements _$PleromaApiAccessLevelRequirementCopyWith<$Res> {
-  __$PleromaApiAccessLevelRequirementCopyWithImpl(
-      _PleromaApiAccessLevelRequirement _value,
-      $Res Function(_PleromaApiAccessLevelRequirement) _then)
-      : super(_value, (v) => _then(v as _PleromaApiAccessLevelRequirement));
+class __$$PleromaApiAccessLevelRequirementImplCopyWithImpl<$Res>
+    extends _$PleromaApiAccessLevelRequirementCopyWithImpl<$Res,
+        _$PleromaApiAccessLevelRequirementImpl>
+    implements _$$PleromaApiAccessLevelRequirementImplCopyWith<$Res> {
+  __$$PleromaApiAccessLevelRequirementImplCopyWithImpl(
+      _$PleromaApiAccessLevelRequirementImpl _value,
+      $Res Function(_$PleromaApiAccessLevelRequirementImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiAccessLevelRequirement get _value =>
-      super._value as _PleromaApiAccessLevelRequirement;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? requiredLevel = freezed,
+    Object? requiredLevel = null,
   }) {
-    return _then(_PleromaApiAccessLevelRequirement(
-      requiredLevel: requiredLevel == freezed
+    return _then(_$PleromaApiAccessLevelRequirementImpl(
+      requiredLevel: null == requiredLevel
           ? _value.requiredLevel
           : requiredLevel // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccessLevel,
@@ -140,16 +124,16 @@ class __$PleromaApiAccessLevelRequirementCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiAccessLevelRequirement
+class _$PleromaApiAccessLevelRequirementImpl
     implements _PleromaApiAccessLevelRequirement {
-  const _$_PleromaApiAccessLevelRequirement(
+  const _$PleromaApiAccessLevelRequirementImpl(
       {@HiveField(0)
       @JsonKey(name: 'requiredLevel')
-          required this.requiredLevel});
+      required this.requiredLevel});
 
-  factory _$_PleromaApiAccessLevelRequirement.fromJson(
+  factory _$PleromaApiAccessLevelRequirementImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_PleromaApiAccessLevelRequirementFromJson(json);
+      _$$PleromaApiAccessLevelRequirementImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -162,26 +146,31 @@ class _$_PleromaApiAccessLevelRequirement
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiAccessLevelRequirement &&
+            other is _$PleromaApiAccessLevelRequirementImpl &&
             (identical(other.requiredLevel, requiredLevel) ||
                 other.requiredLevel == requiredLevel));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, requiredLevel);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiAccessLevelRequirementCopyWith<_PleromaApiAccessLevelRequirement>
-      get copyWith => __$PleromaApiAccessLevelRequirementCopyWithImpl<
-          _PleromaApiAccessLevelRequirement>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiAccessLevelRequirementImplCopyWith<
+          _$PleromaApiAccessLevelRequirementImpl>
+      get copyWith => __$$PleromaApiAccessLevelRequirementImplCopyWithImpl<
+          _$PleromaApiAccessLevelRequirementImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiAccessLevelRequirementToJson(this);
+    return _$$PleromaApiAccessLevelRequirementImplToJson(
+      this,
+    );
   }
 }
 
@@ -190,11 +179,12 @@ abstract class _PleromaApiAccessLevelRequirement
   const factory _PleromaApiAccessLevelRequirement(
           {@HiveField(0)
           @JsonKey(name: 'requiredLevel')
-              required PleromaApiAccessLevel requiredLevel}) =
-      _$_PleromaApiAccessLevelRequirement;
+          required final PleromaApiAccessLevel requiredLevel}) =
+      _$PleromaApiAccessLevelRequirementImpl;
 
   factory _PleromaApiAccessLevelRequirement.fromJson(
-      Map<String, dynamic> json) = _$_PleromaApiAccessLevelRequirement.fromJson;
+          Map<String, dynamic> json) =
+      _$PleromaApiAccessLevelRequirementImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -202,6 +192,7 @@ abstract class _PleromaApiAccessLevelRequirement
   PleromaApiAccessLevel get requiredLevel;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiAccessLevelRequirementCopyWith<_PleromaApiAccessLevelRequirement>
+  _$$PleromaApiAccessLevelRequirementImplCopyWith<
+          _$PleromaApiAccessLevelRequirementImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

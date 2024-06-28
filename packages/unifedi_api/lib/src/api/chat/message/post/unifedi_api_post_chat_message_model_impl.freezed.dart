@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_post_chat_message_model_impl.dart';
 
@@ -11,33 +12,12 @@ part of 'unifedi_api_post_chat_message_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiPostChatMessage _$UnifediApiPostChatMessageFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiPostChatMessage.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiPostChatMessageTearOff {
-  const _$UnifediApiPostChatMessageTearOff();
-
-  _UnifediApiPostChatMessage call(
-      {@HiveField(0) required String? content,
-      @HiveField(1) @JsonKey(name: 'media_id') required String? mediaId}) {
-    return _UnifediApiPostChatMessage(
-      content: content,
-      mediaId: mediaId,
-    );
-  }
-
-  UnifediApiPostChatMessage fromJson(Map<String, Object?> json) {
-    return UnifediApiPostChatMessage.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiPostChatMessage = _$UnifediApiPostChatMessageTearOff();
 
 /// @nodoc
 mixin _$UnifediApiPostChatMessage {
@@ -57,74 +37,79 @@ mixin _$UnifediApiPostChatMessage {
 abstract class $UnifediApiPostChatMessageCopyWith<$Res> {
   factory $UnifediApiPostChatMessageCopyWith(UnifediApiPostChatMessage value,
           $Res Function(UnifediApiPostChatMessage) then) =
-      _$UnifediApiPostChatMessageCopyWithImpl<$Res>;
+      _$UnifediApiPostChatMessageCopyWithImpl<$Res, UnifediApiPostChatMessage>;
+  @useResult
   $Res call(
       {@HiveField(0) String? content,
       @HiveField(1) @JsonKey(name: 'media_id') String? mediaId});
 }
 
 /// @nodoc
-class _$UnifediApiPostChatMessageCopyWithImpl<$Res>
+class _$UnifediApiPostChatMessageCopyWithImpl<$Res,
+        $Val extends UnifediApiPostChatMessage>
     implements $UnifediApiPostChatMessageCopyWith<$Res> {
   _$UnifediApiPostChatMessageCopyWithImpl(this._value, this._then);
 
-  final UnifediApiPostChatMessage _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiPostChatMessage) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? content = freezed,
     Object? mediaId = freezed,
   }) {
     return _then(_value.copyWith(
-      content: content == freezed
+      content: freezed == content
           ? _value.content
           : content // ignore: cast_nullable_to_non_nullable
               as String?,
-      mediaId: mediaId == freezed
+      mediaId: freezed == mediaId
           ? _value.mediaId
           : mediaId // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiPostChatMessageCopyWith<$Res>
+abstract class _$$UnifediApiPostChatMessageImplCopyWith<$Res>
     implements $UnifediApiPostChatMessageCopyWith<$Res> {
-  factory _$UnifediApiPostChatMessageCopyWith(_UnifediApiPostChatMessage value,
-          $Res Function(_UnifediApiPostChatMessage) then) =
-      __$UnifediApiPostChatMessageCopyWithImpl<$Res>;
+  factory _$$UnifediApiPostChatMessageImplCopyWith(
+          _$UnifediApiPostChatMessageImpl value,
+          $Res Function(_$UnifediApiPostChatMessageImpl) then) =
+      __$$UnifediApiPostChatMessageImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) String? content,
       @HiveField(1) @JsonKey(name: 'media_id') String? mediaId});
 }
 
 /// @nodoc
-class __$UnifediApiPostChatMessageCopyWithImpl<$Res>
-    extends _$UnifediApiPostChatMessageCopyWithImpl<$Res>
-    implements _$UnifediApiPostChatMessageCopyWith<$Res> {
-  __$UnifediApiPostChatMessageCopyWithImpl(_UnifediApiPostChatMessage _value,
-      $Res Function(_UnifediApiPostChatMessage) _then)
-      : super(_value, (v) => _then(v as _UnifediApiPostChatMessage));
+class __$$UnifediApiPostChatMessageImplCopyWithImpl<$Res>
+    extends _$UnifediApiPostChatMessageCopyWithImpl<$Res,
+        _$UnifediApiPostChatMessageImpl>
+    implements _$$UnifediApiPostChatMessageImplCopyWith<$Res> {
+  __$$UnifediApiPostChatMessageImplCopyWithImpl(
+      _$UnifediApiPostChatMessageImpl _value,
+      $Res Function(_$UnifediApiPostChatMessageImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiPostChatMessage get _value =>
-      super._value as _UnifediApiPostChatMessage;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? content = freezed,
     Object? mediaId = freezed,
   }) {
-    return _then(_UnifediApiPostChatMessage(
-      content: content == freezed
+    return _then(_$UnifediApiPostChatMessageImpl(
+      content: freezed == content
           ? _value.content
           : content // ignore: cast_nullable_to_non_nullable
               as String?,
-      mediaId: mediaId == freezed
+      mediaId: freezed == mediaId
           ? _value.mediaId
           : mediaId // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -134,13 +119,13 @@ class __$UnifediApiPostChatMessageCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiPostChatMessage implements _UnifediApiPostChatMessage {
-  const _$_UnifediApiPostChatMessage(
+class _$UnifediApiPostChatMessageImpl implements _UnifediApiPostChatMessage {
+  const _$UnifediApiPostChatMessageImpl(
       {@HiveField(0) required this.content,
       @HiveField(1) @JsonKey(name: 'media_id') required this.mediaId});
 
-  factory _$_UnifediApiPostChatMessage.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiPostChatMessageFromJson(json);
+  factory _$UnifediApiPostChatMessageImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiPostChatMessageImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -156,38 +141,42 @@ class _$_UnifediApiPostChatMessage implements _UnifediApiPostChatMessage {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiPostChatMessage &&
+            other is _$UnifediApiPostChatMessageImpl &&
             (identical(other.content, content) || other.content == content) &&
             (identical(other.mediaId, mediaId) || other.mediaId == mediaId));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, content, mediaId);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiPostChatMessageCopyWith<_UnifediApiPostChatMessage>
-      get copyWith =>
-          __$UnifediApiPostChatMessageCopyWithImpl<_UnifediApiPostChatMessage>(
-              this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiPostChatMessageImplCopyWith<_$UnifediApiPostChatMessageImpl>
+      get copyWith => __$$UnifediApiPostChatMessageImplCopyWithImpl<
+          _$UnifediApiPostChatMessageImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiPostChatMessageToJson(this);
+    return _$$UnifediApiPostChatMessageImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiPostChatMessage implements UnifediApiPostChatMessage {
   const factory _UnifediApiPostChatMessage(
-          {@HiveField(0) required String? content,
-          @HiveField(1) @JsonKey(name: 'media_id') required String? mediaId}) =
-      _$_UnifediApiPostChatMessage;
+      {@HiveField(0) required final String? content,
+      @HiveField(1)
+      @JsonKey(name: 'media_id')
+      required final String? mediaId}) = _$UnifediApiPostChatMessageImpl;
 
   factory _UnifediApiPostChatMessage.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiPostChatMessage.fromJson;
+      _$UnifediApiPostChatMessageImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -198,6 +187,6 @@ abstract class _UnifediApiPostChatMessage implements UnifediApiPostChatMessage {
   String? get mediaId;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiPostChatMessageCopyWith<_UnifediApiPostChatMessage>
+  _$$UnifediApiPostChatMessageImplCopyWith<_$UnifediApiPostChatMessageImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

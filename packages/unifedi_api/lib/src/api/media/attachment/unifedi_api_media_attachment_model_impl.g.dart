@@ -72,9 +72,9 @@ class UnifediApiMediaAttachmentAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiMediaAttachment _$$_UnifediApiMediaAttachmentFromJson(
+_$UnifediApiMediaAttachmentImpl _$$UnifediApiMediaAttachmentImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiMediaAttachment(
+    _$UnifediApiMediaAttachmentImpl(
       description: json['description'] as String?,
       id: json['id'] as String,
       previewUrl: json['preview_url'] as String?,
@@ -90,8 +90,8 @@ _$_UnifediApiMediaAttachment _$$_UnifediApiMediaAttachmentFromJson(
       mimeType: json['mime_type'] as String?,
     );
 
-Map<String, dynamic> _$$_UnifediApiMediaAttachmentToJson(
-    _$_UnifediApiMediaAttachment instance) {
+Map<String, dynamic> _$$UnifediApiMediaAttachmentImplToJson(
+    _$UnifediApiMediaAttachmentImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

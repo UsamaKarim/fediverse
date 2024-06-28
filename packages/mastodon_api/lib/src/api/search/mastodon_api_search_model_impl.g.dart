@@ -51,9 +51,9 @@ class MastodonApiSearchResultAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiSearchResult _$$_MastodonApiSearchResultFromJson(
+_$MastodonApiSearchResultImpl _$$MastodonApiSearchResultImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiSearchResult(
+    _$MastodonApiSearchResultImpl(
       accounts: (json['accounts'] as List<dynamic>)
           .map((e) => MastodonApiAccount.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -65,8 +65,8 @@ _$_MastodonApiSearchResult _$$_MastodonApiSearchResultFromJson(
           .toList(),
     );
 
-Map<String, dynamic> _$$_MastodonApiSearchResultToJson(
-        _$_MastodonApiSearchResult instance) =>
+Map<String, dynamic> _$$MastodonApiSearchResultImplToJson(
+        _$MastodonApiSearchResultImpl instance) =>
     <String, dynamic>{
       'accounts': instance.accounts.map((e) => e.toJson()).toList(),
       'hashtags': instance.hashtags.map((e) => e.toJson()).toList(),

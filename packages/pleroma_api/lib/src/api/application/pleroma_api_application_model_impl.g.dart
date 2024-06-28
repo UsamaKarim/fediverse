@@ -50,16 +50,16 @@ class PleromaApiApplicationAdapter extends TypeAdapter<PleromaApiApplication> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiApplication _$$_PleromaApiApplicationFromJson(
+_$PleromaApiApplicationImpl _$$PleromaApiApplicationImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiApplication(
+    _$PleromaApiApplicationImpl(
       name: json['name'] as String?,
       website: json['website'] as String?,
       vapidKey: json['vapid_key'] as String?,
     );
 
-Map<String, dynamic> _$$_PleromaApiApplicationToJson(
-    _$_PleromaApiApplication instance) {
+Map<String, dynamic> _$$PleromaApiApplicationImplToJson(
+    _$PleromaApiApplicationImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

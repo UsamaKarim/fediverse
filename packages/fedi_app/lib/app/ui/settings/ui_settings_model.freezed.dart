@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'ui_settings_model.dart';
 
@@ -11,36 +12,11 @@ part of 'ui_settings_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UiSettings _$UiSettingsFromJson(Map<String, dynamic> json) {
   return _UiSettings.fromJson(json);
 }
-
-/// @nodoc
-class _$UiSettingsTearOff {
-  const _$UiSettingsTearOff();
-
-  _UiSettings call(
-      {@HiveField(0)
-      @JsonKey(name: 'theme_id')
-          required String? themeId,
-      @HiveField(1)
-      @JsonKey(name: 'status_font_size')
-          required String statusFontSizeString}) {
-    return _UiSettings(
-      themeId: themeId,
-      statusFontSizeString: statusFontSizeString,
-    );
-  }
-
-  UiSettings fromJson(Map<String, Object?> json) {
-    return UiSettings.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UiSettings = _$UiSettingsTearOff();
 
 /// @nodoc
 mixin _$UiSettings {
@@ -61,78 +37,79 @@ mixin _$UiSettings {
 abstract class $UiSettingsCopyWith<$Res> {
   factory $UiSettingsCopyWith(
           UiSettings value, $Res Function(UiSettings) then) =
-      _$UiSettingsCopyWithImpl<$Res>;
+      _$UiSettingsCopyWithImpl<$Res, UiSettings>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-      @JsonKey(name: 'theme_id')
-          String? themeId,
+      {@HiveField(0) @JsonKey(name: 'theme_id') String? themeId,
       @HiveField(1)
       @JsonKey(name: 'status_font_size')
-          String statusFontSizeString});
+      String statusFontSizeString});
 }
 
 /// @nodoc
-class _$UiSettingsCopyWithImpl<$Res> implements $UiSettingsCopyWith<$Res> {
+class _$UiSettingsCopyWithImpl<$Res, $Val extends UiSettings>
+    implements $UiSettingsCopyWith<$Res> {
   _$UiSettingsCopyWithImpl(this._value, this._then);
 
-  final UiSettings _value;
   // ignore: unused_field
-  final $Res Function(UiSettings) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? themeId = freezed,
-    Object? statusFontSizeString = freezed,
+    Object? statusFontSizeString = null,
   }) {
     return _then(_value.copyWith(
-      themeId: themeId == freezed
+      themeId: freezed == themeId
           ? _value.themeId
           : themeId // ignore: cast_nullable_to_non_nullable
               as String?,
-      statusFontSizeString: statusFontSizeString == freezed
+      statusFontSizeString: null == statusFontSizeString
           ? _value.statusFontSizeString
           : statusFontSizeString // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UiSettingsCopyWith<$Res> implements $UiSettingsCopyWith<$Res> {
-  factory _$UiSettingsCopyWith(
-          _UiSettings value, $Res Function(_UiSettings) then) =
-      __$UiSettingsCopyWithImpl<$Res>;
+abstract class _$$UiSettingsImplCopyWith<$Res>
+    implements $UiSettingsCopyWith<$Res> {
+  factory _$$UiSettingsImplCopyWith(
+          _$UiSettingsImpl value, $Res Function(_$UiSettingsImpl) then) =
+      __$$UiSettingsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-      @JsonKey(name: 'theme_id')
-          String? themeId,
+      {@HiveField(0) @JsonKey(name: 'theme_id') String? themeId,
       @HiveField(1)
       @JsonKey(name: 'status_font_size')
-          String statusFontSizeString});
+      String statusFontSizeString});
 }
 
 /// @nodoc
-class __$UiSettingsCopyWithImpl<$Res> extends _$UiSettingsCopyWithImpl<$Res>
-    implements _$UiSettingsCopyWith<$Res> {
-  __$UiSettingsCopyWithImpl(
-      _UiSettings _value, $Res Function(_UiSettings) _then)
-      : super(_value, (v) => _then(v as _UiSettings));
+class __$$UiSettingsImplCopyWithImpl<$Res>
+    extends _$UiSettingsCopyWithImpl<$Res, _$UiSettingsImpl>
+    implements _$$UiSettingsImplCopyWith<$Res> {
+  __$$UiSettingsImplCopyWithImpl(
+      _$UiSettingsImpl _value, $Res Function(_$UiSettingsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UiSettings get _value => super._value as _UiSettings;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? themeId = freezed,
-    Object? statusFontSizeString = freezed,
+    Object? statusFontSizeString = null,
   }) {
-    return _then(_UiSettings(
-      themeId: themeId == freezed
+    return _then(_$UiSettingsImpl(
+      themeId: freezed == themeId
           ? _value.themeId
           : themeId // ignore: cast_nullable_to_non_nullable
               as String?,
-      statusFontSizeString: statusFontSizeString == freezed
+      statusFontSizeString: null == statusFontSizeString
           ? _value.statusFontSizeString
           : statusFontSizeString // ignore: cast_nullable_to_non_nullable
               as String,
@@ -142,18 +119,16 @@ class __$UiSettingsCopyWithImpl<$Res> extends _$UiSettingsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UiSettings extends _UiSettings {
-  const _$_UiSettings(
-      {@HiveField(0)
-      @JsonKey(name: 'theme_id')
-          required this.themeId,
+class _$UiSettingsImpl extends _UiSettings {
+  const _$UiSettingsImpl(
+      {@HiveField(0) @JsonKey(name: 'theme_id') required this.themeId,
       @HiveField(1)
       @JsonKey(name: 'status_font_size')
-          required this.statusFontSizeString})
+      required this.statusFontSizeString})
       : super._();
 
-  factory _$_UiSettings.fromJson(Map<String, dynamic> json) =>
-      _$$_UiSettingsFromJson(json);
+  factory _$UiSettingsImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UiSettingsImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -170,41 +145,43 @@ class _$_UiSettings extends _UiSettings {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UiSettings &&
+            other is _$UiSettingsImpl &&
             (identical(other.themeId, themeId) || other.themeId == themeId) &&
             (identical(other.statusFontSizeString, statusFontSizeString) ||
                 other.statusFontSizeString == statusFontSizeString));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, themeId, statusFontSizeString);
 
   @JsonKey(ignore: true)
   @override
-  _$UiSettingsCopyWith<_UiSettings> get copyWith =>
-      __$UiSettingsCopyWithImpl<_UiSettings>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UiSettingsImplCopyWith<_$UiSettingsImpl> get copyWith =>
+      __$$UiSettingsImplCopyWithImpl<_$UiSettingsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UiSettingsToJson(this);
+    return _$$UiSettingsImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UiSettings extends UiSettings {
   const factory _UiSettings(
-      {@HiveField(0)
-      @JsonKey(name: 'theme_id')
-          required String? themeId,
+      {@HiveField(0) @JsonKey(name: 'theme_id') required final String? themeId,
       @HiveField(1)
       @JsonKey(name: 'status_font_size')
-          required String statusFontSizeString}) = _$_UiSettings;
+      required final String statusFontSizeString}) = _$UiSettingsImpl;
   const _UiSettings._() : super._();
 
   factory _UiSettings.fromJson(Map<String, dynamic> json) =
-      _$_UiSettings.fromJson;
+      _$UiSettingsImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -216,6 +193,6 @@ abstract class _UiSettings extends UiSettings {
   String get statusFontSizeString;
   @override
   @JsonKey(ignore: true)
-  _$UiSettingsCopyWith<_UiSettings> get copyWith =>
+  _$$UiSettingsImplCopyWith<_$UiSettingsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

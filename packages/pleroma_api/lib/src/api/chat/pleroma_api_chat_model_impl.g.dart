@@ -56,10 +56,10 @@ class PleromaApiChatAdapter extends TypeAdapter<PleromaApiChat> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiChat _$$_PleromaApiChatFromJson(Map<String, dynamic> json) =>
-    _$_PleromaApiChat(
+_$PleromaApiChatImpl _$$PleromaApiChatImplFromJson(Map<String, dynamic> json) =>
+    _$PleromaApiChatImpl(
       id: json['id'] as String,
-      unread: json['unread'] as int,
+      unread: (json['unread'] as num).toInt(),
       updatedAt: json['updated_at'] == null
           ? null
           : DateTime.parse(json['updated_at'] as String),
@@ -71,7 +71,8 @@ _$_PleromaApiChat _$$_PleromaApiChatFromJson(Map<String, dynamic> json) =>
               json['last_message'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_PleromaApiChatToJson(_$_PleromaApiChat instance) {
+Map<String, dynamic> _$$PleromaApiChatImplToJson(
+    _$PleromaApiChatImpl instance) {
   final val = <String, dynamic>{
     'id': instance.id,
     'unread': instance.unread,

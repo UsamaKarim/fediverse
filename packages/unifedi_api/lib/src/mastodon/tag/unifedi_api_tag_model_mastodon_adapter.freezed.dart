@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_tag_model_mastodon_adapter.dart';
 
@@ -11,30 +12,12 @@ part of 'unifedi_api_tag_model_mastodon_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiTagMastodonAdapter _$UnifediApiTagMastodonAdapterFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiTagMastodonAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiTagMastodonAdapterTearOff {
-  const _$UnifediApiTagMastodonAdapterTearOff();
-
-  _UnifediApiTagMastodonAdapter call(@HiveField(0) MastodonApiTag value) {
-    return _UnifediApiTagMastodonAdapter(
-      value,
-    );
-  }
-
-  UnifediApiTagMastodonAdapter fromJson(Map<String, Object?> json) {
-    return UnifediApiTagMastodonAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiTagMastodonAdapter = _$UnifediApiTagMastodonAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiTagMastodonAdapter {
@@ -52,49 +35,56 @@ abstract class $UnifediApiTagMastodonAdapterCopyWith<$Res> {
   factory $UnifediApiTagMastodonAdapterCopyWith(
           UnifediApiTagMastodonAdapter value,
           $Res Function(UnifediApiTagMastodonAdapter) then) =
-      _$UnifediApiTagMastodonAdapterCopyWithImpl<$Res>;
+      _$UnifediApiTagMastodonAdapterCopyWithImpl<$Res,
+          UnifediApiTagMastodonAdapter>;
+  @useResult
   $Res call({@HiveField(0) MastodonApiTag value});
 
   $MastodonApiTagCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiTagMastodonAdapterCopyWithImpl<$Res>
+class _$UnifediApiTagMastodonAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiTagMastodonAdapter>
     implements $UnifediApiTagMastodonAdapterCopyWith<$Res> {
   _$UnifediApiTagMastodonAdapterCopyWithImpl(this._value, this._then);
 
-  final UnifediApiTagMastodonAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiTagMastodonAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiTag,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiTagCopyWith<$Res> get value {
     return $MastodonApiTagCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiTagMastodonAdapterCopyWith<$Res>
+abstract class _$$UnifediApiTagMastodonAdapterImplCopyWith<$Res>
     implements $UnifediApiTagMastodonAdapterCopyWith<$Res> {
-  factory _$UnifediApiTagMastodonAdapterCopyWith(
-          _UnifediApiTagMastodonAdapter value,
-          $Res Function(_UnifediApiTagMastodonAdapter) then) =
-      __$UnifediApiTagMastodonAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiTagMastodonAdapterImplCopyWith(
+          _$UnifediApiTagMastodonAdapterImpl value,
+          $Res Function(_$UnifediApiTagMastodonAdapterImpl) then) =
+      __$$UnifediApiTagMastodonAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) MastodonApiTag value});
 
   @override
@@ -102,24 +92,22 @@ abstract class _$UnifediApiTagMastodonAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiTagMastodonAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiTagMastodonAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiTagMastodonAdapterCopyWith<$Res> {
-  __$UnifediApiTagMastodonAdapterCopyWithImpl(
-      _UnifediApiTagMastodonAdapter _value,
-      $Res Function(_UnifediApiTagMastodonAdapter) _then)
-      : super(_value, (v) => _then(v as _UnifediApiTagMastodonAdapter));
+class __$$UnifediApiTagMastodonAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiTagMastodonAdapterCopyWithImpl<$Res,
+        _$UnifediApiTagMastodonAdapterImpl>
+    implements _$$UnifediApiTagMastodonAdapterImplCopyWith<$Res> {
+  __$$UnifediApiTagMastodonAdapterImplCopyWithImpl(
+      _$UnifediApiTagMastodonAdapterImpl _value,
+      $Res Function(_$UnifediApiTagMastodonAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiTagMastodonAdapter get _value =>
-      super._value as _UnifediApiTagMastodonAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiTagMastodonAdapter(
-      value == freezed
+    return _then(_$UnifediApiTagMastodonAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiTag,
@@ -129,11 +117,13 @@ class __$UnifediApiTagMastodonAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiTagMastodonAdapter extends _UnifediApiTagMastodonAdapter {
-  const _$_UnifediApiTagMastodonAdapter(@HiveField(0) this.value) : super._();
+class _$UnifediApiTagMastodonAdapterImpl extends _UnifediApiTagMastodonAdapter {
+  const _$UnifediApiTagMastodonAdapterImpl(@HiveField(0) this.value)
+      : super._();
 
-  factory _$_UnifediApiTagMastodonAdapter.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiTagMastodonAdapterFromJson(json);
+  factory _$UnifediApiTagMastodonAdapterImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$UnifediApiTagMastodonAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -145,42 +135,49 @@ class _$_UnifediApiTagMastodonAdapter extends _UnifediApiTagMastodonAdapter {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiTagMastodonAdapter &&
+            other is _$UnifediApiTagMastodonAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiTagMastodonAdapterCopyWith<_UnifediApiTagMastodonAdapter>
-      get copyWith => __$UnifediApiTagMastodonAdapterCopyWithImpl<
-          _UnifediApiTagMastodonAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiTagMastodonAdapterImplCopyWith<
+          _$UnifediApiTagMastodonAdapterImpl>
+      get copyWith => __$$UnifediApiTagMastodonAdapterImplCopyWithImpl<
+          _$UnifediApiTagMastodonAdapterImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiTagMastodonAdapterToJson(this);
+    return _$$UnifediApiTagMastodonAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiTagMastodonAdapter
     extends UnifediApiTagMastodonAdapter {
   const factory _UnifediApiTagMastodonAdapter(
-      @HiveField(0) MastodonApiTag value) = _$_UnifediApiTagMastodonAdapter;
+          @HiveField(0) final MastodonApiTag value) =
+      _$UnifediApiTagMastodonAdapterImpl;
   const _UnifediApiTagMastodonAdapter._() : super._();
 
   factory _UnifediApiTagMastodonAdapter.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiTagMastodonAdapter.fromJson;
+      _$UnifediApiTagMastodonAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   MastodonApiTag get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiTagMastodonAdapterCopyWith<_UnifediApiTagMastodonAdapter>
+  _$$UnifediApiTagMastodonAdapterImplCopyWith<
+          _$UnifediApiTagMastodonAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'duration_date_time_value_form_field_model.dart';
 
@@ -11,23 +12,7 @@ part of 'duration_date_time_value_form_field_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$DurationDateTimeTearOff {
-  const _$DurationDateTimeTearOff();
-
-  _DurationDateTime call(
-      {required Duration? duration, required DateTime? dateTime}) {
-    return _DurationDateTime(
-      duration: duration,
-      dateTime: dateTime,
-    );
-  }
-}
-
-/// @nodoc
-const $DurationDateTime = _$DurationDateTimeTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$DurationDateTime {
@@ -43,69 +28,71 @@ mixin _$DurationDateTime {
 abstract class $DurationDateTimeCopyWith<$Res> {
   factory $DurationDateTimeCopyWith(
           DurationDateTime value, $Res Function(DurationDateTime) then) =
-      _$DurationDateTimeCopyWithImpl<$Res>;
+      _$DurationDateTimeCopyWithImpl<$Res, DurationDateTime>;
+  @useResult
   $Res call({Duration? duration, DateTime? dateTime});
 }
 
 /// @nodoc
-class _$DurationDateTimeCopyWithImpl<$Res>
+class _$DurationDateTimeCopyWithImpl<$Res, $Val extends DurationDateTime>
     implements $DurationDateTimeCopyWith<$Res> {
   _$DurationDateTimeCopyWithImpl(this._value, this._then);
 
-  final DurationDateTime _value;
   // ignore: unused_field
-  final $Res Function(DurationDateTime) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? duration = freezed,
     Object? dateTime = freezed,
   }) {
     return _then(_value.copyWith(
-      duration: duration == freezed
+      duration: freezed == duration
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
               as Duration?,
-      dateTime: dateTime == freezed
+      dateTime: freezed == dateTime
           ? _value.dateTime
           : dateTime // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$DurationDateTimeCopyWith<$Res>
+abstract class _$$DurationDateTimeImplCopyWith<$Res>
     implements $DurationDateTimeCopyWith<$Res> {
-  factory _$DurationDateTimeCopyWith(
-          _DurationDateTime value, $Res Function(_DurationDateTime) then) =
-      __$DurationDateTimeCopyWithImpl<$Res>;
+  factory _$$DurationDateTimeImplCopyWith(_$DurationDateTimeImpl value,
+          $Res Function(_$DurationDateTimeImpl) then) =
+      __$$DurationDateTimeImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({Duration? duration, DateTime? dateTime});
 }
 
 /// @nodoc
-class __$DurationDateTimeCopyWithImpl<$Res>
-    extends _$DurationDateTimeCopyWithImpl<$Res>
-    implements _$DurationDateTimeCopyWith<$Res> {
-  __$DurationDateTimeCopyWithImpl(
-      _DurationDateTime _value, $Res Function(_DurationDateTime) _then)
-      : super(_value, (v) => _then(v as _DurationDateTime));
+class __$$DurationDateTimeImplCopyWithImpl<$Res>
+    extends _$DurationDateTimeCopyWithImpl<$Res, _$DurationDateTimeImpl>
+    implements _$$DurationDateTimeImplCopyWith<$Res> {
+  __$$DurationDateTimeImplCopyWithImpl(_$DurationDateTimeImpl _value,
+      $Res Function(_$DurationDateTimeImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _DurationDateTime get _value => super._value as _DurationDateTime;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? duration = freezed,
     Object? dateTime = freezed,
   }) {
-    return _then(_DurationDateTime(
-      duration: duration == freezed
+    return _then(_$DurationDateTimeImpl(
+      duration: freezed == duration
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
               as Duration?,
-      dateTime: dateTime == freezed
+      dateTime: freezed == dateTime
           ? _value.dateTime
           : dateTime // ignore: cast_nullable_to_non_nullable
               as DateTime?,
@@ -115,8 +102,9 @@ class __$DurationDateTimeCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DurationDateTime implements _DurationDateTime {
-  const _$_DurationDateTime({required this.duration, required this.dateTime});
+class _$DurationDateTimeImpl implements _DurationDateTime {
+  const _$DurationDateTimeImpl(
+      {required this.duration, required this.dateTime});
 
   @override
   final Duration? duration;
@@ -129,10 +117,10 @@ class _$_DurationDateTime implements _DurationDateTime {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DurationDateTime &&
+            other is _$DurationDateTimeImpl &&
             (identical(other.duration, duration) ||
                 other.duration == duration) &&
             (identical(other.dateTime, dateTime) ||
@@ -144,14 +132,16 @@ class _$_DurationDateTime implements _DurationDateTime {
 
   @JsonKey(ignore: true)
   @override
-  _$DurationDateTimeCopyWith<_DurationDateTime> get copyWith =>
-      __$DurationDateTimeCopyWithImpl<_DurationDateTime>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DurationDateTimeImplCopyWith<_$DurationDateTimeImpl> get copyWith =>
+      __$$DurationDateTimeImplCopyWithImpl<_$DurationDateTimeImpl>(
+          this, _$identity);
 }
 
 abstract class _DurationDateTime implements DurationDateTime {
   const factory _DurationDateTime(
-      {required Duration? duration,
-      required DateTime? dateTime}) = _$_DurationDateTime;
+      {required final Duration? duration,
+      required final DateTime? dateTime}) = _$DurationDateTimeImpl;
 
   @override
   Duration? get duration;
@@ -159,6 +149,6 @@ abstract class _DurationDateTime implements DurationDateTime {
   DateTime? get dateTime;
   @override
   @JsonKey(ignore: true)
-  _$DurationDateTimeCopyWith<_DurationDateTime> get copyWith =>
+  _$$DurationDateTimeImplCopyWith<_$DurationDateTimeImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

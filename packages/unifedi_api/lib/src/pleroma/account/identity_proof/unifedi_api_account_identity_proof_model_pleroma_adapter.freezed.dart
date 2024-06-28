@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_account_identity_proof_model_pleroma_adapter.dart';
 
@@ -11,34 +12,13 @@ part of 'unifedi_api_account_identity_proof_model_pleroma_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiAccountIdentityProofPleromaAdapter
     _$UnifediApiAccountIdentityProofPleromaAdapterFromJson(
         Map<String, dynamic> json) {
   return _UnifediApiAccountIdentityProofPleromaAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiAccountIdentityProofPleromaAdapterTearOff {
-  const _$UnifediApiAccountIdentityProofPleromaAdapterTearOff();
-
-  _UnifediApiAccountIdentityProofPleromaAdapter call(
-      @HiveField(0) PleromaApiAccountIdentityProof value) {
-    return _UnifediApiAccountIdentityProofPleromaAdapter(
-      value,
-    );
-  }
-
-  UnifediApiAccountIdentityProofPleromaAdapter fromJson(
-      Map<String, Object?> json) {
-    return UnifediApiAccountIdentityProofPleromaAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiAccountIdentityProofPleromaAdapter =
-    _$UnifediApiAccountIdentityProofPleromaAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiAccountIdentityProofPleromaAdapter {
@@ -58,50 +38,58 @@ abstract class $UnifediApiAccountIdentityProofPleromaAdapterCopyWith<$Res> {
   factory $UnifediApiAccountIdentityProofPleromaAdapterCopyWith(
           UnifediApiAccountIdentityProofPleromaAdapter value,
           $Res Function(UnifediApiAccountIdentityProofPleromaAdapter) then) =
-      _$UnifediApiAccountIdentityProofPleromaAdapterCopyWithImpl<$Res>;
+      _$UnifediApiAccountIdentityProofPleromaAdapterCopyWithImpl<$Res,
+          UnifediApiAccountIdentityProofPleromaAdapter>;
+  @useResult
   $Res call({@HiveField(0) PleromaApiAccountIdentityProof value});
 
   $PleromaApiAccountIdentityProofCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiAccountIdentityProofPleromaAdapterCopyWithImpl<$Res>
+class _$UnifediApiAccountIdentityProofPleromaAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiAccountIdentityProofPleromaAdapter>
     implements $UnifediApiAccountIdentityProofPleromaAdapterCopyWith<$Res> {
   _$UnifediApiAccountIdentityProofPleromaAdapterCopyWithImpl(
       this._value, this._then);
 
-  final UnifediApiAccountIdentityProofPleromaAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiAccountIdentityProofPleromaAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccountIdentityProof,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiAccountIdentityProofCopyWith<$Res> get value {
     return $PleromaApiAccountIdentityProofCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiAccountIdentityProofPleromaAdapterCopyWith<$Res>
+abstract class _$$UnifediApiAccountIdentityProofPleromaAdapterImplCopyWith<$Res>
     implements $UnifediApiAccountIdentityProofPleromaAdapterCopyWith<$Res> {
-  factory _$UnifediApiAccountIdentityProofPleromaAdapterCopyWith(
-          _UnifediApiAccountIdentityProofPleromaAdapter value,
-          $Res Function(_UnifediApiAccountIdentityProofPleromaAdapter) then) =
-      __$UnifediApiAccountIdentityProofPleromaAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiAccountIdentityProofPleromaAdapterImplCopyWith(
+          _$UnifediApiAccountIdentityProofPleromaAdapterImpl value,
+          $Res Function(_$UnifediApiAccountIdentityProofPleromaAdapterImpl)
+              then) =
+      __$$UnifediApiAccountIdentityProofPleromaAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) PleromaApiAccountIdentityProof value});
 
   @override
@@ -109,25 +97,23 @@ abstract class _$UnifediApiAccountIdentityProofPleromaAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiAccountIdentityProofPleromaAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiAccountIdentityProofPleromaAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiAccountIdentityProofPleromaAdapterCopyWith<$Res> {
-  __$UnifediApiAccountIdentityProofPleromaAdapterCopyWithImpl(
-      _UnifediApiAccountIdentityProofPleromaAdapter _value,
-      $Res Function(_UnifediApiAccountIdentityProofPleromaAdapter) _then)
-      : super(_value,
-            (v) => _then(v as _UnifediApiAccountIdentityProofPleromaAdapter));
+class __$$UnifediApiAccountIdentityProofPleromaAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiAccountIdentityProofPleromaAdapterCopyWithImpl<$Res,
+        _$UnifediApiAccountIdentityProofPleromaAdapterImpl>
+    implements
+        _$$UnifediApiAccountIdentityProofPleromaAdapterImplCopyWith<$Res> {
+  __$$UnifediApiAccountIdentityProofPleromaAdapterImplCopyWithImpl(
+      _$UnifediApiAccountIdentityProofPleromaAdapterImpl _value,
+      $Res Function(_$UnifediApiAccountIdentityProofPleromaAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiAccountIdentityProofPleromaAdapter get _value =>
-      super._value as _UnifediApiAccountIdentityProofPleromaAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiAccountIdentityProofPleromaAdapter(
-      value == freezed
+    return _then(_$UnifediApiAccountIdentityProofPleromaAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccountIdentityProof,
@@ -137,15 +123,15 @@ class __$UnifediApiAccountIdentityProofPleromaAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiAccountIdentityProofPleromaAdapter
+class _$UnifediApiAccountIdentityProofPleromaAdapterImpl
     extends _UnifediApiAccountIdentityProofPleromaAdapter {
-  const _$_UnifediApiAccountIdentityProofPleromaAdapter(
+  const _$UnifediApiAccountIdentityProofPleromaAdapterImpl(
       @HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiAccountIdentityProofPleromaAdapter.fromJson(
+  factory _$UnifediApiAccountIdentityProofPleromaAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiAccountIdentityProofPleromaAdapterFromJson(json);
+      _$$UnifediApiAccountIdentityProofPleromaAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -157,47 +143,52 @@ class _$_UnifediApiAccountIdentityProofPleromaAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiAccountIdentityProofPleromaAdapter &&
+            other is _$UnifediApiAccountIdentityProofPleromaAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiAccountIdentityProofPleromaAdapterCopyWith<
-          _UnifediApiAccountIdentityProofPleromaAdapter>
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiAccountIdentityProofPleromaAdapterImplCopyWith<
+          _$UnifediApiAccountIdentityProofPleromaAdapterImpl>
       get copyWith =>
-          __$UnifediApiAccountIdentityProofPleromaAdapterCopyWithImpl<
-              _UnifediApiAccountIdentityProofPleromaAdapter>(this, _$identity);
+          __$$UnifediApiAccountIdentityProofPleromaAdapterImplCopyWithImpl<
+                  _$UnifediApiAccountIdentityProofPleromaAdapterImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiAccountIdentityProofPleromaAdapterToJson(this);
+    return _$$UnifediApiAccountIdentityProofPleromaAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiAccountIdentityProofPleromaAdapter
     extends UnifediApiAccountIdentityProofPleromaAdapter {
   const factory _UnifediApiAccountIdentityProofPleromaAdapter(
-          @HiveField(0) PleromaApiAccountIdentityProof value) =
-      _$_UnifediApiAccountIdentityProofPleromaAdapter;
+          @HiveField(0) final PleromaApiAccountIdentityProof value) =
+      _$UnifediApiAccountIdentityProofPleromaAdapterImpl;
   const _UnifediApiAccountIdentityProofPleromaAdapter._() : super._();
 
   factory _UnifediApiAccountIdentityProofPleromaAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiAccountIdentityProofPleromaAdapter.fromJson;
+      _$UnifediApiAccountIdentityProofPleromaAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   PleromaApiAccountIdentityProof get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiAccountIdentityProofPleromaAdapterCopyWith<
-          _UnifediApiAccountIdentityProofPleromaAdapter>
+  _$$UnifediApiAccountIdentityProofPleromaAdapterImplCopyWith<
+          _$UnifediApiAccountIdentityProofPleromaAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

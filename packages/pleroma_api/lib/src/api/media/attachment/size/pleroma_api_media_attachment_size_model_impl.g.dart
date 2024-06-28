@@ -54,17 +54,17 @@ class PleromaApiMediaAttachmentSizeAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiMediaAttachmentSize _$$_PleromaApiMediaAttachmentSizeFromJson(
-        Map<String, dynamic> json) =>
-    _$_PleromaApiMediaAttachmentSize(
-      width: json['width'] as int,
-      height: json['height'] as int,
-      size: json['size'] as String?,
-      aspect: (json['aspect'] as num?)?.toDouble(),
-    );
+_$PleromaApiMediaAttachmentSizeImpl
+    _$$PleromaApiMediaAttachmentSizeImplFromJson(Map<String, dynamic> json) =>
+        _$PleromaApiMediaAttachmentSizeImpl(
+          width: (json['width'] as num).toInt(),
+          height: (json['height'] as num).toInt(),
+          size: json['size'] as String?,
+          aspect: (json['aspect'] as num?)?.toDouble(),
+        );
 
-Map<String, dynamic> _$$_PleromaApiMediaAttachmentSizeToJson(
-    _$_PleromaApiMediaAttachmentSize instance) {
+Map<String, dynamic> _$$PleromaApiMediaAttachmentSizeImplToJson(
+    _$PleromaApiMediaAttachmentSizeImpl instance) {
   final val = <String, dynamic>{
     'width': instance.width,
     'height': instance.height,

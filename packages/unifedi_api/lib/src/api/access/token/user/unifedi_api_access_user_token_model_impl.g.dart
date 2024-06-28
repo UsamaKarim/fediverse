@@ -54,9 +54,9 @@ class UnifediApiAccessUserTokenAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiAccessUserToken _$$_UnifediApiAccessUserTokenFromJson(
+_$UnifediApiAccessUserTokenImpl _$$UnifediApiAccessUserTokenImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiAccessUserToken(
+    _$UnifediApiAccessUserTokenImpl(
       oauthToken: UnifediApiOAuthToken.fromJson(
           json['oauth_token'] as Map<String, dynamic>),
       scopes: UnifediApiAccessScopes.fromJson(
@@ -68,8 +68,8 @@ _$_UnifediApiAccessUserToken _$$_UnifediApiAccessUserTokenFromJson(
               json['my_account'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_UnifediApiAccessUserTokenToJson(
-    _$_UnifediApiAccessUserToken instance) {
+Map<String, dynamic> _$$UnifediApiAccessUserTokenImplToJson(
+    _$UnifediApiAccessUserTokenImpl instance) {
   final val = <String, dynamic>{
     'oauth_token': instance.oauthToken.toJson(),
     'scopes': instance.scopes.toJson(),

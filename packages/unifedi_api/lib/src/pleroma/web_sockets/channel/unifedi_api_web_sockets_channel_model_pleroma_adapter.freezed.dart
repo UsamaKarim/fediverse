@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_web_sockets_channel_model_pleroma_adapter.dart';
 
@@ -11,34 +12,13 @@ part of 'unifedi_api_web_sockets_channel_model_pleroma_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiWebSocketsChannelPleromaAdapter
     _$UnifediApiWebSocketsChannelPleromaAdapterFromJson(
         Map<String, dynamic> json) {
   return _UnifediApiWebSocketsChannelPleromaAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiWebSocketsChannelPleromaAdapterTearOff {
-  const _$UnifediApiWebSocketsChannelPleromaAdapterTearOff();
-
-  _UnifediApiWebSocketsChannelPleromaAdapter call(
-      @HiveField(0) PleromaApiWebSocketsChannel value) {
-    return _UnifediApiWebSocketsChannelPleromaAdapter(
-      value,
-    );
-  }
-
-  UnifediApiWebSocketsChannelPleromaAdapter fromJson(
-      Map<String, Object?> json) {
-    return UnifediApiWebSocketsChannelPleromaAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiWebSocketsChannelPleromaAdapter =
-    _$UnifediApiWebSocketsChannelPleromaAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiWebSocketsChannelPleromaAdapter {
@@ -57,50 +37,57 @@ abstract class $UnifediApiWebSocketsChannelPleromaAdapterCopyWith<$Res> {
   factory $UnifediApiWebSocketsChannelPleromaAdapterCopyWith(
           UnifediApiWebSocketsChannelPleromaAdapter value,
           $Res Function(UnifediApiWebSocketsChannelPleromaAdapter) then) =
-      _$UnifediApiWebSocketsChannelPleromaAdapterCopyWithImpl<$Res>;
+      _$UnifediApiWebSocketsChannelPleromaAdapterCopyWithImpl<$Res,
+          UnifediApiWebSocketsChannelPleromaAdapter>;
+  @useResult
   $Res call({@HiveField(0) PleromaApiWebSocketsChannel value});
 
   $PleromaApiWebSocketsChannelCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiWebSocketsChannelPleromaAdapterCopyWithImpl<$Res>
+class _$UnifediApiWebSocketsChannelPleromaAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiWebSocketsChannelPleromaAdapter>
     implements $UnifediApiWebSocketsChannelPleromaAdapterCopyWith<$Res> {
   _$UnifediApiWebSocketsChannelPleromaAdapterCopyWithImpl(
       this._value, this._then);
 
-  final UnifediApiWebSocketsChannelPleromaAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiWebSocketsChannelPleromaAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiWebSocketsChannel,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiWebSocketsChannelCopyWith<$Res> get value {
     return $PleromaApiWebSocketsChannelCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiWebSocketsChannelPleromaAdapterCopyWith<$Res>
+abstract class _$$UnifediApiWebSocketsChannelPleromaAdapterImplCopyWith<$Res>
     implements $UnifediApiWebSocketsChannelPleromaAdapterCopyWith<$Res> {
-  factory _$UnifediApiWebSocketsChannelPleromaAdapterCopyWith(
-          _UnifediApiWebSocketsChannelPleromaAdapter value,
-          $Res Function(_UnifediApiWebSocketsChannelPleromaAdapter) then) =
-      __$UnifediApiWebSocketsChannelPleromaAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiWebSocketsChannelPleromaAdapterImplCopyWith(
+          _$UnifediApiWebSocketsChannelPleromaAdapterImpl value,
+          $Res Function(_$UnifediApiWebSocketsChannelPleromaAdapterImpl) then) =
+      __$$UnifediApiWebSocketsChannelPleromaAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) PleromaApiWebSocketsChannel value});
 
   @override
@@ -108,25 +95,22 @@ abstract class _$UnifediApiWebSocketsChannelPleromaAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiWebSocketsChannelPleromaAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiWebSocketsChannelPleromaAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiWebSocketsChannelPleromaAdapterCopyWith<$Res> {
-  __$UnifediApiWebSocketsChannelPleromaAdapterCopyWithImpl(
-      _UnifediApiWebSocketsChannelPleromaAdapter _value,
-      $Res Function(_UnifediApiWebSocketsChannelPleromaAdapter) _then)
-      : super(_value,
-            (v) => _then(v as _UnifediApiWebSocketsChannelPleromaAdapter));
+class __$$UnifediApiWebSocketsChannelPleromaAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiWebSocketsChannelPleromaAdapterCopyWithImpl<$Res,
+        _$UnifediApiWebSocketsChannelPleromaAdapterImpl>
+    implements _$$UnifediApiWebSocketsChannelPleromaAdapterImplCopyWith<$Res> {
+  __$$UnifediApiWebSocketsChannelPleromaAdapterImplCopyWithImpl(
+      _$UnifediApiWebSocketsChannelPleromaAdapterImpl _value,
+      $Res Function(_$UnifediApiWebSocketsChannelPleromaAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiWebSocketsChannelPleromaAdapter get _value =>
-      super._value as _UnifediApiWebSocketsChannelPleromaAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiWebSocketsChannelPleromaAdapter(
-      value == freezed
+    return _then(_$UnifediApiWebSocketsChannelPleromaAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiWebSocketsChannel,
@@ -136,14 +120,15 @@ class __$UnifediApiWebSocketsChannelPleromaAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiWebSocketsChannelPleromaAdapter
+class _$UnifediApiWebSocketsChannelPleromaAdapterImpl
     extends _UnifediApiWebSocketsChannelPleromaAdapter {
-  const _$_UnifediApiWebSocketsChannelPleromaAdapter(@HiveField(0) this.value)
+  const _$UnifediApiWebSocketsChannelPleromaAdapterImpl(
+      @HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiWebSocketsChannelPleromaAdapter.fromJson(
+  factory _$UnifediApiWebSocketsChannelPleromaAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiWebSocketsChannelPleromaAdapterFromJson(json);
+      _$$UnifediApiWebSocketsChannelPleromaAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -155,46 +140,52 @@ class _$_UnifediApiWebSocketsChannelPleromaAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiWebSocketsChannelPleromaAdapter &&
+            other is _$UnifediApiWebSocketsChannelPleromaAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiWebSocketsChannelPleromaAdapterCopyWith<
-          _UnifediApiWebSocketsChannelPleromaAdapter>
-      get copyWith => __$UnifediApiWebSocketsChannelPleromaAdapterCopyWithImpl<
-          _UnifediApiWebSocketsChannelPleromaAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiWebSocketsChannelPleromaAdapterImplCopyWith<
+          _$UnifediApiWebSocketsChannelPleromaAdapterImpl>
+      get copyWith =>
+          __$$UnifediApiWebSocketsChannelPleromaAdapterImplCopyWithImpl<
+                  _$UnifediApiWebSocketsChannelPleromaAdapterImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiWebSocketsChannelPleromaAdapterToJson(this);
+    return _$$UnifediApiWebSocketsChannelPleromaAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiWebSocketsChannelPleromaAdapter
     extends UnifediApiWebSocketsChannelPleromaAdapter {
   const factory _UnifediApiWebSocketsChannelPleromaAdapter(
-          @HiveField(0) PleromaApiWebSocketsChannel value) =
-      _$_UnifediApiWebSocketsChannelPleromaAdapter;
+          @HiveField(0) final PleromaApiWebSocketsChannel value) =
+      _$UnifediApiWebSocketsChannelPleromaAdapterImpl;
   const _UnifediApiWebSocketsChannelPleromaAdapter._() : super._();
 
   factory _UnifediApiWebSocketsChannelPleromaAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiWebSocketsChannelPleromaAdapter.fromJson;
+      _$UnifediApiWebSocketsChannelPleromaAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   PleromaApiWebSocketsChannel get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiWebSocketsChannelPleromaAdapterCopyWith<
-          _UnifediApiWebSocketsChannelPleromaAdapter>
+  _$$UnifediApiWebSocketsChannelPleromaAdapterImplCopyWith<
+          _$UnifediApiWebSocketsChannelPleromaAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

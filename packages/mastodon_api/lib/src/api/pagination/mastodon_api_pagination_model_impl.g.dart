@@ -53,17 +53,17 @@ class MastodonApiPaginationAdapter extends TypeAdapter<MastodonApiPagination> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiPagination _$$_MastodonApiPaginationFromJson(
+_$MastodonApiPaginationImpl _$$MastodonApiPaginationImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiPagination(
-      limit: json['limit'] as int?,
+    _$MastodonApiPaginationImpl(
+      limit: (json['limit'] as num?)?.toInt(),
       maxId: json['max_id'] as String?,
       minId: json['min_id'] as String?,
       sinceId: json['since_id'] as String?,
     );
 
-Map<String, dynamic> _$$_MastodonApiPaginationToJson(
-    _$_MastodonApiPagination instance) {
+Map<String, dynamic> _$$MastodonApiPaginationImplToJson(
+    _$MastodonApiPaginationImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

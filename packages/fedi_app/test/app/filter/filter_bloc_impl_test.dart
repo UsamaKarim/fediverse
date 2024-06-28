@@ -1,3 +1,4 @@
+import 'package:drift/native.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/filter/filter_bloc.dart';
 import 'package:fedi_app/app/filter/filter_bloc_impl.dart';
@@ -7,7 +8,6 @@ import 'package:fedi_app/app/filter/repository/filter_repository.dart';
 import 'package:fedi_app/app/filter/repository/filter_repository_impl.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
-import 'package:moor/ffi.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 
 import '../../rxdart/rxdart_test_helper.dart';
@@ -27,7 +27,7 @@ void main() {
   late IFilterRepository filterRepository;
 
   setUp(() async {
-    database = AppDatabase(VmDatabase.memory());
+    database = AppDatabase(NativeDatabase.memory());
     filterRepository = FilterRepository(
       appDatabase: database,
     );

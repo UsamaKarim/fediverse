@@ -45,15 +45,15 @@ class UnifediApiMyAccountWrapperAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiMyAccountWrapper _$$_UnifediApiMyAccountWrapperFromJson(
+_$UnifediApiMyAccountWrapperImpl _$$UnifediApiMyAccountWrapperImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiMyAccountWrapper(
+    _$UnifediApiMyAccountWrapperImpl(
       unifediApiAccount: UnifediApiMyAccount.fromJson(
           json['remote_account'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_UnifediApiMyAccountWrapperToJson(
-        _$_UnifediApiMyAccountWrapper instance) =>
+Map<String, dynamic> _$$UnifediApiMyAccountWrapperImplToJson(
+        _$UnifediApiMyAccountWrapperImpl instance) =>
     <String, dynamic>{
       'remote_account': instance.unifediApiAccount.toJson(),
     };

@@ -45,14 +45,15 @@ class UnifediApiPollOptionPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiPollOptionPleromaAdapter
-    _$$_UnifediApiPollOptionPleromaAdapterFromJson(Map<String, dynamic> json) =>
-        _$_UnifediApiPollOptionPleromaAdapter(
+_$UnifediApiPollOptionPleromaAdapterImpl
+    _$$UnifediApiPollOptionPleromaAdapterImplFromJson(
+            Map<String, dynamic> json) =>
+        _$UnifediApiPollOptionPleromaAdapterImpl(
           PleromaApiPollOption.fromJson(json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiPollOptionPleromaAdapterToJson(
-        _$_UnifediApiPollOptionPleromaAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiPollOptionPleromaAdapterImplToJson(
+        _$UnifediApiPollOptionPleromaAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

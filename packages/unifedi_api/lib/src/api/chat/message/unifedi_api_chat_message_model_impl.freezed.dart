@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_chat_message_model_impl.dart';
 
@@ -11,57 +12,12 @@ part of 'unifedi_api_chat_message_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiChatMessage _$UnifediApiChatMessageFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiChatMessage.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiChatMessageTearOff {
-  const _$UnifediApiChatMessageTearOff();
-
-  _UnifediApiChatMessage call(
-      {@HiveField(0)
-          required String id,
-      @HiveField(1)
-      @JsonKey(name: 'chat_id')
-          required String chatId,
-      @HiveField(2)
-      @JsonKey(name: 'account_id')
-          required String accountId,
-      @HiveField(3)
-          required String? content,
-      @HiveField(4)
-      @JsonKey(name: 'created_at')
-          required DateTime createdAt,
-      @HiveField(5)
-          required List<UnifediApiEmoji>? emojis,
-      @HiveField(6)
-      @JsonKey(name: 'attachment')
-          required UnifediApiMediaAttachment? mediaAttachment,
-      @HiveField(7)
-          required UnifediApiCard? card}) {
-    return _UnifediApiChatMessage(
-      id: id,
-      chatId: chatId,
-      accountId: accountId,
-      content: content,
-      createdAt: createdAt,
-      emojis: emojis,
-      mediaAttachment: mediaAttachment,
-      card: card,
-    );
-  }
-
-  UnifediApiChatMessage fromJson(Map<String, Object?> json) {
-    return UnifediApiChatMessage.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiChatMessage = _$UnifediApiChatMessageTearOff();
 
 /// @nodoc
 mixin _$UnifediApiChatMessage {
@@ -97,90 +53,85 @@ mixin _$UnifediApiChatMessage {
 abstract class $UnifediApiChatMessageCopyWith<$Res> {
   factory $UnifediApiChatMessageCopyWith(UnifediApiChatMessage value,
           $Res Function(UnifediApiChatMessage) then) =
-      _$UnifediApiChatMessageCopyWithImpl<$Res>;
+      _$UnifediApiChatMessageCopyWithImpl<$Res, UnifediApiChatMessage>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-          String id,
-      @HiveField(1)
-      @JsonKey(name: 'chat_id')
-          String chatId,
-      @HiveField(2)
-      @JsonKey(name: 'account_id')
-          String accountId,
-      @HiveField(3)
-          String? content,
-      @HiveField(4)
-      @JsonKey(name: 'created_at')
-          DateTime createdAt,
-      @HiveField(5)
-          List<UnifediApiEmoji>? emojis,
+      {@HiveField(0) String id,
+      @HiveField(1) @JsonKey(name: 'chat_id') String chatId,
+      @HiveField(2) @JsonKey(name: 'account_id') String accountId,
+      @HiveField(3) String? content,
+      @HiveField(4) @JsonKey(name: 'created_at') DateTime createdAt,
+      @HiveField(5) List<UnifediApiEmoji>? emojis,
       @HiveField(6)
       @JsonKey(name: 'attachment')
-          UnifediApiMediaAttachment? mediaAttachment,
-      @HiveField(7)
-          UnifediApiCard? card});
+      UnifediApiMediaAttachment? mediaAttachment,
+      @HiveField(7) UnifediApiCard? card});
 
   $UnifediApiMediaAttachmentCopyWith<$Res>? get mediaAttachment;
   $UnifediApiCardCopyWith<$Res>? get card;
 }
 
 /// @nodoc
-class _$UnifediApiChatMessageCopyWithImpl<$Res>
+class _$UnifediApiChatMessageCopyWithImpl<$Res,
+        $Val extends UnifediApiChatMessage>
     implements $UnifediApiChatMessageCopyWith<$Res> {
   _$UnifediApiChatMessageCopyWithImpl(this._value, this._then);
 
-  final UnifediApiChatMessage _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiChatMessage) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? chatId = freezed,
-    Object? accountId = freezed,
+    Object? id = null,
+    Object? chatId = null,
+    Object? accountId = null,
     Object? content = freezed,
-    Object? createdAt = freezed,
+    Object? createdAt = null,
     Object? emojis = freezed,
     Object? mediaAttachment = freezed,
     Object? card = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      chatId: chatId == freezed
+      chatId: null == chatId
           ? _value.chatId
           : chatId // ignore: cast_nullable_to_non_nullable
               as String,
-      accountId: accountId == freezed
+      accountId: null == accountId
           ? _value.accountId
           : accountId // ignore: cast_nullable_to_non_nullable
               as String,
-      content: content == freezed
+      content: freezed == content
           ? _value.content
           : content // ignore: cast_nullable_to_non_nullable
               as String?,
-      createdAt: createdAt == freezed
+      createdAt: null == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      emojis: emojis == freezed
+      emojis: freezed == emojis
           ? _value.emojis
           : emojis // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiEmoji>?,
-      mediaAttachment: mediaAttachment == freezed
+      mediaAttachment: freezed == mediaAttachment
           ? _value.mediaAttachment
           : mediaAttachment // ignore: cast_nullable_to_non_nullable
               as UnifediApiMediaAttachment?,
-      card: card == freezed
+      card: freezed == card
           ? _value.card
           : card // ignore: cast_nullable_to_non_nullable
               as UnifediApiCard?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiMediaAttachmentCopyWith<$Res>? get mediaAttachment {
     if (_value.mediaAttachment == null) {
       return null;
@@ -188,50 +139,43 @@ class _$UnifediApiChatMessageCopyWithImpl<$Res>
 
     return $UnifediApiMediaAttachmentCopyWith<$Res>(_value.mediaAttachment!,
         (value) {
-      return _then(_value.copyWith(mediaAttachment: value));
+      return _then(_value.copyWith(mediaAttachment: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiCardCopyWith<$Res>? get card {
     if (_value.card == null) {
       return null;
     }
 
     return $UnifediApiCardCopyWith<$Res>(_value.card!, (value) {
-      return _then(_value.copyWith(card: value));
+      return _then(_value.copyWith(card: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiChatMessageCopyWith<$Res>
+abstract class _$$UnifediApiChatMessageImplCopyWith<$Res>
     implements $UnifediApiChatMessageCopyWith<$Res> {
-  factory _$UnifediApiChatMessageCopyWith(_UnifediApiChatMessage value,
-          $Res Function(_UnifediApiChatMessage) then) =
-      __$UnifediApiChatMessageCopyWithImpl<$Res>;
+  factory _$$UnifediApiChatMessageImplCopyWith(
+          _$UnifediApiChatMessageImpl value,
+          $Res Function(_$UnifediApiChatMessageImpl) then) =
+      __$$UnifediApiChatMessageImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-          String id,
-      @HiveField(1)
-      @JsonKey(name: 'chat_id')
-          String chatId,
-      @HiveField(2)
-      @JsonKey(name: 'account_id')
-          String accountId,
-      @HiveField(3)
-          String? content,
-      @HiveField(4)
-      @JsonKey(name: 'created_at')
-          DateTime createdAt,
-      @HiveField(5)
-          List<UnifediApiEmoji>? emojis,
+      {@HiveField(0) String id,
+      @HiveField(1) @JsonKey(name: 'chat_id') String chatId,
+      @HiveField(2) @JsonKey(name: 'account_id') String accountId,
+      @HiveField(3) String? content,
+      @HiveField(4) @JsonKey(name: 'created_at') DateTime createdAt,
+      @HiveField(5) List<UnifediApiEmoji>? emojis,
       @HiveField(6)
       @JsonKey(name: 'attachment')
-          UnifediApiMediaAttachment? mediaAttachment,
-      @HiveField(7)
-          UnifediApiCard? card});
+      UnifediApiMediaAttachment? mediaAttachment,
+      @HiveField(7) UnifediApiCard? card});
 
   @override
   $UnifediApiMediaAttachmentCopyWith<$Res>? get mediaAttachment;
@@ -240,57 +184,56 @@ abstract class _$UnifediApiChatMessageCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiChatMessageCopyWithImpl<$Res>
-    extends _$UnifediApiChatMessageCopyWithImpl<$Res>
-    implements _$UnifediApiChatMessageCopyWith<$Res> {
-  __$UnifediApiChatMessageCopyWithImpl(_UnifediApiChatMessage _value,
-      $Res Function(_UnifediApiChatMessage) _then)
-      : super(_value, (v) => _then(v as _UnifediApiChatMessage));
+class __$$UnifediApiChatMessageImplCopyWithImpl<$Res>
+    extends _$UnifediApiChatMessageCopyWithImpl<$Res,
+        _$UnifediApiChatMessageImpl>
+    implements _$$UnifediApiChatMessageImplCopyWith<$Res> {
+  __$$UnifediApiChatMessageImplCopyWithImpl(_$UnifediApiChatMessageImpl _value,
+      $Res Function(_$UnifediApiChatMessageImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiChatMessage get _value => super._value as _UnifediApiChatMessage;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? chatId = freezed,
-    Object? accountId = freezed,
+    Object? id = null,
+    Object? chatId = null,
+    Object? accountId = null,
     Object? content = freezed,
-    Object? createdAt = freezed,
+    Object? createdAt = null,
     Object? emojis = freezed,
     Object? mediaAttachment = freezed,
     Object? card = freezed,
   }) {
-    return _then(_UnifediApiChatMessage(
-      id: id == freezed
+    return _then(_$UnifediApiChatMessageImpl(
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      chatId: chatId == freezed
+      chatId: null == chatId
           ? _value.chatId
           : chatId // ignore: cast_nullable_to_non_nullable
               as String,
-      accountId: accountId == freezed
+      accountId: null == accountId
           ? _value.accountId
           : accountId // ignore: cast_nullable_to_non_nullable
               as String,
-      content: content == freezed
+      content: freezed == content
           ? _value.content
           : content // ignore: cast_nullable_to_non_nullable
               as String?,
-      createdAt: createdAt == freezed
+      createdAt: null == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      emojis: emojis == freezed
-          ? _value.emojis
+      emojis: freezed == emojis
+          ? _value._emojis
           : emojis // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiEmoji>?,
-      mediaAttachment: mediaAttachment == freezed
+      mediaAttachment: freezed == mediaAttachment
           ? _value.mediaAttachment
           : mediaAttachment // ignore: cast_nullable_to_non_nullable
               as UnifediApiMediaAttachment?,
-      card: card == freezed
+      card: freezed == card
           ? _value.card
           : card // ignore: cast_nullable_to_non_nullable
               as UnifediApiCard?,
@@ -300,19 +243,20 @@ class __$UnifediApiChatMessageCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiChatMessage implements _UnifediApiChatMessage {
-  const _$_UnifediApiChatMessage(
+class _$UnifediApiChatMessageImpl implements _UnifediApiChatMessage {
+  const _$UnifediApiChatMessageImpl(
       {@HiveField(0) required this.id,
       @HiveField(1) @JsonKey(name: 'chat_id') required this.chatId,
       @HiveField(2) @JsonKey(name: 'account_id') required this.accountId,
       @HiveField(3) required this.content,
       @HiveField(4) @JsonKey(name: 'created_at') required this.createdAt,
-      @HiveField(5) required this.emojis,
+      @HiveField(5) required final List<UnifediApiEmoji>? emojis,
       @HiveField(6) @JsonKey(name: 'attachment') required this.mediaAttachment,
-      @HiveField(7) required this.card});
+      @HiveField(7) required this.card})
+      : _emojis = emojis;
 
-  factory _$_UnifediApiChatMessage.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiChatMessageFromJson(json);
+  factory _$UnifediApiChatMessageImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiChatMessageImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -332,9 +276,17 @@ class _$_UnifediApiChatMessage implements _UnifediApiChatMessage {
   @HiveField(4)
   @JsonKey(name: 'created_at')
   final DateTime createdAt;
+  final List<UnifediApiEmoji>? _emojis;
   @override
   @HiveField(5)
-  final List<UnifediApiEmoji>? emojis;
+  List<UnifediApiEmoji>? get emojis {
+    final value = _emojis;
+    if (value == null) return null;
+    if (_emojis is EqualUnmodifiableListView) return _emojis;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(6)
   @JsonKey(name: 'attachment')
@@ -349,10 +301,10 @@ class _$_UnifediApiChatMessage implements _UnifediApiChatMessage {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiChatMessage &&
+            other is _$UnifediApiChatMessageImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.chatId, chatId) || other.chatId == chatId) &&
             (identical(other.accountId, accountId) ||
@@ -360,12 +312,13 @@ class _$_UnifediApiChatMessage implements _UnifediApiChatMessage {
             (identical(other.content, content) || other.content == content) &&
             (identical(other.createdAt, createdAt) ||
                 other.createdAt == createdAt) &&
-            const DeepCollectionEquality().equals(other.emojis, emojis) &&
+            const DeepCollectionEquality().equals(other._emojis, _emojis) &&
             (identical(other.mediaAttachment, mediaAttachment) ||
                 other.mediaAttachment == mediaAttachment) &&
             (identical(other.card, card) || other.card == card));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -374,47 +327,45 @@ class _$_UnifediApiChatMessage implements _UnifediApiChatMessage {
       accountId,
       content,
       createdAt,
-      const DeepCollectionEquality().hash(emojis),
+      const DeepCollectionEquality().hash(_emojis),
       mediaAttachment,
       card);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiChatMessageCopyWith<_UnifediApiChatMessage> get copyWith =>
-      __$UnifediApiChatMessageCopyWithImpl<_UnifediApiChatMessage>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiChatMessageImplCopyWith<_$UnifediApiChatMessageImpl>
+      get copyWith => __$$UnifediApiChatMessageImplCopyWithImpl<
+          _$UnifediApiChatMessageImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiChatMessageToJson(this);
+    return _$$UnifediApiChatMessageImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiChatMessage implements UnifediApiChatMessage {
   const factory _UnifediApiChatMessage(
-      {@HiveField(0)
-          required String id,
-      @HiveField(1)
-      @JsonKey(name: 'chat_id')
-          required String chatId,
-      @HiveField(2)
-      @JsonKey(name: 'account_id')
-          required String accountId,
-      @HiveField(3)
-          required String? content,
-      @HiveField(4)
-      @JsonKey(name: 'created_at')
-          required DateTime createdAt,
-      @HiveField(5)
-          required List<UnifediApiEmoji>? emojis,
-      @HiveField(6)
-      @JsonKey(name: 'attachment')
-          required UnifediApiMediaAttachment? mediaAttachment,
-      @HiveField(7)
-          required UnifediApiCard? card}) = _$_UnifediApiChatMessage;
+          {@HiveField(0) required final String id,
+          @HiveField(1) @JsonKey(name: 'chat_id') required final String chatId,
+          @HiveField(2)
+          @JsonKey(name: 'account_id')
+          required final String accountId,
+          @HiveField(3) required final String? content,
+          @HiveField(4)
+          @JsonKey(name: 'created_at')
+          required final DateTime createdAt,
+          @HiveField(5) required final List<UnifediApiEmoji>? emojis,
+          @HiveField(6)
+          @JsonKey(name: 'attachment')
+          required final UnifediApiMediaAttachment? mediaAttachment,
+          @HiveField(7) required final UnifediApiCard? card}) =
+      _$UnifediApiChatMessageImpl;
 
   factory _UnifediApiChatMessage.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiChatMessage.fromJson;
+      _$UnifediApiChatMessageImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -446,6 +397,6 @@ abstract class _UnifediApiChatMessage implements UnifediApiChatMessage {
   UnifediApiCard? get card;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiChatMessageCopyWith<_UnifediApiChatMessage> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$UnifediApiChatMessageImplCopyWith<_$UnifediApiChatMessageImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

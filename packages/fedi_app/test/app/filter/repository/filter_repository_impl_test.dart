@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:drift/native.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/filter/filter_model.dart';
 import 'package:fedi_app/app/filter/filter_model_adapter.dart';
@@ -7,7 +8,6 @@ import 'package:fedi_app/app/filter/repository/filter_repository_impl.dart';
 import 'package:fedi_app/app/filter/repository/filter_repository_model.dart';
 import 'package:fedi_app/repository/repository_model.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:moor/ffi.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 
 import '../database/filter_database_test_helper.dart';
@@ -28,7 +28,7 @@ void main() {
 
   setUp(() async {
     database = AppDatabase(
-      VmDatabase.memory(
+      NativeDatabase.memory(
         logStatements: false,
       ),
     );

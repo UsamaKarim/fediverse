@@ -45,16 +45,16 @@ class UnifediApiWebSocketsEventPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiWebSocketsEventPleromaAdapter
-    _$$_UnifediApiWebSocketsEventPleromaAdapterFromJson(
+_$UnifediApiWebSocketsEventPleromaAdapterImpl
+    _$$UnifediApiWebSocketsEventPleromaAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiWebSocketsEventPleromaAdapter(
+        _$UnifediApiWebSocketsEventPleromaAdapterImpl(
           PleromaApiWebSocketsEvent.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiWebSocketsEventPleromaAdapterToJson(
-        _$_UnifediApiWebSocketsEventPleromaAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiWebSocketsEventPleromaAdapterImplToJson(
+        _$UnifediApiWebSocketsEventPleromaAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

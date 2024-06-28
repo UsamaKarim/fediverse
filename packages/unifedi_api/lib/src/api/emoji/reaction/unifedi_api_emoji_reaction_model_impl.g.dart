@@ -60,11 +60,11 @@ class UnifediApiEmojiReactionAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiEmojiReaction _$$_UnifediApiEmojiReactionFromJson(
+_$UnifediApiEmojiReactionImpl _$$UnifediApiEmojiReactionImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiEmojiReaction(
+    _$UnifediApiEmojiReactionImpl(
       name: json['name'] as String,
-      count: json['count'] as int,
+      count: (json['count'] as num).toInt(),
       me: json['me'] as bool,
       accounts: (json['accounts'] as List<dynamic>?)
           ?.map((e) => UnifediApiAccount.fromJson(e as Map<String, dynamic>))
@@ -73,8 +73,8 @@ _$_UnifediApiEmojiReaction _$$_UnifediApiEmojiReactionFromJson(
       staticUrl: json['static_url'] as String?,
     );
 
-Map<String, dynamic> _$$_UnifediApiEmojiReactionToJson(
-    _$_UnifediApiEmojiReaction instance) {
+Map<String, dynamic> _$$UnifediApiEmojiReactionImplToJson(
+    _$UnifediApiEmojiReactionImpl instance) {
   final val = <String, dynamic>{
     'name': instance.name,
     'count': instance.count,

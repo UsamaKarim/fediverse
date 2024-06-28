@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_notification_model_mastodon_adapter.dart';
 
@@ -11,32 +12,12 @@ part of 'unifedi_api_notification_model_mastodon_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiNotificationMastodonAdapter
     _$UnifediApiNotificationMastodonAdapterFromJson(Map<String, dynamic> json) {
   return _UnifediApiNotificationMastodonAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiNotificationMastodonAdapterTearOff {
-  const _$UnifediApiNotificationMastodonAdapterTearOff();
-
-  _UnifediApiNotificationMastodonAdapter call(
-      @HiveField(0) MastodonApiNotification value) {
-    return _UnifediApiNotificationMastodonAdapter(
-      value,
-    );
-  }
-
-  UnifediApiNotificationMastodonAdapter fromJson(Map<String, Object?> json) {
-    return UnifediApiNotificationMastodonAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiNotificationMastodonAdapter =
-    _$UnifediApiNotificationMastodonAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiNotificationMastodonAdapter {
@@ -55,49 +36,56 @@ abstract class $UnifediApiNotificationMastodonAdapterCopyWith<$Res> {
   factory $UnifediApiNotificationMastodonAdapterCopyWith(
           UnifediApiNotificationMastodonAdapter value,
           $Res Function(UnifediApiNotificationMastodonAdapter) then) =
-      _$UnifediApiNotificationMastodonAdapterCopyWithImpl<$Res>;
+      _$UnifediApiNotificationMastodonAdapterCopyWithImpl<$Res,
+          UnifediApiNotificationMastodonAdapter>;
+  @useResult
   $Res call({@HiveField(0) MastodonApiNotification value});
 
   $MastodonApiNotificationCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiNotificationMastodonAdapterCopyWithImpl<$Res>
+class _$UnifediApiNotificationMastodonAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiNotificationMastodonAdapter>
     implements $UnifediApiNotificationMastodonAdapterCopyWith<$Res> {
   _$UnifediApiNotificationMastodonAdapterCopyWithImpl(this._value, this._then);
 
-  final UnifediApiNotificationMastodonAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiNotificationMastodonAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiNotification,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiNotificationCopyWith<$Res> get value {
     return $MastodonApiNotificationCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiNotificationMastodonAdapterCopyWith<$Res>
+abstract class _$$UnifediApiNotificationMastodonAdapterImplCopyWith<$Res>
     implements $UnifediApiNotificationMastodonAdapterCopyWith<$Res> {
-  factory _$UnifediApiNotificationMastodonAdapterCopyWith(
-          _UnifediApiNotificationMastodonAdapter value,
-          $Res Function(_UnifediApiNotificationMastodonAdapter) then) =
-      __$UnifediApiNotificationMastodonAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiNotificationMastodonAdapterImplCopyWith(
+          _$UnifediApiNotificationMastodonAdapterImpl value,
+          $Res Function(_$UnifediApiNotificationMastodonAdapterImpl) then) =
+      __$$UnifediApiNotificationMastodonAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) MastodonApiNotification value});
 
   @override
@@ -105,25 +93,22 @@ abstract class _$UnifediApiNotificationMastodonAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiNotificationMastodonAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiNotificationMastodonAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiNotificationMastodonAdapterCopyWith<$Res> {
-  __$UnifediApiNotificationMastodonAdapterCopyWithImpl(
-      _UnifediApiNotificationMastodonAdapter _value,
-      $Res Function(_UnifediApiNotificationMastodonAdapter) _then)
-      : super(
-            _value, (v) => _then(v as _UnifediApiNotificationMastodonAdapter));
+class __$$UnifediApiNotificationMastodonAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiNotificationMastodonAdapterCopyWithImpl<$Res,
+        _$UnifediApiNotificationMastodonAdapterImpl>
+    implements _$$UnifediApiNotificationMastodonAdapterImplCopyWith<$Res> {
+  __$$UnifediApiNotificationMastodonAdapterImplCopyWithImpl(
+      _$UnifediApiNotificationMastodonAdapterImpl _value,
+      $Res Function(_$UnifediApiNotificationMastodonAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiNotificationMastodonAdapter get _value =>
-      super._value as _UnifediApiNotificationMastodonAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiNotificationMastodonAdapter(
-      value == freezed
+    return _then(_$UnifediApiNotificationMastodonAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiNotification,
@@ -133,14 +118,14 @@ class __$UnifediApiNotificationMastodonAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiNotificationMastodonAdapter
+class _$UnifediApiNotificationMastodonAdapterImpl
     extends _UnifediApiNotificationMastodonAdapter {
-  const _$_UnifediApiNotificationMastodonAdapter(@HiveField(0) this.value)
+  const _$UnifediApiNotificationMastodonAdapterImpl(@HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiNotificationMastodonAdapter.fromJson(
+  factory _$UnifediApiNotificationMastodonAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiNotificationMastodonAdapterFromJson(json);
+      _$$UnifediApiNotificationMastodonAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -152,46 +137,50 @@ class _$_UnifediApiNotificationMastodonAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiNotificationMastodonAdapter &&
+            other is _$UnifediApiNotificationMastodonAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiNotificationMastodonAdapterCopyWith<
-          _UnifediApiNotificationMastodonAdapter>
-      get copyWith => __$UnifediApiNotificationMastodonAdapterCopyWithImpl<
-          _UnifediApiNotificationMastodonAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiNotificationMastodonAdapterImplCopyWith<
+          _$UnifediApiNotificationMastodonAdapterImpl>
+      get copyWith => __$$UnifediApiNotificationMastodonAdapterImplCopyWithImpl<
+          _$UnifediApiNotificationMastodonAdapterImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiNotificationMastodonAdapterToJson(this);
+    return _$$UnifediApiNotificationMastodonAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiNotificationMastodonAdapter
     extends UnifediApiNotificationMastodonAdapter {
   const factory _UnifediApiNotificationMastodonAdapter(
-          @HiveField(0) MastodonApiNotification value) =
-      _$_UnifediApiNotificationMastodonAdapter;
+          @HiveField(0) final MastodonApiNotification value) =
+      _$UnifediApiNotificationMastodonAdapterImpl;
   const _UnifediApiNotificationMastodonAdapter._() : super._();
 
   factory _UnifediApiNotificationMastodonAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiNotificationMastodonAdapter.fromJson;
+      _$UnifediApiNotificationMastodonAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   MastodonApiNotification get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiNotificationMastodonAdapterCopyWith<
-          _UnifediApiNotificationMastodonAdapter>
+  _$$UnifediApiNotificationMastodonAdapterImplCopyWith<
+          _$UnifediApiNotificationMastodonAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

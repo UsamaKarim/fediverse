@@ -6,8 +6,8 @@ part of 'post_status_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PostStatusData _$$_PostStatusDataFromJson(Map<String, dynamic> json) =>
-    _$_PostStatusData(
+_$PostStatusDataImpl _$$PostStatusDataImplFromJson(Map<String, dynamic> json) =>
+    _$PostStatusDataImpl(
       subject: json['subject'] as String?,
       text: json['text'] as String?,
       scheduledAt: json['scheduled_at'] == null
@@ -29,10 +29,11 @@ _$_PostStatusData _$$_PostStatusDataFromJson(Map<String, dynamic> json) =>
       inReplyToConversationId: json['in_reply_to_conversation_id'] as String?,
       isNsfwSensitiveEnabled: json['is_nsfw_sensitive_enabled'] as bool,
       language: json['language'] as String?,
-      expiresInSeconds: json['expires_in_seconds'] as int?,
+      expiresInSeconds: (json['expires_in_seconds'] as num?)?.toInt(),
     );
 
-Map<String, dynamic> _$$_PostStatusDataToJson(_$_PostStatusData instance) {
+Map<String, dynamic> _$$PostStatusDataImplToJson(
+    _$PostStatusDataImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

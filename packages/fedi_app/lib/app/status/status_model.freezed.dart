@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'status_model.dart';
 
@@ -11,22 +12,7 @@ part of 'status_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$DbStatusPopulatedWrapperTearOff {
-  const _$DbStatusPopulatedWrapperTearOff();
-
-  _DbStatusPopulatedWrapper call(
-      {required DbStatusPopulated dbStatusPopulated}) {
-    return _DbStatusPopulatedWrapper(
-      dbStatusPopulated: dbStatusPopulated,
-    );
-  }
-}
-
-/// @nodoc
-const $DbStatusPopulatedWrapper = _$DbStatusPopulatedWrapperTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$DbStatusPopulatedWrapper {
@@ -41,48 +27,55 @@ mixin _$DbStatusPopulatedWrapper {
 abstract class $DbStatusPopulatedWrapperCopyWith<$Res> {
   factory $DbStatusPopulatedWrapperCopyWith(DbStatusPopulatedWrapper value,
           $Res Function(DbStatusPopulatedWrapper) then) =
-      _$DbStatusPopulatedWrapperCopyWithImpl<$Res>;
+      _$DbStatusPopulatedWrapperCopyWithImpl<$Res, DbStatusPopulatedWrapper>;
+  @useResult
   $Res call({DbStatusPopulated dbStatusPopulated});
 
   $DbStatusPopulatedCopyWith<$Res> get dbStatusPopulated;
 }
 
 /// @nodoc
-class _$DbStatusPopulatedWrapperCopyWithImpl<$Res>
+class _$DbStatusPopulatedWrapperCopyWithImpl<$Res,
+        $Val extends DbStatusPopulatedWrapper>
     implements $DbStatusPopulatedWrapperCopyWith<$Res> {
   _$DbStatusPopulatedWrapperCopyWithImpl(this._value, this._then);
 
-  final DbStatusPopulatedWrapper _value;
   // ignore: unused_field
-  final $Res Function(DbStatusPopulatedWrapper) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dbStatusPopulated = freezed,
+    Object? dbStatusPopulated = null,
   }) {
     return _then(_value.copyWith(
-      dbStatusPopulated: dbStatusPopulated == freezed
+      dbStatusPopulated: null == dbStatusPopulated
           ? _value.dbStatusPopulated
           : dbStatusPopulated // ignore: cast_nullable_to_non_nullable
               as DbStatusPopulated,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $DbStatusPopulatedCopyWith<$Res> get dbStatusPopulated {
     return $DbStatusPopulatedCopyWith<$Res>(_value.dbStatusPopulated, (value) {
-      return _then(_value.copyWith(dbStatusPopulated: value));
+      return _then(_value.copyWith(dbStatusPopulated: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$DbStatusPopulatedWrapperCopyWith<$Res>
+abstract class _$$DbStatusPopulatedWrapperImplCopyWith<$Res>
     implements $DbStatusPopulatedWrapperCopyWith<$Res> {
-  factory _$DbStatusPopulatedWrapperCopyWith(_DbStatusPopulatedWrapper value,
-          $Res Function(_DbStatusPopulatedWrapper) then) =
-      __$DbStatusPopulatedWrapperCopyWithImpl<$Res>;
+  factory _$$DbStatusPopulatedWrapperImplCopyWith(
+          _$DbStatusPopulatedWrapperImpl value,
+          $Res Function(_$DbStatusPopulatedWrapperImpl) then) =
+      __$$DbStatusPopulatedWrapperImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({DbStatusPopulated dbStatusPopulated});
 
   @override
@@ -90,23 +83,22 @@ abstract class _$DbStatusPopulatedWrapperCopyWith<$Res>
 }
 
 /// @nodoc
-class __$DbStatusPopulatedWrapperCopyWithImpl<$Res>
-    extends _$DbStatusPopulatedWrapperCopyWithImpl<$Res>
-    implements _$DbStatusPopulatedWrapperCopyWith<$Res> {
-  __$DbStatusPopulatedWrapperCopyWithImpl(_DbStatusPopulatedWrapper _value,
-      $Res Function(_DbStatusPopulatedWrapper) _then)
-      : super(_value, (v) => _then(v as _DbStatusPopulatedWrapper));
+class __$$DbStatusPopulatedWrapperImplCopyWithImpl<$Res>
+    extends _$DbStatusPopulatedWrapperCopyWithImpl<$Res,
+        _$DbStatusPopulatedWrapperImpl>
+    implements _$$DbStatusPopulatedWrapperImplCopyWith<$Res> {
+  __$$DbStatusPopulatedWrapperImplCopyWithImpl(
+      _$DbStatusPopulatedWrapperImpl _value,
+      $Res Function(_$DbStatusPopulatedWrapperImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _DbStatusPopulatedWrapper get _value =>
-      super._value as _DbStatusPopulatedWrapper;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dbStatusPopulated = freezed,
+    Object? dbStatusPopulated = null,
   }) {
-    return _then(_DbStatusPopulatedWrapper(
-      dbStatusPopulated: dbStatusPopulated == freezed
+    return _then(_$DbStatusPopulatedWrapperImpl(
+      dbStatusPopulated: null == dbStatusPopulated
           ? _value.dbStatusPopulated
           : dbStatusPopulated // ignore: cast_nullable_to_non_nullable
               as DbStatusPopulated,
@@ -116,8 +108,8 @@ class __$DbStatusPopulatedWrapperCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DbStatusPopulatedWrapper extends _DbStatusPopulatedWrapper {
-  const _$_DbStatusPopulatedWrapper({required this.dbStatusPopulated})
+class _$DbStatusPopulatedWrapperImpl extends _DbStatusPopulatedWrapper {
+  const _$DbStatusPopulatedWrapperImpl({required this.dbStatusPopulated})
       : super._();
 
   @override
@@ -129,10 +121,10 @@ class _$_DbStatusPopulatedWrapper extends _DbStatusPopulatedWrapper {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DbStatusPopulatedWrapper &&
+            other is _$DbStatusPopulatedWrapperImpl &&
             (identical(other.dbStatusPopulated, dbStatusPopulated) ||
                 other.dbStatusPopulated == dbStatusPopulated));
   }
@@ -142,53 +134,25 @@ class _$_DbStatusPopulatedWrapper extends _DbStatusPopulatedWrapper {
 
   @JsonKey(ignore: true)
   @override
-  _$DbStatusPopulatedWrapperCopyWith<_DbStatusPopulatedWrapper> get copyWith =>
-      __$DbStatusPopulatedWrapperCopyWithImpl<_DbStatusPopulatedWrapper>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DbStatusPopulatedWrapperImplCopyWith<_$DbStatusPopulatedWrapperImpl>
+      get copyWith => __$$DbStatusPopulatedWrapperImplCopyWithImpl<
+          _$DbStatusPopulatedWrapperImpl>(this, _$identity);
 }
 
 abstract class _DbStatusPopulatedWrapper extends DbStatusPopulatedWrapper {
   const factory _DbStatusPopulatedWrapper(
-          {required DbStatusPopulated dbStatusPopulated}) =
-      _$_DbStatusPopulatedWrapper;
+          {required final DbStatusPopulated dbStatusPopulated}) =
+      _$DbStatusPopulatedWrapperImpl;
   const _DbStatusPopulatedWrapper._() : super._();
 
   @override
   DbStatusPopulated get dbStatusPopulated;
   @override
   @JsonKey(ignore: true)
-  _$DbStatusPopulatedWrapperCopyWith<_DbStatusPopulatedWrapper> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$DbStatusPopulatedWrapperImplCopyWith<_$DbStatusPopulatedWrapperImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$DbStatusPopulatedTearOff {
-  const _$DbStatusPopulatedTearOff();
-
-  _DbStatusPopulated call(
-      {required DbStatus dbStatus,
-      required DbAccount dbAccount,
-      required DbStatus? reblogDbStatus,
-      required DbAccount? reblogDbStatusAccount,
-      required DbStatus? replyDbStatus,
-      required DbAccount? replyDbStatusAccount,
-      required DbStatus? replyReblogDbStatus,
-      required DbAccount? replyReblogDbStatusAccount}) {
-    return _DbStatusPopulated(
-      dbStatus: dbStatus,
-      dbAccount: dbAccount,
-      reblogDbStatus: reblogDbStatus,
-      reblogDbStatusAccount: reblogDbStatusAccount,
-      replyDbStatus: replyDbStatus,
-      replyDbStatusAccount: replyDbStatusAccount,
-      replyReblogDbStatus: replyReblogDbStatus,
-      replyReblogDbStatusAccount: replyReblogDbStatusAccount,
-    );
-  }
-}
-
-/// @nodoc
-const $DbStatusPopulated = _$DbStatusPopulatedTearOff();
 
 /// @nodoc
 mixin _$DbStatusPopulated {
@@ -211,7 +175,8 @@ mixin _$DbStatusPopulated {
 abstract class $DbStatusPopulatedCopyWith<$Res> {
   factory $DbStatusPopulatedCopyWith(
           DbStatusPopulated value, $Res Function(DbStatusPopulated) then) =
-      _$DbStatusPopulatedCopyWithImpl<$Res>;
+      _$DbStatusPopulatedCopyWithImpl<$Res, DbStatusPopulated>;
+  @useResult
   $Res call(
       {DbStatus dbStatus,
       DbAccount dbAccount,
@@ -224,14 +189,16 @@ abstract class $DbStatusPopulatedCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$DbStatusPopulatedCopyWithImpl<$Res>
+class _$DbStatusPopulatedCopyWithImpl<$Res, $Val extends DbStatusPopulated>
     implements $DbStatusPopulatedCopyWith<$Res> {
   _$DbStatusPopulatedCopyWithImpl(this._value, this._then);
 
-  final DbStatusPopulated _value;
   // ignore: unused_field
-  final $Res Function(DbStatusPopulated) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? dbStatus = freezed,
@@ -244,49 +211,50 @@ class _$DbStatusPopulatedCopyWithImpl<$Res>
     Object? replyReblogDbStatusAccount = freezed,
   }) {
     return _then(_value.copyWith(
-      dbStatus: dbStatus == freezed
+      dbStatus: freezed == dbStatus
           ? _value.dbStatus
           : dbStatus // ignore: cast_nullable_to_non_nullable
               as DbStatus,
-      dbAccount: dbAccount == freezed
+      dbAccount: freezed == dbAccount
           ? _value.dbAccount
           : dbAccount // ignore: cast_nullable_to_non_nullable
               as DbAccount,
-      reblogDbStatus: reblogDbStatus == freezed
+      reblogDbStatus: freezed == reblogDbStatus
           ? _value.reblogDbStatus
           : reblogDbStatus // ignore: cast_nullable_to_non_nullable
               as DbStatus?,
-      reblogDbStatusAccount: reblogDbStatusAccount == freezed
+      reblogDbStatusAccount: freezed == reblogDbStatusAccount
           ? _value.reblogDbStatusAccount
           : reblogDbStatusAccount // ignore: cast_nullable_to_non_nullable
               as DbAccount?,
-      replyDbStatus: replyDbStatus == freezed
+      replyDbStatus: freezed == replyDbStatus
           ? _value.replyDbStatus
           : replyDbStatus // ignore: cast_nullable_to_non_nullable
               as DbStatus?,
-      replyDbStatusAccount: replyDbStatusAccount == freezed
+      replyDbStatusAccount: freezed == replyDbStatusAccount
           ? _value.replyDbStatusAccount
           : replyDbStatusAccount // ignore: cast_nullable_to_non_nullable
               as DbAccount?,
-      replyReblogDbStatus: replyReblogDbStatus == freezed
+      replyReblogDbStatus: freezed == replyReblogDbStatus
           ? _value.replyReblogDbStatus
           : replyReblogDbStatus // ignore: cast_nullable_to_non_nullable
               as DbStatus?,
-      replyReblogDbStatusAccount: replyReblogDbStatusAccount == freezed
+      replyReblogDbStatusAccount: freezed == replyReblogDbStatusAccount
           ? _value.replyReblogDbStatusAccount
           : replyReblogDbStatusAccount // ignore: cast_nullable_to_non_nullable
               as DbAccount?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$DbStatusPopulatedCopyWith<$Res>
+abstract class _$$DbStatusPopulatedImplCopyWith<$Res>
     implements $DbStatusPopulatedCopyWith<$Res> {
-  factory _$DbStatusPopulatedCopyWith(
-          _DbStatusPopulated value, $Res Function(_DbStatusPopulated) then) =
-      __$DbStatusPopulatedCopyWithImpl<$Res>;
+  factory _$$DbStatusPopulatedImplCopyWith(_$DbStatusPopulatedImpl value,
+          $Res Function(_$DbStatusPopulatedImpl) then) =
+      __$$DbStatusPopulatedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {DbStatus dbStatus,
       DbAccount dbAccount,
@@ -299,16 +267,14 @@ abstract class _$DbStatusPopulatedCopyWith<$Res>
 }
 
 /// @nodoc
-class __$DbStatusPopulatedCopyWithImpl<$Res>
-    extends _$DbStatusPopulatedCopyWithImpl<$Res>
-    implements _$DbStatusPopulatedCopyWith<$Res> {
-  __$DbStatusPopulatedCopyWithImpl(
-      _DbStatusPopulated _value, $Res Function(_DbStatusPopulated) _then)
-      : super(_value, (v) => _then(v as _DbStatusPopulated));
+class __$$DbStatusPopulatedImplCopyWithImpl<$Res>
+    extends _$DbStatusPopulatedCopyWithImpl<$Res, _$DbStatusPopulatedImpl>
+    implements _$$DbStatusPopulatedImplCopyWith<$Res> {
+  __$$DbStatusPopulatedImplCopyWithImpl(_$DbStatusPopulatedImpl _value,
+      $Res Function(_$DbStatusPopulatedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _DbStatusPopulated get _value => super._value as _DbStatusPopulated;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? dbStatus = freezed,
@@ -320,36 +286,36 @@ class __$DbStatusPopulatedCopyWithImpl<$Res>
     Object? replyReblogDbStatus = freezed,
     Object? replyReblogDbStatusAccount = freezed,
   }) {
-    return _then(_DbStatusPopulated(
-      dbStatus: dbStatus == freezed
+    return _then(_$DbStatusPopulatedImpl(
+      dbStatus: freezed == dbStatus
           ? _value.dbStatus
           : dbStatus // ignore: cast_nullable_to_non_nullable
               as DbStatus,
-      dbAccount: dbAccount == freezed
+      dbAccount: freezed == dbAccount
           ? _value.dbAccount
           : dbAccount // ignore: cast_nullable_to_non_nullable
               as DbAccount,
-      reblogDbStatus: reblogDbStatus == freezed
+      reblogDbStatus: freezed == reblogDbStatus
           ? _value.reblogDbStatus
           : reblogDbStatus // ignore: cast_nullable_to_non_nullable
               as DbStatus?,
-      reblogDbStatusAccount: reblogDbStatusAccount == freezed
+      reblogDbStatusAccount: freezed == reblogDbStatusAccount
           ? _value.reblogDbStatusAccount
           : reblogDbStatusAccount // ignore: cast_nullable_to_non_nullable
               as DbAccount?,
-      replyDbStatus: replyDbStatus == freezed
+      replyDbStatus: freezed == replyDbStatus
           ? _value.replyDbStatus
           : replyDbStatus // ignore: cast_nullable_to_non_nullable
               as DbStatus?,
-      replyDbStatusAccount: replyDbStatusAccount == freezed
+      replyDbStatusAccount: freezed == replyDbStatusAccount
           ? _value.replyDbStatusAccount
           : replyDbStatusAccount // ignore: cast_nullable_to_non_nullable
               as DbAccount?,
-      replyReblogDbStatus: replyReblogDbStatus == freezed
+      replyReblogDbStatus: freezed == replyReblogDbStatus
           ? _value.replyReblogDbStatus
           : replyReblogDbStatus // ignore: cast_nullable_to_non_nullable
               as DbStatus?,
-      replyReblogDbStatusAccount: replyReblogDbStatusAccount == freezed
+      replyReblogDbStatusAccount: freezed == replyReblogDbStatusAccount
           ? _value.replyReblogDbStatusAccount
           : replyReblogDbStatusAccount // ignore: cast_nullable_to_non_nullable
               as DbAccount?,
@@ -359,8 +325,8 @@ class __$DbStatusPopulatedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DbStatusPopulated extends _DbStatusPopulated {
-  const _$_DbStatusPopulated(
+class _$DbStatusPopulatedImpl extends _DbStatusPopulated {
+  const _$DbStatusPopulatedImpl(
       {required this.dbStatus,
       required this.dbAccount,
       required this.reblogDbStatus,
@@ -394,10 +360,10 @@ class _$_DbStatusPopulated extends _DbStatusPopulated {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DbStatusPopulated &&
+            other is _$DbStatusPopulatedImpl &&
             const DeepCollectionEquality().equals(other.dbStatus, dbStatus) &&
             const DeepCollectionEquality().equals(other.dbAccount, dbAccount) &&
             const DeepCollectionEquality()
@@ -428,20 +394,23 @@ class _$_DbStatusPopulated extends _DbStatusPopulated {
 
   @JsonKey(ignore: true)
   @override
-  _$DbStatusPopulatedCopyWith<_DbStatusPopulated> get copyWith =>
-      __$DbStatusPopulatedCopyWithImpl<_DbStatusPopulated>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DbStatusPopulatedImplCopyWith<_$DbStatusPopulatedImpl> get copyWith =>
+      __$$DbStatusPopulatedImplCopyWithImpl<_$DbStatusPopulatedImpl>(
+          this, _$identity);
 }
 
 abstract class _DbStatusPopulated extends DbStatusPopulated {
   const factory _DbStatusPopulated(
-      {required DbStatus dbStatus,
-      required DbAccount dbAccount,
-      required DbStatus? reblogDbStatus,
-      required DbAccount? reblogDbStatusAccount,
-      required DbStatus? replyDbStatus,
-      required DbAccount? replyDbStatusAccount,
-      required DbStatus? replyReblogDbStatus,
-      required DbAccount? replyReblogDbStatusAccount}) = _$_DbStatusPopulated;
+          {required final DbStatus dbStatus,
+          required final DbAccount dbAccount,
+          required final DbStatus? reblogDbStatus,
+          required final DbAccount? reblogDbStatusAccount,
+          required final DbStatus? replyDbStatus,
+          required final DbAccount? replyDbStatusAccount,
+          required final DbStatus? replyReblogDbStatus,
+          required final DbAccount? replyReblogDbStatusAccount}) =
+      _$DbStatusPopulatedImpl;
   const _DbStatusPopulated._() : super._();
 
   @override
@@ -462,6 +431,6 @@ abstract class _DbStatusPopulated extends DbStatusPopulated {
   DbAccount? get replyReblogDbStatusAccount;
   @override
   @JsonKey(ignore: true)
-  _$DbStatusPopulatedCopyWith<_DbStatusPopulated> get copyWith =>
+  _$$DbStatusPopulatedImplCopyWith<_$DbStatusPopulatedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

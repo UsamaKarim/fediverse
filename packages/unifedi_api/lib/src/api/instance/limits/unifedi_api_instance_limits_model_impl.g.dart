@@ -57,9 +57,9 @@ class UnifediApiInstanceLimitsAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiInstanceLimits _$$_UnifediApiInstanceLimitsFromJson(
+_$UnifediApiInstanceLimitsImpl _$$UnifediApiInstanceLimitsImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiInstanceLimits(
+    _$UnifediApiInstanceLimitsImpl(
       poll: json['poll'] == null
           ? null
           : UnifediApiInstancePollLimits.fromJson(
@@ -82,8 +82,8 @@ _$_UnifediApiInstanceLimits _$$_UnifediApiInstanceLimitsFromJson(
               json['status'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_UnifediApiInstanceLimitsToJson(
-    _$_UnifediApiInstanceLimits instance) {
+Map<String, dynamic> _$$UnifediApiInstanceLimitsImplToJson(
+    _$UnifediApiInstanceLimitsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

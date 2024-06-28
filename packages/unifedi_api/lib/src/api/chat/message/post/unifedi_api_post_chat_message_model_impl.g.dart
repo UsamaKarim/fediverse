@@ -48,15 +48,15 @@ class UnifediApiPostChatMessageAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiPostChatMessage _$$_UnifediApiPostChatMessageFromJson(
+_$UnifediApiPostChatMessageImpl _$$UnifediApiPostChatMessageImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiPostChatMessage(
+    _$UnifediApiPostChatMessageImpl(
       content: json['content'] as String?,
       mediaId: json['media_id'] as String?,
     );
 
-Map<String, dynamic> _$$_UnifediApiPostChatMessageToJson(
-    _$_UnifediApiPostChatMessage instance) {
+Map<String, dynamic> _$$UnifediApiPostChatMessageImplToJson(
+    _$UnifediApiPostChatMessageImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

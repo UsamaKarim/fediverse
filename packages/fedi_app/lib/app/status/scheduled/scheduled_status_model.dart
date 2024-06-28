@@ -1,3 +1,4 @@
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/account/account_model.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/pending/pending_model.dart';
@@ -6,7 +7,7 @@ import 'package:fedi_app/app/status/post/post_status_data_status_status_adapter.
 import 'package:fedi_app/app/status/post/post_status_model.dart';
 import 'package:fedi_app/obj/equal_comparable_obj.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:json_annotation/json_annotation.dart';
+// import 'package:json_annotation/json_annotation.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 
 part 'scheduled_status_model.freezed.dart';
@@ -181,12 +182,12 @@ class DbScheduledStatusPopulatedWrapper
         dbScheduledStatusPopulated: DbScheduledStatusPopulated(
           dbScheduledStatus:
               dbScheduledStatusPopulated.dbScheduledStatus.copyWith(
-            id: localId,
+            id: Value(localId),
             remoteId: remoteId,
             scheduledAt: scheduledAt,
             params: params?.toUnifediScheduledStatusParams(),
             canceled: canceled,
-            mediaAttachments: mediaAttachments,
+            mediaAttachments: Value(mediaAttachments),
           ),
         ),
       );

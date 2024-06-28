@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_announcement_model_impl.dart';
 
@@ -11,74 +12,12 @@ part of 'pleroma_api_announcement_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiAnnouncement _$PleromaApiAnnouncementFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiAnnouncement.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiAnnouncementTearOff {
-  const _$PleromaApiAnnouncementTearOff();
-
-  _PleromaApiAnnouncement call(
-      {@HiveField(0)
-          required String id,
-      @HiveField(1)
-          required String content,
-      @HiveField(2)
-      @JsonKey(name: 'all_day')
-          required bool allDay,
-      @HiveField(3)
-      @JsonKey(name: 'published_at')
-          required DateTime publishedAt,
-      @HiveField(4)
-      @JsonKey(name: 'updated_at')
-          required DateTime updatedAt,
-      @HiveField(5)
-          required bool? read,
-      @HiveField(6)
-          required List<PleromaApiAnnouncementEmojiReaction>? reactions,
-      @HiveField(7)
-          required List<PleromaApiMention>? mentions,
-      @HiveField(8)
-          required List<PleromaApiStatus>? statuses,
-      @HiveField(9)
-          required List<PleromaApiTag>? tags,
-      @HiveField(10)
-      @JsonKey(name: 'scheduled_at')
-          required DateTime? scheduledAt,
-      @HiveField(11)
-      @JsonKey(name: 'starts_at')
-          required DateTime? startsAt,
-      @HiveField(12)
-      @JsonKey(name: 'ends_at')
-          required DateTime? endsAt}) {
-    return _PleromaApiAnnouncement(
-      id: id,
-      content: content,
-      allDay: allDay,
-      publishedAt: publishedAt,
-      updatedAt: updatedAt,
-      read: read,
-      reactions: reactions,
-      mentions: mentions,
-      statuses: statuses,
-      tags: tags,
-      scheduledAt: scheduledAt,
-      startsAt: startsAt,
-      endsAt: endsAt,
-    );
-  }
-
-  PleromaApiAnnouncement fromJson(Map<String, Object?> json) {
-    return PleromaApiAnnouncement.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiAnnouncement = _$PleromaApiAnnouncementTearOff();
 
 /// @nodoc
 mixin _$PleromaApiAnnouncement {
@@ -126,7 +65,8 @@ mixin _$PleromaApiAnnouncement {
 abstract class $PleromaApiAnnouncementCopyWith<$Res> {
   factory $PleromaApiAnnouncementCopyWith(PleromaApiAnnouncement value,
           $Res Function(PleromaApiAnnouncement) then) =
-      _$PleromaApiAnnouncementCopyWithImpl<$Res>;
+      _$PleromaApiAnnouncementCopyWithImpl<$Res, PleromaApiAnnouncement>;
+  @useResult
   $Res call(
       {@HiveField(0) String id,
       @HiveField(1) String content,
@@ -144,21 +84,24 @@ abstract class $PleromaApiAnnouncementCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiAnnouncementCopyWithImpl<$Res>
+class _$PleromaApiAnnouncementCopyWithImpl<$Res,
+        $Val extends PleromaApiAnnouncement>
     implements $PleromaApiAnnouncementCopyWith<$Res> {
   _$PleromaApiAnnouncementCopyWithImpl(this._value, this._then);
 
-  final PleromaApiAnnouncement _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiAnnouncement) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? content = freezed,
-    Object? allDay = freezed,
-    Object? publishedAt = freezed,
-    Object? updatedAt = freezed,
+    Object? id = null,
+    Object? content = null,
+    Object? allDay = null,
+    Object? publishedAt = null,
+    Object? updatedAt = null,
     Object? read = freezed,
     Object? reactions = freezed,
     Object? mentions = freezed,
@@ -169,69 +112,71 @@ class _$PleromaApiAnnouncementCopyWithImpl<$Res>
     Object? endsAt = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      content: content == freezed
+      content: null == content
           ? _value.content
           : content // ignore: cast_nullable_to_non_nullable
               as String,
-      allDay: allDay == freezed
+      allDay: null == allDay
           ? _value.allDay
           : allDay // ignore: cast_nullable_to_non_nullable
               as bool,
-      publishedAt: publishedAt == freezed
+      publishedAt: null == publishedAt
           ? _value.publishedAt
           : publishedAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      updatedAt: updatedAt == freezed
+      updatedAt: null == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      read: read == freezed
+      read: freezed == read
           ? _value.read
           : read // ignore: cast_nullable_to_non_nullable
               as bool?,
-      reactions: reactions == freezed
+      reactions: freezed == reactions
           ? _value.reactions
           : reactions // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiAnnouncementEmojiReaction>?,
-      mentions: mentions == freezed
+      mentions: freezed == mentions
           ? _value.mentions
           : mentions // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiMention>?,
-      statuses: statuses == freezed
+      statuses: freezed == statuses
           ? _value.statuses
           : statuses // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiStatus>?,
-      tags: tags == freezed
+      tags: freezed == tags
           ? _value.tags
           : tags // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiTag>?,
-      scheduledAt: scheduledAt == freezed
+      scheduledAt: freezed == scheduledAt
           ? _value.scheduledAt
           : scheduledAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      startsAt: startsAt == freezed
+      startsAt: freezed == startsAt
           ? _value.startsAt
           : startsAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      endsAt: endsAt == freezed
+      endsAt: freezed == endsAt
           ? _value.endsAt
           : endsAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiAnnouncementCopyWith<$Res>
+abstract class _$$PleromaApiAnnouncementImplCopyWith<$Res>
     implements $PleromaApiAnnouncementCopyWith<$Res> {
-  factory _$PleromaApiAnnouncementCopyWith(_PleromaApiAnnouncement value,
-          $Res Function(_PleromaApiAnnouncement) then) =
-      __$PleromaApiAnnouncementCopyWithImpl<$Res>;
+  factory _$$PleromaApiAnnouncementImplCopyWith(
+          _$PleromaApiAnnouncementImpl value,
+          $Res Function(_$PleromaApiAnnouncementImpl) then) =
+      __$$PleromaApiAnnouncementImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) String id,
       @HiveField(1) String content,
@@ -249,23 +194,23 @@ abstract class _$PleromaApiAnnouncementCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiAnnouncementCopyWithImpl<$Res>
-    extends _$PleromaApiAnnouncementCopyWithImpl<$Res>
-    implements _$PleromaApiAnnouncementCopyWith<$Res> {
-  __$PleromaApiAnnouncementCopyWithImpl(_PleromaApiAnnouncement _value,
-      $Res Function(_PleromaApiAnnouncement) _then)
-      : super(_value, (v) => _then(v as _PleromaApiAnnouncement));
+class __$$PleromaApiAnnouncementImplCopyWithImpl<$Res>
+    extends _$PleromaApiAnnouncementCopyWithImpl<$Res,
+        _$PleromaApiAnnouncementImpl>
+    implements _$$PleromaApiAnnouncementImplCopyWith<$Res> {
+  __$$PleromaApiAnnouncementImplCopyWithImpl(
+      _$PleromaApiAnnouncementImpl _value,
+      $Res Function(_$PleromaApiAnnouncementImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiAnnouncement get _value => super._value as _PleromaApiAnnouncement;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? content = freezed,
-    Object? allDay = freezed,
-    Object? publishedAt = freezed,
-    Object? updatedAt = freezed,
+    Object? id = null,
+    Object? content = null,
+    Object? allDay = null,
+    Object? publishedAt = null,
+    Object? updatedAt = null,
     Object? read = freezed,
     Object? reactions = freezed,
     Object? mentions = freezed,
@@ -275,56 +220,56 @@ class __$PleromaApiAnnouncementCopyWithImpl<$Res>
     Object? startsAt = freezed,
     Object? endsAt = freezed,
   }) {
-    return _then(_PleromaApiAnnouncement(
-      id: id == freezed
+    return _then(_$PleromaApiAnnouncementImpl(
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      content: content == freezed
+      content: null == content
           ? _value.content
           : content // ignore: cast_nullable_to_non_nullable
               as String,
-      allDay: allDay == freezed
+      allDay: null == allDay
           ? _value.allDay
           : allDay // ignore: cast_nullable_to_non_nullable
               as bool,
-      publishedAt: publishedAt == freezed
+      publishedAt: null == publishedAt
           ? _value.publishedAt
           : publishedAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      updatedAt: updatedAt == freezed
+      updatedAt: null == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      read: read == freezed
+      read: freezed == read
           ? _value.read
           : read // ignore: cast_nullable_to_non_nullable
               as bool?,
-      reactions: reactions == freezed
-          ? _value.reactions
+      reactions: freezed == reactions
+          ? _value._reactions
           : reactions // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiAnnouncementEmojiReaction>?,
-      mentions: mentions == freezed
-          ? _value.mentions
+      mentions: freezed == mentions
+          ? _value._mentions
           : mentions // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiMention>?,
-      statuses: statuses == freezed
-          ? _value.statuses
+      statuses: freezed == statuses
+          ? _value._statuses
           : statuses // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiStatus>?,
-      tags: tags == freezed
-          ? _value.tags
+      tags: freezed == tags
+          ? _value._tags
           : tags // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiTag>?,
-      scheduledAt: scheduledAt == freezed
+      scheduledAt: freezed == scheduledAt
           ? _value.scheduledAt
           : scheduledAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      startsAt: startsAt == freezed
+      startsAt: freezed == startsAt
           ? _value.startsAt
           : startsAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      endsAt: endsAt == freezed
+      endsAt: freezed == endsAt
           ? _value.endsAt
           : endsAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
@@ -334,24 +279,29 @@ class __$PleromaApiAnnouncementCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiAnnouncement implements _PleromaApiAnnouncement {
-  const _$_PleromaApiAnnouncement(
+class _$PleromaApiAnnouncementImpl implements _PleromaApiAnnouncement {
+  const _$PleromaApiAnnouncementImpl(
       {@HiveField(0) required this.id,
       @HiveField(1) required this.content,
       @HiveField(2) @JsonKey(name: 'all_day') required this.allDay,
       @HiveField(3) @JsonKey(name: 'published_at') required this.publishedAt,
       @HiveField(4) @JsonKey(name: 'updated_at') required this.updatedAt,
       @HiveField(5) required this.read,
-      @HiveField(6) required this.reactions,
-      @HiveField(7) required this.mentions,
-      @HiveField(8) required this.statuses,
-      @HiveField(9) required this.tags,
+      @HiveField(6)
+      required final List<PleromaApiAnnouncementEmojiReaction>? reactions,
+      @HiveField(7) required final List<PleromaApiMention>? mentions,
+      @HiveField(8) required final List<PleromaApiStatus>? statuses,
+      @HiveField(9) required final List<PleromaApiTag>? tags,
       @HiveField(10) @JsonKey(name: 'scheduled_at') required this.scheduledAt,
       @HiveField(11) @JsonKey(name: 'starts_at') required this.startsAt,
-      @HiveField(12) @JsonKey(name: 'ends_at') required this.endsAt});
+      @HiveField(12) @JsonKey(name: 'ends_at') required this.endsAt})
+      : _reactions = reactions,
+        _mentions = mentions,
+        _statuses = statuses,
+        _tags = tags;
 
-  factory _$_PleromaApiAnnouncement.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiAnnouncementFromJson(json);
+  factory _$PleromaApiAnnouncementImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiAnnouncementImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -374,18 +324,50 @@ class _$_PleromaApiAnnouncement implements _PleromaApiAnnouncement {
   @override
   @HiveField(5)
   final bool? read;
+  final List<PleromaApiAnnouncementEmojiReaction>? _reactions;
   @override
   @HiveField(6)
-  final List<PleromaApiAnnouncementEmojiReaction>? reactions;
+  List<PleromaApiAnnouncementEmojiReaction>? get reactions {
+    final value = _reactions;
+    if (value == null) return null;
+    if (_reactions is EqualUnmodifiableListView) return _reactions;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  final List<PleromaApiMention>? _mentions;
   @override
   @HiveField(7)
-  final List<PleromaApiMention>? mentions;
+  List<PleromaApiMention>? get mentions {
+    final value = _mentions;
+    if (value == null) return null;
+    if (_mentions is EqualUnmodifiableListView) return _mentions;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  final List<PleromaApiStatus>? _statuses;
   @override
   @HiveField(8)
-  final List<PleromaApiStatus>? statuses;
+  List<PleromaApiStatus>? get statuses {
+    final value = _statuses;
+    if (value == null) return null;
+    if (_statuses is EqualUnmodifiableListView) return _statuses;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  final List<PleromaApiTag>? _tags;
   @override
   @HiveField(9)
-  final List<PleromaApiTag>? tags;
+  List<PleromaApiTag>? get tags {
+    final value = _tags;
+    if (value == null) return null;
+    if (_tags is EqualUnmodifiableListView) return _tags;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(10)
   @JsonKey(name: 'scheduled_at')
@@ -405,10 +387,10 @@ class _$_PleromaApiAnnouncement implements _PleromaApiAnnouncement {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiAnnouncement &&
+            other is _$PleromaApiAnnouncementImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.content, content) || other.content == content) &&
             (identical(other.allDay, allDay) || other.allDay == allDay) &&
@@ -417,10 +399,11 @@ class _$_PleromaApiAnnouncement implements _PleromaApiAnnouncement {
             (identical(other.updatedAt, updatedAt) ||
                 other.updatedAt == updatedAt) &&
             (identical(other.read, read) || other.read == read) &&
-            const DeepCollectionEquality().equals(other.reactions, reactions) &&
-            const DeepCollectionEquality().equals(other.mentions, mentions) &&
-            const DeepCollectionEquality().equals(other.statuses, statuses) &&
-            const DeepCollectionEquality().equals(other.tags, tags) &&
+            const DeepCollectionEquality()
+                .equals(other._reactions, _reactions) &&
+            const DeepCollectionEquality().equals(other._mentions, _mentions) &&
+            const DeepCollectionEquality().equals(other._statuses, _statuses) &&
+            const DeepCollectionEquality().equals(other._tags, _tags) &&
             (identical(other.scheduledAt, scheduledAt) ||
                 other.scheduledAt == scheduledAt) &&
             (identical(other.startsAt, startsAt) ||
@@ -428,6 +411,7 @@ class _$_PleromaApiAnnouncement implements _PleromaApiAnnouncement {
             (identical(other.endsAt, endsAt) || other.endsAt == endsAt));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -437,63 +421,58 @@ class _$_PleromaApiAnnouncement implements _PleromaApiAnnouncement {
       publishedAt,
       updatedAt,
       read,
-      const DeepCollectionEquality().hash(reactions),
-      const DeepCollectionEquality().hash(mentions),
-      const DeepCollectionEquality().hash(statuses),
-      const DeepCollectionEquality().hash(tags),
+      const DeepCollectionEquality().hash(_reactions),
+      const DeepCollectionEquality().hash(_mentions),
+      const DeepCollectionEquality().hash(_statuses),
+      const DeepCollectionEquality().hash(_tags),
       scheduledAt,
       startsAt,
       endsAt);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiAnnouncementCopyWith<_PleromaApiAnnouncement> get copyWith =>
-      __$PleromaApiAnnouncementCopyWithImpl<_PleromaApiAnnouncement>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiAnnouncementImplCopyWith<_$PleromaApiAnnouncementImpl>
+      get copyWith => __$$PleromaApiAnnouncementImplCopyWithImpl<
+          _$PleromaApiAnnouncementImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiAnnouncementToJson(this);
+    return _$$PleromaApiAnnouncementImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiAnnouncement implements PleromaApiAnnouncement {
   const factory _PleromaApiAnnouncement(
-      {@HiveField(0)
-          required String id,
-      @HiveField(1)
-          required String content,
-      @HiveField(2)
-      @JsonKey(name: 'all_day')
-          required bool allDay,
+      {@HiveField(0) required final String id,
+      @HiveField(1) required final String content,
+      @HiveField(2) @JsonKey(name: 'all_day') required final bool allDay,
       @HiveField(3)
       @JsonKey(name: 'published_at')
-          required DateTime publishedAt,
+      required final DateTime publishedAt,
       @HiveField(4)
       @JsonKey(name: 'updated_at')
-          required DateTime updatedAt,
-      @HiveField(5)
-          required bool? read,
+      required final DateTime updatedAt,
+      @HiveField(5) required final bool? read,
       @HiveField(6)
-          required List<PleromaApiAnnouncementEmojiReaction>? reactions,
-      @HiveField(7)
-          required List<PleromaApiMention>? mentions,
-      @HiveField(8)
-          required List<PleromaApiStatus>? statuses,
-      @HiveField(9)
-          required List<PleromaApiTag>? tags,
+      required final List<PleromaApiAnnouncementEmojiReaction>? reactions,
+      @HiveField(7) required final List<PleromaApiMention>? mentions,
+      @HiveField(8) required final List<PleromaApiStatus>? statuses,
+      @HiveField(9) required final List<PleromaApiTag>? tags,
       @HiveField(10)
       @JsonKey(name: 'scheduled_at')
-          required DateTime? scheduledAt,
+      required final DateTime? scheduledAt,
       @HiveField(11)
       @JsonKey(name: 'starts_at')
-          required DateTime? startsAt,
+      required final DateTime? startsAt,
       @HiveField(12)
       @JsonKey(name: 'ends_at')
-          required DateTime? endsAt}) = _$_PleromaApiAnnouncement;
+      required final DateTime? endsAt}) = _$PleromaApiAnnouncementImpl;
 
   factory _PleromaApiAnnouncement.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiAnnouncement.fromJson;
+      _$PleromaApiAnnouncementImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -542,6 +521,6 @@ abstract class _PleromaApiAnnouncement implements PleromaApiAnnouncement {
   DateTime? get endsAt;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiAnnouncementCopyWith<_PleromaApiAnnouncement> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PleromaApiAnnouncementImplCopyWith<_$PleromaApiAnnouncementImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

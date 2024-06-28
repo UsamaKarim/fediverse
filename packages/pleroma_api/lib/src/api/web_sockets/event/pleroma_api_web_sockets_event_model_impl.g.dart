@@ -110,9 +110,9 @@ class PleromaApiWebSocketsRawEventAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiWebSocketsEvent _$$_PleromaApiWebSocketsEventFromJson(
+_$PleromaApiWebSocketsEventImpl _$$PleromaApiWebSocketsEventImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiWebSocketsEvent(
+    _$PleromaApiWebSocketsEventImpl(
       type: json['event'] as String,
       channel: PleromaApiWebSocketsChannel.fromJson(
           json['channel'] as Map<String, dynamic>),
@@ -142,8 +142,8 @@ _$_PleromaApiWebSocketsEvent _$$_PleromaApiWebSocketsEventFromJson(
       payload: json['payload'] as String?,
     );
 
-Map<String, dynamic> _$$_PleromaApiWebSocketsEventToJson(
-    _$_PleromaApiWebSocketsEvent instance) {
+Map<String, dynamic> _$$PleromaApiWebSocketsEventImplToJson(
+    _$PleromaApiWebSocketsEventImpl instance) {
   final val = <String, dynamic>{
     'event': instance.type,
     'channel': instance.channel.toJson(),
@@ -166,15 +166,15 @@ Map<String, dynamic> _$$_PleromaApiWebSocketsEventToJson(
   return val;
 }
 
-_$_PleromaApiWebSocketsRawEvent _$$_PleromaApiWebSocketsRawEventFromJson(
+_$PleromaApiWebSocketsRawEventImpl _$$PleromaApiWebSocketsRawEventImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiWebSocketsRawEvent(
+    _$PleromaApiWebSocketsRawEventImpl(
       type: json['event'] as String,
       payload: json['payload'] as String?,
     );
 
-Map<String, dynamic> _$$_PleromaApiWebSocketsRawEventToJson(
-    _$_PleromaApiWebSocketsRawEvent instance) {
+Map<String, dynamic> _$$PleromaApiWebSocketsRawEventImplToJson(
+    _$PleromaApiWebSocketsRawEventImpl instance) {
   final val = <String, dynamic>{
     'event': instance.type,
   };

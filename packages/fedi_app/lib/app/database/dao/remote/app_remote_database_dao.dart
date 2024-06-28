@@ -1,7 +1,7 @@
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/database/dao/app_database_dao.dart';
 import 'package:fedi_app/repository/repository_model.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 
 abstract class AppRemoteDatabaseDao<
         DbItem extends DataClass,
@@ -84,7 +84,7 @@ abstract class AppRemoteDatabaseDao<
         'WHERE ${createFindByRemoteIdWhereExpressionContent(remoteId)} '
         'LIMIT 1',
         readsFrom: {table},
-      ).map(table.mapFromRow);
+      ).asyncMap(table.mapFromRow);
 
   CustomExpression<bool> createFindByRemoteIdWhereExpression(
     RemoteId remoteId,
@@ -108,7 +108,7 @@ abstract class AppRemoteDatabaseDao<
 
   void addDateTimeBoundsWhere(
     SimpleSelectStatement<TableDsl, DbItem> query, {
-    required GeneratedColumn<DateTime?> column,
+    required GeneratedColumn<DateTime> column,
     required DateTime? minimumDateTimeExcluding,
     required DateTime? maximumDateTimeExcluding,
   }) {
@@ -121,12 +121,12 @@ abstract class AppRemoteDatabaseDao<
 
     if (minimumExist) {
       query.where(
-        (status) => column.isBiggerThanValue(minimumDateTimeExcluding),
+        (status) => column.isBiggerThanValue(minimumDateTimeExcluding!),
       );
     }
     if (maximumExist) {
       query.where(
-        (status) => column.isSmallerThanValue(maximumDateTimeExcluding),
+        (status) => column.isSmallerThanValue(maximumDateTimeExcluding!),
       );
     }
   }
@@ -172,7 +172,7 @@ abstract class AppRemoteDatabaseDao<
                 'LIMIT 1' +
             createOffsetContent(offset),
         readsFrom: {table},
-      ).map(table.mapFromRow);
+      ).asyncMap(table.mapFromRow);
 
   Future<DbItem?> getOldestOrderByRemoteId({required int? offset}) =>
       getOldestOrderByRemoteIdSelectable(offset: offset).getSingleOrNull();
@@ -189,5 +189,5 @@ abstract class AppRemoteDatabaseDao<
                 'LIMIT 1' +
             createOffsetContent(offset),
         readsFrom: {table},
-      ).map(table.mapFromRow);
+      ).asyncMap(table.mapFromRow);
 }

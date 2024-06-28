@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'app_analytics_model.dart';
 
@@ -11,32 +12,11 @@ part of 'app_analytics_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 AppAnalyticsData _$AppAnalyticsDataFromJson(Map<String, dynamic> json) {
   return _AppAnalyticsData.fromJson(json);
 }
-
-/// @nodoc
-class _$AppAnalyticsDataTearOff {
-  const _$AppAnalyticsDataTearOff();
-
-  _AppAnalyticsData call(
-      {@JsonKey(name: 'appOpenedCount')
-      @HiveField(0)
-          required int appOpenedCount}) {
-    return _AppAnalyticsData(
-      appOpenedCount: appOpenedCount,
-    );
-  }
-
-  AppAnalyticsData fromJson(Map<String, Object?> json) {
-    return AppAnalyticsData.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $AppAnalyticsData = _$AppAnalyticsDataTearOff();
 
 /// @nodoc
 mixin _$AppAnalyticsData {
@@ -54,61 +34,63 @@ mixin _$AppAnalyticsData {
 abstract class $AppAnalyticsDataCopyWith<$Res> {
   factory $AppAnalyticsDataCopyWith(
           AppAnalyticsData value, $Res Function(AppAnalyticsData) then) =
-      _$AppAnalyticsDataCopyWithImpl<$Res>;
+      _$AppAnalyticsDataCopyWithImpl<$Res, AppAnalyticsData>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'appOpenedCount') @HiveField(0) int appOpenedCount});
 }
 
 /// @nodoc
-class _$AppAnalyticsDataCopyWithImpl<$Res>
+class _$AppAnalyticsDataCopyWithImpl<$Res, $Val extends AppAnalyticsData>
     implements $AppAnalyticsDataCopyWith<$Res> {
   _$AppAnalyticsDataCopyWithImpl(this._value, this._then);
 
-  final AppAnalyticsData _value;
   // ignore: unused_field
-  final $Res Function(AppAnalyticsData) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? appOpenedCount = freezed,
+    Object? appOpenedCount = null,
   }) {
     return _then(_value.copyWith(
-      appOpenedCount: appOpenedCount == freezed
+      appOpenedCount: null == appOpenedCount
           ? _value.appOpenedCount
           : appOpenedCount // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$AppAnalyticsDataCopyWith<$Res>
+abstract class _$$AppAnalyticsDataImplCopyWith<$Res>
     implements $AppAnalyticsDataCopyWith<$Res> {
-  factory _$AppAnalyticsDataCopyWith(
-          _AppAnalyticsData value, $Res Function(_AppAnalyticsData) then) =
-      __$AppAnalyticsDataCopyWithImpl<$Res>;
+  factory _$$AppAnalyticsDataImplCopyWith(_$AppAnalyticsDataImpl value,
+          $Res Function(_$AppAnalyticsDataImpl) then) =
+      __$$AppAnalyticsDataImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'appOpenedCount') @HiveField(0) int appOpenedCount});
 }
 
 /// @nodoc
-class __$AppAnalyticsDataCopyWithImpl<$Res>
-    extends _$AppAnalyticsDataCopyWithImpl<$Res>
-    implements _$AppAnalyticsDataCopyWith<$Res> {
-  __$AppAnalyticsDataCopyWithImpl(
-      _AppAnalyticsData _value, $Res Function(_AppAnalyticsData) _then)
-      : super(_value, (v) => _then(v as _AppAnalyticsData));
+class __$$AppAnalyticsDataImplCopyWithImpl<$Res>
+    extends _$AppAnalyticsDataCopyWithImpl<$Res, _$AppAnalyticsDataImpl>
+    implements _$$AppAnalyticsDataImplCopyWith<$Res> {
+  __$$AppAnalyticsDataImplCopyWithImpl(_$AppAnalyticsDataImpl _value,
+      $Res Function(_$AppAnalyticsDataImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _AppAnalyticsData get _value => super._value as _AppAnalyticsData;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? appOpenedCount = freezed,
+    Object? appOpenedCount = null,
   }) {
-    return _then(_AppAnalyticsData(
-      appOpenedCount: appOpenedCount == freezed
+    return _then(_$AppAnalyticsDataImpl(
+      appOpenedCount: null == appOpenedCount
           ? _value.appOpenedCount
           : appOpenedCount // ignore: cast_nullable_to_non_nullable
               as int,
@@ -118,14 +100,14 @@ class __$AppAnalyticsDataCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_AppAnalyticsData implements _AppAnalyticsData {
-  const _$_AppAnalyticsData(
+class _$AppAnalyticsDataImpl implements _AppAnalyticsData {
+  const _$AppAnalyticsDataImpl(
       {@JsonKey(name: 'appOpenedCount')
       @HiveField(0)
-          required this.appOpenedCount});
+      required this.appOpenedCount});
 
-  factory _$_AppAnalyticsData.fromJson(Map<String, dynamic> json) =>
-      _$$_AppAnalyticsDataFromJson(json);
+  factory _$AppAnalyticsDataImpl.fromJson(Map<String, dynamic> json) =>
+      _$$AppAnalyticsDataImplFromJson(json);
 
   @override
   @JsonKey(name: 'appOpenedCount')
@@ -138,25 +120,30 @@ class _$_AppAnalyticsData implements _AppAnalyticsData {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _AppAnalyticsData &&
+            other is _$AppAnalyticsDataImpl &&
             (identical(other.appOpenedCount, appOpenedCount) ||
                 other.appOpenedCount == appOpenedCount));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, appOpenedCount);
 
   @JsonKey(ignore: true)
   @override
-  _$AppAnalyticsDataCopyWith<_AppAnalyticsData> get copyWith =>
-      __$AppAnalyticsDataCopyWithImpl<_AppAnalyticsData>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AppAnalyticsDataImplCopyWith<_$AppAnalyticsDataImpl> get copyWith =>
+      __$$AppAnalyticsDataImplCopyWithImpl<_$AppAnalyticsDataImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_AppAnalyticsDataToJson(this);
+    return _$$AppAnalyticsDataImplToJson(
+      this,
+    );
   }
 }
 
@@ -164,10 +151,10 @@ abstract class _AppAnalyticsData implements AppAnalyticsData {
   const factory _AppAnalyticsData(
       {@JsonKey(name: 'appOpenedCount')
       @HiveField(0)
-          required int appOpenedCount}) = _$_AppAnalyticsData;
+      required final int appOpenedCount}) = _$AppAnalyticsDataImpl;
 
   factory _AppAnalyticsData.fromJson(Map<String, dynamic> json) =
-      _$_AppAnalyticsData.fromJson;
+      _$AppAnalyticsDataImpl.fromJson;
 
   @override
   @JsonKey(name: 'appOpenedCount')
@@ -175,6 +162,6 @@ abstract class _AppAnalyticsData implements AppAnalyticsData {
   int get appOpenedCount;
   @override
   @JsonKey(ignore: true)
-  _$AppAnalyticsDataCopyWith<_AppAnalyticsData> get copyWith =>
+  _$$AppAnalyticsDataImplCopyWith<_$AppAnalyticsDataImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

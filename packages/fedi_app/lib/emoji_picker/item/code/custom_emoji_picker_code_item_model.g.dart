@@ -48,15 +48,15 @@ class CustomEmojiPickerCodeItemAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_CustomEmojiPickerCodeItem _$$_CustomEmojiPickerCodeItemFromJson(
+_$CustomEmojiPickerCodeItemImpl _$$CustomEmojiPickerCodeItemImplFromJson(
         Map<String, dynamic> json) =>
-    _$_CustomEmojiPickerCodeItem(
+    _$CustomEmojiPickerCodeItemImpl(
       name: json['name'] as String,
       code: json['code'] as String,
     );
 
-Map<String, dynamic> _$$_CustomEmojiPickerCodeItemToJson(
-        _$_CustomEmojiPickerCodeItem instance) =>
+Map<String, dynamic> _$$CustomEmojiPickerCodeItemImplToJson(
+        _$CustomEmojiPickerCodeItemImpl instance) =>
     <String, dynamic>{
       'name': instance.name,
       'code': instance.code,

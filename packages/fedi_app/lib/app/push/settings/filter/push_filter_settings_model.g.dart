@@ -47,15 +47,15 @@ class PushFilterSettingsAdapter extends TypeAdapter<PushFilterSettings> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PushFilterSettings _$$_PushFilterSettingsFromJson(
+_$PushFilterSettingsImpl _$$PushFilterSettingsImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PushFilterSettings(
+    _$PushFilterSettingsImpl(
       blockFromStrangers: json['blockFromStrangers'] as bool?,
       hideNotificationContents: json['hideNotificationContents'] as bool?,
     );
 
-Map<String, dynamic> _$$_PushFilterSettingsToJson(
-    _$_PushFilterSettings instance) {
+Map<String, dynamic> _$$PushFilterSettingsImplToJson(
+    _$PushFilterSettingsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

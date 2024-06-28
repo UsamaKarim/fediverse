@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_mention_model_impl.dart';
 
@@ -11,36 +12,11 @@ part of 'pleroma_api_mention_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiMention _$PleromaApiMentionFromJson(Map<String, dynamic> json) {
   return _PleromaApiMention.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiMentionTearOff {
-  const _$PleromaApiMentionTearOff();
-
-  _PleromaApiMention call(
-      {@HiveField(0) required String acct,
-      @HiveField(1) required String id,
-      @HiveField(2) required String url,
-      @HiveField(3) required String? username}) {
-    return _PleromaApiMention(
-      acct: acct,
-      id: id,
-      url: url,
-      username: username,
-    );
-  }
-
-  PleromaApiMention fromJson(Map<String, Object?> json) {
-    return PleromaApiMention.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiMention = _$PleromaApiMentionTearOff();
 
 /// @nodoc
 mixin _$PleromaApiMention {
@@ -63,7 +39,8 @@ mixin _$PleromaApiMention {
 abstract class $PleromaApiMentionCopyWith<$Res> {
   factory $PleromaApiMentionCopyWith(
           PleromaApiMention value, $Res Function(PleromaApiMention) then) =
-      _$PleromaApiMentionCopyWithImpl<$Res>;
+      _$PleromaApiMentionCopyWithImpl<$Res, PleromaApiMention>;
+  @useResult
   $Res call(
       {@HiveField(0) String acct,
       @HiveField(1) String id,
@@ -72,49 +49,52 @@ abstract class $PleromaApiMentionCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiMentionCopyWithImpl<$Res>
+class _$PleromaApiMentionCopyWithImpl<$Res, $Val extends PleromaApiMention>
     implements $PleromaApiMentionCopyWith<$Res> {
   _$PleromaApiMentionCopyWithImpl(this._value, this._then);
 
-  final PleromaApiMention _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiMention) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? acct = freezed,
-    Object? id = freezed,
-    Object? url = freezed,
+    Object? acct = null,
+    Object? id = null,
+    Object? url = null,
     Object? username = freezed,
   }) {
     return _then(_value.copyWith(
-      acct: acct == freezed
+      acct: null == acct
           ? _value.acct
           : acct // ignore: cast_nullable_to_non_nullable
               as String,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      username: username == freezed
+      username: freezed == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiMentionCopyWith<$Res>
+abstract class _$$PleromaApiMentionImplCopyWith<$Res>
     implements $PleromaApiMentionCopyWith<$Res> {
-  factory _$PleromaApiMentionCopyWith(
-          _PleromaApiMention value, $Res Function(_PleromaApiMention) then) =
-      __$PleromaApiMentionCopyWithImpl<$Res>;
+  factory _$$PleromaApiMentionImplCopyWith(_$PleromaApiMentionImpl value,
+          $Res Function(_$PleromaApiMentionImpl) then) =
+      __$$PleromaApiMentionImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) String acct,
       @HiveField(1) String id,
@@ -123,37 +103,35 @@ abstract class _$PleromaApiMentionCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiMentionCopyWithImpl<$Res>
-    extends _$PleromaApiMentionCopyWithImpl<$Res>
-    implements _$PleromaApiMentionCopyWith<$Res> {
-  __$PleromaApiMentionCopyWithImpl(
-      _PleromaApiMention _value, $Res Function(_PleromaApiMention) _then)
-      : super(_value, (v) => _then(v as _PleromaApiMention));
+class __$$PleromaApiMentionImplCopyWithImpl<$Res>
+    extends _$PleromaApiMentionCopyWithImpl<$Res, _$PleromaApiMentionImpl>
+    implements _$$PleromaApiMentionImplCopyWith<$Res> {
+  __$$PleromaApiMentionImplCopyWithImpl(_$PleromaApiMentionImpl _value,
+      $Res Function(_$PleromaApiMentionImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiMention get _value => super._value as _PleromaApiMention;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? acct = freezed,
-    Object? id = freezed,
-    Object? url = freezed,
+    Object? acct = null,
+    Object? id = null,
+    Object? url = null,
     Object? username = freezed,
   }) {
-    return _then(_PleromaApiMention(
-      acct: acct == freezed
+    return _then(_$PleromaApiMentionImpl(
+      acct: null == acct
           ? _value.acct
           : acct // ignore: cast_nullable_to_non_nullable
               as String,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      username: username == freezed
+      username: freezed == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -163,15 +141,15 @@ class __$PleromaApiMentionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiMention implements _PleromaApiMention {
-  const _$_PleromaApiMention(
+class _$PleromaApiMentionImpl implements _PleromaApiMention {
+  const _$PleromaApiMentionImpl(
       {@HiveField(0) required this.acct,
       @HiveField(1) required this.id,
       @HiveField(2) required this.url,
       @HiveField(3) required this.username});
 
-  factory _$_PleromaApiMention.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiMentionFromJson(json);
+  factory _$PleromaApiMentionImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiMentionImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -192,10 +170,10 @@ class _$_PleromaApiMention implements _PleromaApiMention {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiMention &&
+            other is _$PleromaApiMentionImpl &&
             (identical(other.acct, acct) || other.acct == acct) &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.url, url) || other.url == url) &&
@@ -203,29 +181,34 @@ class _$_PleromaApiMention implements _PleromaApiMention {
                 other.username == username));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, acct, id, url, username);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiMentionCopyWith<_PleromaApiMention> get copyWith =>
-      __$PleromaApiMentionCopyWithImpl<_PleromaApiMention>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiMentionImplCopyWith<_$PleromaApiMentionImpl> get copyWith =>
+      __$$PleromaApiMentionImplCopyWithImpl<_$PleromaApiMentionImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiMentionToJson(this);
+    return _$$PleromaApiMentionImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiMention implements PleromaApiMention {
   const factory _PleromaApiMention(
-      {@HiveField(0) required String acct,
-      @HiveField(1) required String id,
-      @HiveField(2) required String url,
-      @HiveField(3) required String? username}) = _$_PleromaApiMention;
+      {@HiveField(0) required final String acct,
+      @HiveField(1) required final String id,
+      @HiveField(2) required final String url,
+      @HiveField(3) required final String? username}) = _$PleromaApiMentionImpl;
 
   factory _PleromaApiMention.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiMention.fromJson;
+      _$PleromaApiMentionImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -241,6 +224,6 @@ abstract class _PleromaApiMention implements PleromaApiMention {
   String? get username;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiMentionCopyWith<_PleromaApiMention> get copyWith =>
+  _$$PleromaApiMentionImplCopyWith<_$PleromaApiMentionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

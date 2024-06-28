@@ -45,14 +45,14 @@ class UnifediApiChatPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiChatPleromaAdapter _$$_UnifediApiChatPleromaAdapterFromJson(
+_$UnifediApiChatPleromaAdapterImpl _$$UnifediApiChatPleromaAdapterImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiChatPleromaAdapter(
+    _$UnifediApiChatPleromaAdapterImpl(
       PleromaApiChat.fromJson(json['value'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_UnifediApiChatPleromaAdapterToJson(
-        _$_UnifediApiChatPleromaAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiChatPleromaAdapterImplToJson(
+        _$UnifediApiChatPleromaAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

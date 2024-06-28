@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_access_application_token_model_impl.dart';
 
@@ -11,41 +12,12 @@ part of 'unifedi_api_access_application_token_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiAccessApplicationToken _$UnifediApiAccessApplicationTokenFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiAccessApplicationToken.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiAccessApplicationTokenTearOff {
-  const _$UnifediApiAccessApplicationTokenTearOff();
-
-  _UnifediApiAccessApplicationToken call(
-      {@HiveField(1)
-          required UnifediApiAccessScopes scopes,
-      @JsonKey(name: 'client_application')
-      @HiveField(2)
-          required UnifediApiClientApplication clientApplication,
-      @HiveField(3)
-      @JsonKey(name: 'oauth_token')
-          required UnifediApiOAuthToken oauthToken}) {
-    return _UnifediApiAccessApplicationToken(
-      scopes: scopes,
-      clientApplication: clientApplication,
-      oauthToken: oauthToken,
-    );
-  }
-
-  UnifediApiAccessApplicationToken fromJson(Map<String, Object?> json) {
-    return UnifediApiAccessApplicationToken.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiAccessApplicationToken =
-    _$UnifediApiAccessApplicationTokenTearOff();
 
 /// @nodoc
 mixin _$UnifediApiAccessApplicationToken {
@@ -70,16 +42,17 @@ abstract class $UnifediApiAccessApplicationTokenCopyWith<$Res> {
   factory $UnifediApiAccessApplicationTokenCopyWith(
           UnifediApiAccessApplicationToken value,
           $Res Function(UnifediApiAccessApplicationToken) then) =
-      _$UnifediApiAccessApplicationTokenCopyWithImpl<$Res>;
+      _$UnifediApiAccessApplicationTokenCopyWithImpl<$Res,
+          UnifediApiAccessApplicationToken>;
+  @useResult
   $Res call(
-      {@HiveField(1)
-          UnifediApiAccessScopes scopes,
+      {@HiveField(1) UnifediApiAccessScopes scopes,
       @JsonKey(name: 'client_application')
       @HiveField(2)
-          UnifediApiClientApplication clientApplication,
+      UnifediApiClientApplication clientApplication,
       @HiveField(3)
       @JsonKey(name: 'oauth_token')
-          UnifediApiOAuthToken oauthToken});
+      UnifediApiOAuthToken oauthToken});
 
   $UnifediApiAccessScopesCopyWith<$Res> get scopes;
   $UnifediApiClientApplicationCopyWith<$Res> get clientApplication;
@@ -87,76 +60,82 @@ abstract class $UnifediApiAccessApplicationTokenCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UnifediApiAccessApplicationTokenCopyWithImpl<$Res>
+class _$UnifediApiAccessApplicationTokenCopyWithImpl<$Res,
+        $Val extends UnifediApiAccessApplicationToken>
     implements $UnifediApiAccessApplicationTokenCopyWith<$Res> {
   _$UnifediApiAccessApplicationTokenCopyWithImpl(this._value, this._then);
 
-  final UnifediApiAccessApplicationToken _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiAccessApplicationToken) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? scopes = freezed,
-    Object? clientApplication = freezed,
-    Object? oauthToken = freezed,
+    Object? scopes = null,
+    Object? clientApplication = null,
+    Object? oauthToken = null,
   }) {
     return _then(_value.copyWith(
-      scopes: scopes == freezed
+      scopes: null == scopes
           ? _value.scopes
           : scopes // ignore: cast_nullable_to_non_nullable
               as UnifediApiAccessScopes,
-      clientApplication: clientApplication == freezed
+      clientApplication: null == clientApplication
           ? _value.clientApplication
           : clientApplication // ignore: cast_nullable_to_non_nullable
               as UnifediApiClientApplication,
-      oauthToken: oauthToken == freezed
+      oauthToken: null == oauthToken
           ? _value.oauthToken
           : oauthToken // ignore: cast_nullable_to_non_nullable
               as UnifediApiOAuthToken,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiAccessScopesCopyWith<$Res> get scopes {
     return $UnifediApiAccessScopesCopyWith<$Res>(_value.scopes, (value) {
-      return _then(_value.copyWith(scopes: value));
+      return _then(_value.copyWith(scopes: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiClientApplicationCopyWith<$Res> get clientApplication {
     return $UnifediApiClientApplicationCopyWith<$Res>(_value.clientApplication,
         (value) {
-      return _then(_value.copyWith(clientApplication: value));
+      return _then(_value.copyWith(clientApplication: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiOAuthTokenCopyWith<$Res> get oauthToken {
     return $UnifediApiOAuthTokenCopyWith<$Res>(_value.oauthToken, (value) {
-      return _then(_value.copyWith(oauthToken: value));
+      return _then(_value.copyWith(oauthToken: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiAccessApplicationTokenCopyWith<$Res>
+abstract class _$$UnifediApiAccessApplicationTokenImplCopyWith<$Res>
     implements $UnifediApiAccessApplicationTokenCopyWith<$Res> {
-  factory _$UnifediApiAccessApplicationTokenCopyWith(
-          _UnifediApiAccessApplicationToken value,
-          $Res Function(_UnifediApiAccessApplicationToken) then) =
-      __$UnifediApiAccessApplicationTokenCopyWithImpl<$Res>;
+  factory _$$UnifediApiAccessApplicationTokenImplCopyWith(
+          _$UnifediApiAccessApplicationTokenImpl value,
+          $Res Function(_$UnifediApiAccessApplicationTokenImpl) then) =
+      __$$UnifediApiAccessApplicationTokenImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(1)
-          UnifediApiAccessScopes scopes,
+      {@HiveField(1) UnifediApiAccessScopes scopes,
       @JsonKey(name: 'client_application')
       @HiveField(2)
-          UnifediApiClientApplication clientApplication,
+      UnifediApiClientApplication clientApplication,
       @HiveField(3)
       @JsonKey(name: 'oauth_token')
-          UnifediApiOAuthToken oauthToken});
+      UnifediApiOAuthToken oauthToken});
 
   @override
   $UnifediApiAccessScopesCopyWith<$Res> get scopes;
@@ -167,34 +146,32 @@ abstract class _$UnifediApiAccessApplicationTokenCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiAccessApplicationTokenCopyWithImpl<$Res>
-    extends _$UnifediApiAccessApplicationTokenCopyWithImpl<$Res>
-    implements _$UnifediApiAccessApplicationTokenCopyWith<$Res> {
-  __$UnifediApiAccessApplicationTokenCopyWithImpl(
-      _UnifediApiAccessApplicationToken _value,
-      $Res Function(_UnifediApiAccessApplicationToken) _then)
-      : super(_value, (v) => _then(v as _UnifediApiAccessApplicationToken));
+class __$$UnifediApiAccessApplicationTokenImplCopyWithImpl<$Res>
+    extends _$UnifediApiAccessApplicationTokenCopyWithImpl<$Res,
+        _$UnifediApiAccessApplicationTokenImpl>
+    implements _$$UnifediApiAccessApplicationTokenImplCopyWith<$Res> {
+  __$$UnifediApiAccessApplicationTokenImplCopyWithImpl(
+      _$UnifediApiAccessApplicationTokenImpl _value,
+      $Res Function(_$UnifediApiAccessApplicationTokenImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiAccessApplicationToken get _value =>
-      super._value as _UnifediApiAccessApplicationToken;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? scopes = freezed,
-    Object? clientApplication = freezed,
-    Object? oauthToken = freezed,
+    Object? scopes = null,
+    Object? clientApplication = null,
+    Object? oauthToken = null,
   }) {
-    return _then(_UnifediApiAccessApplicationToken(
-      scopes: scopes == freezed
+    return _then(_$UnifediApiAccessApplicationTokenImpl(
+      scopes: null == scopes
           ? _value.scopes
           : scopes // ignore: cast_nullable_to_non_nullable
               as UnifediApiAccessScopes,
-      clientApplication: clientApplication == freezed
+      clientApplication: null == clientApplication
           ? _value.clientApplication
           : clientApplication // ignore: cast_nullable_to_non_nullable
               as UnifediApiClientApplication,
-      oauthToken: oauthToken == freezed
+      oauthToken: null == oauthToken
           ? _value.oauthToken
           : oauthToken // ignore: cast_nullable_to_non_nullable
               as UnifediApiOAuthToken,
@@ -204,22 +181,19 @@ class __$UnifediApiAccessApplicationTokenCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiAccessApplicationToken
+class _$UnifediApiAccessApplicationTokenImpl
     extends _UnifediApiAccessApplicationToken {
-  const _$_UnifediApiAccessApplicationToken(
-      {@HiveField(1)
-          required this.scopes,
+  const _$UnifediApiAccessApplicationTokenImpl(
+      {@HiveField(1) required this.scopes,
       @JsonKey(name: 'client_application')
       @HiveField(2)
-          required this.clientApplication,
-      @HiveField(3)
-      @JsonKey(name: 'oauth_token')
-          required this.oauthToken})
+      required this.clientApplication,
+      @HiveField(3) @JsonKey(name: 'oauth_token') required this.oauthToken})
       : super._();
 
-  factory _$_UnifediApiAccessApplicationToken.fromJson(
+  factory _$UnifediApiAccessApplicationTokenImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiAccessApplicationTokenFromJson(json);
+      _$$UnifediApiAccessApplicationTokenImplFromJson(json);
 
   @override
   @HiveField(1)
@@ -239,10 +213,10 @@ class _$_UnifediApiAccessApplicationToken
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiAccessApplicationToken &&
+            other is _$UnifediApiAccessApplicationTokenImpl &&
             (identical(other.scopes, scopes) || other.scopes == scopes) &&
             (identical(other.clientApplication, clientApplication) ||
                 other.clientApplication == clientApplication) &&
@@ -250,38 +224,43 @@ class _$_UnifediApiAccessApplicationToken
                 other.oauthToken == oauthToken));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, scopes, clientApplication, oauthToken);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiAccessApplicationTokenCopyWith<_UnifediApiAccessApplicationToken>
-      get copyWith => __$UnifediApiAccessApplicationTokenCopyWithImpl<
-          _UnifediApiAccessApplicationToken>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiAccessApplicationTokenImplCopyWith<
+          _$UnifediApiAccessApplicationTokenImpl>
+      get copyWith => __$$UnifediApiAccessApplicationTokenImplCopyWithImpl<
+          _$UnifediApiAccessApplicationTokenImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiAccessApplicationTokenToJson(this);
+    return _$$UnifediApiAccessApplicationTokenImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiAccessApplicationToken
     extends UnifediApiAccessApplicationToken {
   const factory _UnifediApiAccessApplicationToken(
-          {@HiveField(1)
-              required UnifediApiAccessScopes scopes,
+          {@HiveField(1) required final UnifediApiAccessScopes scopes,
           @JsonKey(name: 'client_application')
           @HiveField(2)
-              required UnifediApiClientApplication clientApplication,
+          required final UnifediApiClientApplication clientApplication,
           @HiveField(3)
           @JsonKey(name: 'oauth_token')
-              required UnifediApiOAuthToken oauthToken}) =
-      _$_UnifediApiAccessApplicationToken;
+          required final UnifediApiOAuthToken oauthToken}) =
+      _$UnifediApiAccessApplicationTokenImpl;
   const _UnifediApiAccessApplicationToken._() : super._();
 
   factory _UnifediApiAccessApplicationToken.fromJson(
-      Map<String, dynamic> json) = _$_UnifediApiAccessApplicationToken.fromJson;
+          Map<String, dynamic> json) =
+      _$UnifediApiAccessApplicationTokenImpl.fromJson;
 
   @override
   @HiveField(1)
@@ -296,6 +275,7 @@ abstract class _UnifediApiAccessApplicationToken
   UnifediApiOAuthToken get oauthToken;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiAccessApplicationTokenCopyWith<_UnifediApiAccessApplicationToken>
+  _$$UnifediApiAccessApplicationTokenImplCopyWith<
+          _$UnifediApiAccessApplicationTokenImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

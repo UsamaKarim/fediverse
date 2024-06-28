@@ -51,16 +51,16 @@ class PleromaApiInstanceStatsAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiInstanceStats _$$_PleromaApiInstanceStatsFromJson(
+_$PleromaApiInstanceStatsImpl _$$PleromaApiInstanceStatsImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiInstanceStats(
-      userCount: json['user_count'] as int?,
-      statusCount: json['status_count'] as int?,
-      domainCount: json['domain_count'] as int?,
+    _$PleromaApiInstanceStatsImpl(
+      userCount: (json['user_count'] as num?)?.toInt(),
+      statusCount: (json['status_count'] as num?)?.toInt(),
+      domainCount: (json['domain_count'] as num?)?.toInt(),
     );
 
-Map<String, dynamic> _$$_PleromaApiInstanceStatsToJson(
-    _$_PleromaApiInstanceStats instance) {
+Map<String, dynamic> _$$PleromaApiInstanceStatsImplToJson(
+    _$PleromaApiInstanceStatsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

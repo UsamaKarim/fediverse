@@ -80,11 +80,11 @@ class UnifediApiPostStatusAdapter extends TypeAdapter<UnifediApiPostStatus> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiPostStatus _$$_UnifediApiPostStatusFromJson(
+_$UnifediApiPostStatusImpl _$$UnifediApiPostStatusImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiPostStatus(
+    _$UnifediApiPostStatusImpl(
       contentType: json['content_type'] as String?,
-      expiresInSeconds: json['expires_in'] as int?,
+      expiresInSeconds: (json['expires_in'] as num?)?.toInt(),
       inReplyToConversationId: json['in_reply_to_conversation_id'] as String?,
       inReplyToId: json['in_reply_to_id'] as String?,
       language: json['language'] as String?,
@@ -103,8 +103,8 @@ _$_UnifediApiPostStatus _$$_UnifediApiPostStatusFromJson(
       to: (json['to'] as List<dynamic>?)?.map((e) => e as String).toList(),
     );
 
-Map<String, dynamic> _$$_UnifediApiPostStatusToJson(
-    _$_UnifediApiPostStatus instance) {
+Map<String, dynamic> _$$UnifediApiPostStatusImplToJson(
+    _$UnifediApiPostStatusImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

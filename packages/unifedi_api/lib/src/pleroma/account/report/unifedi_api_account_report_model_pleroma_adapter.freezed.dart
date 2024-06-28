@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_account_report_model_pleroma_adapter.dart';
 
@@ -11,32 +12,12 @@ part of 'unifedi_api_account_report_model_pleroma_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiAccountReportPleromaAdapter
     _$UnifediApiAccountReportPleromaAdapterFromJson(Map<String, dynamic> json) {
   return _UnifediApiAccountReportPleromaAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiAccountReportPleromaAdapterTearOff {
-  const _$UnifediApiAccountReportPleromaAdapterTearOff();
-
-  _UnifediApiAccountReportPleromaAdapter call(
-      @HiveField(0) PleromaApiAccountReport value) {
-    return _UnifediApiAccountReportPleromaAdapter(
-      value,
-    );
-  }
-
-  UnifediApiAccountReportPleromaAdapter fromJson(Map<String, Object?> json) {
-    return UnifediApiAccountReportPleromaAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiAccountReportPleromaAdapter =
-    _$UnifediApiAccountReportPleromaAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiAccountReportPleromaAdapter {
@@ -55,49 +36,56 @@ abstract class $UnifediApiAccountReportPleromaAdapterCopyWith<$Res> {
   factory $UnifediApiAccountReportPleromaAdapterCopyWith(
           UnifediApiAccountReportPleromaAdapter value,
           $Res Function(UnifediApiAccountReportPleromaAdapter) then) =
-      _$UnifediApiAccountReportPleromaAdapterCopyWithImpl<$Res>;
+      _$UnifediApiAccountReportPleromaAdapterCopyWithImpl<$Res,
+          UnifediApiAccountReportPleromaAdapter>;
+  @useResult
   $Res call({@HiveField(0) PleromaApiAccountReport value});
 
   $PleromaApiAccountReportCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiAccountReportPleromaAdapterCopyWithImpl<$Res>
+class _$UnifediApiAccountReportPleromaAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiAccountReportPleromaAdapter>
     implements $UnifediApiAccountReportPleromaAdapterCopyWith<$Res> {
   _$UnifediApiAccountReportPleromaAdapterCopyWithImpl(this._value, this._then);
 
-  final UnifediApiAccountReportPleromaAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiAccountReportPleromaAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccountReport,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiAccountReportCopyWith<$Res> get value {
     return $PleromaApiAccountReportCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiAccountReportPleromaAdapterCopyWith<$Res>
+abstract class _$$UnifediApiAccountReportPleromaAdapterImplCopyWith<$Res>
     implements $UnifediApiAccountReportPleromaAdapterCopyWith<$Res> {
-  factory _$UnifediApiAccountReportPleromaAdapterCopyWith(
-          _UnifediApiAccountReportPleromaAdapter value,
-          $Res Function(_UnifediApiAccountReportPleromaAdapter) then) =
-      __$UnifediApiAccountReportPleromaAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiAccountReportPleromaAdapterImplCopyWith(
+          _$UnifediApiAccountReportPleromaAdapterImpl value,
+          $Res Function(_$UnifediApiAccountReportPleromaAdapterImpl) then) =
+      __$$UnifediApiAccountReportPleromaAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) PleromaApiAccountReport value});
 
   @override
@@ -105,25 +93,22 @@ abstract class _$UnifediApiAccountReportPleromaAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiAccountReportPleromaAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiAccountReportPleromaAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiAccountReportPleromaAdapterCopyWith<$Res> {
-  __$UnifediApiAccountReportPleromaAdapterCopyWithImpl(
-      _UnifediApiAccountReportPleromaAdapter _value,
-      $Res Function(_UnifediApiAccountReportPleromaAdapter) _then)
-      : super(
-            _value, (v) => _then(v as _UnifediApiAccountReportPleromaAdapter));
+class __$$UnifediApiAccountReportPleromaAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiAccountReportPleromaAdapterCopyWithImpl<$Res,
+        _$UnifediApiAccountReportPleromaAdapterImpl>
+    implements _$$UnifediApiAccountReportPleromaAdapterImplCopyWith<$Res> {
+  __$$UnifediApiAccountReportPleromaAdapterImplCopyWithImpl(
+      _$UnifediApiAccountReportPleromaAdapterImpl _value,
+      $Res Function(_$UnifediApiAccountReportPleromaAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiAccountReportPleromaAdapter get _value =>
-      super._value as _UnifediApiAccountReportPleromaAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiAccountReportPleromaAdapter(
-      value == freezed
+    return _then(_$UnifediApiAccountReportPleromaAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccountReport,
@@ -133,14 +118,14 @@ class __$UnifediApiAccountReportPleromaAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiAccountReportPleromaAdapter
+class _$UnifediApiAccountReportPleromaAdapterImpl
     extends _UnifediApiAccountReportPleromaAdapter {
-  const _$_UnifediApiAccountReportPleromaAdapter(@HiveField(0) this.value)
+  const _$UnifediApiAccountReportPleromaAdapterImpl(@HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiAccountReportPleromaAdapter.fromJson(
+  factory _$UnifediApiAccountReportPleromaAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiAccountReportPleromaAdapterFromJson(json);
+      _$$UnifediApiAccountReportPleromaAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -152,46 +137,50 @@ class _$_UnifediApiAccountReportPleromaAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiAccountReportPleromaAdapter &&
+            other is _$UnifediApiAccountReportPleromaAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiAccountReportPleromaAdapterCopyWith<
-          _UnifediApiAccountReportPleromaAdapter>
-      get copyWith => __$UnifediApiAccountReportPleromaAdapterCopyWithImpl<
-          _UnifediApiAccountReportPleromaAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiAccountReportPleromaAdapterImplCopyWith<
+          _$UnifediApiAccountReportPleromaAdapterImpl>
+      get copyWith => __$$UnifediApiAccountReportPleromaAdapterImplCopyWithImpl<
+          _$UnifediApiAccountReportPleromaAdapterImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiAccountReportPleromaAdapterToJson(this);
+    return _$$UnifediApiAccountReportPleromaAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiAccountReportPleromaAdapter
     extends UnifediApiAccountReportPleromaAdapter {
   const factory _UnifediApiAccountReportPleromaAdapter(
-          @HiveField(0) PleromaApiAccountReport value) =
-      _$_UnifediApiAccountReportPleromaAdapter;
+          @HiveField(0) final PleromaApiAccountReport value) =
+      _$UnifediApiAccountReportPleromaAdapterImpl;
   const _UnifediApiAccountReportPleromaAdapter._() : super._();
 
   factory _UnifediApiAccountReportPleromaAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiAccountReportPleromaAdapter.fromJson;
+      _$UnifediApiAccountReportPleromaAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   PleromaApiAccountReport get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiAccountReportPleromaAdapterCopyWith<
-          _UnifediApiAccountReportPleromaAdapter>
+  _$$UnifediApiAccountReportPleromaAdapterImplCopyWith<
+          _$UnifediApiAccountReportPleromaAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

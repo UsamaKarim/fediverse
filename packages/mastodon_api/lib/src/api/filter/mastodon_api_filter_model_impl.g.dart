@@ -59,8 +59,9 @@ class MastodonApiFilterAdapter extends TypeAdapter<MastodonApiFilter> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiFilter _$$_MastodonApiFilterFromJson(Map<String, dynamic> json) =>
-    _$_MastodonApiFilter(
+_$MastodonApiFilterImpl _$$MastodonApiFilterImplFromJson(
+        Map<String, dynamic> json) =>
+    _$MastodonApiFilterImpl(
       context:
           (json['context'] as List<dynamic>).map((e) => e as String).toList(),
       expiresAt: json['expires_at'] == null
@@ -72,8 +73,8 @@ _$_MastodonApiFilter _$$_MastodonApiFilterFromJson(Map<String, dynamic> json) =>
       wholeWord: json['whole_word'] as bool,
     );
 
-Map<String, dynamic> _$$_MastodonApiFilterToJson(
-    _$_MastodonApiFilter instance) {
+Map<String, dynamic> _$$MastodonApiFilterImplToJson(
+    _$MastodonApiFilterImpl instance) {
   final val = <String, dynamic>{
     'context': instance.context,
   };

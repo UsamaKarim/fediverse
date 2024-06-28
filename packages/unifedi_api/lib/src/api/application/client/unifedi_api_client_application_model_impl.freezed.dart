@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_client_application_model_impl.dart';
 
@@ -11,47 +12,12 @@ part of 'unifedi_api_client_application_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiClientApplication _$UnifediApiClientApplicationFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiClientApplication.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiClientApplicationTearOff {
-  const _$UnifediApiClientApplicationTearOff();
-
-  _UnifediApiClientApplication call(
-      {@HiveField(0)
-          required String? name,
-      @HiveField(1)
-          required String? website,
-      @JsonKey(name: 'vapid_key')
-      @HiveField(2)
-          required String? vapidKey,
-      @JsonKey(name: 'client_id')
-      @HiveField(3)
-          required String? clientId,
-      @JsonKey(name: 'client_secret')
-      @HiveField(4)
-          required String? clientSecret}) {
-    return _UnifediApiClientApplication(
-      name: name,
-      website: website,
-      vapidKey: vapidKey,
-      clientId: clientId,
-      clientSecret: clientSecret,
-    );
-  }
-
-  UnifediApiClientApplication fromJson(Map<String, Object?> json) {
-    return UnifediApiClientApplication.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiClientApplication = _$UnifediApiClientApplicationTearOff();
 
 /// @nodoc
 mixin _$UnifediApiClientApplication {
@@ -80,7 +46,9 @@ abstract class $UnifediApiClientApplicationCopyWith<$Res> {
   factory $UnifediApiClientApplicationCopyWith(
           UnifediApiClientApplication value,
           $Res Function(UnifediApiClientApplication) then) =
-      _$UnifediApiClientApplicationCopyWithImpl<$Res>;
+      _$UnifediApiClientApplicationCopyWithImpl<$Res,
+          UnifediApiClientApplication>;
+  @useResult
   $Res call(
       {@HiveField(0) String? name,
       @HiveField(1) String? website,
@@ -90,14 +58,17 @@ abstract class $UnifediApiClientApplicationCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UnifediApiClientApplicationCopyWithImpl<$Res>
+class _$UnifediApiClientApplicationCopyWithImpl<$Res,
+        $Val extends UnifediApiClientApplication>
     implements $UnifediApiClientApplicationCopyWith<$Res> {
   _$UnifediApiClientApplicationCopyWithImpl(this._value, this._then);
 
-  final UnifediApiClientApplication _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiClientApplication) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? name = freezed,
@@ -107,38 +78,39 @@ class _$UnifediApiClientApplicationCopyWithImpl<$Res>
     Object? clientSecret = freezed,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed
+      name: freezed == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String?,
-      website: website == freezed
+      website: freezed == website
           ? _value.website
           : website // ignore: cast_nullable_to_non_nullable
               as String?,
-      vapidKey: vapidKey == freezed
+      vapidKey: freezed == vapidKey
           ? _value.vapidKey
           : vapidKey // ignore: cast_nullable_to_non_nullable
               as String?,
-      clientId: clientId == freezed
+      clientId: freezed == clientId
           ? _value.clientId
           : clientId // ignore: cast_nullable_to_non_nullable
               as String?,
-      clientSecret: clientSecret == freezed
+      clientSecret: freezed == clientSecret
           ? _value.clientSecret
           : clientSecret // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiClientApplicationCopyWith<$Res>
+abstract class _$$UnifediApiClientApplicationImplCopyWith<$Res>
     implements $UnifediApiClientApplicationCopyWith<$Res> {
-  factory _$UnifediApiClientApplicationCopyWith(
-          _UnifediApiClientApplication value,
-          $Res Function(_UnifediApiClientApplication) then) =
-      __$UnifediApiClientApplicationCopyWithImpl<$Res>;
+  factory _$$UnifediApiClientApplicationImplCopyWith(
+          _$UnifediApiClientApplicationImpl value,
+          $Res Function(_$UnifediApiClientApplicationImpl) then) =
+      __$$UnifediApiClientApplicationImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) String? name,
       @HiveField(1) String? website,
@@ -148,18 +120,16 @@ abstract class _$UnifediApiClientApplicationCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiClientApplicationCopyWithImpl<$Res>
-    extends _$UnifediApiClientApplicationCopyWithImpl<$Res>
-    implements _$UnifediApiClientApplicationCopyWith<$Res> {
-  __$UnifediApiClientApplicationCopyWithImpl(
-      _UnifediApiClientApplication _value,
-      $Res Function(_UnifediApiClientApplication) _then)
-      : super(_value, (v) => _then(v as _UnifediApiClientApplication));
+class __$$UnifediApiClientApplicationImplCopyWithImpl<$Res>
+    extends _$UnifediApiClientApplicationCopyWithImpl<$Res,
+        _$UnifediApiClientApplicationImpl>
+    implements _$$UnifediApiClientApplicationImplCopyWith<$Res> {
+  __$$UnifediApiClientApplicationImplCopyWithImpl(
+      _$UnifediApiClientApplicationImpl _value,
+      $Res Function(_$UnifediApiClientApplicationImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiClientApplication get _value =>
-      super._value as _UnifediApiClientApplication;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? name = freezed,
@@ -168,24 +138,24 @@ class __$UnifediApiClientApplicationCopyWithImpl<$Res>
     Object? clientId = freezed,
     Object? clientSecret = freezed,
   }) {
-    return _then(_UnifediApiClientApplication(
-      name: name == freezed
+    return _then(_$UnifediApiClientApplicationImpl(
+      name: freezed == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String?,
-      website: website == freezed
+      website: freezed == website
           ? _value.website
           : website // ignore: cast_nullable_to_non_nullable
               as String?,
-      vapidKey: vapidKey == freezed
+      vapidKey: freezed == vapidKey
           ? _value.vapidKey
           : vapidKey // ignore: cast_nullable_to_non_nullable
               as String?,
-      clientId: clientId == freezed
+      clientId: freezed == clientId
           ? _value.clientId
           : clientId // ignore: cast_nullable_to_non_nullable
               as String?,
-      clientSecret: clientSecret == freezed
+      clientSecret: freezed == clientSecret
           ? _value.clientSecret
           : clientSecret // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -195,24 +165,20 @@ class __$UnifediApiClientApplicationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiClientApplication implements _UnifediApiClientApplication {
-  const _$_UnifediApiClientApplication(
-      {@HiveField(0)
-          required this.name,
-      @HiveField(1)
-          required this.website,
-      @JsonKey(name: 'vapid_key')
-      @HiveField(2)
-          required this.vapidKey,
-      @JsonKey(name: 'client_id')
-      @HiveField(3)
-          required this.clientId,
+class _$UnifediApiClientApplicationImpl
+    implements _UnifediApiClientApplication {
+  const _$UnifediApiClientApplicationImpl(
+      {@HiveField(0) required this.name,
+      @HiveField(1) required this.website,
+      @JsonKey(name: 'vapid_key') @HiveField(2) required this.vapidKey,
+      @JsonKey(name: 'client_id') @HiveField(3) required this.clientId,
       @JsonKey(name: 'client_secret')
       @HiveField(4)
-          required this.clientSecret});
+      required this.clientSecret});
 
-  factory _$_UnifediApiClientApplication.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiClientApplicationFromJson(json);
+  factory _$UnifediApiClientApplicationImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$UnifediApiClientApplicationImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -239,10 +205,10 @@ class _$_UnifediApiClientApplication implements _UnifediApiClientApplication {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiClientApplication &&
+            other is _$UnifediApiClientApplicationImpl &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.website, website) || other.website == website) &&
             (identical(other.vapidKey, vapidKey) ||
@@ -253,41 +219,39 @@ class _$_UnifediApiClientApplication implements _UnifediApiClientApplication {
                 other.clientSecret == clientSecret));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, name, website, vapidKey, clientId, clientSecret);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiClientApplicationCopyWith<_UnifediApiClientApplication>
-      get copyWith => __$UnifediApiClientApplicationCopyWithImpl<
-          _UnifediApiClientApplication>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiClientApplicationImplCopyWith<_$UnifediApiClientApplicationImpl>
+      get copyWith => __$$UnifediApiClientApplicationImplCopyWithImpl<
+          _$UnifediApiClientApplicationImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiClientApplicationToJson(this);
+    return _$$UnifediApiClientApplicationImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiClientApplication
     implements UnifediApiClientApplication {
   const factory _UnifediApiClientApplication(
-      {@HiveField(0)
-          required String? name,
-      @HiveField(1)
-          required String? website,
-      @JsonKey(name: 'vapid_key')
-      @HiveField(2)
-          required String? vapidKey,
-      @JsonKey(name: 'client_id')
-      @HiveField(3)
-          required String? clientId,
+      {@HiveField(0) required final String? name,
+      @HiveField(1) required final String? website,
+      @JsonKey(name: 'vapid_key') @HiveField(2) required final String? vapidKey,
+      @JsonKey(name: 'client_id') @HiveField(3) required final String? clientId,
       @JsonKey(name: 'client_secret')
       @HiveField(4)
-          required String? clientSecret}) = _$_UnifediApiClientApplication;
+      required final String? clientSecret}) = _$UnifediApiClientApplicationImpl;
 
   factory _UnifediApiClientApplication.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiClientApplication.fromJson;
+      _$UnifediApiClientApplicationImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -309,6 +273,6 @@ abstract class _UnifediApiClientApplication
   String? get clientSecret;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiClientApplicationCopyWith<_UnifediApiClientApplication>
+  _$$UnifediApiClientApplicationImplCopyWith<_$UnifediApiClientApplicationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

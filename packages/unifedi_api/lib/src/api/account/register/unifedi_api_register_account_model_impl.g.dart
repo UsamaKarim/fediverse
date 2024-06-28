@@ -78,9 +78,9 @@ class UnifediApiRegisterAccountAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiRegisterAccount _$$_UnifediApiRegisterAccountFromJson(
+_$UnifediApiRegisterAccountImpl _$$UnifediApiRegisterAccountImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiRegisterAccount(
+    _$UnifediApiRegisterAccountImpl(
       username: json['username'] as String,
       email: json['email'] as String,
       password: json['password'] as String,
@@ -95,8 +95,8 @@ _$_UnifediApiRegisterAccount _$$_UnifediApiRegisterAccountFromJson(
       inviteToken: json['token'] as String?,
     );
 
-Map<String, dynamic> _$$_UnifediApiRegisterAccountToJson(
-    _$_UnifediApiRegisterAccount instance) {
+Map<String, dynamic> _$$UnifediApiRegisterAccountImplToJson(
+    _$UnifediApiRegisterAccountImpl instance) {
   final val = <String, dynamic>{
     'username': instance.username,
     'email': instance.email,

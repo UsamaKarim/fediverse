@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'rich_notifications_service_background_message_impl.dart';
 
@@ -11,26 +12,7 @@ part of 'rich_notifications_service_background_message_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$NotificationPayloadDataTearOff {
-  const _$NotificationPayloadDataTearOff();
-
-  _NotificationPayloadData call(
-      {required String acct,
-      required String serverHost,
-      required IUnifediApiNotification unifediApiNotification}) {
-    return _NotificationPayloadData(
-      acct: acct,
-      serverHost: serverHost,
-      unifediApiNotification: unifediApiNotification,
-    );
-  }
-}
-
-/// @nodoc
-const $NotificationPayloadData = _$NotificationPayloadDataTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$NotificationPayloadData {
@@ -48,7 +30,8 @@ mixin _$NotificationPayloadData {
 abstract class $NotificationPayloadDataCopyWith<$Res> {
   factory $NotificationPayloadDataCopyWith(NotificationPayloadData value,
           $Res Function(NotificationPayloadData) then) =
-      _$NotificationPayloadDataCopyWithImpl<$Res>;
+      _$NotificationPayloadDataCopyWithImpl<$Res, NotificationPayloadData>;
+  @useResult
   $Res call(
       {String acct,
       String serverHost,
@@ -56,44 +39,49 @@ abstract class $NotificationPayloadDataCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$NotificationPayloadDataCopyWithImpl<$Res>
+class _$NotificationPayloadDataCopyWithImpl<$Res,
+        $Val extends NotificationPayloadData>
     implements $NotificationPayloadDataCopyWith<$Res> {
   _$NotificationPayloadDataCopyWithImpl(this._value, this._then);
 
-  final NotificationPayloadData _value;
   // ignore: unused_field
-  final $Res Function(NotificationPayloadData) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? acct = freezed,
-    Object? serverHost = freezed,
-    Object? unifediApiNotification = freezed,
+    Object? acct = null,
+    Object? serverHost = null,
+    Object? unifediApiNotification = null,
   }) {
     return _then(_value.copyWith(
-      acct: acct == freezed
+      acct: null == acct
           ? _value.acct
           : acct // ignore: cast_nullable_to_non_nullable
               as String,
-      serverHost: serverHost == freezed
+      serverHost: null == serverHost
           ? _value.serverHost
           : serverHost // ignore: cast_nullable_to_non_nullable
               as String,
-      unifediApiNotification: unifediApiNotification == freezed
+      unifediApiNotification: null == unifediApiNotification
           ? _value.unifediApiNotification
           : unifediApiNotification // ignore: cast_nullable_to_non_nullable
               as IUnifediApiNotification,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$NotificationPayloadDataCopyWith<$Res>
+abstract class _$$NotificationPayloadDataImplCopyWith<$Res>
     implements $NotificationPayloadDataCopyWith<$Res> {
-  factory _$NotificationPayloadDataCopyWith(_NotificationPayloadData value,
-          $Res Function(_NotificationPayloadData) then) =
-      __$NotificationPayloadDataCopyWithImpl<$Res>;
+  factory _$$NotificationPayloadDataImplCopyWith(
+          _$NotificationPayloadDataImpl value,
+          $Res Function(_$NotificationPayloadDataImpl) then) =
+      __$$NotificationPayloadDataImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {String acct,
       String serverHost,
@@ -101,33 +89,32 @@ abstract class _$NotificationPayloadDataCopyWith<$Res>
 }
 
 /// @nodoc
-class __$NotificationPayloadDataCopyWithImpl<$Res>
-    extends _$NotificationPayloadDataCopyWithImpl<$Res>
-    implements _$NotificationPayloadDataCopyWith<$Res> {
-  __$NotificationPayloadDataCopyWithImpl(_NotificationPayloadData _value,
-      $Res Function(_NotificationPayloadData) _then)
-      : super(_value, (v) => _then(v as _NotificationPayloadData));
+class __$$NotificationPayloadDataImplCopyWithImpl<$Res>
+    extends _$NotificationPayloadDataCopyWithImpl<$Res,
+        _$NotificationPayloadDataImpl>
+    implements _$$NotificationPayloadDataImplCopyWith<$Res> {
+  __$$NotificationPayloadDataImplCopyWithImpl(
+      _$NotificationPayloadDataImpl _value,
+      $Res Function(_$NotificationPayloadDataImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _NotificationPayloadData get _value =>
-      super._value as _NotificationPayloadData;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? acct = freezed,
-    Object? serverHost = freezed,
-    Object? unifediApiNotification = freezed,
+    Object? acct = null,
+    Object? serverHost = null,
+    Object? unifediApiNotification = null,
   }) {
-    return _then(_NotificationPayloadData(
-      acct: acct == freezed
+    return _then(_$NotificationPayloadDataImpl(
+      acct: null == acct
           ? _value.acct
           : acct // ignore: cast_nullable_to_non_nullable
               as String,
-      serverHost: serverHost == freezed
+      serverHost: null == serverHost
           ? _value.serverHost
           : serverHost // ignore: cast_nullable_to_non_nullable
               as String,
-      unifediApiNotification: unifediApiNotification == freezed
+      unifediApiNotification: null == unifediApiNotification
           ? _value.unifediApiNotification
           : unifediApiNotification // ignore: cast_nullable_to_non_nullable
               as IUnifediApiNotification,
@@ -137,8 +124,8 @@ class __$NotificationPayloadDataCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_NotificationPayloadData extends _NotificationPayloadData {
-  const _$_NotificationPayloadData(
+class _$NotificationPayloadDataImpl extends _NotificationPayloadData {
+  const _$NotificationPayloadDataImpl(
       {required this.acct,
       required this.serverHost,
       required this.unifediApiNotification})
@@ -157,10 +144,10 @@ class _$_NotificationPayloadData extends _NotificationPayloadData {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _NotificationPayloadData &&
+            other is _$NotificationPayloadDataImpl &&
             (identical(other.acct, acct) || other.acct == acct) &&
             (identical(other.serverHost, serverHost) ||
                 other.serverHost == serverHost) &&
@@ -174,17 +161,18 @@ class _$_NotificationPayloadData extends _NotificationPayloadData {
 
   @JsonKey(ignore: true)
   @override
-  _$NotificationPayloadDataCopyWith<_NotificationPayloadData> get copyWith =>
-      __$NotificationPayloadDataCopyWithImpl<_NotificationPayloadData>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$NotificationPayloadDataImplCopyWith<_$NotificationPayloadDataImpl>
+      get copyWith => __$$NotificationPayloadDataImplCopyWithImpl<
+          _$NotificationPayloadDataImpl>(this, _$identity);
 }
 
 abstract class _NotificationPayloadData extends NotificationPayloadData {
   const factory _NotificationPayloadData(
-          {required String acct,
-          required String serverHost,
-          required IUnifediApiNotification unifediApiNotification}) =
-      _$_NotificationPayloadData;
+          {required final String acct,
+          required final String serverHost,
+          required final IUnifediApiNotification unifediApiNotification}) =
+      _$NotificationPayloadDataImpl;
   const _NotificationPayloadData._() : super._();
 
   @override
@@ -195,6 +183,6 @@ abstract class _NotificationPayloadData extends NotificationPayloadData {
   IUnifediApiNotification get unifediApiNotification;
   @override
   @JsonKey(ignore: true)
-  _$NotificationPayloadDataCopyWith<_NotificationPayloadData> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$NotificationPayloadDataImplCopyWith<_$NotificationPayloadDataImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

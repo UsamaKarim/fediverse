@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'my_account_model.dart';
 
@@ -11,33 +12,12 @@ part of 'my_account_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiMyAccountWrapper _$UnifediApiMyAccountWrapperFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiMyAccountWrapper.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiMyAccountWrapperTearOff {
-  const _$UnifediApiMyAccountWrapperTearOff();
-
-  _UnifediApiMyAccountWrapper call(
-      {@HiveField(0)
-      @JsonKey(name: 'remote_account')
-          required UnifediApiMyAccount unifediApiAccount}) {
-    return _UnifediApiMyAccountWrapper(
-      unifediApiAccount: unifediApiAccount,
-    );
-  }
-
-  UnifediApiMyAccountWrapper fromJson(Map<String, Object?> json) {
-    return UnifediApiMyAccountWrapper.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiMyAccountWrapper = _$UnifediApiMyAccountWrapperTearOff();
 
 /// @nodoc
 mixin _$UnifediApiMyAccountWrapper {
@@ -56,80 +36,86 @@ mixin _$UnifediApiMyAccountWrapper {
 abstract class $UnifediApiMyAccountWrapperCopyWith<$Res> {
   factory $UnifediApiMyAccountWrapperCopyWith(UnifediApiMyAccountWrapper value,
           $Res Function(UnifediApiMyAccountWrapper) then) =
-      _$UnifediApiMyAccountWrapperCopyWithImpl<$Res>;
+      _$UnifediApiMyAccountWrapperCopyWithImpl<$Res,
+          UnifediApiMyAccountWrapper>;
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'remote_account')
-          UnifediApiMyAccount unifediApiAccount});
+      UnifediApiMyAccount unifediApiAccount});
 
   $UnifediApiMyAccountCopyWith<$Res> get unifediApiAccount;
 }
 
 /// @nodoc
-class _$UnifediApiMyAccountWrapperCopyWithImpl<$Res>
+class _$UnifediApiMyAccountWrapperCopyWithImpl<$Res,
+        $Val extends UnifediApiMyAccountWrapper>
     implements $UnifediApiMyAccountWrapperCopyWith<$Res> {
   _$UnifediApiMyAccountWrapperCopyWithImpl(this._value, this._then);
 
-  final UnifediApiMyAccountWrapper _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiMyAccountWrapper) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? unifediApiAccount = freezed,
+    Object? unifediApiAccount = null,
   }) {
     return _then(_value.copyWith(
-      unifediApiAccount: unifediApiAccount == freezed
+      unifediApiAccount: null == unifediApiAccount
           ? _value.unifediApiAccount
           : unifediApiAccount // ignore: cast_nullable_to_non_nullable
               as UnifediApiMyAccount,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiMyAccountCopyWith<$Res> get unifediApiAccount {
     return $UnifediApiMyAccountCopyWith<$Res>(_value.unifediApiAccount,
         (value) {
-      return _then(_value.copyWith(unifediApiAccount: value));
+      return _then(_value.copyWith(unifediApiAccount: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiMyAccountWrapperCopyWith<$Res>
+abstract class _$$UnifediApiMyAccountWrapperImplCopyWith<$Res>
     implements $UnifediApiMyAccountWrapperCopyWith<$Res> {
-  factory _$UnifediApiMyAccountWrapperCopyWith(
-          _UnifediApiMyAccountWrapper value,
-          $Res Function(_UnifediApiMyAccountWrapper) then) =
-      __$UnifediApiMyAccountWrapperCopyWithImpl<$Res>;
+  factory _$$UnifediApiMyAccountWrapperImplCopyWith(
+          _$UnifediApiMyAccountWrapperImpl value,
+          $Res Function(_$UnifediApiMyAccountWrapperImpl) then) =
+      __$$UnifediApiMyAccountWrapperImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'remote_account')
-          UnifediApiMyAccount unifediApiAccount});
+      UnifediApiMyAccount unifediApiAccount});
 
   @override
   $UnifediApiMyAccountCopyWith<$Res> get unifediApiAccount;
 }
 
 /// @nodoc
-class __$UnifediApiMyAccountWrapperCopyWithImpl<$Res>
-    extends _$UnifediApiMyAccountWrapperCopyWithImpl<$Res>
-    implements _$UnifediApiMyAccountWrapperCopyWith<$Res> {
-  __$UnifediApiMyAccountWrapperCopyWithImpl(_UnifediApiMyAccountWrapper _value,
-      $Res Function(_UnifediApiMyAccountWrapper) _then)
-      : super(_value, (v) => _then(v as _UnifediApiMyAccountWrapper));
+class __$$UnifediApiMyAccountWrapperImplCopyWithImpl<$Res>
+    extends _$UnifediApiMyAccountWrapperCopyWithImpl<$Res,
+        _$UnifediApiMyAccountWrapperImpl>
+    implements _$$UnifediApiMyAccountWrapperImplCopyWith<$Res> {
+  __$$UnifediApiMyAccountWrapperImplCopyWithImpl(
+      _$UnifediApiMyAccountWrapperImpl _value,
+      $Res Function(_$UnifediApiMyAccountWrapperImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiMyAccountWrapper get _value =>
-      super._value as _UnifediApiMyAccountWrapper;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? unifediApiAccount = freezed,
+    Object? unifediApiAccount = null,
   }) {
-    return _then(_UnifediApiMyAccountWrapper(
-      unifediApiAccount: unifediApiAccount == freezed
+    return _then(_$UnifediApiMyAccountWrapperImpl(
+      unifediApiAccount: null == unifediApiAccount
           ? _value.unifediApiAccount
           : unifediApiAccount // ignore: cast_nullable_to_non_nullable
               as UnifediApiMyAccount,
@@ -139,15 +125,16 @@ class __$UnifediApiMyAccountWrapperCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiMyAccountWrapper extends _UnifediApiMyAccountWrapper {
-  const _$_UnifediApiMyAccountWrapper(
+class _$UnifediApiMyAccountWrapperImpl extends _UnifediApiMyAccountWrapper {
+  const _$UnifediApiMyAccountWrapperImpl(
       {@HiveField(0)
       @JsonKey(name: 'remote_account')
-          required this.unifediApiAccount})
+      required this.unifediApiAccount})
       : super._();
 
-  factory _$_UnifediApiMyAccountWrapper.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiMyAccountWrapperFromJson(json);
+  factory _$UnifediApiMyAccountWrapperImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$UnifediApiMyAccountWrapperImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -160,26 +147,30 @@ class _$_UnifediApiMyAccountWrapper extends _UnifediApiMyAccountWrapper {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiMyAccountWrapper &&
+            other is _$UnifediApiMyAccountWrapperImpl &&
             (identical(other.unifediApiAccount, unifediApiAccount) ||
                 other.unifediApiAccount == unifediApiAccount));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, unifediApiAccount);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiMyAccountWrapperCopyWith<_UnifediApiMyAccountWrapper>
-      get copyWith => __$UnifediApiMyAccountWrapperCopyWithImpl<
-          _UnifediApiMyAccountWrapper>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiMyAccountWrapperImplCopyWith<_$UnifediApiMyAccountWrapperImpl>
+      get copyWith => __$$UnifediApiMyAccountWrapperImplCopyWithImpl<
+          _$UnifediApiMyAccountWrapperImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiMyAccountWrapperToJson(this);
+    return _$$UnifediApiMyAccountWrapperImplToJson(
+      this,
+    );
   }
 }
 
@@ -187,12 +178,12 @@ abstract class _UnifediApiMyAccountWrapper extends UnifediApiMyAccountWrapper {
   const factory _UnifediApiMyAccountWrapper(
           {@HiveField(0)
           @JsonKey(name: 'remote_account')
-              required UnifediApiMyAccount unifediApiAccount}) =
-      _$_UnifediApiMyAccountWrapper;
+          required final UnifediApiMyAccount unifediApiAccount}) =
+      _$UnifediApiMyAccountWrapperImpl;
   const _UnifediApiMyAccountWrapper._() : super._();
 
   factory _UnifediApiMyAccountWrapper.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiMyAccountWrapper.fromJson;
+      _$UnifediApiMyAccountWrapperImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -200,6 +191,6 @@ abstract class _UnifediApiMyAccountWrapper extends UnifediApiMyAccountWrapper {
   UnifediApiMyAccount get unifediApiAccount;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiMyAccountWrapperCopyWith<_UnifediApiMyAccountWrapper>
+  _$$UnifediApiMyAccountWrapperImplCopyWith<_$UnifediApiMyAccountWrapperImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

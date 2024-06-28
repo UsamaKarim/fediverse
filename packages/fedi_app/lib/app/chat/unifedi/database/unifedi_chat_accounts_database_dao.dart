@@ -1,15 +1,11 @@
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/chat/unifedi/database/unifedi_chat_accounts_database_model.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/database/dao/database_dao.dart';
-import 'package:moor/moor.dart';
 
 part 'unifedi_chat_accounts_database_dao.g.dart';
 
-@UseDao(
-  tables: [
-    DbChatAccounts,
-  ],
-)
+@DriftAccessor(tables: [DbChatAccounts])
 class ChatAccountsDao extends DatabaseDao<DbChatAccount, int,
     $DbChatAccountsTable, $DbChatAccountsTable> with _$ChatAccountsDaoMixin {
   final AppDatabase db;
@@ -25,7 +21,7 @@ class ChatAccountsDao extends DatabaseDao<DbChatAccount, int,
         'SELECT * FROM db_chat_accounts WHERE chat_remote_id = :chatRemoteId;',
         variables: [Variable<String>(chatRemoteId)],
         readsFrom: {dbChatAccounts},
-      ).map(dbChatAccounts.mapFromRow);
+      ).asyncMap(dbChatAccounts.mapFromRow);
 
   Selectable<DbChatAccount> findByChatRemoteIdAndAccountRemoteId(
     String chatRemoteId,
@@ -38,7 +34,7 @@ class ChatAccountsDao extends DatabaseDao<DbChatAccount, int,
           Variable<String>(accountRemoteId),
         ],
         readsFrom: {dbChatAccounts},
-      ).map(dbChatAccounts.mapFromRow);
+      ).asyncMap(dbChatAccounts.mapFromRow);
 
   Selectable<DbChatAccount> findByAccountRemoteId(String accountRemoteId) =>
       customSelect(
@@ -47,9 +43,7 @@ class ChatAccountsDao extends DatabaseDao<DbChatAccount, int,
         readsFrom: {
           dbChatAccounts,
         },
-      ).map(
-        dbChatAccounts.mapFromRow,
-      );
+      ).asyncMap(dbChatAccounts.mapFromRow);
 
   Future<int> deleteByChatRemoteId(String chatRemoteId) => customUpdate(
         'DELETE FROM $tableName '

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_emoji_model_impl.dart';
 
@@ -11,46 +12,11 @@ part of 'mastodon_api_emoji_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiEmoji _$MastodonApiEmojiFromJson(Map<String, dynamic> json) {
   return _MastodonApiEmoji.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiEmojiTearOff {
-  const _$MastodonApiEmojiTearOff();
-
-  _MastodonApiEmoji call(
-      {@HiveField(0)
-          required String shortcode,
-      @HiveField(1)
-          required String? url,
-      @HiveField(2)
-      @JsonKey(name: 'static_url')
-          required String? staticUrl,
-      @JsonKey(name: 'visible_in_picker')
-      @HiveField(3)
-          required bool? visibleInPicker,
-      @override
-      @HiveField(4)
-          required String? category}) {
-    return _MastodonApiEmoji(
-      shortcode: shortcode,
-      url: url,
-      staticUrl: staticUrl,
-      visibleInPicker: visibleInPicker,
-      category: category,
-    );
-  }
-
-  MastodonApiEmoji fromJson(Map<String, Object?> json) {
-    return MastodonApiEmoji.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiEmoji = _$MastodonApiEmojiTearOff();
 
 /// @nodoc
 mixin _$MastodonApiEmoji {
@@ -78,7 +44,8 @@ mixin _$MastodonApiEmoji {
 abstract class $MastodonApiEmojiCopyWith<$Res> {
   factory $MastodonApiEmojiCopyWith(
           MastodonApiEmoji value, $Res Function(MastodonApiEmoji) then) =
-      _$MastodonApiEmojiCopyWithImpl<$Res>;
+      _$MastodonApiEmojiCopyWithImpl<$Res, MastodonApiEmoji>;
+  @useResult
   $Res call(
       {@HiveField(0) String shortcode,
       @HiveField(1) String? url,
@@ -88,54 +55,57 @@ abstract class $MastodonApiEmojiCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MastodonApiEmojiCopyWithImpl<$Res>
+class _$MastodonApiEmojiCopyWithImpl<$Res, $Val extends MastodonApiEmoji>
     implements $MastodonApiEmojiCopyWith<$Res> {
   _$MastodonApiEmojiCopyWithImpl(this._value, this._then);
 
-  final MastodonApiEmoji _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiEmoji) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? shortcode = freezed,
+    Object? shortcode = null,
     Object? url = freezed,
     Object? staticUrl = freezed,
     Object? visibleInPicker = freezed,
     Object? category = freezed,
   }) {
     return _then(_value.copyWith(
-      shortcode: shortcode == freezed
+      shortcode: null == shortcode
           ? _value.shortcode
           : shortcode // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
-      staticUrl: staticUrl == freezed
+      staticUrl: freezed == staticUrl
           ? _value.staticUrl
           : staticUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      visibleInPicker: visibleInPicker == freezed
+      visibleInPicker: freezed == visibleInPicker
           ? _value.visibleInPicker
           : visibleInPicker // ignore: cast_nullable_to_non_nullable
               as bool?,
-      category: category == freezed
+      category: freezed == category
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiEmojiCopyWith<$Res>
+abstract class _$$MastodonApiEmojiImplCopyWith<$Res>
     implements $MastodonApiEmojiCopyWith<$Res> {
-  factory _$MastodonApiEmojiCopyWith(
-          _MastodonApiEmoji value, $Res Function(_MastodonApiEmoji) then) =
-      __$MastodonApiEmojiCopyWithImpl<$Res>;
+  factory _$$MastodonApiEmojiImplCopyWith(_$MastodonApiEmojiImpl value,
+          $Res Function(_$MastodonApiEmojiImpl) then) =
+      __$$MastodonApiEmojiImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) String shortcode,
       @HiveField(1) String? url,
@@ -145,42 +115,40 @@ abstract class _$MastodonApiEmojiCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MastodonApiEmojiCopyWithImpl<$Res>
-    extends _$MastodonApiEmojiCopyWithImpl<$Res>
-    implements _$MastodonApiEmojiCopyWith<$Res> {
-  __$MastodonApiEmojiCopyWithImpl(
-      _MastodonApiEmoji _value, $Res Function(_MastodonApiEmoji) _then)
-      : super(_value, (v) => _then(v as _MastodonApiEmoji));
+class __$$MastodonApiEmojiImplCopyWithImpl<$Res>
+    extends _$MastodonApiEmojiCopyWithImpl<$Res, _$MastodonApiEmojiImpl>
+    implements _$$MastodonApiEmojiImplCopyWith<$Res> {
+  __$$MastodonApiEmojiImplCopyWithImpl(_$MastodonApiEmojiImpl _value,
+      $Res Function(_$MastodonApiEmojiImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiEmoji get _value => super._value as _MastodonApiEmoji;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? shortcode = freezed,
+    Object? shortcode = null,
     Object? url = freezed,
     Object? staticUrl = freezed,
     Object? visibleInPicker = freezed,
     Object? category = freezed,
   }) {
-    return _then(_MastodonApiEmoji(
-      shortcode: shortcode == freezed
+    return _then(_$MastodonApiEmojiImpl(
+      shortcode: null == shortcode
           ? _value.shortcode
           : shortcode // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
-      staticUrl: staticUrl == freezed
+      staticUrl: freezed == staticUrl
           ? _value.staticUrl
           : staticUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      visibleInPicker: visibleInPicker == freezed
+      visibleInPicker: freezed == visibleInPicker
           ? _value.visibleInPicker
           : visibleInPicker // ignore: cast_nullable_to_non_nullable
               as bool?,
-      category: category == freezed
+      category: freezed == category
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -190,24 +158,18 @@ class __$MastodonApiEmojiCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiEmoji implements _MastodonApiEmoji {
-  const _$_MastodonApiEmoji(
-      {@HiveField(0)
-          required this.shortcode,
-      @HiveField(1)
-          required this.url,
-      @HiveField(2)
-      @JsonKey(name: 'static_url')
-          required this.staticUrl,
+class _$MastodonApiEmojiImpl implements _MastodonApiEmoji {
+  const _$MastodonApiEmojiImpl(
+      {@HiveField(0) required this.shortcode,
+      @HiveField(1) required this.url,
+      @HiveField(2) @JsonKey(name: 'static_url') required this.staticUrl,
       @JsonKey(name: 'visible_in_picker')
       @HiveField(3)
-          required this.visibleInPicker,
-      @override
-      @HiveField(4)
-          required this.category});
+      required this.visibleInPicker,
+      @override @HiveField(4) required this.category});
 
-  factory _$_MastodonApiEmoji.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiEmojiFromJson(json);
+  factory _$MastodonApiEmojiImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MastodonApiEmojiImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -234,10 +196,10 @@ class _$_MastodonApiEmoji implements _MastodonApiEmoji {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiEmoji &&
+            other is _$MastodonApiEmojiImpl &&
             (identical(other.shortcode, shortcode) ||
                 other.shortcode == shortcode) &&
             (identical(other.url, url) || other.url == url) &&
@@ -249,39 +211,41 @@ class _$_MastodonApiEmoji implements _MastodonApiEmoji {
                 other.category == category));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType, shortcode, url, staticUrl, visibleInPicker, category);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiEmojiCopyWith<_MastodonApiEmoji> get copyWith =>
-      __$MastodonApiEmojiCopyWithImpl<_MastodonApiEmoji>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiEmojiImplCopyWith<_$MastodonApiEmojiImpl> get copyWith =>
+      __$$MastodonApiEmojiImplCopyWithImpl<_$MastodonApiEmojiImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiEmojiToJson(this);
+    return _$$MastodonApiEmojiImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiEmoji implements MastodonApiEmoji {
   const factory _MastodonApiEmoji(
-      {@HiveField(0)
-          required String shortcode,
-      @HiveField(1)
-          required String? url,
-      @HiveField(2)
-      @JsonKey(name: 'static_url')
-          required String? staticUrl,
-      @JsonKey(name: 'visible_in_picker')
-      @HiveField(3)
-          required bool? visibleInPicker,
-      @override
-      @HiveField(4)
-          required String? category}) = _$_MastodonApiEmoji;
+          {@HiveField(0) required final String shortcode,
+          @HiveField(1) required final String? url,
+          @HiveField(2)
+          @JsonKey(name: 'static_url')
+          required final String? staticUrl,
+          @JsonKey(name: 'visible_in_picker')
+          @HiveField(3)
+          required final bool? visibleInPicker,
+          @override @HiveField(4) required final String? category}) =
+      _$MastodonApiEmojiImpl;
 
   factory _MastodonApiEmoji.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiEmoji.fromJson;
+      _$MastodonApiEmojiImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -303,6 +267,6 @@ abstract class _MastodonApiEmoji implements MastodonApiEmoji {
   String? get category;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiEmojiCopyWith<_MastodonApiEmoji> get copyWith =>
+  _$$MastodonApiEmojiImplCopyWith<_$MastodonApiEmojiImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

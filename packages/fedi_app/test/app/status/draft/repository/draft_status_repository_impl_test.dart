@@ -1,9 +1,9 @@
+import 'package:drift/native.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/status/draft/repository/draft_status_repository_impl.dart';
 import 'package:fedi_app/app/status/draft/repository/draft_status_repository_model.dart';
 import 'package:fedi_app/repository/repository_model.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:moor/ffi.dart';
 
 import '../database/draft_status_database_test_helper.dart';
 import '../draft_status_test_helper.dart';
@@ -18,7 +18,7 @@ void main() {
   DbDraftStatus? dbDraftStatus;
 
   setUp(() async {
-    database = AppDatabase(VmDatabase.memory());
+    database = AppDatabase(NativeDatabase.memory());
 
     draftStatusRepository = DraftStatusRepository(appDatabase: database);
 

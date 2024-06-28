@@ -48,15 +48,15 @@ class PleromaApiPostChatMessageAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiPostChatMessage _$$_PleromaApiPostChatMessageFromJson(
+_$PleromaApiPostChatMessageImpl _$$PleromaApiPostChatMessageImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiPostChatMessage(
+    _$PleromaApiPostChatMessageImpl(
       content: json['content'] as String?,
       mediaId: json['media_id'] as String?,
     );
 
-Map<String, dynamic> _$$_PleromaApiPostChatMessageToJson(
-    _$_PleromaApiPostChatMessage instance) {
+Map<String, dynamic> _$$PleromaApiPostChatMessageImplToJson(
+    _$PleromaApiPostChatMessageImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:drift/native.dart';
 import 'package:fedi_app/app/account/repository/account_repository.dart';
 import 'package:fedi_app/app/account/repository/account_repository_impl.dart';
 import 'package:fedi_app/app/database/app_database.dart';
@@ -14,7 +15,6 @@ import 'package:fedi_app/connection/connection_service.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
-import 'package:moor/ffi.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 
 import '../../rxdart/rxdart_test_helper.dart';
@@ -41,7 +41,7 @@ Future<void> main() async {
   late IStatusRepository statusRepository;
 
   setUp(() async {
-    database = AppDatabase(VmDatabase.memory(logStatements: false));
+    database = AppDatabase(NativeDatabase.memory(logStatements: false));
     accountRepository = AccountRepository(appDatabase: database);
     statusRepository = StatusRepository(
       appDatabase: database,

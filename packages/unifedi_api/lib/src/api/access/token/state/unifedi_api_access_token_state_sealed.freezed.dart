@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_access_token_state_sealed.dart';
 
@@ -11,30 +12,7 @@ part of 'unifedi_api_access_token_state_sealed.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$UnifediApiAccessTokenStateTearOff {
-  const _$UnifediApiAccessTokenStateTearOff();
-
-  _NotExist<TToken> notExist<TToken extends IUnifediApiAccessToken>() {
-    return _NotExist<TToken>();
-  }
-
-  _Valid<TToken> valid<TToken extends IUnifediApiAccessToken>(
-      {required TToken token}) {
-    return _Valid<TToken>(
-      token: token,
-    );
-  }
-
-  _Error<TToken> error<TToken extends IUnifediApiAccessToken>() {
-    return _Error<TToken>();
-  }
-}
-
-/// @nodoc
-const $UnifediApiAccessTokenState = _$UnifediApiAccessTokenStateTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$UnifediApiAccessTokenState<TToken extends IUnifediApiAccessToken> {
@@ -47,9 +25,9 @@ mixin _$UnifediApiAccessTokenState<TToken extends IUnifediApiAccessToken> {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? notExist,
-    TResult Function(TToken token)? valid,
-    TResult Function()? error,
+    TResult? Function()? notExist,
+    TResult? Function(TToken token)? valid,
+    TResult? Function()? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -69,9 +47,9 @@ mixin _$UnifediApiAccessTokenState<TToken extends IUnifediApiAccessToken> {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_NotExist<TToken> value)? notExist,
-    TResult Function(_Valid<TToken> value)? valid,
-    TResult Function(_Error<TToken> value)? error,
+    TResult? Function(_NotExist<TToken> value)? notExist,
+    TResult? Function(_Valid<TToken> value)? valid,
+    TResult? Function(_Error<TToken> value)? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -90,44 +68,47 @@ abstract class $UnifediApiAccessTokenStateCopyWith<
   factory $UnifediApiAccessTokenStateCopyWith(
           UnifediApiAccessTokenState<TToken> value,
           $Res Function(UnifediApiAccessTokenState<TToken>) then) =
-      _$UnifediApiAccessTokenStateCopyWithImpl<TToken, $Res>;
+      _$UnifediApiAccessTokenStateCopyWithImpl<TToken, $Res,
+          UnifediApiAccessTokenState<TToken>>;
 }
 
 /// @nodoc
 class _$UnifediApiAccessTokenStateCopyWithImpl<
-    TToken extends IUnifediApiAccessToken,
-    $Res> implements $UnifediApiAccessTokenStateCopyWith<TToken, $Res> {
+        TToken extends IUnifediApiAccessToken,
+        $Res,
+        $Val extends UnifediApiAccessTokenState<TToken>>
+    implements $UnifediApiAccessTokenStateCopyWith<TToken, $Res> {
   _$UnifediApiAccessTokenStateCopyWithImpl(this._value, this._then);
 
-  final UnifediApiAccessTokenState<TToken> _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiAccessTokenState<TToken>) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$NotExistCopyWith<TToken extends IUnifediApiAccessToken, $Res> {
-  factory _$NotExistCopyWith(
-          _NotExist<TToken> value, $Res Function(_NotExist<TToken>) then) =
-      __$NotExistCopyWithImpl<TToken, $Res>;
+abstract class _$$NotExistImplCopyWith<TToken extends IUnifediApiAccessToken,
+    $Res> {
+  factory _$$NotExistImplCopyWith(_$NotExistImpl<TToken> value,
+          $Res Function(_$NotExistImpl<TToken>) then) =
+      __$$NotExistImplCopyWithImpl<TToken, $Res>;
 }
 
 /// @nodoc
-class __$NotExistCopyWithImpl<TToken extends IUnifediApiAccessToken, $Res>
-    extends _$UnifediApiAccessTokenStateCopyWithImpl<TToken, $Res>
-    implements _$NotExistCopyWith<TToken, $Res> {
-  __$NotExistCopyWithImpl(
-      _NotExist<TToken> _value, $Res Function(_NotExist<TToken>) _then)
-      : super(_value, (v) => _then(v as _NotExist<TToken>));
-
-  @override
-  _NotExist<TToken> get _value => super._value as _NotExist<TToken>;
+class __$$NotExistImplCopyWithImpl<TToken extends IUnifediApiAccessToken, $Res>
+    extends _$UnifediApiAccessTokenStateCopyWithImpl<TToken, $Res,
+        _$NotExistImpl<TToken>>
+    implements _$$NotExistImplCopyWith<TToken, $Res> {
+  __$$NotExistImplCopyWithImpl(_$NotExistImpl<TToken> _value,
+      $Res Function(_$NotExistImpl<TToken>) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_NotExist<TToken extends IUnifediApiAccessToken>
+class _$NotExistImpl<TToken extends IUnifediApiAccessToken>
     implements _NotExist<TToken> {
-  const _$_NotExist();
+  const _$NotExistImpl();
 
   @override
   String toString() {
@@ -135,9 +116,9 @@ class _$_NotExist<TToken extends IUnifediApiAccessToken>
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _NotExist<TToken>);
+        (other.runtimeType == runtimeType && other is _$NotExistImpl<TToken>);
   }
 
   @override
@@ -156,9 +137,9 @@ class _$_NotExist<TToken extends IUnifediApiAccessToken>
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? notExist,
-    TResult Function(TToken token)? valid,
-    TResult Function()? error,
+    TResult? Function()? notExist,
+    TResult? Function(TToken token)? valid,
+    TResult? Function()? error,
   }) {
     return notExist?.call();
   }
@@ -190,9 +171,9 @@ class _$_NotExist<TToken extends IUnifediApiAccessToken>
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_NotExist<TToken> value)? notExist,
-    TResult Function(_Valid<TToken> value)? valid,
-    TResult Function(_Error<TToken> value)? error,
+    TResult? Function(_NotExist<TToken> value)? notExist,
+    TResult? Function(_Valid<TToken> value)? valid,
+    TResult? Function(_Error<TToken> value)? error,
   }) {
     return notExist?.call(this);
   }
@@ -214,34 +195,34 @@ class _$_NotExist<TToken extends IUnifediApiAccessToken>
 
 abstract class _NotExist<TToken extends IUnifediApiAccessToken>
     implements UnifediApiAccessTokenState<TToken> {
-  const factory _NotExist() = _$_NotExist<TToken>;
+  const factory _NotExist() = _$NotExistImpl<TToken>;
 }
 
 /// @nodoc
-abstract class _$ValidCopyWith<TToken extends IUnifediApiAccessToken, $Res> {
-  factory _$ValidCopyWith(
-          _Valid<TToken> value, $Res Function(_Valid<TToken>) then) =
-      __$ValidCopyWithImpl<TToken, $Res>;
+abstract class _$$ValidImplCopyWith<TToken extends IUnifediApiAccessToken,
+    $Res> {
+  factory _$$ValidImplCopyWith(
+          _$ValidImpl<TToken> value, $Res Function(_$ValidImpl<TToken>) then) =
+      __$$ValidImplCopyWithImpl<TToken, $Res>;
+  @useResult
   $Res call({TToken token});
 }
 
 /// @nodoc
-class __$ValidCopyWithImpl<TToken extends IUnifediApiAccessToken, $Res>
-    extends _$UnifediApiAccessTokenStateCopyWithImpl<TToken, $Res>
-    implements _$ValidCopyWith<TToken, $Res> {
-  __$ValidCopyWithImpl(
-      _Valid<TToken> _value, $Res Function(_Valid<TToken>) _then)
-      : super(_value, (v) => _then(v as _Valid<TToken>));
+class __$$ValidImplCopyWithImpl<TToken extends IUnifediApiAccessToken, $Res>
+    extends _$UnifediApiAccessTokenStateCopyWithImpl<TToken, $Res,
+        _$ValidImpl<TToken>> implements _$$ValidImplCopyWith<TToken, $Res> {
+  __$$ValidImplCopyWithImpl(
+      _$ValidImpl<TToken> _value, $Res Function(_$ValidImpl<TToken>) _then)
+      : super(_value, _then);
 
-  @override
-  _Valid<TToken> get _value => super._value as _Valid<TToken>;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? token = freezed,
+    Object? token = null,
   }) {
-    return _then(_Valid<TToken>(
-      token: token == freezed
+    return _then(_$ValidImpl<TToken>(
+      token: null == token
           ? _value.token
           : token // ignore: cast_nullable_to_non_nullable
               as TToken,
@@ -251,9 +232,9 @@ class __$ValidCopyWithImpl<TToken extends IUnifediApiAccessToken, $Res>
 
 /// @nodoc
 
-class _$_Valid<TToken extends IUnifediApiAccessToken>
+class _$ValidImpl<TToken extends IUnifediApiAccessToken>
     implements _Valid<TToken> {
-  const _$_Valid({required this.token});
+  const _$ValidImpl({required this.token});
 
   @override
   final TToken token;
@@ -264,10 +245,10 @@ class _$_Valid<TToken extends IUnifediApiAccessToken>
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Valid<TToken> &&
+            other is _$ValidImpl<TToken> &&
             const DeepCollectionEquality().equals(other.token, token));
   }
 
@@ -277,8 +258,9 @@ class _$_Valid<TToken extends IUnifediApiAccessToken>
 
   @JsonKey(ignore: true)
   @override
-  _$ValidCopyWith<TToken, _Valid<TToken>> get copyWith =>
-      __$ValidCopyWithImpl<TToken, _Valid<TToken>>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ValidImplCopyWith<TToken, _$ValidImpl<TToken>> get copyWith =>
+      __$$ValidImplCopyWithImpl<TToken, _$ValidImpl<TToken>>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -293,9 +275,9 @@ class _$_Valid<TToken extends IUnifediApiAccessToken>
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? notExist,
-    TResult Function(TToken token)? valid,
-    TResult Function()? error,
+    TResult? Function()? notExist,
+    TResult? Function(TToken token)? valid,
+    TResult? Function()? error,
   }) {
     return valid?.call(token);
   }
@@ -327,9 +309,9 @@ class _$_Valid<TToken extends IUnifediApiAccessToken>
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_NotExist<TToken> value)? notExist,
-    TResult Function(_Valid<TToken> value)? valid,
-    TResult Function(_Error<TToken> value)? error,
+    TResult? Function(_NotExist<TToken> value)? notExist,
+    TResult? Function(_Valid<TToken> value)? valid,
+    TResult? Function(_Error<TToken> value)? error,
   }) {
     return valid?.call(this);
   }
@@ -351,38 +333,36 @@ class _$_Valid<TToken extends IUnifediApiAccessToken>
 
 abstract class _Valid<TToken extends IUnifediApiAccessToken>
     implements UnifediApiAccessTokenState<TToken> {
-  const factory _Valid({required TToken token}) = _$_Valid<TToken>;
+  const factory _Valid({required final TToken token}) = _$ValidImpl<TToken>;
 
   TToken get token;
   @JsonKey(ignore: true)
-  _$ValidCopyWith<TToken, _Valid<TToken>> get copyWith =>
+  _$$ValidImplCopyWith<TToken, _$ValidImpl<TToken>> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ErrorCopyWith<TToken extends IUnifediApiAccessToken, $Res> {
-  factory _$ErrorCopyWith(
-          _Error<TToken> value, $Res Function(_Error<TToken>) then) =
-      __$ErrorCopyWithImpl<TToken, $Res>;
+abstract class _$$ErrorImplCopyWith<TToken extends IUnifediApiAccessToken,
+    $Res> {
+  factory _$$ErrorImplCopyWith(
+          _$ErrorImpl<TToken> value, $Res Function(_$ErrorImpl<TToken>) then) =
+      __$$ErrorImplCopyWithImpl<TToken, $Res>;
 }
 
 /// @nodoc
-class __$ErrorCopyWithImpl<TToken extends IUnifediApiAccessToken, $Res>
-    extends _$UnifediApiAccessTokenStateCopyWithImpl<TToken, $Res>
-    implements _$ErrorCopyWith<TToken, $Res> {
-  __$ErrorCopyWithImpl(
-      _Error<TToken> _value, $Res Function(_Error<TToken>) _then)
-      : super(_value, (v) => _then(v as _Error<TToken>));
-
-  @override
-  _Error<TToken> get _value => super._value as _Error<TToken>;
+class __$$ErrorImplCopyWithImpl<TToken extends IUnifediApiAccessToken, $Res>
+    extends _$UnifediApiAccessTokenStateCopyWithImpl<TToken, $Res,
+        _$ErrorImpl<TToken>> implements _$$ErrorImplCopyWith<TToken, $Res> {
+  __$$ErrorImplCopyWithImpl(
+      _$ErrorImpl<TToken> _value, $Res Function(_$ErrorImpl<TToken>) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Error<TToken extends IUnifediApiAccessToken>
+class _$ErrorImpl<TToken extends IUnifediApiAccessToken>
     implements _Error<TToken> {
-  const _$_Error();
+  const _$ErrorImpl();
 
   @override
   String toString() {
@@ -390,9 +370,9 @@ class _$_Error<TToken extends IUnifediApiAccessToken>
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _Error<TToken>);
+        (other.runtimeType == runtimeType && other is _$ErrorImpl<TToken>);
   }
 
   @override
@@ -411,9 +391,9 @@ class _$_Error<TToken extends IUnifediApiAccessToken>
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? notExist,
-    TResult Function(TToken token)? valid,
-    TResult Function()? error,
+    TResult? Function()? notExist,
+    TResult? Function(TToken token)? valid,
+    TResult? Function()? error,
   }) {
     return error?.call();
   }
@@ -445,9 +425,9 @@ class _$_Error<TToken extends IUnifediApiAccessToken>
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_NotExist<TToken> value)? notExist,
-    TResult Function(_Valid<TToken> value)? valid,
-    TResult Function(_Error<TToken> value)? error,
+    TResult? Function(_NotExist<TToken> value)? notExist,
+    TResult? Function(_Valid<TToken> value)? valid,
+    TResult? Function(_Error<TToken> value)? error,
   }) {
     return error?.call(this);
   }
@@ -469,5 +449,5 @@ class _$_Error<TToken extends IUnifediApiAccessToken>
 
 abstract class _Error<TToken extends IUnifediApiAccessToken>
     implements UnifediApiAccessTokenState<TToken> {
-  const factory _Error() = _$_Error<TToken>;
+  const factory _Error() = _$ErrorImpl<TToken>;
 }

@@ -54,9 +54,9 @@ class MastodonApiVersionRangeAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiVersionRange _$$_MastodonApiVersionRangeFromJson(
+_$MastodonApiVersionRangeImpl _$$MastodonApiVersionRangeImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiVersionRange(
+    _$MastodonApiVersionRangeImpl(
       min: json['min'] == null
           ? null
           : MastodonApiVersion.fromJson(json['min'] as Map<String, dynamic>),
@@ -67,8 +67,8 @@ _$_MastodonApiVersionRange _$$_MastodonApiVersionRangeFromJson(
       maxInclusive: json['max_inclusive'] as bool? ?? false,
     );
 
-Map<String, dynamic> _$$_MastodonApiVersionRangeToJson(
-    _$_MastodonApiVersionRange instance) {
+Map<String, dynamic> _$$MastodonApiVersionRangeImplToJson(
+    _$MastodonApiVersionRangeImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

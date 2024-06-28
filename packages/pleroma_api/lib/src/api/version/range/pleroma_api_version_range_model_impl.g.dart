@@ -54,9 +54,9 @@ class PleromaApiVersionRangeAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiVersionRange _$$_PleromaApiVersionRangeFromJson(
+_$PleromaApiVersionRangeImpl _$$PleromaApiVersionRangeImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiVersionRange(
+    _$PleromaApiVersionRangeImpl(
       min: json['min'] == null
           ? null
           : PleromaApiVersion.fromJson(json['min'] as Map<String, dynamic>),
@@ -67,8 +67,8 @@ _$_PleromaApiVersionRange _$$_PleromaApiVersionRangeFromJson(
       maxInclusive: json['max_inclusive'] as bool? ?? false,
     );
 
-Map<String, dynamic> _$$_PleromaApiVersionRangeToJson(
-    _$_PleromaApiVersionRange instance) {
+Map<String, dynamic> _$$PleromaApiVersionRangeImplToJson(
+    _$PleromaApiVersionRangeImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

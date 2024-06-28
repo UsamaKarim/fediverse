@@ -46,16 +46,17 @@ class UnifediApiRegisterAccountResponsePleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiRegisterAccountResponsePleromaAdapter
-    _$$_UnifediApiRegisterAccountResponsePleromaAdapterFromJson(
+_$UnifediApiRegisterAccountResponsePleromaAdapterImpl
+    _$$UnifediApiRegisterAccountResponsePleromaAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiRegisterAccountResponsePleromaAdapter(
+        _$UnifediApiRegisterAccountResponsePleromaAdapterImpl(
           PleromaApiRegisterAccountResponse.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiRegisterAccountResponsePleromaAdapterToJson(
-        _$_UnifediApiRegisterAccountResponsePleromaAdapter instance) =>
-    <String, dynamic>{
-      'value': instance.value.toJson(),
-    };
+Map<String, dynamic>
+    _$$UnifediApiRegisterAccountResponsePleromaAdapterImplToJson(
+            _$UnifediApiRegisterAccountResponsePleromaAdapterImpl instance) =>
+        <String, dynamic>{
+          'value': instance.value.toJson(),
+        };

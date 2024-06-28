@@ -53,17 +53,17 @@ class PleromaApiPaginationAdapter extends TypeAdapter<PleromaApiPagination> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiPagination _$$_PleromaApiPaginationFromJson(
+_$PleromaApiPaginationImpl _$$PleromaApiPaginationImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiPagination(
-      limit: json['limit'] as int?,
+    _$PleromaApiPaginationImpl(
+      limit: (json['limit'] as num?)?.toInt(),
       maxId: json['max_id'] as String?,
       minId: json['min_id'] as String?,
       sinceId: json['since_id'] as String?,
     );
 
-Map<String, dynamic> _$$_PleromaApiPaginationToJson(
-    _$_PleromaApiPagination instance) {
+Map<String, dynamic> _$$PleromaApiPaginationImplToJson(
+    _$PleromaApiPaginationImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

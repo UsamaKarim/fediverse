@@ -50,8 +50,8 @@ class PleromaApiTagAdapter extends TypeAdapter<PleromaApiTag> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiTag _$$_PleromaApiTagFromJson(Map<String, dynamic> json) =>
-    _$_PleromaApiTag(
+_$PleromaApiTagImpl _$$PleromaApiTagImplFromJson(Map<String, dynamic> json) =>
+    _$PleromaApiTagImpl(
       name: json['name'] as String,
       url: json['url'] as String,
       history: (json['history'] as List<dynamic>?)
@@ -60,7 +60,7 @@ _$_PleromaApiTag _$$_PleromaApiTagFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$_PleromaApiTagToJson(_$_PleromaApiTag instance) {
+Map<String, dynamic> _$$PleromaApiTagImplToJson(_$PleromaApiTagImpl instance) {
   final val = <String, dynamic>{
     'name': instance.name,
     'url': instance.url,

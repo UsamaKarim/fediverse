@@ -57,10 +57,10 @@ class MastodonApiPushSubscriptionAlertsAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiPushSubscribeRequestDataAlerts
-    _$$_MastodonApiPushSubscribeRequestDataAlertsFromJson(
+_$MastodonApiPushSubscribeRequestDataAlertsImpl
+    _$$MastodonApiPushSubscribeRequestDataAlertsImplFromJson(
             Map<String, dynamic> json) =>
-        _$_MastodonApiPushSubscribeRequestDataAlerts(
+        _$MastodonApiPushSubscribeRequestDataAlertsImpl(
           favourite: json['favourite'] as bool?,
           follow: json['follow'] as bool?,
           mention: json['mention'] as bool?,
@@ -68,8 +68,8 @@ _$_MastodonApiPushSubscribeRequestDataAlerts
           poll: json['poll'] as bool?,
         );
 
-Map<String, dynamic> _$$_MastodonApiPushSubscribeRequestDataAlertsToJson(
-    _$_MastodonApiPushSubscribeRequestDataAlerts instance) {
+Map<String, dynamic> _$$MastodonApiPushSubscribeRequestDataAlertsImplToJson(
+    _$MastodonApiPushSubscribeRequestDataAlertsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

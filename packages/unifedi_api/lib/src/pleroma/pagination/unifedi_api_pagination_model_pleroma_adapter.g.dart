@@ -45,15 +45,16 @@ class UnifediApiPaginationPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiPaginationPleromaAdapter
-    _$$_UnifediApiPaginationPleromaAdapterFromJson(Map<String, dynamic> json) =>
-        _$_UnifediApiPaginationPleromaAdapter(
+_$UnifediApiPaginationPleromaAdapterImpl
+    _$$UnifediApiPaginationPleromaAdapterImplFromJson(
+            Map<String, dynamic> json) =>
+        _$UnifediApiPaginationPleromaAdapterImpl(
           PleromaApiPagination.fromJson(
               json['value_pagination'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiPaginationPleromaAdapterToJson(
-        _$_UnifediApiPaginationPleromaAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiPaginationPleromaAdapterImplToJson(
+        _$UnifediApiPaginationPleromaAdapterImpl instance) =>
     <String, dynamic>{
       'value_pagination': instance.valuePagination.toJson(),
     };

@@ -45,17 +45,18 @@ class PleromaApiAccessScopesRequirementAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiAccessScopesRequirement
-    _$$_PleromaApiAccessScopesRequirementFromJson(Map<String, dynamic> json) =>
-        _$_PleromaApiAccessScopesRequirement(
+_$PleromaApiAccessScopesRequirementImpl
+    _$$PleromaApiAccessScopesRequirementImplFromJson(
+            Map<String, dynamic> json) =>
+        _$PleromaApiAccessScopesRequirementImpl(
           scopesVariants: (json['scopes_variants'] as List<dynamic>)
               .map((e) =>
                   PleromaApiAccessScopes.fromJson(e as Map<String, dynamic>))
               .toList(),
         );
 
-Map<String, dynamic> _$$_PleromaApiAccessScopesRequirementToJson(
-        _$_PleromaApiAccessScopesRequirement instance) =>
+Map<String, dynamic> _$$PleromaApiAccessScopesRequirementImplToJson(
+        _$PleromaApiAccessScopesRequirementImpl instance) =>
     <String, dynamic>{
       'scopes_variants':
           instance.scopesVariants.map((e) => e.toJson()).toList(),

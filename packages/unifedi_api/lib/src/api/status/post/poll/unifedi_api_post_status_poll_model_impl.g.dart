@@ -54,18 +54,18 @@ class UnifediApiPostStatusPollAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiPostStatusPoll _$$_UnifediApiPostStatusPollFromJson(
+_$UnifediApiPostStatusPollImpl _$$UnifediApiPostStatusPollImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiPostStatusPoll(
-      expiresInSeconds: json['expires_in'] as int,
+    _$UnifediApiPostStatusPollImpl(
+      expiresInSeconds: (json['expires_in'] as num).toInt(),
       hideTotals: json['hide_totals'] as bool,
       multiple: json['multiple'] as bool,
       options:
           (json['options'] as List<dynamic>).map((e) => e as String).toList(),
     );
 
-Map<String, dynamic> _$$_UnifediApiPostStatusPollToJson(
-        _$_UnifediApiPostStatusPoll instance) =>
+Map<String, dynamic> _$$UnifediApiPostStatusPollImplToJson(
+        _$UnifediApiPostStatusPollImpl instance) =>
     <String, dynamic>{
       'expires_in': instance.expiresInSeconds,
       'hide_totals': instance.hideTotals,

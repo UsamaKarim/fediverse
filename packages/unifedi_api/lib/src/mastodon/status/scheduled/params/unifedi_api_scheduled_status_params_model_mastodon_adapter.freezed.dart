@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_scheduled_status_params_model_mastodon_adapter.dart';
 
@@ -11,34 +12,13 @@ part of 'unifedi_api_scheduled_status_params_model_mastodon_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiScheduledStatusParamsMastodonAdapter
     _$UnifediApiScheduledStatusParamsMastodonAdapterFromJson(
         Map<String, dynamic> json) {
   return _UnifediApiScheduledStatusParamsMastodonAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiScheduledStatusParamsMastodonAdapterTearOff {
-  const _$UnifediApiScheduledStatusParamsMastodonAdapterTearOff();
-
-  _UnifediApiScheduledStatusParamsMastodonAdapter call(
-      @HiveField(0) MastodonApiScheduledStatusParams value) {
-    return _UnifediApiScheduledStatusParamsMastodonAdapter(
-      value,
-    );
-  }
-
-  UnifediApiScheduledStatusParamsMastodonAdapter fromJson(
-      Map<String, Object?> json) {
-    return UnifediApiScheduledStatusParamsMastodonAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiScheduledStatusParamsMastodonAdapter =
-    _$UnifediApiScheduledStatusParamsMastodonAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiScheduledStatusParamsMastodonAdapter {
@@ -58,51 +38,60 @@ abstract class $UnifediApiScheduledStatusParamsMastodonAdapterCopyWith<$Res> {
   factory $UnifediApiScheduledStatusParamsMastodonAdapterCopyWith(
           UnifediApiScheduledStatusParamsMastodonAdapter value,
           $Res Function(UnifediApiScheduledStatusParamsMastodonAdapter) then) =
-      _$UnifediApiScheduledStatusParamsMastodonAdapterCopyWithImpl<$Res>;
+      _$UnifediApiScheduledStatusParamsMastodonAdapterCopyWithImpl<$Res,
+          UnifediApiScheduledStatusParamsMastodonAdapter>;
+  @useResult
   $Res call({@HiveField(0) MastodonApiScheduledStatusParams value});
 
   $MastodonApiScheduledStatusParamsCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiScheduledStatusParamsMastodonAdapterCopyWithImpl<$Res>
+class _$UnifediApiScheduledStatusParamsMastodonAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiScheduledStatusParamsMastodonAdapter>
     implements $UnifediApiScheduledStatusParamsMastodonAdapterCopyWith<$Res> {
   _$UnifediApiScheduledStatusParamsMastodonAdapterCopyWithImpl(
       this._value, this._then);
 
-  final UnifediApiScheduledStatusParamsMastodonAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiScheduledStatusParamsMastodonAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiScheduledStatusParams,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiScheduledStatusParamsCopyWith<$Res> get value {
     return $MastodonApiScheduledStatusParamsCopyWith<$Res>(_value.value,
         (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiScheduledStatusParamsMastodonAdapterCopyWith<$Res>
+abstract class _$$UnifediApiScheduledStatusParamsMastodonAdapterImplCopyWith<
+        $Res>
     implements $UnifediApiScheduledStatusParamsMastodonAdapterCopyWith<$Res> {
-  factory _$UnifediApiScheduledStatusParamsMastodonAdapterCopyWith(
-          _UnifediApiScheduledStatusParamsMastodonAdapter value,
-          $Res Function(_UnifediApiScheduledStatusParamsMastodonAdapter) then) =
-      __$UnifediApiScheduledStatusParamsMastodonAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiScheduledStatusParamsMastodonAdapterImplCopyWith(
+          _$UnifediApiScheduledStatusParamsMastodonAdapterImpl value,
+          $Res Function(_$UnifediApiScheduledStatusParamsMastodonAdapterImpl)
+              then) =
+      __$$UnifediApiScheduledStatusParamsMastodonAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) MastodonApiScheduledStatusParams value});
 
   @override
@@ -110,25 +99,23 @@ abstract class _$UnifediApiScheduledStatusParamsMastodonAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiScheduledStatusParamsMastodonAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiScheduledStatusParamsMastodonAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiScheduledStatusParamsMastodonAdapterCopyWith<$Res> {
-  __$UnifediApiScheduledStatusParamsMastodonAdapterCopyWithImpl(
-      _UnifediApiScheduledStatusParamsMastodonAdapter _value,
-      $Res Function(_UnifediApiScheduledStatusParamsMastodonAdapter) _then)
-      : super(_value,
-            (v) => _then(v as _UnifediApiScheduledStatusParamsMastodonAdapter));
+class __$$UnifediApiScheduledStatusParamsMastodonAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiScheduledStatusParamsMastodonAdapterCopyWithImpl<$Res,
+        _$UnifediApiScheduledStatusParamsMastodonAdapterImpl>
+    implements
+        _$$UnifediApiScheduledStatusParamsMastodonAdapterImplCopyWith<$Res> {
+  __$$UnifediApiScheduledStatusParamsMastodonAdapterImplCopyWithImpl(
+      _$UnifediApiScheduledStatusParamsMastodonAdapterImpl _value,
+      $Res Function(_$UnifediApiScheduledStatusParamsMastodonAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiScheduledStatusParamsMastodonAdapter get _value =>
-      super._value as _UnifediApiScheduledStatusParamsMastodonAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiScheduledStatusParamsMastodonAdapter(
-      value == freezed
+    return _then(_$UnifediApiScheduledStatusParamsMastodonAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiScheduledStatusParams,
@@ -138,15 +125,15 @@ class __$UnifediApiScheduledStatusParamsMastodonAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiScheduledStatusParamsMastodonAdapter
+class _$UnifediApiScheduledStatusParamsMastodonAdapterImpl
     extends _UnifediApiScheduledStatusParamsMastodonAdapter {
-  const _$_UnifediApiScheduledStatusParamsMastodonAdapter(
+  const _$UnifediApiScheduledStatusParamsMastodonAdapterImpl(
       @HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiScheduledStatusParamsMastodonAdapter.fromJson(
+  factory _$UnifediApiScheduledStatusParamsMastodonAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiScheduledStatusParamsMastodonAdapterFromJson(json);
+      _$$UnifediApiScheduledStatusParamsMastodonAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -158,48 +145,52 @@ class _$_UnifediApiScheduledStatusParamsMastodonAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiScheduledStatusParamsMastodonAdapter &&
+            other is _$UnifediApiScheduledStatusParamsMastodonAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiScheduledStatusParamsMastodonAdapterCopyWith<
-          _UnifediApiScheduledStatusParamsMastodonAdapter>
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiScheduledStatusParamsMastodonAdapterImplCopyWith<
+          _$UnifediApiScheduledStatusParamsMastodonAdapterImpl>
       get copyWith =>
-          __$UnifediApiScheduledStatusParamsMastodonAdapterCopyWithImpl<
-                  _UnifediApiScheduledStatusParamsMastodonAdapter>(
+          __$$UnifediApiScheduledStatusParamsMastodonAdapterImplCopyWithImpl<
+                  _$UnifediApiScheduledStatusParamsMastodonAdapterImpl>(
               this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiScheduledStatusParamsMastodonAdapterToJson(this);
+    return _$$UnifediApiScheduledStatusParamsMastodonAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiScheduledStatusParamsMastodonAdapter
     extends UnifediApiScheduledStatusParamsMastodonAdapter {
   const factory _UnifediApiScheduledStatusParamsMastodonAdapter(
-          @HiveField(0) MastodonApiScheduledStatusParams value) =
-      _$_UnifediApiScheduledStatusParamsMastodonAdapter;
+          @HiveField(0) final MastodonApiScheduledStatusParams value) =
+      _$UnifediApiScheduledStatusParamsMastodonAdapterImpl;
   const _UnifediApiScheduledStatusParamsMastodonAdapter._() : super._();
 
   factory _UnifediApiScheduledStatusParamsMastodonAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiScheduledStatusParamsMastodonAdapter.fromJson;
+      _$UnifediApiScheduledStatusParamsMastodonAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   MastodonApiScheduledStatusParams get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiScheduledStatusParamsMastodonAdapterCopyWith<
-          _UnifediApiScheduledStatusParamsMastodonAdapter>
+  _$$UnifediApiScheduledStatusParamsMastodonAdapterImplCopyWith<
+          _$UnifediApiScheduledStatusParamsMastodonAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

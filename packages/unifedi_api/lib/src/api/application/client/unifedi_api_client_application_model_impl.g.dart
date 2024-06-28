@@ -57,9 +57,9 @@ class UnifediApiClientApplicationAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiClientApplication _$$_UnifediApiClientApplicationFromJson(
+_$UnifediApiClientApplicationImpl _$$UnifediApiClientApplicationImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiClientApplication(
+    _$UnifediApiClientApplicationImpl(
       name: json['name'] as String?,
       website: json['website'] as String?,
       vapidKey: json['vapid_key'] as String?,
@@ -67,8 +67,8 @@ _$_UnifediApiClientApplication _$$_UnifediApiClientApplicationFromJson(
       clientSecret: json['client_secret'] as String?,
     );
 
-Map<String, dynamic> _$$_UnifediApiClientApplicationToJson(
-    _$_UnifediApiClientApplication instance) {
+Map<String, dynamic> _$$UnifediApiClientApplicationImplToJson(
+    _$UnifediApiClientApplicationImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

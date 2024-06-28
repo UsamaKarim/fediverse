@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_card_replies_policy_type_sealed.dart';
 
@@ -11,49 +12,11 @@ part of 'mastodon_api_card_replies_policy_type_sealed.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$MastodonApiListRepliesPolicyTypeTearOff {
-  const _$MastodonApiListRepliesPolicyTypeTearOff();
-
-  _Followed followed(
-      {String stringValue =
-          MastodonApiListRepliesPolicyType.followedStringValue}) {
-    return _Followed(
-      stringValue: stringValue,
-    );
-  }
-
-  _List list(
-      {String stringValue = MastodonApiListRepliesPolicyType.listStringValue}) {
-    return _List(
-      stringValue: stringValue,
-    );
-  }
-
-  _None none(
-      {String stringValue = MastodonApiListRepliesPolicyType.noneStringValue}) {
-    return _None(
-      stringValue: stringValue,
-    );
-  }
-
-  _Unknown unknown({required String stringValue}) {
-    return _Unknown(
-      stringValue: stringValue,
-    );
-  }
-}
-
-/// @nodoc
-const $MastodonApiListRepliesPolicyType =
-    _$MastodonApiListRepliesPolicyTypeTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$MastodonApiListRepliesPolicyType {
   String get stringValue => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String stringValue) followed,
@@ -64,10 +27,10 @@ mixin _$MastodonApiListRepliesPolicyType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? followed,
-    TResult Function(String stringValue)? list,
-    TResult Function(String stringValue)? none,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? followed,
+    TResult? Function(String stringValue)? list,
+    TResult? Function(String stringValue)? none,
+    TResult? Function(String stringValue)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -89,10 +52,10 @@ mixin _$MastodonApiListRepliesPolicyType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Followed value)? followed,
-    TResult Function(_List value)? list,
-    TResult Function(_None value)? none,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Followed value)? followed,
+    TResult? Function(_List value)? list,
+    TResult? Function(_None value)? none,
+    TResult? Function(_Unknown value)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -115,57 +78,63 @@ abstract class $MastodonApiListRepliesPolicyTypeCopyWith<$Res> {
   factory $MastodonApiListRepliesPolicyTypeCopyWith(
           MastodonApiListRepliesPolicyType value,
           $Res Function(MastodonApiListRepliesPolicyType) then) =
-      _$MastodonApiListRepliesPolicyTypeCopyWithImpl<$Res>;
+      _$MastodonApiListRepliesPolicyTypeCopyWithImpl<$Res,
+          MastodonApiListRepliesPolicyType>;
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class _$MastodonApiListRepliesPolicyTypeCopyWithImpl<$Res>
+class _$MastodonApiListRepliesPolicyTypeCopyWithImpl<$Res,
+        $Val extends MastodonApiListRepliesPolicyType>
     implements $MastodonApiListRepliesPolicyTypeCopyWith<$Res> {
   _$MastodonApiListRepliesPolicyTypeCopyWithImpl(this._value, this._then);
 
-  final MastodonApiListRepliesPolicyType _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiListRepliesPolicyType) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
     return _then(_value.copyWith(
-      stringValue: stringValue == freezed
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$FollowedCopyWith<$Res>
+abstract class _$$FollowedImplCopyWith<$Res>
     implements $MastodonApiListRepliesPolicyTypeCopyWith<$Res> {
-  factory _$FollowedCopyWith(_Followed value, $Res Function(_Followed) then) =
-      __$FollowedCopyWithImpl<$Res>;
+  factory _$$FollowedImplCopyWith(
+          _$FollowedImpl value, $Res Function(_$FollowedImpl) then) =
+      __$$FollowedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$FollowedCopyWithImpl<$Res>
-    extends _$MastodonApiListRepliesPolicyTypeCopyWithImpl<$Res>
-    implements _$FollowedCopyWith<$Res> {
-  __$FollowedCopyWithImpl(_Followed _value, $Res Function(_Followed) _then)
-      : super(_value, (v) => _then(v as _Followed));
+class __$$FollowedImplCopyWithImpl<$Res>
+    extends _$MastodonApiListRepliesPolicyTypeCopyWithImpl<$Res, _$FollowedImpl>
+    implements _$$FollowedImplCopyWith<$Res> {
+  __$$FollowedImplCopyWithImpl(
+      _$FollowedImpl _value, $Res Function(_$FollowedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Followed get _value => super._value as _Followed;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Followed(
-      stringValue: stringValue == freezed
+    return _then(_$FollowedImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -175,13 +144,13 @@ class __$FollowedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Followed implements _Followed {
-  const _$_Followed(
+class _$FollowedImpl implements _Followed {
+  const _$FollowedImpl(
       {this.stringValue =
           MastodonApiListRepliesPolicyType.followedStringValue});
 
-  @JsonKey(defaultValue: MastodonApiListRepliesPolicyType.followedStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -190,10 +159,10 @@ class _$_Followed implements _Followed {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Followed &&
+            other is _$FollowedImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -203,8 +172,9 @@ class _$_Followed implements _Followed {
 
   @JsonKey(ignore: true)
   @override
-  _$FollowedCopyWith<_Followed> get copyWith =>
-      __$FollowedCopyWithImpl<_Followed>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$FollowedImplCopyWith<_$FollowedImpl> get copyWith =>
+      __$$FollowedImplCopyWithImpl<_$FollowedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -220,10 +190,10 @@ class _$_Followed implements _Followed {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? followed,
-    TResult Function(String stringValue)? list,
-    TResult Function(String stringValue)? none,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? followed,
+    TResult? Function(String stringValue)? list,
+    TResult? Function(String stringValue)? none,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return followed?.call(stringValue);
   }
@@ -257,10 +227,10 @@ class _$_Followed implements _Followed {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Followed value)? followed,
-    TResult Function(_List value)? list,
-    TResult Function(_None value)? none,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Followed value)? followed,
+    TResult? Function(_List value)? list,
+    TResult? Function(_None value)? none,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return followed?.call(this);
   }
@@ -282,41 +252,41 @@ class _$_Followed implements _Followed {
 }
 
 abstract class _Followed implements MastodonApiListRepliesPolicyType {
-  const factory _Followed({String stringValue}) = _$_Followed;
+  const factory _Followed({final String stringValue}) = _$FollowedImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$FollowedCopyWith<_Followed> get copyWith =>
+  _$$FollowedImplCopyWith<_$FollowedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ListCopyWith<$Res>
+abstract class _$$ListImplCopyWith<$Res>
     implements $MastodonApiListRepliesPolicyTypeCopyWith<$Res> {
-  factory _$ListCopyWith(_List value, $Res Function(_List) then) =
-      __$ListCopyWithImpl<$Res>;
+  factory _$$ListImplCopyWith(
+          _$ListImpl value, $Res Function(_$ListImpl) then) =
+      __$$ListImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$ListCopyWithImpl<$Res>
-    extends _$MastodonApiListRepliesPolicyTypeCopyWithImpl<$Res>
-    implements _$ListCopyWith<$Res> {
-  __$ListCopyWithImpl(_List _value, $Res Function(_List) _then)
-      : super(_value, (v) => _then(v as _List));
+class __$$ListImplCopyWithImpl<$Res>
+    extends _$MastodonApiListRepliesPolicyTypeCopyWithImpl<$Res, _$ListImpl>
+    implements _$$ListImplCopyWith<$Res> {
+  __$$ListImplCopyWithImpl(_$ListImpl _value, $Res Function(_$ListImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _List get _value => super._value as _List;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_List(
-      stringValue: stringValue == freezed
+    return _then(_$ListImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -326,12 +296,12 @@ class __$ListCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_List implements _List {
-  const _$_List(
+class _$ListImpl implements _List {
+  const _$ListImpl(
       {this.stringValue = MastodonApiListRepliesPolicyType.listStringValue});
 
-  @JsonKey(defaultValue: MastodonApiListRepliesPolicyType.listStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -340,10 +310,10 @@ class _$_List implements _List {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _List &&
+            other is _$ListImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -353,8 +323,9 @@ class _$_List implements _List {
 
   @JsonKey(ignore: true)
   @override
-  _$ListCopyWith<_List> get copyWith =>
-      __$ListCopyWithImpl<_List>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ListImplCopyWith<_$ListImpl> get copyWith =>
+      __$$ListImplCopyWithImpl<_$ListImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -370,10 +341,10 @@ class _$_List implements _List {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? followed,
-    TResult Function(String stringValue)? list,
-    TResult Function(String stringValue)? none,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? followed,
+    TResult? Function(String stringValue)? list,
+    TResult? Function(String stringValue)? none,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return list?.call(stringValue);
   }
@@ -407,10 +378,10 @@ class _$_List implements _List {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Followed value)? followed,
-    TResult Function(_List value)? list,
-    TResult Function(_None value)? none,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Followed value)? followed,
+    TResult? Function(_List value)? list,
+    TResult? Function(_None value)? none,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return list?.call(this);
   }
@@ -432,40 +403,41 @@ class _$_List implements _List {
 }
 
 abstract class _List implements MastodonApiListRepliesPolicyType {
-  const factory _List({String stringValue}) = _$_List;
+  const factory _List({final String stringValue}) = _$ListImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$ListCopyWith<_List> get copyWith => throw _privateConstructorUsedError;
+  _$$ListImplCopyWith<_$ListImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$NoneCopyWith<$Res>
+abstract class _$$NoneImplCopyWith<$Res>
     implements $MastodonApiListRepliesPolicyTypeCopyWith<$Res> {
-  factory _$NoneCopyWith(_None value, $Res Function(_None) then) =
-      __$NoneCopyWithImpl<$Res>;
+  factory _$$NoneImplCopyWith(
+          _$NoneImpl value, $Res Function(_$NoneImpl) then) =
+      __$$NoneImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$NoneCopyWithImpl<$Res>
-    extends _$MastodonApiListRepliesPolicyTypeCopyWithImpl<$Res>
-    implements _$NoneCopyWith<$Res> {
-  __$NoneCopyWithImpl(_None _value, $Res Function(_None) _then)
-      : super(_value, (v) => _then(v as _None));
+class __$$NoneImplCopyWithImpl<$Res>
+    extends _$MastodonApiListRepliesPolicyTypeCopyWithImpl<$Res, _$NoneImpl>
+    implements _$$NoneImplCopyWith<$Res> {
+  __$$NoneImplCopyWithImpl(_$NoneImpl _value, $Res Function(_$NoneImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _None get _value => super._value as _None;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_None(
-      stringValue: stringValue == freezed
+    return _then(_$NoneImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -475,12 +447,12 @@ class __$NoneCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_None implements _None {
-  const _$_None(
+class _$NoneImpl implements _None {
+  const _$NoneImpl(
       {this.stringValue = MastodonApiListRepliesPolicyType.noneStringValue});
 
-  @JsonKey(defaultValue: MastodonApiListRepliesPolicyType.noneStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -489,10 +461,10 @@ class _$_None implements _None {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _None &&
+            other is _$NoneImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -502,8 +474,9 @@ class _$_None implements _None {
 
   @JsonKey(ignore: true)
   @override
-  _$NoneCopyWith<_None> get copyWith =>
-      __$NoneCopyWithImpl<_None>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$NoneImplCopyWith<_$NoneImpl> get copyWith =>
+      __$$NoneImplCopyWithImpl<_$NoneImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -519,10 +492,10 @@ class _$_None implements _None {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? followed,
-    TResult Function(String stringValue)? list,
-    TResult Function(String stringValue)? none,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? followed,
+    TResult? Function(String stringValue)? list,
+    TResult? Function(String stringValue)? none,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return none?.call(stringValue);
   }
@@ -556,10 +529,10 @@ class _$_None implements _None {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Followed value)? followed,
-    TResult Function(_List value)? list,
-    TResult Function(_None value)? none,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Followed value)? followed,
+    TResult? Function(_List value)? list,
+    TResult? Function(_None value)? none,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return none?.call(this);
   }
@@ -581,40 +554,42 @@ class _$_None implements _None {
 }
 
 abstract class _None implements MastodonApiListRepliesPolicyType {
-  const factory _None({String stringValue}) = _$_None;
+  const factory _None({final String stringValue}) = _$NoneImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$NoneCopyWith<_None> get copyWith => throw _privateConstructorUsedError;
+  _$$NoneImplCopyWith<_$NoneImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$UnknownCopyWith<$Res>
+abstract class _$$UnknownImplCopyWith<$Res>
     implements $MastodonApiListRepliesPolicyTypeCopyWith<$Res> {
-  factory _$UnknownCopyWith(_Unknown value, $Res Function(_Unknown) then) =
-      __$UnknownCopyWithImpl<$Res>;
+  factory _$$UnknownImplCopyWith(
+          _$UnknownImpl value, $Res Function(_$UnknownImpl) then) =
+      __$$UnknownImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$UnknownCopyWithImpl<$Res>
-    extends _$MastodonApiListRepliesPolicyTypeCopyWithImpl<$Res>
-    implements _$UnknownCopyWith<$Res> {
-  __$UnknownCopyWithImpl(_Unknown _value, $Res Function(_Unknown) _then)
-      : super(_value, (v) => _then(v as _Unknown));
+class __$$UnknownImplCopyWithImpl<$Res>
+    extends _$MastodonApiListRepliesPolicyTypeCopyWithImpl<$Res, _$UnknownImpl>
+    implements _$$UnknownImplCopyWith<$Res> {
+  __$$UnknownImplCopyWithImpl(
+      _$UnknownImpl _value, $Res Function(_$UnknownImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Unknown get _value => super._value as _Unknown;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Unknown(
-      stringValue: stringValue == freezed
+    return _then(_$UnknownImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -624,8 +599,8 @@ class __$UnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Unknown implements _Unknown {
-  const _$_Unknown({required this.stringValue});
+class _$UnknownImpl implements _Unknown {
+  const _$UnknownImpl({required this.stringValue});
 
   @override
   final String stringValue;
@@ -636,10 +611,10 @@ class _$_Unknown implements _Unknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Unknown &&
+            other is _$UnknownImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -649,8 +624,9 @@ class _$_Unknown implements _Unknown {
 
   @JsonKey(ignore: true)
   @override
-  _$UnknownCopyWith<_Unknown> get copyWith =>
-      __$UnknownCopyWithImpl<_Unknown>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnknownImplCopyWith<_$UnknownImpl> get copyWith =>
+      __$$UnknownImplCopyWithImpl<_$UnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -666,10 +642,10 @@ class _$_Unknown implements _Unknown {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? followed,
-    TResult Function(String stringValue)? list,
-    TResult Function(String stringValue)? none,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? followed,
+    TResult? Function(String stringValue)? list,
+    TResult? Function(String stringValue)? none,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return unknown?.call(stringValue);
   }
@@ -703,10 +679,10 @@ class _$_Unknown implements _Unknown {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Followed value)? followed,
-    TResult Function(_List value)? list,
-    TResult Function(_None value)? none,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Followed value)? followed,
+    TResult? Function(_List value)? list,
+    TResult? Function(_None value)? none,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return unknown?.call(this);
   }
@@ -728,12 +704,12 @@ class _$_Unknown implements _Unknown {
 }
 
 abstract class _Unknown implements MastodonApiListRepliesPolicyType {
-  const factory _Unknown({required String stringValue}) = _$_Unknown;
+  const factory _Unknown({required final String stringValue}) = _$UnknownImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$UnknownCopyWith<_Unknown> get copyWith =>
+  _$$UnknownImplCopyWith<_$UnknownImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

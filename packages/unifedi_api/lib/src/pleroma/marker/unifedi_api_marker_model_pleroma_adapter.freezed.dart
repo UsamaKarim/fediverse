@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_marker_model_pleroma_adapter.dart';
 
@@ -11,31 +12,12 @@ part of 'unifedi_api_marker_model_pleroma_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiMarkerPleromaAdapter _$UnifediApiMarkerPleromaAdapterFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiMarkerPleromaAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiMarkerPleromaAdapterTearOff {
-  const _$UnifediApiMarkerPleromaAdapterTearOff();
-
-  _UnifediApiMarkerPleromaAdapter call(@HiveField(0) PleromaApiMarker value) {
-    return _UnifediApiMarkerPleromaAdapter(
-      value,
-    );
-  }
-
-  UnifediApiMarkerPleromaAdapter fromJson(Map<String, Object?> json) {
-    return UnifediApiMarkerPleromaAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiMarkerPleromaAdapter =
-    _$UnifediApiMarkerPleromaAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiMarkerPleromaAdapter {
@@ -53,49 +35,56 @@ abstract class $UnifediApiMarkerPleromaAdapterCopyWith<$Res> {
   factory $UnifediApiMarkerPleromaAdapterCopyWith(
           UnifediApiMarkerPleromaAdapter value,
           $Res Function(UnifediApiMarkerPleromaAdapter) then) =
-      _$UnifediApiMarkerPleromaAdapterCopyWithImpl<$Res>;
+      _$UnifediApiMarkerPleromaAdapterCopyWithImpl<$Res,
+          UnifediApiMarkerPleromaAdapter>;
+  @useResult
   $Res call({@HiveField(0) PleromaApiMarker value});
 
   $PleromaApiMarkerCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiMarkerPleromaAdapterCopyWithImpl<$Res>
+class _$UnifediApiMarkerPleromaAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiMarkerPleromaAdapter>
     implements $UnifediApiMarkerPleromaAdapterCopyWith<$Res> {
   _$UnifediApiMarkerPleromaAdapterCopyWithImpl(this._value, this._then);
 
-  final UnifediApiMarkerPleromaAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiMarkerPleromaAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiMarker,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiMarkerCopyWith<$Res> get value {
     return $PleromaApiMarkerCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiMarkerPleromaAdapterCopyWith<$Res>
+abstract class _$$UnifediApiMarkerPleromaAdapterImplCopyWith<$Res>
     implements $UnifediApiMarkerPleromaAdapterCopyWith<$Res> {
-  factory _$UnifediApiMarkerPleromaAdapterCopyWith(
-          _UnifediApiMarkerPleromaAdapter value,
-          $Res Function(_UnifediApiMarkerPleromaAdapter) then) =
-      __$UnifediApiMarkerPleromaAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiMarkerPleromaAdapterImplCopyWith(
+          _$UnifediApiMarkerPleromaAdapterImpl value,
+          $Res Function(_$UnifediApiMarkerPleromaAdapterImpl) then) =
+      __$$UnifediApiMarkerPleromaAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) PleromaApiMarker value});
 
   @override
@@ -103,24 +92,22 @@ abstract class _$UnifediApiMarkerPleromaAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiMarkerPleromaAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiMarkerPleromaAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiMarkerPleromaAdapterCopyWith<$Res> {
-  __$UnifediApiMarkerPleromaAdapterCopyWithImpl(
-      _UnifediApiMarkerPleromaAdapter _value,
-      $Res Function(_UnifediApiMarkerPleromaAdapter) _then)
-      : super(_value, (v) => _then(v as _UnifediApiMarkerPleromaAdapter));
+class __$$UnifediApiMarkerPleromaAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiMarkerPleromaAdapterCopyWithImpl<$Res,
+        _$UnifediApiMarkerPleromaAdapterImpl>
+    implements _$$UnifediApiMarkerPleromaAdapterImplCopyWith<$Res> {
+  __$$UnifediApiMarkerPleromaAdapterImplCopyWithImpl(
+      _$UnifediApiMarkerPleromaAdapterImpl _value,
+      $Res Function(_$UnifediApiMarkerPleromaAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiMarkerPleromaAdapter get _value =>
-      super._value as _UnifediApiMarkerPleromaAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiMarkerPleromaAdapter(
-      value == freezed
+    return _then(_$UnifediApiMarkerPleromaAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiMarker,
@@ -130,13 +117,14 @@ class __$UnifediApiMarkerPleromaAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiMarkerPleromaAdapter
+class _$UnifediApiMarkerPleromaAdapterImpl
     extends _UnifediApiMarkerPleromaAdapter {
-  const _$_UnifediApiMarkerPleromaAdapter(@HiveField(0) this.value) : super._();
+  const _$UnifediApiMarkerPleromaAdapterImpl(@HiveField(0) this.value)
+      : super._();
 
-  factory _$_UnifediApiMarkerPleromaAdapter.fromJson(
+  factory _$UnifediApiMarkerPleromaAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiMarkerPleromaAdapterFromJson(json);
+      _$$UnifediApiMarkerPleromaAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -148,42 +136,49 @@ class _$_UnifediApiMarkerPleromaAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiMarkerPleromaAdapter &&
+            other is _$UnifediApiMarkerPleromaAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiMarkerPleromaAdapterCopyWith<_UnifediApiMarkerPleromaAdapter>
-      get copyWith => __$UnifediApiMarkerPleromaAdapterCopyWithImpl<
-          _UnifediApiMarkerPleromaAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiMarkerPleromaAdapterImplCopyWith<
+          _$UnifediApiMarkerPleromaAdapterImpl>
+      get copyWith => __$$UnifediApiMarkerPleromaAdapterImplCopyWithImpl<
+          _$UnifediApiMarkerPleromaAdapterImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiMarkerPleromaAdapterToJson(this);
+    return _$$UnifediApiMarkerPleromaAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiMarkerPleromaAdapter
     extends UnifediApiMarkerPleromaAdapter {
   const factory _UnifediApiMarkerPleromaAdapter(
-      @HiveField(0) PleromaApiMarker value) = _$_UnifediApiMarkerPleromaAdapter;
+          @HiveField(0) final PleromaApiMarker value) =
+      _$UnifediApiMarkerPleromaAdapterImpl;
   const _UnifediApiMarkerPleromaAdapter._() : super._();
 
   factory _UnifediApiMarkerPleromaAdapter.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiMarkerPleromaAdapter.fromJson;
+      _$UnifediApiMarkerPleromaAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   PleromaApiMarker get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiMarkerPleromaAdapterCopyWith<_UnifediApiMarkerPleromaAdapter>
+  _$$UnifediApiMarkerPleromaAdapterImplCopyWith<
+          _$UnifediApiMarkerPleromaAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

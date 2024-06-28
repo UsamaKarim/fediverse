@@ -60,21 +60,22 @@ class PleromaApiStatusEmojiReactionAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiStatusEmojiReaction _$$_PleromaApiStatusEmojiReactionFromJson(
-        Map<String, dynamic> json) =>
-    _$_PleromaApiStatusEmojiReaction(
-      name: json['name'] as String,
-      count: json['count'] as int,
-      me: json['me'] as bool,
-      accounts: (json['accounts'] as List<dynamic>?)
-          ?.map((e) => PleromaApiAccount.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      url: json['url'] as String?,
-      staticUrl: json['static_url'] as String?,
-    );
+_$PleromaApiStatusEmojiReactionImpl
+    _$$PleromaApiStatusEmojiReactionImplFromJson(Map<String, dynamic> json) =>
+        _$PleromaApiStatusEmojiReactionImpl(
+          name: json['name'] as String,
+          count: (json['count'] as num).toInt(),
+          me: json['me'] as bool,
+          accounts: (json['accounts'] as List<dynamic>?)
+              ?.map(
+                  (e) => PleromaApiAccount.fromJson(e as Map<String, dynamic>))
+              .toList(),
+          url: json['url'] as String?,
+          staticUrl: json['static_url'] as String?,
+        );
 
-Map<String, dynamic> _$$_PleromaApiStatusEmojiReactionToJson(
-    _$_PleromaApiStatusEmojiReaction instance) {
+Map<String, dynamic> _$$PleromaApiStatusEmojiReactionImplToJson(
+    _$PleromaApiStatusEmojiReactionImpl instance) {
   final val = <String, dynamic>{
     'name': instance.name,
     'count': instance.count,

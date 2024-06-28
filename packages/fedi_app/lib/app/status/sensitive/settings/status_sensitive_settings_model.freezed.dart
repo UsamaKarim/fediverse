@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'status_sensitive_settings_model.dart';
 
@@ -11,46 +12,12 @@ part of 'status_sensitive_settings_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 StatusSensitiveSettings _$StatusSensitiveSettingsFromJson(
     Map<String, dynamic> json) {
   return _StatusSensitiveSettings.fromJson(json);
 }
-
-/// @nodoc
-class _$StatusSensitiveSettingsTearOff {
-  const _$StatusSensitiveSettingsTearOff();
-
-  _StatusSensitiveSettings call(
-      {@HiveField(0)
-      @JsonKey(name: 'is_always_show_spoiler')
-          required bool isAlwaysShowSpoiler,
-      @HiveField(1)
-      @JsonKey(name: 'is_always_show_nsfw')
-          required bool isAlwaysShowNsfw,
-      @HiveField(2)
-      @JsonKey(name: 'nsfw_display_delay_duration_seconds_total')
-          required int? nsfwDisplayDelayDurationMicrosecondsTotal,
-      @HiveField(3)
-      @JsonKey(name: 'is_need_replace_blur_with_fill')
-          required bool? isNeedReplaceBlurWithFill}) {
-    return _StatusSensitiveSettings(
-      isAlwaysShowSpoiler: isAlwaysShowSpoiler,
-      isAlwaysShowNsfw: isAlwaysShowNsfw,
-      nsfwDisplayDelayDurationMicrosecondsTotal:
-          nsfwDisplayDelayDurationMicrosecondsTotal,
-      isNeedReplaceBlurWithFill: isNeedReplaceBlurWithFill,
-    );
-  }
-
-  StatusSensitiveSettings fromJson(Map<String, Object?> json) {
-    return StatusSensitiveSettings.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $StatusSensitiveSettings = _$StatusSensitiveSettingsTearOff();
 
 /// @nodoc
 mixin _$StatusSensitiveSettings {
@@ -78,116 +45,117 @@ mixin _$StatusSensitiveSettings {
 abstract class $StatusSensitiveSettingsCopyWith<$Res> {
   factory $StatusSensitiveSettingsCopyWith(StatusSensitiveSettings value,
           $Res Function(StatusSensitiveSettings) then) =
-      _$StatusSensitiveSettingsCopyWithImpl<$Res>;
+      _$StatusSensitiveSettingsCopyWithImpl<$Res, StatusSensitiveSettings>;
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'is_always_show_spoiler')
-          bool isAlwaysShowSpoiler,
-      @HiveField(1)
-      @JsonKey(name: 'is_always_show_nsfw')
-          bool isAlwaysShowNsfw,
+      bool isAlwaysShowSpoiler,
+      @HiveField(1) @JsonKey(name: 'is_always_show_nsfw') bool isAlwaysShowNsfw,
       @HiveField(2)
       @JsonKey(name: 'nsfw_display_delay_duration_seconds_total')
-          int? nsfwDisplayDelayDurationMicrosecondsTotal,
+      int? nsfwDisplayDelayDurationMicrosecondsTotal,
       @HiveField(3)
       @JsonKey(name: 'is_need_replace_blur_with_fill')
-          bool? isNeedReplaceBlurWithFill});
+      bool? isNeedReplaceBlurWithFill});
 }
 
 /// @nodoc
-class _$StatusSensitiveSettingsCopyWithImpl<$Res>
+class _$StatusSensitiveSettingsCopyWithImpl<$Res,
+        $Val extends StatusSensitiveSettings>
     implements $StatusSensitiveSettingsCopyWith<$Res> {
   _$StatusSensitiveSettingsCopyWithImpl(this._value, this._then);
 
-  final StatusSensitiveSettings _value;
   // ignore: unused_field
-  final $Res Function(StatusSensitiveSettings) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? isAlwaysShowSpoiler = freezed,
-    Object? isAlwaysShowNsfw = freezed,
+    Object? isAlwaysShowSpoiler = null,
+    Object? isAlwaysShowNsfw = null,
     Object? nsfwDisplayDelayDurationMicrosecondsTotal = freezed,
     Object? isNeedReplaceBlurWithFill = freezed,
   }) {
     return _then(_value.copyWith(
-      isAlwaysShowSpoiler: isAlwaysShowSpoiler == freezed
+      isAlwaysShowSpoiler: null == isAlwaysShowSpoiler
           ? _value.isAlwaysShowSpoiler
           : isAlwaysShowSpoiler // ignore: cast_nullable_to_non_nullable
               as bool,
-      isAlwaysShowNsfw: isAlwaysShowNsfw == freezed
+      isAlwaysShowNsfw: null == isAlwaysShowNsfw
           ? _value.isAlwaysShowNsfw
           : isAlwaysShowNsfw // ignore: cast_nullable_to_non_nullable
               as bool,
-      nsfwDisplayDelayDurationMicrosecondsTotal:
-          nsfwDisplayDelayDurationMicrosecondsTotal == freezed
-              ? _value.nsfwDisplayDelayDurationMicrosecondsTotal
-              : nsfwDisplayDelayDurationMicrosecondsTotal // ignore: cast_nullable_to_non_nullable
-                  as int?,
-      isNeedReplaceBlurWithFill: isNeedReplaceBlurWithFill == freezed
+      nsfwDisplayDelayDurationMicrosecondsTotal: freezed ==
+              nsfwDisplayDelayDurationMicrosecondsTotal
+          ? _value.nsfwDisplayDelayDurationMicrosecondsTotal
+          : nsfwDisplayDelayDurationMicrosecondsTotal // ignore: cast_nullable_to_non_nullable
+              as int?,
+      isNeedReplaceBlurWithFill: freezed == isNeedReplaceBlurWithFill
           ? _value.isNeedReplaceBlurWithFill
           : isNeedReplaceBlurWithFill // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$StatusSensitiveSettingsCopyWith<$Res>
+abstract class _$$StatusSensitiveSettingsImplCopyWith<$Res>
     implements $StatusSensitiveSettingsCopyWith<$Res> {
-  factory _$StatusSensitiveSettingsCopyWith(_StatusSensitiveSettings value,
-          $Res Function(_StatusSensitiveSettings) then) =
-      __$StatusSensitiveSettingsCopyWithImpl<$Res>;
+  factory _$$StatusSensitiveSettingsImplCopyWith(
+          _$StatusSensitiveSettingsImpl value,
+          $Res Function(_$StatusSensitiveSettingsImpl) then) =
+      __$$StatusSensitiveSettingsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'is_always_show_spoiler')
-          bool isAlwaysShowSpoiler,
-      @HiveField(1)
-      @JsonKey(name: 'is_always_show_nsfw')
-          bool isAlwaysShowNsfw,
+      bool isAlwaysShowSpoiler,
+      @HiveField(1) @JsonKey(name: 'is_always_show_nsfw') bool isAlwaysShowNsfw,
       @HiveField(2)
       @JsonKey(name: 'nsfw_display_delay_duration_seconds_total')
-          int? nsfwDisplayDelayDurationMicrosecondsTotal,
+      int? nsfwDisplayDelayDurationMicrosecondsTotal,
       @HiveField(3)
       @JsonKey(name: 'is_need_replace_blur_with_fill')
-          bool? isNeedReplaceBlurWithFill});
+      bool? isNeedReplaceBlurWithFill});
 }
 
 /// @nodoc
-class __$StatusSensitiveSettingsCopyWithImpl<$Res>
-    extends _$StatusSensitiveSettingsCopyWithImpl<$Res>
-    implements _$StatusSensitiveSettingsCopyWith<$Res> {
-  __$StatusSensitiveSettingsCopyWithImpl(_StatusSensitiveSettings _value,
-      $Res Function(_StatusSensitiveSettings) _then)
-      : super(_value, (v) => _then(v as _StatusSensitiveSettings));
+class __$$StatusSensitiveSettingsImplCopyWithImpl<$Res>
+    extends _$StatusSensitiveSettingsCopyWithImpl<$Res,
+        _$StatusSensitiveSettingsImpl>
+    implements _$$StatusSensitiveSettingsImplCopyWith<$Res> {
+  __$$StatusSensitiveSettingsImplCopyWithImpl(
+      _$StatusSensitiveSettingsImpl _value,
+      $Res Function(_$StatusSensitiveSettingsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _StatusSensitiveSettings get _value =>
-      super._value as _StatusSensitiveSettings;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? isAlwaysShowSpoiler = freezed,
-    Object? isAlwaysShowNsfw = freezed,
+    Object? isAlwaysShowSpoiler = null,
+    Object? isAlwaysShowNsfw = null,
     Object? nsfwDisplayDelayDurationMicrosecondsTotal = freezed,
     Object? isNeedReplaceBlurWithFill = freezed,
   }) {
-    return _then(_StatusSensitiveSettings(
-      isAlwaysShowSpoiler: isAlwaysShowSpoiler == freezed
+    return _then(_$StatusSensitiveSettingsImpl(
+      isAlwaysShowSpoiler: null == isAlwaysShowSpoiler
           ? _value.isAlwaysShowSpoiler
           : isAlwaysShowSpoiler // ignore: cast_nullable_to_non_nullable
               as bool,
-      isAlwaysShowNsfw: isAlwaysShowNsfw == freezed
+      isAlwaysShowNsfw: null == isAlwaysShowNsfw
           ? _value.isAlwaysShowNsfw
           : isAlwaysShowNsfw // ignore: cast_nullable_to_non_nullable
               as bool,
-      nsfwDisplayDelayDurationMicrosecondsTotal:
-          nsfwDisplayDelayDurationMicrosecondsTotal == freezed
-              ? _value.nsfwDisplayDelayDurationMicrosecondsTotal
-              : nsfwDisplayDelayDurationMicrosecondsTotal // ignore: cast_nullable_to_non_nullable
-                  as int?,
-      isNeedReplaceBlurWithFill: isNeedReplaceBlurWithFill == freezed
+      nsfwDisplayDelayDurationMicrosecondsTotal: freezed ==
+              nsfwDisplayDelayDurationMicrosecondsTotal
+          ? _value.nsfwDisplayDelayDurationMicrosecondsTotal
+          : nsfwDisplayDelayDurationMicrosecondsTotal // ignore: cast_nullable_to_non_nullable
+              as int?,
+      isNeedReplaceBlurWithFill: freezed == isNeedReplaceBlurWithFill
           ? _value.isNeedReplaceBlurWithFill
           : isNeedReplaceBlurWithFill // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -197,24 +165,24 @@ class __$StatusSensitiveSettingsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_StatusSensitiveSettings extends _StatusSensitiveSettings {
-  const _$_StatusSensitiveSettings(
+class _$StatusSensitiveSettingsImpl extends _StatusSensitiveSettings {
+  const _$StatusSensitiveSettingsImpl(
       {@HiveField(0)
       @JsonKey(name: 'is_always_show_spoiler')
-          required this.isAlwaysShowSpoiler,
+      required this.isAlwaysShowSpoiler,
       @HiveField(1)
       @JsonKey(name: 'is_always_show_nsfw')
-          required this.isAlwaysShowNsfw,
+      required this.isAlwaysShowNsfw,
       @HiveField(2)
       @JsonKey(name: 'nsfw_display_delay_duration_seconds_total')
-          required this.nsfwDisplayDelayDurationMicrosecondsTotal,
+      required this.nsfwDisplayDelayDurationMicrosecondsTotal,
       @HiveField(3)
       @JsonKey(name: 'is_need_replace_blur_with_fill')
-          required this.isNeedReplaceBlurWithFill})
+      required this.isNeedReplaceBlurWithFill})
       : super._();
 
-  factory _$_StatusSensitiveSettings.fromJson(Map<String, dynamic> json) =>
-      _$$_StatusSensitiveSettingsFromJson(json);
+  factory _$StatusSensitiveSettingsImpl.fromJson(Map<String, dynamic> json) =>
+      _$$StatusSensitiveSettingsImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -239,10 +207,10 @@ class _$_StatusSensitiveSettings extends _StatusSensitiveSettings {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _StatusSensitiveSettings &&
+            other is _$StatusSensitiveSettingsImpl &&
             (identical(other.isAlwaysShowSpoiler, isAlwaysShowSpoiler) ||
                 other.isAlwaysShowSpoiler == isAlwaysShowSpoiler) &&
             (identical(other.isAlwaysShowNsfw, isAlwaysShowNsfw) ||
@@ -256,6 +224,7 @@ class _$_StatusSensitiveSettings extends _StatusSensitiveSettings {
                 other.isNeedReplaceBlurWithFill == isNeedReplaceBlurWithFill));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -266,13 +235,16 @@ class _$_StatusSensitiveSettings extends _StatusSensitiveSettings {
 
   @JsonKey(ignore: true)
   @override
-  _$StatusSensitiveSettingsCopyWith<_StatusSensitiveSettings> get copyWith =>
-      __$StatusSensitiveSettingsCopyWithImpl<_StatusSensitiveSettings>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$StatusSensitiveSettingsImplCopyWith<_$StatusSensitiveSettingsImpl>
+      get copyWith => __$$StatusSensitiveSettingsImplCopyWithImpl<
+          _$StatusSensitiveSettingsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_StatusSensitiveSettingsToJson(this);
+    return _$$StatusSensitiveSettingsImplToJson(
+      this,
+    );
   }
 }
 
@@ -280,21 +252,21 @@ abstract class _StatusSensitiveSettings extends StatusSensitiveSettings {
   const factory _StatusSensitiveSettings(
           {@HiveField(0)
           @JsonKey(name: 'is_always_show_spoiler')
-              required bool isAlwaysShowSpoiler,
+          required final bool isAlwaysShowSpoiler,
           @HiveField(1)
           @JsonKey(name: 'is_always_show_nsfw')
-              required bool isAlwaysShowNsfw,
+          required final bool isAlwaysShowNsfw,
           @HiveField(2)
           @JsonKey(name: 'nsfw_display_delay_duration_seconds_total')
-              required int? nsfwDisplayDelayDurationMicrosecondsTotal,
+          required final int? nsfwDisplayDelayDurationMicrosecondsTotal,
           @HiveField(3)
           @JsonKey(name: 'is_need_replace_blur_with_fill')
-              required bool? isNeedReplaceBlurWithFill}) =
-      _$_StatusSensitiveSettings;
+          required final bool? isNeedReplaceBlurWithFill}) =
+      _$StatusSensitiveSettingsImpl;
   const _StatusSensitiveSettings._() : super._();
 
   factory _StatusSensitiveSettings.fromJson(Map<String, dynamic> json) =
-      _$_StatusSensitiveSettings.fromJson;
+      _$StatusSensitiveSettingsImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -314,6 +286,6 @@ abstract class _StatusSensitiveSettings extends StatusSensitiveSettings {
   bool? get isNeedReplaceBlurWithFill;
   @override
   @JsonKey(ignore: true)
-  _$StatusSensitiveSettingsCopyWith<_StatusSensitiveSettings> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$StatusSensitiveSettingsImplCopyWith<_$StatusSensitiveSettingsImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_web_sockets_channel_model_impl.dart';
 
@@ -11,55 +12,12 @@ part of 'mastodon_api_web_sockets_channel_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiWebSocketsChannel _$MastodonApiWebSocketsChannelFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiWebSocketsChannel.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiWebSocketsChannelTearOff {
-  const _$MastodonApiWebSocketsChannelTearOff();
-
-  _MastodonApiWebSocketsChannel call(
-      {@HiveField(0)
-          required String type,
-      @HiveField(1)
-      @JsonKey(name: 'local_only')
-          required bool? localOnly,
-      @HiveField(2)
-      @JsonKey(name: 'media_only')
-          required bool? mediaOnly,
-      @HiveField(3)
-      @JsonKey(name: 'from_account_id_only')
-          required String? fromAccountIdOnly,
-      @HiveField(4)
-      @JsonKey(name: 'notification_only')
-          required bool? notificationOnly,
-      @HiveField(5)
-      @JsonKey(name: 'list_id_only')
-          required String? listIdOnly,
-      @HiveField(6)
-          required String? tag}) {
-    return _MastodonApiWebSocketsChannel(
-      type: type,
-      localOnly: localOnly,
-      mediaOnly: mediaOnly,
-      fromAccountIdOnly: fromAccountIdOnly,
-      notificationOnly: notificationOnly,
-      listIdOnly: listIdOnly,
-      tag: tag,
-    );
-  }
-
-  MastodonApiWebSocketsChannel fromJson(Map<String, Object?> json) {
-    return MastodonApiWebSocketsChannel.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiWebSocketsChannel = _$MastodonApiWebSocketsChannelTearOff();
 
 /// @nodoc
 mixin _$MastodonApiWebSocketsChannel {
@@ -94,41 +52,36 @@ abstract class $MastodonApiWebSocketsChannelCopyWith<$Res> {
   factory $MastodonApiWebSocketsChannelCopyWith(
           MastodonApiWebSocketsChannel value,
           $Res Function(MastodonApiWebSocketsChannel) then) =
-      _$MastodonApiWebSocketsChannelCopyWithImpl<$Res>;
+      _$MastodonApiWebSocketsChannelCopyWithImpl<$Res,
+          MastodonApiWebSocketsChannel>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-          String type,
-      @HiveField(1)
-      @JsonKey(name: 'local_only')
-          bool? localOnly,
-      @HiveField(2)
-      @JsonKey(name: 'media_only')
-          bool? mediaOnly,
+      {@HiveField(0) String type,
+      @HiveField(1) @JsonKey(name: 'local_only') bool? localOnly,
+      @HiveField(2) @JsonKey(name: 'media_only') bool? mediaOnly,
       @HiveField(3)
       @JsonKey(name: 'from_account_id_only')
-          String? fromAccountIdOnly,
-      @HiveField(4)
-      @JsonKey(name: 'notification_only')
-          bool? notificationOnly,
-      @HiveField(5)
-      @JsonKey(name: 'list_id_only')
-          String? listIdOnly,
-      @HiveField(6)
-          String? tag});
+      String? fromAccountIdOnly,
+      @HiveField(4) @JsonKey(name: 'notification_only') bool? notificationOnly,
+      @HiveField(5) @JsonKey(name: 'list_id_only') String? listIdOnly,
+      @HiveField(6) String? tag});
 }
 
 /// @nodoc
-class _$MastodonApiWebSocketsChannelCopyWithImpl<$Res>
+class _$MastodonApiWebSocketsChannelCopyWithImpl<$Res,
+        $Val extends MastodonApiWebSocketsChannel>
     implements $MastodonApiWebSocketsChannelCopyWith<$Res> {
   _$MastodonApiWebSocketsChannelCopyWithImpl(this._value, this._then);
 
-  final MastodonApiWebSocketsChannel _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiWebSocketsChannel) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? type = freezed,
+    Object? type = null,
     Object? localOnly = freezed,
     Object? mediaOnly = freezed,
     Object? fromAccountIdOnly = freezed,
@@ -137,84 +90,73 @@ class _$MastodonApiWebSocketsChannelCopyWithImpl<$Res>
     Object? tag = freezed,
   }) {
     return _then(_value.copyWith(
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      localOnly: localOnly == freezed
+      localOnly: freezed == localOnly
           ? _value.localOnly
           : localOnly // ignore: cast_nullable_to_non_nullable
               as bool?,
-      mediaOnly: mediaOnly == freezed
+      mediaOnly: freezed == mediaOnly
           ? _value.mediaOnly
           : mediaOnly // ignore: cast_nullable_to_non_nullable
               as bool?,
-      fromAccountIdOnly: fromAccountIdOnly == freezed
+      fromAccountIdOnly: freezed == fromAccountIdOnly
           ? _value.fromAccountIdOnly
           : fromAccountIdOnly // ignore: cast_nullable_to_non_nullable
               as String?,
-      notificationOnly: notificationOnly == freezed
+      notificationOnly: freezed == notificationOnly
           ? _value.notificationOnly
           : notificationOnly // ignore: cast_nullable_to_non_nullable
               as bool?,
-      listIdOnly: listIdOnly == freezed
+      listIdOnly: freezed == listIdOnly
           ? _value.listIdOnly
           : listIdOnly // ignore: cast_nullable_to_non_nullable
               as String?,
-      tag: tag == freezed
+      tag: freezed == tag
           ? _value.tag
           : tag // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiWebSocketsChannelCopyWith<$Res>
+abstract class _$$MastodonApiWebSocketsChannelImplCopyWith<$Res>
     implements $MastodonApiWebSocketsChannelCopyWith<$Res> {
-  factory _$MastodonApiWebSocketsChannelCopyWith(
-          _MastodonApiWebSocketsChannel value,
-          $Res Function(_MastodonApiWebSocketsChannel) then) =
-      __$MastodonApiWebSocketsChannelCopyWithImpl<$Res>;
+  factory _$$MastodonApiWebSocketsChannelImplCopyWith(
+          _$MastodonApiWebSocketsChannelImpl value,
+          $Res Function(_$MastodonApiWebSocketsChannelImpl) then) =
+      __$$MastodonApiWebSocketsChannelImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-          String type,
-      @HiveField(1)
-      @JsonKey(name: 'local_only')
-          bool? localOnly,
-      @HiveField(2)
-      @JsonKey(name: 'media_only')
-          bool? mediaOnly,
+      {@HiveField(0) String type,
+      @HiveField(1) @JsonKey(name: 'local_only') bool? localOnly,
+      @HiveField(2) @JsonKey(name: 'media_only') bool? mediaOnly,
       @HiveField(3)
       @JsonKey(name: 'from_account_id_only')
-          String? fromAccountIdOnly,
-      @HiveField(4)
-      @JsonKey(name: 'notification_only')
-          bool? notificationOnly,
-      @HiveField(5)
-      @JsonKey(name: 'list_id_only')
-          String? listIdOnly,
-      @HiveField(6)
-          String? tag});
+      String? fromAccountIdOnly,
+      @HiveField(4) @JsonKey(name: 'notification_only') bool? notificationOnly,
+      @HiveField(5) @JsonKey(name: 'list_id_only') String? listIdOnly,
+      @HiveField(6) String? tag});
 }
 
 /// @nodoc
-class __$MastodonApiWebSocketsChannelCopyWithImpl<$Res>
-    extends _$MastodonApiWebSocketsChannelCopyWithImpl<$Res>
-    implements _$MastodonApiWebSocketsChannelCopyWith<$Res> {
-  __$MastodonApiWebSocketsChannelCopyWithImpl(
-      _MastodonApiWebSocketsChannel _value,
-      $Res Function(_MastodonApiWebSocketsChannel) _then)
-      : super(_value, (v) => _then(v as _MastodonApiWebSocketsChannel));
+class __$$MastodonApiWebSocketsChannelImplCopyWithImpl<$Res>
+    extends _$MastodonApiWebSocketsChannelCopyWithImpl<$Res,
+        _$MastodonApiWebSocketsChannelImpl>
+    implements _$$MastodonApiWebSocketsChannelImplCopyWith<$Res> {
+  __$$MastodonApiWebSocketsChannelImplCopyWithImpl(
+      _$MastodonApiWebSocketsChannelImpl _value,
+      $Res Function(_$MastodonApiWebSocketsChannelImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiWebSocketsChannel get _value =>
-      super._value as _MastodonApiWebSocketsChannel;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? type = freezed,
+    Object? type = null,
     Object? localOnly = freezed,
     Object? mediaOnly = freezed,
     Object? fromAccountIdOnly = freezed,
@@ -222,32 +164,32 @@ class __$MastodonApiWebSocketsChannelCopyWithImpl<$Res>
     Object? listIdOnly = freezed,
     Object? tag = freezed,
   }) {
-    return _then(_MastodonApiWebSocketsChannel(
-      type: type == freezed
+    return _then(_$MastodonApiWebSocketsChannelImpl(
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      localOnly: localOnly == freezed
+      localOnly: freezed == localOnly
           ? _value.localOnly
           : localOnly // ignore: cast_nullable_to_non_nullable
               as bool?,
-      mediaOnly: mediaOnly == freezed
+      mediaOnly: freezed == mediaOnly
           ? _value.mediaOnly
           : mediaOnly // ignore: cast_nullable_to_non_nullable
               as bool?,
-      fromAccountIdOnly: fromAccountIdOnly == freezed
+      fromAccountIdOnly: freezed == fromAccountIdOnly
           ? _value.fromAccountIdOnly
           : fromAccountIdOnly // ignore: cast_nullable_to_non_nullable
               as String?,
-      notificationOnly: notificationOnly == freezed
+      notificationOnly: freezed == notificationOnly
           ? _value.notificationOnly
           : notificationOnly // ignore: cast_nullable_to_non_nullable
               as bool?,
-      listIdOnly: listIdOnly == freezed
+      listIdOnly: freezed == listIdOnly
           ? _value.listIdOnly
           : listIdOnly // ignore: cast_nullable_to_non_nullable
               as String?,
-      tag: tag == freezed
+      tag: freezed == tag
           ? _value.tag
           : tag // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -257,30 +199,24 @@ class __$MastodonApiWebSocketsChannelCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiWebSocketsChannel implements _MastodonApiWebSocketsChannel {
-  const _$_MastodonApiWebSocketsChannel(
-      {@HiveField(0)
-          required this.type,
-      @HiveField(1)
-      @JsonKey(name: 'local_only')
-          required this.localOnly,
-      @HiveField(2)
-      @JsonKey(name: 'media_only')
-          required this.mediaOnly,
+class _$MastodonApiWebSocketsChannelImpl
+    implements _MastodonApiWebSocketsChannel {
+  const _$MastodonApiWebSocketsChannelImpl(
+      {@HiveField(0) required this.type,
+      @HiveField(1) @JsonKey(name: 'local_only') required this.localOnly,
+      @HiveField(2) @JsonKey(name: 'media_only') required this.mediaOnly,
       @HiveField(3)
       @JsonKey(name: 'from_account_id_only')
-          required this.fromAccountIdOnly,
+      required this.fromAccountIdOnly,
       @HiveField(4)
       @JsonKey(name: 'notification_only')
-          required this.notificationOnly,
-      @HiveField(5)
-      @JsonKey(name: 'list_id_only')
-          required this.listIdOnly,
-      @HiveField(6)
-          required this.tag});
+      required this.notificationOnly,
+      @HiveField(5) @JsonKey(name: 'list_id_only') required this.listIdOnly,
+      @HiveField(6) required this.tag});
 
-  factory _$_MastodonApiWebSocketsChannel.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiWebSocketsChannelFromJson(json);
+  factory _$MastodonApiWebSocketsChannelImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$MastodonApiWebSocketsChannelImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -315,10 +251,10 @@ class _$_MastodonApiWebSocketsChannel implements _MastodonApiWebSocketsChannel {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiWebSocketsChannel &&
+            other is _$MastodonApiWebSocketsChannelImpl &&
             (identical(other.type, type) || other.type == type) &&
             (identical(other.localOnly, localOnly) ||
                 other.localOnly == localOnly) &&
@@ -333,47 +269,47 @@ class _$_MastodonApiWebSocketsChannel implements _MastodonApiWebSocketsChannel {
             (identical(other.tag, tag) || other.tag == tag));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, type, localOnly, mediaOnly,
       fromAccountIdOnly, notificationOnly, listIdOnly, tag);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiWebSocketsChannelCopyWith<_MastodonApiWebSocketsChannel>
-      get copyWith => __$MastodonApiWebSocketsChannelCopyWithImpl<
-          _MastodonApiWebSocketsChannel>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiWebSocketsChannelImplCopyWith<
+          _$MastodonApiWebSocketsChannelImpl>
+      get copyWith => __$$MastodonApiWebSocketsChannelImplCopyWithImpl<
+          _$MastodonApiWebSocketsChannelImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiWebSocketsChannelToJson(this);
+    return _$$MastodonApiWebSocketsChannelImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiWebSocketsChannel
     implements MastodonApiWebSocketsChannel {
   const factory _MastodonApiWebSocketsChannel(
-      {@HiveField(0)
-          required String type,
-      @HiveField(1)
-      @JsonKey(name: 'local_only')
-          required bool? localOnly,
-      @HiveField(2)
-      @JsonKey(name: 'media_only')
-          required bool? mediaOnly,
+      {@HiveField(0) required final String type,
+      @HiveField(1) @JsonKey(name: 'local_only') required final bool? localOnly,
+      @HiveField(2) @JsonKey(name: 'media_only') required final bool? mediaOnly,
       @HiveField(3)
       @JsonKey(name: 'from_account_id_only')
-          required String? fromAccountIdOnly,
+      required final String? fromAccountIdOnly,
       @HiveField(4)
       @JsonKey(name: 'notification_only')
-          required bool? notificationOnly,
+      required final bool? notificationOnly,
       @HiveField(5)
       @JsonKey(name: 'list_id_only')
-          required String? listIdOnly,
+      required final String? listIdOnly,
       @HiveField(6)
-          required String? tag}) = _$_MastodonApiWebSocketsChannel;
+      required final String? tag}) = _$MastodonApiWebSocketsChannelImpl;
 
   factory _MastodonApiWebSocketsChannel.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiWebSocketsChannel.fromJson;
+      _$MastodonApiWebSocketsChannelImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -403,6 +339,7 @@ abstract class _MastodonApiWebSocketsChannel
   String? get tag;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiWebSocketsChannelCopyWith<_MastodonApiWebSocketsChannel>
+  _$$MastodonApiWebSocketsChannelImplCopyWith<
+          _$MastodonApiWebSocketsChannelImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -54,9 +54,9 @@ class PleromaApiScheduledStatusAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiScheduledStatus _$$_PleromaApiScheduledStatusFromJson(
+_$PleromaApiScheduledStatusImpl _$$PleromaApiScheduledStatusImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiScheduledStatus(
+    _$PleromaApiScheduledStatusImpl(
       id: json['id'] as String,
       mediaAttachments: (json['media_attachments'] as List<dynamic>?)
           ?.map((e) =>
@@ -67,8 +67,8 @@ _$_PleromaApiScheduledStatus _$$_PleromaApiScheduledStatusFromJson(
       scheduledAt: DateTime.parse(json['scheduled_at'] as String),
     );
 
-Map<String, dynamic> _$$_PleromaApiScheduledStatusToJson(
-    _$_PleromaApiScheduledStatus instance) {
+Map<String, dynamic> _$$PleromaApiScheduledStatusImplToJson(
+    _$PleromaApiScheduledStatusImpl instance) {
   final val = <String, dynamic>{
     'id': instance.id,
   };

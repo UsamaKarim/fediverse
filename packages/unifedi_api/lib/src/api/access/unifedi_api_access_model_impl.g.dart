@@ -53,8 +53,9 @@ class UnifediApiAccessAdapter extends TypeAdapter<UnifediApiAccess> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiAccess _$$_UnifediApiAccessFromJson(Map<String, dynamic> json) =>
-    _$_UnifediApiAccess(
+_$UnifediApiAccessImpl _$$UnifediApiAccessImplFromJson(
+        Map<String, dynamic> json) =>
+    _$UnifediApiAccessImpl(
       url: json['url'] as String,
       instance: json['instance'] == null
           ? null
@@ -70,7 +71,8 @@ _$_UnifediApiAccess _$$_UnifediApiAccessFromJson(Map<String, dynamic> json) =>
               json['user_access_token'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_UnifediApiAccessToJson(_$_UnifediApiAccess instance) {
+Map<String, dynamic> _$$UnifediApiAccessImplToJson(
+    _$UnifediApiAccessImpl instance) {
   final val = <String, dynamic>{
     'url': instance.url,
   };

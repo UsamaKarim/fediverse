@@ -45,16 +45,16 @@ class UnifediApiPushPayloadMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiPushPayloadMastodonAdapter
-    _$$_UnifediApiPushPayloadMastodonAdapterFromJson(
+_$UnifediApiPushPayloadMastodonAdapterImpl
+    _$$UnifediApiPushPayloadMastodonAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiPushPayloadMastodonAdapter(
+        _$UnifediApiPushPayloadMastodonAdapterImpl(
           MastodonApiPushPayload.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiPushPayloadMastodonAdapterToJson(
-        _$_UnifediApiPushPayloadMastodonAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiPushPayloadMastodonAdapterImplToJson(
+        _$UnifediApiPushPayloadMastodonAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

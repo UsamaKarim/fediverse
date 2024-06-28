@@ -57,20 +57,20 @@ class MastodonApiAccountIdentityProofAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiAccountIdentityProof _$$_MastodonApiAccountIdentityProofFromJson(
-        Map<String, dynamic> json) =>
-    _$_MastodonApiAccountIdentityProof(
-      profileUrl: json['profile_url'] as String?,
-      proofUrl: json['proof_url'] as String?,
-      provider: json['provider'] as String?,
-      providerUsername: json['provider_username'] as String?,
-      updatedAt: json['updated_at'] == null
-          ? null
-          : DateTime.parse(json['updated_at'] as String),
-    );
+_$MastodonApiAccountIdentityProofImpl
+    _$$MastodonApiAccountIdentityProofImplFromJson(Map<String, dynamic> json) =>
+        _$MastodonApiAccountIdentityProofImpl(
+          profileUrl: json['profile_url'] as String?,
+          proofUrl: json['proof_url'] as String?,
+          provider: json['provider'] as String?,
+          providerUsername: json['provider_username'] as String?,
+          updatedAt: json['updated_at'] == null
+              ? null
+              : DateTime.parse(json['updated_at'] as String),
+        );
 
-Map<String, dynamic> _$$_MastodonApiAccountIdentityProofToJson(
-    _$_MastodonApiAccountIdentityProof instance) {
+Map<String, dynamic> _$$MastodonApiAccountIdentityProofImplToJson(
+    _$MastodonApiAccountIdentityProofImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_chat_model_impl.dart';
 
@@ -11,45 +12,11 @@ part of 'pleroma_api_chat_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiChat _$PleromaApiChatFromJson(Map<String, dynamic> json) {
   return _PleromaApiChat.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiChatTearOff {
-  const _$PleromaApiChatTearOff();
-
-  _PleromaApiChat call(
-      {@HiveField(0)
-          required String id,
-      @HiveField(1)
-          required int unread,
-      @HiveField(2)
-      @JsonKey(name: 'updated_at')
-          required DateTime? updatedAt,
-      @HiveField(3)
-          required PleromaApiAccount account,
-      @HiveField(4)
-      @JsonKey(name: 'last_message')
-          required PleromaApiChatMessage? lastMessage}) {
-    return _PleromaApiChat(
-      id: id,
-      unread: unread,
-      updatedAt: updatedAt,
-      account: account,
-      lastMessage: lastMessage,
-    );
-  }
-
-  PleromaApiChat fromJson(Map<String, Object?> json) {
-    return PleromaApiChat.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiChat = _$PleromaApiChatTearOff();
 
 /// @nodoc
 mixin _$PleromaApiChat {
@@ -76,105 +43,101 @@ mixin _$PleromaApiChat {
 abstract class $PleromaApiChatCopyWith<$Res> {
   factory $PleromaApiChatCopyWith(
           PleromaApiChat value, $Res Function(PleromaApiChat) then) =
-      _$PleromaApiChatCopyWithImpl<$Res>;
+      _$PleromaApiChatCopyWithImpl<$Res, PleromaApiChat>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-          String id,
-      @HiveField(1)
-          int unread,
-      @HiveField(2)
-      @JsonKey(name: 'updated_at')
-          DateTime? updatedAt,
-      @HiveField(3)
-          PleromaApiAccount account,
+      {@HiveField(0) String id,
+      @HiveField(1) int unread,
+      @HiveField(2) @JsonKey(name: 'updated_at') DateTime? updatedAt,
+      @HiveField(3) PleromaApiAccount account,
       @HiveField(4)
       @JsonKey(name: 'last_message')
-          PleromaApiChatMessage? lastMessage});
+      PleromaApiChatMessage? lastMessage});
 
   $PleromaApiAccountCopyWith<$Res> get account;
   $PleromaApiChatMessageCopyWith<$Res>? get lastMessage;
 }
 
 /// @nodoc
-class _$PleromaApiChatCopyWithImpl<$Res>
+class _$PleromaApiChatCopyWithImpl<$Res, $Val extends PleromaApiChat>
     implements $PleromaApiChatCopyWith<$Res> {
   _$PleromaApiChatCopyWithImpl(this._value, this._then);
 
-  final PleromaApiChat _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiChat) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? unread = freezed,
+    Object? id = null,
+    Object? unread = null,
     Object? updatedAt = freezed,
-    Object? account = freezed,
+    Object? account = null,
     Object? lastMessage = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      unread: unread == freezed
+      unread: null == unread
           ? _value.unread
           : unread // ignore: cast_nullable_to_non_nullable
               as int,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      account: account == freezed
+      account: null == account
           ? _value.account
           : account // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccount,
-      lastMessage: lastMessage == freezed
+      lastMessage: freezed == lastMessage
           ? _value.lastMessage
           : lastMessage // ignore: cast_nullable_to_non_nullable
               as PleromaApiChatMessage?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiAccountCopyWith<$Res> get account {
     return $PleromaApiAccountCopyWith<$Res>(_value.account, (value) {
-      return _then(_value.copyWith(account: value));
+      return _then(_value.copyWith(account: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiChatMessageCopyWith<$Res>? get lastMessage {
     if (_value.lastMessage == null) {
       return null;
     }
 
     return $PleromaApiChatMessageCopyWith<$Res>(_value.lastMessage!, (value) {
-      return _then(_value.copyWith(lastMessage: value));
+      return _then(_value.copyWith(lastMessage: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiChatCopyWith<$Res>
+abstract class _$$PleromaApiChatImplCopyWith<$Res>
     implements $PleromaApiChatCopyWith<$Res> {
-  factory _$PleromaApiChatCopyWith(
-          _PleromaApiChat value, $Res Function(_PleromaApiChat) then) =
-      __$PleromaApiChatCopyWithImpl<$Res>;
+  factory _$$PleromaApiChatImplCopyWith(_$PleromaApiChatImpl value,
+          $Res Function(_$PleromaApiChatImpl) then) =
+      __$$PleromaApiChatImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-          String id,
-      @HiveField(1)
-          int unread,
-      @HiveField(2)
-      @JsonKey(name: 'updated_at')
-          DateTime? updatedAt,
-      @HiveField(3)
-          PleromaApiAccount account,
+      {@HiveField(0) String id,
+      @HiveField(1) int unread,
+      @HiveField(2) @JsonKey(name: 'updated_at') DateTime? updatedAt,
+      @HiveField(3) PleromaApiAccount account,
       @HiveField(4)
       @JsonKey(name: 'last_message')
-          PleromaApiChatMessage? lastMessage});
+      PleromaApiChatMessage? lastMessage});
 
   @override
   $PleromaApiAccountCopyWith<$Res> get account;
@@ -183,42 +146,40 @@ abstract class _$PleromaApiChatCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiChatCopyWithImpl<$Res>
-    extends _$PleromaApiChatCopyWithImpl<$Res>
-    implements _$PleromaApiChatCopyWith<$Res> {
-  __$PleromaApiChatCopyWithImpl(
-      _PleromaApiChat _value, $Res Function(_PleromaApiChat) _then)
-      : super(_value, (v) => _then(v as _PleromaApiChat));
+class __$$PleromaApiChatImplCopyWithImpl<$Res>
+    extends _$PleromaApiChatCopyWithImpl<$Res, _$PleromaApiChatImpl>
+    implements _$$PleromaApiChatImplCopyWith<$Res> {
+  __$$PleromaApiChatImplCopyWithImpl(
+      _$PleromaApiChatImpl _value, $Res Function(_$PleromaApiChatImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiChat get _value => super._value as _PleromaApiChat;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? unread = freezed,
+    Object? id = null,
+    Object? unread = null,
     Object? updatedAt = freezed,
-    Object? account = freezed,
+    Object? account = null,
     Object? lastMessage = freezed,
   }) {
-    return _then(_PleromaApiChat(
-      id: id == freezed
+    return _then(_$PleromaApiChatImpl(
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      unread: unread == freezed
+      unread: null == unread
           ? _value.unread
           : unread // ignore: cast_nullable_to_non_nullable
               as int,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      account: account == freezed
+      account: null == account
           ? _value.account
           : account // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccount,
-      lastMessage: lastMessage == freezed
+      lastMessage: freezed == lastMessage
           ? _value.lastMessage
           : lastMessage // ignore: cast_nullable_to_non_nullable
               as PleromaApiChatMessage?,
@@ -228,16 +189,16 @@ class __$PleromaApiChatCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiChat implements _PleromaApiChat {
-  const _$_PleromaApiChat(
+class _$PleromaApiChatImpl implements _PleromaApiChat {
+  const _$PleromaApiChatImpl(
       {@HiveField(0) required this.id,
       @HiveField(1) required this.unread,
       @HiveField(2) @JsonKey(name: 'updated_at') required this.updatedAt,
       @HiveField(3) required this.account,
       @HiveField(4) @JsonKey(name: 'last_message') required this.lastMessage});
 
-  factory _$_PleromaApiChat.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiChatFromJson(json);
+  factory _$PleromaApiChatImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiChatImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -263,10 +224,10 @@ class _$_PleromaApiChat implements _PleromaApiChat {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiChat &&
+            other is _$PleromaApiChatImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.unread, unread) || other.unread == unread) &&
             (identical(other.updatedAt, updatedAt) ||
@@ -276,38 +237,41 @@ class _$_PleromaApiChat implements _PleromaApiChat {
                 other.lastMessage == lastMessage));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, id, unread, updatedAt, account, lastMessage);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiChatCopyWith<_PleromaApiChat> get copyWith =>
-      __$PleromaApiChatCopyWithImpl<_PleromaApiChat>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiChatImplCopyWith<_$PleromaApiChatImpl> get copyWith =>
+      __$$PleromaApiChatImplCopyWithImpl<_$PleromaApiChatImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiChatToJson(this);
+    return _$$PleromaApiChatImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiChat implements PleromaApiChat {
   const factory _PleromaApiChat(
-      {@HiveField(0)
-          required String id,
-      @HiveField(1)
-          required int unread,
-      @HiveField(2)
-      @JsonKey(name: 'updated_at')
-          required DateTime? updatedAt,
-      @HiveField(3)
-          required PleromaApiAccount account,
-      @HiveField(4)
-      @JsonKey(name: 'last_message')
-          required PleromaApiChatMessage? lastMessage}) = _$_PleromaApiChat;
+          {@HiveField(0) required final String id,
+          @HiveField(1) required final int unread,
+          @HiveField(2)
+          @JsonKey(name: 'updated_at')
+          required final DateTime? updatedAt,
+          @HiveField(3) required final PleromaApiAccount account,
+          @HiveField(4)
+          @JsonKey(name: 'last_message')
+          required final PleromaApiChatMessage? lastMessage}) =
+      _$PleromaApiChatImpl;
 
   factory _PleromaApiChat.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiChat.fromJson;
+      _$PleromaApiChatImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -328,6 +292,6 @@ abstract class _PleromaApiChat implements PleromaApiChat {
   PleromaApiChatMessage? get lastMessage;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiChatCopyWith<_PleromaApiChat> get copyWith =>
+  _$$PleromaApiChatImplCopyWith<_$PleromaApiChatImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -46,17 +46,17 @@ class UnifediApiAnnouncementEmojiReactionMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiAnnouncementEmojiReactionMastodonAdapter
-    _$$_UnifediApiAnnouncementEmojiReactionMastodonAdapterFromJson(
+_$UnifediApiAnnouncementEmojiReactionMastodonAdapterImpl
+    _$$UnifediApiAnnouncementEmojiReactionMastodonAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiAnnouncementEmojiReactionMastodonAdapter(
+        _$UnifediApiAnnouncementEmojiReactionMastodonAdapterImpl(
           MastodonApiAnnouncementEmojiReaction.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic>
-    _$$_UnifediApiAnnouncementEmojiReactionMastodonAdapterToJson(
-            _$_UnifediApiAnnouncementEmojiReactionMastodonAdapter instance) =>
-        <String, dynamic>{
-          'value': instance.value.toJson(),
-        };
+Map<String,
+    dynamic> _$$UnifediApiAnnouncementEmojiReactionMastodonAdapterImplToJson(
+        _$UnifediApiAnnouncementEmojiReactionMastodonAdapterImpl instance) =>
+    <String, dynamic>{
+      'value': instance.value.toJson(),
+    };

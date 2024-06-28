@@ -46,16 +46,16 @@ class MastodonApiInstanceMetadataVersionRequirementAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiInstanceMetadataVersionRequirement
-    _$$_MastodonApiInstanceMetadataVersionRequirementFromJson(
+_$MastodonApiInstanceMetadataVersionRequirementImpl
+    _$$MastodonApiInstanceMetadataVersionRequirementImplFromJson(
             Map<String, dynamic> json) =>
-        _$_MastodonApiInstanceMetadataVersionRequirement(
+        _$MastodonApiInstanceMetadataVersionRequirementImpl(
           versionRange: MastodonApiVersionRange.fromJson(
               json['version_range'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_MastodonApiInstanceMetadataVersionRequirementToJson(
-        _$_MastodonApiInstanceMetadataVersionRequirement instance) =>
+Map<String, dynamic> _$$MastodonApiInstanceMetadataVersionRequirementImplToJson(
+        _$MastodonApiInstanceMetadataVersionRequirementImpl instance) =>
     <String, dynamic>{
       'version_range': instance.versionRange.toJson(),
     };

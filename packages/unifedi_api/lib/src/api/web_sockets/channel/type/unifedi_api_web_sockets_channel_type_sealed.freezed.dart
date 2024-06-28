@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_web_sockets_channel_type_sealed.dart';
 
@@ -11,59 +12,11 @@ part of 'unifedi_api_web_sockets_channel_type_sealed.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$UnifediApiWebSocketsChannelTypeTearOff {
-  const _$UnifediApiWebSocketsChannelTypeTearOff();
-
-  _Public public(
-      {String stringValue =
-          UnifediApiWebSocketsChannelType.publicStringValue}) {
-    return _Public(
-      stringValue: stringValue,
-    );
-  }
-
-  _Direct direct(
-      {String stringValue =
-          UnifediApiWebSocketsChannelType.directStringValue}) {
-    return _Direct(
-      stringValue: stringValue,
-    );
-  }
-
-  _User user(
-      {String stringValue = UnifediApiWebSocketsChannelType.userStringValue}) {
-    return _User(
-      stringValue: stringValue,
-    );
-  }
-
-  _List list(
-      {String stringValue = UnifediApiWebSocketsChannelType.listStringValue}) {
-    return _List(
-      stringValue: stringValue,
-    );
-  }
-
-  _Hashtag hashtag(
-      {String stringValue =
-          UnifediApiWebSocketsChannelType.hashtagStringValue}) {
-    return _Hashtag(
-      stringValue: stringValue,
-    );
-  }
-}
-
-/// @nodoc
-const $UnifediApiWebSocketsChannelType =
-    _$UnifediApiWebSocketsChannelTypeTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$UnifediApiWebSocketsChannelType {
   String get stringValue => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String stringValue) public,
@@ -75,11 +28,11 @@ mixin _$UnifediApiWebSocketsChannelType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? public,
-    TResult Function(String stringValue)? direct,
-    TResult Function(String stringValue)? user,
-    TResult Function(String stringValue)? list,
-    TResult Function(String stringValue)? hashtag,
+    TResult? Function(String stringValue)? public,
+    TResult? Function(String stringValue)? direct,
+    TResult? Function(String stringValue)? user,
+    TResult? Function(String stringValue)? list,
+    TResult? Function(String stringValue)? hashtag,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -103,11 +56,11 @@ mixin _$UnifediApiWebSocketsChannelType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Public value)? public,
-    TResult Function(_Direct value)? direct,
-    TResult Function(_User value)? user,
-    TResult Function(_List value)? list,
-    TResult Function(_Hashtag value)? hashtag,
+    TResult? Function(_Public value)? public,
+    TResult? Function(_Direct value)? direct,
+    TResult? Function(_User value)? user,
+    TResult? Function(_List value)? list,
+    TResult? Function(_Hashtag value)? hashtag,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -131,57 +84,63 @@ abstract class $UnifediApiWebSocketsChannelTypeCopyWith<$Res> {
   factory $UnifediApiWebSocketsChannelTypeCopyWith(
           UnifediApiWebSocketsChannelType value,
           $Res Function(UnifediApiWebSocketsChannelType) then) =
-      _$UnifediApiWebSocketsChannelTypeCopyWithImpl<$Res>;
+      _$UnifediApiWebSocketsChannelTypeCopyWithImpl<$Res,
+          UnifediApiWebSocketsChannelType>;
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class _$UnifediApiWebSocketsChannelTypeCopyWithImpl<$Res>
+class _$UnifediApiWebSocketsChannelTypeCopyWithImpl<$Res,
+        $Val extends UnifediApiWebSocketsChannelType>
     implements $UnifediApiWebSocketsChannelTypeCopyWith<$Res> {
   _$UnifediApiWebSocketsChannelTypeCopyWithImpl(this._value, this._then);
 
-  final UnifediApiWebSocketsChannelType _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiWebSocketsChannelType) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
     return _then(_value.copyWith(
-      stringValue: stringValue == freezed
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PublicCopyWith<$Res>
+abstract class _$$PublicImplCopyWith<$Res>
     implements $UnifediApiWebSocketsChannelTypeCopyWith<$Res> {
-  factory _$PublicCopyWith(_Public value, $Res Function(_Public) then) =
-      __$PublicCopyWithImpl<$Res>;
+  factory _$$PublicImplCopyWith(
+          _$PublicImpl value, $Res Function(_$PublicImpl) then) =
+      __$$PublicImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$PublicCopyWithImpl<$Res>
-    extends _$UnifediApiWebSocketsChannelTypeCopyWithImpl<$Res>
-    implements _$PublicCopyWith<$Res> {
-  __$PublicCopyWithImpl(_Public _value, $Res Function(_Public) _then)
-      : super(_value, (v) => _then(v as _Public));
+class __$$PublicImplCopyWithImpl<$Res>
+    extends _$UnifediApiWebSocketsChannelTypeCopyWithImpl<$Res, _$PublicImpl>
+    implements _$$PublicImplCopyWith<$Res> {
+  __$$PublicImplCopyWithImpl(
+      _$PublicImpl _value, $Res Function(_$PublicImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Public get _value => super._value as _Public;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Public(
-      stringValue: stringValue == freezed
+    return _then(_$PublicImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -191,12 +150,12 @@ class __$PublicCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Public implements _Public {
-  const _$_Public(
+class _$PublicImpl implements _Public {
+  const _$PublicImpl(
       {this.stringValue = UnifediApiWebSocketsChannelType.publicStringValue});
 
-  @JsonKey(defaultValue: UnifediApiWebSocketsChannelType.publicStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -205,10 +164,10 @@ class _$_Public implements _Public {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Public &&
+            other is _$PublicImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -218,8 +177,9 @@ class _$_Public implements _Public {
 
   @JsonKey(ignore: true)
   @override
-  _$PublicCopyWith<_Public> get copyWith =>
-      __$PublicCopyWithImpl<_Public>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PublicImplCopyWith<_$PublicImpl> get copyWith =>
+      __$$PublicImplCopyWithImpl<_$PublicImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -236,11 +196,11 @@ class _$_Public implements _Public {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? public,
-    TResult Function(String stringValue)? direct,
-    TResult Function(String stringValue)? user,
-    TResult Function(String stringValue)? list,
-    TResult Function(String stringValue)? hashtag,
+    TResult? Function(String stringValue)? public,
+    TResult? Function(String stringValue)? direct,
+    TResult? Function(String stringValue)? user,
+    TResult? Function(String stringValue)? list,
+    TResult? Function(String stringValue)? hashtag,
   }) {
     return public?.call(stringValue);
   }
@@ -276,11 +236,11 @@ class _$_Public implements _Public {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Public value)? public,
-    TResult Function(_Direct value)? direct,
-    TResult Function(_User value)? user,
-    TResult Function(_List value)? list,
-    TResult Function(_Hashtag value)? hashtag,
+    TResult? Function(_Public value)? public,
+    TResult? Function(_Direct value)? direct,
+    TResult? Function(_User value)? user,
+    TResult? Function(_List value)? list,
+    TResult? Function(_Hashtag value)? hashtag,
   }) {
     return public?.call(this);
   }
@@ -303,40 +263,42 @@ class _$_Public implements _Public {
 }
 
 abstract class _Public implements UnifediApiWebSocketsChannelType {
-  const factory _Public({String stringValue}) = _$_Public;
+  const factory _Public({final String stringValue}) = _$PublicImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$PublicCopyWith<_Public> get copyWith => throw _privateConstructorUsedError;
+  _$$PublicImplCopyWith<_$PublicImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$DirectCopyWith<$Res>
+abstract class _$$DirectImplCopyWith<$Res>
     implements $UnifediApiWebSocketsChannelTypeCopyWith<$Res> {
-  factory _$DirectCopyWith(_Direct value, $Res Function(_Direct) then) =
-      __$DirectCopyWithImpl<$Res>;
+  factory _$$DirectImplCopyWith(
+          _$DirectImpl value, $Res Function(_$DirectImpl) then) =
+      __$$DirectImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$DirectCopyWithImpl<$Res>
-    extends _$UnifediApiWebSocketsChannelTypeCopyWithImpl<$Res>
-    implements _$DirectCopyWith<$Res> {
-  __$DirectCopyWithImpl(_Direct _value, $Res Function(_Direct) _then)
-      : super(_value, (v) => _then(v as _Direct));
+class __$$DirectImplCopyWithImpl<$Res>
+    extends _$UnifediApiWebSocketsChannelTypeCopyWithImpl<$Res, _$DirectImpl>
+    implements _$$DirectImplCopyWith<$Res> {
+  __$$DirectImplCopyWithImpl(
+      _$DirectImpl _value, $Res Function(_$DirectImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Direct get _value => super._value as _Direct;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Direct(
-      stringValue: stringValue == freezed
+    return _then(_$DirectImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -346,12 +308,12 @@ class __$DirectCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Direct implements _Direct {
-  const _$_Direct(
+class _$DirectImpl implements _Direct {
+  const _$DirectImpl(
       {this.stringValue = UnifediApiWebSocketsChannelType.directStringValue});
 
-  @JsonKey(defaultValue: UnifediApiWebSocketsChannelType.directStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -360,10 +322,10 @@ class _$_Direct implements _Direct {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Direct &&
+            other is _$DirectImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -373,8 +335,9 @@ class _$_Direct implements _Direct {
 
   @JsonKey(ignore: true)
   @override
-  _$DirectCopyWith<_Direct> get copyWith =>
-      __$DirectCopyWithImpl<_Direct>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DirectImplCopyWith<_$DirectImpl> get copyWith =>
+      __$$DirectImplCopyWithImpl<_$DirectImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -391,11 +354,11 @@ class _$_Direct implements _Direct {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? public,
-    TResult Function(String stringValue)? direct,
-    TResult Function(String stringValue)? user,
-    TResult Function(String stringValue)? list,
-    TResult Function(String stringValue)? hashtag,
+    TResult? Function(String stringValue)? public,
+    TResult? Function(String stringValue)? direct,
+    TResult? Function(String stringValue)? user,
+    TResult? Function(String stringValue)? list,
+    TResult? Function(String stringValue)? hashtag,
   }) {
     return direct?.call(stringValue);
   }
@@ -431,11 +394,11 @@ class _$_Direct implements _Direct {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Public value)? public,
-    TResult Function(_Direct value)? direct,
-    TResult Function(_User value)? user,
-    TResult Function(_List value)? list,
-    TResult Function(_Hashtag value)? hashtag,
+    TResult? Function(_Public value)? public,
+    TResult? Function(_Direct value)? direct,
+    TResult? Function(_User value)? user,
+    TResult? Function(_List value)? list,
+    TResult? Function(_Hashtag value)? hashtag,
   }) {
     return direct?.call(this);
   }
@@ -458,40 +421,41 @@ class _$_Direct implements _Direct {
 }
 
 abstract class _Direct implements UnifediApiWebSocketsChannelType {
-  const factory _Direct({String stringValue}) = _$_Direct;
+  const factory _Direct({final String stringValue}) = _$DirectImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$DirectCopyWith<_Direct> get copyWith => throw _privateConstructorUsedError;
+  _$$DirectImplCopyWith<_$DirectImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$UserCopyWith<$Res>
+abstract class _$$UserImplCopyWith<$Res>
     implements $UnifediApiWebSocketsChannelTypeCopyWith<$Res> {
-  factory _$UserCopyWith(_User value, $Res Function(_User) then) =
-      __$UserCopyWithImpl<$Res>;
+  factory _$$UserImplCopyWith(
+          _$UserImpl value, $Res Function(_$UserImpl) then) =
+      __$$UserImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$UserCopyWithImpl<$Res>
-    extends _$UnifediApiWebSocketsChannelTypeCopyWithImpl<$Res>
-    implements _$UserCopyWith<$Res> {
-  __$UserCopyWithImpl(_User _value, $Res Function(_User) _then)
-      : super(_value, (v) => _then(v as _User));
+class __$$UserImplCopyWithImpl<$Res>
+    extends _$UnifediApiWebSocketsChannelTypeCopyWithImpl<$Res, _$UserImpl>
+    implements _$$UserImplCopyWith<$Res> {
+  __$$UserImplCopyWithImpl(_$UserImpl _value, $Res Function(_$UserImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _User get _value => super._value as _User;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_User(
-      stringValue: stringValue == freezed
+    return _then(_$UserImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -501,12 +465,12 @@ class __$UserCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_User implements _User {
-  const _$_User(
+class _$UserImpl implements _User {
+  const _$UserImpl(
       {this.stringValue = UnifediApiWebSocketsChannelType.userStringValue});
 
-  @JsonKey(defaultValue: UnifediApiWebSocketsChannelType.userStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -515,10 +479,10 @@ class _$_User implements _User {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _User &&
+            other is _$UserImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -528,8 +492,9 @@ class _$_User implements _User {
 
   @JsonKey(ignore: true)
   @override
-  _$UserCopyWith<_User> get copyWith =>
-      __$UserCopyWithImpl<_User>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UserImplCopyWith<_$UserImpl> get copyWith =>
+      __$$UserImplCopyWithImpl<_$UserImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -546,11 +511,11 @@ class _$_User implements _User {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? public,
-    TResult Function(String stringValue)? direct,
-    TResult Function(String stringValue)? user,
-    TResult Function(String stringValue)? list,
-    TResult Function(String stringValue)? hashtag,
+    TResult? Function(String stringValue)? public,
+    TResult? Function(String stringValue)? direct,
+    TResult? Function(String stringValue)? user,
+    TResult? Function(String stringValue)? list,
+    TResult? Function(String stringValue)? hashtag,
   }) {
     return user?.call(stringValue);
   }
@@ -586,11 +551,11 @@ class _$_User implements _User {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Public value)? public,
-    TResult Function(_Direct value)? direct,
-    TResult Function(_User value)? user,
-    TResult Function(_List value)? list,
-    TResult Function(_Hashtag value)? hashtag,
+    TResult? Function(_Public value)? public,
+    TResult? Function(_Direct value)? direct,
+    TResult? Function(_User value)? user,
+    TResult? Function(_List value)? list,
+    TResult? Function(_Hashtag value)? hashtag,
   }) {
     return user?.call(this);
   }
@@ -613,40 +578,41 @@ class _$_User implements _User {
 }
 
 abstract class _User implements UnifediApiWebSocketsChannelType {
-  const factory _User({String stringValue}) = _$_User;
+  const factory _User({final String stringValue}) = _$UserImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$UserCopyWith<_User> get copyWith => throw _privateConstructorUsedError;
+  _$$UserImplCopyWith<_$UserImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ListCopyWith<$Res>
+abstract class _$$ListImplCopyWith<$Res>
     implements $UnifediApiWebSocketsChannelTypeCopyWith<$Res> {
-  factory _$ListCopyWith(_List value, $Res Function(_List) then) =
-      __$ListCopyWithImpl<$Res>;
+  factory _$$ListImplCopyWith(
+          _$ListImpl value, $Res Function(_$ListImpl) then) =
+      __$$ListImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$ListCopyWithImpl<$Res>
-    extends _$UnifediApiWebSocketsChannelTypeCopyWithImpl<$Res>
-    implements _$ListCopyWith<$Res> {
-  __$ListCopyWithImpl(_List _value, $Res Function(_List) _then)
-      : super(_value, (v) => _then(v as _List));
+class __$$ListImplCopyWithImpl<$Res>
+    extends _$UnifediApiWebSocketsChannelTypeCopyWithImpl<$Res, _$ListImpl>
+    implements _$$ListImplCopyWith<$Res> {
+  __$$ListImplCopyWithImpl(_$ListImpl _value, $Res Function(_$ListImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _List get _value => super._value as _List;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_List(
-      stringValue: stringValue == freezed
+    return _then(_$ListImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -656,12 +622,12 @@ class __$ListCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_List implements _List {
-  const _$_List(
+class _$ListImpl implements _List {
+  const _$ListImpl(
       {this.stringValue = UnifediApiWebSocketsChannelType.listStringValue});
 
-  @JsonKey(defaultValue: UnifediApiWebSocketsChannelType.listStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -670,10 +636,10 @@ class _$_List implements _List {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _List &&
+            other is _$ListImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -683,8 +649,9 @@ class _$_List implements _List {
 
   @JsonKey(ignore: true)
   @override
-  _$ListCopyWith<_List> get copyWith =>
-      __$ListCopyWithImpl<_List>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ListImplCopyWith<_$ListImpl> get copyWith =>
+      __$$ListImplCopyWithImpl<_$ListImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -701,11 +668,11 @@ class _$_List implements _List {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? public,
-    TResult Function(String stringValue)? direct,
-    TResult Function(String stringValue)? user,
-    TResult Function(String stringValue)? list,
-    TResult Function(String stringValue)? hashtag,
+    TResult? Function(String stringValue)? public,
+    TResult? Function(String stringValue)? direct,
+    TResult? Function(String stringValue)? user,
+    TResult? Function(String stringValue)? list,
+    TResult? Function(String stringValue)? hashtag,
   }) {
     return list?.call(stringValue);
   }
@@ -741,11 +708,11 @@ class _$_List implements _List {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Public value)? public,
-    TResult Function(_Direct value)? direct,
-    TResult Function(_User value)? user,
-    TResult Function(_List value)? list,
-    TResult Function(_Hashtag value)? hashtag,
+    TResult? Function(_Public value)? public,
+    TResult? Function(_Direct value)? direct,
+    TResult? Function(_User value)? user,
+    TResult? Function(_List value)? list,
+    TResult? Function(_Hashtag value)? hashtag,
   }) {
     return list?.call(this);
   }
@@ -768,40 +735,42 @@ class _$_List implements _List {
 }
 
 abstract class _List implements UnifediApiWebSocketsChannelType {
-  const factory _List({String stringValue}) = _$_List;
+  const factory _List({final String stringValue}) = _$ListImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$ListCopyWith<_List> get copyWith => throw _privateConstructorUsedError;
+  _$$ListImplCopyWith<_$ListImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$HashtagCopyWith<$Res>
+abstract class _$$HashtagImplCopyWith<$Res>
     implements $UnifediApiWebSocketsChannelTypeCopyWith<$Res> {
-  factory _$HashtagCopyWith(_Hashtag value, $Res Function(_Hashtag) then) =
-      __$HashtagCopyWithImpl<$Res>;
+  factory _$$HashtagImplCopyWith(
+          _$HashtagImpl value, $Res Function(_$HashtagImpl) then) =
+      __$$HashtagImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$HashtagCopyWithImpl<$Res>
-    extends _$UnifediApiWebSocketsChannelTypeCopyWithImpl<$Res>
-    implements _$HashtagCopyWith<$Res> {
-  __$HashtagCopyWithImpl(_Hashtag _value, $Res Function(_Hashtag) _then)
-      : super(_value, (v) => _then(v as _Hashtag));
+class __$$HashtagImplCopyWithImpl<$Res>
+    extends _$UnifediApiWebSocketsChannelTypeCopyWithImpl<$Res, _$HashtagImpl>
+    implements _$$HashtagImplCopyWith<$Res> {
+  __$$HashtagImplCopyWithImpl(
+      _$HashtagImpl _value, $Res Function(_$HashtagImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Hashtag get _value => super._value as _Hashtag;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Hashtag(
-      stringValue: stringValue == freezed
+    return _then(_$HashtagImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -811,12 +780,12 @@ class __$HashtagCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Hashtag implements _Hashtag {
-  const _$_Hashtag(
+class _$HashtagImpl implements _Hashtag {
+  const _$HashtagImpl(
       {this.stringValue = UnifediApiWebSocketsChannelType.hashtagStringValue});
 
-  @JsonKey(defaultValue: UnifediApiWebSocketsChannelType.hashtagStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -825,10 +794,10 @@ class _$_Hashtag implements _Hashtag {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Hashtag &&
+            other is _$HashtagImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -838,8 +807,9 @@ class _$_Hashtag implements _Hashtag {
 
   @JsonKey(ignore: true)
   @override
-  _$HashtagCopyWith<_Hashtag> get copyWith =>
-      __$HashtagCopyWithImpl<_Hashtag>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$HashtagImplCopyWith<_$HashtagImpl> get copyWith =>
+      __$$HashtagImplCopyWithImpl<_$HashtagImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -856,11 +826,11 @@ class _$_Hashtag implements _Hashtag {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? public,
-    TResult Function(String stringValue)? direct,
-    TResult Function(String stringValue)? user,
-    TResult Function(String stringValue)? list,
-    TResult Function(String stringValue)? hashtag,
+    TResult? Function(String stringValue)? public,
+    TResult? Function(String stringValue)? direct,
+    TResult? Function(String stringValue)? user,
+    TResult? Function(String stringValue)? list,
+    TResult? Function(String stringValue)? hashtag,
   }) {
     return hashtag?.call(stringValue);
   }
@@ -896,11 +866,11 @@ class _$_Hashtag implements _Hashtag {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Public value)? public,
-    TResult Function(_Direct value)? direct,
-    TResult Function(_User value)? user,
-    TResult Function(_List value)? list,
-    TResult Function(_Hashtag value)? hashtag,
+    TResult? Function(_Public value)? public,
+    TResult? Function(_Direct value)? direct,
+    TResult? Function(_User value)? user,
+    TResult? Function(_List value)? list,
+    TResult? Function(_Hashtag value)? hashtag,
   }) {
     return hashtag?.call(this);
   }
@@ -923,12 +893,12 @@ class _$_Hashtag implements _Hashtag {
 }
 
 abstract class _Hashtag implements UnifediApiWebSocketsChannelType {
-  const factory _Hashtag({String stringValue}) = _$_Hashtag;
+  const factory _Hashtag({final String stringValue}) = _$HashtagImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$HashtagCopyWith<_Hashtag> get copyWith =>
+  _$$HashtagImplCopyWith<_$HashtagImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

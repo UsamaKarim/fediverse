@@ -46,17 +46,17 @@ class UnifediApiAnnouncementEmojiReactionPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiAnnouncementEmojiReactionPleromaAdapter
-    _$$_UnifediApiAnnouncementEmojiReactionPleromaAdapterFromJson(
+_$UnifediApiAnnouncementEmojiReactionPleromaAdapterImpl
+    _$$UnifediApiAnnouncementEmojiReactionPleromaAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiAnnouncementEmojiReactionPleromaAdapter(
+        _$UnifediApiAnnouncementEmojiReactionPleromaAdapterImpl(
           PleromaApiAnnouncementEmojiReaction.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
 Map<String, dynamic>
-    _$$_UnifediApiAnnouncementEmojiReactionPleromaAdapterToJson(
-            _$_UnifediApiAnnouncementEmojiReactionPleromaAdapter instance) =>
+    _$$UnifediApiAnnouncementEmojiReactionPleromaAdapterImplToJson(
+            _$UnifediApiAnnouncementEmojiReactionPleromaAdapterImpl instance) =>
         <String, dynamic>{
           'value': instance.value.toJson(),
         };

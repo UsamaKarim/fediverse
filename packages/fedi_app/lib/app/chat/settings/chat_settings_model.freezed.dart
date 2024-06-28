@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'chat_settings_model.dart';
 
@@ -11,38 +12,11 @@ part of 'chat_settings_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 ChatSettings _$ChatSettingsFromJson(Map<String, dynamic> json) {
   return _ChatSettings.fromJson(json);
 }
-
-/// @nodoc
-class _$ChatSettingsTearOff {
-  const _$ChatSettingsTearOff();
-
-  _ChatSettings call(
-      {@HiveField(0)
-      @JsonKey(name: 'replace_conversations_with_unifedi_chats')
-          required bool replaceConversationsWithUnifediChats,
-      @HiveField(1)
-      @JsonKey(name: 'count_conversations_in_chats_unread_badges')
-          required bool countConversationsInChatsUnreadBadges}) {
-    return _ChatSettings(
-      replaceConversationsWithUnifediChats:
-          replaceConversationsWithUnifediChats,
-      countConversationsInChatsUnreadBadges:
-          countConversationsInChatsUnreadBadges,
-    );
-  }
-
-  ChatSettings fromJson(Map<String, Object?> json) {
-    return ChatSettings.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ChatSettings = _$ChatSettingsTearOff();
 
 /// @nodoc
 mixin _$ChatSettings {
@@ -65,104 +39,108 @@ mixin _$ChatSettings {
 abstract class $ChatSettingsCopyWith<$Res> {
   factory $ChatSettingsCopyWith(
           ChatSettings value, $Res Function(ChatSettings) then) =
-      _$ChatSettingsCopyWithImpl<$Res>;
+      _$ChatSettingsCopyWithImpl<$Res, ChatSettings>;
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'replace_conversations_with_unifedi_chats')
-          bool replaceConversationsWithUnifediChats,
+      bool replaceConversationsWithUnifediChats,
       @HiveField(1)
       @JsonKey(name: 'count_conversations_in_chats_unread_badges')
-          bool countConversationsInChatsUnreadBadges});
+      bool countConversationsInChatsUnreadBadges});
 }
 
 /// @nodoc
-class _$ChatSettingsCopyWithImpl<$Res> implements $ChatSettingsCopyWith<$Res> {
+class _$ChatSettingsCopyWithImpl<$Res, $Val extends ChatSettings>
+    implements $ChatSettingsCopyWith<$Res> {
   _$ChatSettingsCopyWithImpl(this._value, this._then);
 
-  final ChatSettings _value;
   // ignore: unused_field
-  final $Res Function(ChatSettings) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? replaceConversationsWithUnifediChats = freezed,
-    Object? countConversationsInChatsUnreadBadges = freezed,
+    Object? replaceConversationsWithUnifediChats = null,
+    Object? countConversationsInChatsUnreadBadges = null,
   }) {
     return _then(_value.copyWith(
-      replaceConversationsWithUnifediChats: replaceConversationsWithUnifediChats ==
-              freezed
+      replaceConversationsWithUnifediChats: null ==
+              replaceConversationsWithUnifediChats
           ? _value.replaceConversationsWithUnifediChats
           : replaceConversationsWithUnifediChats // ignore: cast_nullable_to_non_nullable
               as bool,
-      countConversationsInChatsUnreadBadges:
-          countConversationsInChatsUnreadBadges == freezed
-              ? _value.countConversationsInChatsUnreadBadges
-              : countConversationsInChatsUnreadBadges // ignore: cast_nullable_to_non_nullable
-                  as bool,
-    ));
+      countConversationsInChatsUnreadBadges: null ==
+              countConversationsInChatsUnreadBadges
+          ? _value.countConversationsInChatsUnreadBadges
+          : countConversationsInChatsUnreadBadges // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$ChatSettingsCopyWith<$Res>
+abstract class _$$ChatSettingsImplCopyWith<$Res>
     implements $ChatSettingsCopyWith<$Res> {
-  factory _$ChatSettingsCopyWith(
-          _ChatSettings value, $Res Function(_ChatSettings) then) =
-      __$ChatSettingsCopyWithImpl<$Res>;
+  factory _$$ChatSettingsImplCopyWith(
+          _$ChatSettingsImpl value, $Res Function(_$ChatSettingsImpl) then) =
+      __$$ChatSettingsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'replace_conversations_with_unifedi_chats')
-          bool replaceConversationsWithUnifediChats,
+      bool replaceConversationsWithUnifediChats,
       @HiveField(1)
       @JsonKey(name: 'count_conversations_in_chats_unread_badges')
-          bool countConversationsInChatsUnreadBadges});
+      bool countConversationsInChatsUnreadBadges});
 }
 
 /// @nodoc
-class __$ChatSettingsCopyWithImpl<$Res> extends _$ChatSettingsCopyWithImpl<$Res>
-    implements _$ChatSettingsCopyWith<$Res> {
-  __$ChatSettingsCopyWithImpl(
-      _ChatSettings _value, $Res Function(_ChatSettings) _then)
-      : super(_value, (v) => _then(v as _ChatSettings));
+class __$$ChatSettingsImplCopyWithImpl<$Res>
+    extends _$ChatSettingsCopyWithImpl<$Res, _$ChatSettingsImpl>
+    implements _$$ChatSettingsImplCopyWith<$Res> {
+  __$$ChatSettingsImplCopyWithImpl(
+      _$ChatSettingsImpl _value, $Res Function(_$ChatSettingsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _ChatSettings get _value => super._value as _ChatSettings;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? replaceConversationsWithUnifediChats = freezed,
-    Object? countConversationsInChatsUnreadBadges = freezed,
+    Object? replaceConversationsWithUnifediChats = null,
+    Object? countConversationsInChatsUnreadBadges = null,
   }) {
-    return _then(_ChatSettings(
-      replaceConversationsWithUnifediChats: replaceConversationsWithUnifediChats ==
-              freezed
+    return _then(_$ChatSettingsImpl(
+      replaceConversationsWithUnifediChats: null ==
+              replaceConversationsWithUnifediChats
           ? _value.replaceConversationsWithUnifediChats
           : replaceConversationsWithUnifediChats // ignore: cast_nullable_to_non_nullable
               as bool,
-      countConversationsInChatsUnreadBadges:
-          countConversationsInChatsUnreadBadges == freezed
-              ? _value.countConversationsInChatsUnreadBadges
-              : countConversationsInChatsUnreadBadges // ignore: cast_nullable_to_non_nullable
-                  as bool,
+      countConversationsInChatsUnreadBadges: null ==
+              countConversationsInChatsUnreadBadges
+          ? _value.countConversationsInChatsUnreadBadges
+          : countConversationsInChatsUnreadBadges // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$_ChatSettings extends _ChatSettings {
-  const _$_ChatSettings(
+class _$ChatSettingsImpl extends _ChatSettings {
+  const _$ChatSettingsImpl(
       {@HiveField(0)
       @JsonKey(name: 'replace_conversations_with_unifedi_chats')
-          required this.replaceConversationsWithUnifediChats,
+      required this.replaceConversationsWithUnifediChats,
       @HiveField(1)
       @JsonKey(name: 'count_conversations_in_chats_unread_badges')
-          required this.countConversationsInChatsUnreadBadges})
+      required this.countConversationsInChatsUnreadBadges})
       : super._();
 
-  factory _$_ChatSettings.fromJson(Map<String, dynamic> json) =>
-      _$$_ChatSettingsFromJson(json);
+  factory _$ChatSettingsImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ChatSettingsImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -179,10 +157,10 @@ class _$_ChatSettings extends _ChatSettings {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ChatSettings &&
+            other is _$ChatSettingsImpl &&
             (identical(other.replaceConversationsWithUnifediChats,
                     replaceConversationsWithUnifediChats) ||
                 other.replaceConversationsWithUnifediChats ==
@@ -193,6 +171,7 @@ class _$_ChatSettings extends _ChatSettings {
                     countConversationsInChatsUnreadBadges));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -201,12 +180,15 @@ class _$_ChatSettings extends _ChatSettings {
 
   @JsonKey(ignore: true)
   @override
-  _$ChatSettingsCopyWith<_ChatSettings> get copyWith =>
-      __$ChatSettingsCopyWithImpl<_ChatSettings>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ChatSettingsImplCopyWith<_$ChatSettingsImpl> get copyWith =>
+      __$$ChatSettingsImplCopyWithImpl<_$ChatSettingsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ChatSettingsToJson(this);
+    return _$$ChatSettingsImplToJson(
+      this,
+    );
   }
 }
 
@@ -214,15 +196,15 @@ abstract class _ChatSettings extends ChatSettings {
   const factory _ChatSettings(
           {@HiveField(0)
           @JsonKey(name: 'replace_conversations_with_unifedi_chats')
-              required bool replaceConversationsWithUnifediChats,
+          required final bool replaceConversationsWithUnifediChats,
           @HiveField(1)
           @JsonKey(name: 'count_conversations_in_chats_unread_badges')
-              required bool countConversationsInChatsUnreadBadges}) =
-      _$_ChatSettings;
+          required final bool countConversationsInChatsUnreadBadges}) =
+      _$ChatSettingsImpl;
   const _ChatSettings._() : super._();
 
   factory _ChatSettings.fromJson(Map<String, dynamic> json) =
-      _$_ChatSettings.fromJson;
+      _$ChatSettingsImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -234,6 +216,6 @@ abstract class _ChatSettings extends ChatSettings {
   bool get countConversationsInChatsUnreadBadges;
   @override
   @JsonKey(ignore: true)
-  _$ChatSettingsCopyWith<_ChatSettings> get copyWith =>
+  _$$ChatSettingsImplCopyWith<_$ChatSettingsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

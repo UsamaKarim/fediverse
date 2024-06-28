@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'html_text_model.dart';
 
@@ -11,23 +12,7 @@ part of 'html_text_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$HtmlTextResultDataTearOff {
-  const _$HtmlTextResultDataTearOff();
-
-  _HtmlTextResultData call(
-      {required String? text, required bool isActuallyHaveHtmlInData}) {
-    return _HtmlTextResultData(
-      text: text,
-      isActuallyHaveHtmlInData: isActuallyHaveHtmlInData,
-    );
-  }
-}
-
-/// @nodoc
-const $HtmlTextResultData = _$HtmlTextResultDataTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$HtmlTextResultData {
@@ -43,69 +28,71 @@ mixin _$HtmlTextResultData {
 abstract class $HtmlTextResultDataCopyWith<$Res> {
   factory $HtmlTextResultDataCopyWith(
           HtmlTextResultData value, $Res Function(HtmlTextResultData) then) =
-      _$HtmlTextResultDataCopyWithImpl<$Res>;
+      _$HtmlTextResultDataCopyWithImpl<$Res, HtmlTextResultData>;
+  @useResult
   $Res call({String? text, bool isActuallyHaveHtmlInData});
 }
 
 /// @nodoc
-class _$HtmlTextResultDataCopyWithImpl<$Res>
+class _$HtmlTextResultDataCopyWithImpl<$Res, $Val extends HtmlTextResultData>
     implements $HtmlTextResultDataCopyWith<$Res> {
   _$HtmlTextResultDataCopyWithImpl(this._value, this._then);
 
-  final HtmlTextResultData _value;
   // ignore: unused_field
-  final $Res Function(HtmlTextResultData) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? text = freezed,
-    Object? isActuallyHaveHtmlInData = freezed,
+    Object? isActuallyHaveHtmlInData = null,
   }) {
     return _then(_value.copyWith(
-      text: text == freezed
+      text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String?,
-      isActuallyHaveHtmlInData: isActuallyHaveHtmlInData == freezed
+      isActuallyHaveHtmlInData: null == isActuallyHaveHtmlInData
           ? _value.isActuallyHaveHtmlInData
           : isActuallyHaveHtmlInData // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$HtmlTextResultDataCopyWith<$Res>
+abstract class _$$HtmlTextResultDataImplCopyWith<$Res>
     implements $HtmlTextResultDataCopyWith<$Res> {
-  factory _$HtmlTextResultDataCopyWith(
-          _HtmlTextResultData value, $Res Function(_HtmlTextResultData) then) =
-      __$HtmlTextResultDataCopyWithImpl<$Res>;
+  factory _$$HtmlTextResultDataImplCopyWith(_$HtmlTextResultDataImpl value,
+          $Res Function(_$HtmlTextResultDataImpl) then) =
+      __$$HtmlTextResultDataImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String? text, bool isActuallyHaveHtmlInData});
 }
 
 /// @nodoc
-class __$HtmlTextResultDataCopyWithImpl<$Res>
-    extends _$HtmlTextResultDataCopyWithImpl<$Res>
-    implements _$HtmlTextResultDataCopyWith<$Res> {
-  __$HtmlTextResultDataCopyWithImpl(
-      _HtmlTextResultData _value, $Res Function(_HtmlTextResultData) _then)
-      : super(_value, (v) => _then(v as _HtmlTextResultData));
+class __$$HtmlTextResultDataImplCopyWithImpl<$Res>
+    extends _$HtmlTextResultDataCopyWithImpl<$Res, _$HtmlTextResultDataImpl>
+    implements _$$HtmlTextResultDataImplCopyWith<$Res> {
+  __$$HtmlTextResultDataImplCopyWithImpl(_$HtmlTextResultDataImpl _value,
+      $Res Function(_$HtmlTextResultDataImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _HtmlTextResultData get _value => super._value as _HtmlTextResultData;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? text = freezed,
-    Object? isActuallyHaveHtmlInData = freezed,
+    Object? isActuallyHaveHtmlInData = null,
   }) {
-    return _then(_HtmlTextResultData(
-      text: text == freezed
+    return _then(_$HtmlTextResultDataImpl(
+      text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String?,
-      isActuallyHaveHtmlInData: isActuallyHaveHtmlInData == freezed
+      isActuallyHaveHtmlInData: null == isActuallyHaveHtmlInData
           ? _value.isActuallyHaveHtmlInData
           : isActuallyHaveHtmlInData // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -115,8 +102,8 @@ class __$HtmlTextResultDataCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_HtmlTextResultData implements _HtmlTextResultData {
-  const _$_HtmlTextResultData(
+class _$HtmlTextResultDataImpl implements _HtmlTextResultData {
+  const _$HtmlTextResultDataImpl(
       {required this.text, required this.isActuallyHaveHtmlInData});
 
   @override
@@ -130,10 +117,10 @@ class _$_HtmlTextResultData implements _HtmlTextResultData {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _HtmlTextResultData &&
+            other is _$HtmlTextResultDataImpl &&
             (identical(other.text, text) || other.text == text) &&
             (identical(
                     other.isActuallyHaveHtmlInData, isActuallyHaveHtmlInData) ||
@@ -145,14 +132,16 @@ class _$_HtmlTextResultData implements _HtmlTextResultData {
 
   @JsonKey(ignore: true)
   @override
-  _$HtmlTextResultDataCopyWith<_HtmlTextResultData> get copyWith =>
-      __$HtmlTextResultDataCopyWithImpl<_HtmlTextResultData>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$HtmlTextResultDataImplCopyWith<_$HtmlTextResultDataImpl> get copyWith =>
+      __$$HtmlTextResultDataImplCopyWithImpl<_$HtmlTextResultDataImpl>(
+          this, _$identity);
 }
 
 abstract class _HtmlTextResultData implements HtmlTextResultData {
   const factory _HtmlTextResultData(
-      {required String? text,
-      required bool isActuallyHaveHtmlInData}) = _$_HtmlTextResultData;
+      {required final String? text,
+      required final bool isActuallyHaveHtmlInData}) = _$HtmlTextResultDataImpl;
 
   @override
   String? get text;
@@ -160,25 +149,9 @@ abstract class _HtmlTextResultData implements HtmlTextResultData {
   bool get isActuallyHaveHtmlInData;
   @override
   @JsonKey(ignore: true)
-  _$HtmlTextResultDataCopyWith<_HtmlTextResultData> get copyWith =>
+  _$$HtmlTextResultDataImplCopyWith<_$HtmlTextResultDataImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$HtmlTextInputDataTearOff {
-  const _$HtmlTextInputDataTearOff();
-
-  _HtmlTextInputData call(
-      {required String? input, required List<IUnifediApiEmoji>? emojis}) {
-    return _HtmlTextInputData(
-      input: input,
-      emojis: emojis,
-    );
-  }
-}
-
-/// @nodoc
-const $HtmlTextInputData = _$HtmlTextInputDataTearOff();
 
 /// @nodoc
 mixin _$HtmlTextInputData {
@@ -194,70 +167,72 @@ mixin _$HtmlTextInputData {
 abstract class $HtmlTextInputDataCopyWith<$Res> {
   factory $HtmlTextInputDataCopyWith(
           HtmlTextInputData value, $Res Function(HtmlTextInputData) then) =
-      _$HtmlTextInputDataCopyWithImpl<$Res>;
+      _$HtmlTextInputDataCopyWithImpl<$Res, HtmlTextInputData>;
+  @useResult
   $Res call({String? input, List<IUnifediApiEmoji>? emojis});
 }
 
 /// @nodoc
-class _$HtmlTextInputDataCopyWithImpl<$Res>
+class _$HtmlTextInputDataCopyWithImpl<$Res, $Val extends HtmlTextInputData>
     implements $HtmlTextInputDataCopyWith<$Res> {
   _$HtmlTextInputDataCopyWithImpl(this._value, this._then);
 
-  final HtmlTextInputData _value;
   // ignore: unused_field
-  final $Res Function(HtmlTextInputData) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? input = freezed,
     Object? emojis = freezed,
   }) {
     return _then(_value.copyWith(
-      input: input == freezed
+      input: freezed == input
           ? _value.input
           : input // ignore: cast_nullable_to_non_nullable
               as String?,
-      emojis: emojis == freezed
+      emojis: freezed == emojis
           ? _value.emojis
           : emojis // ignore: cast_nullable_to_non_nullable
               as List<IUnifediApiEmoji>?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$HtmlTextInputDataCopyWith<$Res>
+abstract class _$$HtmlTextInputDataImplCopyWith<$Res>
     implements $HtmlTextInputDataCopyWith<$Res> {
-  factory _$HtmlTextInputDataCopyWith(
-          _HtmlTextInputData value, $Res Function(_HtmlTextInputData) then) =
-      __$HtmlTextInputDataCopyWithImpl<$Res>;
+  factory _$$HtmlTextInputDataImplCopyWith(_$HtmlTextInputDataImpl value,
+          $Res Function(_$HtmlTextInputDataImpl) then) =
+      __$$HtmlTextInputDataImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String? input, List<IUnifediApiEmoji>? emojis});
 }
 
 /// @nodoc
-class __$HtmlTextInputDataCopyWithImpl<$Res>
-    extends _$HtmlTextInputDataCopyWithImpl<$Res>
-    implements _$HtmlTextInputDataCopyWith<$Res> {
-  __$HtmlTextInputDataCopyWithImpl(
-      _HtmlTextInputData _value, $Res Function(_HtmlTextInputData) _then)
-      : super(_value, (v) => _then(v as _HtmlTextInputData));
+class __$$HtmlTextInputDataImplCopyWithImpl<$Res>
+    extends _$HtmlTextInputDataCopyWithImpl<$Res, _$HtmlTextInputDataImpl>
+    implements _$$HtmlTextInputDataImplCopyWith<$Res> {
+  __$$HtmlTextInputDataImplCopyWithImpl(_$HtmlTextInputDataImpl _value,
+      $Res Function(_$HtmlTextInputDataImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _HtmlTextInputData get _value => super._value as _HtmlTextInputData;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? input = freezed,
     Object? emojis = freezed,
   }) {
-    return _then(_HtmlTextInputData(
-      input: input == freezed
+    return _then(_$HtmlTextInputDataImpl(
+      input: freezed == input
           ? _value.input
           : input // ignore: cast_nullable_to_non_nullable
               as String?,
-      emojis: emojis == freezed
-          ? _value.emojis
+      emojis: freezed == emojis
+          ? _value._emojis
           : emojis // ignore: cast_nullable_to_non_nullable
               as List<IUnifediApiEmoji>?,
     ));
@@ -266,14 +241,23 @@ class __$HtmlTextInputDataCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_HtmlTextInputData extends _HtmlTextInputData {
-  const _$_HtmlTextInputData({required this.input, required this.emojis})
-      : super._();
+class _$HtmlTextInputDataImpl extends _HtmlTextInputData {
+  const _$HtmlTextInputDataImpl(
+      {required this.input, required final List<IUnifediApiEmoji>? emojis})
+      : _emojis = emojis,
+        super._();
 
   @override
   final String? input;
+  final List<IUnifediApiEmoji>? _emojis;
   @override
-  final List<IUnifediApiEmoji>? emojis;
+  List<IUnifediApiEmoji>? get emojis {
+    final value = _emojis;
+    if (value == null) return null;
+    if (_emojis is EqualUnmodifiableListView) return _emojis;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   @override
   String toString() {
@@ -281,28 +265,30 @@ class _$_HtmlTextInputData extends _HtmlTextInputData {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _HtmlTextInputData &&
+            other is _$HtmlTextInputDataImpl &&
             (identical(other.input, input) || other.input == input) &&
-            const DeepCollectionEquality().equals(other.emojis, emojis));
+            const DeepCollectionEquality().equals(other._emojis, _emojis));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, input, const DeepCollectionEquality().hash(emojis));
+      runtimeType, input, const DeepCollectionEquality().hash(_emojis));
 
   @JsonKey(ignore: true)
   @override
-  _$HtmlTextInputDataCopyWith<_HtmlTextInputData> get copyWith =>
-      __$HtmlTextInputDataCopyWithImpl<_HtmlTextInputData>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$HtmlTextInputDataImplCopyWith<_$HtmlTextInputDataImpl> get copyWith =>
+      __$$HtmlTextInputDataImplCopyWithImpl<_$HtmlTextInputDataImpl>(
+          this, _$identity);
 }
 
 abstract class _HtmlTextInputData extends HtmlTextInputData {
   const factory _HtmlTextInputData(
-      {required String? input,
-      required List<IUnifediApiEmoji>? emojis}) = _$_HtmlTextInputData;
+      {required final String? input,
+      required final List<IUnifediApiEmoji>? emojis}) = _$HtmlTextInputDataImpl;
   const _HtmlTextInputData._() : super._();
 
   @override
@@ -311,50 +297,9 @@ abstract class _HtmlTextInputData extends HtmlTextInputData {
   List<IUnifediApiEmoji>? get emojis;
   @override
   @JsonKey(ignore: true)
-  _$HtmlTextInputDataCopyWith<_HtmlTextInputData> get copyWith =>
+  _$$HtmlTextInputDataImplCopyWith<_$HtmlTextInputDataImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$HtmlTextSettingsTearOff {
-  const _$HtmlTextSettingsTearOff();
-
-  _HtmlTextSettings call(
-      {required double? fontSize,
-      required FontWeight? fontWeight,
-      required double? lineHeight,
-      required Color? color,
-      required Color linkColor,
-      required int? textMaxLines,
-      required TextOverflow? textOverflow,
-      bool shrinkWrap = false,
-      required bool drawNewLines,
-      TextAlign textAlign = TextAlign.start,
-      double customEmojiImageSize = 20.0,
-      double imageSize = 20.0,
-      Display paragraphDisplay = Display.INLINE,
-      required double textScaleFactor}) {
-    return _HtmlTextSettings(
-      fontSize: fontSize,
-      fontWeight: fontWeight,
-      lineHeight: lineHeight,
-      color: color,
-      linkColor: linkColor,
-      textMaxLines: textMaxLines,
-      textOverflow: textOverflow,
-      shrinkWrap: shrinkWrap,
-      drawNewLines: drawNewLines,
-      textAlign: textAlign,
-      customEmojiImageSize: customEmojiImageSize,
-      imageSize: imageSize,
-      paragraphDisplay: paragraphDisplay,
-      textScaleFactor: textScaleFactor,
-    );
-  }
-}
-
-/// @nodoc
-const $HtmlTextSettings = _$HtmlTextSettingsTearOff();
 
 /// @nodoc
 mixin _$HtmlTextSettings {
@@ -384,7 +329,8 @@ mixin _$HtmlTextSettings {
 abstract class $HtmlTextSettingsCopyWith<$Res> {
   factory $HtmlTextSettingsCopyWith(
           HtmlTextSettings value, $Res Function(HtmlTextSettings) then) =
-      _$HtmlTextSettingsCopyWithImpl<$Res>;
+      _$HtmlTextSettingsCopyWithImpl<$Res, HtmlTextSettings>;
+  @useResult
   $Res call(
       {double? fontSize,
       FontWeight? fontWeight,
@@ -403,99 +349,102 @@ abstract class $HtmlTextSettingsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$HtmlTextSettingsCopyWithImpl<$Res>
+class _$HtmlTextSettingsCopyWithImpl<$Res, $Val extends HtmlTextSettings>
     implements $HtmlTextSettingsCopyWith<$Res> {
   _$HtmlTextSettingsCopyWithImpl(this._value, this._then);
 
-  final HtmlTextSettings _value;
   // ignore: unused_field
-  final $Res Function(HtmlTextSettings) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? fontSize = freezed,
     Object? fontWeight = freezed,
     Object? lineHeight = freezed,
     Object? color = freezed,
-    Object? linkColor = freezed,
+    Object? linkColor = null,
     Object? textMaxLines = freezed,
     Object? textOverflow = freezed,
-    Object? shrinkWrap = freezed,
-    Object? drawNewLines = freezed,
-    Object? textAlign = freezed,
-    Object? customEmojiImageSize = freezed,
-    Object? imageSize = freezed,
-    Object? paragraphDisplay = freezed,
-    Object? textScaleFactor = freezed,
+    Object? shrinkWrap = null,
+    Object? drawNewLines = null,
+    Object? textAlign = null,
+    Object? customEmojiImageSize = null,
+    Object? imageSize = null,
+    Object? paragraphDisplay = null,
+    Object? textScaleFactor = null,
   }) {
     return _then(_value.copyWith(
-      fontSize: fontSize == freezed
+      fontSize: freezed == fontSize
           ? _value.fontSize
           : fontSize // ignore: cast_nullable_to_non_nullable
               as double?,
-      fontWeight: fontWeight == freezed
+      fontWeight: freezed == fontWeight
           ? _value.fontWeight
           : fontWeight // ignore: cast_nullable_to_non_nullable
               as FontWeight?,
-      lineHeight: lineHeight == freezed
+      lineHeight: freezed == lineHeight
           ? _value.lineHeight
           : lineHeight // ignore: cast_nullable_to_non_nullable
               as double?,
-      color: color == freezed
+      color: freezed == color
           ? _value.color
           : color // ignore: cast_nullable_to_non_nullable
               as Color?,
-      linkColor: linkColor == freezed
+      linkColor: null == linkColor
           ? _value.linkColor
           : linkColor // ignore: cast_nullable_to_non_nullable
               as Color,
-      textMaxLines: textMaxLines == freezed
+      textMaxLines: freezed == textMaxLines
           ? _value.textMaxLines
           : textMaxLines // ignore: cast_nullable_to_non_nullable
               as int?,
-      textOverflow: textOverflow == freezed
+      textOverflow: freezed == textOverflow
           ? _value.textOverflow
           : textOverflow // ignore: cast_nullable_to_non_nullable
               as TextOverflow?,
-      shrinkWrap: shrinkWrap == freezed
+      shrinkWrap: null == shrinkWrap
           ? _value.shrinkWrap
           : shrinkWrap // ignore: cast_nullable_to_non_nullable
               as bool,
-      drawNewLines: drawNewLines == freezed
+      drawNewLines: null == drawNewLines
           ? _value.drawNewLines
           : drawNewLines // ignore: cast_nullable_to_non_nullable
               as bool,
-      textAlign: textAlign == freezed
+      textAlign: null == textAlign
           ? _value.textAlign
           : textAlign // ignore: cast_nullable_to_non_nullable
               as TextAlign,
-      customEmojiImageSize: customEmojiImageSize == freezed
+      customEmojiImageSize: null == customEmojiImageSize
           ? _value.customEmojiImageSize
           : customEmojiImageSize // ignore: cast_nullable_to_non_nullable
               as double,
-      imageSize: imageSize == freezed
+      imageSize: null == imageSize
           ? _value.imageSize
           : imageSize // ignore: cast_nullable_to_non_nullable
               as double,
-      paragraphDisplay: paragraphDisplay == freezed
+      paragraphDisplay: null == paragraphDisplay
           ? _value.paragraphDisplay
           : paragraphDisplay // ignore: cast_nullable_to_non_nullable
               as Display,
-      textScaleFactor: textScaleFactor == freezed
+      textScaleFactor: null == textScaleFactor
           ? _value.textScaleFactor
           : textScaleFactor // ignore: cast_nullable_to_non_nullable
               as double,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$HtmlTextSettingsCopyWith<$Res>
+abstract class _$$HtmlTextSettingsImplCopyWith<$Res>
     implements $HtmlTextSettingsCopyWith<$Res> {
-  factory _$HtmlTextSettingsCopyWith(
-          _HtmlTextSettings value, $Res Function(_HtmlTextSettings) then) =
-      __$HtmlTextSettingsCopyWithImpl<$Res>;
+  factory _$$HtmlTextSettingsImplCopyWith(_$HtmlTextSettingsImpl value,
+          $Res Function(_$HtmlTextSettingsImpl) then) =
+      __$$HtmlTextSettingsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {double? fontSize,
       FontWeight? fontWeight,
@@ -514,87 +463,85 @@ abstract class _$HtmlTextSettingsCopyWith<$Res>
 }
 
 /// @nodoc
-class __$HtmlTextSettingsCopyWithImpl<$Res>
-    extends _$HtmlTextSettingsCopyWithImpl<$Res>
-    implements _$HtmlTextSettingsCopyWith<$Res> {
-  __$HtmlTextSettingsCopyWithImpl(
-      _HtmlTextSettings _value, $Res Function(_HtmlTextSettings) _then)
-      : super(_value, (v) => _then(v as _HtmlTextSettings));
+class __$$HtmlTextSettingsImplCopyWithImpl<$Res>
+    extends _$HtmlTextSettingsCopyWithImpl<$Res, _$HtmlTextSettingsImpl>
+    implements _$$HtmlTextSettingsImplCopyWith<$Res> {
+  __$$HtmlTextSettingsImplCopyWithImpl(_$HtmlTextSettingsImpl _value,
+      $Res Function(_$HtmlTextSettingsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _HtmlTextSettings get _value => super._value as _HtmlTextSettings;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? fontSize = freezed,
     Object? fontWeight = freezed,
     Object? lineHeight = freezed,
     Object? color = freezed,
-    Object? linkColor = freezed,
+    Object? linkColor = null,
     Object? textMaxLines = freezed,
     Object? textOverflow = freezed,
-    Object? shrinkWrap = freezed,
-    Object? drawNewLines = freezed,
-    Object? textAlign = freezed,
-    Object? customEmojiImageSize = freezed,
-    Object? imageSize = freezed,
-    Object? paragraphDisplay = freezed,
-    Object? textScaleFactor = freezed,
+    Object? shrinkWrap = null,
+    Object? drawNewLines = null,
+    Object? textAlign = null,
+    Object? customEmojiImageSize = null,
+    Object? imageSize = null,
+    Object? paragraphDisplay = null,
+    Object? textScaleFactor = null,
   }) {
-    return _then(_HtmlTextSettings(
-      fontSize: fontSize == freezed
+    return _then(_$HtmlTextSettingsImpl(
+      fontSize: freezed == fontSize
           ? _value.fontSize
           : fontSize // ignore: cast_nullable_to_non_nullable
               as double?,
-      fontWeight: fontWeight == freezed
+      fontWeight: freezed == fontWeight
           ? _value.fontWeight
           : fontWeight // ignore: cast_nullable_to_non_nullable
               as FontWeight?,
-      lineHeight: lineHeight == freezed
+      lineHeight: freezed == lineHeight
           ? _value.lineHeight
           : lineHeight // ignore: cast_nullable_to_non_nullable
               as double?,
-      color: color == freezed
+      color: freezed == color
           ? _value.color
           : color // ignore: cast_nullable_to_non_nullable
               as Color?,
-      linkColor: linkColor == freezed
+      linkColor: null == linkColor
           ? _value.linkColor
           : linkColor // ignore: cast_nullable_to_non_nullable
               as Color,
-      textMaxLines: textMaxLines == freezed
+      textMaxLines: freezed == textMaxLines
           ? _value.textMaxLines
           : textMaxLines // ignore: cast_nullable_to_non_nullable
               as int?,
-      textOverflow: textOverflow == freezed
+      textOverflow: freezed == textOverflow
           ? _value.textOverflow
           : textOverflow // ignore: cast_nullable_to_non_nullable
               as TextOverflow?,
-      shrinkWrap: shrinkWrap == freezed
+      shrinkWrap: null == shrinkWrap
           ? _value.shrinkWrap
           : shrinkWrap // ignore: cast_nullable_to_non_nullable
               as bool,
-      drawNewLines: drawNewLines == freezed
+      drawNewLines: null == drawNewLines
           ? _value.drawNewLines
           : drawNewLines // ignore: cast_nullable_to_non_nullable
               as bool,
-      textAlign: textAlign == freezed
+      textAlign: null == textAlign
           ? _value.textAlign
           : textAlign // ignore: cast_nullable_to_non_nullable
               as TextAlign,
-      customEmojiImageSize: customEmojiImageSize == freezed
+      customEmojiImageSize: null == customEmojiImageSize
           ? _value.customEmojiImageSize
           : customEmojiImageSize // ignore: cast_nullable_to_non_nullable
               as double,
-      imageSize: imageSize == freezed
+      imageSize: null == imageSize
           ? _value.imageSize
           : imageSize // ignore: cast_nullable_to_non_nullable
               as double,
-      paragraphDisplay: paragraphDisplay == freezed
+      paragraphDisplay: null == paragraphDisplay
           ? _value.paragraphDisplay
           : paragraphDisplay // ignore: cast_nullable_to_non_nullable
               as Display,
-      textScaleFactor: textScaleFactor == freezed
+      textScaleFactor: null == textScaleFactor
           ? _value.textScaleFactor
           : textScaleFactor // ignore: cast_nullable_to_non_nullable
               as double,
@@ -604,8 +551,8 @@ class __$HtmlTextSettingsCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_HtmlTextSettings implements _HtmlTextSettings {
-  const _$_HtmlTextSettings(
+class _$HtmlTextSettingsImpl implements _HtmlTextSettings {
+  const _$HtmlTextSettingsImpl(
       {required this.fontSize,
       required this.fontWeight,
       required this.lineHeight,
@@ -618,7 +565,7 @@ class _$_HtmlTextSettings implements _HtmlTextSettings {
       this.textAlign = TextAlign.start,
       this.customEmojiImageSize = 20.0,
       this.imageSize = 20.0,
-      this.paragraphDisplay = Display.INLINE,
+      this.paragraphDisplay = Display.inline,
       required this.textScaleFactor});
 
   @override
@@ -635,22 +582,24 @@ class _$_HtmlTextSettings implements _HtmlTextSettings {
   final int? textMaxLines;
   @override
   final TextOverflow? textOverflow;
-  @JsonKey(defaultValue: false)
   @override
+  @JsonKey()
   final bool shrinkWrap;
   @override
   final bool drawNewLines;
-  @JsonKey(defaultValue: TextAlign.start)
   @override
+  @JsonKey()
   final TextAlign textAlign;
-  @JsonKey(defaultValue: 20.0)
-  @override // ignore: no-magic-number
-  final double customEmojiImageSize;
-  @JsonKey(defaultValue: 20.0)
-  @override // ignore: no-magic-number
-  final double imageSize;
-  @JsonKey(defaultValue: Display.INLINE)
+// ignore: no-magic-number
   @override
+  @JsonKey()
+  final double customEmojiImageSize;
+// ignore: no-magic-number
+  @override
+  @JsonKey()
+  final double imageSize;
+  @override
+  @JsonKey()
   final Display paragraphDisplay;
   @override
   final double textScaleFactor;
@@ -661,10 +610,10 @@ class _$_HtmlTextSettings implements _HtmlTextSettings {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _HtmlTextSettings &&
+            other is _$HtmlTextSettingsImpl &&
             (identical(other.fontSize, fontSize) ||
                 other.fontSize == fontSize) &&
             (identical(other.fontWeight, fontWeight) ||
@@ -714,26 +663,28 @@ class _$_HtmlTextSettings implements _HtmlTextSettings {
 
   @JsonKey(ignore: true)
   @override
-  _$HtmlTextSettingsCopyWith<_HtmlTextSettings> get copyWith =>
-      __$HtmlTextSettingsCopyWithImpl<_HtmlTextSettings>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$HtmlTextSettingsImplCopyWith<_$HtmlTextSettingsImpl> get copyWith =>
+      __$$HtmlTextSettingsImplCopyWithImpl<_$HtmlTextSettingsImpl>(
+          this, _$identity);
 }
 
 abstract class _HtmlTextSettings implements HtmlTextSettings {
   const factory _HtmlTextSettings(
-      {required double? fontSize,
-      required FontWeight? fontWeight,
-      required double? lineHeight,
-      required Color? color,
-      required Color linkColor,
-      required int? textMaxLines,
-      required TextOverflow? textOverflow,
-      bool shrinkWrap,
-      required bool drawNewLines,
-      TextAlign textAlign,
-      double customEmojiImageSize,
-      double imageSize,
-      Display paragraphDisplay,
-      required double textScaleFactor}) = _$_HtmlTextSettings;
+      {required final double? fontSize,
+      required final FontWeight? fontWeight,
+      required final double? lineHeight,
+      required final Color? color,
+      required final Color linkColor,
+      required final int? textMaxLines,
+      required final TextOverflow? textOverflow,
+      final bool shrinkWrap,
+      required final bool drawNewLines,
+      final TextAlign textAlign,
+      final double customEmojiImageSize,
+      final double imageSize,
+      final Display paragraphDisplay,
+      required final double textScaleFactor}) = _$HtmlTextSettingsImpl;
 
   @override
   double? get fontSize;
@@ -765,6 +716,6 @@ abstract class _HtmlTextSettings implements HtmlTextSettings {
   double get textScaleFactor;
   @override
   @JsonKey(ignore: true)
-  _$HtmlTextSettingsCopyWith<_HtmlTextSettings> get copyWith =>
+  _$$HtmlTextSettingsImplCopyWith<_$HtmlTextSettingsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

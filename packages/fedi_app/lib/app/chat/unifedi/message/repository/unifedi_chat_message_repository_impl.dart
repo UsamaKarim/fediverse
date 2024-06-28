@@ -10,7 +10,7 @@ import 'package:fedi_app/app/database/dao/populated_database_dao_mixin.dart';
 import 'package:fedi_app/app/database/dao/repository/remote/populated_app_remote_database_dao_repository.dart';
 import 'package:fedi_app/repository/repository_model.dart';
 import 'package:logging/logging.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 
 var _logger = Logger('unifedi_chat_message_repository_impl.dart');
@@ -275,7 +275,7 @@ class UnifediChatMessageRepository
     required Batch? batchTransaction,
   }) =>
       dao.upsertBatch(
-        entity: dbItem.copyWith(id: dbId),
+        entity: dbItem.copyWith(id: Value(dbId)),
         batchTransaction: batchTransaction,
       );
 }

@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:drift/drift.dart';
+import 'package:drift/native.dart';
 import 'package:fedi_app/app/account/account_model.dart';
 import 'package:fedi_app/app/account/account_model_adapter.dart';
 import 'package:fedi_app/app/account/repository/account_repository_impl.dart';
@@ -9,8 +11,6 @@ import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/status/status_model.dart';
 import 'package:fedi_app/repository/repository_model.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:moor/ffi.dart';
-import 'package:moor/moor.dart';
 
 import '../../conversation/conversation_test_helper.dart';
 import '../../status/database/status_database_test_helper.dart';
@@ -30,7 +30,7 @@ void main() {
   late DbAccount dbAccount2;
 
   setUp(() async {
-    database = AppDatabase(VmDatabase.memory(logStatements: false));
+    database = AppDatabase(NativeDatabase.memory(logStatements: false));
     accountRepository = AccountRepository(appDatabase: database);
     dbAccount1 =
         await AccountDatabaseMockHelper.createTestDbAccount(seed: 'seed1');

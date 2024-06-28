@@ -51,9 +51,9 @@ class MastodonApiFeatureAdapter extends TypeAdapter<MastodonApiFeature> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiFeature _$$_MastodonApiFeatureFromJson(
+_$MastodonApiFeatureImpl _$$MastodonApiFeatureImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiFeature(
+    _$MastodonApiFeatureImpl(
       accessLevelRequirement: MastodonApiAccessLevelRequirement.fromJson(
           json['access_level_requirement'] as Map<String, dynamic>),
       accessScopesRequirement: MastodonApiAccessScopesRequirement.fromJson(
@@ -63,8 +63,8 @@ _$_MastodonApiFeature _$$_MastodonApiFeatureFromJson(
               json['instance_version_requirement'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_MastodonApiFeatureToJson(
-        _$_MastodonApiFeature instance) =>
+Map<String, dynamic> _$$MastodonApiFeatureImplToJson(
+        _$MastodonApiFeatureImpl instance) =>
     <String, dynamic>{
       'access_level_requirement': instance.accessLevelRequirement.toJson(),
       'access_scopes_requirement': instance.accessScopesRequirement.toJson(),

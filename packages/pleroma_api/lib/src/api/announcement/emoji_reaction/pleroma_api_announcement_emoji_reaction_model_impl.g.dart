@@ -57,19 +57,19 @@ class PleromaApiAnnouncementEmojiReactionAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiAnnouncementEmojiReaction
-    _$$_PleromaApiAnnouncementEmojiReactionFromJson(
+_$PleromaApiAnnouncementEmojiReactionImpl
+    _$$PleromaApiAnnouncementEmojiReactionImplFromJson(
             Map<String, dynamic> json) =>
-        _$_PleromaApiAnnouncementEmojiReaction(
+        _$PleromaApiAnnouncementEmojiReactionImpl(
           name: json['name'] as String,
-          count: json['count'] as int,
+          count: (json['count'] as num).toInt(),
           me: json['me'] as bool,
           url: json['url'] as String?,
           staticUrl: json['static_url'] as String?,
         );
 
-Map<String, dynamic> _$$_PleromaApiAnnouncementEmojiReactionToJson(
-    _$_PleromaApiAnnouncementEmojiReaction instance) {
+Map<String, dynamic> _$$PleromaApiAnnouncementEmojiReactionImplToJson(
+    _$PleromaApiAnnouncementEmojiReactionImpl instance) {
   final val = <String, dynamic>{
     'name': instance.name,
     'count': instance.count,

@@ -6,9 +6,9 @@ part of 'unifedi_api_rest_error_details_model_impl.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiRestErrorDetails _$$_UnifediApiRestErrorDetailsFromJson(
+_$UnifediApiRestErrorDetailsImpl _$$UnifediApiRestErrorDetailsImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiRestErrorDetails(
+    _$UnifediApiRestErrorDetailsImpl(
       identifier: json['identifier'] as String?,
       message: json['message'] as String?,
       details: (json['details'] as Map<String, dynamic>?)?.map(
@@ -21,8 +21,8 @@ _$_UnifediApiRestErrorDetails _$$_UnifediApiRestErrorDetailsFromJson(
       ),
     );
 
-Map<String, dynamic> _$$_UnifediApiRestErrorDetailsToJson(
-    _$_UnifediApiRestErrorDetails instance) {
+Map<String, dynamic> _$$UnifediApiRestErrorDetailsImplToJson(
+    _$UnifediApiRestErrorDetailsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

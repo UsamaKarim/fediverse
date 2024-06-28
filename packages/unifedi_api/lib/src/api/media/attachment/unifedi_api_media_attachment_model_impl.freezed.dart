@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_media_attachment_model_impl.dart';
 
@@ -11,64 +12,12 @@ part of 'unifedi_api_media_attachment_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiMediaAttachment _$UnifediApiMediaAttachmentFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiMediaAttachment.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiMediaAttachmentTearOff {
-  const _$UnifediApiMediaAttachmentTearOff();
-
-  _UnifediApiMediaAttachment call(
-      {@HiveField(0)
-          required String? description,
-      @HiveField(1)
-          required String id,
-      @HiveField(2)
-      @JsonKey(name: 'preview_url')
-          required String? previewUrl,
-      @HiveField(3)
-      @JsonKey(name: 'remote_url')
-          required String? remoteUrl,
-      @HiveField(5)
-      @JsonKey(name: 'text_url')
-          required String? textUrl,
-      @HiveField(6)
-      @JsonKey(name: 'type')
-          required String type,
-      @HiveField(7)
-          required String? url,
-      @HiveField(8)
-          required String? blurhash,
-      @HiveField(9)
-          required UnifediApiMediaAttachmentMeta? meta,
-      @HiveField(10 + 0)
-      @JsonKey(name: 'mime_type')
-          required String? mimeType}) {
-    return _UnifediApiMediaAttachment(
-      description: description,
-      id: id,
-      previewUrl: previewUrl,
-      remoteUrl: remoteUrl,
-      textUrl: textUrl,
-      type: type,
-      url: url,
-      blurhash: blurhash,
-      meta: meta,
-      mimeType: mimeType,
-    );
-  }
-
-  UnifediApiMediaAttachment fromJson(Map<String, Object?> json) {
-    return UnifediApiMediaAttachment.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiMediaAttachment = _$UnifediApiMediaAttachmentTearOff();
 
 /// @nodoc
 mixin _$UnifediApiMediaAttachment {
@@ -108,7 +57,8 @@ mixin _$UnifediApiMediaAttachment {
 abstract class $UnifediApiMediaAttachmentCopyWith<$Res> {
   factory $UnifediApiMediaAttachmentCopyWith(UnifediApiMediaAttachment value,
           $Res Function(UnifediApiMediaAttachment) then) =
-      _$UnifediApiMediaAttachmentCopyWithImpl<$Res>;
+      _$UnifediApiMediaAttachmentCopyWithImpl<$Res, UnifediApiMediaAttachment>;
+  @useResult
   $Res call(
       {@HiveField(0) String? description,
       @HiveField(1) String id,
@@ -125,90 +75,96 @@ abstract class $UnifediApiMediaAttachmentCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UnifediApiMediaAttachmentCopyWithImpl<$Res>
+class _$UnifediApiMediaAttachmentCopyWithImpl<$Res,
+        $Val extends UnifediApiMediaAttachment>
     implements $UnifediApiMediaAttachmentCopyWith<$Res> {
   _$UnifediApiMediaAttachmentCopyWithImpl(this._value, this._then);
 
-  final UnifediApiMediaAttachment _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiMediaAttachment) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? description = freezed,
-    Object? id = freezed,
+    Object? id = null,
     Object? previewUrl = freezed,
     Object? remoteUrl = freezed,
     Object? textUrl = freezed,
-    Object? type = freezed,
+    Object? type = null,
     Object? url = freezed,
     Object? blurhash = freezed,
     Object? meta = freezed,
     Object? mimeType = freezed,
   }) {
     return _then(_value.copyWith(
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      previewUrl: previewUrl == freezed
+      previewUrl: freezed == previewUrl
           ? _value.previewUrl
           : previewUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      remoteUrl: remoteUrl == freezed
+      remoteUrl: freezed == remoteUrl
           ? _value.remoteUrl
           : remoteUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      textUrl: textUrl == freezed
+      textUrl: freezed == textUrl
           ? _value.textUrl
           : textUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
-      blurhash: blurhash == freezed
+      blurhash: freezed == blurhash
           ? _value.blurhash
           : blurhash // ignore: cast_nullable_to_non_nullable
               as String?,
-      meta: meta == freezed
+      meta: freezed == meta
           ? _value.meta
           : meta // ignore: cast_nullable_to_non_nullable
               as UnifediApiMediaAttachmentMeta?,
-      mimeType: mimeType == freezed
+      mimeType: freezed == mimeType
           ? _value.mimeType
           : mimeType // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiMediaAttachmentMetaCopyWith<$Res>? get meta {
     if (_value.meta == null) {
       return null;
     }
 
     return $UnifediApiMediaAttachmentMetaCopyWith<$Res>(_value.meta!, (value) {
-      return _then(_value.copyWith(meta: value));
+      return _then(_value.copyWith(meta: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiMediaAttachmentCopyWith<$Res>
+abstract class _$$UnifediApiMediaAttachmentImplCopyWith<$Res>
     implements $UnifediApiMediaAttachmentCopyWith<$Res> {
-  factory _$UnifediApiMediaAttachmentCopyWith(_UnifediApiMediaAttachment value,
-          $Res Function(_UnifediApiMediaAttachment) then) =
-      __$UnifediApiMediaAttachmentCopyWithImpl<$Res>;
+  factory _$$UnifediApiMediaAttachmentImplCopyWith(
+          _$UnifediApiMediaAttachmentImpl value,
+          $Res Function(_$UnifediApiMediaAttachmentImpl) then) =
+      __$$UnifediApiMediaAttachmentImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) String? description,
       @HiveField(1) String id,
@@ -226,68 +182,67 @@ abstract class _$UnifediApiMediaAttachmentCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiMediaAttachmentCopyWithImpl<$Res>
-    extends _$UnifediApiMediaAttachmentCopyWithImpl<$Res>
-    implements _$UnifediApiMediaAttachmentCopyWith<$Res> {
-  __$UnifediApiMediaAttachmentCopyWithImpl(_UnifediApiMediaAttachment _value,
-      $Res Function(_UnifediApiMediaAttachment) _then)
-      : super(_value, (v) => _then(v as _UnifediApiMediaAttachment));
+class __$$UnifediApiMediaAttachmentImplCopyWithImpl<$Res>
+    extends _$UnifediApiMediaAttachmentCopyWithImpl<$Res,
+        _$UnifediApiMediaAttachmentImpl>
+    implements _$$UnifediApiMediaAttachmentImplCopyWith<$Res> {
+  __$$UnifediApiMediaAttachmentImplCopyWithImpl(
+      _$UnifediApiMediaAttachmentImpl _value,
+      $Res Function(_$UnifediApiMediaAttachmentImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiMediaAttachment get _value =>
-      super._value as _UnifediApiMediaAttachment;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? description = freezed,
-    Object? id = freezed,
+    Object? id = null,
     Object? previewUrl = freezed,
     Object? remoteUrl = freezed,
     Object? textUrl = freezed,
-    Object? type = freezed,
+    Object? type = null,
     Object? url = freezed,
     Object? blurhash = freezed,
     Object? meta = freezed,
     Object? mimeType = freezed,
   }) {
-    return _then(_UnifediApiMediaAttachment(
-      description: description == freezed
+    return _then(_$UnifediApiMediaAttachmentImpl(
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      previewUrl: previewUrl == freezed
+      previewUrl: freezed == previewUrl
           ? _value.previewUrl
           : previewUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      remoteUrl: remoteUrl == freezed
+      remoteUrl: freezed == remoteUrl
           ? _value.remoteUrl
           : remoteUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      textUrl: textUrl == freezed
+      textUrl: freezed == textUrl
           ? _value.textUrl
           : textUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
-      blurhash: blurhash == freezed
+      blurhash: freezed == blurhash
           ? _value.blurhash
           : blurhash // ignore: cast_nullable_to_non_nullable
               as String?,
-      meta: meta == freezed
+      meta: freezed == meta
           ? _value.meta
           : meta // ignore: cast_nullable_to_non_nullable
               as UnifediApiMediaAttachmentMeta?,
-      mimeType: mimeType == freezed
+      mimeType: freezed == mimeType
           ? _value.mimeType
           : mimeType // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -297,8 +252,8 @@ class __$UnifediApiMediaAttachmentCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiMediaAttachment implements _UnifediApiMediaAttachment {
-  const _$_UnifediApiMediaAttachment(
+class _$UnifediApiMediaAttachmentImpl implements _UnifediApiMediaAttachment {
+  const _$UnifediApiMediaAttachmentImpl(
       {@HiveField(0) required this.description,
       @HiveField(1) required this.id,
       @HiveField(2) @JsonKey(name: 'preview_url') required this.previewUrl,
@@ -310,8 +265,8 @@ class _$_UnifediApiMediaAttachment implements _UnifediApiMediaAttachment {
       @HiveField(9) required this.meta,
       @HiveField(10 + 0) @JsonKey(name: 'mime_type') required this.mimeType});
 
-  factory _$_UnifediApiMediaAttachment.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiMediaAttachmentFromJson(json);
+  factory _$UnifediApiMediaAttachmentImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiMediaAttachmentImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -355,10 +310,10 @@ class _$_UnifediApiMediaAttachment implements _UnifediApiMediaAttachment {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiMediaAttachment &&
+            other is _$UnifediApiMediaAttachmentImpl &&
             (identical(other.description, description) ||
                 other.description == description) &&
             (identical(other.id, id) || other.id == id) &&
@@ -376,53 +331,47 @@ class _$_UnifediApiMediaAttachment implements _UnifediApiMediaAttachment {
                 other.mimeType == mimeType));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, description, id, previewUrl,
       remoteUrl, textUrl, type, url, blurhash, meta, mimeType);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiMediaAttachmentCopyWith<_UnifediApiMediaAttachment>
-      get copyWith =>
-          __$UnifediApiMediaAttachmentCopyWithImpl<_UnifediApiMediaAttachment>(
-              this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiMediaAttachmentImplCopyWith<_$UnifediApiMediaAttachmentImpl>
+      get copyWith => __$$UnifediApiMediaAttachmentImplCopyWithImpl<
+          _$UnifediApiMediaAttachmentImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiMediaAttachmentToJson(this);
+    return _$$UnifediApiMediaAttachmentImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiMediaAttachment implements UnifediApiMediaAttachment {
   const factory _UnifediApiMediaAttachment(
-      {@HiveField(0)
-          required String? description,
-      @HiveField(1)
-          required String id,
+      {@HiveField(0) required final String? description,
+      @HiveField(1) required final String id,
       @HiveField(2)
       @JsonKey(name: 'preview_url')
-          required String? previewUrl,
+      required final String? previewUrl,
       @HiveField(3)
       @JsonKey(name: 'remote_url')
-          required String? remoteUrl,
-      @HiveField(5)
-      @JsonKey(name: 'text_url')
-          required String? textUrl,
-      @HiveField(6)
-      @JsonKey(name: 'type')
-          required String type,
-      @HiveField(7)
-          required String? url,
-      @HiveField(8)
-          required String? blurhash,
-      @HiveField(9)
-          required UnifediApiMediaAttachmentMeta? meta,
+      required final String? remoteUrl,
+      @HiveField(5) @JsonKey(name: 'text_url') required final String? textUrl,
+      @HiveField(6) @JsonKey(name: 'type') required final String type,
+      @HiveField(7) required final String? url,
+      @HiveField(8) required final String? blurhash,
+      @HiveField(9) required final UnifediApiMediaAttachmentMeta? meta,
       @HiveField(10 + 0)
       @JsonKey(name: 'mime_type')
-          required String? mimeType}) = _$_UnifediApiMediaAttachment;
+      required final String? mimeType}) = _$UnifediApiMediaAttachmentImpl;
 
   factory _UnifediApiMediaAttachment.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiMediaAttachment.fromJson;
+      _$UnifediApiMediaAttachmentImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -461,6 +410,6 @@ abstract class _UnifediApiMediaAttachment implements UnifediApiMediaAttachment {
   String? get mimeType;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiMediaAttachmentCopyWith<_UnifediApiMediaAttachment>
+  _$$UnifediApiMediaAttachmentImplCopyWith<_$UnifediApiMediaAttachmentImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

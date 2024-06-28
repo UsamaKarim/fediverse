@@ -53,8 +53,9 @@ class PleromaApiAccessAdapter extends TypeAdapter<PleromaApiAccess> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiAccess _$$_PleromaApiAccessFromJson(Map<String, dynamic> json) =>
-    _$_PleromaApiAccess(
+_$PleromaApiAccessImpl _$$PleromaApiAccessImplFromJson(
+        Map<String, dynamic> json) =>
+    _$PleromaApiAccessImpl(
       url: json['url'] as String,
       instance: json['instance'] == null
           ? null
@@ -70,7 +71,8 @@ _$_PleromaApiAccess _$$_PleromaApiAccessFromJson(Map<String, dynamic> json) =>
               json['user_access_token'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_PleromaApiAccessToJson(_$_PleromaApiAccess instance) {
+Map<String, dynamic> _$$PleromaApiAccessImplToJson(
+    _$PleromaApiAccessImpl instance) {
   final val = <String, dynamic>{
     'url': instance.url,
   };

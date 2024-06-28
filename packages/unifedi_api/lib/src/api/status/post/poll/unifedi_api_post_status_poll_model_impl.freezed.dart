@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_post_status_poll_model_impl.dart';
 
@@ -11,44 +12,12 @@ part of 'unifedi_api_post_status_poll_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiPostStatusPoll _$UnifediApiPostStatusPollFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiPostStatusPoll.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiPostStatusPollTearOff {
-  const _$UnifediApiPostStatusPollTearOff();
-
-  _UnifediApiPostStatusPoll call(
-      {@HiveField(0)
-      @JsonKey(name: 'expires_in')
-          required int expiresInSeconds,
-      @HiveField(1)
-      @JsonKey(name: 'hide_totals', includeIfNull: false)
-          required bool hideTotals,
-      @HiveField(2)
-          required bool multiple,
-      @HiveField(3)
-      @JsonKey(name: 'options')
-          required List<String> options}) {
-    return _UnifediApiPostStatusPoll(
-      expiresInSeconds: expiresInSeconds,
-      hideTotals: hideTotals,
-      multiple: multiple,
-      options: options,
-    );
-  }
-
-  UnifediApiPostStatusPoll fromJson(Map<String, Object?> json) {
-    return UnifediApiPostStatusPoll.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiPostStatusPoll = _$UnifediApiPostStatusPollTearOff();
 
 /// @nodoc
 mixin _$UnifediApiPostStatusPoll {
@@ -74,113 +43,108 @@ mixin _$UnifediApiPostStatusPoll {
 abstract class $UnifediApiPostStatusPollCopyWith<$Res> {
   factory $UnifediApiPostStatusPollCopyWith(UnifediApiPostStatusPoll value,
           $Res Function(UnifediApiPostStatusPoll) then) =
-      _$UnifediApiPostStatusPollCopyWithImpl<$Res>;
+      _$UnifediApiPostStatusPollCopyWithImpl<$Res, UnifediApiPostStatusPoll>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-      @JsonKey(name: 'expires_in')
-          int expiresInSeconds,
+      {@HiveField(0) @JsonKey(name: 'expires_in') int expiresInSeconds,
       @HiveField(1)
       @JsonKey(name: 'hide_totals', includeIfNull: false)
-          bool hideTotals,
-      @HiveField(2)
-          bool multiple,
-      @HiveField(3)
-      @JsonKey(name: 'options')
-          List<String> options});
+      bool hideTotals,
+      @HiveField(2) bool multiple,
+      @HiveField(3) @JsonKey(name: 'options') List<String> options});
 }
 
 /// @nodoc
-class _$UnifediApiPostStatusPollCopyWithImpl<$Res>
+class _$UnifediApiPostStatusPollCopyWithImpl<$Res,
+        $Val extends UnifediApiPostStatusPoll>
     implements $UnifediApiPostStatusPollCopyWith<$Res> {
   _$UnifediApiPostStatusPollCopyWithImpl(this._value, this._then);
 
-  final UnifediApiPostStatusPoll _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiPostStatusPoll) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? expiresInSeconds = freezed,
-    Object? hideTotals = freezed,
-    Object? multiple = freezed,
-    Object? options = freezed,
+    Object? expiresInSeconds = null,
+    Object? hideTotals = null,
+    Object? multiple = null,
+    Object? options = null,
   }) {
     return _then(_value.copyWith(
-      expiresInSeconds: expiresInSeconds == freezed
+      expiresInSeconds: null == expiresInSeconds
           ? _value.expiresInSeconds
           : expiresInSeconds // ignore: cast_nullable_to_non_nullable
               as int,
-      hideTotals: hideTotals == freezed
+      hideTotals: null == hideTotals
           ? _value.hideTotals
           : hideTotals // ignore: cast_nullable_to_non_nullable
               as bool,
-      multiple: multiple == freezed
+      multiple: null == multiple
           ? _value.multiple
           : multiple // ignore: cast_nullable_to_non_nullable
               as bool,
-      options: options == freezed
+      options: null == options
           ? _value.options
           : options // ignore: cast_nullable_to_non_nullable
               as List<String>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiPostStatusPollCopyWith<$Res>
+abstract class _$$UnifediApiPostStatusPollImplCopyWith<$Res>
     implements $UnifediApiPostStatusPollCopyWith<$Res> {
-  factory _$UnifediApiPostStatusPollCopyWith(_UnifediApiPostStatusPoll value,
-          $Res Function(_UnifediApiPostStatusPoll) then) =
-      __$UnifediApiPostStatusPollCopyWithImpl<$Res>;
+  factory _$$UnifediApiPostStatusPollImplCopyWith(
+          _$UnifediApiPostStatusPollImpl value,
+          $Res Function(_$UnifediApiPostStatusPollImpl) then) =
+      __$$UnifediApiPostStatusPollImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-      @JsonKey(name: 'expires_in')
-          int expiresInSeconds,
+      {@HiveField(0) @JsonKey(name: 'expires_in') int expiresInSeconds,
       @HiveField(1)
       @JsonKey(name: 'hide_totals', includeIfNull: false)
-          bool hideTotals,
-      @HiveField(2)
-          bool multiple,
-      @HiveField(3)
-      @JsonKey(name: 'options')
-          List<String> options});
+      bool hideTotals,
+      @HiveField(2) bool multiple,
+      @HiveField(3) @JsonKey(name: 'options') List<String> options});
 }
 
 /// @nodoc
-class __$UnifediApiPostStatusPollCopyWithImpl<$Res>
-    extends _$UnifediApiPostStatusPollCopyWithImpl<$Res>
-    implements _$UnifediApiPostStatusPollCopyWith<$Res> {
-  __$UnifediApiPostStatusPollCopyWithImpl(_UnifediApiPostStatusPoll _value,
-      $Res Function(_UnifediApiPostStatusPoll) _then)
-      : super(_value, (v) => _then(v as _UnifediApiPostStatusPoll));
+class __$$UnifediApiPostStatusPollImplCopyWithImpl<$Res>
+    extends _$UnifediApiPostStatusPollCopyWithImpl<$Res,
+        _$UnifediApiPostStatusPollImpl>
+    implements _$$UnifediApiPostStatusPollImplCopyWith<$Res> {
+  __$$UnifediApiPostStatusPollImplCopyWithImpl(
+      _$UnifediApiPostStatusPollImpl _value,
+      $Res Function(_$UnifediApiPostStatusPollImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiPostStatusPoll get _value =>
-      super._value as _UnifediApiPostStatusPoll;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? expiresInSeconds = freezed,
-    Object? hideTotals = freezed,
-    Object? multiple = freezed,
-    Object? options = freezed,
+    Object? expiresInSeconds = null,
+    Object? hideTotals = null,
+    Object? multiple = null,
+    Object? options = null,
   }) {
-    return _then(_UnifediApiPostStatusPoll(
-      expiresInSeconds: expiresInSeconds == freezed
+    return _then(_$UnifediApiPostStatusPollImpl(
+      expiresInSeconds: null == expiresInSeconds
           ? _value.expiresInSeconds
           : expiresInSeconds // ignore: cast_nullable_to_non_nullable
               as int,
-      hideTotals: hideTotals == freezed
+      hideTotals: null == hideTotals
           ? _value.hideTotals
           : hideTotals // ignore: cast_nullable_to_non_nullable
               as bool,
-      multiple: multiple == freezed
+      multiple: null == multiple
           ? _value.multiple
           : multiple // ignore: cast_nullable_to_non_nullable
               as bool,
-      options: options == freezed
-          ? _value.options
+      options: null == options
+          ? _value._options
           : options // ignore: cast_nullable_to_non_nullable
               as List<String>,
     ));
@@ -189,22 +153,22 @@ class __$UnifediApiPostStatusPollCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiPostStatusPoll implements _UnifediApiPostStatusPoll {
-  const _$_UnifediApiPostStatusPoll(
+class _$UnifediApiPostStatusPollImpl implements _UnifediApiPostStatusPoll {
+  const _$UnifediApiPostStatusPollImpl(
       {@HiveField(0)
       @JsonKey(name: 'expires_in')
-          required this.expiresInSeconds,
+      required this.expiresInSeconds,
       @HiveField(1)
       @JsonKey(name: 'hide_totals', includeIfNull: false)
-          required this.hideTotals,
-      @HiveField(2)
-          required this.multiple,
+      required this.hideTotals,
+      @HiveField(2) required this.multiple,
       @HiveField(3)
       @JsonKey(name: 'options')
-          required this.options});
+      required final List<String> options})
+      : _options = options;
 
-  factory _$_UnifediApiPostStatusPoll.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiPostStatusPollFromJson(json);
+  factory _$UnifediApiPostStatusPollImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiPostStatusPollImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -217,10 +181,15 @@ class _$_UnifediApiPostStatusPoll implements _UnifediApiPostStatusPoll {
   @override
   @HiveField(2)
   final bool multiple;
+  final List<String> _options;
   @override
   @HiveField(3)
   @JsonKey(name: 'options')
-  final List<String> options;
+  List<String> get options {
+    if (_options is EqualUnmodifiableListView) return _options;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_options);
+  }
 
   @override
   String toString() {
@@ -228,32 +197,36 @@ class _$_UnifediApiPostStatusPoll implements _UnifediApiPostStatusPoll {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiPostStatusPoll &&
+            other is _$UnifediApiPostStatusPollImpl &&
             (identical(other.expiresInSeconds, expiresInSeconds) ||
                 other.expiresInSeconds == expiresInSeconds) &&
             (identical(other.hideTotals, hideTotals) ||
                 other.hideTotals == hideTotals) &&
             (identical(other.multiple, multiple) ||
                 other.multiple == multiple) &&
-            const DeepCollectionEquality().equals(other.options, options));
+            const DeepCollectionEquality().equals(other._options, _options));
   }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, expiresInSeconds, hideTotals,
-      multiple, const DeepCollectionEquality().hash(options));
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiPostStatusPollCopyWith<_UnifediApiPostStatusPoll> get copyWith =>
-      __$UnifediApiPostStatusPollCopyWithImpl<_UnifediApiPostStatusPoll>(
-          this, _$identity);
+  int get hashCode => Object.hash(runtimeType, expiresInSeconds, hideTotals,
+      multiple, const DeepCollectionEquality().hash(_options));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiPostStatusPollImplCopyWith<_$UnifediApiPostStatusPollImpl>
+      get copyWith => __$$UnifediApiPostStatusPollImplCopyWithImpl<
+          _$UnifediApiPostStatusPollImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiPostStatusPollToJson(this);
+    return _$$UnifediApiPostStatusPollImplToJson(
+      this,
+    );
   }
 }
 
@@ -261,18 +234,17 @@ abstract class _UnifediApiPostStatusPoll implements UnifediApiPostStatusPoll {
   const factory _UnifediApiPostStatusPoll(
       {@HiveField(0)
       @JsonKey(name: 'expires_in')
-          required int expiresInSeconds,
+      required final int expiresInSeconds,
       @HiveField(1)
       @JsonKey(name: 'hide_totals', includeIfNull: false)
-          required bool hideTotals,
-      @HiveField(2)
-          required bool multiple,
+      required final bool hideTotals,
+      @HiveField(2) required final bool multiple,
       @HiveField(3)
       @JsonKey(name: 'options')
-          required List<String> options}) = _$_UnifediApiPostStatusPoll;
+      required final List<String> options}) = _$UnifediApiPostStatusPollImpl;
 
   factory _UnifediApiPostStatusPoll.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiPostStatusPoll.fromJson;
+      _$UnifediApiPostStatusPollImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -291,6 +263,6 @@ abstract class _UnifediApiPostStatusPoll implements UnifediApiPostStatusPoll {
   List<String> get options;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiPostStatusPollCopyWith<_UnifediApiPostStatusPoll> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$UnifediApiPostStatusPollImplCopyWith<_$UnifediApiPostStatusPollImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

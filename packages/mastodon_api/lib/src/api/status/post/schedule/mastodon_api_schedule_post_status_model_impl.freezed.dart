@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_schedule_post_status_model_impl.dart';
 
@@ -11,63 +12,12 @@ part of 'mastodon_api_schedule_post_status_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiSchedulePostStatus _$MastodonApiSchedulePostStatusFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiSchedulePostStatus.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiSchedulePostStatusTearOff {
-  const _$MastodonApiSchedulePostStatusTearOff();
-
-  _MastodonApiSchedulePostStatus call(
-      {@HiveField(3)
-      @JsonKey(name: 'in_reply_to_id')
-          required String? inReplyToId,
-      @HiveField(4)
-          required String? language,
-      @HiveField(5)
-          required String visibility,
-      @JsonKey(name: 'media_ids')
-      @HiveField(6)
-          required List<String>? mediaIds,
-      @HiveField(7)
-          required MastodonApiPostStatusPoll? poll,
-      @HiveField(9)
-          required bool sensitive,
-      @HiveField(10)
-      @JsonKey(name: 'spoiler_text')
-          required String? spoilerText,
-      @HiveField(11)
-          required String? status,
-      @JsonKey(
-          name: 'scheduled_at',
-          toJson: JsonParseHelper.toUTCIsoString,
-          fromJson: JsonParseHelper.fromUTCIsoString)
-      @HiveField(13)
-          required DateTime scheduledAt}) {
-    return _MastodonApiSchedulePostStatus(
-      inReplyToId: inReplyToId,
-      language: language,
-      visibility: visibility,
-      mediaIds: mediaIds,
-      poll: poll,
-      sensitive: sensitive,
-      spoilerText: spoilerText,
-      status: status,
-      scheduledAt: scheduledAt,
-    );
-  }
-
-  MastodonApiSchedulePostStatus fromJson(Map<String, Object?> json) {
-    return MastodonApiSchedulePostStatus.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiSchedulePostStatus = _$MastodonApiSchedulePostStatusTearOff();
 
 /// @nodoc
 mixin _$MastodonApiSchedulePostStatus {
@@ -108,208 +58,191 @@ abstract class $MastodonApiSchedulePostStatusCopyWith<$Res> {
   factory $MastodonApiSchedulePostStatusCopyWith(
           MastodonApiSchedulePostStatus value,
           $Res Function(MastodonApiSchedulePostStatus) then) =
-      _$MastodonApiSchedulePostStatusCopyWithImpl<$Res>;
+      _$MastodonApiSchedulePostStatusCopyWithImpl<$Res,
+          MastodonApiSchedulePostStatus>;
+  @useResult
   $Res call(
-      {@HiveField(3)
-      @JsonKey(name: 'in_reply_to_id')
-          String? inReplyToId,
-      @HiveField(4)
-          String? language,
-      @HiveField(5)
-          String visibility,
-      @JsonKey(name: 'media_ids')
-      @HiveField(6)
-          List<String>? mediaIds,
-      @HiveField(7)
-          MastodonApiPostStatusPoll? poll,
-      @HiveField(9)
-          bool sensitive,
-      @HiveField(10)
-      @JsonKey(name: 'spoiler_text')
-          String? spoilerText,
-      @HiveField(11)
-          String? status,
+      {@HiveField(3) @JsonKey(name: 'in_reply_to_id') String? inReplyToId,
+      @HiveField(4) String? language,
+      @HiveField(5) String visibility,
+      @JsonKey(name: 'media_ids') @HiveField(6) List<String>? mediaIds,
+      @HiveField(7) MastodonApiPostStatusPoll? poll,
+      @HiveField(9) bool sensitive,
+      @HiveField(10) @JsonKey(name: 'spoiler_text') String? spoilerText,
+      @HiveField(11) String? status,
       @JsonKey(
           name: 'scheduled_at',
           toJson: JsonParseHelper.toUTCIsoString,
           fromJson: JsonParseHelper.fromUTCIsoString)
       @HiveField(13)
-          DateTime scheduledAt});
+      DateTime scheduledAt});
 
   $MastodonApiPostStatusPollCopyWith<$Res>? get poll;
 }
 
 /// @nodoc
-class _$MastodonApiSchedulePostStatusCopyWithImpl<$Res>
+class _$MastodonApiSchedulePostStatusCopyWithImpl<$Res,
+        $Val extends MastodonApiSchedulePostStatus>
     implements $MastodonApiSchedulePostStatusCopyWith<$Res> {
   _$MastodonApiSchedulePostStatusCopyWithImpl(this._value, this._then);
 
-  final MastodonApiSchedulePostStatus _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiSchedulePostStatus) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? inReplyToId = freezed,
     Object? language = freezed,
-    Object? visibility = freezed,
+    Object? visibility = null,
     Object? mediaIds = freezed,
     Object? poll = freezed,
-    Object? sensitive = freezed,
+    Object? sensitive = null,
     Object? spoilerText = freezed,
     Object? status = freezed,
-    Object? scheduledAt = freezed,
+    Object? scheduledAt = null,
   }) {
     return _then(_value.copyWith(
-      inReplyToId: inReplyToId == freezed
+      inReplyToId: freezed == inReplyToId
           ? _value.inReplyToId
           : inReplyToId // ignore: cast_nullable_to_non_nullable
               as String?,
-      language: language == freezed
+      language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as String?,
-      visibility: visibility == freezed
+      visibility: null == visibility
           ? _value.visibility
           : visibility // ignore: cast_nullable_to_non_nullable
               as String,
-      mediaIds: mediaIds == freezed
+      mediaIds: freezed == mediaIds
           ? _value.mediaIds
           : mediaIds // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      poll: poll == freezed
+      poll: freezed == poll
           ? _value.poll
           : poll // ignore: cast_nullable_to_non_nullable
               as MastodonApiPostStatusPoll?,
-      sensitive: sensitive == freezed
+      sensitive: null == sensitive
           ? _value.sensitive
           : sensitive // ignore: cast_nullable_to_non_nullable
               as bool,
-      spoilerText: spoilerText == freezed
+      spoilerText: freezed == spoilerText
           ? _value.spoilerText
           : spoilerText // ignore: cast_nullable_to_non_nullable
               as String?,
-      status: status == freezed
+      status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String?,
-      scheduledAt: scheduledAt == freezed
+      scheduledAt: null == scheduledAt
           ? _value.scheduledAt
           : scheduledAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiPostStatusPollCopyWith<$Res>? get poll {
     if (_value.poll == null) {
       return null;
     }
 
     return $MastodonApiPostStatusPollCopyWith<$Res>(_value.poll!, (value) {
-      return _then(_value.copyWith(poll: value));
+      return _then(_value.copyWith(poll: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiSchedulePostStatusCopyWith<$Res>
+abstract class _$$MastodonApiSchedulePostStatusImplCopyWith<$Res>
     implements $MastodonApiSchedulePostStatusCopyWith<$Res> {
-  factory _$MastodonApiSchedulePostStatusCopyWith(
-          _MastodonApiSchedulePostStatus value,
-          $Res Function(_MastodonApiSchedulePostStatus) then) =
-      __$MastodonApiSchedulePostStatusCopyWithImpl<$Res>;
+  factory _$$MastodonApiSchedulePostStatusImplCopyWith(
+          _$MastodonApiSchedulePostStatusImpl value,
+          $Res Function(_$MastodonApiSchedulePostStatusImpl) then) =
+      __$$MastodonApiSchedulePostStatusImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(3)
-      @JsonKey(name: 'in_reply_to_id')
-          String? inReplyToId,
-      @HiveField(4)
-          String? language,
-      @HiveField(5)
-          String visibility,
-      @JsonKey(name: 'media_ids')
-      @HiveField(6)
-          List<String>? mediaIds,
-      @HiveField(7)
-          MastodonApiPostStatusPoll? poll,
-      @HiveField(9)
-          bool sensitive,
-      @HiveField(10)
-      @JsonKey(name: 'spoiler_text')
-          String? spoilerText,
-      @HiveField(11)
-          String? status,
+      {@HiveField(3) @JsonKey(name: 'in_reply_to_id') String? inReplyToId,
+      @HiveField(4) String? language,
+      @HiveField(5) String visibility,
+      @JsonKey(name: 'media_ids') @HiveField(6) List<String>? mediaIds,
+      @HiveField(7) MastodonApiPostStatusPoll? poll,
+      @HiveField(9) bool sensitive,
+      @HiveField(10) @JsonKey(name: 'spoiler_text') String? spoilerText,
+      @HiveField(11) String? status,
       @JsonKey(
           name: 'scheduled_at',
           toJson: JsonParseHelper.toUTCIsoString,
           fromJson: JsonParseHelper.fromUTCIsoString)
       @HiveField(13)
-          DateTime scheduledAt});
+      DateTime scheduledAt});
 
   @override
   $MastodonApiPostStatusPollCopyWith<$Res>? get poll;
 }
 
 /// @nodoc
-class __$MastodonApiSchedulePostStatusCopyWithImpl<$Res>
-    extends _$MastodonApiSchedulePostStatusCopyWithImpl<$Res>
-    implements _$MastodonApiSchedulePostStatusCopyWith<$Res> {
-  __$MastodonApiSchedulePostStatusCopyWithImpl(
-      _MastodonApiSchedulePostStatus _value,
-      $Res Function(_MastodonApiSchedulePostStatus) _then)
-      : super(_value, (v) => _then(v as _MastodonApiSchedulePostStatus));
+class __$$MastodonApiSchedulePostStatusImplCopyWithImpl<$Res>
+    extends _$MastodonApiSchedulePostStatusCopyWithImpl<$Res,
+        _$MastodonApiSchedulePostStatusImpl>
+    implements _$$MastodonApiSchedulePostStatusImplCopyWith<$Res> {
+  __$$MastodonApiSchedulePostStatusImplCopyWithImpl(
+      _$MastodonApiSchedulePostStatusImpl _value,
+      $Res Function(_$MastodonApiSchedulePostStatusImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiSchedulePostStatus get _value =>
-      super._value as _MastodonApiSchedulePostStatus;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? inReplyToId = freezed,
     Object? language = freezed,
-    Object? visibility = freezed,
+    Object? visibility = null,
     Object? mediaIds = freezed,
     Object? poll = freezed,
-    Object? sensitive = freezed,
+    Object? sensitive = null,
     Object? spoilerText = freezed,
     Object? status = freezed,
-    Object? scheduledAt = freezed,
+    Object? scheduledAt = null,
   }) {
-    return _then(_MastodonApiSchedulePostStatus(
-      inReplyToId: inReplyToId == freezed
+    return _then(_$MastodonApiSchedulePostStatusImpl(
+      inReplyToId: freezed == inReplyToId
           ? _value.inReplyToId
           : inReplyToId // ignore: cast_nullable_to_non_nullable
               as String?,
-      language: language == freezed
+      language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as String?,
-      visibility: visibility == freezed
+      visibility: null == visibility
           ? _value.visibility
           : visibility // ignore: cast_nullable_to_non_nullable
               as String,
-      mediaIds: mediaIds == freezed
-          ? _value.mediaIds
+      mediaIds: freezed == mediaIds
+          ? _value._mediaIds
           : mediaIds // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      poll: poll == freezed
+      poll: freezed == poll
           ? _value.poll
           : poll // ignore: cast_nullable_to_non_nullable
               as MastodonApiPostStatusPoll?,
-      sensitive: sensitive == freezed
+      sensitive: null == sensitive
           ? _value.sensitive
           : sensitive // ignore: cast_nullable_to_non_nullable
               as bool,
-      spoilerText: spoilerText == freezed
+      spoilerText: freezed == spoilerText
           ? _value.spoilerText
           : spoilerText // ignore: cast_nullable_to_non_nullable
               as String?,
-      status: status == freezed
+      status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String?,
-      scheduledAt: scheduledAt == freezed
+      scheduledAt: null == scheduledAt
           ? _value.scheduledAt
           : scheduledAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
@@ -319,38 +252,30 @@ class __$MastodonApiSchedulePostStatusCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiSchedulePostStatus
+class _$MastodonApiSchedulePostStatusImpl
     implements _MastodonApiSchedulePostStatus {
-  const _$_MastodonApiSchedulePostStatus(
-      {@HiveField(3)
-      @JsonKey(name: 'in_reply_to_id')
-          required this.inReplyToId,
-      @HiveField(4)
-          required this.language,
-      @HiveField(5)
-          required this.visibility,
+  const _$MastodonApiSchedulePostStatusImpl(
+      {@HiveField(3) @JsonKey(name: 'in_reply_to_id') required this.inReplyToId,
+      @HiveField(4) required this.language,
+      @HiveField(5) required this.visibility,
       @JsonKey(name: 'media_ids')
       @HiveField(6)
-          required this.mediaIds,
-      @HiveField(7)
-          required this.poll,
-      @HiveField(9)
-          required this.sensitive,
-      @HiveField(10)
-      @JsonKey(name: 'spoiler_text')
-          required this.spoilerText,
-      @HiveField(11)
-          required this.status,
+      required final List<String>? mediaIds,
+      @HiveField(7) required this.poll,
+      @HiveField(9) required this.sensitive,
+      @HiveField(10) @JsonKey(name: 'spoiler_text') required this.spoilerText,
+      @HiveField(11) required this.status,
       @JsonKey(
           name: 'scheduled_at',
           toJson: JsonParseHelper.toUTCIsoString,
           fromJson: JsonParseHelper.fromUTCIsoString)
       @HiveField(13)
-          required this.scheduledAt});
+      required this.scheduledAt})
+      : _mediaIds = mediaIds;
 
-  factory _$_MastodonApiSchedulePostStatus.fromJson(
+  factory _$MastodonApiSchedulePostStatusImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_MastodonApiSchedulePostStatusFromJson(json);
+      _$$MastodonApiSchedulePostStatusImplFromJson(json);
 
   @override
   @HiveField(3)
@@ -362,10 +287,18 @@ class _$_MastodonApiSchedulePostStatus
   @override
   @HiveField(5)
   final String visibility;
+  final List<String>? _mediaIds;
   @override
   @JsonKey(name: 'media_ids')
   @HiveField(6)
-  final List<String>? mediaIds;
+  List<String>? get mediaIds {
+    final value = _mediaIds;
+    if (value == null) return null;
+    if (_mediaIds is EqualUnmodifiableListView) return _mediaIds;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(7)
   final MastodonApiPostStatusPoll? poll;
@@ -393,17 +326,17 @@ class _$_MastodonApiSchedulePostStatus
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiSchedulePostStatus &&
+            other is _$MastodonApiSchedulePostStatusImpl &&
             (identical(other.inReplyToId, inReplyToId) ||
                 other.inReplyToId == inReplyToId) &&
             (identical(other.language, language) ||
                 other.language == language) &&
             (identical(other.visibility, visibility) ||
                 other.visibility == visibility) &&
-            const DeepCollectionEquality().equals(other.mediaIds, mediaIds) &&
+            const DeepCollectionEquality().equals(other._mediaIds, _mediaIds) &&
             (identical(other.poll, poll) || other.poll == poll) &&
             (identical(other.sensitive, sensitive) ||
                 other.sensitive == sensitive) &&
@@ -414,13 +347,14 @@ class _$_MastodonApiSchedulePostStatus
                 other.scheduledAt == scheduledAt));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       inReplyToId,
       language,
       visibility,
-      const DeepCollectionEquality().hash(mediaIds),
+      const DeepCollectionEquality().hash(_mediaIds),
       poll,
       sensitive,
       spoilerText,
@@ -429,47 +363,47 @@ class _$_MastodonApiSchedulePostStatus
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiSchedulePostStatusCopyWith<_MastodonApiSchedulePostStatus>
-      get copyWith => __$MastodonApiSchedulePostStatusCopyWithImpl<
-          _MastodonApiSchedulePostStatus>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiSchedulePostStatusImplCopyWith<
+          _$MastodonApiSchedulePostStatusImpl>
+      get copyWith => __$$MastodonApiSchedulePostStatusImplCopyWithImpl<
+          _$MastodonApiSchedulePostStatusImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiSchedulePostStatusToJson(this);
+    return _$$MastodonApiSchedulePostStatusImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiSchedulePostStatus
     implements MastodonApiSchedulePostStatus {
   const factory _MastodonApiSchedulePostStatus(
-      {@HiveField(3)
-      @JsonKey(name: 'in_reply_to_id')
-          required String? inReplyToId,
-      @HiveField(4)
-          required String? language,
-      @HiveField(5)
-          required String visibility,
-      @JsonKey(name: 'media_ids')
-      @HiveField(6)
-          required List<String>? mediaIds,
-      @HiveField(7)
-          required MastodonApiPostStatusPoll? poll,
-      @HiveField(9)
-          required bool sensitive,
-      @HiveField(10)
-      @JsonKey(name: 'spoiler_text')
-          required String? spoilerText,
-      @HiveField(11)
-          required String? status,
-      @JsonKey(
-          name: 'scheduled_at',
-          toJson: JsonParseHelper.toUTCIsoString,
-          fromJson: JsonParseHelper.fromUTCIsoString)
-      @HiveField(13)
-          required DateTime scheduledAt}) = _$_MastodonApiSchedulePostStatus;
+          {@HiveField(3)
+          @JsonKey(name: 'in_reply_to_id')
+          required final String? inReplyToId,
+          @HiveField(4) required final String? language,
+          @HiveField(5) required final String visibility,
+          @JsonKey(name: 'media_ids')
+          @HiveField(6)
+          required final List<String>? mediaIds,
+          @HiveField(7) required final MastodonApiPostStatusPoll? poll,
+          @HiveField(9) required final bool sensitive,
+          @HiveField(10)
+          @JsonKey(name: 'spoiler_text')
+          required final String? spoilerText,
+          @HiveField(11) required final String? status,
+          @JsonKey(
+              name: 'scheduled_at',
+              toJson: JsonParseHelper.toUTCIsoString,
+              fromJson: JsonParseHelper.fromUTCIsoString)
+          @HiveField(13)
+          required final DateTime scheduledAt}) =
+      _$MastodonApiSchedulePostStatusImpl;
 
   factory _MastodonApiSchedulePostStatus.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiSchedulePostStatus.fromJson;
+      _$MastodonApiSchedulePostStatusImpl.fromJson;
 
   @override
   @HiveField(3)
@@ -507,6 +441,7 @@ abstract class _MastodonApiSchedulePostStatus
   DateTime get scheduledAt;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiSchedulePostStatusCopyWith<_MastodonApiSchedulePostStatus>
+  _$$MastodonApiSchedulePostStatusImplCopyWith<
+          _$MastodonApiSchedulePostStatusImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -45,14 +45,14 @@ class PleromaApiInstanceUrlsAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiInstanceUrls _$$_PleromaApiInstanceUrlsFromJson(
+_$PleromaApiInstanceUrlsImpl _$$PleromaApiInstanceUrlsImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiInstanceUrls(
+    _$PleromaApiInstanceUrlsImpl(
       streamingApi: json['streaming_api'] as String?,
     );
 
-Map<String, dynamic> _$$_PleromaApiInstanceUrlsToJson(
-    _$_PleromaApiInstanceUrls instance) {
+Map<String, dynamic> _$$PleromaApiInstanceUrlsImplToJson(
+    _$PleromaApiInstanceUrlsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

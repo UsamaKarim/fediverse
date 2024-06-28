@@ -45,14 +45,14 @@ class MastodonApiAccessLevelAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiAccessLevel _$$_MastodonApiAccessLevelFromJson(
+_$MastodonApiAccessLevelImpl _$$MastodonApiAccessLevelImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiAccessLevel(
+    _$MastodonApiAccessLevelImpl(
       stringValue: json['string_value'] as String,
     );
 
-Map<String, dynamic> _$$_MastodonApiAccessLevelToJson(
-        _$_MastodonApiAccessLevel instance) =>
+Map<String, dynamic> _$$MastodonApiAccessLevelImplToJson(
+        _$MastodonApiAccessLevelImpl instance) =>
     <String, dynamic>{
       'string_value': instance.stringValue,
     };

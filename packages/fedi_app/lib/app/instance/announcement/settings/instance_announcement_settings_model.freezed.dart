@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'instance_announcement_settings_model.dart';
 
@@ -11,33 +12,12 @@ part of 'instance_announcement_settings_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 InstanceAnnouncementSettings _$InstanceAnnouncementSettingsFromJson(
     Map<String, dynamic> json) {
   return _InstanceAnnouncementSettings.fromJson(json);
 }
-
-/// @nodoc
-class _$InstanceAnnouncementSettingsTearOff {
-  const _$InstanceAnnouncementSettingsTearOff();
-
-  _InstanceAnnouncementSettings call(
-      {@JsonKey(name: 'withDismissed')
-      @HiveField(1)
-          required bool withDismissed}) {
-    return _InstanceAnnouncementSettings(
-      withDismissed: withDismissed,
-    );
-  }
-
-  InstanceAnnouncementSettings fromJson(Map<String, Object?> json) {
-    return InstanceAnnouncementSettings.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $InstanceAnnouncementSettings = _$InstanceAnnouncementSettingsTearOff();
 
 /// @nodoc
 mixin _$InstanceAnnouncementSettings {
@@ -56,62 +36,66 @@ abstract class $InstanceAnnouncementSettingsCopyWith<$Res> {
   factory $InstanceAnnouncementSettingsCopyWith(
           InstanceAnnouncementSettings value,
           $Res Function(InstanceAnnouncementSettings) then) =
-      _$InstanceAnnouncementSettingsCopyWithImpl<$Res>;
+      _$InstanceAnnouncementSettingsCopyWithImpl<$Res,
+          InstanceAnnouncementSettings>;
+  @useResult
   $Res call({@JsonKey(name: 'withDismissed') @HiveField(1) bool withDismissed});
 }
 
 /// @nodoc
-class _$InstanceAnnouncementSettingsCopyWithImpl<$Res>
+class _$InstanceAnnouncementSettingsCopyWithImpl<$Res,
+        $Val extends InstanceAnnouncementSettings>
     implements $InstanceAnnouncementSettingsCopyWith<$Res> {
   _$InstanceAnnouncementSettingsCopyWithImpl(this._value, this._then);
 
-  final InstanceAnnouncementSettings _value;
   // ignore: unused_field
-  final $Res Function(InstanceAnnouncementSettings) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? withDismissed = freezed,
+    Object? withDismissed = null,
   }) {
     return _then(_value.copyWith(
-      withDismissed: withDismissed == freezed
+      withDismissed: null == withDismissed
           ? _value.withDismissed
           : withDismissed // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$InstanceAnnouncementSettingsCopyWith<$Res>
+abstract class _$$InstanceAnnouncementSettingsImplCopyWith<$Res>
     implements $InstanceAnnouncementSettingsCopyWith<$Res> {
-  factory _$InstanceAnnouncementSettingsCopyWith(
-          _InstanceAnnouncementSettings value,
-          $Res Function(_InstanceAnnouncementSettings) then) =
-      __$InstanceAnnouncementSettingsCopyWithImpl<$Res>;
+  factory _$$InstanceAnnouncementSettingsImplCopyWith(
+          _$InstanceAnnouncementSettingsImpl value,
+          $Res Function(_$InstanceAnnouncementSettingsImpl) then) =
+      __$$InstanceAnnouncementSettingsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@JsonKey(name: 'withDismissed') @HiveField(1) bool withDismissed});
 }
 
 /// @nodoc
-class __$InstanceAnnouncementSettingsCopyWithImpl<$Res>
-    extends _$InstanceAnnouncementSettingsCopyWithImpl<$Res>
-    implements _$InstanceAnnouncementSettingsCopyWith<$Res> {
-  __$InstanceAnnouncementSettingsCopyWithImpl(
-      _InstanceAnnouncementSettings _value,
-      $Res Function(_InstanceAnnouncementSettings) _then)
-      : super(_value, (v) => _then(v as _InstanceAnnouncementSettings));
+class __$$InstanceAnnouncementSettingsImplCopyWithImpl<$Res>
+    extends _$InstanceAnnouncementSettingsCopyWithImpl<$Res,
+        _$InstanceAnnouncementSettingsImpl>
+    implements _$$InstanceAnnouncementSettingsImplCopyWith<$Res> {
+  __$$InstanceAnnouncementSettingsImplCopyWithImpl(
+      _$InstanceAnnouncementSettingsImpl _value,
+      $Res Function(_$InstanceAnnouncementSettingsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _InstanceAnnouncementSettings get _value =>
-      super._value as _InstanceAnnouncementSettings;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? withDismissed = freezed,
+    Object? withDismissed = null,
   }) {
-    return _then(_InstanceAnnouncementSettings(
-      withDismissed: withDismissed == freezed
+    return _then(_$InstanceAnnouncementSettingsImpl(
+      withDismissed: null == withDismissed
           ? _value.withDismissed
           : withDismissed // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -121,15 +105,16 @@ class __$InstanceAnnouncementSettingsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_InstanceAnnouncementSettings extends _InstanceAnnouncementSettings {
-  const _$_InstanceAnnouncementSettings(
+class _$InstanceAnnouncementSettingsImpl extends _InstanceAnnouncementSettings {
+  const _$InstanceAnnouncementSettingsImpl(
       {@JsonKey(name: 'withDismissed')
       @HiveField(1)
-          required this.withDismissed})
+      required this.withDismissed})
       : super._();
 
-  factory _$_InstanceAnnouncementSettings.fromJson(Map<String, dynamic> json) =>
-      _$$_InstanceAnnouncementSettingsFromJson(json);
+  factory _$InstanceAnnouncementSettingsImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$InstanceAnnouncementSettingsImplFromJson(json);
 
   @override
   @JsonKey(name: 'withDismissed')
@@ -142,26 +127,31 @@ class _$_InstanceAnnouncementSettings extends _InstanceAnnouncementSettings {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _InstanceAnnouncementSettings &&
+            other is _$InstanceAnnouncementSettingsImpl &&
             (identical(other.withDismissed, withDismissed) ||
                 other.withDismissed == withDismissed));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, withDismissed);
 
   @JsonKey(ignore: true)
   @override
-  _$InstanceAnnouncementSettingsCopyWith<_InstanceAnnouncementSettings>
-      get copyWith => __$InstanceAnnouncementSettingsCopyWithImpl<
-          _InstanceAnnouncementSettings>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$InstanceAnnouncementSettingsImplCopyWith<
+          _$InstanceAnnouncementSettingsImpl>
+      get copyWith => __$$InstanceAnnouncementSettingsImplCopyWithImpl<
+          _$InstanceAnnouncementSettingsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_InstanceAnnouncementSettingsToJson(this);
+    return _$$InstanceAnnouncementSettingsImplToJson(
+      this,
+    );
   }
 }
 
@@ -170,11 +160,11 @@ abstract class _InstanceAnnouncementSettings
   const factory _InstanceAnnouncementSettings(
       {@JsonKey(name: 'withDismissed')
       @HiveField(1)
-          required bool withDismissed}) = _$_InstanceAnnouncementSettings;
+      required final bool withDismissed}) = _$InstanceAnnouncementSettingsImpl;
   const _InstanceAnnouncementSettings._() : super._();
 
   factory _InstanceAnnouncementSettings.fromJson(Map<String, dynamic> json) =
-      _$_InstanceAnnouncementSettings.fromJson;
+      _$InstanceAnnouncementSettingsImpl.fromJson;
 
   @override
   @JsonKey(name: 'withDismissed')
@@ -182,6 +172,7 @@ abstract class _InstanceAnnouncementSettings
   bool get withDismissed;
   @override
   @JsonKey(ignore: true)
-  _$InstanceAnnouncementSettingsCopyWith<_InstanceAnnouncementSettings>
+  _$$InstanceAnnouncementSettingsImplCopyWith<
+          _$InstanceAnnouncementSettingsImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

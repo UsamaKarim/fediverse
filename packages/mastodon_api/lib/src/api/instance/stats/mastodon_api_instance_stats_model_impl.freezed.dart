@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_instance_stats_model_impl.dart';
 
@@ -11,35 +12,12 @@ part of 'mastodon_api_instance_stats_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiInstanceStats _$MastodonApiInstanceStatsFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiInstanceStats.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiInstanceStatsTearOff {
-  const _$MastodonApiInstanceStatsTearOff();
-
-  _MastodonApiInstanceStats call(
-      {@JsonKey(name: 'user_count') @HiveField(0) required int? userCount,
-      @JsonKey(name: 'status_count') @HiveField(1) required int? statusCount,
-      @JsonKey(name: 'domain_count') @HiveField(2) required int? domainCount}) {
-    return _MastodonApiInstanceStats(
-      userCount: userCount,
-      statusCount: statusCount,
-      domainCount: domainCount,
-    );
-  }
-
-  MastodonApiInstanceStats fromJson(Map<String, Object?> json) {
-    return MastodonApiInstanceStats.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiInstanceStats = _$MastodonApiInstanceStatsTearOff();
 
 /// @nodoc
 mixin _$MastodonApiInstanceStats {
@@ -63,7 +41,8 @@ mixin _$MastodonApiInstanceStats {
 abstract class $MastodonApiInstanceStatsCopyWith<$Res> {
   factory $MastodonApiInstanceStatsCopyWith(MastodonApiInstanceStats value,
           $Res Function(MastodonApiInstanceStats) then) =
-      _$MastodonApiInstanceStatsCopyWithImpl<$Res>;
+      _$MastodonApiInstanceStatsCopyWithImpl<$Res, MastodonApiInstanceStats>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'user_count') @HiveField(0) int? userCount,
       @JsonKey(name: 'status_count') @HiveField(1) int? statusCount,
@@ -71,14 +50,17 @@ abstract class $MastodonApiInstanceStatsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MastodonApiInstanceStatsCopyWithImpl<$Res>
+class _$MastodonApiInstanceStatsCopyWithImpl<$Res,
+        $Val extends MastodonApiInstanceStats>
     implements $MastodonApiInstanceStatsCopyWith<$Res> {
   _$MastodonApiInstanceStatsCopyWithImpl(this._value, this._then);
 
-  final MastodonApiInstanceStats _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiInstanceStats) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? userCount = freezed,
@@ -86,29 +68,31 @@ class _$MastodonApiInstanceStatsCopyWithImpl<$Res>
     Object? domainCount = freezed,
   }) {
     return _then(_value.copyWith(
-      userCount: userCount == freezed
+      userCount: freezed == userCount
           ? _value.userCount
           : userCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      statusCount: statusCount == freezed
+      statusCount: freezed == statusCount
           ? _value.statusCount
           : statusCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      domainCount: domainCount == freezed
+      domainCount: freezed == domainCount
           ? _value.domainCount
           : domainCount // ignore: cast_nullable_to_non_nullable
               as int?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiInstanceStatsCopyWith<$Res>
+abstract class _$$MastodonApiInstanceStatsImplCopyWith<$Res>
     implements $MastodonApiInstanceStatsCopyWith<$Res> {
-  factory _$MastodonApiInstanceStatsCopyWith(_MastodonApiInstanceStats value,
-          $Res Function(_MastodonApiInstanceStats) then) =
-      __$MastodonApiInstanceStatsCopyWithImpl<$Res>;
+  factory _$$MastodonApiInstanceStatsImplCopyWith(
+          _$MastodonApiInstanceStatsImpl value,
+          $Res Function(_$MastodonApiInstanceStatsImpl) then) =
+      __$$MastodonApiInstanceStatsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'user_count') @HiveField(0) int? userCount,
       @JsonKey(name: 'status_count') @HiveField(1) int? statusCount,
@@ -116,33 +100,32 @@ abstract class _$MastodonApiInstanceStatsCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MastodonApiInstanceStatsCopyWithImpl<$Res>
-    extends _$MastodonApiInstanceStatsCopyWithImpl<$Res>
-    implements _$MastodonApiInstanceStatsCopyWith<$Res> {
-  __$MastodonApiInstanceStatsCopyWithImpl(_MastodonApiInstanceStats _value,
-      $Res Function(_MastodonApiInstanceStats) _then)
-      : super(_value, (v) => _then(v as _MastodonApiInstanceStats));
+class __$$MastodonApiInstanceStatsImplCopyWithImpl<$Res>
+    extends _$MastodonApiInstanceStatsCopyWithImpl<$Res,
+        _$MastodonApiInstanceStatsImpl>
+    implements _$$MastodonApiInstanceStatsImplCopyWith<$Res> {
+  __$$MastodonApiInstanceStatsImplCopyWithImpl(
+      _$MastodonApiInstanceStatsImpl _value,
+      $Res Function(_$MastodonApiInstanceStatsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiInstanceStats get _value =>
-      super._value as _MastodonApiInstanceStats;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? userCount = freezed,
     Object? statusCount = freezed,
     Object? domainCount = freezed,
   }) {
-    return _then(_MastodonApiInstanceStats(
-      userCount: userCount == freezed
+    return _then(_$MastodonApiInstanceStatsImpl(
+      userCount: freezed == userCount
           ? _value.userCount
           : userCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      statusCount: statusCount == freezed
+      statusCount: freezed == statusCount
           ? _value.statusCount
           : statusCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      domainCount: domainCount == freezed
+      domainCount: freezed == domainCount
           ? _value.domainCount
           : domainCount // ignore: cast_nullable_to_non_nullable
               as int?,
@@ -152,14 +135,14 @@ class __$MastodonApiInstanceStatsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiInstanceStats implements _MastodonApiInstanceStats {
-  const _$_MastodonApiInstanceStats(
+class _$MastodonApiInstanceStatsImpl implements _MastodonApiInstanceStats {
+  const _$MastodonApiInstanceStatsImpl(
       {@JsonKey(name: 'user_count') @HiveField(0) required this.userCount,
       @JsonKey(name: 'status_count') @HiveField(1) required this.statusCount,
       @JsonKey(name: 'domain_count') @HiveField(2) required this.domainCount});
 
-  factory _$_MastodonApiInstanceStats.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiInstanceStatsFromJson(json);
+  factory _$MastodonApiInstanceStatsImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MastodonApiInstanceStatsImplFromJson(json);
 
   @override
   @JsonKey(name: 'user_count')
@@ -180,10 +163,10 @@ class _$_MastodonApiInstanceStats implements _MastodonApiInstanceStats {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiInstanceStats &&
+            other is _$MastodonApiInstanceStatsImpl &&
             (identical(other.userCount, userCount) ||
                 other.userCount == userCount) &&
             (identical(other.statusCount, statusCount) ||
@@ -192,36 +175,38 @@ class _$_MastodonApiInstanceStats implements _MastodonApiInstanceStats {
                 other.domainCount == domainCount));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, userCount, statusCount, domainCount);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiInstanceStatsCopyWith<_MastodonApiInstanceStats> get copyWith =>
-      __$MastodonApiInstanceStatsCopyWithImpl<_MastodonApiInstanceStats>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiInstanceStatsImplCopyWith<_$MastodonApiInstanceStatsImpl>
+      get copyWith => __$$MastodonApiInstanceStatsImplCopyWithImpl<
+          _$MastodonApiInstanceStatsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiInstanceStatsToJson(this);
+    return _$$MastodonApiInstanceStatsImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiInstanceStats implements MastodonApiInstanceStats {
   const factory _MastodonApiInstanceStats(
-      {@JsonKey(name: 'user_count')
-      @HiveField(0)
-          required int? userCount,
+      {@JsonKey(name: 'user_count') @HiveField(0) required final int? userCount,
       @JsonKey(name: 'status_count')
       @HiveField(1)
-          required int? statusCount,
+      required final int? statusCount,
       @JsonKey(name: 'domain_count')
       @HiveField(2)
-          required int? domainCount}) = _$_MastodonApiInstanceStats;
+      required final int? domainCount}) = _$MastodonApiInstanceStatsImpl;
 
   factory _MastodonApiInstanceStats.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiInstanceStats.fromJson;
+      _$MastodonApiInstanceStatsImpl.fromJson;
 
   @override
   @JsonKey(name: 'user_count')
@@ -237,6 +222,6 @@ abstract class _MastodonApiInstanceStats implements MastodonApiInstanceStats {
   int? get domainCount;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiInstanceStatsCopyWith<_MastodonApiInstanceStats> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$MastodonApiInstanceStatsImplCopyWith<_$MastodonApiInstanceStatsImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

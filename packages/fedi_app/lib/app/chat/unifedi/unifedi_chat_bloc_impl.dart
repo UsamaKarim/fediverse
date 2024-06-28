@@ -17,7 +17,7 @@ import 'package:fedi_app/connection/connection_service.dart';
 import 'package:fedi_app/id/fake_id_helper.dart';
 import 'package:flutter/widgets.dart';
 import 'package:logging/logging.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 import 'package:provider/provider.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:unifedi_api/unifedi_api.dart';
@@ -284,7 +284,7 @@ class UnifediChatBloc extends ChatBloc implements IUnifediChatBloc {
         localChatMessageId != null) {
       dbChatMessage =
           oldPendingFailedUnifediChatMessage.toDbChatMessage().copyWith(
-                id: localChatMessageId,
+                id: Value(localChatMessageId),
               );
 
       actualIdempotencyKey = dbChatMessage.wasSentWithIdempotencyKey;
@@ -292,7 +292,7 @@ class UnifediChatBloc extends ChatBloc implements IUnifediChatBloc {
       await chatMessageRepository.updateByDbIdInDbType(
         dbId: localChatMessageId,
         dbItem: dbChatMessage.copyWith(
-          pendingState: PendingState.pending,
+          pendingState: Value(PendingState.pending),
         ),
         batchTransaction: null,
       );
@@ -346,8 +346,8 @@ class UnifediChatBloc extends ChatBloc implements IUnifediChatBloc {
         chatMessageRepository.updateByDbIdInDbType(
           dbId: localChatMessageId!,
           dbItem: dbChatMessage.copyWith(
-            hiddenLocallyOnDevice: true,
-            pendingState: PendingState.published,
+            hiddenLocallyOnDevice: Value(true),
+            pendingState: Value(PendingState.published),
           ),
           batchTransaction: batch,
         );
@@ -364,7 +364,7 @@ class UnifediChatBloc extends ChatBloc implements IUnifediChatBloc {
       await chatMessageRepository.updateByDbIdInDbType(
         dbId: localChatMessageId,
         dbItem: dbChatMessage.copyWith(
-          pendingState: PendingState.fail,
+          pendingState: Value(PendingState.fail),
         ),
         batchTransaction: null,
       );

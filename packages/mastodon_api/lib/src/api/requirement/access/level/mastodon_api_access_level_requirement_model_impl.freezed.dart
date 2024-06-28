@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_access_level_requirement_model_impl.dart';
 
@@ -11,34 +12,12 @@ part of 'mastodon_api_access_level_requirement_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiAccessLevelRequirement _$MastodonApiAccessLevelRequirementFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiAccessLevelRequirement.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiAccessLevelRequirementTearOff {
-  const _$MastodonApiAccessLevelRequirementTearOff();
-
-  _MastodonApiAccessLevelRequirement call(
-      {@HiveField(0)
-      @JsonKey(name: 'required_level')
-          required MastodonApiAccessLevel requiredLevel}) {
-    return _MastodonApiAccessLevelRequirement(
-      requiredLevel: requiredLevel,
-    );
-  }
-
-  MastodonApiAccessLevelRequirement fromJson(Map<String, Object?> json) {
-    return MastodonApiAccessLevelRequirement.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiAccessLevelRequirement =
-    _$MastodonApiAccessLevelRequirementTearOff();
 
 /// @nodoc
 mixin _$MastodonApiAccessLevelRequirement {
@@ -58,80 +37,85 @@ abstract class $MastodonApiAccessLevelRequirementCopyWith<$Res> {
   factory $MastodonApiAccessLevelRequirementCopyWith(
           MastodonApiAccessLevelRequirement value,
           $Res Function(MastodonApiAccessLevelRequirement) then) =
-      _$MastodonApiAccessLevelRequirementCopyWithImpl<$Res>;
+      _$MastodonApiAccessLevelRequirementCopyWithImpl<$Res,
+          MastodonApiAccessLevelRequirement>;
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'required_level')
-          MastodonApiAccessLevel requiredLevel});
+      MastodonApiAccessLevel requiredLevel});
 
   $MastodonApiAccessLevelCopyWith<$Res> get requiredLevel;
 }
 
 /// @nodoc
-class _$MastodonApiAccessLevelRequirementCopyWithImpl<$Res>
+class _$MastodonApiAccessLevelRequirementCopyWithImpl<$Res,
+        $Val extends MastodonApiAccessLevelRequirement>
     implements $MastodonApiAccessLevelRequirementCopyWith<$Res> {
   _$MastodonApiAccessLevelRequirementCopyWithImpl(this._value, this._then);
 
-  final MastodonApiAccessLevelRequirement _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiAccessLevelRequirement) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? requiredLevel = freezed,
+    Object? requiredLevel = null,
   }) {
     return _then(_value.copyWith(
-      requiredLevel: requiredLevel == freezed
+      requiredLevel: null == requiredLevel
           ? _value.requiredLevel
           : requiredLevel // ignore: cast_nullable_to_non_nullable
               as MastodonApiAccessLevel,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiAccessLevelCopyWith<$Res> get requiredLevel {
     return $MastodonApiAccessLevelCopyWith<$Res>(_value.requiredLevel, (value) {
-      return _then(_value.copyWith(requiredLevel: value));
+      return _then(_value.copyWith(requiredLevel: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiAccessLevelRequirementCopyWith<$Res>
+abstract class _$$MastodonApiAccessLevelRequirementImplCopyWith<$Res>
     implements $MastodonApiAccessLevelRequirementCopyWith<$Res> {
-  factory _$MastodonApiAccessLevelRequirementCopyWith(
-          _MastodonApiAccessLevelRequirement value,
-          $Res Function(_MastodonApiAccessLevelRequirement) then) =
-      __$MastodonApiAccessLevelRequirementCopyWithImpl<$Res>;
+  factory _$$MastodonApiAccessLevelRequirementImplCopyWith(
+          _$MastodonApiAccessLevelRequirementImpl value,
+          $Res Function(_$MastodonApiAccessLevelRequirementImpl) then) =
+      __$$MastodonApiAccessLevelRequirementImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'required_level')
-          MastodonApiAccessLevel requiredLevel});
+      MastodonApiAccessLevel requiredLevel});
 
   @override
   $MastodonApiAccessLevelCopyWith<$Res> get requiredLevel;
 }
 
 /// @nodoc
-class __$MastodonApiAccessLevelRequirementCopyWithImpl<$Res>
-    extends _$MastodonApiAccessLevelRequirementCopyWithImpl<$Res>
-    implements _$MastodonApiAccessLevelRequirementCopyWith<$Res> {
-  __$MastodonApiAccessLevelRequirementCopyWithImpl(
-      _MastodonApiAccessLevelRequirement _value,
-      $Res Function(_MastodonApiAccessLevelRequirement) _then)
-      : super(_value, (v) => _then(v as _MastodonApiAccessLevelRequirement));
+class __$$MastodonApiAccessLevelRequirementImplCopyWithImpl<$Res>
+    extends _$MastodonApiAccessLevelRequirementCopyWithImpl<$Res,
+        _$MastodonApiAccessLevelRequirementImpl>
+    implements _$$MastodonApiAccessLevelRequirementImplCopyWith<$Res> {
+  __$$MastodonApiAccessLevelRequirementImplCopyWithImpl(
+      _$MastodonApiAccessLevelRequirementImpl _value,
+      $Res Function(_$MastodonApiAccessLevelRequirementImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiAccessLevelRequirement get _value =>
-      super._value as _MastodonApiAccessLevelRequirement;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? requiredLevel = freezed,
+    Object? requiredLevel = null,
   }) {
-    return _then(_MastodonApiAccessLevelRequirement(
-      requiredLevel: requiredLevel == freezed
+    return _then(_$MastodonApiAccessLevelRequirementImpl(
+      requiredLevel: null == requiredLevel
           ? _value.requiredLevel
           : requiredLevel // ignore: cast_nullable_to_non_nullable
               as MastodonApiAccessLevel,
@@ -141,16 +125,16 @@ class __$MastodonApiAccessLevelRequirementCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiAccessLevelRequirement
+class _$MastodonApiAccessLevelRequirementImpl
     implements _MastodonApiAccessLevelRequirement {
-  const _$_MastodonApiAccessLevelRequirement(
+  const _$MastodonApiAccessLevelRequirementImpl(
       {@HiveField(0)
       @JsonKey(name: 'required_level')
-          required this.requiredLevel});
+      required this.requiredLevel});
 
-  factory _$_MastodonApiAccessLevelRequirement.fromJson(
+  factory _$MastodonApiAccessLevelRequirementImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_MastodonApiAccessLevelRequirementFromJson(json);
+      _$$MastodonApiAccessLevelRequirementImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -163,27 +147,31 @@ class _$_MastodonApiAccessLevelRequirement
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiAccessLevelRequirement &&
+            other is _$MastodonApiAccessLevelRequirementImpl &&
             (identical(other.requiredLevel, requiredLevel) ||
                 other.requiredLevel == requiredLevel));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, requiredLevel);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiAccessLevelRequirementCopyWith<
-          _MastodonApiAccessLevelRequirement>
-      get copyWith => __$MastodonApiAccessLevelRequirementCopyWithImpl<
-          _MastodonApiAccessLevelRequirement>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiAccessLevelRequirementImplCopyWith<
+          _$MastodonApiAccessLevelRequirementImpl>
+      get copyWith => __$$MastodonApiAccessLevelRequirementImplCopyWithImpl<
+          _$MastodonApiAccessLevelRequirementImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiAccessLevelRequirementToJson(this);
+    return _$$MastodonApiAccessLevelRequirementImplToJson(
+      this,
+    );
   }
 }
 
@@ -192,12 +180,12 @@ abstract class _MastodonApiAccessLevelRequirement
   const factory _MastodonApiAccessLevelRequirement(
           {@HiveField(0)
           @JsonKey(name: 'required_level')
-              required MastodonApiAccessLevel requiredLevel}) =
-      _$_MastodonApiAccessLevelRequirement;
+          required final MastodonApiAccessLevel requiredLevel}) =
+      _$MastodonApiAccessLevelRequirementImpl;
 
   factory _MastodonApiAccessLevelRequirement.fromJson(
           Map<String, dynamic> json) =
-      _$_MastodonApiAccessLevelRequirement.fromJson;
+      _$MastodonApiAccessLevelRequirementImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -205,7 +193,7 @@ abstract class _MastodonApiAccessLevelRequirement
   MastodonApiAccessLevel get requiredLevel;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiAccessLevelRequirementCopyWith<
-          _MastodonApiAccessLevelRequirement>
+  _$$MastodonApiAccessLevelRequirementImplCopyWith<
+          _$MastodonApiAccessLevelRequirementImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

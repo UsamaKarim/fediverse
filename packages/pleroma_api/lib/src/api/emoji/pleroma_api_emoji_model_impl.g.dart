@@ -56,8 +56,9 @@ class PleromaApiEmojiAdapter extends TypeAdapter<PleromaApiEmoji> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiEmoji _$$_PleromaApiEmojiFromJson(Map<String, dynamic> json) =>
-    _$_PleromaApiEmoji(
+_$PleromaApiEmojiImpl _$$PleromaApiEmojiImplFromJson(
+        Map<String, dynamic> json) =>
+    _$PleromaApiEmojiImpl(
       shortcode: json['shortcode'] as String,
       url: json['url'] as String?,
       staticUrl: json['static_url'] as String?,
@@ -65,7 +66,8 @@ _$_PleromaApiEmoji _$$_PleromaApiEmojiFromJson(Map<String, dynamic> json) =>
       category: json['category'] as String?,
     );
 
-Map<String, dynamic> _$$_PleromaApiEmojiToJson(_$_PleromaApiEmoji instance) {
+Map<String, dynamic> _$$PleromaApiEmojiImplToJson(
+    _$PleromaApiEmojiImpl instance) {
   final val = <String, dynamic>{
     'shortcode': instance.shortcode,
   };

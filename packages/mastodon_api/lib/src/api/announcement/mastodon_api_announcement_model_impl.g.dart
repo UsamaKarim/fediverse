@@ -82,9 +82,9 @@ class MastodonApiAnnouncementAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiAnnouncement _$$_MastodonApiAnnouncementFromJson(
+_$MastodonApiAnnouncementImpl _$$MastodonApiAnnouncementImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiAnnouncement(
+    _$MastodonApiAnnouncementImpl(
       id: json['id'] as String,
       content: json['content'] as String,
       allDay: json['all_day'] as bool,
@@ -115,8 +115,8 @@ _$_MastodonApiAnnouncement _$$_MastodonApiAnnouncementFromJson(
           : DateTime.parse(json['ends_at'] as String),
     );
 
-Map<String, dynamic> _$$_MastodonApiAnnouncementToJson(
-    _$_MastodonApiAnnouncement instance) {
+Map<String, dynamic> _$$MastodonApiAnnouncementImplToJson(
+    _$MastodonApiAnnouncementImpl instance) {
   final val = <String, dynamic>{
     'id': instance.id,
     'content': instance.content,

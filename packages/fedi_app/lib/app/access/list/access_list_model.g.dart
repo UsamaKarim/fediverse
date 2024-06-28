@@ -44,14 +44,14 @@ class AccessListAdapter extends TypeAdapter<AccessList> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_AccessList _$$_AccessListFromJson(Map<String, dynamic> json) =>
-    _$_AccessList(
+_$AccessListImpl _$$AccessListImplFromJson(Map<String, dynamic> json) =>
+    _$AccessListImpl(
       instances: (json['instances'] as List<dynamic>)
           .map((e) => UnifediApiAccess.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
-Map<String, dynamic> _$$_AccessListToJson(_$_AccessList instance) =>
+Map<String, dynamic> _$$AccessListImplToJson(_$AccessListImpl instance) =>
     <String, dynamic>{
       'instances': instance.instances.map((e) => e.toJson()).toList(),
     };

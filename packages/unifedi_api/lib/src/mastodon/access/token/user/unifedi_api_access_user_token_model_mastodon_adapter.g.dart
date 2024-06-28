@@ -46,16 +46,16 @@ class UnifediApiAccessUserTokenMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiAccessUserTokenMastodonAdapter
-    _$$_UnifediApiAccessUserTokenMastodonAdapterFromJson(
+_$UnifediApiAccessUserTokenMastodonAdapterImpl
+    _$$UnifediApiAccessUserTokenMastodonAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiAccessUserTokenMastodonAdapter(
+        _$UnifediApiAccessUserTokenMastodonAdapterImpl(
           MastodonApiAccessUserToken.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiAccessUserTokenMastodonAdapterToJson(
-        _$_UnifediApiAccessUserTokenMastodonAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiAccessUserTokenMastodonAdapterImplToJson(
+        _$UnifediApiAccessUserTokenMastodonAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

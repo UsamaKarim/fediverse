@@ -46,16 +46,16 @@ class UnifediApiRestErrorDetailsPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiRestErrorDetailsPleromaAdapter
-    _$$_UnifediApiRestErrorDetailsPleromaAdapterFromJson(
+_$UnifediApiRestErrorDetailsPleromaAdapterImpl
+    _$$UnifediApiRestErrorDetailsPleromaAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiRestErrorDetailsPleromaAdapter(
+        _$UnifediApiRestErrorDetailsPleromaAdapterImpl(
           PleromaApiRestErrorDetails.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiRestErrorDetailsPleromaAdapterToJson(
-        _$_UnifediApiRestErrorDetailsPleromaAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiRestErrorDetailsPleromaAdapterImplToJson(
+        _$UnifediApiRestErrorDetailsPleromaAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

@@ -2,10 +2,7 @@
 
 part of 'scheduled_status_database_dao.dart';
 
-// **************************************************************************
-// DaoGenerator
-// **************************************************************************
-
+// ignore_for_file: type=lint
 mixin _$ScheduledStatusDaoMixin on DatabaseAccessor<AppDatabase> {
   $DbScheduledStatusesTable get dbScheduledStatuses =>
       attachedDatabase.dbScheduledStatuses;

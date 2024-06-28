@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_status_context_model_impl.dart';
 
@@ -11,33 +12,12 @@ part of 'unifedi_api_status_context_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiStatusContext _$UnifediApiStatusContextFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiStatusContext.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiStatusContextTearOff {
-  const _$UnifediApiStatusContextTearOff();
-
-  _UnifediApiStatusContext call(
-      {@HiveField(0) required List<UnifediApiStatus> descendants,
-      @HiveField(1) required List<UnifediApiStatus> ancestors}) {
-    return _UnifediApiStatusContext(
-      descendants: descendants,
-      ancestors: ancestors,
-    );
-  }
-
-  UnifediApiStatusContext fromJson(Map<String, Object?> json) {
-    return UnifediApiStatusContext.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiStatusContext = _$UnifediApiStatusContextTearOff();
 
 /// @nodoc
 mixin _$UnifediApiStatusContext {
@@ -56,75 +36,80 @@ mixin _$UnifediApiStatusContext {
 abstract class $UnifediApiStatusContextCopyWith<$Res> {
   factory $UnifediApiStatusContextCopyWith(UnifediApiStatusContext value,
           $Res Function(UnifediApiStatusContext) then) =
-      _$UnifediApiStatusContextCopyWithImpl<$Res>;
+      _$UnifediApiStatusContextCopyWithImpl<$Res, UnifediApiStatusContext>;
+  @useResult
   $Res call(
       {@HiveField(0) List<UnifediApiStatus> descendants,
       @HiveField(1) List<UnifediApiStatus> ancestors});
 }
 
 /// @nodoc
-class _$UnifediApiStatusContextCopyWithImpl<$Res>
+class _$UnifediApiStatusContextCopyWithImpl<$Res,
+        $Val extends UnifediApiStatusContext>
     implements $UnifediApiStatusContextCopyWith<$Res> {
   _$UnifediApiStatusContextCopyWithImpl(this._value, this._then);
 
-  final UnifediApiStatusContext _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiStatusContext) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? descendants = freezed,
-    Object? ancestors = freezed,
+    Object? descendants = null,
+    Object? ancestors = null,
   }) {
     return _then(_value.copyWith(
-      descendants: descendants == freezed
+      descendants: null == descendants
           ? _value.descendants
           : descendants // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiStatus>,
-      ancestors: ancestors == freezed
+      ancestors: null == ancestors
           ? _value.ancestors
           : ancestors // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiStatus>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiStatusContextCopyWith<$Res>
+abstract class _$$UnifediApiStatusContextImplCopyWith<$Res>
     implements $UnifediApiStatusContextCopyWith<$Res> {
-  factory _$UnifediApiStatusContextCopyWith(_UnifediApiStatusContext value,
-          $Res Function(_UnifediApiStatusContext) then) =
-      __$UnifediApiStatusContextCopyWithImpl<$Res>;
+  factory _$$UnifediApiStatusContextImplCopyWith(
+          _$UnifediApiStatusContextImpl value,
+          $Res Function(_$UnifediApiStatusContextImpl) then) =
+      __$$UnifediApiStatusContextImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) List<UnifediApiStatus> descendants,
       @HiveField(1) List<UnifediApiStatus> ancestors});
 }
 
 /// @nodoc
-class __$UnifediApiStatusContextCopyWithImpl<$Res>
-    extends _$UnifediApiStatusContextCopyWithImpl<$Res>
-    implements _$UnifediApiStatusContextCopyWith<$Res> {
-  __$UnifediApiStatusContextCopyWithImpl(_UnifediApiStatusContext _value,
-      $Res Function(_UnifediApiStatusContext) _then)
-      : super(_value, (v) => _then(v as _UnifediApiStatusContext));
+class __$$UnifediApiStatusContextImplCopyWithImpl<$Res>
+    extends _$UnifediApiStatusContextCopyWithImpl<$Res,
+        _$UnifediApiStatusContextImpl>
+    implements _$$UnifediApiStatusContextImplCopyWith<$Res> {
+  __$$UnifediApiStatusContextImplCopyWithImpl(
+      _$UnifediApiStatusContextImpl _value,
+      $Res Function(_$UnifediApiStatusContextImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiStatusContext get _value =>
-      super._value as _UnifediApiStatusContext;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? descendants = freezed,
-    Object? ancestors = freezed,
+    Object? descendants = null,
+    Object? ancestors = null,
   }) {
-    return _then(_UnifediApiStatusContext(
-      descendants: descendants == freezed
-          ? _value.descendants
+    return _then(_$UnifediApiStatusContextImpl(
+      descendants: null == descendants
+          ? _value._descendants
           : descendants // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiStatus>,
-      ancestors: ancestors == freezed
-          ? _value.ancestors
+      ancestors: null == ancestors
+          ? _value._ancestors
           : ancestors // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiStatus>,
     ));
@@ -133,20 +118,33 @@ class __$UnifediApiStatusContextCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiStatusContext implements _UnifediApiStatusContext {
-  const _$_UnifediApiStatusContext(
-      {@HiveField(0) required this.descendants,
-      @HiveField(1) required this.ancestors});
+class _$UnifediApiStatusContextImpl implements _UnifediApiStatusContext {
+  const _$UnifediApiStatusContextImpl(
+      {@HiveField(0) required final List<UnifediApiStatus> descendants,
+      @HiveField(1) required final List<UnifediApiStatus> ancestors})
+      : _descendants = descendants,
+        _ancestors = ancestors;
 
-  factory _$_UnifediApiStatusContext.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiStatusContextFromJson(json);
+  factory _$UnifediApiStatusContextImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiStatusContextImplFromJson(json);
 
+  final List<UnifediApiStatus> _descendants;
   @override
   @HiveField(0)
-  final List<UnifediApiStatus> descendants;
+  List<UnifediApiStatus> get descendants {
+    if (_descendants is EqualUnmodifiableListView) return _descendants;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_descendants);
+  }
+
+  final List<UnifediApiStatus> _ancestors;
   @override
   @HiveField(1)
-  final List<UnifediApiStatus> ancestors;
+  List<UnifediApiStatus> get ancestors {
+    if (_ancestors is EqualUnmodifiableListView) return _ancestors;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_ancestors);
+  }
 
   @override
   String toString() {
@@ -154,41 +152,46 @@ class _$_UnifediApiStatusContext implements _UnifediApiStatusContext {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiStatusContext &&
+            other is _$UnifediApiStatusContextImpl &&
             const DeepCollectionEquality()
-                .equals(other.descendants, descendants) &&
-            const DeepCollectionEquality().equals(other.ancestors, ancestors));
+                .equals(other._descendants, _descendants) &&
+            const DeepCollectionEquality()
+                .equals(other._ancestors, _ancestors));
   }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(descendants),
-      const DeepCollectionEquality().hash(ancestors));
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiStatusContextCopyWith<_UnifediApiStatusContext> get copyWith =>
-      __$UnifediApiStatusContextCopyWithImpl<_UnifediApiStatusContext>(
-          this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(_descendants),
+      const DeepCollectionEquality().hash(_ancestors));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiStatusContextImplCopyWith<_$UnifediApiStatusContextImpl>
+      get copyWith => __$$UnifediApiStatusContextImplCopyWithImpl<
+          _$UnifediApiStatusContextImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiStatusContextToJson(this);
+    return _$$UnifediApiStatusContextImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiStatusContext implements UnifediApiStatusContext {
   const factory _UnifediApiStatusContext(
-          {@HiveField(0) required List<UnifediApiStatus> descendants,
-          @HiveField(1) required List<UnifediApiStatus> ancestors}) =
-      _$_UnifediApiStatusContext;
+          {@HiveField(0) required final List<UnifediApiStatus> descendants,
+          @HiveField(1) required final List<UnifediApiStatus> ancestors}) =
+      _$UnifediApiStatusContextImpl;
 
   factory _UnifediApiStatusContext.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiStatusContext.fromJson;
+      _$UnifediApiStatusContextImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -198,6 +201,6 @@ abstract class _UnifediApiStatusContext implements UnifediApiStatusContext {
   List<UnifediApiStatus> get ancestors;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiStatusContextCopyWith<_UnifediApiStatusContext> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$UnifediApiStatusContextImplCopyWith<_$UnifediApiStatusContextImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

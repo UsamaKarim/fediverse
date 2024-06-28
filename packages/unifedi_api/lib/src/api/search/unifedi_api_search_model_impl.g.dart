@@ -51,9 +51,9 @@ class UnifediApiSearchResultAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiSearchResult _$$_UnifediApiSearchResultFromJson(
+_$UnifediApiSearchResultImpl _$$UnifediApiSearchResultImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiSearchResult(
+    _$UnifediApiSearchResultImpl(
       accounts: (json['accounts'] as List<dynamic>)
           .map((e) => UnifediApiAccount.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -65,8 +65,8 @@ _$_UnifediApiSearchResult _$$_UnifediApiSearchResultFromJson(
           .toList(),
     );
 
-Map<String, dynamic> _$$_UnifediApiSearchResultToJson(
-        _$_UnifediApiSearchResult instance) =>
+Map<String, dynamic> _$$UnifediApiSearchResultImplToJson(
+        _$UnifediApiSearchResultImpl instance) =>
     <String, dynamic>{
       'accounts': instance.accounts.map((e) => e.toJson()).toList(),
       'hashtags': instance.hashtags.map((e) => e.toJson()).toList(),

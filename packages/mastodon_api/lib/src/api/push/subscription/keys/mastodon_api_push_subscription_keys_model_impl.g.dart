@@ -48,15 +48,15 @@ class MastodonApiPushSubscriptionKeysAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiPushSubscriptionKeys _$$_MastodonApiPushSubscriptionKeysFromJson(
-        Map<String, dynamic> json) =>
-    _$_MastodonApiPushSubscriptionKeys(
-      p256dh: json['p256dh'] as String,
-      auth: json['auth'] as String,
-    );
+_$MastodonApiPushSubscriptionKeysImpl
+    _$$MastodonApiPushSubscriptionKeysImplFromJson(Map<String, dynamic> json) =>
+        _$MastodonApiPushSubscriptionKeysImpl(
+          p256dh: json['p256dh'] as String,
+          auth: json['auth'] as String,
+        );
 
-Map<String, dynamic> _$$_MastodonApiPushSubscriptionKeysToJson(
-        _$_MastodonApiPushSubscriptionKeys instance) =>
+Map<String, dynamic> _$$MastodonApiPushSubscriptionKeysImplToJson(
+        _$MastodonApiPushSubscriptionKeysImpl instance) =>
     <String, dynamic>{
       'p256dh': instance.p256dh,
       'auth': instance.auth,

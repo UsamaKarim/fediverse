@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:drift/native.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/status/scheduled/repository/scheduled_status_repository_impl.dart';
 import 'package:fedi_app/app/status/scheduled/repository/scheduled_status_repository_model.dart';
@@ -7,7 +8,6 @@ import 'package:fedi_app/app/status/scheduled/scheduled_status_model.dart';
 import 'package:fedi_app/app/status/scheduled/scheduled_status_model_adapter.dart';
 import 'package:fedi_app/repository/repository_model.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:moor/ffi.dart';
 
 import '../database/scheduled_status_database_test_helper.dart';
 import '../scheduled_status_test_helper.dart';
@@ -22,7 +22,7 @@ void main() {
   DbScheduledStatus? dbScheduledStatus;
 
   setUp(() async {
-    database = AppDatabase(VmDatabase.memory());
+    database = AppDatabase(NativeDatabase.memory());
 
     scheduledStatusRepository =
         ScheduledStatusRepository(appDatabase: database);

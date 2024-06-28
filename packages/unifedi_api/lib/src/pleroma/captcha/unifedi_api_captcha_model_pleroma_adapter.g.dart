@@ -45,14 +45,14 @@ class UnifediApiCaptchaPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiCaptchaPleromaAdapter _$$_UnifediApiCaptchaPleromaAdapterFromJson(
-        Map<String, dynamic> json) =>
-    _$_UnifediApiCaptchaPleromaAdapter(
-      PleromaApiCaptcha.fromJson(json['value'] as Map<String, dynamic>),
-    );
+_$UnifediApiCaptchaPleromaAdapterImpl
+    _$$UnifediApiCaptchaPleromaAdapterImplFromJson(Map<String, dynamic> json) =>
+        _$UnifediApiCaptchaPleromaAdapterImpl(
+          PleromaApiCaptcha.fromJson(json['value'] as Map<String, dynamic>),
+        );
 
-Map<String, dynamic> _$$_UnifediApiCaptchaPleromaAdapterToJson(
-        _$_UnifediApiCaptchaPleromaAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiCaptchaPleromaAdapterImplToJson(
+        _$UnifediApiCaptchaPleromaAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

@@ -53,16 +53,17 @@ class PleromaApiMentionAdapter extends TypeAdapter<PleromaApiMention> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiMention _$$_PleromaApiMentionFromJson(Map<String, dynamic> json) =>
-    _$_PleromaApiMention(
+_$PleromaApiMentionImpl _$$PleromaApiMentionImplFromJson(
+        Map<String, dynamic> json) =>
+    _$PleromaApiMentionImpl(
       acct: json['acct'] as String,
       id: json['id'] as String,
       url: json['url'] as String,
       username: json['username'] as String?,
     );
 
-Map<String, dynamic> _$$_PleromaApiMentionToJson(
-    _$_PleromaApiMention instance) {
+Map<String, dynamic> _$$PleromaApiMentionImplToJson(
+    _$PleromaApiMentionImpl instance) {
   final val = <String, dynamic>{
     'acct': instance.acct,
     'id': instance.id,

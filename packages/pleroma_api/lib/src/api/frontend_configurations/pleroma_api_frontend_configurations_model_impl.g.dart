@@ -51,9 +51,10 @@ class PleromaApiFrontendConfigurationsAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiFrontendConfigurations
-    _$$_PleromaApiFrontendConfigurationsFromJson(Map<String, dynamic> json) =>
-        _$_PleromaApiFrontendConfigurations(
+_$PleromaApiFrontendConfigurationsImpl
+    _$$PleromaApiFrontendConfigurationsImplFromJson(
+            Map<String, dynamic> json) =>
+        _$PleromaApiFrontendConfigurationsImpl(
           mastoFe: json['masto_fe'] == null
               ? null
               : PleromaApiFrontendConfigurationsMastoFe.fromJson(
@@ -68,8 +69,8 @@ _$_PleromaApiFrontendConfigurations
                   json['soapbox_fe'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_PleromaApiFrontendConfigurationsToJson(
-    _$_PleromaApiFrontendConfigurations instance) {
+Map<String, dynamic> _$$PleromaApiFrontendConfigurationsImplToJson(
+    _$PleromaApiFrontendConfigurationsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

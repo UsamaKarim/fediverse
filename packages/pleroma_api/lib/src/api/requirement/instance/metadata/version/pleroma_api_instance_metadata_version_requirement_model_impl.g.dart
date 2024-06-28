@@ -46,16 +46,16 @@ class PleromaApiInstanceMetadataVersionRequirementAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiInstanceMetadataVersionRequirement
-    _$$_PleromaApiInstanceMetadataVersionRequirementFromJson(
+_$PleromaApiInstanceMetadataVersionRequirementImpl
+    _$$PleromaApiInstanceMetadataVersionRequirementImplFromJson(
             Map<String, dynamic> json) =>
-        _$_PleromaApiInstanceMetadataVersionRequirement(
+        _$PleromaApiInstanceMetadataVersionRequirementImpl(
           versionRange: PleromaApiVersionRange.fromJson(
               json['versionRange'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_PleromaApiInstanceMetadataVersionRequirementToJson(
-        _$_PleromaApiInstanceMetadataVersionRequirement instance) =>
+Map<String, dynamic> _$$PleromaApiInstanceMetadataVersionRequirementImplToJson(
+        _$PleromaApiInstanceMetadataVersionRequirementImpl instance) =>
     <String, dynamic>{
       'versionRange': instance.versionRange.toJson(),
     };

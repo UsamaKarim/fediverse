@@ -45,16 +45,16 @@ class UnifediApiPostStatusPollPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiPostStatusPollPleromaAdapter
-    _$$_UnifediApiPostStatusPollPleromaAdapterFromJson(
+_$UnifediApiPostStatusPollPleromaAdapterImpl
+    _$$UnifediApiPostStatusPollPleromaAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiPostStatusPollPleromaAdapter(
+        _$UnifediApiPostStatusPollPleromaAdapterImpl(
           PleromaApiPostStatusPoll.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiPostStatusPollPleromaAdapterToJson(
-        _$_UnifediApiPostStatusPollPleromaAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiPostStatusPollPleromaAdapterImplToJson(
+        _$UnifediApiPostStatusPollPleromaAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

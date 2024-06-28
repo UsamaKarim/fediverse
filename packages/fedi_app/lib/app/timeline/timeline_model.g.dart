@@ -56,7 +56,8 @@ class TimelineAdapter extends TypeAdapter<Timeline> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_Timeline _$$_TimelineFromJson(Map<String, dynamic> json) => _$_Timeline(
+_$TimelineImpl _$$TimelineImplFromJson(Map<String, dynamic> json) =>
+    _$TimelineImpl(
       id: json['id'] as String,
       label: json['label'] as String?,
       isPossibleToDelete: json['is_possible_to_delete'] as bool,
@@ -65,7 +66,7 @@ _$_Timeline _$$_TimelineFromJson(Map<String, dynamic> json) => _$_Timeline(
           TimelineSettings.fromJson(json['settings'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_TimelineToJson(_$_Timeline instance) {
+Map<String, dynamic> _$$TimelineImplToJson(_$TimelineImpl instance) {
   final val = <String, dynamic>{
     'id': instance.id,
   };

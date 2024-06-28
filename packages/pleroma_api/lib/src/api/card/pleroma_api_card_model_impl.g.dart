@@ -80,8 +80,8 @@ class PleromaApiCardAdapter extends TypeAdapter<PleromaApiCard> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiCard _$$_PleromaApiCardFromJson(Map<String, dynamic> json) =>
-    _$_PleromaApiCard(
+_$PleromaApiCardImpl _$$PleromaApiCardImplFromJson(Map<String, dynamic> json) =>
+    _$PleromaApiCardImpl(
       authorName: json['author_name'] as String?,
       authorUrl: json['author_url'] as String?,
       description: json['description'] as String?,
@@ -97,7 +97,8 @@ _$_PleromaApiCard _$$_PleromaApiCardFromJson(Map<String, dynamic> json) =>
       url: json['url'] as String?,
     );
 
-Map<String, dynamic> _$$_PleromaApiCardToJson(_$_PleromaApiCard instance) {
+Map<String, dynamic> _$$PleromaApiCardImplToJson(
+    _$PleromaApiCardImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

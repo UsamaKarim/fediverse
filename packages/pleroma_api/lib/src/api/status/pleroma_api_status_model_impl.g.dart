@@ -189,8 +189,9 @@ class PleromaApiStatusPleromaPartAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiStatus _$$_PleromaApiStatusFromJson(Map<String, dynamic> json) =>
-    _$_PleromaApiStatus(
+_$PleromaApiStatusImpl _$$PleromaApiStatusImplFromJson(
+        Map<String, dynamic> json) =>
+    _$PleromaApiStatusImpl(
       id: json['id'] as String,
       createdAt: DateTime.parse(json['created_at'] as String),
       inReplyToId: json['in_reply_to_id'] as String?,
@@ -199,9 +200,9 @@ _$_PleromaApiStatus _$$_PleromaApiStatusFromJson(Map<String, dynamic> json) =>
       spoilerText: json['spoiler_text'] as String?,
       uri: json['uri'] as String,
       url: json['url'] as String?,
-      repliesCount: json['replies_count'] as int?,
-      reblogsCount: json['reblogs_count'] as int?,
-      favouritesCount: json['favourites_count'] as int?,
+      repliesCount: (json['replies_count'] as num?)?.toInt(),
+      reblogsCount: (json['reblogs_count'] as num?)?.toInt(),
+      favouritesCount: (json['favourites_count'] as num?)?.toInt(),
       favourited: json['favourited'] as bool?,
       reblogged: json['reblogged'] as bool?,
       muted: json['muted'] as bool?,
@@ -244,7 +245,8 @@ _$_PleromaApiStatus _$$_PleromaApiStatusFromJson(Map<String, dynamic> json) =>
       visibility: json['visibility'] as String,
     );
 
-Map<String, dynamic> _$$_PleromaApiStatusToJson(_$_PleromaApiStatus instance) {
+Map<String, dynamic> _$$PleromaApiStatusImplToJson(
+    _$PleromaApiStatusImpl instance) {
   final val = <String, dynamic>{
     'id': instance.id,
     'created_at': instance.createdAt.toIso8601String(),
@@ -287,15 +289,15 @@ Map<String, dynamic> _$$_PleromaApiStatusToJson(_$_PleromaApiStatus instance) {
   return val;
 }
 
-_$_PleromaApiStatusPleromaPart _$$_PleromaApiStatusPleromaPartFromJson(
+_$PleromaApiStatusPleromaPartImpl _$$PleromaApiStatusPleromaPartImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiStatusPleromaPart(
+    _$PleromaApiStatusPleromaPartImpl(
       content: json['content'] == null
           ? null
           : PleromaApiContentVariants.fromJson(
               json['content'] as Map<String, dynamic>),
-      conversationId: json['conversation_id'] as int?,
-      directConversationId: json['direct_conversation_id'] as int?,
+      conversationId: (json['conversation_id'] as num?)?.toInt(),
+      directConversationId: (json['direct_conversation_id'] as num?)?.toInt(),
       inReplyToAccountAcct: json['in_reply_to_account_acct'] as String?,
       local: json['local'] as bool?,
       spoilerText: json['spoiler_text'] == null
@@ -312,8 +314,8 @@ _$_PleromaApiStatusPleromaPart _$$_PleromaApiStatusPleromaPartFromJson(
           .toList(),
     );
 
-Map<String, dynamic> _$$_PleromaApiStatusPleromaPartToJson(
-    _$_PleromaApiStatusPleromaPart instance) {
+Map<String, dynamic> _$$PleromaApiStatusPleromaPartImplToJson(
+    _$PleromaApiStatusPleromaPartImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

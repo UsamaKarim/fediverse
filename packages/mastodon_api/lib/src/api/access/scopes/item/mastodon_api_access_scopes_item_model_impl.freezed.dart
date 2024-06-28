@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_access_scopes_item_model_impl.dart';
 
@@ -11,33 +12,12 @@ part of 'mastodon_api_access_scopes_item_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiAccessScopesItem _$MastodonApiAccessScopesItemFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiAccessScopesItem.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiAccessScopesItemTearOff {
-  const _$MastodonApiAccessScopesItemTearOff();
-
-  _MastodonApiAccessScopesItem call(
-      {@HiveField(0) required String permission,
-      @HiveField(1) required String target}) {
-    return _MastodonApiAccessScopesItem(
-      permission: permission,
-      target: target,
-    );
-  }
-
-  MastodonApiAccessScopesItem fromJson(Map<String, Object?> json) {
-    return MastodonApiAccessScopesItem.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiAccessScopesItem = _$MastodonApiAccessScopesItemTearOff();
 
 /// @nodoc
 mixin _$MastodonApiAccessScopesItem {
@@ -57,72 +37,76 @@ abstract class $MastodonApiAccessScopesItemCopyWith<$Res> {
   factory $MastodonApiAccessScopesItemCopyWith(
           MastodonApiAccessScopesItem value,
           $Res Function(MastodonApiAccessScopesItem) then) =
-      _$MastodonApiAccessScopesItemCopyWithImpl<$Res>;
+      _$MastodonApiAccessScopesItemCopyWithImpl<$Res,
+          MastodonApiAccessScopesItem>;
+  @useResult
   $Res call({@HiveField(0) String permission, @HiveField(1) String target});
 }
 
 /// @nodoc
-class _$MastodonApiAccessScopesItemCopyWithImpl<$Res>
+class _$MastodonApiAccessScopesItemCopyWithImpl<$Res,
+        $Val extends MastodonApiAccessScopesItem>
     implements $MastodonApiAccessScopesItemCopyWith<$Res> {
   _$MastodonApiAccessScopesItemCopyWithImpl(this._value, this._then);
 
-  final MastodonApiAccessScopesItem _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiAccessScopesItem) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? permission = freezed,
-    Object? target = freezed,
+    Object? permission = null,
+    Object? target = null,
   }) {
     return _then(_value.copyWith(
-      permission: permission == freezed
+      permission: null == permission
           ? _value.permission
           : permission // ignore: cast_nullable_to_non_nullable
               as String,
-      target: target == freezed
+      target: null == target
           ? _value.target
           : target // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiAccessScopesItemCopyWith<$Res>
+abstract class _$$MastodonApiAccessScopesItemImplCopyWith<$Res>
     implements $MastodonApiAccessScopesItemCopyWith<$Res> {
-  factory _$MastodonApiAccessScopesItemCopyWith(
-          _MastodonApiAccessScopesItem value,
-          $Res Function(_MastodonApiAccessScopesItem) then) =
-      __$MastodonApiAccessScopesItemCopyWithImpl<$Res>;
+  factory _$$MastodonApiAccessScopesItemImplCopyWith(
+          _$MastodonApiAccessScopesItemImpl value,
+          $Res Function(_$MastodonApiAccessScopesItemImpl) then) =
+      __$$MastodonApiAccessScopesItemImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) String permission, @HiveField(1) String target});
 }
 
 /// @nodoc
-class __$MastodonApiAccessScopesItemCopyWithImpl<$Res>
-    extends _$MastodonApiAccessScopesItemCopyWithImpl<$Res>
-    implements _$MastodonApiAccessScopesItemCopyWith<$Res> {
-  __$MastodonApiAccessScopesItemCopyWithImpl(
-      _MastodonApiAccessScopesItem _value,
-      $Res Function(_MastodonApiAccessScopesItem) _then)
-      : super(_value, (v) => _then(v as _MastodonApiAccessScopesItem));
+class __$$MastodonApiAccessScopesItemImplCopyWithImpl<$Res>
+    extends _$MastodonApiAccessScopesItemCopyWithImpl<$Res,
+        _$MastodonApiAccessScopesItemImpl>
+    implements _$$MastodonApiAccessScopesItemImplCopyWith<$Res> {
+  __$$MastodonApiAccessScopesItemImplCopyWithImpl(
+      _$MastodonApiAccessScopesItemImpl _value,
+      $Res Function(_$MastodonApiAccessScopesItemImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiAccessScopesItem get _value =>
-      super._value as _MastodonApiAccessScopesItem;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? permission = freezed,
-    Object? target = freezed,
+    Object? permission = null,
+    Object? target = null,
   }) {
-    return _then(_MastodonApiAccessScopesItem(
-      permission: permission == freezed
+    return _then(_$MastodonApiAccessScopesItemImpl(
+      permission: null == permission
           ? _value.permission
           : permission // ignore: cast_nullable_to_non_nullable
               as String,
-      target: target == freezed
+      target: null == target
           ? _value.target
           : target // ignore: cast_nullable_to_non_nullable
               as String,
@@ -132,13 +116,15 @@ class __$MastodonApiAccessScopesItemCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiAccessScopesItem implements _MastodonApiAccessScopesItem {
-  const _$_MastodonApiAccessScopesItem(
+class _$MastodonApiAccessScopesItemImpl
+    implements _MastodonApiAccessScopesItem {
+  const _$MastodonApiAccessScopesItemImpl(
       {@HiveField(0) required this.permission,
       @HiveField(1) required this.target});
 
-  factory _$_MastodonApiAccessScopesItem.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiAccessScopesItemFromJson(json);
+  factory _$MastodonApiAccessScopesItemImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$MastodonApiAccessScopesItemImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -153,38 +139,43 @@ class _$_MastodonApiAccessScopesItem implements _MastodonApiAccessScopesItem {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiAccessScopesItem &&
+            other is _$MastodonApiAccessScopesItemImpl &&
             (identical(other.permission, permission) ||
                 other.permission == permission) &&
             (identical(other.target, target) || other.target == target));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, permission, target);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiAccessScopesItemCopyWith<_MastodonApiAccessScopesItem>
-      get copyWith => __$MastodonApiAccessScopesItemCopyWithImpl<
-          _MastodonApiAccessScopesItem>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiAccessScopesItemImplCopyWith<_$MastodonApiAccessScopesItemImpl>
+      get copyWith => __$$MastodonApiAccessScopesItemImplCopyWithImpl<
+          _$MastodonApiAccessScopesItemImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiAccessScopesItemToJson(this);
+    return _$$MastodonApiAccessScopesItemImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiAccessScopesItem
     implements MastodonApiAccessScopesItem {
   const factory _MastodonApiAccessScopesItem(
-      {@HiveField(0) required String permission,
-      @HiveField(1) required String target}) = _$_MastodonApiAccessScopesItem;
+          {@HiveField(0) required final String permission,
+          @HiveField(1) required final String target}) =
+      _$MastodonApiAccessScopesItemImpl;
 
   factory _MastodonApiAccessScopesItem.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiAccessScopesItem.fromJson;
+      _$MastodonApiAccessScopesItemImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -194,6 +185,6 @@ abstract class _MastodonApiAccessScopesItem
   String get target;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiAccessScopesItemCopyWith<_MastodonApiAccessScopesItem>
+  _$$MastodonApiAccessScopesItemImplCopyWith<_$MastodonApiAccessScopesItemImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -54,9 +54,9 @@ class MastodonApiAccessUserTokenAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiAccessUserToken _$$_MastodonApiAccessUserTokenFromJson(
+_$MastodonApiAccessUserTokenImpl _$$MastodonApiAccessUserTokenImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiAccessUserToken(
+    _$MastodonApiAccessUserTokenImpl(
       oauthToken: MastodonApiOAuthToken.fromJson(
           json['oauth_token'] as Map<String, dynamic>),
       scopes: MastodonApiAccessScopes.fromJson(
@@ -68,8 +68,8 @@ _$_MastodonApiAccessUserToken _$$_MastodonApiAccessUserTokenFromJson(
               json['my_account'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_MastodonApiAccessUserTokenToJson(
-    _$_MastodonApiAccessUserToken instance) {
+Map<String, dynamic> _$$MastodonApiAccessUserTokenImplToJson(
+    _$MastodonApiAccessUserTokenImpl instance) {
   final val = <String, dynamic>{
     'oauth_token': instance.oauthToken.toJson(),
     'scopes': instance.scopes.toJson(),

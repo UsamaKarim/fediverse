@@ -54,8 +54,9 @@ class PleromaApiFeatureAdapter extends TypeAdapter<PleromaApiFeature> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiFeature _$$_PleromaApiFeatureFromJson(Map<String, dynamic> json) =>
-    _$_PleromaApiFeature(
+_$PleromaApiFeatureImpl _$$PleromaApiFeatureImplFromJson(
+        Map<String, dynamic> json) =>
+    _$PleromaApiFeatureImpl(
       mastodonApiFeature: json['mastodon_api_feature'] == null
           ? null
           : MastodonApiFeature.fromJson(
@@ -70,8 +71,8 @@ _$_PleromaApiFeature _$$_PleromaApiFeatureFromJson(Map<String, dynamic> json) =>
       forceNotImplementedYet: json['force_not_implemented_yet'] as bool?,
     );
 
-Map<String, dynamic> _$$_PleromaApiFeatureToJson(
-    _$_PleromaApiFeature instance) {
+Map<String, dynamic> _$$PleromaApiFeatureImplToJson(
+    _$PleromaApiFeatureImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

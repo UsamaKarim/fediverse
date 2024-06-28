@@ -45,17 +45,18 @@ class MastodonApiAccessScopesRequirementAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiAccessScopesRequirement
-    _$$_MastodonApiAccessScopesRequirementFromJson(Map<String, dynamic> json) =>
-        _$_MastodonApiAccessScopesRequirement(
+_$MastodonApiAccessScopesRequirementImpl
+    _$$MastodonApiAccessScopesRequirementImplFromJson(
+            Map<String, dynamic> json) =>
+        _$MastodonApiAccessScopesRequirementImpl(
           scopesVariants: (json['scopes_variants'] as List<dynamic>)
               .map((e) =>
                   MastodonApiAccessScopes.fromJson(e as Map<String, dynamic>))
               .toList(),
         );
 
-Map<String, dynamic> _$$_MastodonApiAccessScopesRequirementToJson(
-        _$_MastodonApiAccessScopesRequirement instance) =>
+Map<String, dynamic> _$$MastodonApiAccessScopesRequirementImplToJson(
+        _$MastodonApiAccessScopesRequirementImpl instance) =>
     <String, dynamic>{
       'scopes_variants':
           instance.scopesVariants.map((e) => e.toJson()).toList(),

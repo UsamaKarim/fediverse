@@ -56,9 +56,9 @@ class UnifediApiPushPayloadAdapter extends TypeAdapter<UnifediApiPushPayload> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiPushPayload _$$_UnifediApiPushPayloadFromJson(
+_$UnifediApiPushPayloadImpl _$$UnifediApiPushPayloadImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiPushPayload(
+    _$UnifediApiPushPayloadImpl(
       notificationId: json['notification_id'] as String,
       notificationType: json['notification_type'] as String,
       title: json['title'] as String?,
@@ -66,8 +66,8 @@ _$_UnifediApiPushPayload _$$_UnifediApiPushPayloadFromJson(
       icon: json['icon'] as String?,
     );
 
-Map<String, dynamic> _$$_UnifediApiPushPayloadToJson(
-    _$_UnifediApiPushPayload instance) {
+Map<String, dynamic> _$$UnifediApiPushPayloadImplToJson(
+    _$UnifediApiPushPayloadImpl instance) {
   final val = <String, dynamic>{
     'notification_id': instance.notificationId,
     'notification_type': instance.notificationType,

@@ -2,10 +2,7 @@
 
 part of 'instance_announcement_database_dao.dart';
 
-// **************************************************************************
-// DaoGenerator
-// **************************************************************************
-
+// ignore_for_file: type=lint
 mixin _$InstanceAnnouncementDaoMixin on DatabaseAccessor<AppDatabase> {
   $DbInstanceAnnouncementsTable get dbInstanceAnnouncements =>
       attachedDatabase.dbInstanceAnnouncements;

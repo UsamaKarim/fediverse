@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_access_scopes_requirement_model_impl.dart';
 
@@ -11,34 +12,12 @@ part of 'mastodon_api_access_scopes_requirement_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiAccessScopesRequirement _$MastodonApiAccessScopesRequirementFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiAccessScopesRequirement.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiAccessScopesRequirementTearOff {
-  const _$MastodonApiAccessScopesRequirementTearOff();
-
-  _MastodonApiAccessScopesRequirement call(
-      {@HiveField(0)
-      @JsonKey(name: 'scopes_variants')
-          required List<MastodonApiAccessScopes> scopesVariants}) {
-    return _MastodonApiAccessScopesRequirement(
-      scopesVariants: scopesVariants,
-    );
-  }
-
-  MastodonApiAccessScopesRequirement fromJson(Map<String, Object?> json) {
-    return MastodonApiAccessScopesRequirement.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiAccessScopesRequirement =
-    _$MastodonApiAccessScopesRequirementTearOff();
 
 /// @nodoc
 mixin _$MastodonApiAccessScopesRequirement {
@@ -59,69 +38,73 @@ abstract class $MastodonApiAccessScopesRequirementCopyWith<$Res> {
   factory $MastodonApiAccessScopesRequirementCopyWith(
           MastodonApiAccessScopesRequirement value,
           $Res Function(MastodonApiAccessScopesRequirement) then) =
-      _$MastodonApiAccessScopesRequirementCopyWithImpl<$Res>;
+      _$MastodonApiAccessScopesRequirementCopyWithImpl<$Res,
+          MastodonApiAccessScopesRequirement>;
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'scopes_variants')
-          List<MastodonApiAccessScopes> scopesVariants});
+      List<MastodonApiAccessScopes> scopesVariants});
 }
 
 /// @nodoc
-class _$MastodonApiAccessScopesRequirementCopyWithImpl<$Res>
+class _$MastodonApiAccessScopesRequirementCopyWithImpl<$Res,
+        $Val extends MastodonApiAccessScopesRequirement>
     implements $MastodonApiAccessScopesRequirementCopyWith<$Res> {
   _$MastodonApiAccessScopesRequirementCopyWithImpl(this._value, this._then);
 
-  final MastodonApiAccessScopesRequirement _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiAccessScopesRequirement) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? scopesVariants = freezed,
+    Object? scopesVariants = null,
   }) {
     return _then(_value.copyWith(
-      scopesVariants: scopesVariants == freezed
+      scopesVariants: null == scopesVariants
           ? _value.scopesVariants
           : scopesVariants // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiAccessScopes>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiAccessScopesRequirementCopyWith<$Res>
+abstract class _$$MastodonApiAccessScopesRequirementImplCopyWith<$Res>
     implements $MastodonApiAccessScopesRequirementCopyWith<$Res> {
-  factory _$MastodonApiAccessScopesRequirementCopyWith(
-          _MastodonApiAccessScopesRequirement value,
-          $Res Function(_MastodonApiAccessScopesRequirement) then) =
-      __$MastodonApiAccessScopesRequirementCopyWithImpl<$Res>;
+  factory _$$MastodonApiAccessScopesRequirementImplCopyWith(
+          _$MastodonApiAccessScopesRequirementImpl value,
+          $Res Function(_$MastodonApiAccessScopesRequirementImpl) then) =
+      __$$MastodonApiAccessScopesRequirementImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'scopes_variants')
-          List<MastodonApiAccessScopes> scopesVariants});
+      List<MastodonApiAccessScopes> scopesVariants});
 }
 
 /// @nodoc
-class __$MastodonApiAccessScopesRequirementCopyWithImpl<$Res>
-    extends _$MastodonApiAccessScopesRequirementCopyWithImpl<$Res>
-    implements _$MastodonApiAccessScopesRequirementCopyWith<$Res> {
-  __$MastodonApiAccessScopesRequirementCopyWithImpl(
-      _MastodonApiAccessScopesRequirement _value,
-      $Res Function(_MastodonApiAccessScopesRequirement) _then)
-      : super(_value, (v) => _then(v as _MastodonApiAccessScopesRequirement));
+class __$$MastodonApiAccessScopesRequirementImplCopyWithImpl<$Res>
+    extends _$MastodonApiAccessScopesRequirementCopyWithImpl<$Res,
+        _$MastodonApiAccessScopesRequirementImpl>
+    implements _$$MastodonApiAccessScopesRequirementImplCopyWith<$Res> {
+  __$$MastodonApiAccessScopesRequirementImplCopyWithImpl(
+      _$MastodonApiAccessScopesRequirementImpl _value,
+      $Res Function(_$MastodonApiAccessScopesRequirementImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiAccessScopesRequirement get _value =>
-      super._value as _MastodonApiAccessScopesRequirement;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? scopesVariants = freezed,
+    Object? scopesVariants = null,
   }) {
-    return _then(_MastodonApiAccessScopesRequirement(
-      scopesVariants: scopesVariants == freezed
-          ? _value.scopesVariants
+    return _then(_$MastodonApiAccessScopesRequirementImpl(
+      scopesVariants: null == scopesVariants
+          ? _value._scopesVariants
           : scopesVariants // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiAccessScopes>,
     ));
@@ -130,21 +113,27 @@ class __$MastodonApiAccessScopesRequirementCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiAccessScopesRequirement
+class _$MastodonApiAccessScopesRequirementImpl
     implements _MastodonApiAccessScopesRequirement {
-  const _$_MastodonApiAccessScopesRequirement(
+  const _$MastodonApiAccessScopesRequirementImpl(
       {@HiveField(0)
       @JsonKey(name: 'scopes_variants')
-          required this.scopesVariants});
+      required final List<MastodonApiAccessScopes> scopesVariants})
+      : _scopesVariants = scopesVariants;
 
-  factory _$_MastodonApiAccessScopesRequirement.fromJson(
+  factory _$MastodonApiAccessScopesRequirementImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_MastodonApiAccessScopesRequirementFromJson(json);
+      _$$MastodonApiAccessScopesRequirementImplFromJson(json);
 
+  final List<MastodonApiAccessScopes> _scopesVariants;
   @override
   @HiveField(0)
   @JsonKey(name: 'scopes_variants')
-  final List<MastodonApiAccessScopes> scopesVariants;
+  List<MastodonApiAccessScopes> get scopesVariants {
+    if (_scopesVariants is EqualUnmodifiableListView) return _scopesVariants;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_scopesVariants);
+  }
 
   @override
   String toString() {
@@ -152,28 +141,32 @@ class _$_MastodonApiAccessScopesRequirement
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiAccessScopesRequirement &&
+            other is _$MastodonApiAccessScopesRequirementImpl &&
             const DeepCollectionEquality()
-                .equals(other.scopesVariants, scopesVariants));
+                .equals(other._scopesVariants, _scopesVariants));
   }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(scopesVariants));
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiAccessScopesRequirementCopyWith<
-          _MastodonApiAccessScopesRequirement>
-      get copyWith => __$MastodonApiAccessScopesRequirementCopyWithImpl<
-          _MastodonApiAccessScopesRequirement>(this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType, const DeepCollectionEquality().hash(_scopesVariants));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiAccessScopesRequirementImplCopyWith<
+          _$MastodonApiAccessScopesRequirementImpl>
+      get copyWith => __$$MastodonApiAccessScopesRequirementImplCopyWithImpl<
+          _$MastodonApiAccessScopesRequirementImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiAccessScopesRequirementToJson(this);
+    return _$$MastodonApiAccessScopesRequirementImplToJson(
+      this,
+    );
   }
 }
 
@@ -182,12 +175,12 @@ abstract class _MastodonApiAccessScopesRequirement
   const factory _MastodonApiAccessScopesRequirement(
           {@HiveField(0)
           @JsonKey(name: 'scopes_variants')
-              required List<MastodonApiAccessScopes> scopesVariants}) =
-      _$_MastodonApiAccessScopesRequirement;
+          required final List<MastodonApiAccessScopes> scopesVariants}) =
+      _$MastodonApiAccessScopesRequirementImpl;
 
   factory _MastodonApiAccessScopesRequirement.fromJson(
           Map<String, dynamic> json) =
-      _$_MastodonApiAccessScopesRequirement.fromJson;
+      _$MastodonApiAccessScopesRequirementImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -195,7 +188,7 @@ abstract class _MastodonApiAccessScopesRequirement
   List<MastodonApiAccessScopes> get scopesVariants;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiAccessScopesRequirementCopyWith<
-          _MastodonApiAccessScopesRequirement>
+  _$$MastodonApiAccessScopesRequirementImplCopyWith<
+          _$MastodonApiAccessScopesRequirementImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'media_player_model.dart';
 
@@ -11,32 +12,7 @@ part of 'media_player_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$MediaPlayerSourceTearOff {
-  const _$MediaPlayerSourceTearOff();
-
-  _MediaPlayerSource call(
-      {required MediaPlayerSourceType type,
-      required String? assetPath,
-      required String? assetPackage,
-      required File? file,
-      required String? networkUrl,
-      required String? networkFormatHint}) {
-    return _MediaPlayerSource(
-      type: type,
-      assetPath: assetPath,
-      assetPackage: assetPackage,
-      file: file,
-      networkUrl: networkUrl,
-      networkFormatHint: networkFormatHint,
-    );
-  }
-}
-
-/// @nodoc
-const $MediaPlayerSource = _$MediaPlayerSourceTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$MediaPlayerSource {
@@ -56,7 +32,8 @@ mixin _$MediaPlayerSource {
 abstract class $MediaPlayerSourceCopyWith<$Res> {
   factory $MediaPlayerSourceCopyWith(
           MediaPlayerSource value, $Res Function(MediaPlayerSource) then) =
-      _$MediaPlayerSourceCopyWithImpl<$Res>;
+      _$MediaPlayerSourceCopyWithImpl<$Res, MediaPlayerSource>;
+  @useResult
   $Res call(
       {MediaPlayerSourceType type,
       String? assetPath,
@@ -67,17 +44,19 @@ abstract class $MediaPlayerSourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MediaPlayerSourceCopyWithImpl<$Res>
+class _$MediaPlayerSourceCopyWithImpl<$Res, $Val extends MediaPlayerSource>
     implements $MediaPlayerSourceCopyWith<$Res> {
   _$MediaPlayerSourceCopyWithImpl(this._value, this._then);
 
-  final MediaPlayerSource _value;
   // ignore: unused_field
-  final $Res Function(MediaPlayerSource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? type = freezed,
+    Object? type = null,
     Object? assetPath = freezed,
     Object? assetPackage = freezed,
     Object? file = freezed,
@@ -85,41 +64,42 @@ class _$MediaPlayerSourceCopyWithImpl<$Res>
     Object? networkFormatHint = freezed,
   }) {
     return _then(_value.copyWith(
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as MediaPlayerSourceType,
-      assetPath: assetPath == freezed
+      assetPath: freezed == assetPath
           ? _value.assetPath
           : assetPath // ignore: cast_nullable_to_non_nullable
               as String?,
-      assetPackage: assetPackage == freezed
+      assetPackage: freezed == assetPackage
           ? _value.assetPackage
           : assetPackage // ignore: cast_nullable_to_non_nullable
               as String?,
-      file: file == freezed
+      file: freezed == file
           ? _value.file
           : file // ignore: cast_nullable_to_non_nullable
               as File?,
-      networkUrl: networkUrl == freezed
+      networkUrl: freezed == networkUrl
           ? _value.networkUrl
           : networkUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      networkFormatHint: networkFormatHint == freezed
+      networkFormatHint: freezed == networkFormatHint
           ? _value.networkFormatHint
           : networkFormatHint // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MediaPlayerSourceCopyWith<$Res>
+abstract class _$$MediaPlayerSourceImplCopyWith<$Res>
     implements $MediaPlayerSourceCopyWith<$Res> {
-  factory _$MediaPlayerSourceCopyWith(
-          _MediaPlayerSource value, $Res Function(_MediaPlayerSource) then) =
-      __$MediaPlayerSourceCopyWithImpl<$Res>;
+  factory _$$MediaPlayerSourceImplCopyWith(_$MediaPlayerSourceImpl value,
+          $Res Function(_$MediaPlayerSourceImpl) then) =
+      __$$MediaPlayerSourceImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {MediaPlayerSourceType type,
       String? assetPath,
@@ -130,47 +110,45 @@ abstract class _$MediaPlayerSourceCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MediaPlayerSourceCopyWithImpl<$Res>
-    extends _$MediaPlayerSourceCopyWithImpl<$Res>
-    implements _$MediaPlayerSourceCopyWith<$Res> {
-  __$MediaPlayerSourceCopyWithImpl(
-      _MediaPlayerSource _value, $Res Function(_MediaPlayerSource) _then)
-      : super(_value, (v) => _then(v as _MediaPlayerSource));
+class __$$MediaPlayerSourceImplCopyWithImpl<$Res>
+    extends _$MediaPlayerSourceCopyWithImpl<$Res, _$MediaPlayerSourceImpl>
+    implements _$$MediaPlayerSourceImplCopyWith<$Res> {
+  __$$MediaPlayerSourceImplCopyWithImpl(_$MediaPlayerSourceImpl _value,
+      $Res Function(_$MediaPlayerSourceImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MediaPlayerSource get _value => super._value as _MediaPlayerSource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? type = freezed,
+    Object? type = null,
     Object? assetPath = freezed,
     Object? assetPackage = freezed,
     Object? file = freezed,
     Object? networkUrl = freezed,
     Object? networkFormatHint = freezed,
   }) {
-    return _then(_MediaPlayerSource(
-      type: type == freezed
+    return _then(_$MediaPlayerSourceImpl(
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as MediaPlayerSourceType,
-      assetPath: assetPath == freezed
+      assetPath: freezed == assetPath
           ? _value.assetPath
           : assetPath // ignore: cast_nullable_to_non_nullable
               as String?,
-      assetPackage: assetPackage == freezed
+      assetPackage: freezed == assetPackage
           ? _value.assetPackage
           : assetPackage // ignore: cast_nullable_to_non_nullable
               as String?,
-      file: file == freezed
+      file: freezed == file
           ? _value.file
           : file // ignore: cast_nullable_to_non_nullable
               as File?,
-      networkUrl: networkUrl == freezed
+      networkUrl: freezed == networkUrl
           ? _value.networkUrl
           : networkUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      networkFormatHint: networkFormatHint == freezed
+      networkFormatHint: freezed == networkFormatHint
           ? _value.networkFormatHint
           : networkFormatHint // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -180,8 +158,8 @@ class __$MediaPlayerSourceCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_MediaPlayerSource implements _MediaPlayerSource {
-  const _$_MediaPlayerSource(
+class _$MediaPlayerSourceImpl implements _MediaPlayerSource {
+  const _$MediaPlayerSourceImpl(
       {required this.type,
       required this.assetPath,
       required this.assetPackage,
@@ -208,10 +186,10 @@ class _$_MediaPlayerSource implements _MediaPlayerSource {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MediaPlayerSource &&
+            other is _$MediaPlayerSourceImpl &&
             (identical(other.type, type) || other.type == type) &&
             (identical(other.assetPath, assetPath) ||
                 other.assetPath == assetPath) &&
@@ -230,18 +208,20 @@ class _$_MediaPlayerSource implements _MediaPlayerSource {
 
   @JsonKey(ignore: true)
   @override
-  _$MediaPlayerSourceCopyWith<_MediaPlayerSource> get copyWith =>
-      __$MediaPlayerSourceCopyWithImpl<_MediaPlayerSource>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MediaPlayerSourceImplCopyWith<_$MediaPlayerSourceImpl> get copyWith =>
+      __$$MediaPlayerSourceImplCopyWithImpl<_$MediaPlayerSourceImpl>(
+          this, _$identity);
 }
 
 abstract class _MediaPlayerSource implements MediaPlayerSource {
   const factory _MediaPlayerSource(
-      {required MediaPlayerSourceType type,
-      required String? assetPath,
-      required String? assetPackage,
-      required File? file,
-      required String? networkUrl,
-      required String? networkFormatHint}) = _$_MediaPlayerSource;
+      {required final MediaPlayerSourceType type,
+      required final String? assetPath,
+      required final String? assetPackage,
+      required final File? file,
+      required final String? networkUrl,
+      required final String? networkFormatHint}) = _$MediaPlayerSourceImpl;
 
   @override
   MediaPlayerSourceType get type;
@@ -257,6 +237,6 @@ abstract class _MediaPlayerSource implements MediaPlayerSource {
   String? get networkFormatHint;
   @override
   @JsonKey(ignore: true)
-  _$MediaPlayerSourceCopyWith<_MediaPlayerSource> get copyWith =>
+  _$$MediaPlayerSourceImplCopyWith<_$MediaPlayerSourceImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

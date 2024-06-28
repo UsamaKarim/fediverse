@@ -49,18 +49,18 @@ class UnifediApiInstanceFederationMfrObjectAgeAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiInstanceFederationMfrObjectAge
-    _$$_UnifediApiInstanceFederationMfrObjectAgeFromJson(
+_$UnifediApiInstanceFederationMfrObjectAgeImpl
+    _$$UnifediApiInstanceFederationMfrObjectAgeImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiInstanceFederationMfrObjectAge(
-          threshold: json['threshold'] as int?,
+        _$UnifediApiInstanceFederationMfrObjectAgeImpl(
+          threshold: (json['threshold'] as num?)?.toInt(),
           actions: (json['actions'] as List<dynamic>?)
               ?.map((e) => e as String)
               .toList(),
         );
 
-Map<String, dynamic> _$$_UnifediApiInstanceFederationMfrObjectAgeToJson(
-    _$_UnifediApiInstanceFederationMfrObjectAge instance) {
+Map<String, dynamic> _$$UnifediApiInstanceFederationMfrObjectAgeImplToJson(
+    _$UnifediApiInstanceFederationMfrObjectAgeImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

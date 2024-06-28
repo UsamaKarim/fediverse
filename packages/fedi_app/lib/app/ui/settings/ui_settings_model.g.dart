@@ -47,13 +47,13 @@ class UiSettingsAdapter extends TypeAdapter<UiSettings> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UiSettings _$$_UiSettingsFromJson(Map<String, dynamic> json) =>
-    _$_UiSettings(
+_$UiSettingsImpl _$$UiSettingsImplFromJson(Map<String, dynamic> json) =>
+    _$UiSettingsImpl(
       themeId: json['theme_id'] as String?,
       statusFontSizeString: json['status_font_size'] as String,
     );
 
-Map<String, dynamic> _$$_UiSettingsToJson(_$_UiSettings instance) {
+Map<String, dynamic> _$$UiSettingsImplToJson(_$UiSettingsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

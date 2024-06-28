@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_chat_model.dart';
 
@@ -11,23 +12,7 @@ part of 'unifedi_chat_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$DbUnifediChatPopulatedTearOff {
-  const _$DbUnifediChatPopulatedTearOff();
-
-  _DbUnifediChatPopulated call(
-      {required DbChat dbChat, required DbAccount dbAccount}) {
-    return _DbUnifediChatPopulated(
-      dbChat: dbChat,
-      dbAccount: dbAccount,
-    );
-  }
-}
-
-/// @nodoc
-const $DbUnifediChatPopulated = _$DbUnifediChatPopulatedTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$DbUnifediChatPopulated {
@@ -43,69 +28,75 @@ mixin _$DbUnifediChatPopulated {
 abstract class $DbUnifediChatPopulatedCopyWith<$Res> {
   factory $DbUnifediChatPopulatedCopyWith(DbUnifediChatPopulated value,
           $Res Function(DbUnifediChatPopulated) then) =
-      _$DbUnifediChatPopulatedCopyWithImpl<$Res>;
+      _$DbUnifediChatPopulatedCopyWithImpl<$Res, DbUnifediChatPopulated>;
+  @useResult
   $Res call({DbChat dbChat, DbAccount dbAccount});
 }
 
 /// @nodoc
-class _$DbUnifediChatPopulatedCopyWithImpl<$Res>
+class _$DbUnifediChatPopulatedCopyWithImpl<$Res,
+        $Val extends DbUnifediChatPopulated>
     implements $DbUnifediChatPopulatedCopyWith<$Res> {
   _$DbUnifediChatPopulatedCopyWithImpl(this._value, this._then);
 
-  final DbUnifediChatPopulated _value;
   // ignore: unused_field
-  final $Res Function(DbUnifediChatPopulated) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? dbChat = freezed,
     Object? dbAccount = freezed,
   }) {
     return _then(_value.copyWith(
-      dbChat: dbChat == freezed
+      dbChat: freezed == dbChat
           ? _value.dbChat
           : dbChat // ignore: cast_nullable_to_non_nullable
               as DbChat,
-      dbAccount: dbAccount == freezed
+      dbAccount: freezed == dbAccount
           ? _value.dbAccount
           : dbAccount // ignore: cast_nullable_to_non_nullable
               as DbAccount,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$DbUnifediChatPopulatedCopyWith<$Res>
+abstract class _$$DbUnifediChatPopulatedImplCopyWith<$Res>
     implements $DbUnifediChatPopulatedCopyWith<$Res> {
-  factory _$DbUnifediChatPopulatedCopyWith(_DbUnifediChatPopulated value,
-          $Res Function(_DbUnifediChatPopulated) then) =
-      __$DbUnifediChatPopulatedCopyWithImpl<$Res>;
+  factory _$$DbUnifediChatPopulatedImplCopyWith(
+          _$DbUnifediChatPopulatedImpl value,
+          $Res Function(_$DbUnifediChatPopulatedImpl) then) =
+      __$$DbUnifediChatPopulatedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({DbChat dbChat, DbAccount dbAccount});
 }
 
 /// @nodoc
-class __$DbUnifediChatPopulatedCopyWithImpl<$Res>
-    extends _$DbUnifediChatPopulatedCopyWithImpl<$Res>
-    implements _$DbUnifediChatPopulatedCopyWith<$Res> {
-  __$DbUnifediChatPopulatedCopyWithImpl(_DbUnifediChatPopulated _value,
-      $Res Function(_DbUnifediChatPopulated) _then)
-      : super(_value, (v) => _then(v as _DbUnifediChatPopulated));
+class __$$DbUnifediChatPopulatedImplCopyWithImpl<$Res>
+    extends _$DbUnifediChatPopulatedCopyWithImpl<$Res,
+        _$DbUnifediChatPopulatedImpl>
+    implements _$$DbUnifediChatPopulatedImplCopyWith<$Res> {
+  __$$DbUnifediChatPopulatedImplCopyWithImpl(
+      _$DbUnifediChatPopulatedImpl _value,
+      $Res Function(_$DbUnifediChatPopulatedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _DbUnifediChatPopulated get _value => super._value as _DbUnifediChatPopulated;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? dbChat = freezed,
     Object? dbAccount = freezed,
   }) {
-    return _then(_DbUnifediChatPopulated(
-      dbChat: dbChat == freezed
+    return _then(_$DbUnifediChatPopulatedImpl(
+      dbChat: freezed == dbChat
           ? _value.dbChat
           : dbChat // ignore: cast_nullable_to_non_nullable
               as DbChat,
-      dbAccount: dbAccount == freezed
+      dbAccount: freezed == dbAccount
           ? _value.dbAccount
           : dbAccount // ignore: cast_nullable_to_non_nullable
               as DbAccount,
@@ -115,8 +106,8 @@ class __$DbUnifediChatPopulatedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DbUnifediChatPopulated implements _DbUnifediChatPopulated {
-  const _$_DbUnifediChatPopulated(
+class _$DbUnifediChatPopulatedImpl implements _DbUnifediChatPopulated {
+  const _$DbUnifediChatPopulatedImpl(
       {required this.dbChat, required this.dbAccount});
 
   @override
@@ -130,10 +121,10 @@ class _$_DbUnifediChatPopulated implements _DbUnifediChatPopulated {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DbUnifediChatPopulated &&
+            other is _$DbUnifediChatPopulatedImpl &&
             const DeepCollectionEquality().equals(other.dbChat, dbChat) &&
             const DeepCollectionEquality().equals(other.dbAccount, dbAccount));
   }
@@ -146,15 +137,16 @@ class _$_DbUnifediChatPopulated implements _DbUnifediChatPopulated {
 
   @JsonKey(ignore: true)
   @override
-  _$DbUnifediChatPopulatedCopyWith<_DbUnifediChatPopulated> get copyWith =>
-      __$DbUnifediChatPopulatedCopyWithImpl<_DbUnifediChatPopulated>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DbUnifediChatPopulatedImplCopyWith<_$DbUnifediChatPopulatedImpl>
+      get copyWith => __$$DbUnifediChatPopulatedImplCopyWithImpl<
+          _$DbUnifediChatPopulatedImpl>(this, _$identity);
 }
 
 abstract class _DbUnifediChatPopulated implements DbUnifediChatPopulated {
   const factory _DbUnifediChatPopulated(
-      {required DbChat dbChat,
-      required DbAccount dbAccount}) = _$_DbUnifediChatPopulated;
+      {required final DbChat dbChat,
+      required final DbAccount dbAccount}) = _$DbUnifediChatPopulatedImpl;
 
   @override
   DbChat get dbChat;
@@ -162,27 +154,9 @@ abstract class _DbUnifediChatPopulated implements DbUnifediChatPopulated {
   DbAccount get dbAccount;
   @override
   @JsonKey(ignore: true)
-  _$DbUnifediChatPopulatedCopyWith<_DbUnifediChatPopulated> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$DbUnifediChatPopulatedImplCopyWith<_$DbUnifediChatPopulatedImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$DbUnifediChatWithLastMessagePopulatedTearOff {
-  const _$DbUnifediChatWithLastMessagePopulatedTearOff();
-
-  _DbUnifediChatWithLastMessagePopulated call(
-      {required DbUnifediChatPopulated dbUnifediChatPopulated,
-      required DbChatMessagePopulated? dbChatMessagePopulated}) {
-    return _DbUnifediChatWithLastMessagePopulated(
-      dbUnifediChatPopulated: dbUnifediChatPopulated,
-      dbChatMessagePopulated: dbChatMessagePopulated,
-    );
-  }
-}
-
-/// @nodoc
-const $DbUnifediChatWithLastMessagePopulated =
-    _$DbUnifediChatWithLastMessagePopulatedTearOff();
 
 /// @nodoc
 mixin _$DbUnifediChatWithLastMessagePopulated {
@@ -202,7 +176,9 @@ abstract class $DbUnifediChatWithLastMessagePopulatedCopyWith<$Res> {
   factory $DbUnifediChatWithLastMessagePopulatedCopyWith(
           DbUnifediChatWithLastMessagePopulated value,
           $Res Function(DbUnifediChatWithLastMessagePopulated) then) =
-      _$DbUnifediChatWithLastMessagePopulatedCopyWithImpl<$Res>;
+      _$DbUnifediChatWithLastMessagePopulatedCopyWithImpl<$Res,
+          DbUnifediChatWithLastMessagePopulated>;
+  @useResult
   $Res call(
       {DbUnifediChatPopulated dbUnifediChatPopulated,
       DbChatMessagePopulated? dbChatMessagePopulated});
@@ -212,40 +188,45 @@ abstract class $DbUnifediChatWithLastMessagePopulatedCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$DbUnifediChatWithLastMessagePopulatedCopyWithImpl<$Res>
+class _$DbUnifediChatWithLastMessagePopulatedCopyWithImpl<$Res,
+        $Val extends DbUnifediChatWithLastMessagePopulated>
     implements $DbUnifediChatWithLastMessagePopulatedCopyWith<$Res> {
   _$DbUnifediChatWithLastMessagePopulatedCopyWithImpl(this._value, this._then);
 
-  final DbUnifediChatWithLastMessagePopulated _value;
   // ignore: unused_field
-  final $Res Function(DbUnifediChatWithLastMessagePopulated) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dbUnifediChatPopulated = freezed,
+    Object? dbUnifediChatPopulated = null,
     Object? dbChatMessagePopulated = freezed,
   }) {
     return _then(_value.copyWith(
-      dbUnifediChatPopulated: dbUnifediChatPopulated == freezed
+      dbUnifediChatPopulated: null == dbUnifediChatPopulated
           ? _value.dbUnifediChatPopulated
           : dbUnifediChatPopulated // ignore: cast_nullable_to_non_nullable
               as DbUnifediChatPopulated,
-      dbChatMessagePopulated: dbChatMessagePopulated == freezed
+      dbChatMessagePopulated: freezed == dbChatMessagePopulated
           ? _value.dbChatMessagePopulated
           : dbChatMessagePopulated // ignore: cast_nullable_to_non_nullable
               as DbChatMessagePopulated?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $DbUnifediChatPopulatedCopyWith<$Res> get dbUnifediChatPopulated {
     return $DbUnifediChatPopulatedCopyWith<$Res>(_value.dbUnifediChatPopulated,
         (value) {
-      return _then(_value.copyWith(dbUnifediChatPopulated: value));
+      return _then(_value.copyWith(dbUnifediChatPopulated: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $DbChatMessagePopulatedCopyWith<$Res>? get dbChatMessagePopulated {
     if (_value.dbChatMessagePopulated == null) {
       return null;
@@ -253,19 +234,20 @@ class _$DbUnifediChatWithLastMessagePopulatedCopyWithImpl<$Res>
 
     return $DbChatMessagePopulatedCopyWith<$Res>(_value.dbChatMessagePopulated!,
         (value) {
-      return _then(_value.copyWith(dbChatMessagePopulated: value));
+      return _then(_value.copyWith(dbChatMessagePopulated: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$DbUnifediChatWithLastMessagePopulatedCopyWith<$Res>
+abstract class _$$DbUnifediChatWithLastMessagePopulatedImplCopyWith<$Res>
     implements $DbUnifediChatWithLastMessagePopulatedCopyWith<$Res> {
-  factory _$DbUnifediChatWithLastMessagePopulatedCopyWith(
-          _DbUnifediChatWithLastMessagePopulated value,
-          $Res Function(_DbUnifediChatWithLastMessagePopulated) then) =
-      __$DbUnifediChatWithLastMessagePopulatedCopyWithImpl<$Res>;
+  factory _$$DbUnifediChatWithLastMessagePopulatedImplCopyWith(
+          _$DbUnifediChatWithLastMessagePopulatedImpl value,
+          $Res Function(_$DbUnifediChatWithLastMessagePopulatedImpl) then) =
+      __$$DbUnifediChatWithLastMessagePopulatedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {DbUnifediChatPopulated dbUnifediChatPopulated,
       DbChatMessagePopulated? dbChatMessagePopulated});
@@ -277,30 +259,27 @@ abstract class _$DbUnifediChatWithLastMessagePopulatedCopyWith<$Res>
 }
 
 /// @nodoc
-class __$DbUnifediChatWithLastMessagePopulatedCopyWithImpl<$Res>
-    extends _$DbUnifediChatWithLastMessagePopulatedCopyWithImpl<$Res>
-    implements _$DbUnifediChatWithLastMessagePopulatedCopyWith<$Res> {
-  __$DbUnifediChatWithLastMessagePopulatedCopyWithImpl(
-      _DbUnifediChatWithLastMessagePopulated _value,
-      $Res Function(_DbUnifediChatWithLastMessagePopulated) _then)
-      : super(
-            _value, (v) => _then(v as _DbUnifediChatWithLastMessagePopulated));
+class __$$DbUnifediChatWithLastMessagePopulatedImplCopyWithImpl<$Res>
+    extends _$DbUnifediChatWithLastMessagePopulatedCopyWithImpl<$Res,
+        _$DbUnifediChatWithLastMessagePopulatedImpl>
+    implements _$$DbUnifediChatWithLastMessagePopulatedImplCopyWith<$Res> {
+  __$$DbUnifediChatWithLastMessagePopulatedImplCopyWithImpl(
+      _$DbUnifediChatWithLastMessagePopulatedImpl _value,
+      $Res Function(_$DbUnifediChatWithLastMessagePopulatedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _DbUnifediChatWithLastMessagePopulated get _value =>
-      super._value as _DbUnifediChatWithLastMessagePopulated;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dbUnifediChatPopulated = freezed,
+    Object? dbUnifediChatPopulated = null,
     Object? dbChatMessagePopulated = freezed,
   }) {
-    return _then(_DbUnifediChatWithLastMessagePopulated(
-      dbUnifediChatPopulated: dbUnifediChatPopulated == freezed
+    return _then(_$DbUnifediChatWithLastMessagePopulatedImpl(
+      dbUnifediChatPopulated: null == dbUnifediChatPopulated
           ? _value.dbUnifediChatPopulated
           : dbUnifediChatPopulated // ignore: cast_nullable_to_non_nullable
               as DbUnifediChatPopulated,
-      dbChatMessagePopulated: dbChatMessagePopulated == freezed
+      dbChatMessagePopulated: freezed == dbChatMessagePopulated
           ? _value.dbChatMessagePopulated
           : dbChatMessagePopulated // ignore: cast_nullable_to_non_nullable
               as DbChatMessagePopulated?,
@@ -310,9 +289,9 @@ class __$DbUnifediChatWithLastMessagePopulatedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DbUnifediChatWithLastMessagePopulated
+class _$DbUnifediChatWithLastMessagePopulatedImpl
     implements _DbUnifediChatWithLastMessagePopulated {
-  const _$_DbUnifediChatWithLastMessagePopulated(
+  const _$DbUnifediChatWithLastMessagePopulatedImpl(
       {required this.dbUnifediChatPopulated,
       required this.dbChatMessagePopulated});
 
@@ -327,10 +306,10 @@ class _$_DbUnifediChatWithLastMessagePopulated
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DbUnifediChatWithLastMessagePopulated &&
+            other is _$DbUnifediChatWithLastMessagePopulatedImpl &&
             (identical(other.dbUnifediChatPopulated, dbUnifediChatPopulated) ||
                 other.dbUnifediChatPopulated == dbUnifediChatPopulated) &&
             (identical(other.dbChatMessagePopulated, dbChatMessagePopulated) ||
@@ -343,18 +322,19 @@ class _$_DbUnifediChatWithLastMessagePopulated
 
   @JsonKey(ignore: true)
   @override
-  _$DbUnifediChatWithLastMessagePopulatedCopyWith<
-          _DbUnifediChatWithLastMessagePopulated>
-      get copyWith => __$DbUnifediChatWithLastMessagePopulatedCopyWithImpl<
-          _DbUnifediChatWithLastMessagePopulated>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DbUnifediChatWithLastMessagePopulatedImplCopyWith<
+          _$DbUnifediChatWithLastMessagePopulatedImpl>
+      get copyWith => __$$DbUnifediChatWithLastMessagePopulatedImplCopyWithImpl<
+          _$DbUnifediChatWithLastMessagePopulatedImpl>(this, _$identity);
 }
 
 abstract class _DbUnifediChatWithLastMessagePopulated
     implements DbUnifediChatWithLastMessagePopulated {
   const factory _DbUnifediChatWithLastMessagePopulated(
-          {required DbUnifediChatPopulated dbUnifediChatPopulated,
-          required DbChatMessagePopulated? dbChatMessagePopulated}) =
-      _$_DbUnifediChatWithLastMessagePopulated;
+          {required final DbUnifediChatPopulated dbUnifediChatPopulated,
+          required final DbChatMessagePopulated? dbChatMessagePopulated}) =
+      _$DbUnifediChatWithLastMessagePopulatedImpl;
 
   @override
   DbUnifediChatPopulated get dbUnifediChatPopulated;
@@ -362,28 +342,10 @@ abstract class _DbUnifediChatWithLastMessagePopulated
   DbChatMessagePopulated? get dbChatMessagePopulated;
   @override
   @JsonKey(ignore: true)
-  _$DbUnifediChatWithLastMessagePopulatedCopyWith<
-          _DbUnifediChatWithLastMessagePopulated>
+  _$$DbUnifediChatWithLastMessagePopulatedImplCopyWith<
+          _$DbUnifediChatWithLastMessagePopulatedImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$DbUnifediChatWithLastMessagePopulatedWrapperTearOff {
-  const _$DbUnifediChatWithLastMessagePopulatedWrapperTearOff();
-
-  _DbUnifediChatWithLastMessagePopulatedWrapper call(
-      {required DbUnifediChatWithLastMessagePopulated
-          dbUnifediChatWithLastMessagePopulated}) {
-    return _DbUnifediChatWithLastMessagePopulatedWrapper(
-      dbUnifediChatWithLastMessagePopulated:
-          dbUnifediChatWithLastMessagePopulated,
-    );
-  }
-}
-
-/// @nodoc
-const $DbUnifediChatWithLastMessagePopulatedWrapper =
-    _$DbUnifediChatWithLastMessagePopulatedWrapperTearOff();
 
 /// @nodoc
 mixin _$DbUnifediChatWithLastMessagePopulatedWrapper {
@@ -402,7 +364,9 @@ abstract class $DbUnifediChatWithLastMessagePopulatedWrapperCopyWith<$Res> {
   factory $DbUnifediChatWithLastMessagePopulatedWrapperCopyWith(
           DbUnifediChatWithLastMessagePopulatedWrapper value,
           $Res Function(DbUnifediChatWithLastMessagePopulatedWrapper) then) =
-      _$DbUnifediChatWithLastMessagePopulatedWrapperCopyWithImpl<$Res>;
+      _$DbUnifediChatWithLastMessagePopulatedWrapperCopyWithImpl<$Res,
+          DbUnifediChatWithLastMessagePopulatedWrapper>;
+  @useResult
   $Res call(
       {DbUnifediChatWithLastMessagePopulated
           dbUnifediChatWithLastMessagePopulated});
@@ -412,47 +376,53 @@ abstract class $DbUnifediChatWithLastMessagePopulatedWrapperCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$DbUnifediChatWithLastMessagePopulatedWrapperCopyWithImpl<$Res>
+class _$DbUnifediChatWithLastMessagePopulatedWrapperCopyWithImpl<$Res,
+        $Val extends DbUnifediChatWithLastMessagePopulatedWrapper>
     implements $DbUnifediChatWithLastMessagePopulatedWrapperCopyWith<$Res> {
   _$DbUnifediChatWithLastMessagePopulatedWrapperCopyWithImpl(
       this._value, this._then);
 
-  final DbUnifediChatWithLastMessagePopulatedWrapper _value;
   // ignore: unused_field
-  final $Res Function(DbUnifediChatWithLastMessagePopulatedWrapper) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dbUnifediChatWithLastMessagePopulated = freezed,
+    Object? dbUnifediChatWithLastMessagePopulated = null,
   }) {
     return _then(_value.copyWith(
-      dbUnifediChatWithLastMessagePopulated:
-          dbUnifediChatWithLastMessagePopulated == freezed
-              ? _value.dbUnifediChatWithLastMessagePopulated
-              : dbUnifediChatWithLastMessagePopulated // ignore: cast_nullable_to_non_nullable
-                  as DbUnifediChatWithLastMessagePopulated,
-    ));
+      dbUnifediChatWithLastMessagePopulated: null ==
+              dbUnifediChatWithLastMessagePopulated
+          ? _value.dbUnifediChatWithLastMessagePopulated
+          : dbUnifediChatWithLastMessagePopulated // ignore: cast_nullable_to_non_nullable
+              as DbUnifediChatWithLastMessagePopulated,
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $DbUnifediChatWithLastMessagePopulatedCopyWith<$Res>
       get dbUnifediChatWithLastMessagePopulated {
     return $DbUnifediChatWithLastMessagePopulatedCopyWith<$Res>(
         _value.dbUnifediChatWithLastMessagePopulated, (value) {
-      return _then(
-          _value.copyWith(dbUnifediChatWithLastMessagePopulated: value));
+      return _then(_value.copyWith(dbUnifediChatWithLastMessagePopulated: value)
+          as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$DbUnifediChatWithLastMessagePopulatedWrapperCopyWith<$Res>
+abstract class _$$DbUnifediChatWithLastMessagePopulatedWrapperImplCopyWith<$Res>
     implements $DbUnifediChatWithLastMessagePopulatedWrapperCopyWith<$Res> {
-  factory _$DbUnifediChatWithLastMessagePopulatedWrapperCopyWith(
-          _DbUnifediChatWithLastMessagePopulatedWrapper value,
-          $Res Function(_DbUnifediChatWithLastMessagePopulatedWrapper) then) =
-      __$DbUnifediChatWithLastMessagePopulatedWrapperCopyWithImpl<$Res>;
+  factory _$$DbUnifediChatWithLastMessagePopulatedWrapperImplCopyWith(
+          _$DbUnifediChatWithLastMessagePopulatedWrapperImpl value,
+          $Res Function(_$DbUnifediChatWithLastMessagePopulatedWrapperImpl)
+              then) =
+      __$$DbUnifediChatWithLastMessagePopulatedWrapperImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {DbUnifediChatWithLastMessagePopulated
           dbUnifediChatWithLastMessagePopulated});
@@ -463,38 +433,36 @@ abstract class _$DbUnifediChatWithLastMessagePopulatedWrapperCopyWith<$Res>
 }
 
 /// @nodoc
-class __$DbUnifediChatWithLastMessagePopulatedWrapperCopyWithImpl<$Res>
-    extends _$DbUnifediChatWithLastMessagePopulatedWrapperCopyWithImpl<$Res>
-    implements _$DbUnifediChatWithLastMessagePopulatedWrapperCopyWith<$Res> {
-  __$DbUnifediChatWithLastMessagePopulatedWrapperCopyWithImpl(
-      _DbUnifediChatWithLastMessagePopulatedWrapper _value,
-      $Res Function(_DbUnifediChatWithLastMessagePopulatedWrapper) _then)
-      : super(_value,
-            (v) => _then(v as _DbUnifediChatWithLastMessagePopulatedWrapper));
+class __$$DbUnifediChatWithLastMessagePopulatedWrapperImplCopyWithImpl<$Res>
+    extends _$DbUnifediChatWithLastMessagePopulatedWrapperCopyWithImpl<$Res,
+        _$DbUnifediChatWithLastMessagePopulatedWrapperImpl>
+    implements
+        _$$DbUnifediChatWithLastMessagePopulatedWrapperImplCopyWith<$Res> {
+  __$$DbUnifediChatWithLastMessagePopulatedWrapperImplCopyWithImpl(
+      _$DbUnifediChatWithLastMessagePopulatedWrapperImpl _value,
+      $Res Function(_$DbUnifediChatWithLastMessagePopulatedWrapperImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _DbUnifediChatWithLastMessagePopulatedWrapper get _value =>
-      super._value as _DbUnifediChatWithLastMessagePopulatedWrapper;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dbUnifediChatWithLastMessagePopulated = freezed,
+    Object? dbUnifediChatWithLastMessagePopulated = null,
   }) {
-    return _then(_DbUnifediChatWithLastMessagePopulatedWrapper(
-      dbUnifediChatWithLastMessagePopulated:
-          dbUnifediChatWithLastMessagePopulated == freezed
-              ? _value.dbUnifediChatWithLastMessagePopulated
-              : dbUnifediChatWithLastMessagePopulated // ignore: cast_nullable_to_non_nullable
-                  as DbUnifediChatWithLastMessagePopulated,
+    return _then(_$DbUnifediChatWithLastMessagePopulatedWrapperImpl(
+      dbUnifediChatWithLastMessagePopulated: null ==
+              dbUnifediChatWithLastMessagePopulated
+          ? _value.dbUnifediChatWithLastMessagePopulated
+          : dbUnifediChatWithLastMessagePopulated // ignore: cast_nullable_to_non_nullable
+              as DbUnifediChatWithLastMessagePopulated,
     ));
   }
 }
 
 /// @nodoc
 
-class _$_DbUnifediChatWithLastMessagePopulatedWrapper
+class _$DbUnifediChatWithLastMessagePopulatedWrapperImpl
     extends _DbUnifediChatWithLastMessagePopulatedWrapper {
-  const _$_DbUnifediChatWithLastMessagePopulatedWrapper(
+  const _$DbUnifediChatWithLastMessagePopulatedWrapperImpl(
       {required this.dbUnifediChatWithLastMessagePopulated})
       : super._();
 
@@ -508,10 +476,10 @@ class _$_DbUnifediChatWithLastMessagePopulatedWrapper
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DbUnifediChatWithLastMessagePopulatedWrapper &&
+            other is _$DbUnifediChatWithLastMessagePopulatedWrapperImpl &&
             (identical(other.dbUnifediChatWithLastMessagePopulated,
                     dbUnifediChatWithLastMessagePopulated) ||
                 other.dbUnifediChatWithLastMessagePopulated ==
@@ -524,19 +492,21 @@ class _$_DbUnifediChatWithLastMessagePopulatedWrapper
 
   @JsonKey(ignore: true)
   @override
-  _$DbUnifediChatWithLastMessagePopulatedWrapperCopyWith<
-          _DbUnifediChatWithLastMessagePopulatedWrapper>
+  @pragma('vm:prefer-inline')
+  _$$DbUnifediChatWithLastMessagePopulatedWrapperImplCopyWith<
+          _$DbUnifediChatWithLastMessagePopulatedWrapperImpl>
       get copyWith =>
-          __$DbUnifediChatWithLastMessagePopulatedWrapperCopyWithImpl<
-              _DbUnifediChatWithLastMessagePopulatedWrapper>(this, _$identity);
+          __$$DbUnifediChatWithLastMessagePopulatedWrapperImplCopyWithImpl<
+                  _$DbUnifediChatWithLastMessagePopulatedWrapperImpl>(
+              this, _$identity);
 }
 
 abstract class _DbUnifediChatWithLastMessagePopulatedWrapper
     extends DbUnifediChatWithLastMessagePopulatedWrapper {
   const factory _DbUnifediChatWithLastMessagePopulatedWrapper(
-          {required DbUnifediChatWithLastMessagePopulated
+          {required final DbUnifediChatWithLastMessagePopulated
               dbUnifediChatWithLastMessagePopulated}) =
-      _$_DbUnifediChatWithLastMessagePopulatedWrapper;
+      _$DbUnifediChatWithLastMessagePopulatedWrapperImpl;
   const _DbUnifediChatWithLastMessagePopulatedWrapper._() : super._();
 
   @override
@@ -544,25 +514,10 @@ abstract class _DbUnifediChatWithLastMessagePopulatedWrapper
       get dbUnifediChatWithLastMessagePopulated;
   @override
   @JsonKey(ignore: true)
-  _$DbUnifediChatWithLastMessagePopulatedWrapperCopyWith<
-          _DbUnifediChatWithLastMessagePopulatedWrapper>
+  _$$DbUnifediChatWithLastMessagePopulatedWrapperImplCopyWith<
+          _$DbUnifediChatWithLastMessagePopulatedWrapperImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$DbUnifediChatPopulatedWrapperTearOff {
-  const _$DbUnifediChatPopulatedWrapperTearOff();
-
-  _DbUnifediChatPopulatedWrapper call(
-      {required DbUnifediChatPopulated dbChatPopulated}) {
-    return _DbUnifediChatPopulatedWrapper(
-      dbChatPopulated: dbChatPopulated,
-    );
-  }
-}
-
-/// @nodoc
-const $DbUnifediChatPopulatedWrapper = _$DbUnifediChatPopulatedWrapperTearOff();
 
 /// @nodoc
 mixin _$DbUnifediChatPopulatedWrapper {
@@ -579,50 +534,57 @@ abstract class $DbUnifediChatPopulatedWrapperCopyWith<$Res> {
   factory $DbUnifediChatPopulatedWrapperCopyWith(
           DbUnifediChatPopulatedWrapper value,
           $Res Function(DbUnifediChatPopulatedWrapper) then) =
-      _$DbUnifediChatPopulatedWrapperCopyWithImpl<$Res>;
+      _$DbUnifediChatPopulatedWrapperCopyWithImpl<$Res,
+          DbUnifediChatPopulatedWrapper>;
+  @useResult
   $Res call({DbUnifediChatPopulated dbChatPopulated});
 
   $DbUnifediChatPopulatedCopyWith<$Res> get dbChatPopulated;
 }
 
 /// @nodoc
-class _$DbUnifediChatPopulatedWrapperCopyWithImpl<$Res>
+class _$DbUnifediChatPopulatedWrapperCopyWithImpl<$Res,
+        $Val extends DbUnifediChatPopulatedWrapper>
     implements $DbUnifediChatPopulatedWrapperCopyWith<$Res> {
   _$DbUnifediChatPopulatedWrapperCopyWithImpl(this._value, this._then);
 
-  final DbUnifediChatPopulatedWrapper _value;
   // ignore: unused_field
-  final $Res Function(DbUnifediChatPopulatedWrapper) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dbChatPopulated = freezed,
+    Object? dbChatPopulated = null,
   }) {
     return _then(_value.copyWith(
-      dbChatPopulated: dbChatPopulated == freezed
+      dbChatPopulated: null == dbChatPopulated
           ? _value.dbChatPopulated
           : dbChatPopulated // ignore: cast_nullable_to_non_nullable
               as DbUnifediChatPopulated,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $DbUnifediChatPopulatedCopyWith<$Res> get dbChatPopulated {
     return $DbUnifediChatPopulatedCopyWith<$Res>(_value.dbChatPopulated,
         (value) {
-      return _then(_value.copyWith(dbChatPopulated: value));
+      return _then(_value.copyWith(dbChatPopulated: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$DbUnifediChatPopulatedWrapperCopyWith<$Res>
+abstract class _$$DbUnifediChatPopulatedWrapperImplCopyWith<$Res>
     implements $DbUnifediChatPopulatedWrapperCopyWith<$Res> {
-  factory _$DbUnifediChatPopulatedWrapperCopyWith(
-          _DbUnifediChatPopulatedWrapper value,
-          $Res Function(_DbUnifediChatPopulatedWrapper) then) =
-      __$DbUnifediChatPopulatedWrapperCopyWithImpl<$Res>;
+  factory _$$DbUnifediChatPopulatedWrapperImplCopyWith(
+          _$DbUnifediChatPopulatedWrapperImpl value,
+          $Res Function(_$DbUnifediChatPopulatedWrapperImpl) then) =
+      __$$DbUnifediChatPopulatedWrapperImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({DbUnifediChatPopulated dbChatPopulated});
 
   @override
@@ -630,24 +592,22 @@ abstract class _$DbUnifediChatPopulatedWrapperCopyWith<$Res>
 }
 
 /// @nodoc
-class __$DbUnifediChatPopulatedWrapperCopyWithImpl<$Res>
-    extends _$DbUnifediChatPopulatedWrapperCopyWithImpl<$Res>
-    implements _$DbUnifediChatPopulatedWrapperCopyWith<$Res> {
-  __$DbUnifediChatPopulatedWrapperCopyWithImpl(
-      _DbUnifediChatPopulatedWrapper _value,
-      $Res Function(_DbUnifediChatPopulatedWrapper) _then)
-      : super(_value, (v) => _then(v as _DbUnifediChatPopulatedWrapper));
+class __$$DbUnifediChatPopulatedWrapperImplCopyWithImpl<$Res>
+    extends _$DbUnifediChatPopulatedWrapperCopyWithImpl<$Res,
+        _$DbUnifediChatPopulatedWrapperImpl>
+    implements _$$DbUnifediChatPopulatedWrapperImplCopyWith<$Res> {
+  __$$DbUnifediChatPopulatedWrapperImplCopyWithImpl(
+      _$DbUnifediChatPopulatedWrapperImpl _value,
+      $Res Function(_$DbUnifediChatPopulatedWrapperImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _DbUnifediChatPopulatedWrapper get _value =>
-      super._value as _DbUnifediChatPopulatedWrapper;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dbChatPopulated = freezed,
+    Object? dbChatPopulated = null,
   }) {
-    return _then(_DbUnifediChatPopulatedWrapper(
-      dbChatPopulated: dbChatPopulated == freezed
+    return _then(_$DbUnifediChatPopulatedWrapperImpl(
+      dbChatPopulated: null == dbChatPopulated
           ? _value.dbChatPopulated
           : dbChatPopulated // ignore: cast_nullable_to_non_nullable
               as DbUnifediChatPopulated,
@@ -657,8 +617,9 @@ class __$DbUnifediChatPopulatedWrapperCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DbUnifediChatPopulatedWrapper extends _DbUnifediChatPopulatedWrapper {
-  const _$_DbUnifediChatPopulatedWrapper({required this.dbChatPopulated})
+class _$DbUnifediChatPopulatedWrapperImpl
+    extends _DbUnifediChatPopulatedWrapper {
+  const _$DbUnifediChatPopulatedWrapperImpl({required this.dbChatPopulated})
       : super._();
 
   @override
@@ -670,10 +631,10 @@ class _$_DbUnifediChatPopulatedWrapper extends _DbUnifediChatPopulatedWrapper {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DbUnifediChatPopulatedWrapper &&
+            other is _$DbUnifediChatPopulatedWrapperImpl &&
             (identical(other.dbChatPopulated, dbChatPopulated) ||
                 other.dbChatPopulated == dbChatPopulated));
   }
@@ -683,22 +644,25 @@ class _$_DbUnifediChatPopulatedWrapper extends _DbUnifediChatPopulatedWrapper {
 
   @JsonKey(ignore: true)
   @override
-  _$DbUnifediChatPopulatedWrapperCopyWith<_DbUnifediChatPopulatedWrapper>
-      get copyWith => __$DbUnifediChatPopulatedWrapperCopyWithImpl<
-          _DbUnifediChatPopulatedWrapper>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DbUnifediChatPopulatedWrapperImplCopyWith<
+          _$DbUnifediChatPopulatedWrapperImpl>
+      get copyWith => __$$DbUnifediChatPopulatedWrapperImplCopyWithImpl<
+          _$DbUnifediChatPopulatedWrapperImpl>(this, _$identity);
 }
 
 abstract class _DbUnifediChatPopulatedWrapper
     extends DbUnifediChatPopulatedWrapper {
   const factory _DbUnifediChatPopulatedWrapper(
-          {required DbUnifediChatPopulated dbChatPopulated}) =
-      _$_DbUnifediChatPopulatedWrapper;
+          {required final DbUnifediChatPopulated dbChatPopulated}) =
+      _$DbUnifediChatPopulatedWrapperImpl;
   const _DbUnifediChatPopulatedWrapper._() : super._();
 
   @override
   DbUnifediChatPopulated get dbChatPopulated;
   @override
   @JsonKey(ignore: true)
-  _$DbUnifediChatPopulatedWrapperCopyWith<_DbUnifediChatPopulatedWrapper>
+  _$$DbUnifediChatPopulatedWrapperImplCopyWith<
+          _$DbUnifediChatPopulatedWrapperImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

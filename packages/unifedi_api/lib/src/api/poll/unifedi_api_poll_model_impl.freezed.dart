@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_poll_model_impl.dart';
 
@@ -11,46 +12,11 @@ part of 'unifedi_api_poll_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiPoll _$UnifediApiPollFromJson(Map<String, dynamic> json) {
   return _UnifediApiPoll.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiPollTearOff {
-  const _$UnifediApiPollTearOff();
-
-  _UnifediApiPoll call(
-      {@HiveField(0) required bool expired,
-      @HiveField(1) @JsonKey(name: 'expires_at') required DateTime? expiresAt,
-      @HiveField(2) required String? id,
-      @HiveField(3) required bool multiple,
-      @HiveField(4) required List<UnifediApiPollOption> options,
-      @HiveField(5) @JsonKey(name: 'own_votes') required List<int>? ownVotes,
-      @HiveField(6) required bool? voted,
-      @HiveField(7) @JsonKey(name: 'voters_count') required int? votersCount,
-      @HiveField(8) @JsonKey(name: 'votes_count') required int? votesCount}) {
-    return _UnifediApiPoll(
-      expired: expired,
-      expiresAt: expiresAt,
-      id: id,
-      multiple: multiple,
-      options: options,
-      ownVotes: ownVotes,
-      voted: voted,
-      votersCount: votersCount,
-      votesCount: votesCount,
-    );
-  }
-
-  UnifediApiPoll fromJson(Map<String, Object?> json) {
-    return UnifediApiPoll.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiPoll = _$UnifediApiPollTearOff();
 
 /// @nodoc
 mixin _$UnifediApiPoll {
@@ -87,7 +53,8 @@ mixin _$UnifediApiPoll {
 abstract class $UnifediApiPollCopyWith<$Res> {
   factory $UnifediApiPollCopyWith(
           UnifediApiPoll value, $Res Function(UnifediApiPoll) then) =
-      _$UnifediApiPollCopyWithImpl<$Res>;
+      _$UnifediApiPollCopyWithImpl<$Res, UnifediApiPoll>;
+  @useResult
   $Res call(
       {@HiveField(0) bool expired,
       @HiveField(1) @JsonKey(name: 'expires_at') DateTime? expiresAt,
@@ -101,74 +68,77 @@ abstract class $UnifediApiPollCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UnifediApiPollCopyWithImpl<$Res>
+class _$UnifediApiPollCopyWithImpl<$Res, $Val extends UnifediApiPoll>
     implements $UnifediApiPollCopyWith<$Res> {
   _$UnifediApiPollCopyWithImpl(this._value, this._then);
 
-  final UnifediApiPoll _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiPoll) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? expired = freezed,
+    Object? expired = null,
     Object? expiresAt = freezed,
     Object? id = freezed,
-    Object? multiple = freezed,
-    Object? options = freezed,
+    Object? multiple = null,
+    Object? options = null,
     Object? ownVotes = freezed,
     Object? voted = freezed,
     Object? votersCount = freezed,
     Object? votesCount = freezed,
   }) {
     return _then(_value.copyWith(
-      expired: expired == freezed
+      expired: null == expired
           ? _value.expired
           : expired // ignore: cast_nullable_to_non_nullable
               as bool,
-      expiresAt: expiresAt == freezed
+      expiresAt: freezed == expiresAt
           ? _value.expiresAt
           : expiresAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      id: id == freezed
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String?,
-      multiple: multiple == freezed
+      multiple: null == multiple
           ? _value.multiple
           : multiple // ignore: cast_nullable_to_non_nullable
               as bool,
-      options: options == freezed
+      options: null == options
           ? _value.options
           : options // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiPollOption>,
-      ownVotes: ownVotes == freezed
+      ownVotes: freezed == ownVotes
           ? _value.ownVotes
           : ownVotes // ignore: cast_nullable_to_non_nullable
               as List<int>?,
-      voted: voted == freezed
+      voted: freezed == voted
           ? _value.voted
           : voted // ignore: cast_nullable_to_non_nullable
               as bool?,
-      votersCount: votersCount == freezed
+      votersCount: freezed == votersCount
           ? _value.votersCount
           : votersCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      votesCount: votesCount == freezed
+      votesCount: freezed == votesCount
           ? _value.votesCount
           : votesCount // ignore: cast_nullable_to_non_nullable
               as int?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiPollCopyWith<$Res>
+abstract class _$$UnifediApiPollImplCopyWith<$Res>
     implements $UnifediApiPollCopyWith<$Res> {
-  factory _$UnifediApiPollCopyWith(
-          _UnifediApiPoll value, $Res Function(_UnifediApiPoll) then) =
-      __$UnifediApiPollCopyWithImpl<$Res>;
+  factory _$$UnifediApiPollImplCopyWith(_$UnifediApiPollImpl value,
+          $Res Function(_$UnifediApiPollImpl) then) =
+      __$$UnifediApiPollImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) bool expired,
       @HiveField(1) @JsonKey(name: 'expires_at') DateTime? expiresAt,
@@ -182,62 +152,60 @@ abstract class _$UnifediApiPollCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiPollCopyWithImpl<$Res>
-    extends _$UnifediApiPollCopyWithImpl<$Res>
-    implements _$UnifediApiPollCopyWith<$Res> {
-  __$UnifediApiPollCopyWithImpl(
-      _UnifediApiPoll _value, $Res Function(_UnifediApiPoll) _then)
-      : super(_value, (v) => _then(v as _UnifediApiPoll));
+class __$$UnifediApiPollImplCopyWithImpl<$Res>
+    extends _$UnifediApiPollCopyWithImpl<$Res, _$UnifediApiPollImpl>
+    implements _$$UnifediApiPollImplCopyWith<$Res> {
+  __$$UnifediApiPollImplCopyWithImpl(
+      _$UnifediApiPollImpl _value, $Res Function(_$UnifediApiPollImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiPoll get _value => super._value as _UnifediApiPoll;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? expired = freezed,
+    Object? expired = null,
     Object? expiresAt = freezed,
     Object? id = freezed,
-    Object? multiple = freezed,
-    Object? options = freezed,
+    Object? multiple = null,
+    Object? options = null,
     Object? ownVotes = freezed,
     Object? voted = freezed,
     Object? votersCount = freezed,
     Object? votesCount = freezed,
   }) {
-    return _then(_UnifediApiPoll(
-      expired: expired == freezed
+    return _then(_$UnifediApiPollImpl(
+      expired: null == expired
           ? _value.expired
           : expired // ignore: cast_nullable_to_non_nullable
               as bool,
-      expiresAt: expiresAt == freezed
+      expiresAt: freezed == expiresAt
           ? _value.expiresAt
           : expiresAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      id: id == freezed
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String?,
-      multiple: multiple == freezed
+      multiple: null == multiple
           ? _value.multiple
           : multiple // ignore: cast_nullable_to_non_nullable
               as bool,
-      options: options == freezed
-          ? _value.options
+      options: null == options
+          ? _value._options
           : options // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiPollOption>,
-      ownVotes: ownVotes == freezed
-          ? _value.ownVotes
+      ownVotes: freezed == ownVotes
+          ? _value._ownVotes
           : ownVotes // ignore: cast_nullable_to_non_nullable
               as List<int>?,
-      voted: voted == freezed
+      voted: freezed == voted
           ? _value.voted
           : voted // ignore: cast_nullable_to_non_nullable
               as bool?,
-      votersCount: votersCount == freezed
+      votersCount: freezed == votersCount
           ? _value.votersCount
           : votersCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      votesCount: votesCount == freezed
+      votesCount: freezed == votesCount
           ? _value.votesCount
           : votesCount // ignore: cast_nullable_to_non_nullable
               as int?,
@@ -247,20 +215,24 @@ class __$UnifediApiPollCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiPoll implements _UnifediApiPoll {
-  const _$_UnifediApiPoll(
+class _$UnifediApiPollImpl implements _UnifediApiPoll {
+  const _$UnifediApiPollImpl(
       {@HiveField(0) required this.expired,
       @HiveField(1) @JsonKey(name: 'expires_at') required this.expiresAt,
       @HiveField(2) required this.id,
       @HiveField(3) required this.multiple,
-      @HiveField(4) required this.options,
-      @HiveField(5) @JsonKey(name: 'own_votes') required this.ownVotes,
+      @HiveField(4) required final List<UnifediApiPollOption> options,
+      @HiveField(5)
+      @JsonKey(name: 'own_votes')
+      required final List<int>? ownVotes,
       @HiveField(6) required this.voted,
       @HiveField(7) @JsonKey(name: 'voters_count') required this.votersCount,
-      @HiveField(8) @JsonKey(name: 'votes_count') required this.votesCount});
+      @HiveField(8) @JsonKey(name: 'votes_count') required this.votesCount})
+      : _options = options,
+        _ownVotes = ownVotes;
 
-  factory _$_UnifediApiPoll.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiPollFromJson(json);
+  factory _$UnifediApiPollImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiPollImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -275,13 +247,27 @@ class _$_UnifediApiPoll implements _UnifediApiPoll {
   @override
   @HiveField(3)
   final bool multiple;
+  final List<UnifediApiPollOption> _options;
   @override
   @HiveField(4)
-  final List<UnifediApiPollOption> options;
+  List<UnifediApiPollOption> get options {
+    if (_options is EqualUnmodifiableListView) return _options;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_options);
+  }
+
+  final List<int>? _ownVotes;
   @override
   @HiveField(5)
   @JsonKey(name: 'own_votes')
-  final List<int>? ownVotes;
+  List<int>? get ownVotes {
+    final value = _ownVotes;
+    if (value == null) return null;
+    if (_ownVotes is EqualUnmodifiableListView) return _ownVotes;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(6)
   final bool? voted;
@@ -300,18 +286,18 @@ class _$_UnifediApiPoll implements _UnifediApiPoll {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiPoll &&
+            other is _$UnifediApiPollImpl &&
             (identical(other.expired, expired) || other.expired == expired) &&
             (identical(other.expiresAt, expiresAt) ||
                 other.expiresAt == expiresAt) &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.multiple, multiple) ||
                 other.multiple == multiple) &&
-            const DeepCollectionEquality().equals(other.options, options) &&
-            const DeepCollectionEquality().equals(other.ownVotes, ownVotes) &&
+            const DeepCollectionEquality().equals(other._options, _options) &&
+            const DeepCollectionEquality().equals(other._ownVotes, _ownVotes) &&
             (identical(other.voted, voted) || other.voted == voted) &&
             (identical(other.votersCount, votersCount) ||
                 other.votersCount == votersCount) &&
@@ -319,6 +305,7 @@ class _$_UnifediApiPoll implements _UnifediApiPoll {
                 other.votesCount == votesCount));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -326,50 +313,49 @@ class _$_UnifediApiPoll implements _UnifediApiPoll {
       expiresAt,
       id,
       multiple,
-      const DeepCollectionEquality().hash(options),
-      const DeepCollectionEquality().hash(ownVotes),
+      const DeepCollectionEquality().hash(_options),
+      const DeepCollectionEquality().hash(_ownVotes),
       voted,
       votersCount,
       votesCount);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiPollCopyWith<_UnifediApiPoll> get copyWith =>
-      __$UnifediApiPollCopyWithImpl<_UnifediApiPoll>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiPollImplCopyWith<_$UnifediApiPollImpl> get copyWith =>
+      __$$UnifediApiPollImplCopyWithImpl<_$UnifediApiPollImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiPollToJson(this);
+    return _$$UnifediApiPollImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiPoll implements UnifediApiPoll {
   const factory _UnifediApiPoll(
-      {@HiveField(0)
-          required bool expired,
+      {@HiveField(0) required final bool expired,
       @HiveField(1)
       @JsonKey(name: 'expires_at')
-          required DateTime? expiresAt,
-      @HiveField(2)
-          required String? id,
-      @HiveField(3)
-          required bool multiple,
-      @HiveField(4)
-          required List<UnifediApiPollOption> options,
+      required final DateTime? expiresAt,
+      @HiveField(2) required final String? id,
+      @HiveField(3) required final bool multiple,
+      @HiveField(4) required final List<UnifediApiPollOption> options,
       @HiveField(5)
       @JsonKey(name: 'own_votes')
-          required List<int>? ownVotes,
-      @HiveField(6)
-          required bool? voted,
+      required final List<int>? ownVotes,
+      @HiveField(6) required final bool? voted,
       @HiveField(7)
       @JsonKey(name: 'voters_count')
-          required int? votersCount,
+      required final int? votersCount,
       @HiveField(8)
       @JsonKey(name: 'votes_count')
-          required int? votesCount}) = _$_UnifediApiPoll;
+      required final int? votesCount}) = _$UnifediApiPollImpl;
 
   factory _UnifediApiPoll.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiPoll.fromJson;
+      _$UnifediApiPollImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -404,6 +390,6 @@ abstract class _UnifediApiPoll implements UnifediApiPoll {
   int? get votesCount;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiPollCopyWith<_UnifediApiPoll> get copyWith =>
+  _$$UnifediApiPollImplCopyWith<_$UnifediApiPollImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

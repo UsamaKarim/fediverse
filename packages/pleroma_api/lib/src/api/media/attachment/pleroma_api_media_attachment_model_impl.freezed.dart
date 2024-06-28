@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_media_attachment_model_impl.dart';
 
@@ -11,49 +12,12 @@ part of 'pleroma_api_media_attachment_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiMediaAttachment _$PleromaApiMediaAttachmentFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiMediaAttachment.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiMediaAttachmentTearOff {
-  const _$PleromaApiMediaAttachmentTearOff();
-
-  _PleromaApiMediaAttachment call(
-      {@HiveField(0) required String? description,
-      @HiveField(1) required String id,
-      @HiveField(2) @JsonKey(name: 'preview_url') required String? previewUrl,
-      @HiveField(3) @JsonKey(name: 'remote_url') required String? remoteUrl,
-      @HiveField(5) @JsonKey(name: 'text_url') required String? textUrl,
-      @HiveField(6) @JsonKey(name: 'type') required String type,
-      @HiveField(7) required String? url,
-      @HiveField(8) required String? blurhash,
-      @HiveField(9) required PleromaApiMediaAttachmentMeta? meta,
-      @HiveField(10) required PleromaApiMediaAttachmentPleromaPart? pleroma}) {
-    return _PleromaApiMediaAttachment(
-      description: description,
-      id: id,
-      previewUrl: previewUrl,
-      remoteUrl: remoteUrl,
-      textUrl: textUrl,
-      type: type,
-      url: url,
-      blurhash: blurhash,
-      meta: meta,
-      pleroma: pleroma,
-    );
-  }
-
-  PleromaApiMediaAttachment fromJson(Map<String, Object?> json) {
-    return PleromaApiMediaAttachment.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiMediaAttachment = _$PleromaApiMediaAttachmentTearOff();
 
 /// @nodoc
 mixin _$PleromaApiMediaAttachment {
@@ -93,7 +57,8 @@ mixin _$PleromaApiMediaAttachment {
 abstract class $PleromaApiMediaAttachmentCopyWith<$Res> {
   factory $PleromaApiMediaAttachmentCopyWith(PleromaApiMediaAttachment value,
           $Res Function(PleromaApiMediaAttachment) then) =
-      _$PleromaApiMediaAttachmentCopyWithImpl<$Res>;
+      _$PleromaApiMediaAttachmentCopyWithImpl<$Res, PleromaApiMediaAttachment>;
+  @useResult
   $Res call(
       {@HiveField(0) String? description,
       @HiveField(1) String id,
@@ -111,83 +76,88 @@ abstract class $PleromaApiMediaAttachmentCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiMediaAttachmentCopyWithImpl<$Res>
+class _$PleromaApiMediaAttachmentCopyWithImpl<$Res,
+        $Val extends PleromaApiMediaAttachment>
     implements $PleromaApiMediaAttachmentCopyWith<$Res> {
   _$PleromaApiMediaAttachmentCopyWithImpl(this._value, this._then);
 
-  final PleromaApiMediaAttachment _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiMediaAttachment) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? description = freezed,
-    Object? id = freezed,
+    Object? id = null,
     Object? previewUrl = freezed,
     Object? remoteUrl = freezed,
     Object? textUrl = freezed,
-    Object? type = freezed,
+    Object? type = null,
     Object? url = freezed,
     Object? blurhash = freezed,
     Object? meta = freezed,
     Object? pleroma = freezed,
   }) {
     return _then(_value.copyWith(
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      previewUrl: previewUrl == freezed
+      previewUrl: freezed == previewUrl
           ? _value.previewUrl
           : previewUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      remoteUrl: remoteUrl == freezed
+      remoteUrl: freezed == remoteUrl
           ? _value.remoteUrl
           : remoteUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      textUrl: textUrl == freezed
+      textUrl: freezed == textUrl
           ? _value.textUrl
           : textUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
-      blurhash: blurhash == freezed
+      blurhash: freezed == blurhash
           ? _value.blurhash
           : blurhash // ignore: cast_nullable_to_non_nullable
               as String?,
-      meta: meta == freezed
+      meta: freezed == meta
           ? _value.meta
           : meta // ignore: cast_nullable_to_non_nullable
               as PleromaApiMediaAttachmentMeta?,
-      pleroma: pleroma == freezed
+      pleroma: freezed == pleroma
           ? _value.pleroma
           : pleroma // ignore: cast_nullable_to_non_nullable
               as PleromaApiMediaAttachmentPleromaPart?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiMediaAttachmentMetaCopyWith<$Res>? get meta {
     if (_value.meta == null) {
       return null;
     }
 
     return $PleromaApiMediaAttachmentMetaCopyWith<$Res>(_value.meta!, (value) {
-      return _then(_value.copyWith(meta: value));
+      return _then(_value.copyWith(meta: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiMediaAttachmentPleromaPartCopyWith<$Res>? get pleroma {
     if (_value.pleroma == null) {
       return null;
@@ -195,18 +165,20 @@ class _$PleromaApiMediaAttachmentCopyWithImpl<$Res>
 
     return $PleromaApiMediaAttachmentPleromaPartCopyWith<$Res>(_value.pleroma!,
         (value) {
-      return _then(_value.copyWith(pleroma: value));
+      return _then(_value.copyWith(pleroma: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiMediaAttachmentCopyWith<$Res>
+abstract class _$$PleromaApiMediaAttachmentImplCopyWith<$Res>
     implements $PleromaApiMediaAttachmentCopyWith<$Res> {
-  factory _$PleromaApiMediaAttachmentCopyWith(_PleromaApiMediaAttachment value,
-          $Res Function(_PleromaApiMediaAttachment) then) =
-      __$PleromaApiMediaAttachmentCopyWithImpl<$Res>;
+  factory _$$PleromaApiMediaAttachmentImplCopyWith(
+          _$PleromaApiMediaAttachmentImpl value,
+          $Res Function(_$PleromaApiMediaAttachmentImpl) then) =
+      __$$PleromaApiMediaAttachmentImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) String? description,
       @HiveField(1) String id,
@@ -226,68 +198,67 @@ abstract class _$PleromaApiMediaAttachmentCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiMediaAttachmentCopyWithImpl<$Res>
-    extends _$PleromaApiMediaAttachmentCopyWithImpl<$Res>
-    implements _$PleromaApiMediaAttachmentCopyWith<$Res> {
-  __$PleromaApiMediaAttachmentCopyWithImpl(_PleromaApiMediaAttachment _value,
-      $Res Function(_PleromaApiMediaAttachment) _then)
-      : super(_value, (v) => _then(v as _PleromaApiMediaAttachment));
+class __$$PleromaApiMediaAttachmentImplCopyWithImpl<$Res>
+    extends _$PleromaApiMediaAttachmentCopyWithImpl<$Res,
+        _$PleromaApiMediaAttachmentImpl>
+    implements _$$PleromaApiMediaAttachmentImplCopyWith<$Res> {
+  __$$PleromaApiMediaAttachmentImplCopyWithImpl(
+      _$PleromaApiMediaAttachmentImpl _value,
+      $Res Function(_$PleromaApiMediaAttachmentImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiMediaAttachment get _value =>
-      super._value as _PleromaApiMediaAttachment;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? description = freezed,
-    Object? id = freezed,
+    Object? id = null,
     Object? previewUrl = freezed,
     Object? remoteUrl = freezed,
     Object? textUrl = freezed,
-    Object? type = freezed,
+    Object? type = null,
     Object? url = freezed,
     Object? blurhash = freezed,
     Object? meta = freezed,
     Object? pleroma = freezed,
   }) {
-    return _then(_PleromaApiMediaAttachment(
-      description: description == freezed
+    return _then(_$PleromaApiMediaAttachmentImpl(
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      previewUrl: previewUrl == freezed
+      previewUrl: freezed == previewUrl
           ? _value.previewUrl
           : previewUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      remoteUrl: remoteUrl == freezed
+      remoteUrl: freezed == remoteUrl
           ? _value.remoteUrl
           : remoteUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      textUrl: textUrl == freezed
+      textUrl: freezed == textUrl
           ? _value.textUrl
           : textUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
-      blurhash: blurhash == freezed
+      blurhash: freezed == blurhash
           ? _value.blurhash
           : blurhash // ignore: cast_nullable_to_non_nullable
               as String?,
-      meta: meta == freezed
+      meta: freezed == meta
           ? _value.meta
           : meta // ignore: cast_nullable_to_non_nullable
               as PleromaApiMediaAttachmentMeta?,
-      pleroma: pleroma == freezed
+      pleroma: freezed == pleroma
           ? _value.pleroma
           : pleroma // ignore: cast_nullable_to_non_nullable
               as PleromaApiMediaAttachmentPleromaPart?,
@@ -297,8 +268,8 @@ class __$PleromaApiMediaAttachmentCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiMediaAttachment implements _PleromaApiMediaAttachment {
-  const _$_PleromaApiMediaAttachment(
+class _$PleromaApiMediaAttachmentImpl implements _PleromaApiMediaAttachment {
+  const _$PleromaApiMediaAttachmentImpl(
       {@HiveField(0) required this.description,
       @HiveField(1) required this.id,
       @HiveField(2) @JsonKey(name: 'preview_url') required this.previewUrl,
@@ -310,8 +281,8 @@ class _$_PleromaApiMediaAttachment implements _PleromaApiMediaAttachment {
       @HiveField(9) required this.meta,
       @HiveField(10) required this.pleroma});
 
-  factory _$_PleromaApiMediaAttachment.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiMediaAttachmentFromJson(json);
+  factory _$PleromaApiMediaAttachmentImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiMediaAttachmentImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -354,10 +325,10 @@ class _$_PleromaApiMediaAttachment implements _PleromaApiMediaAttachment {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiMediaAttachment &&
+            other is _$PleromaApiMediaAttachmentImpl &&
             (identical(other.description, description) ||
                 other.description == description) &&
             (identical(other.id, id) || other.id == id) &&
@@ -374,53 +345,47 @@ class _$_PleromaApiMediaAttachment implements _PleromaApiMediaAttachment {
             (identical(other.pleroma, pleroma) || other.pleroma == pleroma));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, description, id, previewUrl,
       remoteUrl, textUrl, type, url, blurhash, meta, pleroma);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiMediaAttachmentCopyWith<_PleromaApiMediaAttachment>
-      get copyWith =>
-          __$PleromaApiMediaAttachmentCopyWithImpl<_PleromaApiMediaAttachment>(
-              this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiMediaAttachmentImplCopyWith<_$PleromaApiMediaAttachmentImpl>
+      get copyWith => __$$PleromaApiMediaAttachmentImplCopyWithImpl<
+          _$PleromaApiMediaAttachmentImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiMediaAttachmentToJson(this);
+    return _$$PleromaApiMediaAttachmentImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiMediaAttachment implements PleromaApiMediaAttachment {
   const factory _PleromaApiMediaAttachment(
-          {@HiveField(0)
-              required String? description,
-          @HiveField(1)
-              required String id,
-          @HiveField(2)
-          @JsonKey(name: 'preview_url')
-              required String? previewUrl,
-          @HiveField(3)
-          @JsonKey(name: 'remote_url')
-              required String? remoteUrl,
-          @HiveField(5)
-          @JsonKey(name: 'text_url')
-              required String? textUrl,
-          @HiveField(6)
-          @JsonKey(name: 'type')
-              required String type,
-          @HiveField(7)
-              required String? url,
-          @HiveField(8)
-              required String? blurhash,
-          @HiveField(9)
-              required PleromaApiMediaAttachmentMeta? meta,
-          @HiveField(10)
-              required PleromaApiMediaAttachmentPleromaPart? pleroma}) =
-      _$_PleromaApiMediaAttachment;
+      {@HiveField(0) required final String? description,
+      @HiveField(1) required final String id,
+      @HiveField(2)
+      @JsonKey(name: 'preview_url')
+      required final String? previewUrl,
+      @HiveField(3)
+      @JsonKey(name: 'remote_url')
+      required final String? remoteUrl,
+      @HiveField(5) @JsonKey(name: 'text_url') required final String? textUrl,
+      @HiveField(6) @JsonKey(name: 'type') required final String type,
+      @HiveField(7) required final String? url,
+      @HiveField(8) required final String? blurhash,
+      @HiveField(9) required final PleromaApiMediaAttachmentMeta? meta,
+      @HiveField(10)
+      required final PleromaApiMediaAttachmentPleromaPart?
+          pleroma}) = _$PleromaApiMediaAttachmentImpl;
 
   factory _PleromaApiMediaAttachment.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiMediaAttachment.fromJson;
+      _$PleromaApiMediaAttachmentImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -458,7 +423,7 @@ abstract class _PleromaApiMediaAttachment implements PleromaApiMediaAttachment {
   PleromaApiMediaAttachmentPleromaPart? get pleroma;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiMediaAttachmentCopyWith<_PleromaApiMediaAttachment>
+  _$$PleromaApiMediaAttachmentImplCopyWith<_$PleromaApiMediaAttachmentImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -466,26 +431,6 @@ PleromaApiMediaAttachmentPleromaPart
     _$PleromaApiMediaAttachmentPleromaPartFromJson(Map<String, dynamic> json) {
   return _PleromaApiMediaAttachmentPleromaPart.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiMediaAttachmentPleromaPartTearOff {
-  const _$PleromaApiMediaAttachmentPleromaPartTearOff();
-
-  _PleromaApiMediaAttachmentPleromaPart call(
-      {@HiveField(0) @JsonKey(name: 'mime_type') required String? mimeType}) {
-    return _PleromaApiMediaAttachmentPleromaPart(
-      mimeType: mimeType,
-    );
-  }
-
-  PleromaApiMediaAttachmentPleromaPart fromJson(Map<String, Object?> json) {
-    return PleromaApiMediaAttachmentPleromaPart.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiMediaAttachmentPleromaPart =
-    _$PleromaApiMediaAttachmentPleromaPartTearOff();
 
 /// @nodoc
 mixin _$PleromaApiMediaAttachmentPleromaPart {
@@ -505,62 +450,66 @@ abstract class $PleromaApiMediaAttachmentPleromaPartCopyWith<$Res> {
   factory $PleromaApiMediaAttachmentPleromaPartCopyWith(
           PleromaApiMediaAttachmentPleromaPart value,
           $Res Function(PleromaApiMediaAttachmentPleromaPart) then) =
-      _$PleromaApiMediaAttachmentPleromaPartCopyWithImpl<$Res>;
+      _$PleromaApiMediaAttachmentPleromaPartCopyWithImpl<$Res,
+          PleromaApiMediaAttachmentPleromaPart>;
+  @useResult
   $Res call({@HiveField(0) @JsonKey(name: 'mime_type') String? mimeType});
 }
 
 /// @nodoc
-class _$PleromaApiMediaAttachmentPleromaPartCopyWithImpl<$Res>
+class _$PleromaApiMediaAttachmentPleromaPartCopyWithImpl<$Res,
+        $Val extends PleromaApiMediaAttachmentPleromaPart>
     implements $PleromaApiMediaAttachmentPleromaPartCopyWith<$Res> {
   _$PleromaApiMediaAttachmentPleromaPartCopyWithImpl(this._value, this._then);
 
-  final PleromaApiMediaAttachmentPleromaPart _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiMediaAttachmentPleromaPart) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? mimeType = freezed,
   }) {
     return _then(_value.copyWith(
-      mimeType: mimeType == freezed
+      mimeType: freezed == mimeType
           ? _value.mimeType
           : mimeType // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiMediaAttachmentPleromaPartCopyWith<$Res>
+abstract class _$$PleromaApiMediaAttachmentPleromaPartImplCopyWith<$Res>
     implements $PleromaApiMediaAttachmentPleromaPartCopyWith<$Res> {
-  factory _$PleromaApiMediaAttachmentPleromaPartCopyWith(
-          _PleromaApiMediaAttachmentPleromaPart value,
-          $Res Function(_PleromaApiMediaAttachmentPleromaPart) then) =
-      __$PleromaApiMediaAttachmentPleromaPartCopyWithImpl<$Res>;
+  factory _$$PleromaApiMediaAttachmentPleromaPartImplCopyWith(
+          _$PleromaApiMediaAttachmentPleromaPartImpl value,
+          $Res Function(_$PleromaApiMediaAttachmentPleromaPartImpl) then) =
+      __$$PleromaApiMediaAttachmentPleromaPartImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) @JsonKey(name: 'mime_type') String? mimeType});
 }
 
 /// @nodoc
-class __$PleromaApiMediaAttachmentPleromaPartCopyWithImpl<$Res>
-    extends _$PleromaApiMediaAttachmentPleromaPartCopyWithImpl<$Res>
-    implements _$PleromaApiMediaAttachmentPleromaPartCopyWith<$Res> {
-  __$PleromaApiMediaAttachmentPleromaPartCopyWithImpl(
-      _PleromaApiMediaAttachmentPleromaPart _value,
-      $Res Function(_PleromaApiMediaAttachmentPleromaPart) _then)
-      : super(_value, (v) => _then(v as _PleromaApiMediaAttachmentPleromaPart));
+class __$$PleromaApiMediaAttachmentPleromaPartImplCopyWithImpl<$Res>
+    extends _$PleromaApiMediaAttachmentPleromaPartCopyWithImpl<$Res,
+        _$PleromaApiMediaAttachmentPleromaPartImpl>
+    implements _$$PleromaApiMediaAttachmentPleromaPartImplCopyWith<$Res> {
+  __$$PleromaApiMediaAttachmentPleromaPartImplCopyWithImpl(
+      _$PleromaApiMediaAttachmentPleromaPartImpl _value,
+      $Res Function(_$PleromaApiMediaAttachmentPleromaPartImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiMediaAttachmentPleromaPart get _value =>
-      super._value as _PleromaApiMediaAttachmentPleromaPart;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? mimeType = freezed,
   }) {
-    return _then(_PleromaApiMediaAttachmentPleromaPart(
-      mimeType: mimeType == freezed
+    return _then(_$PleromaApiMediaAttachmentPleromaPartImpl(
+      mimeType: freezed == mimeType
           ? _value.mimeType
           : mimeType // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -570,14 +519,14 @@ class __$PleromaApiMediaAttachmentPleromaPartCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiMediaAttachmentPleromaPart
+class _$PleromaApiMediaAttachmentPleromaPartImpl
     implements _PleromaApiMediaAttachmentPleromaPart {
-  const _$_PleromaApiMediaAttachmentPleromaPart(
+  const _$PleromaApiMediaAttachmentPleromaPartImpl(
       {@HiveField(0) @JsonKey(name: 'mime_type') required this.mimeType});
 
-  factory _$_PleromaApiMediaAttachmentPleromaPart.fromJson(
+  factory _$PleromaApiMediaAttachmentPleromaPartImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_PleromaApiMediaAttachmentPleromaPartFromJson(json);
+      _$$PleromaApiMediaAttachmentPleromaPartImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -590,40 +539,45 @@ class _$_PleromaApiMediaAttachmentPleromaPart
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiMediaAttachmentPleromaPart &&
+            other is _$PleromaApiMediaAttachmentPleromaPartImpl &&
             (identical(other.mimeType, mimeType) ||
                 other.mimeType == mimeType));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, mimeType);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiMediaAttachmentPleromaPartCopyWith<
-          _PleromaApiMediaAttachmentPleromaPart>
-      get copyWith => __$PleromaApiMediaAttachmentPleromaPartCopyWithImpl<
-          _PleromaApiMediaAttachmentPleromaPart>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiMediaAttachmentPleromaPartImplCopyWith<
+          _$PleromaApiMediaAttachmentPleromaPartImpl>
+      get copyWith => __$$PleromaApiMediaAttachmentPleromaPartImplCopyWithImpl<
+          _$PleromaApiMediaAttachmentPleromaPartImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiMediaAttachmentPleromaPartToJson(this);
+    return _$$PleromaApiMediaAttachmentPleromaPartImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiMediaAttachmentPleromaPart
     implements PleromaApiMediaAttachmentPleromaPart {
   const factory _PleromaApiMediaAttachmentPleromaPart(
-      {@HiveField(0)
-      @JsonKey(name: 'mime_type')
-          required String? mimeType}) = _$_PleromaApiMediaAttachmentPleromaPart;
+          {@HiveField(0)
+          @JsonKey(name: 'mime_type')
+          required final String? mimeType}) =
+      _$PleromaApiMediaAttachmentPleromaPartImpl;
 
   factory _PleromaApiMediaAttachmentPleromaPart.fromJson(
           Map<String, dynamic> json) =
-      _$_PleromaApiMediaAttachmentPleromaPart.fromJson;
+      _$PleromaApiMediaAttachmentPleromaPartImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -631,7 +585,7 @@ abstract class _PleromaApiMediaAttachmentPleromaPart
   String? get mimeType;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiMediaAttachmentPleromaPartCopyWith<
-          _PleromaApiMediaAttachmentPleromaPart>
+  _$$PleromaApiMediaAttachmentPleromaPartImplCopyWith<
+          _$PleromaApiMediaAttachmentPleromaPartImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

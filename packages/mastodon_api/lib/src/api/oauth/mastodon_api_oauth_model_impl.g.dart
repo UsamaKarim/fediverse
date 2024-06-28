@@ -47,15 +47,15 @@ class MastodonApiOAuthTokenAdapter extends TypeAdapter<MastodonApiOAuthToken> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiOAuthToken _$$_MastodonApiOAuthTokenFromJson(
+_$MastodonApiOAuthTokenImpl _$$MastodonApiOAuthTokenImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiOAuthToken(
+    _$MastodonApiOAuthTokenImpl(
       accessToken: json['access_token'] as String,
       tokenType: json['token_type'] as String,
     );
 
-Map<String, dynamic> _$$_MastodonApiOAuthTokenToJson(
-        _$_MastodonApiOAuthToken instance) =>
+Map<String, dynamic> _$$MastodonApiOAuthTokenImplToJson(
+        _$MastodonApiOAuthTokenImpl instance) =>
     <String, dynamic>{
       'access_token': instance.accessToken,
       'token_type': instance.tokenType,

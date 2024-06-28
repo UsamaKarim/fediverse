@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_login_model.dart';
 
@@ -11,28 +12,7 @@ part of 'mastodon_login_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$MastodonLoginCredentialsTearOff {
-  const _$MastodonLoginCredentialsTearOff();
-
-  _MastodonLoginCredentials call(
-      {required String instance,
-      required String user,
-      required String password,
-      required String scopes}) {
-    return _MastodonLoginCredentials(
-      instance: instance,
-      user: user,
-      password: password,
-      scopes: scopes,
-    );
-  }
-}
-
-/// @nodoc
-const $MastodonLoginCredentials = _$MastodonLoginCredentialsTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$MastodonLoginCredentials {
@@ -50,90 +30,95 @@ mixin _$MastodonLoginCredentials {
 abstract class $MastodonLoginCredentialsCopyWith<$Res> {
   factory $MastodonLoginCredentialsCopyWith(MastodonLoginCredentials value,
           $Res Function(MastodonLoginCredentials) then) =
-      _$MastodonLoginCredentialsCopyWithImpl<$Res>;
+      _$MastodonLoginCredentialsCopyWithImpl<$Res, MastodonLoginCredentials>;
+  @useResult
   $Res call({String instance, String user, String password, String scopes});
 }
 
 /// @nodoc
-class _$MastodonLoginCredentialsCopyWithImpl<$Res>
+class _$MastodonLoginCredentialsCopyWithImpl<$Res,
+        $Val extends MastodonLoginCredentials>
     implements $MastodonLoginCredentialsCopyWith<$Res> {
   _$MastodonLoginCredentialsCopyWithImpl(this._value, this._then);
 
-  final MastodonLoginCredentials _value;
   // ignore: unused_field
-  final $Res Function(MastodonLoginCredentials) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? instance = freezed,
-    Object? user = freezed,
-    Object? password = freezed,
-    Object? scopes = freezed,
+    Object? instance = null,
+    Object? user = null,
+    Object? password = null,
+    Object? scopes = null,
   }) {
     return _then(_value.copyWith(
-      instance: instance == freezed
+      instance: null == instance
           ? _value.instance
           : instance // ignore: cast_nullable_to_non_nullable
               as String,
-      user: user == freezed
+      user: null == user
           ? _value.user
           : user // ignore: cast_nullable_to_non_nullable
               as String,
-      password: password == freezed
+      password: null == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as String,
-      scopes: scopes == freezed
+      scopes: null == scopes
           ? _value.scopes
           : scopes // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonLoginCredentialsCopyWith<$Res>
+abstract class _$$MastodonLoginCredentialsImplCopyWith<$Res>
     implements $MastodonLoginCredentialsCopyWith<$Res> {
-  factory _$MastodonLoginCredentialsCopyWith(_MastodonLoginCredentials value,
-          $Res Function(_MastodonLoginCredentials) then) =
-      __$MastodonLoginCredentialsCopyWithImpl<$Res>;
+  factory _$$MastodonLoginCredentialsImplCopyWith(
+          _$MastodonLoginCredentialsImpl value,
+          $Res Function(_$MastodonLoginCredentialsImpl) then) =
+      __$$MastodonLoginCredentialsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String instance, String user, String password, String scopes});
 }
 
 /// @nodoc
-class __$MastodonLoginCredentialsCopyWithImpl<$Res>
-    extends _$MastodonLoginCredentialsCopyWithImpl<$Res>
-    implements _$MastodonLoginCredentialsCopyWith<$Res> {
-  __$MastodonLoginCredentialsCopyWithImpl(_MastodonLoginCredentials _value,
-      $Res Function(_MastodonLoginCredentials) _then)
-      : super(_value, (v) => _then(v as _MastodonLoginCredentials));
+class __$$MastodonLoginCredentialsImplCopyWithImpl<$Res>
+    extends _$MastodonLoginCredentialsCopyWithImpl<$Res,
+        _$MastodonLoginCredentialsImpl>
+    implements _$$MastodonLoginCredentialsImplCopyWith<$Res> {
+  __$$MastodonLoginCredentialsImplCopyWithImpl(
+      _$MastodonLoginCredentialsImpl _value,
+      $Res Function(_$MastodonLoginCredentialsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonLoginCredentials get _value =>
-      super._value as _MastodonLoginCredentials;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? instance = freezed,
-    Object? user = freezed,
-    Object? password = freezed,
-    Object? scopes = freezed,
+    Object? instance = null,
+    Object? user = null,
+    Object? password = null,
+    Object? scopes = null,
   }) {
-    return _then(_MastodonLoginCredentials(
-      instance: instance == freezed
+    return _then(_$MastodonLoginCredentialsImpl(
+      instance: null == instance
           ? _value.instance
           : instance // ignore: cast_nullable_to_non_nullable
               as String,
-      user: user == freezed
+      user: null == user
           ? _value.user
           : user // ignore: cast_nullable_to_non_nullable
               as String,
-      password: password == freezed
+      password: null == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as String,
-      scopes: scopes == freezed
+      scopes: null == scopes
           ? _value.scopes
           : scopes // ignore: cast_nullable_to_non_nullable
               as String,
@@ -143,8 +128,8 @@ class __$MastodonLoginCredentialsCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_MastodonLoginCredentials implements _MastodonLoginCredentials {
-  _$_MastodonLoginCredentials(
+class _$MastodonLoginCredentialsImpl implements _MastodonLoginCredentials {
+  _$MastodonLoginCredentialsImpl(
       {required this.instance,
       required this.user,
       required this.password,
@@ -165,10 +150,10 @@ class _$_MastodonLoginCredentials implements _MastodonLoginCredentials {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonLoginCredentials &&
+            other is _$MastodonLoginCredentialsImpl &&
             (identical(other.instance, instance) ||
                 other.instance == instance) &&
             (identical(other.user, user) || other.user == user) &&
@@ -183,17 +168,18 @@ class _$_MastodonLoginCredentials implements _MastodonLoginCredentials {
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonLoginCredentialsCopyWith<_MastodonLoginCredentials> get copyWith =>
-      __$MastodonLoginCredentialsCopyWithImpl<_MastodonLoginCredentials>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonLoginCredentialsImplCopyWith<_$MastodonLoginCredentialsImpl>
+      get copyWith => __$$MastodonLoginCredentialsImplCopyWithImpl<
+          _$MastodonLoginCredentialsImpl>(this, _$identity);
 }
 
 abstract class _MastodonLoginCredentials implements MastodonLoginCredentials {
   factory _MastodonLoginCredentials(
-      {required String instance,
-      required String user,
-      required String password,
-      required String scopes}) = _$_MastodonLoginCredentials;
+      {required final String instance,
+      required final String user,
+      required final String password,
+      required final String scopes}) = _$MastodonLoginCredentialsImpl;
 
   @override
   String get instance;
@@ -205,6 +191,6 @@ abstract class _MastodonLoginCredentials implements MastodonLoginCredentials {
   String get scopes;
   @override
   @JsonKey(ignore: true)
-  _$MastodonLoginCredentialsCopyWith<_MastodonLoginCredentials> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$MastodonLoginCredentialsImplCopyWith<_$MastodonLoginCredentialsImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

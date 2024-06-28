@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'account_model.dart';
 
@@ -11,21 +12,7 @@ part of 'account_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$DbAccountPopulatedTearOff {
-  const _$DbAccountPopulatedTearOff();
-
-  _DbAccountPopulated call({required DbAccount dbAccount}) {
-    return _DbAccountPopulated(
-      dbAccount: dbAccount,
-    );
-  }
-}
-
-/// @nodoc
-const $DbAccountPopulated = _$DbAccountPopulatedTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$DbAccountPopulated {
@@ -40,59 +27,61 @@ mixin _$DbAccountPopulated {
 abstract class $DbAccountPopulatedCopyWith<$Res> {
   factory $DbAccountPopulatedCopyWith(
           DbAccountPopulated value, $Res Function(DbAccountPopulated) then) =
-      _$DbAccountPopulatedCopyWithImpl<$Res>;
+      _$DbAccountPopulatedCopyWithImpl<$Res, DbAccountPopulated>;
+  @useResult
   $Res call({DbAccount dbAccount});
 }
 
 /// @nodoc
-class _$DbAccountPopulatedCopyWithImpl<$Res>
+class _$DbAccountPopulatedCopyWithImpl<$Res, $Val extends DbAccountPopulated>
     implements $DbAccountPopulatedCopyWith<$Res> {
   _$DbAccountPopulatedCopyWithImpl(this._value, this._then);
 
-  final DbAccountPopulated _value;
   // ignore: unused_field
-  final $Res Function(DbAccountPopulated) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? dbAccount = freezed,
   }) {
     return _then(_value.copyWith(
-      dbAccount: dbAccount == freezed
+      dbAccount: freezed == dbAccount
           ? _value.dbAccount
           : dbAccount // ignore: cast_nullable_to_non_nullable
               as DbAccount,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$DbAccountPopulatedCopyWith<$Res>
+abstract class _$$DbAccountPopulatedImplCopyWith<$Res>
     implements $DbAccountPopulatedCopyWith<$Res> {
-  factory _$DbAccountPopulatedCopyWith(
-          _DbAccountPopulated value, $Res Function(_DbAccountPopulated) then) =
-      __$DbAccountPopulatedCopyWithImpl<$Res>;
+  factory _$$DbAccountPopulatedImplCopyWith(_$DbAccountPopulatedImpl value,
+          $Res Function(_$DbAccountPopulatedImpl) then) =
+      __$$DbAccountPopulatedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({DbAccount dbAccount});
 }
 
 /// @nodoc
-class __$DbAccountPopulatedCopyWithImpl<$Res>
-    extends _$DbAccountPopulatedCopyWithImpl<$Res>
-    implements _$DbAccountPopulatedCopyWith<$Res> {
-  __$DbAccountPopulatedCopyWithImpl(
-      _DbAccountPopulated _value, $Res Function(_DbAccountPopulated) _then)
-      : super(_value, (v) => _then(v as _DbAccountPopulated));
+class __$$DbAccountPopulatedImplCopyWithImpl<$Res>
+    extends _$DbAccountPopulatedCopyWithImpl<$Res, _$DbAccountPopulatedImpl>
+    implements _$$DbAccountPopulatedImplCopyWith<$Res> {
+  __$$DbAccountPopulatedImplCopyWithImpl(_$DbAccountPopulatedImpl _value,
+      $Res Function(_$DbAccountPopulatedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _DbAccountPopulated get _value => super._value as _DbAccountPopulated;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? dbAccount = freezed,
   }) {
-    return _then(_DbAccountPopulated(
-      dbAccount: dbAccount == freezed
+    return _then(_$DbAccountPopulatedImpl(
+      dbAccount: freezed == dbAccount
           ? _value.dbAccount
           : dbAccount // ignore: cast_nullable_to_non_nullable
               as DbAccount,
@@ -102,8 +91,8 @@ class __$DbAccountPopulatedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DbAccountPopulated implements _DbAccountPopulated {
-  const _$_DbAccountPopulated({required this.dbAccount});
+class _$DbAccountPopulatedImpl implements _DbAccountPopulated {
+  const _$DbAccountPopulatedImpl({required this.dbAccount});
 
   @override
   final DbAccount dbAccount;
@@ -114,10 +103,10 @@ class _$_DbAccountPopulated implements _DbAccountPopulated {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DbAccountPopulated &&
+            other is _$DbAccountPopulatedImpl &&
             const DeepCollectionEquality().equals(other.dbAccount, dbAccount));
   }
 
@@ -127,18 +116,20 @@ class _$_DbAccountPopulated implements _DbAccountPopulated {
 
   @JsonKey(ignore: true)
   @override
-  _$DbAccountPopulatedCopyWith<_DbAccountPopulated> get copyWith =>
-      __$DbAccountPopulatedCopyWithImpl<_DbAccountPopulated>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DbAccountPopulatedImplCopyWith<_$DbAccountPopulatedImpl> get copyWith =>
+      __$$DbAccountPopulatedImplCopyWithImpl<_$DbAccountPopulatedImpl>(
+          this, _$identity);
 }
 
 abstract class _DbAccountPopulated implements DbAccountPopulated {
-  const factory _DbAccountPopulated({required DbAccount dbAccount}) =
-      _$_DbAccountPopulated;
+  const factory _DbAccountPopulated({required final DbAccount dbAccount}) =
+      _$DbAccountPopulatedImpl;
 
   @override
   DbAccount get dbAccount;
   @override
   @JsonKey(ignore: true)
-  _$DbAccountPopulatedCopyWith<_DbAccountPopulated> get copyWith =>
+  _$$DbAccountPopulatedImplCopyWith<_$DbAccountPopulatedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -45,14 +45,14 @@ class UnifediApiContentVariantsAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiContentVariants _$$_UnifediApiContentVariantsFromJson(
+_$UnifediApiContentVariantsImpl _$$UnifediApiContentVariantsImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiContentVariants(
+    _$UnifediApiContentVariantsImpl(
       textPlain: json['text/plain'] as String?,
     );
 
-Map<String, dynamic> _$$_UnifediApiContentVariantsToJson(
-    _$_UnifediApiContentVariants instance) {
+Map<String, dynamic> _$$UnifediApiContentVariantsImplToJson(
+    _$UnifediApiContentVariantsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

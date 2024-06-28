@@ -56,18 +56,18 @@ class MastodonApiVersionAdapter extends TypeAdapter<MastodonApiVersion> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiVersion _$$_MastodonApiVersionFromJson(
+_$MastodonApiVersionImpl _$$MastodonApiVersionImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiVersion(
-      major: json['major'] as int,
-      minor: json['minor'] as int?,
-      patch: json['patch'] as int?,
-      buildNumber: json['build_number'] as int?,
+    _$MastodonApiVersionImpl(
+      major: (json['major'] as num).toInt(),
+      minor: (json['minor'] as num?)?.toInt(),
+      patch: (json['patch'] as num?)?.toInt(),
+      buildNumber: (json['build_number'] as num?)?.toInt(),
       commit: json['commit'] as String?,
     );
 
-Map<String, dynamic> _$$_MastodonApiVersionToJson(
-    _$_MastodonApiVersion instance) {
+Map<String, dynamic> _$$MastodonApiVersionImplToJson(
+    _$MastodonApiVersionImpl instance) {
   final val = <String, dynamic>{
     'major': instance.major,
   };

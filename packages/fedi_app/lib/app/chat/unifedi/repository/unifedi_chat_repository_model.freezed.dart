@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_chat_repository_model.dart';
 
@@ -11,21 +12,7 @@ part of 'unifedi_chat_repository_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$UnifediChatRepositoryFiltersTearOff {
-  const _$UnifediChatRepositoryFiltersTearOff();
-
-  _UnifediChatRepositoryFilters call({bool withLastMessage = false}) {
-    return _UnifediChatRepositoryFilters(
-      withLastMessage: withLastMessage,
-    );
-  }
-}
-
-/// @nodoc
-const $UnifediChatRepositoryFilters = _$UnifediChatRepositoryFiltersTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$UnifediChatRepositoryFilters {
@@ -41,62 +28,66 @@ abstract class $UnifediChatRepositoryFiltersCopyWith<$Res> {
   factory $UnifediChatRepositoryFiltersCopyWith(
           UnifediChatRepositoryFilters value,
           $Res Function(UnifediChatRepositoryFilters) then) =
-      _$UnifediChatRepositoryFiltersCopyWithImpl<$Res>;
+      _$UnifediChatRepositoryFiltersCopyWithImpl<$Res,
+          UnifediChatRepositoryFilters>;
+  @useResult
   $Res call({bool withLastMessage});
 }
 
 /// @nodoc
-class _$UnifediChatRepositoryFiltersCopyWithImpl<$Res>
+class _$UnifediChatRepositoryFiltersCopyWithImpl<$Res,
+        $Val extends UnifediChatRepositoryFilters>
     implements $UnifediChatRepositoryFiltersCopyWith<$Res> {
   _$UnifediChatRepositoryFiltersCopyWithImpl(this._value, this._then);
 
-  final UnifediChatRepositoryFilters _value;
   // ignore: unused_field
-  final $Res Function(UnifediChatRepositoryFilters) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? withLastMessage = freezed,
+    Object? withLastMessage = null,
   }) {
     return _then(_value.copyWith(
-      withLastMessage: withLastMessage == freezed
+      withLastMessage: null == withLastMessage
           ? _value.withLastMessage
           : withLastMessage // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediChatRepositoryFiltersCopyWith<$Res>
+abstract class _$$UnifediChatRepositoryFiltersImplCopyWith<$Res>
     implements $UnifediChatRepositoryFiltersCopyWith<$Res> {
-  factory _$UnifediChatRepositoryFiltersCopyWith(
-          _UnifediChatRepositoryFilters value,
-          $Res Function(_UnifediChatRepositoryFilters) then) =
-      __$UnifediChatRepositoryFiltersCopyWithImpl<$Res>;
+  factory _$$UnifediChatRepositoryFiltersImplCopyWith(
+          _$UnifediChatRepositoryFiltersImpl value,
+          $Res Function(_$UnifediChatRepositoryFiltersImpl) then) =
+      __$$UnifediChatRepositoryFiltersImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({bool withLastMessage});
 }
 
 /// @nodoc
-class __$UnifediChatRepositoryFiltersCopyWithImpl<$Res>
-    extends _$UnifediChatRepositoryFiltersCopyWithImpl<$Res>
-    implements _$UnifediChatRepositoryFiltersCopyWith<$Res> {
-  __$UnifediChatRepositoryFiltersCopyWithImpl(
-      _UnifediChatRepositoryFilters _value,
-      $Res Function(_UnifediChatRepositoryFilters) _then)
-      : super(_value, (v) => _then(v as _UnifediChatRepositoryFilters));
+class __$$UnifediChatRepositoryFiltersImplCopyWithImpl<$Res>
+    extends _$UnifediChatRepositoryFiltersCopyWithImpl<$Res,
+        _$UnifediChatRepositoryFiltersImpl>
+    implements _$$UnifediChatRepositoryFiltersImplCopyWith<$Res> {
+  __$$UnifediChatRepositoryFiltersImplCopyWithImpl(
+      _$UnifediChatRepositoryFiltersImpl _value,
+      $Res Function(_$UnifediChatRepositoryFiltersImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediChatRepositoryFilters get _value =>
-      super._value as _UnifediChatRepositoryFilters;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? withLastMessage = freezed,
+    Object? withLastMessage = null,
   }) {
-    return _then(_UnifediChatRepositoryFilters(
-      withLastMessage: withLastMessage == freezed
+    return _then(_$UnifediChatRepositoryFiltersImpl(
+      withLastMessage: null == withLastMessage
           ? _value.withLastMessage
           : withLastMessage // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -106,12 +97,12 @@ class __$UnifediChatRepositoryFiltersCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_UnifediChatRepositoryFilters extends _UnifediChatRepositoryFilters {
-  const _$_UnifediChatRepositoryFilters({this.withLastMessage = false})
+class _$UnifediChatRepositoryFiltersImpl extends _UnifediChatRepositoryFilters {
+  const _$UnifediChatRepositoryFiltersImpl({this.withLastMessage = false})
       : super._();
 
-  @JsonKey(defaultValue: false)
   @override
+  @JsonKey()
   final bool withLastMessage;
 
   @override
@@ -120,10 +111,10 @@ class _$_UnifediChatRepositoryFilters extends _UnifediChatRepositoryFilters {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediChatRepositoryFilters &&
+            other is _$UnifediChatRepositoryFiltersImpl &&
             (identical(other.withLastMessage, withLastMessage) ||
                 other.withLastMessage == withLastMessage));
   }
@@ -133,42 +124,27 @@ class _$_UnifediChatRepositoryFilters extends _UnifediChatRepositoryFilters {
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediChatRepositoryFiltersCopyWith<_UnifediChatRepositoryFilters>
-      get copyWith => __$UnifediChatRepositoryFiltersCopyWithImpl<
-          _UnifediChatRepositoryFilters>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediChatRepositoryFiltersImplCopyWith<
+          _$UnifediChatRepositoryFiltersImpl>
+      get copyWith => __$$UnifediChatRepositoryFiltersImplCopyWithImpl<
+          _$UnifediChatRepositoryFiltersImpl>(this, _$identity);
 }
 
 abstract class _UnifediChatRepositoryFilters
     extends UnifediChatRepositoryFilters {
-  const factory _UnifediChatRepositoryFilters({bool withLastMessage}) =
-      _$_UnifediChatRepositoryFilters;
+  const factory _UnifediChatRepositoryFilters({final bool withLastMessage}) =
+      _$UnifediChatRepositoryFiltersImpl;
   const _UnifediChatRepositoryFilters._() : super._();
 
   @override
   bool get withLastMessage;
   @override
   @JsonKey(ignore: true)
-  _$UnifediChatRepositoryFiltersCopyWith<_UnifediChatRepositoryFilters>
+  _$$UnifediChatRepositoryFiltersImplCopyWith<
+          _$UnifediChatRepositoryFiltersImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$UnifediChatRepositoryOrderingTermDataTearOff {
-  const _$UnifediChatRepositoryOrderingTermDataTearOff();
-
-  _UnifediChatRepositoryOrderingTermData call(
-      {required UnifediChatOrderType orderType,
-      required moor.OrderingMode orderingMode}) {
-    return _UnifediChatRepositoryOrderingTermData(
-      orderType: orderType,
-      orderingMode: orderingMode,
-    );
-  }
-}
-
-/// @nodoc
-const $UnifediChatRepositoryOrderingTermData =
-    _$UnifediChatRepositoryOrderingTermDataTearOff();
 
 /// @nodoc
 mixin _$UnifediChatRepositoryOrderingTermData {
@@ -186,73 +162,76 @@ abstract class $UnifediChatRepositoryOrderingTermDataCopyWith<$Res> {
   factory $UnifediChatRepositoryOrderingTermDataCopyWith(
           UnifediChatRepositoryOrderingTermData value,
           $Res Function(UnifediChatRepositoryOrderingTermData) then) =
-      _$UnifediChatRepositoryOrderingTermDataCopyWithImpl<$Res>;
+      _$UnifediChatRepositoryOrderingTermDataCopyWithImpl<$Res,
+          UnifediChatRepositoryOrderingTermData>;
+  @useResult
   $Res call({UnifediChatOrderType orderType, moor.OrderingMode orderingMode});
 }
 
 /// @nodoc
-class _$UnifediChatRepositoryOrderingTermDataCopyWithImpl<$Res>
+class _$UnifediChatRepositoryOrderingTermDataCopyWithImpl<$Res,
+        $Val extends UnifediChatRepositoryOrderingTermData>
     implements $UnifediChatRepositoryOrderingTermDataCopyWith<$Res> {
   _$UnifediChatRepositoryOrderingTermDataCopyWithImpl(this._value, this._then);
 
-  final UnifediChatRepositoryOrderingTermData _value;
   // ignore: unused_field
-  final $Res Function(UnifediChatRepositoryOrderingTermData) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? orderType = freezed,
-    Object? orderingMode = freezed,
+    Object? orderType = null,
+    Object? orderingMode = null,
   }) {
     return _then(_value.copyWith(
-      orderType: orderType == freezed
+      orderType: null == orderType
           ? _value.orderType
           : orderType // ignore: cast_nullable_to_non_nullable
               as UnifediChatOrderType,
-      orderingMode: orderingMode == freezed
+      orderingMode: null == orderingMode
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
               as moor.OrderingMode,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediChatRepositoryOrderingTermDataCopyWith<$Res>
+abstract class _$$UnifediChatRepositoryOrderingTermDataImplCopyWith<$Res>
     implements $UnifediChatRepositoryOrderingTermDataCopyWith<$Res> {
-  factory _$UnifediChatRepositoryOrderingTermDataCopyWith(
-          _UnifediChatRepositoryOrderingTermData value,
-          $Res Function(_UnifediChatRepositoryOrderingTermData) then) =
-      __$UnifediChatRepositoryOrderingTermDataCopyWithImpl<$Res>;
+  factory _$$UnifediChatRepositoryOrderingTermDataImplCopyWith(
+          _$UnifediChatRepositoryOrderingTermDataImpl value,
+          $Res Function(_$UnifediChatRepositoryOrderingTermDataImpl) then) =
+      __$$UnifediChatRepositoryOrderingTermDataImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({UnifediChatOrderType orderType, moor.OrderingMode orderingMode});
 }
 
 /// @nodoc
-class __$UnifediChatRepositoryOrderingTermDataCopyWithImpl<$Res>
-    extends _$UnifediChatRepositoryOrderingTermDataCopyWithImpl<$Res>
-    implements _$UnifediChatRepositoryOrderingTermDataCopyWith<$Res> {
-  __$UnifediChatRepositoryOrderingTermDataCopyWithImpl(
-      _UnifediChatRepositoryOrderingTermData _value,
-      $Res Function(_UnifediChatRepositoryOrderingTermData) _then)
-      : super(
-            _value, (v) => _then(v as _UnifediChatRepositoryOrderingTermData));
+class __$$UnifediChatRepositoryOrderingTermDataImplCopyWithImpl<$Res>
+    extends _$UnifediChatRepositoryOrderingTermDataCopyWithImpl<$Res,
+        _$UnifediChatRepositoryOrderingTermDataImpl>
+    implements _$$UnifediChatRepositoryOrderingTermDataImplCopyWith<$Res> {
+  __$$UnifediChatRepositoryOrderingTermDataImplCopyWithImpl(
+      _$UnifediChatRepositoryOrderingTermDataImpl _value,
+      $Res Function(_$UnifediChatRepositoryOrderingTermDataImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediChatRepositoryOrderingTermData get _value =>
-      super._value as _UnifediChatRepositoryOrderingTermData;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? orderType = freezed,
-    Object? orderingMode = freezed,
+    Object? orderType = null,
+    Object? orderingMode = null,
   }) {
-    return _then(_UnifediChatRepositoryOrderingTermData(
-      orderType: orderType == freezed
+    return _then(_$UnifediChatRepositoryOrderingTermDataImpl(
+      orderType: null == orderType
           ? _value.orderType
           : orderType // ignore: cast_nullable_to_non_nullable
               as UnifediChatOrderType,
-      orderingMode: orderingMode == freezed
+      orderingMode: null == orderingMode
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
               as moor.OrderingMode,
@@ -262,9 +241,9 @@ class __$UnifediChatRepositoryOrderingTermDataCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_UnifediChatRepositoryOrderingTermData
+class _$UnifediChatRepositoryOrderingTermDataImpl
     extends _UnifediChatRepositoryOrderingTermData {
-  const _$_UnifediChatRepositoryOrderingTermData(
+  const _$UnifediChatRepositoryOrderingTermDataImpl(
       {required this.orderType, required this.orderingMode})
       : super._();
 
@@ -279,10 +258,10 @@ class _$_UnifediChatRepositoryOrderingTermData
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediChatRepositoryOrderingTermData &&
+            other is _$UnifediChatRepositoryOrderingTermDataImpl &&
             (identical(other.orderType, orderType) ||
                 other.orderType == orderType) &&
             (identical(other.orderingMode, orderingMode) ||
@@ -294,18 +273,19 @@ class _$_UnifediChatRepositoryOrderingTermData
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediChatRepositoryOrderingTermDataCopyWith<
-          _UnifediChatRepositoryOrderingTermData>
-      get copyWith => __$UnifediChatRepositoryOrderingTermDataCopyWithImpl<
-          _UnifediChatRepositoryOrderingTermData>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediChatRepositoryOrderingTermDataImplCopyWith<
+          _$UnifediChatRepositoryOrderingTermDataImpl>
+      get copyWith => __$$UnifediChatRepositoryOrderingTermDataImplCopyWithImpl<
+          _$UnifediChatRepositoryOrderingTermDataImpl>(this, _$identity);
 }
 
 abstract class _UnifediChatRepositoryOrderingTermData
     extends UnifediChatRepositoryOrderingTermData {
   const factory _UnifediChatRepositoryOrderingTermData(
-          {required UnifediChatOrderType orderType,
-          required moor.OrderingMode orderingMode}) =
-      _$_UnifediChatRepositoryOrderingTermData;
+          {required final UnifediChatOrderType orderType,
+          required final moor.OrderingMode orderingMode}) =
+      _$UnifediChatRepositoryOrderingTermDataImpl;
   const _UnifediChatRepositoryOrderingTermData._() : super._();
 
   @override
@@ -314,7 +294,7 @@ abstract class _UnifediChatRepositoryOrderingTermData
   moor.OrderingMode get orderingMode;
   @override
   @JsonKey(ignore: true)
-  _$UnifediChatRepositoryOrderingTermDataCopyWith<
-          _UnifediChatRepositoryOrderingTermData>
+  _$$UnifediChatRepositoryOrderingTermDataImplCopyWith<
+          _$UnifediChatRepositoryOrderingTermDataImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

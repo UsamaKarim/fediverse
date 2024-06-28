@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_my_account_model_impl.dart';
 
@@ -11,116 +12,11 @@ part of 'pleroma_api_my_account_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiMyAccount _$PleromaApiMyAccountFromJson(Map<String, dynamic> json) {
   return _PleromaApiMyAccount.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiMyAccountTearOff {
-  const _$PleromaApiMyAccountTearOff();
-
-  _PleromaApiMyAccount call(
-      {@HiveField(0)
-          required String username,
-      @HiveField(1)
-          required String url,
-      @HiveField(2)
-      @JsonKey(name: 'statuses_count')
-          required int statusesCount,
-      @HiveField(3)
-          required String? note,
-      @HiveField(4)
-          required bool locked,
-      @HiveField(5)
-          required String id,
-      @HiveField(6)
-      @JsonKey(name: 'header_static')
-          required String headerStatic,
-      @HiveField(7)
-          required String header,
-      @HiveField(8)
-      @JsonKey(name: 'following_count')
-          required int followingCount,
-      @HiveField(9)
-      @JsonKey(name: 'followers_count')
-          required int followersCount,
-      @HiveField(10)
-          required List<PleromaApiField>? fields,
-      @HiveField(11)
-          required List<PleromaApiEmoji>? emojis,
-      @HiveField(12)
-      @JsonKey(name: 'display_name')
-          required String? displayName,
-      @HiveField(13)
-      @JsonKey(name: 'created_at')
-          required DateTime createdAt,
-      @HiveField(14)
-          required bool? bot,
-      @HiveField(15)
-      @JsonKey(name: 'avatar_static')
-          required String avatarStatic,
-      @HiveField(16)
-          required String avatar,
-      @HiveField(17)
-          required String acct,
-      @HiveField(19)
-          required PleromaApiMyAccountPleromaPart? pleroma,
-      @HiveField(20)
-      @JsonKey(name: 'last_status_at')
-          required DateTime? lastStatusAt,
-      @HiveField(21)
-          required PleromaApiMyAccountSource? source,
-      @HiveField(22)
-          required bool? discoverable,
-      @HiveField(23)
-      @JsonKey(name: 'follow_requests_count')
-          required int? followRequestsCount,
-      @HiveField(24)
-          required String? fqn,
-      @HiveField(25)
-          required bool? suspended,
-      @JsonKey(name: 'mute_expires_at')
-      @HiveField(26)
-          required DateTime? muteExpiresAt}) {
-    return _PleromaApiMyAccount(
-      username: username,
-      url: url,
-      statusesCount: statusesCount,
-      note: note,
-      locked: locked,
-      id: id,
-      headerStatic: headerStatic,
-      header: header,
-      followingCount: followingCount,
-      followersCount: followersCount,
-      fields: fields,
-      emojis: emojis,
-      displayName: displayName,
-      createdAt: createdAt,
-      bot: bot,
-      avatarStatic: avatarStatic,
-      avatar: avatar,
-      acct: acct,
-      pleroma: pleroma,
-      lastStatusAt: lastStatusAt,
-      source: source,
-      discoverable: discoverable,
-      followRequestsCount: followRequestsCount,
-      fqn: fqn,
-      suspended: suspended,
-      muteExpiresAt: muteExpiresAt,
-    );
-  }
-
-  PleromaApiMyAccount fromJson(Map<String, Object?> json) {
-    return PleromaApiMyAccount.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiMyAccount = _$PleromaApiMyAccountTearOff();
 
 /// @nodoc
 mixin _$PleromaApiMyAccount {
@@ -198,104 +94,75 @@ mixin _$PleromaApiMyAccount {
 abstract class $PleromaApiMyAccountCopyWith<$Res> {
   factory $PleromaApiMyAccountCopyWith(
           PleromaApiMyAccount value, $Res Function(PleromaApiMyAccount) then) =
-      _$PleromaApiMyAccountCopyWithImpl<$Res>;
+      _$PleromaApiMyAccountCopyWithImpl<$Res, PleromaApiMyAccount>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-          String username,
-      @HiveField(1)
-          String url,
-      @HiveField(2)
-      @JsonKey(name: 'statuses_count')
-          int statusesCount,
-      @HiveField(3)
-          String? note,
-      @HiveField(4)
-          bool locked,
-      @HiveField(5)
-          String id,
-      @HiveField(6)
-      @JsonKey(name: 'header_static')
-          String headerStatic,
-      @HiveField(7)
-          String header,
-      @HiveField(8)
-      @JsonKey(name: 'following_count')
-          int followingCount,
-      @HiveField(9)
-      @JsonKey(name: 'followers_count')
-          int followersCount,
-      @HiveField(10)
-          List<PleromaApiField>? fields,
-      @HiveField(11)
-          List<PleromaApiEmoji>? emojis,
-      @HiveField(12)
-      @JsonKey(name: 'display_name')
-          String? displayName,
-      @HiveField(13)
-      @JsonKey(name: 'created_at')
-          DateTime createdAt,
-      @HiveField(14)
-          bool? bot,
-      @HiveField(15)
-      @JsonKey(name: 'avatar_static')
-          String avatarStatic,
-      @HiveField(16)
-          String avatar,
-      @HiveField(17)
-          String acct,
-      @HiveField(19)
-          PleromaApiMyAccountPleromaPart? pleroma,
-      @HiveField(20)
-      @JsonKey(name: 'last_status_at')
-          DateTime? lastStatusAt,
-      @HiveField(21)
-          PleromaApiMyAccountSource? source,
-      @HiveField(22)
-          bool? discoverable,
+      {@HiveField(0) String username,
+      @HiveField(1) String url,
+      @HiveField(2) @JsonKey(name: 'statuses_count') int statusesCount,
+      @HiveField(3) String? note,
+      @HiveField(4) bool locked,
+      @HiveField(5) String id,
+      @HiveField(6) @JsonKey(name: 'header_static') String headerStatic,
+      @HiveField(7) String header,
+      @HiveField(8) @JsonKey(name: 'following_count') int followingCount,
+      @HiveField(9) @JsonKey(name: 'followers_count') int followersCount,
+      @HiveField(10) List<PleromaApiField>? fields,
+      @HiveField(11) List<PleromaApiEmoji>? emojis,
+      @HiveField(12) @JsonKey(name: 'display_name') String? displayName,
+      @HiveField(13) @JsonKey(name: 'created_at') DateTime createdAt,
+      @HiveField(14) bool? bot,
+      @HiveField(15) @JsonKey(name: 'avatar_static') String avatarStatic,
+      @HiveField(16) String avatar,
+      @HiveField(17) String acct,
+      @HiveField(19) PleromaApiMyAccountPleromaPart? pleroma,
+      @HiveField(20) @JsonKey(name: 'last_status_at') DateTime? lastStatusAt,
+      @HiveField(21) PleromaApiMyAccountSource? source,
+      @HiveField(22) bool? discoverable,
       @HiveField(23)
       @JsonKey(name: 'follow_requests_count')
-          int? followRequestsCount,
-      @HiveField(24)
-          String? fqn,
-      @HiveField(25)
-          bool? suspended,
+      int? followRequestsCount,
+      @HiveField(24) String? fqn,
+      @HiveField(25) bool? suspended,
       @JsonKey(name: 'mute_expires_at')
       @HiveField(26)
-          DateTime? muteExpiresAt});
+      DateTime? muteExpiresAt});
 
   $PleromaApiMyAccountPleromaPartCopyWith<$Res>? get pleroma;
   $PleromaApiMyAccountSourceCopyWith<$Res>? get source;
 }
 
 /// @nodoc
-class _$PleromaApiMyAccountCopyWithImpl<$Res>
+class _$PleromaApiMyAccountCopyWithImpl<$Res, $Val extends PleromaApiMyAccount>
     implements $PleromaApiMyAccountCopyWith<$Res> {
   _$PleromaApiMyAccountCopyWithImpl(this._value, this._then);
 
-  final PleromaApiMyAccount _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiMyAccount) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? username = freezed,
-    Object? url = freezed,
-    Object? statusesCount = freezed,
+    Object? username = null,
+    Object? url = null,
+    Object? statusesCount = null,
     Object? note = freezed,
-    Object? locked = freezed,
-    Object? id = freezed,
-    Object? headerStatic = freezed,
-    Object? header = freezed,
-    Object? followingCount = freezed,
-    Object? followersCount = freezed,
+    Object? locked = null,
+    Object? id = null,
+    Object? headerStatic = null,
+    Object? header = null,
+    Object? followingCount = null,
+    Object? followersCount = null,
     Object? fields = freezed,
     Object? emojis = freezed,
     Object? displayName = freezed,
-    Object? createdAt = freezed,
+    Object? createdAt = null,
     Object? bot = freezed,
-    Object? avatarStatic = freezed,
-    Object? avatar = freezed,
-    Object? acct = freezed,
+    Object? avatarStatic = null,
+    Object? avatar = null,
+    Object? acct = null,
     Object? pleroma = freezed,
     Object? lastStatusAt = freezed,
     Object? source = freezed,
@@ -306,114 +173,115 @@ class _$PleromaApiMyAccountCopyWithImpl<$Res>
     Object? muteExpiresAt = freezed,
   }) {
     return _then(_value.copyWith(
-      username: username == freezed
+      username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      statusesCount: statusesCount == freezed
+      statusesCount: null == statusesCount
           ? _value.statusesCount
           : statusesCount // ignore: cast_nullable_to_non_nullable
               as int,
-      note: note == freezed
+      note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
               as String?,
-      locked: locked == freezed
+      locked: null == locked
           ? _value.locked
           : locked // ignore: cast_nullable_to_non_nullable
               as bool,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      headerStatic: headerStatic == freezed
+      headerStatic: null == headerStatic
           ? _value.headerStatic
           : headerStatic // ignore: cast_nullable_to_non_nullable
               as String,
-      header: header == freezed
+      header: null == header
           ? _value.header
           : header // ignore: cast_nullable_to_non_nullable
               as String,
-      followingCount: followingCount == freezed
+      followingCount: null == followingCount
           ? _value.followingCount
           : followingCount // ignore: cast_nullable_to_non_nullable
               as int,
-      followersCount: followersCount == freezed
+      followersCount: null == followersCount
           ? _value.followersCount
           : followersCount // ignore: cast_nullable_to_non_nullable
               as int,
-      fields: fields == freezed
+      fields: freezed == fields
           ? _value.fields
           : fields // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiField>?,
-      emojis: emojis == freezed
+      emojis: freezed == emojis
           ? _value.emojis
           : emojis // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiEmoji>?,
-      displayName: displayName == freezed
+      displayName: freezed == displayName
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
               as String?,
-      createdAt: createdAt == freezed
+      createdAt: null == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      bot: bot == freezed
+      bot: freezed == bot
           ? _value.bot
           : bot // ignore: cast_nullable_to_non_nullable
               as bool?,
-      avatarStatic: avatarStatic == freezed
+      avatarStatic: null == avatarStatic
           ? _value.avatarStatic
           : avatarStatic // ignore: cast_nullable_to_non_nullable
               as String,
-      avatar: avatar == freezed
+      avatar: null == avatar
           ? _value.avatar
           : avatar // ignore: cast_nullable_to_non_nullable
               as String,
-      acct: acct == freezed
+      acct: null == acct
           ? _value.acct
           : acct // ignore: cast_nullable_to_non_nullable
               as String,
-      pleroma: pleroma == freezed
+      pleroma: freezed == pleroma
           ? _value.pleroma
           : pleroma // ignore: cast_nullable_to_non_nullable
               as PleromaApiMyAccountPleromaPart?,
-      lastStatusAt: lastStatusAt == freezed
+      lastStatusAt: freezed == lastStatusAt
           ? _value.lastStatusAt
           : lastStatusAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      source: source == freezed
+      source: freezed == source
           ? _value.source
           : source // ignore: cast_nullable_to_non_nullable
               as PleromaApiMyAccountSource?,
-      discoverable: discoverable == freezed
+      discoverable: freezed == discoverable
           ? _value.discoverable
           : discoverable // ignore: cast_nullable_to_non_nullable
               as bool?,
-      followRequestsCount: followRequestsCount == freezed
+      followRequestsCount: freezed == followRequestsCount
           ? _value.followRequestsCount
           : followRequestsCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      fqn: fqn == freezed
+      fqn: freezed == fqn
           ? _value.fqn
           : fqn // ignore: cast_nullable_to_non_nullable
               as String?,
-      suspended: suspended == freezed
+      suspended: freezed == suspended
           ? _value.suspended
           : suspended // ignore: cast_nullable_to_non_nullable
               as bool?,
-      muteExpiresAt: muteExpiresAt == freezed
+      muteExpiresAt: freezed == muteExpiresAt
           ? _value.muteExpiresAt
           : muteExpiresAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiMyAccountPleromaPartCopyWith<$Res>? get pleroma {
     if (_value.pleroma == null) {
       return null;
@@ -421,92 +289,62 @@ class _$PleromaApiMyAccountCopyWithImpl<$Res>
 
     return $PleromaApiMyAccountPleromaPartCopyWith<$Res>(_value.pleroma!,
         (value) {
-      return _then(_value.copyWith(pleroma: value));
+      return _then(_value.copyWith(pleroma: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiMyAccountSourceCopyWith<$Res>? get source {
     if (_value.source == null) {
       return null;
     }
 
     return $PleromaApiMyAccountSourceCopyWith<$Res>(_value.source!, (value) {
-      return _then(_value.copyWith(source: value));
+      return _then(_value.copyWith(source: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiMyAccountCopyWith<$Res>
+abstract class _$$PleromaApiMyAccountImplCopyWith<$Res>
     implements $PleromaApiMyAccountCopyWith<$Res> {
-  factory _$PleromaApiMyAccountCopyWith(_PleromaApiMyAccount value,
-          $Res Function(_PleromaApiMyAccount) then) =
-      __$PleromaApiMyAccountCopyWithImpl<$Res>;
+  factory _$$PleromaApiMyAccountImplCopyWith(_$PleromaApiMyAccountImpl value,
+          $Res Function(_$PleromaApiMyAccountImpl) then) =
+      __$$PleromaApiMyAccountImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-          String username,
-      @HiveField(1)
-          String url,
-      @HiveField(2)
-      @JsonKey(name: 'statuses_count')
-          int statusesCount,
-      @HiveField(3)
-          String? note,
-      @HiveField(4)
-          bool locked,
-      @HiveField(5)
-          String id,
-      @HiveField(6)
-      @JsonKey(name: 'header_static')
-          String headerStatic,
-      @HiveField(7)
-          String header,
-      @HiveField(8)
-      @JsonKey(name: 'following_count')
-          int followingCount,
-      @HiveField(9)
-      @JsonKey(name: 'followers_count')
-          int followersCount,
-      @HiveField(10)
-          List<PleromaApiField>? fields,
-      @HiveField(11)
-          List<PleromaApiEmoji>? emojis,
-      @HiveField(12)
-      @JsonKey(name: 'display_name')
-          String? displayName,
-      @HiveField(13)
-      @JsonKey(name: 'created_at')
-          DateTime createdAt,
-      @HiveField(14)
-          bool? bot,
-      @HiveField(15)
-      @JsonKey(name: 'avatar_static')
-          String avatarStatic,
-      @HiveField(16)
-          String avatar,
-      @HiveField(17)
-          String acct,
-      @HiveField(19)
-          PleromaApiMyAccountPleromaPart? pleroma,
-      @HiveField(20)
-      @JsonKey(name: 'last_status_at')
-          DateTime? lastStatusAt,
-      @HiveField(21)
-          PleromaApiMyAccountSource? source,
-      @HiveField(22)
-          bool? discoverable,
+      {@HiveField(0) String username,
+      @HiveField(1) String url,
+      @HiveField(2) @JsonKey(name: 'statuses_count') int statusesCount,
+      @HiveField(3) String? note,
+      @HiveField(4) bool locked,
+      @HiveField(5) String id,
+      @HiveField(6) @JsonKey(name: 'header_static') String headerStatic,
+      @HiveField(7) String header,
+      @HiveField(8) @JsonKey(name: 'following_count') int followingCount,
+      @HiveField(9) @JsonKey(name: 'followers_count') int followersCount,
+      @HiveField(10) List<PleromaApiField>? fields,
+      @HiveField(11) List<PleromaApiEmoji>? emojis,
+      @HiveField(12) @JsonKey(name: 'display_name') String? displayName,
+      @HiveField(13) @JsonKey(name: 'created_at') DateTime createdAt,
+      @HiveField(14) bool? bot,
+      @HiveField(15) @JsonKey(name: 'avatar_static') String avatarStatic,
+      @HiveField(16) String avatar,
+      @HiveField(17) String acct,
+      @HiveField(19) PleromaApiMyAccountPleromaPart? pleroma,
+      @HiveField(20) @JsonKey(name: 'last_status_at') DateTime? lastStatusAt,
+      @HiveField(21) PleromaApiMyAccountSource? source,
+      @HiveField(22) bool? discoverable,
       @HiveField(23)
       @JsonKey(name: 'follow_requests_count')
-          int? followRequestsCount,
-      @HiveField(24)
-          String? fqn,
-      @HiveField(25)
-          bool? suspended,
+      int? followRequestsCount,
+      @HiveField(24) String? fqn,
+      @HiveField(25) bool? suspended,
       @JsonKey(name: 'mute_expires_at')
       @HiveField(26)
-          DateTime? muteExpiresAt});
+      DateTime? muteExpiresAt});
 
   @override
   $PleromaApiMyAccountPleromaPartCopyWith<$Res>? get pleroma;
@@ -515,36 +353,34 @@ abstract class _$PleromaApiMyAccountCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiMyAccountCopyWithImpl<$Res>
-    extends _$PleromaApiMyAccountCopyWithImpl<$Res>
-    implements _$PleromaApiMyAccountCopyWith<$Res> {
-  __$PleromaApiMyAccountCopyWithImpl(
-      _PleromaApiMyAccount _value, $Res Function(_PleromaApiMyAccount) _then)
-      : super(_value, (v) => _then(v as _PleromaApiMyAccount));
+class __$$PleromaApiMyAccountImplCopyWithImpl<$Res>
+    extends _$PleromaApiMyAccountCopyWithImpl<$Res, _$PleromaApiMyAccountImpl>
+    implements _$$PleromaApiMyAccountImplCopyWith<$Res> {
+  __$$PleromaApiMyAccountImplCopyWithImpl(_$PleromaApiMyAccountImpl _value,
+      $Res Function(_$PleromaApiMyAccountImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiMyAccount get _value => super._value as _PleromaApiMyAccount;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? username = freezed,
-    Object? url = freezed,
-    Object? statusesCount = freezed,
+    Object? username = null,
+    Object? url = null,
+    Object? statusesCount = null,
     Object? note = freezed,
-    Object? locked = freezed,
-    Object? id = freezed,
-    Object? headerStatic = freezed,
-    Object? header = freezed,
-    Object? followingCount = freezed,
-    Object? followersCount = freezed,
+    Object? locked = null,
+    Object? id = null,
+    Object? headerStatic = null,
+    Object? header = null,
+    Object? followingCount = null,
+    Object? followersCount = null,
     Object? fields = freezed,
     Object? emojis = freezed,
     Object? displayName = freezed,
-    Object? createdAt = freezed,
+    Object? createdAt = null,
     Object? bot = freezed,
-    Object? avatarStatic = freezed,
-    Object? avatar = freezed,
-    Object? acct = freezed,
+    Object? avatarStatic = null,
+    Object? avatar = null,
+    Object? acct = null,
     Object? pleroma = freezed,
     Object? lastStatusAt = freezed,
     Object? source = freezed,
@@ -554,108 +390,108 @@ class __$PleromaApiMyAccountCopyWithImpl<$Res>
     Object? suspended = freezed,
     Object? muteExpiresAt = freezed,
   }) {
-    return _then(_PleromaApiMyAccount(
-      username: username == freezed
+    return _then(_$PleromaApiMyAccountImpl(
+      username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      statusesCount: statusesCount == freezed
+      statusesCount: null == statusesCount
           ? _value.statusesCount
           : statusesCount // ignore: cast_nullable_to_non_nullable
               as int,
-      note: note == freezed
+      note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
               as String?,
-      locked: locked == freezed
+      locked: null == locked
           ? _value.locked
           : locked // ignore: cast_nullable_to_non_nullable
               as bool,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      headerStatic: headerStatic == freezed
+      headerStatic: null == headerStatic
           ? _value.headerStatic
           : headerStatic // ignore: cast_nullable_to_non_nullable
               as String,
-      header: header == freezed
+      header: null == header
           ? _value.header
           : header // ignore: cast_nullable_to_non_nullable
               as String,
-      followingCount: followingCount == freezed
+      followingCount: null == followingCount
           ? _value.followingCount
           : followingCount // ignore: cast_nullable_to_non_nullable
               as int,
-      followersCount: followersCount == freezed
+      followersCount: null == followersCount
           ? _value.followersCount
           : followersCount // ignore: cast_nullable_to_non_nullable
               as int,
-      fields: fields == freezed
-          ? _value.fields
+      fields: freezed == fields
+          ? _value._fields
           : fields // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiField>?,
-      emojis: emojis == freezed
-          ? _value.emojis
+      emojis: freezed == emojis
+          ? _value._emojis
           : emojis // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiEmoji>?,
-      displayName: displayName == freezed
+      displayName: freezed == displayName
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
               as String?,
-      createdAt: createdAt == freezed
+      createdAt: null == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      bot: bot == freezed
+      bot: freezed == bot
           ? _value.bot
           : bot // ignore: cast_nullable_to_non_nullable
               as bool?,
-      avatarStatic: avatarStatic == freezed
+      avatarStatic: null == avatarStatic
           ? _value.avatarStatic
           : avatarStatic // ignore: cast_nullable_to_non_nullable
               as String,
-      avatar: avatar == freezed
+      avatar: null == avatar
           ? _value.avatar
           : avatar // ignore: cast_nullable_to_non_nullable
               as String,
-      acct: acct == freezed
+      acct: null == acct
           ? _value.acct
           : acct // ignore: cast_nullable_to_non_nullable
               as String,
-      pleroma: pleroma == freezed
+      pleroma: freezed == pleroma
           ? _value.pleroma
           : pleroma // ignore: cast_nullable_to_non_nullable
               as PleromaApiMyAccountPleromaPart?,
-      lastStatusAt: lastStatusAt == freezed
+      lastStatusAt: freezed == lastStatusAt
           ? _value.lastStatusAt
           : lastStatusAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      source: source == freezed
+      source: freezed == source
           ? _value.source
           : source // ignore: cast_nullable_to_non_nullable
               as PleromaApiMyAccountSource?,
-      discoverable: discoverable == freezed
+      discoverable: freezed == discoverable
           ? _value.discoverable
           : discoverable // ignore: cast_nullable_to_non_nullable
               as bool?,
-      followRequestsCount: followRequestsCount == freezed
+      followRequestsCount: freezed == followRequestsCount
           ? _value.followRequestsCount
           : followRequestsCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      fqn: fqn == freezed
+      fqn: freezed == fqn
           ? _value.fqn
           : fqn // ignore: cast_nullable_to_non_nullable
               as String?,
-      suspended: suspended == freezed
+      suspended: freezed == suspended
           ? _value.suspended
           : suspended // ignore: cast_nullable_to_non_nullable
               as bool?,
-      muteExpiresAt: muteExpiresAt == freezed
+      muteExpiresAt: freezed == muteExpiresAt
           ? _value.muteExpiresAt
           : muteExpiresAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
@@ -665,73 +501,51 @@ class __$PleromaApiMyAccountCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiMyAccount implements _PleromaApiMyAccount {
-  const _$_PleromaApiMyAccount(
-      {@HiveField(0)
-          required this.username,
-      @HiveField(1)
-          required this.url,
+class _$PleromaApiMyAccountImpl implements _PleromaApiMyAccount {
+  const _$PleromaApiMyAccountImpl(
+      {@HiveField(0) required this.username,
+      @HiveField(1) required this.url,
       @HiveField(2)
       @JsonKey(name: 'statuses_count')
-          required this.statusesCount,
-      @HiveField(3)
-          required this.note,
-      @HiveField(4)
-          required this.locked,
-      @HiveField(5)
-          required this.id,
-      @HiveField(6)
-      @JsonKey(name: 'header_static')
-          required this.headerStatic,
-      @HiveField(7)
-          required this.header,
+      required this.statusesCount,
+      @HiveField(3) required this.note,
+      @HiveField(4) required this.locked,
+      @HiveField(5) required this.id,
+      @HiveField(6) @JsonKey(name: 'header_static') required this.headerStatic,
+      @HiveField(7) required this.header,
       @HiveField(8)
       @JsonKey(name: 'following_count')
-          required this.followingCount,
+      required this.followingCount,
       @HiveField(9)
       @JsonKey(name: 'followers_count')
-          required this.followersCount,
-      @HiveField(10)
-          required this.fields,
-      @HiveField(11)
-          required this.emojis,
-      @HiveField(12)
-      @JsonKey(name: 'display_name')
-          required this.displayName,
-      @HiveField(13)
-      @JsonKey(name: 'created_at')
-          required this.createdAt,
-      @HiveField(14)
-          required this.bot,
-      @HiveField(15)
-      @JsonKey(name: 'avatar_static')
-          required this.avatarStatic,
-      @HiveField(16)
-          required this.avatar,
-      @HiveField(17)
-          required this.acct,
-      @HiveField(19)
-          required this.pleroma,
+      required this.followersCount,
+      @HiveField(10) required final List<PleromaApiField>? fields,
+      @HiveField(11) required final List<PleromaApiEmoji>? emojis,
+      @HiveField(12) @JsonKey(name: 'display_name') required this.displayName,
+      @HiveField(13) @JsonKey(name: 'created_at') required this.createdAt,
+      @HiveField(14) required this.bot,
+      @HiveField(15) @JsonKey(name: 'avatar_static') required this.avatarStatic,
+      @HiveField(16) required this.avatar,
+      @HiveField(17) required this.acct,
+      @HiveField(19) required this.pleroma,
       @HiveField(20)
       @JsonKey(name: 'last_status_at')
-          required this.lastStatusAt,
-      @HiveField(21)
-          required this.source,
-      @HiveField(22)
-          required this.discoverable,
+      required this.lastStatusAt,
+      @HiveField(21) required this.source,
+      @HiveField(22) required this.discoverable,
       @HiveField(23)
       @JsonKey(name: 'follow_requests_count')
-          required this.followRequestsCount,
-      @HiveField(24)
-          required this.fqn,
-      @HiveField(25)
-          required this.suspended,
+      required this.followRequestsCount,
+      @HiveField(24) required this.fqn,
+      @HiveField(25) required this.suspended,
       @JsonKey(name: 'mute_expires_at')
       @HiveField(26)
-          required this.muteExpiresAt});
+      required this.muteExpiresAt})
+      : _fields = fields,
+        _emojis = emojis;
 
-  factory _$_PleromaApiMyAccount.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiMyAccountFromJson(json);
+  factory _$PleromaApiMyAccountImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiMyAccountImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -767,12 +581,28 @@ class _$_PleromaApiMyAccount implements _PleromaApiMyAccount {
   @HiveField(9)
   @JsonKey(name: 'followers_count')
   final int followersCount;
+  final List<PleromaApiField>? _fields;
   @override
   @HiveField(10)
-  final List<PleromaApiField>? fields;
+  List<PleromaApiField>? get fields {
+    final value = _fields;
+    if (value == null) return null;
+    if (_fields is EqualUnmodifiableListView) return _fields;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  final List<PleromaApiEmoji>? _emojis;
   @override
   @HiveField(11)
-  final List<PleromaApiEmoji>? emojis;
+  List<PleromaApiEmoji>? get emojis {
+    final value = _emojis;
+    if (value == null) return null;
+    if (_emojis is EqualUnmodifiableListView) return _emojis;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(12)
   @JsonKey(name: 'display_name')
@@ -828,10 +658,10 @@ class _$_PleromaApiMyAccount implements _PleromaApiMyAccount {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiMyAccount &&
+            other is _$PleromaApiMyAccountImpl &&
             (identical(other.username, username) ||
                 other.username == username) &&
             (identical(other.url, url) || other.url == url) &&
@@ -847,8 +677,8 @@ class _$_PleromaApiMyAccount implements _PleromaApiMyAccount {
                 other.followingCount == followingCount) &&
             (identical(other.followersCount, followersCount) ||
                 other.followersCount == followersCount) &&
-            const DeepCollectionEquality().equals(other.fields, fields) &&
-            const DeepCollectionEquality().equals(other.emojis, emojis) &&
+            const DeepCollectionEquality().equals(other._fields, _fields) &&
+            const DeepCollectionEquality().equals(other._emojis, _emojis) &&
             (identical(other.displayName, displayName) ||
                 other.displayName == displayName) &&
             (identical(other.createdAt, createdAt) ||
@@ -873,6 +703,7 @@ class _$_PleromaApiMyAccount implements _PleromaApiMyAccount {
                 other.muteExpiresAt == muteExpiresAt));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -886,8 +717,8 @@ class _$_PleromaApiMyAccount implements _PleromaApiMyAccount {
         header,
         followingCount,
         followersCount,
-        const DeepCollectionEquality().hash(fields),
-        const DeepCollectionEquality().hash(emojis),
+        const DeepCollectionEquality().hash(_fields),
+        const DeepCollectionEquality().hash(_emojis),
         displayName,
         createdAt,
         bot,
@@ -906,83 +737,70 @@ class _$_PleromaApiMyAccount implements _PleromaApiMyAccount {
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiMyAccountCopyWith<_PleromaApiMyAccount> get copyWith =>
-      __$PleromaApiMyAccountCopyWithImpl<_PleromaApiMyAccount>(
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiMyAccountImplCopyWith<_$PleromaApiMyAccountImpl> get copyWith =>
+      __$$PleromaApiMyAccountImplCopyWithImpl<_$PleromaApiMyAccountImpl>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiMyAccountToJson(this);
+    return _$$PleromaApiMyAccountImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiMyAccount implements PleromaApiMyAccount {
   const factory _PleromaApiMyAccount(
-      {@HiveField(0)
-          required String username,
-      @HiveField(1)
-          required String url,
+      {@HiveField(0) required final String username,
+      @HiveField(1) required final String url,
       @HiveField(2)
       @JsonKey(name: 'statuses_count')
-          required int statusesCount,
-      @HiveField(3)
-          required String? note,
-      @HiveField(4)
-          required bool locked,
-      @HiveField(5)
-          required String id,
+      required final int statusesCount,
+      @HiveField(3) required final String? note,
+      @HiveField(4) required final bool locked,
+      @HiveField(5) required final String id,
       @HiveField(6)
       @JsonKey(name: 'header_static')
-          required String headerStatic,
-      @HiveField(7)
-          required String header,
+      required final String headerStatic,
+      @HiveField(7) required final String header,
       @HiveField(8)
       @JsonKey(name: 'following_count')
-          required int followingCount,
+      required final int followingCount,
       @HiveField(9)
       @JsonKey(name: 'followers_count')
-          required int followersCount,
-      @HiveField(10)
-          required List<PleromaApiField>? fields,
-      @HiveField(11)
-          required List<PleromaApiEmoji>? emojis,
+      required final int followersCount,
+      @HiveField(10) required final List<PleromaApiField>? fields,
+      @HiveField(11) required final List<PleromaApiEmoji>? emojis,
       @HiveField(12)
       @JsonKey(name: 'display_name')
-          required String? displayName,
+      required final String? displayName,
       @HiveField(13)
       @JsonKey(name: 'created_at')
-          required DateTime createdAt,
-      @HiveField(14)
-          required bool? bot,
+      required final DateTime createdAt,
+      @HiveField(14) required final bool? bot,
       @HiveField(15)
       @JsonKey(name: 'avatar_static')
-          required String avatarStatic,
-      @HiveField(16)
-          required String avatar,
-      @HiveField(17)
-          required String acct,
-      @HiveField(19)
-          required PleromaApiMyAccountPleromaPart? pleroma,
+      required final String avatarStatic,
+      @HiveField(16) required final String avatar,
+      @HiveField(17) required final String acct,
+      @HiveField(19) required final PleromaApiMyAccountPleromaPart? pleroma,
       @HiveField(20)
       @JsonKey(name: 'last_status_at')
-          required DateTime? lastStatusAt,
-      @HiveField(21)
-          required PleromaApiMyAccountSource? source,
-      @HiveField(22)
-          required bool? discoverable,
+      required final DateTime? lastStatusAt,
+      @HiveField(21) required final PleromaApiMyAccountSource? source,
+      @HiveField(22) required final bool? discoverable,
       @HiveField(23)
       @JsonKey(name: 'follow_requests_count')
-          required int? followRequestsCount,
-      @HiveField(24)
-          required String? fqn,
-      @HiveField(25)
-          required bool? suspended,
+      required final int? followRequestsCount,
+      @HiveField(24) required final String? fqn,
+      @HiveField(25) required final bool? suspended,
       @JsonKey(name: 'mute_expires_at')
       @HiveField(26)
-          required DateTime? muteExpiresAt}) = _$_PleromaApiMyAccount;
+      required final DateTime? muteExpiresAt}) = _$PleromaApiMyAccountImpl;
 
   factory _PleromaApiMyAccount.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiMyAccount.fromJson;
+      _$PleromaApiMyAccountImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -1074,7 +892,7 @@ abstract class _PleromaApiMyAccount implements PleromaApiMyAccount {
   DateTime? get muteExpiresAt;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiMyAccountCopyWith<_PleromaApiMyAccount> get copyWith =>
+  _$$PleromaApiMyAccountImplCopyWith<_$PleromaApiMyAccountImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -1082,116 +900,6 @@ PleromaApiMyAccountPleromaPart _$PleromaApiMyAccountPleromaPartFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiMyAccountPleromaPart.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiMyAccountPleromaPartTearOff {
-  const _$PleromaApiMyAccountPleromaPartTearOff();
-
-  _PleromaApiMyAccountPleromaPart call(
-      {@HiveField(1)
-      @JsonKey(name: 'background_image')
-          required String? backgroundImage,
-      @HiveField(2)
-          required List<PleromaApiTag>? tags,
-      @HiveField(3)
-          required PleromaApiAccountRelationship? relationship,
-      @HiveField(4)
-      @JsonKey(name: 'is_admin')
-          required bool? isAdmin,
-      @HiveField(5)
-      @JsonKey(name: 'is_moderator')
-          required bool? isModerator,
-      @HiveField(7)
-      @JsonKey(name: 'confirmation_pending')
-          required bool? confirmationPending,
-      @HiveField(8)
-      @JsonKey(name: 'hide_favorites')
-          required bool? hideFavorites,
-      @HiveField(9)
-      @JsonKey(name: 'hide_followers')
-          required bool? hideFollowers,
-      @HiveField(11)
-      @JsonKey(name: 'hide_follows')
-          required bool? hideFollows,
-      @HiveField(12)
-      @JsonKey(name: 'hide_followers_count')
-          required bool? hideFollowersCount,
-      @HiveField(13)
-      @JsonKey(name: 'hide_follows_count')
-          required bool? hideFollowsCount,
-      @HiveField(14)
-      @JsonKey(name: 'settings_store')
-          required Map<String, dynamic>? settingsStore,
-      @HiveField(15)
-      @JsonKey(name: 'chat_token')
-          required String? chatToken,
-      @HiveField(16)
-          required bool? deactivated,
-      @HiveField(17)
-      @JsonKey(name: 'allow_following_move')
-          required bool? allowFollowingMove,
-      @HiveField(18)
-      @JsonKey(name: 'unread_conversation_count')
-          required int? unreadConversationCount,
-      @HiveField(19)
-      @JsonKey(name: 'notifications_settings')
-          required PleromaApiMyAccountNotificationsSettings?
-              notificationSettings,
-      @HiveField(20)
-      @JsonKey(name: 'skip_thread_containment')
-          required bool? skipThreadContainment,
-      @HiveField(21)
-      @JsonKey(name: 'accepts_chat_messages')
-          required bool? acceptsChatMessages,
-      @HiveField(22)
-      @JsonKey(name: 'is_confirmed')
-          required bool? isConfirmed,
-      @HiveField(23)
-          required String? favicon,
-      @HiveField(24)
-          required String? apId,
-      @HiveField(25)
-      @JsonKey(name: 'also_known_as')
-          required List<String>? alsoKnownAs,
-      @HiveField(26)
-      @JsonKey(name: 'unread_notifications_count')
-          required int? unreadNotificationsCount}) {
-    return _PleromaApiMyAccountPleromaPart(
-      backgroundImage: backgroundImage,
-      tags: tags,
-      relationship: relationship,
-      isAdmin: isAdmin,
-      isModerator: isModerator,
-      confirmationPending: confirmationPending,
-      hideFavorites: hideFavorites,
-      hideFollowers: hideFollowers,
-      hideFollows: hideFollows,
-      hideFollowersCount: hideFollowersCount,
-      hideFollowsCount: hideFollowsCount,
-      settingsStore: settingsStore,
-      chatToken: chatToken,
-      deactivated: deactivated,
-      allowFollowingMove: allowFollowingMove,
-      unreadConversationCount: unreadConversationCount,
-      notificationSettings: notificationSettings,
-      skipThreadContainment: skipThreadContainment,
-      acceptsChatMessages: acceptsChatMessages,
-      isConfirmed: isConfirmed,
-      favicon: favicon,
-      apId: apId,
-      alsoKnownAs: alsoKnownAs,
-      unreadNotificationsCount: unreadNotificationsCount,
-    );
-  }
-
-  PleromaApiMyAccountPleromaPart fromJson(Map<String, Object?> json) {
-    return PleromaApiMyAccountPleromaPart.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiMyAccountPleromaPart =
-    _$PleromaApiMyAccountPleromaPartTearOff();
 
 /// @nodoc
 mixin _$PleromaApiMyAccountPleromaPart {
@@ -1287,75 +995,54 @@ abstract class $PleromaApiMyAccountPleromaPartCopyWith<$Res> {
   factory $PleromaApiMyAccountPleromaPartCopyWith(
           PleromaApiMyAccountPleromaPart value,
           $Res Function(PleromaApiMyAccountPleromaPart) then) =
-      _$PleromaApiMyAccountPleromaPartCopyWithImpl<$Res>;
+      _$PleromaApiMyAccountPleromaPartCopyWithImpl<$Res,
+          PleromaApiMyAccountPleromaPart>;
+  @useResult
   $Res call(
-      {@HiveField(1)
-      @JsonKey(name: 'background_image')
-          String? backgroundImage,
-      @HiveField(2)
-          List<PleromaApiTag>? tags,
-      @HiveField(3)
-          PleromaApiAccountRelationship? relationship,
-      @HiveField(4)
-      @JsonKey(name: 'is_admin')
-          bool? isAdmin,
-      @HiveField(5)
-      @JsonKey(name: 'is_moderator')
-          bool? isModerator,
+      {@HiveField(1) @JsonKey(name: 'background_image') String? backgroundImage,
+      @HiveField(2) List<PleromaApiTag>? tags,
+      @HiveField(3) PleromaApiAccountRelationship? relationship,
+      @HiveField(4) @JsonKey(name: 'is_admin') bool? isAdmin,
+      @HiveField(5) @JsonKey(name: 'is_moderator') bool? isModerator,
       @HiveField(7)
       @JsonKey(name: 'confirmation_pending')
-          bool? confirmationPending,
-      @HiveField(8)
-      @JsonKey(name: 'hide_favorites')
-          bool? hideFavorites,
-      @HiveField(9)
-      @JsonKey(name: 'hide_followers')
-          bool? hideFollowers,
-      @HiveField(11)
-      @JsonKey(name: 'hide_follows')
-          bool? hideFollows,
+      bool? confirmationPending,
+      @HiveField(8) @JsonKey(name: 'hide_favorites') bool? hideFavorites,
+      @HiveField(9) @JsonKey(name: 'hide_followers') bool? hideFollowers,
+      @HiveField(11) @JsonKey(name: 'hide_follows') bool? hideFollows,
       @HiveField(12)
       @JsonKey(name: 'hide_followers_count')
-          bool? hideFollowersCount,
+      bool? hideFollowersCount,
       @HiveField(13)
       @JsonKey(name: 'hide_follows_count')
-          bool? hideFollowsCount,
+      bool? hideFollowsCount,
       @HiveField(14)
       @JsonKey(name: 'settings_store')
-          Map<String, dynamic>? settingsStore,
-      @HiveField(15)
-      @JsonKey(name: 'chat_token')
-          String? chatToken,
-      @HiveField(16)
-          bool? deactivated,
+      Map<String, dynamic>? settingsStore,
+      @HiveField(15) @JsonKey(name: 'chat_token') String? chatToken,
+      @HiveField(16) bool? deactivated,
       @HiveField(17)
       @JsonKey(name: 'allow_following_move')
-          bool? allowFollowingMove,
+      bool? allowFollowingMove,
       @HiveField(18)
       @JsonKey(name: 'unread_conversation_count')
-          int? unreadConversationCount,
+      int? unreadConversationCount,
       @HiveField(19)
       @JsonKey(name: 'notifications_settings')
-          PleromaApiMyAccountNotificationsSettings? notificationSettings,
+      PleromaApiMyAccountNotificationsSettings? notificationSettings,
       @HiveField(20)
       @JsonKey(name: 'skip_thread_containment')
-          bool? skipThreadContainment,
+      bool? skipThreadContainment,
       @HiveField(21)
       @JsonKey(name: 'accepts_chat_messages')
-          bool? acceptsChatMessages,
-      @HiveField(22)
-      @JsonKey(name: 'is_confirmed')
-          bool? isConfirmed,
-      @HiveField(23)
-          String? favicon,
-      @HiveField(24)
-          String? apId,
-      @HiveField(25)
-      @JsonKey(name: 'also_known_as')
-          List<String>? alsoKnownAs,
+      bool? acceptsChatMessages,
+      @HiveField(22) @JsonKey(name: 'is_confirmed') bool? isConfirmed,
+      @HiveField(23) String? favicon,
+      @HiveField(24) String? apId,
+      @HiveField(25) @JsonKey(name: 'also_known_as') List<String>? alsoKnownAs,
       @HiveField(26)
       @JsonKey(name: 'unread_notifications_count')
-          int? unreadNotificationsCount});
+      int? unreadNotificationsCount});
 
   $PleromaApiAccountRelationshipCopyWith<$Res>? get relationship;
   $PleromaApiMyAccountNotificationsSettingsCopyWith<$Res>?
@@ -1363,14 +1050,17 @@ abstract class $PleromaApiMyAccountPleromaPartCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiMyAccountPleromaPartCopyWithImpl<$Res>
+class _$PleromaApiMyAccountPleromaPartCopyWithImpl<$Res,
+        $Val extends PleromaApiMyAccountPleromaPart>
     implements $PleromaApiMyAccountPleromaPartCopyWith<$Res> {
   _$PleromaApiMyAccountPleromaPartCopyWithImpl(this._value, this._then);
 
-  final PleromaApiMyAccountPleromaPart _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiMyAccountPleromaPart) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? backgroundImage = freezed,
@@ -1399,106 +1089,107 @@ class _$PleromaApiMyAccountPleromaPartCopyWithImpl<$Res>
     Object? unreadNotificationsCount = freezed,
   }) {
     return _then(_value.copyWith(
-      backgroundImage: backgroundImage == freezed
+      backgroundImage: freezed == backgroundImage
           ? _value.backgroundImage
           : backgroundImage // ignore: cast_nullable_to_non_nullable
               as String?,
-      tags: tags == freezed
+      tags: freezed == tags
           ? _value.tags
           : tags // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiTag>?,
-      relationship: relationship == freezed
+      relationship: freezed == relationship
           ? _value.relationship
           : relationship // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccountRelationship?,
-      isAdmin: isAdmin == freezed
+      isAdmin: freezed == isAdmin
           ? _value.isAdmin
           : isAdmin // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isModerator: isModerator == freezed
+      isModerator: freezed == isModerator
           ? _value.isModerator
           : isModerator // ignore: cast_nullable_to_non_nullable
               as bool?,
-      confirmationPending: confirmationPending == freezed
+      confirmationPending: freezed == confirmationPending
           ? _value.confirmationPending
           : confirmationPending // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFavorites: hideFavorites == freezed
+      hideFavorites: freezed == hideFavorites
           ? _value.hideFavorites
           : hideFavorites // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFollowers: hideFollowers == freezed
+      hideFollowers: freezed == hideFollowers
           ? _value.hideFollowers
           : hideFollowers // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFollows: hideFollows == freezed
+      hideFollows: freezed == hideFollows
           ? _value.hideFollows
           : hideFollows // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFollowersCount: hideFollowersCount == freezed
+      hideFollowersCount: freezed == hideFollowersCount
           ? _value.hideFollowersCount
           : hideFollowersCount // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFollowsCount: hideFollowsCount == freezed
+      hideFollowsCount: freezed == hideFollowsCount
           ? _value.hideFollowsCount
           : hideFollowsCount // ignore: cast_nullable_to_non_nullable
               as bool?,
-      settingsStore: settingsStore == freezed
+      settingsStore: freezed == settingsStore
           ? _value.settingsStore
           : settingsStore // ignore: cast_nullable_to_non_nullable
               as Map<String, dynamic>?,
-      chatToken: chatToken == freezed
+      chatToken: freezed == chatToken
           ? _value.chatToken
           : chatToken // ignore: cast_nullable_to_non_nullable
               as String?,
-      deactivated: deactivated == freezed
+      deactivated: freezed == deactivated
           ? _value.deactivated
           : deactivated // ignore: cast_nullable_to_non_nullable
               as bool?,
-      allowFollowingMove: allowFollowingMove == freezed
+      allowFollowingMove: freezed == allowFollowingMove
           ? _value.allowFollowingMove
           : allowFollowingMove // ignore: cast_nullable_to_non_nullable
               as bool?,
-      unreadConversationCount: unreadConversationCount == freezed
+      unreadConversationCount: freezed == unreadConversationCount
           ? _value.unreadConversationCount
           : unreadConversationCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      notificationSettings: notificationSettings == freezed
+      notificationSettings: freezed == notificationSettings
           ? _value.notificationSettings
           : notificationSettings // ignore: cast_nullable_to_non_nullable
               as PleromaApiMyAccountNotificationsSettings?,
-      skipThreadContainment: skipThreadContainment == freezed
+      skipThreadContainment: freezed == skipThreadContainment
           ? _value.skipThreadContainment
           : skipThreadContainment // ignore: cast_nullable_to_non_nullable
               as bool?,
-      acceptsChatMessages: acceptsChatMessages == freezed
+      acceptsChatMessages: freezed == acceptsChatMessages
           ? _value.acceptsChatMessages
           : acceptsChatMessages // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isConfirmed: isConfirmed == freezed
+      isConfirmed: freezed == isConfirmed
           ? _value.isConfirmed
           : isConfirmed // ignore: cast_nullable_to_non_nullable
               as bool?,
-      favicon: favicon == freezed
+      favicon: freezed == favicon
           ? _value.favicon
           : favicon // ignore: cast_nullable_to_non_nullable
               as String?,
-      apId: apId == freezed
+      apId: freezed == apId
           ? _value.apId
           : apId // ignore: cast_nullable_to_non_nullable
               as String?,
-      alsoKnownAs: alsoKnownAs == freezed
+      alsoKnownAs: freezed == alsoKnownAs
           ? _value.alsoKnownAs
           : alsoKnownAs // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      unreadNotificationsCount: unreadNotificationsCount == freezed
+      unreadNotificationsCount: freezed == unreadNotificationsCount
           ? _value.unreadNotificationsCount
           : unreadNotificationsCount // ignore: cast_nullable_to_non_nullable
               as int?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiAccountRelationshipCopyWith<$Res>? get relationship {
     if (_value.relationship == null) {
       return null;
@@ -1506,11 +1197,12 @@ class _$PleromaApiMyAccountPleromaPartCopyWithImpl<$Res>
 
     return $PleromaApiAccountRelationshipCopyWith<$Res>(_value.relationship!,
         (value) {
-      return _then(_value.copyWith(relationship: value));
+      return _then(_value.copyWith(relationship: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiMyAccountNotificationsSettingsCopyWith<$Res>?
       get notificationSettings {
     if (_value.notificationSettings == null) {
@@ -1519,87 +1211,65 @@ class _$PleromaApiMyAccountPleromaPartCopyWithImpl<$Res>
 
     return $PleromaApiMyAccountNotificationsSettingsCopyWith<$Res>(
         _value.notificationSettings!, (value) {
-      return _then(_value.copyWith(notificationSettings: value));
+      return _then(_value.copyWith(notificationSettings: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiMyAccountPleromaPartCopyWith<$Res>
+abstract class _$$PleromaApiMyAccountPleromaPartImplCopyWith<$Res>
     implements $PleromaApiMyAccountPleromaPartCopyWith<$Res> {
-  factory _$PleromaApiMyAccountPleromaPartCopyWith(
-          _PleromaApiMyAccountPleromaPart value,
-          $Res Function(_PleromaApiMyAccountPleromaPart) then) =
-      __$PleromaApiMyAccountPleromaPartCopyWithImpl<$Res>;
+  factory _$$PleromaApiMyAccountPleromaPartImplCopyWith(
+          _$PleromaApiMyAccountPleromaPartImpl value,
+          $Res Function(_$PleromaApiMyAccountPleromaPartImpl) then) =
+      __$$PleromaApiMyAccountPleromaPartImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(1)
-      @JsonKey(name: 'background_image')
-          String? backgroundImage,
-      @HiveField(2)
-          List<PleromaApiTag>? tags,
-      @HiveField(3)
-          PleromaApiAccountRelationship? relationship,
-      @HiveField(4)
-      @JsonKey(name: 'is_admin')
-          bool? isAdmin,
-      @HiveField(5)
-      @JsonKey(name: 'is_moderator')
-          bool? isModerator,
+      {@HiveField(1) @JsonKey(name: 'background_image') String? backgroundImage,
+      @HiveField(2) List<PleromaApiTag>? tags,
+      @HiveField(3) PleromaApiAccountRelationship? relationship,
+      @HiveField(4) @JsonKey(name: 'is_admin') bool? isAdmin,
+      @HiveField(5) @JsonKey(name: 'is_moderator') bool? isModerator,
       @HiveField(7)
       @JsonKey(name: 'confirmation_pending')
-          bool? confirmationPending,
-      @HiveField(8)
-      @JsonKey(name: 'hide_favorites')
-          bool? hideFavorites,
-      @HiveField(9)
-      @JsonKey(name: 'hide_followers')
-          bool? hideFollowers,
-      @HiveField(11)
-      @JsonKey(name: 'hide_follows')
-          bool? hideFollows,
+      bool? confirmationPending,
+      @HiveField(8) @JsonKey(name: 'hide_favorites') bool? hideFavorites,
+      @HiveField(9) @JsonKey(name: 'hide_followers') bool? hideFollowers,
+      @HiveField(11) @JsonKey(name: 'hide_follows') bool? hideFollows,
       @HiveField(12)
       @JsonKey(name: 'hide_followers_count')
-          bool? hideFollowersCount,
+      bool? hideFollowersCount,
       @HiveField(13)
       @JsonKey(name: 'hide_follows_count')
-          bool? hideFollowsCount,
+      bool? hideFollowsCount,
       @HiveField(14)
       @JsonKey(name: 'settings_store')
-          Map<String, dynamic>? settingsStore,
-      @HiveField(15)
-      @JsonKey(name: 'chat_token')
-          String? chatToken,
-      @HiveField(16)
-          bool? deactivated,
+      Map<String, dynamic>? settingsStore,
+      @HiveField(15) @JsonKey(name: 'chat_token') String? chatToken,
+      @HiveField(16) bool? deactivated,
       @HiveField(17)
       @JsonKey(name: 'allow_following_move')
-          bool? allowFollowingMove,
+      bool? allowFollowingMove,
       @HiveField(18)
       @JsonKey(name: 'unread_conversation_count')
-          int? unreadConversationCount,
+      int? unreadConversationCount,
       @HiveField(19)
       @JsonKey(name: 'notifications_settings')
-          PleromaApiMyAccountNotificationsSettings? notificationSettings,
+      PleromaApiMyAccountNotificationsSettings? notificationSettings,
       @HiveField(20)
       @JsonKey(name: 'skip_thread_containment')
-          bool? skipThreadContainment,
+      bool? skipThreadContainment,
       @HiveField(21)
       @JsonKey(name: 'accepts_chat_messages')
-          bool? acceptsChatMessages,
-      @HiveField(22)
-      @JsonKey(name: 'is_confirmed')
-          bool? isConfirmed,
-      @HiveField(23)
-          String? favicon,
-      @HiveField(24)
-          String? apId,
-      @HiveField(25)
-      @JsonKey(name: 'also_known_as')
-          List<String>? alsoKnownAs,
+      bool? acceptsChatMessages,
+      @HiveField(22) @JsonKey(name: 'is_confirmed') bool? isConfirmed,
+      @HiveField(23) String? favicon,
+      @HiveField(24) String? apId,
+      @HiveField(25) @JsonKey(name: 'also_known_as') List<String>? alsoKnownAs,
       @HiveField(26)
       @JsonKey(name: 'unread_notifications_count')
-          int? unreadNotificationsCount});
+      int? unreadNotificationsCount});
 
   @override
   $PleromaApiAccountRelationshipCopyWith<$Res>? get relationship;
@@ -1609,18 +1279,16 @@ abstract class _$PleromaApiMyAccountPleromaPartCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiMyAccountPleromaPartCopyWithImpl<$Res>
-    extends _$PleromaApiMyAccountPleromaPartCopyWithImpl<$Res>
-    implements _$PleromaApiMyAccountPleromaPartCopyWith<$Res> {
-  __$PleromaApiMyAccountPleromaPartCopyWithImpl(
-      _PleromaApiMyAccountPleromaPart _value,
-      $Res Function(_PleromaApiMyAccountPleromaPart) _then)
-      : super(_value, (v) => _then(v as _PleromaApiMyAccountPleromaPart));
+class __$$PleromaApiMyAccountPleromaPartImplCopyWithImpl<$Res>
+    extends _$PleromaApiMyAccountPleromaPartCopyWithImpl<$Res,
+        _$PleromaApiMyAccountPleromaPartImpl>
+    implements _$$PleromaApiMyAccountPleromaPartImplCopyWith<$Res> {
+  __$$PleromaApiMyAccountPleromaPartImplCopyWithImpl(
+      _$PleromaApiMyAccountPleromaPartImpl _value,
+      $Res Function(_$PleromaApiMyAccountPleromaPartImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiMyAccountPleromaPart get _value =>
-      super._value as _PleromaApiMyAccountPleromaPart;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? backgroundImage = freezed,
@@ -1648,100 +1316,100 @@ class __$PleromaApiMyAccountPleromaPartCopyWithImpl<$Res>
     Object? alsoKnownAs = freezed,
     Object? unreadNotificationsCount = freezed,
   }) {
-    return _then(_PleromaApiMyAccountPleromaPart(
-      backgroundImage: backgroundImage == freezed
+    return _then(_$PleromaApiMyAccountPleromaPartImpl(
+      backgroundImage: freezed == backgroundImage
           ? _value.backgroundImage
           : backgroundImage // ignore: cast_nullable_to_non_nullable
               as String?,
-      tags: tags == freezed
-          ? _value.tags
+      tags: freezed == tags
+          ? _value._tags
           : tags // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiTag>?,
-      relationship: relationship == freezed
+      relationship: freezed == relationship
           ? _value.relationship
           : relationship // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccountRelationship?,
-      isAdmin: isAdmin == freezed
+      isAdmin: freezed == isAdmin
           ? _value.isAdmin
           : isAdmin // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isModerator: isModerator == freezed
+      isModerator: freezed == isModerator
           ? _value.isModerator
           : isModerator // ignore: cast_nullable_to_non_nullable
               as bool?,
-      confirmationPending: confirmationPending == freezed
+      confirmationPending: freezed == confirmationPending
           ? _value.confirmationPending
           : confirmationPending // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFavorites: hideFavorites == freezed
+      hideFavorites: freezed == hideFavorites
           ? _value.hideFavorites
           : hideFavorites // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFollowers: hideFollowers == freezed
+      hideFollowers: freezed == hideFollowers
           ? _value.hideFollowers
           : hideFollowers // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFollows: hideFollows == freezed
+      hideFollows: freezed == hideFollows
           ? _value.hideFollows
           : hideFollows // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFollowersCount: hideFollowersCount == freezed
+      hideFollowersCount: freezed == hideFollowersCount
           ? _value.hideFollowersCount
           : hideFollowersCount // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFollowsCount: hideFollowsCount == freezed
+      hideFollowsCount: freezed == hideFollowsCount
           ? _value.hideFollowsCount
           : hideFollowsCount // ignore: cast_nullable_to_non_nullable
               as bool?,
-      settingsStore: settingsStore == freezed
-          ? _value.settingsStore
+      settingsStore: freezed == settingsStore
+          ? _value._settingsStore
           : settingsStore // ignore: cast_nullable_to_non_nullable
               as Map<String, dynamic>?,
-      chatToken: chatToken == freezed
+      chatToken: freezed == chatToken
           ? _value.chatToken
           : chatToken // ignore: cast_nullable_to_non_nullable
               as String?,
-      deactivated: deactivated == freezed
+      deactivated: freezed == deactivated
           ? _value.deactivated
           : deactivated // ignore: cast_nullable_to_non_nullable
               as bool?,
-      allowFollowingMove: allowFollowingMove == freezed
+      allowFollowingMove: freezed == allowFollowingMove
           ? _value.allowFollowingMove
           : allowFollowingMove // ignore: cast_nullable_to_non_nullable
               as bool?,
-      unreadConversationCount: unreadConversationCount == freezed
+      unreadConversationCount: freezed == unreadConversationCount
           ? _value.unreadConversationCount
           : unreadConversationCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      notificationSettings: notificationSettings == freezed
+      notificationSettings: freezed == notificationSettings
           ? _value.notificationSettings
           : notificationSettings // ignore: cast_nullable_to_non_nullable
               as PleromaApiMyAccountNotificationsSettings?,
-      skipThreadContainment: skipThreadContainment == freezed
+      skipThreadContainment: freezed == skipThreadContainment
           ? _value.skipThreadContainment
           : skipThreadContainment // ignore: cast_nullable_to_non_nullable
               as bool?,
-      acceptsChatMessages: acceptsChatMessages == freezed
+      acceptsChatMessages: freezed == acceptsChatMessages
           ? _value.acceptsChatMessages
           : acceptsChatMessages // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isConfirmed: isConfirmed == freezed
+      isConfirmed: freezed == isConfirmed
           ? _value.isConfirmed
           : isConfirmed // ignore: cast_nullable_to_non_nullable
               as bool?,
-      favicon: favicon == freezed
+      favicon: freezed == favicon
           ? _value.favicon
           : favicon // ignore: cast_nullable_to_non_nullable
               as String?,
-      apId: apId == freezed
+      apId: freezed == apId
           ? _value.apId
           : apId // ignore: cast_nullable_to_non_nullable
               as String?,
-      alsoKnownAs: alsoKnownAs == freezed
-          ? _value.alsoKnownAs
+      alsoKnownAs: freezed == alsoKnownAs
+          ? _value._alsoKnownAs
           : alsoKnownAs // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      unreadNotificationsCount: unreadNotificationsCount == freezed
+      unreadNotificationsCount: freezed == unreadNotificationsCount
           ? _value.unreadNotificationsCount
           : unreadNotificationsCount // ignore: cast_nullable_to_non_nullable
               as int?,
@@ -1751,88 +1419,84 @@ class __$PleromaApiMyAccountPleromaPartCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiMyAccountPleromaPart
+class _$PleromaApiMyAccountPleromaPartImpl
     implements _PleromaApiMyAccountPleromaPart {
-  const _$_PleromaApiMyAccountPleromaPart(
+  const _$PleromaApiMyAccountPleromaPartImpl(
       {@HiveField(1)
       @JsonKey(name: 'background_image')
-          required this.backgroundImage,
-      @HiveField(2)
-          required this.tags,
-      @HiveField(3)
-          required this.relationship,
-      @HiveField(4)
-      @JsonKey(name: 'is_admin')
-          required this.isAdmin,
-      @HiveField(5)
-      @JsonKey(name: 'is_moderator')
-          required this.isModerator,
+      required this.backgroundImage,
+      @HiveField(2) required final List<PleromaApiTag>? tags,
+      @HiveField(3) required this.relationship,
+      @HiveField(4) @JsonKey(name: 'is_admin') required this.isAdmin,
+      @HiveField(5) @JsonKey(name: 'is_moderator') required this.isModerator,
       @HiveField(7)
       @JsonKey(name: 'confirmation_pending')
-          required this.confirmationPending,
+      required this.confirmationPending,
       @HiveField(8)
       @JsonKey(name: 'hide_favorites')
-          required this.hideFavorites,
+      required this.hideFavorites,
       @HiveField(9)
       @JsonKey(name: 'hide_followers')
-          required this.hideFollowers,
-      @HiveField(11)
-      @JsonKey(name: 'hide_follows')
-          required this.hideFollows,
+      required this.hideFollowers,
+      @HiveField(11) @JsonKey(name: 'hide_follows') required this.hideFollows,
       @HiveField(12)
       @JsonKey(name: 'hide_followers_count')
-          required this.hideFollowersCount,
+      required this.hideFollowersCount,
       @HiveField(13)
       @JsonKey(name: 'hide_follows_count')
-          required this.hideFollowsCount,
+      required this.hideFollowsCount,
       @HiveField(14)
       @JsonKey(name: 'settings_store')
-          required this.settingsStore,
-      @HiveField(15)
-      @JsonKey(name: 'chat_token')
-          required this.chatToken,
-      @HiveField(16)
-          required this.deactivated,
+      required final Map<String, dynamic>? settingsStore,
+      @HiveField(15) @JsonKey(name: 'chat_token') required this.chatToken,
+      @HiveField(16) required this.deactivated,
       @HiveField(17)
       @JsonKey(name: 'allow_following_move')
-          required this.allowFollowingMove,
+      required this.allowFollowingMove,
       @HiveField(18)
       @JsonKey(name: 'unread_conversation_count')
-          required this.unreadConversationCount,
+      required this.unreadConversationCount,
       @HiveField(19)
       @JsonKey(name: 'notifications_settings')
-          required this.notificationSettings,
+      required this.notificationSettings,
       @HiveField(20)
       @JsonKey(name: 'skip_thread_containment')
-          required this.skipThreadContainment,
+      required this.skipThreadContainment,
       @HiveField(21)
       @JsonKey(name: 'accepts_chat_messages')
-          required this.acceptsChatMessages,
-      @HiveField(22)
-      @JsonKey(name: 'is_confirmed')
-          required this.isConfirmed,
-      @HiveField(23)
-          required this.favicon,
-      @HiveField(24)
-          required this.apId,
+      required this.acceptsChatMessages,
+      @HiveField(22) @JsonKey(name: 'is_confirmed') required this.isConfirmed,
+      @HiveField(23) required this.favicon,
+      @HiveField(24) required this.apId,
       @HiveField(25)
       @JsonKey(name: 'also_known_as')
-          required this.alsoKnownAs,
+      required final List<String>? alsoKnownAs,
       @HiveField(26)
       @JsonKey(name: 'unread_notifications_count')
-          required this.unreadNotificationsCount});
+      required this.unreadNotificationsCount})
+      : _tags = tags,
+        _settingsStore = settingsStore,
+        _alsoKnownAs = alsoKnownAs;
 
-  factory _$_PleromaApiMyAccountPleromaPart.fromJson(
+  factory _$PleromaApiMyAccountPleromaPartImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_PleromaApiMyAccountPleromaPartFromJson(json);
+      _$$PleromaApiMyAccountPleromaPartImplFromJson(json);
 
   @override
   @HiveField(1)
   @JsonKey(name: 'background_image')
   final String? backgroundImage;
+  final List<PleromaApiTag>? _tags;
   @override
   @HiveField(2)
-  final List<PleromaApiTag>? tags;
+  List<PleromaApiTag>? get tags {
+    final value = _tags;
+    if (value == null) return null;
+    if (_tags is EqualUnmodifiableListView) return _tags;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(3)
   final PleromaApiAccountRelationship? relationship;
@@ -1868,33 +1532,44 @@ class _$_PleromaApiMyAccountPleromaPart
   @HiveField(13)
   @JsonKey(name: 'hide_follows_count')
   final bool? hideFollowsCount;
-  @override
 
   ///  A generic map of settings for frontends.
   ///  Opaque to the backend.
   ///  Only returned in verify_credentials and update_credentials
+  final Map<String, dynamic>? _settingsStore;
+
+  ///  A generic map of settings for frontends.
+  ///  Opaque to the backend.
+  ///  Only returned in verify_credentials and update_credentials
+  @override
   @HiveField(14)
   @JsonKey(name: 'settings_store')
-  final Map<String, dynamic>? settingsStore;
-  @override
+  Map<String, dynamic>? get settingsStore {
+    final value = _settingsStore;
+    if (value == null) return null;
+    if (_settingsStore is EqualUnmodifiableMapView) return _settingsStore;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(value);
+  }
 
   /// The token needed for Pleroma chat. Only returned in verify_credentials
+  @override
   @HiveField(15)
   @JsonKey(name: 'chat_token')
   final String? chatToken;
   @override
   @HiveField(16)
   final bool? deactivated;
-  @override
 
   ///  boolean, true when the user allows automatically follow moved
   ///  following accounts
+  @override
   @HiveField(17)
   @JsonKey(name: 'allow_following_move')
   final bool? allowFollowingMove;
-  @override
 
   /// The count of unread conversations. Only returned to the account owner.
+  @override
   @HiveField(18)
   @JsonKey(name: 'unread_conversation_count')
   final int? unreadConversationCount;
@@ -1920,10 +1595,18 @@ class _$_PleromaApiMyAccountPleromaPart
   @override
   @HiveField(24)
   final String? apId;
+  final List<String>? _alsoKnownAs;
   @override
   @HiveField(25)
   @JsonKey(name: 'also_known_as')
-  final List<String>? alsoKnownAs;
+  List<String>? get alsoKnownAs {
+    final value = _alsoKnownAs;
+    if (value == null) return null;
+    if (_alsoKnownAs is EqualUnmodifiableListView) return _alsoKnownAs;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(26)
   @JsonKey(name: 'unread_notifications_count')
@@ -1935,13 +1618,13 @@ class _$_PleromaApiMyAccountPleromaPart
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiMyAccountPleromaPart &&
+            other is _$PleromaApiMyAccountPleromaPartImpl &&
             (identical(other.backgroundImage, backgroundImage) ||
                 other.backgroundImage == backgroundImage) &&
-            const DeepCollectionEquality().equals(other.tags, tags) &&
+            const DeepCollectionEquality().equals(other._tags, _tags) &&
             (identical(other.relationship, relationship) ||
                 other.relationship == relationship) &&
             (identical(other.isAdmin, isAdmin) || other.isAdmin == isAdmin) &&
@@ -1960,7 +1643,7 @@ class _$_PleromaApiMyAccountPleromaPart
             (identical(other.hideFollowsCount, hideFollowsCount) ||
                 other.hideFollowsCount == hideFollowsCount) &&
             const DeepCollectionEquality()
-                .equals(other.settingsStore, settingsStore) &&
+                .equals(other._settingsStore, _settingsStore) &&
             (identical(other.chatToken, chatToken) ||
                 other.chatToken == chatToken) &&
             (identical(other.deactivated, deactivated) ||
@@ -1981,17 +1664,18 @@ class _$_PleromaApiMyAccountPleromaPart
             (identical(other.favicon, favicon) || other.favicon == favicon) &&
             (identical(other.apId, apId) || other.apId == apId) &&
             const DeepCollectionEquality()
-                .equals(other.alsoKnownAs, alsoKnownAs) &&
+                .equals(other._alsoKnownAs, _alsoKnownAs) &&
             (identical(
                     other.unreadNotificationsCount, unreadNotificationsCount) ||
                 other.unreadNotificationsCount == unreadNotificationsCount));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
         backgroundImage,
-        const DeepCollectionEquality().hash(tags),
+        const DeepCollectionEquality().hash(_tags),
         relationship,
         isAdmin,
         isModerator,
@@ -2001,7 +1685,7 @@ class _$_PleromaApiMyAccountPleromaPart
         hideFollows,
         hideFollowersCount,
         hideFollowsCount,
-        const DeepCollectionEquality().hash(settingsStore),
+        const DeepCollectionEquality().hash(_settingsStore),
         chatToken,
         deactivated,
         allowFollowingMove,
@@ -2012,97 +1696,94 @@ class _$_PleromaApiMyAccountPleromaPart
         isConfirmed,
         favicon,
         apId,
-        const DeepCollectionEquality().hash(alsoKnownAs),
+        const DeepCollectionEquality().hash(_alsoKnownAs),
         unreadNotificationsCount
       ]);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiMyAccountPleromaPartCopyWith<_PleromaApiMyAccountPleromaPart>
-      get copyWith => __$PleromaApiMyAccountPleromaPartCopyWithImpl<
-          _PleromaApiMyAccountPleromaPart>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiMyAccountPleromaPartImplCopyWith<
+          _$PleromaApiMyAccountPleromaPartImpl>
+      get copyWith => __$$PleromaApiMyAccountPleromaPartImplCopyWithImpl<
+          _$PleromaApiMyAccountPleromaPartImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiMyAccountPleromaPartToJson(this);
+    return _$$PleromaApiMyAccountPleromaPartImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiMyAccountPleromaPart
     implements PleromaApiMyAccountPleromaPart {
   const factory _PleromaApiMyAccountPleromaPart(
-          {@HiveField(1)
-          @JsonKey(name: 'background_image')
-              required String? backgroundImage,
-          @HiveField(2)
-              required List<PleromaApiTag>? tags,
-          @HiveField(3)
-              required PleromaApiAccountRelationship? relationship,
-          @HiveField(4)
-          @JsonKey(name: 'is_admin')
-              required bool? isAdmin,
-          @HiveField(5)
-          @JsonKey(name: 'is_moderator')
-              required bool? isModerator,
-          @HiveField(7)
-          @JsonKey(name: 'confirmation_pending')
-              required bool? confirmationPending,
-          @HiveField(8)
-          @JsonKey(name: 'hide_favorites')
-              required bool? hideFavorites,
-          @HiveField(9)
-          @JsonKey(name: 'hide_followers')
-              required bool? hideFollowers,
-          @HiveField(11)
-          @JsonKey(name: 'hide_follows')
-              required bool? hideFollows,
-          @HiveField(12)
-          @JsonKey(name: 'hide_followers_count')
-              required bool? hideFollowersCount,
-          @HiveField(13)
-          @JsonKey(name: 'hide_follows_count')
-              required bool? hideFollowsCount,
-          @HiveField(14)
-          @JsonKey(name: 'settings_store')
-              required Map<String, dynamic>? settingsStore,
-          @HiveField(15)
-          @JsonKey(name: 'chat_token')
-              required String? chatToken,
-          @HiveField(16)
-              required bool? deactivated,
-          @HiveField(17)
-          @JsonKey(name: 'allow_following_move')
-              required bool? allowFollowingMove,
-          @HiveField(18)
-          @JsonKey(name: 'unread_conversation_count')
-              required int? unreadConversationCount,
-          @HiveField(19)
-          @JsonKey(name: 'notifications_settings')
-              required PleromaApiMyAccountNotificationsSettings?
-                  notificationSettings,
-          @HiveField(20)
-          @JsonKey(name: 'skip_thread_containment')
-              required bool? skipThreadContainment,
-          @HiveField(21)
-          @JsonKey(name: 'accepts_chat_messages')
-              required bool? acceptsChatMessages,
-          @HiveField(22)
-          @JsonKey(name: 'is_confirmed')
-              required bool? isConfirmed,
-          @HiveField(23)
-              required String? favicon,
-          @HiveField(24)
-              required String? apId,
-          @HiveField(25)
-          @JsonKey(name: 'also_known_as')
-              required List<String>? alsoKnownAs,
-          @HiveField(26)
-          @JsonKey(name: 'unread_notifications_count')
-              required int? unreadNotificationsCount}) =
-      _$_PleromaApiMyAccountPleromaPart;
+      {@HiveField(1)
+      @JsonKey(name: 'background_image')
+      required final String? backgroundImage,
+      @HiveField(2) required final List<PleromaApiTag>? tags,
+      @HiveField(3) required final PleromaApiAccountRelationship? relationship,
+      @HiveField(4) @JsonKey(name: 'is_admin') required final bool? isAdmin,
+      @HiveField(5)
+      @JsonKey(name: 'is_moderator')
+      required final bool? isModerator,
+      @HiveField(7)
+      @JsonKey(name: 'confirmation_pending')
+      required final bool? confirmationPending,
+      @HiveField(8)
+      @JsonKey(name: 'hide_favorites')
+      required final bool? hideFavorites,
+      @HiveField(9)
+      @JsonKey(name: 'hide_followers')
+      required final bool? hideFollowers,
+      @HiveField(11)
+      @JsonKey(name: 'hide_follows')
+      required final bool? hideFollows,
+      @HiveField(12)
+      @JsonKey(name: 'hide_followers_count')
+      required final bool? hideFollowersCount,
+      @HiveField(13)
+      @JsonKey(name: 'hide_follows_count')
+      required final bool? hideFollowsCount,
+      @HiveField(14)
+      @JsonKey(name: 'settings_store')
+      required final Map<String, dynamic>? settingsStore,
+      @HiveField(15)
+      @JsonKey(name: 'chat_token')
+      required final String? chatToken,
+      @HiveField(16) required final bool? deactivated,
+      @HiveField(17)
+      @JsonKey(name: 'allow_following_move')
+      required final bool? allowFollowingMove,
+      @HiveField(18)
+      @JsonKey(name: 'unread_conversation_count')
+      required final int? unreadConversationCount,
+      @HiveField(19)
+      @JsonKey(name: 'notifications_settings')
+      required final PleromaApiMyAccountNotificationsSettings?
+          notificationSettings,
+      @HiveField(20)
+      @JsonKey(name: 'skip_thread_containment')
+      required final bool? skipThreadContainment,
+      @HiveField(21)
+      @JsonKey(name: 'accepts_chat_messages')
+      required final bool? acceptsChatMessages,
+      @HiveField(22)
+      @JsonKey(name: 'is_confirmed')
+      required final bool? isConfirmed,
+      @HiveField(23) required final String? favicon,
+      @HiveField(24) required final String? apId,
+      @HiveField(25)
+      @JsonKey(name: 'also_known_as')
+      required final List<String>? alsoKnownAs,
+      @HiveField(26)
+      @JsonKey(name: 'unread_notifications_count')
+      required final int?
+          unreadNotificationsCount}) = _$PleromaApiMyAccountPleromaPartImpl;
 
   factory _PleromaApiMyAccountPleromaPart.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiMyAccountPleromaPart.fromJson;
+      _$PleromaApiMyAccountPleromaPartImpl.fromJson;
 
   @override
   @HiveField(1)
@@ -2208,6 +1889,7 @@ abstract class _PleromaApiMyAccountPleromaPart
   int? get unreadNotificationsCount;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiMyAccountPleromaPartCopyWith<_PleromaApiMyAccountPleromaPart>
+  _$$PleromaApiMyAccountPleromaPartImplCopyWith<
+          _$PleromaApiMyAccountPleromaPartImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

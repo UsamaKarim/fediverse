@@ -69,9 +69,9 @@ class UnifediApiWebSocketsEventAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiWebSocketsEvent _$$_UnifediApiWebSocketsEventFromJson(
+_$UnifediApiWebSocketsEventImpl _$$UnifediApiWebSocketsEventImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiWebSocketsEvent(
+    _$UnifediApiWebSocketsEventImpl(
       type: json['event'] as String,
       channel: UnifediApiWebSocketsChannel.fromJson(
           json['channel'] as Map<String, dynamic>),
@@ -100,8 +100,8 @@ _$_UnifediApiWebSocketsEvent _$$_UnifediApiWebSocketsEventFromJson(
               json['follow_update'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_UnifediApiWebSocketsEventToJson(
-    _$_UnifediApiWebSocketsEvent instance) {
+Map<String, dynamic> _$$UnifediApiWebSocketsEventImplToJson(
+    _$UnifediApiWebSocketsEventImpl instance) {
   final val = <String, dynamic>{
     'event': instance.type,
     'channel': instance.channel.toJson(),

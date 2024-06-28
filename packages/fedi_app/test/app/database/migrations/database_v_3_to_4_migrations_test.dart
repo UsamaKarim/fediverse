@@ -1,8 +1,8 @@
 import 'dart:io';
 
+import 'package:drift/native.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:moor/ffi.dart';
 
 import '../../account/database/account_database_test_helper.dart';
 import '../../status/database/status_database_test_helper.dart';
@@ -16,7 +16,7 @@ void main() {
     var filePath = 'test_resources/app/database/fedi2_database_dump_v3.sqlite';
     var file = File(filePath);
     dbFile = await file.copy(filePath + '.temp');
-    database = AppDatabase(VmDatabase(dbFile));
+    database = AppDatabase(NativeDatabase(dbFile));
   });
 
   tearDown(() async {

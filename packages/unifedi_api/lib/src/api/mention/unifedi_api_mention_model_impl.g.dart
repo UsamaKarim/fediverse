@@ -53,16 +53,17 @@ class UnifediApiMentionAdapter extends TypeAdapter<UnifediApiMention> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiMention _$$_UnifediApiMentionFromJson(Map<String, dynamic> json) =>
-    _$_UnifediApiMention(
+_$UnifediApiMentionImpl _$$UnifediApiMentionImplFromJson(
+        Map<String, dynamic> json) =>
+    _$UnifediApiMentionImpl(
       acct: json['acct'] as String,
       id: json['id'] as String,
       url: json['url'] as String,
       username: json['username'] as String?,
     );
 
-Map<String, dynamic> _$$_UnifediApiMentionToJson(
-    _$_UnifediApiMention instance) {
+Map<String, dynamic> _$$UnifediApiMentionImplToJson(
+    _$UnifediApiMentionImpl instance) {
   final val = <String, dynamic>{
     'acct': instance.acct,
     'id': instance.id,

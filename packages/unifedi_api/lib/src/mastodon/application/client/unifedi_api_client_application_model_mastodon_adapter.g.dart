@@ -46,16 +46,16 @@ class UnifediApiClientApplicationMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiClientApplicationMastodonAdapter
-    _$$_UnifediApiClientApplicationMastodonAdapterFromJson(
+_$UnifediApiClientApplicationMastodonAdapterImpl
+    _$$UnifediApiClientApplicationMastodonAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiClientApplicationMastodonAdapter(
+        _$UnifediApiClientApplicationMastodonAdapterImpl(
           MastodonApiClientApplication.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiClientApplicationMastodonAdapterToJson(
-        _$_UnifediApiClientApplicationMastodonAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiClientApplicationMastodonAdapterImplToJson(
+        _$UnifediApiClientApplicationMastodonAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

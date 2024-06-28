@@ -52,10 +52,10 @@ class UnifediApiAccountRelationshipFollowUpdateAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiAccountRelationshipFollowUpdate
-    _$$_UnifediApiAccountRelationshipFollowUpdateFromJson(
+_$UnifediApiAccountRelationshipFollowUpdateImpl
+    _$$UnifediApiAccountRelationshipFollowUpdateImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiAccountRelationshipFollowUpdate(
+        _$UnifediApiAccountRelationshipFollowUpdateImpl(
           state: json['state'] as String,
           follower: UnifediApiAccountRelationshipFollowUpdateItem.fromJson(
               json['follower'] as Map<String, dynamic>),
@@ -63,8 +63,8 @@ _$_UnifediApiAccountRelationshipFollowUpdate
               json['following'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiAccountRelationshipFollowUpdateToJson(
-        _$_UnifediApiAccountRelationshipFollowUpdate instance) =>
+Map<String, dynamic> _$$UnifediApiAccountRelationshipFollowUpdateImplToJson(
+        _$UnifediApiAccountRelationshipFollowUpdateImpl instance) =>
     <String, dynamic>{
       'state': instance.state,
       'follower': instance.follower.toJson(),

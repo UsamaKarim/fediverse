@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_post_status_poll_model_pleroma_adapter.dart';
 
@@ -11,33 +12,13 @@ part of 'unifedi_api_post_status_poll_model_pleroma_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiPostStatusPollPleromaAdapter
     _$UnifediApiPostStatusPollPleromaAdapterFromJson(
         Map<String, dynamic> json) {
   return _UnifediApiPostStatusPollPleromaAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiPostStatusPollPleromaAdapterTearOff {
-  const _$UnifediApiPostStatusPollPleromaAdapterTearOff();
-
-  _UnifediApiPostStatusPollPleromaAdapter call(
-      @HiveField(0) PleromaApiPostStatusPoll value) {
-    return _UnifediApiPostStatusPollPleromaAdapter(
-      value,
-    );
-  }
-
-  UnifediApiPostStatusPollPleromaAdapter fromJson(Map<String, Object?> json) {
-    return UnifediApiPostStatusPollPleromaAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiPostStatusPollPleromaAdapter =
-    _$UnifediApiPostStatusPollPleromaAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiPostStatusPollPleromaAdapter {
@@ -56,49 +37,56 @@ abstract class $UnifediApiPostStatusPollPleromaAdapterCopyWith<$Res> {
   factory $UnifediApiPostStatusPollPleromaAdapterCopyWith(
           UnifediApiPostStatusPollPleromaAdapter value,
           $Res Function(UnifediApiPostStatusPollPleromaAdapter) then) =
-      _$UnifediApiPostStatusPollPleromaAdapterCopyWithImpl<$Res>;
+      _$UnifediApiPostStatusPollPleromaAdapterCopyWithImpl<$Res,
+          UnifediApiPostStatusPollPleromaAdapter>;
+  @useResult
   $Res call({@HiveField(0) PleromaApiPostStatusPoll value});
 
   $PleromaApiPostStatusPollCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiPostStatusPollPleromaAdapterCopyWithImpl<$Res>
+class _$UnifediApiPostStatusPollPleromaAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiPostStatusPollPleromaAdapter>
     implements $UnifediApiPostStatusPollPleromaAdapterCopyWith<$Res> {
   _$UnifediApiPostStatusPollPleromaAdapterCopyWithImpl(this._value, this._then);
 
-  final UnifediApiPostStatusPollPleromaAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiPostStatusPollPleromaAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiPostStatusPoll,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiPostStatusPollCopyWith<$Res> get value {
     return $PleromaApiPostStatusPollCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiPostStatusPollPleromaAdapterCopyWith<$Res>
+abstract class _$$UnifediApiPostStatusPollPleromaAdapterImplCopyWith<$Res>
     implements $UnifediApiPostStatusPollPleromaAdapterCopyWith<$Res> {
-  factory _$UnifediApiPostStatusPollPleromaAdapterCopyWith(
-          _UnifediApiPostStatusPollPleromaAdapter value,
-          $Res Function(_UnifediApiPostStatusPollPleromaAdapter) then) =
-      __$UnifediApiPostStatusPollPleromaAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiPostStatusPollPleromaAdapterImplCopyWith(
+          _$UnifediApiPostStatusPollPleromaAdapterImpl value,
+          $Res Function(_$UnifediApiPostStatusPollPleromaAdapterImpl) then) =
+      __$$UnifediApiPostStatusPollPleromaAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) PleromaApiPostStatusPoll value});
 
   @override
@@ -106,25 +94,22 @@ abstract class _$UnifediApiPostStatusPollPleromaAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiPostStatusPollPleromaAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiPostStatusPollPleromaAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiPostStatusPollPleromaAdapterCopyWith<$Res> {
-  __$UnifediApiPostStatusPollPleromaAdapterCopyWithImpl(
-      _UnifediApiPostStatusPollPleromaAdapter _value,
-      $Res Function(_UnifediApiPostStatusPollPleromaAdapter) _then)
-      : super(
-            _value, (v) => _then(v as _UnifediApiPostStatusPollPleromaAdapter));
+class __$$UnifediApiPostStatusPollPleromaAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiPostStatusPollPleromaAdapterCopyWithImpl<$Res,
+        _$UnifediApiPostStatusPollPleromaAdapterImpl>
+    implements _$$UnifediApiPostStatusPollPleromaAdapterImplCopyWith<$Res> {
+  __$$UnifediApiPostStatusPollPleromaAdapterImplCopyWithImpl(
+      _$UnifediApiPostStatusPollPleromaAdapterImpl _value,
+      $Res Function(_$UnifediApiPostStatusPollPleromaAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiPostStatusPollPleromaAdapter get _value =>
-      super._value as _UnifediApiPostStatusPollPleromaAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiPostStatusPollPleromaAdapter(
-      value == freezed
+    return _then(_$UnifediApiPostStatusPollPleromaAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiPostStatusPoll,
@@ -134,14 +119,14 @@ class __$UnifediApiPostStatusPollPleromaAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiPostStatusPollPleromaAdapter
+class _$UnifediApiPostStatusPollPleromaAdapterImpl
     extends _UnifediApiPostStatusPollPleromaAdapter {
-  const _$_UnifediApiPostStatusPollPleromaAdapter(@HiveField(0) this.value)
+  const _$UnifediApiPostStatusPollPleromaAdapterImpl(@HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiPostStatusPollPleromaAdapter.fromJson(
+  factory _$UnifediApiPostStatusPollPleromaAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiPostStatusPollPleromaAdapterFromJson(json);
+      _$$UnifediApiPostStatusPollPleromaAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -153,46 +138,51 @@ class _$_UnifediApiPostStatusPollPleromaAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiPostStatusPollPleromaAdapter &&
+            other is _$UnifediApiPostStatusPollPleromaAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiPostStatusPollPleromaAdapterCopyWith<
-          _UnifediApiPostStatusPollPleromaAdapter>
-      get copyWith => __$UnifediApiPostStatusPollPleromaAdapterCopyWithImpl<
-          _UnifediApiPostStatusPollPleromaAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiPostStatusPollPleromaAdapterImplCopyWith<
+          _$UnifediApiPostStatusPollPleromaAdapterImpl>
+      get copyWith =>
+          __$$UnifediApiPostStatusPollPleromaAdapterImplCopyWithImpl<
+              _$UnifediApiPostStatusPollPleromaAdapterImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiPostStatusPollPleromaAdapterToJson(this);
+    return _$$UnifediApiPostStatusPollPleromaAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiPostStatusPollPleromaAdapter
     extends UnifediApiPostStatusPollPleromaAdapter {
   const factory _UnifediApiPostStatusPollPleromaAdapter(
-          @HiveField(0) PleromaApiPostStatusPoll value) =
-      _$_UnifediApiPostStatusPollPleromaAdapter;
+          @HiveField(0) final PleromaApiPostStatusPoll value) =
+      _$UnifediApiPostStatusPollPleromaAdapterImpl;
   const _UnifediApiPostStatusPollPleromaAdapter._() : super._();
 
   factory _UnifediApiPostStatusPollPleromaAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiPostStatusPollPleromaAdapter.fromJson;
+      _$UnifediApiPostStatusPollPleromaAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   PleromaApiPostStatusPoll get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiPostStatusPollPleromaAdapterCopyWith<
-          _UnifediApiPostStatusPollPleromaAdapter>
+  _$$UnifediApiPostStatusPollPleromaAdapterImplCopyWith<
+          _$UnifediApiPostStatusPollPleromaAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

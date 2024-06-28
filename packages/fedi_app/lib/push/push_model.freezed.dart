@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'push_model.dart';
 
@@ -11,34 +12,11 @@ part of 'push_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PushMessage _$PushMessageFromJson(Map<String, dynamic> json) {
   return _PushMessage.fromJson(json);
 }
-
-/// @nodoc
-class _$PushMessageTearOff {
-  const _$PushMessageTearOff();
-
-  _PushMessage call(
-      {@HiveField(1) required PushNotification? notification,
-      @HiveField(2) required Map<String, dynamic>? data,
-      @JsonKey(name: 'typeString') @HiveField(3) required String typeString}) {
-    return _PushMessage(
-      notification: notification,
-      data: data,
-      typeString: typeString,
-    );
-  }
-
-  PushMessage fromJson(Map<String, Object?> json) {
-    return PushMessage.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PushMessage = _$PushMessageTearOff();
 
 /// @nodoc
 mixin _$PushMessage {
@@ -60,7 +38,8 @@ mixin _$PushMessage {
 abstract class $PushMessageCopyWith<$Res> {
   factory $PushMessageCopyWith(
           PushMessage value, $Res Function(PushMessage) then) =
-      _$PushMessageCopyWithImpl<$Res>;
+      _$PushMessageCopyWithImpl<$Res, PushMessage>;
+  @useResult
   $Res call(
       {@HiveField(1) PushNotification? notification,
       @HiveField(2) Map<String, dynamic>? data,
@@ -70,54 +49,59 @@ abstract class $PushMessageCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PushMessageCopyWithImpl<$Res> implements $PushMessageCopyWith<$Res> {
+class _$PushMessageCopyWithImpl<$Res, $Val extends PushMessage>
+    implements $PushMessageCopyWith<$Res> {
   _$PushMessageCopyWithImpl(this._value, this._then);
 
-  final PushMessage _value;
   // ignore: unused_field
-  final $Res Function(PushMessage) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? notification = freezed,
     Object? data = freezed,
-    Object? typeString = freezed,
+    Object? typeString = null,
   }) {
     return _then(_value.copyWith(
-      notification: notification == freezed
+      notification: freezed == notification
           ? _value.notification
           : notification // ignore: cast_nullable_to_non_nullable
               as PushNotification?,
-      data: data == freezed
+      data: freezed == data
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
               as Map<String, dynamic>?,
-      typeString: typeString == freezed
+      typeString: null == typeString
           ? _value.typeString
           : typeString // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PushNotificationCopyWith<$Res>? get notification {
     if (_value.notification == null) {
       return null;
     }
 
     return $PushNotificationCopyWith<$Res>(_value.notification!, (value) {
-      return _then(_value.copyWith(notification: value));
+      return _then(_value.copyWith(notification: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PushMessageCopyWith<$Res>
+abstract class _$$PushMessageImplCopyWith<$Res>
     implements $PushMessageCopyWith<$Res> {
-  factory _$PushMessageCopyWith(
-          _PushMessage value, $Res Function(_PushMessage) then) =
-      __$PushMessageCopyWithImpl<$Res>;
+  factory _$$PushMessageImplCopyWith(
+          _$PushMessageImpl value, $Res Function(_$PushMessageImpl) then) =
+      __$$PushMessageImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(1) PushNotification? notification,
       @HiveField(2) Map<String, dynamic>? data,
@@ -128,31 +112,30 @@ abstract class _$PushMessageCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PushMessageCopyWithImpl<$Res> extends _$PushMessageCopyWithImpl<$Res>
-    implements _$PushMessageCopyWith<$Res> {
-  __$PushMessageCopyWithImpl(
-      _PushMessage _value, $Res Function(_PushMessage) _then)
-      : super(_value, (v) => _then(v as _PushMessage));
+class __$$PushMessageImplCopyWithImpl<$Res>
+    extends _$PushMessageCopyWithImpl<$Res, _$PushMessageImpl>
+    implements _$$PushMessageImplCopyWith<$Res> {
+  __$$PushMessageImplCopyWithImpl(
+      _$PushMessageImpl _value, $Res Function(_$PushMessageImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PushMessage get _value => super._value as _PushMessage;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? notification = freezed,
     Object? data = freezed,
-    Object? typeString = freezed,
+    Object? typeString = null,
   }) {
-    return _then(_PushMessage(
-      notification: notification == freezed
+    return _then(_$PushMessageImpl(
+      notification: freezed == notification
           ? _value.notification
           : notification // ignore: cast_nullable_to_non_nullable
               as PushNotification?,
-      data: data == freezed
-          ? _value.data
+      data: freezed == data
+          ? _value._data
           : data // ignore: cast_nullable_to_non_nullable
               as Map<String, dynamic>?,
-      typeString: typeString == freezed
+      typeString: null == typeString
           ? _value.typeString
           : typeString // ignore: cast_nullable_to_non_nullable
               as String,
@@ -162,22 +145,31 @@ class __$PushMessageCopyWithImpl<$Res> extends _$PushMessageCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PushMessage extends _PushMessage with DiagnosticableTreeMixin {
-  const _$_PushMessage(
+class _$PushMessageImpl extends _PushMessage with DiagnosticableTreeMixin {
+  const _$PushMessageImpl(
       {@HiveField(1) required this.notification,
-      @HiveField(2) required this.data,
+      @HiveField(2) required final Map<String, dynamic>? data,
       @JsonKey(name: 'typeString') @HiveField(3) required this.typeString})
-      : super._();
+      : _data = data,
+        super._();
 
-  factory _$_PushMessage.fromJson(Map<String, dynamic> json) =>
-      _$$_PushMessageFromJson(json);
+  factory _$PushMessageImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PushMessageImplFromJson(json);
 
   @override
   @HiveField(1)
   final PushNotification? notification;
+  final Map<String, dynamic>? _data;
   @override
   @HiveField(2)
-  final Map<String, dynamic>? data;
+  Map<String, dynamic>? get data {
+    final value = _data;
+    if (value == null) return null;
+    if (_data is EqualUnmodifiableMapView) return _data;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(value);
+  }
+
   @override
   @JsonKey(name: 'typeString')
   @HiveField(3)
@@ -199,45 +191,47 @@ class _$_PushMessage extends _PushMessage with DiagnosticableTreeMixin {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PushMessage &&
+            other is _$PushMessageImpl &&
             (identical(other.notification, notification) ||
                 other.notification == notification) &&
-            const DeepCollectionEquality().equals(other.data, data) &&
+            const DeepCollectionEquality().equals(other._data, _data) &&
             (identical(other.typeString, typeString) ||
                 other.typeString == typeString));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, notification,
-      const DeepCollectionEquality().hash(data), typeString);
+      const DeepCollectionEquality().hash(_data), typeString);
 
   @JsonKey(ignore: true)
   @override
-  _$PushMessageCopyWith<_PushMessage> get copyWith =>
-      __$PushMessageCopyWithImpl<_PushMessage>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PushMessageImplCopyWith<_$PushMessageImpl> get copyWith =>
+      __$$PushMessageImplCopyWithImpl<_$PushMessageImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PushMessageToJson(this);
+    return _$$PushMessageImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PushMessage extends PushMessage {
   const factory _PushMessage(
-      {@HiveField(1)
-          required PushNotification? notification,
-      @HiveField(2)
-          required Map<String, dynamic>? data,
+      {@HiveField(1) required final PushNotification? notification,
+      @HiveField(2) required final Map<String, dynamic>? data,
       @JsonKey(name: 'typeString')
       @HiveField(3)
-          required String typeString}) = _$_PushMessage;
+      required final String typeString}) = _$PushMessageImpl;
   const _PushMessage._() : super._();
 
   factory _PushMessage.fromJson(Map<String, dynamic> json) =
-      _$_PushMessage.fromJson;
+      _$PushMessageImpl.fromJson;
 
   @override
   @HiveField(1)
@@ -251,34 +245,13 @@ abstract class _PushMessage extends PushMessage {
   String get typeString;
   @override
   @JsonKey(ignore: true)
-  _$PushMessageCopyWith<_PushMessage> get copyWith =>
+  _$$PushMessageImplCopyWith<_$PushMessageImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 PushNotification _$PushNotificationFromJson(Map<String, dynamic> json) {
   return _PushNotification.fromJson(json);
 }
-
-/// @nodoc
-class _$PushNotificationTearOff {
-  const _$PushNotificationTearOff();
-
-  _PushNotification call(
-      {@HiveField(0) required String? title,
-      @HiveField(1) required String? body}) {
-    return _PushNotification(
-      title: title,
-      body: body,
-    );
-  }
-
-  PushNotification fromJson(Map<String, Object?> json) {
-    return PushNotification.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PushNotification = _$PushNotificationTearOff();
 
 /// @nodoc
 mixin _$PushNotification {
@@ -297,69 +270,71 @@ mixin _$PushNotification {
 abstract class $PushNotificationCopyWith<$Res> {
   factory $PushNotificationCopyWith(
           PushNotification value, $Res Function(PushNotification) then) =
-      _$PushNotificationCopyWithImpl<$Res>;
+      _$PushNotificationCopyWithImpl<$Res, PushNotification>;
+  @useResult
   $Res call({@HiveField(0) String? title, @HiveField(1) String? body});
 }
 
 /// @nodoc
-class _$PushNotificationCopyWithImpl<$Res>
+class _$PushNotificationCopyWithImpl<$Res, $Val extends PushNotification>
     implements $PushNotificationCopyWith<$Res> {
   _$PushNotificationCopyWithImpl(this._value, this._then);
 
-  final PushNotification _value;
   // ignore: unused_field
-  final $Res Function(PushNotification) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? title = freezed,
     Object? body = freezed,
   }) {
     return _then(_value.copyWith(
-      title: title == freezed
+      title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
-      body: body == freezed
+      body: freezed == body
           ? _value.body
           : body // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PushNotificationCopyWith<$Res>
+abstract class _$$PushNotificationImplCopyWith<$Res>
     implements $PushNotificationCopyWith<$Res> {
-  factory _$PushNotificationCopyWith(
-          _PushNotification value, $Res Function(_PushNotification) then) =
-      __$PushNotificationCopyWithImpl<$Res>;
+  factory _$$PushNotificationImplCopyWith(_$PushNotificationImpl value,
+          $Res Function(_$PushNotificationImpl) then) =
+      __$$PushNotificationImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) String? title, @HiveField(1) String? body});
 }
 
 /// @nodoc
-class __$PushNotificationCopyWithImpl<$Res>
-    extends _$PushNotificationCopyWithImpl<$Res>
-    implements _$PushNotificationCopyWith<$Res> {
-  __$PushNotificationCopyWithImpl(
-      _PushNotification _value, $Res Function(_PushNotification) _then)
-      : super(_value, (v) => _then(v as _PushNotification));
+class __$$PushNotificationImplCopyWithImpl<$Res>
+    extends _$PushNotificationCopyWithImpl<$Res, _$PushNotificationImpl>
+    implements _$$PushNotificationImplCopyWith<$Res> {
+  __$$PushNotificationImplCopyWithImpl(_$PushNotificationImpl _value,
+      $Res Function(_$PushNotificationImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PushNotification get _value => super._value as _PushNotification;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? title = freezed,
     Object? body = freezed,
   }) {
-    return _then(_PushNotification(
-      title: title == freezed
+    return _then(_$PushNotificationImpl(
+      title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
-      body: body == freezed
+      body: freezed == body
           ? _value.body
           : body // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -369,14 +344,14 @@ class __$PushNotificationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PushNotification
+class _$PushNotificationImpl
     with DiagnosticableTreeMixin
     implements _PushNotification {
-  const _$_PushNotification(
+  const _$PushNotificationImpl(
       {@HiveField(0) required this.title, @HiveField(1) required this.body});
 
-  factory _$_PushNotification.fromJson(Map<String, dynamic> json) =>
-      _$$_PushNotificationFromJson(json);
+  factory _$PushNotificationImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PushNotificationImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -400,35 +375,40 @@ class _$_PushNotification
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PushNotification &&
+            other is _$PushNotificationImpl &&
             (identical(other.title, title) || other.title == title) &&
             (identical(other.body, body) || other.body == body));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, title, body);
 
   @JsonKey(ignore: true)
   @override
-  _$PushNotificationCopyWith<_PushNotification> get copyWith =>
-      __$PushNotificationCopyWithImpl<_PushNotification>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PushNotificationImplCopyWith<_$PushNotificationImpl> get copyWith =>
+      __$$PushNotificationImplCopyWithImpl<_$PushNotificationImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PushNotificationToJson(this);
+    return _$$PushNotificationImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PushNotification implements PushNotification {
   const factory _PushNotification(
-      {@HiveField(0) required String? title,
-      @HiveField(1) required String? body}) = _$_PushNotification;
+      {@HiveField(0) required final String? title,
+      @HiveField(1) required final String? body}) = _$PushNotificationImpl;
 
   factory _PushNotification.fromJson(Map<String, dynamic> json) =
-      _$_PushNotification.fromJson;
+      _$PushNotificationImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -438,6 +418,6 @@ abstract class _PushNotification implements PushNotification {
   String? get body;
   @override
   @JsonKey(ignore: true)
-  _$PushNotificationCopyWith<_PushNotification> get copyWith =>
+  _$$PushNotificationImplCopyWith<_$PushNotificationImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

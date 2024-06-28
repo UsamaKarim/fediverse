@@ -45,14 +45,14 @@ class UnifediApiInstanceUrlsAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiInstanceUrls _$$_UnifediApiInstanceUrlsFromJson(
+_$UnifediApiInstanceUrlsImpl _$$UnifediApiInstanceUrlsImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiInstanceUrls(
+    _$UnifediApiInstanceUrlsImpl(
       streamingApi: json['streaming_api'] as String?,
     );
 
-Map<String, dynamic> _$$_UnifediApiInstanceUrlsToJson(
-    _$_UnifediApiInstanceUrls instance) {
+Map<String, dynamic> _$$UnifediApiInstanceUrlsImplToJson(
+    _$UnifediApiInstanceUrlsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_rest_error_exception_impl.dart';
 
@@ -11,22 +12,7 @@ part of 'unifedi_api_rest_error_exception_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$UnifediApiRestErrorExceptionTearOff {
-  const _$UnifediApiRestErrorExceptionTearOff();
-
-  _UnifediApiRestErrorException call(
-      {required UnifediApiRestError unifediError}) {
-    return _UnifediApiRestErrorException(
-      unifediError: unifediError,
-    );
-  }
-}
-
-/// @nodoc
-const $UnifediApiRestErrorException = _$UnifediApiRestErrorExceptionTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$UnifediApiRestErrorException {
@@ -42,49 +28,56 @@ abstract class $UnifediApiRestErrorExceptionCopyWith<$Res> {
   factory $UnifediApiRestErrorExceptionCopyWith(
           UnifediApiRestErrorException value,
           $Res Function(UnifediApiRestErrorException) then) =
-      _$UnifediApiRestErrorExceptionCopyWithImpl<$Res>;
+      _$UnifediApiRestErrorExceptionCopyWithImpl<$Res,
+          UnifediApiRestErrorException>;
+  @useResult
   $Res call({UnifediApiRestError unifediError});
 
   $UnifediApiRestErrorCopyWith<$Res> get unifediError;
 }
 
 /// @nodoc
-class _$UnifediApiRestErrorExceptionCopyWithImpl<$Res>
+class _$UnifediApiRestErrorExceptionCopyWithImpl<$Res,
+        $Val extends UnifediApiRestErrorException>
     implements $UnifediApiRestErrorExceptionCopyWith<$Res> {
   _$UnifediApiRestErrorExceptionCopyWithImpl(this._value, this._then);
 
-  final UnifediApiRestErrorException _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiRestErrorException) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? unifediError = freezed,
+    Object? unifediError = null,
   }) {
     return _then(_value.copyWith(
-      unifediError: unifediError == freezed
+      unifediError: null == unifediError
           ? _value.unifediError
           : unifediError // ignore: cast_nullable_to_non_nullable
               as UnifediApiRestError,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiRestErrorCopyWith<$Res> get unifediError {
     return $UnifediApiRestErrorCopyWith<$Res>(_value.unifediError, (value) {
-      return _then(_value.copyWith(unifediError: value));
+      return _then(_value.copyWith(unifediError: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiRestErrorExceptionCopyWith<$Res>
+abstract class _$$UnifediApiRestErrorExceptionImplCopyWith<$Res>
     implements $UnifediApiRestErrorExceptionCopyWith<$Res> {
-  factory _$UnifediApiRestErrorExceptionCopyWith(
-          _UnifediApiRestErrorException value,
-          $Res Function(_UnifediApiRestErrorException) then) =
-      __$UnifediApiRestErrorExceptionCopyWithImpl<$Res>;
+  factory _$$UnifediApiRestErrorExceptionImplCopyWith(
+          _$UnifediApiRestErrorExceptionImpl value,
+          $Res Function(_$UnifediApiRestErrorExceptionImpl) then) =
+      __$$UnifediApiRestErrorExceptionImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({UnifediApiRestError unifediError});
 
   @override
@@ -92,24 +85,22 @@ abstract class _$UnifediApiRestErrorExceptionCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiRestErrorExceptionCopyWithImpl<$Res>
-    extends _$UnifediApiRestErrorExceptionCopyWithImpl<$Res>
-    implements _$UnifediApiRestErrorExceptionCopyWith<$Res> {
-  __$UnifediApiRestErrorExceptionCopyWithImpl(
-      _UnifediApiRestErrorException _value,
-      $Res Function(_UnifediApiRestErrorException) _then)
-      : super(_value, (v) => _then(v as _UnifediApiRestErrorException));
+class __$$UnifediApiRestErrorExceptionImplCopyWithImpl<$Res>
+    extends _$UnifediApiRestErrorExceptionCopyWithImpl<$Res,
+        _$UnifediApiRestErrorExceptionImpl>
+    implements _$$UnifediApiRestErrorExceptionImplCopyWith<$Res> {
+  __$$UnifediApiRestErrorExceptionImplCopyWithImpl(
+      _$UnifediApiRestErrorExceptionImpl _value,
+      $Res Function(_$UnifediApiRestErrorExceptionImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiRestErrorException get _value =>
-      super._value as _UnifediApiRestErrorException;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? unifediError = freezed,
+    Object? unifediError = null,
   }) {
-    return _then(_UnifediApiRestErrorException(
-      unifediError: unifediError == freezed
+    return _then(_$UnifediApiRestErrorExceptionImpl(
+      unifediError: null == unifediError
           ? _value.unifediError
           : unifediError // ignore: cast_nullable_to_non_nullable
               as UnifediApiRestError,
@@ -119,8 +110,8 @@ class __$UnifediApiRestErrorExceptionCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_UnifediApiRestErrorException extends _UnifediApiRestErrorException {
-  const _$_UnifediApiRestErrorException({required this.unifediError})
+class _$UnifediApiRestErrorExceptionImpl extends _UnifediApiRestErrorException {
+  const _$UnifediApiRestErrorExceptionImpl({required this.unifediError})
       : super._();
 
   @override
@@ -132,10 +123,10 @@ class _$_UnifediApiRestErrorException extends _UnifediApiRestErrorException {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiRestErrorException &&
+            other is _$UnifediApiRestErrorExceptionImpl &&
             (identical(other.unifediError, unifediError) ||
                 other.unifediError == unifediError));
   }
@@ -145,22 +136,25 @@ class _$_UnifediApiRestErrorException extends _UnifediApiRestErrorException {
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiRestErrorExceptionCopyWith<_UnifediApiRestErrorException>
-      get copyWith => __$UnifediApiRestErrorExceptionCopyWithImpl<
-          _UnifediApiRestErrorException>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiRestErrorExceptionImplCopyWith<
+          _$UnifediApiRestErrorExceptionImpl>
+      get copyWith => __$$UnifediApiRestErrorExceptionImplCopyWithImpl<
+          _$UnifediApiRestErrorExceptionImpl>(this, _$identity);
 }
 
 abstract class _UnifediApiRestErrorException
     extends UnifediApiRestErrorException {
   const factory _UnifediApiRestErrorException(
-          {required UnifediApiRestError unifediError}) =
-      _$_UnifediApiRestErrorException;
+          {required final UnifediApiRestError unifediError}) =
+      _$UnifediApiRestErrorExceptionImpl;
   const _UnifediApiRestErrorException._() : super._();
 
   @override
   UnifediApiRestError get unifediError;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiRestErrorExceptionCopyWith<_UnifediApiRestErrorException>
+  _$$UnifediApiRestErrorExceptionImplCopyWith<
+          _$UnifediApiRestErrorExceptionImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -51,25 +51,25 @@ class MastodonApiMediaAttachmentMetaAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiMediaAttachmentMeta _$$_MastodonApiMediaAttachmentMetaFromJson(
-        Map<String, dynamic> json) =>
-    _$_MastodonApiMediaAttachmentMeta(
-      focus: json['focus'] == null
-          ? null
-          : MastodonApiMediaAttachmentFocus.fromJson(
-              json['focus'] as Map<String, dynamic>),
-      original: json['original'] == null
-          ? null
-          : MastodonApiMediaAttachmentSize.fromJson(
-              json['original'] as Map<String, dynamic>),
-      small: json['small'] == null
-          ? null
-          : MastodonApiMediaAttachmentSize.fromJson(
-              json['small'] as Map<String, dynamic>),
-    );
+_$MastodonApiMediaAttachmentMetaImpl
+    _$$MastodonApiMediaAttachmentMetaImplFromJson(Map<String, dynamic> json) =>
+        _$MastodonApiMediaAttachmentMetaImpl(
+          focus: json['focus'] == null
+              ? null
+              : MastodonApiMediaAttachmentFocus.fromJson(
+                  json['focus'] as Map<String, dynamic>),
+          original: json['original'] == null
+              ? null
+              : MastodonApiMediaAttachmentSize.fromJson(
+                  json['original'] as Map<String, dynamic>),
+          small: json['small'] == null
+              ? null
+              : MastodonApiMediaAttachmentSize.fromJson(
+                  json['small'] as Map<String, dynamic>),
+        );
 
-Map<String, dynamic> _$$_MastodonApiMediaAttachmentMetaToJson(
-    _$_MastodonApiMediaAttachmentMeta instance) {
+Map<String, dynamic> _$$MastodonApiMediaAttachmentMetaImplToJson(
+    _$MastodonApiMediaAttachmentMetaImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

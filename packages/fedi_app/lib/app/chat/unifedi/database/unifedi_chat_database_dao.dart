@@ -1,3 +1,4 @@
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/chat/unifedi/database/unifedi_chat_database_model.dart';
 import 'package:fedi_app/app/chat/unifedi/message/unifedi_chat_message_model.dart';
 import 'package:fedi_app/app/chat/unifedi/repository/unifedi_chat_repository_model.dart';
@@ -6,7 +7,6 @@ import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/database/dao/remote/populated_app_remote_database_dao.dart';
 import 'package:fedi_app/repository/repository_model.dart';
 import 'package:logging/logging.dart';
-import 'package:moor/moor.dart';
 
 part 'unifedi_chat_database_dao.g.dart';
 
@@ -17,11 +17,7 @@ var _chatMessageAccountAliasId = 'chatMessageAccount';
 
 final _logger = Logger('unifedi_chat_database_dao.dart');
 
-@UseDao(
-  tables: [
-    DbChats,
-  ],
-)
+@DriftAccessor(tables: [DbChats])
 class ChatDao extends PopulatedAppRemoteDatabaseDao<
     DbChat,
     DbUnifediChatPopulated,
@@ -67,12 +63,12 @@ class ChatDao extends PopulatedAppRemoteDatabaseDao<
 
     if (minimumExist) {
       query.where(
-        (chat) => chat.updatedAt.isBiggerThanValue(minimumDateTimeExcluding),
+        (chat) => chat.updatedAt.isBiggerThanValue(minimumDateTimeExcluding!),
       );
     }
     if (maximumExist) {
       query.where(
-        (chat) => chat.updatedAt.isSmallerThanValue(maximumDateTimeExcluding),
+        (chat) => chat.updatedAt.isSmallerThanValue(maximumDateTimeExcluding!),
       );
     }
   }
@@ -120,7 +116,7 @@ class ChatDao extends PopulatedAppRemoteDatabaseDao<
         orderTerms
             .map(
               (orderTerm) => ($DbChatsTable item) {
-                GeneratedColumn<Object?> expression;
+                GeneratedColumn<Object> expression;
                 switch (orderTerm.orderType) {
                   case UnifediChatOrderType.remoteId:
                     expression = item.remoteId;
@@ -131,6 +127,7 @@ class ChatDao extends PopulatedAppRemoteDatabaseDao<
                 }
 
                 return OrderingTerm(
+                  // expression: expression,
                   expression: expression,
                   mode: orderTerm.orderingMode,
                 );

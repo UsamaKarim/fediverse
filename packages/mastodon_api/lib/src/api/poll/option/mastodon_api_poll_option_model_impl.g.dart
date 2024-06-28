@@ -47,15 +47,15 @@ class MastodonApiPollOptionAdapter extends TypeAdapter<MastodonApiPollOption> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiPollOption _$$_MastodonApiPollOptionFromJson(
+_$MastodonApiPollOptionImpl _$$MastodonApiPollOptionImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiPollOption(
+    _$MastodonApiPollOptionImpl(
       title: json['title'] as String,
-      votesCount: json['votes_count'] as int?,
+      votesCount: (json['votes_count'] as num?)?.toInt(),
     );
 
-Map<String, dynamic> _$$_MastodonApiPollOptionToJson(
-    _$_MastodonApiPollOption instance) {
+Map<String, dynamic> _$$MastodonApiPollOptionImplToJson(
+    _$MastodonApiPollOptionImpl instance) {
   final val = <String, dynamic>{
     'title': instance.title,
   };

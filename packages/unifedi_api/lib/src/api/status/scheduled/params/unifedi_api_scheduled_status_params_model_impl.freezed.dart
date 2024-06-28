@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_scheduled_status_params_model_impl.dart';
 
@@ -11,73 +12,12 @@ part of 'unifedi_api_scheduled_status_params_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiScheduledStatusParams _$UnifediApiScheduledStatusParamsFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiScheduledStatusParams.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiScheduledStatusParamsTearOff {
-  const _$UnifediApiScheduledStatusParamsTearOff();
-
-  _UnifediApiScheduledStatusParams call(
-      {@JsonKey(name: 'expires_in')
-      @HiveField(0)
-          required int? expiresInSeconds,
-      @HiveField(1)
-          required String? text,
-      @JsonKey(name: 'media_ids')
-      @HiveField(2)
-          required List<String>? mediaIds,
-      @HiveField(3)
-          required bool sensitive,
-      @JsonKey(name: 'spoiler_text')
-      @HiveField(4)
-          required String? spoilerText,
-      @HiveField(5)
-          required String visibility,
-      @HiveField(6)
-          required String? language,
-      @JsonKey(name: 'scheduled_at')
-      @HiveField(7)
-          required DateTime scheduledAt,
-      @HiveField(8)
-          required UnifediApiPostStatusPoll? poll,
-      @JsonKey(name: 'in_reply_to_id')
-      @HiveField(10)
-          required String? inReplyToId,
-      @JsonKey(name: 'in_reply_to_conversation_id')
-      @HiveField(12)
-          required String? inReplyToConversationId,
-      @JsonKey(name: 'to')
-      @HiveField(13)
-          required List<String>? to}) {
-    return _UnifediApiScheduledStatusParams(
-      expiresInSeconds: expiresInSeconds,
-      text: text,
-      mediaIds: mediaIds,
-      sensitive: sensitive,
-      spoilerText: spoilerText,
-      visibility: visibility,
-      language: language,
-      scheduledAt: scheduledAt,
-      poll: poll,
-      inReplyToId: inReplyToId,
-      inReplyToConversationId: inReplyToConversationId,
-      to: to,
-    );
-  }
-
-  UnifediApiScheduledStatusParams fromJson(Map<String, Object?> json) {
-    return UnifediApiScheduledStatusParams.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiScheduledStatusParams =
-    _$UnifediApiScheduledStatusParamsTearOff();
 
 /// @nodoc
 mixin _$UnifediApiScheduledStatusParams {
@@ -124,251 +64,222 @@ abstract class $UnifediApiScheduledStatusParamsCopyWith<$Res> {
   factory $UnifediApiScheduledStatusParamsCopyWith(
           UnifediApiScheduledStatusParams value,
           $Res Function(UnifediApiScheduledStatusParams) then) =
-      _$UnifediApiScheduledStatusParamsCopyWithImpl<$Res>;
+      _$UnifediApiScheduledStatusParamsCopyWithImpl<$Res,
+          UnifediApiScheduledStatusParams>;
+  @useResult
   $Res call(
-      {@JsonKey(name: 'expires_in')
-      @HiveField(0)
-          int? expiresInSeconds,
-      @HiveField(1)
-          String? text,
-      @JsonKey(name: 'media_ids')
-      @HiveField(2)
-          List<String>? mediaIds,
-      @HiveField(3)
-          bool sensitive,
-      @JsonKey(name: 'spoiler_text')
-      @HiveField(4)
-          String? spoilerText,
-      @HiveField(5)
-          String visibility,
-      @HiveField(6)
-          String? language,
-      @JsonKey(name: 'scheduled_at')
-      @HiveField(7)
-          DateTime scheduledAt,
-      @HiveField(8)
-          UnifediApiPostStatusPoll? poll,
-      @JsonKey(name: 'in_reply_to_id')
-      @HiveField(10)
-          String? inReplyToId,
+      {@JsonKey(name: 'expires_in') @HiveField(0) int? expiresInSeconds,
+      @HiveField(1) String? text,
+      @JsonKey(name: 'media_ids') @HiveField(2) List<String>? mediaIds,
+      @HiveField(3) bool sensitive,
+      @JsonKey(name: 'spoiler_text') @HiveField(4) String? spoilerText,
+      @HiveField(5) String visibility,
+      @HiveField(6) String? language,
+      @JsonKey(name: 'scheduled_at') @HiveField(7) DateTime scheduledAt,
+      @HiveField(8) UnifediApiPostStatusPoll? poll,
+      @JsonKey(name: 'in_reply_to_id') @HiveField(10) String? inReplyToId,
       @JsonKey(name: 'in_reply_to_conversation_id')
       @HiveField(12)
-          String? inReplyToConversationId,
-      @JsonKey(name: 'to')
-      @HiveField(13)
-          List<String>? to});
+      String? inReplyToConversationId,
+      @JsonKey(name: 'to') @HiveField(13) List<String>? to});
 
   $UnifediApiPostStatusPollCopyWith<$Res>? get poll;
 }
 
 /// @nodoc
-class _$UnifediApiScheduledStatusParamsCopyWithImpl<$Res>
+class _$UnifediApiScheduledStatusParamsCopyWithImpl<$Res,
+        $Val extends UnifediApiScheduledStatusParams>
     implements $UnifediApiScheduledStatusParamsCopyWith<$Res> {
   _$UnifediApiScheduledStatusParamsCopyWithImpl(this._value, this._then);
 
-  final UnifediApiScheduledStatusParams _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiScheduledStatusParams) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? expiresInSeconds = freezed,
     Object? text = freezed,
     Object? mediaIds = freezed,
-    Object? sensitive = freezed,
+    Object? sensitive = null,
     Object? spoilerText = freezed,
-    Object? visibility = freezed,
+    Object? visibility = null,
     Object? language = freezed,
-    Object? scheduledAt = freezed,
+    Object? scheduledAt = null,
     Object? poll = freezed,
     Object? inReplyToId = freezed,
     Object? inReplyToConversationId = freezed,
     Object? to = freezed,
   }) {
     return _then(_value.copyWith(
-      expiresInSeconds: expiresInSeconds == freezed
+      expiresInSeconds: freezed == expiresInSeconds
           ? _value.expiresInSeconds
           : expiresInSeconds // ignore: cast_nullable_to_non_nullable
               as int?,
-      text: text == freezed
+      text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String?,
-      mediaIds: mediaIds == freezed
+      mediaIds: freezed == mediaIds
           ? _value.mediaIds
           : mediaIds // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      sensitive: sensitive == freezed
+      sensitive: null == sensitive
           ? _value.sensitive
           : sensitive // ignore: cast_nullable_to_non_nullable
               as bool,
-      spoilerText: spoilerText == freezed
+      spoilerText: freezed == spoilerText
           ? _value.spoilerText
           : spoilerText // ignore: cast_nullable_to_non_nullable
               as String?,
-      visibility: visibility == freezed
+      visibility: null == visibility
           ? _value.visibility
           : visibility // ignore: cast_nullable_to_non_nullable
               as String,
-      language: language == freezed
+      language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as String?,
-      scheduledAt: scheduledAt == freezed
+      scheduledAt: null == scheduledAt
           ? _value.scheduledAt
           : scheduledAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      poll: poll == freezed
+      poll: freezed == poll
           ? _value.poll
           : poll // ignore: cast_nullable_to_non_nullable
               as UnifediApiPostStatusPoll?,
-      inReplyToId: inReplyToId == freezed
+      inReplyToId: freezed == inReplyToId
           ? _value.inReplyToId
           : inReplyToId // ignore: cast_nullable_to_non_nullable
               as String?,
-      inReplyToConversationId: inReplyToConversationId == freezed
+      inReplyToConversationId: freezed == inReplyToConversationId
           ? _value.inReplyToConversationId
           : inReplyToConversationId // ignore: cast_nullable_to_non_nullable
               as String?,
-      to: to == freezed
+      to: freezed == to
           ? _value.to
           : to // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiPostStatusPollCopyWith<$Res>? get poll {
     if (_value.poll == null) {
       return null;
     }
 
     return $UnifediApiPostStatusPollCopyWith<$Res>(_value.poll!, (value) {
-      return _then(_value.copyWith(poll: value));
+      return _then(_value.copyWith(poll: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiScheduledStatusParamsCopyWith<$Res>
+abstract class _$$UnifediApiScheduledStatusParamsImplCopyWith<$Res>
     implements $UnifediApiScheduledStatusParamsCopyWith<$Res> {
-  factory _$UnifediApiScheduledStatusParamsCopyWith(
-          _UnifediApiScheduledStatusParams value,
-          $Res Function(_UnifediApiScheduledStatusParams) then) =
-      __$UnifediApiScheduledStatusParamsCopyWithImpl<$Res>;
+  factory _$$UnifediApiScheduledStatusParamsImplCopyWith(
+          _$UnifediApiScheduledStatusParamsImpl value,
+          $Res Function(_$UnifediApiScheduledStatusParamsImpl) then) =
+      __$$UnifediApiScheduledStatusParamsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@JsonKey(name: 'expires_in')
-      @HiveField(0)
-          int? expiresInSeconds,
-      @HiveField(1)
-          String? text,
-      @JsonKey(name: 'media_ids')
-      @HiveField(2)
-          List<String>? mediaIds,
-      @HiveField(3)
-          bool sensitive,
-      @JsonKey(name: 'spoiler_text')
-      @HiveField(4)
-          String? spoilerText,
-      @HiveField(5)
-          String visibility,
-      @HiveField(6)
-          String? language,
-      @JsonKey(name: 'scheduled_at')
-      @HiveField(7)
-          DateTime scheduledAt,
-      @HiveField(8)
-          UnifediApiPostStatusPoll? poll,
-      @JsonKey(name: 'in_reply_to_id')
-      @HiveField(10)
-          String? inReplyToId,
+      {@JsonKey(name: 'expires_in') @HiveField(0) int? expiresInSeconds,
+      @HiveField(1) String? text,
+      @JsonKey(name: 'media_ids') @HiveField(2) List<String>? mediaIds,
+      @HiveField(3) bool sensitive,
+      @JsonKey(name: 'spoiler_text') @HiveField(4) String? spoilerText,
+      @HiveField(5) String visibility,
+      @HiveField(6) String? language,
+      @JsonKey(name: 'scheduled_at') @HiveField(7) DateTime scheduledAt,
+      @HiveField(8) UnifediApiPostStatusPoll? poll,
+      @JsonKey(name: 'in_reply_to_id') @HiveField(10) String? inReplyToId,
       @JsonKey(name: 'in_reply_to_conversation_id')
       @HiveField(12)
-          String? inReplyToConversationId,
-      @JsonKey(name: 'to')
-      @HiveField(13)
-          List<String>? to});
+      String? inReplyToConversationId,
+      @JsonKey(name: 'to') @HiveField(13) List<String>? to});
 
   @override
   $UnifediApiPostStatusPollCopyWith<$Res>? get poll;
 }
 
 /// @nodoc
-class __$UnifediApiScheduledStatusParamsCopyWithImpl<$Res>
-    extends _$UnifediApiScheduledStatusParamsCopyWithImpl<$Res>
-    implements _$UnifediApiScheduledStatusParamsCopyWith<$Res> {
-  __$UnifediApiScheduledStatusParamsCopyWithImpl(
-      _UnifediApiScheduledStatusParams _value,
-      $Res Function(_UnifediApiScheduledStatusParams) _then)
-      : super(_value, (v) => _then(v as _UnifediApiScheduledStatusParams));
+class __$$UnifediApiScheduledStatusParamsImplCopyWithImpl<$Res>
+    extends _$UnifediApiScheduledStatusParamsCopyWithImpl<$Res,
+        _$UnifediApiScheduledStatusParamsImpl>
+    implements _$$UnifediApiScheduledStatusParamsImplCopyWith<$Res> {
+  __$$UnifediApiScheduledStatusParamsImplCopyWithImpl(
+      _$UnifediApiScheduledStatusParamsImpl _value,
+      $Res Function(_$UnifediApiScheduledStatusParamsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiScheduledStatusParams get _value =>
-      super._value as _UnifediApiScheduledStatusParams;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? expiresInSeconds = freezed,
     Object? text = freezed,
     Object? mediaIds = freezed,
-    Object? sensitive = freezed,
+    Object? sensitive = null,
     Object? spoilerText = freezed,
-    Object? visibility = freezed,
+    Object? visibility = null,
     Object? language = freezed,
-    Object? scheduledAt = freezed,
+    Object? scheduledAt = null,
     Object? poll = freezed,
     Object? inReplyToId = freezed,
     Object? inReplyToConversationId = freezed,
     Object? to = freezed,
   }) {
-    return _then(_UnifediApiScheduledStatusParams(
-      expiresInSeconds: expiresInSeconds == freezed
+    return _then(_$UnifediApiScheduledStatusParamsImpl(
+      expiresInSeconds: freezed == expiresInSeconds
           ? _value.expiresInSeconds
           : expiresInSeconds // ignore: cast_nullable_to_non_nullable
               as int?,
-      text: text == freezed
+      text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String?,
-      mediaIds: mediaIds == freezed
-          ? _value.mediaIds
+      mediaIds: freezed == mediaIds
+          ? _value._mediaIds
           : mediaIds // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      sensitive: sensitive == freezed
+      sensitive: null == sensitive
           ? _value.sensitive
           : sensitive // ignore: cast_nullable_to_non_nullable
               as bool,
-      spoilerText: spoilerText == freezed
+      spoilerText: freezed == spoilerText
           ? _value.spoilerText
           : spoilerText // ignore: cast_nullable_to_non_nullable
               as String?,
-      visibility: visibility == freezed
+      visibility: null == visibility
           ? _value.visibility
           : visibility // ignore: cast_nullable_to_non_nullable
               as String,
-      language: language == freezed
+      language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as String?,
-      scheduledAt: scheduledAt == freezed
+      scheduledAt: null == scheduledAt
           ? _value.scheduledAt
           : scheduledAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      poll: poll == freezed
+      poll: freezed == poll
           ? _value.poll
           : poll // ignore: cast_nullable_to_non_nullable
               as UnifediApiPostStatusPoll?,
-      inReplyToId: inReplyToId == freezed
+      inReplyToId: freezed == inReplyToId
           ? _value.inReplyToId
           : inReplyToId // ignore: cast_nullable_to_non_nullable
               as String?,
-      inReplyToConversationId: inReplyToConversationId == freezed
+      inReplyToConversationId: freezed == inReplyToConversationId
           ? _value.inReplyToConversationId
           : inReplyToConversationId // ignore: cast_nullable_to_non_nullable
               as String?,
-      to: to == freezed
-          ? _value.to
+      to: freezed == to
+          ? _value._to
           : to // ignore: cast_nullable_to_non_nullable
               as List<String>?,
     ));
@@ -377,44 +288,33 @@ class __$UnifediApiScheduledStatusParamsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiScheduledStatusParams
+class _$UnifediApiScheduledStatusParamsImpl
     implements _UnifediApiScheduledStatusParams {
-  const _$_UnifediApiScheduledStatusParams(
+  const _$UnifediApiScheduledStatusParamsImpl(
       {@JsonKey(name: 'expires_in')
       @HiveField(0)
-          required this.expiresInSeconds,
-      @HiveField(1)
-          required this.text,
+      required this.expiresInSeconds,
+      @HiveField(1) required this.text,
       @JsonKey(name: 'media_ids')
       @HiveField(2)
-          required this.mediaIds,
-      @HiveField(3)
-          required this.sensitive,
-      @JsonKey(name: 'spoiler_text')
-      @HiveField(4)
-          required this.spoilerText,
-      @HiveField(5)
-          required this.visibility,
-      @HiveField(6)
-          required this.language,
-      @JsonKey(name: 'scheduled_at')
-      @HiveField(7)
-          required this.scheduledAt,
-      @HiveField(8)
-          required this.poll,
-      @JsonKey(name: 'in_reply_to_id')
-      @HiveField(10)
-          required this.inReplyToId,
+      required final List<String>? mediaIds,
+      @HiveField(3) required this.sensitive,
+      @JsonKey(name: 'spoiler_text') @HiveField(4) required this.spoilerText,
+      @HiveField(5) required this.visibility,
+      @HiveField(6) required this.language,
+      @JsonKey(name: 'scheduled_at') @HiveField(7) required this.scheduledAt,
+      @HiveField(8) required this.poll,
+      @JsonKey(name: 'in_reply_to_id') @HiveField(10) required this.inReplyToId,
       @JsonKey(name: 'in_reply_to_conversation_id')
       @HiveField(12)
-          required this.inReplyToConversationId,
-      @JsonKey(name: 'to')
-      @HiveField(13)
-          required this.to});
+      required this.inReplyToConversationId,
+      @JsonKey(name: 'to') @HiveField(13) required final List<String>? to})
+      : _mediaIds = mediaIds,
+        _to = to;
 
-  factory _$_UnifediApiScheduledStatusParams.fromJson(
+  factory _$UnifediApiScheduledStatusParamsImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiScheduledStatusParamsFromJson(json);
+      _$$UnifediApiScheduledStatusParamsImplFromJson(json);
 
   @override
   @JsonKey(name: 'expires_in')
@@ -423,10 +323,18 @@ class _$_UnifediApiScheduledStatusParams
   @override
   @HiveField(1)
   final String? text;
+  final List<String>? _mediaIds;
   @override
   @JsonKey(name: 'media_ids')
   @HiveField(2)
-  final List<String>? mediaIds;
+  List<String>? get mediaIds {
+    final value = _mediaIds;
+    if (value == null) return null;
+    if (_mediaIds is EqualUnmodifiableListView) return _mediaIds;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(3)
   final bool sensitive;
@@ -455,10 +363,17 @@ class _$_UnifediApiScheduledStatusParams
   @JsonKey(name: 'in_reply_to_conversation_id')
   @HiveField(12)
   final String? inReplyToConversationId;
+  final List<String>? _to;
   @override
   @JsonKey(name: 'to')
   @HiveField(13)
-  final List<String>? to;
+  List<String>? get to {
+    final value = _to;
+    if (value == null) return null;
+    if (_to is EqualUnmodifiableListView) return _to;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   @override
   String toString() {
@@ -466,14 +381,14 @@ class _$_UnifediApiScheduledStatusParams
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiScheduledStatusParams &&
+            other is _$UnifediApiScheduledStatusParamsImpl &&
             (identical(other.expiresInSeconds, expiresInSeconds) ||
                 other.expiresInSeconds == expiresInSeconds) &&
             (identical(other.text, text) || other.text == text) &&
-            const DeepCollectionEquality().equals(other.mediaIds, mediaIds) &&
+            const DeepCollectionEquality().equals(other._mediaIds, _mediaIds) &&
             (identical(other.sensitive, sensitive) ||
                 other.sensitive == sensitive) &&
             (identical(other.spoilerText, spoilerText) ||
@@ -490,15 +405,16 @@ class _$_UnifediApiScheduledStatusParams
             (identical(
                     other.inReplyToConversationId, inReplyToConversationId) ||
                 other.inReplyToConversationId == inReplyToConversationId) &&
-            const DeepCollectionEquality().equals(other.to, to));
+            const DeepCollectionEquality().equals(other._to, _to));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       expiresInSeconds,
       text,
-      const DeepCollectionEquality().hash(mediaIds),
+      const DeepCollectionEquality().hash(_mediaIds),
       sensitive,
       spoilerText,
       visibility,
@@ -507,17 +423,21 @@ class _$_UnifediApiScheduledStatusParams
       poll,
       inReplyToId,
       inReplyToConversationId,
-      const DeepCollectionEquality().hash(to));
+      const DeepCollectionEquality().hash(_to));
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiScheduledStatusParamsCopyWith<_UnifediApiScheduledStatusParams>
-      get copyWith => __$UnifediApiScheduledStatusParamsCopyWithImpl<
-          _UnifediApiScheduledStatusParams>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiScheduledStatusParamsImplCopyWith<
+          _$UnifediApiScheduledStatusParamsImpl>
+      get copyWith => __$$UnifediApiScheduledStatusParamsImplCopyWithImpl<
+          _$UnifediApiScheduledStatusParamsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiScheduledStatusParamsToJson(this);
+    return _$$UnifediApiScheduledStatusParamsImplToJson(
+      this,
+    );
   }
 }
 
@@ -526,38 +446,33 @@ abstract class _UnifediApiScheduledStatusParams
   const factory _UnifediApiScheduledStatusParams(
       {@JsonKey(name: 'expires_in')
       @HiveField(0)
-          required int? expiresInSeconds,
-      @HiveField(1)
-          required String? text,
+      required final int? expiresInSeconds,
+      @HiveField(1) required final String? text,
       @JsonKey(name: 'media_ids')
       @HiveField(2)
-          required List<String>? mediaIds,
-      @HiveField(3)
-          required bool sensitive,
+      required final List<String>? mediaIds,
+      @HiveField(3) required final bool sensitive,
       @JsonKey(name: 'spoiler_text')
       @HiveField(4)
-          required String? spoilerText,
-      @HiveField(5)
-          required String visibility,
-      @HiveField(6)
-          required String? language,
+      required final String? spoilerText,
+      @HiveField(5) required final String visibility,
+      @HiveField(6) required final String? language,
       @JsonKey(name: 'scheduled_at')
       @HiveField(7)
-          required DateTime scheduledAt,
-      @HiveField(8)
-          required UnifediApiPostStatusPoll? poll,
+      required final DateTime scheduledAt,
+      @HiveField(8) required final UnifediApiPostStatusPoll? poll,
       @JsonKey(name: 'in_reply_to_id')
       @HiveField(10)
-          required String? inReplyToId,
+      required final String? inReplyToId,
       @JsonKey(name: 'in_reply_to_conversation_id')
       @HiveField(12)
-          required String? inReplyToConversationId,
+      required final String? inReplyToConversationId,
       @JsonKey(name: 'to')
       @HiveField(13)
-          required List<String>? to}) = _$_UnifediApiScheduledStatusParams;
+      required final List<String>? to}) = _$UnifediApiScheduledStatusParamsImpl;
 
   factory _UnifediApiScheduledStatusParams.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiScheduledStatusParams.fromJson;
+      _$UnifediApiScheduledStatusParamsImpl.fromJson;
 
   @override
   @JsonKey(name: 'expires_in')
@@ -604,6 +519,7 @@ abstract class _UnifediApiScheduledStatusParams
   List<String>? get to;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiScheduledStatusParamsCopyWith<_UnifediApiScheduledStatusParams>
+  _$$UnifediApiScheduledStatusParamsImplCopyWith<
+          _$UnifediApiScheduledStatusParamsImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

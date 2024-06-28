@@ -205,6 +205,8 @@ scripts:
     run: |
       flutter pub global run melos exec -c 1 --fail-fast --depends-on="build_runner" -- \
       "flutter pub run build_runner build --delete-conflicting-outputs"
+    packageFilters:
+      scope: fedi_app
     description: Generate all code via build_runner tasks(moor, freezed, json, etc)
 
   test:unit:

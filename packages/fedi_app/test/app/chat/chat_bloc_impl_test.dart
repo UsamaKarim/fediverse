@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:drift/drift.dart';
+import 'package:drift/native.dart';
 import 'package:fedi_app/app/account/account_model.dart';
 import 'package:fedi_app/app/account/account_model_adapter.dart';
 import 'package:fedi_app/app/account/my/local_preferences/my_account_local_preference_bloc.dart';
@@ -26,7 +28,6 @@ import 'package:fedi_app/local_preferences/memory_local_preferences_service_impl
 import 'package:fediverse_api/fediverse_api.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
-import 'package:moor/ffi.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 
 import '../../rxdart/rxdart_test_helper.dart';
@@ -60,7 +61,7 @@ void main() {
   late IMyAccountLocalPreferenceBloc myAccountLocalPreferenceBloc;
 
   setUp(() async {
-    database = AppDatabase(VmDatabase.memory());
+    database = AppDatabase(NativeDatabase.memory());
     accountRepository = AccountRepository(appDatabase: database);
     chatMessageRepository = UnifediChatMessageRepository(
       appDatabase: database,
@@ -213,7 +214,7 @@ void main() {
       dbUnifediChatPopulatedWrapper.copyWith(
         dbChatPopulated: dbUnifediChatPopulatedWrapper.dbChatPopulated.copyWith(
           dbChat: dbUnifediChatPopulatedWrapper.dbChatPopulated.dbChat.copyWith(
-            updatedAt: newValue,
+            updatedAt: Value(newValue),
           ),
         ),
       ),

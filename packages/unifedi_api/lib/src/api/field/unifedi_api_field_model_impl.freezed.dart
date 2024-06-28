@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_field_model_impl.dart';
 
@@ -11,38 +12,11 @@ part of 'unifedi_api_field_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiField _$UnifediApiFieldFromJson(Map<String, dynamic> json) {
   return _UnifediApiField.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiFieldTearOff {
-  const _$UnifediApiFieldTearOff();
-
-  _UnifediApiField call(
-      {@HiveField(0)
-          required String? name,
-      @HiveField(1)
-          required String? value,
-      @HiveField(2)
-      @JsonKey(name: 'verified_at')
-          required DateTime? verifiedAt}) {
-    return _UnifediApiField(
-      name: name,
-      value: value,
-      verifiedAt: verifiedAt,
-    );
-  }
-
-  UnifediApiField fromJson(Map<String, Object?> json) {
-    return UnifediApiField.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiField = _$UnifediApiFieldTearOff();
 
 /// @nodoc
 mixin _$UnifediApiField {
@@ -64,7 +38,8 @@ mixin _$UnifediApiField {
 abstract class $UnifediApiFieldCopyWith<$Res> {
   factory $UnifediApiFieldCopyWith(
           UnifediApiField value, $Res Function(UnifediApiField) then) =
-      _$UnifediApiFieldCopyWithImpl<$Res>;
+      _$UnifediApiFieldCopyWithImpl<$Res, UnifediApiField>;
+  @useResult
   $Res call(
       {@HiveField(0) String? name,
       @HiveField(1) String? value,
@@ -72,14 +47,16 @@ abstract class $UnifediApiFieldCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UnifediApiFieldCopyWithImpl<$Res>
+class _$UnifediApiFieldCopyWithImpl<$Res, $Val extends UnifediApiField>
     implements $UnifediApiFieldCopyWith<$Res> {
   _$UnifediApiFieldCopyWithImpl(this._value, this._then);
 
-  final UnifediApiField _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiField) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? name = freezed,
@@ -87,29 +64,30 @@ class _$UnifediApiFieldCopyWithImpl<$Res>
     Object? verifiedAt = freezed,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed
+      name: freezed == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String?,
-      value: value == freezed
+      value: freezed == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as String?,
-      verifiedAt: verifiedAt == freezed
+      verifiedAt: freezed == verifiedAt
           ? _value.verifiedAt
           : verifiedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiFieldCopyWith<$Res>
+abstract class _$$UnifediApiFieldImplCopyWith<$Res>
     implements $UnifediApiFieldCopyWith<$Res> {
-  factory _$UnifediApiFieldCopyWith(
-          _UnifediApiField value, $Res Function(_UnifediApiField) then) =
-      __$UnifediApiFieldCopyWithImpl<$Res>;
+  factory _$$UnifediApiFieldImplCopyWith(_$UnifediApiFieldImpl value,
+          $Res Function(_$UnifediApiFieldImpl) then) =
+      __$$UnifediApiFieldImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) String? name,
       @HiveField(1) String? value,
@@ -117,32 +95,30 @@ abstract class _$UnifediApiFieldCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiFieldCopyWithImpl<$Res>
-    extends _$UnifediApiFieldCopyWithImpl<$Res>
-    implements _$UnifediApiFieldCopyWith<$Res> {
-  __$UnifediApiFieldCopyWithImpl(
-      _UnifediApiField _value, $Res Function(_UnifediApiField) _then)
-      : super(_value, (v) => _then(v as _UnifediApiField));
+class __$$UnifediApiFieldImplCopyWithImpl<$Res>
+    extends _$UnifediApiFieldCopyWithImpl<$Res, _$UnifediApiFieldImpl>
+    implements _$$UnifediApiFieldImplCopyWith<$Res> {
+  __$$UnifediApiFieldImplCopyWithImpl(
+      _$UnifediApiFieldImpl _value, $Res Function(_$UnifediApiFieldImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiField get _value => super._value as _UnifediApiField;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? name = freezed,
     Object? value = freezed,
     Object? verifiedAt = freezed,
   }) {
-    return _then(_UnifediApiField(
-      name: name == freezed
+    return _then(_$UnifediApiFieldImpl(
+      name: freezed == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String?,
-      value: value == freezed
+      value: freezed == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as String?,
-      verifiedAt: verifiedAt == freezed
+      verifiedAt: freezed == verifiedAt
           ? _value.verifiedAt
           : verifiedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
@@ -152,14 +128,14 @@ class __$UnifediApiFieldCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiField implements _UnifediApiField {
-  const _$_UnifediApiField(
+class _$UnifediApiFieldImpl implements _UnifediApiField {
+  const _$UnifediApiFieldImpl(
       {@HiveField(0) required this.name,
       @HiveField(1) required this.value,
       @HiveField(2) @JsonKey(name: 'verified_at') required this.verifiedAt});
 
-  factory _$_UnifediApiField.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiFieldFromJson(json);
+  factory _$UnifediApiFieldImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiFieldImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -178,42 +154,45 @@ class _$_UnifediApiField implements _UnifediApiField {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiField &&
+            other is _$UnifediApiFieldImpl &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.value, value) || other.value == value) &&
             (identical(other.verifiedAt, verifiedAt) ||
                 other.verifiedAt == verifiedAt));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, name, value, verifiedAt);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiFieldCopyWith<_UnifediApiField> get copyWith =>
-      __$UnifediApiFieldCopyWithImpl<_UnifediApiField>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiFieldImplCopyWith<_$UnifediApiFieldImpl> get copyWith =>
+      __$$UnifediApiFieldImplCopyWithImpl<_$UnifediApiFieldImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiFieldToJson(this);
+    return _$$UnifediApiFieldImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiField implements UnifediApiField {
   const factory _UnifediApiField(
-      {@HiveField(0)
-          required String? name,
-      @HiveField(1)
-          required String? value,
+      {@HiveField(0) required final String? name,
+      @HiveField(1) required final String? value,
       @HiveField(2)
       @JsonKey(name: 'verified_at')
-          required DateTime? verifiedAt}) = _$_UnifediApiField;
+      required final DateTime? verifiedAt}) = _$UnifediApiFieldImpl;
 
   factory _UnifediApiField.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiField.fromJson;
+      _$UnifediApiFieldImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -227,6 +206,6 @@ abstract class _UnifediApiField implements UnifediApiField {
   DateTime? get verifiedAt;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiFieldCopyWith<_UnifediApiField> get copyWith =>
+  _$$UnifediApiFieldImplCopyWith<_$UnifediApiFieldImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

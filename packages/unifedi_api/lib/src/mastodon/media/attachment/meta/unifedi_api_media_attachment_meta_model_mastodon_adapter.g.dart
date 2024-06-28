@@ -46,16 +46,16 @@ class UnifediApiMediaAttachmentMetaMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiMediaAttachmentMetaMastodonAdapter
-    _$$_UnifediApiMediaAttachmentMetaMastodonAdapterFromJson(
+_$UnifediApiMediaAttachmentMetaMastodonAdapterImpl
+    _$$UnifediApiMediaAttachmentMetaMastodonAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiMediaAttachmentMetaMastodonAdapter(
+        _$UnifediApiMediaAttachmentMetaMastodonAdapterImpl(
           MastodonApiMediaAttachmentMeta.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiMediaAttachmentMetaMastodonAdapterToJson(
-        _$_UnifediApiMediaAttachmentMetaMastodonAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiMediaAttachmentMetaMastodonAdapterImplToJson(
+        _$UnifediApiMediaAttachmentMetaMastodonAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

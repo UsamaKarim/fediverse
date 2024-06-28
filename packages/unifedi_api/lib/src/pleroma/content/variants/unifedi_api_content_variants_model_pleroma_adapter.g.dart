@@ -45,16 +45,16 @@ class UnifediApiContentVariantsPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiContentVariantsPleromaAdapter
-    _$$_UnifediApiContentVariantsPleromaAdapterFromJson(
+_$UnifediApiContentVariantsPleromaAdapterImpl
+    _$$UnifediApiContentVariantsPleromaAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiContentVariantsPleromaAdapter(
+        _$UnifediApiContentVariantsPleromaAdapterImpl(
           PleromaApiContentVariants.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiContentVariantsPleromaAdapterToJson(
-        _$_UnifediApiContentVariantsPleromaAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiContentVariantsPleromaAdapterImplToJson(
+        _$UnifediApiContentVariantsPleromaAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

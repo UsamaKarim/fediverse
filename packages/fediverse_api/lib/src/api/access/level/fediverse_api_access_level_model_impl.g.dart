@@ -45,14 +45,14 @@ class FediverseApiAccessLevelAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_FediverseApiAccessLevel _$$_FediverseApiAccessLevelFromJson(
+_$FediverseApiAccessLevelImpl _$$FediverseApiAccessLevelImplFromJson(
         Map<String, dynamic> json) =>
-    _$_FediverseApiAccessLevel(
+    _$FediverseApiAccessLevelImpl(
       stringValue: json['stringValue'] as String,
     );
 
-Map<String, dynamic> _$$_FediverseApiAccessLevelToJson(
-        _$_FediverseApiAccessLevel instance) =>
+Map<String, dynamic> _$$FediverseApiAccessLevelImplToJson(
+        _$FediverseApiAccessLevelImpl instance) =>
     <String, dynamic>{
       'stringValue': instance.stringValue,
     };

@@ -59,8 +59,9 @@ class UnifediApiFilterAdapter extends TypeAdapter<UnifediApiFilter> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiFilter _$$_UnifediApiFilterFromJson(Map<String, dynamic> json) =>
-    _$_UnifediApiFilter(
+_$UnifediApiFilterImpl _$$UnifediApiFilterImplFromJson(
+        Map<String, dynamic> json) =>
+    _$UnifediApiFilterImpl(
       context:
           (json['context'] as List<dynamic>).map((e) => e as String).toList(),
       expiresAt: json['expires_at'] == null
@@ -72,7 +73,8 @@ _$_UnifediApiFilter _$$_UnifediApiFilterFromJson(Map<String, dynamic> json) =>
       wholeWord: json['whole_word'] as bool,
     );
 
-Map<String, dynamic> _$$_UnifediApiFilterToJson(_$_UnifediApiFilter instance) {
+Map<String, dynamic> _$$UnifediApiFilterImplToJson(
+    _$UnifediApiFilterImpl instance) {
   final val = <String, dynamic>{
     'context': instance.context,
   };

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'conversation_chat_repository_model.dart';
 
@@ -11,22 +12,7 @@ part of 'conversation_chat_repository_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$ConversationChatRepositoryFiltersTearOff {
-  const _$ConversationChatRepositoryFiltersTearOff();
-
-  _ConversationChatRepositoryFilters call({bool withLastMessage = false}) {
-    return _ConversationChatRepositoryFilters(
-      withLastMessage: withLastMessage,
-    );
-  }
-}
-
-/// @nodoc
-const $ConversationChatRepositoryFilters =
-    _$ConversationChatRepositoryFiltersTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$ConversationChatRepositoryFilters {
@@ -42,62 +28,66 @@ abstract class $ConversationChatRepositoryFiltersCopyWith<$Res> {
   factory $ConversationChatRepositoryFiltersCopyWith(
           ConversationChatRepositoryFilters value,
           $Res Function(ConversationChatRepositoryFilters) then) =
-      _$ConversationChatRepositoryFiltersCopyWithImpl<$Res>;
+      _$ConversationChatRepositoryFiltersCopyWithImpl<$Res,
+          ConversationChatRepositoryFilters>;
+  @useResult
   $Res call({bool withLastMessage});
 }
 
 /// @nodoc
-class _$ConversationChatRepositoryFiltersCopyWithImpl<$Res>
+class _$ConversationChatRepositoryFiltersCopyWithImpl<$Res,
+        $Val extends ConversationChatRepositoryFilters>
     implements $ConversationChatRepositoryFiltersCopyWith<$Res> {
   _$ConversationChatRepositoryFiltersCopyWithImpl(this._value, this._then);
 
-  final ConversationChatRepositoryFilters _value;
   // ignore: unused_field
-  final $Res Function(ConversationChatRepositoryFilters) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? withLastMessage = freezed,
+    Object? withLastMessage = null,
   }) {
     return _then(_value.copyWith(
-      withLastMessage: withLastMessage == freezed
+      withLastMessage: null == withLastMessage
           ? _value.withLastMessage
           : withLastMessage // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$ConversationChatRepositoryFiltersCopyWith<$Res>
+abstract class _$$ConversationChatRepositoryFiltersImplCopyWith<$Res>
     implements $ConversationChatRepositoryFiltersCopyWith<$Res> {
-  factory _$ConversationChatRepositoryFiltersCopyWith(
-          _ConversationChatRepositoryFilters value,
-          $Res Function(_ConversationChatRepositoryFilters) then) =
-      __$ConversationChatRepositoryFiltersCopyWithImpl<$Res>;
+  factory _$$ConversationChatRepositoryFiltersImplCopyWith(
+          _$ConversationChatRepositoryFiltersImpl value,
+          $Res Function(_$ConversationChatRepositoryFiltersImpl) then) =
+      __$$ConversationChatRepositoryFiltersImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({bool withLastMessage});
 }
 
 /// @nodoc
-class __$ConversationChatRepositoryFiltersCopyWithImpl<$Res>
-    extends _$ConversationChatRepositoryFiltersCopyWithImpl<$Res>
-    implements _$ConversationChatRepositoryFiltersCopyWith<$Res> {
-  __$ConversationChatRepositoryFiltersCopyWithImpl(
-      _ConversationChatRepositoryFilters _value,
-      $Res Function(_ConversationChatRepositoryFilters) _then)
-      : super(_value, (v) => _then(v as _ConversationChatRepositoryFilters));
+class __$$ConversationChatRepositoryFiltersImplCopyWithImpl<$Res>
+    extends _$ConversationChatRepositoryFiltersCopyWithImpl<$Res,
+        _$ConversationChatRepositoryFiltersImpl>
+    implements _$$ConversationChatRepositoryFiltersImplCopyWith<$Res> {
+  __$$ConversationChatRepositoryFiltersImplCopyWithImpl(
+      _$ConversationChatRepositoryFiltersImpl _value,
+      $Res Function(_$ConversationChatRepositoryFiltersImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _ConversationChatRepositoryFilters get _value =>
-      super._value as _ConversationChatRepositoryFilters;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? withLastMessage = freezed,
+    Object? withLastMessage = null,
   }) {
-    return _then(_ConversationChatRepositoryFilters(
-      withLastMessage: withLastMessage == freezed
+    return _then(_$ConversationChatRepositoryFiltersImpl(
+      withLastMessage: null == withLastMessage
           ? _value.withLastMessage
           : withLastMessage // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -107,13 +97,13 @@ class __$ConversationChatRepositoryFiltersCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ConversationChatRepositoryFilters
+class _$ConversationChatRepositoryFiltersImpl
     extends _ConversationChatRepositoryFilters {
-  const _$_ConversationChatRepositoryFilters({this.withLastMessage = false})
+  const _$ConversationChatRepositoryFiltersImpl({this.withLastMessage = false})
       : super._();
 
-  @JsonKey(defaultValue: false)
   @override
+  @JsonKey()
   final bool withLastMessage;
 
   @override
@@ -122,10 +112,10 @@ class _$_ConversationChatRepositoryFilters
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ConversationChatRepositoryFilters &&
+            other is _$ConversationChatRepositoryFiltersImpl &&
             (identical(other.withLastMessage, withLastMessage) ||
                 other.withLastMessage == withLastMessage));
   }
@@ -135,44 +125,27 @@ class _$_ConversationChatRepositoryFilters
 
   @JsonKey(ignore: true)
   @override
-  _$ConversationChatRepositoryFiltersCopyWith<
-          _ConversationChatRepositoryFilters>
-      get copyWith => __$ConversationChatRepositoryFiltersCopyWithImpl<
-          _ConversationChatRepositoryFilters>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ConversationChatRepositoryFiltersImplCopyWith<
+          _$ConversationChatRepositoryFiltersImpl>
+      get copyWith => __$$ConversationChatRepositoryFiltersImplCopyWithImpl<
+          _$ConversationChatRepositoryFiltersImpl>(this, _$identity);
 }
 
 abstract class _ConversationChatRepositoryFilters
     extends ConversationChatRepositoryFilters {
-  const factory _ConversationChatRepositoryFilters({bool withLastMessage}) =
-      _$_ConversationChatRepositoryFilters;
+  const factory _ConversationChatRepositoryFilters(
+      {final bool withLastMessage}) = _$ConversationChatRepositoryFiltersImpl;
   const _ConversationChatRepositoryFilters._() : super._();
 
   @override
   bool get withLastMessage;
   @override
   @JsonKey(ignore: true)
-  _$ConversationChatRepositoryFiltersCopyWith<
-          _ConversationChatRepositoryFilters>
+  _$$ConversationChatRepositoryFiltersImplCopyWith<
+          _$ConversationChatRepositoryFiltersImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$ConversationRepositoryChatOrderingTermDataTearOff {
-  const _$ConversationRepositoryChatOrderingTermDataTearOff();
-
-  _ConversationRepositoryChatOrderingTermData call(
-      {required ConversationChatOrderType orderType,
-      required moor.OrderingMode orderingMode}) {
-    return _ConversationRepositoryChatOrderingTermData(
-      orderType: orderType,
-      orderingMode: orderingMode,
-    );
-  }
-}
-
-/// @nodoc
-const $ConversationRepositoryChatOrderingTermData =
-    _$ConversationRepositoryChatOrderingTermDataTearOff();
 
 /// @nodoc
 mixin _$ConversationRepositoryChatOrderingTermData {
@@ -190,76 +163,80 @@ abstract class $ConversationRepositoryChatOrderingTermDataCopyWith<$Res> {
   factory $ConversationRepositoryChatOrderingTermDataCopyWith(
           ConversationRepositoryChatOrderingTermData value,
           $Res Function(ConversationRepositoryChatOrderingTermData) then) =
-      _$ConversationRepositoryChatOrderingTermDataCopyWithImpl<$Res>;
+      _$ConversationRepositoryChatOrderingTermDataCopyWithImpl<$Res,
+          ConversationRepositoryChatOrderingTermData>;
+  @useResult
   $Res call(
       {ConversationChatOrderType orderType, moor.OrderingMode orderingMode});
 }
 
 /// @nodoc
-class _$ConversationRepositoryChatOrderingTermDataCopyWithImpl<$Res>
+class _$ConversationRepositoryChatOrderingTermDataCopyWithImpl<$Res,
+        $Val extends ConversationRepositoryChatOrderingTermData>
     implements $ConversationRepositoryChatOrderingTermDataCopyWith<$Res> {
   _$ConversationRepositoryChatOrderingTermDataCopyWithImpl(
       this._value, this._then);
 
-  final ConversationRepositoryChatOrderingTermData _value;
   // ignore: unused_field
-  final $Res Function(ConversationRepositoryChatOrderingTermData) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? orderType = freezed,
-    Object? orderingMode = freezed,
+    Object? orderType = null,
+    Object? orderingMode = null,
   }) {
     return _then(_value.copyWith(
-      orderType: orderType == freezed
+      orderType: null == orderType
           ? _value.orderType
           : orderType // ignore: cast_nullable_to_non_nullable
               as ConversationChatOrderType,
-      orderingMode: orderingMode == freezed
+      orderingMode: null == orderingMode
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
               as moor.OrderingMode,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$ConversationRepositoryChatOrderingTermDataCopyWith<$Res>
+abstract class _$$ConversationRepositoryChatOrderingTermDataImplCopyWith<$Res>
     implements $ConversationRepositoryChatOrderingTermDataCopyWith<$Res> {
-  factory _$ConversationRepositoryChatOrderingTermDataCopyWith(
-          _ConversationRepositoryChatOrderingTermData value,
-          $Res Function(_ConversationRepositoryChatOrderingTermData) then) =
-      __$ConversationRepositoryChatOrderingTermDataCopyWithImpl<$Res>;
+  factory _$$ConversationRepositoryChatOrderingTermDataImplCopyWith(
+          _$ConversationRepositoryChatOrderingTermDataImpl value,
+          $Res Function(_$ConversationRepositoryChatOrderingTermDataImpl)
+              then) =
+      __$$ConversationRepositoryChatOrderingTermDataImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {ConversationChatOrderType orderType, moor.OrderingMode orderingMode});
 }
 
 /// @nodoc
-class __$ConversationRepositoryChatOrderingTermDataCopyWithImpl<$Res>
-    extends _$ConversationRepositoryChatOrderingTermDataCopyWithImpl<$Res>
-    implements _$ConversationRepositoryChatOrderingTermDataCopyWith<$Res> {
-  __$ConversationRepositoryChatOrderingTermDataCopyWithImpl(
-      _ConversationRepositoryChatOrderingTermData _value,
-      $Res Function(_ConversationRepositoryChatOrderingTermData) _then)
-      : super(_value,
-            (v) => _then(v as _ConversationRepositoryChatOrderingTermData));
+class __$$ConversationRepositoryChatOrderingTermDataImplCopyWithImpl<$Res>
+    extends _$ConversationRepositoryChatOrderingTermDataCopyWithImpl<$Res,
+        _$ConversationRepositoryChatOrderingTermDataImpl>
+    implements _$$ConversationRepositoryChatOrderingTermDataImplCopyWith<$Res> {
+  __$$ConversationRepositoryChatOrderingTermDataImplCopyWithImpl(
+      _$ConversationRepositoryChatOrderingTermDataImpl _value,
+      $Res Function(_$ConversationRepositoryChatOrderingTermDataImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _ConversationRepositoryChatOrderingTermData get _value =>
-      super._value as _ConversationRepositoryChatOrderingTermData;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? orderType = freezed,
-    Object? orderingMode = freezed,
+    Object? orderType = null,
+    Object? orderingMode = null,
   }) {
-    return _then(_ConversationRepositoryChatOrderingTermData(
-      orderType: orderType == freezed
+    return _then(_$ConversationRepositoryChatOrderingTermDataImpl(
+      orderType: null == orderType
           ? _value.orderType
           : orderType // ignore: cast_nullable_to_non_nullable
               as ConversationChatOrderType,
-      orderingMode: orderingMode == freezed
+      orderingMode: null == orderingMode
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
               as moor.OrderingMode,
@@ -269,9 +246,9 @@ class __$ConversationRepositoryChatOrderingTermDataCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ConversationRepositoryChatOrderingTermData
+class _$ConversationRepositoryChatOrderingTermDataImpl
     implements _ConversationRepositoryChatOrderingTermData {
-  const _$_ConversationRepositoryChatOrderingTermData(
+  const _$ConversationRepositoryChatOrderingTermDataImpl(
       {required this.orderType, required this.orderingMode});
 
   @override
@@ -285,10 +262,10 @@ class _$_ConversationRepositoryChatOrderingTermData
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ConversationRepositoryChatOrderingTermData &&
+            other is _$ConversationRepositoryChatOrderingTermDataImpl &&
             (identical(other.orderType, orderType) ||
                 other.orderType == orderType) &&
             (identical(other.orderingMode, orderingMode) ||
@@ -300,18 +277,21 @@ class _$_ConversationRepositoryChatOrderingTermData
 
   @JsonKey(ignore: true)
   @override
-  _$ConversationRepositoryChatOrderingTermDataCopyWith<
-          _ConversationRepositoryChatOrderingTermData>
-      get copyWith => __$ConversationRepositoryChatOrderingTermDataCopyWithImpl<
-          _ConversationRepositoryChatOrderingTermData>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ConversationRepositoryChatOrderingTermDataImplCopyWith<
+          _$ConversationRepositoryChatOrderingTermDataImpl>
+      get copyWith =>
+          __$$ConversationRepositoryChatOrderingTermDataImplCopyWithImpl<
+                  _$ConversationRepositoryChatOrderingTermDataImpl>(
+              this, _$identity);
 }
 
 abstract class _ConversationRepositoryChatOrderingTermData
     implements ConversationRepositoryChatOrderingTermData {
   const factory _ConversationRepositoryChatOrderingTermData(
-          {required ConversationChatOrderType orderType,
-          required moor.OrderingMode orderingMode}) =
-      _$_ConversationRepositoryChatOrderingTermData;
+          {required final ConversationChatOrderType orderType,
+          required final moor.OrderingMode orderingMode}) =
+      _$ConversationRepositoryChatOrderingTermDataImpl;
 
   @override
   ConversationChatOrderType get orderType;
@@ -319,7 +299,7 @@ abstract class _ConversationRepositoryChatOrderingTermData
   moor.OrderingMode get orderingMode;
   @override
   @JsonKey(ignore: true)
-  _$ConversationRepositoryChatOrderingTermDataCopyWith<
-          _ConversationRepositoryChatOrderingTermData>
+  _$$ConversationRepositoryChatOrderingTermDataImplCopyWith<
+          _$ConversationRepositoryChatOrderingTermDataImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -53,17 +53,17 @@ class PleromaApiOAuthTokenAdapter extends TypeAdapter<PleromaApiOAuthToken> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiOAuthToken _$$_PleromaApiOAuthTokenFromJson(
+_$PleromaApiOAuthTokenImpl _$$PleromaApiOAuthTokenImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiOAuthToken(
+    _$PleromaApiOAuthTokenImpl(
       accessToken: json['access_token'] as String,
       tokenType: json['token_type'] as String,
       id: JsonParseHelper.toStringFromAnyNullable(json['id']),
       me: json['me'] as String?,
     );
 
-Map<String, dynamic> _$$_PleromaApiOAuthTokenToJson(
-    _$_PleromaApiOAuthToken instance) {
+Map<String, dynamic> _$$PleromaApiOAuthTokenImplToJson(
+    _$PleromaApiOAuthTokenImpl instance) {
   final val = <String, dynamic>{
     'access_token': instance.accessToken,
     'token_type': instance.tokenType,

@@ -1,3 +1,4 @@
+import 'package:drift/native.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/instance/announcement/instance_announcement_bloc.dart';
 import 'package:fedi_app/app/instance/announcement/instance_announcement_bloc_impl.dart';
@@ -7,7 +8,6 @@ import 'package:fedi_app/app/instance/announcement/repository/instance_announcem
 import 'package:fedi_app/app/instance/announcement/repository/instance_announcement_repository_impl.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
-import 'package:moor/ffi.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 
 import './instance_announcement_bloc_impl_test.mocks.dart';
@@ -27,7 +27,7 @@ void main() {
   late IInstanceAnnouncementRepository instanceAnnouncementRepository;
 
   setUp(() async {
-    database = AppDatabase(VmDatabase.memory());
+    database = AppDatabase(NativeDatabase.memory());
     instanceAnnouncementRepository = InstanceAnnouncementRepository(
       appDatabase: database,
     );

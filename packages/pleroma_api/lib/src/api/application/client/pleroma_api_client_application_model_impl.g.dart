@@ -57,9 +57,9 @@ class PleromaApiClientApplicationAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiClientApplication _$$_PleromaApiClientApplicationFromJson(
+_$PleromaApiClientApplicationImpl _$$PleromaApiClientApplicationImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiClientApplication(
+    _$PleromaApiClientApplicationImpl(
       name: json['name'] as String?,
       website: json['website'] as String?,
       vapidKey: json['vapid_key'] as String?,
@@ -67,8 +67,8 @@ _$_PleromaApiClientApplication _$$_PleromaApiClientApplicationFromJson(
       clientSecret: json['client_secret'] as String,
     );
 
-Map<String, dynamic> _$$_PleromaApiClientApplicationToJson(
-    _$_PleromaApiClientApplication instance) {
+Map<String, dynamic> _$$PleromaApiClientApplicationImplToJson(
+    _$PleromaApiClientApplicationImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

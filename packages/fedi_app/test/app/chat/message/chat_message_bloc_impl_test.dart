@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:drift/drift.dart';
+import 'package:drift/native.dart';
 import 'package:fedi_app/app/account/account_model_adapter.dart';
 import 'package:fedi_app/app/account/my/my_account_bloc.dart';
 import 'package:fedi_app/app/account/repository/account_repository.dart';
@@ -19,7 +21,6 @@ import 'package:fedi_app/app/emoji/text/emoji_text_model.dart';
 import 'package:fedi_app/connection/connection_service.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
-import 'package:moor/ffi.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 
 import '../../../rxdart/rxdart_test_helper.dart';
@@ -49,7 +50,7 @@ void main() {
 
   setUp(
     () async {
-      database = AppDatabase(VmDatabase.memory());
+      database = AppDatabase(NativeDatabase.memory());
       accountRepository = AccountRepository(appDatabase: database);
 
       chatMessageRepository = UnifediChatMessageRepository(
@@ -175,7 +176,7 @@ void main() {
           dbChatMessage: dbChatMessagePopulatedWrapper
               .dbChatMessagePopulated.dbChatMessage
               .copyWith(
-            content: newValue,
+            content: Value(newValue),
           ),
         ),
       ),
@@ -210,8 +211,8 @@ void main() {
           dbChatMessage: dbChatMessagePopulatedWrapper
               .dbChatMessagePopulated.dbChatMessage
               .copyWith(
-            content: newValue,
-            emojis: <UnifediApiEmoji>[],
+            content: Value(newValue),
+            emojis: Value(<UnifediApiEmoji>[]),
           ),
         ),
       ),
@@ -243,8 +244,8 @@ void main() {
           dbChatMessage: dbChatMessagePopulatedWrapper
               .dbChatMessagePopulated.dbChatMessage
               .copyWith(
-            content: newValue,
-            emojis: [
+            content: Value(newValue),
+            emojis: Value([
               UnifediApiEmoji(
                 name: 'emoji1',
                 url: 'https://fedi.app/emoji1.png',
@@ -259,7 +260,7 @@ void main() {
                 staticUrl: null,
                 visibleInPicker: null,
               ),
-            ],
+            ]),
           ),
         ),
       ),

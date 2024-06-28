@@ -53,17 +53,17 @@ class MastodonApiMentionAdapter extends TypeAdapter<MastodonApiMention> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiMention _$$_MastodonApiMentionFromJson(
+_$MastodonApiMentionImpl _$$MastodonApiMentionImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiMention(
+    _$MastodonApiMentionImpl(
       acct: json['acct'] as String,
       id: json['id'] as String,
       url: json['url'] as String,
       username: json['username'] as String?,
     );
 
-Map<String, dynamic> _$$_MastodonApiMentionToJson(
-    _$_MastodonApiMention instance) {
+Map<String, dynamic> _$$MastodonApiMentionImplToJson(
+    _$MastodonApiMentionImpl instance) {
   final val = <String, dynamic>{
     'acct': instance.acct,
     'id': instance.id,

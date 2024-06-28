@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_search_model_impl.dart';
 
@@ -11,35 +12,12 @@ part of 'unifedi_api_search_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiSearchResult _$UnifediApiSearchResultFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiSearchResult.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiSearchResultTearOff {
-  const _$UnifediApiSearchResultTearOff();
-
-  _UnifediApiSearchResult call(
-      {@HiveField(0) required List<UnifediApiAccount> accounts,
-      @HiveField(1) required List<UnifediApiTag> hashtags,
-      @HiveField(2) required List<UnifediApiStatus> statuses}) {
-    return _UnifediApiSearchResult(
-      accounts: accounts,
-      hashtags: hashtags,
-      statuses: statuses,
-    );
-  }
-
-  UnifediApiSearchResult fromJson(Map<String, Object?> json) {
-    return UnifediApiSearchResult.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiSearchResult = _$UnifediApiSearchResultTearOff();
 
 /// @nodoc
 mixin _$UnifediApiSearchResult {
@@ -60,7 +38,8 @@ mixin _$UnifediApiSearchResult {
 abstract class $UnifediApiSearchResultCopyWith<$Res> {
   factory $UnifediApiSearchResultCopyWith(UnifediApiSearchResult value,
           $Res Function(UnifediApiSearchResult) then) =
-      _$UnifediApiSearchResultCopyWithImpl<$Res>;
+      _$UnifediApiSearchResultCopyWithImpl<$Res, UnifediApiSearchResult>;
+  @useResult
   $Res call(
       {@HiveField(0) List<UnifediApiAccount> accounts,
       @HiveField(1) List<UnifediApiTag> hashtags,
@@ -68,44 +47,49 @@ abstract class $UnifediApiSearchResultCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UnifediApiSearchResultCopyWithImpl<$Res>
+class _$UnifediApiSearchResultCopyWithImpl<$Res,
+        $Val extends UnifediApiSearchResult>
     implements $UnifediApiSearchResultCopyWith<$Res> {
   _$UnifediApiSearchResultCopyWithImpl(this._value, this._then);
 
-  final UnifediApiSearchResult _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiSearchResult) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? accounts = freezed,
-    Object? hashtags = freezed,
-    Object? statuses = freezed,
+    Object? accounts = null,
+    Object? hashtags = null,
+    Object? statuses = null,
   }) {
     return _then(_value.copyWith(
-      accounts: accounts == freezed
+      accounts: null == accounts
           ? _value.accounts
           : accounts // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiAccount>,
-      hashtags: hashtags == freezed
+      hashtags: null == hashtags
           ? _value.hashtags
           : hashtags // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiTag>,
-      statuses: statuses == freezed
+      statuses: null == statuses
           ? _value.statuses
           : statuses // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiStatus>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiSearchResultCopyWith<$Res>
+abstract class _$$UnifediApiSearchResultImplCopyWith<$Res>
     implements $UnifediApiSearchResultCopyWith<$Res> {
-  factory _$UnifediApiSearchResultCopyWith(_UnifediApiSearchResult value,
-          $Res Function(_UnifediApiSearchResult) then) =
-      __$UnifediApiSearchResultCopyWithImpl<$Res>;
+  factory _$$UnifediApiSearchResultImplCopyWith(
+          _$UnifediApiSearchResultImpl value,
+          $Res Function(_$UnifediApiSearchResultImpl) then) =
+      __$$UnifediApiSearchResultImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) List<UnifediApiAccount> accounts,
       @HiveField(1) List<UnifediApiTag> hashtags,
@@ -113,33 +97,33 @@ abstract class _$UnifediApiSearchResultCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiSearchResultCopyWithImpl<$Res>
-    extends _$UnifediApiSearchResultCopyWithImpl<$Res>
-    implements _$UnifediApiSearchResultCopyWith<$Res> {
-  __$UnifediApiSearchResultCopyWithImpl(_UnifediApiSearchResult _value,
-      $Res Function(_UnifediApiSearchResult) _then)
-      : super(_value, (v) => _then(v as _UnifediApiSearchResult));
+class __$$UnifediApiSearchResultImplCopyWithImpl<$Res>
+    extends _$UnifediApiSearchResultCopyWithImpl<$Res,
+        _$UnifediApiSearchResultImpl>
+    implements _$$UnifediApiSearchResultImplCopyWith<$Res> {
+  __$$UnifediApiSearchResultImplCopyWithImpl(
+      _$UnifediApiSearchResultImpl _value,
+      $Res Function(_$UnifediApiSearchResultImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiSearchResult get _value => super._value as _UnifediApiSearchResult;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? accounts = freezed,
-    Object? hashtags = freezed,
-    Object? statuses = freezed,
+    Object? accounts = null,
+    Object? hashtags = null,
+    Object? statuses = null,
   }) {
-    return _then(_UnifediApiSearchResult(
-      accounts: accounts == freezed
-          ? _value.accounts
+    return _then(_$UnifediApiSearchResultImpl(
+      accounts: null == accounts
+          ? _value._accounts
           : accounts // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiAccount>,
-      hashtags: hashtags == freezed
-          ? _value.hashtags
+      hashtags: null == hashtags
+          ? _value._hashtags
           : hashtags // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiTag>,
-      statuses: statuses == freezed
-          ? _value.statuses
+      statuses: null == statuses
+          ? _value._statuses
           : statuses // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiStatus>,
     ));
@@ -148,24 +132,44 @@ class __$UnifediApiSearchResultCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiSearchResult implements _UnifediApiSearchResult {
-  const _$_UnifediApiSearchResult(
-      {@HiveField(0) required this.accounts,
-      @HiveField(1) required this.hashtags,
-      @HiveField(2) required this.statuses});
+class _$UnifediApiSearchResultImpl implements _UnifediApiSearchResult {
+  const _$UnifediApiSearchResultImpl(
+      {@HiveField(0) required final List<UnifediApiAccount> accounts,
+      @HiveField(1) required final List<UnifediApiTag> hashtags,
+      @HiveField(2) required final List<UnifediApiStatus> statuses})
+      : _accounts = accounts,
+        _hashtags = hashtags,
+        _statuses = statuses;
 
-  factory _$_UnifediApiSearchResult.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiSearchResultFromJson(json);
+  factory _$UnifediApiSearchResultImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiSearchResultImplFromJson(json);
 
+  final List<UnifediApiAccount> _accounts;
   @override
   @HiveField(0)
-  final List<UnifediApiAccount> accounts;
+  List<UnifediApiAccount> get accounts {
+    if (_accounts is EqualUnmodifiableListView) return _accounts;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_accounts);
+  }
+
+  final List<UnifediApiTag> _hashtags;
   @override
   @HiveField(1)
-  final List<UnifediApiTag> hashtags;
+  List<UnifediApiTag> get hashtags {
+    if (_hashtags is EqualUnmodifiableListView) return _hashtags;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_hashtags);
+  }
+
+  final List<UnifediApiStatus> _statuses;
   @override
   @HiveField(2)
-  final List<UnifediApiStatus> statuses;
+  List<UnifediApiStatus> get statuses {
+    if (_statuses is EqualUnmodifiableListView) return _statuses;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_statuses);
+  }
 
   @override
   String toString() {
@@ -173,43 +177,47 @@ class _$_UnifediApiSearchResult implements _UnifediApiSearchResult {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiSearchResult &&
-            const DeepCollectionEquality().equals(other.accounts, accounts) &&
-            const DeepCollectionEquality().equals(other.hashtags, hashtags) &&
-            const DeepCollectionEquality().equals(other.statuses, statuses));
+            other is _$UnifediApiSearchResultImpl &&
+            const DeepCollectionEquality().equals(other._accounts, _accounts) &&
+            const DeepCollectionEquality().equals(other._hashtags, _hashtags) &&
+            const DeepCollectionEquality().equals(other._statuses, _statuses));
   }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(accounts),
-      const DeepCollectionEquality().hash(hashtags),
-      const DeepCollectionEquality().hash(statuses));
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiSearchResultCopyWith<_UnifediApiSearchResult> get copyWith =>
-      __$UnifediApiSearchResultCopyWithImpl<_UnifediApiSearchResult>(
-          this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(_accounts),
+      const DeepCollectionEquality().hash(_hashtags),
+      const DeepCollectionEquality().hash(_statuses));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiSearchResultImplCopyWith<_$UnifediApiSearchResultImpl>
+      get copyWith => __$$UnifediApiSearchResultImplCopyWithImpl<
+          _$UnifediApiSearchResultImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiSearchResultToJson(this);
+    return _$$UnifediApiSearchResultImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiSearchResult implements UnifediApiSearchResult {
   const factory _UnifediApiSearchResult(
-          {@HiveField(0) required List<UnifediApiAccount> accounts,
-          @HiveField(1) required List<UnifediApiTag> hashtags,
-          @HiveField(2) required List<UnifediApiStatus> statuses}) =
-      _$_UnifediApiSearchResult;
+          {@HiveField(0) required final List<UnifediApiAccount> accounts,
+          @HiveField(1) required final List<UnifediApiTag> hashtags,
+          @HiveField(2) required final List<UnifediApiStatus> statuses}) =
+      _$UnifediApiSearchResultImpl;
 
   factory _UnifediApiSearchResult.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiSearchResult.fromJson;
+      _$UnifediApiSearchResultImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -222,6 +230,6 @@ abstract class _UnifediApiSearchResult implements UnifediApiSearchResult {
   List<UnifediApiStatus> get statuses;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiSearchResultCopyWith<_UnifediApiSearchResult> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$UnifediApiSearchResultImplCopyWith<_$UnifediApiSearchResultImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

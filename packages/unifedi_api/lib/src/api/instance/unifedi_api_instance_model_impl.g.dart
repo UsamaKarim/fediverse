@@ -107,9 +107,9 @@ class UnifediApiInstanceAdapter extends TypeAdapter<UnifediApiInstance> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiInstance _$$_UnifediApiInstanceFromJson(
+_$UnifediApiInstanceImpl _$$UnifediApiInstanceImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiInstance(
+    _$UnifediApiInstanceImpl(
       type: json['type'] as String,
       versionString: json['version'] as String,
       limits: json['limits'] == null
@@ -155,8 +155,8 @@ _$_UnifediApiInstance _$$_UnifediApiInstanceFromJson(
       invitesEnabled: json['invites_enabled'] as bool?,
     );
 
-Map<String, dynamic> _$$_UnifediApiInstanceToJson(
-    _$_UnifediApiInstance instance) {
+Map<String, dynamic> _$$UnifediApiInstanceImplToJson(
+    _$UnifediApiInstanceImpl instance) {
   final val = <String, dynamic>{
     'type': instance.type,
     'version': instance.versionString,

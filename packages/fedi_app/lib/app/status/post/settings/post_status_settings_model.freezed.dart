@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'post_status_settings_model.dart';
 
@@ -11,44 +12,11 @@ part of 'post_status_settings_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PostStatusSettings _$PostStatusSettingsFromJson(Map<String, dynamic> json) {
   return _PostStatusSettings.fromJson(json);
 }
-
-/// @nodoc
-class _$PostStatusSettingsTearOff {
-  const _$PostStatusSettingsTearOff();
-
-  _PostStatusSettings call(
-      {@HiveField(0)
-      @JsonKey(name: 'mark_media_as_nsfw_on_attach')
-          required bool markMediaAsNsfwOnAttach,
-      @HiveField(1)
-      @JsonKey(name: 'default_visibility')
-          required String defaultVisibilityString,
-      @HiveField(2)
-      @JsonKey(name: 'default_status_locale')
-          required LocalizationLocale? defaultStatusLocale,
-      @HiveField(3)
-      @JsonKey(name: 'dont_upload_media_during_editing_on_attach')
-          required bool dontUploadMediaDuringEditing}) {
-    return _PostStatusSettings(
-      markMediaAsNsfwOnAttach: markMediaAsNsfwOnAttach,
-      defaultVisibilityString: defaultVisibilityString,
-      defaultStatusLocale: defaultStatusLocale,
-      dontUploadMediaDuringEditing: dontUploadMediaDuringEditing,
-    );
-  }
-
-  PostStatusSettings fromJson(Map<String, Object?> json) {
-    return PostStatusSettings.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PostStatusSettings = _$PostStatusSettingsTearOff();
 
 /// @nodoc
 mixin _$PostStatusSettings {
@@ -76,61 +44,65 @@ mixin _$PostStatusSettings {
 abstract class $PostStatusSettingsCopyWith<$Res> {
   factory $PostStatusSettingsCopyWith(
           PostStatusSettings value, $Res Function(PostStatusSettings) then) =
-      _$PostStatusSettingsCopyWithImpl<$Res>;
+      _$PostStatusSettingsCopyWithImpl<$Res, PostStatusSettings>;
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'mark_media_as_nsfw_on_attach')
-          bool markMediaAsNsfwOnAttach,
+      bool markMediaAsNsfwOnAttach,
       @HiveField(1)
       @JsonKey(name: 'default_visibility')
-          String defaultVisibilityString,
+      String defaultVisibilityString,
       @HiveField(2)
       @JsonKey(name: 'default_status_locale')
-          LocalizationLocale? defaultStatusLocale,
+      LocalizationLocale? defaultStatusLocale,
       @HiveField(3)
       @JsonKey(name: 'dont_upload_media_during_editing_on_attach')
-          bool dontUploadMediaDuringEditing});
+      bool dontUploadMediaDuringEditing});
 
   $LocalizationLocaleCopyWith<$Res>? get defaultStatusLocale;
 }
 
 /// @nodoc
-class _$PostStatusSettingsCopyWithImpl<$Res>
+class _$PostStatusSettingsCopyWithImpl<$Res, $Val extends PostStatusSettings>
     implements $PostStatusSettingsCopyWith<$Res> {
   _$PostStatusSettingsCopyWithImpl(this._value, this._then);
 
-  final PostStatusSettings _value;
   // ignore: unused_field
-  final $Res Function(PostStatusSettings) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? markMediaAsNsfwOnAttach = freezed,
-    Object? defaultVisibilityString = freezed,
+    Object? markMediaAsNsfwOnAttach = null,
+    Object? defaultVisibilityString = null,
     Object? defaultStatusLocale = freezed,
-    Object? dontUploadMediaDuringEditing = freezed,
+    Object? dontUploadMediaDuringEditing = null,
   }) {
     return _then(_value.copyWith(
-      markMediaAsNsfwOnAttach: markMediaAsNsfwOnAttach == freezed
+      markMediaAsNsfwOnAttach: null == markMediaAsNsfwOnAttach
           ? _value.markMediaAsNsfwOnAttach
           : markMediaAsNsfwOnAttach // ignore: cast_nullable_to_non_nullable
               as bool,
-      defaultVisibilityString: defaultVisibilityString == freezed
+      defaultVisibilityString: null == defaultVisibilityString
           ? _value.defaultVisibilityString
           : defaultVisibilityString // ignore: cast_nullable_to_non_nullable
               as String,
-      defaultStatusLocale: defaultStatusLocale == freezed
+      defaultStatusLocale: freezed == defaultStatusLocale
           ? _value.defaultStatusLocale
           : defaultStatusLocale // ignore: cast_nullable_to_non_nullable
               as LocalizationLocale?,
-      dontUploadMediaDuringEditing: dontUploadMediaDuringEditing == freezed
+      dontUploadMediaDuringEditing: null == dontUploadMediaDuringEditing
           ? _value.dontUploadMediaDuringEditing
           : dontUploadMediaDuringEditing // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $LocalizationLocaleCopyWith<$Res>? get defaultStatusLocale {
     if (_value.defaultStatusLocale == null) {
       return null;
@@ -138,68 +110,67 @@ class _$PostStatusSettingsCopyWithImpl<$Res>
 
     return $LocalizationLocaleCopyWith<$Res>(_value.defaultStatusLocale!,
         (value) {
-      return _then(_value.copyWith(defaultStatusLocale: value));
+      return _then(_value.copyWith(defaultStatusLocale: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PostStatusSettingsCopyWith<$Res>
+abstract class _$$PostStatusSettingsImplCopyWith<$Res>
     implements $PostStatusSettingsCopyWith<$Res> {
-  factory _$PostStatusSettingsCopyWith(
-          _PostStatusSettings value, $Res Function(_PostStatusSettings) then) =
-      __$PostStatusSettingsCopyWithImpl<$Res>;
+  factory _$$PostStatusSettingsImplCopyWith(_$PostStatusSettingsImpl value,
+          $Res Function(_$PostStatusSettingsImpl) then) =
+      __$$PostStatusSettingsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'mark_media_as_nsfw_on_attach')
-          bool markMediaAsNsfwOnAttach,
+      bool markMediaAsNsfwOnAttach,
       @HiveField(1)
       @JsonKey(name: 'default_visibility')
-          String defaultVisibilityString,
+      String defaultVisibilityString,
       @HiveField(2)
       @JsonKey(name: 'default_status_locale')
-          LocalizationLocale? defaultStatusLocale,
+      LocalizationLocale? defaultStatusLocale,
       @HiveField(3)
       @JsonKey(name: 'dont_upload_media_during_editing_on_attach')
-          bool dontUploadMediaDuringEditing});
+      bool dontUploadMediaDuringEditing});
 
   @override
   $LocalizationLocaleCopyWith<$Res>? get defaultStatusLocale;
 }
 
 /// @nodoc
-class __$PostStatusSettingsCopyWithImpl<$Res>
-    extends _$PostStatusSettingsCopyWithImpl<$Res>
-    implements _$PostStatusSettingsCopyWith<$Res> {
-  __$PostStatusSettingsCopyWithImpl(
-      _PostStatusSettings _value, $Res Function(_PostStatusSettings) _then)
-      : super(_value, (v) => _then(v as _PostStatusSettings));
+class __$$PostStatusSettingsImplCopyWithImpl<$Res>
+    extends _$PostStatusSettingsCopyWithImpl<$Res, _$PostStatusSettingsImpl>
+    implements _$$PostStatusSettingsImplCopyWith<$Res> {
+  __$$PostStatusSettingsImplCopyWithImpl(_$PostStatusSettingsImpl _value,
+      $Res Function(_$PostStatusSettingsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PostStatusSettings get _value => super._value as _PostStatusSettings;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? markMediaAsNsfwOnAttach = freezed,
-    Object? defaultVisibilityString = freezed,
+    Object? markMediaAsNsfwOnAttach = null,
+    Object? defaultVisibilityString = null,
     Object? defaultStatusLocale = freezed,
-    Object? dontUploadMediaDuringEditing = freezed,
+    Object? dontUploadMediaDuringEditing = null,
   }) {
-    return _then(_PostStatusSettings(
-      markMediaAsNsfwOnAttach: markMediaAsNsfwOnAttach == freezed
+    return _then(_$PostStatusSettingsImpl(
+      markMediaAsNsfwOnAttach: null == markMediaAsNsfwOnAttach
           ? _value.markMediaAsNsfwOnAttach
           : markMediaAsNsfwOnAttach // ignore: cast_nullable_to_non_nullable
               as bool,
-      defaultVisibilityString: defaultVisibilityString == freezed
+      defaultVisibilityString: null == defaultVisibilityString
           ? _value.defaultVisibilityString
           : defaultVisibilityString // ignore: cast_nullable_to_non_nullable
               as String,
-      defaultStatusLocale: defaultStatusLocale == freezed
+      defaultStatusLocale: freezed == defaultStatusLocale
           ? _value.defaultStatusLocale
           : defaultStatusLocale // ignore: cast_nullable_to_non_nullable
               as LocalizationLocale?,
-      dontUploadMediaDuringEditing: dontUploadMediaDuringEditing == freezed
+      dontUploadMediaDuringEditing: null == dontUploadMediaDuringEditing
           ? _value.dontUploadMediaDuringEditing
           : dontUploadMediaDuringEditing // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -209,24 +180,24 @@ class __$PostStatusSettingsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PostStatusSettings extends _PostStatusSettings {
-  const _$_PostStatusSettings(
+class _$PostStatusSettingsImpl extends _PostStatusSettings {
+  const _$PostStatusSettingsImpl(
       {@HiveField(0)
       @JsonKey(name: 'mark_media_as_nsfw_on_attach')
-          required this.markMediaAsNsfwOnAttach,
+      required this.markMediaAsNsfwOnAttach,
       @HiveField(1)
       @JsonKey(name: 'default_visibility')
-          required this.defaultVisibilityString,
+      required this.defaultVisibilityString,
       @HiveField(2)
       @JsonKey(name: 'default_status_locale')
-          required this.defaultStatusLocale,
+      required this.defaultStatusLocale,
       @HiveField(3)
       @JsonKey(name: 'dont_upload_media_during_editing_on_attach')
-          required this.dontUploadMediaDuringEditing})
+      required this.dontUploadMediaDuringEditing})
       : super._();
 
-  factory _$_PostStatusSettings.fromJson(Map<String, dynamic> json) =>
-      _$$_PostStatusSettingsFromJson(json);
+  factory _$PostStatusSettingsImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PostStatusSettingsImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -251,10 +222,10 @@ class _$_PostStatusSettings extends _PostStatusSettings {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PostStatusSettings &&
+            other is _$PostStatusSettingsImpl &&
             (identical(
                     other.markMediaAsNsfwOnAttach, markMediaAsNsfwOnAttach) ||
                 other.markMediaAsNsfwOnAttach == markMediaAsNsfwOnAttach) &&
@@ -269,6 +240,7 @@ class _$_PostStatusSettings extends _PostStatusSettings {
                     dontUploadMediaDuringEditing));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -279,33 +251,38 @@ class _$_PostStatusSettings extends _PostStatusSettings {
 
   @JsonKey(ignore: true)
   @override
-  _$PostStatusSettingsCopyWith<_PostStatusSettings> get copyWith =>
-      __$PostStatusSettingsCopyWithImpl<_PostStatusSettings>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PostStatusSettingsImplCopyWith<_$PostStatusSettingsImpl> get copyWith =>
+      __$$PostStatusSettingsImplCopyWithImpl<_$PostStatusSettingsImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PostStatusSettingsToJson(this);
+    return _$$PostStatusSettingsImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PostStatusSettings extends PostStatusSettings {
   const factory _PostStatusSettings(
-      {@HiveField(0)
-      @JsonKey(name: 'mark_media_as_nsfw_on_attach')
-          required bool markMediaAsNsfwOnAttach,
-      @HiveField(1)
-      @JsonKey(name: 'default_visibility')
-          required String defaultVisibilityString,
-      @HiveField(2)
-      @JsonKey(name: 'default_status_locale')
-          required LocalizationLocale? defaultStatusLocale,
-      @HiveField(3)
-      @JsonKey(name: 'dont_upload_media_during_editing_on_attach')
-          required bool dontUploadMediaDuringEditing}) = _$_PostStatusSettings;
+          {@HiveField(0)
+          @JsonKey(name: 'mark_media_as_nsfw_on_attach')
+          required final bool markMediaAsNsfwOnAttach,
+          @HiveField(1)
+          @JsonKey(name: 'default_visibility')
+          required final String defaultVisibilityString,
+          @HiveField(2)
+          @JsonKey(name: 'default_status_locale')
+          required final LocalizationLocale? defaultStatusLocale,
+          @HiveField(3)
+          @JsonKey(name: 'dont_upload_media_during_editing_on_attach')
+          required final bool dontUploadMediaDuringEditing}) =
+      _$PostStatusSettingsImpl;
   const _PostStatusSettings._() : super._();
 
   factory _PostStatusSettings.fromJson(Map<String, dynamic> json) =
-      _$_PostStatusSettings.fromJson;
+      _$PostStatusSettingsImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -325,6 +302,6 @@ abstract class _PostStatusSettings extends PostStatusSettings {
   bool get dontUploadMediaDuringEditing;
   @override
   @JsonKey(ignore: true)
-  _$PostStatusSettingsCopyWith<_PostStatusSettings> get copyWith =>
+  _$$PostStatusSettingsImplCopyWith<_$PostStatusSettingsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

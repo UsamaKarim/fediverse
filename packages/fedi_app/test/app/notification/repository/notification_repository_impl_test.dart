@@ -11,7 +11,6 @@ import 'package:fedi_app/app/status/repository/status_repository_impl.dart';
 import 'package:fedi_app/app/status/status_model.dart';
 import 'package:fedi_app/repository/repository_model.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:moor/ffi.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 
 import '../../account/database/account_database_test_helper.dart';

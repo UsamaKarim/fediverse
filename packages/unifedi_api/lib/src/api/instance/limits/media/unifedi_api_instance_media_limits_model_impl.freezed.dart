@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_instance_media_limits_model_impl.dart';
 
@@ -11,49 +12,12 @@ part of 'unifedi_api_instance_media_limits_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiInstanceMediaLimits _$UnifediApiInstanceMediaLimitsFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiInstanceMediaLimits.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiInstanceMediaLimitsTearOff {
-  const _$UnifediApiInstanceMediaLimitsTearOff();
-
-  _UnifediApiInstanceMediaLimits call(
-      {@HiveField(0)
-      @JsonKey(name: 'upload_limit')
-          required int? uploadLimit,
-      @HiveField(1)
-      @JsonKey(name: 'avatar_upload_limit')
-          required int? avatarUploadLimit,
-      @HiveField(2)
-      @JsonKey(name: 'background_upload_limit')
-          required int? backgroundUploadLimit,
-      @HiveField(3)
-      @JsonKey(name: 'banner_upload_limit')
-          required int? bannerUploadLimit,
-      @HiveField(4)
-      @JsonKey(name: 'description_limit')
-          required int? descriptionLimit}) {
-    return _UnifediApiInstanceMediaLimits(
-      uploadLimit: uploadLimit,
-      avatarUploadLimit: avatarUploadLimit,
-      backgroundUploadLimit: backgroundUploadLimit,
-      bannerUploadLimit: bannerUploadLimit,
-      descriptionLimit: descriptionLimit,
-    );
-  }
-
-  UnifediApiInstanceMediaLimits fromJson(Map<String, Object?> json) {
-    return UnifediApiInstanceMediaLimits.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiInstanceMediaLimits = _$UnifediApiInstanceMediaLimitsTearOff();
 
 /// @nodoc
 mixin _$UnifediApiInstanceMediaLimits {
@@ -84,34 +48,35 @@ abstract class $UnifediApiInstanceMediaLimitsCopyWith<$Res> {
   factory $UnifediApiInstanceMediaLimitsCopyWith(
           UnifediApiInstanceMediaLimits value,
           $Res Function(UnifediApiInstanceMediaLimits) then) =
-      _$UnifediApiInstanceMediaLimitsCopyWithImpl<$Res>;
+      _$UnifediApiInstanceMediaLimitsCopyWithImpl<$Res,
+          UnifediApiInstanceMediaLimits>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-      @JsonKey(name: 'upload_limit')
-          int? uploadLimit,
+      {@HiveField(0) @JsonKey(name: 'upload_limit') int? uploadLimit,
       @HiveField(1)
       @JsonKey(name: 'avatar_upload_limit')
-          int? avatarUploadLimit,
+      int? avatarUploadLimit,
       @HiveField(2)
       @JsonKey(name: 'background_upload_limit')
-          int? backgroundUploadLimit,
+      int? backgroundUploadLimit,
       @HiveField(3)
       @JsonKey(name: 'banner_upload_limit')
-          int? bannerUploadLimit,
-      @HiveField(4)
-      @JsonKey(name: 'description_limit')
-          int? descriptionLimit});
+      int? bannerUploadLimit,
+      @HiveField(4) @JsonKey(name: 'description_limit') int? descriptionLimit});
 }
 
 /// @nodoc
-class _$UnifediApiInstanceMediaLimitsCopyWithImpl<$Res>
+class _$UnifediApiInstanceMediaLimitsCopyWithImpl<$Res,
+        $Val extends UnifediApiInstanceMediaLimits>
     implements $UnifediApiInstanceMediaLimitsCopyWith<$Res> {
   _$UnifediApiInstanceMediaLimitsCopyWithImpl(this._value, this._then);
 
-  final UnifediApiInstanceMediaLimits _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiInstanceMediaLimits) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? uploadLimit = freezed,
@@ -121,69 +86,64 @@ class _$UnifediApiInstanceMediaLimitsCopyWithImpl<$Res>
     Object? descriptionLimit = freezed,
   }) {
     return _then(_value.copyWith(
-      uploadLimit: uploadLimit == freezed
+      uploadLimit: freezed == uploadLimit
           ? _value.uploadLimit
           : uploadLimit // ignore: cast_nullable_to_non_nullable
               as int?,
-      avatarUploadLimit: avatarUploadLimit == freezed
+      avatarUploadLimit: freezed == avatarUploadLimit
           ? _value.avatarUploadLimit
           : avatarUploadLimit // ignore: cast_nullable_to_non_nullable
               as int?,
-      backgroundUploadLimit: backgroundUploadLimit == freezed
+      backgroundUploadLimit: freezed == backgroundUploadLimit
           ? _value.backgroundUploadLimit
           : backgroundUploadLimit // ignore: cast_nullable_to_non_nullable
               as int?,
-      bannerUploadLimit: bannerUploadLimit == freezed
+      bannerUploadLimit: freezed == bannerUploadLimit
           ? _value.bannerUploadLimit
           : bannerUploadLimit // ignore: cast_nullable_to_non_nullable
               as int?,
-      descriptionLimit: descriptionLimit == freezed
+      descriptionLimit: freezed == descriptionLimit
           ? _value.descriptionLimit
           : descriptionLimit // ignore: cast_nullable_to_non_nullable
               as int?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiInstanceMediaLimitsCopyWith<$Res>
+abstract class _$$UnifediApiInstanceMediaLimitsImplCopyWith<$Res>
     implements $UnifediApiInstanceMediaLimitsCopyWith<$Res> {
-  factory _$UnifediApiInstanceMediaLimitsCopyWith(
-          _UnifediApiInstanceMediaLimits value,
-          $Res Function(_UnifediApiInstanceMediaLimits) then) =
-      __$UnifediApiInstanceMediaLimitsCopyWithImpl<$Res>;
+  factory _$$UnifediApiInstanceMediaLimitsImplCopyWith(
+          _$UnifediApiInstanceMediaLimitsImpl value,
+          $Res Function(_$UnifediApiInstanceMediaLimitsImpl) then) =
+      __$$UnifediApiInstanceMediaLimitsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-      @JsonKey(name: 'upload_limit')
-          int? uploadLimit,
+      {@HiveField(0) @JsonKey(name: 'upload_limit') int? uploadLimit,
       @HiveField(1)
       @JsonKey(name: 'avatar_upload_limit')
-          int? avatarUploadLimit,
+      int? avatarUploadLimit,
       @HiveField(2)
       @JsonKey(name: 'background_upload_limit')
-          int? backgroundUploadLimit,
+      int? backgroundUploadLimit,
       @HiveField(3)
       @JsonKey(name: 'banner_upload_limit')
-          int? bannerUploadLimit,
-      @HiveField(4)
-      @JsonKey(name: 'description_limit')
-          int? descriptionLimit});
+      int? bannerUploadLimit,
+      @HiveField(4) @JsonKey(name: 'description_limit') int? descriptionLimit});
 }
 
 /// @nodoc
-class __$UnifediApiInstanceMediaLimitsCopyWithImpl<$Res>
-    extends _$UnifediApiInstanceMediaLimitsCopyWithImpl<$Res>
-    implements _$UnifediApiInstanceMediaLimitsCopyWith<$Res> {
-  __$UnifediApiInstanceMediaLimitsCopyWithImpl(
-      _UnifediApiInstanceMediaLimits _value,
-      $Res Function(_UnifediApiInstanceMediaLimits) _then)
-      : super(_value, (v) => _then(v as _UnifediApiInstanceMediaLimits));
+class __$$UnifediApiInstanceMediaLimitsImplCopyWithImpl<$Res>
+    extends _$UnifediApiInstanceMediaLimitsCopyWithImpl<$Res,
+        _$UnifediApiInstanceMediaLimitsImpl>
+    implements _$$UnifediApiInstanceMediaLimitsImplCopyWith<$Res> {
+  __$$UnifediApiInstanceMediaLimitsImplCopyWithImpl(
+      _$UnifediApiInstanceMediaLimitsImpl _value,
+      $Res Function(_$UnifediApiInstanceMediaLimitsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiInstanceMediaLimits get _value =>
-      super._value as _UnifediApiInstanceMediaLimits;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? uploadLimit = freezed,
@@ -192,24 +152,24 @@ class __$UnifediApiInstanceMediaLimitsCopyWithImpl<$Res>
     Object? bannerUploadLimit = freezed,
     Object? descriptionLimit = freezed,
   }) {
-    return _then(_UnifediApiInstanceMediaLimits(
-      uploadLimit: uploadLimit == freezed
+    return _then(_$UnifediApiInstanceMediaLimitsImpl(
+      uploadLimit: freezed == uploadLimit
           ? _value.uploadLimit
           : uploadLimit // ignore: cast_nullable_to_non_nullable
               as int?,
-      avatarUploadLimit: avatarUploadLimit == freezed
+      avatarUploadLimit: freezed == avatarUploadLimit
           ? _value.avatarUploadLimit
           : avatarUploadLimit // ignore: cast_nullable_to_non_nullable
               as int?,
-      backgroundUploadLimit: backgroundUploadLimit == freezed
+      backgroundUploadLimit: freezed == backgroundUploadLimit
           ? _value.backgroundUploadLimit
           : backgroundUploadLimit // ignore: cast_nullable_to_non_nullable
               as int?,
-      bannerUploadLimit: bannerUploadLimit == freezed
+      bannerUploadLimit: freezed == bannerUploadLimit
           ? _value.bannerUploadLimit
           : bannerUploadLimit // ignore: cast_nullable_to_non_nullable
               as int?,
-      descriptionLimit: descriptionLimit == freezed
+      descriptionLimit: freezed == descriptionLimit
           ? _value.descriptionLimit
           : descriptionLimit // ignore: cast_nullable_to_non_nullable
               as int?,
@@ -219,28 +179,26 @@ class __$UnifediApiInstanceMediaLimitsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiInstanceMediaLimits
+class _$UnifediApiInstanceMediaLimitsImpl
     implements _UnifediApiInstanceMediaLimits {
-  const _$_UnifediApiInstanceMediaLimits(
-      {@HiveField(0)
-      @JsonKey(name: 'upload_limit')
-          required this.uploadLimit,
+  const _$UnifediApiInstanceMediaLimitsImpl(
+      {@HiveField(0) @JsonKey(name: 'upload_limit') required this.uploadLimit,
       @HiveField(1)
       @JsonKey(name: 'avatar_upload_limit')
-          required this.avatarUploadLimit,
+      required this.avatarUploadLimit,
       @HiveField(2)
       @JsonKey(name: 'background_upload_limit')
-          required this.backgroundUploadLimit,
+      required this.backgroundUploadLimit,
       @HiveField(3)
       @JsonKey(name: 'banner_upload_limit')
-          required this.bannerUploadLimit,
+      required this.bannerUploadLimit,
       @HiveField(4)
       @JsonKey(name: 'description_limit')
-          required this.descriptionLimit});
+      required this.descriptionLimit});
 
-  factory _$_UnifediApiInstanceMediaLimits.fromJson(
+  factory _$UnifediApiInstanceMediaLimitsImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiInstanceMediaLimitsFromJson(json);
+      _$$UnifediApiInstanceMediaLimitsImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -269,10 +227,10 @@ class _$_UnifediApiInstanceMediaLimits
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiInstanceMediaLimits &&
+            other is _$UnifediApiInstanceMediaLimitsImpl &&
             (identical(other.uploadLimit, uploadLimit) ||
                 other.uploadLimit == uploadLimit) &&
             (identical(other.avatarUploadLimit, avatarUploadLimit) ||
@@ -285,43 +243,49 @@ class _$_UnifediApiInstanceMediaLimits
                 other.descriptionLimit == descriptionLimit));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, uploadLimit, avatarUploadLimit,
       backgroundUploadLimit, bannerUploadLimit, descriptionLimit);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiInstanceMediaLimitsCopyWith<_UnifediApiInstanceMediaLimits>
-      get copyWith => __$UnifediApiInstanceMediaLimitsCopyWithImpl<
-          _UnifediApiInstanceMediaLimits>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiInstanceMediaLimitsImplCopyWith<
+          _$UnifediApiInstanceMediaLimitsImpl>
+      get copyWith => __$$UnifediApiInstanceMediaLimitsImplCopyWithImpl<
+          _$UnifediApiInstanceMediaLimitsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiInstanceMediaLimitsToJson(this);
+    return _$$UnifediApiInstanceMediaLimitsImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiInstanceMediaLimits
     implements UnifediApiInstanceMediaLimits {
   const factory _UnifediApiInstanceMediaLimits(
-      {@HiveField(0)
-      @JsonKey(name: 'upload_limit')
-          required int? uploadLimit,
-      @HiveField(1)
-      @JsonKey(name: 'avatar_upload_limit')
-          required int? avatarUploadLimit,
-      @HiveField(2)
-      @JsonKey(name: 'background_upload_limit')
-          required int? backgroundUploadLimit,
-      @HiveField(3)
-      @JsonKey(name: 'banner_upload_limit')
-          required int? bannerUploadLimit,
-      @HiveField(4)
-      @JsonKey(name: 'description_limit')
-          required int? descriptionLimit}) = _$_UnifediApiInstanceMediaLimits;
+          {@HiveField(0)
+          @JsonKey(name: 'upload_limit')
+          required final int? uploadLimit,
+          @HiveField(1)
+          @JsonKey(name: 'avatar_upload_limit')
+          required final int? avatarUploadLimit,
+          @HiveField(2)
+          @JsonKey(name: 'background_upload_limit')
+          required final int? backgroundUploadLimit,
+          @HiveField(3)
+          @JsonKey(name: 'banner_upload_limit')
+          required final int? bannerUploadLimit,
+          @HiveField(4)
+          @JsonKey(name: 'description_limit')
+          required final int? descriptionLimit}) =
+      _$UnifediApiInstanceMediaLimitsImpl;
 
   factory _UnifediApiInstanceMediaLimits.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiInstanceMediaLimits.fromJson;
+      _$UnifediApiInstanceMediaLimitsImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -345,6 +309,7 @@ abstract class _UnifediApiInstanceMediaLimits
   int? get descriptionLimit;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiInstanceMediaLimitsCopyWith<_UnifediApiInstanceMediaLimits>
+  _$$UnifediApiInstanceMediaLimitsImplCopyWith<
+          _$UnifediApiInstanceMediaLimitsImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

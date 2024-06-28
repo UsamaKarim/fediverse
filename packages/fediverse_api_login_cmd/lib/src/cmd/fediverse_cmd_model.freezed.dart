@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'fediverse_cmd_model.dart';
 
@@ -11,24 +12,7 @@ part of 'fediverse_cmd_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$FediverseCmdConfigTearOff {
-  const _$FediverseCmdConfigTearOff();
-
-  _FediverseCmdConfig call(
-      {required List<FediverseCmdOption> options,
-      required List<FediverseCmdFlag> flags}) {
-    return _FediverseCmdConfig(
-      options: options,
-      flags: flags,
-    );
-  }
-}
-
-/// @nodoc
-const $FediverseCmdConfig = _$FediverseCmdConfigTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$FediverseCmdConfig {
@@ -44,70 +28,72 @@ mixin _$FediverseCmdConfig {
 abstract class $FediverseCmdConfigCopyWith<$Res> {
   factory $FediverseCmdConfigCopyWith(
           FediverseCmdConfig value, $Res Function(FediverseCmdConfig) then) =
-      _$FediverseCmdConfigCopyWithImpl<$Res>;
+      _$FediverseCmdConfigCopyWithImpl<$Res, FediverseCmdConfig>;
+  @useResult
   $Res call({List<FediverseCmdOption> options, List<FediverseCmdFlag> flags});
 }
 
 /// @nodoc
-class _$FediverseCmdConfigCopyWithImpl<$Res>
+class _$FediverseCmdConfigCopyWithImpl<$Res, $Val extends FediverseCmdConfig>
     implements $FediverseCmdConfigCopyWith<$Res> {
   _$FediverseCmdConfigCopyWithImpl(this._value, this._then);
 
-  final FediverseCmdConfig _value;
   // ignore: unused_field
-  final $Res Function(FediverseCmdConfig) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? options = freezed,
-    Object? flags = freezed,
+    Object? options = null,
+    Object? flags = null,
   }) {
     return _then(_value.copyWith(
-      options: options == freezed
+      options: null == options
           ? _value.options
           : options // ignore: cast_nullable_to_non_nullable
               as List<FediverseCmdOption>,
-      flags: flags == freezed
+      flags: null == flags
           ? _value.flags
           : flags // ignore: cast_nullable_to_non_nullable
               as List<FediverseCmdFlag>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$FediverseCmdConfigCopyWith<$Res>
+abstract class _$$FediverseCmdConfigImplCopyWith<$Res>
     implements $FediverseCmdConfigCopyWith<$Res> {
-  factory _$FediverseCmdConfigCopyWith(
-          _FediverseCmdConfig value, $Res Function(_FediverseCmdConfig) then) =
-      __$FediverseCmdConfigCopyWithImpl<$Res>;
+  factory _$$FediverseCmdConfigImplCopyWith(_$FediverseCmdConfigImpl value,
+          $Res Function(_$FediverseCmdConfigImpl) then) =
+      __$$FediverseCmdConfigImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({List<FediverseCmdOption> options, List<FediverseCmdFlag> flags});
 }
 
 /// @nodoc
-class __$FediverseCmdConfigCopyWithImpl<$Res>
-    extends _$FediverseCmdConfigCopyWithImpl<$Res>
-    implements _$FediverseCmdConfigCopyWith<$Res> {
-  __$FediverseCmdConfigCopyWithImpl(
-      _FediverseCmdConfig _value, $Res Function(_FediverseCmdConfig) _then)
-      : super(_value, (v) => _then(v as _FediverseCmdConfig));
+class __$$FediverseCmdConfigImplCopyWithImpl<$Res>
+    extends _$FediverseCmdConfigCopyWithImpl<$Res, _$FediverseCmdConfigImpl>
+    implements _$$FediverseCmdConfigImplCopyWith<$Res> {
+  __$$FediverseCmdConfigImplCopyWithImpl(_$FediverseCmdConfigImpl _value,
+      $Res Function(_$FediverseCmdConfigImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _FediverseCmdConfig get _value => super._value as _FediverseCmdConfig;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? options = freezed,
-    Object? flags = freezed,
+    Object? options = null,
+    Object? flags = null,
   }) {
-    return _then(_FediverseCmdConfig(
-      options: options == freezed
-          ? _value.options
+    return _then(_$FediverseCmdConfigImpl(
+      options: null == options
+          ? _value._options
           : options // ignore: cast_nullable_to_non_nullable
               as List<FediverseCmdOption>,
-      flags: flags == freezed
-          ? _value.flags
+      flags: null == flags
+          ? _value._flags
           : flags // ignore: cast_nullable_to_non_nullable
               as List<FediverseCmdFlag>,
     ));
@@ -116,13 +102,28 @@ class __$FediverseCmdConfigCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_FediverseCmdConfig implements _FediverseCmdConfig {
-  _$_FediverseCmdConfig({required this.options, required this.flags});
+class _$FediverseCmdConfigImpl implements _FediverseCmdConfig {
+  _$FediverseCmdConfigImpl(
+      {required final List<FediverseCmdOption> options,
+      required final List<FediverseCmdFlag> flags})
+      : _options = options,
+        _flags = flags;
 
+  final List<FediverseCmdOption> _options;
   @override
-  final List<FediverseCmdOption> options;
+  List<FediverseCmdOption> get options {
+    if (_options is EqualUnmodifiableListView) return _options;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_options);
+  }
+
+  final List<FediverseCmdFlag> _flags;
   @override
-  final List<FediverseCmdFlag> flags;
+  List<FediverseCmdFlag> get flags {
+    if (_flags is EqualUnmodifiableListView) return _flags;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_flags);
+  }
 
   @override
   String toString() {
@@ -130,30 +131,32 @@ class _$_FediverseCmdConfig implements _FediverseCmdConfig {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _FediverseCmdConfig &&
-            const DeepCollectionEquality().equals(other.options, options) &&
-            const DeepCollectionEquality().equals(other.flags, flags));
+            other is _$FediverseCmdConfigImpl &&
+            const DeepCollectionEquality().equals(other._options, _options) &&
+            const DeepCollectionEquality().equals(other._flags, _flags));
   }
 
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(options),
-      const DeepCollectionEquality().hash(flags));
+      const DeepCollectionEquality().hash(_options),
+      const DeepCollectionEquality().hash(_flags));
 
   @JsonKey(ignore: true)
   @override
-  _$FediverseCmdConfigCopyWith<_FediverseCmdConfig> get copyWith =>
-      __$FediverseCmdConfigCopyWithImpl<_FediverseCmdConfig>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$FediverseCmdConfigImplCopyWith<_$FediverseCmdConfigImpl> get copyWith =>
+      __$$FediverseCmdConfigImplCopyWithImpl<_$FediverseCmdConfigImpl>(
+          this, _$identity);
 }
 
 abstract class _FediverseCmdConfig implements FediverseCmdConfig {
   factory _FediverseCmdConfig(
-      {required List<FediverseCmdOption> options,
-      required List<FediverseCmdFlag> flags}) = _$_FediverseCmdConfig;
+      {required final List<FediverseCmdOption> options,
+      required final List<FediverseCmdFlag> flags}) = _$FediverseCmdConfigImpl;
 
   @override
   List<FediverseCmdOption> get options;
@@ -161,43 +164,9 @@ abstract class _FediverseCmdConfig implements FediverseCmdConfig {
   List<FediverseCmdFlag> get flags;
   @override
   @JsonKey(ignore: true)
-  _$FediverseCmdConfigCopyWith<_FediverseCmdConfig> get copyWith =>
+  _$$FediverseCmdConfigImplCopyWith<_$FediverseCmdConfigImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$FediverseCmdOptionTearOff {
-  const _$FediverseCmdOptionTearOff();
-
-  _FediverseCmdOption call(String name,
-      {String? abbr,
-      String? help,
-      String? valueHelp,
-      Iterable<String>? allowed,
-      Map<String, String>? allowedHelp,
-      String? defaultsTo,
-      void Function(String?)? callback,
-      bool mandatory = false,
-      bool hide = false,
-      List<String> aliases = const <String>[]}) {
-    return _FediverseCmdOption(
-      name,
-      abbr: abbr,
-      help: help,
-      valueHelp: valueHelp,
-      allowed: allowed,
-      allowedHelp: allowedHelp,
-      defaultsTo: defaultsTo,
-      callback: callback,
-      mandatory: mandatory,
-      hide: hide,
-      aliases: aliases,
-    );
-  }
-}
-
-/// @nodoc
-const $FediverseCmdOption = _$FediverseCmdOptionTearOff();
 
 /// @nodoc
 mixin _$FediverseCmdOption {
@@ -222,7 +191,8 @@ mixin _$FediverseCmdOption {
 abstract class $FediverseCmdOptionCopyWith<$Res> {
   factory $FediverseCmdOptionCopyWith(
           FediverseCmdOption value, $Res Function(FediverseCmdOption) then) =
-      _$FediverseCmdOptionCopyWithImpl<$Res>;
+      _$FediverseCmdOptionCopyWithImpl<$Res, FediverseCmdOption>;
+  @useResult
   $Res call(
       {String name,
       String? abbr,
@@ -238,17 +208,19 @@ abstract class $FediverseCmdOptionCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$FediverseCmdOptionCopyWithImpl<$Res>
+class _$FediverseCmdOptionCopyWithImpl<$Res, $Val extends FediverseCmdOption>
     implements $FediverseCmdOptionCopyWith<$Res> {
   _$FediverseCmdOptionCopyWithImpl(this._value, this._then);
 
-  final FediverseCmdOption _value;
   // ignore: unused_field
-  final $Res Function(FediverseCmdOption) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
+    Object? name = null,
     Object? abbr = freezed,
     Object? help = freezed,
     Object? valueHelp = freezed,
@@ -256,66 +228,67 @@ class _$FediverseCmdOptionCopyWithImpl<$Res>
     Object? allowedHelp = freezed,
     Object? defaultsTo = freezed,
     Object? callback = freezed,
-    Object? mandatory = freezed,
-    Object? hide = freezed,
-    Object? aliases = freezed,
+    Object? mandatory = null,
+    Object? hide = null,
+    Object? aliases = null,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      abbr: abbr == freezed
+      abbr: freezed == abbr
           ? _value.abbr
           : abbr // ignore: cast_nullable_to_non_nullable
               as String?,
-      help: help == freezed
+      help: freezed == help
           ? _value.help
           : help // ignore: cast_nullable_to_non_nullable
               as String?,
-      valueHelp: valueHelp == freezed
+      valueHelp: freezed == valueHelp
           ? _value.valueHelp
           : valueHelp // ignore: cast_nullable_to_non_nullable
               as String?,
-      allowed: allowed == freezed
+      allowed: freezed == allowed
           ? _value.allowed
           : allowed // ignore: cast_nullable_to_non_nullable
               as Iterable<String>?,
-      allowedHelp: allowedHelp == freezed
+      allowedHelp: freezed == allowedHelp
           ? _value.allowedHelp
           : allowedHelp // ignore: cast_nullable_to_non_nullable
               as Map<String, String>?,
-      defaultsTo: defaultsTo == freezed
+      defaultsTo: freezed == defaultsTo
           ? _value.defaultsTo
           : defaultsTo // ignore: cast_nullable_to_non_nullable
               as String?,
-      callback: callback == freezed
+      callback: freezed == callback
           ? _value.callback
           : callback // ignore: cast_nullable_to_non_nullable
               as void Function(String?)?,
-      mandatory: mandatory == freezed
+      mandatory: null == mandatory
           ? _value.mandatory
           : mandatory // ignore: cast_nullable_to_non_nullable
               as bool,
-      hide: hide == freezed
+      hide: null == hide
           ? _value.hide
           : hide // ignore: cast_nullable_to_non_nullable
               as bool,
-      aliases: aliases == freezed
+      aliases: null == aliases
           ? _value.aliases
           : aliases // ignore: cast_nullable_to_non_nullable
               as List<String>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$FediverseCmdOptionCopyWith<$Res>
+abstract class _$$FediverseCmdOptionImplCopyWith<$Res>
     implements $FediverseCmdOptionCopyWith<$Res> {
-  factory _$FediverseCmdOptionCopyWith(
-          _FediverseCmdOption value, $Res Function(_FediverseCmdOption) then) =
-      __$FediverseCmdOptionCopyWithImpl<$Res>;
+  factory _$$FediverseCmdOptionImplCopyWith(_$FediverseCmdOptionImpl value,
+          $Res Function(_$FediverseCmdOptionImpl) then) =
+      __$$FediverseCmdOptionImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {String name,
       String? abbr,
@@ -331,19 +304,17 @@ abstract class _$FediverseCmdOptionCopyWith<$Res>
 }
 
 /// @nodoc
-class __$FediverseCmdOptionCopyWithImpl<$Res>
-    extends _$FediverseCmdOptionCopyWithImpl<$Res>
-    implements _$FediverseCmdOptionCopyWith<$Res> {
-  __$FediverseCmdOptionCopyWithImpl(
-      _FediverseCmdOption _value, $Res Function(_FediverseCmdOption) _then)
-      : super(_value, (v) => _then(v as _FediverseCmdOption));
+class __$$FediverseCmdOptionImplCopyWithImpl<$Res>
+    extends _$FediverseCmdOptionCopyWithImpl<$Res, _$FediverseCmdOptionImpl>
+    implements _$$FediverseCmdOptionImplCopyWith<$Res> {
+  __$$FediverseCmdOptionImplCopyWithImpl(_$FediverseCmdOptionImpl _value,
+      $Res Function(_$FediverseCmdOptionImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _FediverseCmdOption get _value => super._value as _FediverseCmdOption;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
+    Object? name = null,
     Object? abbr = freezed,
     Object? help = freezed,
     Object? valueHelp = freezed,
@@ -351,53 +322,53 @@ class __$FediverseCmdOptionCopyWithImpl<$Res>
     Object? allowedHelp = freezed,
     Object? defaultsTo = freezed,
     Object? callback = freezed,
-    Object? mandatory = freezed,
-    Object? hide = freezed,
-    Object? aliases = freezed,
+    Object? mandatory = null,
+    Object? hide = null,
+    Object? aliases = null,
   }) {
-    return _then(_FediverseCmdOption(
-      name == freezed
+    return _then(_$FediverseCmdOptionImpl(
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      abbr: abbr == freezed
+      abbr: freezed == abbr
           ? _value.abbr
           : abbr // ignore: cast_nullable_to_non_nullable
               as String?,
-      help: help == freezed
+      help: freezed == help
           ? _value.help
           : help // ignore: cast_nullable_to_non_nullable
               as String?,
-      valueHelp: valueHelp == freezed
+      valueHelp: freezed == valueHelp
           ? _value.valueHelp
           : valueHelp // ignore: cast_nullable_to_non_nullable
               as String?,
-      allowed: allowed == freezed
+      allowed: freezed == allowed
           ? _value.allowed
           : allowed // ignore: cast_nullable_to_non_nullable
               as Iterable<String>?,
-      allowedHelp: allowedHelp == freezed
-          ? _value.allowedHelp
+      allowedHelp: freezed == allowedHelp
+          ? _value._allowedHelp
           : allowedHelp // ignore: cast_nullable_to_non_nullable
               as Map<String, String>?,
-      defaultsTo: defaultsTo == freezed
+      defaultsTo: freezed == defaultsTo
           ? _value.defaultsTo
           : defaultsTo // ignore: cast_nullable_to_non_nullable
               as String?,
-      callback: callback == freezed
+      callback: freezed == callback
           ? _value.callback
           : callback // ignore: cast_nullable_to_non_nullable
               as void Function(String?)?,
-      mandatory: mandatory == freezed
+      mandatory: null == mandatory
           ? _value.mandatory
           : mandatory // ignore: cast_nullable_to_non_nullable
               as bool,
-      hide: hide == freezed
+      hide: null == hide
           ? _value.hide
           : hide // ignore: cast_nullable_to_non_nullable
               as bool,
-      aliases: aliases == freezed
-          ? _value.aliases
+      aliases: null == aliases
+          ? _value._aliases
           : aliases // ignore: cast_nullable_to_non_nullable
               as List<String>,
     ));
@@ -406,18 +377,20 @@ class __$FediverseCmdOptionCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_FediverseCmdOption implements _FediverseCmdOption {
-  const _$_FediverseCmdOption(this.name,
+class _$FediverseCmdOptionImpl implements _FediverseCmdOption {
+  const _$FediverseCmdOptionImpl(this.name,
       {this.abbr,
       this.help,
       this.valueHelp,
       this.allowed,
-      this.allowedHelp,
+      final Map<String, String>? allowedHelp,
       this.defaultsTo,
       this.callback,
       this.mandatory = false,
       this.hide = false,
-      this.aliases = const <String>[]});
+      final List<String> aliases = const <String>[]})
+      : _allowedHelp = allowedHelp,
+        _aliases = aliases;
 
   @override
   final String name;
@@ -429,21 +402,34 @@ class _$_FediverseCmdOption implements _FediverseCmdOption {
   final String? valueHelp;
   @override
   final Iterable<String>? allowed;
+  final Map<String, String>? _allowedHelp;
   @override
-  final Map<String, String>? allowedHelp;
+  Map<String, String>? get allowedHelp {
+    final value = _allowedHelp;
+    if (value == null) return null;
+    if (_allowedHelp is EqualUnmodifiableMapView) return _allowedHelp;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(value);
+  }
+
   @override
   final String? defaultsTo;
   @override
   final void Function(String?)? callback;
-  @JsonKey(defaultValue: false)
   @override
+  @JsonKey()
   final bool mandatory;
-  @JsonKey(defaultValue: false)
   @override
+  @JsonKey()
   final bool hide;
-  @JsonKey(defaultValue: const <String>[])
+  final List<String> _aliases;
   @override
-  final List<String> aliases;
+  @JsonKey()
+  List<String> get aliases {
+    if (_aliases is EqualUnmodifiableListView) return _aliases;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_aliases);
+  }
 
   @override
   String toString() {
@@ -451,10 +437,10 @@ class _$_FediverseCmdOption implements _FediverseCmdOption {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _FediverseCmdOption &&
+            other is _$FediverseCmdOptionImpl &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.abbr, abbr) || other.abbr == abbr) &&
             (identical(other.help, help) || other.help == help) &&
@@ -462,7 +448,7 @@ class _$_FediverseCmdOption implements _FediverseCmdOption {
                 other.valueHelp == valueHelp) &&
             const DeepCollectionEquality().equals(other.allowed, allowed) &&
             const DeepCollectionEquality()
-                .equals(other.allowedHelp, allowedHelp) &&
+                .equals(other._allowedHelp, _allowedHelp) &&
             (identical(other.defaultsTo, defaultsTo) ||
                 other.defaultsTo == defaultsTo) &&
             (identical(other.callback, callback) ||
@@ -470,7 +456,7 @@ class _$_FediverseCmdOption implements _FediverseCmdOption {
             (identical(other.mandatory, mandatory) ||
                 other.mandatory == mandatory) &&
             (identical(other.hide, hide) || other.hide == hide) &&
-            const DeepCollectionEquality().equals(other.aliases, aliases));
+            const DeepCollectionEquality().equals(other._aliases, _aliases));
   }
 
   @override
@@ -481,31 +467,33 @@ class _$_FediverseCmdOption implements _FediverseCmdOption {
       help,
       valueHelp,
       const DeepCollectionEquality().hash(allowed),
-      const DeepCollectionEquality().hash(allowedHelp),
+      const DeepCollectionEquality().hash(_allowedHelp),
       defaultsTo,
       callback,
       mandatory,
       hide,
-      const DeepCollectionEquality().hash(aliases));
+      const DeepCollectionEquality().hash(_aliases));
 
   @JsonKey(ignore: true)
   @override
-  _$FediverseCmdOptionCopyWith<_FediverseCmdOption> get copyWith =>
-      __$FediverseCmdOptionCopyWithImpl<_FediverseCmdOption>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$FediverseCmdOptionImplCopyWith<_$FediverseCmdOptionImpl> get copyWith =>
+      __$$FediverseCmdOptionImplCopyWithImpl<_$FediverseCmdOptionImpl>(
+          this, _$identity);
 }
 
 abstract class _FediverseCmdOption implements FediverseCmdOption {
-  const factory _FediverseCmdOption(String name,
-      {String? abbr,
-      String? help,
-      String? valueHelp,
-      Iterable<String>? allowed,
-      Map<String, String>? allowedHelp,
-      String? defaultsTo,
-      void Function(String?)? callback,
-      bool mandatory,
-      bool hide,
-      List<String> aliases}) = _$_FediverseCmdOption;
+  const factory _FediverseCmdOption(final String name,
+      {final String? abbr,
+      final String? help,
+      final String? valueHelp,
+      final Iterable<String>? allowed,
+      final Map<String, String>? allowedHelp,
+      final String? defaultsTo,
+      final void Function(String?)? callback,
+      final bool mandatory,
+      final bool hide,
+      final List<String> aliases}) = _$FediverseCmdOptionImpl;
 
   @override
   String get name;
@@ -531,37 +519,9 @@ abstract class _FediverseCmdOption implements FediverseCmdOption {
   List<String> get aliases;
   @override
   @JsonKey(ignore: true)
-  _$FediverseCmdOptionCopyWith<_FediverseCmdOption> get copyWith =>
+  _$$FediverseCmdOptionImplCopyWith<_$FediverseCmdOptionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$FediverseCmdFlagTearOff {
-  const _$FediverseCmdFlagTearOff();
-
-  _FediverseCmdFlag call(String name,
-      {String? abbr,
-      String? help,
-      bool defaultsTo = false,
-      bool negatable = true,
-      void Function(bool)? callback,
-      bool hide = false,
-      List<String> aliases = const <String>[]}) {
-    return _FediverseCmdFlag(
-      name,
-      abbr: abbr,
-      help: help,
-      defaultsTo: defaultsTo,
-      negatable: negatable,
-      callback: callback,
-      hide: hide,
-      aliases: aliases,
-    );
-  }
-}
-
-/// @nodoc
-const $FediverseCmdFlag = _$FediverseCmdFlagTearOff();
 
 /// @nodoc
 mixin _$FediverseCmdFlag {
@@ -583,7 +543,8 @@ mixin _$FediverseCmdFlag {
 abstract class $FediverseCmdFlagCopyWith<$Res> {
   factory $FediverseCmdFlagCopyWith(
           FediverseCmdFlag value, $Res Function(FediverseCmdFlag) then) =
-      _$FediverseCmdFlagCopyWithImpl<$Res>;
+      _$FediverseCmdFlagCopyWithImpl<$Res, FediverseCmdFlag>;
+  @useResult
   $Res call(
       {String name,
       String? abbr,
@@ -596,69 +557,72 @@ abstract class $FediverseCmdFlagCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$FediverseCmdFlagCopyWithImpl<$Res>
+class _$FediverseCmdFlagCopyWithImpl<$Res, $Val extends FediverseCmdFlag>
     implements $FediverseCmdFlagCopyWith<$Res> {
   _$FediverseCmdFlagCopyWithImpl(this._value, this._then);
 
-  final FediverseCmdFlag _value;
   // ignore: unused_field
-  final $Res Function(FediverseCmdFlag) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
+    Object? name = null,
     Object? abbr = freezed,
     Object? help = freezed,
-    Object? defaultsTo = freezed,
-    Object? negatable = freezed,
+    Object? defaultsTo = null,
+    Object? negatable = null,
     Object? callback = freezed,
-    Object? hide = freezed,
-    Object? aliases = freezed,
+    Object? hide = null,
+    Object? aliases = null,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      abbr: abbr == freezed
+      abbr: freezed == abbr
           ? _value.abbr
           : abbr // ignore: cast_nullable_to_non_nullable
               as String?,
-      help: help == freezed
+      help: freezed == help
           ? _value.help
           : help // ignore: cast_nullable_to_non_nullable
               as String?,
-      defaultsTo: defaultsTo == freezed
+      defaultsTo: null == defaultsTo
           ? _value.defaultsTo
           : defaultsTo // ignore: cast_nullable_to_non_nullable
               as bool,
-      negatable: negatable == freezed
+      negatable: null == negatable
           ? _value.negatable
           : negatable // ignore: cast_nullable_to_non_nullable
               as bool,
-      callback: callback == freezed
+      callback: freezed == callback
           ? _value.callback
           : callback // ignore: cast_nullable_to_non_nullable
               as void Function(bool)?,
-      hide: hide == freezed
+      hide: null == hide
           ? _value.hide
           : hide // ignore: cast_nullable_to_non_nullable
               as bool,
-      aliases: aliases == freezed
+      aliases: null == aliases
           ? _value.aliases
           : aliases // ignore: cast_nullable_to_non_nullable
               as List<String>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$FediverseCmdFlagCopyWith<$Res>
+abstract class _$$FediverseCmdFlagImplCopyWith<$Res>
     implements $FediverseCmdFlagCopyWith<$Res> {
-  factory _$FediverseCmdFlagCopyWith(
-          _FediverseCmdFlag value, $Res Function(_FediverseCmdFlag) then) =
-      __$FediverseCmdFlagCopyWithImpl<$Res>;
+  factory _$$FediverseCmdFlagImplCopyWith(_$FediverseCmdFlagImpl value,
+          $Res Function(_$FediverseCmdFlagImpl) then) =
+      __$$FediverseCmdFlagImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {String name,
       String? abbr,
@@ -671,58 +635,56 @@ abstract class _$FediverseCmdFlagCopyWith<$Res>
 }
 
 /// @nodoc
-class __$FediverseCmdFlagCopyWithImpl<$Res>
-    extends _$FediverseCmdFlagCopyWithImpl<$Res>
-    implements _$FediverseCmdFlagCopyWith<$Res> {
-  __$FediverseCmdFlagCopyWithImpl(
-      _FediverseCmdFlag _value, $Res Function(_FediverseCmdFlag) _then)
-      : super(_value, (v) => _then(v as _FediverseCmdFlag));
+class __$$FediverseCmdFlagImplCopyWithImpl<$Res>
+    extends _$FediverseCmdFlagCopyWithImpl<$Res, _$FediverseCmdFlagImpl>
+    implements _$$FediverseCmdFlagImplCopyWith<$Res> {
+  __$$FediverseCmdFlagImplCopyWithImpl(_$FediverseCmdFlagImpl _value,
+      $Res Function(_$FediverseCmdFlagImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _FediverseCmdFlag get _value => super._value as _FediverseCmdFlag;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
+    Object? name = null,
     Object? abbr = freezed,
     Object? help = freezed,
-    Object? defaultsTo = freezed,
-    Object? negatable = freezed,
+    Object? defaultsTo = null,
+    Object? negatable = null,
     Object? callback = freezed,
-    Object? hide = freezed,
-    Object? aliases = freezed,
+    Object? hide = null,
+    Object? aliases = null,
   }) {
-    return _then(_FediverseCmdFlag(
-      name == freezed
+    return _then(_$FediverseCmdFlagImpl(
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      abbr: abbr == freezed
+      abbr: freezed == abbr
           ? _value.abbr
           : abbr // ignore: cast_nullable_to_non_nullable
               as String?,
-      help: help == freezed
+      help: freezed == help
           ? _value.help
           : help // ignore: cast_nullable_to_non_nullable
               as String?,
-      defaultsTo: defaultsTo == freezed
+      defaultsTo: null == defaultsTo
           ? _value.defaultsTo
           : defaultsTo // ignore: cast_nullable_to_non_nullable
               as bool,
-      negatable: negatable == freezed
+      negatable: null == negatable
           ? _value.negatable
           : negatable // ignore: cast_nullable_to_non_nullable
               as bool,
-      callback: callback == freezed
+      callback: freezed == callback
           ? _value.callback
           : callback // ignore: cast_nullable_to_non_nullable
               as void Function(bool)?,
-      hide: hide == freezed
+      hide: null == hide
           ? _value.hide
           : hide // ignore: cast_nullable_to_non_nullable
               as bool,
-      aliases: aliases == freezed
-          ? _value.aliases
+      aliases: null == aliases
+          ? _value._aliases
           : aliases // ignore: cast_nullable_to_non_nullable
               as List<String>,
     ));
@@ -731,15 +693,16 @@ class __$FediverseCmdFlagCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_FediverseCmdFlag implements _FediverseCmdFlag {
-  const _$_FediverseCmdFlag(this.name,
+class _$FediverseCmdFlagImpl implements _FediverseCmdFlag {
+  const _$FediverseCmdFlagImpl(this.name,
       {this.abbr,
       this.help,
       this.defaultsTo = false,
       this.negatable = true,
       this.callback,
       this.hide = false,
-      this.aliases = const <String>[]});
+      final List<String> aliases = const <String>[]})
+      : _aliases = aliases;
 
   @override
   final String name;
@@ -747,20 +710,25 @@ class _$_FediverseCmdFlag implements _FediverseCmdFlag {
   final String? abbr;
   @override
   final String? help;
-  @JsonKey(defaultValue: false)
   @override
+  @JsonKey()
   final bool defaultsTo;
-  @JsonKey(defaultValue: true)
   @override
+  @JsonKey()
   final bool negatable;
   @override
   final void Function(bool)? callback;
-  @JsonKey(defaultValue: false)
   @override
+  @JsonKey()
   final bool hide;
-  @JsonKey(defaultValue: const <String>[])
+  final List<String> _aliases;
   @override
-  final List<String> aliases;
+  @JsonKey()
+  List<String> get aliases {
+    if (_aliases is EqualUnmodifiableListView) return _aliases;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_aliases);
+  }
 
   @override
   String toString() {
@@ -768,10 +736,10 @@ class _$_FediverseCmdFlag implements _FediverseCmdFlag {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _FediverseCmdFlag &&
+            other is _$FediverseCmdFlagImpl &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.abbr, abbr) || other.abbr == abbr) &&
             (identical(other.help, help) || other.help == help) &&
@@ -782,28 +750,30 @@ class _$_FediverseCmdFlag implements _FediverseCmdFlag {
             (identical(other.callback, callback) ||
                 other.callback == callback) &&
             (identical(other.hide, hide) || other.hide == hide) &&
-            const DeepCollectionEquality().equals(other.aliases, aliases));
+            const DeepCollectionEquality().equals(other._aliases, _aliases));
   }
 
   @override
   int get hashCode => Object.hash(runtimeType, name, abbr, help, defaultsTo,
-      negatable, callback, hide, const DeepCollectionEquality().hash(aliases));
+      negatable, callback, hide, const DeepCollectionEquality().hash(_aliases));
 
   @JsonKey(ignore: true)
   @override
-  _$FediverseCmdFlagCopyWith<_FediverseCmdFlag> get copyWith =>
-      __$FediverseCmdFlagCopyWithImpl<_FediverseCmdFlag>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$FediverseCmdFlagImplCopyWith<_$FediverseCmdFlagImpl> get copyWith =>
+      __$$FediverseCmdFlagImplCopyWithImpl<_$FediverseCmdFlagImpl>(
+          this, _$identity);
 }
 
 abstract class _FediverseCmdFlag implements FediverseCmdFlag {
-  const factory _FediverseCmdFlag(String name,
-      {String? abbr,
-      String? help,
-      bool defaultsTo,
-      bool negatable,
-      void Function(bool)? callback,
-      bool hide,
-      List<String> aliases}) = _$_FediverseCmdFlag;
+  const factory _FediverseCmdFlag(final String name,
+      {final String? abbr,
+      final String? help,
+      final bool defaultsTo,
+      final bool negatable,
+      final void Function(bool)? callback,
+      final bool hide,
+      final List<String> aliases}) = _$FediverseCmdFlagImpl;
 
   @override
   String get name;
@@ -823,6 +793,6 @@ abstract class _FediverseCmdFlag implements FediverseCmdFlag {
   List<String> get aliases;
   @override
   @JsonKey(ignore: true)
-  _$FediverseCmdFlagCopyWith<_FediverseCmdFlag> get copyWith =>
+  _$$FediverseCmdFlagImplCopyWith<_$FediverseCmdFlagImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

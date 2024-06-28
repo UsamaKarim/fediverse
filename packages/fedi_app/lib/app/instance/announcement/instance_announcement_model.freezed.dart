@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'instance_announcement_model.dart';
 
@@ -11,23 +12,7 @@ part of 'instance_announcement_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$DbInstanceAnnouncementPopulatedTearOff {
-  const _$DbInstanceAnnouncementPopulatedTearOff();
-
-  _DbInstanceAnnouncementPopulated call(
-      {required DbInstanceAnnouncement dbInstanceAnnouncement}) {
-    return _DbInstanceAnnouncementPopulated(
-      dbInstanceAnnouncement: dbInstanceAnnouncement,
-    );
-  }
-}
-
-/// @nodoc
-const $DbInstanceAnnouncementPopulated =
-    _$DbInstanceAnnouncementPopulatedTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$DbInstanceAnnouncementPopulated {
@@ -44,62 +29,66 @@ abstract class $DbInstanceAnnouncementPopulatedCopyWith<$Res> {
   factory $DbInstanceAnnouncementPopulatedCopyWith(
           DbInstanceAnnouncementPopulated value,
           $Res Function(DbInstanceAnnouncementPopulated) then) =
-      _$DbInstanceAnnouncementPopulatedCopyWithImpl<$Res>;
+      _$DbInstanceAnnouncementPopulatedCopyWithImpl<$Res,
+          DbInstanceAnnouncementPopulated>;
+  @useResult
   $Res call({DbInstanceAnnouncement dbInstanceAnnouncement});
 }
 
 /// @nodoc
-class _$DbInstanceAnnouncementPopulatedCopyWithImpl<$Res>
+class _$DbInstanceAnnouncementPopulatedCopyWithImpl<$Res,
+        $Val extends DbInstanceAnnouncementPopulated>
     implements $DbInstanceAnnouncementPopulatedCopyWith<$Res> {
   _$DbInstanceAnnouncementPopulatedCopyWithImpl(this._value, this._then);
 
-  final DbInstanceAnnouncementPopulated _value;
   // ignore: unused_field
-  final $Res Function(DbInstanceAnnouncementPopulated) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? dbInstanceAnnouncement = freezed,
   }) {
     return _then(_value.copyWith(
-      dbInstanceAnnouncement: dbInstanceAnnouncement == freezed
+      dbInstanceAnnouncement: freezed == dbInstanceAnnouncement
           ? _value.dbInstanceAnnouncement
           : dbInstanceAnnouncement // ignore: cast_nullable_to_non_nullable
               as DbInstanceAnnouncement,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$DbInstanceAnnouncementPopulatedCopyWith<$Res>
+abstract class _$$DbInstanceAnnouncementPopulatedImplCopyWith<$Res>
     implements $DbInstanceAnnouncementPopulatedCopyWith<$Res> {
-  factory _$DbInstanceAnnouncementPopulatedCopyWith(
-          _DbInstanceAnnouncementPopulated value,
-          $Res Function(_DbInstanceAnnouncementPopulated) then) =
-      __$DbInstanceAnnouncementPopulatedCopyWithImpl<$Res>;
+  factory _$$DbInstanceAnnouncementPopulatedImplCopyWith(
+          _$DbInstanceAnnouncementPopulatedImpl value,
+          $Res Function(_$DbInstanceAnnouncementPopulatedImpl) then) =
+      __$$DbInstanceAnnouncementPopulatedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({DbInstanceAnnouncement dbInstanceAnnouncement});
 }
 
 /// @nodoc
-class __$DbInstanceAnnouncementPopulatedCopyWithImpl<$Res>
-    extends _$DbInstanceAnnouncementPopulatedCopyWithImpl<$Res>
-    implements _$DbInstanceAnnouncementPopulatedCopyWith<$Res> {
-  __$DbInstanceAnnouncementPopulatedCopyWithImpl(
-      _DbInstanceAnnouncementPopulated _value,
-      $Res Function(_DbInstanceAnnouncementPopulated) _then)
-      : super(_value, (v) => _then(v as _DbInstanceAnnouncementPopulated));
+class __$$DbInstanceAnnouncementPopulatedImplCopyWithImpl<$Res>
+    extends _$DbInstanceAnnouncementPopulatedCopyWithImpl<$Res,
+        _$DbInstanceAnnouncementPopulatedImpl>
+    implements _$$DbInstanceAnnouncementPopulatedImplCopyWith<$Res> {
+  __$$DbInstanceAnnouncementPopulatedImplCopyWithImpl(
+      _$DbInstanceAnnouncementPopulatedImpl _value,
+      $Res Function(_$DbInstanceAnnouncementPopulatedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _DbInstanceAnnouncementPopulated get _value =>
-      super._value as _DbInstanceAnnouncementPopulated;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? dbInstanceAnnouncement = freezed,
   }) {
-    return _then(_DbInstanceAnnouncementPopulated(
-      dbInstanceAnnouncement: dbInstanceAnnouncement == freezed
+    return _then(_$DbInstanceAnnouncementPopulatedImpl(
+      dbInstanceAnnouncement: freezed == dbInstanceAnnouncement
           ? _value.dbInstanceAnnouncement
           : dbInstanceAnnouncement // ignore: cast_nullable_to_non_nullable
               as DbInstanceAnnouncement,
@@ -109,9 +98,9 @@ class __$DbInstanceAnnouncementPopulatedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DbInstanceAnnouncementPopulated
+class _$DbInstanceAnnouncementPopulatedImpl
     implements _DbInstanceAnnouncementPopulated {
-  const _$_DbInstanceAnnouncementPopulated(
+  const _$DbInstanceAnnouncementPopulatedImpl(
       {required this.dbInstanceAnnouncement});
 
   @override
@@ -123,10 +112,10 @@ class _$_DbInstanceAnnouncementPopulated
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DbInstanceAnnouncementPopulated &&
+            other is _$DbInstanceAnnouncementPopulatedImpl &&
             const DeepCollectionEquality()
                 .equals(other.dbInstanceAnnouncement, dbInstanceAnnouncement));
   }
@@ -137,41 +126,27 @@ class _$_DbInstanceAnnouncementPopulated
 
   @JsonKey(ignore: true)
   @override
-  _$DbInstanceAnnouncementPopulatedCopyWith<_DbInstanceAnnouncementPopulated>
-      get copyWith => __$DbInstanceAnnouncementPopulatedCopyWithImpl<
-          _DbInstanceAnnouncementPopulated>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DbInstanceAnnouncementPopulatedImplCopyWith<
+          _$DbInstanceAnnouncementPopulatedImpl>
+      get copyWith => __$$DbInstanceAnnouncementPopulatedImplCopyWithImpl<
+          _$DbInstanceAnnouncementPopulatedImpl>(this, _$identity);
 }
 
 abstract class _DbInstanceAnnouncementPopulated
     implements DbInstanceAnnouncementPopulated {
   const factory _DbInstanceAnnouncementPopulated(
-          {required DbInstanceAnnouncement dbInstanceAnnouncement}) =
-      _$_DbInstanceAnnouncementPopulated;
+          {required final DbInstanceAnnouncement dbInstanceAnnouncement}) =
+      _$DbInstanceAnnouncementPopulatedImpl;
 
   @override
   DbInstanceAnnouncement get dbInstanceAnnouncement;
   @override
   @JsonKey(ignore: true)
-  _$DbInstanceAnnouncementPopulatedCopyWith<_DbInstanceAnnouncementPopulated>
+  _$$DbInstanceAnnouncementPopulatedImplCopyWith<
+          _$DbInstanceAnnouncementPopulatedImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$DbInstanceAnnouncementPopulatedWrapperTearOff {
-  const _$DbInstanceAnnouncementPopulatedWrapperTearOff();
-
-  _DbInstanceAnnouncementPopulatedWrapper call(
-      {required DbInstanceAnnouncementPopulated
-          dbInstanceAnnouncementPopulated}) {
-    return _DbInstanceAnnouncementPopulatedWrapper(
-      dbInstanceAnnouncementPopulated: dbInstanceAnnouncementPopulated,
-    );
-  }
-}
-
-/// @nodoc
-const $DbInstanceAnnouncementPopulatedWrapper =
-    _$DbInstanceAnnouncementPopulatedWrapperTearOff();
 
 /// @nodoc
 mixin _$DbInstanceAnnouncementPopulatedWrapper {
@@ -189,7 +164,9 @@ abstract class $DbInstanceAnnouncementPopulatedWrapperCopyWith<$Res> {
   factory $DbInstanceAnnouncementPopulatedWrapperCopyWith(
           DbInstanceAnnouncementPopulatedWrapper value,
           $Res Function(DbInstanceAnnouncementPopulatedWrapper) then) =
-      _$DbInstanceAnnouncementPopulatedWrapperCopyWithImpl<$Res>;
+      _$DbInstanceAnnouncementPopulatedWrapperCopyWithImpl<$Res,
+          DbInstanceAnnouncementPopulatedWrapper>;
+  @useResult
   $Res call({DbInstanceAnnouncementPopulated dbInstanceAnnouncementPopulated});
 
   $DbInstanceAnnouncementPopulatedCopyWith<$Res>
@@ -197,45 +174,50 @@ abstract class $DbInstanceAnnouncementPopulatedWrapperCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$DbInstanceAnnouncementPopulatedWrapperCopyWithImpl<$Res>
+class _$DbInstanceAnnouncementPopulatedWrapperCopyWithImpl<$Res,
+        $Val extends DbInstanceAnnouncementPopulatedWrapper>
     implements $DbInstanceAnnouncementPopulatedWrapperCopyWith<$Res> {
   _$DbInstanceAnnouncementPopulatedWrapperCopyWithImpl(this._value, this._then);
 
-  final DbInstanceAnnouncementPopulatedWrapper _value;
   // ignore: unused_field
-  final $Res Function(DbInstanceAnnouncementPopulatedWrapper) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dbInstanceAnnouncementPopulated = freezed,
+    Object? dbInstanceAnnouncementPopulated = null,
   }) {
     return _then(_value.copyWith(
-      dbInstanceAnnouncementPopulated: dbInstanceAnnouncementPopulated ==
-              freezed
+      dbInstanceAnnouncementPopulated: null == dbInstanceAnnouncementPopulated
           ? _value.dbInstanceAnnouncementPopulated
           : dbInstanceAnnouncementPopulated // ignore: cast_nullable_to_non_nullable
               as DbInstanceAnnouncementPopulated,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $DbInstanceAnnouncementPopulatedCopyWith<$Res>
       get dbInstanceAnnouncementPopulated {
     return $DbInstanceAnnouncementPopulatedCopyWith<$Res>(
         _value.dbInstanceAnnouncementPopulated, (value) {
-      return _then(_value.copyWith(dbInstanceAnnouncementPopulated: value));
+      return _then(
+          _value.copyWith(dbInstanceAnnouncementPopulated: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$DbInstanceAnnouncementPopulatedWrapperCopyWith<$Res>
+abstract class _$$DbInstanceAnnouncementPopulatedWrapperImplCopyWith<$Res>
     implements $DbInstanceAnnouncementPopulatedWrapperCopyWith<$Res> {
-  factory _$DbInstanceAnnouncementPopulatedWrapperCopyWith(
-          _DbInstanceAnnouncementPopulatedWrapper value,
-          $Res Function(_DbInstanceAnnouncementPopulatedWrapper) then) =
-      __$DbInstanceAnnouncementPopulatedWrapperCopyWithImpl<$Res>;
+  factory _$$DbInstanceAnnouncementPopulatedWrapperImplCopyWith(
+          _$DbInstanceAnnouncementPopulatedWrapperImpl value,
+          $Res Function(_$DbInstanceAnnouncementPopulatedWrapperImpl) then) =
+      __$$DbInstanceAnnouncementPopulatedWrapperImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({DbInstanceAnnouncementPopulated dbInstanceAnnouncementPopulated});
 
   @override
@@ -244,26 +226,22 @@ abstract class _$DbInstanceAnnouncementPopulatedWrapperCopyWith<$Res>
 }
 
 /// @nodoc
-class __$DbInstanceAnnouncementPopulatedWrapperCopyWithImpl<$Res>
-    extends _$DbInstanceAnnouncementPopulatedWrapperCopyWithImpl<$Res>
-    implements _$DbInstanceAnnouncementPopulatedWrapperCopyWith<$Res> {
-  __$DbInstanceAnnouncementPopulatedWrapperCopyWithImpl(
-      _DbInstanceAnnouncementPopulatedWrapper _value,
-      $Res Function(_DbInstanceAnnouncementPopulatedWrapper) _then)
-      : super(
-            _value, (v) => _then(v as _DbInstanceAnnouncementPopulatedWrapper));
+class __$$DbInstanceAnnouncementPopulatedWrapperImplCopyWithImpl<$Res>
+    extends _$DbInstanceAnnouncementPopulatedWrapperCopyWithImpl<$Res,
+        _$DbInstanceAnnouncementPopulatedWrapperImpl>
+    implements _$$DbInstanceAnnouncementPopulatedWrapperImplCopyWith<$Res> {
+  __$$DbInstanceAnnouncementPopulatedWrapperImplCopyWithImpl(
+      _$DbInstanceAnnouncementPopulatedWrapperImpl _value,
+      $Res Function(_$DbInstanceAnnouncementPopulatedWrapperImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _DbInstanceAnnouncementPopulatedWrapper get _value =>
-      super._value as _DbInstanceAnnouncementPopulatedWrapper;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dbInstanceAnnouncementPopulated = freezed,
+    Object? dbInstanceAnnouncementPopulated = null,
   }) {
-    return _then(_DbInstanceAnnouncementPopulatedWrapper(
-      dbInstanceAnnouncementPopulated: dbInstanceAnnouncementPopulated ==
-              freezed
+    return _then(_$DbInstanceAnnouncementPopulatedWrapperImpl(
+      dbInstanceAnnouncementPopulated: null == dbInstanceAnnouncementPopulated
           ? _value.dbInstanceAnnouncementPopulated
           : dbInstanceAnnouncementPopulated // ignore: cast_nullable_to_non_nullable
               as DbInstanceAnnouncementPopulated,
@@ -273,9 +251,9 @@ class __$DbInstanceAnnouncementPopulatedWrapperCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DbInstanceAnnouncementPopulatedWrapper
+class _$DbInstanceAnnouncementPopulatedWrapperImpl
     extends _DbInstanceAnnouncementPopulatedWrapper {
-  const _$_DbInstanceAnnouncementPopulatedWrapper(
+  const _$DbInstanceAnnouncementPopulatedWrapperImpl(
       {required this.dbInstanceAnnouncementPopulated})
       : super._();
 
@@ -288,10 +266,10 @@ class _$_DbInstanceAnnouncementPopulatedWrapper
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DbInstanceAnnouncementPopulatedWrapper &&
+            other is _$DbInstanceAnnouncementPopulatedWrapperImpl &&
             (identical(other.dbInstanceAnnouncementPopulated,
                     dbInstanceAnnouncementPopulated) ||
                 other.dbInstanceAnnouncementPopulated ==
@@ -303,25 +281,27 @@ class _$_DbInstanceAnnouncementPopulatedWrapper
 
   @JsonKey(ignore: true)
   @override
-  _$DbInstanceAnnouncementPopulatedWrapperCopyWith<
-          _DbInstanceAnnouncementPopulatedWrapper>
-      get copyWith => __$DbInstanceAnnouncementPopulatedWrapperCopyWithImpl<
-          _DbInstanceAnnouncementPopulatedWrapper>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DbInstanceAnnouncementPopulatedWrapperImplCopyWith<
+          _$DbInstanceAnnouncementPopulatedWrapperImpl>
+      get copyWith =>
+          __$$DbInstanceAnnouncementPopulatedWrapperImplCopyWithImpl<
+              _$DbInstanceAnnouncementPopulatedWrapperImpl>(this, _$identity);
 }
 
 abstract class _DbInstanceAnnouncementPopulatedWrapper
     extends DbInstanceAnnouncementPopulatedWrapper {
   const factory _DbInstanceAnnouncementPopulatedWrapper(
-          {required DbInstanceAnnouncementPopulated
+          {required final DbInstanceAnnouncementPopulated
               dbInstanceAnnouncementPopulated}) =
-      _$_DbInstanceAnnouncementPopulatedWrapper;
+      _$DbInstanceAnnouncementPopulatedWrapperImpl;
   const _DbInstanceAnnouncementPopulatedWrapper._() : super._();
 
   @override
   DbInstanceAnnouncementPopulated get dbInstanceAnnouncementPopulated;
   @override
   @JsonKey(ignore: true)
-  _$DbInstanceAnnouncementPopulatedWrapperCopyWith<
-          _DbInstanceAnnouncementPopulatedWrapper>
+  _$$DbInstanceAnnouncementPopulatedWrapperImplCopyWith<
+          _$DbInstanceAnnouncementPopulatedWrapperImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

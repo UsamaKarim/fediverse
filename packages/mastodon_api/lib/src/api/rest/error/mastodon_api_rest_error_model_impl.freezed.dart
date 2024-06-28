@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_rest_error_model_impl.dart';
 
@@ -11,24 +12,7 @@ part of 'mastodon_api_rest_error_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$MastodonApiRestErrorTearOff {
-  const _$MastodonApiRestErrorTearOff();
-
-  _MastodonApiRestError call(
-      {required RestResponseError restResponseError,
-      required MastodonApiRestErrorDetails? details}) {
-    return _MastodonApiRestError(
-      restResponseError: restResponseError,
-      details: details,
-    );
-  }
-}
-
-/// @nodoc
-const $MastodonApiRestError = _$MastodonApiRestErrorTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$MastodonApiRestError {
@@ -45,7 +29,8 @@ mixin _$MastodonApiRestError {
 abstract class $MastodonApiRestErrorCopyWith<$Res> {
   factory $MastodonApiRestErrorCopyWith(MastodonApiRestError value,
           $Res Function(MastodonApiRestError) then) =
-      _$MastodonApiRestErrorCopyWithImpl<$Res>;
+      _$MastodonApiRestErrorCopyWithImpl<$Res, MastodonApiRestError>;
+  @useResult
   $Res call(
       {RestResponseError restResponseError,
       MastodonApiRestErrorDetails? details});
@@ -55,57 +40,63 @@ abstract class $MastodonApiRestErrorCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MastodonApiRestErrorCopyWithImpl<$Res>
+class _$MastodonApiRestErrorCopyWithImpl<$Res,
+        $Val extends MastodonApiRestError>
     implements $MastodonApiRestErrorCopyWith<$Res> {
   _$MastodonApiRestErrorCopyWithImpl(this._value, this._then);
 
-  final MastodonApiRestError _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiRestError) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? restResponseError = freezed,
+    Object? restResponseError = null,
     Object? details = freezed,
   }) {
     return _then(_value.copyWith(
-      restResponseError: restResponseError == freezed
+      restResponseError: null == restResponseError
           ? _value.restResponseError
           : restResponseError // ignore: cast_nullable_to_non_nullable
               as RestResponseError,
-      details: details == freezed
+      details: freezed == details
           ? _value.details
           : details // ignore: cast_nullable_to_non_nullable
               as MastodonApiRestErrorDetails?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $RestResponseErrorCopyWith<$Res> get restResponseError {
     return $RestResponseErrorCopyWith<$Res>(_value.restResponseError, (value) {
-      return _then(_value.copyWith(restResponseError: value));
+      return _then(_value.copyWith(restResponseError: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiRestErrorDetailsCopyWith<$Res>? get details {
     if (_value.details == null) {
       return null;
     }
 
     return $MastodonApiRestErrorDetailsCopyWith<$Res>(_value.details!, (value) {
-      return _then(_value.copyWith(details: value));
+      return _then(_value.copyWith(details: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiRestErrorCopyWith<$Res>
+abstract class _$$MastodonApiRestErrorImplCopyWith<$Res>
     implements $MastodonApiRestErrorCopyWith<$Res> {
-  factory _$MastodonApiRestErrorCopyWith(_MastodonApiRestError value,
-          $Res Function(_MastodonApiRestError) then) =
-      __$MastodonApiRestErrorCopyWithImpl<$Res>;
+  factory _$$MastodonApiRestErrorImplCopyWith(_$MastodonApiRestErrorImpl value,
+          $Res Function(_$MastodonApiRestErrorImpl) then) =
+      __$$MastodonApiRestErrorImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {RestResponseError restResponseError,
       MastodonApiRestErrorDetails? details});
@@ -117,27 +108,25 @@ abstract class _$MastodonApiRestErrorCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MastodonApiRestErrorCopyWithImpl<$Res>
-    extends _$MastodonApiRestErrorCopyWithImpl<$Res>
-    implements _$MastodonApiRestErrorCopyWith<$Res> {
-  __$MastodonApiRestErrorCopyWithImpl(
-      _MastodonApiRestError _value, $Res Function(_MastodonApiRestError) _then)
-      : super(_value, (v) => _then(v as _MastodonApiRestError));
+class __$$MastodonApiRestErrorImplCopyWithImpl<$Res>
+    extends _$MastodonApiRestErrorCopyWithImpl<$Res, _$MastodonApiRestErrorImpl>
+    implements _$$MastodonApiRestErrorImplCopyWith<$Res> {
+  __$$MastodonApiRestErrorImplCopyWithImpl(_$MastodonApiRestErrorImpl _value,
+      $Res Function(_$MastodonApiRestErrorImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiRestError get _value => super._value as _MastodonApiRestError;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? restResponseError = freezed,
+    Object? restResponseError = null,
     Object? details = freezed,
   }) {
-    return _then(_MastodonApiRestError(
-      restResponseError: restResponseError == freezed
+    return _then(_$MastodonApiRestErrorImpl(
+      restResponseError: null == restResponseError
           ? _value.restResponseError
           : restResponseError // ignore: cast_nullable_to_non_nullable
               as RestResponseError,
-      details: details == freezed
+      details: freezed == details
           ? _value.details
           : details // ignore: cast_nullable_to_non_nullable
               as MastodonApiRestErrorDetails?,
@@ -147,8 +136,8 @@ class __$MastodonApiRestErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_MastodonApiRestError implements _MastodonApiRestError {
-  const _$_MastodonApiRestError(
+class _$MastodonApiRestErrorImpl implements _MastodonApiRestError {
+  const _$MastodonApiRestErrorImpl(
       {required this.restResponseError, required this.details});
 
   @override
@@ -162,10 +151,10 @@ class _$_MastodonApiRestError implements _MastodonApiRestError {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiRestError &&
+            other is _$MastodonApiRestErrorImpl &&
             (identical(other.restResponseError, restResponseError) ||
                 other.restResponseError == restResponseError) &&
             (identical(other.details, details) || other.details == details));
@@ -176,15 +165,18 @@ class _$_MastodonApiRestError implements _MastodonApiRestError {
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiRestErrorCopyWith<_MastodonApiRestError> get copyWith =>
-      __$MastodonApiRestErrorCopyWithImpl<_MastodonApiRestError>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiRestErrorImplCopyWith<_$MastodonApiRestErrorImpl>
+      get copyWith =>
+          __$$MastodonApiRestErrorImplCopyWithImpl<_$MastodonApiRestErrorImpl>(
+              this, _$identity);
 }
 
 abstract class _MastodonApiRestError implements MastodonApiRestError {
   const factory _MastodonApiRestError(
-      {required RestResponseError restResponseError,
-      required MastodonApiRestErrorDetails? details}) = _$_MastodonApiRestError;
+          {required final RestResponseError restResponseError,
+          required final MastodonApiRestErrorDetails? details}) =
+      _$MastodonApiRestErrorImpl;
 
   @override
   RestResponseError get restResponseError;
@@ -192,6 +184,6 @@ abstract class _MastodonApiRestError implements MastodonApiRestError {
   MastodonApiRestErrorDetails? get details;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiRestErrorCopyWith<_MastodonApiRestError> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$MastodonApiRestErrorImplCopyWith<_$MastodonApiRestErrorImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

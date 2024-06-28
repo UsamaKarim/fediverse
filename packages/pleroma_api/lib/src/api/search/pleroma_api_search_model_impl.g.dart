@@ -51,9 +51,9 @@ class PleromaApiSearchResultAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiSearchResult _$$_PleromaApiSearchResultFromJson(
+_$PleromaApiSearchResultImpl _$$PleromaApiSearchResultImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiSearchResult(
+    _$PleromaApiSearchResultImpl(
       accounts: (json['accounts'] as List<dynamic>)
           .map((e) => PleromaApiAccount.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -65,8 +65,8 @@ _$_PleromaApiSearchResult _$$_PleromaApiSearchResultFromJson(
           .toList(),
     );
 
-Map<String, dynamic> _$$_PleromaApiSearchResultToJson(
-        _$_PleromaApiSearchResult instance) =>
+Map<String, dynamic> _$$PleromaApiSearchResultImplToJson(
+        _$PleromaApiSearchResultImpl instance) =>
     <String, dynamic>{
       'accounts': instance.accounts.map((e) => e.toJson()).toList(),
       'hashtags': instance.hashtags.map((e) => e.toJson()).toList(),

@@ -104,9 +104,9 @@ class MastodonApiWebSocketsRawEventAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiWebSocketsEvent _$$_MastodonApiWebSocketsEventFromJson(
+_$MastodonApiWebSocketsEventImpl _$$MastodonApiWebSocketsEventImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiWebSocketsEvent(
+    _$MastodonApiWebSocketsEventImpl(
       type: json['event'] as String,
       payload: json['payload'] as String?,
       channel: MastodonApiWebSocketsChannel.fromJson(
@@ -129,8 +129,8 @@ _$_MastodonApiWebSocketsEvent _$$_MastodonApiWebSocketsEventFromJson(
       id: json['id'] as String?,
     );
 
-Map<String, dynamic> _$$_MastodonApiWebSocketsEventToJson(
-    _$_MastodonApiWebSocketsEvent instance) {
+Map<String, dynamic> _$$MastodonApiWebSocketsEventImplToJson(
+    _$MastodonApiWebSocketsEventImpl instance) {
   final val = <String, dynamic>{
     'event': instance.type,
   };
@@ -151,15 +151,15 @@ Map<String, dynamic> _$$_MastodonApiWebSocketsEventToJson(
   return val;
 }
 
-_$_MastodonApiWebSocketsRawEvent _$$_MastodonApiWebSocketsRawEventFromJson(
-        Map<String, dynamic> json) =>
-    _$_MastodonApiWebSocketsRawEvent(
-      type: json['event'] as String,
-      payload: json['payload'] as String?,
-    );
+_$MastodonApiWebSocketsRawEventImpl
+    _$$MastodonApiWebSocketsRawEventImplFromJson(Map<String, dynamic> json) =>
+        _$MastodonApiWebSocketsRawEventImpl(
+          type: json['event'] as String,
+          payload: json['payload'] as String?,
+        );
 
-Map<String, dynamic> _$$_MastodonApiWebSocketsRawEventToJson(
-    _$_MastodonApiWebSocketsRawEvent instance) {
+Map<String, dynamic> _$$MastodonApiWebSocketsRawEventImplToJson(
+    _$MastodonApiWebSocketsRawEventImpl instance) {
   final val = <String, dynamic>{
     'event': instance.type,
   };

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_post_status_poll_model_mastodon_adapter.dart';
 
@@ -11,33 +12,13 @@ part of 'unifedi_api_post_status_poll_model_mastodon_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiPostStatusPollMastodonAdapter
     _$UnifediApiPostStatusPollMastodonAdapterFromJson(
         Map<String, dynamic> json) {
   return _UnifediApiPostStatusPollMastodonAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiPostStatusPollMastodonAdapterTearOff {
-  const _$UnifediApiPostStatusPollMastodonAdapterTearOff();
-
-  _UnifediApiPostStatusPollMastodonAdapter call(
-      @HiveField(0) MastodonApiPostStatusPoll value) {
-    return _UnifediApiPostStatusPollMastodonAdapter(
-      value,
-    );
-  }
-
-  UnifediApiPostStatusPollMastodonAdapter fromJson(Map<String, Object?> json) {
-    return UnifediApiPostStatusPollMastodonAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiPostStatusPollMastodonAdapter =
-    _$UnifediApiPostStatusPollMastodonAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiPostStatusPollMastodonAdapter {
@@ -56,50 +37,57 @@ abstract class $UnifediApiPostStatusPollMastodonAdapterCopyWith<$Res> {
   factory $UnifediApiPostStatusPollMastodonAdapterCopyWith(
           UnifediApiPostStatusPollMastodonAdapter value,
           $Res Function(UnifediApiPostStatusPollMastodonAdapter) then) =
-      _$UnifediApiPostStatusPollMastodonAdapterCopyWithImpl<$Res>;
+      _$UnifediApiPostStatusPollMastodonAdapterCopyWithImpl<$Res,
+          UnifediApiPostStatusPollMastodonAdapter>;
+  @useResult
   $Res call({@HiveField(0) MastodonApiPostStatusPoll value});
 
   $MastodonApiPostStatusPollCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiPostStatusPollMastodonAdapterCopyWithImpl<$Res>
+class _$UnifediApiPostStatusPollMastodonAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiPostStatusPollMastodonAdapter>
     implements $UnifediApiPostStatusPollMastodonAdapterCopyWith<$Res> {
   _$UnifediApiPostStatusPollMastodonAdapterCopyWithImpl(
       this._value, this._then);
 
-  final UnifediApiPostStatusPollMastodonAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiPostStatusPollMastodonAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiPostStatusPoll,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiPostStatusPollCopyWith<$Res> get value {
     return $MastodonApiPostStatusPollCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiPostStatusPollMastodonAdapterCopyWith<$Res>
+abstract class _$$UnifediApiPostStatusPollMastodonAdapterImplCopyWith<$Res>
     implements $UnifediApiPostStatusPollMastodonAdapterCopyWith<$Res> {
-  factory _$UnifediApiPostStatusPollMastodonAdapterCopyWith(
-          _UnifediApiPostStatusPollMastodonAdapter value,
-          $Res Function(_UnifediApiPostStatusPollMastodonAdapter) then) =
-      __$UnifediApiPostStatusPollMastodonAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiPostStatusPollMastodonAdapterImplCopyWith(
+          _$UnifediApiPostStatusPollMastodonAdapterImpl value,
+          $Res Function(_$UnifediApiPostStatusPollMastodonAdapterImpl) then) =
+      __$$UnifediApiPostStatusPollMastodonAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) MastodonApiPostStatusPoll value});
 
   @override
@@ -107,25 +95,22 @@ abstract class _$UnifediApiPostStatusPollMastodonAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiPostStatusPollMastodonAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiPostStatusPollMastodonAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiPostStatusPollMastodonAdapterCopyWith<$Res> {
-  __$UnifediApiPostStatusPollMastodonAdapterCopyWithImpl(
-      _UnifediApiPostStatusPollMastodonAdapter _value,
-      $Res Function(_UnifediApiPostStatusPollMastodonAdapter) _then)
-      : super(_value,
-            (v) => _then(v as _UnifediApiPostStatusPollMastodonAdapter));
+class __$$UnifediApiPostStatusPollMastodonAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiPostStatusPollMastodonAdapterCopyWithImpl<$Res,
+        _$UnifediApiPostStatusPollMastodonAdapterImpl>
+    implements _$$UnifediApiPostStatusPollMastodonAdapterImplCopyWith<$Res> {
+  __$$UnifediApiPostStatusPollMastodonAdapterImplCopyWithImpl(
+      _$UnifediApiPostStatusPollMastodonAdapterImpl _value,
+      $Res Function(_$UnifediApiPostStatusPollMastodonAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiPostStatusPollMastodonAdapter get _value =>
-      super._value as _UnifediApiPostStatusPollMastodonAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiPostStatusPollMastodonAdapter(
-      value == freezed
+    return _then(_$UnifediApiPostStatusPollMastodonAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiPostStatusPoll,
@@ -135,14 +120,14 @@ class __$UnifediApiPostStatusPollMastodonAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiPostStatusPollMastodonAdapter
+class _$UnifediApiPostStatusPollMastodonAdapterImpl
     extends _UnifediApiPostStatusPollMastodonAdapter {
-  const _$_UnifediApiPostStatusPollMastodonAdapter(@HiveField(0) this.value)
+  const _$UnifediApiPostStatusPollMastodonAdapterImpl(@HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiPostStatusPollMastodonAdapter.fromJson(
+  factory _$UnifediApiPostStatusPollMastodonAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiPostStatusPollMastodonAdapterFromJson(json);
+      _$$UnifediApiPostStatusPollMastodonAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -154,46 +139,51 @@ class _$_UnifediApiPostStatusPollMastodonAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiPostStatusPollMastodonAdapter &&
+            other is _$UnifediApiPostStatusPollMastodonAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiPostStatusPollMastodonAdapterCopyWith<
-          _UnifediApiPostStatusPollMastodonAdapter>
-      get copyWith => __$UnifediApiPostStatusPollMastodonAdapterCopyWithImpl<
-          _UnifediApiPostStatusPollMastodonAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiPostStatusPollMastodonAdapterImplCopyWith<
+          _$UnifediApiPostStatusPollMastodonAdapterImpl>
+      get copyWith =>
+          __$$UnifediApiPostStatusPollMastodonAdapterImplCopyWithImpl<
+              _$UnifediApiPostStatusPollMastodonAdapterImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiPostStatusPollMastodonAdapterToJson(this);
+    return _$$UnifediApiPostStatusPollMastodonAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiPostStatusPollMastodonAdapter
     extends UnifediApiPostStatusPollMastodonAdapter {
   const factory _UnifediApiPostStatusPollMastodonAdapter(
-          @HiveField(0) MastodonApiPostStatusPoll value) =
-      _$_UnifediApiPostStatusPollMastodonAdapter;
+          @HiveField(0) final MastodonApiPostStatusPoll value) =
+      _$UnifediApiPostStatusPollMastodonAdapterImpl;
   const _UnifediApiPostStatusPollMastodonAdapter._() : super._();
 
   factory _UnifediApiPostStatusPollMastodonAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiPostStatusPollMastodonAdapter.fromJson;
+      _$UnifediApiPostStatusPollMastodonAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   MastodonApiPostStatusPoll get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiPostStatusPollMastodonAdapterCopyWith<
-          _UnifediApiPostStatusPollMastodonAdapter>
+  _$$UnifediApiPostStatusPollMastodonAdapterImplCopyWith<
+          _$UnifediApiPostStatusPollMastodonAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

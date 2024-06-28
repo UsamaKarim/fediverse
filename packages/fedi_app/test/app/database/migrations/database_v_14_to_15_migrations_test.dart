@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:drift/native.dart';
 import 'package:fedi_app/app/account/account_model.dart';
 import 'package:fedi_app/app/account/account_model_adapter.dart';
 import 'package:fedi_app/app/account/repository/account_repository.dart';
@@ -14,7 +15,6 @@ import 'package:fedi_app/app/status/repository/status_repository.dart';
 import 'package:fedi_app/app/status/repository/status_repository_impl.dart';
 import 'package:fedi_app/app/status/status_model_adapter.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:moor/ffi.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 
 import '../../account/account_test_helper.dart';
@@ -38,7 +38,7 @@ void main() {
     var filePath = 'test_resources/app/database/fedi2_database_dump_v14.sqlite';
     var file = File(filePath);
     dbFile = await file.copy(filePath + '.temp');
-    database = AppDatabase(VmDatabase(dbFile));
+    database = AppDatabase(NativeDatabase(dbFile));
 
     accountRepository = AccountRepository(appDatabase: database);
     statusRepository = StatusRepository(

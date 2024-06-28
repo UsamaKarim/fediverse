@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_filter_model_impl.dart';
 
@@ -11,40 +12,11 @@ part of 'pleroma_api_filter_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiFilter _$PleromaApiFilterFromJson(Map<String, dynamic> json) {
   return _PleromaApiFilter.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiFilterTearOff {
-  const _$PleromaApiFilterTearOff();
-
-  _PleromaApiFilter call(
-      {@HiveField(0) required List<String> context,
-      @HiveField(1) @JsonKey(name: 'expires_at') required DateTime? expiresAt,
-      @HiveField(2) required String id,
-      @HiveField(3) required bool irreversible,
-      @HiveField(4) required String phrase,
-      @HiveField(5) @JsonKey(name: 'whole_word') required bool wholeWord}) {
-    return _PleromaApiFilter(
-      context: context,
-      expiresAt: expiresAt,
-      id: id,
-      irreversible: irreversible,
-      phrase: phrase,
-      wholeWord: wholeWord,
-    );
-  }
-
-  PleromaApiFilter fromJson(Map<String, Object?> json) {
-    return PleromaApiFilter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiFilter = _$PleromaApiFilterTearOff();
 
 /// @nodoc
 mixin _$PleromaApiFilter {
@@ -73,7 +45,8 @@ mixin _$PleromaApiFilter {
 abstract class $PleromaApiFilterCopyWith<$Res> {
   factory $PleromaApiFilterCopyWith(
           PleromaApiFilter value, $Res Function(PleromaApiFilter) then) =
-      _$PleromaApiFilterCopyWithImpl<$Res>;
+      _$PleromaApiFilterCopyWithImpl<$Res, PleromaApiFilter>;
+  @useResult
   $Res call(
       {@HiveField(0) List<String> context,
       @HiveField(1) @JsonKey(name: 'expires_at') DateTime? expiresAt,
@@ -84,59 +57,62 @@ abstract class $PleromaApiFilterCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiFilterCopyWithImpl<$Res>
+class _$PleromaApiFilterCopyWithImpl<$Res, $Val extends PleromaApiFilter>
     implements $PleromaApiFilterCopyWith<$Res> {
   _$PleromaApiFilterCopyWithImpl(this._value, this._then);
 
-  final PleromaApiFilter _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiFilter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? context = freezed,
+    Object? context = null,
     Object? expiresAt = freezed,
-    Object? id = freezed,
-    Object? irreversible = freezed,
-    Object? phrase = freezed,
-    Object? wholeWord = freezed,
+    Object? id = null,
+    Object? irreversible = null,
+    Object? phrase = null,
+    Object? wholeWord = null,
   }) {
     return _then(_value.copyWith(
-      context: context == freezed
+      context: null == context
           ? _value.context
           : context // ignore: cast_nullable_to_non_nullable
               as List<String>,
-      expiresAt: expiresAt == freezed
+      expiresAt: freezed == expiresAt
           ? _value.expiresAt
           : expiresAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      irreversible: irreversible == freezed
+      irreversible: null == irreversible
           ? _value.irreversible
           : irreversible // ignore: cast_nullable_to_non_nullable
               as bool,
-      phrase: phrase == freezed
+      phrase: null == phrase
           ? _value.phrase
           : phrase // ignore: cast_nullable_to_non_nullable
               as String,
-      wholeWord: wholeWord == freezed
+      wholeWord: null == wholeWord
           ? _value.wholeWord
           : wholeWord // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiFilterCopyWith<$Res>
+abstract class _$$PleromaApiFilterImplCopyWith<$Res>
     implements $PleromaApiFilterCopyWith<$Res> {
-  factory _$PleromaApiFilterCopyWith(
-          _PleromaApiFilter value, $Res Function(_PleromaApiFilter) then) =
-      __$PleromaApiFilterCopyWithImpl<$Res>;
+  factory _$$PleromaApiFilterImplCopyWith(_$PleromaApiFilterImpl value,
+          $Res Function(_$PleromaApiFilterImpl) then) =
+      __$$PleromaApiFilterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) List<String> context,
       @HiveField(1) @JsonKey(name: 'expires_at') DateTime? expiresAt,
@@ -147,47 +123,45 @@ abstract class _$PleromaApiFilterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiFilterCopyWithImpl<$Res>
-    extends _$PleromaApiFilterCopyWithImpl<$Res>
-    implements _$PleromaApiFilterCopyWith<$Res> {
-  __$PleromaApiFilterCopyWithImpl(
-      _PleromaApiFilter _value, $Res Function(_PleromaApiFilter) _then)
-      : super(_value, (v) => _then(v as _PleromaApiFilter));
+class __$$PleromaApiFilterImplCopyWithImpl<$Res>
+    extends _$PleromaApiFilterCopyWithImpl<$Res, _$PleromaApiFilterImpl>
+    implements _$$PleromaApiFilterImplCopyWith<$Res> {
+  __$$PleromaApiFilterImplCopyWithImpl(_$PleromaApiFilterImpl _value,
+      $Res Function(_$PleromaApiFilterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiFilter get _value => super._value as _PleromaApiFilter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? context = freezed,
+    Object? context = null,
     Object? expiresAt = freezed,
-    Object? id = freezed,
-    Object? irreversible = freezed,
-    Object? phrase = freezed,
-    Object? wholeWord = freezed,
+    Object? id = null,
+    Object? irreversible = null,
+    Object? phrase = null,
+    Object? wholeWord = null,
   }) {
-    return _then(_PleromaApiFilter(
-      context: context == freezed
-          ? _value.context
+    return _then(_$PleromaApiFilterImpl(
+      context: null == context
+          ? _value._context
           : context // ignore: cast_nullable_to_non_nullable
               as List<String>,
-      expiresAt: expiresAt == freezed
+      expiresAt: freezed == expiresAt
           ? _value.expiresAt
           : expiresAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      irreversible: irreversible == freezed
+      irreversible: null == irreversible
           ? _value.irreversible
           : irreversible // ignore: cast_nullable_to_non_nullable
               as bool,
-      phrase: phrase == freezed
+      phrase: null == phrase
           ? _value.phrase
           : phrase // ignore: cast_nullable_to_non_nullable
               as String,
-      wholeWord: wholeWord == freezed
+      wholeWord: null == wholeWord
           ? _value.wholeWord
           : wholeWord // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -197,21 +171,28 @@ class __$PleromaApiFilterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiFilter implements _PleromaApiFilter {
-  const _$_PleromaApiFilter(
-      {@HiveField(0) required this.context,
+class _$PleromaApiFilterImpl implements _PleromaApiFilter {
+  const _$PleromaApiFilterImpl(
+      {@HiveField(0) required final List<String> context,
       @HiveField(1) @JsonKey(name: 'expires_at') required this.expiresAt,
       @HiveField(2) required this.id,
       @HiveField(3) required this.irreversible,
       @HiveField(4) required this.phrase,
-      @HiveField(5) @JsonKey(name: 'whole_word') required this.wholeWord});
+      @HiveField(5) @JsonKey(name: 'whole_word') required this.wholeWord})
+      : _context = context;
 
-  factory _$_PleromaApiFilter.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiFilterFromJson(json);
+  factory _$PleromaApiFilterImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiFilterImplFromJson(json);
 
+  final List<String> _context;
   @override
   @HiveField(0)
-  final List<String> context;
+  List<String> get context {
+    if (_context is EqualUnmodifiableListView) return _context;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_context);
+  }
+
   @override
   @HiveField(1)
   @JsonKey(name: 'expires_at')
@@ -236,11 +217,11 @@ class _$_PleromaApiFilter implements _PleromaApiFilter {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiFilter &&
-            const DeepCollectionEquality().equals(other.context, context) &&
+            other is _$PleromaApiFilterImpl &&
+            const DeepCollectionEquality().equals(other._context, _context) &&
             (identical(other.expiresAt, expiresAt) ||
                 other.expiresAt == expiresAt) &&
             (identical(other.id, id) || other.id == id) &&
@@ -251,10 +232,11 @@ class _$_PleromaApiFilter implements _PleromaApiFilter {
                 other.wholeWord == wholeWord));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(context),
+      const DeepCollectionEquality().hash(_context),
       expiresAt,
       id,
       irreversible,
@@ -263,34 +245,34 @@ class _$_PleromaApiFilter implements _PleromaApiFilter {
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiFilterCopyWith<_PleromaApiFilter> get copyWith =>
-      __$PleromaApiFilterCopyWithImpl<_PleromaApiFilter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiFilterImplCopyWith<_$PleromaApiFilterImpl> get copyWith =>
+      __$$PleromaApiFilterImplCopyWithImpl<_$PleromaApiFilterImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiFilterToJson(this);
+    return _$$PleromaApiFilterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiFilter implements PleromaApiFilter {
   const factory _PleromaApiFilter(
-      {@HiveField(0)
-          required List<String> context,
+      {@HiveField(0) required final List<String> context,
       @HiveField(1)
       @JsonKey(name: 'expires_at')
-          required DateTime? expiresAt,
-      @HiveField(2)
-          required String id,
-      @HiveField(3)
-          required bool irreversible,
-      @HiveField(4)
-          required String phrase,
+      required final DateTime? expiresAt,
+      @HiveField(2) required final String id,
+      @HiveField(3) required final bool irreversible,
+      @HiveField(4) required final String phrase,
       @HiveField(5)
       @JsonKey(name: 'whole_word')
-          required bool wholeWord}) = _$_PleromaApiFilter;
+      required final bool wholeWord}) = _$PleromaApiFilterImpl;
 
   factory _PleromaApiFilter.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiFilter.fromJson;
+      _$PleromaApiFilterImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -314,6 +296,6 @@ abstract class _PleromaApiFilter implements PleromaApiFilter {
   bool get wholeWord;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiFilterCopyWith<_PleromaApiFilter> get copyWith =>
+  _$$PleromaApiFilterImplCopyWith<_$PleromaApiFilterImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -1,7 +1,7 @@
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/status/draft/repository/draft_status_repository_impl.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 
 class DraftStatusRepositoryMockHelper {
   static Future<DbDraftStatus> insertDbDraftStatus(

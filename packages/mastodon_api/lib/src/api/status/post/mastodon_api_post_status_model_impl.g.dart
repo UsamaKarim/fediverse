@@ -65,9 +65,9 @@ class MastodonApiPostStatusAdapter extends TypeAdapter<MastodonApiPostStatus> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiPostStatus _$$_MastodonApiPostStatusFromJson(
+_$MastodonApiPostStatusImpl _$$MastodonApiPostStatusImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiPostStatus(
+    _$MastodonApiPostStatusImpl(
       inReplyToId: json['in_reply_to_id'] as String?,
       language: json['language'] as String?,
       visibility: json['visibility'] as String,
@@ -83,8 +83,8 @@ _$_MastodonApiPostStatus _$$_MastodonApiPostStatusFromJson(
       status: json['status'] as String?,
     );
 
-Map<String, dynamic> _$$_MastodonApiPostStatusToJson(
-    _$_MastodonApiPostStatus instance) {
+Map<String, dynamic> _$$MastodonApiPostStatusImplToJson(
+    _$MastodonApiPostStatusImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

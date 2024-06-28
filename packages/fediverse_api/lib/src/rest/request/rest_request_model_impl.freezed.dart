@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'rest_request_model_impl.dart';
 
@@ -11,32 +12,7 @@ part of 'rest_request_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$RestRequestTearOff {
-  const _$RestRequestTearOff();
-
-  _RestRequest call(
-      {required RestRequestType type,
-      required String relativeUrlPath,
-      required List<UrlQueryArg>? queryArgs,
-      required Map<String, dynamic>? bodyJson,
-      required List<RestHeader>? headers,
-      required Map<String, File>? files}) {
-    return _RestRequest(
-      type: type,
-      relativeUrlPath: relativeUrlPath,
-      queryArgs: queryArgs,
-      bodyJson: bodyJson,
-      headers: headers,
-      files: files,
-    );
-  }
-}
-
-/// @nodoc
-const $RestRequest = _$RestRequestTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$RestRequest {
@@ -56,7 +32,8 @@ mixin _$RestRequest {
 abstract class $RestRequestCopyWith<$Res> {
   factory $RestRequestCopyWith(
           RestRequest value, $Res Function(RestRequest) then) =
-      _$RestRequestCopyWithImpl<$Res>;
+      _$RestRequestCopyWithImpl<$Res, RestRequest>;
+  @useResult
   $Res call(
       {RestRequestType type,
       String relativeUrlPath,
@@ -69,65 +46,70 @@ abstract class $RestRequestCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$RestRequestCopyWithImpl<$Res> implements $RestRequestCopyWith<$Res> {
+class _$RestRequestCopyWithImpl<$Res, $Val extends RestRequest>
+    implements $RestRequestCopyWith<$Res> {
   _$RestRequestCopyWithImpl(this._value, this._then);
 
-  final RestRequest _value;
   // ignore: unused_field
-  final $Res Function(RestRequest) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? type = freezed,
-    Object? relativeUrlPath = freezed,
+    Object? type = null,
+    Object? relativeUrlPath = null,
     Object? queryArgs = freezed,
     Object? bodyJson = freezed,
     Object? headers = freezed,
     Object? files = freezed,
   }) {
     return _then(_value.copyWith(
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as RestRequestType,
-      relativeUrlPath: relativeUrlPath == freezed
+      relativeUrlPath: null == relativeUrlPath
           ? _value.relativeUrlPath
           : relativeUrlPath // ignore: cast_nullable_to_non_nullable
               as String,
-      queryArgs: queryArgs == freezed
+      queryArgs: freezed == queryArgs
           ? _value.queryArgs
           : queryArgs // ignore: cast_nullable_to_non_nullable
               as List<UrlQueryArg>?,
-      bodyJson: bodyJson == freezed
+      bodyJson: freezed == bodyJson
           ? _value.bodyJson
           : bodyJson // ignore: cast_nullable_to_non_nullable
               as Map<String, dynamic>?,
-      headers: headers == freezed
+      headers: freezed == headers
           ? _value.headers
           : headers // ignore: cast_nullable_to_non_nullable
               as List<RestHeader>?,
-      files: files == freezed
+      files: freezed == files
           ? _value.files
           : files // ignore: cast_nullable_to_non_nullable
               as Map<String, File>?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $RestRequestTypeCopyWith<$Res> get type {
     return $RestRequestTypeCopyWith<$Res>(_value.type, (value) {
-      return _then(_value.copyWith(type: value));
+      return _then(_value.copyWith(type: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$RestRequestCopyWith<$Res>
+abstract class _$$RestRequestImplCopyWith<$Res>
     implements $RestRequestCopyWith<$Res> {
-  factory _$RestRequestCopyWith(
-          _RestRequest value, $Res Function(_RestRequest) then) =
-      __$RestRequestCopyWithImpl<$Res>;
+  factory _$$RestRequestImplCopyWith(
+          _$RestRequestImpl value, $Res Function(_$RestRequestImpl) then) =
+      __$$RestRequestImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {RestRequestType type,
       String relativeUrlPath,
@@ -141,47 +123,46 @@ abstract class _$RestRequestCopyWith<$Res>
 }
 
 /// @nodoc
-class __$RestRequestCopyWithImpl<$Res> extends _$RestRequestCopyWithImpl<$Res>
-    implements _$RestRequestCopyWith<$Res> {
-  __$RestRequestCopyWithImpl(
-      _RestRequest _value, $Res Function(_RestRequest) _then)
-      : super(_value, (v) => _then(v as _RestRequest));
+class __$$RestRequestImplCopyWithImpl<$Res>
+    extends _$RestRequestCopyWithImpl<$Res, _$RestRequestImpl>
+    implements _$$RestRequestImplCopyWith<$Res> {
+  __$$RestRequestImplCopyWithImpl(
+      _$RestRequestImpl _value, $Res Function(_$RestRequestImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _RestRequest get _value => super._value as _RestRequest;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? type = freezed,
-    Object? relativeUrlPath = freezed,
+    Object? type = null,
+    Object? relativeUrlPath = null,
     Object? queryArgs = freezed,
     Object? bodyJson = freezed,
     Object? headers = freezed,
     Object? files = freezed,
   }) {
-    return _then(_RestRequest(
-      type: type == freezed
+    return _then(_$RestRequestImpl(
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as RestRequestType,
-      relativeUrlPath: relativeUrlPath == freezed
+      relativeUrlPath: null == relativeUrlPath
           ? _value.relativeUrlPath
           : relativeUrlPath // ignore: cast_nullable_to_non_nullable
               as String,
-      queryArgs: queryArgs == freezed
-          ? _value.queryArgs
+      queryArgs: freezed == queryArgs
+          ? _value._queryArgs
           : queryArgs // ignore: cast_nullable_to_non_nullable
               as List<UrlQueryArg>?,
-      bodyJson: bodyJson == freezed
-          ? _value.bodyJson
+      bodyJson: freezed == bodyJson
+          ? _value._bodyJson
           : bodyJson // ignore: cast_nullable_to_non_nullable
               as Map<String, dynamic>?,
-      headers: headers == freezed
-          ? _value.headers
+      headers: freezed == headers
+          ? _value._headers
           : headers // ignore: cast_nullable_to_non_nullable
               as List<RestHeader>?,
-      files: files == freezed
-          ? _value.files
+      files: freezed == files
+          ? _value._files
           : files // ignore: cast_nullable_to_non_nullable
               as Map<String, File>?,
     ));
@@ -190,27 +171,62 @@ class __$RestRequestCopyWithImpl<$Res> extends _$RestRequestCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_RestRequest implements _RestRequest {
-  const _$_RestRequest(
+class _$RestRequestImpl implements _RestRequest {
+  const _$RestRequestImpl(
       {required this.type,
       required this.relativeUrlPath,
-      required this.queryArgs,
-      required this.bodyJson,
-      required this.headers,
-      required this.files});
+      required final List<UrlQueryArg>? queryArgs,
+      required final Map<String, dynamic>? bodyJson,
+      required final List<RestHeader>? headers,
+      required final Map<String, File>? files})
+      : _queryArgs = queryArgs,
+        _bodyJson = bodyJson,
+        _headers = headers,
+        _files = files;
 
   @override
   final RestRequestType type;
   @override
   final String relativeUrlPath;
+  final List<UrlQueryArg>? _queryArgs;
   @override
-  final List<UrlQueryArg>? queryArgs;
+  List<UrlQueryArg>? get queryArgs {
+    final value = _queryArgs;
+    if (value == null) return null;
+    if (_queryArgs is EqualUnmodifiableListView) return _queryArgs;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  final Map<String, dynamic>? _bodyJson;
   @override
-  final Map<String, dynamic>? bodyJson;
+  Map<String, dynamic>? get bodyJson {
+    final value = _bodyJson;
+    if (value == null) return null;
+    if (_bodyJson is EqualUnmodifiableMapView) return _bodyJson;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(value);
+  }
+
+  final List<RestHeader>? _headers;
   @override
-  final List<RestHeader>? headers;
+  List<RestHeader>? get headers {
+    final value = _headers;
+    if (value == null) return null;
+    if (_headers is EqualUnmodifiableListView) return _headers;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  final Map<String, File>? _files;
   @override
-  final Map<String, File>? files;
+  Map<String, File>? get files {
+    final value = _files;
+    if (value == null) return null;
+    if (_files is EqualUnmodifiableMapView) return _files;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(value);
+  }
 
   @override
   String toString() {
@@ -218,17 +234,18 @@ class _$_RestRequest implements _RestRequest {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _RestRequest &&
+            other is _$RestRequestImpl &&
             (identical(other.type, type) || other.type == type) &&
             (identical(other.relativeUrlPath, relativeUrlPath) ||
                 other.relativeUrlPath == relativeUrlPath) &&
-            const DeepCollectionEquality().equals(other.queryArgs, queryArgs) &&
-            const DeepCollectionEquality().equals(other.bodyJson, bodyJson) &&
-            const DeepCollectionEquality().equals(other.headers, headers) &&
-            const DeepCollectionEquality().equals(other.files, files));
+            const DeepCollectionEquality()
+                .equals(other._queryArgs, _queryArgs) &&
+            const DeepCollectionEquality().equals(other._bodyJson, _bodyJson) &&
+            const DeepCollectionEquality().equals(other._headers, _headers) &&
+            const DeepCollectionEquality().equals(other._files, _files));
   }
 
   @override
@@ -236,25 +253,26 @@ class _$_RestRequest implements _RestRequest {
       runtimeType,
       type,
       relativeUrlPath,
-      const DeepCollectionEquality().hash(queryArgs),
-      const DeepCollectionEquality().hash(bodyJson),
-      const DeepCollectionEquality().hash(headers),
-      const DeepCollectionEquality().hash(files));
+      const DeepCollectionEquality().hash(_queryArgs),
+      const DeepCollectionEquality().hash(_bodyJson),
+      const DeepCollectionEquality().hash(_headers),
+      const DeepCollectionEquality().hash(_files));
 
   @JsonKey(ignore: true)
   @override
-  _$RestRequestCopyWith<_RestRequest> get copyWith =>
-      __$RestRequestCopyWithImpl<_RestRequest>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$RestRequestImplCopyWith<_$RestRequestImpl> get copyWith =>
+      __$$RestRequestImplCopyWithImpl<_$RestRequestImpl>(this, _$identity);
 }
 
 abstract class _RestRequest implements RestRequest {
   const factory _RestRequest(
-      {required RestRequestType type,
-      required String relativeUrlPath,
-      required List<UrlQueryArg>? queryArgs,
-      required Map<String, dynamic>? bodyJson,
-      required List<RestHeader>? headers,
-      required Map<String, File>? files}) = _$_RestRequest;
+      {required final RestRequestType type,
+      required final String relativeUrlPath,
+      required final List<UrlQueryArg>? queryArgs,
+      required final Map<String, dynamic>? bodyJson,
+      required final List<RestHeader>? headers,
+      required final Map<String, File>? files}) = _$RestRequestImpl;
 
   @override
   RestRequestType get type;
@@ -270,6 +288,6 @@ abstract class _RestRequest implements RestRequest {
   Map<String, File>? get files;
   @override
   @JsonKey(ignore: true)
-  _$RestRequestCopyWith<_RestRequest> get copyWith =>
+  _$$RestRequestImplCopyWith<_$RestRequestImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

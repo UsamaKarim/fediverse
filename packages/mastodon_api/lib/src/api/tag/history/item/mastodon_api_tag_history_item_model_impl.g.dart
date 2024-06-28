@@ -51,28 +51,19 @@ class MastodonApiTagHistoryItemAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiTagHistoryItem _$$_MastodonApiTagHistoryItemFromJson(
+_$MastodonApiTagHistoryItemImpl _$$MastodonApiTagHistoryItemImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiTagHistoryItem(
+    _$MastodonApiTagHistoryItemImpl(
       accounts: JsonParseHelper.fromStringToInt(json['accounts'] as String),
       dayInUnixTimestamp:
           JsonParseHelper.fromStringToInt(json['day'] as String),
       uses: JsonParseHelper.fromStringToInt(json['uses'] as String),
     );
 
-Map<String, dynamic> _$$_MastodonApiTagHistoryItemToJson(
-    _$_MastodonApiTagHistoryItem instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('accounts', JsonParseHelper.toStringFromInt(instance.accounts));
-  writeNotNull(
-      'day', JsonParseHelper.toStringFromInt(instance.dayInUnixTimestamp));
-  writeNotNull('uses', JsonParseHelper.toStringFromInt(instance.uses));
-  return val;
-}
+Map<String, dynamic> _$$MastodonApiTagHistoryItemImplToJson(
+        _$MastodonApiTagHistoryItemImpl instance) =>
+    <String, dynamic>{
+      'accounts': JsonParseHelper.toStringFromInt(instance.accounts),
+      'day': JsonParseHelper.toStringFromInt(instance.dayInUnixTimestamp),
+      'uses': JsonParseHelper.toStringFromInt(instance.uses),
+    };

@@ -82,9 +82,9 @@ class PleromaApiAnnouncementAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiAnnouncement _$$_PleromaApiAnnouncementFromJson(
+_$PleromaApiAnnouncementImpl _$$PleromaApiAnnouncementImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiAnnouncement(
+    _$PleromaApiAnnouncementImpl(
       id: json['id'] as String,
       content: json['content'] as String,
       allDay: json['all_day'] as bool,
@@ -115,8 +115,8 @@ _$_PleromaApiAnnouncement _$$_PleromaApiAnnouncementFromJson(
           : DateTime.parse(json['ends_at'] as String),
     );
 
-Map<String, dynamic> _$$_PleromaApiAnnouncementToJson(
-    _$_PleromaApiAnnouncement instance) {
+Map<String, dynamic> _$$PleromaApiAnnouncementImplToJson(
+    _$PleromaApiAnnouncementImpl instance) {
   final val = <String, dynamic>{
     'id': instance.id,
     'content': instance.content,

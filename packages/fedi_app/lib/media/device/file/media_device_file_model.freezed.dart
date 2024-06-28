@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'media_device_file_model.dart';
 
@@ -11,26 +12,7 @@ part of 'media_device_file_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$FileMediaDeviceFileMetadataTearOff {
-  const _$FileMediaDeviceFileMetadataTearOff();
-
-  _FileMediaDeviceFileMetadata call(
-      {required File originalFile,
-      required bool isNeedDeleteAfterUsage,
-      required MediaDeviceFileType type}) {
-    return _FileMediaDeviceFileMetadata(
-      originalFile: originalFile,
-      isNeedDeleteAfterUsage: isNeedDeleteAfterUsage,
-      type: type,
-    );
-  }
-}
-
-/// @nodoc
-const $FileMediaDeviceFileMetadata = _$FileMediaDeviceFileMetadataTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$FileMediaDeviceFileMetadata {
@@ -48,7 +30,9 @@ abstract class $FileMediaDeviceFileMetadataCopyWith<$Res> {
   factory $FileMediaDeviceFileMetadataCopyWith(
           FileMediaDeviceFileMetadata value,
           $Res Function(FileMediaDeviceFileMetadata) then) =
-      _$FileMediaDeviceFileMetadataCopyWithImpl<$Res>;
+      _$FileMediaDeviceFileMetadataCopyWithImpl<$Res,
+          FileMediaDeviceFileMetadata>;
+  @useResult
   $Res call(
       {File originalFile,
       bool isNeedDeleteAfterUsage,
@@ -56,45 +40,49 @@ abstract class $FileMediaDeviceFileMetadataCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$FileMediaDeviceFileMetadataCopyWithImpl<$Res>
+class _$FileMediaDeviceFileMetadataCopyWithImpl<$Res,
+        $Val extends FileMediaDeviceFileMetadata>
     implements $FileMediaDeviceFileMetadataCopyWith<$Res> {
   _$FileMediaDeviceFileMetadataCopyWithImpl(this._value, this._then);
 
-  final FileMediaDeviceFileMetadata _value;
   // ignore: unused_field
-  final $Res Function(FileMediaDeviceFileMetadata) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? originalFile = freezed,
-    Object? isNeedDeleteAfterUsage = freezed,
-    Object? type = freezed,
+    Object? originalFile = null,
+    Object? isNeedDeleteAfterUsage = null,
+    Object? type = null,
   }) {
     return _then(_value.copyWith(
-      originalFile: originalFile == freezed
+      originalFile: null == originalFile
           ? _value.originalFile
           : originalFile // ignore: cast_nullable_to_non_nullable
               as File,
-      isNeedDeleteAfterUsage: isNeedDeleteAfterUsage == freezed
+      isNeedDeleteAfterUsage: null == isNeedDeleteAfterUsage
           ? _value.isNeedDeleteAfterUsage
           : isNeedDeleteAfterUsage // ignore: cast_nullable_to_non_nullable
               as bool,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as MediaDeviceFileType,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$FileMediaDeviceFileMetadataCopyWith<$Res>
+abstract class _$$FileMediaDeviceFileMetadataImplCopyWith<$Res>
     implements $FileMediaDeviceFileMetadataCopyWith<$Res> {
-  factory _$FileMediaDeviceFileMetadataCopyWith(
-          _FileMediaDeviceFileMetadata value,
-          $Res Function(_FileMediaDeviceFileMetadata) then) =
-      __$FileMediaDeviceFileMetadataCopyWithImpl<$Res>;
+  factory _$$FileMediaDeviceFileMetadataImplCopyWith(
+          _$FileMediaDeviceFileMetadataImpl value,
+          $Res Function(_$FileMediaDeviceFileMetadataImpl) then) =
+      __$$FileMediaDeviceFileMetadataImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {File originalFile,
       bool isNeedDeleteAfterUsage,
@@ -102,34 +90,32 @@ abstract class _$FileMediaDeviceFileMetadataCopyWith<$Res>
 }
 
 /// @nodoc
-class __$FileMediaDeviceFileMetadataCopyWithImpl<$Res>
-    extends _$FileMediaDeviceFileMetadataCopyWithImpl<$Res>
-    implements _$FileMediaDeviceFileMetadataCopyWith<$Res> {
-  __$FileMediaDeviceFileMetadataCopyWithImpl(
-      _FileMediaDeviceFileMetadata _value,
-      $Res Function(_FileMediaDeviceFileMetadata) _then)
-      : super(_value, (v) => _then(v as _FileMediaDeviceFileMetadata));
+class __$$FileMediaDeviceFileMetadataImplCopyWithImpl<$Res>
+    extends _$FileMediaDeviceFileMetadataCopyWithImpl<$Res,
+        _$FileMediaDeviceFileMetadataImpl>
+    implements _$$FileMediaDeviceFileMetadataImplCopyWith<$Res> {
+  __$$FileMediaDeviceFileMetadataImplCopyWithImpl(
+      _$FileMediaDeviceFileMetadataImpl _value,
+      $Res Function(_$FileMediaDeviceFileMetadataImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _FileMediaDeviceFileMetadata get _value =>
-      super._value as _FileMediaDeviceFileMetadata;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? originalFile = freezed,
-    Object? isNeedDeleteAfterUsage = freezed,
-    Object? type = freezed,
+    Object? originalFile = null,
+    Object? isNeedDeleteAfterUsage = null,
+    Object? type = null,
   }) {
-    return _then(_FileMediaDeviceFileMetadata(
-      originalFile: originalFile == freezed
+    return _then(_$FileMediaDeviceFileMetadataImpl(
+      originalFile: null == originalFile
           ? _value.originalFile
           : originalFile // ignore: cast_nullable_to_non_nullable
               as File,
-      isNeedDeleteAfterUsage: isNeedDeleteAfterUsage == freezed
+      isNeedDeleteAfterUsage: null == isNeedDeleteAfterUsage
           ? _value.isNeedDeleteAfterUsage
           : isNeedDeleteAfterUsage // ignore: cast_nullable_to_non_nullable
               as bool,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as MediaDeviceFileType,
@@ -139,8 +125,8 @@ class __$FileMediaDeviceFileMetadataCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_FileMediaDeviceFileMetadata extends _FileMediaDeviceFileMetadata {
-  const _$_FileMediaDeviceFileMetadata(
+class _$FileMediaDeviceFileMetadataImpl extends _FileMediaDeviceFileMetadata {
+  const _$FileMediaDeviceFileMetadataImpl(
       {required this.originalFile,
       required this.isNeedDeleteAfterUsage,
       required this.type})
@@ -159,10 +145,10 @@ class _$_FileMediaDeviceFileMetadata extends _FileMediaDeviceFileMetadata {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _FileMediaDeviceFileMetadata &&
+            other is _$FileMediaDeviceFileMetadataImpl &&
             (identical(other.originalFile, originalFile) ||
                 other.originalFile == originalFile) &&
             (identical(other.isNeedDeleteAfterUsage, isNeedDeleteAfterUsage) ||
@@ -176,17 +162,19 @@ class _$_FileMediaDeviceFileMetadata extends _FileMediaDeviceFileMetadata {
 
   @JsonKey(ignore: true)
   @override
-  _$FileMediaDeviceFileMetadataCopyWith<_FileMediaDeviceFileMetadata>
-      get copyWith => __$FileMediaDeviceFileMetadataCopyWithImpl<
-          _FileMediaDeviceFileMetadata>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$FileMediaDeviceFileMetadataImplCopyWith<_$FileMediaDeviceFileMetadataImpl>
+      get copyWith => __$$FileMediaDeviceFileMetadataImplCopyWithImpl<
+          _$FileMediaDeviceFileMetadataImpl>(this, _$identity);
 }
 
 abstract class _FileMediaDeviceFileMetadata
     extends FileMediaDeviceFileMetadata {
   const factory _FileMediaDeviceFileMetadata(
-      {required File originalFile,
-      required bool isNeedDeleteAfterUsage,
-      required MediaDeviceFileType type}) = _$_FileMediaDeviceFileMetadata;
+          {required final File originalFile,
+          required final bool isNeedDeleteAfterUsage,
+          required final MediaDeviceFileType type}) =
+      _$FileMediaDeviceFileMetadataImpl;
   const _FileMediaDeviceFileMetadata._() : super._();
 
   @override
@@ -197,28 +185,9 @@ abstract class _FileMediaDeviceFileMetadata
   MediaDeviceFileType get type;
   @override
   @JsonKey(ignore: true)
-  _$FileMediaDeviceFileMetadataCopyWith<_FileMediaDeviceFileMetadata>
+  _$$FileMediaDeviceFileMetadataImplCopyWith<_$FileMediaDeviceFileMetadataImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$FileMediaDeviceFileTearOff {
-  const _$FileMediaDeviceFileTearOff();
-
-  _FileMediaDeviceFile call(
-      {required File originalFile,
-      required bool isNeedDeleteAfterUsage,
-      required IMediaDeviceFileMetadata metadata}) {
-    return _FileMediaDeviceFile(
-      originalFile: originalFile,
-      isNeedDeleteAfterUsage: isNeedDeleteAfterUsage,
-      metadata: metadata,
-    );
-  }
-}
-
-/// @nodoc
-const $FileMediaDeviceFile = _$FileMediaDeviceFileTearOff();
 
 /// @nodoc
 mixin _$FileMediaDeviceFile {
@@ -235,7 +204,8 @@ mixin _$FileMediaDeviceFile {
 abstract class $FileMediaDeviceFileCopyWith<$Res> {
   factory $FileMediaDeviceFileCopyWith(
           FileMediaDeviceFile value, $Res Function(FileMediaDeviceFile) then) =
-      _$FileMediaDeviceFileCopyWithImpl<$Res>;
+      _$FileMediaDeviceFileCopyWithImpl<$Res, FileMediaDeviceFile>;
+  @useResult
   $Res call(
       {File originalFile,
       bool isNeedDeleteAfterUsage,
@@ -243,44 +213,47 @@ abstract class $FileMediaDeviceFileCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$FileMediaDeviceFileCopyWithImpl<$Res>
+class _$FileMediaDeviceFileCopyWithImpl<$Res, $Val extends FileMediaDeviceFile>
     implements $FileMediaDeviceFileCopyWith<$Res> {
   _$FileMediaDeviceFileCopyWithImpl(this._value, this._then);
 
-  final FileMediaDeviceFile _value;
   // ignore: unused_field
-  final $Res Function(FileMediaDeviceFile) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? originalFile = freezed,
-    Object? isNeedDeleteAfterUsage = freezed,
-    Object? metadata = freezed,
+    Object? originalFile = null,
+    Object? isNeedDeleteAfterUsage = null,
+    Object? metadata = null,
   }) {
     return _then(_value.copyWith(
-      originalFile: originalFile == freezed
+      originalFile: null == originalFile
           ? _value.originalFile
           : originalFile // ignore: cast_nullable_to_non_nullable
               as File,
-      isNeedDeleteAfterUsage: isNeedDeleteAfterUsage == freezed
+      isNeedDeleteAfterUsage: null == isNeedDeleteAfterUsage
           ? _value.isNeedDeleteAfterUsage
           : isNeedDeleteAfterUsage // ignore: cast_nullable_to_non_nullable
               as bool,
-      metadata: metadata == freezed
+      metadata: null == metadata
           ? _value.metadata
           : metadata // ignore: cast_nullable_to_non_nullable
               as IMediaDeviceFileMetadata,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$FileMediaDeviceFileCopyWith<$Res>
+abstract class _$$FileMediaDeviceFileImplCopyWith<$Res>
     implements $FileMediaDeviceFileCopyWith<$Res> {
-  factory _$FileMediaDeviceFileCopyWith(_FileMediaDeviceFile value,
-          $Res Function(_FileMediaDeviceFile) then) =
-      __$FileMediaDeviceFileCopyWithImpl<$Res>;
+  factory _$$FileMediaDeviceFileImplCopyWith(_$FileMediaDeviceFileImpl value,
+          $Res Function(_$FileMediaDeviceFileImpl) then) =
+      __$$FileMediaDeviceFileImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {File originalFile,
       bool isNeedDeleteAfterUsage,
@@ -288,32 +261,30 @@ abstract class _$FileMediaDeviceFileCopyWith<$Res>
 }
 
 /// @nodoc
-class __$FileMediaDeviceFileCopyWithImpl<$Res>
-    extends _$FileMediaDeviceFileCopyWithImpl<$Res>
-    implements _$FileMediaDeviceFileCopyWith<$Res> {
-  __$FileMediaDeviceFileCopyWithImpl(
-      _FileMediaDeviceFile _value, $Res Function(_FileMediaDeviceFile) _then)
-      : super(_value, (v) => _then(v as _FileMediaDeviceFile));
+class __$$FileMediaDeviceFileImplCopyWithImpl<$Res>
+    extends _$FileMediaDeviceFileCopyWithImpl<$Res, _$FileMediaDeviceFileImpl>
+    implements _$$FileMediaDeviceFileImplCopyWith<$Res> {
+  __$$FileMediaDeviceFileImplCopyWithImpl(_$FileMediaDeviceFileImpl _value,
+      $Res Function(_$FileMediaDeviceFileImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _FileMediaDeviceFile get _value => super._value as _FileMediaDeviceFile;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? originalFile = freezed,
-    Object? isNeedDeleteAfterUsage = freezed,
-    Object? metadata = freezed,
+    Object? originalFile = null,
+    Object? isNeedDeleteAfterUsage = null,
+    Object? metadata = null,
   }) {
-    return _then(_FileMediaDeviceFile(
-      originalFile: originalFile == freezed
+    return _then(_$FileMediaDeviceFileImpl(
+      originalFile: null == originalFile
           ? _value.originalFile
           : originalFile // ignore: cast_nullable_to_non_nullable
               as File,
-      isNeedDeleteAfterUsage: isNeedDeleteAfterUsage == freezed
+      isNeedDeleteAfterUsage: null == isNeedDeleteAfterUsage
           ? _value.isNeedDeleteAfterUsage
           : isNeedDeleteAfterUsage // ignore: cast_nullable_to_non_nullable
               as bool,
-      metadata: metadata == freezed
+      metadata: null == metadata
           ? _value.metadata
           : metadata // ignore: cast_nullable_to_non_nullable
               as IMediaDeviceFileMetadata,
@@ -323,8 +294,8 @@ class __$FileMediaDeviceFileCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_FileMediaDeviceFile extends _FileMediaDeviceFile {
-  const _$_FileMediaDeviceFile(
+class _$FileMediaDeviceFileImpl extends _FileMediaDeviceFile {
+  const _$FileMediaDeviceFileImpl(
       {required this.originalFile,
       required this.isNeedDeleteAfterUsage,
       required this.metadata})
@@ -343,10 +314,10 @@ class _$_FileMediaDeviceFile extends _FileMediaDeviceFile {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _FileMediaDeviceFile &&
+            other is _$FileMediaDeviceFileImpl &&
             (identical(other.originalFile, originalFile) ||
                 other.originalFile == originalFile) &&
             (identical(other.isNeedDeleteAfterUsage, isNeedDeleteAfterUsage) ||
@@ -361,16 +332,18 @@ class _$_FileMediaDeviceFile extends _FileMediaDeviceFile {
 
   @JsonKey(ignore: true)
   @override
-  _$FileMediaDeviceFileCopyWith<_FileMediaDeviceFile> get copyWith =>
-      __$FileMediaDeviceFileCopyWithImpl<_FileMediaDeviceFile>(
+  @pragma('vm:prefer-inline')
+  _$$FileMediaDeviceFileImplCopyWith<_$FileMediaDeviceFileImpl> get copyWith =>
+      __$$FileMediaDeviceFileImplCopyWithImpl<_$FileMediaDeviceFileImpl>(
           this, _$identity);
 }
 
 abstract class _FileMediaDeviceFile extends FileMediaDeviceFile {
   const factory _FileMediaDeviceFile(
-      {required File originalFile,
-      required bool isNeedDeleteAfterUsage,
-      required IMediaDeviceFileMetadata metadata}) = _$_FileMediaDeviceFile;
+          {required final File originalFile,
+          required final bool isNeedDeleteAfterUsage,
+          required final IMediaDeviceFileMetadata metadata}) =
+      _$FileMediaDeviceFileImpl;
   const _FileMediaDeviceFile._() : super._();
 
   @override
@@ -381,6 +354,6 @@ abstract class _FileMediaDeviceFile extends FileMediaDeviceFile {
   IMediaDeviceFileMetadata get metadata;
   @override
   @JsonKey(ignore: true)
-  _$FileMediaDeviceFileCopyWith<_FileMediaDeviceFile> get copyWith =>
+  _$$FileMediaDeviceFileImplCopyWith<_$FileMediaDeviceFileImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

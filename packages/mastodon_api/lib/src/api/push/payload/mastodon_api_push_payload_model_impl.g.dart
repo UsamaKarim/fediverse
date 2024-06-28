@@ -57,9 +57,9 @@ class MastodonApiPushPayloadAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiPushPayload _$$_MastodonApiPushPayloadFromJson(
+_$MastodonApiPushPayloadImpl _$$MastodonApiPushPayloadImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiPushPayload(
+    _$MastodonApiPushPayloadImpl(
       notificationId: json['notification_id'] as String,
       notificationType: json['notification_type'] as String,
       title: json['title'] as String?,
@@ -67,8 +67,8 @@ _$_MastodonApiPushPayload _$$_MastodonApiPushPayloadFromJson(
       icon: json['icon'] as String?,
     );
 
-Map<String, dynamic> _$$_MastodonApiPushPayloadToJson(
-    _$_MastodonApiPushPayload instance) {
+Map<String, dynamic> _$$MastodonApiPushPayloadImplToJson(
+    _$MastodonApiPushPayloadImpl instance) {
   final val = <String, dynamic>{
     'notification_id': instance.notificationId,
     'notification_type': instance.notificationType,

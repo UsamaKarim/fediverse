@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_oauth_model_impl.dart';
 
@@ -11,33 +12,12 @@ part of 'mastodon_api_oauth_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiOAuthToken _$MastodonApiOAuthTokenFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiOAuthToken.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiOAuthTokenTearOff {
-  const _$MastodonApiOAuthTokenTearOff();
-
-  _MastodonApiOAuthToken call(
-      {@HiveField(0) @JsonKey(name: 'access_token') required String accessToken,
-      @HiveField(1) @JsonKey(name: 'token_type') required String tokenType}) {
-    return _MastodonApiOAuthToken(
-      accessToken: accessToken,
-      tokenType: tokenType,
-    );
-  }
-
-  MastodonApiOAuthToken fromJson(Map<String, Object?> json) {
-    return MastodonApiOAuthToken.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiOAuthToken = _$MastodonApiOAuthTokenTearOff();
 
 /// @nodoc
 mixin _$MastodonApiOAuthToken {
@@ -58,73 +38,78 @@ mixin _$MastodonApiOAuthToken {
 abstract class $MastodonApiOAuthTokenCopyWith<$Res> {
   factory $MastodonApiOAuthTokenCopyWith(MastodonApiOAuthToken value,
           $Res Function(MastodonApiOAuthToken) then) =
-      _$MastodonApiOAuthTokenCopyWithImpl<$Res>;
+      _$MastodonApiOAuthTokenCopyWithImpl<$Res, MastodonApiOAuthToken>;
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'access_token') String accessToken,
       @HiveField(1) @JsonKey(name: 'token_type') String tokenType});
 }
 
 /// @nodoc
-class _$MastodonApiOAuthTokenCopyWithImpl<$Res>
+class _$MastodonApiOAuthTokenCopyWithImpl<$Res,
+        $Val extends MastodonApiOAuthToken>
     implements $MastodonApiOAuthTokenCopyWith<$Res> {
   _$MastodonApiOAuthTokenCopyWithImpl(this._value, this._then);
 
-  final MastodonApiOAuthToken _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiOAuthToken) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? accessToken = freezed,
-    Object? tokenType = freezed,
+    Object? accessToken = null,
+    Object? tokenType = null,
   }) {
     return _then(_value.copyWith(
-      accessToken: accessToken == freezed
+      accessToken: null == accessToken
           ? _value.accessToken
           : accessToken // ignore: cast_nullable_to_non_nullable
               as String,
-      tokenType: tokenType == freezed
+      tokenType: null == tokenType
           ? _value.tokenType
           : tokenType // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiOAuthTokenCopyWith<$Res>
+abstract class _$$MastodonApiOAuthTokenImplCopyWith<$Res>
     implements $MastodonApiOAuthTokenCopyWith<$Res> {
-  factory _$MastodonApiOAuthTokenCopyWith(_MastodonApiOAuthToken value,
-          $Res Function(_MastodonApiOAuthToken) then) =
-      __$MastodonApiOAuthTokenCopyWithImpl<$Res>;
+  factory _$$MastodonApiOAuthTokenImplCopyWith(
+          _$MastodonApiOAuthTokenImpl value,
+          $Res Function(_$MastodonApiOAuthTokenImpl) then) =
+      __$$MastodonApiOAuthTokenImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'access_token') String accessToken,
       @HiveField(1) @JsonKey(name: 'token_type') String tokenType});
 }
 
 /// @nodoc
-class __$MastodonApiOAuthTokenCopyWithImpl<$Res>
-    extends _$MastodonApiOAuthTokenCopyWithImpl<$Res>
-    implements _$MastodonApiOAuthTokenCopyWith<$Res> {
-  __$MastodonApiOAuthTokenCopyWithImpl(_MastodonApiOAuthToken _value,
-      $Res Function(_MastodonApiOAuthToken) _then)
-      : super(_value, (v) => _then(v as _MastodonApiOAuthToken));
+class __$$MastodonApiOAuthTokenImplCopyWithImpl<$Res>
+    extends _$MastodonApiOAuthTokenCopyWithImpl<$Res,
+        _$MastodonApiOAuthTokenImpl>
+    implements _$$MastodonApiOAuthTokenImplCopyWith<$Res> {
+  __$$MastodonApiOAuthTokenImplCopyWithImpl(_$MastodonApiOAuthTokenImpl _value,
+      $Res Function(_$MastodonApiOAuthTokenImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiOAuthToken get _value => super._value as _MastodonApiOAuthToken;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? accessToken = freezed,
-    Object? tokenType = freezed,
+    Object? accessToken = null,
+    Object? tokenType = null,
   }) {
-    return _then(_MastodonApiOAuthToken(
-      accessToken: accessToken == freezed
+    return _then(_$MastodonApiOAuthTokenImpl(
+      accessToken: null == accessToken
           ? _value.accessToken
           : accessToken // ignore: cast_nullable_to_non_nullable
               as String,
-      tokenType: tokenType == freezed
+      tokenType: null == tokenType
           ? _value.tokenType
           : tokenType // ignore: cast_nullable_to_non_nullable
               as String,
@@ -134,13 +119,13 @@ class __$MastodonApiOAuthTokenCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiOAuthToken implements _MastodonApiOAuthToken {
-  const _$_MastodonApiOAuthToken(
+class _$MastodonApiOAuthTokenImpl implements _MastodonApiOAuthToken {
+  const _$MastodonApiOAuthTokenImpl(
       {@HiveField(0) @JsonKey(name: 'access_token') required this.accessToken,
       @HiveField(1) @JsonKey(name: 'token_type') required this.tokenType});
 
-  factory _$_MastodonApiOAuthToken.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiOAuthTokenFromJson(json);
+  factory _$MastodonApiOAuthTokenImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MastodonApiOAuthTokenImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -157,28 +142,32 @@ class _$_MastodonApiOAuthToken implements _MastodonApiOAuthToken {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiOAuthToken &&
+            other is _$MastodonApiOAuthTokenImpl &&
             (identical(other.accessToken, accessToken) ||
                 other.accessToken == accessToken) &&
             (identical(other.tokenType, tokenType) ||
                 other.tokenType == tokenType));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, accessToken, tokenType);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiOAuthTokenCopyWith<_MastodonApiOAuthToken> get copyWith =>
-      __$MastodonApiOAuthTokenCopyWithImpl<_MastodonApiOAuthToken>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiOAuthTokenImplCopyWith<_$MastodonApiOAuthTokenImpl>
+      get copyWith => __$$MastodonApiOAuthTokenImplCopyWithImpl<
+          _$MastodonApiOAuthTokenImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiOAuthTokenToJson(this);
+    return _$$MastodonApiOAuthTokenImplToJson(
+      this,
+    );
   }
 }
 
@@ -186,13 +175,13 @@ abstract class _MastodonApiOAuthToken implements MastodonApiOAuthToken {
   const factory _MastodonApiOAuthToken(
       {@HiveField(0)
       @JsonKey(name: 'access_token')
-          required String accessToken,
+      required final String accessToken,
       @HiveField(1)
       @JsonKey(name: 'token_type')
-          required String tokenType}) = _$_MastodonApiOAuthToken;
+      required final String tokenType}) = _$MastodonApiOAuthTokenImpl;
 
   factory _MastodonApiOAuthToken.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiOAuthToken.fromJson;
+      _$MastodonApiOAuthTokenImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -204,6 +193,6 @@ abstract class _MastodonApiOAuthToken implements MastodonApiOAuthToken {
   String get tokenType;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiOAuthTokenCopyWith<_MastodonApiOAuthToken> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$MastodonApiOAuthTokenImplCopyWith<_$MastodonApiOAuthTokenImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

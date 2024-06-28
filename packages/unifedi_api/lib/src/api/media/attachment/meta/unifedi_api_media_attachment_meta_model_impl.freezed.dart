@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_media_attachment_meta_model_impl.dart';
 
@@ -11,35 +12,12 @@ part of 'unifedi_api_media_attachment_meta_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiMediaAttachmentMeta _$UnifediApiMediaAttachmentMetaFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiMediaAttachmentMeta.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiMediaAttachmentMetaTearOff {
-  const _$UnifediApiMediaAttachmentMetaTearOff();
-
-  _UnifediApiMediaAttachmentMeta call(
-      {@HiveField(0) required UnifediApiMediaAttachmentFocus? focus,
-      @HiveField(1) required UnifediApiMediaAttachmentSize? original,
-      @HiveField(2) required UnifediApiMediaAttachmentSize? small}) {
-    return _UnifediApiMediaAttachmentMeta(
-      focus: focus,
-      original: original,
-      small: small,
-    );
-  }
-
-  UnifediApiMediaAttachmentMeta fromJson(Map<String, Object?> json) {
-    return UnifediApiMediaAttachmentMeta.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiMediaAttachmentMeta = _$UnifediApiMediaAttachmentMetaTearOff();
 
 /// @nodoc
 mixin _$UnifediApiMediaAttachmentMeta {
@@ -64,7 +42,9 @@ abstract class $UnifediApiMediaAttachmentMetaCopyWith<$Res> {
   factory $UnifediApiMediaAttachmentMetaCopyWith(
           UnifediApiMediaAttachmentMeta value,
           $Res Function(UnifediApiMediaAttachmentMeta) then) =
-      _$UnifediApiMediaAttachmentMetaCopyWithImpl<$Res>;
+      _$UnifediApiMediaAttachmentMetaCopyWithImpl<$Res,
+          UnifediApiMediaAttachmentMeta>;
+  @useResult
   $Res call(
       {@HiveField(0) UnifediApiMediaAttachmentFocus? focus,
       @HiveField(1) UnifediApiMediaAttachmentSize? original,
@@ -76,14 +56,17 @@ abstract class $UnifediApiMediaAttachmentMetaCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UnifediApiMediaAttachmentMetaCopyWithImpl<$Res>
+class _$UnifediApiMediaAttachmentMetaCopyWithImpl<$Res,
+        $Val extends UnifediApiMediaAttachmentMeta>
     implements $UnifediApiMediaAttachmentMetaCopyWith<$Res> {
   _$UnifediApiMediaAttachmentMetaCopyWithImpl(this._value, this._then);
 
-  final UnifediApiMediaAttachmentMeta _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiMediaAttachmentMeta) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? focus = freezed,
@@ -91,22 +74,23 @@ class _$UnifediApiMediaAttachmentMetaCopyWithImpl<$Res>
     Object? small = freezed,
   }) {
     return _then(_value.copyWith(
-      focus: focus == freezed
+      focus: freezed == focus
           ? _value.focus
           : focus // ignore: cast_nullable_to_non_nullable
               as UnifediApiMediaAttachmentFocus?,
-      original: original == freezed
+      original: freezed == original
           ? _value.original
           : original // ignore: cast_nullable_to_non_nullable
               as UnifediApiMediaAttachmentSize?,
-      small: small == freezed
+      small: freezed == small
           ? _value.small
           : small // ignore: cast_nullable_to_non_nullable
               as UnifediApiMediaAttachmentSize?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiMediaAttachmentFocusCopyWith<$Res>? get focus {
     if (_value.focus == null) {
       return null;
@@ -114,11 +98,12 @@ class _$UnifediApiMediaAttachmentMetaCopyWithImpl<$Res>
 
     return $UnifediApiMediaAttachmentFocusCopyWith<$Res>(_value.focus!,
         (value) {
-      return _then(_value.copyWith(focus: value));
+      return _then(_value.copyWith(focus: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiMediaAttachmentSizeCopyWith<$Res>? get original {
     if (_value.original == null) {
       return null;
@@ -126,30 +111,32 @@ class _$UnifediApiMediaAttachmentMetaCopyWithImpl<$Res>
 
     return $UnifediApiMediaAttachmentSizeCopyWith<$Res>(_value.original!,
         (value) {
-      return _then(_value.copyWith(original: value));
+      return _then(_value.copyWith(original: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiMediaAttachmentSizeCopyWith<$Res>? get small {
     if (_value.small == null) {
       return null;
     }
 
     return $UnifediApiMediaAttachmentSizeCopyWith<$Res>(_value.small!, (value) {
-      return _then(_value.copyWith(small: value));
+      return _then(_value.copyWith(small: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiMediaAttachmentMetaCopyWith<$Res>
+abstract class _$$UnifediApiMediaAttachmentMetaImplCopyWith<$Res>
     implements $UnifediApiMediaAttachmentMetaCopyWith<$Res> {
-  factory _$UnifediApiMediaAttachmentMetaCopyWith(
-          _UnifediApiMediaAttachmentMeta value,
-          $Res Function(_UnifediApiMediaAttachmentMeta) then) =
-      __$UnifediApiMediaAttachmentMetaCopyWithImpl<$Res>;
+  factory _$$UnifediApiMediaAttachmentMetaImplCopyWith(
+          _$UnifediApiMediaAttachmentMetaImpl value,
+          $Res Function(_$UnifediApiMediaAttachmentMetaImpl) then) =
+      __$$UnifediApiMediaAttachmentMetaImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) UnifediApiMediaAttachmentFocus? focus,
       @HiveField(1) UnifediApiMediaAttachmentSize? original,
@@ -164,34 +151,32 @@ abstract class _$UnifediApiMediaAttachmentMetaCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiMediaAttachmentMetaCopyWithImpl<$Res>
-    extends _$UnifediApiMediaAttachmentMetaCopyWithImpl<$Res>
-    implements _$UnifediApiMediaAttachmentMetaCopyWith<$Res> {
-  __$UnifediApiMediaAttachmentMetaCopyWithImpl(
-      _UnifediApiMediaAttachmentMeta _value,
-      $Res Function(_UnifediApiMediaAttachmentMeta) _then)
-      : super(_value, (v) => _then(v as _UnifediApiMediaAttachmentMeta));
+class __$$UnifediApiMediaAttachmentMetaImplCopyWithImpl<$Res>
+    extends _$UnifediApiMediaAttachmentMetaCopyWithImpl<$Res,
+        _$UnifediApiMediaAttachmentMetaImpl>
+    implements _$$UnifediApiMediaAttachmentMetaImplCopyWith<$Res> {
+  __$$UnifediApiMediaAttachmentMetaImplCopyWithImpl(
+      _$UnifediApiMediaAttachmentMetaImpl _value,
+      $Res Function(_$UnifediApiMediaAttachmentMetaImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiMediaAttachmentMeta get _value =>
-      super._value as _UnifediApiMediaAttachmentMeta;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? focus = freezed,
     Object? original = freezed,
     Object? small = freezed,
   }) {
-    return _then(_UnifediApiMediaAttachmentMeta(
-      focus: focus == freezed
+    return _then(_$UnifediApiMediaAttachmentMetaImpl(
+      focus: freezed == focus
           ? _value.focus
           : focus // ignore: cast_nullable_to_non_nullable
               as UnifediApiMediaAttachmentFocus?,
-      original: original == freezed
+      original: freezed == original
           ? _value.original
           : original // ignore: cast_nullable_to_non_nullable
               as UnifediApiMediaAttachmentSize?,
-      small: small == freezed
+      small: freezed == small
           ? _value.small
           : small // ignore: cast_nullable_to_non_nullable
               as UnifediApiMediaAttachmentSize?,
@@ -201,16 +186,16 @@ class __$UnifediApiMediaAttachmentMetaCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiMediaAttachmentMeta
+class _$UnifediApiMediaAttachmentMetaImpl
     implements _UnifediApiMediaAttachmentMeta {
-  const _$_UnifediApiMediaAttachmentMeta(
+  const _$UnifediApiMediaAttachmentMetaImpl(
       {@HiveField(0) required this.focus,
       @HiveField(1) required this.original,
       @HiveField(2) required this.small});
 
-  factory _$_UnifediApiMediaAttachmentMeta.fromJson(
+  factory _$UnifediApiMediaAttachmentMetaImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiMediaAttachmentMetaFromJson(json);
+      _$$UnifediApiMediaAttachmentMetaImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -228,41 +213,46 @@ class _$_UnifediApiMediaAttachmentMeta
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiMediaAttachmentMeta &&
+            other is _$UnifediApiMediaAttachmentMetaImpl &&
             (identical(other.focus, focus) || other.focus == focus) &&
             (identical(other.original, original) ||
                 other.original == original) &&
             (identical(other.small, small) || other.small == small));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, focus, original, small);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiMediaAttachmentMetaCopyWith<_UnifediApiMediaAttachmentMeta>
-      get copyWith => __$UnifediApiMediaAttachmentMetaCopyWithImpl<
-          _UnifediApiMediaAttachmentMeta>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiMediaAttachmentMetaImplCopyWith<
+          _$UnifediApiMediaAttachmentMetaImpl>
+      get copyWith => __$$UnifediApiMediaAttachmentMetaImplCopyWithImpl<
+          _$UnifediApiMediaAttachmentMetaImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiMediaAttachmentMetaToJson(this);
+    return _$$UnifediApiMediaAttachmentMetaImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiMediaAttachmentMeta
     implements UnifediApiMediaAttachmentMeta {
   const factory _UnifediApiMediaAttachmentMeta(
-          {@HiveField(0) required UnifediApiMediaAttachmentFocus? focus,
-          @HiveField(1) required UnifediApiMediaAttachmentSize? original,
-          @HiveField(2) required UnifediApiMediaAttachmentSize? small}) =
-      _$_UnifediApiMediaAttachmentMeta;
+          {@HiveField(0) required final UnifediApiMediaAttachmentFocus? focus,
+          @HiveField(1) required final UnifediApiMediaAttachmentSize? original,
+          @HiveField(2) required final UnifediApiMediaAttachmentSize? small}) =
+      _$UnifediApiMediaAttachmentMetaImpl;
 
   factory _UnifediApiMediaAttachmentMeta.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiMediaAttachmentMeta.fromJson;
+      _$UnifediApiMediaAttachmentMetaImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -275,6 +265,7 @@ abstract class _UnifediApiMediaAttachmentMeta
   UnifediApiMediaAttachmentSize? get small;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiMediaAttachmentMetaCopyWith<_UnifediApiMediaAttachmentMeta>
+  _$$UnifediApiMediaAttachmentMetaImplCopyWith<
+          _$UnifediApiMediaAttachmentMetaImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

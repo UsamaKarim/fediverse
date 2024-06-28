@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_content_variants_model_impl.dart';
 
@@ -11,31 +12,12 @@ part of 'unifedi_api_content_variants_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiContentVariants _$UnifediApiContentVariantsFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiContentVariants.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiContentVariantsTearOff {
-  const _$UnifediApiContentVariantsTearOff();
-
-  _UnifediApiContentVariants call(
-      {@HiveField(0) @JsonKey(name: 'text/plain') required String? textPlain}) {
-    return _UnifediApiContentVariants(
-      textPlain: textPlain,
-    );
-  }
-
-  UnifediApiContentVariants fromJson(Map<String, Object?> json) {
-    return UnifediApiContentVariants.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiContentVariants = _$UnifediApiContentVariantsTearOff();
 
 /// @nodoc
 mixin _$UnifediApiContentVariants {
@@ -53,60 +35,65 @@ mixin _$UnifediApiContentVariants {
 abstract class $UnifediApiContentVariantsCopyWith<$Res> {
   factory $UnifediApiContentVariantsCopyWith(UnifediApiContentVariants value,
           $Res Function(UnifediApiContentVariants) then) =
-      _$UnifediApiContentVariantsCopyWithImpl<$Res>;
+      _$UnifediApiContentVariantsCopyWithImpl<$Res, UnifediApiContentVariants>;
+  @useResult
   $Res call({@HiveField(0) @JsonKey(name: 'text/plain') String? textPlain});
 }
 
 /// @nodoc
-class _$UnifediApiContentVariantsCopyWithImpl<$Res>
+class _$UnifediApiContentVariantsCopyWithImpl<$Res,
+        $Val extends UnifediApiContentVariants>
     implements $UnifediApiContentVariantsCopyWith<$Res> {
   _$UnifediApiContentVariantsCopyWithImpl(this._value, this._then);
 
-  final UnifediApiContentVariants _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiContentVariants) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? textPlain = freezed,
   }) {
     return _then(_value.copyWith(
-      textPlain: textPlain == freezed
+      textPlain: freezed == textPlain
           ? _value.textPlain
           : textPlain // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiContentVariantsCopyWith<$Res>
+abstract class _$$UnifediApiContentVariantsImplCopyWith<$Res>
     implements $UnifediApiContentVariantsCopyWith<$Res> {
-  factory _$UnifediApiContentVariantsCopyWith(_UnifediApiContentVariants value,
-          $Res Function(_UnifediApiContentVariants) then) =
-      __$UnifediApiContentVariantsCopyWithImpl<$Res>;
+  factory _$$UnifediApiContentVariantsImplCopyWith(
+          _$UnifediApiContentVariantsImpl value,
+          $Res Function(_$UnifediApiContentVariantsImpl) then) =
+      __$$UnifediApiContentVariantsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) @JsonKey(name: 'text/plain') String? textPlain});
 }
 
 /// @nodoc
-class __$UnifediApiContentVariantsCopyWithImpl<$Res>
-    extends _$UnifediApiContentVariantsCopyWithImpl<$Res>
-    implements _$UnifediApiContentVariantsCopyWith<$Res> {
-  __$UnifediApiContentVariantsCopyWithImpl(_UnifediApiContentVariants _value,
-      $Res Function(_UnifediApiContentVariants) _then)
-      : super(_value, (v) => _then(v as _UnifediApiContentVariants));
+class __$$UnifediApiContentVariantsImplCopyWithImpl<$Res>
+    extends _$UnifediApiContentVariantsCopyWithImpl<$Res,
+        _$UnifediApiContentVariantsImpl>
+    implements _$$UnifediApiContentVariantsImplCopyWith<$Res> {
+  __$$UnifediApiContentVariantsImplCopyWithImpl(
+      _$UnifediApiContentVariantsImpl _value,
+      $Res Function(_$UnifediApiContentVariantsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiContentVariants get _value =>
-      super._value as _UnifediApiContentVariants;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? textPlain = freezed,
   }) {
-    return _then(_UnifediApiContentVariants(
-      textPlain: textPlain == freezed
+    return _then(_$UnifediApiContentVariantsImpl(
+      textPlain: freezed == textPlain
           ? _value.textPlain
           : textPlain // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -116,12 +103,12 @@ class __$UnifediApiContentVariantsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiContentVariants implements _UnifediApiContentVariants {
-  const _$_UnifediApiContentVariants(
+class _$UnifediApiContentVariantsImpl implements _UnifediApiContentVariants {
+  const _$UnifediApiContentVariantsImpl(
       {@HiveField(0) @JsonKey(name: 'text/plain') required this.textPlain});
 
-  factory _$_UnifediApiContentVariants.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiContentVariantsFromJson(json);
+  factory _$UnifediApiContentVariantsImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiContentVariantsImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -134,27 +121,30 @@ class _$_UnifediApiContentVariants implements _UnifediApiContentVariants {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiContentVariants &&
+            other is _$UnifediApiContentVariantsImpl &&
             (identical(other.textPlain, textPlain) ||
                 other.textPlain == textPlain));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, textPlain);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiContentVariantsCopyWith<_UnifediApiContentVariants>
-      get copyWith =>
-          __$UnifediApiContentVariantsCopyWithImpl<_UnifediApiContentVariants>(
-              this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiContentVariantsImplCopyWith<_$UnifediApiContentVariantsImpl>
+      get copyWith => __$$UnifediApiContentVariantsImplCopyWithImpl<
+          _$UnifediApiContentVariantsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiContentVariantsToJson(this);
+    return _$$UnifediApiContentVariantsImplToJson(
+      this,
+    );
   }
 }
 
@@ -162,10 +152,10 @@ abstract class _UnifediApiContentVariants implements UnifediApiContentVariants {
   const factory _UnifediApiContentVariants(
       {@HiveField(0)
       @JsonKey(name: 'text/plain')
-          required String? textPlain}) = _$_UnifediApiContentVariants;
+      required final String? textPlain}) = _$UnifediApiContentVariantsImpl;
 
   factory _UnifediApiContentVariants.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiContentVariants.fromJson;
+      _$UnifediApiContentVariantsImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -173,6 +163,6 @@ abstract class _UnifediApiContentVariants implements UnifediApiContentVariants {
   String? get textPlain;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiContentVariantsCopyWith<_UnifediApiContentVariants>
+  _$$UnifediApiContentVariantsImplCopyWith<_$UnifediApiContentVariantsImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

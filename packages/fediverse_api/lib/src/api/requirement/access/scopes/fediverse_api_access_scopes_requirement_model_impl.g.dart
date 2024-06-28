@@ -45,18 +45,18 @@ class FediverseApiAccessScopesRequirementAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_FediverseApiAccessScopesRequirement
-    _$$_FediverseApiAccessScopesRequirementFromJson(
+_$FediverseApiAccessScopesRequirementImpl
+    _$$FediverseApiAccessScopesRequirementImplFromJson(
             Map<String, dynamic> json) =>
-        _$_FediverseApiAccessScopesRequirement(
+        _$FediverseApiAccessScopesRequirementImpl(
           scopesVariants: (json['scopes_variants'] as List<dynamic>)
               .map((e) =>
                   FediverseApiAccessScopes.fromJson(e as Map<String, dynamic>))
               .toList(),
         );
 
-Map<String, dynamic> _$$_FediverseApiAccessScopesRequirementToJson(
-        _$_FediverseApiAccessScopesRequirement instance) =>
+Map<String, dynamic> _$$FediverseApiAccessScopesRequirementImplToJson(
+        _$FediverseApiAccessScopesRequirementImpl instance) =>
     <String, dynamic>{
       'scopes_variants':
           instance.scopesVariants.map((e) => e.toJson()).toList(),

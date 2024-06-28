@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'fediverse_api_access_level_model_impl.dart';
 
@@ -11,33 +12,12 @@ part of 'fediverse_api_access_level_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 FediverseApiAccessLevel _$FediverseApiAccessLevelFromJson(
     Map<String, dynamic> json) {
   return _FediverseApiAccessLevel.fromJson(json);
 }
-
-/// @nodoc
-class _$FediverseApiAccessLevelTearOff {
-  const _$FediverseApiAccessLevelTearOff();
-
-  _FediverseApiAccessLevel call(
-      {@JsonKey(name: 'stringValue')
-      @HiveField(1)
-          required String stringValue}) {
-    return _FediverseApiAccessLevel(
-      stringValue: stringValue,
-    );
-  }
-
-  FediverseApiAccessLevel fromJson(Map<String, Object?> json) {
-    return FediverseApiAccessLevel.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $FediverseApiAccessLevel = _$FediverseApiAccessLevelTearOff();
 
 /// @nodoc
 mixin _$FediverseApiAccessLevel {
@@ -55,60 +35,65 @@ mixin _$FediverseApiAccessLevel {
 abstract class $FediverseApiAccessLevelCopyWith<$Res> {
   factory $FediverseApiAccessLevelCopyWith(FediverseApiAccessLevel value,
           $Res Function(FediverseApiAccessLevel) then) =
-      _$FediverseApiAccessLevelCopyWithImpl<$Res>;
+      _$FediverseApiAccessLevelCopyWithImpl<$Res, FediverseApiAccessLevel>;
+  @useResult
   $Res call({@JsonKey(name: 'stringValue') @HiveField(1) String stringValue});
 }
 
 /// @nodoc
-class _$FediverseApiAccessLevelCopyWithImpl<$Res>
+class _$FediverseApiAccessLevelCopyWithImpl<$Res,
+        $Val extends FediverseApiAccessLevel>
     implements $FediverseApiAccessLevelCopyWith<$Res> {
   _$FediverseApiAccessLevelCopyWithImpl(this._value, this._then);
 
-  final FediverseApiAccessLevel _value;
   // ignore: unused_field
-  final $Res Function(FediverseApiAccessLevel) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
     return _then(_value.copyWith(
-      stringValue: stringValue == freezed
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$FediverseApiAccessLevelCopyWith<$Res>
+abstract class _$$FediverseApiAccessLevelImplCopyWith<$Res>
     implements $FediverseApiAccessLevelCopyWith<$Res> {
-  factory _$FediverseApiAccessLevelCopyWith(_FediverseApiAccessLevel value,
-          $Res Function(_FediverseApiAccessLevel) then) =
-      __$FediverseApiAccessLevelCopyWithImpl<$Res>;
+  factory _$$FediverseApiAccessLevelImplCopyWith(
+          _$FediverseApiAccessLevelImpl value,
+          $Res Function(_$FediverseApiAccessLevelImpl) then) =
+      __$$FediverseApiAccessLevelImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@JsonKey(name: 'stringValue') @HiveField(1) String stringValue});
 }
 
 /// @nodoc
-class __$FediverseApiAccessLevelCopyWithImpl<$Res>
-    extends _$FediverseApiAccessLevelCopyWithImpl<$Res>
-    implements _$FediverseApiAccessLevelCopyWith<$Res> {
-  __$FediverseApiAccessLevelCopyWithImpl(_FediverseApiAccessLevel _value,
-      $Res Function(_FediverseApiAccessLevel) _then)
-      : super(_value, (v) => _then(v as _FediverseApiAccessLevel));
+class __$$FediverseApiAccessLevelImplCopyWithImpl<$Res>
+    extends _$FediverseApiAccessLevelCopyWithImpl<$Res,
+        _$FediverseApiAccessLevelImpl>
+    implements _$$FediverseApiAccessLevelImplCopyWith<$Res> {
+  __$$FediverseApiAccessLevelImplCopyWithImpl(
+      _$FediverseApiAccessLevelImpl _value,
+      $Res Function(_$FediverseApiAccessLevelImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _FediverseApiAccessLevel get _value =>
-      super._value as _FediverseApiAccessLevel;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_FediverseApiAccessLevel(
-      stringValue: stringValue == freezed
+    return _then(_$FediverseApiAccessLevelImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -118,12 +103,12 @@ class __$FediverseApiAccessLevelCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_FediverseApiAccessLevel implements _FediverseApiAccessLevel {
-  const _$_FediverseApiAccessLevel(
+class _$FediverseApiAccessLevelImpl implements _FediverseApiAccessLevel {
+  const _$FediverseApiAccessLevelImpl(
       {@JsonKey(name: 'stringValue') @HiveField(1) required this.stringValue});
 
-  factory _$_FediverseApiAccessLevel.fromJson(Map<String, dynamic> json) =>
-      _$$_FediverseApiAccessLevelFromJson(json);
+  factory _$FediverseApiAccessLevelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$FediverseApiAccessLevelImplFromJson(json);
 
   @override
   @JsonKey(name: 'stringValue')
@@ -136,26 +121,30 @@ class _$_FediverseApiAccessLevel implements _FediverseApiAccessLevel {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _FediverseApiAccessLevel &&
+            other is _$FediverseApiAccessLevelImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, stringValue);
 
   @JsonKey(ignore: true)
   @override
-  _$FediverseApiAccessLevelCopyWith<_FediverseApiAccessLevel> get copyWith =>
-      __$FediverseApiAccessLevelCopyWithImpl<_FediverseApiAccessLevel>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$FediverseApiAccessLevelImplCopyWith<_$FediverseApiAccessLevelImpl>
+      get copyWith => __$$FediverseApiAccessLevelImplCopyWithImpl<
+          _$FediverseApiAccessLevelImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_FediverseApiAccessLevelToJson(this);
+    return _$$FediverseApiAccessLevelImplToJson(
+      this,
+    );
   }
 }
 
@@ -163,10 +152,10 @@ abstract class _FediverseApiAccessLevel implements FediverseApiAccessLevel {
   const factory _FediverseApiAccessLevel(
       {@JsonKey(name: 'stringValue')
       @HiveField(1)
-          required String stringValue}) = _$_FediverseApiAccessLevel;
+      required final String stringValue}) = _$FediverseApiAccessLevelImpl;
 
   factory _FediverseApiAccessLevel.fromJson(Map<String, dynamic> json) =
-      _$_FediverseApiAccessLevel.fromJson;
+      _$FediverseApiAccessLevelImpl.fromJson;
 
   @override
   @JsonKey(name: 'stringValue')
@@ -174,6 +163,6 @@ abstract class _FediverseApiAccessLevel implements FediverseApiAccessLevel {
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$FediverseApiAccessLevelCopyWith<_FediverseApiAccessLevel> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$FediverseApiAccessLevelImplCopyWith<_$FediverseApiAccessLevelImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,3 +1,4 @@
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/account/database/account_database_dao.dart';
 import 'package:fedi_app/app/account/database/account_database_model.dart';
 import 'package:fedi_app/app/account/database/account_followers_database_dao.dart';
@@ -42,36 +43,35 @@ import 'package:fedi_app/app/status/post/post_status_model.dart';
 import 'package:fedi_app/app/status/scheduled/database/scheduled_status_database_dao.dart';
 import 'package:fedi_app/app/status/scheduled/database/scheduled_status_database_model.dart';
 import 'package:fedi_app/moor/moor_json_type_converter.dart';
-import 'package:moor/moor.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 
 part 'app_database.g.dart';
 
 // ignore_for_file: no-magic-number
-@UseMoor(
+@DriftDatabase(
   tables: [
     // todo: remove hack
     // bug in moor - https://github.com/simolus3/moor/issues/447
     // we should exclude tables here because we use this tables in
     // app_database.moor
-//    DbStatuses,
-//    DbConversations,
-//    DbNotifications,
-//    DbAccounts,
-//    DbConversationStatuses,
-//    DbStatusHashtags,
-//    DbStatusLists,
-//    DbStatusFavouritedAccounts,
-//    DbStatusRebloggedAccounts,
-//    DbAccountFollowings,
-//    DbAccountFollowers,
-//    DbConversationAccounts,
-//    DbScheduledStatuses,
-//  DbChats,
-//  DbChatAccounts,
-//  DbChatMessages,
+    DbStatuses,
+    DbConversations,
+    DbNotifications,
+    DbAccounts,
+    DbConversationStatuses,
+    DbStatusHashtags,
+    DbStatusLists,
+    DbStatusFavouritedAccounts,
+    DbStatusRebloggedAccounts,
+    DbAccountFollowings,
+    DbAccountFollowers,
+    DbConversationAccounts,
+    DbScheduledStatuses,
+    DbChats,
+    DbChatAccounts,
+    DbChatMessages,
     DbHomeTimelineStatuses, DbDraftStatuses, //  DbAccountRelationships
-    // DbInstanceAnnouncements,
+    DbInstanceAnnouncements,
   ],
   daos: [
     StatusDao,
@@ -97,7 +97,7 @@ part 'app_database.g.dart';
 
 //  AccountRelationshipsDao
   ],
-  include: {'app_database.moor'},
+  include: {'app_database.drift'},
 )
 class AppDatabase extends _$AppDatabase {
   AppDatabase(QueryExecutor e) : super(e);

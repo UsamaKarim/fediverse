@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_rest_error_details_model_impl.dart';
 
@@ -11,35 +12,12 @@ part of 'unifedi_api_rest_error_details_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiRestErrorDetails _$UnifediApiRestErrorDetailsFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiRestErrorDetails.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiRestErrorDetailsTearOff {
-  const _$UnifediApiRestErrorDetailsTearOff();
-
-  _UnifediApiRestErrorDetails call(
-      {required String? identifier,
-      required String? message,
-      required Map<String, List<UnifediApiRestErrorDetails>>? details}) {
-    return _UnifediApiRestErrorDetails(
-      identifier: identifier,
-      message: message,
-      details: details,
-    );
-  }
-
-  UnifediApiRestErrorDetails fromJson(Map<String, Object?> json) {
-    return UnifediApiRestErrorDetails.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiRestErrorDetails = _$UnifediApiRestErrorDetailsTearOff();
 
 /// @nodoc
 mixin _$UnifediApiRestErrorDetails {
@@ -58,7 +36,9 @@ mixin _$UnifediApiRestErrorDetails {
 abstract class $UnifediApiRestErrorDetailsCopyWith<$Res> {
   factory $UnifediApiRestErrorDetailsCopyWith(UnifediApiRestErrorDetails value,
           $Res Function(UnifediApiRestErrorDetails) then) =
-      _$UnifediApiRestErrorDetailsCopyWithImpl<$Res>;
+      _$UnifediApiRestErrorDetailsCopyWithImpl<$Res,
+          UnifediApiRestErrorDetails>;
+  @useResult
   $Res call(
       {String? identifier,
       String? message,
@@ -66,14 +46,17 @@ abstract class $UnifediApiRestErrorDetailsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UnifediApiRestErrorDetailsCopyWithImpl<$Res>
+class _$UnifediApiRestErrorDetailsCopyWithImpl<$Res,
+        $Val extends UnifediApiRestErrorDetails>
     implements $UnifediApiRestErrorDetailsCopyWith<$Res> {
   _$UnifediApiRestErrorDetailsCopyWithImpl(this._value, this._then);
 
-  final UnifediApiRestErrorDetails _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiRestErrorDetails) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? identifier = freezed,
@@ -81,30 +64,31 @@ class _$UnifediApiRestErrorDetailsCopyWithImpl<$Res>
     Object? details = freezed,
   }) {
     return _then(_value.copyWith(
-      identifier: identifier == freezed
+      identifier: freezed == identifier
           ? _value.identifier
           : identifier // ignore: cast_nullable_to_non_nullable
               as String?,
-      message: message == freezed
+      message: freezed == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
               as String?,
-      details: details == freezed
+      details: freezed == details
           ? _value.details
           : details // ignore: cast_nullable_to_non_nullable
               as Map<String, List<UnifediApiRestErrorDetails>>?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiRestErrorDetailsCopyWith<$Res>
+abstract class _$$UnifediApiRestErrorDetailsImplCopyWith<$Res>
     implements $UnifediApiRestErrorDetailsCopyWith<$Res> {
-  factory _$UnifediApiRestErrorDetailsCopyWith(
-          _UnifediApiRestErrorDetails value,
-          $Res Function(_UnifediApiRestErrorDetails) then) =
-      __$UnifediApiRestErrorDetailsCopyWithImpl<$Res>;
+  factory _$$UnifediApiRestErrorDetailsImplCopyWith(
+          _$UnifediApiRestErrorDetailsImpl value,
+          $Res Function(_$UnifediApiRestErrorDetailsImpl) then) =
+      __$$UnifediApiRestErrorDetailsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {String? identifier,
       String? message,
@@ -112,34 +96,33 @@ abstract class _$UnifediApiRestErrorDetailsCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiRestErrorDetailsCopyWithImpl<$Res>
-    extends _$UnifediApiRestErrorDetailsCopyWithImpl<$Res>
-    implements _$UnifediApiRestErrorDetailsCopyWith<$Res> {
-  __$UnifediApiRestErrorDetailsCopyWithImpl(_UnifediApiRestErrorDetails _value,
-      $Res Function(_UnifediApiRestErrorDetails) _then)
-      : super(_value, (v) => _then(v as _UnifediApiRestErrorDetails));
+class __$$UnifediApiRestErrorDetailsImplCopyWithImpl<$Res>
+    extends _$UnifediApiRestErrorDetailsCopyWithImpl<$Res,
+        _$UnifediApiRestErrorDetailsImpl>
+    implements _$$UnifediApiRestErrorDetailsImplCopyWith<$Res> {
+  __$$UnifediApiRestErrorDetailsImplCopyWithImpl(
+      _$UnifediApiRestErrorDetailsImpl _value,
+      $Res Function(_$UnifediApiRestErrorDetailsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiRestErrorDetails get _value =>
-      super._value as _UnifediApiRestErrorDetails;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? identifier = freezed,
     Object? message = freezed,
     Object? details = freezed,
   }) {
-    return _then(_UnifediApiRestErrorDetails(
-      identifier: identifier == freezed
+    return _then(_$UnifediApiRestErrorDetailsImpl(
+      identifier: freezed == identifier
           ? _value.identifier
           : identifier // ignore: cast_nullable_to_non_nullable
               as String?,
-      message: message == freezed
+      message: freezed == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
               as String?,
-      details: details == freezed
-          ? _value.details
+      details: freezed == details
+          ? _value._details
           : details // ignore: cast_nullable_to_non_nullable
               as Map<String, List<UnifediApiRestErrorDetails>>?,
     ));
@@ -148,19 +131,30 @@ class __$UnifediApiRestErrorDetailsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiRestErrorDetails implements _UnifediApiRestErrorDetails {
-  const _$_UnifediApiRestErrorDetails(
-      {required this.identifier, required this.message, required this.details});
+class _$UnifediApiRestErrorDetailsImpl implements _UnifediApiRestErrorDetails {
+  const _$UnifediApiRestErrorDetailsImpl(
+      {required this.identifier,
+      required this.message,
+      required final Map<String, List<UnifediApiRestErrorDetails>>? details})
+      : _details = details;
 
-  factory _$_UnifediApiRestErrorDetails.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiRestErrorDetailsFromJson(json);
+  factory _$UnifediApiRestErrorDetailsImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$UnifediApiRestErrorDetailsImplFromJson(json);
 
   @override
   final String? identifier;
   @override
   final String? message;
+  final Map<String, List<UnifediApiRestErrorDetails>>? _details;
   @override
-  final Map<String, List<UnifediApiRestErrorDetails>>? details;
+  Map<String, List<UnifediApiRestErrorDetails>>? get details {
+    final value = _details;
+    if (value == null) return null;
+    if (_details is EqualUnmodifiableMapView) return _details;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(value);
+  }
 
   @override
   String toString() {
@@ -168,42 +162,46 @@ class _$_UnifediApiRestErrorDetails implements _UnifediApiRestErrorDetails {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiRestErrorDetails &&
+            other is _$UnifediApiRestErrorDetailsImpl &&
             (identical(other.identifier, identifier) ||
                 other.identifier == identifier) &&
             (identical(other.message, message) || other.message == message) &&
-            const DeepCollectionEquality().equals(other.details, details));
+            const DeepCollectionEquality().equals(other._details, _details));
   }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, identifier, message,
-      const DeepCollectionEquality().hash(details));
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiRestErrorDetailsCopyWith<_UnifediApiRestErrorDetails>
-      get copyWith => __$UnifediApiRestErrorDetailsCopyWithImpl<
-          _UnifediApiRestErrorDetails>(this, _$identity);
+  int get hashCode => Object.hash(runtimeType, identifier, message,
+      const DeepCollectionEquality().hash(_details));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiRestErrorDetailsImplCopyWith<_$UnifediApiRestErrorDetailsImpl>
+      get copyWith => __$$UnifediApiRestErrorDetailsImplCopyWithImpl<
+          _$UnifediApiRestErrorDetailsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiRestErrorDetailsToJson(this);
+    return _$$UnifediApiRestErrorDetailsImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiRestErrorDetails
     implements UnifediApiRestErrorDetails {
   const factory _UnifediApiRestErrorDetails(
-          {required String? identifier,
-          required String? message,
-          required Map<String, List<UnifediApiRestErrorDetails>>? details}) =
-      _$_UnifediApiRestErrorDetails;
+      {required final String? identifier,
+      required final String? message,
+      required final Map<String, List<UnifediApiRestErrorDetails>>?
+          details}) = _$UnifediApiRestErrorDetailsImpl;
 
   factory _UnifediApiRestErrorDetails.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiRestErrorDetails.fromJson;
+      _$UnifediApiRestErrorDetailsImpl.fromJson;
 
   @override
   String? get identifier;
@@ -213,6 +211,6 @@ abstract class _UnifediApiRestErrorDetails
   Map<String, List<UnifediApiRestErrorDetails>>? get details;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiRestErrorDetailsCopyWith<_UnifediApiRestErrorDetails>
+  _$$UnifediApiRestErrorDetailsImplCopyWith<_$UnifediApiRestErrorDetailsImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

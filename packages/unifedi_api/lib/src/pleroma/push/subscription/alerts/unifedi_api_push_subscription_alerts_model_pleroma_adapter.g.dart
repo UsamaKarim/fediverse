@@ -46,16 +46,17 @@ class UnifediApiPushSubscriptionAlertsPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiPushSubscriptionAlertsPleromaAdapter
-    _$$_UnifediApiPushSubscriptionAlertsPleromaAdapterFromJson(
+_$UnifediApiPushSubscriptionAlertsPleromaAdapterImpl
+    _$$UnifediApiPushSubscriptionAlertsPleromaAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiPushSubscriptionAlertsPleromaAdapter(
+        _$UnifediApiPushSubscriptionAlertsPleromaAdapterImpl(
           PleromaApiPushSubscriptionAlerts.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiPushSubscriptionAlertsPleromaAdapterToJson(
-        _$_UnifediApiPushSubscriptionAlertsPleromaAdapter instance) =>
-    <String, dynamic>{
-      'value': instance.value.toJson(),
-    };
+Map<String, dynamic>
+    _$$UnifediApiPushSubscriptionAlertsPleromaAdapterImplToJson(
+            _$UnifediApiPushSubscriptionAlertsPleromaAdapterImpl instance) =>
+        <String, dynamic>{
+          'value': instance.value.toJson(),
+        };

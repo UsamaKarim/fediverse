@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_version_range_model_impl.dart';
 
@@ -11,43 +12,12 @@ part of 'mastodon_api_version_range_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiVersionRange _$MastodonApiVersionRangeFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiVersionRange.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiVersionRangeTearOff {
-  const _$MastodonApiVersionRangeTearOff();
-
-  _MastodonApiVersionRange call(
-      {@HiveField(0)
-          required MastodonApiVersion? min,
-      @HiveField(1)
-          required MastodonApiVersion? max,
-      @HiveField(2)
-      @JsonKey(name: 'min_inclusive')
-          bool minInclusive = true,
-      @HiveField(3)
-      @JsonKey(name: 'max_inclusive')
-          bool maxInclusive = false}) {
-    return _MastodonApiVersionRange(
-      min: min,
-      max: max,
-      minInclusive: minInclusive,
-      maxInclusive: maxInclusive,
-    );
-  }
-
-  MastodonApiVersionRange fromJson(Map<String, Object?> json) {
-    return MastodonApiVersionRange.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiVersionRange = _$MastodonApiVersionRangeTearOff();
 
 /// @nodoc
 mixin _$MastodonApiVersionRange {
@@ -72,7 +42,8 @@ mixin _$MastodonApiVersionRange {
 abstract class $MastodonApiVersionRangeCopyWith<$Res> {
   factory $MastodonApiVersionRangeCopyWith(MastodonApiVersionRange value,
           $Res Function(MastodonApiVersionRange) then) =
-      _$MastodonApiVersionRangeCopyWithImpl<$Res>;
+      _$MastodonApiVersionRangeCopyWithImpl<$Res, MastodonApiVersionRange>;
+  @useResult
   $Res call(
       {@HiveField(0) MastodonApiVersion? min,
       @HiveField(1) MastodonApiVersion? max,
@@ -84,71 +55,78 @@ abstract class $MastodonApiVersionRangeCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MastodonApiVersionRangeCopyWithImpl<$Res>
+class _$MastodonApiVersionRangeCopyWithImpl<$Res,
+        $Val extends MastodonApiVersionRange>
     implements $MastodonApiVersionRangeCopyWith<$Res> {
   _$MastodonApiVersionRangeCopyWithImpl(this._value, this._then);
 
-  final MastodonApiVersionRange _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiVersionRange) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? min = freezed,
     Object? max = freezed,
-    Object? minInclusive = freezed,
-    Object? maxInclusive = freezed,
+    Object? minInclusive = null,
+    Object? maxInclusive = null,
   }) {
     return _then(_value.copyWith(
-      min: min == freezed
+      min: freezed == min
           ? _value.min
           : min // ignore: cast_nullable_to_non_nullable
               as MastodonApiVersion?,
-      max: max == freezed
+      max: freezed == max
           ? _value.max
           : max // ignore: cast_nullable_to_non_nullable
               as MastodonApiVersion?,
-      minInclusive: minInclusive == freezed
+      minInclusive: null == minInclusive
           ? _value.minInclusive
           : minInclusive // ignore: cast_nullable_to_non_nullable
               as bool,
-      maxInclusive: maxInclusive == freezed
+      maxInclusive: null == maxInclusive
           ? _value.maxInclusive
           : maxInclusive // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiVersionCopyWith<$Res>? get min {
     if (_value.min == null) {
       return null;
     }
 
     return $MastodonApiVersionCopyWith<$Res>(_value.min!, (value) {
-      return _then(_value.copyWith(min: value));
+      return _then(_value.copyWith(min: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiVersionCopyWith<$Res>? get max {
     if (_value.max == null) {
       return null;
     }
 
     return $MastodonApiVersionCopyWith<$Res>(_value.max!, (value) {
-      return _then(_value.copyWith(max: value));
+      return _then(_value.copyWith(max: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiVersionRangeCopyWith<$Res>
+abstract class _$$MastodonApiVersionRangeImplCopyWith<$Res>
     implements $MastodonApiVersionRangeCopyWith<$Res> {
-  factory _$MastodonApiVersionRangeCopyWith(_MastodonApiVersionRange value,
-          $Res Function(_MastodonApiVersionRange) then) =
-      __$MastodonApiVersionRangeCopyWithImpl<$Res>;
+  factory _$$MastodonApiVersionRangeImplCopyWith(
+          _$MastodonApiVersionRangeImpl value,
+          $Res Function(_$MastodonApiVersionRangeImpl) then) =
+      __$$MastodonApiVersionRangeImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) MastodonApiVersion? min,
       @HiveField(1) MastodonApiVersion? max,
@@ -162,38 +140,37 @@ abstract class _$MastodonApiVersionRangeCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MastodonApiVersionRangeCopyWithImpl<$Res>
-    extends _$MastodonApiVersionRangeCopyWithImpl<$Res>
-    implements _$MastodonApiVersionRangeCopyWith<$Res> {
-  __$MastodonApiVersionRangeCopyWithImpl(_MastodonApiVersionRange _value,
-      $Res Function(_MastodonApiVersionRange) _then)
-      : super(_value, (v) => _then(v as _MastodonApiVersionRange));
+class __$$MastodonApiVersionRangeImplCopyWithImpl<$Res>
+    extends _$MastodonApiVersionRangeCopyWithImpl<$Res,
+        _$MastodonApiVersionRangeImpl>
+    implements _$$MastodonApiVersionRangeImplCopyWith<$Res> {
+  __$$MastodonApiVersionRangeImplCopyWithImpl(
+      _$MastodonApiVersionRangeImpl _value,
+      $Res Function(_$MastodonApiVersionRangeImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiVersionRange get _value =>
-      super._value as _MastodonApiVersionRange;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? min = freezed,
     Object? max = freezed,
-    Object? minInclusive = freezed,
-    Object? maxInclusive = freezed,
+    Object? minInclusive = null,
+    Object? maxInclusive = null,
   }) {
-    return _then(_MastodonApiVersionRange(
-      min: min == freezed
+    return _then(_$MastodonApiVersionRangeImpl(
+      min: freezed == min
           ? _value.min
           : min // ignore: cast_nullable_to_non_nullable
               as MastodonApiVersion?,
-      max: max == freezed
+      max: freezed == max
           ? _value.max
           : max // ignore: cast_nullable_to_non_nullable
               as MastodonApiVersion?,
-      minInclusive: minInclusive == freezed
+      minInclusive: null == minInclusive
           ? _value.minInclusive
           : minInclusive // ignore: cast_nullable_to_non_nullable
               as bool,
-      maxInclusive: maxInclusive == freezed
+      maxInclusive: null == maxInclusive
           ? _value.maxInclusive
           : maxInclusive // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -203,15 +180,15 @@ class __$MastodonApiVersionRangeCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiVersionRange implements _MastodonApiVersionRange {
-  const _$_MastodonApiVersionRange(
+class _$MastodonApiVersionRangeImpl implements _MastodonApiVersionRange {
+  const _$MastodonApiVersionRangeImpl(
       {@HiveField(0) required this.min,
       @HiveField(1) required this.max,
       @HiveField(2) @JsonKey(name: 'min_inclusive') this.minInclusive = true,
       @HiveField(3) @JsonKey(name: 'max_inclusive') this.maxInclusive = false});
 
-  factory _$_MastodonApiVersionRange.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiVersionRangeFromJson(json);
+  factory _$MastodonApiVersionRangeImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MastodonApiVersionRangeImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -234,10 +211,10 @@ class _$_MastodonApiVersionRange implements _MastodonApiVersionRange {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiVersionRange &&
+            other is _$MastodonApiVersionRangeImpl &&
             (identical(other.min, min) || other.min == min) &&
             (identical(other.max, max) || other.max == max) &&
             (identical(other.minInclusive, minInclusive) ||
@@ -246,32 +223,37 @@ class _$_MastodonApiVersionRange implements _MastodonApiVersionRange {
                 other.maxInclusive == maxInclusive));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, min, max, minInclusive, maxInclusive);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiVersionRangeCopyWith<_MastodonApiVersionRange> get copyWith =>
-      __$MastodonApiVersionRangeCopyWithImpl<_MastodonApiVersionRange>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiVersionRangeImplCopyWith<_$MastodonApiVersionRangeImpl>
+      get copyWith => __$$MastodonApiVersionRangeImplCopyWithImpl<
+          _$MastodonApiVersionRangeImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiVersionRangeToJson(this);
+    return _$$MastodonApiVersionRangeImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiVersionRange implements MastodonApiVersionRange {
   const factory _MastodonApiVersionRange(
-          {@HiveField(0) required MastodonApiVersion? min,
-          @HiveField(1) required MastodonApiVersion? max,
-          @HiveField(2) @JsonKey(name: 'min_inclusive') bool minInclusive,
-          @HiveField(3) @JsonKey(name: 'max_inclusive') bool maxInclusive}) =
-      _$_MastodonApiVersionRange;
+      {@HiveField(0) required final MastodonApiVersion? min,
+      @HiveField(1) required final MastodonApiVersion? max,
+      @HiveField(2) @JsonKey(name: 'min_inclusive') final bool minInclusive,
+      @HiveField(3)
+      @JsonKey(name: 'max_inclusive')
+      final bool maxInclusive}) = _$MastodonApiVersionRangeImpl;
 
   factory _MastodonApiVersionRange.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiVersionRange.fromJson;
+      _$MastodonApiVersionRangeImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -289,6 +271,6 @@ abstract class _MastodonApiVersionRange implements MastodonApiVersionRange {
   bool get maxInclusive;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiVersionRangeCopyWith<_MastodonApiVersionRange> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$MastodonApiVersionRangeImplCopyWith<_$MastodonApiVersionRangeImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

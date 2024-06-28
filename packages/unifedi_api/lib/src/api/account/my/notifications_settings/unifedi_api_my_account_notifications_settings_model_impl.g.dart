@@ -61,10 +61,10 @@ class UnifediApiMyAccountNotificationsSettingsAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiMyAccountNotificationsSettings
-    _$$_UnifediApiMyAccountNotificationsSettingsFromJson(
+_$UnifediApiMyAccountNotificationsSettingsImpl
+    _$$UnifediApiMyAccountNotificationsSettingsImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiMyAccountNotificationsSettings(
+        _$UnifediApiMyAccountNotificationsSettingsImpl(
           followers: json['followers'] as bool?,
           follows: json['follows'] as bool?,
           nonFollowers: json['non_followers'] as bool?,
@@ -73,8 +73,8 @@ _$_UnifediApiMyAccountNotificationsSettings
           hideNotificationContents: json['hide_notification_contents'] as bool?,
         );
 
-Map<String, dynamic> _$$_UnifediApiMyAccountNotificationsSettingsToJson(
-    _$_UnifediApiMyAccountNotificationsSettings instance) {
+Map<String, dynamic> _$$UnifediApiMyAccountNotificationsSettingsImplToJson(
+    _$UnifediApiMyAccountNotificationsSettingsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

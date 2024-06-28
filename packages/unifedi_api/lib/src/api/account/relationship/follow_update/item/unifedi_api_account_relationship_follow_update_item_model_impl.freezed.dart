@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_account_relationship_follow_update_item_model_impl.dart';
 
@@ -11,44 +12,13 @@ part of 'unifedi_api_account_relationship_follow_update_item_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiAccountRelationshipFollowUpdateItem
     _$UnifediApiAccountRelationshipFollowUpdateItemFromJson(
         Map<String, dynamic> json) {
   return _UnifediApiAccountRelationshipFollowUpdateItem.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiAccountRelationshipFollowUpdateItemTearOff {
-  const _$UnifediApiAccountRelationshipFollowUpdateItemTearOff();
-
-  _UnifediApiAccountRelationshipFollowUpdateItem call(
-      {@JsonKey(name: 'id')
-      @HiveField(1)
-          required String accountId,
-      @JsonKey(name: 'follower_count')
-      @HiveField(2)
-          required int? followerCount,
-      @JsonKey(name: 'following_count')
-      @HiveField(3)
-          required int? followingCount}) {
-    return _UnifediApiAccountRelationshipFollowUpdateItem(
-      accountId: accountId,
-      followerCount: followerCount,
-      followingCount: followingCount,
-    );
-  }
-
-  UnifediApiAccountRelationshipFollowUpdateItem fromJson(
-      Map<String, Object?> json) {
-    return UnifediApiAccountRelationshipFollowUpdateItem.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiAccountRelationshipFollowUpdateItem =
-    _$UnifediApiAccountRelationshipFollowUpdateItemTearOff();
 
 /// @nodoc
 mixin _$UnifediApiAccountRelationshipFollowUpdateItem {
@@ -74,7 +44,9 @@ abstract class $UnifediApiAccountRelationshipFollowUpdateItemCopyWith<$Res> {
   factory $UnifediApiAccountRelationshipFollowUpdateItemCopyWith(
           UnifediApiAccountRelationshipFollowUpdateItem value,
           $Res Function(UnifediApiAccountRelationshipFollowUpdateItem) then) =
-      _$UnifediApiAccountRelationshipFollowUpdateItemCopyWithImpl<$Res>;
+      _$UnifediApiAccountRelationshipFollowUpdateItemCopyWithImpl<$Res,
+          UnifediApiAccountRelationshipFollowUpdateItem>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'id') @HiveField(1) String accountId,
       @JsonKey(name: 'follower_count') @HiveField(2) int? followerCount,
@@ -82,46 +54,52 @@ abstract class $UnifediApiAccountRelationshipFollowUpdateItemCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UnifediApiAccountRelationshipFollowUpdateItemCopyWithImpl<$Res>
+class _$UnifediApiAccountRelationshipFollowUpdateItemCopyWithImpl<$Res,
+        $Val extends UnifediApiAccountRelationshipFollowUpdateItem>
     implements $UnifediApiAccountRelationshipFollowUpdateItemCopyWith<$Res> {
   _$UnifediApiAccountRelationshipFollowUpdateItemCopyWithImpl(
       this._value, this._then);
 
-  final UnifediApiAccountRelationshipFollowUpdateItem _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiAccountRelationshipFollowUpdateItem) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? accountId = freezed,
+    Object? accountId = null,
     Object? followerCount = freezed,
     Object? followingCount = freezed,
   }) {
     return _then(_value.copyWith(
-      accountId: accountId == freezed
+      accountId: null == accountId
           ? _value.accountId
           : accountId // ignore: cast_nullable_to_non_nullable
               as String,
-      followerCount: followerCount == freezed
+      followerCount: freezed == followerCount
           ? _value.followerCount
           : followerCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      followingCount: followingCount == freezed
+      followingCount: freezed == followingCount
           ? _value.followingCount
           : followingCount // ignore: cast_nullable_to_non_nullable
               as int?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiAccountRelationshipFollowUpdateItemCopyWith<$Res>
+abstract class _$$UnifediApiAccountRelationshipFollowUpdateItemImplCopyWith<
+        $Res>
     implements $UnifediApiAccountRelationshipFollowUpdateItemCopyWith<$Res> {
-  factory _$UnifediApiAccountRelationshipFollowUpdateItemCopyWith(
-          _UnifediApiAccountRelationshipFollowUpdateItem value,
-          $Res Function(_UnifediApiAccountRelationshipFollowUpdateItem) then) =
-      __$UnifediApiAccountRelationshipFollowUpdateItemCopyWithImpl<$Res>;
+  factory _$$UnifediApiAccountRelationshipFollowUpdateItemImplCopyWith(
+          _$UnifediApiAccountRelationshipFollowUpdateItemImpl value,
+          $Res Function(_$UnifediApiAccountRelationshipFollowUpdateItemImpl)
+              then) =
+      __$$UnifediApiAccountRelationshipFollowUpdateItemImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'id') @HiveField(1) String accountId,
       @JsonKey(name: 'follower_count') @HiveField(2) int? followerCount,
@@ -129,35 +107,33 @@ abstract class _$UnifediApiAccountRelationshipFollowUpdateItemCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiAccountRelationshipFollowUpdateItemCopyWithImpl<$Res>
-    extends _$UnifediApiAccountRelationshipFollowUpdateItemCopyWithImpl<$Res>
-    implements _$UnifediApiAccountRelationshipFollowUpdateItemCopyWith<$Res> {
-  __$UnifediApiAccountRelationshipFollowUpdateItemCopyWithImpl(
-      _UnifediApiAccountRelationshipFollowUpdateItem _value,
-      $Res Function(_UnifediApiAccountRelationshipFollowUpdateItem) _then)
-      : super(_value,
-            (v) => _then(v as _UnifediApiAccountRelationshipFollowUpdateItem));
+class __$$UnifediApiAccountRelationshipFollowUpdateItemImplCopyWithImpl<$Res>
+    extends _$UnifediApiAccountRelationshipFollowUpdateItemCopyWithImpl<$Res,
+        _$UnifediApiAccountRelationshipFollowUpdateItemImpl>
+    implements
+        _$$UnifediApiAccountRelationshipFollowUpdateItemImplCopyWith<$Res> {
+  __$$UnifediApiAccountRelationshipFollowUpdateItemImplCopyWithImpl(
+      _$UnifediApiAccountRelationshipFollowUpdateItemImpl _value,
+      $Res Function(_$UnifediApiAccountRelationshipFollowUpdateItemImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiAccountRelationshipFollowUpdateItem get _value =>
-      super._value as _UnifediApiAccountRelationshipFollowUpdateItem;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? accountId = freezed,
+    Object? accountId = null,
     Object? followerCount = freezed,
     Object? followingCount = freezed,
   }) {
-    return _then(_UnifediApiAccountRelationshipFollowUpdateItem(
-      accountId: accountId == freezed
+    return _then(_$UnifediApiAccountRelationshipFollowUpdateItemImpl(
+      accountId: null == accountId
           ? _value.accountId
           : accountId // ignore: cast_nullable_to_non_nullable
               as String,
-      followerCount: followerCount == freezed
+      followerCount: freezed == followerCount
           ? _value.followerCount
           : followerCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      followingCount: followingCount == freezed
+      followingCount: freezed == followingCount
           ? _value.followingCount
           : followingCount // ignore: cast_nullable_to_non_nullable
               as int?,
@@ -167,22 +143,20 @@ class __$UnifediApiAccountRelationshipFollowUpdateItemCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiAccountRelationshipFollowUpdateItem
+class _$UnifediApiAccountRelationshipFollowUpdateItemImpl
     implements _UnifediApiAccountRelationshipFollowUpdateItem {
-  const _$_UnifediApiAccountRelationshipFollowUpdateItem(
-      {@JsonKey(name: 'id')
-      @HiveField(1)
-          required this.accountId,
+  const _$UnifediApiAccountRelationshipFollowUpdateItemImpl(
+      {@JsonKey(name: 'id') @HiveField(1) required this.accountId,
       @JsonKey(name: 'follower_count')
       @HiveField(2)
-          required this.followerCount,
+      required this.followerCount,
       @JsonKey(name: 'following_count')
       @HiveField(3)
-          required this.followingCount});
+      required this.followingCount});
 
-  factory _$_UnifediApiAccountRelationshipFollowUpdateItem.fromJson(
+  factory _$UnifediApiAccountRelationshipFollowUpdateItemImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiAccountRelationshipFollowUpdateItemFromJson(json);
+      _$$UnifediApiAccountRelationshipFollowUpdateItemImplFromJson(json);
 
   @override
   @JsonKey(name: 'id')
@@ -203,10 +177,10 @@ class _$_UnifediApiAccountRelationshipFollowUpdateItem
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiAccountRelationshipFollowUpdateItem &&
+            other is _$UnifediApiAccountRelationshipFollowUpdateItemImpl &&
             (identical(other.accountId, accountId) ||
                 other.accountId == accountId) &&
             (identical(other.followerCount, followerCount) ||
@@ -215,41 +189,44 @@ class _$_UnifediApiAccountRelationshipFollowUpdateItem
                 other.followingCount == followingCount));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, accountId, followerCount, followingCount);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiAccountRelationshipFollowUpdateItemCopyWith<
-          _UnifediApiAccountRelationshipFollowUpdateItem>
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiAccountRelationshipFollowUpdateItemImplCopyWith<
+          _$UnifediApiAccountRelationshipFollowUpdateItemImpl>
       get copyWith =>
-          __$UnifediApiAccountRelationshipFollowUpdateItemCopyWithImpl<
-              _UnifediApiAccountRelationshipFollowUpdateItem>(this, _$identity);
+          __$$UnifediApiAccountRelationshipFollowUpdateItemImplCopyWithImpl<
+                  _$UnifediApiAccountRelationshipFollowUpdateItemImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiAccountRelationshipFollowUpdateItemToJson(this);
+    return _$$UnifediApiAccountRelationshipFollowUpdateItemImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiAccountRelationshipFollowUpdateItem
     implements UnifediApiAccountRelationshipFollowUpdateItem {
   const factory _UnifediApiAccountRelationshipFollowUpdateItem(
-          {@JsonKey(name: 'id')
-          @HiveField(1)
-              required String accountId,
+          {@JsonKey(name: 'id') @HiveField(1) required final String accountId,
           @JsonKey(name: 'follower_count')
           @HiveField(2)
-              required int? followerCount,
+          required final int? followerCount,
           @JsonKey(name: 'following_count')
           @HiveField(3)
-              required int? followingCount}) =
-      _$_UnifediApiAccountRelationshipFollowUpdateItem;
+          required final int? followingCount}) =
+      _$UnifediApiAccountRelationshipFollowUpdateItemImpl;
 
   factory _UnifediApiAccountRelationshipFollowUpdateItem.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiAccountRelationshipFollowUpdateItem.fromJson;
+      _$UnifediApiAccountRelationshipFollowUpdateItemImpl.fromJson;
 
   @override
   @JsonKey(name: 'id')
@@ -265,7 +242,7 @@ abstract class _UnifediApiAccountRelationshipFollowUpdateItem
   int? get followingCount;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiAccountRelationshipFollowUpdateItemCopyWith<
-          _UnifediApiAccountRelationshipFollowUpdateItem>
+  _$$UnifediApiAccountRelationshipFollowUpdateItemImplCopyWith<
+          _$UnifediApiAccountRelationshipFollowUpdateItemImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -54,9 +54,9 @@ class UnifediApiPushSubscriptionAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiPushSubscription _$$_UnifediApiPushSubscriptionFromJson(
+_$UnifediApiPushSubscriptionImpl _$$UnifediApiPushSubscriptionImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiPushSubscription(
+    _$UnifediApiPushSubscriptionImpl(
       id: json['id'] as String,
       endpoint: json['endpoint'] as String,
       alerts: UnifediApiPushSubscriptionAlerts.fromJson(
@@ -64,8 +64,8 @@ _$_UnifediApiPushSubscription _$$_UnifediApiPushSubscriptionFromJson(
       serverKey: json['server_key'] as String,
     );
 
-Map<String, dynamic> _$$_UnifediApiPushSubscriptionToJson(
-        _$_UnifediApiPushSubscription instance) =>
+Map<String, dynamic> _$$UnifediApiPushSubscriptionImplToJson(
+        _$UnifediApiPushSubscriptionImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'endpoint': instance.endpoint,

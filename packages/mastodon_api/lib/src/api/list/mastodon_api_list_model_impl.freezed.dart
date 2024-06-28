@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_list_model_impl.dart';
 
@@ -11,38 +12,11 @@ part of 'mastodon_api_list_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiList _$MastodonApiListFromJson(Map<String, dynamic> json) {
   return _MastodonApiList.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiListTearOff {
-  const _$MastodonApiListTearOff();
-
-  _MastodonApiList call(
-      {@HiveField(0)
-          required String id,
-      @HiveField(1)
-          required String title,
-      @JsonKey(name: 'replies_policy')
-      @HiveField(2)
-          required String? repliesPolicy}) {
-    return _MastodonApiList(
-      id: id,
-      title: title,
-      repliesPolicy: repliesPolicy,
-    );
-  }
-
-  MastodonApiList fromJson(Map<String, Object?> json) {
-    return MastodonApiList.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiList = _$MastodonApiListTearOff();
 
 /// @nodoc
 mixin _$MastodonApiList {
@@ -64,7 +38,8 @@ mixin _$MastodonApiList {
 abstract class $MastodonApiListCopyWith<$Res> {
   factory $MastodonApiListCopyWith(
           MastodonApiList value, $Res Function(MastodonApiList) then) =
-      _$MastodonApiListCopyWithImpl<$Res>;
+      _$MastodonApiListCopyWithImpl<$Res, MastodonApiList>;
+  @useResult
   $Res call(
       {@HiveField(0) String id,
       @HiveField(1) String title,
@@ -72,44 +47,47 @@ abstract class $MastodonApiListCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MastodonApiListCopyWithImpl<$Res>
+class _$MastodonApiListCopyWithImpl<$Res, $Val extends MastodonApiList>
     implements $MastodonApiListCopyWith<$Res> {
   _$MastodonApiListCopyWithImpl(this._value, this._then);
 
-  final MastodonApiList _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiList) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
+    Object? id = null,
+    Object? title = null,
     Object? repliesPolicy = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      repliesPolicy: repliesPolicy == freezed
+      repliesPolicy: freezed == repliesPolicy
           ? _value.repliesPolicy
           : repliesPolicy // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiListCopyWith<$Res>
+abstract class _$$MastodonApiListImplCopyWith<$Res>
     implements $MastodonApiListCopyWith<$Res> {
-  factory _$MastodonApiListCopyWith(
-          _MastodonApiList value, $Res Function(_MastodonApiList) then) =
-      __$MastodonApiListCopyWithImpl<$Res>;
+  factory _$$MastodonApiListImplCopyWith(_$MastodonApiListImpl value,
+          $Res Function(_$MastodonApiListImpl) then) =
+      __$$MastodonApiListImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) String id,
       @HiveField(1) String title,
@@ -117,32 +95,30 @@ abstract class _$MastodonApiListCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MastodonApiListCopyWithImpl<$Res>
-    extends _$MastodonApiListCopyWithImpl<$Res>
-    implements _$MastodonApiListCopyWith<$Res> {
-  __$MastodonApiListCopyWithImpl(
-      _MastodonApiList _value, $Res Function(_MastodonApiList) _then)
-      : super(_value, (v) => _then(v as _MastodonApiList));
+class __$$MastodonApiListImplCopyWithImpl<$Res>
+    extends _$MastodonApiListCopyWithImpl<$Res, _$MastodonApiListImpl>
+    implements _$$MastodonApiListImplCopyWith<$Res> {
+  __$$MastodonApiListImplCopyWithImpl(
+      _$MastodonApiListImpl _value, $Res Function(_$MastodonApiListImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiList get _value => super._value as _MastodonApiList;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
+    Object? id = null,
+    Object? title = null,
     Object? repliesPolicy = freezed,
   }) {
-    return _then(_MastodonApiList(
-      id: id == freezed
+    return _then(_$MastodonApiListImpl(
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      repliesPolicy: repliesPolicy == freezed
+      repliesPolicy: freezed == repliesPolicy
           ? _value.repliesPolicy
           : repliesPolicy // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -152,18 +128,16 @@ class __$MastodonApiListCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiList implements _MastodonApiList {
-  const _$_MastodonApiList(
-      {@HiveField(0)
-          required this.id,
-      @HiveField(1)
-          required this.title,
+class _$MastodonApiListImpl implements _MastodonApiList {
+  const _$MastodonApiListImpl(
+      {@HiveField(0) required this.id,
+      @HiveField(1) required this.title,
       @JsonKey(name: 'replies_policy')
       @HiveField(2)
-          required this.repliesPolicy});
+      required this.repliesPolicy});
 
-  factory _$_MastodonApiList.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiListFromJson(json);
+  factory _$MastodonApiListImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MastodonApiListImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -182,42 +156,45 @@ class _$_MastodonApiList implements _MastodonApiList {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiList &&
+            other is _$MastodonApiListImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.title, title) || other.title == title) &&
             (identical(other.repliesPolicy, repliesPolicy) ||
                 other.repliesPolicy == repliesPolicy));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, id, title, repliesPolicy);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiListCopyWith<_MastodonApiList> get copyWith =>
-      __$MastodonApiListCopyWithImpl<_MastodonApiList>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiListImplCopyWith<_$MastodonApiListImpl> get copyWith =>
+      __$$MastodonApiListImplCopyWithImpl<_$MastodonApiListImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiListToJson(this);
+    return _$$MastodonApiListImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiList implements MastodonApiList {
   const factory _MastodonApiList(
-      {@HiveField(0)
-          required String id,
-      @HiveField(1)
-          required String title,
+      {@HiveField(0) required final String id,
+      @HiveField(1) required final String title,
       @JsonKey(name: 'replies_policy')
       @HiveField(2)
-          required String? repliesPolicy}) = _$_MastodonApiList;
+      required final String? repliesPolicy}) = _$MastodonApiListImpl;
 
   factory _MastodonApiList.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiList.fromJson;
+      _$MastodonApiListImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -231,6 +208,6 @@ abstract class _MastodonApiList implements MastodonApiList {
   String? get repliesPolicy;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiListCopyWith<_MastodonApiList> get copyWith =>
+  _$$MastodonApiListImplCopyWith<_$MastodonApiListImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

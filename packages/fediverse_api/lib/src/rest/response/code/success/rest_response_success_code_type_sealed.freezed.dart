@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'rest_response_success_code_type_sealed.dart';
 
@@ -11,89 +12,11 @@ part of 'rest_response_success_code_type_sealed.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$RestResponseSuccessCodeTypeTearOff {
-  const _$RestResponseSuccessCodeTypeTearOff();
-
-  _Ok ok({int intValue = RestResponseSuccessCodeType.okIntValue}) {
-    return _Ok(
-      intValue: intValue,
-    );
-  }
-
-  _Created created(
-      {int intValue = RestResponseSuccessCodeType.createdIntValue}) {
-    return _Created(
-      intValue: intValue,
-    );
-  }
-
-  _Accepted accepted(
-      {int intValue = RestResponseSuccessCodeType.acceptedIntValue}) {
-    return _Accepted(
-      intValue: intValue,
-    );
-  }
-
-  _NonAuthoritativeInformation nonAuthoritativeInformation(
-      {int intValue =
-          RestResponseSuccessCodeType.nonAuthoritativeInformationIntValue}) {
-    return _NonAuthoritativeInformation(
-      intValue: intValue,
-    );
-  }
-
-  _NoContent noContent(
-      {int intValue = RestResponseSuccessCodeType.noContentIntValue}) {
-    return _NoContent(
-      intValue: intValue,
-    );
-  }
-
-  _ResetContent resetContent(
-      {int intValue = RestResponseSuccessCodeType.resetContentIntValue}) {
-    return _ResetContent(
-      intValue: intValue,
-    );
-  }
-
-  _PartialContent partialContent(
-      {int intValue = RestResponseSuccessCodeType.partialContentIntValue}) {
-    return _PartialContent(
-      intValue: intValue,
-    );
-  }
-
-  _MultiStatus multiStatus(
-      {int intValue = RestResponseSuccessCodeType.multiStatusIntValue}) {
-    return _MultiStatus(
-      intValue: intValue,
-    );
-  }
-
-  _AlreadyReported alreadyReported(
-      {int intValue = RestResponseSuccessCodeType.alreadyReportedIntValue}) {
-    return _AlreadyReported(
-      intValue: intValue,
-    );
-  }
-
-  _ImUsed imUsed({int intValue = RestResponseSuccessCodeType.imUsedIntValue}) {
-    return _ImUsed(
-      intValue: intValue,
-    );
-  }
-}
-
-/// @nodoc
-const $RestResponseSuccessCodeType = _$RestResponseSuccessCodeTypeTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$RestResponseSuccessCodeType {
   int get intValue => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(int intValue) ok,
@@ -110,16 +33,16 @@ mixin _$RestResponseSuccessCodeType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? ok,
-    TResult Function(int intValue)? created,
-    TResult Function(int intValue)? accepted,
-    TResult Function(int intValue)? nonAuthoritativeInformation,
-    TResult Function(int intValue)? noContent,
-    TResult Function(int intValue)? resetContent,
-    TResult Function(int intValue)? partialContent,
-    TResult Function(int intValue)? multiStatus,
-    TResult Function(int intValue)? alreadyReported,
-    TResult Function(int intValue)? imUsed,
+    TResult? Function(int intValue)? ok,
+    TResult? Function(int intValue)? created,
+    TResult? Function(int intValue)? accepted,
+    TResult? Function(int intValue)? nonAuthoritativeInformation,
+    TResult? Function(int intValue)? noContent,
+    TResult? Function(int intValue)? resetContent,
+    TResult? Function(int intValue)? partialContent,
+    TResult? Function(int intValue)? multiStatus,
+    TResult? Function(int intValue)? alreadyReported,
+    TResult? Function(int intValue)? imUsed,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -154,17 +77,17 @@ mixin _$RestResponseSuccessCodeType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Ok value)? ok,
-    TResult Function(_Created value)? created,
-    TResult Function(_Accepted value)? accepted,
-    TResult Function(_NonAuthoritativeInformation value)?
+    TResult? Function(_Ok value)? ok,
+    TResult? Function(_Created value)? created,
+    TResult? Function(_Accepted value)? accepted,
+    TResult? Function(_NonAuthoritativeInformation value)?
         nonAuthoritativeInformation,
-    TResult Function(_NoContent value)? noContent,
-    TResult Function(_ResetContent value)? resetContent,
-    TResult Function(_PartialContent value)? partialContent,
-    TResult Function(_MultiStatus value)? multiStatus,
-    TResult Function(_AlreadyReported value)? alreadyReported,
-    TResult Function(_ImUsed value)? imUsed,
+    TResult? Function(_NoContent value)? noContent,
+    TResult? Function(_ResetContent value)? resetContent,
+    TResult? Function(_PartialContent value)? partialContent,
+    TResult? Function(_MultiStatus value)? multiStatus,
+    TResult? Function(_AlreadyReported value)? alreadyReported,
+    TResult? Function(_ImUsed value)? imUsed,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -194,57 +117,61 @@ abstract class $RestResponseSuccessCodeTypeCopyWith<$Res> {
   factory $RestResponseSuccessCodeTypeCopyWith(
           RestResponseSuccessCodeType value,
           $Res Function(RestResponseSuccessCodeType) then) =
-      _$RestResponseSuccessCodeTypeCopyWithImpl<$Res>;
+      _$RestResponseSuccessCodeTypeCopyWithImpl<$Res,
+          RestResponseSuccessCodeType>;
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class _$RestResponseSuccessCodeTypeCopyWithImpl<$Res>
+class _$RestResponseSuccessCodeTypeCopyWithImpl<$Res,
+        $Val extends RestResponseSuccessCodeType>
     implements $RestResponseSuccessCodeTypeCopyWith<$Res> {
   _$RestResponseSuccessCodeTypeCopyWithImpl(this._value, this._then);
 
-  final RestResponseSuccessCodeType _value;
   // ignore: unused_field
-  final $Res Function(RestResponseSuccessCodeType) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
     return _then(_value.copyWith(
-      intValue: intValue == freezed
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$OkCopyWith<$Res>
+abstract class _$$OkImplCopyWith<$Res>
     implements $RestResponseSuccessCodeTypeCopyWith<$Res> {
-  factory _$OkCopyWith(_Ok value, $Res Function(_Ok) then) =
-      __$OkCopyWithImpl<$Res>;
+  factory _$$OkImplCopyWith(_$OkImpl value, $Res Function(_$OkImpl) then) =
+      __$$OkImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$OkCopyWithImpl<$Res>
-    extends _$RestResponseSuccessCodeTypeCopyWithImpl<$Res>
-    implements _$OkCopyWith<$Res> {
-  __$OkCopyWithImpl(_Ok _value, $Res Function(_Ok) _then)
-      : super(_value, (v) => _then(v as _Ok));
+class __$$OkImplCopyWithImpl<$Res>
+    extends _$RestResponseSuccessCodeTypeCopyWithImpl<$Res, _$OkImpl>
+    implements _$$OkImplCopyWith<$Res> {
+  __$$OkImplCopyWithImpl(_$OkImpl _value, $Res Function(_$OkImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Ok get _value => super._value as _Ok;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_Ok(
-      intValue: intValue == freezed
+    return _then(_$OkImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -254,11 +181,11 @@ class __$OkCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Ok implements _Ok {
-  const _$_Ok({this.intValue = RestResponseSuccessCodeType.okIntValue});
+class _$OkImpl implements _Ok {
+  const _$OkImpl({this.intValue = RestResponseSuccessCodeType.okIntValue});
 
-  @JsonKey(defaultValue: RestResponseSuccessCodeType.okIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -267,10 +194,10 @@ class _$_Ok implements _Ok {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Ok &&
+            other is _$OkImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -280,7 +207,9 @@ class _$_Ok implements _Ok {
 
   @JsonKey(ignore: true)
   @override
-  _$OkCopyWith<_Ok> get copyWith => __$OkCopyWithImpl<_Ok>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$OkImplCopyWith<_$OkImpl> get copyWith =>
+      __$$OkImplCopyWithImpl<_$OkImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -302,16 +231,16 @@ class _$_Ok implements _Ok {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? ok,
-    TResult Function(int intValue)? created,
-    TResult Function(int intValue)? accepted,
-    TResult Function(int intValue)? nonAuthoritativeInformation,
-    TResult Function(int intValue)? noContent,
-    TResult Function(int intValue)? resetContent,
-    TResult Function(int intValue)? partialContent,
-    TResult Function(int intValue)? multiStatus,
-    TResult Function(int intValue)? alreadyReported,
-    TResult Function(int intValue)? imUsed,
+    TResult? Function(int intValue)? ok,
+    TResult? Function(int intValue)? created,
+    TResult? Function(int intValue)? accepted,
+    TResult? Function(int intValue)? nonAuthoritativeInformation,
+    TResult? Function(int intValue)? noContent,
+    TResult? Function(int intValue)? resetContent,
+    TResult? Function(int intValue)? partialContent,
+    TResult? Function(int intValue)? multiStatus,
+    TResult? Function(int intValue)? alreadyReported,
+    TResult? Function(int intValue)? imUsed,
   }) {
     return ok?.call(intValue);
   }
@@ -358,17 +287,17 @@ class _$_Ok implements _Ok {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Ok value)? ok,
-    TResult Function(_Created value)? created,
-    TResult Function(_Accepted value)? accepted,
-    TResult Function(_NonAuthoritativeInformation value)?
+    TResult? Function(_Ok value)? ok,
+    TResult? Function(_Created value)? created,
+    TResult? Function(_Accepted value)? accepted,
+    TResult? Function(_NonAuthoritativeInformation value)?
         nonAuthoritativeInformation,
-    TResult Function(_NoContent value)? noContent,
-    TResult Function(_ResetContent value)? resetContent,
-    TResult Function(_PartialContent value)? partialContent,
-    TResult Function(_MultiStatus value)? multiStatus,
-    TResult Function(_AlreadyReported value)? alreadyReported,
-    TResult Function(_ImUsed value)? imUsed,
+    TResult? Function(_NoContent value)? noContent,
+    TResult? Function(_ResetContent value)? resetContent,
+    TResult? Function(_PartialContent value)? partialContent,
+    TResult? Function(_MultiStatus value)? multiStatus,
+    TResult? Function(_AlreadyReported value)? alreadyReported,
+    TResult? Function(_ImUsed value)? imUsed,
   }) {
     return ok?.call(this);
   }
@@ -397,40 +326,42 @@ class _$_Ok implements _Ok {
 }
 
 abstract class _Ok implements RestResponseSuccessCodeType {
-  const factory _Ok({int intValue}) = _$_Ok;
+  const factory _Ok({final int intValue}) = _$OkImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$OkCopyWith<_Ok> get copyWith => throw _privateConstructorUsedError;
+  _$$OkImplCopyWith<_$OkImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$CreatedCopyWith<$Res>
+abstract class _$$CreatedImplCopyWith<$Res>
     implements $RestResponseSuccessCodeTypeCopyWith<$Res> {
-  factory _$CreatedCopyWith(_Created value, $Res Function(_Created) then) =
-      __$CreatedCopyWithImpl<$Res>;
+  factory _$$CreatedImplCopyWith(
+          _$CreatedImpl value, $Res Function(_$CreatedImpl) then) =
+      __$$CreatedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$CreatedCopyWithImpl<$Res>
-    extends _$RestResponseSuccessCodeTypeCopyWithImpl<$Res>
-    implements _$CreatedCopyWith<$Res> {
-  __$CreatedCopyWithImpl(_Created _value, $Res Function(_Created) _then)
-      : super(_value, (v) => _then(v as _Created));
+class __$$CreatedImplCopyWithImpl<$Res>
+    extends _$RestResponseSuccessCodeTypeCopyWithImpl<$Res, _$CreatedImpl>
+    implements _$$CreatedImplCopyWith<$Res> {
+  __$$CreatedImplCopyWithImpl(
+      _$CreatedImpl _value, $Res Function(_$CreatedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Created get _value => super._value as _Created;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_Created(
-      intValue: intValue == freezed
+    return _then(_$CreatedImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -440,12 +371,12 @@ class __$CreatedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Created implements _Created {
-  const _$_Created(
+class _$CreatedImpl implements _Created {
+  const _$CreatedImpl(
       {this.intValue = RestResponseSuccessCodeType.createdIntValue});
 
-  @JsonKey(defaultValue: RestResponseSuccessCodeType.createdIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -454,10 +385,10 @@ class _$_Created implements _Created {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Created &&
+            other is _$CreatedImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -467,8 +398,9 @@ class _$_Created implements _Created {
 
   @JsonKey(ignore: true)
   @override
-  _$CreatedCopyWith<_Created> get copyWith =>
-      __$CreatedCopyWithImpl<_Created>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$CreatedImplCopyWith<_$CreatedImpl> get copyWith =>
+      __$$CreatedImplCopyWithImpl<_$CreatedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -490,16 +422,16 @@ class _$_Created implements _Created {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? ok,
-    TResult Function(int intValue)? created,
-    TResult Function(int intValue)? accepted,
-    TResult Function(int intValue)? nonAuthoritativeInformation,
-    TResult Function(int intValue)? noContent,
-    TResult Function(int intValue)? resetContent,
-    TResult Function(int intValue)? partialContent,
-    TResult Function(int intValue)? multiStatus,
-    TResult Function(int intValue)? alreadyReported,
-    TResult Function(int intValue)? imUsed,
+    TResult? Function(int intValue)? ok,
+    TResult? Function(int intValue)? created,
+    TResult? Function(int intValue)? accepted,
+    TResult? Function(int intValue)? nonAuthoritativeInformation,
+    TResult? Function(int intValue)? noContent,
+    TResult? Function(int intValue)? resetContent,
+    TResult? Function(int intValue)? partialContent,
+    TResult? Function(int intValue)? multiStatus,
+    TResult? Function(int intValue)? alreadyReported,
+    TResult? Function(int intValue)? imUsed,
   }) {
     return created?.call(intValue);
   }
@@ -546,17 +478,17 @@ class _$_Created implements _Created {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Ok value)? ok,
-    TResult Function(_Created value)? created,
-    TResult Function(_Accepted value)? accepted,
-    TResult Function(_NonAuthoritativeInformation value)?
+    TResult? Function(_Ok value)? ok,
+    TResult? Function(_Created value)? created,
+    TResult? Function(_Accepted value)? accepted,
+    TResult? Function(_NonAuthoritativeInformation value)?
         nonAuthoritativeInformation,
-    TResult Function(_NoContent value)? noContent,
-    TResult Function(_ResetContent value)? resetContent,
-    TResult Function(_PartialContent value)? partialContent,
-    TResult Function(_MultiStatus value)? multiStatus,
-    TResult Function(_AlreadyReported value)? alreadyReported,
-    TResult Function(_ImUsed value)? imUsed,
+    TResult? Function(_NoContent value)? noContent,
+    TResult? Function(_ResetContent value)? resetContent,
+    TResult? Function(_PartialContent value)? partialContent,
+    TResult? Function(_MultiStatus value)? multiStatus,
+    TResult? Function(_AlreadyReported value)? alreadyReported,
+    TResult? Function(_ImUsed value)? imUsed,
   }) {
     return created?.call(this);
   }
@@ -585,41 +517,42 @@ class _$_Created implements _Created {
 }
 
 abstract class _Created implements RestResponseSuccessCodeType {
-  const factory _Created({int intValue}) = _$_Created;
+  const factory _Created({final int intValue}) = _$CreatedImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$CreatedCopyWith<_Created> get copyWith =>
+  _$$CreatedImplCopyWith<_$CreatedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$AcceptedCopyWith<$Res>
+abstract class _$$AcceptedImplCopyWith<$Res>
     implements $RestResponseSuccessCodeTypeCopyWith<$Res> {
-  factory _$AcceptedCopyWith(_Accepted value, $Res Function(_Accepted) then) =
-      __$AcceptedCopyWithImpl<$Res>;
+  factory _$$AcceptedImplCopyWith(
+          _$AcceptedImpl value, $Res Function(_$AcceptedImpl) then) =
+      __$$AcceptedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$AcceptedCopyWithImpl<$Res>
-    extends _$RestResponseSuccessCodeTypeCopyWithImpl<$Res>
-    implements _$AcceptedCopyWith<$Res> {
-  __$AcceptedCopyWithImpl(_Accepted _value, $Res Function(_Accepted) _then)
-      : super(_value, (v) => _then(v as _Accepted));
+class __$$AcceptedImplCopyWithImpl<$Res>
+    extends _$RestResponseSuccessCodeTypeCopyWithImpl<$Res, _$AcceptedImpl>
+    implements _$$AcceptedImplCopyWith<$Res> {
+  __$$AcceptedImplCopyWithImpl(
+      _$AcceptedImpl _value, $Res Function(_$AcceptedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Accepted get _value => super._value as _Accepted;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_Accepted(
-      intValue: intValue == freezed
+    return _then(_$AcceptedImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -629,12 +562,12 @@ class __$AcceptedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Accepted implements _Accepted {
-  const _$_Accepted(
+class _$AcceptedImpl implements _Accepted {
+  const _$AcceptedImpl(
       {this.intValue = RestResponseSuccessCodeType.acceptedIntValue});
 
-  @JsonKey(defaultValue: RestResponseSuccessCodeType.acceptedIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -643,10 +576,10 @@ class _$_Accepted implements _Accepted {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Accepted &&
+            other is _$AcceptedImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -656,8 +589,9 @@ class _$_Accepted implements _Accepted {
 
   @JsonKey(ignore: true)
   @override
-  _$AcceptedCopyWith<_Accepted> get copyWith =>
-      __$AcceptedCopyWithImpl<_Accepted>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AcceptedImplCopyWith<_$AcceptedImpl> get copyWith =>
+      __$$AcceptedImplCopyWithImpl<_$AcceptedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -679,16 +613,16 @@ class _$_Accepted implements _Accepted {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? ok,
-    TResult Function(int intValue)? created,
-    TResult Function(int intValue)? accepted,
-    TResult Function(int intValue)? nonAuthoritativeInformation,
-    TResult Function(int intValue)? noContent,
-    TResult Function(int intValue)? resetContent,
-    TResult Function(int intValue)? partialContent,
-    TResult Function(int intValue)? multiStatus,
-    TResult Function(int intValue)? alreadyReported,
-    TResult Function(int intValue)? imUsed,
+    TResult? Function(int intValue)? ok,
+    TResult? Function(int intValue)? created,
+    TResult? Function(int intValue)? accepted,
+    TResult? Function(int intValue)? nonAuthoritativeInformation,
+    TResult? Function(int intValue)? noContent,
+    TResult? Function(int intValue)? resetContent,
+    TResult? Function(int intValue)? partialContent,
+    TResult? Function(int intValue)? multiStatus,
+    TResult? Function(int intValue)? alreadyReported,
+    TResult? Function(int intValue)? imUsed,
   }) {
     return accepted?.call(intValue);
   }
@@ -735,17 +669,17 @@ class _$_Accepted implements _Accepted {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Ok value)? ok,
-    TResult Function(_Created value)? created,
-    TResult Function(_Accepted value)? accepted,
-    TResult Function(_NonAuthoritativeInformation value)?
+    TResult? Function(_Ok value)? ok,
+    TResult? Function(_Created value)? created,
+    TResult? Function(_Accepted value)? accepted,
+    TResult? Function(_NonAuthoritativeInformation value)?
         nonAuthoritativeInformation,
-    TResult Function(_NoContent value)? noContent,
-    TResult Function(_ResetContent value)? resetContent,
-    TResult Function(_PartialContent value)? partialContent,
-    TResult Function(_MultiStatus value)? multiStatus,
-    TResult Function(_AlreadyReported value)? alreadyReported,
-    TResult Function(_ImUsed value)? imUsed,
+    TResult? Function(_NoContent value)? noContent,
+    TResult? Function(_ResetContent value)? resetContent,
+    TResult? Function(_PartialContent value)? partialContent,
+    TResult? Function(_MultiStatus value)? multiStatus,
+    TResult? Function(_AlreadyReported value)? alreadyReported,
+    TResult? Function(_ImUsed value)? imUsed,
   }) {
     return accepted?.call(this);
   }
@@ -774,46 +708,45 @@ class _$_Accepted implements _Accepted {
 }
 
 abstract class _Accepted implements RestResponseSuccessCodeType {
-  const factory _Accepted({int intValue}) = _$_Accepted;
+  const factory _Accepted({final int intValue}) = _$AcceptedImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$AcceptedCopyWith<_Accepted> get copyWith =>
+  _$$AcceptedImplCopyWith<_$AcceptedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$NonAuthoritativeInformationCopyWith<$Res>
+abstract class _$$NonAuthoritativeInformationImplCopyWith<$Res>
     implements $RestResponseSuccessCodeTypeCopyWith<$Res> {
-  factory _$NonAuthoritativeInformationCopyWith(
-          _NonAuthoritativeInformation value,
-          $Res Function(_NonAuthoritativeInformation) then) =
-      __$NonAuthoritativeInformationCopyWithImpl<$Res>;
+  factory _$$NonAuthoritativeInformationImplCopyWith(
+          _$NonAuthoritativeInformationImpl value,
+          $Res Function(_$NonAuthoritativeInformationImpl) then) =
+      __$$NonAuthoritativeInformationImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$NonAuthoritativeInformationCopyWithImpl<$Res>
-    extends _$RestResponseSuccessCodeTypeCopyWithImpl<$Res>
-    implements _$NonAuthoritativeInformationCopyWith<$Res> {
-  __$NonAuthoritativeInformationCopyWithImpl(
-      _NonAuthoritativeInformation _value,
-      $Res Function(_NonAuthoritativeInformation) _then)
-      : super(_value, (v) => _then(v as _NonAuthoritativeInformation));
+class __$$NonAuthoritativeInformationImplCopyWithImpl<$Res>
+    extends _$RestResponseSuccessCodeTypeCopyWithImpl<$Res,
+        _$NonAuthoritativeInformationImpl>
+    implements _$$NonAuthoritativeInformationImplCopyWith<$Res> {
+  __$$NonAuthoritativeInformationImplCopyWithImpl(
+      _$NonAuthoritativeInformationImpl _value,
+      $Res Function(_$NonAuthoritativeInformationImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _NonAuthoritativeInformation get _value =>
-      super._value as _NonAuthoritativeInformation;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_NonAuthoritativeInformation(
-      intValue: intValue == freezed
+    return _then(_$NonAuthoritativeInformationImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -823,15 +756,14 @@ class __$NonAuthoritativeInformationCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_NonAuthoritativeInformation implements _NonAuthoritativeInformation {
-  const _$_NonAuthoritativeInformation(
+class _$NonAuthoritativeInformationImpl
+    implements _NonAuthoritativeInformation {
+  const _$NonAuthoritativeInformationImpl(
       {this.intValue =
           RestResponseSuccessCodeType.nonAuthoritativeInformationIntValue});
 
-  @JsonKey(
-      defaultValue:
-          RestResponseSuccessCodeType.nonAuthoritativeInformationIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -840,10 +772,10 @@ class _$_NonAuthoritativeInformation implements _NonAuthoritativeInformation {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _NonAuthoritativeInformation &&
+            other is _$NonAuthoritativeInformationImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -853,9 +785,10 @@ class _$_NonAuthoritativeInformation implements _NonAuthoritativeInformation {
 
   @JsonKey(ignore: true)
   @override
-  _$NonAuthoritativeInformationCopyWith<_NonAuthoritativeInformation>
-      get copyWith => __$NonAuthoritativeInformationCopyWithImpl<
-          _NonAuthoritativeInformation>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$NonAuthoritativeInformationImplCopyWith<_$NonAuthoritativeInformationImpl>
+      get copyWith => __$$NonAuthoritativeInformationImplCopyWithImpl<
+          _$NonAuthoritativeInformationImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -877,16 +810,16 @@ class _$_NonAuthoritativeInformation implements _NonAuthoritativeInformation {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? ok,
-    TResult Function(int intValue)? created,
-    TResult Function(int intValue)? accepted,
-    TResult Function(int intValue)? nonAuthoritativeInformation,
-    TResult Function(int intValue)? noContent,
-    TResult Function(int intValue)? resetContent,
-    TResult Function(int intValue)? partialContent,
-    TResult Function(int intValue)? multiStatus,
-    TResult Function(int intValue)? alreadyReported,
-    TResult Function(int intValue)? imUsed,
+    TResult? Function(int intValue)? ok,
+    TResult? Function(int intValue)? created,
+    TResult? Function(int intValue)? accepted,
+    TResult? Function(int intValue)? nonAuthoritativeInformation,
+    TResult? Function(int intValue)? noContent,
+    TResult? Function(int intValue)? resetContent,
+    TResult? Function(int intValue)? partialContent,
+    TResult? Function(int intValue)? multiStatus,
+    TResult? Function(int intValue)? alreadyReported,
+    TResult? Function(int intValue)? imUsed,
   }) {
     return nonAuthoritativeInformation?.call(intValue);
   }
@@ -933,17 +866,17 @@ class _$_NonAuthoritativeInformation implements _NonAuthoritativeInformation {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Ok value)? ok,
-    TResult Function(_Created value)? created,
-    TResult Function(_Accepted value)? accepted,
-    TResult Function(_NonAuthoritativeInformation value)?
+    TResult? Function(_Ok value)? ok,
+    TResult? Function(_Created value)? created,
+    TResult? Function(_Accepted value)? accepted,
+    TResult? Function(_NonAuthoritativeInformation value)?
         nonAuthoritativeInformation,
-    TResult Function(_NoContent value)? noContent,
-    TResult Function(_ResetContent value)? resetContent,
-    TResult Function(_PartialContent value)? partialContent,
-    TResult Function(_MultiStatus value)? multiStatus,
-    TResult Function(_AlreadyReported value)? alreadyReported,
-    TResult Function(_ImUsed value)? imUsed,
+    TResult? Function(_NoContent value)? noContent,
+    TResult? Function(_ResetContent value)? resetContent,
+    TResult? Function(_PartialContent value)? partialContent,
+    TResult? Function(_MultiStatus value)? multiStatus,
+    TResult? Function(_AlreadyReported value)? alreadyReported,
+    TResult? Function(_ImUsed value)? imUsed,
   }) {
     return nonAuthoritativeInformation?.call(this);
   }
@@ -973,43 +906,43 @@ class _$_NonAuthoritativeInformation implements _NonAuthoritativeInformation {
 
 abstract class _NonAuthoritativeInformation
     implements RestResponseSuccessCodeType {
-  const factory _NonAuthoritativeInformation({int intValue}) =
-      _$_NonAuthoritativeInformation;
+  const factory _NonAuthoritativeInformation({final int intValue}) =
+      _$NonAuthoritativeInformationImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$NonAuthoritativeInformationCopyWith<_NonAuthoritativeInformation>
+  _$$NonAuthoritativeInformationImplCopyWith<_$NonAuthoritativeInformationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$NoContentCopyWith<$Res>
+abstract class _$$NoContentImplCopyWith<$Res>
     implements $RestResponseSuccessCodeTypeCopyWith<$Res> {
-  factory _$NoContentCopyWith(
-          _NoContent value, $Res Function(_NoContent) then) =
-      __$NoContentCopyWithImpl<$Res>;
+  factory _$$NoContentImplCopyWith(
+          _$NoContentImpl value, $Res Function(_$NoContentImpl) then) =
+      __$$NoContentImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$NoContentCopyWithImpl<$Res>
-    extends _$RestResponseSuccessCodeTypeCopyWithImpl<$Res>
-    implements _$NoContentCopyWith<$Res> {
-  __$NoContentCopyWithImpl(_NoContent _value, $Res Function(_NoContent) _then)
-      : super(_value, (v) => _then(v as _NoContent));
+class __$$NoContentImplCopyWithImpl<$Res>
+    extends _$RestResponseSuccessCodeTypeCopyWithImpl<$Res, _$NoContentImpl>
+    implements _$$NoContentImplCopyWith<$Res> {
+  __$$NoContentImplCopyWithImpl(
+      _$NoContentImpl _value, $Res Function(_$NoContentImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _NoContent get _value => super._value as _NoContent;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_NoContent(
-      intValue: intValue == freezed
+    return _then(_$NoContentImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -1019,12 +952,12 @@ class __$NoContentCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_NoContent implements _NoContent {
-  const _$_NoContent(
+class _$NoContentImpl implements _NoContent {
+  const _$NoContentImpl(
       {this.intValue = RestResponseSuccessCodeType.noContentIntValue});
 
-  @JsonKey(defaultValue: RestResponseSuccessCodeType.noContentIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -1033,10 +966,10 @@ class _$_NoContent implements _NoContent {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _NoContent &&
+            other is _$NoContentImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -1046,8 +979,9 @@ class _$_NoContent implements _NoContent {
 
   @JsonKey(ignore: true)
   @override
-  _$NoContentCopyWith<_NoContent> get copyWith =>
-      __$NoContentCopyWithImpl<_NoContent>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$NoContentImplCopyWith<_$NoContentImpl> get copyWith =>
+      __$$NoContentImplCopyWithImpl<_$NoContentImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1069,16 +1003,16 @@ class _$_NoContent implements _NoContent {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? ok,
-    TResult Function(int intValue)? created,
-    TResult Function(int intValue)? accepted,
-    TResult Function(int intValue)? nonAuthoritativeInformation,
-    TResult Function(int intValue)? noContent,
-    TResult Function(int intValue)? resetContent,
-    TResult Function(int intValue)? partialContent,
-    TResult Function(int intValue)? multiStatus,
-    TResult Function(int intValue)? alreadyReported,
-    TResult Function(int intValue)? imUsed,
+    TResult? Function(int intValue)? ok,
+    TResult? Function(int intValue)? created,
+    TResult? Function(int intValue)? accepted,
+    TResult? Function(int intValue)? nonAuthoritativeInformation,
+    TResult? Function(int intValue)? noContent,
+    TResult? Function(int intValue)? resetContent,
+    TResult? Function(int intValue)? partialContent,
+    TResult? Function(int intValue)? multiStatus,
+    TResult? Function(int intValue)? alreadyReported,
+    TResult? Function(int intValue)? imUsed,
   }) {
     return noContent?.call(intValue);
   }
@@ -1125,17 +1059,17 @@ class _$_NoContent implements _NoContent {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Ok value)? ok,
-    TResult Function(_Created value)? created,
-    TResult Function(_Accepted value)? accepted,
-    TResult Function(_NonAuthoritativeInformation value)?
+    TResult? Function(_Ok value)? ok,
+    TResult? Function(_Created value)? created,
+    TResult? Function(_Accepted value)? accepted,
+    TResult? Function(_NonAuthoritativeInformation value)?
         nonAuthoritativeInformation,
-    TResult Function(_NoContent value)? noContent,
-    TResult Function(_ResetContent value)? resetContent,
-    TResult Function(_PartialContent value)? partialContent,
-    TResult Function(_MultiStatus value)? multiStatus,
-    TResult Function(_AlreadyReported value)? alreadyReported,
-    TResult Function(_ImUsed value)? imUsed,
+    TResult? Function(_NoContent value)? noContent,
+    TResult? Function(_ResetContent value)? resetContent,
+    TResult? Function(_PartialContent value)? partialContent,
+    TResult? Function(_MultiStatus value)? multiStatus,
+    TResult? Function(_AlreadyReported value)? alreadyReported,
+    TResult? Function(_ImUsed value)? imUsed,
   }) {
     return noContent?.call(this);
   }
@@ -1164,43 +1098,42 @@ class _$_NoContent implements _NoContent {
 }
 
 abstract class _NoContent implements RestResponseSuccessCodeType {
-  const factory _NoContent({int intValue}) = _$_NoContent;
+  const factory _NoContent({final int intValue}) = _$NoContentImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$NoContentCopyWith<_NoContent> get copyWith =>
+  _$$NoContentImplCopyWith<_$NoContentImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ResetContentCopyWith<$Res>
+abstract class _$$ResetContentImplCopyWith<$Res>
     implements $RestResponseSuccessCodeTypeCopyWith<$Res> {
-  factory _$ResetContentCopyWith(
-          _ResetContent value, $Res Function(_ResetContent) then) =
-      __$ResetContentCopyWithImpl<$Res>;
+  factory _$$ResetContentImplCopyWith(
+          _$ResetContentImpl value, $Res Function(_$ResetContentImpl) then) =
+      __$$ResetContentImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$ResetContentCopyWithImpl<$Res>
-    extends _$RestResponseSuccessCodeTypeCopyWithImpl<$Res>
-    implements _$ResetContentCopyWith<$Res> {
-  __$ResetContentCopyWithImpl(
-      _ResetContent _value, $Res Function(_ResetContent) _then)
-      : super(_value, (v) => _then(v as _ResetContent));
+class __$$ResetContentImplCopyWithImpl<$Res>
+    extends _$RestResponseSuccessCodeTypeCopyWithImpl<$Res, _$ResetContentImpl>
+    implements _$$ResetContentImplCopyWith<$Res> {
+  __$$ResetContentImplCopyWithImpl(
+      _$ResetContentImpl _value, $Res Function(_$ResetContentImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _ResetContent get _value => super._value as _ResetContent;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_ResetContent(
-      intValue: intValue == freezed
+    return _then(_$ResetContentImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -1210,12 +1143,12 @@ class __$ResetContentCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ResetContent implements _ResetContent {
-  const _$_ResetContent(
+class _$ResetContentImpl implements _ResetContent {
+  const _$ResetContentImpl(
       {this.intValue = RestResponseSuccessCodeType.resetContentIntValue});
 
-  @JsonKey(defaultValue: RestResponseSuccessCodeType.resetContentIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -1224,10 +1157,10 @@ class _$_ResetContent implements _ResetContent {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ResetContent &&
+            other is _$ResetContentImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -1237,8 +1170,9 @@ class _$_ResetContent implements _ResetContent {
 
   @JsonKey(ignore: true)
   @override
-  _$ResetContentCopyWith<_ResetContent> get copyWith =>
-      __$ResetContentCopyWithImpl<_ResetContent>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ResetContentImplCopyWith<_$ResetContentImpl> get copyWith =>
+      __$$ResetContentImplCopyWithImpl<_$ResetContentImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1260,16 +1194,16 @@ class _$_ResetContent implements _ResetContent {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? ok,
-    TResult Function(int intValue)? created,
-    TResult Function(int intValue)? accepted,
-    TResult Function(int intValue)? nonAuthoritativeInformation,
-    TResult Function(int intValue)? noContent,
-    TResult Function(int intValue)? resetContent,
-    TResult Function(int intValue)? partialContent,
-    TResult Function(int intValue)? multiStatus,
-    TResult Function(int intValue)? alreadyReported,
-    TResult Function(int intValue)? imUsed,
+    TResult? Function(int intValue)? ok,
+    TResult? Function(int intValue)? created,
+    TResult? Function(int intValue)? accepted,
+    TResult? Function(int intValue)? nonAuthoritativeInformation,
+    TResult? Function(int intValue)? noContent,
+    TResult? Function(int intValue)? resetContent,
+    TResult? Function(int intValue)? partialContent,
+    TResult? Function(int intValue)? multiStatus,
+    TResult? Function(int intValue)? alreadyReported,
+    TResult? Function(int intValue)? imUsed,
   }) {
     return resetContent?.call(intValue);
   }
@@ -1316,17 +1250,17 @@ class _$_ResetContent implements _ResetContent {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Ok value)? ok,
-    TResult Function(_Created value)? created,
-    TResult Function(_Accepted value)? accepted,
-    TResult Function(_NonAuthoritativeInformation value)?
+    TResult? Function(_Ok value)? ok,
+    TResult? Function(_Created value)? created,
+    TResult? Function(_Accepted value)? accepted,
+    TResult? Function(_NonAuthoritativeInformation value)?
         nonAuthoritativeInformation,
-    TResult Function(_NoContent value)? noContent,
-    TResult Function(_ResetContent value)? resetContent,
-    TResult Function(_PartialContent value)? partialContent,
-    TResult Function(_MultiStatus value)? multiStatus,
-    TResult Function(_AlreadyReported value)? alreadyReported,
-    TResult Function(_ImUsed value)? imUsed,
+    TResult? Function(_NoContent value)? noContent,
+    TResult? Function(_ResetContent value)? resetContent,
+    TResult? Function(_PartialContent value)? partialContent,
+    TResult? Function(_MultiStatus value)? multiStatus,
+    TResult? Function(_AlreadyReported value)? alreadyReported,
+    TResult? Function(_ImUsed value)? imUsed,
   }) {
     return resetContent?.call(this);
   }
@@ -1355,43 +1289,42 @@ class _$_ResetContent implements _ResetContent {
 }
 
 abstract class _ResetContent implements RestResponseSuccessCodeType {
-  const factory _ResetContent({int intValue}) = _$_ResetContent;
+  const factory _ResetContent({final int intValue}) = _$ResetContentImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$ResetContentCopyWith<_ResetContent> get copyWith =>
+  _$$ResetContentImplCopyWith<_$ResetContentImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$PartialContentCopyWith<$Res>
+abstract class _$$PartialContentImplCopyWith<$Res>
     implements $RestResponseSuccessCodeTypeCopyWith<$Res> {
-  factory _$PartialContentCopyWith(
-          _PartialContent value, $Res Function(_PartialContent) then) =
-      __$PartialContentCopyWithImpl<$Res>;
+  factory _$$PartialContentImplCopyWith(_$PartialContentImpl value,
+          $Res Function(_$PartialContentImpl) then) =
+      __$$PartialContentImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$PartialContentCopyWithImpl<$Res>
-    extends _$RestResponseSuccessCodeTypeCopyWithImpl<$Res>
-    implements _$PartialContentCopyWith<$Res> {
-  __$PartialContentCopyWithImpl(
-      _PartialContent _value, $Res Function(_PartialContent) _then)
-      : super(_value, (v) => _then(v as _PartialContent));
+class __$$PartialContentImplCopyWithImpl<$Res>
+    extends _$RestResponseSuccessCodeTypeCopyWithImpl<$Res,
+        _$PartialContentImpl> implements _$$PartialContentImplCopyWith<$Res> {
+  __$$PartialContentImplCopyWithImpl(
+      _$PartialContentImpl _value, $Res Function(_$PartialContentImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PartialContent get _value => super._value as _PartialContent;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_PartialContent(
-      intValue: intValue == freezed
+    return _then(_$PartialContentImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -1401,12 +1334,12 @@ class __$PartialContentCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PartialContent implements _PartialContent {
-  const _$_PartialContent(
+class _$PartialContentImpl implements _PartialContent {
+  const _$PartialContentImpl(
       {this.intValue = RestResponseSuccessCodeType.partialContentIntValue});
 
-  @JsonKey(defaultValue: RestResponseSuccessCodeType.partialContentIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -1415,10 +1348,10 @@ class _$_PartialContent implements _PartialContent {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PartialContent &&
+            other is _$PartialContentImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -1428,8 +1361,10 @@ class _$_PartialContent implements _PartialContent {
 
   @JsonKey(ignore: true)
   @override
-  _$PartialContentCopyWith<_PartialContent> get copyWith =>
-      __$PartialContentCopyWithImpl<_PartialContent>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PartialContentImplCopyWith<_$PartialContentImpl> get copyWith =>
+      __$$PartialContentImplCopyWithImpl<_$PartialContentImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1451,16 +1386,16 @@ class _$_PartialContent implements _PartialContent {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? ok,
-    TResult Function(int intValue)? created,
-    TResult Function(int intValue)? accepted,
-    TResult Function(int intValue)? nonAuthoritativeInformation,
-    TResult Function(int intValue)? noContent,
-    TResult Function(int intValue)? resetContent,
-    TResult Function(int intValue)? partialContent,
-    TResult Function(int intValue)? multiStatus,
-    TResult Function(int intValue)? alreadyReported,
-    TResult Function(int intValue)? imUsed,
+    TResult? Function(int intValue)? ok,
+    TResult? Function(int intValue)? created,
+    TResult? Function(int intValue)? accepted,
+    TResult? Function(int intValue)? nonAuthoritativeInformation,
+    TResult? Function(int intValue)? noContent,
+    TResult? Function(int intValue)? resetContent,
+    TResult? Function(int intValue)? partialContent,
+    TResult? Function(int intValue)? multiStatus,
+    TResult? Function(int intValue)? alreadyReported,
+    TResult? Function(int intValue)? imUsed,
   }) {
     return partialContent?.call(intValue);
   }
@@ -1507,17 +1442,17 @@ class _$_PartialContent implements _PartialContent {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Ok value)? ok,
-    TResult Function(_Created value)? created,
-    TResult Function(_Accepted value)? accepted,
-    TResult Function(_NonAuthoritativeInformation value)?
+    TResult? Function(_Ok value)? ok,
+    TResult? Function(_Created value)? created,
+    TResult? Function(_Accepted value)? accepted,
+    TResult? Function(_NonAuthoritativeInformation value)?
         nonAuthoritativeInformation,
-    TResult Function(_NoContent value)? noContent,
-    TResult Function(_ResetContent value)? resetContent,
-    TResult Function(_PartialContent value)? partialContent,
-    TResult Function(_MultiStatus value)? multiStatus,
-    TResult Function(_AlreadyReported value)? alreadyReported,
-    TResult Function(_ImUsed value)? imUsed,
+    TResult? Function(_NoContent value)? noContent,
+    TResult? Function(_ResetContent value)? resetContent,
+    TResult? Function(_PartialContent value)? partialContent,
+    TResult? Function(_MultiStatus value)? multiStatus,
+    TResult? Function(_AlreadyReported value)? alreadyReported,
+    TResult? Function(_ImUsed value)? imUsed,
   }) {
     return partialContent?.call(this);
   }
@@ -1546,43 +1481,42 @@ class _$_PartialContent implements _PartialContent {
 }
 
 abstract class _PartialContent implements RestResponseSuccessCodeType {
-  const factory _PartialContent({int intValue}) = _$_PartialContent;
+  const factory _PartialContent({final int intValue}) = _$PartialContentImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$PartialContentCopyWith<_PartialContent> get copyWith =>
+  _$$PartialContentImplCopyWith<_$PartialContentImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$MultiStatusCopyWith<$Res>
+abstract class _$$MultiStatusImplCopyWith<$Res>
     implements $RestResponseSuccessCodeTypeCopyWith<$Res> {
-  factory _$MultiStatusCopyWith(
-          _MultiStatus value, $Res Function(_MultiStatus) then) =
-      __$MultiStatusCopyWithImpl<$Res>;
+  factory _$$MultiStatusImplCopyWith(
+          _$MultiStatusImpl value, $Res Function(_$MultiStatusImpl) then) =
+      __$$MultiStatusImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$MultiStatusCopyWithImpl<$Res>
-    extends _$RestResponseSuccessCodeTypeCopyWithImpl<$Res>
-    implements _$MultiStatusCopyWith<$Res> {
-  __$MultiStatusCopyWithImpl(
-      _MultiStatus _value, $Res Function(_MultiStatus) _then)
-      : super(_value, (v) => _then(v as _MultiStatus));
+class __$$MultiStatusImplCopyWithImpl<$Res>
+    extends _$RestResponseSuccessCodeTypeCopyWithImpl<$Res, _$MultiStatusImpl>
+    implements _$$MultiStatusImplCopyWith<$Res> {
+  __$$MultiStatusImplCopyWithImpl(
+      _$MultiStatusImpl _value, $Res Function(_$MultiStatusImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MultiStatus get _value => super._value as _MultiStatus;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_MultiStatus(
-      intValue: intValue == freezed
+    return _then(_$MultiStatusImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -1592,12 +1526,12 @@ class __$MultiStatusCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_MultiStatus implements _MultiStatus {
-  const _$_MultiStatus(
+class _$MultiStatusImpl implements _MultiStatus {
+  const _$MultiStatusImpl(
       {this.intValue = RestResponseSuccessCodeType.multiStatusIntValue});
 
-  @JsonKey(defaultValue: RestResponseSuccessCodeType.multiStatusIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -1606,10 +1540,10 @@ class _$_MultiStatus implements _MultiStatus {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MultiStatus &&
+            other is _$MultiStatusImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -1619,8 +1553,9 @@ class _$_MultiStatus implements _MultiStatus {
 
   @JsonKey(ignore: true)
   @override
-  _$MultiStatusCopyWith<_MultiStatus> get copyWith =>
-      __$MultiStatusCopyWithImpl<_MultiStatus>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MultiStatusImplCopyWith<_$MultiStatusImpl> get copyWith =>
+      __$$MultiStatusImplCopyWithImpl<_$MultiStatusImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1642,16 +1577,16 @@ class _$_MultiStatus implements _MultiStatus {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? ok,
-    TResult Function(int intValue)? created,
-    TResult Function(int intValue)? accepted,
-    TResult Function(int intValue)? nonAuthoritativeInformation,
-    TResult Function(int intValue)? noContent,
-    TResult Function(int intValue)? resetContent,
-    TResult Function(int intValue)? partialContent,
-    TResult Function(int intValue)? multiStatus,
-    TResult Function(int intValue)? alreadyReported,
-    TResult Function(int intValue)? imUsed,
+    TResult? Function(int intValue)? ok,
+    TResult? Function(int intValue)? created,
+    TResult? Function(int intValue)? accepted,
+    TResult? Function(int intValue)? nonAuthoritativeInformation,
+    TResult? Function(int intValue)? noContent,
+    TResult? Function(int intValue)? resetContent,
+    TResult? Function(int intValue)? partialContent,
+    TResult? Function(int intValue)? multiStatus,
+    TResult? Function(int intValue)? alreadyReported,
+    TResult? Function(int intValue)? imUsed,
   }) {
     return multiStatus?.call(intValue);
   }
@@ -1698,17 +1633,17 @@ class _$_MultiStatus implements _MultiStatus {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Ok value)? ok,
-    TResult Function(_Created value)? created,
-    TResult Function(_Accepted value)? accepted,
-    TResult Function(_NonAuthoritativeInformation value)?
+    TResult? Function(_Ok value)? ok,
+    TResult? Function(_Created value)? created,
+    TResult? Function(_Accepted value)? accepted,
+    TResult? Function(_NonAuthoritativeInformation value)?
         nonAuthoritativeInformation,
-    TResult Function(_NoContent value)? noContent,
-    TResult Function(_ResetContent value)? resetContent,
-    TResult Function(_PartialContent value)? partialContent,
-    TResult Function(_MultiStatus value)? multiStatus,
-    TResult Function(_AlreadyReported value)? alreadyReported,
-    TResult Function(_ImUsed value)? imUsed,
+    TResult? Function(_NoContent value)? noContent,
+    TResult? Function(_ResetContent value)? resetContent,
+    TResult? Function(_PartialContent value)? partialContent,
+    TResult? Function(_MultiStatus value)? multiStatus,
+    TResult? Function(_AlreadyReported value)? alreadyReported,
+    TResult? Function(_ImUsed value)? imUsed,
   }) {
     return multiStatus?.call(this);
   }
@@ -1737,43 +1672,42 @@ class _$_MultiStatus implements _MultiStatus {
 }
 
 abstract class _MultiStatus implements RestResponseSuccessCodeType {
-  const factory _MultiStatus({int intValue}) = _$_MultiStatus;
+  const factory _MultiStatus({final int intValue}) = _$MultiStatusImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$MultiStatusCopyWith<_MultiStatus> get copyWith =>
+  _$$MultiStatusImplCopyWith<_$MultiStatusImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$AlreadyReportedCopyWith<$Res>
+abstract class _$$AlreadyReportedImplCopyWith<$Res>
     implements $RestResponseSuccessCodeTypeCopyWith<$Res> {
-  factory _$AlreadyReportedCopyWith(
-          _AlreadyReported value, $Res Function(_AlreadyReported) then) =
-      __$AlreadyReportedCopyWithImpl<$Res>;
+  factory _$$AlreadyReportedImplCopyWith(_$AlreadyReportedImpl value,
+          $Res Function(_$AlreadyReportedImpl) then) =
+      __$$AlreadyReportedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$AlreadyReportedCopyWithImpl<$Res>
-    extends _$RestResponseSuccessCodeTypeCopyWithImpl<$Res>
-    implements _$AlreadyReportedCopyWith<$Res> {
-  __$AlreadyReportedCopyWithImpl(
-      _AlreadyReported _value, $Res Function(_AlreadyReported) _then)
-      : super(_value, (v) => _then(v as _AlreadyReported));
+class __$$AlreadyReportedImplCopyWithImpl<$Res>
+    extends _$RestResponseSuccessCodeTypeCopyWithImpl<$Res,
+        _$AlreadyReportedImpl> implements _$$AlreadyReportedImplCopyWith<$Res> {
+  __$$AlreadyReportedImplCopyWithImpl(
+      _$AlreadyReportedImpl _value, $Res Function(_$AlreadyReportedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _AlreadyReported get _value => super._value as _AlreadyReported;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_AlreadyReported(
-      intValue: intValue == freezed
+    return _then(_$AlreadyReportedImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -1783,12 +1717,12 @@ class __$AlreadyReportedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_AlreadyReported implements _AlreadyReported {
-  const _$_AlreadyReported(
+class _$AlreadyReportedImpl implements _AlreadyReported {
+  const _$AlreadyReportedImpl(
       {this.intValue = RestResponseSuccessCodeType.alreadyReportedIntValue});
 
-  @JsonKey(defaultValue: RestResponseSuccessCodeType.alreadyReportedIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -1797,10 +1731,10 @@ class _$_AlreadyReported implements _AlreadyReported {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _AlreadyReported &&
+            other is _$AlreadyReportedImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -1810,8 +1744,10 @@ class _$_AlreadyReported implements _AlreadyReported {
 
   @JsonKey(ignore: true)
   @override
-  _$AlreadyReportedCopyWith<_AlreadyReported> get copyWith =>
-      __$AlreadyReportedCopyWithImpl<_AlreadyReported>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AlreadyReportedImplCopyWith<_$AlreadyReportedImpl> get copyWith =>
+      __$$AlreadyReportedImplCopyWithImpl<_$AlreadyReportedImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1833,16 +1769,16 @@ class _$_AlreadyReported implements _AlreadyReported {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? ok,
-    TResult Function(int intValue)? created,
-    TResult Function(int intValue)? accepted,
-    TResult Function(int intValue)? nonAuthoritativeInformation,
-    TResult Function(int intValue)? noContent,
-    TResult Function(int intValue)? resetContent,
-    TResult Function(int intValue)? partialContent,
-    TResult Function(int intValue)? multiStatus,
-    TResult Function(int intValue)? alreadyReported,
-    TResult Function(int intValue)? imUsed,
+    TResult? Function(int intValue)? ok,
+    TResult? Function(int intValue)? created,
+    TResult? Function(int intValue)? accepted,
+    TResult? Function(int intValue)? nonAuthoritativeInformation,
+    TResult? Function(int intValue)? noContent,
+    TResult? Function(int intValue)? resetContent,
+    TResult? Function(int intValue)? partialContent,
+    TResult? Function(int intValue)? multiStatus,
+    TResult? Function(int intValue)? alreadyReported,
+    TResult? Function(int intValue)? imUsed,
   }) {
     return alreadyReported?.call(intValue);
   }
@@ -1889,17 +1825,17 @@ class _$_AlreadyReported implements _AlreadyReported {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Ok value)? ok,
-    TResult Function(_Created value)? created,
-    TResult Function(_Accepted value)? accepted,
-    TResult Function(_NonAuthoritativeInformation value)?
+    TResult? Function(_Ok value)? ok,
+    TResult? Function(_Created value)? created,
+    TResult? Function(_Accepted value)? accepted,
+    TResult? Function(_NonAuthoritativeInformation value)?
         nonAuthoritativeInformation,
-    TResult Function(_NoContent value)? noContent,
-    TResult Function(_ResetContent value)? resetContent,
-    TResult Function(_PartialContent value)? partialContent,
-    TResult Function(_MultiStatus value)? multiStatus,
-    TResult Function(_AlreadyReported value)? alreadyReported,
-    TResult Function(_ImUsed value)? imUsed,
+    TResult? Function(_NoContent value)? noContent,
+    TResult? Function(_ResetContent value)? resetContent,
+    TResult? Function(_PartialContent value)? partialContent,
+    TResult? Function(_MultiStatus value)? multiStatus,
+    TResult? Function(_AlreadyReported value)? alreadyReported,
+    TResult? Function(_ImUsed value)? imUsed,
   }) {
     return alreadyReported?.call(this);
   }
@@ -1928,41 +1864,42 @@ class _$_AlreadyReported implements _AlreadyReported {
 }
 
 abstract class _AlreadyReported implements RestResponseSuccessCodeType {
-  const factory _AlreadyReported({int intValue}) = _$_AlreadyReported;
+  const factory _AlreadyReported({final int intValue}) = _$AlreadyReportedImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$AlreadyReportedCopyWith<_AlreadyReported> get copyWith =>
+  _$$AlreadyReportedImplCopyWith<_$AlreadyReportedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ImUsedCopyWith<$Res>
+abstract class _$$ImUsedImplCopyWith<$Res>
     implements $RestResponseSuccessCodeTypeCopyWith<$Res> {
-  factory _$ImUsedCopyWith(_ImUsed value, $Res Function(_ImUsed) then) =
-      __$ImUsedCopyWithImpl<$Res>;
+  factory _$$ImUsedImplCopyWith(
+          _$ImUsedImpl value, $Res Function(_$ImUsedImpl) then) =
+      __$$ImUsedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$ImUsedCopyWithImpl<$Res>
-    extends _$RestResponseSuccessCodeTypeCopyWithImpl<$Res>
-    implements _$ImUsedCopyWith<$Res> {
-  __$ImUsedCopyWithImpl(_ImUsed _value, $Res Function(_ImUsed) _then)
-      : super(_value, (v) => _then(v as _ImUsed));
+class __$$ImUsedImplCopyWithImpl<$Res>
+    extends _$RestResponseSuccessCodeTypeCopyWithImpl<$Res, _$ImUsedImpl>
+    implements _$$ImUsedImplCopyWith<$Res> {
+  __$$ImUsedImplCopyWithImpl(
+      _$ImUsedImpl _value, $Res Function(_$ImUsedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _ImUsed get _value => super._value as _ImUsed;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_ImUsed(
-      intValue: intValue == freezed
+    return _then(_$ImUsedImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -1972,11 +1909,12 @@ class __$ImUsedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ImUsed implements _ImUsed {
-  const _$_ImUsed({this.intValue = RestResponseSuccessCodeType.imUsedIntValue});
+class _$ImUsedImpl implements _ImUsed {
+  const _$ImUsedImpl(
+      {this.intValue = RestResponseSuccessCodeType.imUsedIntValue});
 
-  @JsonKey(defaultValue: RestResponseSuccessCodeType.imUsedIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -1985,10 +1923,10 @@ class _$_ImUsed implements _ImUsed {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ImUsed &&
+            other is _$ImUsedImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -1998,8 +1936,9 @@ class _$_ImUsed implements _ImUsed {
 
   @JsonKey(ignore: true)
   @override
-  _$ImUsedCopyWith<_ImUsed> get copyWith =>
-      __$ImUsedCopyWithImpl<_ImUsed>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ImUsedImplCopyWith<_$ImUsedImpl> get copyWith =>
+      __$$ImUsedImplCopyWithImpl<_$ImUsedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2021,16 +1960,16 @@ class _$_ImUsed implements _ImUsed {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? ok,
-    TResult Function(int intValue)? created,
-    TResult Function(int intValue)? accepted,
-    TResult Function(int intValue)? nonAuthoritativeInformation,
-    TResult Function(int intValue)? noContent,
-    TResult Function(int intValue)? resetContent,
-    TResult Function(int intValue)? partialContent,
-    TResult Function(int intValue)? multiStatus,
-    TResult Function(int intValue)? alreadyReported,
-    TResult Function(int intValue)? imUsed,
+    TResult? Function(int intValue)? ok,
+    TResult? Function(int intValue)? created,
+    TResult? Function(int intValue)? accepted,
+    TResult? Function(int intValue)? nonAuthoritativeInformation,
+    TResult? Function(int intValue)? noContent,
+    TResult? Function(int intValue)? resetContent,
+    TResult? Function(int intValue)? partialContent,
+    TResult? Function(int intValue)? multiStatus,
+    TResult? Function(int intValue)? alreadyReported,
+    TResult? Function(int intValue)? imUsed,
   }) {
     return imUsed?.call(intValue);
   }
@@ -2077,17 +2016,17 @@ class _$_ImUsed implements _ImUsed {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Ok value)? ok,
-    TResult Function(_Created value)? created,
-    TResult Function(_Accepted value)? accepted,
-    TResult Function(_NonAuthoritativeInformation value)?
+    TResult? Function(_Ok value)? ok,
+    TResult? Function(_Created value)? created,
+    TResult? Function(_Accepted value)? accepted,
+    TResult? Function(_NonAuthoritativeInformation value)?
         nonAuthoritativeInformation,
-    TResult Function(_NoContent value)? noContent,
-    TResult Function(_ResetContent value)? resetContent,
-    TResult Function(_PartialContent value)? partialContent,
-    TResult Function(_MultiStatus value)? multiStatus,
-    TResult Function(_AlreadyReported value)? alreadyReported,
-    TResult Function(_ImUsed value)? imUsed,
+    TResult? Function(_NoContent value)? noContent,
+    TResult? Function(_ResetContent value)? resetContent,
+    TResult? Function(_PartialContent value)? partialContent,
+    TResult? Function(_MultiStatus value)? multiStatus,
+    TResult? Function(_AlreadyReported value)? alreadyReported,
+    TResult? Function(_ImUsed value)? imUsed,
   }) {
     return imUsed?.call(this);
   }
@@ -2116,11 +2055,12 @@ class _$_ImUsed implements _ImUsed {
 }
 
 abstract class _ImUsed implements RestResponseSuccessCodeType {
-  const factory _ImUsed({int intValue}) = _$_ImUsed;
+  const factory _ImUsed({final int intValue}) = _$ImUsedImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$ImUsedCopyWith<_ImUsed> get copyWith => throw _privateConstructorUsedError;
+  _$$ImUsedImplCopyWith<_$ImUsedImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }

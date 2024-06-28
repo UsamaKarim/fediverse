@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_instance_chat_limits_model_impl.dart';
 
@@ -11,33 +12,12 @@ part of 'unifedi_api_instance_chat_limits_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiInstanceChatLimits _$UnifediApiInstanceChatLimitsFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiInstanceChatLimits.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiInstanceChatLimitsTearOff {
-  const _$UnifediApiInstanceChatLimitsTearOff();
-
-  _UnifediApiInstanceChatLimits call(
-      {@HiveField(0)
-      @JsonKey(name: 'message_limit')
-          required int? messageLimit}) {
-    return _UnifediApiInstanceChatLimits(
-      messageLimit: messageLimit,
-    );
-  }
-
-  UnifediApiInstanceChatLimits fromJson(Map<String, Object?> json) {
-    return UnifediApiInstanceChatLimits.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiInstanceChatLimits = _$UnifediApiInstanceChatLimitsTearOff();
 
 /// @nodoc
 mixin _$UnifediApiInstanceChatLimits {
@@ -56,62 +36,66 @@ abstract class $UnifediApiInstanceChatLimitsCopyWith<$Res> {
   factory $UnifediApiInstanceChatLimitsCopyWith(
           UnifediApiInstanceChatLimits value,
           $Res Function(UnifediApiInstanceChatLimits) then) =
-      _$UnifediApiInstanceChatLimitsCopyWithImpl<$Res>;
+      _$UnifediApiInstanceChatLimitsCopyWithImpl<$Res,
+          UnifediApiInstanceChatLimits>;
+  @useResult
   $Res call({@HiveField(0) @JsonKey(name: 'message_limit') int? messageLimit});
 }
 
 /// @nodoc
-class _$UnifediApiInstanceChatLimitsCopyWithImpl<$Res>
+class _$UnifediApiInstanceChatLimitsCopyWithImpl<$Res,
+        $Val extends UnifediApiInstanceChatLimits>
     implements $UnifediApiInstanceChatLimitsCopyWith<$Res> {
   _$UnifediApiInstanceChatLimitsCopyWithImpl(this._value, this._then);
 
-  final UnifediApiInstanceChatLimits _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiInstanceChatLimits) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? messageLimit = freezed,
   }) {
     return _then(_value.copyWith(
-      messageLimit: messageLimit == freezed
+      messageLimit: freezed == messageLimit
           ? _value.messageLimit
           : messageLimit // ignore: cast_nullable_to_non_nullable
               as int?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiInstanceChatLimitsCopyWith<$Res>
+abstract class _$$UnifediApiInstanceChatLimitsImplCopyWith<$Res>
     implements $UnifediApiInstanceChatLimitsCopyWith<$Res> {
-  factory _$UnifediApiInstanceChatLimitsCopyWith(
-          _UnifediApiInstanceChatLimits value,
-          $Res Function(_UnifediApiInstanceChatLimits) then) =
-      __$UnifediApiInstanceChatLimitsCopyWithImpl<$Res>;
+  factory _$$UnifediApiInstanceChatLimitsImplCopyWith(
+          _$UnifediApiInstanceChatLimitsImpl value,
+          $Res Function(_$UnifediApiInstanceChatLimitsImpl) then) =
+      __$$UnifediApiInstanceChatLimitsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) @JsonKey(name: 'message_limit') int? messageLimit});
 }
 
 /// @nodoc
-class __$UnifediApiInstanceChatLimitsCopyWithImpl<$Res>
-    extends _$UnifediApiInstanceChatLimitsCopyWithImpl<$Res>
-    implements _$UnifediApiInstanceChatLimitsCopyWith<$Res> {
-  __$UnifediApiInstanceChatLimitsCopyWithImpl(
-      _UnifediApiInstanceChatLimits _value,
-      $Res Function(_UnifediApiInstanceChatLimits) _then)
-      : super(_value, (v) => _then(v as _UnifediApiInstanceChatLimits));
+class __$$UnifediApiInstanceChatLimitsImplCopyWithImpl<$Res>
+    extends _$UnifediApiInstanceChatLimitsCopyWithImpl<$Res,
+        _$UnifediApiInstanceChatLimitsImpl>
+    implements _$$UnifediApiInstanceChatLimitsImplCopyWith<$Res> {
+  __$$UnifediApiInstanceChatLimitsImplCopyWithImpl(
+      _$UnifediApiInstanceChatLimitsImpl _value,
+      $Res Function(_$UnifediApiInstanceChatLimitsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiInstanceChatLimits get _value =>
-      super._value as _UnifediApiInstanceChatLimits;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? messageLimit = freezed,
   }) {
-    return _then(_UnifediApiInstanceChatLimits(
-      messageLimit: messageLimit == freezed
+    return _then(_$UnifediApiInstanceChatLimitsImpl(
+      messageLimit: freezed == messageLimit
           ? _value.messageLimit
           : messageLimit // ignore: cast_nullable_to_non_nullable
               as int?,
@@ -121,14 +105,16 @@ class __$UnifediApiInstanceChatLimitsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiInstanceChatLimits implements _UnifediApiInstanceChatLimits {
-  const _$_UnifediApiInstanceChatLimits(
+class _$UnifediApiInstanceChatLimitsImpl
+    implements _UnifediApiInstanceChatLimits {
+  const _$UnifediApiInstanceChatLimitsImpl(
       {@HiveField(0)
       @JsonKey(name: 'message_limit')
-          required this.messageLimit});
+      required this.messageLimit});
 
-  factory _$_UnifediApiInstanceChatLimits.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiInstanceChatLimitsFromJson(json);
+  factory _$UnifediApiInstanceChatLimitsImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$UnifediApiInstanceChatLimitsImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -141,26 +127,31 @@ class _$_UnifediApiInstanceChatLimits implements _UnifediApiInstanceChatLimits {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiInstanceChatLimits &&
+            other is _$UnifediApiInstanceChatLimitsImpl &&
             (identical(other.messageLimit, messageLimit) ||
                 other.messageLimit == messageLimit));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, messageLimit);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiInstanceChatLimitsCopyWith<_UnifediApiInstanceChatLimits>
-      get copyWith => __$UnifediApiInstanceChatLimitsCopyWithImpl<
-          _UnifediApiInstanceChatLimits>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiInstanceChatLimitsImplCopyWith<
+          _$UnifediApiInstanceChatLimitsImpl>
+      get copyWith => __$$UnifediApiInstanceChatLimitsImplCopyWithImpl<
+          _$UnifediApiInstanceChatLimitsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiInstanceChatLimitsToJson(this);
+    return _$$UnifediApiInstanceChatLimitsImplToJson(
+      this,
+    );
   }
 }
 
@@ -169,10 +160,10 @@ abstract class _UnifediApiInstanceChatLimits
   const factory _UnifediApiInstanceChatLimits(
       {@HiveField(0)
       @JsonKey(name: 'message_limit')
-          required int? messageLimit}) = _$_UnifediApiInstanceChatLimits;
+      required final int? messageLimit}) = _$UnifediApiInstanceChatLimitsImpl;
 
   factory _UnifediApiInstanceChatLimits.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiInstanceChatLimits.fromJson;
+      _$UnifediApiInstanceChatLimitsImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -180,6 +171,7 @@ abstract class _UnifediApiInstanceChatLimits
   int? get messageLimit;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiInstanceChatLimitsCopyWith<_UnifediApiInstanceChatLimits>
+  _$$UnifediApiInstanceChatLimitsImplCopyWith<
+          _$UnifediApiInstanceChatLimitsImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

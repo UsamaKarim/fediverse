@@ -63,9 +63,9 @@ class MastodonApiWebSocketsChannelAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiWebSocketsChannel _$$_MastodonApiWebSocketsChannelFromJson(
+_$MastodonApiWebSocketsChannelImpl _$$MastodonApiWebSocketsChannelImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiWebSocketsChannel(
+    _$MastodonApiWebSocketsChannelImpl(
       type: json['type'] as String,
       localOnly: json['local_only'] as bool?,
       mediaOnly: json['media_only'] as bool?,
@@ -75,8 +75,8 @@ _$_MastodonApiWebSocketsChannel _$$_MastodonApiWebSocketsChannelFromJson(
       tag: json['tag'] as String?,
     );
 
-Map<String, dynamic> _$$_MastodonApiWebSocketsChannelToJson(
-    _$_MastodonApiWebSocketsChannel instance) {
+Map<String, dynamic> _$$MastodonApiWebSocketsChannelImplToJson(
+    _$MastodonApiWebSocketsChannelImpl instance) {
   final val = <String, dynamic>{
     'type': instance.type,
   };

@@ -78,30 +78,31 @@ class PleromaApiScheduledStatusParamsAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiScheduledStatusParams _$$_PleromaApiScheduledStatusParamsFromJson(
-        Map<String, dynamic> json) =>
-    _$_PleromaApiScheduledStatusParams(
-      expiresInSeconds: json['expires_in'] as int?,
-      text: json['text'] as String?,
-      mediaIds: (json['media_ids'] as List<dynamic>?)
-          ?.map((e) => e as String)
-          .toList(),
-      sensitive: json['sensitive'] as bool,
-      spoilerText: json['spoiler_text'] as String?,
-      visibility: json['visibility'] as String,
-      language: json['language'] as String?,
-      scheduledAt: DateTime.parse(json['scheduled_at'] as String),
-      poll: json['poll'] == null
-          ? null
-          : PleromaApiPostStatusPoll.fromJson(
-              json['poll'] as Map<String, dynamic>),
-      inReplyToId: json['in_reply_to_id'] as String?,
-      inReplyToConversationId: json['in_reply_to_conversation_id'] as String?,
-      to: (json['to'] as List<dynamic>?)?.map((e) => e as String).toList(),
-    );
+_$PleromaApiScheduledStatusParamsImpl
+    _$$PleromaApiScheduledStatusParamsImplFromJson(Map<String, dynamic> json) =>
+        _$PleromaApiScheduledStatusParamsImpl(
+          expiresInSeconds: (json['expires_in'] as num?)?.toInt(),
+          text: json['text'] as String?,
+          mediaIds: (json['media_ids'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList(),
+          sensitive: json['sensitive'] as bool,
+          spoilerText: json['spoiler_text'] as String?,
+          visibility: json['visibility'] as String,
+          language: json['language'] as String?,
+          scheduledAt: DateTime.parse(json['scheduled_at'] as String),
+          poll: json['poll'] == null
+              ? null
+              : PleromaApiPostStatusPoll.fromJson(
+                  json['poll'] as Map<String, dynamic>),
+          inReplyToId: json['in_reply_to_id'] as String?,
+          inReplyToConversationId:
+              json['in_reply_to_conversation_id'] as String?,
+          to: (json['to'] as List<dynamic>?)?.map((e) => e as String).toList(),
+        );
 
-Map<String, dynamic> _$$_PleromaApiScheduledStatusParamsToJson(
-    _$_PleromaApiScheduledStatusParams instance) {
+Map<String, dynamic> _$$PleromaApiScheduledStatusParamsImplToJson(
+    _$PleromaApiScheduledStatusParamsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

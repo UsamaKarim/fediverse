@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'external_share_model.dart';
 
@@ -11,23 +12,7 @@ part of 'external_share_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$ShareUrlFileTearOff {
-  const _$ShareUrlFileTearOff();
-
-  _ShareUrlFile call(
-      {required String url, required String filenameWithExtension}) {
-    return _ShareUrlFile(
-      url: url,
-      filenameWithExtension: filenameWithExtension,
-    );
-  }
-}
-
-/// @nodoc
-const $ShareUrlFile = _$ShareUrlFileTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$ShareUrlFile {
@@ -43,67 +28,71 @@ mixin _$ShareUrlFile {
 abstract class $ShareUrlFileCopyWith<$Res> {
   factory $ShareUrlFileCopyWith(
           ShareUrlFile value, $Res Function(ShareUrlFile) then) =
-      _$ShareUrlFileCopyWithImpl<$Res>;
+      _$ShareUrlFileCopyWithImpl<$Res, ShareUrlFile>;
+  @useResult
   $Res call({String url, String filenameWithExtension});
 }
 
 /// @nodoc
-class _$ShareUrlFileCopyWithImpl<$Res> implements $ShareUrlFileCopyWith<$Res> {
+class _$ShareUrlFileCopyWithImpl<$Res, $Val extends ShareUrlFile>
+    implements $ShareUrlFileCopyWith<$Res> {
   _$ShareUrlFileCopyWithImpl(this._value, this._then);
 
-  final ShareUrlFile _value;
   // ignore: unused_field
-  final $Res Function(ShareUrlFile) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? url = freezed,
-    Object? filenameWithExtension = freezed,
+    Object? url = null,
+    Object? filenameWithExtension = null,
   }) {
     return _then(_value.copyWith(
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      filenameWithExtension: filenameWithExtension == freezed
+      filenameWithExtension: null == filenameWithExtension
           ? _value.filenameWithExtension
           : filenameWithExtension // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$ShareUrlFileCopyWith<$Res>
+abstract class _$$ShareUrlFileImplCopyWith<$Res>
     implements $ShareUrlFileCopyWith<$Res> {
-  factory _$ShareUrlFileCopyWith(
-          _ShareUrlFile value, $Res Function(_ShareUrlFile) then) =
-      __$ShareUrlFileCopyWithImpl<$Res>;
+  factory _$$ShareUrlFileImplCopyWith(
+          _$ShareUrlFileImpl value, $Res Function(_$ShareUrlFileImpl) then) =
+      __$$ShareUrlFileImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String url, String filenameWithExtension});
 }
 
 /// @nodoc
-class __$ShareUrlFileCopyWithImpl<$Res> extends _$ShareUrlFileCopyWithImpl<$Res>
-    implements _$ShareUrlFileCopyWith<$Res> {
-  __$ShareUrlFileCopyWithImpl(
-      _ShareUrlFile _value, $Res Function(_ShareUrlFile) _then)
-      : super(_value, (v) => _then(v as _ShareUrlFile));
+class __$$ShareUrlFileImplCopyWithImpl<$Res>
+    extends _$ShareUrlFileCopyWithImpl<$Res, _$ShareUrlFileImpl>
+    implements _$$ShareUrlFileImplCopyWith<$Res> {
+  __$$ShareUrlFileImplCopyWithImpl(
+      _$ShareUrlFileImpl _value, $Res Function(_$ShareUrlFileImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _ShareUrlFile get _value => super._value as _ShareUrlFile;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? url = freezed,
-    Object? filenameWithExtension = freezed,
+    Object? url = null,
+    Object? filenameWithExtension = null,
   }) {
-    return _then(_ShareUrlFile(
-      url: url == freezed
+    return _then(_$ShareUrlFileImpl(
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      filenameWithExtension: filenameWithExtension == freezed
+      filenameWithExtension: null == filenameWithExtension
           ? _value.filenameWithExtension
           : filenameWithExtension // ignore: cast_nullable_to_non_nullable
               as String,
@@ -113,8 +102,8 @@ class __$ShareUrlFileCopyWithImpl<$Res> extends _$ShareUrlFileCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ShareUrlFile implements _ShareUrlFile {
-  const _$_ShareUrlFile(
+class _$ShareUrlFileImpl implements _ShareUrlFile {
+  const _$ShareUrlFileImpl(
       {required this.url, required this.filenameWithExtension});
 
   @override
@@ -128,10 +117,10 @@ class _$_ShareUrlFile implements _ShareUrlFile {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ShareUrlFile &&
+            other is _$ShareUrlFileImpl &&
             (identical(other.url, url) || other.url == url) &&
             (identical(other.filenameWithExtension, filenameWithExtension) ||
                 other.filenameWithExtension == filenameWithExtension));
@@ -142,14 +131,15 @@ class _$_ShareUrlFile implements _ShareUrlFile {
 
   @JsonKey(ignore: true)
   @override
-  _$ShareUrlFileCopyWith<_ShareUrlFile> get copyWith =>
-      __$ShareUrlFileCopyWithImpl<_ShareUrlFile>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ShareUrlFileImplCopyWith<_$ShareUrlFileImpl> get copyWith =>
+      __$$ShareUrlFileImplCopyWithImpl<_$ShareUrlFileImpl>(this, _$identity);
 }
 
 abstract class _ShareUrlFile implements ShareUrlFile {
   const factory _ShareUrlFile(
-      {required String url,
-      required String filenameWithExtension}) = _$_ShareUrlFile;
+      {required final String url,
+      required final String filenameWithExtension}) = _$ShareUrlFileImpl;
 
   @override
   String get url;
@@ -157,6 +147,6 @@ abstract class _ShareUrlFile implements ShareUrlFile {
   String get filenameWithExtension;
   @override
   @JsonKey(ignore: true)
-  _$ShareUrlFileCopyWith<_ShareUrlFile> get copyWith =>
+  _$$ShareUrlFileImplCopyWith<_$ShareUrlFileImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

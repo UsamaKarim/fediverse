@@ -72,9 +72,9 @@ class PleromaApiWebSocketsChannelAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiWebSocketsChannel _$$_PleromaApiWebSocketsChannelFromJson(
+_$PleromaApiWebSocketsChannelImpl _$$PleromaApiWebSocketsChannelImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiWebSocketsChannel(
+    _$PleromaApiWebSocketsChannelImpl(
       type: json['type'] as String,
       localOnly: json['local_only'] as bool?,
       remoteOnly: json['remote_only'] as bool?,
@@ -87,8 +87,8 @@ _$_PleromaApiWebSocketsChannel _$$_PleromaApiWebSocketsChannelFromJson(
       tag: json['tag'] as String?,
     );
 
-Map<String, dynamic> _$$_PleromaApiWebSocketsChannelToJson(
-    _$_PleromaApiWebSocketsChannel instance) {
+Map<String, dynamic> _$$PleromaApiWebSocketsChannelImplToJson(
+    _$PleromaApiWebSocketsChannelImpl instance) {
   final val = <String, dynamic>{
     'type': instance.type,
   };

@@ -54,17 +54,17 @@ class MastodonApiMediaAttachmentSizeAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiMediaAttachmentSize _$$_MastodonApiMediaAttachmentSizeFromJson(
-        Map<String, dynamic> json) =>
-    _$_MastodonApiMediaAttachmentSize(
-      width: json['width'] as int,
-      height: json['height'] as int,
-      size: json['size'] as String?,
-      aspect: (json['aspect'] as num?)?.toDouble(),
-    );
+_$MastodonApiMediaAttachmentSizeImpl
+    _$$MastodonApiMediaAttachmentSizeImplFromJson(Map<String, dynamic> json) =>
+        _$MastodonApiMediaAttachmentSizeImpl(
+          width: (json['width'] as num).toInt(),
+          height: (json['height'] as num).toInt(),
+          size: json['size'] as String?,
+          aspect: (json['aspect'] as num?)?.toDouble(),
+        );
 
-Map<String, dynamic> _$$_MastodonApiMediaAttachmentSizeToJson(
-    _$_MastodonApiMediaAttachmentSize instance) {
+Map<String, dynamic> _$$MastodonApiMediaAttachmentSizeImplToJson(
+    _$MastodonApiMediaAttachmentSizeImpl instance) {
   final val = <String, dynamic>{
     'width': instance.width,
     'height': instance.height,

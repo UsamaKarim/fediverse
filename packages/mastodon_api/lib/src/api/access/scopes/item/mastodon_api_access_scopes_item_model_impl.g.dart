@@ -48,15 +48,15 @@ class MastodonApiAccessScopesItemAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiAccessScopesItem _$$_MastodonApiAccessScopesItemFromJson(
+_$MastodonApiAccessScopesItemImpl _$$MastodonApiAccessScopesItemImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiAccessScopesItem(
+    _$MastodonApiAccessScopesItemImpl(
       permission: json['permission'] as String,
       target: json['target'] as String,
     );
 
-Map<String, dynamic> _$$_MastodonApiAccessScopesItemToJson(
-        _$_MastodonApiAccessScopesItem instance) =>
+Map<String, dynamic> _$$MastodonApiAccessScopesItemImplToJson(
+        _$MastodonApiAccessScopesItemImpl instance) =>
     <String, dynamic>{
       'permission': instance.permission,
       'target': instance.target,

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_rest_error_details_model_pleroma_adapter.dart';
 
@@ -11,33 +12,13 @@ part of 'unifedi_api_rest_error_details_model_pleroma_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiRestErrorDetailsPleromaAdapter
     _$UnifediApiRestErrorDetailsPleromaAdapterFromJson(
         Map<String, dynamic> json) {
   return _UnifediApiRestErrorDetailsPleromaAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiRestErrorDetailsPleromaAdapterTearOff {
-  const _$UnifediApiRestErrorDetailsPleromaAdapterTearOff();
-
-  _UnifediApiRestErrorDetailsPleromaAdapter call(
-      @HiveField(0) PleromaApiRestErrorDetails value) {
-    return _UnifediApiRestErrorDetailsPleromaAdapter(
-      value,
-    );
-  }
-
-  UnifediApiRestErrorDetailsPleromaAdapter fromJson(Map<String, Object?> json) {
-    return UnifediApiRestErrorDetailsPleromaAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiRestErrorDetailsPleromaAdapter =
-    _$UnifediApiRestErrorDetailsPleromaAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiRestErrorDetailsPleromaAdapter {
@@ -56,50 +37,57 @@ abstract class $UnifediApiRestErrorDetailsPleromaAdapterCopyWith<$Res> {
   factory $UnifediApiRestErrorDetailsPleromaAdapterCopyWith(
           UnifediApiRestErrorDetailsPleromaAdapter value,
           $Res Function(UnifediApiRestErrorDetailsPleromaAdapter) then) =
-      _$UnifediApiRestErrorDetailsPleromaAdapterCopyWithImpl<$Res>;
+      _$UnifediApiRestErrorDetailsPleromaAdapterCopyWithImpl<$Res,
+          UnifediApiRestErrorDetailsPleromaAdapter>;
+  @useResult
   $Res call({@HiveField(0) PleromaApiRestErrorDetails value});
 
   $PleromaApiRestErrorDetailsCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiRestErrorDetailsPleromaAdapterCopyWithImpl<$Res>
+class _$UnifediApiRestErrorDetailsPleromaAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiRestErrorDetailsPleromaAdapter>
     implements $UnifediApiRestErrorDetailsPleromaAdapterCopyWith<$Res> {
   _$UnifediApiRestErrorDetailsPleromaAdapterCopyWithImpl(
       this._value, this._then);
 
-  final UnifediApiRestErrorDetailsPleromaAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiRestErrorDetailsPleromaAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiRestErrorDetails,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiRestErrorDetailsCopyWith<$Res> get value {
     return $PleromaApiRestErrorDetailsCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiRestErrorDetailsPleromaAdapterCopyWith<$Res>
+abstract class _$$UnifediApiRestErrorDetailsPleromaAdapterImplCopyWith<$Res>
     implements $UnifediApiRestErrorDetailsPleromaAdapterCopyWith<$Res> {
-  factory _$UnifediApiRestErrorDetailsPleromaAdapterCopyWith(
-          _UnifediApiRestErrorDetailsPleromaAdapter value,
-          $Res Function(_UnifediApiRestErrorDetailsPleromaAdapter) then) =
-      __$UnifediApiRestErrorDetailsPleromaAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiRestErrorDetailsPleromaAdapterImplCopyWith(
+          _$UnifediApiRestErrorDetailsPleromaAdapterImpl value,
+          $Res Function(_$UnifediApiRestErrorDetailsPleromaAdapterImpl) then) =
+      __$$UnifediApiRestErrorDetailsPleromaAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) PleromaApiRestErrorDetails value});
 
   @override
@@ -107,25 +95,22 @@ abstract class _$UnifediApiRestErrorDetailsPleromaAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiRestErrorDetailsPleromaAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiRestErrorDetailsPleromaAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiRestErrorDetailsPleromaAdapterCopyWith<$Res> {
-  __$UnifediApiRestErrorDetailsPleromaAdapterCopyWithImpl(
-      _UnifediApiRestErrorDetailsPleromaAdapter _value,
-      $Res Function(_UnifediApiRestErrorDetailsPleromaAdapter) _then)
-      : super(_value,
-            (v) => _then(v as _UnifediApiRestErrorDetailsPleromaAdapter));
+class __$$UnifediApiRestErrorDetailsPleromaAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiRestErrorDetailsPleromaAdapterCopyWithImpl<$Res,
+        _$UnifediApiRestErrorDetailsPleromaAdapterImpl>
+    implements _$$UnifediApiRestErrorDetailsPleromaAdapterImplCopyWith<$Res> {
+  __$$UnifediApiRestErrorDetailsPleromaAdapterImplCopyWithImpl(
+      _$UnifediApiRestErrorDetailsPleromaAdapterImpl _value,
+      $Res Function(_$UnifediApiRestErrorDetailsPleromaAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiRestErrorDetailsPleromaAdapter get _value =>
-      super._value as _UnifediApiRestErrorDetailsPleromaAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiRestErrorDetailsPleromaAdapter(
-      value == freezed
+    return _then(_$UnifediApiRestErrorDetailsPleromaAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiRestErrorDetails,
@@ -135,14 +120,14 @@ class __$UnifediApiRestErrorDetailsPleromaAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiRestErrorDetailsPleromaAdapter
+class _$UnifediApiRestErrorDetailsPleromaAdapterImpl
     extends _UnifediApiRestErrorDetailsPleromaAdapter {
-  const _$_UnifediApiRestErrorDetailsPleromaAdapter(@HiveField(0) this.value)
+  const _$UnifediApiRestErrorDetailsPleromaAdapterImpl(@HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiRestErrorDetailsPleromaAdapter.fromJson(
+  factory _$UnifediApiRestErrorDetailsPleromaAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiRestErrorDetailsPleromaAdapterFromJson(json);
+      _$$UnifediApiRestErrorDetailsPleromaAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -154,46 +139,51 @@ class _$_UnifediApiRestErrorDetailsPleromaAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiRestErrorDetailsPleromaAdapter &&
+            other is _$UnifediApiRestErrorDetailsPleromaAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiRestErrorDetailsPleromaAdapterCopyWith<
-          _UnifediApiRestErrorDetailsPleromaAdapter>
-      get copyWith => __$UnifediApiRestErrorDetailsPleromaAdapterCopyWithImpl<
-          _UnifediApiRestErrorDetailsPleromaAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiRestErrorDetailsPleromaAdapterImplCopyWith<
+          _$UnifediApiRestErrorDetailsPleromaAdapterImpl>
+      get copyWith =>
+          __$$UnifediApiRestErrorDetailsPleromaAdapterImplCopyWithImpl<
+              _$UnifediApiRestErrorDetailsPleromaAdapterImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiRestErrorDetailsPleromaAdapterToJson(this);
+    return _$$UnifediApiRestErrorDetailsPleromaAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiRestErrorDetailsPleromaAdapter
     extends UnifediApiRestErrorDetailsPleromaAdapter {
   const factory _UnifediApiRestErrorDetailsPleromaAdapter(
-          @HiveField(0) PleromaApiRestErrorDetails value) =
-      _$_UnifediApiRestErrorDetailsPleromaAdapter;
+          @HiveField(0) final PleromaApiRestErrorDetails value) =
+      _$UnifediApiRestErrorDetailsPleromaAdapterImpl;
   const _UnifediApiRestErrorDetailsPleromaAdapter._() : super._();
 
   factory _UnifediApiRestErrorDetailsPleromaAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiRestErrorDetailsPleromaAdapter.fromJson;
+      _$UnifediApiRestErrorDetailsPleromaAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   PleromaApiRestErrorDetails get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiRestErrorDetailsPleromaAdapterCopyWith<
-          _UnifediApiRestErrorDetailsPleromaAdapter>
+  _$$UnifediApiRestErrorDetailsPleromaAdapterImplCopyWith<
+          _$UnifediApiRestErrorDetailsPleromaAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -48,17 +48,17 @@ class MastodonApiPushSubscriptionMetadataAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiPushSubscribeRequestSubscription
-    _$$_MastodonApiPushSubscribeRequestSubscriptionFromJson(
+_$MastodonApiPushSubscribeRequestSubscriptionImpl
+    _$$MastodonApiPushSubscribeRequestSubscriptionImplFromJson(
             Map<String, dynamic> json) =>
-        _$_MastodonApiPushSubscribeRequestSubscription(
+        _$MastodonApiPushSubscribeRequestSubscriptionImpl(
           endpoint: json['endpoint'] as String,
           keys: MastodonApiPushSubscriptionKeys.fromJson(
               json['keys'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_MastodonApiPushSubscribeRequestSubscriptionToJson(
-        _$_MastodonApiPushSubscribeRequestSubscription instance) =>
+Map<String, dynamic> _$$MastodonApiPushSubscribeRequestSubscriptionImplToJson(
+        _$MastodonApiPushSubscribeRequestSubscriptionImpl instance) =>
     <String, dynamic>{
       'endpoint': instance.endpoint,
       'keys': instance.keys.toJson(),

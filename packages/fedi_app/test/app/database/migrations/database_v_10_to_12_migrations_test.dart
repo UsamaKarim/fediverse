@@ -1,9 +1,9 @@
 import 'dart:io';
 
+import 'package:drift/native.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/pending/pending_model.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:moor/ffi.dart';
 
 import '../../account/database/account_database_test_helper.dart';
 import '../../chat/message/database/chat_message_database_test_helper.dart';
@@ -21,7 +21,7 @@ void main() {
     var filePath = 'test_resources/app/database/fedi2_database_dump_v10.sqlite';
     var file = File(filePath);
     dbFile = await file.copy(filePath + '.temp');
-    database = AppDatabase(VmDatabase(dbFile));
+    database = AppDatabase(NativeDatabase(dbFile));
     dbAccount =
         await AccountDatabaseMockHelper.createTestDbAccount(seed: 'seed');
     await database.accountDao.insert(entity: dbAccount, mode: null);

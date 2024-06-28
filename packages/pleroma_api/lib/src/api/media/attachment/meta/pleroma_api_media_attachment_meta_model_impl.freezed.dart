@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_media_attachment_meta_model_impl.dart';
 
@@ -11,35 +12,12 @@ part of 'pleroma_api_media_attachment_meta_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiMediaAttachmentMeta _$PleromaApiMediaAttachmentMetaFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiMediaAttachmentMeta.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiMediaAttachmentMetaTearOff {
-  const _$PleromaApiMediaAttachmentMetaTearOff();
-
-  _PleromaApiMediaAttachmentMeta call(
-      {@HiveField(0) required PleromaApiMediaAttachmentFocus? focus,
-      @HiveField(1) required PleromaApiMediaAttachmentSize? original,
-      @HiveField(2) required PleromaApiMediaAttachmentSize? small}) {
-    return _PleromaApiMediaAttachmentMeta(
-      focus: focus,
-      original: original,
-      small: small,
-    );
-  }
-
-  PleromaApiMediaAttachmentMeta fromJson(Map<String, Object?> json) {
-    return PleromaApiMediaAttachmentMeta.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiMediaAttachmentMeta = _$PleromaApiMediaAttachmentMetaTearOff();
 
 /// @nodoc
 mixin _$PleromaApiMediaAttachmentMeta {
@@ -64,7 +42,9 @@ abstract class $PleromaApiMediaAttachmentMetaCopyWith<$Res> {
   factory $PleromaApiMediaAttachmentMetaCopyWith(
           PleromaApiMediaAttachmentMeta value,
           $Res Function(PleromaApiMediaAttachmentMeta) then) =
-      _$PleromaApiMediaAttachmentMetaCopyWithImpl<$Res>;
+      _$PleromaApiMediaAttachmentMetaCopyWithImpl<$Res,
+          PleromaApiMediaAttachmentMeta>;
+  @useResult
   $Res call(
       {@HiveField(0) PleromaApiMediaAttachmentFocus? focus,
       @HiveField(1) PleromaApiMediaAttachmentSize? original,
@@ -76,14 +56,17 @@ abstract class $PleromaApiMediaAttachmentMetaCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiMediaAttachmentMetaCopyWithImpl<$Res>
+class _$PleromaApiMediaAttachmentMetaCopyWithImpl<$Res,
+        $Val extends PleromaApiMediaAttachmentMeta>
     implements $PleromaApiMediaAttachmentMetaCopyWith<$Res> {
   _$PleromaApiMediaAttachmentMetaCopyWithImpl(this._value, this._then);
 
-  final PleromaApiMediaAttachmentMeta _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiMediaAttachmentMeta) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? focus = freezed,
@@ -91,22 +74,23 @@ class _$PleromaApiMediaAttachmentMetaCopyWithImpl<$Res>
     Object? small = freezed,
   }) {
     return _then(_value.copyWith(
-      focus: focus == freezed
+      focus: freezed == focus
           ? _value.focus
           : focus // ignore: cast_nullable_to_non_nullable
               as PleromaApiMediaAttachmentFocus?,
-      original: original == freezed
+      original: freezed == original
           ? _value.original
           : original // ignore: cast_nullable_to_non_nullable
               as PleromaApiMediaAttachmentSize?,
-      small: small == freezed
+      small: freezed == small
           ? _value.small
           : small // ignore: cast_nullable_to_non_nullable
               as PleromaApiMediaAttachmentSize?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiMediaAttachmentFocusCopyWith<$Res>? get focus {
     if (_value.focus == null) {
       return null;
@@ -114,11 +98,12 @@ class _$PleromaApiMediaAttachmentMetaCopyWithImpl<$Res>
 
     return $PleromaApiMediaAttachmentFocusCopyWith<$Res>(_value.focus!,
         (value) {
-      return _then(_value.copyWith(focus: value));
+      return _then(_value.copyWith(focus: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiMediaAttachmentSizeCopyWith<$Res>? get original {
     if (_value.original == null) {
       return null;
@@ -126,30 +111,32 @@ class _$PleromaApiMediaAttachmentMetaCopyWithImpl<$Res>
 
     return $PleromaApiMediaAttachmentSizeCopyWith<$Res>(_value.original!,
         (value) {
-      return _then(_value.copyWith(original: value));
+      return _then(_value.copyWith(original: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiMediaAttachmentSizeCopyWith<$Res>? get small {
     if (_value.small == null) {
       return null;
     }
 
     return $PleromaApiMediaAttachmentSizeCopyWith<$Res>(_value.small!, (value) {
-      return _then(_value.copyWith(small: value));
+      return _then(_value.copyWith(small: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiMediaAttachmentMetaCopyWith<$Res>
+abstract class _$$PleromaApiMediaAttachmentMetaImplCopyWith<$Res>
     implements $PleromaApiMediaAttachmentMetaCopyWith<$Res> {
-  factory _$PleromaApiMediaAttachmentMetaCopyWith(
-          _PleromaApiMediaAttachmentMeta value,
-          $Res Function(_PleromaApiMediaAttachmentMeta) then) =
-      __$PleromaApiMediaAttachmentMetaCopyWithImpl<$Res>;
+  factory _$$PleromaApiMediaAttachmentMetaImplCopyWith(
+          _$PleromaApiMediaAttachmentMetaImpl value,
+          $Res Function(_$PleromaApiMediaAttachmentMetaImpl) then) =
+      __$$PleromaApiMediaAttachmentMetaImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) PleromaApiMediaAttachmentFocus? focus,
       @HiveField(1) PleromaApiMediaAttachmentSize? original,
@@ -164,34 +151,32 @@ abstract class _$PleromaApiMediaAttachmentMetaCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiMediaAttachmentMetaCopyWithImpl<$Res>
-    extends _$PleromaApiMediaAttachmentMetaCopyWithImpl<$Res>
-    implements _$PleromaApiMediaAttachmentMetaCopyWith<$Res> {
-  __$PleromaApiMediaAttachmentMetaCopyWithImpl(
-      _PleromaApiMediaAttachmentMeta _value,
-      $Res Function(_PleromaApiMediaAttachmentMeta) _then)
-      : super(_value, (v) => _then(v as _PleromaApiMediaAttachmentMeta));
+class __$$PleromaApiMediaAttachmentMetaImplCopyWithImpl<$Res>
+    extends _$PleromaApiMediaAttachmentMetaCopyWithImpl<$Res,
+        _$PleromaApiMediaAttachmentMetaImpl>
+    implements _$$PleromaApiMediaAttachmentMetaImplCopyWith<$Res> {
+  __$$PleromaApiMediaAttachmentMetaImplCopyWithImpl(
+      _$PleromaApiMediaAttachmentMetaImpl _value,
+      $Res Function(_$PleromaApiMediaAttachmentMetaImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiMediaAttachmentMeta get _value =>
-      super._value as _PleromaApiMediaAttachmentMeta;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? focus = freezed,
     Object? original = freezed,
     Object? small = freezed,
   }) {
-    return _then(_PleromaApiMediaAttachmentMeta(
-      focus: focus == freezed
+    return _then(_$PleromaApiMediaAttachmentMetaImpl(
+      focus: freezed == focus
           ? _value.focus
           : focus // ignore: cast_nullable_to_non_nullable
               as PleromaApiMediaAttachmentFocus?,
-      original: original == freezed
+      original: freezed == original
           ? _value.original
           : original // ignore: cast_nullable_to_non_nullable
               as PleromaApiMediaAttachmentSize?,
-      small: small == freezed
+      small: freezed == small
           ? _value.small
           : small // ignore: cast_nullable_to_non_nullable
               as PleromaApiMediaAttachmentSize?,
@@ -201,16 +186,16 @@ class __$PleromaApiMediaAttachmentMetaCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiMediaAttachmentMeta
+class _$PleromaApiMediaAttachmentMetaImpl
     implements _PleromaApiMediaAttachmentMeta {
-  const _$_PleromaApiMediaAttachmentMeta(
+  const _$PleromaApiMediaAttachmentMetaImpl(
       {@HiveField(0) required this.focus,
       @HiveField(1) required this.original,
       @HiveField(2) required this.small});
 
-  factory _$_PleromaApiMediaAttachmentMeta.fromJson(
+  factory _$PleromaApiMediaAttachmentMetaImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_PleromaApiMediaAttachmentMetaFromJson(json);
+      _$$PleromaApiMediaAttachmentMetaImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -228,41 +213,46 @@ class _$_PleromaApiMediaAttachmentMeta
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiMediaAttachmentMeta &&
+            other is _$PleromaApiMediaAttachmentMetaImpl &&
             (identical(other.focus, focus) || other.focus == focus) &&
             (identical(other.original, original) ||
                 other.original == original) &&
             (identical(other.small, small) || other.small == small));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, focus, original, small);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiMediaAttachmentMetaCopyWith<_PleromaApiMediaAttachmentMeta>
-      get copyWith => __$PleromaApiMediaAttachmentMetaCopyWithImpl<
-          _PleromaApiMediaAttachmentMeta>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiMediaAttachmentMetaImplCopyWith<
+          _$PleromaApiMediaAttachmentMetaImpl>
+      get copyWith => __$$PleromaApiMediaAttachmentMetaImplCopyWithImpl<
+          _$PleromaApiMediaAttachmentMetaImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiMediaAttachmentMetaToJson(this);
+    return _$$PleromaApiMediaAttachmentMetaImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiMediaAttachmentMeta
     implements PleromaApiMediaAttachmentMeta {
   const factory _PleromaApiMediaAttachmentMeta(
-          {@HiveField(0) required PleromaApiMediaAttachmentFocus? focus,
-          @HiveField(1) required PleromaApiMediaAttachmentSize? original,
-          @HiveField(2) required PleromaApiMediaAttachmentSize? small}) =
-      _$_PleromaApiMediaAttachmentMeta;
+          {@HiveField(0) required final PleromaApiMediaAttachmentFocus? focus,
+          @HiveField(1) required final PleromaApiMediaAttachmentSize? original,
+          @HiveField(2) required final PleromaApiMediaAttachmentSize? small}) =
+      _$PleromaApiMediaAttachmentMetaImpl;
 
   factory _PleromaApiMediaAttachmentMeta.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiMediaAttachmentMeta.fromJson;
+      _$PleromaApiMediaAttachmentMetaImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -275,6 +265,7 @@ abstract class _PleromaApiMediaAttachmentMeta
   PleromaApiMediaAttachmentSize? get small;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiMediaAttachmentMetaCopyWith<_PleromaApiMediaAttachmentMeta>
+  _$$PleromaApiMediaAttachmentMetaImplCopyWith<
+          _$PleromaApiMediaAttachmentMetaImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -46,15 +46,15 @@ class PleromaApiFrontendConfigurationsSoapboxFeAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiFrontendConfigurationsSoapboxFe
-    _$$_PleromaApiFrontendConfigurationsSoapboxFeFromJson(
+_$PleromaApiFrontendConfigurationsSoapboxFeImpl
+    _$$PleromaApiFrontendConfigurationsSoapboxFeImplFromJson(
             Map<String, dynamic> json) =>
-        _$_PleromaApiFrontendConfigurationsSoapboxFe(
+        _$PleromaApiFrontendConfigurationsSoapboxFeImpl(
           brandColor: json['brandColor'] as String?,
         );
 
-Map<String, dynamic> _$$_PleromaApiFrontendConfigurationsSoapboxFeToJson(
-    _$_PleromaApiFrontendConfigurationsSoapboxFe instance) {
+Map<String, dynamic> _$$PleromaApiFrontendConfigurationsSoapboxFeImplToJson(
+    _$PleromaApiFrontendConfigurationsSoapboxFeImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

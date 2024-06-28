@@ -45,16 +45,16 @@ class UnifediApiSearchResultMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiSearchResultMastodonAdapter
-    _$$_UnifediApiSearchResultMastodonAdapterFromJson(
+_$UnifediApiSearchResultMastodonAdapterImpl
+    _$$UnifediApiSearchResultMastodonAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiSearchResultMastodonAdapter(
+        _$UnifediApiSearchResultMastodonAdapterImpl(
           MastodonApiSearchResult.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiSearchResultMastodonAdapterToJson(
-        _$_UnifediApiSearchResultMastodonAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiSearchResultMastodonAdapterImplToJson(
+        _$UnifediApiSearchResultMastodonAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

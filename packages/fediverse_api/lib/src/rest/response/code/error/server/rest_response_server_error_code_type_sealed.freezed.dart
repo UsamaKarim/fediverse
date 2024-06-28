@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'rest_response_server_error_code_type_sealed.dart';
 
@@ -11,104 +12,11 @@ part of 'rest_response_server_error_code_type_sealed.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$RestResponseServerErrorCodeTypeTearOff {
-  const _$RestResponseServerErrorCodeTypeTearOff();
-
-  _InternalServerError internalServerError(
-      {int intValue =
-          RestResponseServerErrorCodeType.internalServerErrorIntValue}) {
-    return _InternalServerError(
-      intValue: intValue,
-    );
-  }
-
-  _NotImplemented notImplemented(
-      {int intValue = RestResponseServerErrorCodeType.notImplementedIntValue}) {
-    return _NotImplemented(
-      intValue: intValue,
-    );
-  }
-
-  _BadGateway badGateway(
-      {int intValue = RestResponseServerErrorCodeType.badGatewayIntValue}) {
-    return _BadGateway(
-      intValue: intValue,
-    );
-  }
-
-  _ServiceUnavailable serviceUnavailable(
-      {int intValue =
-          RestResponseServerErrorCodeType.serviceUnavailableIntValue}) {
-    return _ServiceUnavailable(
-      intValue: intValue,
-    );
-  }
-
-  _GatewayTimeout gatewayTimeout(
-      {int intValue = RestResponseServerErrorCodeType.gatewayTimeoutIntValue}) {
-    return _GatewayTimeout(
-      intValue: intValue,
-    );
-  }
-
-  _HttpNotSupported httpNotSupported(
-      {int intValue =
-          RestResponseServerErrorCodeType.httpNotSupportedIntValue}) {
-    return _HttpNotSupported(
-      intValue: intValue,
-    );
-  }
-
-  _VariantAlsoNegotiates variantAlsoNegotiates(
-      {int intValue =
-          RestResponseServerErrorCodeType.variantAlsoNegotiatesIntValue}) {
-    return _VariantAlsoNegotiates(
-      intValue: intValue,
-    );
-  }
-
-  _InsufficientStorage insufficientStorage(
-      {int intValue =
-          RestResponseServerErrorCodeType.insufficientStorageIntValue}) {
-    return _InsufficientStorage(
-      intValue: intValue,
-    );
-  }
-
-  _LoopDetected loopDetected(
-      {int intValue = RestResponseServerErrorCodeType.loopDetectedIntValue}) {
-    return _LoopDetected(
-      intValue: intValue,
-    );
-  }
-
-  _NotExtended notExtended(
-      {int intValue = RestResponseServerErrorCodeType.notExtendedIntValue}) {
-    return _NotExtended(
-      intValue: intValue,
-    );
-  }
-
-  _NetworkAuthenticationRequired networkAuthenticationRequired(
-      {int intValue = RestResponseServerErrorCodeType
-          .networkAuthenticationRequiredIntValue}) {
-    return _NetworkAuthenticationRequired(
-      intValue: intValue,
-    );
-  }
-}
-
-/// @nodoc
-const $RestResponseServerErrorCodeType =
-    _$RestResponseServerErrorCodeTypeTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$RestResponseServerErrorCodeType {
   int get intValue => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(int intValue) internalServerError,
@@ -126,17 +34,17 @@ mixin _$RestResponseServerErrorCodeType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? internalServerError,
-    TResult Function(int intValue)? notImplemented,
-    TResult Function(int intValue)? badGateway,
-    TResult Function(int intValue)? serviceUnavailable,
-    TResult Function(int intValue)? gatewayTimeout,
-    TResult Function(int intValue)? httpNotSupported,
-    TResult Function(int intValue)? variantAlsoNegotiates,
-    TResult Function(int intValue)? insufficientStorage,
-    TResult Function(int intValue)? loopDetected,
-    TResult Function(int intValue)? notExtended,
-    TResult Function(int intValue)? networkAuthenticationRequired,
+    TResult? Function(int intValue)? internalServerError,
+    TResult? Function(int intValue)? notImplemented,
+    TResult? Function(int intValue)? badGateway,
+    TResult? Function(int intValue)? serviceUnavailable,
+    TResult? Function(int intValue)? gatewayTimeout,
+    TResult? Function(int intValue)? httpNotSupported,
+    TResult? Function(int intValue)? variantAlsoNegotiates,
+    TResult? Function(int intValue)? insufficientStorage,
+    TResult? Function(int intValue)? loopDetected,
+    TResult? Function(int intValue)? notExtended,
+    TResult? Function(int intValue)? networkAuthenticationRequired,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -174,17 +82,17 @@ mixin _$RestResponseServerErrorCodeType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InternalServerError value)? internalServerError,
-    TResult Function(_NotImplemented value)? notImplemented,
-    TResult Function(_BadGateway value)? badGateway,
-    TResult Function(_ServiceUnavailable value)? serviceUnavailable,
-    TResult Function(_GatewayTimeout value)? gatewayTimeout,
-    TResult Function(_HttpNotSupported value)? httpNotSupported,
-    TResult Function(_VariantAlsoNegotiates value)? variantAlsoNegotiates,
-    TResult Function(_InsufficientStorage value)? insufficientStorage,
-    TResult Function(_LoopDetected value)? loopDetected,
-    TResult Function(_NotExtended value)? notExtended,
-    TResult Function(_NetworkAuthenticationRequired value)?
+    TResult? Function(_InternalServerError value)? internalServerError,
+    TResult? Function(_NotImplemented value)? notImplemented,
+    TResult? Function(_BadGateway value)? badGateway,
+    TResult? Function(_ServiceUnavailable value)? serviceUnavailable,
+    TResult? Function(_GatewayTimeout value)? gatewayTimeout,
+    TResult? Function(_HttpNotSupported value)? httpNotSupported,
+    TResult? Function(_VariantAlsoNegotiates value)? variantAlsoNegotiates,
+    TResult? Function(_InsufficientStorage value)? insufficientStorage,
+    TResult? Function(_LoopDetected value)? loopDetected,
+    TResult? Function(_NotExtended value)? notExtended,
+    TResult? Function(_NetworkAuthenticationRequired value)?
         networkAuthenticationRequired,
   }) =>
       throw _privateConstructorUsedError;
@@ -216,59 +124,64 @@ abstract class $RestResponseServerErrorCodeTypeCopyWith<$Res> {
   factory $RestResponseServerErrorCodeTypeCopyWith(
           RestResponseServerErrorCodeType value,
           $Res Function(RestResponseServerErrorCodeType) then) =
-      _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res>;
+      _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res,
+          RestResponseServerErrorCodeType>;
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res>
+class _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res,
+        $Val extends RestResponseServerErrorCodeType>
     implements $RestResponseServerErrorCodeTypeCopyWith<$Res> {
   _$RestResponseServerErrorCodeTypeCopyWithImpl(this._value, this._then);
 
-  final RestResponseServerErrorCodeType _value;
   // ignore: unused_field
-  final $Res Function(RestResponseServerErrorCodeType) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
     return _then(_value.copyWith(
-      intValue: intValue == freezed
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$InternalServerErrorCopyWith<$Res>
+abstract class _$$InternalServerErrorImplCopyWith<$Res>
     implements $RestResponseServerErrorCodeTypeCopyWith<$Res> {
-  factory _$InternalServerErrorCopyWith(_InternalServerError value,
-          $Res Function(_InternalServerError) then) =
-      __$InternalServerErrorCopyWithImpl<$Res>;
+  factory _$$InternalServerErrorImplCopyWith(_$InternalServerErrorImpl value,
+          $Res Function(_$InternalServerErrorImpl) then) =
+      __$$InternalServerErrorImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$InternalServerErrorCopyWithImpl<$Res>
-    extends _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res>
-    implements _$InternalServerErrorCopyWith<$Res> {
-  __$InternalServerErrorCopyWithImpl(
-      _InternalServerError _value, $Res Function(_InternalServerError) _then)
-      : super(_value, (v) => _then(v as _InternalServerError));
+class __$$InternalServerErrorImplCopyWithImpl<$Res>
+    extends _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res,
+        _$InternalServerErrorImpl>
+    implements _$$InternalServerErrorImplCopyWith<$Res> {
+  __$$InternalServerErrorImplCopyWithImpl(_$InternalServerErrorImpl _value,
+      $Res Function(_$InternalServerErrorImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _InternalServerError get _value => super._value as _InternalServerError;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_InternalServerError(
-      intValue: intValue == freezed
+    return _then(_$InternalServerErrorImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -278,14 +191,13 @@ class __$InternalServerErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_InternalServerError implements _InternalServerError {
-  const _$_InternalServerError(
+class _$InternalServerErrorImpl implements _InternalServerError {
+  const _$InternalServerErrorImpl(
       {this.intValue =
           RestResponseServerErrorCodeType.internalServerErrorIntValue});
 
-  @JsonKey(
-      defaultValue: RestResponseServerErrorCodeType.internalServerErrorIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -294,10 +206,10 @@ class _$_InternalServerError implements _InternalServerError {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _InternalServerError &&
+            other is _$InternalServerErrorImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -307,8 +219,9 @@ class _$_InternalServerError implements _InternalServerError {
 
   @JsonKey(ignore: true)
   @override
-  _$InternalServerErrorCopyWith<_InternalServerError> get copyWith =>
-      __$InternalServerErrorCopyWithImpl<_InternalServerError>(
+  @pragma('vm:prefer-inline')
+  _$$InternalServerErrorImplCopyWith<_$InternalServerErrorImpl> get copyWith =>
+      __$$InternalServerErrorImplCopyWithImpl<_$InternalServerErrorImpl>(
           this, _$identity);
 
   @override
@@ -332,17 +245,17 @@ class _$_InternalServerError implements _InternalServerError {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? internalServerError,
-    TResult Function(int intValue)? notImplemented,
-    TResult Function(int intValue)? badGateway,
-    TResult Function(int intValue)? serviceUnavailable,
-    TResult Function(int intValue)? gatewayTimeout,
-    TResult Function(int intValue)? httpNotSupported,
-    TResult Function(int intValue)? variantAlsoNegotiates,
-    TResult Function(int intValue)? insufficientStorage,
-    TResult Function(int intValue)? loopDetected,
-    TResult Function(int intValue)? notExtended,
-    TResult Function(int intValue)? networkAuthenticationRequired,
+    TResult? Function(int intValue)? internalServerError,
+    TResult? Function(int intValue)? notImplemented,
+    TResult? Function(int intValue)? badGateway,
+    TResult? Function(int intValue)? serviceUnavailable,
+    TResult? Function(int intValue)? gatewayTimeout,
+    TResult? Function(int intValue)? httpNotSupported,
+    TResult? Function(int intValue)? variantAlsoNegotiates,
+    TResult? Function(int intValue)? insufficientStorage,
+    TResult? Function(int intValue)? loopDetected,
+    TResult? Function(int intValue)? notExtended,
+    TResult? Function(int intValue)? networkAuthenticationRequired,
   }) {
     return internalServerError?.call(intValue);
   }
@@ -392,17 +305,17 @@ class _$_InternalServerError implements _InternalServerError {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InternalServerError value)? internalServerError,
-    TResult Function(_NotImplemented value)? notImplemented,
-    TResult Function(_BadGateway value)? badGateway,
-    TResult Function(_ServiceUnavailable value)? serviceUnavailable,
-    TResult Function(_GatewayTimeout value)? gatewayTimeout,
-    TResult Function(_HttpNotSupported value)? httpNotSupported,
-    TResult Function(_VariantAlsoNegotiates value)? variantAlsoNegotiates,
-    TResult Function(_InsufficientStorage value)? insufficientStorage,
-    TResult Function(_LoopDetected value)? loopDetected,
-    TResult Function(_NotExtended value)? notExtended,
-    TResult Function(_NetworkAuthenticationRequired value)?
+    TResult? Function(_InternalServerError value)? internalServerError,
+    TResult? Function(_NotImplemented value)? notImplemented,
+    TResult? Function(_BadGateway value)? badGateway,
+    TResult? Function(_ServiceUnavailable value)? serviceUnavailable,
+    TResult? Function(_GatewayTimeout value)? gatewayTimeout,
+    TResult? Function(_HttpNotSupported value)? httpNotSupported,
+    TResult? Function(_VariantAlsoNegotiates value)? variantAlsoNegotiates,
+    TResult? Function(_InsufficientStorage value)? insufficientStorage,
+    TResult? Function(_LoopDetected value)? loopDetected,
+    TResult? Function(_NotExtended value)? notExtended,
+    TResult? Function(_NetworkAuthenticationRequired value)?
         networkAuthenticationRequired,
   }) {
     return internalServerError?.call(this);
@@ -433,43 +346,43 @@ class _$_InternalServerError implements _InternalServerError {
 }
 
 abstract class _InternalServerError implements RestResponseServerErrorCodeType {
-  const factory _InternalServerError({int intValue}) = _$_InternalServerError;
+  const factory _InternalServerError({final int intValue}) =
+      _$InternalServerErrorImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$InternalServerErrorCopyWith<_InternalServerError> get copyWith =>
+  _$$InternalServerErrorImplCopyWith<_$InternalServerErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$NotImplementedCopyWith<$Res>
+abstract class _$$NotImplementedImplCopyWith<$Res>
     implements $RestResponseServerErrorCodeTypeCopyWith<$Res> {
-  factory _$NotImplementedCopyWith(
-          _NotImplemented value, $Res Function(_NotImplemented) then) =
-      __$NotImplementedCopyWithImpl<$Res>;
+  factory _$$NotImplementedImplCopyWith(_$NotImplementedImpl value,
+          $Res Function(_$NotImplementedImpl) then) =
+      __$$NotImplementedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$NotImplementedCopyWithImpl<$Res>
-    extends _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res>
-    implements _$NotImplementedCopyWith<$Res> {
-  __$NotImplementedCopyWithImpl(
-      _NotImplemented _value, $Res Function(_NotImplemented) _then)
-      : super(_value, (v) => _then(v as _NotImplemented));
+class __$$NotImplementedImplCopyWithImpl<$Res>
+    extends _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res,
+        _$NotImplementedImpl> implements _$$NotImplementedImplCopyWith<$Res> {
+  __$$NotImplementedImplCopyWithImpl(
+      _$NotImplementedImpl _value, $Res Function(_$NotImplementedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _NotImplemented get _value => super._value as _NotImplemented;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_NotImplemented(
-      intValue: intValue == freezed
+    return _then(_$NotImplementedImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -479,12 +392,12 @@ class __$NotImplementedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_NotImplemented implements _NotImplemented {
-  const _$_NotImplemented(
+class _$NotImplementedImpl implements _NotImplemented {
+  const _$NotImplementedImpl(
       {this.intValue = RestResponseServerErrorCodeType.notImplementedIntValue});
 
-  @JsonKey(defaultValue: RestResponseServerErrorCodeType.notImplementedIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -493,10 +406,10 @@ class _$_NotImplemented implements _NotImplemented {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _NotImplemented &&
+            other is _$NotImplementedImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -506,8 +419,10 @@ class _$_NotImplemented implements _NotImplemented {
 
   @JsonKey(ignore: true)
   @override
-  _$NotImplementedCopyWith<_NotImplemented> get copyWith =>
-      __$NotImplementedCopyWithImpl<_NotImplemented>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$NotImplementedImplCopyWith<_$NotImplementedImpl> get copyWith =>
+      __$$NotImplementedImplCopyWithImpl<_$NotImplementedImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -530,17 +445,17 @@ class _$_NotImplemented implements _NotImplemented {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? internalServerError,
-    TResult Function(int intValue)? notImplemented,
-    TResult Function(int intValue)? badGateway,
-    TResult Function(int intValue)? serviceUnavailable,
-    TResult Function(int intValue)? gatewayTimeout,
-    TResult Function(int intValue)? httpNotSupported,
-    TResult Function(int intValue)? variantAlsoNegotiates,
-    TResult Function(int intValue)? insufficientStorage,
-    TResult Function(int intValue)? loopDetected,
-    TResult Function(int intValue)? notExtended,
-    TResult Function(int intValue)? networkAuthenticationRequired,
+    TResult? Function(int intValue)? internalServerError,
+    TResult? Function(int intValue)? notImplemented,
+    TResult? Function(int intValue)? badGateway,
+    TResult? Function(int intValue)? serviceUnavailable,
+    TResult? Function(int intValue)? gatewayTimeout,
+    TResult? Function(int intValue)? httpNotSupported,
+    TResult? Function(int intValue)? variantAlsoNegotiates,
+    TResult? Function(int intValue)? insufficientStorage,
+    TResult? Function(int intValue)? loopDetected,
+    TResult? Function(int intValue)? notExtended,
+    TResult? Function(int intValue)? networkAuthenticationRequired,
   }) {
     return notImplemented?.call(intValue);
   }
@@ -590,17 +505,17 @@ class _$_NotImplemented implements _NotImplemented {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InternalServerError value)? internalServerError,
-    TResult Function(_NotImplemented value)? notImplemented,
-    TResult Function(_BadGateway value)? badGateway,
-    TResult Function(_ServiceUnavailable value)? serviceUnavailable,
-    TResult Function(_GatewayTimeout value)? gatewayTimeout,
-    TResult Function(_HttpNotSupported value)? httpNotSupported,
-    TResult Function(_VariantAlsoNegotiates value)? variantAlsoNegotiates,
-    TResult Function(_InsufficientStorage value)? insufficientStorage,
-    TResult Function(_LoopDetected value)? loopDetected,
-    TResult Function(_NotExtended value)? notExtended,
-    TResult Function(_NetworkAuthenticationRequired value)?
+    TResult? Function(_InternalServerError value)? internalServerError,
+    TResult? Function(_NotImplemented value)? notImplemented,
+    TResult? Function(_BadGateway value)? badGateway,
+    TResult? Function(_ServiceUnavailable value)? serviceUnavailable,
+    TResult? Function(_GatewayTimeout value)? gatewayTimeout,
+    TResult? Function(_HttpNotSupported value)? httpNotSupported,
+    TResult? Function(_VariantAlsoNegotiates value)? variantAlsoNegotiates,
+    TResult? Function(_InsufficientStorage value)? insufficientStorage,
+    TResult? Function(_LoopDetected value)? loopDetected,
+    TResult? Function(_NotExtended value)? notExtended,
+    TResult? Function(_NetworkAuthenticationRequired value)?
         networkAuthenticationRequired,
   }) {
     return notImplemented?.call(this);
@@ -631,43 +546,42 @@ class _$_NotImplemented implements _NotImplemented {
 }
 
 abstract class _NotImplemented implements RestResponseServerErrorCodeType {
-  const factory _NotImplemented({int intValue}) = _$_NotImplemented;
+  const factory _NotImplemented({final int intValue}) = _$NotImplementedImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$NotImplementedCopyWith<_NotImplemented> get copyWith =>
+  _$$NotImplementedImplCopyWith<_$NotImplementedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$BadGatewayCopyWith<$Res>
+abstract class _$$BadGatewayImplCopyWith<$Res>
     implements $RestResponseServerErrorCodeTypeCopyWith<$Res> {
-  factory _$BadGatewayCopyWith(
-          _BadGateway value, $Res Function(_BadGateway) then) =
-      __$BadGatewayCopyWithImpl<$Res>;
+  factory _$$BadGatewayImplCopyWith(
+          _$BadGatewayImpl value, $Res Function(_$BadGatewayImpl) then) =
+      __$$BadGatewayImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$BadGatewayCopyWithImpl<$Res>
-    extends _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res>
-    implements _$BadGatewayCopyWith<$Res> {
-  __$BadGatewayCopyWithImpl(
-      _BadGateway _value, $Res Function(_BadGateway) _then)
-      : super(_value, (v) => _then(v as _BadGateway));
+class __$$BadGatewayImplCopyWithImpl<$Res>
+    extends _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res,
+        _$BadGatewayImpl> implements _$$BadGatewayImplCopyWith<$Res> {
+  __$$BadGatewayImplCopyWithImpl(
+      _$BadGatewayImpl _value, $Res Function(_$BadGatewayImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _BadGateway get _value => super._value as _BadGateway;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_BadGateway(
-      intValue: intValue == freezed
+    return _then(_$BadGatewayImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -677,12 +591,12 @@ class __$BadGatewayCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_BadGateway implements _BadGateway {
-  const _$_BadGateway(
+class _$BadGatewayImpl implements _BadGateway {
+  const _$BadGatewayImpl(
       {this.intValue = RestResponseServerErrorCodeType.badGatewayIntValue});
 
-  @JsonKey(defaultValue: RestResponseServerErrorCodeType.badGatewayIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -691,10 +605,10 @@ class _$_BadGateway implements _BadGateway {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _BadGateway &&
+            other is _$BadGatewayImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -704,8 +618,9 @@ class _$_BadGateway implements _BadGateway {
 
   @JsonKey(ignore: true)
   @override
-  _$BadGatewayCopyWith<_BadGateway> get copyWith =>
-      __$BadGatewayCopyWithImpl<_BadGateway>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$BadGatewayImplCopyWith<_$BadGatewayImpl> get copyWith =>
+      __$$BadGatewayImplCopyWithImpl<_$BadGatewayImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -728,17 +643,17 @@ class _$_BadGateway implements _BadGateway {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? internalServerError,
-    TResult Function(int intValue)? notImplemented,
-    TResult Function(int intValue)? badGateway,
-    TResult Function(int intValue)? serviceUnavailable,
-    TResult Function(int intValue)? gatewayTimeout,
-    TResult Function(int intValue)? httpNotSupported,
-    TResult Function(int intValue)? variantAlsoNegotiates,
-    TResult Function(int intValue)? insufficientStorage,
-    TResult Function(int intValue)? loopDetected,
-    TResult Function(int intValue)? notExtended,
-    TResult Function(int intValue)? networkAuthenticationRequired,
+    TResult? Function(int intValue)? internalServerError,
+    TResult? Function(int intValue)? notImplemented,
+    TResult? Function(int intValue)? badGateway,
+    TResult? Function(int intValue)? serviceUnavailable,
+    TResult? Function(int intValue)? gatewayTimeout,
+    TResult? Function(int intValue)? httpNotSupported,
+    TResult? Function(int intValue)? variantAlsoNegotiates,
+    TResult? Function(int intValue)? insufficientStorage,
+    TResult? Function(int intValue)? loopDetected,
+    TResult? Function(int intValue)? notExtended,
+    TResult? Function(int intValue)? networkAuthenticationRequired,
   }) {
     return badGateway?.call(intValue);
   }
@@ -788,17 +703,17 @@ class _$_BadGateway implements _BadGateway {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InternalServerError value)? internalServerError,
-    TResult Function(_NotImplemented value)? notImplemented,
-    TResult Function(_BadGateway value)? badGateway,
-    TResult Function(_ServiceUnavailable value)? serviceUnavailable,
-    TResult Function(_GatewayTimeout value)? gatewayTimeout,
-    TResult Function(_HttpNotSupported value)? httpNotSupported,
-    TResult Function(_VariantAlsoNegotiates value)? variantAlsoNegotiates,
-    TResult Function(_InsufficientStorage value)? insufficientStorage,
-    TResult Function(_LoopDetected value)? loopDetected,
-    TResult Function(_NotExtended value)? notExtended,
-    TResult Function(_NetworkAuthenticationRequired value)?
+    TResult? Function(_InternalServerError value)? internalServerError,
+    TResult? Function(_NotImplemented value)? notImplemented,
+    TResult? Function(_BadGateway value)? badGateway,
+    TResult? Function(_ServiceUnavailable value)? serviceUnavailable,
+    TResult? Function(_GatewayTimeout value)? gatewayTimeout,
+    TResult? Function(_HttpNotSupported value)? httpNotSupported,
+    TResult? Function(_VariantAlsoNegotiates value)? variantAlsoNegotiates,
+    TResult? Function(_InsufficientStorage value)? insufficientStorage,
+    TResult? Function(_LoopDetected value)? loopDetected,
+    TResult? Function(_NotExtended value)? notExtended,
+    TResult? Function(_NetworkAuthenticationRequired value)?
         networkAuthenticationRequired,
   }) {
     return badGateway?.call(this);
@@ -829,43 +744,43 @@ class _$_BadGateway implements _BadGateway {
 }
 
 abstract class _BadGateway implements RestResponseServerErrorCodeType {
-  const factory _BadGateway({int intValue}) = _$_BadGateway;
+  const factory _BadGateway({final int intValue}) = _$BadGatewayImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$BadGatewayCopyWith<_BadGateway> get copyWith =>
+  _$$BadGatewayImplCopyWith<_$BadGatewayImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ServiceUnavailableCopyWith<$Res>
+abstract class _$$ServiceUnavailableImplCopyWith<$Res>
     implements $RestResponseServerErrorCodeTypeCopyWith<$Res> {
-  factory _$ServiceUnavailableCopyWith(
-          _ServiceUnavailable value, $Res Function(_ServiceUnavailable) then) =
-      __$ServiceUnavailableCopyWithImpl<$Res>;
+  factory _$$ServiceUnavailableImplCopyWith(_$ServiceUnavailableImpl value,
+          $Res Function(_$ServiceUnavailableImpl) then) =
+      __$$ServiceUnavailableImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$ServiceUnavailableCopyWithImpl<$Res>
-    extends _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res>
-    implements _$ServiceUnavailableCopyWith<$Res> {
-  __$ServiceUnavailableCopyWithImpl(
-      _ServiceUnavailable _value, $Res Function(_ServiceUnavailable) _then)
-      : super(_value, (v) => _then(v as _ServiceUnavailable));
+class __$$ServiceUnavailableImplCopyWithImpl<$Res>
+    extends _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res,
+        _$ServiceUnavailableImpl>
+    implements _$$ServiceUnavailableImplCopyWith<$Res> {
+  __$$ServiceUnavailableImplCopyWithImpl(_$ServiceUnavailableImpl _value,
+      $Res Function(_$ServiceUnavailableImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _ServiceUnavailable get _value => super._value as _ServiceUnavailable;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_ServiceUnavailable(
-      intValue: intValue == freezed
+    return _then(_$ServiceUnavailableImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -875,14 +790,13 @@ class __$ServiceUnavailableCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ServiceUnavailable implements _ServiceUnavailable {
-  const _$_ServiceUnavailable(
+class _$ServiceUnavailableImpl implements _ServiceUnavailable {
+  const _$ServiceUnavailableImpl(
       {this.intValue =
           RestResponseServerErrorCodeType.serviceUnavailableIntValue});
 
-  @JsonKey(
-      defaultValue: RestResponseServerErrorCodeType.serviceUnavailableIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -891,10 +805,10 @@ class _$_ServiceUnavailable implements _ServiceUnavailable {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ServiceUnavailable &&
+            other is _$ServiceUnavailableImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -904,8 +818,10 @@ class _$_ServiceUnavailable implements _ServiceUnavailable {
 
   @JsonKey(ignore: true)
   @override
-  _$ServiceUnavailableCopyWith<_ServiceUnavailable> get copyWith =>
-      __$ServiceUnavailableCopyWithImpl<_ServiceUnavailable>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ServiceUnavailableImplCopyWith<_$ServiceUnavailableImpl> get copyWith =>
+      __$$ServiceUnavailableImplCopyWithImpl<_$ServiceUnavailableImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -928,17 +844,17 @@ class _$_ServiceUnavailable implements _ServiceUnavailable {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? internalServerError,
-    TResult Function(int intValue)? notImplemented,
-    TResult Function(int intValue)? badGateway,
-    TResult Function(int intValue)? serviceUnavailable,
-    TResult Function(int intValue)? gatewayTimeout,
-    TResult Function(int intValue)? httpNotSupported,
-    TResult Function(int intValue)? variantAlsoNegotiates,
-    TResult Function(int intValue)? insufficientStorage,
-    TResult Function(int intValue)? loopDetected,
-    TResult Function(int intValue)? notExtended,
-    TResult Function(int intValue)? networkAuthenticationRequired,
+    TResult? Function(int intValue)? internalServerError,
+    TResult? Function(int intValue)? notImplemented,
+    TResult? Function(int intValue)? badGateway,
+    TResult? Function(int intValue)? serviceUnavailable,
+    TResult? Function(int intValue)? gatewayTimeout,
+    TResult? Function(int intValue)? httpNotSupported,
+    TResult? Function(int intValue)? variantAlsoNegotiates,
+    TResult? Function(int intValue)? insufficientStorage,
+    TResult? Function(int intValue)? loopDetected,
+    TResult? Function(int intValue)? notExtended,
+    TResult? Function(int intValue)? networkAuthenticationRequired,
   }) {
     return serviceUnavailable?.call(intValue);
   }
@@ -988,17 +904,17 @@ class _$_ServiceUnavailable implements _ServiceUnavailable {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InternalServerError value)? internalServerError,
-    TResult Function(_NotImplemented value)? notImplemented,
-    TResult Function(_BadGateway value)? badGateway,
-    TResult Function(_ServiceUnavailable value)? serviceUnavailable,
-    TResult Function(_GatewayTimeout value)? gatewayTimeout,
-    TResult Function(_HttpNotSupported value)? httpNotSupported,
-    TResult Function(_VariantAlsoNegotiates value)? variantAlsoNegotiates,
-    TResult Function(_InsufficientStorage value)? insufficientStorage,
-    TResult Function(_LoopDetected value)? loopDetected,
-    TResult Function(_NotExtended value)? notExtended,
-    TResult Function(_NetworkAuthenticationRequired value)?
+    TResult? Function(_InternalServerError value)? internalServerError,
+    TResult? Function(_NotImplemented value)? notImplemented,
+    TResult? Function(_BadGateway value)? badGateway,
+    TResult? Function(_ServiceUnavailable value)? serviceUnavailable,
+    TResult? Function(_GatewayTimeout value)? gatewayTimeout,
+    TResult? Function(_HttpNotSupported value)? httpNotSupported,
+    TResult? Function(_VariantAlsoNegotiates value)? variantAlsoNegotiates,
+    TResult? Function(_InsufficientStorage value)? insufficientStorage,
+    TResult? Function(_LoopDetected value)? loopDetected,
+    TResult? Function(_NotExtended value)? notExtended,
+    TResult? Function(_NetworkAuthenticationRequired value)?
         networkAuthenticationRequired,
   }) {
     return serviceUnavailable?.call(this);
@@ -1029,43 +945,43 @@ class _$_ServiceUnavailable implements _ServiceUnavailable {
 }
 
 abstract class _ServiceUnavailable implements RestResponseServerErrorCodeType {
-  const factory _ServiceUnavailable({int intValue}) = _$_ServiceUnavailable;
+  const factory _ServiceUnavailable({final int intValue}) =
+      _$ServiceUnavailableImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$ServiceUnavailableCopyWith<_ServiceUnavailable> get copyWith =>
+  _$$ServiceUnavailableImplCopyWith<_$ServiceUnavailableImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$GatewayTimeoutCopyWith<$Res>
+abstract class _$$GatewayTimeoutImplCopyWith<$Res>
     implements $RestResponseServerErrorCodeTypeCopyWith<$Res> {
-  factory _$GatewayTimeoutCopyWith(
-          _GatewayTimeout value, $Res Function(_GatewayTimeout) then) =
-      __$GatewayTimeoutCopyWithImpl<$Res>;
+  factory _$$GatewayTimeoutImplCopyWith(_$GatewayTimeoutImpl value,
+          $Res Function(_$GatewayTimeoutImpl) then) =
+      __$$GatewayTimeoutImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$GatewayTimeoutCopyWithImpl<$Res>
-    extends _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res>
-    implements _$GatewayTimeoutCopyWith<$Res> {
-  __$GatewayTimeoutCopyWithImpl(
-      _GatewayTimeout _value, $Res Function(_GatewayTimeout) _then)
-      : super(_value, (v) => _then(v as _GatewayTimeout));
+class __$$GatewayTimeoutImplCopyWithImpl<$Res>
+    extends _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res,
+        _$GatewayTimeoutImpl> implements _$$GatewayTimeoutImplCopyWith<$Res> {
+  __$$GatewayTimeoutImplCopyWithImpl(
+      _$GatewayTimeoutImpl _value, $Res Function(_$GatewayTimeoutImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _GatewayTimeout get _value => super._value as _GatewayTimeout;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_GatewayTimeout(
-      intValue: intValue == freezed
+    return _then(_$GatewayTimeoutImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -1075,12 +991,12 @@ class __$GatewayTimeoutCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_GatewayTimeout implements _GatewayTimeout {
-  const _$_GatewayTimeout(
+class _$GatewayTimeoutImpl implements _GatewayTimeout {
+  const _$GatewayTimeoutImpl(
       {this.intValue = RestResponseServerErrorCodeType.gatewayTimeoutIntValue});
 
-  @JsonKey(defaultValue: RestResponseServerErrorCodeType.gatewayTimeoutIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -1089,10 +1005,10 @@ class _$_GatewayTimeout implements _GatewayTimeout {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _GatewayTimeout &&
+            other is _$GatewayTimeoutImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -1102,8 +1018,10 @@ class _$_GatewayTimeout implements _GatewayTimeout {
 
   @JsonKey(ignore: true)
   @override
-  _$GatewayTimeoutCopyWith<_GatewayTimeout> get copyWith =>
-      __$GatewayTimeoutCopyWithImpl<_GatewayTimeout>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$GatewayTimeoutImplCopyWith<_$GatewayTimeoutImpl> get copyWith =>
+      __$$GatewayTimeoutImplCopyWithImpl<_$GatewayTimeoutImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1126,17 +1044,17 @@ class _$_GatewayTimeout implements _GatewayTimeout {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? internalServerError,
-    TResult Function(int intValue)? notImplemented,
-    TResult Function(int intValue)? badGateway,
-    TResult Function(int intValue)? serviceUnavailable,
-    TResult Function(int intValue)? gatewayTimeout,
-    TResult Function(int intValue)? httpNotSupported,
-    TResult Function(int intValue)? variantAlsoNegotiates,
-    TResult Function(int intValue)? insufficientStorage,
-    TResult Function(int intValue)? loopDetected,
-    TResult Function(int intValue)? notExtended,
-    TResult Function(int intValue)? networkAuthenticationRequired,
+    TResult? Function(int intValue)? internalServerError,
+    TResult? Function(int intValue)? notImplemented,
+    TResult? Function(int intValue)? badGateway,
+    TResult? Function(int intValue)? serviceUnavailable,
+    TResult? Function(int intValue)? gatewayTimeout,
+    TResult? Function(int intValue)? httpNotSupported,
+    TResult? Function(int intValue)? variantAlsoNegotiates,
+    TResult? Function(int intValue)? insufficientStorage,
+    TResult? Function(int intValue)? loopDetected,
+    TResult? Function(int intValue)? notExtended,
+    TResult? Function(int intValue)? networkAuthenticationRequired,
   }) {
     return gatewayTimeout?.call(intValue);
   }
@@ -1186,17 +1104,17 @@ class _$_GatewayTimeout implements _GatewayTimeout {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InternalServerError value)? internalServerError,
-    TResult Function(_NotImplemented value)? notImplemented,
-    TResult Function(_BadGateway value)? badGateway,
-    TResult Function(_ServiceUnavailable value)? serviceUnavailable,
-    TResult Function(_GatewayTimeout value)? gatewayTimeout,
-    TResult Function(_HttpNotSupported value)? httpNotSupported,
-    TResult Function(_VariantAlsoNegotiates value)? variantAlsoNegotiates,
-    TResult Function(_InsufficientStorage value)? insufficientStorage,
-    TResult Function(_LoopDetected value)? loopDetected,
-    TResult Function(_NotExtended value)? notExtended,
-    TResult Function(_NetworkAuthenticationRequired value)?
+    TResult? Function(_InternalServerError value)? internalServerError,
+    TResult? Function(_NotImplemented value)? notImplemented,
+    TResult? Function(_BadGateway value)? badGateway,
+    TResult? Function(_ServiceUnavailable value)? serviceUnavailable,
+    TResult? Function(_GatewayTimeout value)? gatewayTimeout,
+    TResult? Function(_HttpNotSupported value)? httpNotSupported,
+    TResult? Function(_VariantAlsoNegotiates value)? variantAlsoNegotiates,
+    TResult? Function(_InsufficientStorage value)? insufficientStorage,
+    TResult? Function(_LoopDetected value)? loopDetected,
+    TResult? Function(_NotExtended value)? notExtended,
+    TResult? Function(_NetworkAuthenticationRequired value)?
         networkAuthenticationRequired,
   }) {
     return gatewayTimeout?.call(this);
@@ -1227,43 +1145,43 @@ class _$_GatewayTimeout implements _GatewayTimeout {
 }
 
 abstract class _GatewayTimeout implements RestResponseServerErrorCodeType {
-  const factory _GatewayTimeout({int intValue}) = _$_GatewayTimeout;
+  const factory _GatewayTimeout({final int intValue}) = _$GatewayTimeoutImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$GatewayTimeoutCopyWith<_GatewayTimeout> get copyWith =>
+  _$$GatewayTimeoutImplCopyWith<_$GatewayTimeoutImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$HttpNotSupportedCopyWith<$Res>
+abstract class _$$HttpNotSupportedImplCopyWith<$Res>
     implements $RestResponseServerErrorCodeTypeCopyWith<$Res> {
-  factory _$HttpNotSupportedCopyWith(
-          _HttpNotSupported value, $Res Function(_HttpNotSupported) then) =
-      __$HttpNotSupportedCopyWithImpl<$Res>;
+  factory _$$HttpNotSupportedImplCopyWith(_$HttpNotSupportedImpl value,
+          $Res Function(_$HttpNotSupportedImpl) then) =
+      __$$HttpNotSupportedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$HttpNotSupportedCopyWithImpl<$Res>
-    extends _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res>
-    implements _$HttpNotSupportedCopyWith<$Res> {
-  __$HttpNotSupportedCopyWithImpl(
-      _HttpNotSupported _value, $Res Function(_HttpNotSupported) _then)
-      : super(_value, (v) => _then(v as _HttpNotSupported));
+class __$$HttpNotSupportedImplCopyWithImpl<$Res>
+    extends _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res,
+        _$HttpNotSupportedImpl>
+    implements _$$HttpNotSupportedImplCopyWith<$Res> {
+  __$$HttpNotSupportedImplCopyWithImpl(_$HttpNotSupportedImpl _value,
+      $Res Function(_$HttpNotSupportedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _HttpNotSupported get _value => super._value as _HttpNotSupported;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_HttpNotSupported(
-      intValue: intValue == freezed
+    return _then(_$HttpNotSupportedImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -1273,14 +1191,13 @@ class __$HttpNotSupportedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_HttpNotSupported implements _HttpNotSupported {
-  const _$_HttpNotSupported(
+class _$HttpNotSupportedImpl implements _HttpNotSupported {
+  const _$HttpNotSupportedImpl(
       {this.intValue =
           RestResponseServerErrorCodeType.httpNotSupportedIntValue});
 
-  @JsonKey(
-      defaultValue: RestResponseServerErrorCodeType.httpNotSupportedIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -1289,10 +1206,10 @@ class _$_HttpNotSupported implements _HttpNotSupported {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _HttpNotSupported &&
+            other is _$HttpNotSupportedImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -1302,8 +1219,10 @@ class _$_HttpNotSupported implements _HttpNotSupported {
 
   @JsonKey(ignore: true)
   @override
-  _$HttpNotSupportedCopyWith<_HttpNotSupported> get copyWith =>
-      __$HttpNotSupportedCopyWithImpl<_HttpNotSupported>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$HttpNotSupportedImplCopyWith<_$HttpNotSupportedImpl> get copyWith =>
+      __$$HttpNotSupportedImplCopyWithImpl<_$HttpNotSupportedImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1326,17 +1245,17 @@ class _$_HttpNotSupported implements _HttpNotSupported {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? internalServerError,
-    TResult Function(int intValue)? notImplemented,
-    TResult Function(int intValue)? badGateway,
-    TResult Function(int intValue)? serviceUnavailable,
-    TResult Function(int intValue)? gatewayTimeout,
-    TResult Function(int intValue)? httpNotSupported,
-    TResult Function(int intValue)? variantAlsoNegotiates,
-    TResult Function(int intValue)? insufficientStorage,
-    TResult Function(int intValue)? loopDetected,
-    TResult Function(int intValue)? notExtended,
-    TResult Function(int intValue)? networkAuthenticationRequired,
+    TResult? Function(int intValue)? internalServerError,
+    TResult? Function(int intValue)? notImplemented,
+    TResult? Function(int intValue)? badGateway,
+    TResult? Function(int intValue)? serviceUnavailable,
+    TResult? Function(int intValue)? gatewayTimeout,
+    TResult? Function(int intValue)? httpNotSupported,
+    TResult? Function(int intValue)? variantAlsoNegotiates,
+    TResult? Function(int intValue)? insufficientStorage,
+    TResult? Function(int intValue)? loopDetected,
+    TResult? Function(int intValue)? notExtended,
+    TResult? Function(int intValue)? networkAuthenticationRequired,
   }) {
     return httpNotSupported?.call(intValue);
   }
@@ -1386,17 +1305,17 @@ class _$_HttpNotSupported implements _HttpNotSupported {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InternalServerError value)? internalServerError,
-    TResult Function(_NotImplemented value)? notImplemented,
-    TResult Function(_BadGateway value)? badGateway,
-    TResult Function(_ServiceUnavailable value)? serviceUnavailable,
-    TResult Function(_GatewayTimeout value)? gatewayTimeout,
-    TResult Function(_HttpNotSupported value)? httpNotSupported,
-    TResult Function(_VariantAlsoNegotiates value)? variantAlsoNegotiates,
-    TResult Function(_InsufficientStorage value)? insufficientStorage,
-    TResult Function(_LoopDetected value)? loopDetected,
-    TResult Function(_NotExtended value)? notExtended,
-    TResult Function(_NetworkAuthenticationRequired value)?
+    TResult? Function(_InternalServerError value)? internalServerError,
+    TResult? Function(_NotImplemented value)? notImplemented,
+    TResult? Function(_BadGateway value)? badGateway,
+    TResult? Function(_ServiceUnavailable value)? serviceUnavailable,
+    TResult? Function(_GatewayTimeout value)? gatewayTimeout,
+    TResult? Function(_HttpNotSupported value)? httpNotSupported,
+    TResult? Function(_VariantAlsoNegotiates value)? variantAlsoNegotiates,
+    TResult? Function(_InsufficientStorage value)? insufficientStorage,
+    TResult? Function(_LoopDetected value)? loopDetected,
+    TResult? Function(_NotExtended value)? notExtended,
+    TResult? Function(_NetworkAuthenticationRequired value)?
         networkAuthenticationRequired,
   }) {
     return httpNotSupported?.call(this);
@@ -1427,43 +1346,45 @@ class _$_HttpNotSupported implements _HttpNotSupported {
 }
 
 abstract class _HttpNotSupported implements RestResponseServerErrorCodeType {
-  const factory _HttpNotSupported({int intValue}) = _$_HttpNotSupported;
+  const factory _HttpNotSupported({final int intValue}) =
+      _$HttpNotSupportedImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$HttpNotSupportedCopyWith<_HttpNotSupported> get copyWith =>
+  _$$HttpNotSupportedImplCopyWith<_$HttpNotSupportedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$VariantAlsoNegotiatesCopyWith<$Res>
+abstract class _$$VariantAlsoNegotiatesImplCopyWith<$Res>
     implements $RestResponseServerErrorCodeTypeCopyWith<$Res> {
-  factory _$VariantAlsoNegotiatesCopyWith(_VariantAlsoNegotiates value,
-          $Res Function(_VariantAlsoNegotiates) then) =
-      __$VariantAlsoNegotiatesCopyWithImpl<$Res>;
+  factory _$$VariantAlsoNegotiatesImplCopyWith(
+          _$VariantAlsoNegotiatesImpl value,
+          $Res Function(_$VariantAlsoNegotiatesImpl) then) =
+      __$$VariantAlsoNegotiatesImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$VariantAlsoNegotiatesCopyWithImpl<$Res>
-    extends _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res>
-    implements _$VariantAlsoNegotiatesCopyWith<$Res> {
-  __$VariantAlsoNegotiatesCopyWithImpl(_VariantAlsoNegotiates _value,
-      $Res Function(_VariantAlsoNegotiates) _then)
-      : super(_value, (v) => _then(v as _VariantAlsoNegotiates));
+class __$$VariantAlsoNegotiatesImplCopyWithImpl<$Res>
+    extends _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res,
+        _$VariantAlsoNegotiatesImpl>
+    implements _$$VariantAlsoNegotiatesImplCopyWith<$Res> {
+  __$$VariantAlsoNegotiatesImplCopyWithImpl(_$VariantAlsoNegotiatesImpl _value,
+      $Res Function(_$VariantAlsoNegotiatesImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _VariantAlsoNegotiates get _value => super._value as _VariantAlsoNegotiates;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_VariantAlsoNegotiates(
-      intValue: intValue == freezed
+    return _then(_$VariantAlsoNegotiatesImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -1473,15 +1394,13 @@ class __$VariantAlsoNegotiatesCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_VariantAlsoNegotiates implements _VariantAlsoNegotiates {
-  const _$_VariantAlsoNegotiates(
+class _$VariantAlsoNegotiatesImpl implements _VariantAlsoNegotiates {
+  const _$VariantAlsoNegotiatesImpl(
       {this.intValue =
           RestResponseServerErrorCodeType.variantAlsoNegotiatesIntValue});
 
-  @JsonKey(
-      defaultValue:
-          RestResponseServerErrorCodeType.variantAlsoNegotiatesIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -1490,10 +1409,10 @@ class _$_VariantAlsoNegotiates implements _VariantAlsoNegotiates {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _VariantAlsoNegotiates &&
+            other is _$VariantAlsoNegotiatesImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -1503,9 +1422,10 @@ class _$_VariantAlsoNegotiates implements _VariantAlsoNegotiates {
 
   @JsonKey(ignore: true)
   @override
-  _$VariantAlsoNegotiatesCopyWith<_VariantAlsoNegotiates> get copyWith =>
-      __$VariantAlsoNegotiatesCopyWithImpl<_VariantAlsoNegotiates>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$VariantAlsoNegotiatesImplCopyWith<_$VariantAlsoNegotiatesImpl>
+      get copyWith => __$$VariantAlsoNegotiatesImplCopyWithImpl<
+          _$VariantAlsoNegotiatesImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1528,17 +1448,17 @@ class _$_VariantAlsoNegotiates implements _VariantAlsoNegotiates {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? internalServerError,
-    TResult Function(int intValue)? notImplemented,
-    TResult Function(int intValue)? badGateway,
-    TResult Function(int intValue)? serviceUnavailable,
-    TResult Function(int intValue)? gatewayTimeout,
-    TResult Function(int intValue)? httpNotSupported,
-    TResult Function(int intValue)? variantAlsoNegotiates,
-    TResult Function(int intValue)? insufficientStorage,
-    TResult Function(int intValue)? loopDetected,
-    TResult Function(int intValue)? notExtended,
-    TResult Function(int intValue)? networkAuthenticationRequired,
+    TResult? Function(int intValue)? internalServerError,
+    TResult? Function(int intValue)? notImplemented,
+    TResult? Function(int intValue)? badGateway,
+    TResult? Function(int intValue)? serviceUnavailable,
+    TResult? Function(int intValue)? gatewayTimeout,
+    TResult? Function(int intValue)? httpNotSupported,
+    TResult? Function(int intValue)? variantAlsoNegotiates,
+    TResult? Function(int intValue)? insufficientStorage,
+    TResult? Function(int intValue)? loopDetected,
+    TResult? Function(int intValue)? notExtended,
+    TResult? Function(int intValue)? networkAuthenticationRequired,
   }) {
     return variantAlsoNegotiates?.call(intValue);
   }
@@ -1588,17 +1508,17 @@ class _$_VariantAlsoNegotiates implements _VariantAlsoNegotiates {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InternalServerError value)? internalServerError,
-    TResult Function(_NotImplemented value)? notImplemented,
-    TResult Function(_BadGateway value)? badGateway,
-    TResult Function(_ServiceUnavailable value)? serviceUnavailable,
-    TResult Function(_GatewayTimeout value)? gatewayTimeout,
-    TResult Function(_HttpNotSupported value)? httpNotSupported,
-    TResult Function(_VariantAlsoNegotiates value)? variantAlsoNegotiates,
-    TResult Function(_InsufficientStorage value)? insufficientStorage,
-    TResult Function(_LoopDetected value)? loopDetected,
-    TResult Function(_NotExtended value)? notExtended,
-    TResult Function(_NetworkAuthenticationRequired value)?
+    TResult? Function(_InternalServerError value)? internalServerError,
+    TResult? Function(_NotImplemented value)? notImplemented,
+    TResult? Function(_BadGateway value)? badGateway,
+    TResult? Function(_ServiceUnavailable value)? serviceUnavailable,
+    TResult? Function(_GatewayTimeout value)? gatewayTimeout,
+    TResult? Function(_HttpNotSupported value)? httpNotSupported,
+    TResult? Function(_VariantAlsoNegotiates value)? variantAlsoNegotiates,
+    TResult? Function(_InsufficientStorage value)? insufficientStorage,
+    TResult? Function(_LoopDetected value)? loopDetected,
+    TResult? Function(_NotExtended value)? notExtended,
+    TResult? Function(_NetworkAuthenticationRequired value)?
         networkAuthenticationRequired,
   }) {
     return variantAlsoNegotiates?.call(this);
@@ -1630,44 +1550,44 @@ class _$_VariantAlsoNegotiates implements _VariantAlsoNegotiates {
 
 abstract class _VariantAlsoNegotiates
     implements RestResponseServerErrorCodeType {
-  const factory _VariantAlsoNegotiates({int intValue}) =
-      _$_VariantAlsoNegotiates;
+  const factory _VariantAlsoNegotiates({final int intValue}) =
+      _$VariantAlsoNegotiatesImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$VariantAlsoNegotiatesCopyWith<_VariantAlsoNegotiates> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$VariantAlsoNegotiatesImplCopyWith<_$VariantAlsoNegotiatesImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$InsufficientStorageCopyWith<$Res>
+abstract class _$$InsufficientStorageImplCopyWith<$Res>
     implements $RestResponseServerErrorCodeTypeCopyWith<$Res> {
-  factory _$InsufficientStorageCopyWith(_InsufficientStorage value,
-          $Res Function(_InsufficientStorage) then) =
-      __$InsufficientStorageCopyWithImpl<$Res>;
+  factory _$$InsufficientStorageImplCopyWith(_$InsufficientStorageImpl value,
+          $Res Function(_$InsufficientStorageImpl) then) =
+      __$$InsufficientStorageImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$InsufficientStorageCopyWithImpl<$Res>
-    extends _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res>
-    implements _$InsufficientStorageCopyWith<$Res> {
-  __$InsufficientStorageCopyWithImpl(
-      _InsufficientStorage _value, $Res Function(_InsufficientStorage) _then)
-      : super(_value, (v) => _then(v as _InsufficientStorage));
+class __$$InsufficientStorageImplCopyWithImpl<$Res>
+    extends _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res,
+        _$InsufficientStorageImpl>
+    implements _$$InsufficientStorageImplCopyWith<$Res> {
+  __$$InsufficientStorageImplCopyWithImpl(_$InsufficientStorageImpl _value,
+      $Res Function(_$InsufficientStorageImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _InsufficientStorage get _value => super._value as _InsufficientStorage;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_InsufficientStorage(
-      intValue: intValue == freezed
+    return _then(_$InsufficientStorageImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -1677,14 +1597,13 @@ class __$InsufficientStorageCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_InsufficientStorage implements _InsufficientStorage {
-  const _$_InsufficientStorage(
+class _$InsufficientStorageImpl implements _InsufficientStorage {
+  const _$InsufficientStorageImpl(
       {this.intValue =
           RestResponseServerErrorCodeType.insufficientStorageIntValue});
 
-  @JsonKey(
-      defaultValue: RestResponseServerErrorCodeType.insufficientStorageIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -1693,10 +1612,10 @@ class _$_InsufficientStorage implements _InsufficientStorage {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _InsufficientStorage &&
+            other is _$InsufficientStorageImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -1706,8 +1625,9 @@ class _$_InsufficientStorage implements _InsufficientStorage {
 
   @JsonKey(ignore: true)
   @override
-  _$InsufficientStorageCopyWith<_InsufficientStorage> get copyWith =>
-      __$InsufficientStorageCopyWithImpl<_InsufficientStorage>(
+  @pragma('vm:prefer-inline')
+  _$$InsufficientStorageImplCopyWith<_$InsufficientStorageImpl> get copyWith =>
+      __$$InsufficientStorageImplCopyWithImpl<_$InsufficientStorageImpl>(
           this, _$identity);
 
   @override
@@ -1731,17 +1651,17 @@ class _$_InsufficientStorage implements _InsufficientStorage {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? internalServerError,
-    TResult Function(int intValue)? notImplemented,
-    TResult Function(int intValue)? badGateway,
-    TResult Function(int intValue)? serviceUnavailable,
-    TResult Function(int intValue)? gatewayTimeout,
-    TResult Function(int intValue)? httpNotSupported,
-    TResult Function(int intValue)? variantAlsoNegotiates,
-    TResult Function(int intValue)? insufficientStorage,
-    TResult Function(int intValue)? loopDetected,
-    TResult Function(int intValue)? notExtended,
-    TResult Function(int intValue)? networkAuthenticationRequired,
+    TResult? Function(int intValue)? internalServerError,
+    TResult? Function(int intValue)? notImplemented,
+    TResult? Function(int intValue)? badGateway,
+    TResult? Function(int intValue)? serviceUnavailable,
+    TResult? Function(int intValue)? gatewayTimeout,
+    TResult? Function(int intValue)? httpNotSupported,
+    TResult? Function(int intValue)? variantAlsoNegotiates,
+    TResult? Function(int intValue)? insufficientStorage,
+    TResult? Function(int intValue)? loopDetected,
+    TResult? Function(int intValue)? notExtended,
+    TResult? Function(int intValue)? networkAuthenticationRequired,
   }) {
     return insufficientStorage?.call(intValue);
   }
@@ -1791,17 +1711,17 @@ class _$_InsufficientStorage implements _InsufficientStorage {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InternalServerError value)? internalServerError,
-    TResult Function(_NotImplemented value)? notImplemented,
-    TResult Function(_BadGateway value)? badGateway,
-    TResult Function(_ServiceUnavailable value)? serviceUnavailable,
-    TResult Function(_GatewayTimeout value)? gatewayTimeout,
-    TResult Function(_HttpNotSupported value)? httpNotSupported,
-    TResult Function(_VariantAlsoNegotiates value)? variantAlsoNegotiates,
-    TResult Function(_InsufficientStorage value)? insufficientStorage,
-    TResult Function(_LoopDetected value)? loopDetected,
-    TResult Function(_NotExtended value)? notExtended,
-    TResult Function(_NetworkAuthenticationRequired value)?
+    TResult? Function(_InternalServerError value)? internalServerError,
+    TResult? Function(_NotImplemented value)? notImplemented,
+    TResult? Function(_BadGateway value)? badGateway,
+    TResult? Function(_ServiceUnavailable value)? serviceUnavailable,
+    TResult? Function(_GatewayTimeout value)? gatewayTimeout,
+    TResult? Function(_HttpNotSupported value)? httpNotSupported,
+    TResult? Function(_VariantAlsoNegotiates value)? variantAlsoNegotiates,
+    TResult? Function(_InsufficientStorage value)? insufficientStorage,
+    TResult? Function(_LoopDetected value)? loopDetected,
+    TResult? Function(_NotExtended value)? notExtended,
+    TResult? Function(_NetworkAuthenticationRequired value)?
         networkAuthenticationRequired,
   }) {
     return insufficientStorage?.call(this);
@@ -1832,43 +1752,43 @@ class _$_InsufficientStorage implements _InsufficientStorage {
 }
 
 abstract class _InsufficientStorage implements RestResponseServerErrorCodeType {
-  const factory _InsufficientStorage({int intValue}) = _$_InsufficientStorage;
+  const factory _InsufficientStorage({final int intValue}) =
+      _$InsufficientStorageImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$InsufficientStorageCopyWith<_InsufficientStorage> get copyWith =>
+  _$$InsufficientStorageImplCopyWith<_$InsufficientStorageImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$LoopDetectedCopyWith<$Res>
+abstract class _$$LoopDetectedImplCopyWith<$Res>
     implements $RestResponseServerErrorCodeTypeCopyWith<$Res> {
-  factory _$LoopDetectedCopyWith(
-          _LoopDetected value, $Res Function(_LoopDetected) then) =
-      __$LoopDetectedCopyWithImpl<$Res>;
+  factory _$$LoopDetectedImplCopyWith(
+          _$LoopDetectedImpl value, $Res Function(_$LoopDetectedImpl) then) =
+      __$$LoopDetectedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$LoopDetectedCopyWithImpl<$Res>
-    extends _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res>
-    implements _$LoopDetectedCopyWith<$Res> {
-  __$LoopDetectedCopyWithImpl(
-      _LoopDetected _value, $Res Function(_LoopDetected) _then)
-      : super(_value, (v) => _then(v as _LoopDetected));
+class __$$LoopDetectedImplCopyWithImpl<$Res>
+    extends _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res,
+        _$LoopDetectedImpl> implements _$$LoopDetectedImplCopyWith<$Res> {
+  __$$LoopDetectedImplCopyWithImpl(
+      _$LoopDetectedImpl _value, $Res Function(_$LoopDetectedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _LoopDetected get _value => super._value as _LoopDetected;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_LoopDetected(
-      intValue: intValue == freezed
+    return _then(_$LoopDetectedImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -1878,12 +1798,12 @@ class __$LoopDetectedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_LoopDetected implements _LoopDetected {
-  const _$_LoopDetected(
+class _$LoopDetectedImpl implements _LoopDetected {
+  const _$LoopDetectedImpl(
       {this.intValue = RestResponseServerErrorCodeType.loopDetectedIntValue});
 
-  @JsonKey(defaultValue: RestResponseServerErrorCodeType.loopDetectedIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -1892,10 +1812,10 @@ class _$_LoopDetected implements _LoopDetected {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _LoopDetected &&
+            other is _$LoopDetectedImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -1905,8 +1825,9 @@ class _$_LoopDetected implements _LoopDetected {
 
   @JsonKey(ignore: true)
   @override
-  _$LoopDetectedCopyWith<_LoopDetected> get copyWith =>
-      __$LoopDetectedCopyWithImpl<_LoopDetected>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$LoopDetectedImplCopyWith<_$LoopDetectedImpl> get copyWith =>
+      __$$LoopDetectedImplCopyWithImpl<_$LoopDetectedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1929,17 +1850,17 @@ class _$_LoopDetected implements _LoopDetected {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? internalServerError,
-    TResult Function(int intValue)? notImplemented,
-    TResult Function(int intValue)? badGateway,
-    TResult Function(int intValue)? serviceUnavailable,
-    TResult Function(int intValue)? gatewayTimeout,
-    TResult Function(int intValue)? httpNotSupported,
-    TResult Function(int intValue)? variantAlsoNegotiates,
-    TResult Function(int intValue)? insufficientStorage,
-    TResult Function(int intValue)? loopDetected,
-    TResult Function(int intValue)? notExtended,
-    TResult Function(int intValue)? networkAuthenticationRequired,
+    TResult? Function(int intValue)? internalServerError,
+    TResult? Function(int intValue)? notImplemented,
+    TResult? Function(int intValue)? badGateway,
+    TResult? Function(int intValue)? serviceUnavailable,
+    TResult? Function(int intValue)? gatewayTimeout,
+    TResult? Function(int intValue)? httpNotSupported,
+    TResult? Function(int intValue)? variantAlsoNegotiates,
+    TResult? Function(int intValue)? insufficientStorage,
+    TResult? Function(int intValue)? loopDetected,
+    TResult? Function(int intValue)? notExtended,
+    TResult? Function(int intValue)? networkAuthenticationRequired,
   }) {
     return loopDetected?.call(intValue);
   }
@@ -1989,17 +1910,17 @@ class _$_LoopDetected implements _LoopDetected {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InternalServerError value)? internalServerError,
-    TResult Function(_NotImplemented value)? notImplemented,
-    TResult Function(_BadGateway value)? badGateway,
-    TResult Function(_ServiceUnavailable value)? serviceUnavailable,
-    TResult Function(_GatewayTimeout value)? gatewayTimeout,
-    TResult Function(_HttpNotSupported value)? httpNotSupported,
-    TResult Function(_VariantAlsoNegotiates value)? variantAlsoNegotiates,
-    TResult Function(_InsufficientStorage value)? insufficientStorage,
-    TResult Function(_LoopDetected value)? loopDetected,
-    TResult Function(_NotExtended value)? notExtended,
-    TResult Function(_NetworkAuthenticationRequired value)?
+    TResult? Function(_InternalServerError value)? internalServerError,
+    TResult? Function(_NotImplemented value)? notImplemented,
+    TResult? Function(_BadGateway value)? badGateway,
+    TResult? Function(_ServiceUnavailable value)? serviceUnavailable,
+    TResult? Function(_GatewayTimeout value)? gatewayTimeout,
+    TResult? Function(_HttpNotSupported value)? httpNotSupported,
+    TResult? Function(_VariantAlsoNegotiates value)? variantAlsoNegotiates,
+    TResult? Function(_InsufficientStorage value)? insufficientStorage,
+    TResult? Function(_LoopDetected value)? loopDetected,
+    TResult? Function(_NotExtended value)? notExtended,
+    TResult? Function(_NetworkAuthenticationRequired value)?
         networkAuthenticationRequired,
   }) {
     return loopDetected?.call(this);
@@ -2030,43 +1951,42 @@ class _$_LoopDetected implements _LoopDetected {
 }
 
 abstract class _LoopDetected implements RestResponseServerErrorCodeType {
-  const factory _LoopDetected({int intValue}) = _$_LoopDetected;
+  const factory _LoopDetected({final int intValue}) = _$LoopDetectedImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$LoopDetectedCopyWith<_LoopDetected> get copyWith =>
+  _$$LoopDetectedImplCopyWith<_$LoopDetectedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$NotExtendedCopyWith<$Res>
+abstract class _$$NotExtendedImplCopyWith<$Res>
     implements $RestResponseServerErrorCodeTypeCopyWith<$Res> {
-  factory _$NotExtendedCopyWith(
-          _NotExtended value, $Res Function(_NotExtended) then) =
-      __$NotExtendedCopyWithImpl<$Res>;
+  factory _$$NotExtendedImplCopyWith(
+          _$NotExtendedImpl value, $Res Function(_$NotExtendedImpl) then) =
+      __$$NotExtendedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$NotExtendedCopyWithImpl<$Res>
-    extends _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res>
-    implements _$NotExtendedCopyWith<$Res> {
-  __$NotExtendedCopyWithImpl(
-      _NotExtended _value, $Res Function(_NotExtended) _then)
-      : super(_value, (v) => _then(v as _NotExtended));
+class __$$NotExtendedImplCopyWithImpl<$Res>
+    extends _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res,
+        _$NotExtendedImpl> implements _$$NotExtendedImplCopyWith<$Res> {
+  __$$NotExtendedImplCopyWithImpl(
+      _$NotExtendedImpl _value, $Res Function(_$NotExtendedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _NotExtended get _value => super._value as _NotExtended;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_NotExtended(
-      intValue: intValue == freezed
+    return _then(_$NotExtendedImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -2076,12 +1996,12 @@ class __$NotExtendedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_NotExtended implements _NotExtended {
-  const _$_NotExtended(
+class _$NotExtendedImpl implements _NotExtended {
+  const _$NotExtendedImpl(
       {this.intValue = RestResponseServerErrorCodeType.notExtendedIntValue});
 
-  @JsonKey(defaultValue: RestResponseServerErrorCodeType.notExtendedIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -2090,10 +2010,10 @@ class _$_NotExtended implements _NotExtended {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _NotExtended &&
+            other is _$NotExtendedImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -2103,8 +2023,9 @@ class _$_NotExtended implements _NotExtended {
 
   @JsonKey(ignore: true)
   @override
-  _$NotExtendedCopyWith<_NotExtended> get copyWith =>
-      __$NotExtendedCopyWithImpl<_NotExtended>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$NotExtendedImplCopyWith<_$NotExtendedImpl> get copyWith =>
+      __$$NotExtendedImplCopyWithImpl<_$NotExtendedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2127,17 +2048,17 @@ class _$_NotExtended implements _NotExtended {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? internalServerError,
-    TResult Function(int intValue)? notImplemented,
-    TResult Function(int intValue)? badGateway,
-    TResult Function(int intValue)? serviceUnavailable,
-    TResult Function(int intValue)? gatewayTimeout,
-    TResult Function(int intValue)? httpNotSupported,
-    TResult Function(int intValue)? variantAlsoNegotiates,
-    TResult Function(int intValue)? insufficientStorage,
-    TResult Function(int intValue)? loopDetected,
-    TResult Function(int intValue)? notExtended,
-    TResult Function(int intValue)? networkAuthenticationRequired,
+    TResult? Function(int intValue)? internalServerError,
+    TResult? Function(int intValue)? notImplemented,
+    TResult? Function(int intValue)? badGateway,
+    TResult? Function(int intValue)? serviceUnavailable,
+    TResult? Function(int intValue)? gatewayTimeout,
+    TResult? Function(int intValue)? httpNotSupported,
+    TResult? Function(int intValue)? variantAlsoNegotiates,
+    TResult? Function(int intValue)? insufficientStorage,
+    TResult? Function(int intValue)? loopDetected,
+    TResult? Function(int intValue)? notExtended,
+    TResult? Function(int intValue)? networkAuthenticationRequired,
   }) {
     return notExtended?.call(intValue);
   }
@@ -2187,17 +2108,17 @@ class _$_NotExtended implements _NotExtended {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InternalServerError value)? internalServerError,
-    TResult Function(_NotImplemented value)? notImplemented,
-    TResult Function(_BadGateway value)? badGateway,
-    TResult Function(_ServiceUnavailable value)? serviceUnavailable,
-    TResult Function(_GatewayTimeout value)? gatewayTimeout,
-    TResult Function(_HttpNotSupported value)? httpNotSupported,
-    TResult Function(_VariantAlsoNegotiates value)? variantAlsoNegotiates,
-    TResult Function(_InsufficientStorage value)? insufficientStorage,
-    TResult Function(_LoopDetected value)? loopDetected,
-    TResult Function(_NotExtended value)? notExtended,
-    TResult Function(_NetworkAuthenticationRequired value)?
+    TResult? Function(_InternalServerError value)? internalServerError,
+    TResult? Function(_NotImplemented value)? notImplemented,
+    TResult? Function(_BadGateway value)? badGateway,
+    TResult? Function(_ServiceUnavailable value)? serviceUnavailable,
+    TResult? Function(_GatewayTimeout value)? gatewayTimeout,
+    TResult? Function(_HttpNotSupported value)? httpNotSupported,
+    TResult? Function(_VariantAlsoNegotiates value)? variantAlsoNegotiates,
+    TResult? Function(_InsufficientStorage value)? insufficientStorage,
+    TResult? Function(_LoopDetected value)? loopDetected,
+    TResult? Function(_NotExtended value)? notExtended,
+    TResult? Function(_NetworkAuthenticationRequired value)?
         networkAuthenticationRequired,
   }) {
     return notExtended?.call(this);
@@ -2228,46 +2149,45 @@ class _$_NotExtended implements _NotExtended {
 }
 
 abstract class _NotExtended implements RestResponseServerErrorCodeType {
-  const factory _NotExtended({int intValue}) = _$_NotExtended;
+  const factory _NotExtended({final int intValue}) = _$NotExtendedImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$NotExtendedCopyWith<_NotExtended> get copyWith =>
+  _$$NotExtendedImplCopyWith<_$NotExtendedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$NetworkAuthenticationRequiredCopyWith<$Res>
+abstract class _$$NetworkAuthenticationRequiredImplCopyWith<$Res>
     implements $RestResponseServerErrorCodeTypeCopyWith<$Res> {
-  factory _$NetworkAuthenticationRequiredCopyWith(
-          _NetworkAuthenticationRequired value,
-          $Res Function(_NetworkAuthenticationRequired) then) =
-      __$NetworkAuthenticationRequiredCopyWithImpl<$Res>;
+  factory _$$NetworkAuthenticationRequiredImplCopyWith(
+          _$NetworkAuthenticationRequiredImpl value,
+          $Res Function(_$NetworkAuthenticationRequiredImpl) then) =
+      __$$NetworkAuthenticationRequiredImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$NetworkAuthenticationRequiredCopyWithImpl<$Res>
-    extends _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res>
-    implements _$NetworkAuthenticationRequiredCopyWith<$Res> {
-  __$NetworkAuthenticationRequiredCopyWithImpl(
-      _NetworkAuthenticationRequired _value,
-      $Res Function(_NetworkAuthenticationRequired) _then)
-      : super(_value, (v) => _then(v as _NetworkAuthenticationRequired));
+class __$$NetworkAuthenticationRequiredImplCopyWithImpl<$Res>
+    extends _$RestResponseServerErrorCodeTypeCopyWithImpl<$Res,
+        _$NetworkAuthenticationRequiredImpl>
+    implements _$$NetworkAuthenticationRequiredImplCopyWith<$Res> {
+  __$$NetworkAuthenticationRequiredImplCopyWithImpl(
+      _$NetworkAuthenticationRequiredImpl _value,
+      $Res Function(_$NetworkAuthenticationRequiredImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _NetworkAuthenticationRequired get _value =>
-      super._value as _NetworkAuthenticationRequired;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_NetworkAuthenticationRequired(
-      intValue: intValue == freezed
+    return _then(_$NetworkAuthenticationRequiredImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -2277,16 +2197,14 @@ class __$NetworkAuthenticationRequiredCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_NetworkAuthenticationRequired
+class _$NetworkAuthenticationRequiredImpl
     implements _NetworkAuthenticationRequired {
-  const _$_NetworkAuthenticationRequired(
+  const _$NetworkAuthenticationRequiredImpl(
       {this.intValue = RestResponseServerErrorCodeType
           .networkAuthenticationRequiredIntValue});
 
-  @JsonKey(
-      defaultValue:
-          RestResponseServerErrorCodeType.networkAuthenticationRequiredIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -2295,10 +2213,10 @@ class _$_NetworkAuthenticationRequired
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _NetworkAuthenticationRequired &&
+            other is _$NetworkAuthenticationRequiredImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -2308,9 +2226,11 @@ class _$_NetworkAuthenticationRequired
 
   @JsonKey(ignore: true)
   @override
-  _$NetworkAuthenticationRequiredCopyWith<_NetworkAuthenticationRequired>
-      get copyWith => __$NetworkAuthenticationRequiredCopyWithImpl<
-          _NetworkAuthenticationRequired>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$NetworkAuthenticationRequiredImplCopyWith<
+          _$NetworkAuthenticationRequiredImpl>
+      get copyWith => __$$NetworkAuthenticationRequiredImplCopyWithImpl<
+          _$NetworkAuthenticationRequiredImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2333,17 +2253,17 @@ class _$_NetworkAuthenticationRequired
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? internalServerError,
-    TResult Function(int intValue)? notImplemented,
-    TResult Function(int intValue)? badGateway,
-    TResult Function(int intValue)? serviceUnavailable,
-    TResult Function(int intValue)? gatewayTimeout,
-    TResult Function(int intValue)? httpNotSupported,
-    TResult Function(int intValue)? variantAlsoNegotiates,
-    TResult Function(int intValue)? insufficientStorage,
-    TResult Function(int intValue)? loopDetected,
-    TResult Function(int intValue)? notExtended,
-    TResult Function(int intValue)? networkAuthenticationRequired,
+    TResult? Function(int intValue)? internalServerError,
+    TResult? Function(int intValue)? notImplemented,
+    TResult? Function(int intValue)? badGateway,
+    TResult? Function(int intValue)? serviceUnavailable,
+    TResult? Function(int intValue)? gatewayTimeout,
+    TResult? Function(int intValue)? httpNotSupported,
+    TResult? Function(int intValue)? variantAlsoNegotiates,
+    TResult? Function(int intValue)? insufficientStorage,
+    TResult? Function(int intValue)? loopDetected,
+    TResult? Function(int intValue)? notExtended,
+    TResult? Function(int intValue)? networkAuthenticationRequired,
   }) {
     return networkAuthenticationRequired?.call(intValue);
   }
@@ -2393,17 +2313,17 @@ class _$_NetworkAuthenticationRequired
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InternalServerError value)? internalServerError,
-    TResult Function(_NotImplemented value)? notImplemented,
-    TResult Function(_BadGateway value)? badGateway,
-    TResult Function(_ServiceUnavailable value)? serviceUnavailable,
-    TResult Function(_GatewayTimeout value)? gatewayTimeout,
-    TResult Function(_HttpNotSupported value)? httpNotSupported,
-    TResult Function(_VariantAlsoNegotiates value)? variantAlsoNegotiates,
-    TResult Function(_InsufficientStorage value)? insufficientStorage,
-    TResult Function(_LoopDetected value)? loopDetected,
-    TResult Function(_NotExtended value)? notExtended,
-    TResult Function(_NetworkAuthenticationRequired value)?
+    TResult? Function(_InternalServerError value)? internalServerError,
+    TResult? Function(_NotImplemented value)? notImplemented,
+    TResult? Function(_BadGateway value)? badGateway,
+    TResult? Function(_ServiceUnavailable value)? serviceUnavailable,
+    TResult? Function(_GatewayTimeout value)? gatewayTimeout,
+    TResult? Function(_HttpNotSupported value)? httpNotSupported,
+    TResult? Function(_VariantAlsoNegotiates value)? variantAlsoNegotiates,
+    TResult? Function(_InsufficientStorage value)? insufficientStorage,
+    TResult? Function(_LoopDetected value)? loopDetected,
+    TResult? Function(_NotExtended value)? notExtended,
+    TResult? Function(_NetworkAuthenticationRequired value)?
         networkAuthenticationRequired,
   }) {
     return networkAuthenticationRequired?.call(this);
@@ -2435,13 +2355,14 @@ class _$_NetworkAuthenticationRequired
 
 abstract class _NetworkAuthenticationRequired
     implements RestResponseServerErrorCodeType {
-  const factory _NetworkAuthenticationRequired({int intValue}) =
-      _$_NetworkAuthenticationRequired;
+  const factory _NetworkAuthenticationRequired({final int intValue}) =
+      _$NetworkAuthenticationRequiredImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$NetworkAuthenticationRequiredCopyWith<_NetworkAuthenticationRequired>
+  _$$NetworkAuthenticationRequiredImplCopyWith<
+          _$NetworkAuthenticationRequiredImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

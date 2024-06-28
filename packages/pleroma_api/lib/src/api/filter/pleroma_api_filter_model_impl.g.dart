@@ -59,8 +59,9 @@ class PleromaApiFilterAdapter extends TypeAdapter<PleromaApiFilter> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiFilter _$$_PleromaApiFilterFromJson(Map<String, dynamic> json) =>
-    _$_PleromaApiFilter(
+_$PleromaApiFilterImpl _$$PleromaApiFilterImplFromJson(
+        Map<String, dynamic> json) =>
+    _$PleromaApiFilterImpl(
       context:
           (json['context'] as List<dynamic>).map((e) => e as String).toList(),
       expiresAt: json['expires_at'] == null
@@ -72,7 +73,8 @@ _$_PleromaApiFilter _$$_PleromaApiFilterFromJson(Map<String, dynamic> json) =>
       wholeWord: json['whole_word'] as bool,
     );
 
-Map<String, dynamic> _$$_PleromaApiFilterToJson(_$_PleromaApiFilter instance) {
+Map<String, dynamic> _$$PleromaApiFilterImplToJson(
+    _$PleromaApiFilterImpl instance) {
   final val = <String, dynamic>{
     'context': instance.context,
   };

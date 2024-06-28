@@ -1,7 +1,7 @@
 import 'package:fedi_app/app/chat/unifedi/unifedi_chat_model.dart';
 import 'package:fedi_app/repository/repository_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:moor/moor.dart' as moor;
+import 'package:drift/drift.dart' as moor;
 
 part 'unifedi_chat_message_repository_model.freezed.dart';
 

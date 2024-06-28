@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_rest_error_details_model_impl.dart';
 
@@ -11,35 +12,12 @@ part of 'mastodon_api_rest_error_details_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiRestErrorDetails _$MastodonApiRestErrorDetailsFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiRestErrorDetails.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiRestErrorDetailsTearOff {
-  const _$MastodonApiRestErrorDetailsTearOff();
-
-  _MastodonApiRestErrorDetails call(
-      {required String error,
-      required String? description,
-      required Map<String, List<MastodonApiRestErrorDetails>>? details}) {
-    return _MastodonApiRestErrorDetails(
-      error: error,
-      description: description,
-      details: details,
-    );
-  }
-
-  MastodonApiRestErrorDetails fromJson(Map<String, Object?> json) {
-    return MastodonApiRestErrorDetails.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiRestErrorDetails = _$MastodonApiRestErrorDetailsTearOff();
 
 /// @nodoc
 mixin _$MastodonApiRestErrorDetails {
@@ -59,7 +37,9 @@ abstract class $MastodonApiRestErrorDetailsCopyWith<$Res> {
   factory $MastodonApiRestErrorDetailsCopyWith(
           MastodonApiRestErrorDetails value,
           $Res Function(MastodonApiRestErrorDetails) then) =
-      _$MastodonApiRestErrorDetailsCopyWithImpl<$Res>;
+      _$MastodonApiRestErrorDetailsCopyWithImpl<$Res,
+          MastodonApiRestErrorDetails>;
+  @useResult
   $Res call(
       {String error,
       String? description,
@@ -67,45 +47,49 @@ abstract class $MastodonApiRestErrorDetailsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MastodonApiRestErrorDetailsCopyWithImpl<$Res>
+class _$MastodonApiRestErrorDetailsCopyWithImpl<$Res,
+        $Val extends MastodonApiRestErrorDetails>
     implements $MastodonApiRestErrorDetailsCopyWith<$Res> {
   _$MastodonApiRestErrorDetailsCopyWithImpl(this._value, this._then);
 
-  final MastodonApiRestErrorDetails _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiRestErrorDetails) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? error = freezed,
+    Object? error = null,
     Object? description = freezed,
     Object? details = freezed,
   }) {
     return _then(_value.copyWith(
-      error: error == freezed
+      error: null == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      details: details == freezed
+      details: freezed == details
           ? _value.details
           : details // ignore: cast_nullable_to_non_nullable
               as Map<String, List<MastodonApiRestErrorDetails>>?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiRestErrorDetailsCopyWith<$Res>
+abstract class _$$MastodonApiRestErrorDetailsImplCopyWith<$Res>
     implements $MastodonApiRestErrorDetailsCopyWith<$Res> {
-  factory _$MastodonApiRestErrorDetailsCopyWith(
-          _MastodonApiRestErrorDetails value,
-          $Res Function(_MastodonApiRestErrorDetails) then) =
-      __$MastodonApiRestErrorDetailsCopyWithImpl<$Res>;
+  factory _$$MastodonApiRestErrorDetailsImplCopyWith(
+          _$MastodonApiRestErrorDetailsImpl value,
+          $Res Function(_$MastodonApiRestErrorDetailsImpl) then) =
+      __$$MastodonApiRestErrorDetailsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {String error,
       String? description,
@@ -113,35 +97,33 @@ abstract class _$MastodonApiRestErrorDetailsCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MastodonApiRestErrorDetailsCopyWithImpl<$Res>
-    extends _$MastodonApiRestErrorDetailsCopyWithImpl<$Res>
-    implements _$MastodonApiRestErrorDetailsCopyWith<$Res> {
-  __$MastodonApiRestErrorDetailsCopyWithImpl(
-      _MastodonApiRestErrorDetails _value,
-      $Res Function(_MastodonApiRestErrorDetails) _then)
-      : super(_value, (v) => _then(v as _MastodonApiRestErrorDetails));
+class __$$MastodonApiRestErrorDetailsImplCopyWithImpl<$Res>
+    extends _$MastodonApiRestErrorDetailsCopyWithImpl<$Res,
+        _$MastodonApiRestErrorDetailsImpl>
+    implements _$$MastodonApiRestErrorDetailsImplCopyWith<$Res> {
+  __$$MastodonApiRestErrorDetailsImplCopyWithImpl(
+      _$MastodonApiRestErrorDetailsImpl _value,
+      $Res Function(_$MastodonApiRestErrorDetailsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiRestErrorDetails get _value =>
-      super._value as _MastodonApiRestErrorDetails;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? error = freezed,
+    Object? error = null,
     Object? description = freezed,
     Object? details = freezed,
   }) {
-    return _then(_MastodonApiRestErrorDetails(
-      error: error == freezed
+    return _then(_$MastodonApiRestErrorDetailsImpl(
+      error: null == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      details: details == freezed
-          ? _value.details
+      details: freezed == details
+          ? _value._details
           : details // ignore: cast_nullable_to_non_nullable
               as Map<String, List<MastodonApiRestErrorDetails>>?,
     ));
@@ -150,19 +132,31 @@ class __$MastodonApiRestErrorDetailsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiRestErrorDetails implements _MastodonApiRestErrorDetails {
-  const _$_MastodonApiRestErrorDetails(
-      {required this.error, required this.description, required this.details});
+class _$MastodonApiRestErrorDetailsImpl
+    implements _MastodonApiRestErrorDetails {
+  const _$MastodonApiRestErrorDetailsImpl(
+      {required this.error,
+      required this.description,
+      required final Map<String, List<MastodonApiRestErrorDetails>>? details})
+      : _details = details;
 
-  factory _$_MastodonApiRestErrorDetails.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiRestErrorDetailsFromJson(json);
+  factory _$MastodonApiRestErrorDetailsImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$MastodonApiRestErrorDetailsImplFromJson(json);
 
   @override
   final String error;
   @override
   final String? description;
+  final Map<String, List<MastodonApiRestErrorDetails>>? _details;
   @override
-  final Map<String, List<MastodonApiRestErrorDetails>>? details;
+  Map<String, List<MastodonApiRestErrorDetails>>? get details {
+    final value = _details;
+    if (value == null) return null;
+    if (_details is EqualUnmodifiableMapView) return _details;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(value);
+  }
 
   @override
   String toString() {
@@ -170,42 +164,46 @@ class _$_MastodonApiRestErrorDetails implements _MastodonApiRestErrorDetails {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiRestErrorDetails &&
+            other is _$MastodonApiRestErrorDetailsImpl &&
             (identical(other.error, error) || other.error == error) &&
             (identical(other.description, description) ||
                 other.description == description) &&
-            const DeepCollectionEquality().equals(other.details, details));
+            const DeepCollectionEquality().equals(other._details, _details));
   }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, error, description,
-      const DeepCollectionEquality().hash(details));
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiRestErrorDetailsCopyWith<_MastodonApiRestErrorDetails>
-      get copyWith => __$MastodonApiRestErrorDetailsCopyWithImpl<
-          _MastodonApiRestErrorDetails>(this, _$identity);
+  int get hashCode => Object.hash(runtimeType, error, description,
+      const DeepCollectionEquality().hash(_details));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiRestErrorDetailsImplCopyWith<_$MastodonApiRestErrorDetailsImpl>
+      get copyWith => __$$MastodonApiRestErrorDetailsImplCopyWithImpl<
+          _$MastodonApiRestErrorDetailsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiRestErrorDetailsToJson(this);
+    return _$$MastodonApiRestErrorDetailsImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiRestErrorDetails
     implements MastodonApiRestErrorDetails {
   const factory _MastodonApiRestErrorDetails(
-          {required String error,
-          required String? description,
-          required Map<String, List<MastodonApiRestErrorDetails>>? details}) =
-      _$_MastodonApiRestErrorDetails;
+      {required final String error,
+      required final String? description,
+      required final Map<String, List<MastodonApiRestErrorDetails>>?
+          details}) = _$MastodonApiRestErrorDetailsImpl;
 
   factory _MastodonApiRestErrorDetails.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiRestErrorDetails.fromJson;
+      _$MastodonApiRestErrorDetailsImpl.fromJson;
 
   @override
   String get error;
@@ -215,6 +213,6 @@ abstract class _MastodonApiRestErrorDetails
   Map<String, List<MastodonApiRestErrorDetails>>? get details;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiRestErrorDetailsCopyWith<_MastodonApiRestErrorDetails>
+  _$$MastodonApiRestErrorDetailsImplCopyWith<_$MastodonApiRestErrorDetailsImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

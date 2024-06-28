@@ -88,10 +88,11 @@ class PleromaApiMarkerPleromaPartAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiMarker _$$_PleromaApiMarkerFromJson(Map<String, dynamic> json) =>
-    _$_PleromaApiMarker(
+_$PleromaApiMarkerImpl _$$PleromaApiMarkerImplFromJson(
+        Map<String, dynamic> json) =>
+    _$PleromaApiMarkerImpl(
       lastReadId: json['updated_last_read_id'] as String?,
-      version: json['version'] as int,
+      version: (json['version'] as num).toInt(),
       updatedAt: json['updated_at'] == null
           ? null
           : DateTime.parse(json['updated_at'] as String),
@@ -101,7 +102,8 @@ _$_PleromaApiMarker _$$_PleromaApiMarkerFromJson(Map<String, dynamic> json) =>
               json['pleroma'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_PleromaApiMarkerToJson(_$_PleromaApiMarker instance) {
+Map<String, dynamic> _$$PleromaApiMarkerImplToJson(
+    _$PleromaApiMarkerImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {
@@ -117,14 +119,14 @@ Map<String, dynamic> _$$_PleromaApiMarkerToJson(_$_PleromaApiMarker instance) {
   return val;
 }
 
-_$_PleromaApiMarkerPleromaPart _$$_PleromaApiMarkerPleromaPartFromJson(
+_$PleromaApiMarkerPleromaPartImpl _$$PleromaApiMarkerPleromaPartImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiMarkerPleromaPart(
-      unreadCount: json['unread_count'] as int?,
+    _$PleromaApiMarkerPleromaPartImpl(
+      unreadCount: (json['unread_count'] as num?)?.toInt(),
     );
 
-Map<String, dynamic> _$$_PleromaApiMarkerPleromaPartToJson(
-    _$_PleromaApiMarkerPleromaPart instance) {
+Map<String, dynamic> _$$PleromaApiMarkerPleromaPartImplToJson(
+    _$PleromaApiMarkerPleromaPartImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

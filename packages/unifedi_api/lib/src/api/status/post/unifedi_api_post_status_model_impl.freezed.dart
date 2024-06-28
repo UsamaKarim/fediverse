@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_post_status_model_impl.dart';
 
@@ -11,73 +12,11 @@ part of 'unifedi_api_post_status_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiPostStatus _$UnifediApiPostStatusFromJson(Map<String, dynamic> json) {
   return _UnifediApiPostStatus.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiPostStatusTearOff {
-  const _$UnifediApiPostStatusTearOff();
-
-  _UnifediApiPostStatus call(
-      {@HiveField(0)
-      @JsonKey(name: 'content_type')
-          required String? contentType,
-      @HiveField(1)
-      @JsonKey(name: 'expires_in')
-          required int? expiresInSeconds,
-      @HiveField(2)
-      @JsonKey(name: 'in_reply_to_conversation_id', includeIfNull: false)
-          required String? inReplyToConversationId,
-      @HiveField(3)
-      @JsonKey(name: 'in_reply_to_id', includeIfNull: false)
-          required String? inReplyToId,
-      @HiveField(4)
-          required String? language,
-      @HiveField(5)
-          required String visibility,
-      @HiveField(6)
-      @JsonKey(name: 'media_ids')
-          required List<String>? mediaIds,
-      @HiveField(7)
-          required UnifediApiPostStatusPoll? poll,
-      @HiveField(8)
-          required bool? preview,
-      @HiveField(9)
-          required bool sensitive,
-      @HiveField(10)
-      @JsonKey(name: 'spoiler_text')
-          required String? spoilerText,
-      @HiveField(11)
-          required String? status,
-      @HiveField(12)
-          required List<String>? to}) {
-    return _UnifediApiPostStatus(
-      contentType: contentType,
-      expiresInSeconds: expiresInSeconds,
-      inReplyToConversationId: inReplyToConversationId,
-      inReplyToId: inReplyToId,
-      language: language,
-      visibility: visibility,
-      mediaIds: mediaIds,
-      poll: poll,
-      preview: preview,
-      sensitive: sensitive,
-      spoilerText: spoilerText,
-      status: status,
-      to: to,
-    );
-  }
-
-  UnifediApiPostStatus fromJson(Map<String, Object?> json) {
-    return UnifediApiPostStatus.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiPostStatus = _$UnifediApiPostStatusTearOff();
 
 /// @nodoc
 mixin _$UnifediApiPostStatus {
@@ -124,53 +63,42 @@ mixin _$UnifediApiPostStatus {
 abstract class $UnifediApiPostStatusCopyWith<$Res> {
   factory $UnifediApiPostStatusCopyWith(UnifediApiPostStatus value,
           $Res Function(UnifediApiPostStatus) then) =
-      _$UnifediApiPostStatusCopyWithImpl<$Res>;
+      _$UnifediApiPostStatusCopyWithImpl<$Res, UnifediApiPostStatus>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-      @JsonKey(name: 'content_type')
-          String? contentType,
-      @HiveField(1)
-      @JsonKey(name: 'expires_in')
-          int? expiresInSeconds,
+      {@HiveField(0) @JsonKey(name: 'content_type') String? contentType,
+      @HiveField(1) @JsonKey(name: 'expires_in') int? expiresInSeconds,
       @HiveField(2)
       @JsonKey(name: 'in_reply_to_conversation_id', includeIfNull: false)
-          String? inReplyToConversationId,
+      String? inReplyToConversationId,
       @HiveField(3)
       @JsonKey(name: 'in_reply_to_id', includeIfNull: false)
-          String? inReplyToId,
-      @HiveField(4)
-          String? language,
-      @HiveField(5)
-          String visibility,
-      @HiveField(6)
-      @JsonKey(name: 'media_ids')
-          List<String>? mediaIds,
-      @HiveField(7)
-          UnifediApiPostStatusPoll? poll,
-      @HiveField(8)
-          bool? preview,
-      @HiveField(9)
-          bool sensitive,
-      @HiveField(10)
-      @JsonKey(name: 'spoiler_text')
-          String? spoilerText,
-      @HiveField(11)
-          String? status,
-      @HiveField(12)
-          List<String>? to});
+      String? inReplyToId,
+      @HiveField(4) String? language,
+      @HiveField(5) String visibility,
+      @HiveField(6) @JsonKey(name: 'media_ids') List<String>? mediaIds,
+      @HiveField(7) UnifediApiPostStatusPoll? poll,
+      @HiveField(8) bool? preview,
+      @HiveField(9) bool sensitive,
+      @HiveField(10) @JsonKey(name: 'spoiler_text') String? spoilerText,
+      @HiveField(11) String? status,
+      @HiveField(12) List<String>? to});
 
   $UnifediApiPostStatusPollCopyWith<$Res>? get poll;
 }
 
 /// @nodoc
-class _$UnifediApiPostStatusCopyWithImpl<$Res>
+class _$UnifediApiPostStatusCopyWithImpl<$Res,
+        $Val extends UnifediApiPostStatus>
     implements $UnifediApiPostStatusCopyWith<$Res> {
   _$UnifediApiPostStatusCopyWithImpl(this._value, this._then);
 
-  final UnifediApiPostStatus _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiPostStatus) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? contentType = freezed,
@@ -178,139 +106,124 @@ class _$UnifediApiPostStatusCopyWithImpl<$Res>
     Object? inReplyToConversationId = freezed,
     Object? inReplyToId = freezed,
     Object? language = freezed,
-    Object? visibility = freezed,
+    Object? visibility = null,
     Object? mediaIds = freezed,
     Object? poll = freezed,
     Object? preview = freezed,
-    Object? sensitive = freezed,
+    Object? sensitive = null,
     Object? spoilerText = freezed,
     Object? status = freezed,
     Object? to = freezed,
   }) {
     return _then(_value.copyWith(
-      contentType: contentType == freezed
+      contentType: freezed == contentType
           ? _value.contentType
           : contentType // ignore: cast_nullable_to_non_nullable
               as String?,
-      expiresInSeconds: expiresInSeconds == freezed
+      expiresInSeconds: freezed == expiresInSeconds
           ? _value.expiresInSeconds
           : expiresInSeconds // ignore: cast_nullable_to_non_nullable
               as int?,
-      inReplyToConversationId: inReplyToConversationId == freezed
+      inReplyToConversationId: freezed == inReplyToConversationId
           ? _value.inReplyToConversationId
           : inReplyToConversationId // ignore: cast_nullable_to_non_nullable
               as String?,
-      inReplyToId: inReplyToId == freezed
+      inReplyToId: freezed == inReplyToId
           ? _value.inReplyToId
           : inReplyToId // ignore: cast_nullable_to_non_nullable
               as String?,
-      language: language == freezed
+      language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as String?,
-      visibility: visibility == freezed
+      visibility: null == visibility
           ? _value.visibility
           : visibility // ignore: cast_nullable_to_non_nullable
               as String,
-      mediaIds: mediaIds == freezed
+      mediaIds: freezed == mediaIds
           ? _value.mediaIds
           : mediaIds // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      poll: poll == freezed
+      poll: freezed == poll
           ? _value.poll
           : poll // ignore: cast_nullable_to_non_nullable
               as UnifediApiPostStatusPoll?,
-      preview: preview == freezed
+      preview: freezed == preview
           ? _value.preview
           : preview // ignore: cast_nullable_to_non_nullable
               as bool?,
-      sensitive: sensitive == freezed
+      sensitive: null == sensitive
           ? _value.sensitive
           : sensitive // ignore: cast_nullable_to_non_nullable
               as bool,
-      spoilerText: spoilerText == freezed
+      spoilerText: freezed == spoilerText
           ? _value.spoilerText
           : spoilerText // ignore: cast_nullable_to_non_nullable
               as String?,
-      status: status == freezed
+      status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String?,
-      to: to == freezed
+      to: freezed == to
           ? _value.to
           : to // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiPostStatusPollCopyWith<$Res>? get poll {
     if (_value.poll == null) {
       return null;
     }
 
     return $UnifediApiPostStatusPollCopyWith<$Res>(_value.poll!, (value) {
-      return _then(_value.copyWith(poll: value));
+      return _then(_value.copyWith(poll: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiPostStatusCopyWith<$Res>
+abstract class _$$UnifediApiPostStatusImplCopyWith<$Res>
     implements $UnifediApiPostStatusCopyWith<$Res> {
-  factory _$UnifediApiPostStatusCopyWith(_UnifediApiPostStatus value,
-          $Res Function(_UnifediApiPostStatus) then) =
-      __$UnifediApiPostStatusCopyWithImpl<$Res>;
+  factory _$$UnifediApiPostStatusImplCopyWith(_$UnifediApiPostStatusImpl value,
+          $Res Function(_$UnifediApiPostStatusImpl) then) =
+      __$$UnifediApiPostStatusImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-      @JsonKey(name: 'content_type')
-          String? contentType,
-      @HiveField(1)
-      @JsonKey(name: 'expires_in')
-          int? expiresInSeconds,
+      {@HiveField(0) @JsonKey(name: 'content_type') String? contentType,
+      @HiveField(1) @JsonKey(name: 'expires_in') int? expiresInSeconds,
       @HiveField(2)
       @JsonKey(name: 'in_reply_to_conversation_id', includeIfNull: false)
-          String? inReplyToConversationId,
+      String? inReplyToConversationId,
       @HiveField(3)
       @JsonKey(name: 'in_reply_to_id', includeIfNull: false)
-          String? inReplyToId,
-      @HiveField(4)
-          String? language,
-      @HiveField(5)
-          String visibility,
-      @HiveField(6)
-      @JsonKey(name: 'media_ids')
-          List<String>? mediaIds,
-      @HiveField(7)
-          UnifediApiPostStatusPoll? poll,
-      @HiveField(8)
-          bool? preview,
-      @HiveField(9)
-          bool sensitive,
-      @HiveField(10)
-      @JsonKey(name: 'spoiler_text')
-          String? spoilerText,
-      @HiveField(11)
-          String? status,
-      @HiveField(12)
-          List<String>? to});
+      String? inReplyToId,
+      @HiveField(4) String? language,
+      @HiveField(5) String visibility,
+      @HiveField(6) @JsonKey(name: 'media_ids') List<String>? mediaIds,
+      @HiveField(7) UnifediApiPostStatusPoll? poll,
+      @HiveField(8) bool? preview,
+      @HiveField(9) bool sensitive,
+      @HiveField(10) @JsonKey(name: 'spoiler_text') String? spoilerText,
+      @HiveField(11) String? status,
+      @HiveField(12) List<String>? to});
 
   @override
   $UnifediApiPostStatusPollCopyWith<$Res>? get poll;
 }
 
 /// @nodoc
-class __$UnifediApiPostStatusCopyWithImpl<$Res>
-    extends _$UnifediApiPostStatusCopyWithImpl<$Res>
-    implements _$UnifediApiPostStatusCopyWith<$Res> {
-  __$UnifediApiPostStatusCopyWithImpl(
-      _UnifediApiPostStatus _value, $Res Function(_UnifediApiPostStatus) _then)
-      : super(_value, (v) => _then(v as _UnifediApiPostStatus));
+class __$$UnifediApiPostStatusImplCopyWithImpl<$Res>
+    extends _$UnifediApiPostStatusCopyWithImpl<$Res, _$UnifediApiPostStatusImpl>
+    implements _$$UnifediApiPostStatusImplCopyWith<$Res> {
+  __$$UnifediApiPostStatusImplCopyWithImpl(_$UnifediApiPostStatusImpl _value,
+      $Res Function(_$UnifediApiPostStatusImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiPostStatus get _value => super._value as _UnifediApiPostStatus;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? contentType = freezed,
@@ -318,66 +231,66 @@ class __$UnifediApiPostStatusCopyWithImpl<$Res>
     Object? inReplyToConversationId = freezed,
     Object? inReplyToId = freezed,
     Object? language = freezed,
-    Object? visibility = freezed,
+    Object? visibility = null,
     Object? mediaIds = freezed,
     Object? poll = freezed,
     Object? preview = freezed,
-    Object? sensitive = freezed,
+    Object? sensitive = null,
     Object? spoilerText = freezed,
     Object? status = freezed,
     Object? to = freezed,
   }) {
-    return _then(_UnifediApiPostStatus(
-      contentType: contentType == freezed
+    return _then(_$UnifediApiPostStatusImpl(
+      contentType: freezed == contentType
           ? _value.contentType
           : contentType // ignore: cast_nullable_to_non_nullable
               as String?,
-      expiresInSeconds: expiresInSeconds == freezed
+      expiresInSeconds: freezed == expiresInSeconds
           ? _value.expiresInSeconds
           : expiresInSeconds // ignore: cast_nullable_to_non_nullable
               as int?,
-      inReplyToConversationId: inReplyToConversationId == freezed
+      inReplyToConversationId: freezed == inReplyToConversationId
           ? _value.inReplyToConversationId
           : inReplyToConversationId // ignore: cast_nullable_to_non_nullable
               as String?,
-      inReplyToId: inReplyToId == freezed
+      inReplyToId: freezed == inReplyToId
           ? _value.inReplyToId
           : inReplyToId // ignore: cast_nullable_to_non_nullable
               as String?,
-      language: language == freezed
+      language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as String?,
-      visibility: visibility == freezed
+      visibility: null == visibility
           ? _value.visibility
           : visibility // ignore: cast_nullable_to_non_nullable
               as String,
-      mediaIds: mediaIds == freezed
-          ? _value.mediaIds
+      mediaIds: freezed == mediaIds
+          ? _value._mediaIds
           : mediaIds // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      poll: poll == freezed
+      poll: freezed == poll
           ? _value.poll
           : poll // ignore: cast_nullable_to_non_nullable
               as UnifediApiPostStatusPoll?,
-      preview: preview == freezed
+      preview: freezed == preview
           ? _value.preview
           : preview // ignore: cast_nullable_to_non_nullable
               as bool?,
-      sensitive: sensitive == freezed
+      sensitive: null == sensitive
           ? _value.sensitive
           : sensitive // ignore: cast_nullable_to_non_nullable
               as bool,
-      spoilerText: spoilerText == freezed
+      spoilerText: freezed == spoilerText
           ? _value.spoilerText
           : spoilerText // ignore: cast_nullable_to_non_nullable
               as String?,
-      status: status == freezed
+      status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String?,
-      to: to == freezed
-          ? _value.to
+      to: freezed == to
+          ? _value._to
           : to // ignore: cast_nullable_to_non_nullable
               as List<String>?,
     ));
@@ -386,43 +299,32 @@ class __$UnifediApiPostStatusCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiPostStatus implements _UnifediApiPostStatus {
-  const _$_UnifediApiPostStatus(
-      {@HiveField(0)
-      @JsonKey(name: 'content_type')
-          required this.contentType,
-      @HiveField(1)
-      @JsonKey(name: 'expires_in')
-          required this.expiresInSeconds,
+class _$UnifediApiPostStatusImpl implements _UnifediApiPostStatus {
+  const _$UnifediApiPostStatusImpl(
+      {@HiveField(0) @JsonKey(name: 'content_type') required this.contentType,
+      @HiveField(1) @JsonKey(name: 'expires_in') required this.expiresInSeconds,
       @HiveField(2)
       @JsonKey(name: 'in_reply_to_conversation_id', includeIfNull: false)
-          required this.inReplyToConversationId,
+      required this.inReplyToConversationId,
       @HiveField(3)
       @JsonKey(name: 'in_reply_to_id', includeIfNull: false)
-          required this.inReplyToId,
-      @HiveField(4)
-          required this.language,
-      @HiveField(5)
-          required this.visibility,
+      required this.inReplyToId,
+      @HiveField(4) required this.language,
+      @HiveField(5) required this.visibility,
       @HiveField(6)
       @JsonKey(name: 'media_ids')
-          required this.mediaIds,
-      @HiveField(7)
-          required this.poll,
-      @HiveField(8)
-          required this.preview,
-      @HiveField(9)
-          required this.sensitive,
-      @HiveField(10)
-      @JsonKey(name: 'spoiler_text')
-          required this.spoilerText,
-      @HiveField(11)
-          required this.status,
-      @HiveField(12)
-          required this.to});
+      required final List<String>? mediaIds,
+      @HiveField(7) required this.poll,
+      @HiveField(8) required this.preview,
+      @HiveField(9) required this.sensitive,
+      @HiveField(10) @JsonKey(name: 'spoiler_text') required this.spoilerText,
+      @HiveField(11) required this.status,
+      @HiveField(12) required final List<String>? to})
+      : _mediaIds = mediaIds,
+        _to = to;
 
-  factory _$_UnifediApiPostStatus.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiPostStatusFromJson(json);
+  factory _$UnifediApiPostStatusImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiPostStatusImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -446,10 +348,18 @@ class _$_UnifediApiPostStatus implements _UnifediApiPostStatus {
   @override
   @HiveField(5)
   final String visibility;
+  final List<String>? _mediaIds;
   @override
   @HiveField(6)
   @JsonKey(name: 'media_ids')
-  final List<String>? mediaIds;
+  List<String>? get mediaIds {
+    final value = _mediaIds;
+    if (value == null) return null;
+    if (_mediaIds is EqualUnmodifiableListView) return _mediaIds;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(7)
   final UnifediApiPostStatusPoll? poll;
@@ -466,9 +376,16 @@ class _$_UnifediApiPostStatus implements _UnifediApiPostStatus {
   @override
   @HiveField(11)
   final String? status;
+  final List<String>? _to;
   @override
   @HiveField(12)
-  final List<String>? to;
+  List<String>? get to {
+    final value = _to;
+    if (value == null) return null;
+    if (_to is EqualUnmodifiableListView) return _to;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   @override
   String toString() {
@@ -476,10 +393,10 @@ class _$_UnifediApiPostStatus implements _UnifediApiPostStatus {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiPostStatus &&
+            other is _$UnifediApiPostStatusImpl &&
             (identical(other.contentType, contentType) ||
                 other.contentType == contentType) &&
             (identical(other.expiresInSeconds, expiresInSeconds) ||
@@ -493,7 +410,7 @@ class _$_UnifediApiPostStatus implements _UnifediApiPostStatus {
                 other.language == language) &&
             (identical(other.visibility, visibility) ||
                 other.visibility == visibility) &&
-            const DeepCollectionEquality().equals(other.mediaIds, mediaIds) &&
+            const DeepCollectionEquality().equals(other._mediaIds, _mediaIds) &&
             (identical(other.poll, poll) || other.poll == poll) &&
             (identical(other.preview, preview) || other.preview == preview) &&
             (identical(other.sensitive, sensitive) ||
@@ -501,9 +418,10 @@ class _$_UnifediApiPostStatus implements _UnifediApiPostStatus {
             (identical(other.spoilerText, spoilerText) ||
                 other.spoilerText == spoilerText) &&
             (identical(other.status, status) || other.status == status) &&
-            const DeepCollectionEquality().equals(other.to, to));
+            const DeepCollectionEquality().equals(other._to, _to));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -513,63 +431,61 @@ class _$_UnifediApiPostStatus implements _UnifediApiPostStatus {
       inReplyToId,
       language,
       visibility,
-      const DeepCollectionEquality().hash(mediaIds),
+      const DeepCollectionEquality().hash(_mediaIds),
       poll,
       preview,
       sensitive,
       spoilerText,
       status,
-      const DeepCollectionEquality().hash(to));
+      const DeepCollectionEquality().hash(_to));
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiPostStatusCopyWith<_UnifediApiPostStatus> get copyWith =>
-      __$UnifediApiPostStatusCopyWithImpl<_UnifediApiPostStatus>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiPostStatusImplCopyWith<_$UnifediApiPostStatusImpl>
+      get copyWith =>
+          __$$UnifediApiPostStatusImplCopyWithImpl<_$UnifediApiPostStatusImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiPostStatusToJson(this);
+    return _$$UnifediApiPostStatusImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiPostStatus implements UnifediApiPostStatus {
   const factory _UnifediApiPostStatus(
-      {@HiveField(0)
-      @JsonKey(name: 'content_type')
-          required String? contentType,
-      @HiveField(1)
-      @JsonKey(name: 'expires_in')
-          required int? expiresInSeconds,
-      @HiveField(2)
-      @JsonKey(name: 'in_reply_to_conversation_id', includeIfNull: false)
-          required String? inReplyToConversationId,
-      @HiveField(3)
-      @JsonKey(name: 'in_reply_to_id', includeIfNull: false)
-          required String? inReplyToId,
-      @HiveField(4)
-          required String? language,
-      @HiveField(5)
-          required String visibility,
-      @HiveField(6)
-      @JsonKey(name: 'media_ids')
-          required List<String>? mediaIds,
-      @HiveField(7)
-          required UnifediApiPostStatusPoll? poll,
-      @HiveField(8)
-          required bool? preview,
-      @HiveField(9)
-          required bool sensitive,
-      @HiveField(10)
-      @JsonKey(name: 'spoiler_text')
-          required String? spoilerText,
-      @HiveField(11)
-          required String? status,
-      @HiveField(12)
-          required List<String>? to}) = _$_UnifediApiPostStatus;
+          {@HiveField(0)
+          @JsonKey(name: 'content_type')
+          required final String? contentType,
+          @HiveField(1)
+          @JsonKey(name: 'expires_in')
+          required final int? expiresInSeconds,
+          @HiveField(2)
+          @JsonKey(name: 'in_reply_to_conversation_id', includeIfNull: false)
+          required final String? inReplyToConversationId,
+          @HiveField(3)
+          @JsonKey(name: 'in_reply_to_id', includeIfNull: false)
+          required final String? inReplyToId,
+          @HiveField(4) required final String? language,
+          @HiveField(5) required final String visibility,
+          @HiveField(6)
+          @JsonKey(name: 'media_ids')
+          required final List<String>? mediaIds,
+          @HiveField(7) required final UnifediApiPostStatusPoll? poll,
+          @HiveField(8) required final bool? preview,
+          @HiveField(9) required final bool sensitive,
+          @HiveField(10)
+          @JsonKey(name: 'spoiler_text')
+          required final String? spoilerText,
+          @HiveField(11) required final String? status,
+          @HiveField(12) required final List<String>? to}) =
+      _$UnifediApiPostStatusImpl;
 
   factory _UnifediApiPostStatus.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiPostStatus.fromJson;
+      _$UnifediApiPostStatusImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -618,6 +534,6 @@ abstract class _UnifediApiPostStatus implements UnifediApiPostStatus {
   List<String>? get to;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiPostStatusCopyWith<_UnifediApiPostStatus> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$UnifediApiPostStatusImplCopyWith<_$UnifediApiPostStatusImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

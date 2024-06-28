@@ -46,16 +46,17 @@ class UnifediApiScheduledStatusParamsMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiScheduledStatusParamsMastodonAdapter
-    _$$_UnifediApiScheduledStatusParamsMastodonAdapterFromJson(
+_$UnifediApiScheduledStatusParamsMastodonAdapterImpl
+    _$$UnifediApiScheduledStatusParamsMastodonAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiScheduledStatusParamsMastodonAdapter(
+        _$UnifediApiScheduledStatusParamsMastodonAdapterImpl(
           MastodonApiScheduledStatusParams.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiScheduledStatusParamsMastodonAdapterToJson(
-        _$_UnifediApiScheduledStatusParamsMastodonAdapter instance) =>
-    <String, dynamic>{
-      'value': instance.value.toJson(),
-    };
+Map<String, dynamic>
+    _$$UnifediApiScheduledStatusParamsMastodonAdapterImplToJson(
+            _$UnifediApiScheduledStatusParamsMastodonAdapterImpl instance) =>
+        <String, dynamic>{
+          'value': instance.value.toJson(),
+        };

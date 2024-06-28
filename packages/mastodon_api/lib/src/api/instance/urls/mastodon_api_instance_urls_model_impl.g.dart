@@ -45,14 +45,14 @@ class MastodonApiInstanceUrlsAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiInstanceUrls _$$_MastodonApiInstanceUrlsFromJson(
+_$MastodonApiInstanceUrlsImpl _$$MastodonApiInstanceUrlsImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiInstanceUrls(
+    _$MastodonApiInstanceUrlsImpl(
       streamingApi: json['streaming_api'] as String?,
     );
 
-Map<String, dynamic> _$$_MastodonApiInstanceUrlsToJson(
-    _$_MastodonApiInstanceUrls instance) {
+Map<String, dynamic> _$$MastodonApiInstanceUrlsImplToJson(
+    _$MastodonApiInstanceUrlsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

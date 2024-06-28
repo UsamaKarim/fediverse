@@ -57,9 +57,9 @@ class MastodonApiNotificationAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiNotification _$$_MastodonApiNotificationFromJson(
+_$MastodonApiNotificationImpl _$$MastodonApiNotificationImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiNotification(
+    _$MastodonApiNotificationImpl(
       account: json['account'] == null
           ? null
           : MastodonApiAccount.fromJson(
@@ -72,8 +72,8 @@ _$_MastodonApiNotification _$$_MastodonApiNotificationFromJson(
           : MastodonApiStatus.fromJson(json['status'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_MastodonApiNotificationToJson(
-    _$_MastodonApiNotification instance) {
+Map<String, dynamic> _$$MastodonApiNotificationImplToJson(
+    _$MastodonApiNotificationImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_emoji_model_impl.dart';
 
@@ -11,45 +12,11 @@ part of 'pleroma_api_emoji_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiEmoji _$PleromaApiEmojiFromJson(Map<String, dynamic> json) {
   return _PleromaApiEmoji.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiEmojiTearOff {
-  const _$PleromaApiEmojiTearOff();
-
-  _PleromaApiEmoji call(
-      {@HiveField(0)
-          required String shortcode,
-      @HiveField(1)
-          required String? url,
-      @HiveField(2)
-      @JsonKey(name: 'static_url')
-          required String? staticUrl,
-      @JsonKey(name: 'visible_in_picker')
-      @HiveField(3)
-          required bool? visibleInPicker,
-      @HiveField(4)
-          required String? category}) {
-    return _PleromaApiEmoji(
-      shortcode: shortcode,
-      url: url,
-      staticUrl: staticUrl,
-      visibleInPicker: visibleInPicker,
-      category: category,
-    );
-  }
-
-  PleromaApiEmoji fromJson(Map<String, Object?> json) {
-    return PleromaApiEmoji.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiEmoji = _$PleromaApiEmojiTearOff();
 
 /// @nodoc
 mixin _$PleromaApiEmoji {
@@ -76,7 +43,8 @@ mixin _$PleromaApiEmoji {
 abstract class $PleromaApiEmojiCopyWith<$Res> {
   factory $PleromaApiEmojiCopyWith(
           PleromaApiEmoji value, $Res Function(PleromaApiEmoji) then) =
-      _$PleromaApiEmojiCopyWithImpl<$Res>;
+      _$PleromaApiEmojiCopyWithImpl<$Res, PleromaApiEmoji>;
+  @useResult
   $Res call(
       {@HiveField(0) String shortcode,
       @HiveField(1) String? url,
@@ -86,54 +54,57 @@ abstract class $PleromaApiEmojiCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiEmojiCopyWithImpl<$Res>
+class _$PleromaApiEmojiCopyWithImpl<$Res, $Val extends PleromaApiEmoji>
     implements $PleromaApiEmojiCopyWith<$Res> {
   _$PleromaApiEmojiCopyWithImpl(this._value, this._then);
 
-  final PleromaApiEmoji _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiEmoji) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? shortcode = freezed,
+    Object? shortcode = null,
     Object? url = freezed,
     Object? staticUrl = freezed,
     Object? visibleInPicker = freezed,
     Object? category = freezed,
   }) {
     return _then(_value.copyWith(
-      shortcode: shortcode == freezed
+      shortcode: null == shortcode
           ? _value.shortcode
           : shortcode // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
-      staticUrl: staticUrl == freezed
+      staticUrl: freezed == staticUrl
           ? _value.staticUrl
           : staticUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      visibleInPicker: visibleInPicker == freezed
+      visibleInPicker: freezed == visibleInPicker
           ? _value.visibleInPicker
           : visibleInPicker // ignore: cast_nullable_to_non_nullable
               as bool?,
-      category: category == freezed
+      category: freezed == category
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiEmojiCopyWith<$Res>
+abstract class _$$PleromaApiEmojiImplCopyWith<$Res>
     implements $PleromaApiEmojiCopyWith<$Res> {
-  factory _$PleromaApiEmojiCopyWith(
-          _PleromaApiEmoji value, $Res Function(_PleromaApiEmoji) then) =
-      __$PleromaApiEmojiCopyWithImpl<$Res>;
+  factory _$$PleromaApiEmojiImplCopyWith(_$PleromaApiEmojiImpl value,
+          $Res Function(_$PleromaApiEmojiImpl) then) =
+      __$$PleromaApiEmojiImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) String shortcode,
       @HiveField(1) String? url,
@@ -143,42 +114,40 @@ abstract class _$PleromaApiEmojiCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiEmojiCopyWithImpl<$Res>
-    extends _$PleromaApiEmojiCopyWithImpl<$Res>
-    implements _$PleromaApiEmojiCopyWith<$Res> {
-  __$PleromaApiEmojiCopyWithImpl(
-      _PleromaApiEmoji _value, $Res Function(_PleromaApiEmoji) _then)
-      : super(_value, (v) => _then(v as _PleromaApiEmoji));
+class __$$PleromaApiEmojiImplCopyWithImpl<$Res>
+    extends _$PleromaApiEmojiCopyWithImpl<$Res, _$PleromaApiEmojiImpl>
+    implements _$$PleromaApiEmojiImplCopyWith<$Res> {
+  __$$PleromaApiEmojiImplCopyWithImpl(
+      _$PleromaApiEmojiImpl _value, $Res Function(_$PleromaApiEmojiImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiEmoji get _value => super._value as _PleromaApiEmoji;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? shortcode = freezed,
+    Object? shortcode = null,
     Object? url = freezed,
     Object? staticUrl = freezed,
     Object? visibleInPicker = freezed,
     Object? category = freezed,
   }) {
-    return _then(_PleromaApiEmoji(
-      shortcode: shortcode == freezed
+    return _then(_$PleromaApiEmojiImpl(
+      shortcode: null == shortcode
           ? _value.shortcode
           : shortcode // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
-      staticUrl: staticUrl == freezed
+      staticUrl: freezed == staticUrl
           ? _value.staticUrl
           : staticUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      visibleInPicker: visibleInPicker == freezed
+      visibleInPicker: freezed == visibleInPicker
           ? _value.visibleInPicker
           : visibleInPicker // ignore: cast_nullable_to_non_nullable
               as bool?,
-      category: category == freezed
+      category: freezed == category
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -188,23 +157,18 @@ class __$PleromaApiEmojiCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiEmoji implements _PleromaApiEmoji {
-  const _$_PleromaApiEmoji(
-      {@HiveField(0)
-          required this.shortcode,
-      @HiveField(1)
-          required this.url,
-      @HiveField(2)
-      @JsonKey(name: 'static_url')
-          required this.staticUrl,
+class _$PleromaApiEmojiImpl implements _PleromaApiEmoji {
+  const _$PleromaApiEmojiImpl(
+      {@HiveField(0) required this.shortcode,
+      @HiveField(1) required this.url,
+      @HiveField(2) @JsonKey(name: 'static_url') required this.staticUrl,
       @JsonKey(name: 'visible_in_picker')
       @HiveField(3)
-          required this.visibleInPicker,
-      @HiveField(4)
-          required this.category});
+      required this.visibleInPicker,
+      @HiveField(4) required this.category});
 
-  factory _$_PleromaApiEmoji.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiEmojiFromJson(json);
+  factory _$PleromaApiEmojiImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiEmojiImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -230,10 +194,10 @@ class _$_PleromaApiEmoji implements _PleromaApiEmoji {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiEmoji &&
+            other is _$PleromaApiEmojiImpl &&
             (identical(other.shortcode, shortcode) ||
                 other.shortcode == shortcode) &&
             (identical(other.url, url) || other.url == url) &&
@@ -245,38 +209,40 @@ class _$_PleromaApiEmoji implements _PleromaApiEmoji {
                 other.category == category));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType, shortcode, url, staticUrl, visibleInPicker, category);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiEmojiCopyWith<_PleromaApiEmoji> get copyWith =>
-      __$PleromaApiEmojiCopyWithImpl<_PleromaApiEmoji>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiEmojiImplCopyWith<_$PleromaApiEmojiImpl> get copyWith =>
+      __$$PleromaApiEmojiImplCopyWithImpl<_$PleromaApiEmojiImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiEmojiToJson(this);
+    return _$$PleromaApiEmojiImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiEmoji implements PleromaApiEmoji {
   const factory _PleromaApiEmoji(
-      {@HiveField(0)
-          required String shortcode,
-      @HiveField(1)
-          required String? url,
+      {@HiveField(0) required final String shortcode,
+      @HiveField(1) required final String? url,
       @HiveField(2)
       @JsonKey(name: 'static_url')
-          required String? staticUrl,
+      required final String? staticUrl,
       @JsonKey(name: 'visible_in_picker')
       @HiveField(3)
-          required bool? visibleInPicker,
-      @HiveField(4)
-          required String? category}) = _$_PleromaApiEmoji;
+      required final bool? visibleInPicker,
+      @HiveField(4) required final String? category}) = _$PleromaApiEmojiImpl;
 
   factory _PleromaApiEmoji.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiEmoji.fromJson;
+      _$PleromaApiEmojiImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -297,6 +263,6 @@ abstract class _PleromaApiEmoji implements PleromaApiEmoji {
   String? get category;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiEmojiCopyWith<_PleromaApiEmoji> get copyWith =>
+  _$$PleromaApiEmojiImplCopyWith<_$PleromaApiEmojiImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

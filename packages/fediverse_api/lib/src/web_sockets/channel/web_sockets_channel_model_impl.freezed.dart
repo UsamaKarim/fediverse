@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'web_sockets_channel_model_impl.dart';
 
@@ -11,30 +12,12 @@ part of 'web_sockets_channel_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 WebSocketsChannelConfig _$WebSocketsChannelConfigFromJson(
     Map<String, dynamic> json) {
   return _WebSocketsChannelConfig.fromJson(json);
 }
-
-/// @nodoc
-class _$WebSocketsChannelConfigTearOff {
-  const _$WebSocketsChannelConfigTearOff();
-
-  _WebSocketsChannelConfig call({@HiveField(0) required String url}) {
-    return _WebSocketsChannelConfig(
-      url: url,
-    );
-  }
-
-  WebSocketsChannelConfig fromJson(Map<String, Object?> json) {
-    return WebSocketsChannelConfig.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $WebSocketsChannelConfig = _$WebSocketsChannelConfigTearOff();
 
 /// @nodoc
 mixin _$WebSocketsChannelConfig {
@@ -51,60 +34,65 @@ mixin _$WebSocketsChannelConfig {
 abstract class $WebSocketsChannelConfigCopyWith<$Res> {
   factory $WebSocketsChannelConfigCopyWith(WebSocketsChannelConfig value,
           $Res Function(WebSocketsChannelConfig) then) =
-      _$WebSocketsChannelConfigCopyWithImpl<$Res>;
+      _$WebSocketsChannelConfigCopyWithImpl<$Res, WebSocketsChannelConfig>;
+  @useResult
   $Res call({@HiveField(0) String url});
 }
 
 /// @nodoc
-class _$WebSocketsChannelConfigCopyWithImpl<$Res>
+class _$WebSocketsChannelConfigCopyWithImpl<$Res,
+        $Val extends WebSocketsChannelConfig>
     implements $WebSocketsChannelConfigCopyWith<$Res> {
   _$WebSocketsChannelConfigCopyWithImpl(this._value, this._then);
 
-  final WebSocketsChannelConfig _value;
   // ignore: unused_field
-  final $Res Function(WebSocketsChannelConfig) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? url = freezed,
+    Object? url = null,
   }) {
     return _then(_value.copyWith(
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$WebSocketsChannelConfigCopyWith<$Res>
+abstract class _$$WebSocketsChannelConfigImplCopyWith<$Res>
     implements $WebSocketsChannelConfigCopyWith<$Res> {
-  factory _$WebSocketsChannelConfigCopyWith(_WebSocketsChannelConfig value,
-          $Res Function(_WebSocketsChannelConfig) then) =
-      __$WebSocketsChannelConfigCopyWithImpl<$Res>;
+  factory _$$WebSocketsChannelConfigImplCopyWith(
+          _$WebSocketsChannelConfigImpl value,
+          $Res Function(_$WebSocketsChannelConfigImpl) then) =
+      __$$WebSocketsChannelConfigImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) String url});
 }
 
 /// @nodoc
-class __$WebSocketsChannelConfigCopyWithImpl<$Res>
-    extends _$WebSocketsChannelConfigCopyWithImpl<$Res>
-    implements _$WebSocketsChannelConfigCopyWith<$Res> {
-  __$WebSocketsChannelConfigCopyWithImpl(_WebSocketsChannelConfig _value,
-      $Res Function(_WebSocketsChannelConfig) _then)
-      : super(_value, (v) => _then(v as _WebSocketsChannelConfig));
+class __$$WebSocketsChannelConfigImplCopyWithImpl<$Res>
+    extends _$WebSocketsChannelConfigCopyWithImpl<$Res,
+        _$WebSocketsChannelConfigImpl>
+    implements _$$WebSocketsChannelConfigImplCopyWith<$Res> {
+  __$$WebSocketsChannelConfigImplCopyWithImpl(
+      _$WebSocketsChannelConfigImpl _value,
+      $Res Function(_$WebSocketsChannelConfigImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _WebSocketsChannelConfig get _value =>
-      super._value as _WebSocketsChannelConfig;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? url = freezed,
+    Object? url = null,
   }) {
-    return _then(_WebSocketsChannelConfig(
-      url: url == freezed
+    return _then(_$WebSocketsChannelConfigImpl(
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
@@ -114,11 +102,11 @@ class __$WebSocketsChannelConfigCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_WebSocketsChannelConfig implements _WebSocketsChannelConfig {
-  const _$_WebSocketsChannelConfig({@HiveField(0) required this.url});
+class _$WebSocketsChannelConfigImpl implements _WebSocketsChannelConfig {
+  const _$WebSocketsChannelConfigImpl({@HiveField(0) required this.url});
 
-  factory _$_WebSocketsChannelConfig.fromJson(Map<String, dynamic> json) =>
-      _$$_WebSocketsChannelConfigFromJson(json);
+  factory _$WebSocketsChannelConfigImpl.fromJson(Map<String, dynamic> json) =>
+      _$$WebSocketsChannelConfigImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -130,40 +118,45 @@ class _$_WebSocketsChannelConfig implements _WebSocketsChannelConfig {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _WebSocketsChannelConfig &&
+            other is _$WebSocketsChannelConfigImpl &&
             (identical(other.url, url) || other.url == url));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, url);
 
   @JsonKey(ignore: true)
   @override
-  _$WebSocketsChannelConfigCopyWith<_WebSocketsChannelConfig> get copyWith =>
-      __$WebSocketsChannelConfigCopyWithImpl<_WebSocketsChannelConfig>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$WebSocketsChannelConfigImplCopyWith<_$WebSocketsChannelConfigImpl>
+      get copyWith => __$$WebSocketsChannelConfigImplCopyWithImpl<
+          _$WebSocketsChannelConfigImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_WebSocketsChannelConfigToJson(this);
+    return _$$WebSocketsChannelConfigImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _WebSocketsChannelConfig implements WebSocketsChannelConfig {
-  const factory _WebSocketsChannelConfig({@HiveField(0) required String url}) =
-      _$_WebSocketsChannelConfig;
+  const factory _WebSocketsChannelConfig(
+          {@HiveField(0) required final String url}) =
+      _$WebSocketsChannelConfigImpl;
 
   factory _WebSocketsChannelConfig.fromJson(Map<String, dynamic> json) =
-      _$_WebSocketsChannelConfig.fromJson;
+      _$WebSocketsChannelConfigImpl.fromJson;
 
   @override
   @HiveField(0)
   String get url;
   @override
   @JsonKey(ignore: true)
-  _$WebSocketsChannelConfigCopyWith<_WebSocketsChannelConfig> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$WebSocketsChannelConfigImplCopyWith<_$WebSocketsChannelConfigImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

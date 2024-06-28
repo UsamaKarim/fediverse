@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'rest_response_model_impl.dart';
 
@@ -11,26 +12,7 @@ part of 'rest_response_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$RestResponseTearOff {
-  const _$RestResponseTearOff();
-
-  _RestResponse call(
-      {required RestRequest request,
-      required int statusCode,
-      required String? content}) {
-    return _RestResponse(
-      request: request,
-      statusCode: statusCode,
-      content: content,
-    );
-  }
-}
-
-/// @nodoc
-const $RestResponse = _$RestResponseTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$RestResponse {
@@ -47,57 +29,63 @@ mixin _$RestResponse {
 abstract class $RestResponseCopyWith<$Res> {
   factory $RestResponseCopyWith(
           RestResponse value, $Res Function(RestResponse) then) =
-      _$RestResponseCopyWithImpl<$Res>;
+      _$RestResponseCopyWithImpl<$Res, RestResponse>;
+  @useResult
   $Res call({RestRequest request, int statusCode, String? content});
 
   $RestRequestCopyWith<$Res> get request;
 }
 
 /// @nodoc
-class _$RestResponseCopyWithImpl<$Res> implements $RestResponseCopyWith<$Res> {
+class _$RestResponseCopyWithImpl<$Res, $Val extends RestResponse>
+    implements $RestResponseCopyWith<$Res> {
   _$RestResponseCopyWithImpl(this._value, this._then);
 
-  final RestResponse _value;
   // ignore: unused_field
-  final $Res Function(RestResponse) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? request = freezed,
-    Object? statusCode = freezed,
+    Object? request = null,
+    Object? statusCode = null,
     Object? content = freezed,
   }) {
     return _then(_value.copyWith(
-      request: request == freezed
+      request: null == request
           ? _value.request
           : request // ignore: cast_nullable_to_non_nullable
               as RestRequest,
-      statusCode: statusCode == freezed
+      statusCode: null == statusCode
           ? _value.statusCode
           : statusCode // ignore: cast_nullable_to_non_nullable
               as int,
-      content: content == freezed
+      content: freezed == content
           ? _value.content
           : content // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $RestRequestCopyWith<$Res> get request {
     return $RestRequestCopyWith<$Res>(_value.request, (value) {
-      return _then(_value.copyWith(request: value));
+      return _then(_value.copyWith(request: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$RestResponseCopyWith<$Res>
+abstract class _$$RestResponseImplCopyWith<$Res>
     implements $RestResponseCopyWith<$Res> {
-  factory _$RestResponseCopyWith(
-          _RestResponse value, $Res Function(_RestResponse) then) =
-      __$RestResponseCopyWithImpl<$Res>;
+  factory _$$RestResponseImplCopyWith(
+          _$RestResponseImpl value, $Res Function(_$RestResponseImpl) then) =
+      __$$RestResponseImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({RestRequest request, int statusCode, String? content});
 
   @override
@@ -105,31 +93,30 @@ abstract class _$RestResponseCopyWith<$Res>
 }
 
 /// @nodoc
-class __$RestResponseCopyWithImpl<$Res> extends _$RestResponseCopyWithImpl<$Res>
-    implements _$RestResponseCopyWith<$Res> {
-  __$RestResponseCopyWithImpl(
-      _RestResponse _value, $Res Function(_RestResponse) _then)
-      : super(_value, (v) => _then(v as _RestResponse));
+class __$$RestResponseImplCopyWithImpl<$Res>
+    extends _$RestResponseCopyWithImpl<$Res, _$RestResponseImpl>
+    implements _$$RestResponseImplCopyWith<$Res> {
+  __$$RestResponseImplCopyWithImpl(
+      _$RestResponseImpl _value, $Res Function(_$RestResponseImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _RestResponse get _value => super._value as _RestResponse;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? request = freezed,
-    Object? statusCode = freezed,
+    Object? request = null,
+    Object? statusCode = null,
     Object? content = freezed,
   }) {
-    return _then(_RestResponse(
-      request: request == freezed
+    return _then(_$RestResponseImpl(
+      request: null == request
           ? _value.request
           : request // ignore: cast_nullable_to_non_nullable
               as RestRequest,
-      statusCode: statusCode == freezed
+      statusCode: null == statusCode
           ? _value.statusCode
           : statusCode // ignore: cast_nullable_to_non_nullable
               as int,
-      content: content == freezed
+      content: freezed == content
           ? _value.content
           : content // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -139,8 +126,8 @@ class __$RestResponseCopyWithImpl<$Res> extends _$RestResponseCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_RestResponse implements _RestResponse {
-  const _$_RestResponse(
+class _$RestResponseImpl implements _RestResponse {
+  const _$RestResponseImpl(
       {required this.request, required this.statusCode, required this.content});
 
   @override
@@ -156,10 +143,10 @@ class _$_RestResponse implements _RestResponse {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _RestResponse &&
+            other is _$RestResponseImpl &&
             (identical(other.request, request) || other.request == request) &&
             (identical(other.statusCode, statusCode) ||
                 other.statusCode == statusCode) &&
@@ -171,15 +158,16 @@ class _$_RestResponse implements _RestResponse {
 
   @JsonKey(ignore: true)
   @override
-  _$RestResponseCopyWith<_RestResponse> get copyWith =>
-      __$RestResponseCopyWithImpl<_RestResponse>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$RestResponseImplCopyWith<_$RestResponseImpl> get copyWith =>
+      __$$RestResponseImplCopyWithImpl<_$RestResponseImpl>(this, _$identity);
 }
 
 abstract class _RestResponse implements RestResponse {
   const factory _RestResponse(
-      {required RestRequest request,
-      required int statusCode,
-      required String? content}) = _$_RestResponse;
+      {required final RestRequest request,
+      required final int statusCode,
+      required final String? content}) = _$RestResponseImpl;
 
   @override
   RestRequest get request;
@@ -189,6 +177,6 @@ abstract class _RestResponse implements RestResponse {
   String? get content;
   @override
   @JsonKey(ignore: true)
-  _$RestResponseCopyWith<_RestResponse> get copyWith =>
+  _$$RestResponseImplCopyWith<_$RestResponseImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

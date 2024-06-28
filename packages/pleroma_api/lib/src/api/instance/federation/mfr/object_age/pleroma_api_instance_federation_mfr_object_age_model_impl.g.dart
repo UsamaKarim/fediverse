@@ -49,18 +49,18 @@ class PleromaApiInstanceFederationMfrObjectAgeAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiInstanceFederationMfrObjectAge
-    _$$_PleromaApiInstanceFederationMfrObjectAgeFromJson(
+_$PleromaApiInstanceFederationMfrObjectAgeImpl
+    _$$PleromaApiInstanceFederationMfrObjectAgeImplFromJson(
             Map<String, dynamic> json) =>
-        _$_PleromaApiInstanceFederationMfrObjectAge(
-          threshold: json['threshold'] as int?,
+        _$PleromaApiInstanceFederationMfrObjectAgeImpl(
+          threshold: (json['threshold'] as num?)?.toInt(),
           actions: (json['actions'] as List<dynamic>?)
               ?.map((e) => e as String)
               .toList(),
         );
 
-Map<String, dynamic> _$$_PleromaApiInstanceFederationMfrObjectAgeToJson(
-    _$_PleromaApiInstanceFederationMfrObjectAge instance) {
+Map<String, dynamic> _$$PleromaApiInstanceFederationMfrObjectAgeImplToJson(
+    _$PleromaApiInstanceFederationMfrObjectAgeImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

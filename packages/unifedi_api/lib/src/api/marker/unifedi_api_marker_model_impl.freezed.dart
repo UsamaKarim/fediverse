@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_marker_model_impl.dart';
 
@@ -11,43 +12,11 @@ part of 'unifedi_api_marker_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiMarker _$UnifediApiMarkerFromJson(Map<String, dynamic> json) {
   return _UnifediApiMarker.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiMarkerTearOff {
-  const _$UnifediApiMarkerTearOff();
-
-  _UnifediApiMarker call(
-      {@HiveField(0)
-      @JsonKey(name: 'updated_last_read_id')
-          required String? lastReadId,
-      @HiveField(1)
-          required int version,
-      @HiveField(2)
-      @JsonKey(name: 'updated_at')
-          required DateTime? updatedAt,
-      @HiveField(3)
-      @JsonKey(name: 'unread_count')
-          required int? unreadCount}) {
-    return _UnifediApiMarker(
-      lastReadId: lastReadId,
-      version: version,
-      updatedAt: updatedAt,
-      unreadCount: unreadCount,
-    );
-  }
-
-  UnifediApiMarker fromJson(Map<String, Object?> json) {
-    return UnifediApiMarker.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiMarker = _$UnifediApiMarkerTearOff();
 
 /// @nodoc
 mixin _$UnifediApiMarker {
@@ -73,7 +42,8 @@ mixin _$UnifediApiMarker {
 abstract class $UnifediApiMarkerCopyWith<$Res> {
   factory $UnifediApiMarkerCopyWith(
           UnifediApiMarker value, $Res Function(UnifediApiMarker) then) =
-      _$UnifediApiMarkerCopyWithImpl<$Res>;
+      _$UnifediApiMarkerCopyWithImpl<$Res, UnifediApiMarker>;
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'updated_last_read_id') String? lastReadId,
       @HiveField(1) int version,
@@ -82,49 +52,52 @@ abstract class $UnifediApiMarkerCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UnifediApiMarkerCopyWithImpl<$Res>
+class _$UnifediApiMarkerCopyWithImpl<$Res, $Val extends UnifediApiMarker>
     implements $UnifediApiMarkerCopyWith<$Res> {
   _$UnifediApiMarkerCopyWithImpl(this._value, this._then);
 
-  final UnifediApiMarker _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiMarker) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? lastReadId = freezed,
-    Object? version = freezed,
+    Object? version = null,
     Object? updatedAt = freezed,
     Object? unreadCount = freezed,
   }) {
     return _then(_value.copyWith(
-      lastReadId: lastReadId == freezed
+      lastReadId: freezed == lastReadId
           ? _value.lastReadId
           : lastReadId // ignore: cast_nullable_to_non_nullable
               as String?,
-      version: version == freezed
+      version: null == version
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
               as int,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      unreadCount: unreadCount == freezed
+      unreadCount: freezed == unreadCount
           ? _value.unreadCount
           : unreadCount // ignore: cast_nullable_to_non_nullable
               as int?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiMarkerCopyWith<$Res>
+abstract class _$$UnifediApiMarkerImplCopyWith<$Res>
     implements $UnifediApiMarkerCopyWith<$Res> {
-  factory _$UnifediApiMarkerCopyWith(
-          _UnifediApiMarker value, $Res Function(_UnifediApiMarker) then) =
-      __$UnifediApiMarkerCopyWithImpl<$Res>;
+  factory _$$UnifediApiMarkerImplCopyWith(_$UnifediApiMarkerImpl value,
+          $Res Function(_$UnifediApiMarkerImpl) then) =
+      __$$UnifediApiMarkerImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'updated_last_read_id') String? lastReadId,
       @HiveField(1) int version,
@@ -133,37 +106,35 @@ abstract class _$UnifediApiMarkerCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiMarkerCopyWithImpl<$Res>
-    extends _$UnifediApiMarkerCopyWithImpl<$Res>
-    implements _$UnifediApiMarkerCopyWith<$Res> {
-  __$UnifediApiMarkerCopyWithImpl(
-      _UnifediApiMarker _value, $Res Function(_UnifediApiMarker) _then)
-      : super(_value, (v) => _then(v as _UnifediApiMarker));
+class __$$UnifediApiMarkerImplCopyWithImpl<$Res>
+    extends _$UnifediApiMarkerCopyWithImpl<$Res, _$UnifediApiMarkerImpl>
+    implements _$$UnifediApiMarkerImplCopyWith<$Res> {
+  __$$UnifediApiMarkerImplCopyWithImpl(_$UnifediApiMarkerImpl _value,
+      $Res Function(_$UnifediApiMarkerImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiMarker get _value => super._value as _UnifediApiMarker;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? lastReadId = freezed,
-    Object? version = freezed,
+    Object? version = null,
     Object? updatedAt = freezed,
     Object? unreadCount = freezed,
   }) {
-    return _then(_UnifediApiMarker(
-      lastReadId: lastReadId == freezed
+    return _then(_$UnifediApiMarkerImpl(
+      lastReadId: freezed == lastReadId
           ? _value.lastReadId
           : lastReadId // ignore: cast_nullable_to_non_nullable
               as String?,
-      version: version == freezed
+      version: null == version
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
               as int,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      unreadCount: unreadCount == freezed
+      unreadCount: freezed == unreadCount
           ? _value.unreadCount
           : unreadCount // ignore: cast_nullable_to_non_nullable
               as int?,
@@ -173,22 +144,17 @@ class __$UnifediApiMarkerCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiMarker implements _UnifediApiMarker {
-  const _$_UnifediApiMarker(
+class _$UnifediApiMarkerImpl implements _UnifediApiMarker {
+  const _$UnifediApiMarkerImpl(
       {@HiveField(0)
       @JsonKey(name: 'updated_last_read_id')
-          required this.lastReadId,
-      @HiveField(1)
-          required this.version,
-      @HiveField(2)
-      @JsonKey(name: 'updated_at')
-          required this.updatedAt,
-      @HiveField(3)
-      @JsonKey(name: 'unread_count')
-          required this.unreadCount});
+      required this.lastReadId,
+      @HiveField(1) required this.version,
+      @HiveField(2) @JsonKey(name: 'updated_at') required this.updatedAt,
+      @HiveField(3) @JsonKey(name: 'unread_count') required this.unreadCount});
 
-  factory _$_UnifediApiMarker.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiMarkerFromJson(json);
+  factory _$UnifediApiMarkerImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiMarkerImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -212,10 +178,10 @@ class _$_UnifediApiMarker implements _UnifediApiMarker {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiMarker &&
+            other is _$UnifediApiMarkerImpl &&
             (identical(other.lastReadId, lastReadId) ||
                 other.lastReadId == lastReadId) &&
             (identical(other.version, version) || other.version == version) &&
@@ -225,18 +191,23 @@ class _$_UnifediApiMarker implements _UnifediApiMarker {
                 other.unreadCount == unreadCount));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, lastReadId, version, updatedAt, unreadCount);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiMarkerCopyWith<_UnifediApiMarker> get copyWith =>
-      __$UnifediApiMarkerCopyWithImpl<_UnifediApiMarker>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiMarkerImplCopyWith<_$UnifediApiMarkerImpl> get copyWith =>
+      __$$UnifediApiMarkerImplCopyWithImpl<_$UnifediApiMarkerImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiMarkerToJson(this);
+    return _$$UnifediApiMarkerImplToJson(
+      this,
+    );
   }
 }
 
@@ -244,18 +215,17 @@ abstract class _UnifediApiMarker implements UnifediApiMarker {
   const factory _UnifediApiMarker(
       {@HiveField(0)
       @JsonKey(name: 'updated_last_read_id')
-          required String? lastReadId,
-      @HiveField(1)
-          required int version,
+      required final String? lastReadId,
+      @HiveField(1) required final int version,
       @HiveField(2)
       @JsonKey(name: 'updated_at')
-          required DateTime? updatedAt,
+      required final DateTime? updatedAt,
       @HiveField(3)
       @JsonKey(name: 'unread_count')
-          required int? unreadCount}) = _$_UnifediApiMarker;
+      required final int? unreadCount}) = _$UnifediApiMarkerImpl;
 
   factory _UnifediApiMarker.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiMarker.fromJson;
+      _$UnifediApiMarkerImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -274,6 +244,6 @@ abstract class _UnifediApiMarker implements UnifediApiMarker {
   int? get unreadCount;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiMarkerCopyWith<_UnifediApiMarker> get copyWith =>
+  _$$UnifediApiMarkerImplCopyWith<_$UnifediApiMarkerImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

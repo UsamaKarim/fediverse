@@ -57,9 +57,9 @@ class UnifediApiConversationAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiConversation _$$_UnifediApiConversationFromJson(
+_$UnifediApiConversationImpl _$$UnifediApiConversationImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiConversation(
+    _$UnifediApiConversationImpl(
       unread: json['unread'] as bool?,
       lastStatus: json['last_status'] == null
           ? null
@@ -74,8 +74,8 @@ _$_UnifediApiConversation _$$_UnifediApiConversationFromJson(
           .toList(),
     );
 
-Map<String, dynamic> _$$_UnifediApiConversationToJson(
-    _$_UnifediApiConversation instance) {
+Map<String, dynamic> _$$UnifediApiConversationImplToJson(
+    _$UnifediApiConversationImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

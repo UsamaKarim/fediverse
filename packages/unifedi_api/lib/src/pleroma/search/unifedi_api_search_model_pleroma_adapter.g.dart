@@ -45,16 +45,16 @@ class UnifediApiSearchResultPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiSearchResultPleromaAdapter
-    _$$_UnifediApiSearchResultPleromaAdapterFromJson(
+_$UnifediApiSearchResultPleromaAdapterImpl
+    _$$UnifediApiSearchResultPleromaAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiSearchResultPleromaAdapter(
+        _$UnifediApiSearchResultPleromaAdapterImpl(
           PleromaApiSearchResult.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiSearchResultPleromaAdapterToJson(
-        _$_UnifediApiSearchResultPleromaAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiSearchResultPleromaAdapterImplToJson(
+        _$UnifediApiSearchResultPleromaAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

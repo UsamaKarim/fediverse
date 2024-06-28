@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_announcement_model_impl.dart';
 
@@ -11,74 +12,12 @@ part of 'mastodon_api_announcement_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiAnnouncement _$MastodonApiAnnouncementFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiAnnouncement.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiAnnouncementTearOff {
-  const _$MastodonApiAnnouncementTearOff();
-
-  _MastodonApiAnnouncement call(
-      {@HiveField(0)
-          required String id,
-      @HiveField(1)
-          required String content,
-      @HiveField(2)
-      @JsonKey(name: 'all_day')
-          required bool allDay,
-      @HiveField(3)
-      @JsonKey(name: 'published_at')
-          required DateTime publishedAt,
-      @HiveField(4)
-      @JsonKey(name: 'updated_at')
-          required DateTime updatedAt,
-      @HiveField(5)
-          required bool? read,
-      @HiveField(6)
-          required List<MastodonApiAnnouncementEmojiReaction>? reactions,
-      @HiveField(7)
-          required List<MastodonApiMention>? mentions,
-      @HiveField(8)
-          required List<MastodonApiStatus>? statuses,
-      @HiveField(9)
-          required List<MastodonApiTag>? tags,
-      @HiveField(10)
-      @JsonKey(name: 'scheduled_at')
-          required DateTime? scheduledAt,
-      @HiveField(11)
-      @JsonKey(name: 'starts_at')
-          required DateTime? startsAt,
-      @HiveField(12)
-      @JsonKey(name: 'ends_at')
-          required DateTime? endsAt}) {
-    return _MastodonApiAnnouncement(
-      id: id,
-      content: content,
-      allDay: allDay,
-      publishedAt: publishedAt,
-      updatedAt: updatedAt,
-      read: read,
-      reactions: reactions,
-      mentions: mentions,
-      statuses: statuses,
-      tags: tags,
-      scheduledAt: scheduledAt,
-      startsAt: startsAt,
-      endsAt: endsAt,
-    );
-  }
-
-  MastodonApiAnnouncement fromJson(Map<String, Object?> json) {
-    return MastodonApiAnnouncement.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiAnnouncement = _$MastodonApiAnnouncementTearOff();
 
 /// @nodoc
 mixin _$MastodonApiAnnouncement {
@@ -126,7 +65,8 @@ mixin _$MastodonApiAnnouncement {
 abstract class $MastodonApiAnnouncementCopyWith<$Res> {
   factory $MastodonApiAnnouncementCopyWith(MastodonApiAnnouncement value,
           $Res Function(MastodonApiAnnouncement) then) =
-      _$MastodonApiAnnouncementCopyWithImpl<$Res>;
+      _$MastodonApiAnnouncementCopyWithImpl<$Res, MastodonApiAnnouncement>;
+  @useResult
   $Res call(
       {@HiveField(0) String id,
       @HiveField(1) String content,
@@ -144,21 +84,24 @@ abstract class $MastodonApiAnnouncementCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MastodonApiAnnouncementCopyWithImpl<$Res>
+class _$MastodonApiAnnouncementCopyWithImpl<$Res,
+        $Val extends MastodonApiAnnouncement>
     implements $MastodonApiAnnouncementCopyWith<$Res> {
   _$MastodonApiAnnouncementCopyWithImpl(this._value, this._then);
 
-  final MastodonApiAnnouncement _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiAnnouncement) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? content = freezed,
-    Object? allDay = freezed,
-    Object? publishedAt = freezed,
-    Object? updatedAt = freezed,
+    Object? id = null,
+    Object? content = null,
+    Object? allDay = null,
+    Object? publishedAt = null,
+    Object? updatedAt = null,
     Object? read = freezed,
     Object? reactions = freezed,
     Object? mentions = freezed,
@@ -169,69 +112,71 @@ class _$MastodonApiAnnouncementCopyWithImpl<$Res>
     Object? endsAt = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      content: content == freezed
+      content: null == content
           ? _value.content
           : content // ignore: cast_nullable_to_non_nullable
               as String,
-      allDay: allDay == freezed
+      allDay: null == allDay
           ? _value.allDay
           : allDay // ignore: cast_nullable_to_non_nullable
               as bool,
-      publishedAt: publishedAt == freezed
+      publishedAt: null == publishedAt
           ? _value.publishedAt
           : publishedAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      updatedAt: updatedAt == freezed
+      updatedAt: null == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      read: read == freezed
+      read: freezed == read
           ? _value.read
           : read // ignore: cast_nullable_to_non_nullable
               as bool?,
-      reactions: reactions == freezed
+      reactions: freezed == reactions
           ? _value.reactions
           : reactions // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiAnnouncementEmojiReaction>?,
-      mentions: mentions == freezed
+      mentions: freezed == mentions
           ? _value.mentions
           : mentions // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiMention>?,
-      statuses: statuses == freezed
+      statuses: freezed == statuses
           ? _value.statuses
           : statuses // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiStatus>?,
-      tags: tags == freezed
+      tags: freezed == tags
           ? _value.tags
           : tags // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiTag>?,
-      scheduledAt: scheduledAt == freezed
+      scheduledAt: freezed == scheduledAt
           ? _value.scheduledAt
           : scheduledAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      startsAt: startsAt == freezed
+      startsAt: freezed == startsAt
           ? _value.startsAt
           : startsAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      endsAt: endsAt == freezed
+      endsAt: freezed == endsAt
           ? _value.endsAt
           : endsAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiAnnouncementCopyWith<$Res>
+abstract class _$$MastodonApiAnnouncementImplCopyWith<$Res>
     implements $MastodonApiAnnouncementCopyWith<$Res> {
-  factory _$MastodonApiAnnouncementCopyWith(_MastodonApiAnnouncement value,
-          $Res Function(_MastodonApiAnnouncement) then) =
-      __$MastodonApiAnnouncementCopyWithImpl<$Res>;
+  factory _$$MastodonApiAnnouncementImplCopyWith(
+          _$MastodonApiAnnouncementImpl value,
+          $Res Function(_$MastodonApiAnnouncementImpl) then) =
+      __$$MastodonApiAnnouncementImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) String id,
       @HiveField(1) String content,
@@ -249,24 +194,23 @@ abstract class _$MastodonApiAnnouncementCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MastodonApiAnnouncementCopyWithImpl<$Res>
-    extends _$MastodonApiAnnouncementCopyWithImpl<$Res>
-    implements _$MastodonApiAnnouncementCopyWith<$Res> {
-  __$MastodonApiAnnouncementCopyWithImpl(_MastodonApiAnnouncement _value,
-      $Res Function(_MastodonApiAnnouncement) _then)
-      : super(_value, (v) => _then(v as _MastodonApiAnnouncement));
+class __$$MastodonApiAnnouncementImplCopyWithImpl<$Res>
+    extends _$MastodonApiAnnouncementCopyWithImpl<$Res,
+        _$MastodonApiAnnouncementImpl>
+    implements _$$MastodonApiAnnouncementImplCopyWith<$Res> {
+  __$$MastodonApiAnnouncementImplCopyWithImpl(
+      _$MastodonApiAnnouncementImpl _value,
+      $Res Function(_$MastodonApiAnnouncementImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiAnnouncement get _value =>
-      super._value as _MastodonApiAnnouncement;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? content = freezed,
-    Object? allDay = freezed,
-    Object? publishedAt = freezed,
-    Object? updatedAt = freezed,
+    Object? id = null,
+    Object? content = null,
+    Object? allDay = null,
+    Object? publishedAt = null,
+    Object? updatedAt = null,
     Object? read = freezed,
     Object? reactions = freezed,
     Object? mentions = freezed,
@@ -276,56 +220,56 @@ class __$MastodonApiAnnouncementCopyWithImpl<$Res>
     Object? startsAt = freezed,
     Object? endsAt = freezed,
   }) {
-    return _then(_MastodonApiAnnouncement(
-      id: id == freezed
+    return _then(_$MastodonApiAnnouncementImpl(
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      content: content == freezed
+      content: null == content
           ? _value.content
           : content // ignore: cast_nullable_to_non_nullable
               as String,
-      allDay: allDay == freezed
+      allDay: null == allDay
           ? _value.allDay
           : allDay // ignore: cast_nullable_to_non_nullable
               as bool,
-      publishedAt: publishedAt == freezed
+      publishedAt: null == publishedAt
           ? _value.publishedAt
           : publishedAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      updatedAt: updatedAt == freezed
+      updatedAt: null == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      read: read == freezed
+      read: freezed == read
           ? _value.read
           : read // ignore: cast_nullable_to_non_nullable
               as bool?,
-      reactions: reactions == freezed
-          ? _value.reactions
+      reactions: freezed == reactions
+          ? _value._reactions
           : reactions // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiAnnouncementEmojiReaction>?,
-      mentions: mentions == freezed
-          ? _value.mentions
+      mentions: freezed == mentions
+          ? _value._mentions
           : mentions // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiMention>?,
-      statuses: statuses == freezed
-          ? _value.statuses
+      statuses: freezed == statuses
+          ? _value._statuses
           : statuses // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiStatus>?,
-      tags: tags == freezed
-          ? _value.tags
+      tags: freezed == tags
+          ? _value._tags
           : tags // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiTag>?,
-      scheduledAt: scheduledAt == freezed
+      scheduledAt: freezed == scheduledAt
           ? _value.scheduledAt
           : scheduledAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      startsAt: startsAt == freezed
+      startsAt: freezed == startsAt
           ? _value.startsAt
           : startsAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      endsAt: endsAt == freezed
+      endsAt: freezed == endsAt
           ? _value.endsAt
           : endsAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
@@ -335,24 +279,29 @@ class __$MastodonApiAnnouncementCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiAnnouncement implements _MastodonApiAnnouncement {
-  const _$_MastodonApiAnnouncement(
+class _$MastodonApiAnnouncementImpl implements _MastodonApiAnnouncement {
+  const _$MastodonApiAnnouncementImpl(
       {@HiveField(0) required this.id,
       @HiveField(1) required this.content,
       @HiveField(2) @JsonKey(name: 'all_day') required this.allDay,
       @HiveField(3) @JsonKey(name: 'published_at') required this.publishedAt,
       @HiveField(4) @JsonKey(name: 'updated_at') required this.updatedAt,
       @HiveField(5) required this.read,
-      @HiveField(6) required this.reactions,
-      @HiveField(7) required this.mentions,
-      @HiveField(8) required this.statuses,
-      @HiveField(9) required this.tags,
+      @HiveField(6)
+      required final List<MastodonApiAnnouncementEmojiReaction>? reactions,
+      @HiveField(7) required final List<MastodonApiMention>? mentions,
+      @HiveField(8) required final List<MastodonApiStatus>? statuses,
+      @HiveField(9) required final List<MastodonApiTag>? tags,
       @HiveField(10) @JsonKey(name: 'scheduled_at') required this.scheduledAt,
       @HiveField(11) @JsonKey(name: 'starts_at') required this.startsAt,
-      @HiveField(12) @JsonKey(name: 'ends_at') required this.endsAt});
+      @HiveField(12) @JsonKey(name: 'ends_at') required this.endsAt})
+      : _reactions = reactions,
+        _mentions = mentions,
+        _statuses = statuses,
+        _tags = tags;
 
-  factory _$_MastodonApiAnnouncement.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiAnnouncementFromJson(json);
+  factory _$MastodonApiAnnouncementImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MastodonApiAnnouncementImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -375,18 +324,50 @@ class _$_MastodonApiAnnouncement implements _MastodonApiAnnouncement {
   @override
   @HiveField(5)
   final bool? read;
+  final List<MastodonApiAnnouncementEmojiReaction>? _reactions;
   @override
   @HiveField(6)
-  final List<MastodonApiAnnouncementEmojiReaction>? reactions;
+  List<MastodonApiAnnouncementEmojiReaction>? get reactions {
+    final value = _reactions;
+    if (value == null) return null;
+    if (_reactions is EqualUnmodifiableListView) return _reactions;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  final List<MastodonApiMention>? _mentions;
   @override
   @HiveField(7)
-  final List<MastodonApiMention>? mentions;
+  List<MastodonApiMention>? get mentions {
+    final value = _mentions;
+    if (value == null) return null;
+    if (_mentions is EqualUnmodifiableListView) return _mentions;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  final List<MastodonApiStatus>? _statuses;
   @override
   @HiveField(8)
-  final List<MastodonApiStatus>? statuses;
+  List<MastodonApiStatus>? get statuses {
+    final value = _statuses;
+    if (value == null) return null;
+    if (_statuses is EqualUnmodifiableListView) return _statuses;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  final List<MastodonApiTag>? _tags;
   @override
   @HiveField(9)
-  final List<MastodonApiTag>? tags;
+  List<MastodonApiTag>? get tags {
+    final value = _tags;
+    if (value == null) return null;
+    if (_tags is EqualUnmodifiableListView) return _tags;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(10)
   @JsonKey(name: 'scheduled_at')
@@ -406,10 +387,10 @@ class _$_MastodonApiAnnouncement implements _MastodonApiAnnouncement {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiAnnouncement &&
+            other is _$MastodonApiAnnouncementImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.content, content) || other.content == content) &&
             (identical(other.allDay, allDay) || other.allDay == allDay) &&
@@ -418,10 +399,11 @@ class _$_MastodonApiAnnouncement implements _MastodonApiAnnouncement {
             (identical(other.updatedAt, updatedAt) ||
                 other.updatedAt == updatedAt) &&
             (identical(other.read, read) || other.read == read) &&
-            const DeepCollectionEquality().equals(other.reactions, reactions) &&
-            const DeepCollectionEquality().equals(other.mentions, mentions) &&
-            const DeepCollectionEquality().equals(other.statuses, statuses) &&
-            const DeepCollectionEquality().equals(other.tags, tags) &&
+            const DeepCollectionEquality()
+                .equals(other._reactions, _reactions) &&
+            const DeepCollectionEquality().equals(other._mentions, _mentions) &&
+            const DeepCollectionEquality().equals(other._statuses, _statuses) &&
+            const DeepCollectionEquality().equals(other._tags, _tags) &&
             (identical(other.scheduledAt, scheduledAt) ||
                 other.scheduledAt == scheduledAt) &&
             (identical(other.startsAt, startsAt) ||
@@ -429,6 +411,7 @@ class _$_MastodonApiAnnouncement implements _MastodonApiAnnouncement {
             (identical(other.endsAt, endsAt) || other.endsAt == endsAt));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -438,63 +421,58 @@ class _$_MastodonApiAnnouncement implements _MastodonApiAnnouncement {
       publishedAt,
       updatedAt,
       read,
-      const DeepCollectionEquality().hash(reactions),
-      const DeepCollectionEquality().hash(mentions),
-      const DeepCollectionEquality().hash(statuses),
-      const DeepCollectionEquality().hash(tags),
+      const DeepCollectionEquality().hash(_reactions),
+      const DeepCollectionEquality().hash(_mentions),
+      const DeepCollectionEquality().hash(_statuses),
+      const DeepCollectionEquality().hash(_tags),
       scheduledAt,
       startsAt,
       endsAt);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiAnnouncementCopyWith<_MastodonApiAnnouncement> get copyWith =>
-      __$MastodonApiAnnouncementCopyWithImpl<_MastodonApiAnnouncement>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiAnnouncementImplCopyWith<_$MastodonApiAnnouncementImpl>
+      get copyWith => __$$MastodonApiAnnouncementImplCopyWithImpl<
+          _$MastodonApiAnnouncementImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiAnnouncementToJson(this);
+    return _$$MastodonApiAnnouncementImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiAnnouncement implements MastodonApiAnnouncement {
   const factory _MastodonApiAnnouncement(
-      {@HiveField(0)
-          required String id,
-      @HiveField(1)
-          required String content,
-      @HiveField(2)
-      @JsonKey(name: 'all_day')
-          required bool allDay,
+      {@HiveField(0) required final String id,
+      @HiveField(1) required final String content,
+      @HiveField(2) @JsonKey(name: 'all_day') required final bool allDay,
       @HiveField(3)
       @JsonKey(name: 'published_at')
-          required DateTime publishedAt,
+      required final DateTime publishedAt,
       @HiveField(4)
       @JsonKey(name: 'updated_at')
-          required DateTime updatedAt,
-      @HiveField(5)
-          required bool? read,
+      required final DateTime updatedAt,
+      @HiveField(5) required final bool? read,
       @HiveField(6)
-          required List<MastodonApiAnnouncementEmojiReaction>? reactions,
-      @HiveField(7)
-          required List<MastodonApiMention>? mentions,
-      @HiveField(8)
-          required List<MastodonApiStatus>? statuses,
-      @HiveField(9)
-          required List<MastodonApiTag>? tags,
+      required final List<MastodonApiAnnouncementEmojiReaction>? reactions,
+      @HiveField(7) required final List<MastodonApiMention>? mentions,
+      @HiveField(8) required final List<MastodonApiStatus>? statuses,
+      @HiveField(9) required final List<MastodonApiTag>? tags,
       @HiveField(10)
       @JsonKey(name: 'scheduled_at')
-          required DateTime? scheduledAt,
+      required final DateTime? scheduledAt,
       @HiveField(11)
       @JsonKey(name: 'starts_at')
-          required DateTime? startsAt,
+      required final DateTime? startsAt,
       @HiveField(12)
       @JsonKey(name: 'ends_at')
-          required DateTime? endsAt}) = _$_MastodonApiAnnouncement;
+      required final DateTime? endsAt}) = _$MastodonApiAnnouncementImpl;
 
   factory _MastodonApiAnnouncement.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiAnnouncement.fromJson;
+      _$MastodonApiAnnouncementImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -543,6 +521,6 @@ abstract class _MastodonApiAnnouncement implements MastodonApiAnnouncement {
   DateTime? get endsAt;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiAnnouncementCopyWith<_MastodonApiAnnouncement> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$MastodonApiAnnouncementImplCopyWith<_$MastodonApiAnnouncementImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_rest_error_type_sealed.dart';
 
@@ -11,42 +12,11 @@ part of 'pleroma_api_rest_error_type_sealed.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$PleromaApiRestErrorTypeTearOff {
-  const _$PleromaApiRestErrorTypeTearOff();
-
-  _MissingConfirmedEmail missingConfirmedEmail(
-      {String stringValue =
-          PleromaApiRestErrorType.missingConfirmedEmailStringValue}) {
-    return _MissingConfirmedEmail(
-      stringValue: stringValue,
-    );
-  }
-
-  _AwaitingApproval awaitingApproval(
-      {String stringValue =
-          PleromaApiRestErrorType.awaitingApprovalStringValue}) {
-    return _AwaitingApproval(
-      stringValue: stringValue,
-    );
-  }
-
-  _Unknown unknown({required String stringValue}) {
-    return _Unknown(
-      stringValue: stringValue,
-    );
-  }
-}
-
-/// @nodoc
-const $PleromaApiRestErrorType = _$PleromaApiRestErrorTypeTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$PleromaApiRestErrorType {
   String get stringValue => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String stringValue) missingConfirmedEmail,
@@ -56,9 +26,9 @@ mixin _$PleromaApiRestErrorType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? missingConfirmedEmail,
-    TResult Function(String stringValue)? awaitingApproval,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? missingConfirmedEmail,
+    TResult? Function(String stringValue)? awaitingApproval,
+    TResult? Function(String stringValue)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -79,9 +49,9 @@ mixin _$PleromaApiRestErrorType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
-    TResult Function(_AwaitingApproval value)? awaitingApproval,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
+    TResult? Function(_AwaitingApproval value)? awaitingApproval,
+    TResult? Function(_Unknown value)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -102,59 +72,64 @@ mixin _$PleromaApiRestErrorType {
 abstract class $PleromaApiRestErrorTypeCopyWith<$Res> {
   factory $PleromaApiRestErrorTypeCopyWith(PleromaApiRestErrorType value,
           $Res Function(PleromaApiRestErrorType) then) =
-      _$PleromaApiRestErrorTypeCopyWithImpl<$Res>;
+      _$PleromaApiRestErrorTypeCopyWithImpl<$Res, PleromaApiRestErrorType>;
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class _$PleromaApiRestErrorTypeCopyWithImpl<$Res>
+class _$PleromaApiRestErrorTypeCopyWithImpl<$Res,
+        $Val extends PleromaApiRestErrorType>
     implements $PleromaApiRestErrorTypeCopyWith<$Res> {
   _$PleromaApiRestErrorTypeCopyWithImpl(this._value, this._then);
 
-  final PleromaApiRestErrorType _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiRestErrorType) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
     return _then(_value.copyWith(
-      stringValue: stringValue == freezed
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MissingConfirmedEmailCopyWith<$Res>
+abstract class _$$MissingConfirmedEmailImplCopyWith<$Res>
     implements $PleromaApiRestErrorTypeCopyWith<$Res> {
-  factory _$MissingConfirmedEmailCopyWith(_MissingConfirmedEmail value,
-          $Res Function(_MissingConfirmedEmail) then) =
-      __$MissingConfirmedEmailCopyWithImpl<$Res>;
+  factory _$$MissingConfirmedEmailImplCopyWith(
+          _$MissingConfirmedEmailImpl value,
+          $Res Function(_$MissingConfirmedEmailImpl) then) =
+      __$$MissingConfirmedEmailImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$MissingConfirmedEmailCopyWithImpl<$Res>
-    extends _$PleromaApiRestErrorTypeCopyWithImpl<$Res>
-    implements _$MissingConfirmedEmailCopyWith<$Res> {
-  __$MissingConfirmedEmailCopyWithImpl(_MissingConfirmedEmail _value,
-      $Res Function(_MissingConfirmedEmail) _then)
-      : super(_value, (v) => _then(v as _MissingConfirmedEmail));
+class __$$MissingConfirmedEmailImplCopyWithImpl<$Res>
+    extends _$PleromaApiRestErrorTypeCopyWithImpl<$Res,
+        _$MissingConfirmedEmailImpl>
+    implements _$$MissingConfirmedEmailImplCopyWith<$Res> {
+  __$$MissingConfirmedEmailImplCopyWithImpl(_$MissingConfirmedEmailImpl _value,
+      $Res Function(_$MissingConfirmedEmailImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MissingConfirmedEmail get _value => super._value as _MissingConfirmedEmail;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_MissingConfirmedEmail(
-      stringValue: stringValue == freezed
+    return _then(_$MissingConfirmedEmailImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -164,14 +139,13 @@ class __$MissingConfirmedEmailCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_MissingConfirmedEmail implements _MissingConfirmedEmail {
-  const _$_MissingConfirmedEmail(
+class _$MissingConfirmedEmailImpl implements _MissingConfirmedEmail {
+  const _$MissingConfirmedEmailImpl(
       {this.stringValue =
           PleromaApiRestErrorType.missingConfirmedEmailStringValue});
 
-  @JsonKey(
-      defaultValue: PleromaApiRestErrorType.missingConfirmedEmailStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -180,10 +154,10 @@ class _$_MissingConfirmedEmail implements _MissingConfirmedEmail {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MissingConfirmedEmail &&
+            other is _$MissingConfirmedEmailImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -193,9 +167,10 @@ class _$_MissingConfirmedEmail implements _MissingConfirmedEmail {
 
   @JsonKey(ignore: true)
   @override
-  _$MissingConfirmedEmailCopyWith<_MissingConfirmedEmail> get copyWith =>
-      __$MissingConfirmedEmailCopyWithImpl<_MissingConfirmedEmail>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MissingConfirmedEmailImplCopyWith<_$MissingConfirmedEmailImpl>
+      get copyWith => __$$MissingConfirmedEmailImplCopyWithImpl<
+          _$MissingConfirmedEmailImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -210,9 +185,9 @@ class _$_MissingConfirmedEmail implements _MissingConfirmedEmail {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? missingConfirmedEmail,
-    TResult Function(String stringValue)? awaitingApproval,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? missingConfirmedEmail,
+    TResult? Function(String stringValue)? awaitingApproval,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return missingConfirmedEmail?.call(stringValue);
   }
@@ -245,9 +220,9 @@ class _$_MissingConfirmedEmail implements _MissingConfirmedEmail {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
-    TResult Function(_AwaitingApproval value)? awaitingApproval,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
+    TResult? Function(_AwaitingApproval value)? awaitingApproval,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return missingConfirmedEmail?.call(this);
   }
@@ -268,44 +243,43 @@ class _$_MissingConfirmedEmail implements _MissingConfirmedEmail {
 }
 
 abstract class _MissingConfirmedEmail implements PleromaApiRestErrorType {
-  const factory _MissingConfirmedEmail({String stringValue}) =
-      _$_MissingConfirmedEmail;
+  const factory _MissingConfirmedEmail({final String stringValue}) =
+      _$MissingConfirmedEmailImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$MissingConfirmedEmailCopyWith<_MissingConfirmedEmail> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$MissingConfirmedEmailImplCopyWith<_$MissingConfirmedEmailImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$AwaitingApprovalCopyWith<$Res>
+abstract class _$$AwaitingApprovalImplCopyWith<$Res>
     implements $PleromaApiRestErrorTypeCopyWith<$Res> {
-  factory _$AwaitingApprovalCopyWith(
-          _AwaitingApproval value, $Res Function(_AwaitingApproval) then) =
-      __$AwaitingApprovalCopyWithImpl<$Res>;
+  factory _$$AwaitingApprovalImplCopyWith(_$AwaitingApprovalImpl value,
+          $Res Function(_$AwaitingApprovalImpl) then) =
+      __$$AwaitingApprovalImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$AwaitingApprovalCopyWithImpl<$Res>
-    extends _$PleromaApiRestErrorTypeCopyWithImpl<$Res>
-    implements _$AwaitingApprovalCopyWith<$Res> {
-  __$AwaitingApprovalCopyWithImpl(
-      _AwaitingApproval _value, $Res Function(_AwaitingApproval) _then)
-      : super(_value, (v) => _then(v as _AwaitingApproval));
+class __$$AwaitingApprovalImplCopyWithImpl<$Res>
+    extends _$PleromaApiRestErrorTypeCopyWithImpl<$Res, _$AwaitingApprovalImpl>
+    implements _$$AwaitingApprovalImplCopyWith<$Res> {
+  __$$AwaitingApprovalImplCopyWithImpl(_$AwaitingApprovalImpl _value,
+      $Res Function(_$AwaitingApprovalImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _AwaitingApproval get _value => super._value as _AwaitingApproval;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_AwaitingApproval(
-      stringValue: stringValue == freezed
+    return _then(_$AwaitingApprovalImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -315,12 +289,12 @@ class __$AwaitingApprovalCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_AwaitingApproval implements _AwaitingApproval {
-  const _$_AwaitingApproval(
+class _$AwaitingApprovalImpl implements _AwaitingApproval {
+  const _$AwaitingApprovalImpl(
       {this.stringValue = PleromaApiRestErrorType.awaitingApprovalStringValue});
 
-  @JsonKey(defaultValue: PleromaApiRestErrorType.awaitingApprovalStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -329,10 +303,10 @@ class _$_AwaitingApproval implements _AwaitingApproval {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _AwaitingApproval &&
+            other is _$AwaitingApprovalImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -342,8 +316,10 @@ class _$_AwaitingApproval implements _AwaitingApproval {
 
   @JsonKey(ignore: true)
   @override
-  _$AwaitingApprovalCopyWith<_AwaitingApproval> get copyWith =>
-      __$AwaitingApprovalCopyWithImpl<_AwaitingApproval>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AwaitingApprovalImplCopyWith<_$AwaitingApprovalImpl> get copyWith =>
+      __$$AwaitingApprovalImplCopyWithImpl<_$AwaitingApprovalImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -358,9 +334,9 @@ class _$_AwaitingApproval implements _AwaitingApproval {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? missingConfirmedEmail,
-    TResult Function(String stringValue)? awaitingApproval,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? missingConfirmedEmail,
+    TResult? Function(String stringValue)? awaitingApproval,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return awaitingApproval?.call(stringValue);
   }
@@ -393,9 +369,9 @@ class _$_AwaitingApproval implements _AwaitingApproval {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
-    TResult Function(_AwaitingApproval value)? awaitingApproval,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
+    TResult? Function(_AwaitingApproval value)? awaitingApproval,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return awaitingApproval?.call(this);
   }
@@ -416,41 +392,43 @@ class _$_AwaitingApproval implements _AwaitingApproval {
 }
 
 abstract class _AwaitingApproval implements PleromaApiRestErrorType {
-  const factory _AwaitingApproval({String stringValue}) = _$_AwaitingApproval;
+  const factory _AwaitingApproval({final String stringValue}) =
+      _$AwaitingApprovalImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$AwaitingApprovalCopyWith<_AwaitingApproval> get copyWith =>
+  _$$AwaitingApprovalImplCopyWith<_$AwaitingApprovalImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$UnknownCopyWith<$Res>
+abstract class _$$UnknownImplCopyWith<$Res>
     implements $PleromaApiRestErrorTypeCopyWith<$Res> {
-  factory _$UnknownCopyWith(_Unknown value, $Res Function(_Unknown) then) =
-      __$UnknownCopyWithImpl<$Res>;
+  factory _$$UnknownImplCopyWith(
+          _$UnknownImpl value, $Res Function(_$UnknownImpl) then) =
+      __$$UnknownImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$UnknownCopyWithImpl<$Res>
-    extends _$PleromaApiRestErrorTypeCopyWithImpl<$Res>
-    implements _$UnknownCopyWith<$Res> {
-  __$UnknownCopyWithImpl(_Unknown _value, $Res Function(_Unknown) _then)
-      : super(_value, (v) => _then(v as _Unknown));
+class __$$UnknownImplCopyWithImpl<$Res>
+    extends _$PleromaApiRestErrorTypeCopyWithImpl<$Res, _$UnknownImpl>
+    implements _$$UnknownImplCopyWith<$Res> {
+  __$$UnknownImplCopyWithImpl(
+      _$UnknownImpl _value, $Res Function(_$UnknownImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Unknown get _value => super._value as _Unknown;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Unknown(
-      stringValue: stringValue == freezed
+    return _then(_$UnknownImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -460,8 +438,8 @@ class __$UnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Unknown implements _Unknown {
-  const _$_Unknown({required this.stringValue});
+class _$UnknownImpl implements _Unknown {
+  const _$UnknownImpl({required this.stringValue});
 
   @override
   final String stringValue;
@@ -472,10 +450,10 @@ class _$_Unknown implements _Unknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Unknown &&
+            other is _$UnknownImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -485,8 +463,9 @@ class _$_Unknown implements _Unknown {
 
   @JsonKey(ignore: true)
   @override
-  _$UnknownCopyWith<_Unknown> get copyWith =>
-      __$UnknownCopyWithImpl<_Unknown>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnknownImplCopyWith<_$UnknownImpl> get copyWith =>
+      __$$UnknownImplCopyWithImpl<_$UnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -501,9 +480,9 @@ class _$_Unknown implements _Unknown {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? missingConfirmedEmail,
-    TResult Function(String stringValue)? awaitingApproval,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? missingConfirmedEmail,
+    TResult? Function(String stringValue)? awaitingApproval,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return unknown?.call(stringValue);
   }
@@ -536,9 +515,9 @@ class _$_Unknown implements _Unknown {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
-    TResult Function(_AwaitingApproval value)? awaitingApproval,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
+    TResult? Function(_AwaitingApproval value)? awaitingApproval,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return unknown?.call(this);
   }
@@ -559,12 +538,12 @@ class _$_Unknown implements _Unknown {
 }
 
 abstract class _Unknown implements PleromaApiRestErrorType {
-  const factory _Unknown({required String stringValue}) = _$_Unknown;
+  const factory _Unknown({required final String stringValue}) = _$UnknownImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$UnknownCopyWith<_Unknown> get copyWith =>
+  _$$UnknownImplCopyWith<_$UnknownImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

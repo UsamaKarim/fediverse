@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_access_scopes_permission_type_sealed.dart';
 
@@ -11,69 +12,11 @@ part of 'mastodon_api_access_scopes_permission_type_sealed.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$MastodonApiAccessScopesPermissionTypeTearOff {
-  const _$MastodonApiAccessScopesPermissionTypeTearOff();
-
-  _Read read(
-      {String stringValue =
-          MastodonApiAccessScopesPermissionType.readStringValue}) {
-    return _Read(
-      stringValue: stringValue,
-    );
-  }
-
-  _Write write(
-      {String stringValue =
-          MastodonApiAccessScopesPermissionType.writeStringValue}) {
-    return _Write(
-      stringValue: stringValue,
-    );
-  }
-
-  _Valid follow(
-      {String stringValue =
-          MastodonApiAccessScopesPermissionType.followStringValue}) {
-    return _Valid(
-      stringValue: stringValue,
-    );
-  }
-
-  _Push push(
-      {String stringValue =
-          MastodonApiAccessScopesPermissionType.pushStringValue}) {
-    return _Push(
-      stringValue: stringValue,
-    );
-  }
-
-  _AdminRead adminRead(
-      {String stringValue =
-          MastodonApiAccessScopesPermissionType.adminReadStringValue}) {
-    return _AdminRead(
-      stringValue: stringValue,
-    );
-  }
-
-  _AdminWrite adminWrite(
-      {String stringValue =
-          MastodonApiAccessScopesPermissionType.adminReadStringValue}) {
-    return _AdminWrite(
-      stringValue: stringValue,
-    );
-  }
-}
-
-/// @nodoc
-const $MastodonApiAccessScopesPermissionType =
-    _$MastodonApiAccessScopesPermissionTypeTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$MastodonApiAccessScopesPermissionType {
   String get stringValue => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String stringValue) read,
@@ -86,12 +29,12 @@ mixin _$MastodonApiAccessScopesPermissionType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? read,
-    TResult Function(String stringValue)? write,
-    TResult Function(String stringValue)? follow,
-    TResult Function(String stringValue)? push,
-    TResult Function(String stringValue)? adminRead,
-    TResult Function(String stringValue)? adminWrite,
+    TResult? Function(String stringValue)? read,
+    TResult? Function(String stringValue)? write,
+    TResult? Function(String stringValue)? follow,
+    TResult? Function(String stringValue)? push,
+    TResult? Function(String stringValue)? adminRead,
+    TResult? Function(String stringValue)? adminWrite,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -117,12 +60,12 @@ mixin _$MastodonApiAccessScopesPermissionType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Read value)? read,
-    TResult Function(_Write value)? write,
-    TResult Function(_Valid value)? follow,
-    TResult Function(_Push value)? push,
-    TResult Function(_AdminRead value)? adminRead,
-    TResult Function(_AdminWrite value)? adminWrite,
+    TResult? Function(_Read value)? read,
+    TResult? Function(_Write value)? write,
+    TResult? Function(_Valid value)? follow,
+    TResult? Function(_Push value)? push,
+    TResult? Function(_AdminRead value)? adminRead,
+    TResult? Function(_AdminWrite value)? adminWrite,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -148,57 +91,62 @@ abstract class $MastodonApiAccessScopesPermissionTypeCopyWith<$Res> {
   factory $MastodonApiAccessScopesPermissionTypeCopyWith(
           MastodonApiAccessScopesPermissionType value,
           $Res Function(MastodonApiAccessScopesPermissionType) then) =
-      _$MastodonApiAccessScopesPermissionTypeCopyWithImpl<$Res>;
+      _$MastodonApiAccessScopesPermissionTypeCopyWithImpl<$Res,
+          MastodonApiAccessScopesPermissionType>;
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class _$MastodonApiAccessScopesPermissionTypeCopyWithImpl<$Res>
+class _$MastodonApiAccessScopesPermissionTypeCopyWithImpl<$Res,
+        $Val extends MastodonApiAccessScopesPermissionType>
     implements $MastodonApiAccessScopesPermissionTypeCopyWith<$Res> {
   _$MastodonApiAccessScopesPermissionTypeCopyWithImpl(this._value, this._then);
 
-  final MastodonApiAccessScopesPermissionType _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiAccessScopesPermissionType) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
     return _then(_value.copyWith(
-      stringValue: stringValue == freezed
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$ReadCopyWith<$Res>
+abstract class _$$ReadImplCopyWith<$Res>
     implements $MastodonApiAccessScopesPermissionTypeCopyWith<$Res> {
-  factory _$ReadCopyWith(_Read value, $Res Function(_Read) then) =
-      __$ReadCopyWithImpl<$Res>;
+  factory _$$ReadImplCopyWith(
+          _$ReadImpl value, $Res Function(_$ReadImpl) then) =
+      __$$ReadImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$ReadCopyWithImpl<$Res>
-    extends _$MastodonApiAccessScopesPermissionTypeCopyWithImpl<$Res>
-    implements _$ReadCopyWith<$Res> {
-  __$ReadCopyWithImpl(_Read _value, $Res Function(_Read) _then)
-      : super(_value, (v) => _then(v as _Read));
+class __$$ReadImplCopyWithImpl<$Res>
+    extends _$MastodonApiAccessScopesPermissionTypeCopyWithImpl<$Res,
+        _$ReadImpl> implements _$$ReadImplCopyWith<$Res> {
+  __$$ReadImplCopyWithImpl(_$ReadImpl _value, $Res Function(_$ReadImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Read get _value => super._value as _Read;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Read(
-      stringValue: stringValue == freezed
+    return _then(_$ReadImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -208,13 +156,13 @@ class __$ReadCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Read implements _Read {
-  const _$_Read(
+class _$ReadImpl implements _Read {
+  const _$ReadImpl(
       {this.stringValue =
           MastodonApiAccessScopesPermissionType.readStringValue});
 
-  @JsonKey(defaultValue: MastodonApiAccessScopesPermissionType.readStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -223,10 +171,10 @@ class _$_Read implements _Read {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Read &&
+            other is _$ReadImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -236,8 +184,9 @@ class _$_Read implements _Read {
 
   @JsonKey(ignore: true)
   @override
-  _$ReadCopyWith<_Read> get copyWith =>
-      __$ReadCopyWithImpl<_Read>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ReadImplCopyWith<_$ReadImpl> get copyWith =>
+      __$$ReadImplCopyWithImpl<_$ReadImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -255,12 +204,12 @@ class _$_Read implements _Read {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? read,
-    TResult Function(String stringValue)? write,
-    TResult Function(String stringValue)? follow,
-    TResult Function(String stringValue)? push,
-    TResult Function(String stringValue)? adminRead,
-    TResult Function(String stringValue)? adminWrite,
+    TResult? Function(String stringValue)? read,
+    TResult? Function(String stringValue)? write,
+    TResult? Function(String stringValue)? follow,
+    TResult? Function(String stringValue)? push,
+    TResult? Function(String stringValue)? adminRead,
+    TResult? Function(String stringValue)? adminWrite,
   }) {
     return read?.call(stringValue);
   }
@@ -298,12 +247,12 @@ class _$_Read implements _Read {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Read value)? read,
-    TResult Function(_Write value)? write,
-    TResult Function(_Valid value)? follow,
-    TResult Function(_Push value)? push,
-    TResult Function(_AdminRead value)? adminRead,
-    TResult Function(_AdminWrite value)? adminWrite,
+    TResult? Function(_Read value)? read,
+    TResult? Function(_Write value)? write,
+    TResult? Function(_Valid value)? follow,
+    TResult? Function(_Push value)? push,
+    TResult? Function(_AdminRead value)? adminRead,
+    TResult? Function(_AdminWrite value)? adminWrite,
   }) {
     return read?.call(this);
   }
@@ -327,40 +276,42 @@ class _$_Read implements _Read {
 }
 
 abstract class _Read implements MastodonApiAccessScopesPermissionType {
-  const factory _Read({String stringValue}) = _$_Read;
+  const factory _Read({final String stringValue}) = _$ReadImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$ReadCopyWith<_Read> get copyWith => throw _privateConstructorUsedError;
+  _$$ReadImplCopyWith<_$ReadImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$WriteCopyWith<$Res>
+abstract class _$$WriteImplCopyWith<$Res>
     implements $MastodonApiAccessScopesPermissionTypeCopyWith<$Res> {
-  factory _$WriteCopyWith(_Write value, $Res Function(_Write) then) =
-      __$WriteCopyWithImpl<$Res>;
+  factory _$$WriteImplCopyWith(
+          _$WriteImpl value, $Res Function(_$WriteImpl) then) =
+      __$$WriteImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$WriteCopyWithImpl<$Res>
-    extends _$MastodonApiAccessScopesPermissionTypeCopyWithImpl<$Res>
-    implements _$WriteCopyWith<$Res> {
-  __$WriteCopyWithImpl(_Write _value, $Res Function(_Write) _then)
-      : super(_value, (v) => _then(v as _Write));
+class __$$WriteImplCopyWithImpl<$Res>
+    extends _$MastodonApiAccessScopesPermissionTypeCopyWithImpl<$Res,
+        _$WriteImpl> implements _$$WriteImplCopyWith<$Res> {
+  __$$WriteImplCopyWithImpl(
+      _$WriteImpl _value, $Res Function(_$WriteImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Write get _value => super._value as _Write;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Write(
-      stringValue: stringValue == freezed
+    return _then(_$WriteImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -370,13 +321,13 @@ class __$WriteCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Write implements _Write {
-  const _$_Write(
+class _$WriteImpl implements _Write {
+  const _$WriteImpl(
       {this.stringValue =
           MastodonApiAccessScopesPermissionType.writeStringValue});
 
-  @JsonKey(defaultValue: MastodonApiAccessScopesPermissionType.writeStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -385,10 +336,10 @@ class _$_Write implements _Write {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Write &&
+            other is _$WriteImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -398,8 +349,9 @@ class _$_Write implements _Write {
 
   @JsonKey(ignore: true)
   @override
-  _$WriteCopyWith<_Write> get copyWith =>
-      __$WriteCopyWithImpl<_Write>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$WriteImplCopyWith<_$WriteImpl> get copyWith =>
+      __$$WriteImplCopyWithImpl<_$WriteImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -417,12 +369,12 @@ class _$_Write implements _Write {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? read,
-    TResult Function(String stringValue)? write,
-    TResult Function(String stringValue)? follow,
-    TResult Function(String stringValue)? push,
-    TResult Function(String stringValue)? adminRead,
-    TResult Function(String stringValue)? adminWrite,
+    TResult? Function(String stringValue)? read,
+    TResult? Function(String stringValue)? write,
+    TResult? Function(String stringValue)? follow,
+    TResult? Function(String stringValue)? push,
+    TResult? Function(String stringValue)? adminRead,
+    TResult? Function(String stringValue)? adminWrite,
   }) {
     return write?.call(stringValue);
   }
@@ -460,12 +412,12 @@ class _$_Write implements _Write {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Read value)? read,
-    TResult Function(_Write value)? write,
-    TResult Function(_Valid value)? follow,
-    TResult Function(_Push value)? push,
-    TResult Function(_AdminRead value)? adminRead,
-    TResult Function(_AdminWrite value)? adminWrite,
+    TResult? Function(_Read value)? read,
+    TResult? Function(_Write value)? write,
+    TResult? Function(_Valid value)? follow,
+    TResult? Function(_Push value)? push,
+    TResult? Function(_AdminRead value)? adminRead,
+    TResult? Function(_AdminWrite value)? adminWrite,
   }) {
     return write?.call(this);
   }
@@ -489,40 +441,42 @@ class _$_Write implements _Write {
 }
 
 abstract class _Write implements MastodonApiAccessScopesPermissionType {
-  const factory _Write({String stringValue}) = _$_Write;
+  const factory _Write({final String stringValue}) = _$WriteImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$WriteCopyWith<_Write> get copyWith => throw _privateConstructorUsedError;
+  _$$WriteImplCopyWith<_$WriteImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ValidCopyWith<$Res>
+abstract class _$$ValidImplCopyWith<$Res>
     implements $MastodonApiAccessScopesPermissionTypeCopyWith<$Res> {
-  factory _$ValidCopyWith(_Valid value, $Res Function(_Valid) then) =
-      __$ValidCopyWithImpl<$Res>;
+  factory _$$ValidImplCopyWith(
+          _$ValidImpl value, $Res Function(_$ValidImpl) then) =
+      __$$ValidImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$ValidCopyWithImpl<$Res>
-    extends _$MastodonApiAccessScopesPermissionTypeCopyWithImpl<$Res>
-    implements _$ValidCopyWith<$Res> {
-  __$ValidCopyWithImpl(_Valid _value, $Res Function(_Valid) _then)
-      : super(_value, (v) => _then(v as _Valid));
+class __$$ValidImplCopyWithImpl<$Res>
+    extends _$MastodonApiAccessScopesPermissionTypeCopyWithImpl<$Res,
+        _$ValidImpl> implements _$$ValidImplCopyWith<$Res> {
+  __$$ValidImplCopyWithImpl(
+      _$ValidImpl _value, $Res Function(_$ValidImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Valid get _value => super._value as _Valid;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Valid(
-      stringValue: stringValue == freezed
+    return _then(_$ValidImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -532,14 +486,13 @@ class __$ValidCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Valid implements _Valid {
-  const _$_Valid(
+class _$ValidImpl implements _Valid {
+  const _$ValidImpl(
       {this.stringValue =
           MastodonApiAccessScopesPermissionType.followStringValue});
 
-  @JsonKey(
-      defaultValue: MastodonApiAccessScopesPermissionType.followStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -548,10 +501,10 @@ class _$_Valid implements _Valid {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Valid &&
+            other is _$ValidImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -561,8 +514,9 @@ class _$_Valid implements _Valid {
 
   @JsonKey(ignore: true)
   @override
-  _$ValidCopyWith<_Valid> get copyWith =>
-      __$ValidCopyWithImpl<_Valid>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ValidImplCopyWith<_$ValidImpl> get copyWith =>
+      __$$ValidImplCopyWithImpl<_$ValidImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -580,12 +534,12 @@ class _$_Valid implements _Valid {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? read,
-    TResult Function(String stringValue)? write,
-    TResult Function(String stringValue)? follow,
-    TResult Function(String stringValue)? push,
-    TResult Function(String stringValue)? adminRead,
-    TResult Function(String stringValue)? adminWrite,
+    TResult? Function(String stringValue)? read,
+    TResult? Function(String stringValue)? write,
+    TResult? Function(String stringValue)? follow,
+    TResult? Function(String stringValue)? push,
+    TResult? Function(String stringValue)? adminRead,
+    TResult? Function(String stringValue)? adminWrite,
   }) {
     return follow?.call(stringValue);
   }
@@ -623,12 +577,12 @@ class _$_Valid implements _Valid {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Read value)? read,
-    TResult Function(_Write value)? write,
-    TResult Function(_Valid value)? follow,
-    TResult Function(_Push value)? push,
-    TResult Function(_AdminRead value)? adminRead,
-    TResult Function(_AdminWrite value)? adminWrite,
+    TResult? Function(_Read value)? read,
+    TResult? Function(_Write value)? write,
+    TResult? Function(_Valid value)? follow,
+    TResult? Function(_Push value)? push,
+    TResult? Function(_AdminRead value)? adminRead,
+    TResult? Function(_AdminWrite value)? adminWrite,
   }) {
     return follow?.call(this);
   }
@@ -652,40 +606,41 @@ class _$_Valid implements _Valid {
 }
 
 abstract class _Valid implements MastodonApiAccessScopesPermissionType {
-  const factory _Valid({String stringValue}) = _$_Valid;
+  const factory _Valid({final String stringValue}) = _$ValidImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$ValidCopyWith<_Valid> get copyWith => throw _privateConstructorUsedError;
+  _$$ValidImplCopyWith<_$ValidImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$PushCopyWith<$Res>
+abstract class _$$PushImplCopyWith<$Res>
     implements $MastodonApiAccessScopesPermissionTypeCopyWith<$Res> {
-  factory _$PushCopyWith(_Push value, $Res Function(_Push) then) =
-      __$PushCopyWithImpl<$Res>;
+  factory _$$PushImplCopyWith(
+          _$PushImpl value, $Res Function(_$PushImpl) then) =
+      __$$PushImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$PushCopyWithImpl<$Res>
-    extends _$MastodonApiAccessScopesPermissionTypeCopyWithImpl<$Res>
-    implements _$PushCopyWith<$Res> {
-  __$PushCopyWithImpl(_Push _value, $Res Function(_Push) _then)
-      : super(_value, (v) => _then(v as _Push));
+class __$$PushImplCopyWithImpl<$Res>
+    extends _$MastodonApiAccessScopesPermissionTypeCopyWithImpl<$Res,
+        _$PushImpl> implements _$$PushImplCopyWith<$Res> {
+  __$$PushImplCopyWithImpl(_$PushImpl _value, $Res Function(_$PushImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Push get _value => super._value as _Push;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Push(
-      stringValue: stringValue == freezed
+    return _then(_$PushImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -695,13 +650,13 @@ class __$PushCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Push implements _Push {
-  const _$_Push(
+class _$PushImpl implements _Push {
+  const _$PushImpl(
       {this.stringValue =
           MastodonApiAccessScopesPermissionType.pushStringValue});
 
-  @JsonKey(defaultValue: MastodonApiAccessScopesPermissionType.pushStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -710,10 +665,10 @@ class _$_Push implements _Push {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Push &&
+            other is _$PushImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -723,8 +678,9 @@ class _$_Push implements _Push {
 
   @JsonKey(ignore: true)
   @override
-  _$PushCopyWith<_Push> get copyWith =>
-      __$PushCopyWithImpl<_Push>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PushImplCopyWith<_$PushImpl> get copyWith =>
+      __$$PushImplCopyWithImpl<_$PushImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -742,12 +698,12 @@ class _$_Push implements _Push {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? read,
-    TResult Function(String stringValue)? write,
-    TResult Function(String stringValue)? follow,
-    TResult Function(String stringValue)? push,
-    TResult Function(String stringValue)? adminRead,
-    TResult Function(String stringValue)? adminWrite,
+    TResult? Function(String stringValue)? read,
+    TResult? Function(String stringValue)? write,
+    TResult? Function(String stringValue)? follow,
+    TResult? Function(String stringValue)? push,
+    TResult? Function(String stringValue)? adminRead,
+    TResult? Function(String stringValue)? adminWrite,
   }) {
     return push?.call(stringValue);
   }
@@ -785,12 +741,12 @@ class _$_Push implements _Push {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Read value)? read,
-    TResult Function(_Write value)? write,
-    TResult Function(_Valid value)? follow,
-    TResult Function(_Push value)? push,
-    TResult Function(_AdminRead value)? adminRead,
-    TResult Function(_AdminWrite value)? adminWrite,
+    TResult? Function(_Read value)? read,
+    TResult? Function(_Write value)? write,
+    TResult? Function(_Valid value)? follow,
+    TResult? Function(_Push value)? push,
+    TResult? Function(_AdminRead value)? adminRead,
+    TResult? Function(_AdminWrite value)? adminWrite,
   }) {
     return push?.call(this);
   }
@@ -814,41 +770,42 @@ class _$_Push implements _Push {
 }
 
 abstract class _Push implements MastodonApiAccessScopesPermissionType {
-  const factory _Push({String stringValue}) = _$_Push;
+  const factory _Push({final String stringValue}) = _$PushImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$PushCopyWith<_Push> get copyWith => throw _privateConstructorUsedError;
+  _$$PushImplCopyWith<_$PushImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$AdminReadCopyWith<$Res>
+abstract class _$$AdminReadImplCopyWith<$Res>
     implements $MastodonApiAccessScopesPermissionTypeCopyWith<$Res> {
-  factory _$AdminReadCopyWith(
-          _AdminRead value, $Res Function(_AdminRead) then) =
-      __$AdminReadCopyWithImpl<$Res>;
+  factory _$$AdminReadImplCopyWith(
+          _$AdminReadImpl value, $Res Function(_$AdminReadImpl) then) =
+      __$$AdminReadImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$AdminReadCopyWithImpl<$Res>
-    extends _$MastodonApiAccessScopesPermissionTypeCopyWithImpl<$Res>
-    implements _$AdminReadCopyWith<$Res> {
-  __$AdminReadCopyWithImpl(_AdminRead _value, $Res Function(_AdminRead) _then)
-      : super(_value, (v) => _then(v as _AdminRead));
+class __$$AdminReadImplCopyWithImpl<$Res>
+    extends _$MastodonApiAccessScopesPermissionTypeCopyWithImpl<$Res,
+        _$AdminReadImpl> implements _$$AdminReadImplCopyWith<$Res> {
+  __$$AdminReadImplCopyWithImpl(
+      _$AdminReadImpl _value, $Res Function(_$AdminReadImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _AdminRead get _value => super._value as _AdminRead;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_AdminRead(
-      stringValue: stringValue == freezed
+    return _then(_$AdminReadImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -858,14 +815,13 @@ class __$AdminReadCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_AdminRead implements _AdminRead {
-  const _$_AdminRead(
+class _$AdminReadImpl implements _AdminRead {
+  const _$AdminReadImpl(
       {this.stringValue =
           MastodonApiAccessScopesPermissionType.adminReadStringValue});
 
-  @JsonKey(
-      defaultValue: MastodonApiAccessScopesPermissionType.adminReadStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -874,10 +830,10 @@ class _$_AdminRead implements _AdminRead {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _AdminRead &&
+            other is _$AdminReadImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -887,8 +843,9 @@ class _$_AdminRead implements _AdminRead {
 
   @JsonKey(ignore: true)
   @override
-  _$AdminReadCopyWith<_AdminRead> get copyWith =>
-      __$AdminReadCopyWithImpl<_AdminRead>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AdminReadImplCopyWith<_$AdminReadImpl> get copyWith =>
+      __$$AdminReadImplCopyWithImpl<_$AdminReadImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -906,12 +863,12 @@ class _$_AdminRead implements _AdminRead {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? read,
-    TResult Function(String stringValue)? write,
-    TResult Function(String stringValue)? follow,
-    TResult Function(String stringValue)? push,
-    TResult Function(String stringValue)? adminRead,
-    TResult Function(String stringValue)? adminWrite,
+    TResult? Function(String stringValue)? read,
+    TResult? Function(String stringValue)? write,
+    TResult? Function(String stringValue)? follow,
+    TResult? Function(String stringValue)? push,
+    TResult? Function(String stringValue)? adminRead,
+    TResult? Function(String stringValue)? adminWrite,
   }) {
     return adminRead?.call(stringValue);
   }
@@ -949,12 +906,12 @@ class _$_AdminRead implements _AdminRead {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Read value)? read,
-    TResult Function(_Write value)? write,
-    TResult Function(_Valid value)? follow,
-    TResult Function(_Push value)? push,
-    TResult Function(_AdminRead value)? adminRead,
-    TResult Function(_AdminWrite value)? adminWrite,
+    TResult? Function(_Read value)? read,
+    TResult? Function(_Write value)? write,
+    TResult? Function(_Valid value)? follow,
+    TResult? Function(_Push value)? push,
+    TResult? Function(_AdminRead value)? adminRead,
+    TResult? Function(_AdminWrite value)? adminWrite,
   }) {
     return adminRead?.call(this);
   }
@@ -978,43 +935,42 @@ class _$_AdminRead implements _AdminRead {
 }
 
 abstract class _AdminRead implements MastodonApiAccessScopesPermissionType {
-  const factory _AdminRead({String stringValue}) = _$_AdminRead;
+  const factory _AdminRead({final String stringValue}) = _$AdminReadImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$AdminReadCopyWith<_AdminRead> get copyWith =>
+  _$$AdminReadImplCopyWith<_$AdminReadImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$AdminWriteCopyWith<$Res>
+abstract class _$$AdminWriteImplCopyWith<$Res>
     implements $MastodonApiAccessScopesPermissionTypeCopyWith<$Res> {
-  factory _$AdminWriteCopyWith(
-          _AdminWrite value, $Res Function(_AdminWrite) then) =
-      __$AdminWriteCopyWithImpl<$Res>;
+  factory _$$AdminWriteImplCopyWith(
+          _$AdminWriteImpl value, $Res Function(_$AdminWriteImpl) then) =
+      __$$AdminWriteImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$AdminWriteCopyWithImpl<$Res>
-    extends _$MastodonApiAccessScopesPermissionTypeCopyWithImpl<$Res>
-    implements _$AdminWriteCopyWith<$Res> {
-  __$AdminWriteCopyWithImpl(
-      _AdminWrite _value, $Res Function(_AdminWrite) _then)
-      : super(_value, (v) => _then(v as _AdminWrite));
+class __$$AdminWriteImplCopyWithImpl<$Res>
+    extends _$MastodonApiAccessScopesPermissionTypeCopyWithImpl<$Res,
+        _$AdminWriteImpl> implements _$$AdminWriteImplCopyWith<$Res> {
+  __$$AdminWriteImplCopyWithImpl(
+      _$AdminWriteImpl _value, $Res Function(_$AdminWriteImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _AdminWrite get _value => super._value as _AdminWrite;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_AdminWrite(
-      stringValue: stringValue == freezed
+    return _then(_$AdminWriteImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1024,14 +980,13 @@ class __$AdminWriteCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_AdminWrite implements _AdminWrite {
-  const _$_AdminWrite(
+class _$AdminWriteImpl implements _AdminWrite {
+  const _$AdminWriteImpl(
       {this.stringValue =
           MastodonApiAccessScopesPermissionType.adminReadStringValue});
 
-  @JsonKey(
-      defaultValue: MastodonApiAccessScopesPermissionType.adminReadStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -1040,10 +995,10 @@ class _$_AdminWrite implements _AdminWrite {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _AdminWrite &&
+            other is _$AdminWriteImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -1053,8 +1008,9 @@ class _$_AdminWrite implements _AdminWrite {
 
   @JsonKey(ignore: true)
   @override
-  _$AdminWriteCopyWith<_AdminWrite> get copyWith =>
-      __$AdminWriteCopyWithImpl<_AdminWrite>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AdminWriteImplCopyWith<_$AdminWriteImpl> get copyWith =>
+      __$$AdminWriteImplCopyWithImpl<_$AdminWriteImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1072,12 +1028,12 @@ class _$_AdminWrite implements _AdminWrite {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? read,
-    TResult Function(String stringValue)? write,
-    TResult Function(String stringValue)? follow,
-    TResult Function(String stringValue)? push,
-    TResult Function(String stringValue)? adminRead,
-    TResult Function(String stringValue)? adminWrite,
+    TResult? Function(String stringValue)? read,
+    TResult? Function(String stringValue)? write,
+    TResult? Function(String stringValue)? follow,
+    TResult? Function(String stringValue)? push,
+    TResult? Function(String stringValue)? adminRead,
+    TResult? Function(String stringValue)? adminWrite,
   }) {
     return adminWrite?.call(stringValue);
   }
@@ -1115,12 +1071,12 @@ class _$_AdminWrite implements _AdminWrite {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Read value)? read,
-    TResult Function(_Write value)? write,
-    TResult Function(_Valid value)? follow,
-    TResult Function(_Push value)? push,
-    TResult Function(_AdminRead value)? adminRead,
-    TResult Function(_AdminWrite value)? adminWrite,
+    TResult? Function(_Read value)? read,
+    TResult? Function(_Write value)? write,
+    TResult? Function(_Valid value)? follow,
+    TResult? Function(_Push value)? push,
+    TResult? Function(_AdminRead value)? adminRead,
+    TResult? Function(_AdminWrite value)? adminWrite,
   }) {
     return adminWrite?.call(this);
   }
@@ -1144,12 +1100,12 @@ class _$_AdminWrite implements _AdminWrite {
 }
 
 abstract class _AdminWrite implements MastodonApiAccessScopesPermissionType {
-  const factory _AdminWrite({String stringValue}) = _$_AdminWrite;
+  const factory _AdminWrite({final String stringValue}) = _$AdminWriteImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$AdminWriteCopyWith<_AdminWrite> get copyWith =>
+  _$$AdminWriteImplCopyWith<_$AdminWriteImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

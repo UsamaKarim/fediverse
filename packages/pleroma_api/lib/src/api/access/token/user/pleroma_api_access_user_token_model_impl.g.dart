@@ -54,9 +54,9 @@ class PleromaApiAccessUserTokenAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiAccessUserToken _$$_PleromaApiAccessUserTokenFromJson(
+_$PleromaApiAccessUserTokenImpl _$$PleromaApiAccessUserTokenImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiAccessUserToken(
+    _$PleromaApiAccessUserTokenImpl(
       oauthToken: PleromaApiOAuthToken.fromJson(
           json['oauth_token'] as Map<String, dynamic>),
       scopes: PleromaApiAccessScopes.fromJson(
@@ -68,8 +68,8 @@ _$_PleromaApiAccessUserToken _$$_PleromaApiAccessUserTokenFromJson(
               json['my_account'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_PleromaApiAccessUserTokenToJson(
-    _$_PleromaApiAccessUserToken instance) {
+Map<String, dynamic> _$$PleromaApiAccessUserTokenImplToJson(
+    _$PleromaApiAccessUserTokenImpl instance) {
   final val = <String, dynamic>{
     'oauth_token': instance.oauthToken.toJson(),
     'scopes': instance.scopes.toJson(),

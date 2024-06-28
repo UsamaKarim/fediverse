@@ -65,9 +65,9 @@ class UnifediApiChatMessageAdapter extends TypeAdapter<UnifediApiChatMessage> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiChatMessage _$$_UnifediApiChatMessageFromJson(
+_$UnifediApiChatMessageImpl _$$UnifediApiChatMessageImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiChatMessage(
+    _$UnifediApiChatMessageImpl(
       id: json['id'] as String,
       chatId: json['chat_id'] as String,
       accountId: json['account_id'] as String,
@@ -85,8 +85,8 @@ _$_UnifediApiChatMessage _$$_UnifediApiChatMessageFromJson(
           : UnifediApiCard.fromJson(json['card'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_UnifediApiChatMessageToJson(
-    _$_UnifediApiChatMessage instance) {
+Map<String, dynamic> _$$UnifediApiChatMessageImplToJson(
+    _$UnifediApiChatMessageImpl instance) {
   final val = <String, dynamic>{
     'id': instance.id,
     'chat_id': instance.chatId,

@@ -44,13 +44,14 @@ class PushRelaySettingsAdapter extends TypeAdapter<PushRelaySettings> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PushRelaySettings _$$_PushRelaySettingsFromJson(Map<String, dynamic> json) =>
-    _$_PushRelaySettings(
+_$PushRelaySettingsImpl _$$PushRelaySettingsImplFromJson(
+        Map<String, dynamic> json) =>
+    _$PushRelaySettingsImpl(
       pushRelayBaseUrl: json['push_relay_base_url'] as String,
     );
 
-Map<String, dynamic> _$$_PushRelaySettingsToJson(
-        _$_PushRelaySettings instance) =>
+Map<String, dynamic> _$$PushRelaySettingsImplToJson(
+        _$PushRelaySettingsImpl instance) =>
     <String, dynamic>{
       'push_relay_base_url': instance.pushRelayBaseUrl,
     };

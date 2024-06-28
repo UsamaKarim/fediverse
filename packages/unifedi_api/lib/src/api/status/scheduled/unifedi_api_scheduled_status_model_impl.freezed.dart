@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_scheduled_status_model_impl.dart';
 
@@ -11,44 +12,12 @@ part of 'unifedi_api_scheduled_status_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiScheduledStatus _$UnifediApiScheduledStatusFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiScheduledStatus.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiScheduledStatusTearOff {
-  const _$UnifediApiScheduledStatusTearOff();
-
-  _UnifediApiScheduledStatus call(
-      {@HiveField(0)
-      @override
-          required String id,
-      @HiveField(1)
-      @JsonKey(name: 'media_attachments')
-          required List<UnifediApiMediaAttachment>? mediaAttachments,
-      @HiveField(2)
-          required UnifediApiScheduledStatusParams params,
-      @HiveField(3)
-      @JsonKey(name: 'scheduled_at')
-          required DateTime scheduledAt}) {
-    return _UnifediApiScheduledStatus(
-      id: id,
-      mediaAttachments: mediaAttachments,
-      params: params,
-      scheduledAt: scheduledAt,
-    );
-  }
-
-  UnifediApiScheduledStatus fromJson(Map<String, Object?> json) {
-    return UnifediApiScheduledStatus.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiScheduledStatus = _$UnifediApiScheduledStatusTearOff();
 
 /// @nodoc
 mixin _$UnifediApiScheduledStatus {
@@ -76,125 +45,121 @@ mixin _$UnifediApiScheduledStatus {
 abstract class $UnifediApiScheduledStatusCopyWith<$Res> {
   factory $UnifediApiScheduledStatusCopyWith(UnifediApiScheduledStatus value,
           $Res Function(UnifediApiScheduledStatus) then) =
-      _$UnifediApiScheduledStatusCopyWithImpl<$Res>;
+      _$UnifediApiScheduledStatusCopyWithImpl<$Res, UnifediApiScheduledStatus>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-      @override
-          String id,
+      {@HiveField(0) @override String id,
       @HiveField(1)
       @JsonKey(name: 'media_attachments')
-          List<UnifediApiMediaAttachment>? mediaAttachments,
-      @HiveField(2)
-          UnifediApiScheduledStatusParams params,
-      @HiveField(3)
-      @JsonKey(name: 'scheduled_at')
-          DateTime scheduledAt});
+      List<UnifediApiMediaAttachment>? mediaAttachments,
+      @HiveField(2) UnifediApiScheduledStatusParams params,
+      @HiveField(3) @JsonKey(name: 'scheduled_at') DateTime scheduledAt});
 
   $UnifediApiScheduledStatusParamsCopyWith<$Res> get params;
 }
 
 /// @nodoc
-class _$UnifediApiScheduledStatusCopyWithImpl<$Res>
+class _$UnifediApiScheduledStatusCopyWithImpl<$Res,
+        $Val extends UnifediApiScheduledStatus>
     implements $UnifediApiScheduledStatusCopyWith<$Res> {
   _$UnifediApiScheduledStatusCopyWithImpl(this._value, this._then);
 
-  final UnifediApiScheduledStatus _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiScheduledStatus) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
+    Object? id = null,
     Object? mediaAttachments = freezed,
-    Object? params = freezed,
-    Object? scheduledAt = freezed,
+    Object? params = null,
+    Object? scheduledAt = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      mediaAttachments: mediaAttachments == freezed
+      mediaAttachments: freezed == mediaAttachments
           ? _value.mediaAttachments
           : mediaAttachments // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiMediaAttachment>?,
-      params: params == freezed
+      params: null == params
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as UnifediApiScheduledStatusParams,
-      scheduledAt: scheduledAt == freezed
+      scheduledAt: null == scheduledAt
           ? _value.scheduledAt
           : scheduledAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiScheduledStatusParamsCopyWith<$Res> get params {
     return $UnifediApiScheduledStatusParamsCopyWith<$Res>(_value.params,
         (value) {
-      return _then(_value.copyWith(params: value));
+      return _then(_value.copyWith(params: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiScheduledStatusCopyWith<$Res>
+abstract class _$$UnifediApiScheduledStatusImplCopyWith<$Res>
     implements $UnifediApiScheduledStatusCopyWith<$Res> {
-  factory _$UnifediApiScheduledStatusCopyWith(_UnifediApiScheduledStatus value,
-          $Res Function(_UnifediApiScheduledStatus) then) =
-      __$UnifediApiScheduledStatusCopyWithImpl<$Res>;
+  factory _$$UnifediApiScheduledStatusImplCopyWith(
+          _$UnifediApiScheduledStatusImpl value,
+          $Res Function(_$UnifediApiScheduledStatusImpl) then) =
+      __$$UnifediApiScheduledStatusImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-      @override
-          String id,
+      {@HiveField(0) @override String id,
       @HiveField(1)
       @JsonKey(name: 'media_attachments')
-          List<UnifediApiMediaAttachment>? mediaAttachments,
-      @HiveField(2)
-          UnifediApiScheduledStatusParams params,
-      @HiveField(3)
-      @JsonKey(name: 'scheduled_at')
-          DateTime scheduledAt});
+      List<UnifediApiMediaAttachment>? mediaAttachments,
+      @HiveField(2) UnifediApiScheduledStatusParams params,
+      @HiveField(3) @JsonKey(name: 'scheduled_at') DateTime scheduledAt});
 
   @override
   $UnifediApiScheduledStatusParamsCopyWith<$Res> get params;
 }
 
 /// @nodoc
-class __$UnifediApiScheduledStatusCopyWithImpl<$Res>
-    extends _$UnifediApiScheduledStatusCopyWithImpl<$Res>
-    implements _$UnifediApiScheduledStatusCopyWith<$Res> {
-  __$UnifediApiScheduledStatusCopyWithImpl(_UnifediApiScheduledStatus _value,
-      $Res Function(_UnifediApiScheduledStatus) _then)
-      : super(_value, (v) => _then(v as _UnifediApiScheduledStatus));
+class __$$UnifediApiScheduledStatusImplCopyWithImpl<$Res>
+    extends _$UnifediApiScheduledStatusCopyWithImpl<$Res,
+        _$UnifediApiScheduledStatusImpl>
+    implements _$$UnifediApiScheduledStatusImplCopyWith<$Res> {
+  __$$UnifediApiScheduledStatusImplCopyWithImpl(
+      _$UnifediApiScheduledStatusImpl _value,
+      $Res Function(_$UnifediApiScheduledStatusImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiScheduledStatus get _value =>
-      super._value as _UnifediApiScheduledStatus;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
+    Object? id = null,
     Object? mediaAttachments = freezed,
-    Object? params = freezed,
-    Object? scheduledAt = freezed,
+    Object? params = null,
+    Object? scheduledAt = null,
   }) {
-    return _then(_UnifediApiScheduledStatus(
-      id: id == freezed
+    return _then(_$UnifediApiScheduledStatusImpl(
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      mediaAttachments: mediaAttachments == freezed
-          ? _value.mediaAttachments
+      mediaAttachments: freezed == mediaAttachments
+          ? _value._mediaAttachments
           : mediaAttachments // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiMediaAttachment>?,
-      params: params == freezed
+      params: null == params
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as UnifediApiScheduledStatusParams,
-      scheduledAt: scheduledAt == freezed
+      scheduledAt: null == scheduledAt
           ? _value.scheduledAt
           : scheduledAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
@@ -204,31 +169,36 @@ class __$UnifediApiScheduledStatusCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiScheduledStatus implements _UnifediApiScheduledStatus {
-  const _$_UnifediApiScheduledStatus(
-      {@HiveField(0)
-      @override
-          required this.id,
+class _$UnifediApiScheduledStatusImpl implements _UnifediApiScheduledStatus {
+  const _$UnifediApiScheduledStatusImpl(
+      {@HiveField(0) @override required this.id,
       @HiveField(1)
       @JsonKey(name: 'media_attachments')
-          required this.mediaAttachments,
-      @HiveField(2)
-          required this.params,
-      @HiveField(3)
-      @JsonKey(name: 'scheduled_at')
-          required this.scheduledAt});
+      required final List<UnifediApiMediaAttachment>? mediaAttachments,
+      @HiveField(2) required this.params,
+      @HiveField(3) @JsonKey(name: 'scheduled_at') required this.scheduledAt})
+      : _mediaAttachments = mediaAttachments;
 
-  factory _$_UnifediApiScheduledStatus.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiScheduledStatusFromJson(json);
+  factory _$UnifediApiScheduledStatusImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiScheduledStatusImplFromJson(json);
 
   @override
   @HiveField(0)
   @override
   final String id;
+  final List<UnifediApiMediaAttachment>? _mediaAttachments;
   @override
   @HiveField(1)
   @JsonKey(name: 'media_attachments')
-  final List<UnifediApiMediaAttachment>? mediaAttachments;
+  List<UnifediApiMediaAttachment>? get mediaAttachments {
+    final value = _mediaAttachments;
+    if (value == null) return null;
+    if (_mediaAttachments is EqualUnmodifiableListView)
+      return _mediaAttachments;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(2)
   final UnifediApiScheduledStatusParams params;
@@ -243,55 +213,55 @@ class _$_UnifediApiScheduledStatus implements _UnifediApiScheduledStatus {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiScheduledStatus &&
+            other is _$UnifediApiScheduledStatusImpl &&
             (identical(other.id, id) || other.id == id) &&
             const DeepCollectionEquality()
-                .equals(other.mediaAttachments, mediaAttachments) &&
+                .equals(other._mediaAttachments, _mediaAttachments) &&
             (identical(other.params, params) || other.params == params) &&
             (identical(other.scheduledAt, scheduledAt) ||
                 other.scheduledAt == scheduledAt));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       id,
-      const DeepCollectionEquality().hash(mediaAttachments),
+      const DeepCollectionEquality().hash(_mediaAttachments),
       params,
       scheduledAt);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiScheduledStatusCopyWith<_UnifediApiScheduledStatus>
-      get copyWith =>
-          __$UnifediApiScheduledStatusCopyWithImpl<_UnifediApiScheduledStatus>(
-              this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiScheduledStatusImplCopyWith<_$UnifediApiScheduledStatusImpl>
+      get copyWith => __$$UnifediApiScheduledStatusImplCopyWithImpl<
+          _$UnifediApiScheduledStatusImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiScheduledStatusToJson(this);
+    return _$$UnifediApiScheduledStatusImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiScheduledStatus implements UnifediApiScheduledStatus {
   const factory _UnifediApiScheduledStatus(
-      {@HiveField(0)
-      @override
-          required String id,
+      {@HiveField(0) @override required final String id,
       @HiveField(1)
       @JsonKey(name: 'media_attachments')
-          required List<UnifediApiMediaAttachment>? mediaAttachments,
-      @HiveField(2)
-          required UnifediApiScheduledStatusParams params,
+      required final List<UnifediApiMediaAttachment>? mediaAttachments,
+      @HiveField(2) required final UnifediApiScheduledStatusParams params,
       @HiveField(3)
       @JsonKey(name: 'scheduled_at')
-          required DateTime scheduledAt}) = _$_UnifediApiScheduledStatus;
+      required final DateTime scheduledAt}) = _$UnifediApiScheduledStatusImpl;
 
   factory _UnifediApiScheduledStatus.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiScheduledStatus.fromJson;
+      _$UnifediApiScheduledStatusImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -310,6 +280,6 @@ abstract class _UnifediApiScheduledStatus implements UnifediApiScheduledStatus {
   DateTime get scheduledAt;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiScheduledStatusCopyWith<_UnifediApiScheduledStatus>
+  _$$UnifediApiScheduledStatusImplCopyWith<_$UnifediApiScheduledStatusImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

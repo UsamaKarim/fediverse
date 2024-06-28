@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_media_attachment_meta_model_pleroma_adapter.dart';
 
@@ -11,34 +12,13 @@ part of 'unifedi_api_media_attachment_meta_model_pleroma_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiMediaAttachmentMetaPleromaAdapter
     _$UnifediApiMediaAttachmentMetaPleromaAdapterFromJson(
         Map<String, dynamic> json) {
   return _UnifediApiMediaAttachmentMetaPleromaAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiMediaAttachmentMetaPleromaAdapterTearOff {
-  const _$UnifediApiMediaAttachmentMetaPleromaAdapterTearOff();
-
-  _UnifediApiMediaAttachmentMetaPleromaAdapter call(
-      @HiveField(0) PleromaApiMediaAttachmentMeta value) {
-    return _UnifediApiMediaAttachmentMetaPleromaAdapter(
-      value,
-    );
-  }
-
-  UnifediApiMediaAttachmentMetaPleromaAdapter fromJson(
-      Map<String, Object?> json) {
-    return UnifediApiMediaAttachmentMetaPleromaAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiMediaAttachmentMetaPleromaAdapter =
-    _$UnifediApiMediaAttachmentMetaPleromaAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiMediaAttachmentMetaPleromaAdapter {
@@ -57,50 +37,58 @@ abstract class $UnifediApiMediaAttachmentMetaPleromaAdapterCopyWith<$Res> {
   factory $UnifediApiMediaAttachmentMetaPleromaAdapterCopyWith(
           UnifediApiMediaAttachmentMetaPleromaAdapter value,
           $Res Function(UnifediApiMediaAttachmentMetaPleromaAdapter) then) =
-      _$UnifediApiMediaAttachmentMetaPleromaAdapterCopyWithImpl<$Res>;
+      _$UnifediApiMediaAttachmentMetaPleromaAdapterCopyWithImpl<$Res,
+          UnifediApiMediaAttachmentMetaPleromaAdapter>;
+  @useResult
   $Res call({@HiveField(0) PleromaApiMediaAttachmentMeta value});
 
   $PleromaApiMediaAttachmentMetaCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiMediaAttachmentMetaPleromaAdapterCopyWithImpl<$Res>
+class _$UnifediApiMediaAttachmentMetaPleromaAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiMediaAttachmentMetaPleromaAdapter>
     implements $UnifediApiMediaAttachmentMetaPleromaAdapterCopyWith<$Res> {
   _$UnifediApiMediaAttachmentMetaPleromaAdapterCopyWithImpl(
       this._value, this._then);
 
-  final UnifediApiMediaAttachmentMetaPleromaAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiMediaAttachmentMetaPleromaAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiMediaAttachmentMeta,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiMediaAttachmentMetaCopyWith<$Res> get value {
     return $PleromaApiMediaAttachmentMetaCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiMediaAttachmentMetaPleromaAdapterCopyWith<$Res>
+abstract class _$$UnifediApiMediaAttachmentMetaPleromaAdapterImplCopyWith<$Res>
     implements $UnifediApiMediaAttachmentMetaPleromaAdapterCopyWith<$Res> {
-  factory _$UnifediApiMediaAttachmentMetaPleromaAdapterCopyWith(
-          _UnifediApiMediaAttachmentMetaPleromaAdapter value,
-          $Res Function(_UnifediApiMediaAttachmentMetaPleromaAdapter) then) =
-      __$UnifediApiMediaAttachmentMetaPleromaAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiMediaAttachmentMetaPleromaAdapterImplCopyWith(
+          _$UnifediApiMediaAttachmentMetaPleromaAdapterImpl value,
+          $Res Function(_$UnifediApiMediaAttachmentMetaPleromaAdapterImpl)
+              then) =
+      __$$UnifediApiMediaAttachmentMetaPleromaAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) PleromaApiMediaAttachmentMeta value});
 
   @override
@@ -108,25 +96,23 @@ abstract class _$UnifediApiMediaAttachmentMetaPleromaAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiMediaAttachmentMetaPleromaAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiMediaAttachmentMetaPleromaAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiMediaAttachmentMetaPleromaAdapterCopyWith<$Res> {
-  __$UnifediApiMediaAttachmentMetaPleromaAdapterCopyWithImpl(
-      _UnifediApiMediaAttachmentMetaPleromaAdapter _value,
-      $Res Function(_UnifediApiMediaAttachmentMetaPleromaAdapter) _then)
-      : super(_value,
-            (v) => _then(v as _UnifediApiMediaAttachmentMetaPleromaAdapter));
+class __$$UnifediApiMediaAttachmentMetaPleromaAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiMediaAttachmentMetaPleromaAdapterCopyWithImpl<$Res,
+        _$UnifediApiMediaAttachmentMetaPleromaAdapterImpl>
+    implements
+        _$$UnifediApiMediaAttachmentMetaPleromaAdapterImplCopyWith<$Res> {
+  __$$UnifediApiMediaAttachmentMetaPleromaAdapterImplCopyWithImpl(
+      _$UnifediApiMediaAttachmentMetaPleromaAdapterImpl _value,
+      $Res Function(_$UnifediApiMediaAttachmentMetaPleromaAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiMediaAttachmentMetaPleromaAdapter get _value =>
-      super._value as _UnifediApiMediaAttachmentMetaPleromaAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiMediaAttachmentMetaPleromaAdapter(
-      value == freezed
+    return _then(_$UnifediApiMediaAttachmentMetaPleromaAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiMediaAttachmentMeta,
@@ -136,14 +122,15 @@ class __$UnifediApiMediaAttachmentMetaPleromaAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiMediaAttachmentMetaPleromaAdapter
+class _$UnifediApiMediaAttachmentMetaPleromaAdapterImpl
     extends _UnifediApiMediaAttachmentMetaPleromaAdapter {
-  const _$_UnifediApiMediaAttachmentMetaPleromaAdapter(@HiveField(0) this.value)
+  const _$UnifediApiMediaAttachmentMetaPleromaAdapterImpl(
+      @HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiMediaAttachmentMetaPleromaAdapter.fromJson(
+  factory _$UnifediApiMediaAttachmentMetaPleromaAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiMediaAttachmentMetaPleromaAdapterFromJson(json);
+      _$$UnifediApiMediaAttachmentMetaPleromaAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -155,47 +142,52 @@ class _$_UnifediApiMediaAttachmentMetaPleromaAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiMediaAttachmentMetaPleromaAdapter &&
+            other is _$UnifediApiMediaAttachmentMetaPleromaAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiMediaAttachmentMetaPleromaAdapterCopyWith<
-          _UnifediApiMediaAttachmentMetaPleromaAdapter>
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiMediaAttachmentMetaPleromaAdapterImplCopyWith<
+          _$UnifediApiMediaAttachmentMetaPleromaAdapterImpl>
       get copyWith =>
-          __$UnifediApiMediaAttachmentMetaPleromaAdapterCopyWithImpl<
-              _UnifediApiMediaAttachmentMetaPleromaAdapter>(this, _$identity);
+          __$$UnifediApiMediaAttachmentMetaPleromaAdapterImplCopyWithImpl<
+                  _$UnifediApiMediaAttachmentMetaPleromaAdapterImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiMediaAttachmentMetaPleromaAdapterToJson(this);
+    return _$$UnifediApiMediaAttachmentMetaPleromaAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiMediaAttachmentMetaPleromaAdapter
     extends UnifediApiMediaAttachmentMetaPleromaAdapter {
   const factory _UnifediApiMediaAttachmentMetaPleromaAdapter(
-          @HiveField(0) PleromaApiMediaAttachmentMeta value) =
-      _$_UnifediApiMediaAttachmentMetaPleromaAdapter;
+          @HiveField(0) final PleromaApiMediaAttachmentMeta value) =
+      _$UnifediApiMediaAttachmentMetaPleromaAdapterImpl;
   const _UnifediApiMediaAttachmentMetaPleromaAdapter._() : super._();
 
   factory _UnifediApiMediaAttachmentMetaPleromaAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiMediaAttachmentMetaPleromaAdapter.fromJson;
+      _$UnifediApiMediaAttachmentMetaPleromaAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   PleromaApiMediaAttachmentMeta get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiMediaAttachmentMetaPleromaAdapterCopyWith<
-          _UnifediApiMediaAttachmentMetaPleromaAdapter>
+  _$$UnifediApiMediaAttachmentMetaPleromaAdapterImplCopyWith<
+          _$UnifediApiMediaAttachmentMetaPleromaAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -61,10 +61,10 @@ class PleromaApiMyAccountNotificationsSettingsAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiMyAccountNotificationsSettings
-    _$$_PleromaApiMyAccountNotificationsSettingsFromJson(
+_$PleromaApiMyAccountNotificationsSettingsImpl
+    _$$PleromaApiMyAccountNotificationsSettingsImplFromJson(
             Map<String, dynamic> json) =>
-        _$_PleromaApiMyAccountNotificationsSettings(
+        _$PleromaApiMyAccountNotificationsSettingsImpl(
           followers: json['followers'] as bool?,
           follows: json['follows'] as bool?,
           nonFollowers: json['non_followers'] as bool?,
@@ -73,8 +73,8 @@ _$_PleromaApiMyAccountNotificationsSettings
           hideNotificationContents: json['hide_notification_contents'] as bool?,
         );
 
-Map<String, dynamic> _$$_PleromaApiMyAccountNotificationsSettingsToJson(
-    _$_PleromaApiMyAccountNotificationsSettings instance) {
+Map<String, dynamic> _$$PleromaApiMyAccountNotificationsSettingsImplToJson(
+    _$PleromaApiMyAccountNotificationsSettingsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

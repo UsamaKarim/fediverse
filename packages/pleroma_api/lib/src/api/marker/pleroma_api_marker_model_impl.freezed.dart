@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_marker_model_impl.dart';
 
@@ -11,42 +12,11 @@ part of 'pleroma_api_marker_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiMarker _$PleromaApiMarkerFromJson(Map<String, dynamic> json) {
   return _PleromaApiMarker.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiMarkerTearOff {
-  const _$PleromaApiMarkerTearOff();
-
-  _PleromaApiMarker call(
-      {@HiveField(0)
-      @JsonKey(name: 'updated_last_read_id')
-          required String? lastReadId,
-      @HiveField(1)
-          required int version,
-      @HiveField(2)
-      @JsonKey(name: 'updated_at')
-          required DateTime? updatedAt,
-      @HiveField(3)
-          required PleromaApiMarkerPleromaPart? pleroma}) {
-    return _PleromaApiMarker(
-      lastReadId: lastReadId,
-      version: version,
-      updatedAt: updatedAt,
-      pleroma: pleroma,
-    );
-  }
-
-  PleromaApiMarker fromJson(Map<String, Object?> json) {
-    return PleromaApiMarker.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiMarker = _$PleromaApiMarkerTearOff();
 
 /// @nodoc
 mixin _$PleromaApiMarker {
@@ -72,7 +42,8 @@ mixin _$PleromaApiMarker {
 abstract class $PleromaApiMarkerCopyWith<$Res> {
   factory $PleromaApiMarkerCopyWith(
           PleromaApiMarker value, $Res Function(PleromaApiMarker) then) =
-      _$PleromaApiMarkerCopyWithImpl<$Res>;
+      _$PleromaApiMarkerCopyWithImpl<$Res, PleromaApiMarker>;
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'updated_last_read_id') String? lastReadId,
       @HiveField(1) int version,
@@ -83,60 +54,64 @@ abstract class $PleromaApiMarkerCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiMarkerCopyWithImpl<$Res>
+class _$PleromaApiMarkerCopyWithImpl<$Res, $Val extends PleromaApiMarker>
     implements $PleromaApiMarkerCopyWith<$Res> {
   _$PleromaApiMarkerCopyWithImpl(this._value, this._then);
 
-  final PleromaApiMarker _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiMarker) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? lastReadId = freezed,
-    Object? version = freezed,
+    Object? version = null,
     Object? updatedAt = freezed,
     Object? pleroma = freezed,
   }) {
     return _then(_value.copyWith(
-      lastReadId: lastReadId == freezed
+      lastReadId: freezed == lastReadId
           ? _value.lastReadId
           : lastReadId // ignore: cast_nullable_to_non_nullable
               as String?,
-      version: version == freezed
+      version: null == version
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
               as int,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      pleroma: pleroma == freezed
+      pleroma: freezed == pleroma
           ? _value.pleroma
           : pleroma // ignore: cast_nullable_to_non_nullable
               as PleromaApiMarkerPleromaPart?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiMarkerPleromaPartCopyWith<$Res>? get pleroma {
     if (_value.pleroma == null) {
       return null;
     }
 
     return $PleromaApiMarkerPleromaPartCopyWith<$Res>(_value.pleroma!, (value) {
-      return _then(_value.copyWith(pleroma: value));
+      return _then(_value.copyWith(pleroma: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiMarkerCopyWith<$Res>
+abstract class _$$PleromaApiMarkerImplCopyWith<$Res>
     implements $PleromaApiMarkerCopyWith<$Res> {
-  factory _$PleromaApiMarkerCopyWith(
-          _PleromaApiMarker value, $Res Function(_PleromaApiMarker) then) =
-      __$PleromaApiMarkerCopyWithImpl<$Res>;
+  factory _$$PleromaApiMarkerImplCopyWith(_$PleromaApiMarkerImpl value,
+          $Res Function(_$PleromaApiMarkerImpl) then) =
+      __$$PleromaApiMarkerImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'updated_last_read_id') String? lastReadId,
       @HiveField(1) int version,
@@ -148,37 +123,35 @@ abstract class _$PleromaApiMarkerCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiMarkerCopyWithImpl<$Res>
-    extends _$PleromaApiMarkerCopyWithImpl<$Res>
-    implements _$PleromaApiMarkerCopyWith<$Res> {
-  __$PleromaApiMarkerCopyWithImpl(
-      _PleromaApiMarker _value, $Res Function(_PleromaApiMarker) _then)
-      : super(_value, (v) => _then(v as _PleromaApiMarker));
+class __$$PleromaApiMarkerImplCopyWithImpl<$Res>
+    extends _$PleromaApiMarkerCopyWithImpl<$Res, _$PleromaApiMarkerImpl>
+    implements _$$PleromaApiMarkerImplCopyWith<$Res> {
+  __$$PleromaApiMarkerImplCopyWithImpl(_$PleromaApiMarkerImpl _value,
+      $Res Function(_$PleromaApiMarkerImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiMarker get _value => super._value as _PleromaApiMarker;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? lastReadId = freezed,
-    Object? version = freezed,
+    Object? version = null,
     Object? updatedAt = freezed,
     Object? pleroma = freezed,
   }) {
-    return _then(_PleromaApiMarker(
-      lastReadId: lastReadId == freezed
+    return _then(_$PleromaApiMarkerImpl(
+      lastReadId: freezed == lastReadId
           ? _value.lastReadId
           : lastReadId // ignore: cast_nullable_to_non_nullable
               as String?,
-      version: version == freezed
+      version: null == version
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
               as int,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      pleroma: pleroma == freezed
+      pleroma: freezed == pleroma
           ? _value.pleroma
           : pleroma // ignore: cast_nullable_to_non_nullable
               as PleromaApiMarkerPleromaPart?,
@@ -188,21 +161,17 @@ class __$PleromaApiMarkerCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiMarker implements _PleromaApiMarker {
-  const _$_PleromaApiMarker(
+class _$PleromaApiMarkerImpl implements _PleromaApiMarker {
+  const _$PleromaApiMarkerImpl(
       {@HiveField(0)
       @JsonKey(name: 'updated_last_read_id')
-          required this.lastReadId,
-      @HiveField(1)
-          required this.version,
-      @HiveField(2)
-      @JsonKey(name: 'updated_at')
-          required this.updatedAt,
-      @HiveField(3)
-          required this.pleroma});
+      required this.lastReadId,
+      @HiveField(1) required this.version,
+      @HiveField(2) @JsonKey(name: 'updated_at') required this.updatedAt,
+      @HiveField(3) required this.pleroma});
 
-  factory _$_PleromaApiMarker.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiMarkerFromJson(json);
+  factory _$PleromaApiMarkerImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiMarkerImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -225,10 +194,10 @@ class _$_PleromaApiMarker implements _PleromaApiMarker {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiMarker &&
+            other is _$PleromaApiMarkerImpl &&
             (identical(other.lastReadId, lastReadId) ||
                 other.lastReadId == lastReadId) &&
             (identical(other.version, version) || other.version == version) &&
@@ -237,36 +206,40 @@ class _$_PleromaApiMarker implements _PleromaApiMarker {
             (identical(other.pleroma, pleroma) || other.pleroma == pleroma));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, lastReadId, version, updatedAt, pleroma);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiMarkerCopyWith<_PleromaApiMarker> get copyWith =>
-      __$PleromaApiMarkerCopyWithImpl<_PleromaApiMarker>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiMarkerImplCopyWith<_$PleromaApiMarkerImpl> get copyWith =>
+      __$$PleromaApiMarkerImplCopyWithImpl<_$PleromaApiMarkerImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiMarkerToJson(this);
+    return _$$PleromaApiMarkerImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiMarker implements PleromaApiMarker {
   const factory _PleromaApiMarker(
-      {@HiveField(0)
-      @JsonKey(name: 'updated_last_read_id')
-          required String? lastReadId,
-      @HiveField(1)
-          required int version,
-      @HiveField(2)
-      @JsonKey(name: 'updated_at')
-          required DateTime? updatedAt,
-      @HiveField(3)
-          required PleromaApiMarkerPleromaPart? pleroma}) = _$_PleromaApiMarker;
+          {@HiveField(0)
+          @JsonKey(name: 'updated_last_read_id')
+          required final String? lastReadId,
+          @HiveField(1) required final int version,
+          @HiveField(2)
+          @JsonKey(name: 'updated_at')
+          required final DateTime? updatedAt,
+          @HiveField(3) required final PleromaApiMarkerPleromaPart? pleroma}) =
+      _$PleromaApiMarkerImpl;
 
   factory _PleromaApiMarker.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiMarker.fromJson;
+      _$PleromaApiMarkerImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -284,7 +257,7 @@ abstract class _PleromaApiMarker implements PleromaApiMarker {
   PleromaApiMarkerPleromaPart? get pleroma;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiMarkerCopyWith<_PleromaApiMarker> get copyWith =>
+  _$$PleromaApiMarkerImplCopyWith<_$PleromaApiMarkerImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -292,27 +265,6 @@ PleromaApiMarkerPleromaPart _$PleromaApiMarkerPleromaPartFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiMarkerPleromaPart.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiMarkerPleromaPartTearOff {
-  const _$PleromaApiMarkerPleromaPartTearOff();
-
-  _PleromaApiMarkerPleromaPart call(
-      {@HiveField(0)
-      @JsonKey(name: 'unread_count')
-          required int? unreadCount}) {
-    return _PleromaApiMarkerPleromaPart(
-      unreadCount: unreadCount,
-    );
-  }
-
-  PleromaApiMarkerPleromaPart fromJson(Map<String, Object?> json) {
-    return PleromaApiMarkerPleromaPart.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiMarkerPleromaPart = _$PleromaApiMarkerPleromaPartTearOff();
 
 /// @nodoc
 mixin _$PleromaApiMarkerPleromaPart {
@@ -331,62 +283,66 @@ abstract class $PleromaApiMarkerPleromaPartCopyWith<$Res> {
   factory $PleromaApiMarkerPleromaPartCopyWith(
           PleromaApiMarkerPleromaPart value,
           $Res Function(PleromaApiMarkerPleromaPart) then) =
-      _$PleromaApiMarkerPleromaPartCopyWithImpl<$Res>;
+      _$PleromaApiMarkerPleromaPartCopyWithImpl<$Res,
+          PleromaApiMarkerPleromaPart>;
+  @useResult
   $Res call({@HiveField(0) @JsonKey(name: 'unread_count') int? unreadCount});
 }
 
 /// @nodoc
-class _$PleromaApiMarkerPleromaPartCopyWithImpl<$Res>
+class _$PleromaApiMarkerPleromaPartCopyWithImpl<$Res,
+        $Val extends PleromaApiMarkerPleromaPart>
     implements $PleromaApiMarkerPleromaPartCopyWith<$Res> {
   _$PleromaApiMarkerPleromaPartCopyWithImpl(this._value, this._then);
 
-  final PleromaApiMarkerPleromaPart _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiMarkerPleromaPart) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? unreadCount = freezed,
   }) {
     return _then(_value.copyWith(
-      unreadCount: unreadCount == freezed
+      unreadCount: freezed == unreadCount
           ? _value.unreadCount
           : unreadCount // ignore: cast_nullable_to_non_nullable
               as int?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiMarkerPleromaPartCopyWith<$Res>
+abstract class _$$PleromaApiMarkerPleromaPartImplCopyWith<$Res>
     implements $PleromaApiMarkerPleromaPartCopyWith<$Res> {
-  factory _$PleromaApiMarkerPleromaPartCopyWith(
-          _PleromaApiMarkerPleromaPart value,
-          $Res Function(_PleromaApiMarkerPleromaPart) then) =
-      __$PleromaApiMarkerPleromaPartCopyWithImpl<$Res>;
+  factory _$$PleromaApiMarkerPleromaPartImplCopyWith(
+          _$PleromaApiMarkerPleromaPartImpl value,
+          $Res Function(_$PleromaApiMarkerPleromaPartImpl) then) =
+      __$$PleromaApiMarkerPleromaPartImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) @JsonKey(name: 'unread_count') int? unreadCount});
 }
 
 /// @nodoc
-class __$PleromaApiMarkerPleromaPartCopyWithImpl<$Res>
-    extends _$PleromaApiMarkerPleromaPartCopyWithImpl<$Res>
-    implements _$PleromaApiMarkerPleromaPartCopyWith<$Res> {
-  __$PleromaApiMarkerPleromaPartCopyWithImpl(
-      _PleromaApiMarkerPleromaPart _value,
-      $Res Function(_PleromaApiMarkerPleromaPart) _then)
-      : super(_value, (v) => _then(v as _PleromaApiMarkerPleromaPart));
+class __$$PleromaApiMarkerPleromaPartImplCopyWithImpl<$Res>
+    extends _$PleromaApiMarkerPleromaPartCopyWithImpl<$Res,
+        _$PleromaApiMarkerPleromaPartImpl>
+    implements _$$PleromaApiMarkerPleromaPartImplCopyWith<$Res> {
+  __$$PleromaApiMarkerPleromaPartImplCopyWithImpl(
+      _$PleromaApiMarkerPleromaPartImpl _value,
+      $Res Function(_$PleromaApiMarkerPleromaPartImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiMarkerPleromaPart get _value =>
-      super._value as _PleromaApiMarkerPleromaPart;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? unreadCount = freezed,
   }) {
-    return _then(_PleromaApiMarkerPleromaPart(
-      unreadCount: unreadCount == freezed
+    return _then(_$PleromaApiMarkerPleromaPartImpl(
+      unreadCount: freezed == unreadCount
           ? _value.unreadCount
           : unreadCount // ignore: cast_nullable_to_non_nullable
               as int?,
@@ -396,12 +352,14 @@ class __$PleromaApiMarkerPleromaPartCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiMarkerPleromaPart implements _PleromaApiMarkerPleromaPart {
-  const _$_PleromaApiMarkerPleromaPart(
+class _$PleromaApiMarkerPleromaPartImpl
+    implements _PleromaApiMarkerPleromaPart {
+  const _$PleromaApiMarkerPleromaPartImpl(
       {@HiveField(0) @JsonKey(name: 'unread_count') required this.unreadCount});
 
-  factory _$_PleromaApiMarkerPleromaPart.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiMarkerPleromaPartFromJson(json);
+  factory _$PleromaApiMarkerPleromaPartImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$PleromaApiMarkerPleromaPartImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -414,26 +372,30 @@ class _$_PleromaApiMarkerPleromaPart implements _PleromaApiMarkerPleromaPart {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiMarkerPleromaPart &&
+            other is _$PleromaApiMarkerPleromaPartImpl &&
             (identical(other.unreadCount, unreadCount) ||
                 other.unreadCount == unreadCount));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, unreadCount);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiMarkerPleromaPartCopyWith<_PleromaApiMarkerPleromaPart>
-      get copyWith => __$PleromaApiMarkerPleromaPartCopyWithImpl<
-          _PleromaApiMarkerPleromaPart>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiMarkerPleromaPartImplCopyWith<_$PleromaApiMarkerPleromaPartImpl>
+      get copyWith => __$$PleromaApiMarkerPleromaPartImplCopyWithImpl<
+          _$PleromaApiMarkerPleromaPartImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiMarkerPleromaPartToJson(this);
+    return _$$PleromaApiMarkerPleromaPartImplToJson(
+      this,
+    );
   }
 }
 
@@ -442,10 +404,10 @@ abstract class _PleromaApiMarkerPleromaPart
   const factory _PleromaApiMarkerPleromaPart(
       {@HiveField(0)
       @JsonKey(name: 'unread_count')
-          required int? unreadCount}) = _$_PleromaApiMarkerPleromaPart;
+      required final int? unreadCount}) = _$PleromaApiMarkerPleromaPartImpl;
 
   factory _PleromaApiMarkerPleromaPart.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiMarkerPleromaPart.fromJson;
+      _$PleromaApiMarkerPleromaPartImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -453,6 +415,6 @@ abstract class _PleromaApiMarkerPleromaPart
   int? get unreadCount;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiMarkerPleromaPartCopyWith<_PleromaApiMarkerPleromaPart>
+  _$$PleromaApiMarkerPleromaPartImplCopyWith<_$PleromaApiMarkerPleromaPartImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

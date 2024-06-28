@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_search_model_impl.dart';
 
@@ -11,35 +12,12 @@ part of 'mastodon_api_search_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiSearchResult _$MastodonApiSearchResultFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiSearchResult.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiSearchResultTearOff {
-  const _$MastodonApiSearchResultTearOff();
-
-  _MastodonApiSearchResult call(
-      {@HiveField(0) required List<MastodonApiAccount> accounts,
-      @HiveField(1) required List<MastodonApiTag> hashtags,
-      @HiveField(2) required List<MastodonApiStatus> statuses}) {
-    return _MastodonApiSearchResult(
-      accounts: accounts,
-      hashtags: hashtags,
-      statuses: statuses,
-    );
-  }
-
-  MastodonApiSearchResult fromJson(Map<String, Object?> json) {
-    return MastodonApiSearchResult.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiSearchResult = _$MastodonApiSearchResultTearOff();
 
 /// @nodoc
 mixin _$MastodonApiSearchResult {
@@ -60,7 +38,8 @@ mixin _$MastodonApiSearchResult {
 abstract class $MastodonApiSearchResultCopyWith<$Res> {
   factory $MastodonApiSearchResultCopyWith(MastodonApiSearchResult value,
           $Res Function(MastodonApiSearchResult) then) =
-      _$MastodonApiSearchResultCopyWithImpl<$Res>;
+      _$MastodonApiSearchResultCopyWithImpl<$Res, MastodonApiSearchResult>;
+  @useResult
   $Res call(
       {@HiveField(0) List<MastodonApiAccount> accounts,
       @HiveField(1) List<MastodonApiTag> hashtags,
@@ -68,44 +47,49 @@ abstract class $MastodonApiSearchResultCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MastodonApiSearchResultCopyWithImpl<$Res>
+class _$MastodonApiSearchResultCopyWithImpl<$Res,
+        $Val extends MastodonApiSearchResult>
     implements $MastodonApiSearchResultCopyWith<$Res> {
   _$MastodonApiSearchResultCopyWithImpl(this._value, this._then);
 
-  final MastodonApiSearchResult _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiSearchResult) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? accounts = freezed,
-    Object? hashtags = freezed,
-    Object? statuses = freezed,
+    Object? accounts = null,
+    Object? hashtags = null,
+    Object? statuses = null,
   }) {
     return _then(_value.copyWith(
-      accounts: accounts == freezed
+      accounts: null == accounts
           ? _value.accounts
           : accounts // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiAccount>,
-      hashtags: hashtags == freezed
+      hashtags: null == hashtags
           ? _value.hashtags
           : hashtags // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiTag>,
-      statuses: statuses == freezed
+      statuses: null == statuses
           ? _value.statuses
           : statuses // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiStatus>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiSearchResultCopyWith<$Res>
+abstract class _$$MastodonApiSearchResultImplCopyWith<$Res>
     implements $MastodonApiSearchResultCopyWith<$Res> {
-  factory _$MastodonApiSearchResultCopyWith(_MastodonApiSearchResult value,
-          $Res Function(_MastodonApiSearchResult) then) =
-      __$MastodonApiSearchResultCopyWithImpl<$Res>;
+  factory _$$MastodonApiSearchResultImplCopyWith(
+          _$MastodonApiSearchResultImpl value,
+          $Res Function(_$MastodonApiSearchResultImpl) then) =
+      __$$MastodonApiSearchResultImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) List<MastodonApiAccount> accounts,
       @HiveField(1) List<MastodonApiTag> hashtags,
@@ -113,34 +97,33 @@ abstract class _$MastodonApiSearchResultCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MastodonApiSearchResultCopyWithImpl<$Res>
-    extends _$MastodonApiSearchResultCopyWithImpl<$Res>
-    implements _$MastodonApiSearchResultCopyWith<$Res> {
-  __$MastodonApiSearchResultCopyWithImpl(_MastodonApiSearchResult _value,
-      $Res Function(_MastodonApiSearchResult) _then)
-      : super(_value, (v) => _then(v as _MastodonApiSearchResult));
+class __$$MastodonApiSearchResultImplCopyWithImpl<$Res>
+    extends _$MastodonApiSearchResultCopyWithImpl<$Res,
+        _$MastodonApiSearchResultImpl>
+    implements _$$MastodonApiSearchResultImplCopyWith<$Res> {
+  __$$MastodonApiSearchResultImplCopyWithImpl(
+      _$MastodonApiSearchResultImpl _value,
+      $Res Function(_$MastodonApiSearchResultImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiSearchResult get _value =>
-      super._value as _MastodonApiSearchResult;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? accounts = freezed,
-    Object? hashtags = freezed,
-    Object? statuses = freezed,
+    Object? accounts = null,
+    Object? hashtags = null,
+    Object? statuses = null,
   }) {
-    return _then(_MastodonApiSearchResult(
-      accounts: accounts == freezed
-          ? _value.accounts
+    return _then(_$MastodonApiSearchResultImpl(
+      accounts: null == accounts
+          ? _value._accounts
           : accounts // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiAccount>,
-      hashtags: hashtags == freezed
-          ? _value.hashtags
+      hashtags: null == hashtags
+          ? _value._hashtags
           : hashtags // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiTag>,
-      statuses: statuses == freezed
-          ? _value.statuses
+      statuses: null == statuses
+          ? _value._statuses
           : statuses // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiStatus>,
     ));
@@ -149,24 +132,44 @@ class __$MastodonApiSearchResultCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiSearchResult implements _MastodonApiSearchResult {
-  const _$_MastodonApiSearchResult(
-      {@HiveField(0) required this.accounts,
-      @HiveField(1) required this.hashtags,
-      @HiveField(2) required this.statuses});
+class _$MastodonApiSearchResultImpl implements _MastodonApiSearchResult {
+  const _$MastodonApiSearchResultImpl(
+      {@HiveField(0) required final List<MastodonApiAccount> accounts,
+      @HiveField(1) required final List<MastodonApiTag> hashtags,
+      @HiveField(2) required final List<MastodonApiStatus> statuses})
+      : _accounts = accounts,
+        _hashtags = hashtags,
+        _statuses = statuses;
 
-  factory _$_MastodonApiSearchResult.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiSearchResultFromJson(json);
+  factory _$MastodonApiSearchResultImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MastodonApiSearchResultImplFromJson(json);
 
+  final List<MastodonApiAccount> _accounts;
   @override
   @HiveField(0)
-  final List<MastodonApiAccount> accounts;
+  List<MastodonApiAccount> get accounts {
+    if (_accounts is EqualUnmodifiableListView) return _accounts;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_accounts);
+  }
+
+  final List<MastodonApiTag> _hashtags;
   @override
   @HiveField(1)
-  final List<MastodonApiTag> hashtags;
+  List<MastodonApiTag> get hashtags {
+    if (_hashtags is EqualUnmodifiableListView) return _hashtags;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_hashtags);
+  }
+
+  final List<MastodonApiStatus> _statuses;
   @override
   @HiveField(2)
-  final List<MastodonApiStatus> statuses;
+  List<MastodonApiStatus> get statuses {
+    if (_statuses is EqualUnmodifiableListView) return _statuses;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_statuses);
+  }
 
   @override
   String toString() {
@@ -174,43 +177,47 @@ class _$_MastodonApiSearchResult implements _MastodonApiSearchResult {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiSearchResult &&
-            const DeepCollectionEquality().equals(other.accounts, accounts) &&
-            const DeepCollectionEquality().equals(other.hashtags, hashtags) &&
-            const DeepCollectionEquality().equals(other.statuses, statuses));
+            other is _$MastodonApiSearchResultImpl &&
+            const DeepCollectionEquality().equals(other._accounts, _accounts) &&
+            const DeepCollectionEquality().equals(other._hashtags, _hashtags) &&
+            const DeepCollectionEquality().equals(other._statuses, _statuses));
   }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(accounts),
-      const DeepCollectionEquality().hash(hashtags),
-      const DeepCollectionEquality().hash(statuses));
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiSearchResultCopyWith<_MastodonApiSearchResult> get copyWith =>
-      __$MastodonApiSearchResultCopyWithImpl<_MastodonApiSearchResult>(
-          this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(_accounts),
+      const DeepCollectionEquality().hash(_hashtags),
+      const DeepCollectionEquality().hash(_statuses));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiSearchResultImplCopyWith<_$MastodonApiSearchResultImpl>
+      get copyWith => __$$MastodonApiSearchResultImplCopyWithImpl<
+          _$MastodonApiSearchResultImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiSearchResultToJson(this);
+    return _$$MastodonApiSearchResultImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiSearchResult implements MastodonApiSearchResult {
   const factory _MastodonApiSearchResult(
-          {@HiveField(0) required List<MastodonApiAccount> accounts,
-          @HiveField(1) required List<MastodonApiTag> hashtags,
-          @HiveField(2) required List<MastodonApiStatus> statuses}) =
-      _$_MastodonApiSearchResult;
+          {@HiveField(0) required final List<MastodonApiAccount> accounts,
+          @HiveField(1) required final List<MastodonApiTag> hashtags,
+          @HiveField(2) required final List<MastodonApiStatus> statuses}) =
+      _$MastodonApiSearchResultImpl;
 
   factory _MastodonApiSearchResult.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiSearchResult.fromJson;
+      _$MastodonApiSearchResultImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -223,6 +230,6 @@ abstract class _MastodonApiSearchResult implements MastodonApiSearchResult {
   List<MastodonApiStatus> get statuses;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiSearchResultCopyWith<_MastodonApiSearchResult> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$MastodonApiSearchResultImplCopyWith<_$MastodonApiSearchResultImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

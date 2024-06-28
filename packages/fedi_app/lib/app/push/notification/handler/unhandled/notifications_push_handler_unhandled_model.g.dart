@@ -45,18 +45,18 @@ class NotificationsPushHandlerUnhandledListAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_NotificationsPushHandlerUnhandledList
-    _$$_NotificationsPushHandlerUnhandledListFromJson(
+_$NotificationsPushHandlerUnhandledListImpl
+    _$$NotificationsPushHandlerUnhandledListImplFromJson(
             Map<String, dynamic> json) =>
-        _$_NotificationsPushHandlerUnhandledList(
+        _$NotificationsPushHandlerUnhandledListImpl(
           messages: (json['messages'] as List<dynamic>)
               .map((e) => NotificationsPushHandlerMessage.fromJson(
                   e as Map<String, dynamic>))
               .toList(),
         );
 
-Map<String, dynamic> _$$_NotificationsPushHandlerUnhandledListToJson(
-        _$_NotificationsPushHandlerUnhandledList instance) =>
+Map<String, dynamic> _$$NotificationsPushHandlerUnhandledListImplToJson(
+        _$NotificationsPushHandlerUnhandledListImpl instance) =>
     <String, dynamic>{
       'messages': instance.messages.map((e) => e.toJson()).toList(),
     };

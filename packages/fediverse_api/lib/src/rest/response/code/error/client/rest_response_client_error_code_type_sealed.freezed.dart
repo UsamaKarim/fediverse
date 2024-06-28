@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'rest_response_client_error_code_type_sealed.dart';
 
@@ -11,239 +12,11 @@ part of 'rest_response_client_error_code_type_sealed.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$RestResponseClientErrorCodeTypeTearOff {
-  const _$RestResponseClientErrorCodeTypeTearOff();
-
-  _BadRequest badRequest(
-      {int intValue = RestResponseClientErrorCodeType.badRequestIntValue}) {
-    return _BadRequest(
-      intValue: intValue,
-    );
-  }
-
-  _Unauthorized unauthorized(
-      {int intValue = RestResponseClientErrorCodeType.unauthorizedIntValue}) {
-    return _Unauthorized(
-      intValue: intValue,
-    );
-  }
-
-  _PaymentRequired paymentRequired(
-      {int intValue =
-          RestResponseClientErrorCodeType.paymentRequiredIntValue}) {
-    return _PaymentRequired(
-      intValue: intValue,
-    );
-  }
-
-  _Forbidden forbidden(
-      {int intValue = RestResponseClientErrorCodeType.forbiddenIntValue}) {
-    return _Forbidden(
-      intValue: intValue,
-    );
-  }
-
-  _NotFound notFound(
-      {int intValue = RestResponseClientErrorCodeType.notFoundIntValue}) {
-    return _NotFound(
-      intValue: intValue,
-    );
-  }
-
-  _MethodNotAllowed methodNotAllowed(
-      {int intValue =
-          RestResponseClientErrorCodeType.methodNotAllowedIntValue}) {
-    return _MethodNotAllowed(
-      intValue: intValue,
-    );
-  }
-
-  _NotAcceptable notAcceptable(
-      {int intValue = RestResponseClientErrorCodeType.notAcceptableIntValue}) {
-    return _NotAcceptable(
-      intValue: intValue,
-    );
-  }
-
-  _ProxyAuthenticationRequired proxyAuthenticationRequired(
-      {int intValue = RestResponseClientErrorCodeType
-          .proxyAuthenticationRequiredIntValue}) {
-    return _ProxyAuthenticationRequired(
-      intValue: intValue,
-    );
-  }
-
-  _RequestTimeout requestTimeout(
-      {int intValue = RestResponseClientErrorCodeType.requestTimeoutIntValue}) {
-    return _RequestTimeout(
-      intValue: intValue,
-    );
-  }
-
-  _Conflict conflict(
-      {int intValue = RestResponseClientErrorCodeType.conflictIntValue}) {
-    return _Conflict(
-      intValue: intValue,
-    );
-  }
-
-  _Gone gone({int intValue = RestResponseClientErrorCodeType.goneIntValue}) {
-    return _Gone(
-      intValue: intValue,
-    );
-  }
-
-  _LengthRequired lengthRequired(
-      {int intValue = RestResponseClientErrorCodeType.lengthRequiredIntValue}) {
-    return _LengthRequired(
-      intValue: intValue,
-    );
-  }
-
-  _PreconditionFailed preconditionFailed(
-      {int intValue =
-          RestResponseClientErrorCodeType.preconditionFailedIntValue}) {
-    return _PreconditionFailed(
-      intValue: intValue,
-    );
-  }
-
-  _PayloadTooLarge payloadTooLarge(
-      {int intValue =
-          RestResponseClientErrorCodeType.payloadTooLargeIntValue}) {
-    return _PayloadTooLarge(
-      intValue: intValue,
-    );
-  }
-
-  _UriTooLong uriTooLong(
-      {int intValue = RestResponseClientErrorCodeType.uriTooLongIntValue}) {
-    return _UriTooLong(
-      intValue: intValue,
-    );
-  }
-
-  _UnsupportedMediaType unsupportedMediaType(
-      {int intValue =
-          RestResponseClientErrorCodeType.unsupportedMediaTypeIntValue}) {
-    return _UnsupportedMediaType(
-      intValue: intValue,
-    );
-  }
-
-  _RangeNotSatisfiable rangeNotSatisfiable(
-      {int intValue =
-          RestResponseClientErrorCodeType.rangeNotSatisfiableIntValue}) {
-    return _RangeNotSatisfiable(
-      intValue: intValue,
-    );
-  }
-
-  _ExpectationFailed expectationFailed(
-      {int intValue =
-          RestResponseClientErrorCodeType.expectationFailedIntValue}) {
-    return _ExpectationFailed(
-      intValue: intValue,
-    );
-  }
-
-  _IAmTeapot iAmTeapot(
-      {int intValue = RestResponseClientErrorCodeType.iAmTeapotIntValue}) {
-    return _IAmTeapot(
-      intValue: intValue,
-    );
-  }
-
-  _MisdirectRequest misdirectRequest(
-      {int intValue =
-          RestResponseClientErrorCodeType.misdirectRequestIntValue}) {
-    return _MisdirectRequest(
-      intValue: intValue,
-    );
-  }
-
-  _UnprocessableEntityEntity unprocessableEntityEntity(
-      {int intValue =
-          RestResponseClientErrorCodeType.unprocessableEntityEntityIntValue}) {
-    return _UnprocessableEntityEntity(
-      intValue: intValue,
-    );
-  }
-
-  _Locked locked(
-      {int intValue = RestResponseClientErrorCodeType.lockedIntValue}) {
-    return _Locked(
-      intValue: intValue,
-    );
-  }
-
-  _FailedDependency failedDependency(
-      {int intValue =
-          RestResponseClientErrorCodeType.failedDependencyIntValue}) {
-    return _FailedDependency(
-      intValue: intValue,
-    );
-  }
-
-  _TooEarly tooEarly(
-      {int intValue = RestResponseClientErrorCodeType.tooEarlyIntValue}) {
-    return _TooEarly(
-      intValue: intValue,
-    );
-  }
-
-  _UpgradeRequired upgradeRequired(
-      {int intValue =
-          RestResponseClientErrorCodeType.upgradeRequiredIntValue}) {
-    return _UpgradeRequired(
-      intValue: intValue,
-    );
-  }
-
-  _PreconditionRequired preconditionRequired(
-      {int intValue =
-          RestResponseClientErrorCodeType.preconditionRequiredIntValue}) {
-    return _PreconditionRequired(
-      intValue: intValue,
-    );
-  }
-
-  _TooManyRequests tooManyRequests(
-      {int intValue =
-          RestResponseClientErrorCodeType.tooManyRequestsIntValue}) {
-    return _TooManyRequests(
-      intValue: intValue,
-    );
-  }
-
-  _RequestHeaderFieldsTooLarge requestHeaderFieldsTooLarge(
-      {int intValue = RestResponseClientErrorCodeType
-          .requestHeaderFieldsTooLargeIntValue}) {
-    return _RequestHeaderFieldsTooLarge(
-      intValue: intValue,
-    );
-  }
-
-  _UnavailableForLegalReasons unavailableForLegalReasons(
-      {int intValue =
-          RestResponseClientErrorCodeType.unavailableForLegalReasonsIntValue}) {
-    return _UnavailableForLegalReasons(
-      intValue: intValue,
-    );
-  }
-}
-
-/// @nodoc
-const $RestResponseClientErrorCodeType =
-    _$RestResponseClientErrorCodeTypeTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$RestResponseClientErrorCodeType {
   int get intValue => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(int intValue) badRequest,
@@ -279,35 +52,35 @@ mixin _$RestResponseClientErrorCodeType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -383,38 +156,38 @@ mixin _$RestResponseClientErrorCodeType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) =>
       throw _privateConstructorUsedError;
@@ -467,59 +240,63 @@ abstract class $RestResponseClientErrorCodeTypeCopyWith<$Res> {
   factory $RestResponseClientErrorCodeTypeCopyWith(
           RestResponseClientErrorCodeType value,
           $Res Function(RestResponseClientErrorCodeType) then) =
-      _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>;
+      _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res,
+          RestResponseClientErrorCodeType>;
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
+class _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res,
+        $Val extends RestResponseClientErrorCodeType>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
   _$RestResponseClientErrorCodeTypeCopyWithImpl(this._value, this._then);
 
-  final RestResponseClientErrorCodeType _value;
   // ignore: unused_field
-  final $Res Function(RestResponseClientErrorCodeType) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
     return _then(_value.copyWith(
-      intValue: intValue == freezed
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$BadRequestCopyWith<$Res>
+abstract class _$$BadRequestImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$BadRequestCopyWith(
-          _BadRequest value, $Res Function(_BadRequest) then) =
-      __$BadRequestCopyWithImpl<$Res>;
+  factory _$$BadRequestImplCopyWith(
+          _$BadRequestImpl value, $Res Function(_$BadRequestImpl) then) =
+      __$$BadRequestImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$BadRequestCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$BadRequestCopyWith<$Res> {
-  __$BadRequestCopyWithImpl(
-      _BadRequest _value, $Res Function(_BadRequest) _then)
-      : super(_value, (v) => _then(v as _BadRequest));
+class __$$BadRequestImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res,
+        _$BadRequestImpl> implements _$$BadRequestImplCopyWith<$Res> {
+  __$$BadRequestImplCopyWithImpl(
+      _$BadRequestImpl _value, $Res Function(_$BadRequestImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _BadRequest get _value => super._value as _BadRequest;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_BadRequest(
-      intValue: intValue == freezed
+    return _then(_$BadRequestImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -529,12 +306,12 @@ class __$BadRequestCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_BadRequest implements _BadRequest {
-  const _$_BadRequest(
+class _$BadRequestImpl implements _BadRequest {
+  const _$BadRequestImpl(
       {this.intValue = RestResponseClientErrorCodeType.badRequestIntValue});
 
-  @JsonKey(defaultValue: RestResponseClientErrorCodeType.badRequestIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -543,10 +320,10 @@ class _$_BadRequest implements _BadRequest {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _BadRequest &&
+            other is _$BadRequestImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -556,8 +333,9 @@ class _$_BadRequest implements _BadRequest {
 
   @JsonKey(ignore: true)
   @override
-  _$BadRequestCopyWith<_BadRequest> get copyWith =>
-      __$BadRequestCopyWithImpl<_BadRequest>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$BadRequestImplCopyWith<_$BadRequestImpl> get copyWith =>
+      __$$BadRequestImplCopyWithImpl<_$BadRequestImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -598,35 +376,35 @@ class _$_BadRequest implements _BadRequest {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return badRequest?.call(intValue);
   }
@@ -714,38 +492,38 @@ class _$_BadRequest implements _BadRequest {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return badRequest?.call(this);
@@ -797,43 +575,42 @@ class _$_BadRequest implements _BadRequest {
 }
 
 abstract class _BadRequest implements RestResponseClientErrorCodeType {
-  const factory _BadRequest({int intValue}) = _$_BadRequest;
+  const factory _BadRequest({final int intValue}) = _$BadRequestImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$BadRequestCopyWith<_BadRequest> get copyWith =>
+  _$$BadRequestImplCopyWith<_$BadRequestImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$UnauthorizedCopyWith<$Res>
+abstract class _$$UnauthorizedImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$UnauthorizedCopyWith(
-          _Unauthorized value, $Res Function(_Unauthorized) then) =
-      __$UnauthorizedCopyWithImpl<$Res>;
+  factory _$$UnauthorizedImplCopyWith(
+          _$UnauthorizedImpl value, $Res Function(_$UnauthorizedImpl) then) =
+      __$$UnauthorizedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$UnauthorizedCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$UnauthorizedCopyWith<$Res> {
-  __$UnauthorizedCopyWithImpl(
-      _Unauthorized _value, $Res Function(_Unauthorized) _then)
-      : super(_value, (v) => _then(v as _Unauthorized));
+class __$$UnauthorizedImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res,
+        _$UnauthorizedImpl> implements _$$UnauthorizedImplCopyWith<$Res> {
+  __$$UnauthorizedImplCopyWithImpl(
+      _$UnauthorizedImpl _value, $Res Function(_$UnauthorizedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Unauthorized get _value => super._value as _Unauthorized;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_Unauthorized(
-      intValue: intValue == freezed
+    return _then(_$UnauthorizedImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -843,12 +620,12 @@ class __$UnauthorizedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Unauthorized implements _Unauthorized {
-  const _$_Unauthorized(
+class _$UnauthorizedImpl implements _Unauthorized {
+  const _$UnauthorizedImpl(
       {this.intValue = RestResponseClientErrorCodeType.unauthorizedIntValue});
 
-  @JsonKey(defaultValue: RestResponseClientErrorCodeType.unauthorizedIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -857,10 +634,10 @@ class _$_Unauthorized implements _Unauthorized {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Unauthorized &&
+            other is _$UnauthorizedImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -870,8 +647,9 @@ class _$_Unauthorized implements _Unauthorized {
 
   @JsonKey(ignore: true)
   @override
-  _$UnauthorizedCopyWith<_Unauthorized> get copyWith =>
-      __$UnauthorizedCopyWithImpl<_Unauthorized>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnauthorizedImplCopyWith<_$UnauthorizedImpl> get copyWith =>
+      __$$UnauthorizedImplCopyWithImpl<_$UnauthorizedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -912,35 +690,35 @@ class _$_Unauthorized implements _Unauthorized {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return unauthorized?.call(intValue);
   }
@@ -1028,38 +806,38 @@ class _$_Unauthorized implements _Unauthorized {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return unauthorized?.call(this);
@@ -1111,43 +889,42 @@ class _$_Unauthorized implements _Unauthorized {
 }
 
 abstract class _Unauthorized implements RestResponseClientErrorCodeType {
-  const factory _Unauthorized({int intValue}) = _$_Unauthorized;
+  const factory _Unauthorized({final int intValue}) = _$UnauthorizedImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$UnauthorizedCopyWith<_Unauthorized> get copyWith =>
+  _$$UnauthorizedImplCopyWith<_$UnauthorizedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$PaymentRequiredCopyWith<$Res>
+abstract class _$$PaymentRequiredImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$PaymentRequiredCopyWith(
-          _PaymentRequired value, $Res Function(_PaymentRequired) then) =
-      __$PaymentRequiredCopyWithImpl<$Res>;
+  factory _$$PaymentRequiredImplCopyWith(_$PaymentRequiredImpl value,
+          $Res Function(_$PaymentRequiredImpl) then) =
+      __$$PaymentRequiredImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$PaymentRequiredCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$PaymentRequiredCopyWith<$Res> {
-  __$PaymentRequiredCopyWithImpl(
-      _PaymentRequired _value, $Res Function(_PaymentRequired) _then)
-      : super(_value, (v) => _then(v as _PaymentRequired));
+class __$$PaymentRequiredImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res,
+        _$PaymentRequiredImpl> implements _$$PaymentRequiredImplCopyWith<$Res> {
+  __$$PaymentRequiredImplCopyWithImpl(
+      _$PaymentRequiredImpl _value, $Res Function(_$PaymentRequiredImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PaymentRequired get _value => super._value as _PaymentRequired;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_PaymentRequired(
-      intValue: intValue == freezed
+    return _then(_$PaymentRequiredImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -1157,14 +934,13 @@ class __$PaymentRequiredCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PaymentRequired implements _PaymentRequired {
-  const _$_PaymentRequired(
+class _$PaymentRequiredImpl implements _PaymentRequired {
+  const _$PaymentRequiredImpl(
       {this.intValue =
           RestResponseClientErrorCodeType.paymentRequiredIntValue});
 
-  @JsonKey(
-      defaultValue: RestResponseClientErrorCodeType.paymentRequiredIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -1173,10 +949,10 @@ class _$_PaymentRequired implements _PaymentRequired {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PaymentRequired &&
+            other is _$PaymentRequiredImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -1186,8 +962,10 @@ class _$_PaymentRequired implements _PaymentRequired {
 
   @JsonKey(ignore: true)
   @override
-  _$PaymentRequiredCopyWith<_PaymentRequired> get copyWith =>
-      __$PaymentRequiredCopyWithImpl<_PaymentRequired>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PaymentRequiredImplCopyWith<_$PaymentRequiredImpl> get copyWith =>
+      __$$PaymentRequiredImplCopyWithImpl<_$PaymentRequiredImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1228,35 +1006,35 @@ class _$_PaymentRequired implements _PaymentRequired {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return paymentRequired?.call(intValue);
   }
@@ -1344,38 +1122,38 @@ class _$_PaymentRequired implements _PaymentRequired {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return paymentRequired?.call(this);
@@ -1427,42 +1205,42 @@ class _$_PaymentRequired implements _PaymentRequired {
 }
 
 abstract class _PaymentRequired implements RestResponseClientErrorCodeType {
-  const factory _PaymentRequired({int intValue}) = _$_PaymentRequired;
+  const factory _PaymentRequired({final int intValue}) = _$PaymentRequiredImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$PaymentRequiredCopyWith<_PaymentRequired> get copyWith =>
+  _$$PaymentRequiredImplCopyWith<_$PaymentRequiredImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ForbiddenCopyWith<$Res>
+abstract class _$$ForbiddenImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$ForbiddenCopyWith(
-          _Forbidden value, $Res Function(_Forbidden) then) =
-      __$ForbiddenCopyWithImpl<$Res>;
+  factory _$$ForbiddenImplCopyWith(
+          _$ForbiddenImpl value, $Res Function(_$ForbiddenImpl) then) =
+      __$$ForbiddenImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$ForbiddenCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$ForbiddenCopyWith<$Res> {
-  __$ForbiddenCopyWithImpl(_Forbidden _value, $Res Function(_Forbidden) _then)
-      : super(_value, (v) => _then(v as _Forbidden));
+class __$$ForbiddenImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res, _$ForbiddenImpl>
+    implements _$$ForbiddenImplCopyWith<$Res> {
+  __$$ForbiddenImplCopyWithImpl(
+      _$ForbiddenImpl _value, $Res Function(_$ForbiddenImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Forbidden get _value => super._value as _Forbidden;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_Forbidden(
-      intValue: intValue == freezed
+    return _then(_$ForbiddenImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -1472,12 +1250,12 @@ class __$ForbiddenCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Forbidden implements _Forbidden {
-  const _$_Forbidden(
+class _$ForbiddenImpl implements _Forbidden {
+  const _$ForbiddenImpl(
       {this.intValue = RestResponseClientErrorCodeType.forbiddenIntValue});
 
-  @JsonKey(defaultValue: RestResponseClientErrorCodeType.forbiddenIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -1486,10 +1264,10 @@ class _$_Forbidden implements _Forbidden {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Forbidden &&
+            other is _$ForbiddenImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -1499,8 +1277,9 @@ class _$_Forbidden implements _Forbidden {
 
   @JsonKey(ignore: true)
   @override
-  _$ForbiddenCopyWith<_Forbidden> get copyWith =>
-      __$ForbiddenCopyWithImpl<_Forbidden>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ForbiddenImplCopyWith<_$ForbiddenImpl> get copyWith =>
+      __$$ForbiddenImplCopyWithImpl<_$ForbiddenImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1541,35 +1320,35 @@ class _$_Forbidden implements _Forbidden {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return forbidden?.call(intValue);
   }
@@ -1657,38 +1436,38 @@ class _$_Forbidden implements _Forbidden {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return forbidden?.call(this);
@@ -1740,41 +1519,42 @@ class _$_Forbidden implements _Forbidden {
 }
 
 abstract class _Forbidden implements RestResponseClientErrorCodeType {
-  const factory _Forbidden({int intValue}) = _$_Forbidden;
+  const factory _Forbidden({final int intValue}) = _$ForbiddenImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$ForbiddenCopyWith<_Forbidden> get copyWith =>
+  _$$ForbiddenImplCopyWith<_$ForbiddenImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$NotFoundCopyWith<$Res>
+abstract class _$$NotFoundImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$NotFoundCopyWith(_NotFound value, $Res Function(_NotFound) then) =
-      __$NotFoundCopyWithImpl<$Res>;
+  factory _$$NotFoundImplCopyWith(
+          _$NotFoundImpl value, $Res Function(_$NotFoundImpl) then) =
+      __$$NotFoundImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$NotFoundCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$NotFoundCopyWith<$Res> {
-  __$NotFoundCopyWithImpl(_NotFound _value, $Res Function(_NotFound) _then)
-      : super(_value, (v) => _then(v as _NotFound));
+class __$$NotFoundImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res, _$NotFoundImpl>
+    implements _$$NotFoundImplCopyWith<$Res> {
+  __$$NotFoundImplCopyWithImpl(
+      _$NotFoundImpl _value, $Res Function(_$NotFoundImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _NotFound get _value => super._value as _NotFound;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_NotFound(
-      intValue: intValue == freezed
+    return _then(_$NotFoundImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -1784,12 +1564,12 @@ class __$NotFoundCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_NotFound implements _NotFound {
-  const _$_NotFound(
+class _$NotFoundImpl implements _NotFound {
+  const _$NotFoundImpl(
       {this.intValue = RestResponseClientErrorCodeType.notFoundIntValue});
 
-  @JsonKey(defaultValue: RestResponseClientErrorCodeType.notFoundIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -1798,10 +1578,10 @@ class _$_NotFound implements _NotFound {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _NotFound &&
+            other is _$NotFoundImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -1811,8 +1591,9 @@ class _$_NotFound implements _NotFound {
 
   @JsonKey(ignore: true)
   @override
-  _$NotFoundCopyWith<_NotFound> get copyWith =>
-      __$NotFoundCopyWithImpl<_NotFound>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$NotFoundImplCopyWith<_$NotFoundImpl> get copyWith =>
+      __$$NotFoundImplCopyWithImpl<_$NotFoundImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1853,35 +1634,35 @@ class _$_NotFound implements _NotFound {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return notFound?.call(intValue);
   }
@@ -1969,38 +1750,38 @@ class _$_NotFound implements _NotFound {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return notFound?.call(this);
@@ -2052,43 +1833,43 @@ class _$_NotFound implements _NotFound {
 }
 
 abstract class _NotFound implements RestResponseClientErrorCodeType {
-  const factory _NotFound({int intValue}) = _$_NotFound;
+  const factory _NotFound({final int intValue}) = _$NotFoundImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$NotFoundCopyWith<_NotFound> get copyWith =>
+  _$$NotFoundImplCopyWith<_$NotFoundImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$MethodNotAllowedCopyWith<$Res>
+abstract class _$$MethodNotAllowedImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$MethodNotAllowedCopyWith(
-          _MethodNotAllowed value, $Res Function(_MethodNotAllowed) then) =
-      __$MethodNotAllowedCopyWithImpl<$Res>;
+  factory _$$MethodNotAllowedImplCopyWith(_$MethodNotAllowedImpl value,
+          $Res Function(_$MethodNotAllowedImpl) then) =
+      __$$MethodNotAllowedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$MethodNotAllowedCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$MethodNotAllowedCopyWith<$Res> {
-  __$MethodNotAllowedCopyWithImpl(
-      _MethodNotAllowed _value, $Res Function(_MethodNotAllowed) _then)
-      : super(_value, (v) => _then(v as _MethodNotAllowed));
+class __$$MethodNotAllowedImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res,
+        _$MethodNotAllowedImpl>
+    implements _$$MethodNotAllowedImplCopyWith<$Res> {
+  __$$MethodNotAllowedImplCopyWithImpl(_$MethodNotAllowedImpl _value,
+      $Res Function(_$MethodNotAllowedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MethodNotAllowed get _value => super._value as _MethodNotAllowed;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_MethodNotAllowed(
-      intValue: intValue == freezed
+    return _then(_$MethodNotAllowedImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -2098,14 +1879,13 @@ class __$MethodNotAllowedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_MethodNotAllowed implements _MethodNotAllowed {
-  const _$_MethodNotAllowed(
+class _$MethodNotAllowedImpl implements _MethodNotAllowed {
+  const _$MethodNotAllowedImpl(
       {this.intValue =
           RestResponseClientErrorCodeType.methodNotAllowedIntValue});
 
-  @JsonKey(
-      defaultValue: RestResponseClientErrorCodeType.methodNotAllowedIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -2114,10 +1894,10 @@ class _$_MethodNotAllowed implements _MethodNotAllowed {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MethodNotAllowed &&
+            other is _$MethodNotAllowedImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -2127,8 +1907,10 @@ class _$_MethodNotAllowed implements _MethodNotAllowed {
 
   @JsonKey(ignore: true)
   @override
-  _$MethodNotAllowedCopyWith<_MethodNotAllowed> get copyWith =>
-      __$MethodNotAllowedCopyWithImpl<_MethodNotAllowed>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MethodNotAllowedImplCopyWith<_$MethodNotAllowedImpl> get copyWith =>
+      __$$MethodNotAllowedImplCopyWithImpl<_$MethodNotAllowedImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2169,35 +1951,35 @@ class _$_MethodNotAllowed implements _MethodNotAllowed {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return methodNotAllowed?.call(intValue);
   }
@@ -2285,38 +2067,38 @@ class _$_MethodNotAllowed implements _MethodNotAllowed {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return methodNotAllowed?.call(this);
@@ -2368,43 +2150,43 @@ class _$_MethodNotAllowed implements _MethodNotAllowed {
 }
 
 abstract class _MethodNotAllowed implements RestResponseClientErrorCodeType {
-  const factory _MethodNotAllowed({int intValue}) = _$_MethodNotAllowed;
+  const factory _MethodNotAllowed({final int intValue}) =
+      _$MethodNotAllowedImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$MethodNotAllowedCopyWith<_MethodNotAllowed> get copyWith =>
+  _$$MethodNotAllowedImplCopyWith<_$MethodNotAllowedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$NotAcceptableCopyWith<$Res>
+abstract class _$$NotAcceptableImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$NotAcceptableCopyWith(
-          _NotAcceptable value, $Res Function(_NotAcceptable) then) =
-      __$NotAcceptableCopyWithImpl<$Res>;
+  factory _$$NotAcceptableImplCopyWith(
+          _$NotAcceptableImpl value, $Res Function(_$NotAcceptableImpl) then) =
+      __$$NotAcceptableImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$NotAcceptableCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$NotAcceptableCopyWith<$Res> {
-  __$NotAcceptableCopyWithImpl(
-      _NotAcceptable _value, $Res Function(_NotAcceptable) _then)
-      : super(_value, (v) => _then(v as _NotAcceptable));
+class __$$NotAcceptableImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res,
+        _$NotAcceptableImpl> implements _$$NotAcceptableImplCopyWith<$Res> {
+  __$$NotAcceptableImplCopyWithImpl(
+      _$NotAcceptableImpl _value, $Res Function(_$NotAcceptableImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _NotAcceptable get _value => super._value as _NotAcceptable;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_NotAcceptable(
-      intValue: intValue == freezed
+    return _then(_$NotAcceptableImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -2414,12 +2196,12 @@ class __$NotAcceptableCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_NotAcceptable implements _NotAcceptable {
-  const _$_NotAcceptable(
+class _$NotAcceptableImpl implements _NotAcceptable {
+  const _$NotAcceptableImpl(
       {this.intValue = RestResponseClientErrorCodeType.notAcceptableIntValue});
 
-  @JsonKey(defaultValue: RestResponseClientErrorCodeType.notAcceptableIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -2428,10 +2210,10 @@ class _$_NotAcceptable implements _NotAcceptable {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _NotAcceptable &&
+            other is _$NotAcceptableImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -2441,8 +2223,9 @@ class _$_NotAcceptable implements _NotAcceptable {
 
   @JsonKey(ignore: true)
   @override
-  _$NotAcceptableCopyWith<_NotAcceptable> get copyWith =>
-      __$NotAcceptableCopyWithImpl<_NotAcceptable>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$NotAcceptableImplCopyWith<_$NotAcceptableImpl> get copyWith =>
+      __$$NotAcceptableImplCopyWithImpl<_$NotAcceptableImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2483,35 +2266,35 @@ class _$_NotAcceptable implements _NotAcceptable {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return notAcceptable?.call(intValue);
   }
@@ -2599,38 +2382,38 @@ class _$_NotAcceptable implements _NotAcceptable {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return notAcceptable?.call(this);
@@ -2682,46 +2465,45 @@ class _$_NotAcceptable implements _NotAcceptable {
 }
 
 abstract class _NotAcceptable implements RestResponseClientErrorCodeType {
-  const factory _NotAcceptable({int intValue}) = _$_NotAcceptable;
+  const factory _NotAcceptable({final int intValue}) = _$NotAcceptableImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$NotAcceptableCopyWith<_NotAcceptable> get copyWith =>
+  _$$NotAcceptableImplCopyWith<_$NotAcceptableImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ProxyAuthenticationRequiredCopyWith<$Res>
+abstract class _$$ProxyAuthenticationRequiredImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$ProxyAuthenticationRequiredCopyWith(
-          _ProxyAuthenticationRequired value,
-          $Res Function(_ProxyAuthenticationRequired) then) =
-      __$ProxyAuthenticationRequiredCopyWithImpl<$Res>;
+  factory _$$ProxyAuthenticationRequiredImplCopyWith(
+          _$ProxyAuthenticationRequiredImpl value,
+          $Res Function(_$ProxyAuthenticationRequiredImpl) then) =
+      __$$ProxyAuthenticationRequiredImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$ProxyAuthenticationRequiredCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$ProxyAuthenticationRequiredCopyWith<$Res> {
-  __$ProxyAuthenticationRequiredCopyWithImpl(
-      _ProxyAuthenticationRequired _value,
-      $Res Function(_ProxyAuthenticationRequired) _then)
-      : super(_value, (v) => _then(v as _ProxyAuthenticationRequired));
+class __$$ProxyAuthenticationRequiredImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res,
+        _$ProxyAuthenticationRequiredImpl>
+    implements _$$ProxyAuthenticationRequiredImplCopyWith<$Res> {
+  __$$ProxyAuthenticationRequiredImplCopyWithImpl(
+      _$ProxyAuthenticationRequiredImpl _value,
+      $Res Function(_$ProxyAuthenticationRequiredImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _ProxyAuthenticationRequired get _value =>
-      super._value as _ProxyAuthenticationRequired;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_ProxyAuthenticationRequired(
-      intValue: intValue == freezed
+    return _then(_$ProxyAuthenticationRequiredImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -2731,15 +2513,14 @@ class __$ProxyAuthenticationRequiredCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ProxyAuthenticationRequired implements _ProxyAuthenticationRequired {
-  const _$_ProxyAuthenticationRequired(
+class _$ProxyAuthenticationRequiredImpl
+    implements _ProxyAuthenticationRequired {
+  const _$ProxyAuthenticationRequiredImpl(
       {this.intValue =
           RestResponseClientErrorCodeType.proxyAuthenticationRequiredIntValue});
 
-  @JsonKey(
-      defaultValue:
-          RestResponseClientErrorCodeType.proxyAuthenticationRequiredIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -2748,10 +2529,10 @@ class _$_ProxyAuthenticationRequired implements _ProxyAuthenticationRequired {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ProxyAuthenticationRequired &&
+            other is _$ProxyAuthenticationRequiredImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -2761,9 +2542,10 @@ class _$_ProxyAuthenticationRequired implements _ProxyAuthenticationRequired {
 
   @JsonKey(ignore: true)
   @override
-  _$ProxyAuthenticationRequiredCopyWith<_ProxyAuthenticationRequired>
-      get copyWith => __$ProxyAuthenticationRequiredCopyWithImpl<
-          _ProxyAuthenticationRequired>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ProxyAuthenticationRequiredImplCopyWith<_$ProxyAuthenticationRequiredImpl>
+      get copyWith => __$$ProxyAuthenticationRequiredImplCopyWithImpl<
+          _$ProxyAuthenticationRequiredImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2804,35 +2586,35 @@ class _$_ProxyAuthenticationRequired implements _ProxyAuthenticationRequired {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return proxyAuthenticationRequired?.call(intValue);
   }
@@ -2920,38 +2702,38 @@ class _$_ProxyAuthenticationRequired implements _ProxyAuthenticationRequired {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return proxyAuthenticationRequired?.call(this);
@@ -3004,44 +2786,43 @@ class _$_ProxyAuthenticationRequired implements _ProxyAuthenticationRequired {
 
 abstract class _ProxyAuthenticationRequired
     implements RestResponseClientErrorCodeType {
-  const factory _ProxyAuthenticationRequired({int intValue}) =
-      _$_ProxyAuthenticationRequired;
+  const factory _ProxyAuthenticationRequired({final int intValue}) =
+      _$ProxyAuthenticationRequiredImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$ProxyAuthenticationRequiredCopyWith<_ProxyAuthenticationRequired>
+  _$$ProxyAuthenticationRequiredImplCopyWith<_$ProxyAuthenticationRequiredImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$RequestTimeoutCopyWith<$Res>
+abstract class _$$RequestTimeoutImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$RequestTimeoutCopyWith(
-          _RequestTimeout value, $Res Function(_RequestTimeout) then) =
-      __$RequestTimeoutCopyWithImpl<$Res>;
+  factory _$$RequestTimeoutImplCopyWith(_$RequestTimeoutImpl value,
+          $Res Function(_$RequestTimeoutImpl) then) =
+      __$$RequestTimeoutImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$RequestTimeoutCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$RequestTimeoutCopyWith<$Res> {
-  __$RequestTimeoutCopyWithImpl(
-      _RequestTimeout _value, $Res Function(_RequestTimeout) _then)
-      : super(_value, (v) => _then(v as _RequestTimeout));
+class __$$RequestTimeoutImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res,
+        _$RequestTimeoutImpl> implements _$$RequestTimeoutImplCopyWith<$Res> {
+  __$$RequestTimeoutImplCopyWithImpl(
+      _$RequestTimeoutImpl _value, $Res Function(_$RequestTimeoutImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _RequestTimeout get _value => super._value as _RequestTimeout;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_RequestTimeout(
-      intValue: intValue == freezed
+    return _then(_$RequestTimeoutImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -3051,12 +2832,12 @@ class __$RequestTimeoutCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_RequestTimeout implements _RequestTimeout {
-  const _$_RequestTimeout(
+class _$RequestTimeoutImpl implements _RequestTimeout {
+  const _$RequestTimeoutImpl(
       {this.intValue = RestResponseClientErrorCodeType.requestTimeoutIntValue});
 
-  @JsonKey(defaultValue: RestResponseClientErrorCodeType.requestTimeoutIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -3065,10 +2846,10 @@ class _$_RequestTimeout implements _RequestTimeout {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _RequestTimeout &&
+            other is _$RequestTimeoutImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -3078,8 +2859,10 @@ class _$_RequestTimeout implements _RequestTimeout {
 
   @JsonKey(ignore: true)
   @override
-  _$RequestTimeoutCopyWith<_RequestTimeout> get copyWith =>
-      __$RequestTimeoutCopyWithImpl<_RequestTimeout>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$RequestTimeoutImplCopyWith<_$RequestTimeoutImpl> get copyWith =>
+      __$$RequestTimeoutImplCopyWithImpl<_$RequestTimeoutImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -3120,35 +2903,35 @@ class _$_RequestTimeout implements _RequestTimeout {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return requestTimeout?.call(intValue);
   }
@@ -3236,38 +3019,38 @@ class _$_RequestTimeout implements _RequestTimeout {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return requestTimeout?.call(this);
@@ -3319,41 +3102,42 @@ class _$_RequestTimeout implements _RequestTimeout {
 }
 
 abstract class _RequestTimeout implements RestResponseClientErrorCodeType {
-  const factory _RequestTimeout({int intValue}) = _$_RequestTimeout;
+  const factory _RequestTimeout({final int intValue}) = _$RequestTimeoutImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$RequestTimeoutCopyWith<_RequestTimeout> get copyWith =>
+  _$$RequestTimeoutImplCopyWith<_$RequestTimeoutImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ConflictCopyWith<$Res>
+abstract class _$$ConflictImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$ConflictCopyWith(_Conflict value, $Res Function(_Conflict) then) =
-      __$ConflictCopyWithImpl<$Res>;
+  factory _$$ConflictImplCopyWith(
+          _$ConflictImpl value, $Res Function(_$ConflictImpl) then) =
+      __$$ConflictImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$ConflictCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$ConflictCopyWith<$Res> {
-  __$ConflictCopyWithImpl(_Conflict _value, $Res Function(_Conflict) _then)
-      : super(_value, (v) => _then(v as _Conflict));
+class __$$ConflictImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res, _$ConflictImpl>
+    implements _$$ConflictImplCopyWith<$Res> {
+  __$$ConflictImplCopyWithImpl(
+      _$ConflictImpl _value, $Res Function(_$ConflictImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Conflict get _value => super._value as _Conflict;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_Conflict(
-      intValue: intValue == freezed
+    return _then(_$ConflictImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -3363,12 +3147,12 @@ class __$ConflictCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Conflict implements _Conflict {
-  const _$_Conflict(
+class _$ConflictImpl implements _Conflict {
+  const _$ConflictImpl(
       {this.intValue = RestResponseClientErrorCodeType.conflictIntValue});
 
-  @JsonKey(defaultValue: RestResponseClientErrorCodeType.conflictIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -3377,10 +3161,10 @@ class _$_Conflict implements _Conflict {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Conflict &&
+            other is _$ConflictImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -3390,8 +3174,9 @@ class _$_Conflict implements _Conflict {
 
   @JsonKey(ignore: true)
   @override
-  _$ConflictCopyWith<_Conflict> get copyWith =>
-      __$ConflictCopyWithImpl<_Conflict>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ConflictImplCopyWith<_$ConflictImpl> get copyWith =>
+      __$$ConflictImplCopyWithImpl<_$ConflictImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -3432,35 +3217,35 @@ class _$_Conflict implements _Conflict {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return conflict?.call(intValue);
   }
@@ -3548,38 +3333,38 @@ class _$_Conflict implements _Conflict {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return conflict?.call(this);
@@ -3631,41 +3416,41 @@ class _$_Conflict implements _Conflict {
 }
 
 abstract class _Conflict implements RestResponseClientErrorCodeType {
-  const factory _Conflict({int intValue}) = _$_Conflict;
+  const factory _Conflict({final int intValue}) = _$ConflictImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$ConflictCopyWith<_Conflict> get copyWith =>
+  _$$ConflictImplCopyWith<_$ConflictImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$GoneCopyWith<$Res>
+abstract class _$$GoneImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$GoneCopyWith(_Gone value, $Res Function(_Gone) then) =
-      __$GoneCopyWithImpl<$Res>;
+  factory _$$GoneImplCopyWith(
+          _$GoneImpl value, $Res Function(_$GoneImpl) then) =
+      __$$GoneImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$GoneCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$GoneCopyWith<$Res> {
-  __$GoneCopyWithImpl(_Gone _value, $Res Function(_Gone) _then)
-      : super(_value, (v) => _then(v as _Gone));
+class __$$GoneImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res, _$GoneImpl>
+    implements _$$GoneImplCopyWith<$Res> {
+  __$$GoneImplCopyWithImpl(_$GoneImpl _value, $Res Function(_$GoneImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Gone get _value => super._value as _Gone;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_Gone(
-      intValue: intValue == freezed
+    return _then(_$GoneImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -3675,11 +3460,12 @@ class __$GoneCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Gone implements _Gone {
-  const _$_Gone({this.intValue = RestResponseClientErrorCodeType.goneIntValue});
+class _$GoneImpl implements _Gone {
+  const _$GoneImpl(
+      {this.intValue = RestResponseClientErrorCodeType.goneIntValue});
 
-  @JsonKey(defaultValue: RestResponseClientErrorCodeType.goneIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -3688,10 +3474,10 @@ class _$_Gone implements _Gone {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Gone &&
+            other is _$GoneImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -3701,8 +3487,9 @@ class _$_Gone implements _Gone {
 
   @JsonKey(ignore: true)
   @override
-  _$GoneCopyWith<_Gone> get copyWith =>
-      __$GoneCopyWithImpl<_Gone>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$GoneImplCopyWith<_$GoneImpl> get copyWith =>
+      __$$GoneImplCopyWithImpl<_$GoneImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -3743,35 +3530,35 @@ class _$_Gone implements _Gone {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return gone?.call(intValue);
   }
@@ -3859,38 +3646,38 @@ class _$_Gone implements _Gone {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return gone?.call(this);
@@ -3942,42 +3729,42 @@ class _$_Gone implements _Gone {
 }
 
 abstract class _Gone implements RestResponseClientErrorCodeType {
-  const factory _Gone({int intValue}) = _$_Gone;
+  const factory _Gone({final int intValue}) = _$GoneImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$GoneCopyWith<_Gone> get copyWith => throw _privateConstructorUsedError;
+  _$$GoneImplCopyWith<_$GoneImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$LengthRequiredCopyWith<$Res>
+abstract class _$$LengthRequiredImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$LengthRequiredCopyWith(
-          _LengthRequired value, $Res Function(_LengthRequired) then) =
-      __$LengthRequiredCopyWithImpl<$Res>;
+  factory _$$LengthRequiredImplCopyWith(_$LengthRequiredImpl value,
+          $Res Function(_$LengthRequiredImpl) then) =
+      __$$LengthRequiredImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$LengthRequiredCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$LengthRequiredCopyWith<$Res> {
-  __$LengthRequiredCopyWithImpl(
-      _LengthRequired _value, $Res Function(_LengthRequired) _then)
-      : super(_value, (v) => _then(v as _LengthRequired));
+class __$$LengthRequiredImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res,
+        _$LengthRequiredImpl> implements _$$LengthRequiredImplCopyWith<$Res> {
+  __$$LengthRequiredImplCopyWithImpl(
+      _$LengthRequiredImpl _value, $Res Function(_$LengthRequiredImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _LengthRequired get _value => super._value as _LengthRequired;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_LengthRequired(
-      intValue: intValue == freezed
+    return _then(_$LengthRequiredImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -3987,12 +3774,12 @@ class __$LengthRequiredCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_LengthRequired implements _LengthRequired {
-  const _$_LengthRequired(
+class _$LengthRequiredImpl implements _LengthRequired {
+  const _$LengthRequiredImpl(
       {this.intValue = RestResponseClientErrorCodeType.lengthRequiredIntValue});
 
-  @JsonKey(defaultValue: RestResponseClientErrorCodeType.lengthRequiredIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -4001,10 +3788,10 @@ class _$_LengthRequired implements _LengthRequired {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _LengthRequired &&
+            other is _$LengthRequiredImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -4014,8 +3801,10 @@ class _$_LengthRequired implements _LengthRequired {
 
   @JsonKey(ignore: true)
   @override
-  _$LengthRequiredCopyWith<_LengthRequired> get copyWith =>
-      __$LengthRequiredCopyWithImpl<_LengthRequired>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$LengthRequiredImplCopyWith<_$LengthRequiredImpl> get copyWith =>
+      __$$LengthRequiredImplCopyWithImpl<_$LengthRequiredImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -4056,35 +3845,35 @@ class _$_LengthRequired implements _LengthRequired {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return lengthRequired?.call(intValue);
   }
@@ -4172,38 +3961,38 @@ class _$_LengthRequired implements _LengthRequired {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return lengthRequired?.call(this);
@@ -4255,43 +4044,43 @@ class _$_LengthRequired implements _LengthRequired {
 }
 
 abstract class _LengthRequired implements RestResponseClientErrorCodeType {
-  const factory _LengthRequired({int intValue}) = _$_LengthRequired;
+  const factory _LengthRequired({final int intValue}) = _$LengthRequiredImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$LengthRequiredCopyWith<_LengthRequired> get copyWith =>
+  _$$LengthRequiredImplCopyWith<_$LengthRequiredImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$PreconditionFailedCopyWith<$Res>
+abstract class _$$PreconditionFailedImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$PreconditionFailedCopyWith(
-          _PreconditionFailed value, $Res Function(_PreconditionFailed) then) =
-      __$PreconditionFailedCopyWithImpl<$Res>;
+  factory _$$PreconditionFailedImplCopyWith(_$PreconditionFailedImpl value,
+          $Res Function(_$PreconditionFailedImpl) then) =
+      __$$PreconditionFailedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$PreconditionFailedCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$PreconditionFailedCopyWith<$Res> {
-  __$PreconditionFailedCopyWithImpl(
-      _PreconditionFailed _value, $Res Function(_PreconditionFailed) _then)
-      : super(_value, (v) => _then(v as _PreconditionFailed));
+class __$$PreconditionFailedImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res,
+        _$PreconditionFailedImpl>
+    implements _$$PreconditionFailedImplCopyWith<$Res> {
+  __$$PreconditionFailedImplCopyWithImpl(_$PreconditionFailedImpl _value,
+      $Res Function(_$PreconditionFailedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PreconditionFailed get _value => super._value as _PreconditionFailed;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_PreconditionFailed(
-      intValue: intValue == freezed
+    return _then(_$PreconditionFailedImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -4301,14 +4090,13 @@ class __$PreconditionFailedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PreconditionFailed implements _PreconditionFailed {
-  const _$_PreconditionFailed(
+class _$PreconditionFailedImpl implements _PreconditionFailed {
+  const _$PreconditionFailedImpl(
       {this.intValue =
           RestResponseClientErrorCodeType.preconditionFailedIntValue});
 
-  @JsonKey(
-      defaultValue: RestResponseClientErrorCodeType.preconditionFailedIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -4317,10 +4105,10 @@ class _$_PreconditionFailed implements _PreconditionFailed {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PreconditionFailed &&
+            other is _$PreconditionFailedImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -4330,8 +4118,10 @@ class _$_PreconditionFailed implements _PreconditionFailed {
 
   @JsonKey(ignore: true)
   @override
-  _$PreconditionFailedCopyWith<_PreconditionFailed> get copyWith =>
-      __$PreconditionFailedCopyWithImpl<_PreconditionFailed>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PreconditionFailedImplCopyWith<_$PreconditionFailedImpl> get copyWith =>
+      __$$PreconditionFailedImplCopyWithImpl<_$PreconditionFailedImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -4372,35 +4162,35 @@ class _$_PreconditionFailed implements _PreconditionFailed {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return preconditionFailed?.call(intValue);
   }
@@ -4488,38 +4278,38 @@ class _$_PreconditionFailed implements _PreconditionFailed {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return preconditionFailed?.call(this);
@@ -4571,43 +4361,43 @@ class _$_PreconditionFailed implements _PreconditionFailed {
 }
 
 abstract class _PreconditionFailed implements RestResponseClientErrorCodeType {
-  const factory _PreconditionFailed({int intValue}) = _$_PreconditionFailed;
+  const factory _PreconditionFailed({final int intValue}) =
+      _$PreconditionFailedImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$PreconditionFailedCopyWith<_PreconditionFailed> get copyWith =>
+  _$$PreconditionFailedImplCopyWith<_$PreconditionFailedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$PayloadTooLargeCopyWith<$Res>
+abstract class _$$PayloadTooLargeImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$PayloadTooLargeCopyWith(
-          _PayloadTooLarge value, $Res Function(_PayloadTooLarge) then) =
-      __$PayloadTooLargeCopyWithImpl<$Res>;
+  factory _$$PayloadTooLargeImplCopyWith(_$PayloadTooLargeImpl value,
+          $Res Function(_$PayloadTooLargeImpl) then) =
+      __$$PayloadTooLargeImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$PayloadTooLargeCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$PayloadTooLargeCopyWith<$Res> {
-  __$PayloadTooLargeCopyWithImpl(
-      _PayloadTooLarge _value, $Res Function(_PayloadTooLarge) _then)
-      : super(_value, (v) => _then(v as _PayloadTooLarge));
+class __$$PayloadTooLargeImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res,
+        _$PayloadTooLargeImpl> implements _$$PayloadTooLargeImplCopyWith<$Res> {
+  __$$PayloadTooLargeImplCopyWithImpl(
+      _$PayloadTooLargeImpl _value, $Res Function(_$PayloadTooLargeImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PayloadTooLarge get _value => super._value as _PayloadTooLarge;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_PayloadTooLarge(
-      intValue: intValue == freezed
+    return _then(_$PayloadTooLargeImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -4617,14 +4407,13 @@ class __$PayloadTooLargeCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PayloadTooLarge implements _PayloadTooLarge {
-  const _$_PayloadTooLarge(
+class _$PayloadTooLargeImpl implements _PayloadTooLarge {
+  const _$PayloadTooLargeImpl(
       {this.intValue =
           RestResponseClientErrorCodeType.payloadTooLargeIntValue});
 
-  @JsonKey(
-      defaultValue: RestResponseClientErrorCodeType.payloadTooLargeIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -4633,10 +4422,10 @@ class _$_PayloadTooLarge implements _PayloadTooLarge {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PayloadTooLarge &&
+            other is _$PayloadTooLargeImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -4646,8 +4435,10 @@ class _$_PayloadTooLarge implements _PayloadTooLarge {
 
   @JsonKey(ignore: true)
   @override
-  _$PayloadTooLargeCopyWith<_PayloadTooLarge> get copyWith =>
-      __$PayloadTooLargeCopyWithImpl<_PayloadTooLarge>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PayloadTooLargeImplCopyWith<_$PayloadTooLargeImpl> get copyWith =>
+      __$$PayloadTooLargeImplCopyWithImpl<_$PayloadTooLargeImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -4688,35 +4479,35 @@ class _$_PayloadTooLarge implements _PayloadTooLarge {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return payloadTooLarge?.call(intValue);
   }
@@ -4804,38 +4595,38 @@ class _$_PayloadTooLarge implements _PayloadTooLarge {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return payloadTooLarge?.call(this);
@@ -4887,43 +4678,42 @@ class _$_PayloadTooLarge implements _PayloadTooLarge {
 }
 
 abstract class _PayloadTooLarge implements RestResponseClientErrorCodeType {
-  const factory _PayloadTooLarge({int intValue}) = _$_PayloadTooLarge;
+  const factory _PayloadTooLarge({final int intValue}) = _$PayloadTooLargeImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$PayloadTooLargeCopyWith<_PayloadTooLarge> get copyWith =>
+  _$$PayloadTooLargeImplCopyWith<_$PayloadTooLargeImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$UriTooLongCopyWith<$Res>
+abstract class _$$UriTooLongImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$UriTooLongCopyWith(
-          _UriTooLong value, $Res Function(_UriTooLong) then) =
-      __$UriTooLongCopyWithImpl<$Res>;
+  factory _$$UriTooLongImplCopyWith(
+          _$UriTooLongImpl value, $Res Function(_$UriTooLongImpl) then) =
+      __$$UriTooLongImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$UriTooLongCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$UriTooLongCopyWith<$Res> {
-  __$UriTooLongCopyWithImpl(
-      _UriTooLong _value, $Res Function(_UriTooLong) _then)
-      : super(_value, (v) => _then(v as _UriTooLong));
+class __$$UriTooLongImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res,
+        _$UriTooLongImpl> implements _$$UriTooLongImplCopyWith<$Res> {
+  __$$UriTooLongImplCopyWithImpl(
+      _$UriTooLongImpl _value, $Res Function(_$UriTooLongImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UriTooLong get _value => super._value as _UriTooLong;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_UriTooLong(
-      intValue: intValue == freezed
+    return _then(_$UriTooLongImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -4933,12 +4723,12 @@ class __$UriTooLongCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_UriTooLong implements _UriTooLong {
-  const _$_UriTooLong(
+class _$UriTooLongImpl implements _UriTooLong {
+  const _$UriTooLongImpl(
       {this.intValue = RestResponseClientErrorCodeType.uriTooLongIntValue});
 
-  @JsonKey(defaultValue: RestResponseClientErrorCodeType.uriTooLongIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -4947,10 +4737,10 @@ class _$_UriTooLong implements _UriTooLong {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UriTooLong &&
+            other is _$UriTooLongImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -4960,8 +4750,9 @@ class _$_UriTooLong implements _UriTooLong {
 
   @JsonKey(ignore: true)
   @override
-  _$UriTooLongCopyWith<_UriTooLong> get copyWith =>
-      __$UriTooLongCopyWithImpl<_UriTooLong>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UriTooLongImplCopyWith<_$UriTooLongImpl> get copyWith =>
+      __$$UriTooLongImplCopyWithImpl<_$UriTooLongImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -5002,35 +4793,35 @@ class _$_UriTooLong implements _UriTooLong {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return uriTooLong?.call(intValue);
   }
@@ -5118,38 +4909,38 @@ class _$_UriTooLong implements _UriTooLong {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return uriTooLong?.call(this);
@@ -5201,43 +4992,43 @@ class _$_UriTooLong implements _UriTooLong {
 }
 
 abstract class _UriTooLong implements RestResponseClientErrorCodeType {
-  const factory _UriTooLong({int intValue}) = _$_UriTooLong;
+  const factory _UriTooLong({final int intValue}) = _$UriTooLongImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$UriTooLongCopyWith<_UriTooLong> get copyWith =>
+  _$$UriTooLongImplCopyWith<_$UriTooLongImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$UnsupportedMediaTypeCopyWith<$Res>
+abstract class _$$UnsupportedMediaTypeImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$UnsupportedMediaTypeCopyWith(_UnsupportedMediaType value,
-          $Res Function(_UnsupportedMediaType) then) =
-      __$UnsupportedMediaTypeCopyWithImpl<$Res>;
+  factory _$$UnsupportedMediaTypeImplCopyWith(_$UnsupportedMediaTypeImpl value,
+          $Res Function(_$UnsupportedMediaTypeImpl) then) =
+      __$$UnsupportedMediaTypeImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$UnsupportedMediaTypeCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$UnsupportedMediaTypeCopyWith<$Res> {
-  __$UnsupportedMediaTypeCopyWithImpl(
-      _UnsupportedMediaType _value, $Res Function(_UnsupportedMediaType) _then)
-      : super(_value, (v) => _then(v as _UnsupportedMediaType));
+class __$$UnsupportedMediaTypeImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res,
+        _$UnsupportedMediaTypeImpl>
+    implements _$$UnsupportedMediaTypeImplCopyWith<$Res> {
+  __$$UnsupportedMediaTypeImplCopyWithImpl(_$UnsupportedMediaTypeImpl _value,
+      $Res Function(_$UnsupportedMediaTypeImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnsupportedMediaType get _value => super._value as _UnsupportedMediaType;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_UnsupportedMediaType(
-      intValue: intValue == freezed
+    return _then(_$UnsupportedMediaTypeImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -5247,15 +5038,13 @@ class __$UnsupportedMediaTypeCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_UnsupportedMediaType implements _UnsupportedMediaType {
-  const _$_UnsupportedMediaType(
+class _$UnsupportedMediaTypeImpl implements _UnsupportedMediaType {
+  const _$UnsupportedMediaTypeImpl(
       {this.intValue =
           RestResponseClientErrorCodeType.unsupportedMediaTypeIntValue});
 
-  @JsonKey(
-      defaultValue:
-          RestResponseClientErrorCodeType.unsupportedMediaTypeIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -5264,10 +5053,10 @@ class _$_UnsupportedMediaType implements _UnsupportedMediaType {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnsupportedMediaType &&
+            other is _$UnsupportedMediaTypeImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -5277,9 +5066,11 @@ class _$_UnsupportedMediaType implements _UnsupportedMediaType {
 
   @JsonKey(ignore: true)
   @override
-  _$UnsupportedMediaTypeCopyWith<_UnsupportedMediaType> get copyWith =>
-      __$UnsupportedMediaTypeCopyWithImpl<_UnsupportedMediaType>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnsupportedMediaTypeImplCopyWith<_$UnsupportedMediaTypeImpl>
+      get copyWith =>
+          __$$UnsupportedMediaTypeImplCopyWithImpl<_$UnsupportedMediaTypeImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -5320,35 +5111,35 @@ class _$_UnsupportedMediaType implements _UnsupportedMediaType {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return unsupportedMediaType?.call(intValue);
   }
@@ -5436,38 +5227,38 @@ class _$_UnsupportedMediaType implements _UnsupportedMediaType {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return unsupportedMediaType?.call(this);
@@ -5520,43 +5311,44 @@ class _$_UnsupportedMediaType implements _UnsupportedMediaType {
 
 abstract class _UnsupportedMediaType
     implements RestResponseClientErrorCodeType {
-  const factory _UnsupportedMediaType({int intValue}) = _$_UnsupportedMediaType;
+  const factory _UnsupportedMediaType({final int intValue}) =
+      _$UnsupportedMediaTypeImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$UnsupportedMediaTypeCopyWith<_UnsupportedMediaType> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$UnsupportedMediaTypeImplCopyWith<_$UnsupportedMediaTypeImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$RangeNotSatisfiableCopyWith<$Res>
+abstract class _$$RangeNotSatisfiableImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$RangeNotSatisfiableCopyWith(_RangeNotSatisfiable value,
-          $Res Function(_RangeNotSatisfiable) then) =
-      __$RangeNotSatisfiableCopyWithImpl<$Res>;
+  factory _$$RangeNotSatisfiableImplCopyWith(_$RangeNotSatisfiableImpl value,
+          $Res Function(_$RangeNotSatisfiableImpl) then) =
+      __$$RangeNotSatisfiableImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$RangeNotSatisfiableCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$RangeNotSatisfiableCopyWith<$Res> {
-  __$RangeNotSatisfiableCopyWithImpl(
-      _RangeNotSatisfiable _value, $Res Function(_RangeNotSatisfiable) _then)
-      : super(_value, (v) => _then(v as _RangeNotSatisfiable));
+class __$$RangeNotSatisfiableImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res,
+        _$RangeNotSatisfiableImpl>
+    implements _$$RangeNotSatisfiableImplCopyWith<$Res> {
+  __$$RangeNotSatisfiableImplCopyWithImpl(_$RangeNotSatisfiableImpl _value,
+      $Res Function(_$RangeNotSatisfiableImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _RangeNotSatisfiable get _value => super._value as _RangeNotSatisfiable;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_RangeNotSatisfiable(
-      intValue: intValue == freezed
+    return _then(_$RangeNotSatisfiableImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -5566,14 +5358,13 @@ class __$RangeNotSatisfiableCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_RangeNotSatisfiable implements _RangeNotSatisfiable {
-  const _$_RangeNotSatisfiable(
+class _$RangeNotSatisfiableImpl implements _RangeNotSatisfiable {
+  const _$RangeNotSatisfiableImpl(
       {this.intValue =
           RestResponseClientErrorCodeType.rangeNotSatisfiableIntValue});
 
-  @JsonKey(
-      defaultValue: RestResponseClientErrorCodeType.rangeNotSatisfiableIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -5582,10 +5373,10 @@ class _$_RangeNotSatisfiable implements _RangeNotSatisfiable {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _RangeNotSatisfiable &&
+            other is _$RangeNotSatisfiableImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -5595,8 +5386,9 @@ class _$_RangeNotSatisfiable implements _RangeNotSatisfiable {
 
   @JsonKey(ignore: true)
   @override
-  _$RangeNotSatisfiableCopyWith<_RangeNotSatisfiable> get copyWith =>
-      __$RangeNotSatisfiableCopyWithImpl<_RangeNotSatisfiable>(
+  @pragma('vm:prefer-inline')
+  _$$RangeNotSatisfiableImplCopyWith<_$RangeNotSatisfiableImpl> get copyWith =>
+      __$$RangeNotSatisfiableImplCopyWithImpl<_$RangeNotSatisfiableImpl>(
           this, _$identity);
 
   @override
@@ -5638,35 +5430,35 @@ class _$_RangeNotSatisfiable implements _RangeNotSatisfiable {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return rangeNotSatisfiable?.call(intValue);
   }
@@ -5754,38 +5546,38 @@ class _$_RangeNotSatisfiable implements _RangeNotSatisfiable {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return rangeNotSatisfiable?.call(this);
@@ -5837,43 +5629,44 @@ class _$_RangeNotSatisfiable implements _RangeNotSatisfiable {
 }
 
 abstract class _RangeNotSatisfiable implements RestResponseClientErrorCodeType {
-  const factory _RangeNotSatisfiable({int intValue}) = _$_RangeNotSatisfiable;
+  const factory _RangeNotSatisfiable({final int intValue}) =
+      _$RangeNotSatisfiableImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$RangeNotSatisfiableCopyWith<_RangeNotSatisfiable> get copyWith =>
+  _$$RangeNotSatisfiableImplCopyWith<_$RangeNotSatisfiableImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ExpectationFailedCopyWith<$Res>
+abstract class _$$ExpectationFailedImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$ExpectationFailedCopyWith(
-          _ExpectationFailed value, $Res Function(_ExpectationFailed) then) =
-      __$ExpectationFailedCopyWithImpl<$Res>;
+  factory _$$ExpectationFailedImplCopyWith(_$ExpectationFailedImpl value,
+          $Res Function(_$ExpectationFailedImpl) then) =
+      __$$ExpectationFailedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$ExpectationFailedCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$ExpectationFailedCopyWith<$Res> {
-  __$ExpectationFailedCopyWithImpl(
-      _ExpectationFailed _value, $Res Function(_ExpectationFailed) _then)
-      : super(_value, (v) => _then(v as _ExpectationFailed));
+class __$$ExpectationFailedImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res,
+        _$ExpectationFailedImpl>
+    implements _$$ExpectationFailedImplCopyWith<$Res> {
+  __$$ExpectationFailedImplCopyWithImpl(_$ExpectationFailedImpl _value,
+      $Res Function(_$ExpectationFailedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _ExpectationFailed get _value => super._value as _ExpectationFailed;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_ExpectationFailed(
-      intValue: intValue == freezed
+    return _then(_$ExpectationFailedImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -5883,14 +5676,13 @@ class __$ExpectationFailedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ExpectationFailed implements _ExpectationFailed {
-  const _$_ExpectationFailed(
+class _$ExpectationFailedImpl implements _ExpectationFailed {
+  const _$ExpectationFailedImpl(
       {this.intValue =
           RestResponseClientErrorCodeType.expectationFailedIntValue});
 
-  @JsonKey(
-      defaultValue: RestResponseClientErrorCodeType.expectationFailedIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -5899,10 +5691,10 @@ class _$_ExpectationFailed implements _ExpectationFailed {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ExpectationFailed &&
+            other is _$ExpectationFailedImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -5912,8 +5704,10 @@ class _$_ExpectationFailed implements _ExpectationFailed {
 
   @JsonKey(ignore: true)
   @override
-  _$ExpectationFailedCopyWith<_ExpectationFailed> get copyWith =>
-      __$ExpectationFailedCopyWithImpl<_ExpectationFailed>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ExpectationFailedImplCopyWith<_$ExpectationFailedImpl> get copyWith =>
+      __$$ExpectationFailedImplCopyWithImpl<_$ExpectationFailedImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -5954,35 +5748,35 @@ class _$_ExpectationFailed implements _ExpectationFailed {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return expectationFailed?.call(intValue);
   }
@@ -6070,38 +5864,38 @@ class _$_ExpectationFailed implements _ExpectationFailed {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return expectationFailed?.call(this);
@@ -6153,42 +5947,43 @@ class _$_ExpectationFailed implements _ExpectationFailed {
 }
 
 abstract class _ExpectationFailed implements RestResponseClientErrorCodeType {
-  const factory _ExpectationFailed({int intValue}) = _$_ExpectationFailed;
+  const factory _ExpectationFailed({final int intValue}) =
+      _$ExpectationFailedImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$ExpectationFailedCopyWith<_ExpectationFailed> get copyWith =>
+  _$$ExpectationFailedImplCopyWith<_$ExpectationFailedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$IAmTeapotCopyWith<$Res>
+abstract class _$$IAmTeapotImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$IAmTeapotCopyWith(
-          _IAmTeapot value, $Res Function(_IAmTeapot) then) =
-      __$IAmTeapotCopyWithImpl<$Res>;
+  factory _$$IAmTeapotImplCopyWith(
+          _$IAmTeapotImpl value, $Res Function(_$IAmTeapotImpl) then) =
+      __$$IAmTeapotImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$IAmTeapotCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$IAmTeapotCopyWith<$Res> {
-  __$IAmTeapotCopyWithImpl(_IAmTeapot _value, $Res Function(_IAmTeapot) _then)
-      : super(_value, (v) => _then(v as _IAmTeapot));
+class __$$IAmTeapotImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res, _$IAmTeapotImpl>
+    implements _$$IAmTeapotImplCopyWith<$Res> {
+  __$$IAmTeapotImplCopyWithImpl(
+      _$IAmTeapotImpl _value, $Res Function(_$IAmTeapotImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _IAmTeapot get _value => super._value as _IAmTeapot;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_IAmTeapot(
-      intValue: intValue == freezed
+    return _then(_$IAmTeapotImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -6198,12 +5993,12 @@ class __$IAmTeapotCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_IAmTeapot implements _IAmTeapot {
-  const _$_IAmTeapot(
+class _$IAmTeapotImpl implements _IAmTeapot {
+  const _$IAmTeapotImpl(
       {this.intValue = RestResponseClientErrorCodeType.iAmTeapotIntValue});
 
-  @JsonKey(defaultValue: RestResponseClientErrorCodeType.iAmTeapotIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -6212,10 +6007,10 @@ class _$_IAmTeapot implements _IAmTeapot {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _IAmTeapot &&
+            other is _$IAmTeapotImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -6225,8 +6020,9 @@ class _$_IAmTeapot implements _IAmTeapot {
 
   @JsonKey(ignore: true)
   @override
-  _$IAmTeapotCopyWith<_IAmTeapot> get copyWith =>
-      __$IAmTeapotCopyWithImpl<_IAmTeapot>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$IAmTeapotImplCopyWith<_$IAmTeapotImpl> get copyWith =>
+      __$$IAmTeapotImplCopyWithImpl<_$IAmTeapotImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -6267,35 +6063,35 @@ class _$_IAmTeapot implements _IAmTeapot {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return iAmTeapot?.call(intValue);
   }
@@ -6383,38 +6179,38 @@ class _$_IAmTeapot implements _IAmTeapot {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return iAmTeapot?.call(this);
@@ -6466,43 +6262,43 @@ class _$_IAmTeapot implements _IAmTeapot {
 }
 
 abstract class _IAmTeapot implements RestResponseClientErrorCodeType {
-  const factory _IAmTeapot({int intValue}) = _$_IAmTeapot;
+  const factory _IAmTeapot({final int intValue}) = _$IAmTeapotImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$IAmTeapotCopyWith<_IAmTeapot> get copyWith =>
+  _$$IAmTeapotImplCopyWith<_$IAmTeapotImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$MisdirectRequestCopyWith<$Res>
+abstract class _$$MisdirectRequestImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$MisdirectRequestCopyWith(
-          _MisdirectRequest value, $Res Function(_MisdirectRequest) then) =
-      __$MisdirectRequestCopyWithImpl<$Res>;
+  factory _$$MisdirectRequestImplCopyWith(_$MisdirectRequestImpl value,
+          $Res Function(_$MisdirectRequestImpl) then) =
+      __$$MisdirectRequestImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$MisdirectRequestCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$MisdirectRequestCopyWith<$Res> {
-  __$MisdirectRequestCopyWithImpl(
-      _MisdirectRequest _value, $Res Function(_MisdirectRequest) _then)
-      : super(_value, (v) => _then(v as _MisdirectRequest));
+class __$$MisdirectRequestImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res,
+        _$MisdirectRequestImpl>
+    implements _$$MisdirectRequestImplCopyWith<$Res> {
+  __$$MisdirectRequestImplCopyWithImpl(_$MisdirectRequestImpl _value,
+      $Res Function(_$MisdirectRequestImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MisdirectRequest get _value => super._value as _MisdirectRequest;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_MisdirectRequest(
-      intValue: intValue == freezed
+    return _then(_$MisdirectRequestImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -6512,14 +6308,13 @@ class __$MisdirectRequestCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_MisdirectRequest implements _MisdirectRequest {
-  const _$_MisdirectRequest(
+class _$MisdirectRequestImpl implements _MisdirectRequest {
+  const _$MisdirectRequestImpl(
       {this.intValue =
           RestResponseClientErrorCodeType.misdirectRequestIntValue});
 
-  @JsonKey(
-      defaultValue: RestResponseClientErrorCodeType.misdirectRequestIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -6528,10 +6323,10 @@ class _$_MisdirectRequest implements _MisdirectRequest {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MisdirectRequest &&
+            other is _$MisdirectRequestImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -6541,8 +6336,10 @@ class _$_MisdirectRequest implements _MisdirectRequest {
 
   @JsonKey(ignore: true)
   @override
-  _$MisdirectRequestCopyWith<_MisdirectRequest> get copyWith =>
-      __$MisdirectRequestCopyWithImpl<_MisdirectRequest>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MisdirectRequestImplCopyWith<_$MisdirectRequestImpl> get copyWith =>
+      __$$MisdirectRequestImplCopyWithImpl<_$MisdirectRequestImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -6583,35 +6380,35 @@ class _$_MisdirectRequest implements _MisdirectRequest {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return misdirectRequest?.call(intValue);
   }
@@ -6699,38 +6496,38 @@ class _$_MisdirectRequest implements _MisdirectRequest {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return misdirectRequest?.call(this);
@@ -6782,44 +6579,46 @@ class _$_MisdirectRequest implements _MisdirectRequest {
 }
 
 abstract class _MisdirectRequest implements RestResponseClientErrorCodeType {
-  const factory _MisdirectRequest({int intValue}) = _$_MisdirectRequest;
+  const factory _MisdirectRequest({final int intValue}) =
+      _$MisdirectRequestImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$MisdirectRequestCopyWith<_MisdirectRequest> get copyWith =>
+  _$$MisdirectRequestImplCopyWith<_$MisdirectRequestImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$UnprocessableEntityEntityCopyWith<$Res>
+abstract class _$$UnprocessableEntityEntityImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$UnprocessableEntityEntityCopyWith(_UnprocessableEntityEntity value,
-          $Res Function(_UnprocessableEntityEntity) then) =
-      __$UnprocessableEntityEntityCopyWithImpl<$Res>;
+  factory _$$UnprocessableEntityEntityImplCopyWith(
+          _$UnprocessableEntityEntityImpl value,
+          $Res Function(_$UnprocessableEntityEntityImpl) then) =
+      __$$UnprocessableEntityEntityImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$UnprocessableEntityEntityCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$UnprocessableEntityEntityCopyWith<$Res> {
-  __$UnprocessableEntityEntityCopyWithImpl(_UnprocessableEntityEntity _value,
-      $Res Function(_UnprocessableEntityEntity) _then)
-      : super(_value, (v) => _then(v as _UnprocessableEntityEntity));
+class __$$UnprocessableEntityEntityImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res,
+        _$UnprocessableEntityEntityImpl>
+    implements _$$UnprocessableEntityEntityImplCopyWith<$Res> {
+  __$$UnprocessableEntityEntityImplCopyWithImpl(
+      _$UnprocessableEntityEntityImpl _value,
+      $Res Function(_$UnprocessableEntityEntityImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnprocessableEntityEntity get _value =>
-      super._value as _UnprocessableEntityEntity;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_UnprocessableEntityEntity(
-      intValue: intValue == freezed
+    return _then(_$UnprocessableEntityEntityImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -6829,15 +6628,13 @@ class __$UnprocessableEntityEntityCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_UnprocessableEntityEntity implements _UnprocessableEntityEntity {
-  const _$_UnprocessableEntityEntity(
+class _$UnprocessableEntityEntityImpl implements _UnprocessableEntityEntity {
+  const _$UnprocessableEntityEntityImpl(
       {this.intValue =
           RestResponseClientErrorCodeType.unprocessableEntityEntityIntValue});
 
-  @JsonKey(
-      defaultValue:
-          RestResponseClientErrorCodeType.unprocessableEntityEntityIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -6846,10 +6643,10 @@ class _$_UnprocessableEntityEntity implements _UnprocessableEntityEntity {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnprocessableEntityEntity &&
+            other is _$UnprocessableEntityEntityImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -6859,10 +6656,10 @@ class _$_UnprocessableEntityEntity implements _UnprocessableEntityEntity {
 
   @JsonKey(ignore: true)
   @override
-  _$UnprocessableEntityEntityCopyWith<_UnprocessableEntityEntity>
-      get copyWith =>
-          __$UnprocessableEntityEntityCopyWithImpl<_UnprocessableEntityEntity>(
-              this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnprocessableEntityEntityImplCopyWith<_$UnprocessableEntityEntityImpl>
+      get copyWith => __$$UnprocessableEntityEntityImplCopyWithImpl<
+          _$UnprocessableEntityEntityImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -6903,35 +6700,35 @@ class _$_UnprocessableEntityEntity implements _UnprocessableEntityEntity {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return unprocessableEntityEntity?.call(intValue);
   }
@@ -7019,38 +6816,38 @@ class _$_UnprocessableEntityEntity implements _UnprocessableEntityEntity {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return unprocessableEntityEntity?.call(this);
@@ -7103,42 +6900,43 @@ class _$_UnprocessableEntityEntity implements _UnprocessableEntityEntity {
 
 abstract class _UnprocessableEntityEntity
     implements RestResponseClientErrorCodeType {
-  const factory _UnprocessableEntityEntity({int intValue}) =
-      _$_UnprocessableEntityEntity;
+  const factory _UnprocessableEntityEntity({final int intValue}) =
+      _$UnprocessableEntityEntityImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$UnprocessableEntityEntityCopyWith<_UnprocessableEntityEntity>
+  _$$UnprocessableEntityEntityImplCopyWith<_$UnprocessableEntityEntityImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$LockedCopyWith<$Res>
+abstract class _$$LockedImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$LockedCopyWith(_Locked value, $Res Function(_Locked) then) =
-      __$LockedCopyWithImpl<$Res>;
+  factory _$$LockedImplCopyWith(
+          _$LockedImpl value, $Res Function(_$LockedImpl) then) =
+      __$$LockedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$LockedCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$LockedCopyWith<$Res> {
-  __$LockedCopyWithImpl(_Locked _value, $Res Function(_Locked) _then)
-      : super(_value, (v) => _then(v as _Locked));
+class __$$LockedImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res, _$LockedImpl>
+    implements _$$LockedImplCopyWith<$Res> {
+  __$$LockedImplCopyWithImpl(
+      _$LockedImpl _value, $Res Function(_$LockedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Locked get _value => super._value as _Locked;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_Locked(
-      intValue: intValue == freezed
+    return _then(_$LockedImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -7148,12 +6946,12 @@ class __$LockedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Locked implements _Locked {
-  const _$_Locked(
+class _$LockedImpl implements _Locked {
+  const _$LockedImpl(
       {this.intValue = RestResponseClientErrorCodeType.lockedIntValue});
 
-  @JsonKey(defaultValue: RestResponseClientErrorCodeType.lockedIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -7162,10 +6960,10 @@ class _$_Locked implements _Locked {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Locked &&
+            other is _$LockedImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -7175,8 +6973,9 @@ class _$_Locked implements _Locked {
 
   @JsonKey(ignore: true)
   @override
-  _$LockedCopyWith<_Locked> get copyWith =>
-      __$LockedCopyWithImpl<_Locked>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$LockedImplCopyWith<_$LockedImpl> get copyWith =>
+      __$$LockedImplCopyWithImpl<_$LockedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -7217,35 +7016,35 @@ class _$_Locked implements _Locked {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return locked?.call(intValue);
   }
@@ -7333,38 +7132,38 @@ class _$_Locked implements _Locked {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return locked?.call(this);
@@ -7416,42 +7215,43 @@ class _$_Locked implements _Locked {
 }
 
 abstract class _Locked implements RestResponseClientErrorCodeType {
-  const factory _Locked({int intValue}) = _$_Locked;
+  const factory _Locked({final int intValue}) = _$LockedImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$LockedCopyWith<_Locked> get copyWith => throw _privateConstructorUsedError;
+  _$$LockedImplCopyWith<_$LockedImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$FailedDependencyCopyWith<$Res>
+abstract class _$$FailedDependencyImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$FailedDependencyCopyWith(
-          _FailedDependency value, $Res Function(_FailedDependency) then) =
-      __$FailedDependencyCopyWithImpl<$Res>;
+  factory _$$FailedDependencyImplCopyWith(_$FailedDependencyImpl value,
+          $Res Function(_$FailedDependencyImpl) then) =
+      __$$FailedDependencyImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$FailedDependencyCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$FailedDependencyCopyWith<$Res> {
-  __$FailedDependencyCopyWithImpl(
-      _FailedDependency _value, $Res Function(_FailedDependency) _then)
-      : super(_value, (v) => _then(v as _FailedDependency));
+class __$$FailedDependencyImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res,
+        _$FailedDependencyImpl>
+    implements _$$FailedDependencyImplCopyWith<$Res> {
+  __$$FailedDependencyImplCopyWithImpl(_$FailedDependencyImpl _value,
+      $Res Function(_$FailedDependencyImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _FailedDependency get _value => super._value as _FailedDependency;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_FailedDependency(
-      intValue: intValue == freezed
+    return _then(_$FailedDependencyImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -7461,14 +7261,13 @@ class __$FailedDependencyCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_FailedDependency implements _FailedDependency {
-  const _$_FailedDependency(
+class _$FailedDependencyImpl implements _FailedDependency {
+  const _$FailedDependencyImpl(
       {this.intValue =
           RestResponseClientErrorCodeType.failedDependencyIntValue});
 
-  @JsonKey(
-      defaultValue: RestResponseClientErrorCodeType.failedDependencyIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -7477,10 +7276,10 @@ class _$_FailedDependency implements _FailedDependency {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _FailedDependency &&
+            other is _$FailedDependencyImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -7490,8 +7289,10 @@ class _$_FailedDependency implements _FailedDependency {
 
   @JsonKey(ignore: true)
   @override
-  _$FailedDependencyCopyWith<_FailedDependency> get copyWith =>
-      __$FailedDependencyCopyWithImpl<_FailedDependency>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$FailedDependencyImplCopyWith<_$FailedDependencyImpl> get copyWith =>
+      __$$FailedDependencyImplCopyWithImpl<_$FailedDependencyImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -7532,35 +7333,35 @@ class _$_FailedDependency implements _FailedDependency {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return failedDependency?.call(intValue);
   }
@@ -7648,38 +7449,38 @@ class _$_FailedDependency implements _FailedDependency {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return failedDependency?.call(this);
@@ -7731,41 +7532,43 @@ class _$_FailedDependency implements _FailedDependency {
 }
 
 abstract class _FailedDependency implements RestResponseClientErrorCodeType {
-  const factory _FailedDependency({int intValue}) = _$_FailedDependency;
+  const factory _FailedDependency({final int intValue}) =
+      _$FailedDependencyImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$FailedDependencyCopyWith<_FailedDependency> get copyWith =>
+  _$$FailedDependencyImplCopyWith<_$FailedDependencyImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$TooEarlyCopyWith<$Res>
+abstract class _$$TooEarlyImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$TooEarlyCopyWith(_TooEarly value, $Res Function(_TooEarly) then) =
-      __$TooEarlyCopyWithImpl<$Res>;
+  factory _$$TooEarlyImplCopyWith(
+          _$TooEarlyImpl value, $Res Function(_$TooEarlyImpl) then) =
+      __$$TooEarlyImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$TooEarlyCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$TooEarlyCopyWith<$Res> {
-  __$TooEarlyCopyWithImpl(_TooEarly _value, $Res Function(_TooEarly) _then)
-      : super(_value, (v) => _then(v as _TooEarly));
+class __$$TooEarlyImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res, _$TooEarlyImpl>
+    implements _$$TooEarlyImplCopyWith<$Res> {
+  __$$TooEarlyImplCopyWithImpl(
+      _$TooEarlyImpl _value, $Res Function(_$TooEarlyImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _TooEarly get _value => super._value as _TooEarly;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_TooEarly(
-      intValue: intValue == freezed
+    return _then(_$TooEarlyImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -7775,12 +7578,12 @@ class __$TooEarlyCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_TooEarly implements _TooEarly {
-  const _$_TooEarly(
+class _$TooEarlyImpl implements _TooEarly {
+  const _$TooEarlyImpl(
       {this.intValue = RestResponseClientErrorCodeType.tooEarlyIntValue});
 
-  @JsonKey(defaultValue: RestResponseClientErrorCodeType.tooEarlyIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -7789,10 +7592,10 @@ class _$_TooEarly implements _TooEarly {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _TooEarly &&
+            other is _$TooEarlyImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -7802,8 +7605,9 @@ class _$_TooEarly implements _TooEarly {
 
   @JsonKey(ignore: true)
   @override
-  _$TooEarlyCopyWith<_TooEarly> get copyWith =>
-      __$TooEarlyCopyWithImpl<_TooEarly>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$TooEarlyImplCopyWith<_$TooEarlyImpl> get copyWith =>
+      __$$TooEarlyImplCopyWithImpl<_$TooEarlyImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -7844,35 +7648,35 @@ class _$_TooEarly implements _TooEarly {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return tooEarly?.call(intValue);
   }
@@ -7960,38 +7764,38 @@ class _$_TooEarly implements _TooEarly {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return tooEarly?.call(this);
@@ -8043,43 +7847,42 @@ class _$_TooEarly implements _TooEarly {
 }
 
 abstract class _TooEarly implements RestResponseClientErrorCodeType {
-  const factory _TooEarly({int intValue}) = _$_TooEarly;
+  const factory _TooEarly({final int intValue}) = _$TooEarlyImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$TooEarlyCopyWith<_TooEarly> get copyWith =>
+  _$$TooEarlyImplCopyWith<_$TooEarlyImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$UpgradeRequiredCopyWith<$Res>
+abstract class _$$UpgradeRequiredImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$UpgradeRequiredCopyWith(
-          _UpgradeRequired value, $Res Function(_UpgradeRequired) then) =
-      __$UpgradeRequiredCopyWithImpl<$Res>;
+  factory _$$UpgradeRequiredImplCopyWith(_$UpgradeRequiredImpl value,
+          $Res Function(_$UpgradeRequiredImpl) then) =
+      __$$UpgradeRequiredImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$UpgradeRequiredCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$UpgradeRequiredCopyWith<$Res> {
-  __$UpgradeRequiredCopyWithImpl(
-      _UpgradeRequired _value, $Res Function(_UpgradeRequired) _then)
-      : super(_value, (v) => _then(v as _UpgradeRequired));
+class __$$UpgradeRequiredImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res,
+        _$UpgradeRequiredImpl> implements _$$UpgradeRequiredImplCopyWith<$Res> {
+  __$$UpgradeRequiredImplCopyWithImpl(
+      _$UpgradeRequiredImpl _value, $Res Function(_$UpgradeRequiredImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UpgradeRequired get _value => super._value as _UpgradeRequired;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_UpgradeRequired(
-      intValue: intValue == freezed
+    return _then(_$UpgradeRequiredImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -8089,14 +7892,13 @@ class __$UpgradeRequiredCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_UpgradeRequired implements _UpgradeRequired {
-  const _$_UpgradeRequired(
+class _$UpgradeRequiredImpl implements _UpgradeRequired {
+  const _$UpgradeRequiredImpl(
       {this.intValue =
           RestResponseClientErrorCodeType.upgradeRequiredIntValue});
 
-  @JsonKey(
-      defaultValue: RestResponseClientErrorCodeType.upgradeRequiredIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -8105,10 +7907,10 @@ class _$_UpgradeRequired implements _UpgradeRequired {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UpgradeRequired &&
+            other is _$UpgradeRequiredImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -8118,8 +7920,10 @@ class _$_UpgradeRequired implements _UpgradeRequired {
 
   @JsonKey(ignore: true)
   @override
-  _$UpgradeRequiredCopyWith<_UpgradeRequired> get copyWith =>
-      __$UpgradeRequiredCopyWithImpl<_UpgradeRequired>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UpgradeRequiredImplCopyWith<_$UpgradeRequiredImpl> get copyWith =>
+      __$$UpgradeRequiredImplCopyWithImpl<_$UpgradeRequiredImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -8160,35 +7964,35 @@ class _$_UpgradeRequired implements _UpgradeRequired {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return upgradeRequired?.call(intValue);
   }
@@ -8276,38 +8080,38 @@ class _$_UpgradeRequired implements _UpgradeRequired {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return upgradeRequired?.call(this);
@@ -8359,43 +8163,43 @@ class _$_UpgradeRequired implements _UpgradeRequired {
 }
 
 abstract class _UpgradeRequired implements RestResponseClientErrorCodeType {
-  const factory _UpgradeRequired({int intValue}) = _$_UpgradeRequired;
+  const factory _UpgradeRequired({final int intValue}) = _$UpgradeRequiredImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$UpgradeRequiredCopyWith<_UpgradeRequired> get copyWith =>
+  _$$UpgradeRequiredImplCopyWith<_$UpgradeRequiredImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$PreconditionRequiredCopyWith<$Res>
+abstract class _$$PreconditionRequiredImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$PreconditionRequiredCopyWith(_PreconditionRequired value,
-          $Res Function(_PreconditionRequired) then) =
-      __$PreconditionRequiredCopyWithImpl<$Res>;
+  factory _$$PreconditionRequiredImplCopyWith(_$PreconditionRequiredImpl value,
+          $Res Function(_$PreconditionRequiredImpl) then) =
+      __$$PreconditionRequiredImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$PreconditionRequiredCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$PreconditionRequiredCopyWith<$Res> {
-  __$PreconditionRequiredCopyWithImpl(
-      _PreconditionRequired _value, $Res Function(_PreconditionRequired) _then)
-      : super(_value, (v) => _then(v as _PreconditionRequired));
+class __$$PreconditionRequiredImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res,
+        _$PreconditionRequiredImpl>
+    implements _$$PreconditionRequiredImplCopyWith<$Res> {
+  __$$PreconditionRequiredImplCopyWithImpl(_$PreconditionRequiredImpl _value,
+      $Res Function(_$PreconditionRequiredImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PreconditionRequired get _value => super._value as _PreconditionRequired;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_PreconditionRequired(
-      intValue: intValue == freezed
+    return _then(_$PreconditionRequiredImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -8405,15 +8209,13 @@ class __$PreconditionRequiredCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PreconditionRequired implements _PreconditionRequired {
-  const _$_PreconditionRequired(
+class _$PreconditionRequiredImpl implements _PreconditionRequired {
+  const _$PreconditionRequiredImpl(
       {this.intValue =
           RestResponseClientErrorCodeType.preconditionRequiredIntValue});
 
-  @JsonKey(
-      defaultValue:
-          RestResponseClientErrorCodeType.preconditionRequiredIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -8422,10 +8224,10 @@ class _$_PreconditionRequired implements _PreconditionRequired {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PreconditionRequired &&
+            other is _$PreconditionRequiredImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -8435,9 +8237,11 @@ class _$_PreconditionRequired implements _PreconditionRequired {
 
   @JsonKey(ignore: true)
   @override
-  _$PreconditionRequiredCopyWith<_PreconditionRequired> get copyWith =>
-      __$PreconditionRequiredCopyWithImpl<_PreconditionRequired>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PreconditionRequiredImplCopyWith<_$PreconditionRequiredImpl>
+      get copyWith =>
+          __$$PreconditionRequiredImplCopyWithImpl<_$PreconditionRequiredImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -8478,35 +8282,35 @@ class _$_PreconditionRequired implements _PreconditionRequired {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return preconditionRequired?.call(intValue);
   }
@@ -8594,38 +8398,38 @@ class _$_PreconditionRequired implements _PreconditionRequired {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return preconditionRequired?.call(this);
@@ -8678,43 +8482,43 @@ class _$_PreconditionRequired implements _PreconditionRequired {
 
 abstract class _PreconditionRequired
     implements RestResponseClientErrorCodeType {
-  const factory _PreconditionRequired({int intValue}) = _$_PreconditionRequired;
+  const factory _PreconditionRequired({final int intValue}) =
+      _$PreconditionRequiredImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$PreconditionRequiredCopyWith<_PreconditionRequired> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PreconditionRequiredImplCopyWith<_$PreconditionRequiredImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$TooManyRequestsCopyWith<$Res>
+abstract class _$$TooManyRequestsImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$TooManyRequestsCopyWith(
-          _TooManyRequests value, $Res Function(_TooManyRequests) then) =
-      __$TooManyRequestsCopyWithImpl<$Res>;
+  factory _$$TooManyRequestsImplCopyWith(_$TooManyRequestsImpl value,
+          $Res Function(_$TooManyRequestsImpl) then) =
+      __$$TooManyRequestsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$TooManyRequestsCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$TooManyRequestsCopyWith<$Res> {
-  __$TooManyRequestsCopyWithImpl(
-      _TooManyRequests _value, $Res Function(_TooManyRequests) _then)
-      : super(_value, (v) => _then(v as _TooManyRequests));
+class __$$TooManyRequestsImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res,
+        _$TooManyRequestsImpl> implements _$$TooManyRequestsImplCopyWith<$Res> {
+  __$$TooManyRequestsImplCopyWithImpl(
+      _$TooManyRequestsImpl _value, $Res Function(_$TooManyRequestsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _TooManyRequests get _value => super._value as _TooManyRequests;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_TooManyRequests(
-      intValue: intValue == freezed
+    return _then(_$TooManyRequestsImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -8724,14 +8528,13 @@ class __$TooManyRequestsCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_TooManyRequests implements _TooManyRequests {
-  const _$_TooManyRequests(
+class _$TooManyRequestsImpl implements _TooManyRequests {
+  const _$TooManyRequestsImpl(
       {this.intValue =
           RestResponseClientErrorCodeType.tooManyRequestsIntValue});
 
-  @JsonKey(
-      defaultValue: RestResponseClientErrorCodeType.tooManyRequestsIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -8740,10 +8543,10 @@ class _$_TooManyRequests implements _TooManyRequests {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _TooManyRequests &&
+            other is _$TooManyRequestsImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -8753,8 +8556,10 @@ class _$_TooManyRequests implements _TooManyRequests {
 
   @JsonKey(ignore: true)
   @override
-  _$TooManyRequestsCopyWith<_TooManyRequests> get copyWith =>
-      __$TooManyRequestsCopyWithImpl<_TooManyRequests>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$TooManyRequestsImplCopyWith<_$TooManyRequestsImpl> get copyWith =>
+      __$$TooManyRequestsImplCopyWithImpl<_$TooManyRequestsImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -8795,35 +8600,35 @@ class _$_TooManyRequests implements _TooManyRequests {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return tooManyRequests?.call(intValue);
   }
@@ -8911,38 +8716,38 @@ class _$_TooManyRequests implements _TooManyRequests {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return tooManyRequests?.call(this);
@@ -8994,46 +8799,45 @@ class _$_TooManyRequests implements _TooManyRequests {
 }
 
 abstract class _TooManyRequests implements RestResponseClientErrorCodeType {
-  const factory _TooManyRequests({int intValue}) = _$_TooManyRequests;
+  const factory _TooManyRequests({final int intValue}) = _$TooManyRequestsImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$TooManyRequestsCopyWith<_TooManyRequests> get copyWith =>
+  _$$TooManyRequestsImplCopyWith<_$TooManyRequestsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$RequestHeaderFieldsTooLargeCopyWith<$Res>
+abstract class _$$RequestHeaderFieldsTooLargeImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$RequestHeaderFieldsTooLargeCopyWith(
-          _RequestHeaderFieldsTooLarge value,
-          $Res Function(_RequestHeaderFieldsTooLarge) then) =
-      __$RequestHeaderFieldsTooLargeCopyWithImpl<$Res>;
+  factory _$$RequestHeaderFieldsTooLargeImplCopyWith(
+          _$RequestHeaderFieldsTooLargeImpl value,
+          $Res Function(_$RequestHeaderFieldsTooLargeImpl) then) =
+      __$$RequestHeaderFieldsTooLargeImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$RequestHeaderFieldsTooLargeCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$RequestHeaderFieldsTooLargeCopyWith<$Res> {
-  __$RequestHeaderFieldsTooLargeCopyWithImpl(
-      _RequestHeaderFieldsTooLarge _value,
-      $Res Function(_RequestHeaderFieldsTooLarge) _then)
-      : super(_value, (v) => _then(v as _RequestHeaderFieldsTooLarge));
+class __$$RequestHeaderFieldsTooLargeImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res,
+        _$RequestHeaderFieldsTooLargeImpl>
+    implements _$$RequestHeaderFieldsTooLargeImplCopyWith<$Res> {
+  __$$RequestHeaderFieldsTooLargeImplCopyWithImpl(
+      _$RequestHeaderFieldsTooLargeImpl _value,
+      $Res Function(_$RequestHeaderFieldsTooLargeImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _RequestHeaderFieldsTooLarge get _value =>
-      super._value as _RequestHeaderFieldsTooLarge;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_RequestHeaderFieldsTooLarge(
-      intValue: intValue == freezed
+    return _then(_$RequestHeaderFieldsTooLargeImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -9043,15 +8847,14 @@ class __$RequestHeaderFieldsTooLargeCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_RequestHeaderFieldsTooLarge implements _RequestHeaderFieldsTooLarge {
-  const _$_RequestHeaderFieldsTooLarge(
+class _$RequestHeaderFieldsTooLargeImpl
+    implements _RequestHeaderFieldsTooLarge {
+  const _$RequestHeaderFieldsTooLargeImpl(
       {this.intValue =
           RestResponseClientErrorCodeType.requestHeaderFieldsTooLargeIntValue});
 
-  @JsonKey(
-      defaultValue:
-          RestResponseClientErrorCodeType.requestHeaderFieldsTooLargeIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -9060,10 +8863,10 @@ class _$_RequestHeaderFieldsTooLarge implements _RequestHeaderFieldsTooLarge {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _RequestHeaderFieldsTooLarge &&
+            other is _$RequestHeaderFieldsTooLargeImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -9073,9 +8876,10 @@ class _$_RequestHeaderFieldsTooLarge implements _RequestHeaderFieldsTooLarge {
 
   @JsonKey(ignore: true)
   @override
-  _$RequestHeaderFieldsTooLargeCopyWith<_RequestHeaderFieldsTooLarge>
-      get copyWith => __$RequestHeaderFieldsTooLargeCopyWithImpl<
-          _RequestHeaderFieldsTooLarge>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$RequestHeaderFieldsTooLargeImplCopyWith<_$RequestHeaderFieldsTooLargeImpl>
+      get copyWith => __$$RequestHeaderFieldsTooLargeImplCopyWithImpl<
+          _$RequestHeaderFieldsTooLargeImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -9116,35 +8920,35 @@ class _$_RequestHeaderFieldsTooLarge implements _RequestHeaderFieldsTooLarge {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return requestHeaderFieldsTooLarge?.call(intValue);
   }
@@ -9232,38 +9036,38 @@ class _$_RequestHeaderFieldsTooLarge implements _RequestHeaderFieldsTooLarge {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return requestHeaderFieldsTooLarge?.call(this);
@@ -9316,46 +9120,46 @@ class _$_RequestHeaderFieldsTooLarge implements _RequestHeaderFieldsTooLarge {
 
 abstract class _RequestHeaderFieldsTooLarge
     implements RestResponseClientErrorCodeType {
-  const factory _RequestHeaderFieldsTooLarge({int intValue}) =
-      _$_RequestHeaderFieldsTooLarge;
+  const factory _RequestHeaderFieldsTooLarge({final int intValue}) =
+      _$RequestHeaderFieldsTooLargeImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$RequestHeaderFieldsTooLargeCopyWith<_RequestHeaderFieldsTooLarge>
+  _$$RequestHeaderFieldsTooLargeImplCopyWith<_$RequestHeaderFieldsTooLargeImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$UnavailableForLegalReasonsCopyWith<$Res>
+abstract class _$$UnavailableForLegalReasonsImplCopyWith<$Res>
     implements $RestResponseClientErrorCodeTypeCopyWith<$Res> {
-  factory _$UnavailableForLegalReasonsCopyWith(
-          _UnavailableForLegalReasons value,
-          $Res Function(_UnavailableForLegalReasons) then) =
-      __$UnavailableForLegalReasonsCopyWithImpl<$Res>;
+  factory _$$UnavailableForLegalReasonsImplCopyWith(
+          _$UnavailableForLegalReasonsImpl value,
+          $Res Function(_$UnavailableForLegalReasonsImpl) then) =
+      __$$UnavailableForLegalReasonsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$UnavailableForLegalReasonsCopyWithImpl<$Res>
-    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res>
-    implements _$UnavailableForLegalReasonsCopyWith<$Res> {
-  __$UnavailableForLegalReasonsCopyWithImpl(_UnavailableForLegalReasons _value,
-      $Res Function(_UnavailableForLegalReasons) _then)
-      : super(_value, (v) => _then(v as _UnavailableForLegalReasons));
+class __$$UnavailableForLegalReasonsImplCopyWithImpl<$Res>
+    extends _$RestResponseClientErrorCodeTypeCopyWithImpl<$Res,
+        _$UnavailableForLegalReasonsImpl>
+    implements _$$UnavailableForLegalReasonsImplCopyWith<$Res> {
+  __$$UnavailableForLegalReasonsImplCopyWithImpl(
+      _$UnavailableForLegalReasonsImpl _value,
+      $Res Function(_$UnavailableForLegalReasonsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnavailableForLegalReasons get _value =>
-      super._value as _UnavailableForLegalReasons;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_UnavailableForLegalReasons(
-      intValue: intValue == freezed
+    return _then(_$UnavailableForLegalReasonsImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -9365,15 +9169,13 @@ class __$UnavailableForLegalReasonsCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_UnavailableForLegalReasons implements _UnavailableForLegalReasons {
-  const _$_UnavailableForLegalReasons(
+class _$UnavailableForLegalReasonsImpl implements _UnavailableForLegalReasons {
+  const _$UnavailableForLegalReasonsImpl(
       {this.intValue =
           RestResponseClientErrorCodeType.unavailableForLegalReasonsIntValue});
 
-  @JsonKey(
-      defaultValue:
-          RestResponseClientErrorCodeType.unavailableForLegalReasonsIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -9382,10 +9184,10 @@ class _$_UnavailableForLegalReasons implements _UnavailableForLegalReasons {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnavailableForLegalReasons &&
+            other is _$UnavailableForLegalReasonsImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -9395,9 +9197,10 @@ class _$_UnavailableForLegalReasons implements _UnavailableForLegalReasons {
 
   @JsonKey(ignore: true)
   @override
-  _$UnavailableForLegalReasonsCopyWith<_UnavailableForLegalReasons>
-      get copyWith => __$UnavailableForLegalReasonsCopyWithImpl<
-          _UnavailableForLegalReasons>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnavailableForLegalReasonsImplCopyWith<_$UnavailableForLegalReasonsImpl>
+      get copyWith => __$$UnavailableForLegalReasonsImplCopyWithImpl<
+          _$UnavailableForLegalReasonsImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -9438,35 +9241,35 @@ class _$_UnavailableForLegalReasons implements _UnavailableForLegalReasons {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? badRequest,
-    TResult Function(int intValue)? unauthorized,
-    TResult Function(int intValue)? paymentRequired,
-    TResult Function(int intValue)? forbidden,
-    TResult Function(int intValue)? notFound,
-    TResult Function(int intValue)? methodNotAllowed,
-    TResult Function(int intValue)? notAcceptable,
-    TResult Function(int intValue)? proxyAuthenticationRequired,
-    TResult Function(int intValue)? requestTimeout,
-    TResult Function(int intValue)? conflict,
-    TResult Function(int intValue)? gone,
-    TResult Function(int intValue)? lengthRequired,
-    TResult Function(int intValue)? preconditionFailed,
-    TResult Function(int intValue)? payloadTooLarge,
-    TResult Function(int intValue)? uriTooLong,
-    TResult Function(int intValue)? unsupportedMediaType,
-    TResult Function(int intValue)? rangeNotSatisfiable,
-    TResult Function(int intValue)? expectationFailed,
-    TResult Function(int intValue)? iAmTeapot,
-    TResult Function(int intValue)? misdirectRequest,
-    TResult Function(int intValue)? unprocessableEntityEntity,
-    TResult Function(int intValue)? locked,
-    TResult Function(int intValue)? failedDependency,
-    TResult Function(int intValue)? tooEarly,
-    TResult Function(int intValue)? upgradeRequired,
-    TResult Function(int intValue)? preconditionRequired,
-    TResult Function(int intValue)? tooManyRequests,
-    TResult Function(int intValue)? requestHeaderFieldsTooLarge,
-    TResult Function(int intValue)? unavailableForLegalReasons,
+    TResult? Function(int intValue)? badRequest,
+    TResult? Function(int intValue)? unauthorized,
+    TResult? Function(int intValue)? paymentRequired,
+    TResult? Function(int intValue)? forbidden,
+    TResult? Function(int intValue)? notFound,
+    TResult? Function(int intValue)? methodNotAllowed,
+    TResult? Function(int intValue)? notAcceptable,
+    TResult? Function(int intValue)? proxyAuthenticationRequired,
+    TResult? Function(int intValue)? requestTimeout,
+    TResult? Function(int intValue)? conflict,
+    TResult? Function(int intValue)? gone,
+    TResult? Function(int intValue)? lengthRequired,
+    TResult? Function(int intValue)? preconditionFailed,
+    TResult? Function(int intValue)? payloadTooLarge,
+    TResult? Function(int intValue)? uriTooLong,
+    TResult? Function(int intValue)? unsupportedMediaType,
+    TResult? Function(int intValue)? rangeNotSatisfiable,
+    TResult? Function(int intValue)? expectationFailed,
+    TResult? Function(int intValue)? iAmTeapot,
+    TResult? Function(int intValue)? misdirectRequest,
+    TResult? Function(int intValue)? unprocessableEntityEntity,
+    TResult? Function(int intValue)? locked,
+    TResult? Function(int intValue)? failedDependency,
+    TResult? Function(int intValue)? tooEarly,
+    TResult? Function(int intValue)? upgradeRequired,
+    TResult? Function(int intValue)? preconditionRequired,
+    TResult? Function(int intValue)? tooManyRequests,
+    TResult? Function(int intValue)? requestHeaderFieldsTooLarge,
+    TResult? Function(int intValue)? unavailableForLegalReasons,
   }) {
     return unavailableForLegalReasons?.call(intValue);
   }
@@ -9554,38 +9357,38 @@ class _$_UnavailableForLegalReasons implements _UnavailableForLegalReasons {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_BadRequest value)? badRequest,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_PaymentRequired value)? paymentRequired,
-    TResult Function(_Forbidden value)? forbidden,
-    TResult Function(_NotFound value)? notFound,
-    TResult Function(_MethodNotAllowed value)? methodNotAllowed,
-    TResult Function(_NotAcceptable value)? notAcceptable,
-    TResult Function(_ProxyAuthenticationRequired value)?
+    TResult? Function(_BadRequest value)? badRequest,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_PaymentRequired value)? paymentRequired,
+    TResult? Function(_Forbidden value)? forbidden,
+    TResult? Function(_NotFound value)? notFound,
+    TResult? Function(_MethodNotAllowed value)? methodNotAllowed,
+    TResult? Function(_NotAcceptable value)? notAcceptable,
+    TResult? Function(_ProxyAuthenticationRequired value)?
         proxyAuthenticationRequired,
-    TResult Function(_RequestTimeout value)? requestTimeout,
-    TResult Function(_Conflict value)? conflict,
-    TResult Function(_Gone value)? gone,
-    TResult Function(_LengthRequired value)? lengthRequired,
-    TResult Function(_PreconditionFailed value)? preconditionFailed,
-    TResult Function(_PayloadTooLarge value)? payloadTooLarge,
-    TResult Function(_UriTooLong value)? uriTooLong,
-    TResult Function(_UnsupportedMediaType value)? unsupportedMediaType,
-    TResult Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
-    TResult Function(_ExpectationFailed value)? expectationFailed,
-    TResult Function(_IAmTeapot value)? iAmTeapot,
-    TResult Function(_MisdirectRequest value)? misdirectRequest,
-    TResult Function(_UnprocessableEntityEntity value)?
+    TResult? Function(_RequestTimeout value)? requestTimeout,
+    TResult? Function(_Conflict value)? conflict,
+    TResult? Function(_Gone value)? gone,
+    TResult? Function(_LengthRequired value)? lengthRequired,
+    TResult? Function(_PreconditionFailed value)? preconditionFailed,
+    TResult? Function(_PayloadTooLarge value)? payloadTooLarge,
+    TResult? Function(_UriTooLong value)? uriTooLong,
+    TResult? Function(_UnsupportedMediaType value)? unsupportedMediaType,
+    TResult? Function(_RangeNotSatisfiable value)? rangeNotSatisfiable,
+    TResult? Function(_ExpectationFailed value)? expectationFailed,
+    TResult? Function(_IAmTeapot value)? iAmTeapot,
+    TResult? Function(_MisdirectRequest value)? misdirectRequest,
+    TResult? Function(_UnprocessableEntityEntity value)?
         unprocessableEntityEntity,
-    TResult Function(_Locked value)? locked,
-    TResult Function(_FailedDependency value)? failedDependency,
-    TResult Function(_TooEarly value)? tooEarly,
-    TResult Function(_UpgradeRequired value)? upgradeRequired,
-    TResult Function(_PreconditionRequired value)? preconditionRequired,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_RequestHeaderFieldsTooLarge value)?
+    TResult? Function(_Locked value)? locked,
+    TResult? Function(_FailedDependency value)? failedDependency,
+    TResult? Function(_TooEarly value)? tooEarly,
+    TResult? Function(_UpgradeRequired value)? upgradeRequired,
+    TResult? Function(_PreconditionRequired value)? preconditionRequired,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_RequestHeaderFieldsTooLarge value)?
         requestHeaderFieldsTooLarge,
-    TResult Function(_UnavailableForLegalReasons value)?
+    TResult? Function(_UnavailableForLegalReasons value)?
         unavailableForLegalReasons,
   }) {
     return unavailableForLegalReasons?.call(this);
@@ -9638,13 +9441,13 @@ class _$_UnavailableForLegalReasons implements _UnavailableForLegalReasons {
 
 abstract class _UnavailableForLegalReasons
     implements RestResponseClientErrorCodeType {
-  const factory _UnavailableForLegalReasons({int intValue}) =
-      _$_UnavailableForLegalReasons;
+  const factory _UnavailableForLegalReasons({final int intValue}) =
+      _$UnavailableForLegalReasonsImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$UnavailableForLegalReasonsCopyWith<_UnavailableForLegalReasons>
+  _$$UnavailableForLegalReasonsImplCopyWith<_$UnavailableForLegalReasonsImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

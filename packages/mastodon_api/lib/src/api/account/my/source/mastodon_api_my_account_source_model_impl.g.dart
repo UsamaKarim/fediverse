@@ -60,9 +60,9 @@ class MastodonApiMyAccountSourceAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_mastodonApiMyAccountSource _$$_mastodonApiMyAccountSourceFromJson(
+_$mastodonApiMyAccountSourceImpl _$$mastodonApiMyAccountSourceImplFromJson(
         Map<String, dynamic> json) =>
-    _$_mastodonApiMyAccountSource(
+    _$mastodonApiMyAccountSourceImpl(
       privacy: json['privacy'] as String?,
       sensitive: json['sensitive'] as bool?,
       language: json['language'] as String?,
@@ -70,11 +70,11 @@ _$_mastodonApiMyAccountSource _$$_mastodonApiMyAccountSourceFromJson(
       fields: (json['fields'] as List<dynamic>?)
           ?.map((e) => MastodonApiField.fromJson(e as Map<String, dynamic>))
           .toList(),
-      followRequestsCount: json['follow_requests_count'] as int?,
+      followRequestsCount: (json['follow_requests_count'] as num?)?.toInt(),
     );
 
-Map<String, dynamic> _$$_mastodonApiMyAccountSourceToJson(
-    _$_mastodonApiMyAccountSource instance) {
+Map<String, dynamic> _$$mastodonApiMyAccountSourceImplToJson(
+    _$mastodonApiMyAccountSourceImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

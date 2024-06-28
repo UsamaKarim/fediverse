@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_push_subscription_keys_model_pleroma_adapter.dart';
 
@@ -11,34 +12,13 @@ part of 'unifedi_api_push_subscription_keys_model_pleroma_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiPushSubscriptionKeysPleromaAdapter
     _$UnifediApiPushSubscriptionKeysPleromaAdapterFromJson(
         Map<String, dynamic> json) {
   return _UnifediApiPushSubscriptionKeysPleromaAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiPushSubscriptionKeysPleromaAdapterTearOff {
-  const _$UnifediApiPushSubscriptionKeysPleromaAdapterTearOff();
-
-  _UnifediApiPushSubscriptionKeysPleromaAdapter call(
-      @HiveField(0) PleromaApiPushSubscriptionKeys value) {
-    return _UnifediApiPushSubscriptionKeysPleromaAdapter(
-      value,
-    );
-  }
-
-  UnifediApiPushSubscriptionKeysPleromaAdapter fromJson(
-      Map<String, Object?> json) {
-    return UnifediApiPushSubscriptionKeysPleromaAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiPushSubscriptionKeysPleromaAdapter =
-    _$UnifediApiPushSubscriptionKeysPleromaAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiPushSubscriptionKeysPleromaAdapter {
@@ -58,50 +38,58 @@ abstract class $UnifediApiPushSubscriptionKeysPleromaAdapterCopyWith<$Res> {
   factory $UnifediApiPushSubscriptionKeysPleromaAdapterCopyWith(
           UnifediApiPushSubscriptionKeysPleromaAdapter value,
           $Res Function(UnifediApiPushSubscriptionKeysPleromaAdapter) then) =
-      _$UnifediApiPushSubscriptionKeysPleromaAdapterCopyWithImpl<$Res>;
+      _$UnifediApiPushSubscriptionKeysPleromaAdapterCopyWithImpl<$Res,
+          UnifediApiPushSubscriptionKeysPleromaAdapter>;
+  @useResult
   $Res call({@HiveField(0) PleromaApiPushSubscriptionKeys value});
 
   $PleromaApiPushSubscriptionKeysCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiPushSubscriptionKeysPleromaAdapterCopyWithImpl<$Res>
+class _$UnifediApiPushSubscriptionKeysPleromaAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiPushSubscriptionKeysPleromaAdapter>
     implements $UnifediApiPushSubscriptionKeysPleromaAdapterCopyWith<$Res> {
   _$UnifediApiPushSubscriptionKeysPleromaAdapterCopyWithImpl(
       this._value, this._then);
 
-  final UnifediApiPushSubscriptionKeysPleromaAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiPushSubscriptionKeysPleromaAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiPushSubscriptionKeys,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiPushSubscriptionKeysCopyWith<$Res> get value {
     return $PleromaApiPushSubscriptionKeysCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiPushSubscriptionKeysPleromaAdapterCopyWith<$Res>
+abstract class _$$UnifediApiPushSubscriptionKeysPleromaAdapterImplCopyWith<$Res>
     implements $UnifediApiPushSubscriptionKeysPleromaAdapterCopyWith<$Res> {
-  factory _$UnifediApiPushSubscriptionKeysPleromaAdapterCopyWith(
-          _UnifediApiPushSubscriptionKeysPleromaAdapter value,
-          $Res Function(_UnifediApiPushSubscriptionKeysPleromaAdapter) then) =
-      __$UnifediApiPushSubscriptionKeysPleromaAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiPushSubscriptionKeysPleromaAdapterImplCopyWith(
+          _$UnifediApiPushSubscriptionKeysPleromaAdapterImpl value,
+          $Res Function(_$UnifediApiPushSubscriptionKeysPleromaAdapterImpl)
+              then) =
+      __$$UnifediApiPushSubscriptionKeysPleromaAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) PleromaApiPushSubscriptionKeys value});
 
   @override
@@ -109,25 +97,23 @@ abstract class _$UnifediApiPushSubscriptionKeysPleromaAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiPushSubscriptionKeysPleromaAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiPushSubscriptionKeysPleromaAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiPushSubscriptionKeysPleromaAdapterCopyWith<$Res> {
-  __$UnifediApiPushSubscriptionKeysPleromaAdapterCopyWithImpl(
-      _UnifediApiPushSubscriptionKeysPleromaAdapter _value,
-      $Res Function(_UnifediApiPushSubscriptionKeysPleromaAdapter) _then)
-      : super(_value,
-            (v) => _then(v as _UnifediApiPushSubscriptionKeysPleromaAdapter));
+class __$$UnifediApiPushSubscriptionKeysPleromaAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiPushSubscriptionKeysPleromaAdapterCopyWithImpl<$Res,
+        _$UnifediApiPushSubscriptionKeysPleromaAdapterImpl>
+    implements
+        _$$UnifediApiPushSubscriptionKeysPleromaAdapterImplCopyWith<$Res> {
+  __$$UnifediApiPushSubscriptionKeysPleromaAdapterImplCopyWithImpl(
+      _$UnifediApiPushSubscriptionKeysPleromaAdapterImpl _value,
+      $Res Function(_$UnifediApiPushSubscriptionKeysPleromaAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiPushSubscriptionKeysPleromaAdapter get _value =>
-      super._value as _UnifediApiPushSubscriptionKeysPleromaAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiPushSubscriptionKeysPleromaAdapter(
-      value == freezed
+    return _then(_$UnifediApiPushSubscriptionKeysPleromaAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiPushSubscriptionKeys,
@@ -137,15 +123,15 @@ class __$UnifediApiPushSubscriptionKeysPleromaAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiPushSubscriptionKeysPleromaAdapter
+class _$UnifediApiPushSubscriptionKeysPleromaAdapterImpl
     extends _UnifediApiPushSubscriptionKeysPleromaAdapter {
-  const _$_UnifediApiPushSubscriptionKeysPleromaAdapter(
+  const _$UnifediApiPushSubscriptionKeysPleromaAdapterImpl(
       @HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiPushSubscriptionKeysPleromaAdapter.fromJson(
+  factory _$UnifediApiPushSubscriptionKeysPleromaAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiPushSubscriptionKeysPleromaAdapterFromJson(json);
+      _$$UnifediApiPushSubscriptionKeysPleromaAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -157,47 +143,52 @@ class _$_UnifediApiPushSubscriptionKeysPleromaAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiPushSubscriptionKeysPleromaAdapter &&
+            other is _$UnifediApiPushSubscriptionKeysPleromaAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiPushSubscriptionKeysPleromaAdapterCopyWith<
-          _UnifediApiPushSubscriptionKeysPleromaAdapter>
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiPushSubscriptionKeysPleromaAdapterImplCopyWith<
+          _$UnifediApiPushSubscriptionKeysPleromaAdapterImpl>
       get copyWith =>
-          __$UnifediApiPushSubscriptionKeysPleromaAdapterCopyWithImpl<
-              _UnifediApiPushSubscriptionKeysPleromaAdapter>(this, _$identity);
+          __$$UnifediApiPushSubscriptionKeysPleromaAdapterImplCopyWithImpl<
+                  _$UnifediApiPushSubscriptionKeysPleromaAdapterImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiPushSubscriptionKeysPleromaAdapterToJson(this);
+    return _$$UnifediApiPushSubscriptionKeysPleromaAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiPushSubscriptionKeysPleromaAdapter
     extends UnifediApiPushSubscriptionKeysPleromaAdapter {
   const factory _UnifediApiPushSubscriptionKeysPleromaAdapter(
-          @HiveField(0) PleromaApiPushSubscriptionKeys value) =
-      _$_UnifediApiPushSubscriptionKeysPleromaAdapter;
+          @HiveField(0) final PleromaApiPushSubscriptionKeys value) =
+      _$UnifediApiPushSubscriptionKeysPleromaAdapterImpl;
   const _UnifediApiPushSubscriptionKeysPleromaAdapter._() : super._();
 
   factory _UnifediApiPushSubscriptionKeysPleromaAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiPushSubscriptionKeysPleromaAdapter.fromJson;
+      _$UnifediApiPushSubscriptionKeysPleromaAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   PleromaApiPushSubscriptionKeys get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiPushSubscriptionKeysPleromaAdapterCopyWith<
-          _UnifediApiPushSubscriptionKeysPleromaAdapter>
+  _$$UnifediApiPushSubscriptionKeysPleromaAdapterImplCopyWith<
+          _$UnifediApiPushSubscriptionKeysPleromaAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

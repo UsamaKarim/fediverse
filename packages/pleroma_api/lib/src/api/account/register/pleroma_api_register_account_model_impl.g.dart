@@ -78,9 +78,9 @@ class PleromaApiRegisterAccountAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiRegisterAccount _$$_PleromaApiRegisterAccountFromJson(
+_$PleromaApiRegisterAccountImpl _$$PleromaApiRegisterAccountImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiRegisterAccount(
+    _$PleromaApiRegisterAccountImpl(
       username: json['username'] as String,
       email: json['email'] as String,
       password: json['password'] as String,
@@ -95,8 +95,8 @@ _$_PleromaApiRegisterAccount _$$_PleromaApiRegisterAccountFromJson(
       inviteToken: json['token'] as String?,
     );
 
-Map<String, dynamic> _$$_PleromaApiRegisterAccountToJson(
-    _$_PleromaApiRegisterAccount instance) {
+Map<String, dynamic> _$$PleromaApiRegisterAccountImplToJson(
+    _$PleromaApiRegisterAccountImpl instance) {
   final val = <String, dynamic>{
     'username': instance.username,
     'email': instance.email,

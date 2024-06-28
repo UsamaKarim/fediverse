@@ -45,14 +45,14 @@ class UnifediApiMarkerMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiMarkerMastodonAdapter _$$_UnifediApiMarkerMastodonAdapterFromJson(
-        Map<String, dynamic> json) =>
-    _$_UnifediApiMarkerMastodonAdapter(
-      MastodonApiMarker.fromJson(json['value'] as Map<String, dynamic>),
-    );
+_$UnifediApiMarkerMastodonAdapterImpl
+    _$$UnifediApiMarkerMastodonAdapterImplFromJson(Map<String, dynamic> json) =>
+        _$UnifediApiMarkerMastodonAdapterImpl(
+          MastodonApiMarker.fromJson(json['value'] as Map<String, dynamic>),
+        );
 
-Map<String, dynamic> _$$_UnifediApiMarkerMastodonAdapterToJson(
-        _$_UnifediApiMarkerMastodonAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiMarkerMastodonAdapterImplToJson(
+        _$UnifediApiMarkerMastodonAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

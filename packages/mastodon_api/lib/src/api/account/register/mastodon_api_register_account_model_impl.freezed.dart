@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_register_account_model_impl.dart';
 
@@ -11,41 +12,12 @@ part of 'mastodon_api_register_account_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiRegisterAccount _$MastodonApiRegisterAccountFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiRegisterAccount.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiRegisterAccountTearOff {
-  const _$MastodonApiRegisterAccountTearOff();
-
-  _MastodonApiRegisterAccount call(
-      {@HiveField(1) required String username,
-      @HiveField(2) required String email,
-      @HiveField(3) required String password,
-      @HiveField(4) required bool agreement,
-      @HiveField(5) required String locale,
-      @HiveField(6) required String? reason}) {
-    return _MastodonApiRegisterAccount(
-      username: username,
-      email: email,
-      password: password,
-      agreement: agreement,
-      locale: locale,
-      reason: reason,
-    );
-  }
-
-  MastodonApiRegisterAccount fromJson(Map<String, Object?> json) {
-    return MastodonApiRegisterAccount.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiRegisterAccount = _$MastodonApiRegisterAccountTearOff();
 
 /// @nodoc
 mixin _$MastodonApiRegisterAccount {
@@ -72,7 +44,9 @@ mixin _$MastodonApiRegisterAccount {
 abstract class $MastodonApiRegisterAccountCopyWith<$Res> {
   factory $MastodonApiRegisterAccountCopyWith(MastodonApiRegisterAccount value,
           $Res Function(MastodonApiRegisterAccount) then) =
-      _$MastodonApiRegisterAccountCopyWithImpl<$Res>;
+      _$MastodonApiRegisterAccountCopyWithImpl<$Res,
+          MastodonApiRegisterAccount>;
+  @useResult
   $Res call(
       {@HiveField(1) String username,
       @HiveField(2) String email,
@@ -83,60 +57,64 @@ abstract class $MastodonApiRegisterAccountCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MastodonApiRegisterAccountCopyWithImpl<$Res>
+class _$MastodonApiRegisterAccountCopyWithImpl<$Res,
+        $Val extends MastodonApiRegisterAccount>
     implements $MastodonApiRegisterAccountCopyWith<$Res> {
   _$MastodonApiRegisterAccountCopyWithImpl(this._value, this._then);
 
-  final MastodonApiRegisterAccount _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiRegisterAccount) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? username = freezed,
-    Object? email = freezed,
-    Object? password = freezed,
-    Object? agreement = freezed,
-    Object? locale = freezed,
+    Object? username = null,
+    Object? email = null,
+    Object? password = null,
+    Object? agreement = null,
+    Object? locale = null,
     Object? reason = freezed,
   }) {
     return _then(_value.copyWith(
-      username: username == freezed
+      username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
               as String,
-      email: email == freezed
+      email: null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String,
-      password: password == freezed
+      password: null == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as String,
-      agreement: agreement == freezed
+      agreement: null == agreement
           ? _value.agreement
           : agreement // ignore: cast_nullable_to_non_nullable
               as bool,
-      locale: locale == freezed
+      locale: null == locale
           ? _value.locale
           : locale // ignore: cast_nullable_to_non_nullable
               as String,
-      reason: reason == freezed
+      reason: freezed == reason
           ? _value.reason
           : reason // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiRegisterAccountCopyWith<$Res>
+abstract class _$$MastodonApiRegisterAccountImplCopyWith<$Res>
     implements $MastodonApiRegisterAccountCopyWith<$Res> {
-  factory _$MastodonApiRegisterAccountCopyWith(
-          _MastodonApiRegisterAccount value,
-          $Res Function(_MastodonApiRegisterAccount) then) =
-      __$MastodonApiRegisterAccountCopyWithImpl<$Res>;
+  factory _$$MastodonApiRegisterAccountImplCopyWith(
+          _$MastodonApiRegisterAccountImpl value,
+          $Res Function(_$MastodonApiRegisterAccountImpl) then) =
+      __$$MastodonApiRegisterAccountImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(1) String username,
       @HiveField(2) String email,
@@ -147,48 +125,47 @@ abstract class _$MastodonApiRegisterAccountCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MastodonApiRegisterAccountCopyWithImpl<$Res>
-    extends _$MastodonApiRegisterAccountCopyWithImpl<$Res>
-    implements _$MastodonApiRegisterAccountCopyWith<$Res> {
-  __$MastodonApiRegisterAccountCopyWithImpl(_MastodonApiRegisterAccount _value,
-      $Res Function(_MastodonApiRegisterAccount) _then)
-      : super(_value, (v) => _then(v as _MastodonApiRegisterAccount));
+class __$$MastodonApiRegisterAccountImplCopyWithImpl<$Res>
+    extends _$MastodonApiRegisterAccountCopyWithImpl<$Res,
+        _$MastodonApiRegisterAccountImpl>
+    implements _$$MastodonApiRegisterAccountImplCopyWith<$Res> {
+  __$$MastodonApiRegisterAccountImplCopyWithImpl(
+      _$MastodonApiRegisterAccountImpl _value,
+      $Res Function(_$MastodonApiRegisterAccountImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiRegisterAccount get _value =>
-      super._value as _MastodonApiRegisterAccount;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? username = freezed,
-    Object? email = freezed,
-    Object? password = freezed,
-    Object? agreement = freezed,
-    Object? locale = freezed,
+    Object? username = null,
+    Object? email = null,
+    Object? password = null,
+    Object? agreement = null,
+    Object? locale = null,
     Object? reason = freezed,
   }) {
-    return _then(_MastodonApiRegisterAccount(
-      username: username == freezed
+    return _then(_$MastodonApiRegisterAccountImpl(
+      username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
               as String,
-      email: email == freezed
+      email: null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String,
-      password: password == freezed
+      password: null == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as String,
-      agreement: agreement == freezed
+      agreement: null == agreement
           ? _value.agreement
           : agreement // ignore: cast_nullable_to_non_nullable
               as bool,
-      locale: locale == freezed
+      locale: null == locale
           ? _value.locale
           : locale // ignore: cast_nullable_to_non_nullable
               as String,
-      reason: reason == freezed
+      reason: freezed == reason
           ? _value.reason
           : reason // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -198,8 +175,8 @@ class __$MastodonApiRegisterAccountCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiRegisterAccount implements _MastodonApiRegisterAccount {
-  const _$_MastodonApiRegisterAccount(
+class _$MastodonApiRegisterAccountImpl implements _MastodonApiRegisterAccount {
+  const _$MastodonApiRegisterAccountImpl(
       {@HiveField(1) required this.username,
       @HiveField(2) required this.email,
       @HiveField(3) required this.password,
@@ -207,8 +184,9 @@ class _$_MastodonApiRegisterAccount implements _MastodonApiRegisterAccount {
       @HiveField(5) required this.locale,
       @HiveField(6) required this.reason});
 
-  factory _$_MastodonApiRegisterAccount.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiRegisterAccountFromJson(json);
+  factory _$MastodonApiRegisterAccountImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$MastodonApiRegisterAccountImplFromJson(json);
 
   @override
   @HiveField(1)
@@ -235,10 +213,10 @@ class _$_MastodonApiRegisterAccount implements _MastodonApiRegisterAccount {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiRegisterAccount &&
+            other is _$MastodonApiRegisterAccountImpl &&
             (identical(other.username, username) ||
                 other.username == username) &&
             (identical(other.email, email) || other.email == email) &&
@@ -250,34 +228,39 @@ class _$_MastodonApiRegisterAccount implements _MastodonApiRegisterAccount {
             (identical(other.reason, reason) || other.reason == reason));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType, username, email, password, agreement, locale, reason);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiRegisterAccountCopyWith<_MastodonApiRegisterAccount>
-      get copyWith => __$MastodonApiRegisterAccountCopyWithImpl<
-          _MastodonApiRegisterAccount>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiRegisterAccountImplCopyWith<_$MastodonApiRegisterAccountImpl>
+      get copyWith => __$$MastodonApiRegisterAccountImplCopyWithImpl<
+          _$MastodonApiRegisterAccountImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiRegisterAccountToJson(this);
+    return _$$MastodonApiRegisterAccountImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiRegisterAccount
     implements MastodonApiRegisterAccount {
   const factory _MastodonApiRegisterAccount(
-      {@HiveField(1) required String username,
-      @HiveField(2) required String email,
-      @HiveField(3) required String password,
-      @HiveField(4) required bool agreement,
-      @HiveField(5) required String locale,
-      @HiveField(6) required String? reason}) = _$_MastodonApiRegisterAccount;
+          {@HiveField(1) required final String username,
+          @HiveField(2) required final String email,
+          @HiveField(3) required final String password,
+          @HiveField(4) required final bool agreement,
+          @HiveField(5) required final String locale,
+          @HiveField(6) required final String? reason}) =
+      _$MastodonApiRegisterAccountImpl;
 
   factory _MastodonApiRegisterAccount.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiRegisterAccount.fromJson;
+      _$MastodonApiRegisterAccountImpl.fromJson;
 
   @override
   @HiveField(1)
@@ -299,6 +282,6 @@ abstract class _MastodonApiRegisterAccount
   String? get reason;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiRegisterAccountCopyWith<_MastodonApiRegisterAccount>
+  _$$MastodonApiRegisterAccountImplCopyWith<_$MastodonApiRegisterAccountImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

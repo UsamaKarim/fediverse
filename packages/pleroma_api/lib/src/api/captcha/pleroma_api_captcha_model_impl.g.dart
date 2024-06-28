@@ -56,17 +56,18 @@ class PleromaApiCaptchaAdapter extends TypeAdapter<PleromaApiCaptcha> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiCaptcha _$$_PleromaApiCaptchaFromJson(Map<String, dynamic> json) =>
-    _$_PleromaApiCaptcha(
-      secondsValid: json['seconds_valid'] as int?,
+_$PleromaApiCaptchaImpl _$$PleromaApiCaptchaImplFromJson(
+        Map<String, dynamic> json) =>
+    _$PleromaApiCaptchaImpl(
+      secondsValid: (json['seconds_valid'] as num?)?.toInt(),
       token: json['token'] as String?,
       type: json['type'] as String,
       url: json['url'] as String?,
       answerData: json['answer_data'] as String?,
     );
 
-Map<String, dynamic> _$$_PleromaApiCaptchaToJson(
-    _$_PleromaApiCaptcha instance) {
+Map<String, dynamic> _$$PleromaApiCaptchaImplToJson(
+    _$PleromaApiCaptchaImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

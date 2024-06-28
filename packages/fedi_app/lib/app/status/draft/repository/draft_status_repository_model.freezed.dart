@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'draft_status_repository_model.dart';
 
@@ -11,19 +12,7 @@ part of 'draft_status_repository_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$DraftStatusRepositoryFiltersTearOff {
-  const _$DraftStatusRepositoryFiltersTearOff();
-
-  _DraftStatusRepositoryFilters call() {
-    return const _DraftStatusRepositoryFilters();
-  }
-}
-
-/// @nodoc
-const $DraftStatusRepositoryFilters = _$DraftStatusRepositoryFiltersTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$DraftStatusRepositoryFilters {}
@@ -33,45 +22,46 @@ abstract class $DraftStatusRepositoryFiltersCopyWith<$Res> {
   factory $DraftStatusRepositoryFiltersCopyWith(
           DraftStatusRepositoryFilters value,
           $Res Function(DraftStatusRepositoryFilters) then) =
-      _$DraftStatusRepositoryFiltersCopyWithImpl<$Res>;
+      _$DraftStatusRepositoryFiltersCopyWithImpl<$Res,
+          DraftStatusRepositoryFilters>;
 }
 
 /// @nodoc
-class _$DraftStatusRepositoryFiltersCopyWithImpl<$Res>
+class _$DraftStatusRepositoryFiltersCopyWithImpl<$Res,
+        $Val extends DraftStatusRepositoryFilters>
     implements $DraftStatusRepositoryFiltersCopyWith<$Res> {
   _$DraftStatusRepositoryFiltersCopyWithImpl(this._value, this._then);
 
-  final DraftStatusRepositoryFilters _value;
   // ignore: unused_field
-  final $Res Function(DraftStatusRepositoryFilters) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$DraftStatusRepositoryFiltersCopyWith<$Res> {
-  factory _$DraftStatusRepositoryFiltersCopyWith(
-          _DraftStatusRepositoryFilters value,
-          $Res Function(_DraftStatusRepositoryFilters) then) =
-      __$DraftStatusRepositoryFiltersCopyWithImpl<$Res>;
+abstract class _$$DraftStatusRepositoryFiltersImplCopyWith<$Res> {
+  factory _$$DraftStatusRepositoryFiltersImplCopyWith(
+          _$DraftStatusRepositoryFiltersImpl value,
+          $Res Function(_$DraftStatusRepositoryFiltersImpl) then) =
+      __$$DraftStatusRepositoryFiltersImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$DraftStatusRepositoryFiltersCopyWithImpl<$Res>
-    extends _$DraftStatusRepositoryFiltersCopyWithImpl<$Res>
-    implements _$DraftStatusRepositoryFiltersCopyWith<$Res> {
-  __$DraftStatusRepositoryFiltersCopyWithImpl(
-      _DraftStatusRepositoryFilters _value,
-      $Res Function(_DraftStatusRepositoryFilters) _then)
-      : super(_value, (v) => _then(v as _DraftStatusRepositoryFilters));
-
-  @override
-  _DraftStatusRepositoryFilters get _value =>
-      super._value as _DraftStatusRepositoryFilters;
+class __$$DraftStatusRepositoryFiltersImplCopyWithImpl<$Res>
+    extends _$DraftStatusRepositoryFiltersCopyWithImpl<$Res,
+        _$DraftStatusRepositoryFiltersImpl>
+    implements _$$DraftStatusRepositoryFiltersImplCopyWith<$Res> {
+  __$$DraftStatusRepositoryFiltersImplCopyWithImpl(
+      _$DraftStatusRepositoryFiltersImpl _value,
+      $Res Function(_$DraftStatusRepositoryFiltersImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_DraftStatusRepositoryFilters implements _DraftStatusRepositoryFilters {
-  const _$_DraftStatusRepositoryFilters();
+class _$DraftStatusRepositoryFiltersImpl
+    implements _DraftStatusRepositoryFilters {
+  const _$DraftStatusRepositoryFiltersImpl();
 
   @override
   String toString() {
@@ -79,10 +69,10 @@ class _$_DraftStatusRepositoryFilters implements _DraftStatusRepositoryFilters {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DraftStatusRepositoryFilters);
+            other is _$DraftStatusRepositoryFiltersImpl);
   }
 
   @override
@@ -92,26 +82,8 @@ class _$_DraftStatusRepositoryFilters implements _DraftStatusRepositoryFilters {
 abstract class _DraftStatusRepositoryFilters
     implements DraftStatusRepositoryFilters {
   const factory _DraftStatusRepositoryFilters() =
-      _$_DraftStatusRepositoryFilters;
+      _$DraftStatusRepositoryFiltersImpl;
 }
-
-/// @nodoc
-class _$DraftStatusRepositoryOrderingTermDataTearOff {
-  const _$DraftStatusRepositoryOrderingTermDataTearOff();
-
-  _DraftStatusRepositoryOrderingTermData call(
-      {required DraftStatusRepositoryOrderType orderType,
-      required moor.OrderingMode orderingMode}) {
-    return _DraftStatusRepositoryOrderingTermData(
-      orderType: orderType,
-      orderingMode: orderingMode,
-    );
-  }
-}
-
-/// @nodoc
-const $DraftStatusRepositoryOrderingTermData =
-    _$DraftStatusRepositoryOrderingTermDataTearOff();
 
 /// @nodoc
 mixin _$DraftStatusRepositoryOrderingTermData {
@@ -130,77 +102,80 @@ abstract class $DraftStatusRepositoryOrderingTermDataCopyWith<$Res> {
   factory $DraftStatusRepositoryOrderingTermDataCopyWith(
           DraftStatusRepositoryOrderingTermData value,
           $Res Function(DraftStatusRepositoryOrderingTermData) then) =
-      _$DraftStatusRepositoryOrderingTermDataCopyWithImpl<$Res>;
+      _$DraftStatusRepositoryOrderingTermDataCopyWithImpl<$Res,
+          DraftStatusRepositoryOrderingTermData>;
+  @useResult
   $Res call(
       {DraftStatusRepositoryOrderType orderType,
       moor.OrderingMode orderingMode});
 }
 
 /// @nodoc
-class _$DraftStatusRepositoryOrderingTermDataCopyWithImpl<$Res>
+class _$DraftStatusRepositoryOrderingTermDataCopyWithImpl<$Res,
+        $Val extends DraftStatusRepositoryOrderingTermData>
     implements $DraftStatusRepositoryOrderingTermDataCopyWith<$Res> {
   _$DraftStatusRepositoryOrderingTermDataCopyWithImpl(this._value, this._then);
 
-  final DraftStatusRepositoryOrderingTermData _value;
   // ignore: unused_field
-  final $Res Function(DraftStatusRepositoryOrderingTermData) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? orderType = freezed,
-    Object? orderingMode = freezed,
+    Object? orderType = null,
+    Object? orderingMode = null,
   }) {
     return _then(_value.copyWith(
-      orderType: orderType == freezed
+      orderType: null == orderType
           ? _value.orderType
           : orderType // ignore: cast_nullable_to_non_nullable
               as DraftStatusRepositoryOrderType,
-      orderingMode: orderingMode == freezed
+      orderingMode: null == orderingMode
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
               as moor.OrderingMode,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$DraftStatusRepositoryOrderingTermDataCopyWith<$Res>
+abstract class _$$DraftStatusRepositoryOrderingTermDataImplCopyWith<$Res>
     implements $DraftStatusRepositoryOrderingTermDataCopyWith<$Res> {
-  factory _$DraftStatusRepositoryOrderingTermDataCopyWith(
-          _DraftStatusRepositoryOrderingTermData value,
-          $Res Function(_DraftStatusRepositoryOrderingTermData) then) =
-      __$DraftStatusRepositoryOrderingTermDataCopyWithImpl<$Res>;
+  factory _$$DraftStatusRepositoryOrderingTermDataImplCopyWith(
+          _$DraftStatusRepositoryOrderingTermDataImpl value,
+          $Res Function(_$DraftStatusRepositoryOrderingTermDataImpl) then) =
+      __$$DraftStatusRepositoryOrderingTermDataImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {DraftStatusRepositoryOrderType orderType,
       moor.OrderingMode orderingMode});
 }
 
 /// @nodoc
-class __$DraftStatusRepositoryOrderingTermDataCopyWithImpl<$Res>
-    extends _$DraftStatusRepositoryOrderingTermDataCopyWithImpl<$Res>
-    implements _$DraftStatusRepositoryOrderingTermDataCopyWith<$Res> {
-  __$DraftStatusRepositoryOrderingTermDataCopyWithImpl(
-      _DraftStatusRepositoryOrderingTermData _value,
-      $Res Function(_DraftStatusRepositoryOrderingTermData) _then)
-      : super(
-            _value, (v) => _then(v as _DraftStatusRepositoryOrderingTermData));
+class __$$DraftStatusRepositoryOrderingTermDataImplCopyWithImpl<$Res>
+    extends _$DraftStatusRepositoryOrderingTermDataCopyWithImpl<$Res,
+        _$DraftStatusRepositoryOrderingTermDataImpl>
+    implements _$$DraftStatusRepositoryOrderingTermDataImplCopyWith<$Res> {
+  __$$DraftStatusRepositoryOrderingTermDataImplCopyWithImpl(
+      _$DraftStatusRepositoryOrderingTermDataImpl _value,
+      $Res Function(_$DraftStatusRepositoryOrderingTermDataImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _DraftStatusRepositoryOrderingTermData get _value =>
-      super._value as _DraftStatusRepositoryOrderingTermData;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? orderType = freezed,
-    Object? orderingMode = freezed,
+    Object? orderType = null,
+    Object? orderingMode = null,
   }) {
-    return _then(_DraftStatusRepositoryOrderingTermData(
-      orderType: orderType == freezed
+    return _then(_$DraftStatusRepositoryOrderingTermDataImpl(
+      orderType: null == orderType
           ? _value.orderType
           : orderType // ignore: cast_nullable_to_non_nullable
               as DraftStatusRepositoryOrderType,
-      orderingMode: orderingMode == freezed
+      orderingMode: null == orderingMode
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
               as moor.OrderingMode,
@@ -210,9 +185,9 @@ class __$DraftStatusRepositoryOrderingTermDataCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DraftStatusRepositoryOrderingTermData
+class _$DraftStatusRepositoryOrderingTermDataImpl
     extends _DraftStatusRepositoryOrderingTermData {
-  const _$_DraftStatusRepositoryOrderingTermData(
+  const _$DraftStatusRepositoryOrderingTermDataImpl(
       {required this.orderType, required this.orderingMode})
       : super._();
 
@@ -227,10 +202,10 @@ class _$_DraftStatusRepositoryOrderingTermData
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DraftStatusRepositoryOrderingTermData &&
+            other is _$DraftStatusRepositoryOrderingTermDataImpl &&
             (identical(other.orderType, orderType) ||
                 other.orderType == orderType) &&
             (identical(other.orderingMode, orderingMode) ||
@@ -242,18 +217,19 @@ class _$_DraftStatusRepositoryOrderingTermData
 
   @JsonKey(ignore: true)
   @override
-  _$DraftStatusRepositoryOrderingTermDataCopyWith<
-          _DraftStatusRepositoryOrderingTermData>
-      get copyWith => __$DraftStatusRepositoryOrderingTermDataCopyWithImpl<
-          _DraftStatusRepositoryOrderingTermData>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DraftStatusRepositoryOrderingTermDataImplCopyWith<
+          _$DraftStatusRepositoryOrderingTermDataImpl>
+      get copyWith => __$$DraftStatusRepositoryOrderingTermDataImplCopyWithImpl<
+          _$DraftStatusRepositoryOrderingTermDataImpl>(this, _$identity);
 }
 
 abstract class _DraftStatusRepositoryOrderingTermData
     extends DraftStatusRepositoryOrderingTermData {
   const factory _DraftStatusRepositoryOrderingTermData(
-          {required DraftStatusRepositoryOrderType orderType,
-          required moor.OrderingMode orderingMode}) =
-      _$_DraftStatusRepositoryOrderingTermData;
+          {required final DraftStatusRepositoryOrderType orderType,
+          required final moor.OrderingMode orderingMode}) =
+      _$DraftStatusRepositoryOrderingTermDataImpl;
   const _DraftStatusRepositoryOrderingTermData._() : super._();
 
   @override
@@ -262,7 +238,7 @@ abstract class _DraftStatusRepositoryOrderingTermData
   moor.OrderingMode get orderingMode;
   @override
   @JsonKey(ignore: true)
-  _$DraftStatusRepositoryOrderingTermDataCopyWith<
-          _DraftStatusRepositoryOrderingTermData>
+  _$$DraftStatusRepositoryOrderingTermDataImplCopyWith<
+          _$DraftStatusRepositoryOrderingTermDataImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

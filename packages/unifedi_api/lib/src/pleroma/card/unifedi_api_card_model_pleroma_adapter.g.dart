@@ -45,14 +45,14 @@ class UnifediApiCardPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiCardPleromaAdapter _$$_UnifediApiCardPleromaAdapterFromJson(
+_$UnifediApiCardPleromaAdapterImpl _$$UnifediApiCardPleromaAdapterImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiCardPleromaAdapter(
+    _$UnifediApiCardPleromaAdapterImpl(
       PleromaApiCard.fromJson(json['value'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_UnifediApiCardPleromaAdapterToJson(
-        _$_UnifediApiCardPleromaAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiCardPleromaAdapterImplToJson(
+        _$UnifediApiCardPleromaAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

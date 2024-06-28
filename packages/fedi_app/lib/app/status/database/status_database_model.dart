@@ -1,122 +1,122 @@
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/moor/moor_converters.dart';
-import 'package:moor/moor.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 
 // todo: add foreign keys
 @DataClassName('DbStatus')
 class DbStatuses extends Table {
   // integer ids works much better in SQLite
-  IntColumn? get id => integer().nullable().autoIncrement()();
+  IntColumn get id => integer().nullable().autoIncrement()();
 
-  TextColumn? get remoteId => text().customConstraint('UNIQUE NOT NULL')();
+  TextColumn get remoteId => text().customConstraint('UNIQUE NOT NULL')();
 
-  DateTimeColumn? get createdAt => dateTime()();
+  DateTimeColumn get createdAt => dateTime()();
 
-  TextColumn? get inReplyToRemoteId => text().nullable()();
+  TextColumn get inReplyToRemoteId => text().nullable()();
 
-  TextColumn? get inReplyToAccountRemoteId => text().nullable()();
+  TextColumn get inReplyToAccountRemoteId => text().nullable()();
 
-  BoolColumn? get sensitive => boolean()();
+  BoolColumn get sensitive => boolean()();
 
-  TextColumn? get spoilerText => text().nullable()();
+  TextColumn get spoilerText => text().nullable()();
 
-  TextColumn? get visibility =>
+  TextColumn get visibility =>
       text().map(const UnifediApiVisibilityMoorTypeConverter())();
 
-  TextColumn? get uri => text()();
+  TextColumn get uri => text()();
 
-  TextColumn? get url => text().nullable()();
+  TextColumn get url => text().nullable()();
 
-  IntColumn? get repliesCount => integer()();
+  IntColumn get repliesCount => integer()();
 
-  IntColumn? get reblogsCount => integer()();
+  IntColumn get reblogsCount => integer()();
 
-  IntColumn? get favouritesCount => integer()();
+  IntColumn get favouritesCount => integer()();
 
-  BoolColumn? get favourited => boolean().withDefault(const Constant(false))();
+  BoolColumn get favourited => boolean().withDefault(const Constant(false))();
 
-  BoolColumn? get reblogged => boolean().withDefault(const Constant(false))();
+  BoolColumn get reblogged => boolean().withDefault(const Constant(false))();
 
-  BoolColumn? get muted => boolean().withDefault(const Constant(false))();
+  BoolColumn get muted => boolean().withDefault(const Constant(false))();
 
-  BoolColumn? get bookmarked => boolean().nullable()();
+  BoolColumn get bookmarked => boolean().nullable()();
 
-  BoolColumn? get pinned => boolean().nullable()();
+  BoolColumn get pinned => boolean().nullable()();
 
-  TextColumn? get content => text().nullable()();
+  TextColumn get content => text().nullable()();
 
-  TextColumn? get reblogStatusRemoteId => text().nullable()();
+  TextColumn get reblogStatusRemoteId => text().nullable()();
 
-  TextColumn? get application =>
+  TextColumn get application =>
       text().map(const UnifediApplicationDatabaseConverter()).nullable()();
 
-  TextColumn? get accountRemoteId => text()();
+  TextColumn get accountRemoteId => text()();
 
-  TextColumn? get mediaAttachments => text()
+  TextColumn get mediaAttachments => text()
       .map(const UnifediApiMediaAttachmentListDatabaseConverter())
       .nullable()();
 
-  TextColumn? get mentions =>
+  TextColumn get mentions =>
       text().map(const UnifediMentionListDatabaseConverter()).nullable()();
 
   // TODO: rework with join
-  TextColumn? get tags =>
+  TextColumn get tags =>
       text().map(const UnifediApiTagListDatabaseConverter()).nullable()();
 
-  TextColumn? get emojis =>
+  TextColumn get emojis =>
       text().map(const UnifediApiEmojiListDatabaseConverter()).nullable()();
 
-  TextColumn? get poll =>
+  TextColumn get poll =>
       text().map(const UnifediApiPollDatabaseConverter()).nullable()();
 
-  TextColumn? get card =>
+  TextColumn get card =>
       text().map(const UnifediCardDatabaseConverter()).nullable()();
 
-  TextColumn? get language => text().nullable()();
+  TextColumn get language => text().nullable()();
 
   //  expanded unifedi object fields
-  TextColumn? get contentVariants => text()
+  TextColumn get contentVariants => text()
       .named('pleroma_content')
       .map(const UnifediContentDatabaseConverter())
       .nullable()();
 
-  IntColumn? get conversationId =>
+  IntColumn get conversationId =>
       integer().named('pleroma_conversation_id').nullable()();
 
-  IntColumn? get directConversationId =>
+  IntColumn get directConversationId =>
       integer().named('pleroma_direct_conversation_id').nullable()();
 
-  TextColumn? get inReplyToAccountAcct =>
+  TextColumn get inReplyToAccountAcct =>
       text().named('pleroma_in_reply_to_account_acct').nullable()();
 
-  BoolColumn? get local => boolean().named('pleroma_local').nullable()();
+  BoolColumn get local => boolean().named('pleroma_local').nullable()();
 
-  TextColumn? get spoilerTextVariants => text()
+  TextColumn get spoilerTextVariants => text()
       .named('pleroma_spoiler_text')
       .map(const UnifediContentDatabaseConverter())
       .nullable()();
 
-  DateTimeColumn? get expiresAt =>
+  DateTimeColumn get expiresAt =>
       dateTime().named('pleroma_expires_at').nullable()();
 
-  BoolColumn? get threadMuted =>
+  BoolColumn get threadMuted =>
       boolean().named('pleroma_thread_muted').nullable()();
 
-  TextColumn? get emojiReactions => text()
+  TextColumn get emojiReactions => text()
       .named('pleroma_emoji_reactions')
       .map(const EmojiReactionsListDatabaseConverter())
       .nullable()();
 
-  BoolColumn? get deleted => boolean().nullable()();
+  BoolColumn get deleted => boolean().nullable()();
 
-  BoolColumn? get hiddenLocallyOnDevice => boolean().nullable()();
+  BoolColumn get hiddenLocallyOnDevice => boolean().nullable()();
 
-  TextColumn? get pendingState =>
+  TextColumn get pendingState =>
       text().nullable().map(const PendingStateDatabaseConverter())();
 
-  TextColumn? get oldPendingRemoteId => text().nullable()();
+  TextColumn get oldPendingRemoteId => text().nullable()();
 
-  TextColumn? get wasSentWithIdempotencyKey => text().nullable()();
+  TextColumn get wasSentWithIdempotencyKey => text().nullable()();
 }
 
 class UnifediApiVisibilityMoorTypeConverter
@@ -128,8 +128,8 @@ class UnifediApiVisibilityMoorTypeConverter
   String toJson(UnifediApiVisibility value) => value.stringValue;
 
   @override
-  UnifediApiVisibility mapToDart(String? fromDb) => fromJson(fromDb!);
+  UnifediApiVisibility fromSql(String? fromDb) => fromJson(fromDb!);
 
   @override
-  String mapToSql(UnifediApiVisibility? value) => toJson(value!);
+  String toSql(UnifediApiVisibility? value) => toJson(value!);
 }

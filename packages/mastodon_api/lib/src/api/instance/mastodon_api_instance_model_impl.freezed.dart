@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_instance_model_impl.dart';
 
@@ -11,73 +12,11 @@ part of 'mastodon_api_instance_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiInstance _$MastodonApiInstanceFromJson(Map<String, dynamic> json) {
   return _MastodonApiInstance.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiInstanceTearOff {
-  const _$MastodonApiInstanceTearOff();
-
-  _MastodonApiInstance call(
-      {@HiveField(0)
-          required String uri,
-      @HiveField(1)
-          required String? title,
-      @JsonKey(name: 'short_description')
-      @HiveField(2)
-          required String? shortDescription,
-      @HiveField(3)
-          required String? description,
-      @HiveField(4)
-          required String? email,
-      @JsonKey(name: 'version')
-      @HiveField(5)
-          required String versionString,
-      @HiveField(6)
-          required MastodonApiInstanceUrls? urls,
-      @HiveField(7)
-          required MastodonApiInstanceStats? stats,
-      @HiveField(8)
-          required String? thumbnail,
-      @HiveField(9)
-          required List<String>? languages,
-      @HiveField(10)
-          required bool? registrations,
-      @HiveField(11)
-          required bool? approvalRequired,
-      @HiveField(12)
-          required bool? invitesEnabled,
-      @JsonKey(name: 'contact_account')
-      @HiveField(13)
-          required MastodonApiAccount? contactAccount}) {
-    return _MastodonApiInstance(
-      uri: uri,
-      title: title,
-      shortDescription: shortDescription,
-      description: description,
-      email: email,
-      versionString: versionString,
-      urls: urls,
-      stats: stats,
-      thumbnail: thumbnail,
-      languages: languages,
-      registrations: registrations,
-      approvalRequired: approvalRequired,
-      invitesEnabled: invitesEnabled,
-      contactAccount: contactAccount,
-    );
-  }
-
-  MastodonApiInstance fromJson(Map<String, Object?> json) {
-    return MastodonApiInstance.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiInstance = _$MastodonApiInstanceTearOff();
 
 /// @nodoc
 mixin _$MastodonApiInstance {
@@ -123,39 +62,27 @@ mixin _$MastodonApiInstance {
 abstract class $MastodonApiInstanceCopyWith<$Res> {
   factory $MastodonApiInstanceCopyWith(
           MastodonApiInstance value, $Res Function(MastodonApiInstance) then) =
-      _$MastodonApiInstanceCopyWithImpl<$Res>;
+      _$MastodonApiInstanceCopyWithImpl<$Res, MastodonApiInstance>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-          String uri,
-      @HiveField(1)
-          String? title,
+      {@HiveField(0) String uri,
+      @HiveField(1) String? title,
       @JsonKey(name: 'short_description')
       @HiveField(2)
-          String? shortDescription,
-      @HiveField(3)
-          String? description,
-      @HiveField(4)
-          String? email,
-      @JsonKey(name: 'version')
-      @HiveField(5)
-          String versionString,
-      @HiveField(6)
-          MastodonApiInstanceUrls? urls,
-      @HiveField(7)
-          MastodonApiInstanceStats? stats,
-      @HiveField(8)
-          String? thumbnail,
-      @HiveField(9)
-          List<String>? languages,
-      @HiveField(10)
-          bool? registrations,
-      @HiveField(11)
-          bool? approvalRequired,
-      @HiveField(12)
-          bool? invitesEnabled,
+      String? shortDescription,
+      @HiveField(3) String? description,
+      @HiveField(4) String? email,
+      @JsonKey(name: 'version') @HiveField(5) String versionString,
+      @HiveField(6) MastodonApiInstanceUrls? urls,
+      @HiveField(7) MastodonApiInstanceStats? stats,
+      @HiveField(8) String? thumbnail,
+      @HiveField(9) List<String>? languages,
+      @HiveField(10) bool? registrations,
+      @HiveField(11) bool? approvalRequired,
+      @HiveField(12) bool? invitesEnabled,
       @JsonKey(name: 'contact_account')
       @HiveField(13)
-          MastodonApiAccount? contactAccount});
+      MastodonApiAccount? contactAccount});
 
   $MastodonApiInstanceUrlsCopyWith<$Res>? get urls;
   $MastodonApiInstanceStatsCopyWith<$Res>? get stats;
@@ -163,22 +90,24 @@ abstract class $MastodonApiInstanceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MastodonApiInstanceCopyWithImpl<$Res>
+class _$MastodonApiInstanceCopyWithImpl<$Res, $Val extends MastodonApiInstance>
     implements $MastodonApiInstanceCopyWith<$Res> {
   _$MastodonApiInstanceCopyWithImpl(this._value, this._then);
 
-  final MastodonApiInstance _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiInstance) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? uri = freezed,
+    Object? uri = null,
     Object? title = freezed,
     Object? shortDescription = freezed,
     Object? description = freezed,
     Object? email = freezed,
-    Object? versionString = freezed,
+    Object? versionString = null,
     Object? urls = freezed,
     Object? stats = freezed,
     Object? thumbnail = freezed,
@@ -189,138 +118,129 @@ class _$MastodonApiInstanceCopyWithImpl<$Res>
     Object? contactAccount = freezed,
   }) {
     return _then(_value.copyWith(
-      uri: uri == freezed
+      uri: null == uri
           ? _value.uri
           : uri // ignore: cast_nullable_to_non_nullable
               as String,
-      title: title == freezed
+      title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
-      shortDescription: shortDescription == freezed
+      shortDescription: freezed == shortDescription
           ? _value.shortDescription
           : shortDescription // ignore: cast_nullable_to_non_nullable
               as String?,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      email: email == freezed
+      email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String?,
-      versionString: versionString == freezed
+      versionString: null == versionString
           ? _value.versionString
           : versionString // ignore: cast_nullable_to_non_nullable
               as String,
-      urls: urls == freezed
+      urls: freezed == urls
           ? _value.urls
           : urls // ignore: cast_nullable_to_non_nullable
               as MastodonApiInstanceUrls?,
-      stats: stats == freezed
+      stats: freezed == stats
           ? _value.stats
           : stats // ignore: cast_nullable_to_non_nullable
               as MastodonApiInstanceStats?,
-      thumbnail: thumbnail == freezed
+      thumbnail: freezed == thumbnail
           ? _value.thumbnail
           : thumbnail // ignore: cast_nullable_to_non_nullable
               as String?,
-      languages: languages == freezed
+      languages: freezed == languages
           ? _value.languages
           : languages // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      registrations: registrations == freezed
+      registrations: freezed == registrations
           ? _value.registrations
           : registrations // ignore: cast_nullable_to_non_nullable
               as bool?,
-      approvalRequired: approvalRequired == freezed
+      approvalRequired: freezed == approvalRequired
           ? _value.approvalRequired
           : approvalRequired // ignore: cast_nullable_to_non_nullable
               as bool?,
-      invitesEnabled: invitesEnabled == freezed
+      invitesEnabled: freezed == invitesEnabled
           ? _value.invitesEnabled
           : invitesEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
-      contactAccount: contactAccount == freezed
+      contactAccount: freezed == contactAccount
           ? _value.contactAccount
           : contactAccount // ignore: cast_nullable_to_non_nullable
               as MastodonApiAccount?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiInstanceUrlsCopyWith<$Res>? get urls {
     if (_value.urls == null) {
       return null;
     }
 
     return $MastodonApiInstanceUrlsCopyWith<$Res>(_value.urls!, (value) {
-      return _then(_value.copyWith(urls: value));
+      return _then(_value.copyWith(urls: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiInstanceStatsCopyWith<$Res>? get stats {
     if (_value.stats == null) {
       return null;
     }
 
     return $MastodonApiInstanceStatsCopyWith<$Res>(_value.stats!, (value) {
-      return _then(_value.copyWith(stats: value));
+      return _then(_value.copyWith(stats: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiAccountCopyWith<$Res>? get contactAccount {
     if (_value.contactAccount == null) {
       return null;
     }
 
     return $MastodonApiAccountCopyWith<$Res>(_value.contactAccount!, (value) {
-      return _then(_value.copyWith(contactAccount: value));
+      return _then(_value.copyWith(contactAccount: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiInstanceCopyWith<$Res>
+abstract class _$$MastodonApiInstanceImplCopyWith<$Res>
     implements $MastodonApiInstanceCopyWith<$Res> {
-  factory _$MastodonApiInstanceCopyWith(_MastodonApiInstance value,
-          $Res Function(_MastodonApiInstance) then) =
-      __$MastodonApiInstanceCopyWithImpl<$Res>;
+  factory _$$MastodonApiInstanceImplCopyWith(_$MastodonApiInstanceImpl value,
+          $Res Function(_$MastodonApiInstanceImpl) then) =
+      __$$MastodonApiInstanceImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-          String uri,
-      @HiveField(1)
-          String? title,
+      {@HiveField(0) String uri,
+      @HiveField(1) String? title,
       @JsonKey(name: 'short_description')
       @HiveField(2)
-          String? shortDescription,
-      @HiveField(3)
-          String? description,
-      @HiveField(4)
-          String? email,
-      @JsonKey(name: 'version')
-      @HiveField(5)
-          String versionString,
-      @HiveField(6)
-          MastodonApiInstanceUrls? urls,
-      @HiveField(7)
-          MastodonApiInstanceStats? stats,
-      @HiveField(8)
-          String? thumbnail,
-      @HiveField(9)
-          List<String>? languages,
-      @HiveField(10)
-          bool? registrations,
-      @HiveField(11)
-          bool? approvalRequired,
-      @HiveField(12)
-          bool? invitesEnabled,
+      String? shortDescription,
+      @HiveField(3) String? description,
+      @HiveField(4) String? email,
+      @JsonKey(name: 'version') @HiveField(5) String versionString,
+      @HiveField(6) MastodonApiInstanceUrls? urls,
+      @HiveField(7) MastodonApiInstanceStats? stats,
+      @HiveField(8) String? thumbnail,
+      @HiveField(9) List<String>? languages,
+      @HiveField(10) bool? registrations,
+      @HiveField(11) bool? approvalRequired,
+      @HiveField(12) bool? invitesEnabled,
       @JsonKey(name: 'contact_account')
       @HiveField(13)
-          MastodonApiAccount? contactAccount});
+      MastodonApiAccount? contactAccount});
 
   @override
   $MastodonApiInstanceUrlsCopyWith<$Res>? get urls;
@@ -331,24 +251,22 @@ abstract class _$MastodonApiInstanceCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MastodonApiInstanceCopyWithImpl<$Res>
-    extends _$MastodonApiInstanceCopyWithImpl<$Res>
-    implements _$MastodonApiInstanceCopyWith<$Res> {
-  __$MastodonApiInstanceCopyWithImpl(
-      _MastodonApiInstance _value, $Res Function(_MastodonApiInstance) _then)
-      : super(_value, (v) => _then(v as _MastodonApiInstance));
+class __$$MastodonApiInstanceImplCopyWithImpl<$Res>
+    extends _$MastodonApiInstanceCopyWithImpl<$Res, _$MastodonApiInstanceImpl>
+    implements _$$MastodonApiInstanceImplCopyWith<$Res> {
+  __$$MastodonApiInstanceImplCopyWithImpl(_$MastodonApiInstanceImpl _value,
+      $Res Function(_$MastodonApiInstanceImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiInstance get _value => super._value as _MastodonApiInstance;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? uri = freezed,
+    Object? uri = null,
     Object? title = freezed,
     Object? shortDescription = freezed,
     Object? description = freezed,
     Object? email = freezed,
-    Object? versionString = freezed,
+    Object? versionString = null,
     Object? urls = freezed,
     Object? stats = freezed,
     Object? thumbnail = freezed,
@@ -358,60 +276,60 @@ class __$MastodonApiInstanceCopyWithImpl<$Res>
     Object? invitesEnabled = freezed,
     Object? contactAccount = freezed,
   }) {
-    return _then(_MastodonApiInstance(
-      uri: uri == freezed
+    return _then(_$MastodonApiInstanceImpl(
+      uri: null == uri
           ? _value.uri
           : uri // ignore: cast_nullable_to_non_nullable
               as String,
-      title: title == freezed
+      title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
-      shortDescription: shortDescription == freezed
+      shortDescription: freezed == shortDescription
           ? _value.shortDescription
           : shortDescription // ignore: cast_nullable_to_non_nullable
               as String?,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      email: email == freezed
+      email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String?,
-      versionString: versionString == freezed
+      versionString: null == versionString
           ? _value.versionString
           : versionString // ignore: cast_nullable_to_non_nullable
               as String,
-      urls: urls == freezed
+      urls: freezed == urls
           ? _value.urls
           : urls // ignore: cast_nullable_to_non_nullable
               as MastodonApiInstanceUrls?,
-      stats: stats == freezed
+      stats: freezed == stats
           ? _value.stats
           : stats // ignore: cast_nullable_to_non_nullable
               as MastodonApiInstanceStats?,
-      thumbnail: thumbnail == freezed
+      thumbnail: freezed == thumbnail
           ? _value.thumbnail
           : thumbnail // ignore: cast_nullable_to_non_nullable
               as String?,
-      languages: languages == freezed
-          ? _value.languages
+      languages: freezed == languages
+          ? _value._languages
           : languages // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      registrations: registrations == freezed
+      registrations: freezed == registrations
           ? _value.registrations
           : registrations // ignore: cast_nullable_to_non_nullable
               as bool?,
-      approvalRequired: approvalRequired == freezed
+      approvalRequired: freezed == approvalRequired
           ? _value.approvalRequired
           : approvalRequired // ignore: cast_nullable_to_non_nullable
               as bool?,
-      invitesEnabled: invitesEnabled == freezed
+      invitesEnabled: freezed == invitesEnabled
           ? _value.invitesEnabled
           : invitesEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
-      contactAccount: contactAccount == freezed
+      contactAccount: freezed == contactAccount
           ? _value.contactAccount
           : contactAccount // ignore: cast_nullable_to_non_nullable
               as MastodonApiAccount?,
@@ -421,42 +339,30 @@ class __$MastodonApiInstanceCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiInstance implements _MastodonApiInstance {
-  const _$_MastodonApiInstance(
-      {@HiveField(0)
-          required this.uri,
-      @HiveField(1)
-          required this.title,
+class _$MastodonApiInstanceImpl implements _MastodonApiInstance {
+  const _$MastodonApiInstanceImpl(
+      {@HiveField(0) required this.uri,
+      @HiveField(1) required this.title,
       @JsonKey(name: 'short_description')
       @HiveField(2)
-          required this.shortDescription,
-      @HiveField(3)
-          required this.description,
-      @HiveField(4)
-          required this.email,
-      @JsonKey(name: 'version')
-      @HiveField(5)
-          required this.versionString,
-      @HiveField(6)
-          required this.urls,
-      @HiveField(7)
-          required this.stats,
-      @HiveField(8)
-          required this.thumbnail,
-      @HiveField(9)
-          required this.languages,
-      @HiveField(10)
-          required this.registrations,
-      @HiveField(11)
-          required this.approvalRequired,
-      @HiveField(12)
-          required this.invitesEnabled,
+      required this.shortDescription,
+      @HiveField(3) required this.description,
+      @HiveField(4) required this.email,
+      @JsonKey(name: 'version') @HiveField(5) required this.versionString,
+      @HiveField(6) required this.urls,
+      @HiveField(7) required this.stats,
+      @HiveField(8) required this.thumbnail,
+      @HiveField(9) required final List<String>? languages,
+      @HiveField(10) required this.registrations,
+      @HiveField(11) required this.approvalRequired,
+      @HiveField(12) required this.invitesEnabled,
       @JsonKey(name: 'contact_account')
       @HiveField(13)
-          required this.contactAccount});
+      required this.contactAccount})
+      : _languages = languages;
 
-  factory _$_MastodonApiInstance.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiInstanceFromJson(json);
+  factory _$MastodonApiInstanceImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MastodonApiInstanceImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -487,9 +393,17 @@ class _$_MastodonApiInstance implements _MastodonApiInstance {
   @override
   @HiveField(8)
   final String? thumbnail;
+  final List<String>? _languages;
   @override
   @HiveField(9)
-  final List<String>? languages;
+  List<String>? get languages {
+    final value = _languages;
+    if (value == null) return null;
+    if (_languages is EqualUnmodifiableListView) return _languages;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(10)
   final bool? registrations;
@@ -510,10 +424,10 @@ class _$_MastodonApiInstance implements _MastodonApiInstance {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiInstance &&
+            other is _$MastodonApiInstanceImpl &&
             (identical(other.uri, uri) || other.uri == uri) &&
             (identical(other.title, title) || other.title == title) &&
             (identical(other.shortDescription, shortDescription) ||
@@ -527,7 +441,8 @@ class _$_MastodonApiInstance implements _MastodonApiInstance {
             (identical(other.stats, stats) || other.stats == stats) &&
             (identical(other.thumbnail, thumbnail) ||
                 other.thumbnail == thumbnail) &&
-            const DeepCollectionEquality().equals(other.languages, languages) &&
+            const DeepCollectionEquality()
+                .equals(other._languages, _languages) &&
             (identical(other.registrations, registrations) ||
                 other.registrations == registrations) &&
             (identical(other.approvalRequired, approvalRequired) ||
@@ -538,6 +453,7 @@ class _$_MastodonApiInstance implements _MastodonApiInstance {
                 other.contactAccount == contactAccount));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -550,7 +466,7 @@ class _$_MastodonApiInstance implements _MastodonApiInstance {
       urls,
       stats,
       thumbnail,
-      const DeepCollectionEquality().hash(languages),
+      const DeepCollectionEquality().hash(_languages),
       registrations,
       approvalRequired,
       invitesEnabled,
@@ -558,53 +474,45 @@ class _$_MastodonApiInstance implements _MastodonApiInstance {
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiInstanceCopyWith<_MastodonApiInstance> get copyWith =>
-      __$MastodonApiInstanceCopyWithImpl<_MastodonApiInstance>(
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiInstanceImplCopyWith<_$MastodonApiInstanceImpl> get copyWith =>
+      __$$MastodonApiInstanceImplCopyWithImpl<_$MastodonApiInstanceImpl>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiInstanceToJson(this);
+    return _$$MastodonApiInstanceImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiInstance implements MastodonApiInstance {
   const factory _MastodonApiInstance(
-          {@HiveField(0)
-              required String uri,
-          @HiveField(1)
-              required String? title,
+          {@HiveField(0) required final String uri,
+          @HiveField(1) required final String? title,
           @JsonKey(name: 'short_description')
           @HiveField(2)
-              required String? shortDescription,
-          @HiveField(3)
-              required String? description,
-          @HiveField(4)
-              required String? email,
+          required final String? shortDescription,
+          @HiveField(3) required final String? description,
+          @HiveField(4) required final String? email,
           @JsonKey(name: 'version')
           @HiveField(5)
-              required String versionString,
-          @HiveField(6)
-              required MastodonApiInstanceUrls? urls,
-          @HiveField(7)
-              required MastodonApiInstanceStats? stats,
-          @HiveField(8)
-              required String? thumbnail,
-          @HiveField(9)
-              required List<String>? languages,
-          @HiveField(10)
-              required bool? registrations,
-          @HiveField(11)
-              required bool? approvalRequired,
-          @HiveField(12)
-              required bool? invitesEnabled,
+          required final String versionString,
+          @HiveField(6) required final MastodonApiInstanceUrls? urls,
+          @HiveField(7) required final MastodonApiInstanceStats? stats,
+          @HiveField(8) required final String? thumbnail,
+          @HiveField(9) required final List<String>? languages,
+          @HiveField(10) required final bool? registrations,
+          @HiveField(11) required final bool? approvalRequired,
+          @HiveField(12) required final bool? invitesEnabled,
           @JsonKey(name: 'contact_account')
           @HiveField(13)
-              required MastodonApiAccount? contactAccount}) =
-      _$_MastodonApiInstance;
+          required final MastodonApiAccount? contactAccount}) =
+      _$MastodonApiInstanceImpl;
 
   factory _MastodonApiInstance.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiInstance.fromJson;
+      _$MastodonApiInstanceImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -653,6 +561,6 @@ abstract class _MastodonApiInstance implements MastodonApiInstance {
   MastodonApiAccount? get contactAccount;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiInstanceCopyWith<_MastodonApiInstance> get copyWith =>
+  _$$MastodonApiInstanceImplCopyWith<_$MastodonApiInstanceImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

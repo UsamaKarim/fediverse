@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_rest_error_type_sealed.dart';
 
@@ -11,70 +12,11 @@ part of 'mastodon_api_rest_error_type_sealed.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$MastodonApiRestErrorTypeTearOff {
-  const _$MastodonApiRestErrorTypeTearOff();
-
-  _InvalidGrant invalidGrant(
-      {String stringValue = MastodonApiRestErrorType.invalidGrantStringValue}) {
-    return _InvalidGrant(
-      stringValue: stringValue,
-    );
-  }
-
-  _AccessTokenRevoked accessTokenRevoked(
-      {String stringValue =
-          MastodonApiRestErrorType.accessTokenRevokedStringValue}) {
-    return _AccessTokenRevoked(
-      stringValue: stringValue,
-    );
-  }
-
-  _EmailConfirmationRequired emailConfirmationRequired(
-      {String stringValue =
-          MastodonApiRestErrorType.emailConfirmationRequiredStringValue}) {
-    return _EmailConfirmationRequired(
-      stringValue: stringValue,
-    );
-  }
-
-  _TooShort tooShort(
-      {String stringValue = MastodonApiRestErrorType.tooShortStringValue}) {
-    return _TooShort(
-      stringValue: stringValue,
-    );
-  }
-
-  _NotIncluded notIncluded(
-      {String stringValue = MastodonApiRestErrorType.notIncludedStringValue}) {
-    return _NotIncluded(
-      stringValue: stringValue,
-    );
-  }
-
-  _Unreachable unreachable(
-      {String stringValue = MastodonApiRestErrorType.unreachableStringValue}) {
-    return _Unreachable(
-      stringValue: stringValue,
-    );
-  }
-
-  _Unknown unknown({required String stringValue}) {
-    return _Unknown(
-      stringValue: stringValue,
-    );
-  }
-}
-
-/// @nodoc
-const $MastodonApiRestErrorType = _$MastodonApiRestErrorTypeTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$MastodonApiRestErrorType {
   String get stringValue => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String stringValue) invalidGrant,
@@ -88,13 +30,13 @@ mixin _$MastodonApiRestErrorType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? invalidGrant,
-    TResult Function(String stringValue)? accessTokenRevoked,
-    TResult Function(String stringValue)? emailConfirmationRequired,
-    TResult Function(String stringValue)? tooShort,
-    TResult Function(String stringValue)? notIncluded,
-    TResult Function(String stringValue)? unreachable,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? invalidGrant,
+    TResult? Function(String stringValue)? accessTokenRevoked,
+    TResult? Function(String stringValue)? emailConfirmationRequired,
+    TResult? Function(String stringValue)? tooShort,
+    TResult? Function(String stringValue)? notIncluded,
+    TResult? Function(String stringValue)? unreachable,
+    TResult? Function(String stringValue)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -123,14 +65,14 @@ mixin _$MastodonApiRestErrorType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InvalidGrant value)? invalidGrant,
-    TResult Function(_AccessTokenRevoked value)? accessTokenRevoked,
-    TResult Function(_EmailConfirmationRequired value)?
+    TResult? Function(_InvalidGrant value)? invalidGrant,
+    TResult? Function(_AccessTokenRevoked value)? accessTokenRevoked,
+    TResult? Function(_EmailConfirmationRequired value)?
         emailConfirmationRequired,
-    TResult Function(_TooShort value)? tooShort,
-    TResult Function(_NotIncluded value)? notIncluded,
-    TResult Function(_Unreachable value)? unreachable,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_TooShort value)? tooShort,
+    TResult? Function(_NotIncluded value)? notIncluded,
+    TResult? Function(_Unreachable value)? unreachable,
+    TResult? Function(_Unknown value)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -156,59 +98,62 @@ mixin _$MastodonApiRestErrorType {
 abstract class $MastodonApiRestErrorTypeCopyWith<$Res> {
   factory $MastodonApiRestErrorTypeCopyWith(MastodonApiRestErrorType value,
           $Res Function(MastodonApiRestErrorType) then) =
-      _$MastodonApiRestErrorTypeCopyWithImpl<$Res>;
+      _$MastodonApiRestErrorTypeCopyWithImpl<$Res, MastodonApiRestErrorType>;
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class _$MastodonApiRestErrorTypeCopyWithImpl<$Res>
+class _$MastodonApiRestErrorTypeCopyWithImpl<$Res,
+        $Val extends MastodonApiRestErrorType>
     implements $MastodonApiRestErrorTypeCopyWith<$Res> {
   _$MastodonApiRestErrorTypeCopyWithImpl(this._value, this._then);
 
-  final MastodonApiRestErrorType _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiRestErrorType) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
     return _then(_value.copyWith(
-      stringValue: stringValue == freezed
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$InvalidGrantCopyWith<$Res>
+abstract class _$$InvalidGrantImplCopyWith<$Res>
     implements $MastodonApiRestErrorTypeCopyWith<$Res> {
-  factory _$InvalidGrantCopyWith(
-          _InvalidGrant value, $Res Function(_InvalidGrant) then) =
-      __$InvalidGrantCopyWithImpl<$Res>;
+  factory _$$InvalidGrantImplCopyWith(
+          _$InvalidGrantImpl value, $Res Function(_$InvalidGrantImpl) then) =
+      __$$InvalidGrantImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$InvalidGrantCopyWithImpl<$Res>
-    extends _$MastodonApiRestErrorTypeCopyWithImpl<$Res>
-    implements _$InvalidGrantCopyWith<$Res> {
-  __$InvalidGrantCopyWithImpl(
-      _InvalidGrant _value, $Res Function(_InvalidGrant) _then)
-      : super(_value, (v) => _then(v as _InvalidGrant));
+class __$$InvalidGrantImplCopyWithImpl<$Res>
+    extends _$MastodonApiRestErrorTypeCopyWithImpl<$Res, _$InvalidGrantImpl>
+    implements _$$InvalidGrantImplCopyWith<$Res> {
+  __$$InvalidGrantImplCopyWithImpl(
+      _$InvalidGrantImpl _value, $Res Function(_$InvalidGrantImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _InvalidGrant get _value => super._value as _InvalidGrant;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_InvalidGrant(
-      stringValue: stringValue == freezed
+    return _then(_$InvalidGrantImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -218,12 +163,12 @@ class __$InvalidGrantCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_InvalidGrant implements _InvalidGrant {
-  const _$_InvalidGrant(
+class _$InvalidGrantImpl implements _InvalidGrant {
+  const _$InvalidGrantImpl(
       {this.stringValue = MastodonApiRestErrorType.invalidGrantStringValue});
 
-  @JsonKey(defaultValue: MastodonApiRestErrorType.invalidGrantStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -232,10 +177,10 @@ class _$_InvalidGrant implements _InvalidGrant {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _InvalidGrant &&
+            other is _$InvalidGrantImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -245,8 +190,9 @@ class _$_InvalidGrant implements _InvalidGrant {
 
   @JsonKey(ignore: true)
   @override
-  _$InvalidGrantCopyWith<_InvalidGrant> get copyWith =>
-      __$InvalidGrantCopyWithImpl<_InvalidGrant>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$InvalidGrantImplCopyWith<_$InvalidGrantImpl> get copyWith =>
+      __$$InvalidGrantImplCopyWithImpl<_$InvalidGrantImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -265,13 +211,13 @@ class _$_InvalidGrant implements _InvalidGrant {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? invalidGrant,
-    TResult Function(String stringValue)? accessTokenRevoked,
-    TResult Function(String stringValue)? emailConfirmationRequired,
-    TResult Function(String stringValue)? tooShort,
-    TResult Function(String stringValue)? notIncluded,
-    TResult Function(String stringValue)? unreachable,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? invalidGrant,
+    TResult? Function(String stringValue)? accessTokenRevoked,
+    TResult? Function(String stringValue)? emailConfirmationRequired,
+    TResult? Function(String stringValue)? tooShort,
+    TResult? Function(String stringValue)? notIncluded,
+    TResult? Function(String stringValue)? unreachable,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return invalidGrant?.call(stringValue);
   }
@@ -312,14 +258,14 @@ class _$_InvalidGrant implements _InvalidGrant {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InvalidGrant value)? invalidGrant,
-    TResult Function(_AccessTokenRevoked value)? accessTokenRevoked,
-    TResult Function(_EmailConfirmationRequired value)?
+    TResult? Function(_InvalidGrant value)? invalidGrant,
+    TResult? Function(_AccessTokenRevoked value)? accessTokenRevoked,
+    TResult? Function(_EmailConfirmationRequired value)?
         emailConfirmationRequired,
-    TResult Function(_TooShort value)? tooShort,
-    TResult Function(_NotIncluded value)? notIncluded,
-    TResult Function(_Unreachable value)? unreachable,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_TooShort value)? tooShort,
+    TResult? Function(_NotIncluded value)? notIncluded,
+    TResult? Function(_Unreachable value)? unreachable,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return invalidGrant?.call(this);
   }
@@ -345,43 +291,43 @@ class _$_InvalidGrant implements _InvalidGrant {
 }
 
 abstract class _InvalidGrant implements MastodonApiRestErrorType {
-  const factory _InvalidGrant({String stringValue}) = _$_InvalidGrant;
+  const factory _InvalidGrant({final String stringValue}) = _$InvalidGrantImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$InvalidGrantCopyWith<_InvalidGrant> get copyWith =>
+  _$$InvalidGrantImplCopyWith<_$InvalidGrantImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$AccessTokenRevokedCopyWith<$Res>
+abstract class _$$AccessTokenRevokedImplCopyWith<$Res>
     implements $MastodonApiRestErrorTypeCopyWith<$Res> {
-  factory _$AccessTokenRevokedCopyWith(
-          _AccessTokenRevoked value, $Res Function(_AccessTokenRevoked) then) =
-      __$AccessTokenRevokedCopyWithImpl<$Res>;
+  factory _$$AccessTokenRevokedImplCopyWith(_$AccessTokenRevokedImpl value,
+          $Res Function(_$AccessTokenRevokedImpl) then) =
+      __$$AccessTokenRevokedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$AccessTokenRevokedCopyWithImpl<$Res>
-    extends _$MastodonApiRestErrorTypeCopyWithImpl<$Res>
-    implements _$AccessTokenRevokedCopyWith<$Res> {
-  __$AccessTokenRevokedCopyWithImpl(
-      _AccessTokenRevoked _value, $Res Function(_AccessTokenRevoked) _then)
-      : super(_value, (v) => _then(v as _AccessTokenRevoked));
+class __$$AccessTokenRevokedImplCopyWithImpl<$Res>
+    extends _$MastodonApiRestErrorTypeCopyWithImpl<$Res,
+        _$AccessTokenRevokedImpl>
+    implements _$$AccessTokenRevokedImplCopyWith<$Res> {
+  __$$AccessTokenRevokedImplCopyWithImpl(_$AccessTokenRevokedImpl _value,
+      $Res Function(_$AccessTokenRevokedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _AccessTokenRevoked get _value => super._value as _AccessTokenRevoked;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_AccessTokenRevoked(
-      stringValue: stringValue == freezed
+    return _then(_$AccessTokenRevokedImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -391,13 +337,13 @@ class __$AccessTokenRevokedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_AccessTokenRevoked implements _AccessTokenRevoked {
-  const _$_AccessTokenRevoked(
+class _$AccessTokenRevokedImpl implements _AccessTokenRevoked {
+  const _$AccessTokenRevokedImpl(
       {this.stringValue =
           MastodonApiRestErrorType.accessTokenRevokedStringValue});
 
-  @JsonKey(defaultValue: MastodonApiRestErrorType.accessTokenRevokedStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -406,10 +352,10 @@ class _$_AccessTokenRevoked implements _AccessTokenRevoked {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _AccessTokenRevoked &&
+            other is _$AccessTokenRevokedImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -419,8 +365,10 @@ class _$_AccessTokenRevoked implements _AccessTokenRevoked {
 
   @JsonKey(ignore: true)
   @override
-  _$AccessTokenRevokedCopyWith<_AccessTokenRevoked> get copyWith =>
-      __$AccessTokenRevokedCopyWithImpl<_AccessTokenRevoked>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AccessTokenRevokedImplCopyWith<_$AccessTokenRevokedImpl> get copyWith =>
+      __$$AccessTokenRevokedImplCopyWithImpl<_$AccessTokenRevokedImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -439,13 +387,13 @@ class _$_AccessTokenRevoked implements _AccessTokenRevoked {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? invalidGrant,
-    TResult Function(String stringValue)? accessTokenRevoked,
-    TResult Function(String stringValue)? emailConfirmationRequired,
-    TResult Function(String stringValue)? tooShort,
-    TResult Function(String stringValue)? notIncluded,
-    TResult Function(String stringValue)? unreachable,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? invalidGrant,
+    TResult? Function(String stringValue)? accessTokenRevoked,
+    TResult? Function(String stringValue)? emailConfirmationRequired,
+    TResult? Function(String stringValue)? tooShort,
+    TResult? Function(String stringValue)? notIncluded,
+    TResult? Function(String stringValue)? unreachable,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return accessTokenRevoked?.call(stringValue);
   }
@@ -486,14 +434,14 @@ class _$_AccessTokenRevoked implements _AccessTokenRevoked {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InvalidGrant value)? invalidGrant,
-    TResult Function(_AccessTokenRevoked value)? accessTokenRevoked,
-    TResult Function(_EmailConfirmationRequired value)?
+    TResult? Function(_InvalidGrant value)? invalidGrant,
+    TResult? Function(_AccessTokenRevoked value)? accessTokenRevoked,
+    TResult? Function(_EmailConfirmationRequired value)?
         emailConfirmationRequired,
-    TResult Function(_TooShort value)? tooShort,
-    TResult Function(_NotIncluded value)? notIncluded,
-    TResult Function(_Unreachable value)? unreachable,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_TooShort value)? tooShort,
+    TResult? Function(_NotIncluded value)? notIncluded,
+    TResult? Function(_Unreachable value)? unreachable,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return accessTokenRevoked?.call(this);
   }
@@ -519,45 +467,46 @@ class _$_AccessTokenRevoked implements _AccessTokenRevoked {
 }
 
 abstract class _AccessTokenRevoked implements MastodonApiRestErrorType {
-  const factory _AccessTokenRevoked({String stringValue}) =
-      _$_AccessTokenRevoked;
+  const factory _AccessTokenRevoked({final String stringValue}) =
+      _$AccessTokenRevokedImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$AccessTokenRevokedCopyWith<_AccessTokenRevoked> get copyWith =>
+  _$$AccessTokenRevokedImplCopyWith<_$AccessTokenRevokedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$EmailConfirmationRequiredCopyWith<$Res>
+abstract class _$$EmailConfirmationRequiredImplCopyWith<$Res>
     implements $MastodonApiRestErrorTypeCopyWith<$Res> {
-  factory _$EmailConfirmationRequiredCopyWith(_EmailConfirmationRequired value,
-          $Res Function(_EmailConfirmationRequired) then) =
-      __$EmailConfirmationRequiredCopyWithImpl<$Res>;
+  factory _$$EmailConfirmationRequiredImplCopyWith(
+          _$EmailConfirmationRequiredImpl value,
+          $Res Function(_$EmailConfirmationRequiredImpl) then) =
+      __$$EmailConfirmationRequiredImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$EmailConfirmationRequiredCopyWithImpl<$Res>
-    extends _$MastodonApiRestErrorTypeCopyWithImpl<$Res>
-    implements _$EmailConfirmationRequiredCopyWith<$Res> {
-  __$EmailConfirmationRequiredCopyWithImpl(_EmailConfirmationRequired _value,
-      $Res Function(_EmailConfirmationRequired) _then)
-      : super(_value, (v) => _then(v as _EmailConfirmationRequired));
+class __$$EmailConfirmationRequiredImplCopyWithImpl<$Res>
+    extends _$MastodonApiRestErrorTypeCopyWithImpl<$Res,
+        _$EmailConfirmationRequiredImpl>
+    implements _$$EmailConfirmationRequiredImplCopyWith<$Res> {
+  __$$EmailConfirmationRequiredImplCopyWithImpl(
+      _$EmailConfirmationRequiredImpl _value,
+      $Res Function(_$EmailConfirmationRequiredImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _EmailConfirmationRequired get _value =>
-      super._value as _EmailConfirmationRequired;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_EmailConfirmationRequired(
-      stringValue: stringValue == freezed
+    return _then(_$EmailConfirmationRequiredImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -567,15 +516,13 @@ class __$EmailConfirmationRequiredCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_EmailConfirmationRequired implements _EmailConfirmationRequired {
-  const _$_EmailConfirmationRequired(
+class _$EmailConfirmationRequiredImpl implements _EmailConfirmationRequired {
+  const _$EmailConfirmationRequiredImpl(
       {this.stringValue =
           MastodonApiRestErrorType.emailConfirmationRequiredStringValue});
 
-  @JsonKey(
-      defaultValue:
-          MastodonApiRestErrorType.emailConfirmationRequiredStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -584,10 +531,10 @@ class _$_EmailConfirmationRequired implements _EmailConfirmationRequired {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _EmailConfirmationRequired &&
+            other is _$EmailConfirmationRequiredImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -597,10 +544,10 @@ class _$_EmailConfirmationRequired implements _EmailConfirmationRequired {
 
   @JsonKey(ignore: true)
   @override
-  _$EmailConfirmationRequiredCopyWith<_EmailConfirmationRequired>
-      get copyWith =>
-          __$EmailConfirmationRequiredCopyWithImpl<_EmailConfirmationRequired>(
-              this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$EmailConfirmationRequiredImplCopyWith<_$EmailConfirmationRequiredImpl>
+      get copyWith => __$$EmailConfirmationRequiredImplCopyWithImpl<
+          _$EmailConfirmationRequiredImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -619,13 +566,13 @@ class _$_EmailConfirmationRequired implements _EmailConfirmationRequired {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? invalidGrant,
-    TResult Function(String stringValue)? accessTokenRevoked,
-    TResult Function(String stringValue)? emailConfirmationRequired,
-    TResult Function(String stringValue)? tooShort,
-    TResult Function(String stringValue)? notIncluded,
-    TResult Function(String stringValue)? unreachable,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? invalidGrant,
+    TResult? Function(String stringValue)? accessTokenRevoked,
+    TResult? Function(String stringValue)? emailConfirmationRequired,
+    TResult? Function(String stringValue)? tooShort,
+    TResult? Function(String stringValue)? notIncluded,
+    TResult? Function(String stringValue)? unreachable,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return emailConfirmationRequired?.call(stringValue);
   }
@@ -666,14 +613,14 @@ class _$_EmailConfirmationRequired implements _EmailConfirmationRequired {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InvalidGrant value)? invalidGrant,
-    TResult Function(_AccessTokenRevoked value)? accessTokenRevoked,
-    TResult Function(_EmailConfirmationRequired value)?
+    TResult? Function(_InvalidGrant value)? invalidGrant,
+    TResult? Function(_AccessTokenRevoked value)? accessTokenRevoked,
+    TResult? Function(_EmailConfirmationRequired value)?
         emailConfirmationRequired,
-    TResult Function(_TooShort value)? tooShort,
-    TResult Function(_NotIncluded value)? notIncluded,
-    TResult Function(_Unreachable value)? unreachable,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_TooShort value)? tooShort,
+    TResult? Function(_NotIncluded value)? notIncluded,
+    TResult? Function(_Unreachable value)? unreachable,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return emailConfirmationRequired?.call(this);
   }
@@ -699,42 +646,43 @@ class _$_EmailConfirmationRequired implements _EmailConfirmationRequired {
 }
 
 abstract class _EmailConfirmationRequired implements MastodonApiRestErrorType {
-  const factory _EmailConfirmationRequired({String stringValue}) =
-      _$_EmailConfirmationRequired;
+  const factory _EmailConfirmationRequired({final String stringValue}) =
+      _$EmailConfirmationRequiredImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$EmailConfirmationRequiredCopyWith<_EmailConfirmationRequired>
+  _$$EmailConfirmationRequiredImplCopyWith<_$EmailConfirmationRequiredImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$TooShortCopyWith<$Res>
+abstract class _$$TooShortImplCopyWith<$Res>
     implements $MastodonApiRestErrorTypeCopyWith<$Res> {
-  factory _$TooShortCopyWith(_TooShort value, $Res Function(_TooShort) then) =
-      __$TooShortCopyWithImpl<$Res>;
+  factory _$$TooShortImplCopyWith(
+          _$TooShortImpl value, $Res Function(_$TooShortImpl) then) =
+      __$$TooShortImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$TooShortCopyWithImpl<$Res>
-    extends _$MastodonApiRestErrorTypeCopyWithImpl<$Res>
-    implements _$TooShortCopyWith<$Res> {
-  __$TooShortCopyWithImpl(_TooShort _value, $Res Function(_TooShort) _then)
-      : super(_value, (v) => _then(v as _TooShort));
+class __$$TooShortImplCopyWithImpl<$Res>
+    extends _$MastodonApiRestErrorTypeCopyWithImpl<$Res, _$TooShortImpl>
+    implements _$$TooShortImplCopyWith<$Res> {
+  __$$TooShortImplCopyWithImpl(
+      _$TooShortImpl _value, $Res Function(_$TooShortImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _TooShort get _value => super._value as _TooShort;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_TooShort(
-      stringValue: stringValue == freezed
+    return _then(_$TooShortImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -744,12 +692,12 @@ class __$TooShortCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_TooShort implements _TooShort {
-  const _$_TooShort(
+class _$TooShortImpl implements _TooShort {
+  const _$TooShortImpl(
       {this.stringValue = MastodonApiRestErrorType.tooShortStringValue});
 
-  @JsonKey(defaultValue: MastodonApiRestErrorType.tooShortStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -758,10 +706,10 @@ class _$_TooShort implements _TooShort {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _TooShort &&
+            other is _$TooShortImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -771,8 +719,9 @@ class _$_TooShort implements _TooShort {
 
   @JsonKey(ignore: true)
   @override
-  _$TooShortCopyWith<_TooShort> get copyWith =>
-      __$TooShortCopyWithImpl<_TooShort>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$TooShortImplCopyWith<_$TooShortImpl> get copyWith =>
+      __$$TooShortImplCopyWithImpl<_$TooShortImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -791,13 +740,13 @@ class _$_TooShort implements _TooShort {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? invalidGrant,
-    TResult Function(String stringValue)? accessTokenRevoked,
-    TResult Function(String stringValue)? emailConfirmationRequired,
-    TResult Function(String stringValue)? tooShort,
-    TResult Function(String stringValue)? notIncluded,
-    TResult Function(String stringValue)? unreachable,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? invalidGrant,
+    TResult? Function(String stringValue)? accessTokenRevoked,
+    TResult? Function(String stringValue)? emailConfirmationRequired,
+    TResult? Function(String stringValue)? tooShort,
+    TResult? Function(String stringValue)? notIncluded,
+    TResult? Function(String stringValue)? unreachable,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return tooShort?.call(stringValue);
   }
@@ -838,14 +787,14 @@ class _$_TooShort implements _TooShort {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InvalidGrant value)? invalidGrant,
-    TResult Function(_AccessTokenRevoked value)? accessTokenRevoked,
-    TResult Function(_EmailConfirmationRequired value)?
+    TResult? Function(_InvalidGrant value)? invalidGrant,
+    TResult? Function(_AccessTokenRevoked value)? accessTokenRevoked,
+    TResult? Function(_EmailConfirmationRequired value)?
         emailConfirmationRequired,
-    TResult Function(_TooShort value)? tooShort,
-    TResult Function(_NotIncluded value)? notIncluded,
-    TResult Function(_Unreachable value)? unreachable,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_TooShort value)? tooShort,
+    TResult? Function(_NotIncluded value)? notIncluded,
+    TResult? Function(_Unreachable value)? unreachable,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return tooShort?.call(this);
   }
@@ -871,43 +820,42 @@ class _$_TooShort implements _TooShort {
 }
 
 abstract class _TooShort implements MastodonApiRestErrorType {
-  const factory _TooShort({String stringValue}) = _$_TooShort;
+  const factory _TooShort({final String stringValue}) = _$TooShortImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$TooShortCopyWith<_TooShort> get copyWith =>
+  _$$TooShortImplCopyWith<_$TooShortImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$NotIncludedCopyWith<$Res>
+abstract class _$$NotIncludedImplCopyWith<$Res>
     implements $MastodonApiRestErrorTypeCopyWith<$Res> {
-  factory _$NotIncludedCopyWith(
-          _NotIncluded value, $Res Function(_NotIncluded) then) =
-      __$NotIncludedCopyWithImpl<$Res>;
+  factory _$$NotIncludedImplCopyWith(
+          _$NotIncludedImpl value, $Res Function(_$NotIncludedImpl) then) =
+      __$$NotIncludedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$NotIncludedCopyWithImpl<$Res>
-    extends _$MastodonApiRestErrorTypeCopyWithImpl<$Res>
-    implements _$NotIncludedCopyWith<$Res> {
-  __$NotIncludedCopyWithImpl(
-      _NotIncluded _value, $Res Function(_NotIncluded) _then)
-      : super(_value, (v) => _then(v as _NotIncluded));
+class __$$NotIncludedImplCopyWithImpl<$Res>
+    extends _$MastodonApiRestErrorTypeCopyWithImpl<$Res, _$NotIncludedImpl>
+    implements _$$NotIncludedImplCopyWith<$Res> {
+  __$$NotIncludedImplCopyWithImpl(
+      _$NotIncludedImpl _value, $Res Function(_$NotIncludedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _NotIncluded get _value => super._value as _NotIncluded;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_NotIncluded(
-      stringValue: stringValue == freezed
+    return _then(_$NotIncludedImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -917,12 +865,12 @@ class __$NotIncludedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_NotIncluded implements _NotIncluded {
-  const _$_NotIncluded(
+class _$NotIncludedImpl implements _NotIncluded {
+  const _$NotIncludedImpl(
       {this.stringValue = MastodonApiRestErrorType.notIncludedStringValue});
 
-  @JsonKey(defaultValue: MastodonApiRestErrorType.notIncludedStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -931,10 +879,10 @@ class _$_NotIncluded implements _NotIncluded {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _NotIncluded &&
+            other is _$NotIncludedImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -944,8 +892,9 @@ class _$_NotIncluded implements _NotIncluded {
 
   @JsonKey(ignore: true)
   @override
-  _$NotIncludedCopyWith<_NotIncluded> get copyWith =>
-      __$NotIncludedCopyWithImpl<_NotIncluded>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$NotIncludedImplCopyWith<_$NotIncludedImpl> get copyWith =>
+      __$$NotIncludedImplCopyWithImpl<_$NotIncludedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -964,13 +913,13 @@ class _$_NotIncluded implements _NotIncluded {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? invalidGrant,
-    TResult Function(String stringValue)? accessTokenRevoked,
-    TResult Function(String stringValue)? emailConfirmationRequired,
-    TResult Function(String stringValue)? tooShort,
-    TResult Function(String stringValue)? notIncluded,
-    TResult Function(String stringValue)? unreachable,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? invalidGrant,
+    TResult? Function(String stringValue)? accessTokenRevoked,
+    TResult? Function(String stringValue)? emailConfirmationRequired,
+    TResult? Function(String stringValue)? tooShort,
+    TResult? Function(String stringValue)? notIncluded,
+    TResult? Function(String stringValue)? unreachable,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return notIncluded?.call(stringValue);
   }
@@ -1011,14 +960,14 @@ class _$_NotIncluded implements _NotIncluded {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InvalidGrant value)? invalidGrant,
-    TResult Function(_AccessTokenRevoked value)? accessTokenRevoked,
-    TResult Function(_EmailConfirmationRequired value)?
+    TResult? Function(_InvalidGrant value)? invalidGrant,
+    TResult? Function(_AccessTokenRevoked value)? accessTokenRevoked,
+    TResult? Function(_EmailConfirmationRequired value)?
         emailConfirmationRequired,
-    TResult Function(_TooShort value)? tooShort,
-    TResult Function(_NotIncluded value)? notIncluded,
-    TResult Function(_Unreachable value)? unreachable,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_TooShort value)? tooShort,
+    TResult? Function(_NotIncluded value)? notIncluded,
+    TResult? Function(_Unreachable value)? unreachable,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return notIncluded?.call(this);
   }
@@ -1044,43 +993,42 @@ class _$_NotIncluded implements _NotIncluded {
 }
 
 abstract class _NotIncluded implements MastodonApiRestErrorType {
-  const factory _NotIncluded({String stringValue}) = _$_NotIncluded;
+  const factory _NotIncluded({final String stringValue}) = _$NotIncludedImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$NotIncludedCopyWith<_NotIncluded> get copyWith =>
+  _$$NotIncludedImplCopyWith<_$NotIncludedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$UnreachableCopyWith<$Res>
+abstract class _$$UnreachableImplCopyWith<$Res>
     implements $MastodonApiRestErrorTypeCopyWith<$Res> {
-  factory _$UnreachableCopyWith(
-          _Unreachable value, $Res Function(_Unreachable) then) =
-      __$UnreachableCopyWithImpl<$Res>;
+  factory _$$UnreachableImplCopyWith(
+          _$UnreachableImpl value, $Res Function(_$UnreachableImpl) then) =
+      __$$UnreachableImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$UnreachableCopyWithImpl<$Res>
-    extends _$MastodonApiRestErrorTypeCopyWithImpl<$Res>
-    implements _$UnreachableCopyWith<$Res> {
-  __$UnreachableCopyWithImpl(
-      _Unreachable _value, $Res Function(_Unreachable) _then)
-      : super(_value, (v) => _then(v as _Unreachable));
+class __$$UnreachableImplCopyWithImpl<$Res>
+    extends _$MastodonApiRestErrorTypeCopyWithImpl<$Res, _$UnreachableImpl>
+    implements _$$UnreachableImplCopyWith<$Res> {
+  __$$UnreachableImplCopyWithImpl(
+      _$UnreachableImpl _value, $Res Function(_$UnreachableImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Unreachable get _value => super._value as _Unreachable;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Unreachable(
-      stringValue: stringValue == freezed
+    return _then(_$UnreachableImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1090,12 +1038,12 @@ class __$UnreachableCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Unreachable implements _Unreachable {
-  const _$_Unreachable(
+class _$UnreachableImpl implements _Unreachable {
+  const _$UnreachableImpl(
       {this.stringValue = MastodonApiRestErrorType.unreachableStringValue});
 
-  @JsonKey(defaultValue: MastodonApiRestErrorType.unreachableStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -1104,10 +1052,10 @@ class _$_Unreachable implements _Unreachable {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Unreachable &&
+            other is _$UnreachableImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -1117,8 +1065,9 @@ class _$_Unreachable implements _Unreachable {
 
   @JsonKey(ignore: true)
   @override
-  _$UnreachableCopyWith<_Unreachable> get copyWith =>
-      __$UnreachableCopyWithImpl<_Unreachable>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnreachableImplCopyWith<_$UnreachableImpl> get copyWith =>
+      __$$UnreachableImplCopyWithImpl<_$UnreachableImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1137,13 +1086,13 @@ class _$_Unreachable implements _Unreachable {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? invalidGrant,
-    TResult Function(String stringValue)? accessTokenRevoked,
-    TResult Function(String stringValue)? emailConfirmationRequired,
-    TResult Function(String stringValue)? tooShort,
-    TResult Function(String stringValue)? notIncluded,
-    TResult Function(String stringValue)? unreachable,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? invalidGrant,
+    TResult? Function(String stringValue)? accessTokenRevoked,
+    TResult? Function(String stringValue)? emailConfirmationRequired,
+    TResult? Function(String stringValue)? tooShort,
+    TResult? Function(String stringValue)? notIncluded,
+    TResult? Function(String stringValue)? unreachable,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return unreachable?.call(stringValue);
   }
@@ -1184,14 +1133,14 @@ class _$_Unreachable implements _Unreachable {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InvalidGrant value)? invalidGrant,
-    TResult Function(_AccessTokenRevoked value)? accessTokenRevoked,
-    TResult Function(_EmailConfirmationRequired value)?
+    TResult? Function(_InvalidGrant value)? invalidGrant,
+    TResult? Function(_AccessTokenRevoked value)? accessTokenRevoked,
+    TResult? Function(_EmailConfirmationRequired value)?
         emailConfirmationRequired,
-    TResult Function(_TooShort value)? tooShort,
-    TResult Function(_NotIncluded value)? notIncluded,
-    TResult Function(_Unreachable value)? unreachable,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_TooShort value)? tooShort,
+    TResult? Function(_NotIncluded value)? notIncluded,
+    TResult? Function(_Unreachable value)? unreachable,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return unreachable?.call(this);
   }
@@ -1217,41 +1166,42 @@ class _$_Unreachable implements _Unreachable {
 }
 
 abstract class _Unreachable implements MastodonApiRestErrorType {
-  const factory _Unreachable({String stringValue}) = _$_Unreachable;
+  const factory _Unreachable({final String stringValue}) = _$UnreachableImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$UnreachableCopyWith<_Unreachable> get copyWith =>
+  _$$UnreachableImplCopyWith<_$UnreachableImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$UnknownCopyWith<$Res>
+abstract class _$$UnknownImplCopyWith<$Res>
     implements $MastodonApiRestErrorTypeCopyWith<$Res> {
-  factory _$UnknownCopyWith(_Unknown value, $Res Function(_Unknown) then) =
-      __$UnknownCopyWithImpl<$Res>;
+  factory _$$UnknownImplCopyWith(
+          _$UnknownImpl value, $Res Function(_$UnknownImpl) then) =
+      __$$UnknownImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$UnknownCopyWithImpl<$Res>
-    extends _$MastodonApiRestErrorTypeCopyWithImpl<$Res>
-    implements _$UnknownCopyWith<$Res> {
-  __$UnknownCopyWithImpl(_Unknown _value, $Res Function(_Unknown) _then)
-      : super(_value, (v) => _then(v as _Unknown));
+class __$$UnknownImplCopyWithImpl<$Res>
+    extends _$MastodonApiRestErrorTypeCopyWithImpl<$Res, _$UnknownImpl>
+    implements _$$UnknownImplCopyWith<$Res> {
+  __$$UnknownImplCopyWithImpl(
+      _$UnknownImpl _value, $Res Function(_$UnknownImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Unknown get _value => super._value as _Unknown;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Unknown(
-      stringValue: stringValue == freezed
+    return _then(_$UnknownImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1261,8 +1211,8 @@ class __$UnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Unknown implements _Unknown {
-  const _$_Unknown({required this.stringValue});
+class _$UnknownImpl implements _Unknown {
+  const _$UnknownImpl({required this.stringValue});
 
   @override
   final String stringValue;
@@ -1273,10 +1223,10 @@ class _$_Unknown implements _Unknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Unknown &&
+            other is _$UnknownImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -1286,8 +1236,9 @@ class _$_Unknown implements _Unknown {
 
   @JsonKey(ignore: true)
   @override
-  _$UnknownCopyWith<_Unknown> get copyWith =>
-      __$UnknownCopyWithImpl<_Unknown>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnknownImplCopyWith<_$UnknownImpl> get copyWith =>
+      __$$UnknownImplCopyWithImpl<_$UnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1306,13 +1257,13 @@ class _$_Unknown implements _Unknown {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? invalidGrant,
-    TResult Function(String stringValue)? accessTokenRevoked,
-    TResult Function(String stringValue)? emailConfirmationRequired,
-    TResult Function(String stringValue)? tooShort,
-    TResult Function(String stringValue)? notIncluded,
-    TResult Function(String stringValue)? unreachable,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? invalidGrant,
+    TResult? Function(String stringValue)? accessTokenRevoked,
+    TResult? Function(String stringValue)? emailConfirmationRequired,
+    TResult? Function(String stringValue)? tooShort,
+    TResult? Function(String stringValue)? notIncluded,
+    TResult? Function(String stringValue)? unreachable,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return unknown?.call(stringValue);
   }
@@ -1353,14 +1304,14 @@ class _$_Unknown implements _Unknown {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InvalidGrant value)? invalidGrant,
-    TResult Function(_AccessTokenRevoked value)? accessTokenRevoked,
-    TResult Function(_EmailConfirmationRequired value)?
+    TResult? Function(_InvalidGrant value)? invalidGrant,
+    TResult? Function(_AccessTokenRevoked value)? accessTokenRevoked,
+    TResult? Function(_EmailConfirmationRequired value)?
         emailConfirmationRequired,
-    TResult Function(_TooShort value)? tooShort,
-    TResult Function(_NotIncluded value)? notIncluded,
-    TResult Function(_Unreachable value)? unreachable,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_TooShort value)? tooShort,
+    TResult? Function(_NotIncluded value)? notIncluded,
+    TResult? Function(_Unreachable value)? unreachable,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return unknown?.call(this);
   }
@@ -1386,12 +1337,12 @@ class _$_Unknown implements _Unknown {
 }
 
 abstract class _Unknown implements MastodonApiRestErrorType {
-  const factory _Unknown({required String stringValue}) = _$_Unknown;
+  const factory _Unknown({required final String stringValue}) = _$UnknownImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$UnknownCopyWith<_Unknown> get copyWith =>
+  _$$UnknownImplCopyWith<_$UnknownImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

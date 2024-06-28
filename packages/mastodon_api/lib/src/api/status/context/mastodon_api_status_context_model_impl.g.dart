@@ -48,9 +48,9 @@ class MastodonApiStatusContextAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiStatusContext _$$_MastodonApiStatusContextFromJson(
+_$MastodonApiStatusContextImpl _$$MastodonApiStatusContextImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiStatusContext(
+    _$MastodonApiStatusContextImpl(
       descendants: (json['descendants'] as List<dynamic>)
           .map((e) => MastodonApiStatus.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -59,8 +59,8 @@ _$_MastodonApiStatusContext _$$_MastodonApiStatusContextFromJson(
           .toList(),
     );
 
-Map<String, dynamic> _$$_MastodonApiStatusContextToJson(
-        _$_MastodonApiStatusContext instance) =>
+Map<String, dynamic> _$$MastodonApiStatusContextImplToJson(
+        _$MastodonApiStatusContextImpl instance) =>
     <String, dynamic>{
       'descendants': instance.descendants.map((e) => e.toJson()).toList(),
       'ancestors': instance.ancestors.map((e) => e.toJson()).toList(),

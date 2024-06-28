@@ -45,15 +45,15 @@ class UnifediApiCustomEmojiPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiCustomEmojiPleromaAdapter
-    _$$_UnifediApiCustomEmojiPleromaAdapterFromJson(
+_$UnifediApiCustomEmojiPleromaAdapterImpl
+    _$$UnifediApiCustomEmojiPleromaAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiCustomEmojiPleromaAdapter(
+        _$UnifediApiCustomEmojiPleromaAdapterImpl(
           PleromaApiCustomEmoji.fromJson(json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiCustomEmojiPleromaAdapterToJson(
-        _$_UnifediApiCustomEmojiPleromaAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiCustomEmojiPleromaAdapterImplToJson(
+        _$UnifediApiCustomEmojiPleromaAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

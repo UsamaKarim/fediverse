@@ -44,14 +44,14 @@ class PleromaApiAccessLevelAdapter extends TypeAdapter<PleromaApiAccessLevel> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiAccessLevel _$$_PleromaApiAccessLevelFromJson(
+_$PleromaApiAccessLevelImpl _$$PleromaApiAccessLevelImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiAccessLevel(
+    _$PleromaApiAccessLevelImpl(
       stringValue: json['string_value'] as String,
     );
 
-Map<String, dynamic> _$$_PleromaApiAccessLevelToJson(
-        _$_PleromaApiAccessLevel instance) =>
+Map<String, dynamic> _$$PleromaApiAccessLevelImplToJson(
+        _$PleromaApiAccessLevelImpl instance) =>
     <String, dynamic>{
       'string_value': instance.stringValue,
     };

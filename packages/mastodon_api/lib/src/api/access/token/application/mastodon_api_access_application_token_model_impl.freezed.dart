@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_access_application_token_model_impl.dart';
 
@@ -11,40 +12,12 @@ part of 'mastodon_api_access_application_token_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiAccessApplicationToken _$MastodonApiAccessApplicationTokenFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiAccessApplicationToken.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiAccessApplicationTokenTearOff {
-  const _$MastodonApiAccessApplicationTokenTearOff();
-
-  _MastodonApiAccessApplicationToken call(
-      {@HiveField(1)
-          required MastodonApiAccessScopes scopes,
-      @HiveField(2)
-          required MastodonApiClientApplication clientApplication,
-      @HiveField(3)
-      @JsonKey(name: 'oauth_token')
-          required MastodonApiOAuthToken oauthToken}) {
-    return _MastodonApiAccessApplicationToken(
-      scopes: scopes,
-      clientApplication: clientApplication,
-      oauthToken: oauthToken,
-    );
-  }
-
-  MastodonApiAccessApplicationToken fromJson(Map<String, Object?> json) {
-    return MastodonApiAccessApplicationToken.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiAccessApplicationToken =
-    _$MastodonApiAccessApplicationTokenTearOff();
 
 /// @nodoc
 mixin _$MastodonApiAccessApplicationToken {
@@ -68,15 +41,15 @@ abstract class $MastodonApiAccessApplicationTokenCopyWith<$Res> {
   factory $MastodonApiAccessApplicationTokenCopyWith(
           MastodonApiAccessApplicationToken value,
           $Res Function(MastodonApiAccessApplicationToken) then) =
-      _$MastodonApiAccessApplicationTokenCopyWithImpl<$Res>;
+      _$MastodonApiAccessApplicationTokenCopyWithImpl<$Res,
+          MastodonApiAccessApplicationToken>;
+  @useResult
   $Res call(
-      {@HiveField(1)
-          MastodonApiAccessScopes scopes,
-      @HiveField(2)
-          MastodonApiClientApplication clientApplication,
+      {@HiveField(1) MastodonApiAccessScopes scopes,
+      @HiveField(2) MastodonApiClientApplication clientApplication,
       @HiveField(3)
       @JsonKey(name: 'oauth_token')
-          MastodonApiOAuthToken oauthToken});
+      MastodonApiOAuthToken oauthToken});
 
   $MastodonApiAccessScopesCopyWith<$Res> get scopes;
   $MastodonApiClientApplicationCopyWith<$Res> get clientApplication;
@@ -84,75 +57,80 @@ abstract class $MastodonApiAccessApplicationTokenCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MastodonApiAccessApplicationTokenCopyWithImpl<$Res>
+class _$MastodonApiAccessApplicationTokenCopyWithImpl<$Res,
+        $Val extends MastodonApiAccessApplicationToken>
     implements $MastodonApiAccessApplicationTokenCopyWith<$Res> {
   _$MastodonApiAccessApplicationTokenCopyWithImpl(this._value, this._then);
 
-  final MastodonApiAccessApplicationToken _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiAccessApplicationToken) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? scopes = freezed,
-    Object? clientApplication = freezed,
-    Object? oauthToken = freezed,
+    Object? scopes = null,
+    Object? clientApplication = null,
+    Object? oauthToken = null,
   }) {
     return _then(_value.copyWith(
-      scopes: scopes == freezed
+      scopes: null == scopes
           ? _value.scopes
           : scopes // ignore: cast_nullable_to_non_nullable
               as MastodonApiAccessScopes,
-      clientApplication: clientApplication == freezed
+      clientApplication: null == clientApplication
           ? _value.clientApplication
           : clientApplication // ignore: cast_nullable_to_non_nullable
               as MastodonApiClientApplication,
-      oauthToken: oauthToken == freezed
+      oauthToken: null == oauthToken
           ? _value.oauthToken
           : oauthToken // ignore: cast_nullable_to_non_nullable
               as MastodonApiOAuthToken,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiAccessScopesCopyWith<$Res> get scopes {
     return $MastodonApiAccessScopesCopyWith<$Res>(_value.scopes, (value) {
-      return _then(_value.copyWith(scopes: value));
+      return _then(_value.copyWith(scopes: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiClientApplicationCopyWith<$Res> get clientApplication {
     return $MastodonApiClientApplicationCopyWith<$Res>(_value.clientApplication,
         (value) {
-      return _then(_value.copyWith(clientApplication: value));
+      return _then(_value.copyWith(clientApplication: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiOAuthTokenCopyWith<$Res> get oauthToken {
     return $MastodonApiOAuthTokenCopyWith<$Res>(_value.oauthToken, (value) {
-      return _then(_value.copyWith(oauthToken: value));
+      return _then(_value.copyWith(oauthToken: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiAccessApplicationTokenCopyWith<$Res>
+abstract class _$$MastodonApiAccessApplicationTokenImplCopyWith<$Res>
     implements $MastodonApiAccessApplicationTokenCopyWith<$Res> {
-  factory _$MastodonApiAccessApplicationTokenCopyWith(
-          _MastodonApiAccessApplicationToken value,
-          $Res Function(_MastodonApiAccessApplicationToken) then) =
-      __$MastodonApiAccessApplicationTokenCopyWithImpl<$Res>;
+  factory _$$MastodonApiAccessApplicationTokenImplCopyWith(
+          _$MastodonApiAccessApplicationTokenImpl value,
+          $Res Function(_$MastodonApiAccessApplicationTokenImpl) then) =
+      __$$MastodonApiAccessApplicationTokenImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(1)
-          MastodonApiAccessScopes scopes,
-      @HiveField(2)
-          MastodonApiClientApplication clientApplication,
+      {@HiveField(1) MastodonApiAccessScopes scopes,
+      @HiveField(2) MastodonApiClientApplication clientApplication,
       @HiveField(3)
       @JsonKey(name: 'oauth_token')
-          MastodonApiOAuthToken oauthToken});
+      MastodonApiOAuthToken oauthToken});
 
   @override
   $MastodonApiAccessScopesCopyWith<$Res> get scopes;
@@ -163,34 +141,32 @@ abstract class _$MastodonApiAccessApplicationTokenCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MastodonApiAccessApplicationTokenCopyWithImpl<$Res>
-    extends _$MastodonApiAccessApplicationTokenCopyWithImpl<$Res>
-    implements _$MastodonApiAccessApplicationTokenCopyWith<$Res> {
-  __$MastodonApiAccessApplicationTokenCopyWithImpl(
-      _MastodonApiAccessApplicationToken _value,
-      $Res Function(_MastodonApiAccessApplicationToken) _then)
-      : super(_value, (v) => _then(v as _MastodonApiAccessApplicationToken));
+class __$$MastodonApiAccessApplicationTokenImplCopyWithImpl<$Res>
+    extends _$MastodonApiAccessApplicationTokenCopyWithImpl<$Res,
+        _$MastodonApiAccessApplicationTokenImpl>
+    implements _$$MastodonApiAccessApplicationTokenImplCopyWith<$Res> {
+  __$$MastodonApiAccessApplicationTokenImplCopyWithImpl(
+      _$MastodonApiAccessApplicationTokenImpl _value,
+      $Res Function(_$MastodonApiAccessApplicationTokenImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiAccessApplicationToken get _value =>
-      super._value as _MastodonApiAccessApplicationToken;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? scopes = freezed,
-    Object? clientApplication = freezed,
-    Object? oauthToken = freezed,
+    Object? scopes = null,
+    Object? clientApplication = null,
+    Object? oauthToken = null,
   }) {
-    return _then(_MastodonApiAccessApplicationToken(
-      scopes: scopes == freezed
+    return _then(_$MastodonApiAccessApplicationTokenImpl(
+      scopes: null == scopes
           ? _value.scopes
           : scopes // ignore: cast_nullable_to_non_nullable
               as MastodonApiAccessScopes,
-      clientApplication: clientApplication == freezed
+      clientApplication: null == clientApplication
           ? _value.clientApplication
           : clientApplication // ignore: cast_nullable_to_non_nullable
               as MastodonApiClientApplication,
-      oauthToken: oauthToken == freezed
+      oauthToken: null == oauthToken
           ? _value.oauthToken
           : oauthToken // ignore: cast_nullable_to_non_nullable
               as MastodonApiOAuthToken,
@@ -200,17 +176,17 @@ class __$MastodonApiAccessApplicationTokenCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiAccessApplicationToken
+class _$MastodonApiAccessApplicationTokenImpl
     extends _MastodonApiAccessApplicationToken {
-  const _$_MastodonApiAccessApplicationToken(
+  const _$MastodonApiAccessApplicationTokenImpl(
       {@HiveField(1) required this.scopes,
       @HiveField(2) required this.clientApplication,
       @HiveField(3) @JsonKey(name: 'oauth_token') required this.oauthToken})
       : super._();
 
-  factory _$_MastodonApiAccessApplicationToken.fromJson(
+  factory _$MastodonApiAccessApplicationTokenImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_MastodonApiAccessApplicationTokenFromJson(json);
+      _$$MastodonApiAccessApplicationTokenImplFromJson(json);
 
   @override
   @HiveField(1)
@@ -229,10 +205,10 @@ class _$_MastodonApiAccessApplicationToken
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiAccessApplicationToken &&
+            other is _$MastodonApiAccessApplicationTokenImpl &&
             (identical(other.scopes, scopes) || other.scopes == scopes) &&
             (identical(other.clientApplication, clientApplication) ||
                 other.clientApplication == clientApplication) &&
@@ -240,39 +216,42 @@ class _$_MastodonApiAccessApplicationToken
                 other.oauthToken == oauthToken));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, scopes, clientApplication, oauthToken);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiAccessApplicationTokenCopyWith<
-          _MastodonApiAccessApplicationToken>
-      get copyWith => __$MastodonApiAccessApplicationTokenCopyWithImpl<
-          _MastodonApiAccessApplicationToken>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiAccessApplicationTokenImplCopyWith<
+          _$MastodonApiAccessApplicationTokenImpl>
+      get copyWith => __$$MastodonApiAccessApplicationTokenImplCopyWithImpl<
+          _$MastodonApiAccessApplicationTokenImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiAccessApplicationTokenToJson(this);
+    return _$$MastodonApiAccessApplicationTokenImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiAccessApplicationToken
     extends MastodonApiAccessApplicationToken {
   const factory _MastodonApiAccessApplicationToken(
-          {@HiveField(1)
-              required MastodonApiAccessScopes scopes,
+          {@HiveField(1) required final MastodonApiAccessScopes scopes,
           @HiveField(2)
-              required MastodonApiClientApplication clientApplication,
+          required final MastodonApiClientApplication clientApplication,
           @HiveField(3)
           @JsonKey(name: 'oauth_token')
-              required MastodonApiOAuthToken oauthToken}) =
-      _$_MastodonApiAccessApplicationToken;
+          required final MastodonApiOAuthToken oauthToken}) =
+      _$MastodonApiAccessApplicationTokenImpl;
   const _MastodonApiAccessApplicationToken._() : super._();
 
   factory _MastodonApiAccessApplicationToken.fromJson(
           Map<String, dynamic> json) =
-      _$_MastodonApiAccessApplicationToken.fromJson;
+      _$MastodonApiAccessApplicationTokenImpl.fromJson;
 
   @override
   @HiveField(1)
@@ -286,7 +265,7 @@ abstract class _MastodonApiAccessApplicationToken
   MastodonApiOAuthToken get oauthToken;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiAccessApplicationTokenCopyWith<
-          _MastodonApiAccessApplicationToken>
+  _$$MastodonApiAccessApplicationTokenImplCopyWith<
+          _$MastodonApiAccessApplicationTokenImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_push_subscription_model_impl.dart';
 
@@ -11,37 +12,12 @@ part of 'pleroma_api_push_subscription_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiPushSubscription _$PleromaApiPushSubscriptionFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiPushSubscription.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiPushSubscriptionTearOff {
-  const _$PleromaApiPushSubscriptionTearOff();
-
-  _PleromaApiPushSubscription call(
-      {@HiveField(0) required String id,
-      @HiveField(1) required String endpoint,
-      @HiveField(2) required PleromaApiPushSubscriptionAlerts alerts,
-      @HiveField(3) @JsonKey(name: 'server_key') required String serverKey}) {
-    return _PleromaApiPushSubscription(
-      id: id,
-      endpoint: endpoint,
-      alerts: alerts,
-      serverKey: serverKey,
-    );
-  }
-
-  PleromaApiPushSubscription fromJson(Map<String, Object?> json) {
-    return PleromaApiPushSubscription.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiPushSubscription = _$PleromaApiPushSubscriptionTearOff();
 
 /// @nodoc
 mixin _$PleromaApiPushSubscription {
@@ -66,7 +42,9 @@ mixin _$PleromaApiPushSubscription {
 abstract class $PleromaApiPushSubscriptionCopyWith<$Res> {
   factory $PleromaApiPushSubscriptionCopyWith(PleromaApiPushSubscription value,
           $Res Function(PleromaApiPushSubscription) then) =
-      _$PleromaApiPushSubscriptionCopyWithImpl<$Res>;
+      _$PleromaApiPushSubscriptionCopyWithImpl<$Res,
+          PleromaApiPushSubscription>;
+  @useResult
   $Res call(
       {@HiveField(0) String id,
       @HiveField(1) String endpoint,
@@ -77,58 +55,63 @@ abstract class $PleromaApiPushSubscriptionCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiPushSubscriptionCopyWithImpl<$Res>
+class _$PleromaApiPushSubscriptionCopyWithImpl<$Res,
+        $Val extends PleromaApiPushSubscription>
     implements $PleromaApiPushSubscriptionCopyWith<$Res> {
   _$PleromaApiPushSubscriptionCopyWithImpl(this._value, this._then);
 
-  final PleromaApiPushSubscription _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiPushSubscription) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? endpoint = freezed,
-    Object? alerts = freezed,
-    Object? serverKey = freezed,
+    Object? id = null,
+    Object? endpoint = null,
+    Object? alerts = null,
+    Object? serverKey = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      endpoint: endpoint == freezed
+      endpoint: null == endpoint
           ? _value.endpoint
           : endpoint // ignore: cast_nullable_to_non_nullable
               as String,
-      alerts: alerts == freezed
+      alerts: null == alerts
           ? _value.alerts
           : alerts // ignore: cast_nullable_to_non_nullable
               as PleromaApiPushSubscriptionAlerts,
-      serverKey: serverKey == freezed
+      serverKey: null == serverKey
           ? _value.serverKey
           : serverKey // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiPushSubscriptionAlertsCopyWith<$Res> get alerts {
     return $PleromaApiPushSubscriptionAlertsCopyWith<$Res>(_value.alerts,
         (value) {
-      return _then(_value.copyWith(alerts: value));
+      return _then(_value.copyWith(alerts: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiPushSubscriptionCopyWith<$Res>
+abstract class _$$PleromaApiPushSubscriptionImplCopyWith<$Res>
     implements $PleromaApiPushSubscriptionCopyWith<$Res> {
-  factory _$PleromaApiPushSubscriptionCopyWith(
-          _PleromaApiPushSubscription value,
-          $Res Function(_PleromaApiPushSubscription) then) =
-      __$PleromaApiPushSubscriptionCopyWithImpl<$Res>;
+  factory _$$PleromaApiPushSubscriptionImplCopyWith(
+          _$PleromaApiPushSubscriptionImpl value,
+          $Res Function(_$PleromaApiPushSubscriptionImpl) then) =
+      __$$PleromaApiPushSubscriptionImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) String id,
       @HiveField(1) String endpoint,
@@ -140,38 +123,37 @@ abstract class _$PleromaApiPushSubscriptionCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiPushSubscriptionCopyWithImpl<$Res>
-    extends _$PleromaApiPushSubscriptionCopyWithImpl<$Res>
-    implements _$PleromaApiPushSubscriptionCopyWith<$Res> {
-  __$PleromaApiPushSubscriptionCopyWithImpl(_PleromaApiPushSubscription _value,
-      $Res Function(_PleromaApiPushSubscription) _then)
-      : super(_value, (v) => _then(v as _PleromaApiPushSubscription));
+class __$$PleromaApiPushSubscriptionImplCopyWithImpl<$Res>
+    extends _$PleromaApiPushSubscriptionCopyWithImpl<$Res,
+        _$PleromaApiPushSubscriptionImpl>
+    implements _$$PleromaApiPushSubscriptionImplCopyWith<$Res> {
+  __$$PleromaApiPushSubscriptionImplCopyWithImpl(
+      _$PleromaApiPushSubscriptionImpl _value,
+      $Res Function(_$PleromaApiPushSubscriptionImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiPushSubscription get _value =>
-      super._value as _PleromaApiPushSubscription;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? endpoint = freezed,
-    Object? alerts = freezed,
-    Object? serverKey = freezed,
+    Object? id = null,
+    Object? endpoint = null,
+    Object? alerts = null,
+    Object? serverKey = null,
   }) {
-    return _then(_PleromaApiPushSubscription(
-      id: id == freezed
+    return _then(_$PleromaApiPushSubscriptionImpl(
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      endpoint: endpoint == freezed
+      endpoint: null == endpoint
           ? _value.endpoint
           : endpoint // ignore: cast_nullable_to_non_nullable
               as String,
-      alerts: alerts == freezed
+      alerts: null == alerts
           ? _value.alerts
           : alerts // ignore: cast_nullable_to_non_nullable
               as PleromaApiPushSubscriptionAlerts,
-      serverKey: serverKey == freezed
+      serverKey: null == serverKey
           ? _value.serverKey
           : serverKey // ignore: cast_nullable_to_non_nullable
               as String,
@@ -181,15 +163,16 @@ class __$PleromaApiPushSubscriptionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiPushSubscription implements _PleromaApiPushSubscription {
-  const _$_PleromaApiPushSubscription(
+class _$PleromaApiPushSubscriptionImpl implements _PleromaApiPushSubscription {
+  const _$PleromaApiPushSubscriptionImpl(
       {@HiveField(0) required this.id,
       @HiveField(1) required this.endpoint,
       @HiveField(2) required this.alerts,
       @HiveField(3) @JsonKey(name: 'server_key') required this.serverKey});
 
-  factory _$_PleromaApiPushSubscription.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiPushSubscriptionFromJson(json);
+  factory _$PleromaApiPushSubscriptionImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$PleromaApiPushSubscriptionImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -211,10 +194,10 @@ class _$_PleromaApiPushSubscription implements _PleromaApiPushSubscription {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiPushSubscription &&
+            other is _$PleromaApiPushSubscriptionImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.endpoint, endpoint) ||
                 other.endpoint == endpoint) &&
@@ -223,36 +206,37 @@ class _$_PleromaApiPushSubscription implements _PleromaApiPushSubscription {
                 other.serverKey == serverKey));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, id, endpoint, alerts, serverKey);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiPushSubscriptionCopyWith<_PleromaApiPushSubscription>
-      get copyWith => __$PleromaApiPushSubscriptionCopyWithImpl<
-          _PleromaApiPushSubscription>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiPushSubscriptionImplCopyWith<_$PleromaApiPushSubscriptionImpl>
+      get copyWith => __$$PleromaApiPushSubscriptionImplCopyWithImpl<
+          _$PleromaApiPushSubscriptionImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiPushSubscriptionToJson(this);
+    return _$$PleromaApiPushSubscriptionImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiPushSubscription
     implements PleromaApiPushSubscription {
   const factory _PleromaApiPushSubscription(
-      {@HiveField(0)
-          required String id,
-      @HiveField(1)
-          required String endpoint,
-      @HiveField(2)
-          required PleromaApiPushSubscriptionAlerts alerts,
+      {@HiveField(0) required final String id,
+      @HiveField(1) required final String endpoint,
+      @HiveField(2) required final PleromaApiPushSubscriptionAlerts alerts,
       @HiveField(3)
       @JsonKey(name: 'server_key')
-          required String serverKey}) = _$_PleromaApiPushSubscription;
+      required final String serverKey}) = _$PleromaApiPushSubscriptionImpl;
 
   factory _PleromaApiPushSubscription.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiPushSubscription.fromJson;
+      _$PleromaApiPushSubscriptionImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -269,6 +253,6 @@ abstract class _PleromaApiPushSubscription
   String get serverKey;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiPushSubscriptionCopyWith<_PleromaApiPushSubscription>
+  _$$PleromaApiPushSubscriptionImplCopyWith<_$PleromaApiPushSubscriptionImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

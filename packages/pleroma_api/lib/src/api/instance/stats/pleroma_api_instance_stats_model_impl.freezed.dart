@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_instance_stats_model_impl.dart';
 
@@ -11,35 +12,12 @@ part of 'pleroma_api_instance_stats_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiInstanceStats _$PleromaApiInstanceStatsFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiInstanceStats.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiInstanceStatsTearOff {
-  const _$PleromaApiInstanceStatsTearOff();
-
-  _PleromaApiInstanceStats call(
-      {@JsonKey(name: 'user_count') @HiveField(0) required int? userCount,
-      @JsonKey(name: 'status_count') @HiveField(1) required int? statusCount,
-      @JsonKey(name: 'domain_count') @HiveField(2) required int? domainCount}) {
-    return _PleromaApiInstanceStats(
-      userCount: userCount,
-      statusCount: statusCount,
-      domainCount: domainCount,
-    );
-  }
-
-  PleromaApiInstanceStats fromJson(Map<String, Object?> json) {
-    return PleromaApiInstanceStats.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiInstanceStats = _$PleromaApiInstanceStatsTearOff();
 
 /// @nodoc
 mixin _$PleromaApiInstanceStats {
@@ -63,7 +41,8 @@ mixin _$PleromaApiInstanceStats {
 abstract class $PleromaApiInstanceStatsCopyWith<$Res> {
   factory $PleromaApiInstanceStatsCopyWith(PleromaApiInstanceStats value,
           $Res Function(PleromaApiInstanceStats) then) =
-      _$PleromaApiInstanceStatsCopyWithImpl<$Res>;
+      _$PleromaApiInstanceStatsCopyWithImpl<$Res, PleromaApiInstanceStats>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'user_count') @HiveField(0) int? userCount,
       @JsonKey(name: 'status_count') @HiveField(1) int? statusCount,
@@ -71,14 +50,17 @@ abstract class $PleromaApiInstanceStatsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiInstanceStatsCopyWithImpl<$Res>
+class _$PleromaApiInstanceStatsCopyWithImpl<$Res,
+        $Val extends PleromaApiInstanceStats>
     implements $PleromaApiInstanceStatsCopyWith<$Res> {
   _$PleromaApiInstanceStatsCopyWithImpl(this._value, this._then);
 
-  final PleromaApiInstanceStats _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiInstanceStats) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? userCount = freezed,
@@ -86,29 +68,31 @@ class _$PleromaApiInstanceStatsCopyWithImpl<$Res>
     Object? domainCount = freezed,
   }) {
     return _then(_value.copyWith(
-      userCount: userCount == freezed
+      userCount: freezed == userCount
           ? _value.userCount
           : userCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      statusCount: statusCount == freezed
+      statusCount: freezed == statusCount
           ? _value.statusCount
           : statusCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      domainCount: domainCount == freezed
+      domainCount: freezed == domainCount
           ? _value.domainCount
           : domainCount // ignore: cast_nullable_to_non_nullable
               as int?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiInstanceStatsCopyWith<$Res>
+abstract class _$$PleromaApiInstanceStatsImplCopyWith<$Res>
     implements $PleromaApiInstanceStatsCopyWith<$Res> {
-  factory _$PleromaApiInstanceStatsCopyWith(_PleromaApiInstanceStats value,
-          $Res Function(_PleromaApiInstanceStats) then) =
-      __$PleromaApiInstanceStatsCopyWithImpl<$Res>;
+  factory _$$PleromaApiInstanceStatsImplCopyWith(
+          _$PleromaApiInstanceStatsImpl value,
+          $Res Function(_$PleromaApiInstanceStatsImpl) then) =
+      __$$PleromaApiInstanceStatsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'user_count') @HiveField(0) int? userCount,
       @JsonKey(name: 'status_count') @HiveField(1) int? statusCount,
@@ -116,33 +100,32 @@ abstract class _$PleromaApiInstanceStatsCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiInstanceStatsCopyWithImpl<$Res>
-    extends _$PleromaApiInstanceStatsCopyWithImpl<$Res>
-    implements _$PleromaApiInstanceStatsCopyWith<$Res> {
-  __$PleromaApiInstanceStatsCopyWithImpl(_PleromaApiInstanceStats _value,
-      $Res Function(_PleromaApiInstanceStats) _then)
-      : super(_value, (v) => _then(v as _PleromaApiInstanceStats));
+class __$$PleromaApiInstanceStatsImplCopyWithImpl<$Res>
+    extends _$PleromaApiInstanceStatsCopyWithImpl<$Res,
+        _$PleromaApiInstanceStatsImpl>
+    implements _$$PleromaApiInstanceStatsImplCopyWith<$Res> {
+  __$$PleromaApiInstanceStatsImplCopyWithImpl(
+      _$PleromaApiInstanceStatsImpl _value,
+      $Res Function(_$PleromaApiInstanceStatsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiInstanceStats get _value =>
-      super._value as _PleromaApiInstanceStats;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? userCount = freezed,
     Object? statusCount = freezed,
     Object? domainCount = freezed,
   }) {
-    return _then(_PleromaApiInstanceStats(
-      userCount: userCount == freezed
+    return _then(_$PleromaApiInstanceStatsImpl(
+      userCount: freezed == userCount
           ? _value.userCount
           : userCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      statusCount: statusCount == freezed
+      statusCount: freezed == statusCount
           ? _value.statusCount
           : statusCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      domainCount: domainCount == freezed
+      domainCount: freezed == domainCount
           ? _value.domainCount
           : domainCount // ignore: cast_nullable_to_non_nullable
               as int?,
@@ -152,14 +135,14 @@ class __$PleromaApiInstanceStatsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiInstanceStats implements _PleromaApiInstanceStats {
-  const _$_PleromaApiInstanceStats(
+class _$PleromaApiInstanceStatsImpl implements _PleromaApiInstanceStats {
+  const _$PleromaApiInstanceStatsImpl(
       {@JsonKey(name: 'user_count') @HiveField(0) required this.userCount,
       @JsonKey(name: 'status_count') @HiveField(1) required this.statusCount,
       @JsonKey(name: 'domain_count') @HiveField(2) required this.domainCount});
 
-  factory _$_PleromaApiInstanceStats.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiInstanceStatsFromJson(json);
+  factory _$PleromaApiInstanceStatsImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiInstanceStatsImplFromJson(json);
 
   @override
   @JsonKey(name: 'user_count')
@@ -180,10 +163,10 @@ class _$_PleromaApiInstanceStats implements _PleromaApiInstanceStats {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiInstanceStats &&
+            other is _$PleromaApiInstanceStatsImpl &&
             (identical(other.userCount, userCount) ||
                 other.userCount == userCount) &&
             (identical(other.statusCount, statusCount) ||
@@ -192,36 +175,38 @@ class _$_PleromaApiInstanceStats implements _PleromaApiInstanceStats {
                 other.domainCount == domainCount));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, userCount, statusCount, domainCount);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiInstanceStatsCopyWith<_PleromaApiInstanceStats> get copyWith =>
-      __$PleromaApiInstanceStatsCopyWithImpl<_PleromaApiInstanceStats>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiInstanceStatsImplCopyWith<_$PleromaApiInstanceStatsImpl>
+      get copyWith => __$$PleromaApiInstanceStatsImplCopyWithImpl<
+          _$PleromaApiInstanceStatsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiInstanceStatsToJson(this);
+    return _$$PleromaApiInstanceStatsImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiInstanceStats implements PleromaApiInstanceStats {
   const factory _PleromaApiInstanceStats(
-      {@JsonKey(name: 'user_count')
-      @HiveField(0)
-          required int? userCount,
+      {@JsonKey(name: 'user_count') @HiveField(0) required final int? userCount,
       @JsonKey(name: 'status_count')
       @HiveField(1)
-          required int? statusCount,
+      required final int? statusCount,
       @JsonKey(name: 'domain_count')
       @HiveField(2)
-          required int? domainCount}) = _$_PleromaApiInstanceStats;
+      required final int? domainCount}) = _$PleromaApiInstanceStatsImpl;
 
   factory _PleromaApiInstanceStats.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiInstanceStats.fromJson;
+      _$PleromaApiInstanceStatsImpl.fromJson;
 
   @override
   @JsonKey(name: 'user_count')
@@ -237,6 +222,6 @@ abstract class _PleromaApiInstanceStats implements PleromaApiInstanceStats {
   int? get domainCount;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiInstanceStatsCopyWith<_PleromaApiInstanceStats> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PleromaApiInstanceStatsImplCopyWith<_$PleromaApiInstanceStatsImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'url_query_arg_model.dart';
 
@@ -11,22 +12,7 @@ part of 'url_query_arg_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$UrlQueryArgTearOff {
-  const _$UrlQueryArgTearOff();
-
-  _UrlQueryArg call({required String key, required String value}) {
-    return _UrlQueryArg(
-      key: key,
-      value: value,
-    );
-  }
-}
-
-/// @nodoc
-const $UrlQueryArg = _$UrlQueryArgTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$UrlQueryArg {
@@ -42,67 +28,71 @@ mixin _$UrlQueryArg {
 abstract class $UrlQueryArgCopyWith<$Res> {
   factory $UrlQueryArgCopyWith(
           UrlQueryArg value, $Res Function(UrlQueryArg) then) =
-      _$UrlQueryArgCopyWithImpl<$Res>;
+      _$UrlQueryArgCopyWithImpl<$Res, UrlQueryArg>;
+  @useResult
   $Res call({String key, String value});
 }
 
 /// @nodoc
-class _$UrlQueryArgCopyWithImpl<$Res> implements $UrlQueryArgCopyWith<$Res> {
+class _$UrlQueryArgCopyWithImpl<$Res, $Val extends UrlQueryArg>
+    implements $UrlQueryArgCopyWith<$Res> {
   _$UrlQueryArgCopyWithImpl(this._value, this._then);
 
-  final UrlQueryArg _value;
   // ignore: unused_field
-  final $Res Function(UrlQueryArg) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? key = freezed,
-    Object? value = freezed,
+    Object? key = null,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      key: key == freezed
+      key: null == key
           ? _value.key
           : key // ignore: cast_nullable_to_non_nullable
               as String,
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UrlQueryArgCopyWith<$Res>
+abstract class _$$UrlQueryArgImplCopyWith<$Res>
     implements $UrlQueryArgCopyWith<$Res> {
-  factory _$UrlQueryArgCopyWith(
-          _UrlQueryArg value, $Res Function(_UrlQueryArg) then) =
-      __$UrlQueryArgCopyWithImpl<$Res>;
+  factory _$$UrlQueryArgImplCopyWith(
+          _$UrlQueryArgImpl value, $Res Function(_$UrlQueryArgImpl) then) =
+      __$$UrlQueryArgImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String key, String value});
 }
 
 /// @nodoc
-class __$UrlQueryArgCopyWithImpl<$Res> extends _$UrlQueryArgCopyWithImpl<$Res>
-    implements _$UrlQueryArgCopyWith<$Res> {
-  __$UrlQueryArgCopyWithImpl(
-      _UrlQueryArg _value, $Res Function(_UrlQueryArg) _then)
-      : super(_value, (v) => _then(v as _UrlQueryArg));
+class __$$UrlQueryArgImplCopyWithImpl<$Res>
+    extends _$UrlQueryArgCopyWithImpl<$Res, _$UrlQueryArgImpl>
+    implements _$$UrlQueryArgImplCopyWith<$Res> {
+  __$$UrlQueryArgImplCopyWithImpl(
+      _$UrlQueryArgImpl _value, $Res Function(_$UrlQueryArgImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UrlQueryArg get _value => super._value as _UrlQueryArg;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? key = freezed,
-    Object? value = freezed,
+    Object? key = null,
+    Object? value = null,
   }) {
-    return _then(_UrlQueryArg(
-      key: key == freezed
+    return _then(_$UrlQueryArgImpl(
+      key: null == key
           ? _value.key
           : key // ignore: cast_nullable_to_non_nullable
               as String,
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as String,
@@ -112,8 +102,8 @@ class __$UrlQueryArgCopyWithImpl<$Res> extends _$UrlQueryArgCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_UrlQueryArg implements _UrlQueryArg {
-  const _$_UrlQueryArg({required this.key, required this.value});
+class _$UrlQueryArgImpl implements _UrlQueryArg {
+  const _$UrlQueryArgImpl({required this.key, required this.value});
 
   @override
   final String key;
@@ -126,10 +116,10 @@ class _$_UrlQueryArg implements _UrlQueryArg {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UrlQueryArg &&
+            other is _$UrlQueryArgImpl &&
             (identical(other.key, key) || other.key == key) &&
             (identical(other.value, value) || other.value == value));
   }
@@ -139,13 +129,15 @@ class _$_UrlQueryArg implements _UrlQueryArg {
 
   @JsonKey(ignore: true)
   @override
-  _$UrlQueryArgCopyWith<_UrlQueryArg> get copyWith =>
-      __$UrlQueryArgCopyWithImpl<_UrlQueryArg>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UrlQueryArgImplCopyWith<_$UrlQueryArgImpl> get copyWith =>
+      __$$UrlQueryArgImplCopyWithImpl<_$UrlQueryArgImpl>(this, _$identity);
 }
 
 abstract class _UrlQueryArg implements UrlQueryArg {
-  const factory _UrlQueryArg({required String key, required String value}) =
-      _$_UrlQueryArg;
+  const factory _UrlQueryArg(
+      {required final String key,
+      required final String value}) = _$UrlQueryArgImpl;
 
   @override
   String get key;
@@ -153,6 +145,6 @@ abstract class _UrlQueryArg implements UrlQueryArg {
   String get value;
   @override
   @JsonKey(ignore: true)
-  _$UrlQueryArgCopyWith<_UrlQueryArg> get copyWith =>
+  _$$UrlQueryArgImplCopyWith<_$UrlQueryArgImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

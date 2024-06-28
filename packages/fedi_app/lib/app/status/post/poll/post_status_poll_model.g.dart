@@ -6,18 +6,19 @@ part of 'post_status_poll_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PostStatusPoll _$$_PostStatusPollFromJson(Map<String, dynamic> json) =>
-    _$_PostStatusPoll(
+_$PostStatusPollImpl _$$PostStatusPollImplFromJson(Map<String, dynamic> json) =>
+    _$PostStatusPollImpl(
       durationLength: json['duration_length'] == null
           ? null
-          : Duration(microseconds: json['duration_length'] as int),
+          : Duration(microseconds: (json['duration_length'] as num).toInt()),
       hideTotals: json['hide_totals'] as bool,
       multiple: json['multiple'] as bool,
       options:
           (json['options'] as List<dynamic>).map((e) => e as String).toList(),
     );
 
-Map<String, dynamic> _$$_PostStatusPollToJson(_$_PostStatusPoll instance) {
+Map<String, dynamic> _$$PostStatusPollImplToJson(
+    _$PostStatusPollImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

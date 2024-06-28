@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_push_subscription_keys_model_impl.dart';
 
@@ -11,34 +12,12 @@ part of 'mastodon_api_push_subscription_keys_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiPushSubscriptionKeys _$MastodonApiPushSubscriptionKeysFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiPushSubscriptionKeys.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiPushSubscriptionKeysTearOff {
-  const _$MastodonApiPushSubscriptionKeysTearOff();
-
-  _MastodonApiPushSubscriptionKeys call(
-      {@HiveField(0) required String p256dh,
-      @HiveField(1) required String auth}) {
-    return _MastodonApiPushSubscriptionKeys(
-      p256dh: p256dh,
-      auth: auth,
-    );
-  }
-
-  MastodonApiPushSubscriptionKeys fromJson(Map<String, Object?> json) {
-    return MastodonApiPushSubscriptionKeys.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiPushSubscriptionKeys =
-    _$MastodonApiPushSubscriptionKeysTearOff();
 
 /// @nodoc
 mixin _$MastodonApiPushSubscriptionKeys {
@@ -62,72 +41,76 @@ abstract class $MastodonApiPushSubscriptionKeysCopyWith<$Res> {
   factory $MastodonApiPushSubscriptionKeysCopyWith(
           MastodonApiPushSubscriptionKeys value,
           $Res Function(MastodonApiPushSubscriptionKeys) then) =
-      _$MastodonApiPushSubscriptionKeysCopyWithImpl<$Res>;
+      _$MastodonApiPushSubscriptionKeysCopyWithImpl<$Res,
+          MastodonApiPushSubscriptionKeys>;
+  @useResult
   $Res call({@HiveField(0) String p256dh, @HiveField(1) String auth});
 }
 
 /// @nodoc
-class _$MastodonApiPushSubscriptionKeysCopyWithImpl<$Res>
+class _$MastodonApiPushSubscriptionKeysCopyWithImpl<$Res,
+        $Val extends MastodonApiPushSubscriptionKeys>
     implements $MastodonApiPushSubscriptionKeysCopyWith<$Res> {
   _$MastodonApiPushSubscriptionKeysCopyWithImpl(this._value, this._then);
 
-  final MastodonApiPushSubscriptionKeys _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiPushSubscriptionKeys) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? p256dh = freezed,
-    Object? auth = freezed,
+    Object? p256dh = null,
+    Object? auth = null,
   }) {
     return _then(_value.copyWith(
-      p256dh: p256dh == freezed
+      p256dh: null == p256dh
           ? _value.p256dh
           : p256dh // ignore: cast_nullable_to_non_nullable
               as String,
-      auth: auth == freezed
+      auth: null == auth
           ? _value.auth
           : auth // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiPushSubscriptionKeysCopyWith<$Res>
+abstract class _$$MastodonApiPushSubscriptionKeysImplCopyWith<$Res>
     implements $MastodonApiPushSubscriptionKeysCopyWith<$Res> {
-  factory _$MastodonApiPushSubscriptionKeysCopyWith(
-          _MastodonApiPushSubscriptionKeys value,
-          $Res Function(_MastodonApiPushSubscriptionKeys) then) =
-      __$MastodonApiPushSubscriptionKeysCopyWithImpl<$Res>;
+  factory _$$MastodonApiPushSubscriptionKeysImplCopyWith(
+          _$MastodonApiPushSubscriptionKeysImpl value,
+          $Res Function(_$MastodonApiPushSubscriptionKeysImpl) then) =
+      __$$MastodonApiPushSubscriptionKeysImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) String p256dh, @HiveField(1) String auth});
 }
 
 /// @nodoc
-class __$MastodonApiPushSubscriptionKeysCopyWithImpl<$Res>
-    extends _$MastodonApiPushSubscriptionKeysCopyWithImpl<$Res>
-    implements _$MastodonApiPushSubscriptionKeysCopyWith<$Res> {
-  __$MastodonApiPushSubscriptionKeysCopyWithImpl(
-      _MastodonApiPushSubscriptionKeys _value,
-      $Res Function(_MastodonApiPushSubscriptionKeys) _then)
-      : super(_value, (v) => _then(v as _MastodonApiPushSubscriptionKeys));
+class __$$MastodonApiPushSubscriptionKeysImplCopyWithImpl<$Res>
+    extends _$MastodonApiPushSubscriptionKeysCopyWithImpl<$Res,
+        _$MastodonApiPushSubscriptionKeysImpl>
+    implements _$$MastodonApiPushSubscriptionKeysImplCopyWith<$Res> {
+  __$$MastodonApiPushSubscriptionKeysImplCopyWithImpl(
+      _$MastodonApiPushSubscriptionKeysImpl _value,
+      $Res Function(_$MastodonApiPushSubscriptionKeysImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiPushSubscriptionKeys get _value =>
-      super._value as _MastodonApiPushSubscriptionKeys;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? p256dh = freezed,
-    Object? auth = freezed,
+    Object? p256dh = null,
+    Object? auth = null,
   }) {
-    return _then(_MastodonApiPushSubscriptionKeys(
-      p256dh: p256dh == freezed
+    return _then(_$MastodonApiPushSubscriptionKeysImpl(
+      p256dh: null == p256dh
           ? _value.p256dh
           : p256dh // ignore: cast_nullable_to_non_nullable
               as String,
-      auth: auth == freezed
+      auth: null == auth
           ? _value.auth
           : auth // ignore: cast_nullable_to_non_nullable
               as String,
@@ -137,24 +120,23 @@ class __$MastodonApiPushSubscriptionKeysCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiPushSubscriptionKeys
+class _$MastodonApiPushSubscriptionKeysImpl
     implements _MastodonApiPushSubscriptionKeys {
-  const _$_MastodonApiPushSubscriptionKeys(
+  const _$MastodonApiPushSubscriptionKeysImpl(
       {@HiveField(0) required this.p256dh, @HiveField(1) required this.auth});
 
-  factory _$_MastodonApiPushSubscriptionKeys.fromJson(
+  factory _$MastodonApiPushSubscriptionKeysImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_MastodonApiPushSubscriptionKeysFromJson(json);
-
-  @override
+      _$$MastodonApiPushSubscriptionKeysImplFromJson(json);
 
   /// User agent public key.
   /// Base64 encoded string of public key of ECDH key using prime256v1 curve.
+  @override
   @HiveField(0)
   final String p256dh;
-  @override
 
   /// Auth secret. Base64 encoded string of 16 bytes of random data.
+  @override
   @HiveField(1)
   final String auth;
 
@@ -164,37 +146,43 @@ class _$_MastodonApiPushSubscriptionKeys
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiPushSubscriptionKeys &&
+            other is _$MastodonApiPushSubscriptionKeysImpl &&
             (identical(other.p256dh, p256dh) || other.p256dh == p256dh) &&
             (identical(other.auth, auth) || other.auth == auth));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, p256dh, auth);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiPushSubscriptionKeysCopyWith<_MastodonApiPushSubscriptionKeys>
-      get copyWith => __$MastodonApiPushSubscriptionKeysCopyWithImpl<
-          _MastodonApiPushSubscriptionKeys>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiPushSubscriptionKeysImplCopyWith<
+          _$MastodonApiPushSubscriptionKeysImpl>
+      get copyWith => __$$MastodonApiPushSubscriptionKeysImplCopyWithImpl<
+          _$MastodonApiPushSubscriptionKeysImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiPushSubscriptionKeysToJson(this);
+    return _$$MastodonApiPushSubscriptionKeysImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiPushSubscriptionKeys
     implements MastodonApiPushSubscriptionKeys {
   const factory _MastodonApiPushSubscriptionKeys(
-      {@HiveField(0) required String p256dh,
-      @HiveField(1) required String auth}) = _$_MastodonApiPushSubscriptionKeys;
+          {@HiveField(0) required final String p256dh,
+          @HiveField(1) required final String auth}) =
+      _$MastodonApiPushSubscriptionKeysImpl;
 
   factory _MastodonApiPushSubscriptionKeys.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiPushSubscriptionKeys.fromJson;
+      _$MastodonApiPushSubscriptionKeysImpl.fromJson;
 
   @override
 
@@ -209,6 +197,7 @@ abstract class _MastodonApiPushSubscriptionKeys
   String get auth;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiPushSubscriptionKeysCopyWith<_MastodonApiPushSubscriptionKeys>
+  _$$MastodonApiPushSubscriptionKeysImplCopyWith<
+          _$MastodonApiPushSubscriptionKeysImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

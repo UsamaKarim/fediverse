@@ -63,10 +63,10 @@ class UnifediApiPushSubscriptionAlertsAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiPushSubscribeRequestDataAlerts
-    _$$_UnifediApiPushSubscribeRequestDataAlertsFromJson(
+_$UnifediApiPushSubscribeRequestDataAlertsImpl
+    _$$UnifediApiPushSubscribeRequestDataAlertsImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiPushSubscribeRequestDataAlerts(
+        _$UnifediApiPushSubscribeRequestDataAlertsImpl(
           favourite: json['favourite'] as bool?,
           follow: json['follow'] as bool?,
           mention: json['mention'] as bool?,
@@ -76,8 +76,8 @@ _$_UnifediApiPushSubscribeRequestDataAlerts
           emojiReaction: json['unifedi:emoji_reaction'] as bool?,
         );
 
-Map<String, dynamic> _$$_UnifediApiPushSubscribeRequestDataAlertsToJson(
-    _$_UnifediApiPushSubscribeRequestDataAlerts instance) {
+Map<String, dynamic> _$$UnifediApiPushSubscribeRequestDataAlertsImplToJson(
+    _$UnifediApiPushSubscribeRequestDataAlertsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

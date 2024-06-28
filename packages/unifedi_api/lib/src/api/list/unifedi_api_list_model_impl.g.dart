@@ -50,14 +50,15 @@ class UnifediApiListAdapter extends TypeAdapter<UnifediApiList> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiList _$$_UnifediApiListFromJson(Map<String, dynamic> json) =>
-    _$_UnifediApiList(
+_$UnifediApiListImpl _$$UnifediApiListImplFromJson(Map<String, dynamic> json) =>
+    _$UnifediApiListImpl(
       id: json['id'] as String,
       title: json['title'] as String,
       repliesPolicy: json['replies_policy'] as String?,
     );
 
-Map<String, dynamic> _$$_UnifediApiListToJson(_$_UnifediApiList instance) {
+Map<String, dynamic> _$$UnifediApiListImplToJson(
+    _$UnifediApiListImpl instance) {
   final val = <String, dynamic>{
     'id': instance.id,
     'title': instance.title,

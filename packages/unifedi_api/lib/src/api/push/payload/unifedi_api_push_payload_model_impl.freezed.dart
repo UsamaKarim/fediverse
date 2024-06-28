@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_push_payload_model_impl.dart';
 
@@ -11,46 +12,12 @@ part of 'unifedi_api_push_payload_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiPushPayload _$UnifediApiPushPayloadFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiPushPayload.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiPushPayloadTearOff {
-  const _$UnifediApiPushPayloadTearOff();
-
-  _UnifediApiPushPayload call(
-      {@HiveField(0)
-      @JsonKey(name: 'notification_id')
-          required String notificationId,
-      @HiveField(1)
-      @JsonKey(name: 'notification_type')
-          required String notificationType,
-      @HiveField(2)
-          required String? title,
-      @HiveField(3)
-          required String? body,
-      @HiveField(4)
-          required String? icon}) {
-    return _UnifediApiPushPayload(
-      notificationId: notificationId,
-      notificationType: notificationType,
-      title: title,
-      body: body,
-      icon: icon,
-    );
-  }
-
-  UnifediApiPushPayload fromJson(Map<String, Object?> json) {
-    return UnifediApiPushPayload.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiPushPayload = _$UnifediApiPushPayloadTearOff();
 
 /// @nodoc
 mixin _$UnifediApiPushPayload {
@@ -77,7 +44,8 @@ mixin _$UnifediApiPushPayload {
 abstract class $UnifediApiPushPayloadCopyWith<$Res> {
   factory $UnifediApiPushPayloadCopyWith(UnifediApiPushPayload value,
           $Res Function(UnifediApiPushPayload) then) =
-      _$UnifediApiPushPayloadCopyWithImpl<$Res>;
+      _$UnifediApiPushPayloadCopyWithImpl<$Res, UnifediApiPushPayload>;
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'notification_id') String notificationId,
       @HiveField(1) @JsonKey(name: 'notification_type') String notificationType,
@@ -87,54 +55,59 @@ abstract class $UnifediApiPushPayloadCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UnifediApiPushPayloadCopyWithImpl<$Res>
+class _$UnifediApiPushPayloadCopyWithImpl<$Res,
+        $Val extends UnifediApiPushPayload>
     implements $UnifediApiPushPayloadCopyWith<$Res> {
   _$UnifediApiPushPayloadCopyWithImpl(this._value, this._then);
 
-  final UnifediApiPushPayload _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiPushPayload) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? notificationId = freezed,
-    Object? notificationType = freezed,
+    Object? notificationId = null,
+    Object? notificationType = null,
     Object? title = freezed,
     Object? body = freezed,
     Object? icon = freezed,
   }) {
     return _then(_value.copyWith(
-      notificationId: notificationId == freezed
+      notificationId: null == notificationId
           ? _value.notificationId
           : notificationId // ignore: cast_nullable_to_non_nullable
               as String,
-      notificationType: notificationType == freezed
+      notificationType: null == notificationType
           ? _value.notificationType
           : notificationType // ignore: cast_nullable_to_non_nullable
               as String,
-      title: title == freezed
+      title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
-      body: body == freezed
+      body: freezed == body
           ? _value.body
           : body // ignore: cast_nullable_to_non_nullable
               as String?,
-      icon: icon == freezed
+      icon: freezed == icon
           ? _value.icon
           : icon // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiPushPayloadCopyWith<$Res>
+abstract class _$$UnifediApiPushPayloadImplCopyWith<$Res>
     implements $UnifediApiPushPayloadCopyWith<$Res> {
-  factory _$UnifediApiPushPayloadCopyWith(_UnifediApiPushPayload value,
-          $Res Function(_UnifediApiPushPayload) then) =
-      __$UnifediApiPushPayloadCopyWithImpl<$Res>;
+  factory _$$UnifediApiPushPayloadImplCopyWith(
+          _$UnifediApiPushPayloadImpl value,
+          $Res Function(_$UnifediApiPushPayloadImpl) then) =
+      __$$UnifediApiPushPayloadImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'notification_id') String notificationId,
       @HiveField(1) @JsonKey(name: 'notification_type') String notificationType,
@@ -144,42 +117,41 @@ abstract class _$UnifediApiPushPayloadCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiPushPayloadCopyWithImpl<$Res>
-    extends _$UnifediApiPushPayloadCopyWithImpl<$Res>
-    implements _$UnifediApiPushPayloadCopyWith<$Res> {
-  __$UnifediApiPushPayloadCopyWithImpl(_UnifediApiPushPayload _value,
-      $Res Function(_UnifediApiPushPayload) _then)
-      : super(_value, (v) => _then(v as _UnifediApiPushPayload));
+class __$$UnifediApiPushPayloadImplCopyWithImpl<$Res>
+    extends _$UnifediApiPushPayloadCopyWithImpl<$Res,
+        _$UnifediApiPushPayloadImpl>
+    implements _$$UnifediApiPushPayloadImplCopyWith<$Res> {
+  __$$UnifediApiPushPayloadImplCopyWithImpl(_$UnifediApiPushPayloadImpl _value,
+      $Res Function(_$UnifediApiPushPayloadImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiPushPayload get _value => super._value as _UnifediApiPushPayload;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? notificationId = freezed,
-    Object? notificationType = freezed,
+    Object? notificationId = null,
+    Object? notificationType = null,
     Object? title = freezed,
     Object? body = freezed,
     Object? icon = freezed,
   }) {
-    return _then(_UnifediApiPushPayload(
-      notificationId: notificationId == freezed
+    return _then(_$UnifediApiPushPayloadImpl(
+      notificationId: null == notificationId
           ? _value.notificationId
           : notificationId // ignore: cast_nullable_to_non_nullable
               as String,
-      notificationType: notificationType == freezed
+      notificationType: null == notificationType
           ? _value.notificationType
           : notificationType // ignore: cast_nullable_to_non_nullable
               as String,
-      title: title == freezed
+      title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
-      body: body == freezed
+      body: freezed == body
           ? _value.body
           : body // ignore: cast_nullable_to_non_nullable
               as String?,
-      icon: icon == freezed
+      icon: freezed == icon
           ? _value.icon
           : icon // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -189,23 +161,20 @@ class __$UnifediApiPushPayloadCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiPushPayload implements _UnifediApiPushPayload {
-  const _$_UnifediApiPushPayload(
+class _$UnifediApiPushPayloadImpl implements _UnifediApiPushPayload {
+  const _$UnifediApiPushPayloadImpl(
       {@HiveField(0)
       @JsonKey(name: 'notification_id')
-          required this.notificationId,
+      required this.notificationId,
       @HiveField(1)
       @JsonKey(name: 'notification_type')
-          required this.notificationType,
-      @HiveField(2)
-          required this.title,
-      @HiveField(3)
-          required this.body,
-      @HiveField(4)
-          required this.icon});
+      required this.notificationType,
+      @HiveField(2) required this.title,
+      @HiveField(3) required this.body,
+      @HiveField(4) required this.icon});
 
-  factory _$_UnifediApiPushPayload.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiPushPayloadFromJson(json);
+  factory _$UnifediApiPushPayloadImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiPushPayloadImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -231,10 +200,10 @@ class _$_UnifediApiPushPayload implements _UnifediApiPushPayload {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiPushPayload &&
+            other is _$UnifediApiPushPayloadImpl &&
             (identical(other.notificationId, notificationId) ||
                 other.notificationId == notificationId) &&
             (identical(other.notificationType, notificationType) ||
@@ -244,19 +213,23 @@ class _$_UnifediApiPushPayload implements _UnifediApiPushPayload {
             (identical(other.icon, icon) || other.icon == icon));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType, notificationId, notificationType, title, body, icon);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiPushPayloadCopyWith<_UnifediApiPushPayload> get copyWith =>
-      __$UnifediApiPushPayloadCopyWithImpl<_UnifediApiPushPayload>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiPushPayloadImplCopyWith<_$UnifediApiPushPayloadImpl>
+      get copyWith => __$$UnifediApiPushPayloadImplCopyWithImpl<
+          _$UnifediApiPushPayloadImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiPushPayloadToJson(this);
+    return _$$UnifediApiPushPayloadImplToJson(
+      this,
+    );
   }
 }
 
@@ -264,19 +237,16 @@ abstract class _UnifediApiPushPayload implements UnifediApiPushPayload {
   const factory _UnifediApiPushPayload(
       {@HiveField(0)
       @JsonKey(name: 'notification_id')
-          required String notificationId,
+      required final String notificationId,
       @HiveField(1)
       @JsonKey(name: 'notification_type')
-          required String notificationType,
-      @HiveField(2)
-          required String? title,
-      @HiveField(3)
-          required String? body,
-      @HiveField(4)
-          required String? icon}) = _$_UnifediApiPushPayload;
+      required final String notificationType,
+      @HiveField(2) required final String? title,
+      @HiveField(3) required final String? body,
+      @HiveField(4) required final String? icon}) = _$UnifediApiPushPayloadImpl;
 
   factory _UnifediApiPushPayload.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiPushPayload.fromJson;
+      _$UnifediApiPushPayloadImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -297,6 +267,6 @@ abstract class _UnifediApiPushPayload implements UnifediApiPushPayload {
   String? get icon;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiPushPayloadCopyWith<_UnifediApiPushPayload> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$UnifediApiPushPayloadImplCopyWith<_$UnifediApiPushPayloadImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

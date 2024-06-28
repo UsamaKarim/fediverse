@@ -56,9 +56,9 @@ class PleromaApiPushPayloadAdapter extends TypeAdapter<PleromaApiPushPayload> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiPushPayload _$$_PleromaApiPushPayloadFromJson(
+_$PleromaApiPushPayloadImpl _$$PleromaApiPushPayloadImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiPushPayload(
+    _$PleromaApiPushPayloadImpl(
       notificationId: json['notification_id'] as String,
       notificationType: json['notification_type'] as String,
       title: json['title'] as String?,
@@ -66,8 +66,8 @@ _$_PleromaApiPushPayload _$$_PleromaApiPushPayloadFromJson(
       icon: json['icon'] as String?,
     );
 
-Map<String, dynamic> _$$_PleromaApiPushPayloadToJson(
-    _$_PleromaApiPushPayload instance) {
+Map<String, dynamic> _$$PleromaApiPushPayloadImplToJson(
+    _$PleromaApiPushPayloadImpl instance) {
   final val = <String, dynamic>{
     'notification_id': instance.notificationId,
     'notification_type': instance.notificationType,

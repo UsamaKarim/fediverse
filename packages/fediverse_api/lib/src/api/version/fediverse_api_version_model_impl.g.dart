@@ -6,18 +6,18 @@ part of 'fediverse_api_version_model_impl.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_FediverseApiVersion _$$_FediverseApiVersionFromJson(
+_$FediverseApiVersionImpl _$$FediverseApiVersionImplFromJson(
         Map<String, dynamic> json) =>
-    _$_FediverseApiVersion(
-      major: json['major'] as int,
-      minor: json['minor'] as int?,
-      patch: json['patch'] as int?,
-      buildNumber: json['buildNumber'] as int?,
+    _$FediverseApiVersionImpl(
+      major: (json['major'] as num).toInt(),
+      minor: (json['minor'] as num?)?.toInt(),
+      patch: (json['patch'] as num?)?.toInt(),
+      buildNumber: (json['buildNumber'] as num?)?.toInt(),
       commit: json['commit'] as String?,
     );
 
-Map<String, dynamic> _$$_FediverseApiVersionToJson(
-    _$_FediverseApiVersion instance) {
+Map<String, dynamic> _$$FediverseApiVersionImplToJson(
+    _$FediverseApiVersionImpl instance) {
   final val = <String, dynamic>{
     'major': instance.major,
   };

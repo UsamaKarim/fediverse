@@ -51,25 +51,25 @@ class UnifediApiMediaAttachmentMetaAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiMediaAttachmentMeta _$$_UnifediApiMediaAttachmentMetaFromJson(
-        Map<String, dynamic> json) =>
-    _$_UnifediApiMediaAttachmentMeta(
-      focus: json['focus'] == null
-          ? null
-          : UnifediApiMediaAttachmentFocus.fromJson(
-              json['focus'] as Map<String, dynamic>),
-      original: json['original'] == null
-          ? null
-          : UnifediApiMediaAttachmentSize.fromJson(
-              json['original'] as Map<String, dynamic>),
-      small: json['small'] == null
-          ? null
-          : UnifediApiMediaAttachmentSize.fromJson(
-              json['small'] as Map<String, dynamic>),
-    );
+_$UnifediApiMediaAttachmentMetaImpl
+    _$$UnifediApiMediaAttachmentMetaImplFromJson(Map<String, dynamic> json) =>
+        _$UnifediApiMediaAttachmentMetaImpl(
+          focus: json['focus'] == null
+              ? null
+              : UnifediApiMediaAttachmentFocus.fromJson(
+                  json['focus'] as Map<String, dynamic>),
+          original: json['original'] == null
+              ? null
+              : UnifediApiMediaAttachmentSize.fromJson(
+                  json['original'] as Map<String, dynamic>),
+          small: json['small'] == null
+              ? null
+              : UnifediApiMediaAttachmentSize.fromJson(
+                  json['small'] as Map<String, dynamic>),
+        );
 
-Map<String, dynamic> _$$_UnifediApiMediaAttachmentMetaToJson(
-    _$_UnifediApiMediaAttachmentMeta instance) {
+Map<String, dynamic> _$$UnifediApiMediaAttachmentMetaImplToJson(
+    _$UnifediApiMediaAttachmentMetaImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

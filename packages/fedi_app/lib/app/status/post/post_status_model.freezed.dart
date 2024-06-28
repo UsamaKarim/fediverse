@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'post_status_model.dart';
 
@@ -11,59 +12,11 @@ part of 'post_status_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PostStatusData _$PostStatusDataFromJson(Map<String, dynamic> json) {
   return _PostStatusData.fromJson(json);
 }
-
-/// @nodoc
-class _$PostStatusDataTearOff {
-  const _$PostStatusDataTearOff();
-
-  _PostStatusData call(
-      {required String? subject,
-      required String? text,
-      @JsonKey(name: 'scheduled_at')
-          required DateTime? scheduledAt,
-      @JsonKey(name: 'visibility')
-          required String visibilityString,
-      required List<String>? to,
-      @JsonKey(name: 'media_attachments')
-          required List<UnifediApiMediaAttachment>? mediaAttachments,
-      required PostStatusPoll? poll,
-      @JsonKey(name: 'in_reply_to_status')
-          required UnifediApiStatus? inReplyToUnifediApiStatus,
-      @JsonKey(name: 'in_reply_to_conversation_id')
-          required String? inReplyToConversationId,
-      @JsonKey(name: 'is_nsfw_sensitive_enabled')
-          required bool isNsfwSensitiveEnabled,
-      required String? language,
-      @JsonKey(name: 'expires_in_seconds')
-          required int? expiresInSeconds}) {
-    return _PostStatusData(
-      subject: subject,
-      text: text,
-      scheduledAt: scheduledAt,
-      visibilityString: visibilityString,
-      to: to,
-      mediaAttachments: mediaAttachments,
-      poll: poll,
-      inReplyToUnifediApiStatus: inReplyToUnifediApiStatus,
-      inReplyToConversationId: inReplyToConversationId,
-      isNsfwSensitiveEnabled: isNsfwSensitiveEnabled,
-      language: language,
-      expiresInSeconds: expiresInSeconds,
-    );
-  }
-
-  PostStatusData fromJson(Map<String, Object?> json) {
-    return PostStatusData.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PostStatusData = _$PostStatusDataTearOff();
 
 /// @nodoc
 mixin _$PostStatusData {
@@ -99,120 +52,121 @@ mixin _$PostStatusData {
 abstract class $PostStatusDataCopyWith<$Res> {
   factory $PostStatusDataCopyWith(
           PostStatusData value, $Res Function(PostStatusData) then) =
-      _$PostStatusDataCopyWithImpl<$Res>;
+      _$PostStatusDataCopyWithImpl<$Res, PostStatusData>;
+  @useResult
   $Res call(
       {String? subject,
       String? text,
-      @JsonKey(name: 'scheduled_at')
-          DateTime? scheduledAt,
-      @JsonKey(name: 'visibility')
-          String visibilityString,
+      @JsonKey(name: 'scheduled_at') DateTime? scheduledAt,
+      @JsonKey(name: 'visibility') String visibilityString,
       List<String>? to,
       @JsonKey(name: 'media_attachments')
-          List<UnifediApiMediaAttachment>? mediaAttachments,
+      List<UnifediApiMediaAttachment>? mediaAttachments,
       PostStatusPoll? poll,
       @JsonKey(name: 'in_reply_to_status')
-          UnifediApiStatus? inReplyToUnifediApiStatus,
+      UnifediApiStatus? inReplyToUnifediApiStatus,
       @JsonKey(name: 'in_reply_to_conversation_id')
-          String? inReplyToConversationId,
-      @JsonKey(name: 'is_nsfw_sensitive_enabled')
-          bool isNsfwSensitiveEnabled,
+      String? inReplyToConversationId,
+      @JsonKey(name: 'is_nsfw_sensitive_enabled') bool isNsfwSensitiveEnabled,
       String? language,
-      @JsonKey(name: 'expires_in_seconds')
-          int? expiresInSeconds});
+      @JsonKey(name: 'expires_in_seconds') int? expiresInSeconds});
 
   $PostStatusPollCopyWith<$Res>? get poll;
   $UnifediApiStatusCopyWith<$Res>? get inReplyToUnifediApiStatus;
 }
 
 /// @nodoc
-class _$PostStatusDataCopyWithImpl<$Res>
+class _$PostStatusDataCopyWithImpl<$Res, $Val extends PostStatusData>
     implements $PostStatusDataCopyWith<$Res> {
   _$PostStatusDataCopyWithImpl(this._value, this._then);
 
-  final PostStatusData _value;
   // ignore: unused_field
-  final $Res Function(PostStatusData) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? subject = freezed,
     Object? text = freezed,
     Object? scheduledAt = freezed,
-    Object? visibilityString = freezed,
+    Object? visibilityString = null,
     Object? to = freezed,
     Object? mediaAttachments = freezed,
     Object? poll = freezed,
     Object? inReplyToUnifediApiStatus = freezed,
     Object? inReplyToConversationId = freezed,
-    Object? isNsfwSensitiveEnabled = freezed,
+    Object? isNsfwSensitiveEnabled = null,
     Object? language = freezed,
     Object? expiresInSeconds = freezed,
   }) {
     return _then(_value.copyWith(
-      subject: subject == freezed
+      subject: freezed == subject
           ? _value.subject
           : subject // ignore: cast_nullable_to_non_nullable
               as String?,
-      text: text == freezed
+      text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String?,
-      scheduledAt: scheduledAt == freezed
+      scheduledAt: freezed == scheduledAt
           ? _value.scheduledAt
           : scheduledAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      visibilityString: visibilityString == freezed
+      visibilityString: null == visibilityString
           ? _value.visibilityString
           : visibilityString // ignore: cast_nullable_to_non_nullable
               as String,
-      to: to == freezed
+      to: freezed == to
           ? _value.to
           : to // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      mediaAttachments: mediaAttachments == freezed
+      mediaAttachments: freezed == mediaAttachments
           ? _value.mediaAttachments
           : mediaAttachments // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiMediaAttachment>?,
-      poll: poll == freezed
+      poll: freezed == poll
           ? _value.poll
           : poll // ignore: cast_nullable_to_non_nullable
               as PostStatusPoll?,
-      inReplyToUnifediApiStatus: inReplyToUnifediApiStatus == freezed
+      inReplyToUnifediApiStatus: freezed == inReplyToUnifediApiStatus
           ? _value.inReplyToUnifediApiStatus
           : inReplyToUnifediApiStatus // ignore: cast_nullable_to_non_nullable
               as UnifediApiStatus?,
-      inReplyToConversationId: inReplyToConversationId == freezed
+      inReplyToConversationId: freezed == inReplyToConversationId
           ? _value.inReplyToConversationId
           : inReplyToConversationId // ignore: cast_nullable_to_non_nullable
               as String?,
-      isNsfwSensitiveEnabled: isNsfwSensitiveEnabled == freezed
+      isNsfwSensitiveEnabled: null == isNsfwSensitiveEnabled
           ? _value.isNsfwSensitiveEnabled
           : isNsfwSensitiveEnabled // ignore: cast_nullable_to_non_nullable
               as bool,
-      language: language == freezed
+      language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as String?,
-      expiresInSeconds: expiresInSeconds == freezed
+      expiresInSeconds: freezed == expiresInSeconds
           ? _value.expiresInSeconds
           : expiresInSeconds // ignore: cast_nullable_to_non_nullable
               as int?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PostStatusPollCopyWith<$Res>? get poll {
     if (_value.poll == null) {
       return null;
     }
 
     return $PostStatusPollCopyWith<$Res>(_value.poll!, (value) {
-      return _then(_value.copyWith(poll: value));
+      return _then(_value.copyWith(poll: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiStatusCopyWith<$Res>? get inReplyToUnifediApiStatus {
     if (_value.inReplyToUnifediApiStatus == null) {
       return null;
@@ -220,38 +174,35 @@ class _$PostStatusDataCopyWithImpl<$Res>
 
     return $UnifediApiStatusCopyWith<$Res>(_value.inReplyToUnifediApiStatus!,
         (value) {
-      return _then(_value.copyWith(inReplyToUnifediApiStatus: value));
+      return _then(_value.copyWith(inReplyToUnifediApiStatus: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PostStatusDataCopyWith<$Res>
+abstract class _$$PostStatusDataImplCopyWith<$Res>
     implements $PostStatusDataCopyWith<$Res> {
-  factory _$PostStatusDataCopyWith(
-          _PostStatusData value, $Res Function(_PostStatusData) then) =
-      __$PostStatusDataCopyWithImpl<$Res>;
+  factory _$$PostStatusDataImplCopyWith(_$PostStatusDataImpl value,
+          $Res Function(_$PostStatusDataImpl) then) =
+      __$$PostStatusDataImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {String? subject,
       String? text,
-      @JsonKey(name: 'scheduled_at')
-          DateTime? scheduledAt,
-      @JsonKey(name: 'visibility')
-          String visibilityString,
+      @JsonKey(name: 'scheduled_at') DateTime? scheduledAt,
+      @JsonKey(name: 'visibility') String visibilityString,
       List<String>? to,
       @JsonKey(name: 'media_attachments')
-          List<UnifediApiMediaAttachment>? mediaAttachments,
+      List<UnifediApiMediaAttachment>? mediaAttachments,
       PostStatusPoll? poll,
       @JsonKey(name: 'in_reply_to_status')
-          UnifediApiStatus? inReplyToUnifediApiStatus,
+      UnifediApiStatus? inReplyToUnifediApiStatus,
       @JsonKey(name: 'in_reply_to_conversation_id')
-          String? inReplyToConversationId,
-      @JsonKey(name: 'is_nsfw_sensitive_enabled')
-          bool isNsfwSensitiveEnabled,
+      String? inReplyToConversationId,
+      @JsonKey(name: 'is_nsfw_sensitive_enabled') bool isNsfwSensitiveEnabled,
       String? language,
-      @JsonKey(name: 'expires_in_seconds')
-          int? expiresInSeconds});
+      @JsonKey(name: 'expires_in_seconds') int? expiresInSeconds});
 
   @override
   $PostStatusPollCopyWith<$Res>? get poll;
@@ -260,77 +211,75 @@ abstract class _$PostStatusDataCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PostStatusDataCopyWithImpl<$Res>
-    extends _$PostStatusDataCopyWithImpl<$Res>
-    implements _$PostStatusDataCopyWith<$Res> {
-  __$PostStatusDataCopyWithImpl(
-      _PostStatusData _value, $Res Function(_PostStatusData) _then)
-      : super(_value, (v) => _then(v as _PostStatusData));
+class __$$PostStatusDataImplCopyWithImpl<$Res>
+    extends _$PostStatusDataCopyWithImpl<$Res, _$PostStatusDataImpl>
+    implements _$$PostStatusDataImplCopyWith<$Res> {
+  __$$PostStatusDataImplCopyWithImpl(
+      _$PostStatusDataImpl _value, $Res Function(_$PostStatusDataImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PostStatusData get _value => super._value as _PostStatusData;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? subject = freezed,
     Object? text = freezed,
     Object? scheduledAt = freezed,
-    Object? visibilityString = freezed,
+    Object? visibilityString = null,
     Object? to = freezed,
     Object? mediaAttachments = freezed,
     Object? poll = freezed,
     Object? inReplyToUnifediApiStatus = freezed,
     Object? inReplyToConversationId = freezed,
-    Object? isNsfwSensitiveEnabled = freezed,
+    Object? isNsfwSensitiveEnabled = null,
     Object? language = freezed,
     Object? expiresInSeconds = freezed,
   }) {
-    return _then(_PostStatusData(
-      subject: subject == freezed
+    return _then(_$PostStatusDataImpl(
+      subject: freezed == subject
           ? _value.subject
           : subject // ignore: cast_nullable_to_non_nullable
               as String?,
-      text: text == freezed
+      text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String?,
-      scheduledAt: scheduledAt == freezed
+      scheduledAt: freezed == scheduledAt
           ? _value.scheduledAt
           : scheduledAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      visibilityString: visibilityString == freezed
+      visibilityString: null == visibilityString
           ? _value.visibilityString
           : visibilityString // ignore: cast_nullable_to_non_nullable
               as String,
-      to: to == freezed
-          ? _value.to
+      to: freezed == to
+          ? _value._to
           : to // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      mediaAttachments: mediaAttachments == freezed
-          ? _value.mediaAttachments
+      mediaAttachments: freezed == mediaAttachments
+          ? _value._mediaAttachments
           : mediaAttachments // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiMediaAttachment>?,
-      poll: poll == freezed
+      poll: freezed == poll
           ? _value.poll
           : poll // ignore: cast_nullable_to_non_nullable
               as PostStatusPoll?,
-      inReplyToUnifediApiStatus: inReplyToUnifediApiStatus == freezed
+      inReplyToUnifediApiStatus: freezed == inReplyToUnifediApiStatus
           ? _value.inReplyToUnifediApiStatus
           : inReplyToUnifediApiStatus // ignore: cast_nullable_to_non_nullable
               as UnifediApiStatus?,
-      inReplyToConversationId: inReplyToConversationId == freezed
+      inReplyToConversationId: freezed == inReplyToConversationId
           ? _value.inReplyToConversationId
           : inReplyToConversationId // ignore: cast_nullable_to_non_nullable
               as String?,
-      isNsfwSensitiveEnabled: isNsfwSensitiveEnabled == freezed
+      isNsfwSensitiveEnabled: null == isNsfwSensitiveEnabled
           ? _value.isNsfwSensitiveEnabled
           : isNsfwSensitiveEnabled // ignore: cast_nullable_to_non_nullable
               as bool,
-      language: language == freezed
+      language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as String?,
-      expiresInSeconds: expiresInSeconds == freezed
+      expiresInSeconds: freezed == expiresInSeconds
           ? _value.expiresInSeconds
           : expiresInSeconds // ignore: cast_nullable_to_non_nullable
               as int?,
@@ -340,31 +289,30 @@ class __$PostStatusDataCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PostStatusData extends _PostStatusData {
-  const _$_PostStatusData(
+class _$PostStatusDataImpl extends _PostStatusData {
+  const _$PostStatusDataImpl(
       {required this.subject,
       required this.text,
-      @JsonKey(name: 'scheduled_at')
-          required this.scheduledAt,
-      @JsonKey(name: 'visibility')
-          required this.visibilityString,
-      required this.to,
+      @JsonKey(name: 'scheduled_at') required this.scheduledAt,
+      @JsonKey(name: 'visibility') required this.visibilityString,
+      required final List<String>? to,
       @JsonKey(name: 'media_attachments')
-          required this.mediaAttachments,
+      required final List<UnifediApiMediaAttachment>? mediaAttachments,
       required this.poll,
       @JsonKey(name: 'in_reply_to_status')
-          required this.inReplyToUnifediApiStatus,
+      required this.inReplyToUnifediApiStatus,
       @JsonKey(name: 'in_reply_to_conversation_id')
-          required this.inReplyToConversationId,
+      required this.inReplyToConversationId,
       @JsonKey(name: 'is_nsfw_sensitive_enabled')
-          required this.isNsfwSensitiveEnabled,
+      required this.isNsfwSensitiveEnabled,
       required this.language,
-      @JsonKey(name: 'expires_in_seconds')
-          required this.expiresInSeconds})
-      : super._();
+      @JsonKey(name: 'expires_in_seconds') required this.expiresInSeconds})
+      : _to = to,
+        _mediaAttachments = mediaAttachments,
+        super._();
 
-  factory _$_PostStatusData.fromJson(Map<String, dynamic> json) =>
-      _$$_PostStatusDataFromJson(json);
+  factory _$PostStatusDataImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PostStatusDataImplFromJson(json);
 
   @override
   final String? subject;
@@ -376,11 +324,28 @@ class _$_PostStatusData extends _PostStatusData {
   @override
   @JsonKey(name: 'visibility')
   final String visibilityString;
+  final List<String>? _to;
   @override
-  final List<String>? to;
+  List<String>? get to {
+    final value = _to;
+    if (value == null) return null;
+    if (_to is EqualUnmodifiableListView) return _to;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  final List<UnifediApiMediaAttachment>? _mediaAttachments;
   @override
   @JsonKey(name: 'media_attachments')
-  final List<UnifediApiMediaAttachment>? mediaAttachments;
+  List<UnifediApiMediaAttachment>? get mediaAttachments {
+    final value = _mediaAttachments;
+    if (value == null) return null;
+    if (_mediaAttachments is EqualUnmodifiableListView)
+      return _mediaAttachments;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   final PostStatusPoll? poll;
   @override
@@ -404,19 +369,19 @@ class _$_PostStatusData extends _PostStatusData {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PostStatusData &&
+            other is _$PostStatusDataImpl &&
             (identical(other.subject, subject) || other.subject == subject) &&
             (identical(other.text, text) || other.text == text) &&
             (identical(other.scheduledAt, scheduledAt) ||
                 other.scheduledAt == scheduledAt) &&
             (identical(other.visibilityString, visibilityString) ||
                 other.visibilityString == visibilityString) &&
-            const DeepCollectionEquality().equals(other.to, to) &&
+            const DeepCollectionEquality().equals(other._to, _to) &&
             const DeepCollectionEquality()
-                .equals(other.mediaAttachments, mediaAttachments) &&
+                .equals(other._mediaAttachments, _mediaAttachments) &&
             (identical(other.poll, poll) || other.poll == poll) &&
             (identical(other.inReplyToUnifediApiStatus,
                     inReplyToUnifediApiStatus) ||
@@ -432,6 +397,7 @@ class _$_PostStatusData extends _PostStatusData {
                 other.expiresInSeconds == expiresInSeconds));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -439,8 +405,8 @@ class _$_PostStatusData extends _PostStatusData {
       text,
       scheduledAt,
       visibilityString,
-      const DeepCollectionEquality().hash(to),
-      const DeepCollectionEquality().hash(mediaAttachments),
+      const DeepCollectionEquality().hash(_to),
+      const DeepCollectionEquality().hash(_mediaAttachments),
       poll,
       inReplyToUnifediApiStatus,
       inReplyToConversationId,
@@ -450,40 +416,42 @@ class _$_PostStatusData extends _PostStatusData {
 
   @JsonKey(ignore: true)
   @override
-  _$PostStatusDataCopyWith<_PostStatusData> get copyWith =>
-      __$PostStatusDataCopyWithImpl<_PostStatusData>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PostStatusDataImplCopyWith<_$PostStatusDataImpl> get copyWith =>
+      __$$PostStatusDataImplCopyWithImpl<_$PostStatusDataImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PostStatusDataToJson(this);
+    return _$$PostStatusDataImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PostStatusData extends PostStatusData {
   const factory _PostStatusData(
-      {required String? subject,
-      required String? text,
-      @JsonKey(name: 'scheduled_at')
-          required DateTime? scheduledAt,
-      @JsonKey(name: 'visibility')
-          required String visibilityString,
-      required List<String>? to,
+      {required final String? subject,
+      required final String? text,
+      @JsonKey(name: 'scheduled_at') required final DateTime? scheduledAt,
+      @JsonKey(name: 'visibility') required final String visibilityString,
+      required final List<String>? to,
       @JsonKey(name: 'media_attachments')
-          required List<UnifediApiMediaAttachment>? mediaAttachments,
-      required PostStatusPoll? poll,
+      required final List<UnifediApiMediaAttachment>? mediaAttachments,
+      required final PostStatusPoll? poll,
       @JsonKey(name: 'in_reply_to_status')
-          required UnifediApiStatus? inReplyToUnifediApiStatus,
+      required final UnifediApiStatus? inReplyToUnifediApiStatus,
       @JsonKey(name: 'in_reply_to_conversation_id')
-          required String? inReplyToConversationId,
+      required final String? inReplyToConversationId,
       @JsonKey(name: 'is_nsfw_sensitive_enabled')
-          required bool isNsfwSensitiveEnabled,
-      required String? language,
+      required final bool isNsfwSensitiveEnabled,
+      required final String? language,
       @JsonKey(name: 'expires_in_seconds')
-          required int? expiresInSeconds}) = _$_PostStatusData;
+      required final int? expiresInSeconds}) = _$PostStatusDataImpl;
   const _PostStatusData._() : super._();
 
   factory _PostStatusData.fromJson(Map<String, dynamic> json) =
-      _$_PostStatusData.fromJson;
+      _$PostStatusDataImpl.fromJson;
 
   @override
   String? get subject;
@@ -518,6 +486,6 @@ abstract class _PostStatusData extends PostStatusData {
   int? get expiresInSeconds;
   @override
   @JsonKey(ignore: true)
-  _$PostStatusDataCopyWith<_PostStatusData> get copyWith =>
+  _$$PostStatusDataImplCopyWith<_$PostStatusDataImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

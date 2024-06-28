@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'conversation_chat_model.dart';
 
@@ -11,21 +12,7 @@ part of 'conversation_chat_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$DbConversationPopulatedTearOff {
-  const _$DbConversationPopulatedTearOff();
-
-  _DbConversationPopulated call({required DbConversation dbConversation}) {
-    return _DbConversationPopulated(
-      dbConversation: dbConversation,
-    );
-  }
-}
-
-/// @nodoc
-const $DbConversationPopulated = _$DbConversationPopulatedTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$DbConversationPopulated {
@@ -40,60 +27,65 @@ mixin _$DbConversationPopulated {
 abstract class $DbConversationPopulatedCopyWith<$Res> {
   factory $DbConversationPopulatedCopyWith(DbConversationPopulated value,
           $Res Function(DbConversationPopulated) then) =
-      _$DbConversationPopulatedCopyWithImpl<$Res>;
+      _$DbConversationPopulatedCopyWithImpl<$Res, DbConversationPopulated>;
+  @useResult
   $Res call({DbConversation dbConversation});
 }
 
 /// @nodoc
-class _$DbConversationPopulatedCopyWithImpl<$Res>
+class _$DbConversationPopulatedCopyWithImpl<$Res,
+        $Val extends DbConversationPopulated>
     implements $DbConversationPopulatedCopyWith<$Res> {
   _$DbConversationPopulatedCopyWithImpl(this._value, this._then);
 
-  final DbConversationPopulated _value;
   // ignore: unused_field
-  final $Res Function(DbConversationPopulated) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? dbConversation = freezed,
   }) {
     return _then(_value.copyWith(
-      dbConversation: dbConversation == freezed
+      dbConversation: freezed == dbConversation
           ? _value.dbConversation
           : dbConversation // ignore: cast_nullable_to_non_nullable
               as DbConversation,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$DbConversationPopulatedCopyWith<$Res>
+abstract class _$$DbConversationPopulatedImplCopyWith<$Res>
     implements $DbConversationPopulatedCopyWith<$Res> {
-  factory _$DbConversationPopulatedCopyWith(_DbConversationPopulated value,
-          $Res Function(_DbConversationPopulated) then) =
-      __$DbConversationPopulatedCopyWithImpl<$Res>;
+  factory _$$DbConversationPopulatedImplCopyWith(
+          _$DbConversationPopulatedImpl value,
+          $Res Function(_$DbConversationPopulatedImpl) then) =
+      __$$DbConversationPopulatedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({DbConversation dbConversation});
 }
 
 /// @nodoc
-class __$DbConversationPopulatedCopyWithImpl<$Res>
-    extends _$DbConversationPopulatedCopyWithImpl<$Res>
-    implements _$DbConversationPopulatedCopyWith<$Res> {
-  __$DbConversationPopulatedCopyWithImpl(_DbConversationPopulated _value,
-      $Res Function(_DbConversationPopulated) _then)
-      : super(_value, (v) => _then(v as _DbConversationPopulated));
+class __$$DbConversationPopulatedImplCopyWithImpl<$Res>
+    extends _$DbConversationPopulatedCopyWithImpl<$Res,
+        _$DbConversationPopulatedImpl>
+    implements _$$DbConversationPopulatedImplCopyWith<$Res> {
+  __$$DbConversationPopulatedImplCopyWithImpl(
+      _$DbConversationPopulatedImpl _value,
+      $Res Function(_$DbConversationPopulatedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _DbConversationPopulated get _value =>
-      super._value as _DbConversationPopulated;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? dbConversation = freezed,
   }) {
-    return _then(_DbConversationPopulated(
-      dbConversation: dbConversation == freezed
+    return _then(_$DbConversationPopulatedImpl(
+      dbConversation: freezed == dbConversation
           ? _value.dbConversation
           : dbConversation // ignore: cast_nullable_to_non_nullable
               as DbConversation,
@@ -103,8 +95,8 @@ class __$DbConversationPopulatedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DbConversationPopulated implements _DbConversationPopulated {
-  const _$_DbConversationPopulated({required this.dbConversation});
+class _$DbConversationPopulatedImpl implements _DbConversationPopulated {
+  const _$DbConversationPopulatedImpl({required this.dbConversation});
 
   @override
   final DbConversation dbConversation;
@@ -115,10 +107,10 @@ class _$_DbConversationPopulated implements _DbConversationPopulated {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DbConversationPopulated &&
+            other is _$DbConversationPopulatedImpl &&
             const DeepCollectionEquality()
                 .equals(other.dbConversation, dbConversation));
   }
@@ -129,38 +121,24 @@ class _$_DbConversationPopulated implements _DbConversationPopulated {
 
   @JsonKey(ignore: true)
   @override
-  _$DbConversationPopulatedCopyWith<_DbConversationPopulated> get copyWith =>
-      __$DbConversationPopulatedCopyWithImpl<_DbConversationPopulated>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DbConversationPopulatedImplCopyWith<_$DbConversationPopulatedImpl>
+      get copyWith => __$$DbConversationPopulatedImplCopyWithImpl<
+          _$DbConversationPopulatedImpl>(this, _$identity);
 }
 
 abstract class _DbConversationPopulated implements DbConversationPopulated {
   const factory _DbConversationPopulated(
-      {required DbConversation dbConversation}) = _$_DbConversationPopulated;
+          {required final DbConversation dbConversation}) =
+      _$DbConversationPopulatedImpl;
 
   @override
   DbConversation get dbConversation;
   @override
   @JsonKey(ignore: true)
-  _$DbConversationPopulatedCopyWith<_DbConversationPopulated> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$DbConversationPopulatedImplCopyWith<_$DbConversationPopulatedImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$DbConversationChatPopulatedWrapperTearOff {
-  const _$DbConversationChatPopulatedWrapperTearOff();
-
-  _DbConversationChatPopulatedWrapper call(
-      {required DbConversationPopulated dbConversationPopulated}) {
-    return _DbConversationChatPopulatedWrapper(
-      dbConversationPopulated: dbConversationPopulated,
-    );
-  }
-}
-
-/// @nodoc
-const $DbConversationChatPopulatedWrapper =
-    _$DbConversationChatPopulatedWrapperTearOff();
 
 /// @nodoc
 mixin _$DbConversationChatPopulatedWrapper {
@@ -178,50 +156,57 @@ abstract class $DbConversationChatPopulatedWrapperCopyWith<$Res> {
   factory $DbConversationChatPopulatedWrapperCopyWith(
           DbConversationChatPopulatedWrapper value,
           $Res Function(DbConversationChatPopulatedWrapper) then) =
-      _$DbConversationChatPopulatedWrapperCopyWithImpl<$Res>;
+      _$DbConversationChatPopulatedWrapperCopyWithImpl<$Res,
+          DbConversationChatPopulatedWrapper>;
+  @useResult
   $Res call({DbConversationPopulated dbConversationPopulated});
 
   $DbConversationPopulatedCopyWith<$Res> get dbConversationPopulated;
 }
 
 /// @nodoc
-class _$DbConversationChatPopulatedWrapperCopyWithImpl<$Res>
+class _$DbConversationChatPopulatedWrapperCopyWithImpl<$Res,
+        $Val extends DbConversationChatPopulatedWrapper>
     implements $DbConversationChatPopulatedWrapperCopyWith<$Res> {
   _$DbConversationChatPopulatedWrapperCopyWithImpl(this._value, this._then);
 
-  final DbConversationChatPopulatedWrapper _value;
   // ignore: unused_field
-  final $Res Function(DbConversationChatPopulatedWrapper) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dbConversationPopulated = freezed,
+    Object? dbConversationPopulated = null,
   }) {
     return _then(_value.copyWith(
-      dbConversationPopulated: dbConversationPopulated == freezed
+      dbConversationPopulated: null == dbConversationPopulated
           ? _value.dbConversationPopulated
           : dbConversationPopulated // ignore: cast_nullable_to_non_nullable
               as DbConversationPopulated,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $DbConversationPopulatedCopyWith<$Res> get dbConversationPopulated {
     return $DbConversationPopulatedCopyWith<$Res>(
         _value.dbConversationPopulated, (value) {
-      return _then(_value.copyWith(dbConversationPopulated: value));
+      return _then(_value.copyWith(dbConversationPopulated: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$DbConversationChatPopulatedWrapperCopyWith<$Res>
+abstract class _$$DbConversationChatPopulatedWrapperImplCopyWith<$Res>
     implements $DbConversationChatPopulatedWrapperCopyWith<$Res> {
-  factory _$DbConversationChatPopulatedWrapperCopyWith(
-          _DbConversationChatPopulatedWrapper value,
-          $Res Function(_DbConversationChatPopulatedWrapper) then) =
-      __$DbConversationChatPopulatedWrapperCopyWithImpl<$Res>;
+  factory _$$DbConversationChatPopulatedWrapperImplCopyWith(
+          _$DbConversationChatPopulatedWrapperImpl value,
+          $Res Function(_$DbConversationChatPopulatedWrapperImpl) then) =
+      __$$DbConversationChatPopulatedWrapperImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({DbConversationPopulated dbConversationPopulated});
 
   @override
@@ -229,24 +214,22 @@ abstract class _$DbConversationChatPopulatedWrapperCopyWith<$Res>
 }
 
 /// @nodoc
-class __$DbConversationChatPopulatedWrapperCopyWithImpl<$Res>
-    extends _$DbConversationChatPopulatedWrapperCopyWithImpl<$Res>
-    implements _$DbConversationChatPopulatedWrapperCopyWith<$Res> {
-  __$DbConversationChatPopulatedWrapperCopyWithImpl(
-      _DbConversationChatPopulatedWrapper _value,
-      $Res Function(_DbConversationChatPopulatedWrapper) _then)
-      : super(_value, (v) => _then(v as _DbConversationChatPopulatedWrapper));
+class __$$DbConversationChatPopulatedWrapperImplCopyWithImpl<$Res>
+    extends _$DbConversationChatPopulatedWrapperCopyWithImpl<$Res,
+        _$DbConversationChatPopulatedWrapperImpl>
+    implements _$$DbConversationChatPopulatedWrapperImplCopyWith<$Res> {
+  __$$DbConversationChatPopulatedWrapperImplCopyWithImpl(
+      _$DbConversationChatPopulatedWrapperImpl _value,
+      $Res Function(_$DbConversationChatPopulatedWrapperImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _DbConversationChatPopulatedWrapper get _value =>
-      super._value as _DbConversationChatPopulatedWrapper;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dbConversationPopulated = freezed,
+    Object? dbConversationPopulated = null,
   }) {
-    return _then(_DbConversationChatPopulatedWrapper(
-      dbConversationPopulated: dbConversationPopulated == freezed
+    return _then(_$DbConversationChatPopulatedWrapperImpl(
+      dbConversationPopulated: null == dbConversationPopulated
           ? _value.dbConversationPopulated
           : dbConversationPopulated // ignore: cast_nullable_to_non_nullable
               as DbConversationPopulated,
@@ -256,9 +239,9 @@ class __$DbConversationChatPopulatedWrapperCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DbConversationChatPopulatedWrapper
+class _$DbConversationChatPopulatedWrapperImpl
     extends _DbConversationChatPopulatedWrapper {
-  const _$_DbConversationChatPopulatedWrapper(
+  const _$DbConversationChatPopulatedWrapperImpl(
       {required this.dbConversationPopulated})
       : super._();
 
@@ -271,10 +254,10 @@ class _$_DbConversationChatPopulatedWrapper
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DbConversationChatPopulatedWrapper &&
+            other is _$DbConversationChatPopulatedWrapperImpl &&
             (identical(
                     other.dbConversationPopulated, dbConversationPopulated) ||
                 other.dbConversationPopulated == dbConversationPopulated));
@@ -285,45 +268,28 @@ class _$_DbConversationChatPopulatedWrapper
 
   @JsonKey(ignore: true)
   @override
-  _$DbConversationChatPopulatedWrapperCopyWith<
-          _DbConversationChatPopulatedWrapper>
-      get copyWith => __$DbConversationChatPopulatedWrapperCopyWithImpl<
-          _DbConversationChatPopulatedWrapper>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DbConversationChatPopulatedWrapperImplCopyWith<
+          _$DbConversationChatPopulatedWrapperImpl>
+      get copyWith => __$$DbConversationChatPopulatedWrapperImplCopyWithImpl<
+          _$DbConversationChatPopulatedWrapperImpl>(this, _$identity);
 }
 
 abstract class _DbConversationChatPopulatedWrapper
     extends DbConversationChatPopulatedWrapper {
   const factory _DbConversationChatPopulatedWrapper(
-          {required DbConversationPopulated dbConversationPopulated}) =
-      _$_DbConversationChatPopulatedWrapper;
+          {required final DbConversationPopulated dbConversationPopulated}) =
+      _$DbConversationChatPopulatedWrapperImpl;
   const _DbConversationChatPopulatedWrapper._() : super._();
 
   @override
   DbConversationPopulated get dbConversationPopulated;
   @override
   @JsonKey(ignore: true)
-  _$DbConversationChatPopulatedWrapperCopyWith<
-          _DbConversationChatPopulatedWrapper>
+  _$$DbConversationChatPopulatedWrapperImplCopyWith<
+          _$DbConversationChatPopulatedWrapperImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$DbConversationChatWithLastMessagePopulatedTearOff {
-  const _$DbConversationChatWithLastMessagePopulatedTearOff();
-
-  _DbConversationChatWithLastMessagePopulated call(
-      {required DbConversationPopulated dbConversationPopulated,
-      required DbStatusPopulated? dbStatusPopulated}) {
-    return _DbConversationChatWithLastMessagePopulated(
-      dbConversationPopulated: dbConversationPopulated,
-      dbStatusPopulated: dbStatusPopulated,
-    );
-  }
-}
-
-/// @nodoc
-const $DbConversationChatWithLastMessagePopulated =
-    _$DbConversationChatWithLastMessagePopulatedTearOff();
 
 /// @nodoc
 mixin _$DbConversationChatWithLastMessagePopulated {
@@ -343,7 +309,9 @@ abstract class $DbConversationChatWithLastMessagePopulatedCopyWith<$Res> {
   factory $DbConversationChatWithLastMessagePopulatedCopyWith(
           DbConversationChatWithLastMessagePopulated value,
           $Res Function(DbConversationChatWithLastMessagePopulated) then) =
-      _$DbConversationChatWithLastMessagePopulatedCopyWithImpl<$Res>;
+      _$DbConversationChatWithLastMessagePopulatedCopyWithImpl<$Res,
+          DbConversationChatWithLastMessagePopulated>;
+  @useResult
   $Res call(
       {DbConversationPopulated dbConversationPopulated,
       DbStatusPopulated? dbStatusPopulated});
@@ -353,60 +321,67 @@ abstract class $DbConversationChatWithLastMessagePopulatedCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$DbConversationChatWithLastMessagePopulatedCopyWithImpl<$Res>
+class _$DbConversationChatWithLastMessagePopulatedCopyWithImpl<$Res,
+        $Val extends DbConversationChatWithLastMessagePopulated>
     implements $DbConversationChatWithLastMessagePopulatedCopyWith<$Res> {
   _$DbConversationChatWithLastMessagePopulatedCopyWithImpl(
       this._value, this._then);
 
-  final DbConversationChatWithLastMessagePopulated _value;
   // ignore: unused_field
-  final $Res Function(DbConversationChatWithLastMessagePopulated) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dbConversationPopulated = freezed,
+    Object? dbConversationPopulated = null,
     Object? dbStatusPopulated = freezed,
   }) {
     return _then(_value.copyWith(
-      dbConversationPopulated: dbConversationPopulated == freezed
+      dbConversationPopulated: null == dbConversationPopulated
           ? _value.dbConversationPopulated
           : dbConversationPopulated // ignore: cast_nullable_to_non_nullable
               as DbConversationPopulated,
-      dbStatusPopulated: dbStatusPopulated == freezed
+      dbStatusPopulated: freezed == dbStatusPopulated
           ? _value.dbStatusPopulated
           : dbStatusPopulated // ignore: cast_nullable_to_non_nullable
               as DbStatusPopulated?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $DbConversationPopulatedCopyWith<$Res> get dbConversationPopulated {
     return $DbConversationPopulatedCopyWith<$Res>(
         _value.dbConversationPopulated, (value) {
-      return _then(_value.copyWith(dbConversationPopulated: value));
+      return _then(_value.copyWith(dbConversationPopulated: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $DbStatusPopulatedCopyWith<$Res>? get dbStatusPopulated {
     if (_value.dbStatusPopulated == null) {
       return null;
     }
 
     return $DbStatusPopulatedCopyWith<$Res>(_value.dbStatusPopulated!, (value) {
-      return _then(_value.copyWith(dbStatusPopulated: value));
+      return _then(_value.copyWith(dbStatusPopulated: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$DbConversationChatWithLastMessagePopulatedCopyWith<$Res>
+abstract class _$$DbConversationChatWithLastMessagePopulatedImplCopyWith<$Res>
     implements $DbConversationChatWithLastMessagePopulatedCopyWith<$Res> {
-  factory _$DbConversationChatWithLastMessagePopulatedCopyWith(
-          _DbConversationChatWithLastMessagePopulated value,
-          $Res Function(_DbConversationChatWithLastMessagePopulated) then) =
-      __$DbConversationChatWithLastMessagePopulatedCopyWithImpl<$Res>;
+  factory _$$DbConversationChatWithLastMessagePopulatedImplCopyWith(
+          _$DbConversationChatWithLastMessagePopulatedImpl value,
+          $Res Function(_$DbConversationChatWithLastMessagePopulatedImpl)
+              then) =
+      __$$DbConversationChatWithLastMessagePopulatedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {DbConversationPopulated dbConversationPopulated,
       DbStatusPopulated? dbStatusPopulated});
@@ -418,30 +393,27 @@ abstract class _$DbConversationChatWithLastMessagePopulatedCopyWith<$Res>
 }
 
 /// @nodoc
-class __$DbConversationChatWithLastMessagePopulatedCopyWithImpl<$Res>
-    extends _$DbConversationChatWithLastMessagePopulatedCopyWithImpl<$Res>
-    implements _$DbConversationChatWithLastMessagePopulatedCopyWith<$Res> {
-  __$DbConversationChatWithLastMessagePopulatedCopyWithImpl(
-      _DbConversationChatWithLastMessagePopulated _value,
-      $Res Function(_DbConversationChatWithLastMessagePopulated) _then)
-      : super(_value,
-            (v) => _then(v as _DbConversationChatWithLastMessagePopulated));
+class __$$DbConversationChatWithLastMessagePopulatedImplCopyWithImpl<$Res>
+    extends _$DbConversationChatWithLastMessagePopulatedCopyWithImpl<$Res,
+        _$DbConversationChatWithLastMessagePopulatedImpl>
+    implements _$$DbConversationChatWithLastMessagePopulatedImplCopyWith<$Res> {
+  __$$DbConversationChatWithLastMessagePopulatedImplCopyWithImpl(
+      _$DbConversationChatWithLastMessagePopulatedImpl _value,
+      $Res Function(_$DbConversationChatWithLastMessagePopulatedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _DbConversationChatWithLastMessagePopulated get _value =>
-      super._value as _DbConversationChatWithLastMessagePopulated;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dbConversationPopulated = freezed,
+    Object? dbConversationPopulated = null,
     Object? dbStatusPopulated = freezed,
   }) {
-    return _then(_DbConversationChatWithLastMessagePopulated(
-      dbConversationPopulated: dbConversationPopulated == freezed
+    return _then(_$DbConversationChatWithLastMessagePopulatedImpl(
+      dbConversationPopulated: null == dbConversationPopulated
           ? _value.dbConversationPopulated
           : dbConversationPopulated // ignore: cast_nullable_to_non_nullable
               as DbConversationPopulated,
-      dbStatusPopulated: dbStatusPopulated == freezed
+      dbStatusPopulated: freezed == dbStatusPopulated
           ? _value.dbStatusPopulated
           : dbStatusPopulated // ignore: cast_nullable_to_non_nullable
               as DbStatusPopulated?,
@@ -451,9 +423,9 @@ class __$DbConversationChatWithLastMessagePopulatedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DbConversationChatWithLastMessagePopulated
+class _$DbConversationChatWithLastMessagePopulatedImpl
     implements _DbConversationChatWithLastMessagePopulated {
-  const _$_DbConversationChatWithLastMessagePopulated(
+  const _$DbConversationChatWithLastMessagePopulatedImpl(
       {required this.dbConversationPopulated, required this.dbStatusPopulated});
 
   @override
@@ -467,10 +439,10 @@ class _$_DbConversationChatWithLastMessagePopulated
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DbConversationChatWithLastMessagePopulated &&
+            other is _$DbConversationChatWithLastMessagePopulatedImpl &&
             (identical(
                     other.dbConversationPopulated, dbConversationPopulated) ||
                 other.dbConversationPopulated == dbConversationPopulated) &&
@@ -484,18 +456,21 @@ class _$_DbConversationChatWithLastMessagePopulated
 
   @JsonKey(ignore: true)
   @override
-  _$DbConversationChatWithLastMessagePopulatedCopyWith<
-          _DbConversationChatWithLastMessagePopulated>
-      get copyWith => __$DbConversationChatWithLastMessagePopulatedCopyWithImpl<
-          _DbConversationChatWithLastMessagePopulated>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DbConversationChatWithLastMessagePopulatedImplCopyWith<
+          _$DbConversationChatWithLastMessagePopulatedImpl>
+      get copyWith =>
+          __$$DbConversationChatWithLastMessagePopulatedImplCopyWithImpl<
+                  _$DbConversationChatWithLastMessagePopulatedImpl>(
+              this, _$identity);
 }
 
 abstract class _DbConversationChatWithLastMessagePopulated
     implements DbConversationChatWithLastMessagePopulated {
   const factory _DbConversationChatWithLastMessagePopulated(
-          {required DbConversationPopulated dbConversationPopulated,
-          required DbStatusPopulated? dbStatusPopulated}) =
-      _$_DbConversationChatWithLastMessagePopulated;
+          {required final DbConversationPopulated dbConversationPopulated,
+          required final DbStatusPopulated? dbStatusPopulated}) =
+      _$DbConversationChatWithLastMessagePopulatedImpl;
 
   @override
   DbConversationPopulated get dbConversationPopulated;
@@ -503,28 +478,10 @@ abstract class _DbConversationChatWithLastMessagePopulated
   DbStatusPopulated? get dbStatusPopulated;
   @override
   @JsonKey(ignore: true)
-  _$DbConversationChatWithLastMessagePopulatedCopyWith<
-          _DbConversationChatWithLastMessagePopulated>
+  _$$DbConversationChatWithLastMessagePopulatedImplCopyWith<
+          _$DbConversationChatWithLastMessagePopulatedImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$DbConversationChatWithLastMessagePopulatedWrapperTearOff {
-  const _$DbConversationChatWithLastMessagePopulatedWrapperTearOff();
-
-  _DbConversationChatWithLastMessagePopulatedWrapper call(
-      {required DbConversationChatWithLastMessagePopulated
-          dbConversationChatWithLastMessagePopulated}) {
-    return _DbConversationChatWithLastMessagePopulatedWrapper(
-      dbConversationChatWithLastMessagePopulated:
-          dbConversationChatWithLastMessagePopulated,
-    );
-  }
-}
-
-/// @nodoc
-const $DbConversationChatWithLastMessagePopulatedWrapper =
-    _$DbConversationChatWithLastMessagePopulatedWrapperTearOff();
 
 /// @nodoc
 mixin _$DbConversationChatWithLastMessagePopulatedWrapper {
@@ -545,7 +502,9 @@ abstract class $DbConversationChatWithLastMessagePopulatedWrapperCopyWith<
           DbConversationChatWithLastMessagePopulatedWrapper value,
           $Res Function(DbConversationChatWithLastMessagePopulatedWrapper)
               then) =
-      _$DbConversationChatWithLastMessagePopulatedWrapperCopyWithImpl<$Res>;
+      _$DbConversationChatWithLastMessagePopulatedWrapperCopyWithImpl<$Res,
+          DbConversationChatWithLastMessagePopulatedWrapper>;
+  @useResult
   $Res call(
       {DbConversationChatWithLastMessagePopulated
           dbConversationChatWithLastMessagePopulated});
@@ -555,50 +514,57 @@ abstract class $DbConversationChatWithLastMessagePopulatedWrapperCopyWith<
 }
 
 /// @nodoc
-class _$DbConversationChatWithLastMessagePopulatedWrapperCopyWithImpl<$Res>
+class _$DbConversationChatWithLastMessagePopulatedWrapperCopyWithImpl<$Res,
+        $Val extends DbConversationChatWithLastMessagePopulatedWrapper>
     implements
         $DbConversationChatWithLastMessagePopulatedWrapperCopyWith<$Res> {
   _$DbConversationChatWithLastMessagePopulatedWrapperCopyWithImpl(
       this._value, this._then);
 
-  final DbConversationChatWithLastMessagePopulatedWrapper _value;
   // ignore: unused_field
-  final $Res Function(DbConversationChatWithLastMessagePopulatedWrapper) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dbConversationChatWithLastMessagePopulated = freezed,
+    Object? dbConversationChatWithLastMessagePopulated = null,
   }) {
     return _then(_value.copyWith(
-      dbConversationChatWithLastMessagePopulated:
-          dbConversationChatWithLastMessagePopulated == freezed
-              ? _value.dbConversationChatWithLastMessagePopulated
-              : dbConversationChatWithLastMessagePopulated // ignore: cast_nullable_to_non_nullable
-                  as DbConversationChatWithLastMessagePopulated,
-    ));
+      dbConversationChatWithLastMessagePopulated: null ==
+              dbConversationChatWithLastMessagePopulated
+          ? _value.dbConversationChatWithLastMessagePopulated
+          : dbConversationChatWithLastMessagePopulated // ignore: cast_nullable_to_non_nullable
+              as DbConversationChatWithLastMessagePopulated,
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $DbConversationChatWithLastMessagePopulatedCopyWith<$Res>
       get dbConversationChatWithLastMessagePopulated {
     return $DbConversationChatWithLastMessagePopulatedCopyWith<$Res>(
         _value.dbConversationChatWithLastMessagePopulated, (value) {
-      return _then(
-          _value.copyWith(dbConversationChatWithLastMessagePopulated: value));
+      return _then(_value.copyWith(
+          dbConversationChatWithLastMessagePopulated: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$DbConversationChatWithLastMessagePopulatedWrapperCopyWith<$Res>
+abstract class _$$DbConversationChatWithLastMessagePopulatedWrapperImplCopyWith<
+        $Res>
     implements
         $DbConversationChatWithLastMessagePopulatedWrapperCopyWith<$Res> {
-  factory _$DbConversationChatWithLastMessagePopulatedWrapperCopyWith(
-          _DbConversationChatWithLastMessagePopulatedWrapper value,
-          $Res Function(_DbConversationChatWithLastMessagePopulatedWrapper)
+  factory _$$DbConversationChatWithLastMessagePopulatedWrapperImplCopyWith(
+          _$DbConversationChatWithLastMessagePopulatedWrapperImpl value,
+          $Res Function(_$DbConversationChatWithLastMessagePopulatedWrapperImpl)
               then) =
-      __$DbConversationChatWithLastMessagePopulatedWrapperCopyWithImpl<$Res>;
+      __$$DbConversationChatWithLastMessagePopulatedWrapperImplCopyWithImpl<
+          $Res>;
   @override
+  @useResult
   $Res call(
       {DbConversationChatWithLastMessagePopulated
           dbConversationChatWithLastMessagePopulated});
@@ -609,42 +575,38 @@ abstract class _$DbConversationChatWithLastMessagePopulatedWrapperCopyWith<$Res>
 }
 
 /// @nodoc
-class __$DbConversationChatWithLastMessagePopulatedWrapperCopyWithImpl<$Res>
-    extends _$DbConversationChatWithLastMessagePopulatedWrapperCopyWithImpl<
+class __$$DbConversationChatWithLastMessagePopulatedWrapperImplCopyWithImpl<
         $Res>
+    extends _$DbConversationChatWithLastMessagePopulatedWrapperCopyWithImpl<
+        $Res, _$DbConversationChatWithLastMessagePopulatedWrapperImpl>
     implements
-        _$DbConversationChatWithLastMessagePopulatedWrapperCopyWith<$Res> {
-  __$DbConversationChatWithLastMessagePopulatedWrapperCopyWithImpl(
-      _DbConversationChatWithLastMessagePopulatedWrapper _value,
-      $Res Function(_DbConversationChatWithLastMessagePopulatedWrapper) _then)
-      : super(
-            _value,
-            (v) =>
-                _then(v as _DbConversationChatWithLastMessagePopulatedWrapper));
+        _$$DbConversationChatWithLastMessagePopulatedWrapperImplCopyWith<$Res> {
+  __$$DbConversationChatWithLastMessagePopulatedWrapperImplCopyWithImpl(
+      _$DbConversationChatWithLastMessagePopulatedWrapperImpl _value,
+      $Res Function(_$DbConversationChatWithLastMessagePopulatedWrapperImpl)
+          _then)
+      : super(_value, _then);
 
-  @override
-  _DbConversationChatWithLastMessagePopulatedWrapper get _value =>
-      super._value as _DbConversationChatWithLastMessagePopulatedWrapper;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dbConversationChatWithLastMessagePopulated = freezed,
+    Object? dbConversationChatWithLastMessagePopulated = null,
   }) {
-    return _then(_DbConversationChatWithLastMessagePopulatedWrapper(
-      dbConversationChatWithLastMessagePopulated:
-          dbConversationChatWithLastMessagePopulated == freezed
-              ? _value.dbConversationChatWithLastMessagePopulated
-              : dbConversationChatWithLastMessagePopulated // ignore: cast_nullable_to_non_nullable
-                  as DbConversationChatWithLastMessagePopulated,
+    return _then(_$DbConversationChatWithLastMessagePopulatedWrapperImpl(
+      dbConversationChatWithLastMessagePopulated: null ==
+              dbConversationChatWithLastMessagePopulated
+          ? _value.dbConversationChatWithLastMessagePopulated
+          : dbConversationChatWithLastMessagePopulated // ignore: cast_nullable_to_non_nullable
+              as DbConversationChatWithLastMessagePopulated,
     ));
   }
 }
 
 /// @nodoc
 
-class _$_DbConversationChatWithLastMessagePopulatedWrapper
+class _$DbConversationChatWithLastMessagePopulatedWrapperImpl
     extends _DbConversationChatWithLastMessagePopulatedWrapper {
-  const _$_DbConversationChatWithLastMessagePopulatedWrapper(
+  const _$DbConversationChatWithLastMessagePopulatedWrapperImpl(
       {required this.dbConversationChatWithLastMessagePopulated})
       : super._();
 
@@ -658,10 +620,10 @@ class _$_DbConversationChatWithLastMessagePopulatedWrapper
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DbConversationChatWithLastMessagePopulatedWrapper &&
+            other is _$DbConversationChatWithLastMessagePopulatedWrapperImpl &&
             (identical(other.dbConversationChatWithLastMessagePopulated,
                     dbConversationChatWithLastMessagePopulated) ||
                 other.dbConversationChatWithLastMessagePopulated ==
@@ -674,20 +636,21 @@ class _$_DbConversationChatWithLastMessagePopulatedWrapper
 
   @JsonKey(ignore: true)
   @override
-  _$DbConversationChatWithLastMessagePopulatedWrapperCopyWith<
-          _DbConversationChatWithLastMessagePopulatedWrapper>
+  @pragma('vm:prefer-inline')
+  _$$DbConversationChatWithLastMessagePopulatedWrapperImplCopyWith<
+          _$DbConversationChatWithLastMessagePopulatedWrapperImpl>
       get copyWith =>
-          __$DbConversationChatWithLastMessagePopulatedWrapperCopyWithImpl<
-                  _DbConversationChatWithLastMessagePopulatedWrapper>(
+          __$$DbConversationChatWithLastMessagePopulatedWrapperImplCopyWithImpl<
+                  _$DbConversationChatWithLastMessagePopulatedWrapperImpl>(
               this, _$identity);
 }
 
 abstract class _DbConversationChatWithLastMessagePopulatedWrapper
     extends DbConversationChatWithLastMessagePopulatedWrapper {
   const factory _DbConversationChatWithLastMessagePopulatedWrapper(
-          {required DbConversationChatWithLastMessagePopulated
+          {required final DbConversationChatWithLastMessagePopulated
               dbConversationChatWithLastMessagePopulated}) =
-      _$_DbConversationChatWithLastMessagePopulatedWrapper;
+      _$DbConversationChatWithLastMessagePopulatedWrapperImpl;
   const _DbConversationChatWithLastMessagePopulatedWrapper._() : super._();
 
   @override
@@ -695,7 +658,7 @@ abstract class _DbConversationChatWithLastMessagePopulatedWrapper
       get dbConversationChatWithLastMessagePopulated;
   @override
   @JsonKey(ignore: true)
-  _$DbConversationChatWithLastMessagePopulatedWrapperCopyWith<
-          _DbConversationChatWithLastMessagePopulatedWrapper>
+  _$$DbConversationChatWithLastMessagePopulatedWrapperImplCopyWith<
+          _$DbConversationChatWithLastMessagePopulatedWrapperImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

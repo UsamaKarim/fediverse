@@ -84,11 +84,11 @@ class UnifediApiSchedulePostStatusAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiSchedulePostStatus _$$_UnifediApiSchedulePostStatusFromJson(
+_$UnifediApiSchedulePostStatusImpl _$$UnifediApiSchedulePostStatusImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiSchedulePostStatus(
+    _$UnifediApiSchedulePostStatusImpl(
       contentType: json['content_type'] as String?,
-      expiresInSeconds: json['expires_in'] as int?,
+      expiresInSeconds: (json['expires_in'] as num?)?.toInt(),
       inReplyToConversationId: json['in_reply_to_conversation_id'] as String?,
       inReplyToId: json['in_reply_to_id'] as String?,
       language: json['language'] as String?,
@@ -109,8 +109,8 @@ _$_UnifediApiSchedulePostStatus _$$_UnifediApiSchedulePostStatusFromJson(
           JsonParseHelper.fromUTCIsoString(json['scheduled_at'] as String),
     );
 
-Map<String, dynamic> _$$_UnifediApiSchedulePostStatusToJson(
-    _$_UnifediApiSchedulePostStatus instance) {
+Map<String, dynamic> _$$UnifediApiSchedulePostStatusImplToJson(
+    _$UnifediApiSchedulePostStatusImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {
@@ -132,7 +132,6 @@ Map<String, dynamic> _$$_UnifediApiSchedulePostStatusToJson(
   writeNotNull('spoiler_text', instance.spoilerText);
   writeNotNull('status', instance.status);
   writeNotNull('to', instance.to);
-  writeNotNull(
-      'scheduled_at', JsonParseHelper.toUTCIsoString(instance.scheduledAt));
+  val['scheduled_at'] = JsonParseHelper.toUTCIsoString(instance.scheduledAt);
   return val;
 }

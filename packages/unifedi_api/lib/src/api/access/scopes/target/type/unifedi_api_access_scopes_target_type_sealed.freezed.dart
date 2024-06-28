@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_access_scopes_target_type_sealed.dart';
 
@@ -11,133 +12,11 @@ part of 'unifedi_api_access_scopes_target_type_sealed.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$UnifediApiAccessScopesTargetTypeTearOff {
-  const _$UnifediApiAccessScopesTargetTypeTearOff();
-
-  _Accounts accounts(
-      {String stringValue =
-          UnifediApiAccessScopesTargetType.accountsStringValue}) {
-    return _Accounts(
-      stringValue: stringValue,
-    );
-  }
-
-  _Blocks blocks(
-      {String stringValue =
-          UnifediApiAccessScopesTargetType.blocksStringValue}) {
-    return _Blocks(
-      stringValue: stringValue,
-    );
-  }
-
-  _Valid bookmarks(
-      {String stringValue =
-          UnifediApiAccessScopesTargetType.bookmarksStringValue}) {
-    return _Valid(
-      stringValue: stringValue,
-    );
-  }
-
-  _Conversations conversations(
-      {String stringValue =
-          UnifediApiAccessScopesTargetType.conversationsStringValue}) {
-    return _Conversations(
-      stringValue: stringValue,
-    );
-  }
-
-  _Favourites favourites(
-      {String stringValue =
-          UnifediApiAccessScopesTargetType.favouritesStringValue}) {
-    return _Favourites(
-      stringValue: stringValue,
-    );
-  }
-
-  _Search search(
-      {String stringValue =
-          UnifediApiAccessScopesTargetType.searchStringValue}) {
-    return _Search(
-      stringValue: stringValue,
-    );
-  }
-
-  _Follows follows(
-      {String stringValue =
-          UnifediApiAccessScopesTargetType.followsStringValue}) {
-    return _Follows(
-      stringValue: stringValue,
-    );
-  }
-
-  _Filters filters(
-      {String stringValue =
-          UnifediApiAccessScopesTargetType.favouritesStringValue}) {
-    return _Filters(
-      stringValue: stringValue,
-    );
-  }
-
-  _Lists lists(
-      {String stringValue =
-          UnifediApiAccessScopesTargetType.listsStringValue}) {
-    return _Lists(
-      stringValue: stringValue,
-    );
-  }
-
-  _Media media(
-      {String stringValue =
-          UnifediApiAccessScopesTargetType.mediaStringValue}) {
-    return _Media(
-      stringValue: stringValue,
-    );
-  }
-
-  _Mutes mutes(
-      {String stringValue =
-          UnifediApiAccessScopesTargetType.mutesStringValue}) {
-    return _Mutes(
-      stringValue: stringValue,
-    );
-  }
-
-  _Notifications notifications(
-      {String stringValue =
-          UnifediApiAccessScopesTargetType.notificationsStringValue}) {
-    return _Notifications(
-      stringValue: stringValue,
-    );
-  }
-
-  _Reports reports(
-      {String stringValue =
-          UnifediApiAccessScopesTargetType.reportsStringValue}) {
-    return _Reports(
-      stringValue: stringValue,
-    );
-  }
-
-  _Statuses statuses(
-      {String stringValue =
-          UnifediApiAccessScopesTargetType.statusesStringValue}) {
-    return _Statuses(
-      stringValue: stringValue,
-    );
-  }
-}
-
-/// @nodoc
-const $UnifediApiAccessScopesTargetType =
-    _$UnifediApiAccessScopesTargetTypeTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$UnifediApiAccessScopesTargetType {
   String get stringValue => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String stringValue) accounts,
@@ -158,20 +37,20 @@ mixin _$UnifediApiAccessScopesTargetType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? accounts,
-    TResult Function(String stringValue)? blocks,
-    TResult Function(String stringValue)? bookmarks,
-    TResult Function(String stringValue)? conversations,
-    TResult Function(String stringValue)? favourites,
-    TResult Function(String stringValue)? search,
-    TResult Function(String stringValue)? follows,
-    TResult Function(String stringValue)? filters,
-    TResult Function(String stringValue)? lists,
-    TResult Function(String stringValue)? media,
-    TResult Function(String stringValue)? mutes,
-    TResult Function(String stringValue)? notifications,
-    TResult Function(String stringValue)? reports,
-    TResult Function(String stringValue)? statuses,
+    TResult? Function(String stringValue)? accounts,
+    TResult? Function(String stringValue)? blocks,
+    TResult? Function(String stringValue)? bookmarks,
+    TResult? Function(String stringValue)? conversations,
+    TResult? Function(String stringValue)? favourites,
+    TResult? Function(String stringValue)? search,
+    TResult? Function(String stringValue)? follows,
+    TResult? Function(String stringValue)? filters,
+    TResult? Function(String stringValue)? lists,
+    TResult? Function(String stringValue)? media,
+    TResult? Function(String stringValue)? mutes,
+    TResult? Function(String stringValue)? notifications,
+    TResult? Function(String stringValue)? reports,
+    TResult? Function(String stringValue)? statuses,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -213,20 +92,20 @@ mixin _$UnifediApiAccessScopesTargetType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Accounts value)? accounts,
-    TResult Function(_Blocks value)? blocks,
-    TResult Function(_Valid value)? bookmarks,
-    TResult Function(_Conversations value)? conversations,
-    TResult Function(_Favourites value)? favourites,
-    TResult Function(_Search value)? search,
-    TResult Function(_Follows value)? follows,
-    TResult Function(_Filters value)? filters,
-    TResult Function(_Lists value)? lists,
-    TResult Function(_Media value)? media,
-    TResult Function(_Mutes value)? mutes,
-    TResult Function(_Notifications value)? notifications,
-    TResult Function(_Reports value)? reports,
-    TResult Function(_Statuses value)? statuses,
+    TResult? Function(_Accounts value)? accounts,
+    TResult? Function(_Blocks value)? blocks,
+    TResult? Function(_Valid value)? bookmarks,
+    TResult? Function(_Conversations value)? conversations,
+    TResult? Function(_Favourites value)? favourites,
+    TResult? Function(_Search value)? search,
+    TResult? Function(_Follows value)? follows,
+    TResult? Function(_Filters value)? filters,
+    TResult? Function(_Lists value)? lists,
+    TResult? Function(_Media value)? media,
+    TResult? Function(_Mutes value)? mutes,
+    TResult? Function(_Notifications value)? notifications,
+    TResult? Function(_Reports value)? reports,
+    TResult? Function(_Statuses value)? statuses,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -259,57 +138,63 @@ abstract class $UnifediApiAccessScopesTargetTypeCopyWith<$Res> {
   factory $UnifediApiAccessScopesTargetTypeCopyWith(
           UnifediApiAccessScopesTargetType value,
           $Res Function(UnifediApiAccessScopesTargetType) then) =
-      _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res>;
+      _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res,
+          UnifediApiAccessScopesTargetType>;
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res>
+class _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res,
+        $Val extends UnifediApiAccessScopesTargetType>
     implements $UnifediApiAccessScopesTargetTypeCopyWith<$Res> {
   _$UnifediApiAccessScopesTargetTypeCopyWithImpl(this._value, this._then);
 
-  final UnifediApiAccessScopesTargetType _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiAccessScopesTargetType) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
     return _then(_value.copyWith(
-      stringValue: stringValue == freezed
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$AccountsCopyWith<$Res>
+abstract class _$$AccountsImplCopyWith<$Res>
     implements $UnifediApiAccessScopesTargetTypeCopyWith<$Res> {
-  factory _$AccountsCopyWith(_Accounts value, $Res Function(_Accounts) then) =
-      __$AccountsCopyWithImpl<$Res>;
+  factory _$$AccountsImplCopyWith(
+          _$AccountsImpl value, $Res Function(_$AccountsImpl) then) =
+      __$$AccountsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$AccountsCopyWithImpl<$Res>
-    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res>
-    implements _$AccountsCopyWith<$Res> {
-  __$AccountsCopyWithImpl(_Accounts _value, $Res Function(_Accounts) _then)
-      : super(_value, (v) => _then(v as _Accounts));
+class __$$AccountsImplCopyWithImpl<$Res>
+    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res, _$AccountsImpl>
+    implements _$$AccountsImplCopyWith<$Res> {
+  __$$AccountsImplCopyWithImpl(
+      _$AccountsImpl _value, $Res Function(_$AccountsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Accounts get _value => super._value as _Accounts;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Accounts(
-      stringValue: stringValue == freezed
+    return _then(_$AccountsImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -319,13 +204,13 @@ class __$AccountsCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Accounts implements _Accounts {
-  const _$_Accounts(
+class _$AccountsImpl implements _Accounts {
+  const _$AccountsImpl(
       {this.stringValue =
           UnifediApiAccessScopesTargetType.accountsStringValue});
 
-  @JsonKey(defaultValue: UnifediApiAccessScopesTargetType.accountsStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -334,10 +219,10 @@ class _$_Accounts implements _Accounts {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Accounts &&
+            other is _$AccountsImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -347,8 +232,9 @@ class _$_Accounts implements _Accounts {
 
   @JsonKey(ignore: true)
   @override
-  _$AccountsCopyWith<_Accounts> get copyWith =>
-      __$AccountsCopyWithImpl<_Accounts>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AccountsImplCopyWith<_$AccountsImpl> get copyWith =>
+      __$$AccountsImplCopyWithImpl<_$AccountsImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -374,20 +260,20 @@ class _$_Accounts implements _Accounts {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? accounts,
-    TResult Function(String stringValue)? blocks,
-    TResult Function(String stringValue)? bookmarks,
-    TResult Function(String stringValue)? conversations,
-    TResult Function(String stringValue)? favourites,
-    TResult Function(String stringValue)? search,
-    TResult Function(String stringValue)? follows,
-    TResult Function(String stringValue)? filters,
-    TResult Function(String stringValue)? lists,
-    TResult Function(String stringValue)? media,
-    TResult Function(String stringValue)? mutes,
-    TResult Function(String stringValue)? notifications,
-    TResult Function(String stringValue)? reports,
-    TResult Function(String stringValue)? statuses,
+    TResult? Function(String stringValue)? accounts,
+    TResult? Function(String stringValue)? blocks,
+    TResult? Function(String stringValue)? bookmarks,
+    TResult? Function(String stringValue)? conversations,
+    TResult? Function(String stringValue)? favourites,
+    TResult? Function(String stringValue)? search,
+    TResult? Function(String stringValue)? follows,
+    TResult? Function(String stringValue)? filters,
+    TResult? Function(String stringValue)? lists,
+    TResult? Function(String stringValue)? media,
+    TResult? Function(String stringValue)? mutes,
+    TResult? Function(String stringValue)? notifications,
+    TResult? Function(String stringValue)? reports,
+    TResult? Function(String stringValue)? statuses,
   }) {
     return accounts?.call(stringValue);
   }
@@ -441,20 +327,20 @@ class _$_Accounts implements _Accounts {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Accounts value)? accounts,
-    TResult Function(_Blocks value)? blocks,
-    TResult Function(_Valid value)? bookmarks,
-    TResult Function(_Conversations value)? conversations,
-    TResult Function(_Favourites value)? favourites,
-    TResult Function(_Search value)? search,
-    TResult Function(_Follows value)? follows,
-    TResult Function(_Filters value)? filters,
-    TResult Function(_Lists value)? lists,
-    TResult Function(_Media value)? media,
-    TResult Function(_Mutes value)? mutes,
-    TResult Function(_Notifications value)? notifications,
-    TResult Function(_Reports value)? reports,
-    TResult Function(_Statuses value)? statuses,
+    TResult? Function(_Accounts value)? accounts,
+    TResult? Function(_Blocks value)? blocks,
+    TResult? Function(_Valid value)? bookmarks,
+    TResult? Function(_Conversations value)? conversations,
+    TResult? Function(_Favourites value)? favourites,
+    TResult? Function(_Search value)? search,
+    TResult? Function(_Follows value)? follows,
+    TResult? Function(_Filters value)? filters,
+    TResult? Function(_Lists value)? lists,
+    TResult? Function(_Media value)? media,
+    TResult? Function(_Mutes value)? mutes,
+    TResult? Function(_Notifications value)? notifications,
+    TResult? Function(_Reports value)? reports,
+    TResult? Function(_Statuses value)? statuses,
   }) {
     return accounts?.call(this);
   }
@@ -486,41 +372,42 @@ class _$_Accounts implements _Accounts {
 }
 
 abstract class _Accounts implements UnifediApiAccessScopesTargetType {
-  const factory _Accounts({String stringValue}) = _$_Accounts;
+  const factory _Accounts({final String stringValue}) = _$AccountsImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$AccountsCopyWith<_Accounts> get copyWith =>
+  _$$AccountsImplCopyWith<_$AccountsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$BlocksCopyWith<$Res>
+abstract class _$$BlocksImplCopyWith<$Res>
     implements $UnifediApiAccessScopesTargetTypeCopyWith<$Res> {
-  factory _$BlocksCopyWith(_Blocks value, $Res Function(_Blocks) then) =
-      __$BlocksCopyWithImpl<$Res>;
+  factory _$$BlocksImplCopyWith(
+          _$BlocksImpl value, $Res Function(_$BlocksImpl) then) =
+      __$$BlocksImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$BlocksCopyWithImpl<$Res>
-    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res>
-    implements _$BlocksCopyWith<$Res> {
-  __$BlocksCopyWithImpl(_Blocks _value, $Res Function(_Blocks) _then)
-      : super(_value, (v) => _then(v as _Blocks));
+class __$$BlocksImplCopyWithImpl<$Res>
+    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res, _$BlocksImpl>
+    implements _$$BlocksImplCopyWith<$Res> {
+  __$$BlocksImplCopyWithImpl(
+      _$BlocksImpl _value, $Res Function(_$BlocksImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Blocks get _value => super._value as _Blocks;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Blocks(
-      stringValue: stringValue == freezed
+    return _then(_$BlocksImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -530,12 +417,12 @@ class __$BlocksCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Blocks implements _Blocks {
-  const _$_Blocks(
+class _$BlocksImpl implements _Blocks {
+  const _$BlocksImpl(
       {this.stringValue = UnifediApiAccessScopesTargetType.blocksStringValue});
 
-  @JsonKey(defaultValue: UnifediApiAccessScopesTargetType.blocksStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -544,10 +431,10 @@ class _$_Blocks implements _Blocks {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Blocks &&
+            other is _$BlocksImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -557,8 +444,9 @@ class _$_Blocks implements _Blocks {
 
   @JsonKey(ignore: true)
   @override
-  _$BlocksCopyWith<_Blocks> get copyWith =>
-      __$BlocksCopyWithImpl<_Blocks>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$BlocksImplCopyWith<_$BlocksImpl> get copyWith =>
+      __$$BlocksImplCopyWithImpl<_$BlocksImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -584,20 +472,20 @@ class _$_Blocks implements _Blocks {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? accounts,
-    TResult Function(String stringValue)? blocks,
-    TResult Function(String stringValue)? bookmarks,
-    TResult Function(String stringValue)? conversations,
-    TResult Function(String stringValue)? favourites,
-    TResult Function(String stringValue)? search,
-    TResult Function(String stringValue)? follows,
-    TResult Function(String stringValue)? filters,
-    TResult Function(String stringValue)? lists,
-    TResult Function(String stringValue)? media,
-    TResult Function(String stringValue)? mutes,
-    TResult Function(String stringValue)? notifications,
-    TResult Function(String stringValue)? reports,
-    TResult Function(String stringValue)? statuses,
+    TResult? Function(String stringValue)? accounts,
+    TResult? Function(String stringValue)? blocks,
+    TResult? Function(String stringValue)? bookmarks,
+    TResult? Function(String stringValue)? conversations,
+    TResult? Function(String stringValue)? favourites,
+    TResult? Function(String stringValue)? search,
+    TResult? Function(String stringValue)? follows,
+    TResult? Function(String stringValue)? filters,
+    TResult? Function(String stringValue)? lists,
+    TResult? Function(String stringValue)? media,
+    TResult? Function(String stringValue)? mutes,
+    TResult? Function(String stringValue)? notifications,
+    TResult? Function(String stringValue)? reports,
+    TResult? Function(String stringValue)? statuses,
   }) {
     return blocks?.call(stringValue);
   }
@@ -651,20 +539,20 @@ class _$_Blocks implements _Blocks {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Accounts value)? accounts,
-    TResult Function(_Blocks value)? blocks,
-    TResult Function(_Valid value)? bookmarks,
-    TResult Function(_Conversations value)? conversations,
-    TResult Function(_Favourites value)? favourites,
-    TResult Function(_Search value)? search,
-    TResult Function(_Follows value)? follows,
-    TResult Function(_Filters value)? filters,
-    TResult Function(_Lists value)? lists,
-    TResult Function(_Media value)? media,
-    TResult Function(_Mutes value)? mutes,
-    TResult Function(_Notifications value)? notifications,
-    TResult Function(_Reports value)? reports,
-    TResult Function(_Statuses value)? statuses,
+    TResult? Function(_Accounts value)? accounts,
+    TResult? Function(_Blocks value)? blocks,
+    TResult? Function(_Valid value)? bookmarks,
+    TResult? Function(_Conversations value)? conversations,
+    TResult? Function(_Favourites value)? favourites,
+    TResult? Function(_Search value)? search,
+    TResult? Function(_Follows value)? follows,
+    TResult? Function(_Filters value)? filters,
+    TResult? Function(_Lists value)? lists,
+    TResult? Function(_Media value)? media,
+    TResult? Function(_Mutes value)? mutes,
+    TResult? Function(_Notifications value)? notifications,
+    TResult? Function(_Reports value)? reports,
+    TResult? Function(_Statuses value)? statuses,
   }) {
     return blocks?.call(this);
   }
@@ -696,40 +584,42 @@ class _$_Blocks implements _Blocks {
 }
 
 abstract class _Blocks implements UnifediApiAccessScopesTargetType {
-  const factory _Blocks({String stringValue}) = _$_Blocks;
+  const factory _Blocks({final String stringValue}) = _$BlocksImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$BlocksCopyWith<_Blocks> get copyWith => throw _privateConstructorUsedError;
+  _$$BlocksImplCopyWith<_$BlocksImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ValidCopyWith<$Res>
+abstract class _$$ValidImplCopyWith<$Res>
     implements $UnifediApiAccessScopesTargetTypeCopyWith<$Res> {
-  factory _$ValidCopyWith(_Valid value, $Res Function(_Valid) then) =
-      __$ValidCopyWithImpl<$Res>;
+  factory _$$ValidImplCopyWith(
+          _$ValidImpl value, $Res Function(_$ValidImpl) then) =
+      __$$ValidImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$ValidCopyWithImpl<$Res>
-    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res>
-    implements _$ValidCopyWith<$Res> {
-  __$ValidCopyWithImpl(_Valid _value, $Res Function(_Valid) _then)
-      : super(_value, (v) => _then(v as _Valid));
+class __$$ValidImplCopyWithImpl<$Res>
+    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res, _$ValidImpl>
+    implements _$$ValidImplCopyWith<$Res> {
+  __$$ValidImplCopyWithImpl(
+      _$ValidImpl _value, $Res Function(_$ValidImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Valid get _value => super._value as _Valid;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Valid(
-      stringValue: stringValue == freezed
+    return _then(_$ValidImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -739,13 +629,13 @@ class __$ValidCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Valid implements _Valid {
-  const _$_Valid(
+class _$ValidImpl implements _Valid {
+  const _$ValidImpl(
       {this.stringValue =
           UnifediApiAccessScopesTargetType.bookmarksStringValue});
 
-  @JsonKey(defaultValue: UnifediApiAccessScopesTargetType.bookmarksStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -754,10 +644,10 @@ class _$_Valid implements _Valid {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Valid &&
+            other is _$ValidImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -767,8 +657,9 @@ class _$_Valid implements _Valid {
 
   @JsonKey(ignore: true)
   @override
-  _$ValidCopyWith<_Valid> get copyWith =>
-      __$ValidCopyWithImpl<_Valid>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ValidImplCopyWith<_$ValidImpl> get copyWith =>
+      __$$ValidImplCopyWithImpl<_$ValidImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -794,20 +685,20 @@ class _$_Valid implements _Valid {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? accounts,
-    TResult Function(String stringValue)? blocks,
-    TResult Function(String stringValue)? bookmarks,
-    TResult Function(String stringValue)? conversations,
-    TResult Function(String stringValue)? favourites,
-    TResult Function(String stringValue)? search,
-    TResult Function(String stringValue)? follows,
-    TResult Function(String stringValue)? filters,
-    TResult Function(String stringValue)? lists,
-    TResult Function(String stringValue)? media,
-    TResult Function(String stringValue)? mutes,
-    TResult Function(String stringValue)? notifications,
-    TResult Function(String stringValue)? reports,
-    TResult Function(String stringValue)? statuses,
+    TResult? Function(String stringValue)? accounts,
+    TResult? Function(String stringValue)? blocks,
+    TResult? Function(String stringValue)? bookmarks,
+    TResult? Function(String stringValue)? conversations,
+    TResult? Function(String stringValue)? favourites,
+    TResult? Function(String stringValue)? search,
+    TResult? Function(String stringValue)? follows,
+    TResult? Function(String stringValue)? filters,
+    TResult? Function(String stringValue)? lists,
+    TResult? Function(String stringValue)? media,
+    TResult? Function(String stringValue)? mutes,
+    TResult? Function(String stringValue)? notifications,
+    TResult? Function(String stringValue)? reports,
+    TResult? Function(String stringValue)? statuses,
   }) {
     return bookmarks?.call(stringValue);
   }
@@ -861,20 +752,20 @@ class _$_Valid implements _Valid {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Accounts value)? accounts,
-    TResult Function(_Blocks value)? blocks,
-    TResult Function(_Valid value)? bookmarks,
-    TResult Function(_Conversations value)? conversations,
-    TResult Function(_Favourites value)? favourites,
-    TResult Function(_Search value)? search,
-    TResult Function(_Follows value)? follows,
-    TResult Function(_Filters value)? filters,
-    TResult Function(_Lists value)? lists,
-    TResult Function(_Media value)? media,
-    TResult Function(_Mutes value)? mutes,
-    TResult Function(_Notifications value)? notifications,
-    TResult Function(_Reports value)? reports,
-    TResult Function(_Statuses value)? statuses,
+    TResult? Function(_Accounts value)? accounts,
+    TResult? Function(_Blocks value)? blocks,
+    TResult? Function(_Valid value)? bookmarks,
+    TResult? Function(_Conversations value)? conversations,
+    TResult? Function(_Favourites value)? favourites,
+    TResult? Function(_Search value)? search,
+    TResult? Function(_Follows value)? follows,
+    TResult? Function(_Filters value)? filters,
+    TResult? Function(_Lists value)? lists,
+    TResult? Function(_Media value)? media,
+    TResult? Function(_Mutes value)? mutes,
+    TResult? Function(_Notifications value)? notifications,
+    TResult? Function(_Reports value)? reports,
+    TResult? Function(_Statuses value)? statuses,
   }) {
     return bookmarks?.call(this);
   }
@@ -906,42 +797,42 @@ class _$_Valid implements _Valid {
 }
 
 abstract class _Valid implements UnifediApiAccessScopesTargetType {
-  const factory _Valid({String stringValue}) = _$_Valid;
+  const factory _Valid({final String stringValue}) = _$ValidImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$ValidCopyWith<_Valid> get copyWith => throw _privateConstructorUsedError;
+  _$$ValidImplCopyWith<_$ValidImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ConversationsCopyWith<$Res>
+abstract class _$$ConversationsImplCopyWith<$Res>
     implements $UnifediApiAccessScopesTargetTypeCopyWith<$Res> {
-  factory _$ConversationsCopyWith(
-          _Conversations value, $Res Function(_Conversations) then) =
-      __$ConversationsCopyWithImpl<$Res>;
+  factory _$$ConversationsImplCopyWith(
+          _$ConversationsImpl value, $Res Function(_$ConversationsImpl) then) =
+      __$$ConversationsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$ConversationsCopyWithImpl<$Res>
-    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res>
-    implements _$ConversationsCopyWith<$Res> {
-  __$ConversationsCopyWithImpl(
-      _Conversations _value, $Res Function(_Conversations) _then)
-      : super(_value, (v) => _then(v as _Conversations));
+class __$$ConversationsImplCopyWithImpl<$Res>
+    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res,
+        _$ConversationsImpl> implements _$$ConversationsImplCopyWith<$Res> {
+  __$$ConversationsImplCopyWithImpl(
+      _$ConversationsImpl _value, $Res Function(_$ConversationsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Conversations get _value => super._value as _Conversations;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Conversations(
-      stringValue: stringValue == freezed
+    return _then(_$ConversationsImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -951,14 +842,13 @@ class __$ConversationsCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Conversations implements _Conversations {
-  const _$_Conversations(
+class _$ConversationsImpl implements _Conversations {
+  const _$ConversationsImpl(
       {this.stringValue =
           UnifediApiAccessScopesTargetType.conversationsStringValue});
 
-  @JsonKey(
-      defaultValue: UnifediApiAccessScopesTargetType.conversationsStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -967,10 +857,10 @@ class _$_Conversations implements _Conversations {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Conversations &&
+            other is _$ConversationsImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -980,8 +870,9 @@ class _$_Conversations implements _Conversations {
 
   @JsonKey(ignore: true)
   @override
-  _$ConversationsCopyWith<_Conversations> get copyWith =>
-      __$ConversationsCopyWithImpl<_Conversations>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ConversationsImplCopyWith<_$ConversationsImpl> get copyWith =>
+      __$$ConversationsImplCopyWithImpl<_$ConversationsImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1007,20 +898,20 @@ class _$_Conversations implements _Conversations {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? accounts,
-    TResult Function(String stringValue)? blocks,
-    TResult Function(String stringValue)? bookmarks,
-    TResult Function(String stringValue)? conversations,
-    TResult Function(String stringValue)? favourites,
-    TResult Function(String stringValue)? search,
-    TResult Function(String stringValue)? follows,
-    TResult Function(String stringValue)? filters,
-    TResult Function(String stringValue)? lists,
-    TResult Function(String stringValue)? media,
-    TResult Function(String stringValue)? mutes,
-    TResult Function(String stringValue)? notifications,
-    TResult Function(String stringValue)? reports,
-    TResult Function(String stringValue)? statuses,
+    TResult? Function(String stringValue)? accounts,
+    TResult? Function(String stringValue)? blocks,
+    TResult? Function(String stringValue)? bookmarks,
+    TResult? Function(String stringValue)? conversations,
+    TResult? Function(String stringValue)? favourites,
+    TResult? Function(String stringValue)? search,
+    TResult? Function(String stringValue)? follows,
+    TResult? Function(String stringValue)? filters,
+    TResult? Function(String stringValue)? lists,
+    TResult? Function(String stringValue)? media,
+    TResult? Function(String stringValue)? mutes,
+    TResult? Function(String stringValue)? notifications,
+    TResult? Function(String stringValue)? reports,
+    TResult? Function(String stringValue)? statuses,
   }) {
     return conversations?.call(stringValue);
   }
@@ -1074,20 +965,20 @@ class _$_Conversations implements _Conversations {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Accounts value)? accounts,
-    TResult Function(_Blocks value)? blocks,
-    TResult Function(_Valid value)? bookmarks,
-    TResult Function(_Conversations value)? conversations,
-    TResult Function(_Favourites value)? favourites,
-    TResult Function(_Search value)? search,
-    TResult Function(_Follows value)? follows,
-    TResult Function(_Filters value)? filters,
-    TResult Function(_Lists value)? lists,
-    TResult Function(_Media value)? media,
-    TResult Function(_Mutes value)? mutes,
-    TResult Function(_Notifications value)? notifications,
-    TResult Function(_Reports value)? reports,
-    TResult Function(_Statuses value)? statuses,
+    TResult? Function(_Accounts value)? accounts,
+    TResult? Function(_Blocks value)? blocks,
+    TResult? Function(_Valid value)? bookmarks,
+    TResult? Function(_Conversations value)? conversations,
+    TResult? Function(_Favourites value)? favourites,
+    TResult? Function(_Search value)? search,
+    TResult? Function(_Follows value)? follows,
+    TResult? Function(_Filters value)? filters,
+    TResult? Function(_Lists value)? lists,
+    TResult? Function(_Media value)? media,
+    TResult? Function(_Mutes value)? mutes,
+    TResult? Function(_Notifications value)? notifications,
+    TResult? Function(_Reports value)? reports,
+    TResult? Function(_Statuses value)? statuses,
   }) {
     return conversations?.call(this);
   }
@@ -1119,43 +1010,43 @@ class _$_Conversations implements _Conversations {
 }
 
 abstract class _Conversations implements UnifediApiAccessScopesTargetType {
-  const factory _Conversations({String stringValue}) = _$_Conversations;
+  const factory _Conversations({final String stringValue}) =
+      _$ConversationsImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$ConversationsCopyWith<_Conversations> get copyWith =>
+  _$$ConversationsImplCopyWith<_$ConversationsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$FavouritesCopyWith<$Res>
+abstract class _$$FavouritesImplCopyWith<$Res>
     implements $UnifediApiAccessScopesTargetTypeCopyWith<$Res> {
-  factory _$FavouritesCopyWith(
-          _Favourites value, $Res Function(_Favourites) then) =
-      __$FavouritesCopyWithImpl<$Res>;
+  factory _$$FavouritesImplCopyWith(
+          _$FavouritesImpl value, $Res Function(_$FavouritesImpl) then) =
+      __$$FavouritesImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$FavouritesCopyWithImpl<$Res>
-    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res>
-    implements _$FavouritesCopyWith<$Res> {
-  __$FavouritesCopyWithImpl(
-      _Favourites _value, $Res Function(_Favourites) _then)
-      : super(_value, (v) => _then(v as _Favourites));
+class __$$FavouritesImplCopyWithImpl<$Res>
+    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res,
+        _$FavouritesImpl> implements _$$FavouritesImplCopyWith<$Res> {
+  __$$FavouritesImplCopyWithImpl(
+      _$FavouritesImpl _value, $Res Function(_$FavouritesImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Favourites get _value => super._value as _Favourites;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Favourites(
-      stringValue: stringValue == freezed
+    return _then(_$FavouritesImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1165,13 +1056,13 @@ class __$FavouritesCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Favourites implements _Favourites {
-  const _$_Favourites(
+class _$FavouritesImpl implements _Favourites {
+  const _$FavouritesImpl(
       {this.stringValue =
           UnifediApiAccessScopesTargetType.favouritesStringValue});
 
-  @JsonKey(defaultValue: UnifediApiAccessScopesTargetType.favouritesStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -1180,10 +1071,10 @@ class _$_Favourites implements _Favourites {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Favourites &&
+            other is _$FavouritesImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -1193,8 +1084,9 @@ class _$_Favourites implements _Favourites {
 
   @JsonKey(ignore: true)
   @override
-  _$FavouritesCopyWith<_Favourites> get copyWith =>
-      __$FavouritesCopyWithImpl<_Favourites>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$FavouritesImplCopyWith<_$FavouritesImpl> get copyWith =>
+      __$$FavouritesImplCopyWithImpl<_$FavouritesImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1220,20 +1112,20 @@ class _$_Favourites implements _Favourites {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? accounts,
-    TResult Function(String stringValue)? blocks,
-    TResult Function(String stringValue)? bookmarks,
-    TResult Function(String stringValue)? conversations,
-    TResult Function(String stringValue)? favourites,
-    TResult Function(String stringValue)? search,
-    TResult Function(String stringValue)? follows,
-    TResult Function(String stringValue)? filters,
-    TResult Function(String stringValue)? lists,
-    TResult Function(String stringValue)? media,
-    TResult Function(String stringValue)? mutes,
-    TResult Function(String stringValue)? notifications,
-    TResult Function(String stringValue)? reports,
-    TResult Function(String stringValue)? statuses,
+    TResult? Function(String stringValue)? accounts,
+    TResult? Function(String stringValue)? blocks,
+    TResult? Function(String stringValue)? bookmarks,
+    TResult? Function(String stringValue)? conversations,
+    TResult? Function(String stringValue)? favourites,
+    TResult? Function(String stringValue)? search,
+    TResult? Function(String stringValue)? follows,
+    TResult? Function(String stringValue)? filters,
+    TResult? Function(String stringValue)? lists,
+    TResult? Function(String stringValue)? media,
+    TResult? Function(String stringValue)? mutes,
+    TResult? Function(String stringValue)? notifications,
+    TResult? Function(String stringValue)? reports,
+    TResult? Function(String stringValue)? statuses,
   }) {
     return favourites?.call(stringValue);
   }
@@ -1287,20 +1179,20 @@ class _$_Favourites implements _Favourites {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Accounts value)? accounts,
-    TResult Function(_Blocks value)? blocks,
-    TResult Function(_Valid value)? bookmarks,
-    TResult Function(_Conversations value)? conversations,
-    TResult Function(_Favourites value)? favourites,
-    TResult Function(_Search value)? search,
-    TResult Function(_Follows value)? follows,
-    TResult Function(_Filters value)? filters,
-    TResult Function(_Lists value)? lists,
-    TResult Function(_Media value)? media,
-    TResult Function(_Mutes value)? mutes,
-    TResult Function(_Notifications value)? notifications,
-    TResult Function(_Reports value)? reports,
-    TResult Function(_Statuses value)? statuses,
+    TResult? Function(_Accounts value)? accounts,
+    TResult? Function(_Blocks value)? blocks,
+    TResult? Function(_Valid value)? bookmarks,
+    TResult? Function(_Conversations value)? conversations,
+    TResult? Function(_Favourites value)? favourites,
+    TResult? Function(_Search value)? search,
+    TResult? Function(_Follows value)? follows,
+    TResult? Function(_Filters value)? filters,
+    TResult? Function(_Lists value)? lists,
+    TResult? Function(_Media value)? media,
+    TResult? Function(_Mutes value)? mutes,
+    TResult? Function(_Notifications value)? notifications,
+    TResult? Function(_Reports value)? reports,
+    TResult? Function(_Statuses value)? statuses,
   }) {
     return favourites?.call(this);
   }
@@ -1332,41 +1224,42 @@ class _$_Favourites implements _Favourites {
 }
 
 abstract class _Favourites implements UnifediApiAccessScopesTargetType {
-  const factory _Favourites({String stringValue}) = _$_Favourites;
+  const factory _Favourites({final String stringValue}) = _$FavouritesImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$FavouritesCopyWith<_Favourites> get copyWith =>
+  _$$FavouritesImplCopyWith<_$FavouritesImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$SearchCopyWith<$Res>
+abstract class _$$SearchImplCopyWith<$Res>
     implements $UnifediApiAccessScopesTargetTypeCopyWith<$Res> {
-  factory _$SearchCopyWith(_Search value, $Res Function(_Search) then) =
-      __$SearchCopyWithImpl<$Res>;
+  factory _$$SearchImplCopyWith(
+          _$SearchImpl value, $Res Function(_$SearchImpl) then) =
+      __$$SearchImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$SearchCopyWithImpl<$Res>
-    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res>
-    implements _$SearchCopyWith<$Res> {
-  __$SearchCopyWithImpl(_Search _value, $Res Function(_Search) _then)
-      : super(_value, (v) => _then(v as _Search));
+class __$$SearchImplCopyWithImpl<$Res>
+    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res, _$SearchImpl>
+    implements _$$SearchImplCopyWith<$Res> {
+  __$$SearchImplCopyWithImpl(
+      _$SearchImpl _value, $Res Function(_$SearchImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Search get _value => super._value as _Search;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Search(
-      stringValue: stringValue == freezed
+    return _then(_$SearchImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1376,12 +1269,12 @@ class __$SearchCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Search implements _Search {
-  const _$_Search(
+class _$SearchImpl implements _Search {
+  const _$SearchImpl(
       {this.stringValue = UnifediApiAccessScopesTargetType.searchStringValue});
 
-  @JsonKey(defaultValue: UnifediApiAccessScopesTargetType.searchStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -1390,10 +1283,10 @@ class _$_Search implements _Search {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Search &&
+            other is _$SearchImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -1403,8 +1296,9 @@ class _$_Search implements _Search {
 
   @JsonKey(ignore: true)
   @override
-  _$SearchCopyWith<_Search> get copyWith =>
-      __$SearchCopyWithImpl<_Search>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$SearchImplCopyWith<_$SearchImpl> get copyWith =>
+      __$$SearchImplCopyWithImpl<_$SearchImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1430,20 +1324,20 @@ class _$_Search implements _Search {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? accounts,
-    TResult Function(String stringValue)? blocks,
-    TResult Function(String stringValue)? bookmarks,
-    TResult Function(String stringValue)? conversations,
-    TResult Function(String stringValue)? favourites,
-    TResult Function(String stringValue)? search,
-    TResult Function(String stringValue)? follows,
-    TResult Function(String stringValue)? filters,
-    TResult Function(String stringValue)? lists,
-    TResult Function(String stringValue)? media,
-    TResult Function(String stringValue)? mutes,
-    TResult Function(String stringValue)? notifications,
-    TResult Function(String stringValue)? reports,
-    TResult Function(String stringValue)? statuses,
+    TResult? Function(String stringValue)? accounts,
+    TResult? Function(String stringValue)? blocks,
+    TResult? Function(String stringValue)? bookmarks,
+    TResult? Function(String stringValue)? conversations,
+    TResult? Function(String stringValue)? favourites,
+    TResult? Function(String stringValue)? search,
+    TResult? Function(String stringValue)? follows,
+    TResult? Function(String stringValue)? filters,
+    TResult? Function(String stringValue)? lists,
+    TResult? Function(String stringValue)? media,
+    TResult? Function(String stringValue)? mutes,
+    TResult? Function(String stringValue)? notifications,
+    TResult? Function(String stringValue)? reports,
+    TResult? Function(String stringValue)? statuses,
   }) {
     return search?.call(stringValue);
   }
@@ -1497,20 +1391,20 @@ class _$_Search implements _Search {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Accounts value)? accounts,
-    TResult Function(_Blocks value)? blocks,
-    TResult Function(_Valid value)? bookmarks,
-    TResult Function(_Conversations value)? conversations,
-    TResult Function(_Favourites value)? favourites,
-    TResult Function(_Search value)? search,
-    TResult Function(_Follows value)? follows,
-    TResult Function(_Filters value)? filters,
-    TResult Function(_Lists value)? lists,
-    TResult Function(_Media value)? media,
-    TResult Function(_Mutes value)? mutes,
-    TResult Function(_Notifications value)? notifications,
-    TResult Function(_Reports value)? reports,
-    TResult Function(_Statuses value)? statuses,
+    TResult? Function(_Accounts value)? accounts,
+    TResult? Function(_Blocks value)? blocks,
+    TResult? Function(_Valid value)? bookmarks,
+    TResult? Function(_Conversations value)? conversations,
+    TResult? Function(_Favourites value)? favourites,
+    TResult? Function(_Search value)? search,
+    TResult? Function(_Follows value)? follows,
+    TResult? Function(_Filters value)? filters,
+    TResult? Function(_Lists value)? lists,
+    TResult? Function(_Media value)? media,
+    TResult? Function(_Mutes value)? mutes,
+    TResult? Function(_Notifications value)? notifications,
+    TResult? Function(_Reports value)? reports,
+    TResult? Function(_Statuses value)? statuses,
   }) {
     return search?.call(this);
   }
@@ -1542,40 +1436,42 @@ class _$_Search implements _Search {
 }
 
 abstract class _Search implements UnifediApiAccessScopesTargetType {
-  const factory _Search({String stringValue}) = _$_Search;
+  const factory _Search({final String stringValue}) = _$SearchImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$SearchCopyWith<_Search> get copyWith => throw _privateConstructorUsedError;
+  _$$SearchImplCopyWith<_$SearchImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$FollowsCopyWith<$Res>
+abstract class _$$FollowsImplCopyWith<$Res>
     implements $UnifediApiAccessScopesTargetTypeCopyWith<$Res> {
-  factory _$FollowsCopyWith(_Follows value, $Res Function(_Follows) then) =
-      __$FollowsCopyWithImpl<$Res>;
+  factory _$$FollowsImplCopyWith(
+          _$FollowsImpl value, $Res Function(_$FollowsImpl) then) =
+      __$$FollowsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$FollowsCopyWithImpl<$Res>
-    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res>
-    implements _$FollowsCopyWith<$Res> {
-  __$FollowsCopyWithImpl(_Follows _value, $Res Function(_Follows) _then)
-      : super(_value, (v) => _then(v as _Follows));
+class __$$FollowsImplCopyWithImpl<$Res>
+    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res, _$FollowsImpl>
+    implements _$$FollowsImplCopyWith<$Res> {
+  __$$FollowsImplCopyWithImpl(
+      _$FollowsImpl _value, $Res Function(_$FollowsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Follows get _value => super._value as _Follows;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Follows(
-      stringValue: stringValue == freezed
+    return _then(_$FollowsImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1585,12 +1481,12 @@ class __$FollowsCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Follows implements _Follows {
-  const _$_Follows(
+class _$FollowsImpl implements _Follows {
+  const _$FollowsImpl(
       {this.stringValue = UnifediApiAccessScopesTargetType.followsStringValue});
 
-  @JsonKey(defaultValue: UnifediApiAccessScopesTargetType.followsStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -1599,10 +1495,10 @@ class _$_Follows implements _Follows {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Follows &&
+            other is _$FollowsImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -1612,8 +1508,9 @@ class _$_Follows implements _Follows {
 
   @JsonKey(ignore: true)
   @override
-  _$FollowsCopyWith<_Follows> get copyWith =>
-      __$FollowsCopyWithImpl<_Follows>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$FollowsImplCopyWith<_$FollowsImpl> get copyWith =>
+      __$$FollowsImplCopyWithImpl<_$FollowsImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1639,20 +1536,20 @@ class _$_Follows implements _Follows {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? accounts,
-    TResult Function(String stringValue)? blocks,
-    TResult Function(String stringValue)? bookmarks,
-    TResult Function(String stringValue)? conversations,
-    TResult Function(String stringValue)? favourites,
-    TResult Function(String stringValue)? search,
-    TResult Function(String stringValue)? follows,
-    TResult Function(String stringValue)? filters,
-    TResult Function(String stringValue)? lists,
-    TResult Function(String stringValue)? media,
-    TResult Function(String stringValue)? mutes,
-    TResult Function(String stringValue)? notifications,
-    TResult Function(String stringValue)? reports,
-    TResult Function(String stringValue)? statuses,
+    TResult? Function(String stringValue)? accounts,
+    TResult? Function(String stringValue)? blocks,
+    TResult? Function(String stringValue)? bookmarks,
+    TResult? Function(String stringValue)? conversations,
+    TResult? Function(String stringValue)? favourites,
+    TResult? Function(String stringValue)? search,
+    TResult? Function(String stringValue)? follows,
+    TResult? Function(String stringValue)? filters,
+    TResult? Function(String stringValue)? lists,
+    TResult? Function(String stringValue)? media,
+    TResult? Function(String stringValue)? mutes,
+    TResult? Function(String stringValue)? notifications,
+    TResult? Function(String stringValue)? reports,
+    TResult? Function(String stringValue)? statuses,
   }) {
     return follows?.call(stringValue);
   }
@@ -1706,20 +1603,20 @@ class _$_Follows implements _Follows {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Accounts value)? accounts,
-    TResult Function(_Blocks value)? blocks,
-    TResult Function(_Valid value)? bookmarks,
-    TResult Function(_Conversations value)? conversations,
-    TResult Function(_Favourites value)? favourites,
-    TResult Function(_Search value)? search,
-    TResult Function(_Follows value)? follows,
-    TResult Function(_Filters value)? filters,
-    TResult Function(_Lists value)? lists,
-    TResult Function(_Media value)? media,
-    TResult Function(_Mutes value)? mutes,
-    TResult Function(_Notifications value)? notifications,
-    TResult Function(_Reports value)? reports,
-    TResult Function(_Statuses value)? statuses,
+    TResult? Function(_Accounts value)? accounts,
+    TResult? Function(_Blocks value)? blocks,
+    TResult? Function(_Valid value)? bookmarks,
+    TResult? Function(_Conversations value)? conversations,
+    TResult? Function(_Favourites value)? favourites,
+    TResult? Function(_Search value)? search,
+    TResult? Function(_Follows value)? follows,
+    TResult? Function(_Filters value)? filters,
+    TResult? Function(_Lists value)? lists,
+    TResult? Function(_Media value)? media,
+    TResult? Function(_Mutes value)? mutes,
+    TResult? Function(_Notifications value)? notifications,
+    TResult? Function(_Reports value)? reports,
+    TResult? Function(_Statuses value)? statuses,
   }) {
     return follows?.call(this);
   }
@@ -1751,41 +1648,42 @@ class _$_Follows implements _Follows {
 }
 
 abstract class _Follows implements UnifediApiAccessScopesTargetType {
-  const factory _Follows({String stringValue}) = _$_Follows;
+  const factory _Follows({final String stringValue}) = _$FollowsImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$FollowsCopyWith<_Follows> get copyWith =>
+  _$$FollowsImplCopyWith<_$FollowsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$FiltersCopyWith<$Res>
+abstract class _$$FiltersImplCopyWith<$Res>
     implements $UnifediApiAccessScopesTargetTypeCopyWith<$Res> {
-  factory _$FiltersCopyWith(_Filters value, $Res Function(_Filters) then) =
-      __$FiltersCopyWithImpl<$Res>;
+  factory _$$FiltersImplCopyWith(
+          _$FiltersImpl value, $Res Function(_$FiltersImpl) then) =
+      __$$FiltersImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$FiltersCopyWithImpl<$Res>
-    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res>
-    implements _$FiltersCopyWith<$Res> {
-  __$FiltersCopyWithImpl(_Filters _value, $Res Function(_Filters) _then)
-      : super(_value, (v) => _then(v as _Filters));
+class __$$FiltersImplCopyWithImpl<$Res>
+    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res, _$FiltersImpl>
+    implements _$$FiltersImplCopyWith<$Res> {
+  __$$FiltersImplCopyWithImpl(
+      _$FiltersImpl _value, $Res Function(_$FiltersImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Filters get _value => super._value as _Filters;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Filters(
-      stringValue: stringValue == freezed
+    return _then(_$FiltersImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1795,13 +1693,13 @@ class __$FiltersCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Filters implements _Filters {
-  const _$_Filters(
+class _$FiltersImpl implements _Filters {
+  const _$FiltersImpl(
       {this.stringValue =
           UnifediApiAccessScopesTargetType.favouritesStringValue});
 
-  @JsonKey(defaultValue: UnifediApiAccessScopesTargetType.favouritesStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -1810,10 +1708,10 @@ class _$_Filters implements _Filters {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Filters &&
+            other is _$FiltersImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -1823,8 +1721,9 @@ class _$_Filters implements _Filters {
 
   @JsonKey(ignore: true)
   @override
-  _$FiltersCopyWith<_Filters> get copyWith =>
-      __$FiltersCopyWithImpl<_Filters>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$FiltersImplCopyWith<_$FiltersImpl> get copyWith =>
+      __$$FiltersImplCopyWithImpl<_$FiltersImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1850,20 +1749,20 @@ class _$_Filters implements _Filters {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? accounts,
-    TResult Function(String stringValue)? blocks,
-    TResult Function(String stringValue)? bookmarks,
-    TResult Function(String stringValue)? conversations,
-    TResult Function(String stringValue)? favourites,
-    TResult Function(String stringValue)? search,
-    TResult Function(String stringValue)? follows,
-    TResult Function(String stringValue)? filters,
-    TResult Function(String stringValue)? lists,
-    TResult Function(String stringValue)? media,
-    TResult Function(String stringValue)? mutes,
-    TResult Function(String stringValue)? notifications,
-    TResult Function(String stringValue)? reports,
-    TResult Function(String stringValue)? statuses,
+    TResult? Function(String stringValue)? accounts,
+    TResult? Function(String stringValue)? blocks,
+    TResult? Function(String stringValue)? bookmarks,
+    TResult? Function(String stringValue)? conversations,
+    TResult? Function(String stringValue)? favourites,
+    TResult? Function(String stringValue)? search,
+    TResult? Function(String stringValue)? follows,
+    TResult? Function(String stringValue)? filters,
+    TResult? Function(String stringValue)? lists,
+    TResult? Function(String stringValue)? media,
+    TResult? Function(String stringValue)? mutes,
+    TResult? Function(String stringValue)? notifications,
+    TResult? Function(String stringValue)? reports,
+    TResult? Function(String stringValue)? statuses,
   }) {
     return filters?.call(stringValue);
   }
@@ -1917,20 +1816,20 @@ class _$_Filters implements _Filters {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Accounts value)? accounts,
-    TResult Function(_Blocks value)? blocks,
-    TResult Function(_Valid value)? bookmarks,
-    TResult Function(_Conversations value)? conversations,
-    TResult Function(_Favourites value)? favourites,
-    TResult Function(_Search value)? search,
-    TResult Function(_Follows value)? follows,
-    TResult Function(_Filters value)? filters,
-    TResult Function(_Lists value)? lists,
-    TResult Function(_Media value)? media,
-    TResult Function(_Mutes value)? mutes,
-    TResult Function(_Notifications value)? notifications,
-    TResult Function(_Reports value)? reports,
-    TResult Function(_Statuses value)? statuses,
+    TResult? Function(_Accounts value)? accounts,
+    TResult? Function(_Blocks value)? blocks,
+    TResult? Function(_Valid value)? bookmarks,
+    TResult? Function(_Conversations value)? conversations,
+    TResult? Function(_Favourites value)? favourites,
+    TResult? Function(_Search value)? search,
+    TResult? Function(_Follows value)? follows,
+    TResult? Function(_Filters value)? filters,
+    TResult? Function(_Lists value)? lists,
+    TResult? Function(_Media value)? media,
+    TResult? Function(_Mutes value)? mutes,
+    TResult? Function(_Notifications value)? notifications,
+    TResult? Function(_Reports value)? reports,
+    TResult? Function(_Statuses value)? statuses,
   }) {
     return filters?.call(this);
   }
@@ -1962,41 +1861,42 @@ class _$_Filters implements _Filters {
 }
 
 abstract class _Filters implements UnifediApiAccessScopesTargetType {
-  const factory _Filters({String stringValue}) = _$_Filters;
+  const factory _Filters({final String stringValue}) = _$FiltersImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$FiltersCopyWith<_Filters> get copyWith =>
+  _$$FiltersImplCopyWith<_$FiltersImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ListsCopyWith<$Res>
+abstract class _$$ListsImplCopyWith<$Res>
     implements $UnifediApiAccessScopesTargetTypeCopyWith<$Res> {
-  factory _$ListsCopyWith(_Lists value, $Res Function(_Lists) then) =
-      __$ListsCopyWithImpl<$Res>;
+  factory _$$ListsImplCopyWith(
+          _$ListsImpl value, $Res Function(_$ListsImpl) then) =
+      __$$ListsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$ListsCopyWithImpl<$Res>
-    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res>
-    implements _$ListsCopyWith<$Res> {
-  __$ListsCopyWithImpl(_Lists _value, $Res Function(_Lists) _then)
-      : super(_value, (v) => _then(v as _Lists));
+class __$$ListsImplCopyWithImpl<$Res>
+    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res, _$ListsImpl>
+    implements _$$ListsImplCopyWith<$Res> {
+  __$$ListsImplCopyWithImpl(
+      _$ListsImpl _value, $Res Function(_$ListsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Lists get _value => super._value as _Lists;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Lists(
-      stringValue: stringValue == freezed
+    return _then(_$ListsImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -2006,12 +1906,12 @@ class __$ListsCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Lists implements _Lists {
-  const _$_Lists(
+class _$ListsImpl implements _Lists {
+  const _$ListsImpl(
       {this.stringValue = UnifediApiAccessScopesTargetType.listsStringValue});
 
-  @JsonKey(defaultValue: UnifediApiAccessScopesTargetType.listsStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -2020,10 +1920,10 @@ class _$_Lists implements _Lists {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Lists &&
+            other is _$ListsImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -2033,8 +1933,9 @@ class _$_Lists implements _Lists {
 
   @JsonKey(ignore: true)
   @override
-  _$ListsCopyWith<_Lists> get copyWith =>
-      __$ListsCopyWithImpl<_Lists>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ListsImplCopyWith<_$ListsImpl> get copyWith =>
+      __$$ListsImplCopyWithImpl<_$ListsImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2060,20 +1961,20 @@ class _$_Lists implements _Lists {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? accounts,
-    TResult Function(String stringValue)? blocks,
-    TResult Function(String stringValue)? bookmarks,
-    TResult Function(String stringValue)? conversations,
-    TResult Function(String stringValue)? favourites,
-    TResult Function(String stringValue)? search,
-    TResult Function(String stringValue)? follows,
-    TResult Function(String stringValue)? filters,
-    TResult Function(String stringValue)? lists,
-    TResult Function(String stringValue)? media,
-    TResult Function(String stringValue)? mutes,
-    TResult Function(String stringValue)? notifications,
-    TResult Function(String stringValue)? reports,
-    TResult Function(String stringValue)? statuses,
+    TResult? Function(String stringValue)? accounts,
+    TResult? Function(String stringValue)? blocks,
+    TResult? Function(String stringValue)? bookmarks,
+    TResult? Function(String stringValue)? conversations,
+    TResult? Function(String stringValue)? favourites,
+    TResult? Function(String stringValue)? search,
+    TResult? Function(String stringValue)? follows,
+    TResult? Function(String stringValue)? filters,
+    TResult? Function(String stringValue)? lists,
+    TResult? Function(String stringValue)? media,
+    TResult? Function(String stringValue)? mutes,
+    TResult? Function(String stringValue)? notifications,
+    TResult? Function(String stringValue)? reports,
+    TResult? Function(String stringValue)? statuses,
   }) {
     return lists?.call(stringValue);
   }
@@ -2127,20 +2028,20 @@ class _$_Lists implements _Lists {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Accounts value)? accounts,
-    TResult Function(_Blocks value)? blocks,
-    TResult Function(_Valid value)? bookmarks,
-    TResult Function(_Conversations value)? conversations,
-    TResult Function(_Favourites value)? favourites,
-    TResult Function(_Search value)? search,
-    TResult Function(_Follows value)? follows,
-    TResult Function(_Filters value)? filters,
-    TResult Function(_Lists value)? lists,
-    TResult Function(_Media value)? media,
-    TResult Function(_Mutes value)? mutes,
-    TResult Function(_Notifications value)? notifications,
-    TResult Function(_Reports value)? reports,
-    TResult Function(_Statuses value)? statuses,
+    TResult? Function(_Accounts value)? accounts,
+    TResult? Function(_Blocks value)? blocks,
+    TResult? Function(_Valid value)? bookmarks,
+    TResult? Function(_Conversations value)? conversations,
+    TResult? Function(_Favourites value)? favourites,
+    TResult? Function(_Search value)? search,
+    TResult? Function(_Follows value)? follows,
+    TResult? Function(_Filters value)? filters,
+    TResult? Function(_Lists value)? lists,
+    TResult? Function(_Media value)? media,
+    TResult? Function(_Mutes value)? mutes,
+    TResult? Function(_Notifications value)? notifications,
+    TResult? Function(_Reports value)? reports,
+    TResult? Function(_Statuses value)? statuses,
   }) {
     return lists?.call(this);
   }
@@ -2172,40 +2073,42 @@ class _$_Lists implements _Lists {
 }
 
 abstract class _Lists implements UnifediApiAccessScopesTargetType {
-  const factory _Lists({String stringValue}) = _$_Lists;
+  const factory _Lists({final String stringValue}) = _$ListsImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$ListsCopyWith<_Lists> get copyWith => throw _privateConstructorUsedError;
+  _$$ListsImplCopyWith<_$ListsImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$MediaCopyWith<$Res>
+abstract class _$$MediaImplCopyWith<$Res>
     implements $UnifediApiAccessScopesTargetTypeCopyWith<$Res> {
-  factory _$MediaCopyWith(_Media value, $Res Function(_Media) then) =
-      __$MediaCopyWithImpl<$Res>;
+  factory _$$MediaImplCopyWith(
+          _$MediaImpl value, $Res Function(_$MediaImpl) then) =
+      __$$MediaImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$MediaCopyWithImpl<$Res>
-    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res>
-    implements _$MediaCopyWith<$Res> {
-  __$MediaCopyWithImpl(_Media _value, $Res Function(_Media) _then)
-      : super(_value, (v) => _then(v as _Media));
+class __$$MediaImplCopyWithImpl<$Res>
+    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res, _$MediaImpl>
+    implements _$$MediaImplCopyWith<$Res> {
+  __$$MediaImplCopyWithImpl(
+      _$MediaImpl _value, $Res Function(_$MediaImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Media get _value => super._value as _Media;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Media(
-      stringValue: stringValue == freezed
+    return _then(_$MediaImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -2215,12 +2118,12 @@ class __$MediaCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Media implements _Media {
-  const _$_Media(
+class _$MediaImpl implements _Media {
+  const _$MediaImpl(
       {this.stringValue = UnifediApiAccessScopesTargetType.mediaStringValue});
 
-  @JsonKey(defaultValue: UnifediApiAccessScopesTargetType.mediaStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -2229,10 +2132,10 @@ class _$_Media implements _Media {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Media &&
+            other is _$MediaImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -2242,8 +2145,9 @@ class _$_Media implements _Media {
 
   @JsonKey(ignore: true)
   @override
-  _$MediaCopyWith<_Media> get copyWith =>
-      __$MediaCopyWithImpl<_Media>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MediaImplCopyWith<_$MediaImpl> get copyWith =>
+      __$$MediaImplCopyWithImpl<_$MediaImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2269,20 +2173,20 @@ class _$_Media implements _Media {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? accounts,
-    TResult Function(String stringValue)? blocks,
-    TResult Function(String stringValue)? bookmarks,
-    TResult Function(String stringValue)? conversations,
-    TResult Function(String stringValue)? favourites,
-    TResult Function(String stringValue)? search,
-    TResult Function(String stringValue)? follows,
-    TResult Function(String stringValue)? filters,
-    TResult Function(String stringValue)? lists,
-    TResult Function(String stringValue)? media,
-    TResult Function(String stringValue)? mutes,
-    TResult Function(String stringValue)? notifications,
-    TResult Function(String stringValue)? reports,
-    TResult Function(String stringValue)? statuses,
+    TResult? Function(String stringValue)? accounts,
+    TResult? Function(String stringValue)? blocks,
+    TResult? Function(String stringValue)? bookmarks,
+    TResult? Function(String stringValue)? conversations,
+    TResult? Function(String stringValue)? favourites,
+    TResult? Function(String stringValue)? search,
+    TResult? Function(String stringValue)? follows,
+    TResult? Function(String stringValue)? filters,
+    TResult? Function(String stringValue)? lists,
+    TResult? Function(String stringValue)? media,
+    TResult? Function(String stringValue)? mutes,
+    TResult? Function(String stringValue)? notifications,
+    TResult? Function(String stringValue)? reports,
+    TResult? Function(String stringValue)? statuses,
   }) {
     return media?.call(stringValue);
   }
@@ -2336,20 +2240,20 @@ class _$_Media implements _Media {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Accounts value)? accounts,
-    TResult Function(_Blocks value)? blocks,
-    TResult Function(_Valid value)? bookmarks,
-    TResult Function(_Conversations value)? conversations,
-    TResult Function(_Favourites value)? favourites,
-    TResult Function(_Search value)? search,
-    TResult Function(_Follows value)? follows,
-    TResult Function(_Filters value)? filters,
-    TResult Function(_Lists value)? lists,
-    TResult Function(_Media value)? media,
-    TResult Function(_Mutes value)? mutes,
-    TResult Function(_Notifications value)? notifications,
-    TResult Function(_Reports value)? reports,
-    TResult Function(_Statuses value)? statuses,
+    TResult? Function(_Accounts value)? accounts,
+    TResult? Function(_Blocks value)? blocks,
+    TResult? Function(_Valid value)? bookmarks,
+    TResult? Function(_Conversations value)? conversations,
+    TResult? Function(_Favourites value)? favourites,
+    TResult? Function(_Search value)? search,
+    TResult? Function(_Follows value)? follows,
+    TResult? Function(_Filters value)? filters,
+    TResult? Function(_Lists value)? lists,
+    TResult? Function(_Media value)? media,
+    TResult? Function(_Mutes value)? mutes,
+    TResult? Function(_Notifications value)? notifications,
+    TResult? Function(_Reports value)? reports,
+    TResult? Function(_Statuses value)? statuses,
   }) {
     return media?.call(this);
   }
@@ -2381,40 +2285,42 @@ class _$_Media implements _Media {
 }
 
 abstract class _Media implements UnifediApiAccessScopesTargetType {
-  const factory _Media({String stringValue}) = _$_Media;
+  const factory _Media({final String stringValue}) = _$MediaImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$MediaCopyWith<_Media> get copyWith => throw _privateConstructorUsedError;
+  _$$MediaImplCopyWith<_$MediaImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$MutesCopyWith<$Res>
+abstract class _$$MutesImplCopyWith<$Res>
     implements $UnifediApiAccessScopesTargetTypeCopyWith<$Res> {
-  factory _$MutesCopyWith(_Mutes value, $Res Function(_Mutes) then) =
-      __$MutesCopyWithImpl<$Res>;
+  factory _$$MutesImplCopyWith(
+          _$MutesImpl value, $Res Function(_$MutesImpl) then) =
+      __$$MutesImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$MutesCopyWithImpl<$Res>
-    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res>
-    implements _$MutesCopyWith<$Res> {
-  __$MutesCopyWithImpl(_Mutes _value, $Res Function(_Mutes) _then)
-      : super(_value, (v) => _then(v as _Mutes));
+class __$$MutesImplCopyWithImpl<$Res>
+    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res, _$MutesImpl>
+    implements _$$MutesImplCopyWith<$Res> {
+  __$$MutesImplCopyWithImpl(
+      _$MutesImpl _value, $Res Function(_$MutesImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Mutes get _value => super._value as _Mutes;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Mutes(
-      stringValue: stringValue == freezed
+    return _then(_$MutesImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -2424,12 +2330,12 @@ class __$MutesCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Mutes implements _Mutes {
-  const _$_Mutes(
+class _$MutesImpl implements _Mutes {
+  const _$MutesImpl(
       {this.stringValue = UnifediApiAccessScopesTargetType.mutesStringValue});
 
-  @JsonKey(defaultValue: UnifediApiAccessScopesTargetType.mutesStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -2438,10 +2344,10 @@ class _$_Mutes implements _Mutes {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Mutes &&
+            other is _$MutesImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -2451,8 +2357,9 @@ class _$_Mutes implements _Mutes {
 
   @JsonKey(ignore: true)
   @override
-  _$MutesCopyWith<_Mutes> get copyWith =>
-      __$MutesCopyWithImpl<_Mutes>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MutesImplCopyWith<_$MutesImpl> get copyWith =>
+      __$$MutesImplCopyWithImpl<_$MutesImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2478,20 +2385,20 @@ class _$_Mutes implements _Mutes {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? accounts,
-    TResult Function(String stringValue)? blocks,
-    TResult Function(String stringValue)? bookmarks,
-    TResult Function(String stringValue)? conversations,
-    TResult Function(String stringValue)? favourites,
-    TResult Function(String stringValue)? search,
-    TResult Function(String stringValue)? follows,
-    TResult Function(String stringValue)? filters,
-    TResult Function(String stringValue)? lists,
-    TResult Function(String stringValue)? media,
-    TResult Function(String stringValue)? mutes,
-    TResult Function(String stringValue)? notifications,
-    TResult Function(String stringValue)? reports,
-    TResult Function(String stringValue)? statuses,
+    TResult? Function(String stringValue)? accounts,
+    TResult? Function(String stringValue)? blocks,
+    TResult? Function(String stringValue)? bookmarks,
+    TResult? Function(String stringValue)? conversations,
+    TResult? Function(String stringValue)? favourites,
+    TResult? Function(String stringValue)? search,
+    TResult? Function(String stringValue)? follows,
+    TResult? Function(String stringValue)? filters,
+    TResult? Function(String stringValue)? lists,
+    TResult? Function(String stringValue)? media,
+    TResult? Function(String stringValue)? mutes,
+    TResult? Function(String stringValue)? notifications,
+    TResult? Function(String stringValue)? reports,
+    TResult? Function(String stringValue)? statuses,
   }) {
     return mutes?.call(stringValue);
   }
@@ -2545,20 +2452,20 @@ class _$_Mutes implements _Mutes {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Accounts value)? accounts,
-    TResult Function(_Blocks value)? blocks,
-    TResult Function(_Valid value)? bookmarks,
-    TResult Function(_Conversations value)? conversations,
-    TResult Function(_Favourites value)? favourites,
-    TResult Function(_Search value)? search,
-    TResult Function(_Follows value)? follows,
-    TResult Function(_Filters value)? filters,
-    TResult Function(_Lists value)? lists,
-    TResult Function(_Media value)? media,
-    TResult Function(_Mutes value)? mutes,
-    TResult Function(_Notifications value)? notifications,
-    TResult Function(_Reports value)? reports,
-    TResult Function(_Statuses value)? statuses,
+    TResult? Function(_Accounts value)? accounts,
+    TResult? Function(_Blocks value)? blocks,
+    TResult? Function(_Valid value)? bookmarks,
+    TResult? Function(_Conversations value)? conversations,
+    TResult? Function(_Favourites value)? favourites,
+    TResult? Function(_Search value)? search,
+    TResult? Function(_Follows value)? follows,
+    TResult? Function(_Filters value)? filters,
+    TResult? Function(_Lists value)? lists,
+    TResult? Function(_Media value)? media,
+    TResult? Function(_Mutes value)? mutes,
+    TResult? Function(_Notifications value)? notifications,
+    TResult? Function(_Reports value)? reports,
+    TResult? Function(_Statuses value)? statuses,
   }) {
     return mutes?.call(this);
   }
@@ -2590,42 +2497,42 @@ class _$_Mutes implements _Mutes {
 }
 
 abstract class _Mutes implements UnifediApiAccessScopesTargetType {
-  const factory _Mutes({String stringValue}) = _$_Mutes;
+  const factory _Mutes({final String stringValue}) = _$MutesImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$MutesCopyWith<_Mutes> get copyWith => throw _privateConstructorUsedError;
+  _$$MutesImplCopyWith<_$MutesImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$NotificationsCopyWith<$Res>
+abstract class _$$NotificationsImplCopyWith<$Res>
     implements $UnifediApiAccessScopesTargetTypeCopyWith<$Res> {
-  factory _$NotificationsCopyWith(
-          _Notifications value, $Res Function(_Notifications) then) =
-      __$NotificationsCopyWithImpl<$Res>;
+  factory _$$NotificationsImplCopyWith(
+          _$NotificationsImpl value, $Res Function(_$NotificationsImpl) then) =
+      __$$NotificationsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$NotificationsCopyWithImpl<$Res>
-    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res>
-    implements _$NotificationsCopyWith<$Res> {
-  __$NotificationsCopyWithImpl(
-      _Notifications _value, $Res Function(_Notifications) _then)
-      : super(_value, (v) => _then(v as _Notifications));
+class __$$NotificationsImplCopyWithImpl<$Res>
+    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res,
+        _$NotificationsImpl> implements _$$NotificationsImplCopyWith<$Res> {
+  __$$NotificationsImplCopyWithImpl(
+      _$NotificationsImpl _value, $Res Function(_$NotificationsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Notifications get _value => super._value as _Notifications;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Notifications(
-      stringValue: stringValue == freezed
+    return _then(_$NotificationsImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -2635,14 +2542,13 @@ class __$NotificationsCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Notifications implements _Notifications {
-  const _$_Notifications(
+class _$NotificationsImpl implements _Notifications {
+  const _$NotificationsImpl(
       {this.stringValue =
           UnifediApiAccessScopesTargetType.notificationsStringValue});
 
-  @JsonKey(
-      defaultValue: UnifediApiAccessScopesTargetType.notificationsStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -2651,10 +2557,10 @@ class _$_Notifications implements _Notifications {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Notifications &&
+            other is _$NotificationsImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -2664,8 +2570,9 @@ class _$_Notifications implements _Notifications {
 
   @JsonKey(ignore: true)
   @override
-  _$NotificationsCopyWith<_Notifications> get copyWith =>
-      __$NotificationsCopyWithImpl<_Notifications>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$NotificationsImplCopyWith<_$NotificationsImpl> get copyWith =>
+      __$$NotificationsImplCopyWithImpl<_$NotificationsImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2691,20 +2598,20 @@ class _$_Notifications implements _Notifications {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? accounts,
-    TResult Function(String stringValue)? blocks,
-    TResult Function(String stringValue)? bookmarks,
-    TResult Function(String stringValue)? conversations,
-    TResult Function(String stringValue)? favourites,
-    TResult Function(String stringValue)? search,
-    TResult Function(String stringValue)? follows,
-    TResult Function(String stringValue)? filters,
-    TResult Function(String stringValue)? lists,
-    TResult Function(String stringValue)? media,
-    TResult Function(String stringValue)? mutes,
-    TResult Function(String stringValue)? notifications,
-    TResult Function(String stringValue)? reports,
-    TResult Function(String stringValue)? statuses,
+    TResult? Function(String stringValue)? accounts,
+    TResult? Function(String stringValue)? blocks,
+    TResult? Function(String stringValue)? bookmarks,
+    TResult? Function(String stringValue)? conversations,
+    TResult? Function(String stringValue)? favourites,
+    TResult? Function(String stringValue)? search,
+    TResult? Function(String stringValue)? follows,
+    TResult? Function(String stringValue)? filters,
+    TResult? Function(String stringValue)? lists,
+    TResult? Function(String stringValue)? media,
+    TResult? Function(String stringValue)? mutes,
+    TResult? Function(String stringValue)? notifications,
+    TResult? Function(String stringValue)? reports,
+    TResult? Function(String stringValue)? statuses,
   }) {
     return notifications?.call(stringValue);
   }
@@ -2758,20 +2665,20 @@ class _$_Notifications implements _Notifications {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Accounts value)? accounts,
-    TResult Function(_Blocks value)? blocks,
-    TResult Function(_Valid value)? bookmarks,
-    TResult Function(_Conversations value)? conversations,
-    TResult Function(_Favourites value)? favourites,
-    TResult Function(_Search value)? search,
-    TResult Function(_Follows value)? follows,
-    TResult Function(_Filters value)? filters,
-    TResult Function(_Lists value)? lists,
-    TResult Function(_Media value)? media,
-    TResult Function(_Mutes value)? mutes,
-    TResult Function(_Notifications value)? notifications,
-    TResult Function(_Reports value)? reports,
-    TResult Function(_Statuses value)? statuses,
+    TResult? Function(_Accounts value)? accounts,
+    TResult? Function(_Blocks value)? blocks,
+    TResult? Function(_Valid value)? bookmarks,
+    TResult? Function(_Conversations value)? conversations,
+    TResult? Function(_Favourites value)? favourites,
+    TResult? Function(_Search value)? search,
+    TResult? Function(_Follows value)? follows,
+    TResult? Function(_Filters value)? filters,
+    TResult? Function(_Lists value)? lists,
+    TResult? Function(_Media value)? media,
+    TResult? Function(_Mutes value)? mutes,
+    TResult? Function(_Notifications value)? notifications,
+    TResult? Function(_Reports value)? reports,
+    TResult? Function(_Statuses value)? statuses,
   }) {
     return notifications?.call(this);
   }
@@ -2803,41 +2710,43 @@ class _$_Notifications implements _Notifications {
 }
 
 abstract class _Notifications implements UnifediApiAccessScopesTargetType {
-  const factory _Notifications({String stringValue}) = _$_Notifications;
+  const factory _Notifications({final String stringValue}) =
+      _$NotificationsImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$NotificationsCopyWith<_Notifications> get copyWith =>
+  _$$NotificationsImplCopyWith<_$NotificationsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ReportsCopyWith<$Res>
+abstract class _$$ReportsImplCopyWith<$Res>
     implements $UnifediApiAccessScopesTargetTypeCopyWith<$Res> {
-  factory _$ReportsCopyWith(_Reports value, $Res Function(_Reports) then) =
-      __$ReportsCopyWithImpl<$Res>;
+  factory _$$ReportsImplCopyWith(
+          _$ReportsImpl value, $Res Function(_$ReportsImpl) then) =
+      __$$ReportsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$ReportsCopyWithImpl<$Res>
-    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res>
-    implements _$ReportsCopyWith<$Res> {
-  __$ReportsCopyWithImpl(_Reports _value, $Res Function(_Reports) _then)
-      : super(_value, (v) => _then(v as _Reports));
+class __$$ReportsImplCopyWithImpl<$Res>
+    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res, _$ReportsImpl>
+    implements _$$ReportsImplCopyWith<$Res> {
+  __$$ReportsImplCopyWithImpl(
+      _$ReportsImpl _value, $Res Function(_$ReportsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Reports get _value => super._value as _Reports;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Reports(
-      stringValue: stringValue == freezed
+    return _then(_$ReportsImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -2847,12 +2756,12 @@ class __$ReportsCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Reports implements _Reports {
-  const _$_Reports(
+class _$ReportsImpl implements _Reports {
+  const _$ReportsImpl(
       {this.stringValue = UnifediApiAccessScopesTargetType.reportsStringValue});
 
-  @JsonKey(defaultValue: UnifediApiAccessScopesTargetType.reportsStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -2861,10 +2770,10 @@ class _$_Reports implements _Reports {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Reports &&
+            other is _$ReportsImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -2874,8 +2783,9 @@ class _$_Reports implements _Reports {
 
   @JsonKey(ignore: true)
   @override
-  _$ReportsCopyWith<_Reports> get copyWith =>
-      __$ReportsCopyWithImpl<_Reports>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ReportsImplCopyWith<_$ReportsImpl> get copyWith =>
+      __$$ReportsImplCopyWithImpl<_$ReportsImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2901,20 +2811,20 @@ class _$_Reports implements _Reports {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? accounts,
-    TResult Function(String stringValue)? blocks,
-    TResult Function(String stringValue)? bookmarks,
-    TResult Function(String stringValue)? conversations,
-    TResult Function(String stringValue)? favourites,
-    TResult Function(String stringValue)? search,
-    TResult Function(String stringValue)? follows,
-    TResult Function(String stringValue)? filters,
-    TResult Function(String stringValue)? lists,
-    TResult Function(String stringValue)? media,
-    TResult Function(String stringValue)? mutes,
-    TResult Function(String stringValue)? notifications,
-    TResult Function(String stringValue)? reports,
-    TResult Function(String stringValue)? statuses,
+    TResult? Function(String stringValue)? accounts,
+    TResult? Function(String stringValue)? blocks,
+    TResult? Function(String stringValue)? bookmarks,
+    TResult? Function(String stringValue)? conversations,
+    TResult? Function(String stringValue)? favourites,
+    TResult? Function(String stringValue)? search,
+    TResult? Function(String stringValue)? follows,
+    TResult? Function(String stringValue)? filters,
+    TResult? Function(String stringValue)? lists,
+    TResult? Function(String stringValue)? media,
+    TResult? Function(String stringValue)? mutes,
+    TResult? Function(String stringValue)? notifications,
+    TResult? Function(String stringValue)? reports,
+    TResult? Function(String stringValue)? statuses,
   }) {
     return reports?.call(stringValue);
   }
@@ -2968,20 +2878,20 @@ class _$_Reports implements _Reports {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Accounts value)? accounts,
-    TResult Function(_Blocks value)? blocks,
-    TResult Function(_Valid value)? bookmarks,
-    TResult Function(_Conversations value)? conversations,
-    TResult Function(_Favourites value)? favourites,
-    TResult Function(_Search value)? search,
-    TResult Function(_Follows value)? follows,
-    TResult Function(_Filters value)? filters,
-    TResult Function(_Lists value)? lists,
-    TResult Function(_Media value)? media,
-    TResult Function(_Mutes value)? mutes,
-    TResult Function(_Notifications value)? notifications,
-    TResult Function(_Reports value)? reports,
-    TResult Function(_Statuses value)? statuses,
+    TResult? Function(_Accounts value)? accounts,
+    TResult? Function(_Blocks value)? blocks,
+    TResult? Function(_Valid value)? bookmarks,
+    TResult? Function(_Conversations value)? conversations,
+    TResult? Function(_Favourites value)? favourites,
+    TResult? Function(_Search value)? search,
+    TResult? Function(_Follows value)? follows,
+    TResult? Function(_Filters value)? filters,
+    TResult? Function(_Lists value)? lists,
+    TResult? Function(_Media value)? media,
+    TResult? Function(_Mutes value)? mutes,
+    TResult? Function(_Notifications value)? notifications,
+    TResult? Function(_Reports value)? reports,
+    TResult? Function(_Statuses value)? statuses,
   }) {
     return reports?.call(this);
   }
@@ -3013,41 +2923,42 @@ class _$_Reports implements _Reports {
 }
 
 abstract class _Reports implements UnifediApiAccessScopesTargetType {
-  const factory _Reports({String stringValue}) = _$_Reports;
+  const factory _Reports({final String stringValue}) = _$ReportsImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$ReportsCopyWith<_Reports> get copyWith =>
+  _$$ReportsImplCopyWith<_$ReportsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$StatusesCopyWith<$Res>
+abstract class _$$StatusesImplCopyWith<$Res>
     implements $UnifediApiAccessScopesTargetTypeCopyWith<$Res> {
-  factory _$StatusesCopyWith(_Statuses value, $Res Function(_Statuses) then) =
-      __$StatusesCopyWithImpl<$Res>;
+  factory _$$StatusesImplCopyWith(
+          _$StatusesImpl value, $Res Function(_$StatusesImpl) then) =
+      __$$StatusesImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$StatusesCopyWithImpl<$Res>
-    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res>
-    implements _$StatusesCopyWith<$Res> {
-  __$StatusesCopyWithImpl(_Statuses _value, $Res Function(_Statuses) _then)
-      : super(_value, (v) => _then(v as _Statuses));
+class __$$StatusesImplCopyWithImpl<$Res>
+    extends _$UnifediApiAccessScopesTargetTypeCopyWithImpl<$Res, _$StatusesImpl>
+    implements _$$StatusesImplCopyWith<$Res> {
+  __$$StatusesImplCopyWithImpl(
+      _$StatusesImpl _value, $Res Function(_$StatusesImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Statuses get _value => super._value as _Statuses;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Statuses(
-      stringValue: stringValue == freezed
+    return _then(_$StatusesImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -3057,13 +2968,13 @@ class __$StatusesCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Statuses implements _Statuses {
-  const _$_Statuses(
+class _$StatusesImpl implements _Statuses {
+  const _$StatusesImpl(
       {this.stringValue =
           UnifediApiAccessScopesTargetType.statusesStringValue});
 
-  @JsonKey(defaultValue: UnifediApiAccessScopesTargetType.statusesStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -3072,10 +2983,10 @@ class _$_Statuses implements _Statuses {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Statuses &&
+            other is _$StatusesImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -3085,8 +2996,9 @@ class _$_Statuses implements _Statuses {
 
   @JsonKey(ignore: true)
   @override
-  _$StatusesCopyWith<_Statuses> get copyWith =>
-      __$StatusesCopyWithImpl<_Statuses>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$StatusesImplCopyWith<_$StatusesImpl> get copyWith =>
+      __$$StatusesImplCopyWithImpl<_$StatusesImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -3112,20 +3024,20 @@ class _$_Statuses implements _Statuses {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? accounts,
-    TResult Function(String stringValue)? blocks,
-    TResult Function(String stringValue)? bookmarks,
-    TResult Function(String stringValue)? conversations,
-    TResult Function(String stringValue)? favourites,
-    TResult Function(String stringValue)? search,
-    TResult Function(String stringValue)? follows,
-    TResult Function(String stringValue)? filters,
-    TResult Function(String stringValue)? lists,
-    TResult Function(String stringValue)? media,
-    TResult Function(String stringValue)? mutes,
-    TResult Function(String stringValue)? notifications,
-    TResult Function(String stringValue)? reports,
-    TResult Function(String stringValue)? statuses,
+    TResult? Function(String stringValue)? accounts,
+    TResult? Function(String stringValue)? blocks,
+    TResult? Function(String stringValue)? bookmarks,
+    TResult? Function(String stringValue)? conversations,
+    TResult? Function(String stringValue)? favourites,
+    TResult? Function(String stringValue)? search,
+    TResult? Function(String stringValue)? follows,
+    TResult? Function(String stringValue)? filters,
+    TResult? Function(String stringValue)? lists,
+    TResult? Function(String stringValue)? media,
+    TResult? Function(String stringValue)? mutes,
+    TResult? Function(String stringValue)? notifications,
+    TResult? Function(String stringValue)? reports,
+    TResult? Function(String stringValue)? statuses,
   }) {
     return statuses?.call(stringValue);
   }
@@ -3179,20 +3091,20 @@ class _$_Statuses implements _Statuses {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Accounts value)? accounts,
-    TResult Function(_Blocks value)? blocks,
-    TResult Function(_Valid value)? bookmarks,
-    TResult Function(_Conversations value)? conversations,
-    TResult Function(_Favourites value)? favourites,
-    TResult Function(_Search value)? search,
-    TResult Function(_Follows value)? follows,
-    TResult Function(_Filters value)? filters,
-    TResult Function(_Lists value)? lists,
-    TResult Function(_Media value)? media,
-    TResult Function(_Mutes value)? mutes,
-    TResult Function(_Notifications value)? notifications,
-    TResult Function(_Reports value)? reports,
-    TResult Function(_Statuses value)? statuses,
+    TResult? Function(_Accounts value)? accounts,
+    TResult? Function(_Blocks value)? blocks,
+    TResult? Function(_Valid value)? bookmarks,
+    TResult? Function(_Conversations value)? conversations,
+    TResult? Function(_Favourites value)? favourites,
+    TResult? Function(_Search value)? search,
+    TResult? Function(_Follows value)? follows,
+    TResult? Function(_Filters value)? filters,
+    TResult? Function(_Lists value)? lists,
+    TResult? Function(_Media value)? media,
+    TResult? Function(_Mutes value)? mutes,
+    TResult? Function(_Notifications value)? notifications,
+    TResult? Function(_Reports value)? reports,
+    TResult? Function(_Statuses value)? statuses,
   }) {
     return statuses?.call(this);
   }
@@ -3224,12 +3136,12 @@ class _$_Statuses implements _Statuses {
 }
 
 abstract class _Statuses implements UnifediApiAccessScopesTargetType {
-  const factory _Statuses({String stringValue}) = _$_Statuses;
+  const factory _Statuses({final String stringValue}) = _$StatusesImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$StatusesCopyWith<_Statuses> get copyWith =>
+  _$$StatusesImplCopyWith<_$StatusesImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

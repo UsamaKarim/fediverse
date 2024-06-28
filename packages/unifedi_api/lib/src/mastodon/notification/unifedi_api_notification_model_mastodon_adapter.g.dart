@@ -45,16 +45,16 @@ class UnifediApiNotificationMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiNotificationMastodonAdapter
-    _$$_UnifediApiNotificationMastodonAdapterFromJson(
+_$UnifediApiNotificationMastodonAdapterImpl
+    _$$UnifediApiNotificationMastodonAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiNotificationMastodonAdapter(
+        _$UnifediApiNotificationMastodonAdapterImpl(
           MastodonApiNotification.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiNotificationMastodonAdapterToJson(
-        _$_UnifediApiNotificationMastodonAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiNotificationMastodonAdapterImplToJson(
+        _$UnifediApiNotificationMastodonAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'register_access_response_model.dart';
 
@@ -11,26 +12,7 @@ part of 'register_access_response_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$RegisterAccessResponseTearOff {
-  const _$RegisterAccessResponseTearOff();
-
-  _RegisterAccessResponse call(
-      {required IUnifediApiAccess? access,
-      required IUnifediApiRegisterAccountResponse response,
-      required IUnifediApiMyAccount? myAccount}) {
-    return _RegisterAccessResponse(
-      access: access,
-      response: response,
-      myAccount: myAccount,
-    );
-  }
-}
-
-/// @nodoc
-const $RegisterAccessResponse = _$RegisterAccessResponseTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$RegisterAccessResponse {
@@ -48,7 +30,8 @@ mixin _$RegisterAccessResponse {
 abstract class $RegisterAccessResponseCopyWith<$Res> {
   factory $RegisterAccessResponseCopyWith(RegisterAccessResponse value,
           $Res Function(RegisterAccessResponse) then) =
-      _$RegisterAccessResponseCopyWithImpl<$Res>;
+      _$RegisterAccessResponseCopyWithImpl<$Res, RegisterAccessResponse>;
+  @useResult
   $Res call(
       {IUnifediApiAccess? access,
       IUnifediApiRegisterAccountResponse response,
@@ -56,44 +39,49 @@ abstract class $RegisterAccessResponseCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$RegisterAccessResponseCopyWithImpl<$Res>
+class _$RegisterAccessResponseCopyWithImpl<$Res,
+        $Val extends RegisterAccessResponse>
     implements $RegisterAccessResponseCopyWith<$Res> {
   _$RegisterAccessResponseCopyWithImpl(this._value, this._then);
 
-  final RegisterAccessResponse _value;
   // ignore: unused_field
-  final $Res Function(RegisterAccessResponse) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? access = freezed,
-    Object? response = freezed,
+    Object? response = null,
     Object? myAccount = freezed,
   }) {
     return _then(_value.copyWith(
-      access: access == freezed
+      access: freezed == access
           ? _value.access
           : access // ignore: cast_nullable_to_non_nullable
               as IUnifediApiAccess?,
-      response: response == freezed
+      response: null == response
           ? _value.response
           : response // ignore: cast_nullable_to_non_nullable
               as IUnifediApiRegisterAccountResponse,
-      myAccount: myAccount == freezed
+      myAccount: freezed == myAccount
           ? _value.myAccount
           : myAccount // ignore: cast_nullable_to_non_nullable
               as IUnifediApiMyAccount?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$RegisterAccessResponseCopyWith<$Res>
+abstract class _$$RegisterAccessResponseImplCopyWith<$Res>
     implements $RegisterAccessResponseCopyWith<$Res> {
-  factory _$RegisterAccessResponseCopyWith(_RegisterAccessResponse value,
-          $Res Function(_RegisterAccessResponse) then) =
-      __$RegisterAccessResponseCopyWithImpl<$Res>;
+  factory _$$RegisterAccessResponseImplCopyWith(
+          _$RegisterAccessResponseImpl value,
+          $Res Function(_$RegisterAccessResponseImpl) then) =
+      __$$RegisterAccessResponseImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {IUnifediApiAccess? access,
       IUnifediApiRegisterAccountResponse response,
@@ -101,32 +89,32 @@ abstract class _$RegisterAccessResponseCopyWith<$Res>
 }
 
 /// @nodoc
-class __$RegisterAccessResponseCopyWithImpl<$Res>
-    extends _$RegisterAccessResponseCopyWithImpl<$Res>
-    implements _$RegisterAccessResponseCopyWith<$Res> {
-  __$RegisterAccessResponseCopyWithImpl(_RegisterAccessResponse _value,
-      $Res Function(_RegisterAccessResponse) _then)
-      : super(_value, (v) => _then(v as _RegisterAccessResponse));
+class __$$RegisterAccessResponseImplCopyWithImpl<$Res>
+    extends _$RegisterAccessResponseCopyWithImpl<$Res,
+        _$RegisterAccessResponseImpl>
+    implements _$$RegisterAccessResponseImplCopyWith<$Res> {
+  __$$RegisterAccessResponseImplCopyWithImpl(
+      _$RegisterAccessResponseImpl _value,
+      $Res Function(_$RegisterAccessResponseImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _RegisterAccessResponse get _value => super._value as _RegisterAccessResponse;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? access = freezed,
-    Object? response = freezed,
+    Object? response = null,
     Object? myAccount = freezed,
   }) {
-    return _then(_RegisterAccessResponse(
-      access: access == freezed
+    return _then(_$RegisterAccessResponseImpl(
+      access: freezed == access
           ? _value.access
           : access // ignore: cast_nullable_to_non_nullable
               as IUnifediApiAccess?,
-      response: response == freezed
+      response: null == response
           ? _value.response
           : response // ignore: cast_nullable_to_non_nullable
               as IUnifediApiRegisterAccountResponse,
-      myAccount: myAccount == freezed
+      myAccount: freezed == myAccount
           ? _value.myAccount
           : myAccount // ignore: cast_nullable_to_non_nullable
               as IUnifediApiMyAccount?,
@@ -136,8 +124,8 @@ class __$RegisterAccessResponseCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_RegisterAccessResponse implements _RegisterAccessResponse {
-  const _$_RegisterAccessResponse(
+class _$RegisterAccessResponseImpl implements _RegisterAccessResponse {
+  const _$RegisterAccessResponseImpl(
       {required this.access, required this.response, required this.myAccount});
 
   @override
@@ -153,10 +141,10 @@ class _$_RegisterAccessResponse implements _RegisterAccessResponse {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _RegisterAccessResponse &&
+            other is _$RegisterAccessResponseImpl &&
             (identical(other.access, access) || other.access == access) &&
             (identical(other.response, response) ||
                 other.response == response) &&
@@ -169,16 +157,18 @@ class _$_RegisterAccessResponse implements _RegisterAccessResponse {
 
   @JsonKey(ignore: true)
   @override
-  _$RegisterAccessResponseCopyWith<_RegisterAccessResponse> get copyWith =>
-      __$RegisterAccessResponseCopyWithImpl<_RegisterAccessResponse>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$RegisterAccessResponseImplCopyWith<_$RegisterAccessResponseImpl>
+      get copyWith => __$$RegisterAccessResponseImplCopyWithImpl<
+          _$RegisterAccessResponseImpl>(this, _$identity);
 }
 
 abstract class _RegisterAccessResponse implements RegisterAccessResponse {
   const factory _RegisterAccessResponse(
-      {required IUnifediApiAccess? access,
-      required IUnifediApiRegisterAccountResponse response,
-      required IUnifediApiMyAccount? myAccount}) = _$_RegisterAccessResponse;
+          {required final IUnifediApiAccess? access,
+          required final IUnifediApiRegisterAccountResponse response,
+          required final IUnifediApiMyAccount? myAccount}) =
+      _$RegisterAccessResponseImpl;
 
   @override
   IUnifediApiAccess? get access;
@@ -188,6 +178,6 @@ abstract class _RegisterAccessResponse implements RegisterAccessResponse {
   IUnifediApiMyAccount? get myAccount;
   @override
   @JsonKey(ignore: true)
-  _$RegisterAccessResponseCopyWith<_RegisterAccessResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$RegisterAccessResponseImplCopyWith<_$RegisterAccessResponseImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

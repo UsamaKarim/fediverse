@@ -62,9 +62,9 @@ class FediPushNotificationAdapter extends TypeAdapter<FediPushNotification> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_FediPushNotification _$$_FediPushNotificationFromJson(
+_$FediPushNotificationImpl _$$FediPushNotificationImplFromJson(
         Map<String, dynamic> json) =>
-    _$_FediPushNotification(
+    _$FediPushNotificationImpl(
       account: json['account'] as String,
       notificationAction: json['notification_action'] as String?,
       notificationActionInput: json['notification_action_input'] as String?,
@@ -77,8 +77,8 @@ _$_FediPushNotification _$$_FediPushNotificationFromJson(
               json['notification'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_FediPushNotificationToJson(
-    _$_FediPushNotification instance) {
+Map<String, dynamic> _$$FediPushNotificationImplToJson(
+    _$FediPushNotificationImpl instance) {
   final val = <String, dynamic>{
     'account': instance.account,
   };

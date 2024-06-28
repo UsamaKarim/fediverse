@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_instance_type_model.dart';
 
@@ -11,40 +12,11 @@ part of 'unifedi_api_instance_type_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$UnifediApiInstanceTypeTearOff {
-  const _$UnifediApiInstanceTypeTearOff();
-
-  _Pleroma pleroma(
-      {String? stringValue = UnifediApiInstanceType.pleromaStringValue}) {
-    return _Pleroma(
-      stringValue: stringValue,
-    );
-  }
-
-  _Mastodon mastodon(
-      {String? stringValue = UnifediApiInstanceType.mastodonStringValue}) {
-    return _Mastodon(
-      stringValue: stringValue,
-    );
-  }
-
-  _Unknown unknown({required String? stringValue}) {
-    return _Unknown(
-      stringValue: stringValue,
-    );
-  }
-}
-
-/// @nodoc
-const $UnifediApiInstanceType = _$UnifediApiInstanceTypeTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$UnifediApiInstanceType {
   String? get stringValue => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String? stringValue) pleroma,
@@ -54,9 +26,9 @@ mixin _$UnifediApiInstanceType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String? stringValue)? pleroma,
-    TResult Function(String? stringValue)? mastodon,
-    TResult Function(String? stringValue)? unknown,
+    TResult? Function(String? stringValue)? pleroma,
+    TResult? Function(String? stringValue)? mastodon,
+    TResult? Function(String? stringValue)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -76,9 +48,9 @@ mixin _$UnifediApiInstanceType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Pleroma value)? pleroma,
-    TResult Function(_Mastodon value)? mastodon,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Pleroma value)? pleroma,
+    TResult? Function(_Mastodon value)? mastodon,
+    TResult? Function(_Unknown value)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -99,57 +71,62 @@ mixin _$UnifediApiInstanceType {
 abstract class $UnifediApiInstanceTypeCopyWith<$Res> {
   factory $UnifediApiInstanceTypeCopyWith(UnifediApiInstanceType value,
           $Res Function(UnifediApiInstanceType) then) =
-      _$UnifediApiInstanceTypeCopyWithImpl<$Res>;
+      _$UnifediApiInstanceTypeCopyWithImpl<$Res, UnifediApiInstanceType>;
+  @useResult
   $Res call({String? stringValue});
 }
 
 /// @nodoc
-class _$UnifediApiInstanceTypeCopyWithImpl<$Res>
+class _$UnifediApiInstanceTypeCopyWithImpl<$Res,
+        $Val extends UnifediApiInstanceType>
     implements $UnifediApiInstanceTypeCopyWith<$Res> {
   _$UnifediApiInstanceTypeCopyWithImpl(this._value, this._then);
 
-  final UnifediApiInstanceType _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiInstanceType) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? stringValue = freezed,
   }) {
     return _then(_value.copyWith(
-      stringValue: stringValue == freezed
+      stringValue: freezed == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaCopyWith<$Res>
+abstract class _$$PleromaImplCopyWith<$Res>
     implements $UnifediApiInstanceTypeCopyWith<$Res> {
-  factory _$PleromaCopyWith(_Pleroma value, $Res Function(_Pleroma) then) =
-      __$PleromaCopyWithImpl<$Res>;
+  factory _$$PleromaImplCopyWith(
+          _$PleromaImpl value, $Res Function(_$PleromaImpl) then) =
+      __$$PleromaImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String? stringValue});
 }
 
 /// @nodoc
-class __$PleromaCopyWithImpl<$Res>
-    extends _$UnifediApiInstanceTypeCopyWithImpl<$Res>
-    implements _$PleromaCopyWith<$Res> {
-  __$PleromaCopyWithImpl(_Pleroma _value, $Res Function(_Pleroma) _then)
-      : super(_value, (v) => _then(v as _Pleroma));
+class __$$PleromaImplCopyWithImpl<$Res>
+    extends _$UnifediApiInstanceTypeCopyWithImpl<$Res, _$PleromaImpl>
+    implements _$$PleromaImplCopyWith<$Res> {
+  __$$PleromaImplCopyWithImpl(
+      _$PleromaImpl _value, $Res Function(_$PleromaImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Pleroma get _value => super._value as _Pleroma;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? stringValue = freezed,
   }) {
-    return _then(_Pleroma(
-      stringValue: stringValue == freezed
+    return _then(_$PleromaImpl(
+      stringValue: freezed == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -159,12 +136,12 @@ class __$PleromaCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Pleroma implements _Pleroma {
-  const _$_Pleroma(
+class _$PleromaImpl implements _Pleroma {
+  const _$PleromaImpl(
       {this.stringValue = UnifediApiInstanceType.pleromaStringValue});
 
-  @JsonKey(defaultValue: UnifediApiInstanceType.pleromaStringValue)
   @override
+  @JsonKey()
   final String? stringValue;
 
   @override
@@ -173,10 +150,10 @@ class _$_Pleroma implements _Pleroma {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Pleroma &&
+            other is _$PleromaImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -186,8 +163,9 @@ class _$_Pleroma implements _Pleroma {
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaCopyWith<_Pleroma> get copyWith =>
-      __$PleromaCopyWithImpl<_Pleroma>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaImplCopyWith<_$PleromaImpl> get copyWith =>
+      __$$PleromaImplCopyWithImpl<_$PleromaImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -202,9 +180,9 @@ class _$_Pleroma implements _Pleroma {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String? stringValue)? pleroma,
-    TResult Function(String? stringValue)? mastodon,
-    TResult Function(String? stringValue)? unknown,
+    TResult? Function(String? stringValue)? pleroma,
+    TResult? Function(String? stringValue)? mastodon,
+    TResult? Function(String? stringValue)? unknown,
   }) {
     return pleroma?.call(stringValue);
   }
@@ -236,9 +214,9 @@ class _$_Pleroma implements _Pleroma {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Pleroma value)? pleroma,
-    TResult Function(_Mastodon value)? mastodon,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Pleroma value)? pleroma,
+    TResult? Function(_Mastodon value)? mastodon,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return pleroma?.call(this);
   }
@@ -259,41 +237,42 @@ class _$_Pleroma implements _Pleroma {
 }
 
 abstract class _Pleroma implements UnifediApiInstanceType {
-  const factory _Pleroma({String? stringValue}) = _$_Pleroma;
+  const factory _Pleroma({final String? stringValue}) = _$PleromaImpl;
 
   @override
   String? get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$PleromaCopyWith<_Pleroma> get copyWith =>
+  _$$PleromaImplCopyWith<_$PleromaImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$MastodonCopyWith<$Res>
+abstract class _$$MastodonImplCopyWith<$Res>
     implements $UnifediApiInstanceTypeCopyWith<$Res> {
-  factory _$MastodonCopyWith(_Mastodon value, $Res Function(_Mastodon) then) =
-      __$MastodonCopyWithImpl<$Res>;
+  factory _$$MastodonImplCopyWith(
+          _$MastodonImpl value, $Res Function(_$MastodonImpl) then) =
+      __$$MastodonImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String? stringValue});
 }
 
 /// @nodoc
-class __$MastodonCopyWithImpl<$Res>
-    extends _$UnifediApiInstanceTypeCopyWithImpl<$Res>
-    implements _$MastodonCopyWith<$Res> {
-  __$MastodonCopyWithImpl(_Mastodon _value, $Res Function(_Mastodon) _then)
-      : super(_value, (v) => _then(v as _Mastodon));
+class __$$MastodonImplCopyWithImpl<$Res>
+    extends _$UnifediApiInstanceTypeCopyWithImpl<$Res, _$MastodonImpl>
+    implements _$$MastodonImplCopyWith<$Res> {
+  __$$MastodonImplCopyWithImpl(
+      _$MastodonImpl _value, $Res Function(_$MastodonImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Mastodon get _value => super._value as _Mastodon;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? stringValue = freezed,
   }) {
-    return _then(_Mastodon(
-      stringValue: stringValue == freezed
+    return _then(_$MastodonImpl(
+      stringValue: freezed == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -303,12 +282,12 @@ class __$MastodonCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Mastodon implements _Mastodon {
-  const _$_Mastodon(
+class _$MastodonImpl implements _Mastodon {
+  const _$MastodonImpl(
       {this.stringValue = UnifediApiInstanceType.mastodonStringValue});
 
-  @JsonKey(defaultValue: UnifediApiInstanceType.mastodonStringValue)
   @override
+  @JsonKey()
   final String? stringValue;
 
   @override
@@ -317,10 +296,10 @@ class _$_Mastodon implements _Mastodon {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Mastodon &&
+            other is _$MastodonImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -330,8 +309,9 @@ class _$_Mastodon implements _Mastodon {
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonCopyWith<_Mastodon> get copyWith =>
-      __$MastodonCopyWithImpl<_Mastodon>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonImplCopyWith<_$MastodonImpl> get copyWith =>
+      __$$MastodonImplCopyWithImpl<_$MastodonImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -346,9 +326,9 @@ class _$_Mastodon implements _Mastodon {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String? stringValue)? pleroma,
-    TResult Function(String? stringValue)? mastodon,
-    TResult Function(String? stringValue)? unknown,
+    TResult? Function(String? stringValue)? pleroma,
+    TResult? Function(String? stringValue)? mastodon,
+    TResult? Function(String? stringValue)? unknown,
   }) {
     return mastodon?.call(stringValue);
   }
@@ -380,9 +360,9 @@ class _$_Mastodon implements _Mastodon {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Pleroma value)? pleroma,
-    TResult Function(_Mastodon value)? mastodon,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Pleroma value)? pleroma,
+    TResult? Function(_Mastodon value)? mastodon,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return mastodon?.call(this);
   }
@@ -403,41 +383,42 @@ class _$_Mastodon implements _Mastodon {
 }
 
 abstract class _Mastodon implements UnifediApiInstanceType {
-  const factory _Mastodon({String? stringValue}) = _$_Mastodon;
+  const factory _Mastodon({final String? stringValue}) = _$MastodonImpl;
 
   @override
   String? get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$MastodonCopyWith<_Mastodon> get copyWith =>
+  _$$MastodonImplCopyWith<_$MastodonImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$UnknownCopyWith<$Res>
+abstract class _$$UnknownImplCopyWith<$Res>
     implements $UnifediApiInstanceTypeCopyWith<$Res> {
-  factory _$UnknownCopyWith(_Unknown value, $Res Function(_Unknown) then) =
-      __$UnknownCopyWithImpl<$Res>;
+  factory _$$UnknownImplCopyWith(
+          _$UnknownImpl value, $Res Function(_$UnknownImpl) then) =
+      __$$UnknownImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String? stringValue});
 }
 
 /// @nodoc
-class __$UnknownCopyWithImpl<$Res>
-    extends _$UnifediApiInstanceTypeCopyWithImpl<$Res>
-    implements _$UnknownCopyWith<$Res> {
-  __$UnknownCopyWithImpl(_Unknown _value, $Res Function(_Unknown) _then)
-      : super(_value, (v) => _then(v as _Unknown));
+class __$$UnknownImplCopyWithImpl<$Res>
+    extends _$UnifediApiInstanceTypeCopyWithImpl<$Res, _$UnknownImpl>
+    implements _$$UnknownImplCopyWith<$Res> {
+  __$$UnknownImplCopyWithImpl(
+      _$UnknownImpl _value, $Res Function(_$UnknownImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Unknown get _value => super._value as _Unknown;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? stringValue = freezed,
   }) {
-    return _then(_Unknown(
-      stringValue: stringValue == freezed
+    return _then(_$UnknownImpl(
+      stringValue: freezed == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -447,8 +428,8 @@ class __$UnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Unknown implements _Unknown {
-  const _$_Unknown({required this.stringValue});
+class _$UnknownImpl implements _Unknown {
+  const _$UnknownImpl({required this.stringValue});
 
   @override
   final String? stringValue;
@@ -459,10 +440,10 @@ class _$_Unknown implements _Unknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Unknown &&
+            other is _$UnknownImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -472,8 +453,9 @@ class _$_Unknown implements _Unknown {
 
   @JsonKey(ignore: true)
   @override
-  _$UnknownCopyWith<_Unknown> get copyWith =>
-      __$UnknownCopyWithImpl<_Unknown>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnknownImplCopyWith<_$UnknownImpl> get copyWith =>
+      __$$UnknownImplCopyWithImpl<_$UnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -488,9 +470,9 @@ class _$_Unknown implements _Unknown {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String? stringValue)? pleroma,
-    TResult Function(String? stringValue)? mastodon,
-    TResult Function(String? stringValue)? unknown,
+    TResult? Function(String? stringValue)? pleroma,
+    TResult? Function(String? stringValue)? mastodon,
+    TResult? Function(String? stringValue)? unknown,
   }) {
     return unknown?.call(stringValue);
   }
@@ -522,9 +504,9 @@ class _$_Unknown implements _Unknown {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Pleroma value)? pleroma,
-    TResult Function(_Mastodon value)? mastodon,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Pleroma value)? pleroma,
+    TResult? Function(_Mastodon value)? mastodon,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return unknown?.call(this);
   }
@@ -545,12 +527,12 @@ class _$_Unknown implements _Unknown {
 }
 
 abstract class _Unknown implements UnifediApiInstanceType {
-  const factory _Unknown({required String? stringValue}) = _$_Unknown;
+  const factory _Unknown({required final String? stringValue}) = _$UnknownImpl;
 
   @override
   String? get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$UnknownCopyWith<_Unknown> get copyWith =>
+  _$$UnknownImplCopyWith<_$UnknownImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

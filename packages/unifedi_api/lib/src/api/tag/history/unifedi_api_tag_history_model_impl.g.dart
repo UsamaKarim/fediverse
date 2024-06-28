@@ -44,17 +44,17 @@ class UnifediApiTagHistoryAdapter extends TypeAdapter<UnifediApiTagHistory> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiTagHistory _$$_UnifediApiTagHistoryFromJson(
+_$UnifediApiTagHistoryImpl _$$UnifediApiTagHistoryImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiTagHistory(
+    _$UnifediApiTagHistoryImpl(
       items: (json['items'] as List<dynamic>)
           .map((e) =>
               UnifediApiTagHistoryItem.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
-Map<String, dynamic> _$$_UnifediApiTagHistoryToJson(
-        _$_UnifediApiTagHistory instance) =>
+Map<String, dynamic> _$$UnifediApiTagHistoryImplToJson(
+        _$UnifediApiTagHistoryImpl instance) =>
     <String, dynamic>{
       'items': instance.items.map((e) => e.toJson()).toList(),
     };

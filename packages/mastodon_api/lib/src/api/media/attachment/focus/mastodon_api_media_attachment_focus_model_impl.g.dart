@@ -48,15 +48,15 @@ class MastodonApiMediaAttachmentFocusAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiMediaAttachmentFocus _$$_MastodonApiMediaAttachmentFocusFromJson(
-        Map<String, dynamic> json) =>
-    _$_MastodonApiMediaAttachmentFocus(
-      x: (json['x'] as num).toDouble(),
-      y: (json['y'] as num).toDouble(),
-    );
+_$MastodonApiMediaAttachmentFocusImpl
+    _$$MastodonApiMediaAttachmentFocusImplFromJson(Map<String, dynamic> json) =>
+        _$MastodonApiMediaAttachmentFocusImpl(
+          x: (json['x'] as num).toDouble(),
+          y: (json['y'] as num).toDouble(),
+        );
 
-Map<String, dynamic> _$$_MastodonApiMediaAttachmentFocusToJson(
-        _$_MastodonApiMediaAttachmentFocus instance) =>
+Map<String, dynamic> _$$MastodonApiMediaAttachmentFocusImplToJson(
+        _$MastodonApiMediaAttachmentFocusImpl instance) =>
     <String, dynamic>{
       'x': instance.x,
       'y': instance.y,

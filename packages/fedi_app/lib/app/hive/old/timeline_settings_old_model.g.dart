@@ -86,9 +86,9 @@ class TimelineSettingsOldAdapter extends TypeAdapter<TimelineSettingsOld> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_TimelineSettingsOld _$$_TimelineSettingsOldFromJson(
+_$TimelineSettingsOldImpl _$$TimelineSettingsOldImplFromJson(
         Map<String, dynamic> json) =>
-    _$_TimelineSettingsOld(
+    _$TimelineSettingsOldImpl(
       onlyWithMedia: json['only_with_media'] as bool?,
       excludeReplies: json['exclude_replies'] as bool?,
       excludeNsfwSensitive: json['exclude_nsfw_sensitive'] as bool?,
@@ -116,8 +116,8 @@ _$_TimelineSettingsOld _$$_TimelineSettingsOldFromJson(
       onlyFromInstance: json['instance'] as String?,
     );
 
-Map<String, dynamic> _$$_TimelineSettingsOldToJson(
-    _$_TimelineSettingsOld instance) {
+Map<String, dynamic> _$$TimelineSettingsOldImplToJson(
+    _$TimelineSettingsOldImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

@@ -48,17 +48,18 @@ class UnifediApiMyAccountNotificationsSettingsPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiMyAccountNotificationsSettingsPleromaAdapter
-    _$$_UnifediApiMyAccountNotificationsSettingsPleromaAdapterFromJson(
+_$UnifediApiMyAccountNotificationsSettingsPleromaAdapterImpl
+    _$$UnifediApiMyAccountNotificationsSettingsPleromaAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiMyAccountNotificationsSettingsPleromaAdapter(
+        _$UnifediApiMyAccountNotificationsSettingsPleromaAdapterImpl(
           PleromaApiMyAccountNotificationsSettings.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String,
-    dynamic> _$$_UnifediApiMyAccountNotificationsSettingsPleromaAdapterToJson(
-        _$_UnifediApiMyAccountNotificationsSettingsPleromaAdapter instance) =>
-    <String, dynamic>{
-      'value': instance.value.toJson(),
-    };
+Map<String, dynamic>
+    _$$UnifediApiMyAccountNotificationsSettingsPleromaAdapterImplToJson(
+            _$UnifediApiMyAccountNotificationsSettingsPleromaAdapterImpl
+                instance) =>
+        <String, dynamic>{
+          'value': instance.value.toJson(),
+        };

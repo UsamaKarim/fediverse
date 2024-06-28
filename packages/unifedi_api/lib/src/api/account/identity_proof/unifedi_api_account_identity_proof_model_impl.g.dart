@@ -57,20 +57,20 @@ class UnifediApiAccountIdentityProofAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiAccountIdentityProof _$$_UnifediApiAccountIdentityProofFromJson(
-        Map<String, dynamic> json) =>
-    _$_UnifediApiAccountIdentityProof(
-      profileUrl: json['profile_url'] as String?,
-      proofUrl: json['proof_url'] as String?,
-      provider: json['provider'] as String?,
-      providerUsername: json['provider_username'] as String?,
-      updatedAt: json['updated_at'] == null
-          ? null
-          : DateTime.parse(json['updated_at'] as String),
-    );
+_$UnifediApiAccountIdentityProofImpl
+    _$$UnifediApiAccountIdentityProofImplFromJson(Map<String, dynamic> json) =>
+        _$UnifediApiAccountIdentityProofImpl(
+          profileUrl: json['profile_url'] as String?,
+          proofUrl: json['proof_url'] as String?,
+          provider: json['provider'] as String?,
+          providerUsername: json['provider_username'] as String?,
+          updatedAt: json['updated_at'] == null
+              ? null
+              : DateTime.parse(json['updated_at'] as String),
+        );
 
-Map<String, dynamic> _$$_UnifediApiAccountIdentityProofToJson(
-    _$_UnifediApiAccountIdentityProof instance) {
+Map<String, dynamic> _$$UnifediApiAccountIdentityProofImplToJson(
+    _$UnifediApiAccountIdentityProofImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

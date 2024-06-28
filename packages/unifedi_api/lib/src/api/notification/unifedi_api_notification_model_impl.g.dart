@@ -75,9 +75,9 @@ class UnifediApiNotificationAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiNotification _$$_UnifediApiNotificationFromJson(
+_$UnifediApiNotificationImpl _$$UnifediApiNotificationImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiNotification(
+    _$UnifediApiNotificationImpl(
       account: json['account'] == null
           ? null
           : UnifediApiAccount.fromJson(json['account'] as Map<String, dynamic>),
@@ -103,8 +103,8 @@ _$_UnifediApiNotification _$$_UnifediApiNotificationFromJson(
       isMuted: json['is_muted'] as bool?,
     );
 
-Map<String, dynamic> _$$_UnifediApiNotificationToJson(
-    _$_UnifediApiNotification instance) {
+Map<String, dynamic> _$$UnifediApiNotificationImplToJson(
+    _$UnifediApiNotificationImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

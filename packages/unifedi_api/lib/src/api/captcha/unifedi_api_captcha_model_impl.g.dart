@@ -56,17 +56,18 @@ class UnifediApiCaptchaAdapter extends TypeAdapter<UnifediApiCaptcha> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiCaptcha _$$_UnifediApiCaptchaFromJson(Map<String, dynamic> json) =>
-    _$_UnifediApiCaptcha(
-      secondsValid: json['seconds_valid'] as int?,
+_$UnifediApiCaptchaImpl _$$UnifediApiCaptchaImplFromJson(
+        Map<String, dynamic> json) =>
+    _$UnifediApiCaptchaImpl(
+      secondsValid: (json['seconds_valid'] as num?)?.toInt(),
       token: json['token'] as String?,
       type: json['type'] as String,
       url: json['url'] as String?,
       answerData: json['answer_data'] as String?,
     );
 
-Map<String, dynamic> _$$_UnifediApiCaptchaToJson(
-    _$_UnifediApiCaptcha instance) {
+Map<String, dynamic> _$$UnifediApiCaptchaImplToJson(
+    _$UnifediApiCaptchaImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

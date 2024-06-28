@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'upload_media_attachment_model.dart';
 
@@ -11,26 +12,7 @@ part of 'upload_media_attachment_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$UploadMediaAttachmentStateTearOff {
-  const _$UploadMediaAttachmentStateTearOff();
-
-  _UploadMediaAttachmentState call(
-      {required UploadMediaAttachmentStateType type,
-      dynamic error,
-      StackTrace? stackTrace}) {
-    return _UploadMediaAttachmentState(
-      type: type,
-      error: error,
-      stackTrace: stackTrace,
-    );
-  }
-}
-
-/// @nodoc
-const $UploadMediaAttachmentState = _$UploadMediaAttachmentStateTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$UploadMediaAttachmentState {
@@ -47,7 +29,9 @@ mixin _$UploadMediaAttachmentState {
 abstract class $UploadMediaAttachmentStateCopyWith<$Res> {
   factory $UploadMediaAttachmentStateCopyWith(UploadMediaAttachmentState value,
           $Res Function(UploadMediaAttachmentState) then) =
-      _$UploadMediaAttachmentStateCopyWithImpl<$Res>;
+      _$UploadMediaAttachmentStateCopyWithImpl<$Res,
+          UploadMediaAttachmentState>;
+  @useResult
   $Res call(
       {UploadMediaAttachmentStateType type,
       dynamic error,
@@ -55,45 +39,49 @@ abstract class $UploadMediaAttachmentStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UploadMediaAttachmentStateCopyWithImpl<$Res>
+class _$UploadMediaAttachmentStateCopyWithImpl<$Res,
+        $Val extends UploadMediaAttachmentState>
     implements $UploadMediaAttachmentStateCopyWith<$Res> {
   _$UploadMediaAttachmentStateCopyWithImpl(this._value, this._then);
 
-  final UploadMediaAttachmentState _value;
   // ignore: unused_field
-  final $Res Function(UploadMediaAttachmentState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? type = freezed,
+    Object? type = null,
     Object? error = freezed,
     Object? stackTrace = freezed,
   }) {
     return _then(_value.copyWith(
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as UploadMediaAttachmentStateType,
-      error: error == freezed
+      error: freezed == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as dynamic,
-      stackTrace: stackTrace == freezed
+      stackTrace: freezed == stackTrace
           ? _value.stackTrace
           : stackTrace // ignore: cast_nullable_to_non_nullable
               as StackTrace?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UploadMediaAttachmentStateCopyWith<$Res>
+abstract class _$$UploadMediaAttachmentStateImplCopyWith<$Res>
     implements $UploadMediaAttachmentStateCopyWith<$Res> {
-  factory _$UploadMediaAttachmentStateCopyWith(
-          _UploadMediaAttachmentState value,
-          $Res Function(_UploadMediaAttachmentState) then) =
-      __$UploadMediaAttachmentStateCopyWithImpl<$Res>;
+  factory _$$UploadMediaAttachmentStateImplCopyWith(
+          _$UploadMediaAttachmentStateImpl value,
+          $Res Function(_$UploadMediaAttachmentStateImpl) then) =
+      __$$UploadMediaAttachmentStateImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {UploadMediaAttachmentStateType type,
       dynamic error,
@@ -101,33 +89,32 @@ abstract class _$UploadMediaAttachmentStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UploadMediaAttachmentStateCopyWithImpl<$Res>
-    extends _$UploadMediaAttachmentStateCopyWithImpl<$Res>
-    implements _$UploadMediaAttachmentStateCopyWith<$Res> {
-  __$UploadMediaAttachmentStateCopyWithImpl(_UploadMediaAttachmentState _value,
-      $Res Function(_UploadMediaAttachmentState) _then)
-      : super(_value, (v) => _then(v as _UploadMediaAttachmentState));
+class __$$UploadMediaAttachmentStateImplCopyWithImpl<$Res>
+    extends _$UploadMediaAttachmentStateCopyWithImpl<$Res,
+        _$UploadMediaAttachmentStateImpl>
+    implements _$$UploadMediaAttachmentStateImplCopyWith<$Res> {
+  __$$UploadMediaAttachmentStateImplCopyWithImpl(
+      _$UploadMediaAttachmentStateImpl _value,
+      $Res Function(_$UploadMediaAttachmentStateImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UploadMediaAttachmentState get _value =>
-      super._value as _UploadMediaAttachmentState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? type = freezed,
+    Object? type = null,
     Object? error = freezed,
     Object? stackTrace = freezed,
   }) {
-    return _then(_UploadMediaAttachmentState(
-      type: type == freezed
+    return _then(_$UploadMediaAttachmentStateImpl(
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as UploadMediaAttachmentStateType,
-      error: error == freezed
+      error: freezed == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as dynamic,
-      stackTrace: stackTrace == freezed
+      stackTrace: freezed == stackTrace
           ? _value.stackTrace
           : stackTrace // ignore: cast_nullable_to_non_nullable
               as StackTrace?,
@@ -137,8 +124,8 @@ class __$UploadMediaAttachmentStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_UploadMediaAttachmentState implements _UploadMediaAttachmentState {
-  const _$_UploadMediaAttachmentState(
+class _$UploadMediaAttachmentStateImpl implements _UploadMediaAttachmentState {
+  const _$UploadMediaAttachmentStateImpl(
       {required this.type, this.error, this.stackTrace});
 
   @override
@@ -154,10 +141,10 @@ class _$_UploadMediaAttachmentState implements _UploadMediaAttachmentState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UploadMediaAttachmentState &&
+            other is _$UploadMediaAttachmentStateImpl &&
             (identical(other.type, type) || other.type == type) &&
             const DeepCollectionEquality().equals(other.error, error) &&
             (identical(other.stackTrace, stackTrace) ||
@@ -170,17 +157,18 @@ class _$_UploadMediaAttachmentState implements _UploadMediaAttachmentState {
 
   @JsonKey(ignore: true)
   @override
-  _$UploadMediaAttachmentStateCopyWith<_UploadMediaAttachmentState>
-      get copyWith => __$UploadMediaAttachmentStateCopyWithImpl<
-          _UploadMediaAttachmentState>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UploadMediaAttachmentStateImplCopyWith<_$UploadMediaAttachmentStateImpl>
+      get copyWith => __$$UploadMediaAttachmentStateImplCopyWithImpl<
+          _$UploadMediaAttachmentStateImpl>(this, _$identity);
 }
 
 abstract class _UploadMediaAttachmentState
     implements UploadMediaAttachmentState {
   const factory _UploadMediaAttachmentState(
-      {required UploadMediaAttachmentStateType type,
-      dynamic error,
-      StackTrace? stackTrace}) = _$_UploadMediaAttachmentState;
+      {required final UploadMediaAttachmentStateType type,
+      final dynamic error,
+      final StackTrace? stackTrace}) = _$UploadMediaAttachmentStateImpl;
 
   @override
   UploadMediaAttachmentStateType get type;
@@ -190,6 +178,6 @@ abstract class _UploadMediaAttachmentState
   StackTrace? get stackTrace;
   @override
   @JsonKey(ignore: true)
-  _$UploadMediaAttachmentStateCopyWith<_UploadMediaAttachmentState>
+  _$$UploadMediaAttachmentStateImplCopyWith<_$UploadMediaAttachmentStateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

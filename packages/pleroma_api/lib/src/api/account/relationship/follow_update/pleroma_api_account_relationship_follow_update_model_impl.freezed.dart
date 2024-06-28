@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_account_relationship_follow_update_model_impl.dart';
 
@@ -11,42 +12,13 @@ part of 'pleroma_api_account_relationship_follow_update_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiAccountRelationshipFollowUpdate
     _$PleromaApiAccountRelationshipFollowUpdateFromJson(
         Map<String, dynamic> json) {
   return _PleromaApiAccountRelationshipFollowUpdate.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiAccountRelationshipFollowUpdateTearOff {
-  const _$PleromaApiAccountRelationshipFollowUpdateTearOff();
-
-  _PleromaApiAccountRelationshipFollowUpdate call(
-      {@JsonKey(name: 'state')
-      @HiveField(0)
-          required String state,
-      @HiveField(1)
-          required PleromaApiAccountRelationshipFollowUpdateItem follower,
-      @HiveField(2)
-          required PleromaApiAccountRelationshipFollowUpdateItem following}) {
-    return _PleromaApiAccountRelationshipFollowUpdate(
-      state: state,
-      follower: follower,
-      following: following,
-    );
-  }
-
-  PleromaApiAccountRelationshipFollowUpdate fromJson(
-      Map<String, Object?> json) {
-    return PleromaApiAccountRelationshipFollowUpdate.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiAccountRelationshipFollowUpdate =
-    _$PleromaApiAccountRelationshipFollowUpdateTearOff();
 
 /// @nodoc
 mixin _$PleromaApiAccountRelationshipFollowUpdate {
@@ -72,7 +44,9 @@ abstract class $PleromaApiAccountRelationshipFollowUpdateCopyWith<$Res> {
   factory $PleromaApiAccountRelationshipFollowUpdateCopyWith(
           PleromaApiAccountRelationshipFollowUpdate value,
           $Res Function(PleromaApiAccountRelationshipFollowUpdate) then) =
-      _$PleromaApiAccountRelationshipFollowUpdateCopyWithImpl<$Res>;
+      _$PleromaApiAccountRelationshipFollowUpdateCopyWithImpl<$Res,
+          PleromaApiAccountRelationshipFollowUpdate>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'state') @HiveField(0) String state,
       @HiveField(1) PleromaApiAccountRelationshipFollowUpdateItem follower,
@@ -83,62 +57,68 @@ abstract class $PleromaApiAccountRelationshipFollowUpdateCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiAccountRelationshipFollowUpdateCopyWithImpl<$Res>
+class _$PleromaApiAccountRelationshipFollowUpdateCopyWithImpl<$Res,
+        $Val extends PleromaApiAccountRelationshipFollowUpdate>
     implements $PleromaApiAccountRelationshipFollowUpdateCopyWith<$Res> {
   _$PleromaApiAccountRelationshipFollowUpdateCopyWithImpl(
       this._value, this._then);
 
-  final PleromaApiAccountRelationshipFollowUpdate _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiAccountRelationshipFollowUpdate) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? state = freezed,
-    Object? follower = freezed,
-    Object? following = freezed,
+    Object? state = null,
+    Object? follower = null,
+    Object? following = null,
   }) {
     return _then(_value.copyWith(
-      state: state == freezed
+      state: null == state
           ? _value.state
           : state // ignore: cast_nullable_to_non_nullable
               as String,
-      follower: follower == freezed
+      follower: null == follower
           ? _value.follower
           : follower // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccountRelationshipFollowUpdateItem,
-      following: following == freezed
+      following: null == following
           ? _value.following
           : following // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccountRelationshipFollowUpdateItem,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiAccountRelationshipFollowUpdateItemCopyWith<$Res> get follower {
     return $PleromaApiAccountRelationshipFollowUpdateItemCopyWith<$Res>(
         _value.follower, (value) {
-      return _then(_value.copyWith(follower: value));
+      return _then(_value.copyWith(follower: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiAccountRelationshipFollowUpdateItemCopyWith<$Res> get following {
     return $PleromaApiAccountRelationshipFollowUpdateItemCopyWith<$Res>(
         _value.following, (value) {
-      return _then(_value.copyWith(following: value));
+      return _then(_value.copyWith(following: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiAccountRelationshipFollowUpdateCopyWith<$Res>
+abstract class _$$PleromaApiAccountRelationshipFollowUpdateImplCopyWith<$Res>
     implements $PleromaApiAccountRelationshipFollowUpdateCopyWith<$Res> {
-  factory _$PleromaApiAccountRelationshipFollowUpdateCopyWith(
-          _PleromaApiAccountRelationshipFollowUpdate value,
-          $Res Function(_PleromaApiAccountRelationshipFollowUpdate) then) =
-      __$PleromaApiAccountRelationshipFollowUpdateCopyWithImpl<$Res>;
+  factory _$$PleromaApiAccountRelationshipFollowUpdateImplCopyWith(
+          _$PleromaApiAccountRelationshipFollowUpdateImpl value,
+          $Res Function(_$PleromaApiAccountRelationshipFollowUpdateImpl) then) =
+      __$$PleromaApiAccountRelationshipFollowUpdateImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'state') @HiveField(0) String state,
       @HiveField(1) PleromaApiAccountRelationshipFollowUpdateItem follower,
@@ -151,35 +131,32 @@ abstract class _$PleromaApiAccountRelationshipFollowUpdateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiAccountRelationshipFollowUpdateCopyWithImpl<$Res>
-    extends _$PleromaApiAccountRelationshipFollowUpdateCopyWithImpl<$Res>
-    implements _$PleromaApiAccountRelationshipFollowUpdateCopyWith<$Res> {
-  __$PleromaApiAccountRelationshipFollowUpdateCopyWithImpl(
-      _PleromaApiAccountRelationshipFollowUpdate _value,
-      $Res Function(_PleromaApiAccountRelationshipFollowUpdate) _then)
-      : super(_value,
-            (v) => _then(v as _PleromaApiAccountRelationshipFollowUpdate));
+class __$$PleromaApiAccountRelationshipFollowUpdateImplCopyWithImpl<$Res>
+    extends _$PleromaApiAccountRelationshipFollowUpdateCopyWithImpl<$Res,
+        _$PleromaApiAccountRelationshipFollowUpdateImpl>
+    implements _$$PleromaApiAccountRelationshipFollowUpdateImplCopyWith<$Res> {
+  __$$PleromaApiAccountRelationshipFollowUpdateImplCopyWithImpl(
+      _$PleromaApiAccountRelationshipFollowUpdateImpl _value,
+      $Res Function(_$PleromaApiAccountRelationshipFollowUpdateImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiAccountRelationshipFollowUpdate get _value =>
-      super._value as _PleromaApiAccountRelationshipFollowUpdate;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? state = freezed,
-    Object? follower = freezed,
-    Object? following = freezed,
+    Object? state = null,
+    Object? follower = null,
+    Object? following = null,
   }) {
-    return _then(_PleromaApiAccountRelationshipFollowUpdate(
-      state: state == freezed
+    return _then(_$PleromaApiAccountRelationshipFollowUpdateImpl(
+      state: null == state
           ? _value.state
           : state // ignore: cast_nullable_to_non_nullable
               as String,
-      follower: follower == freezed
+      follower: null == follower
           ? _value.follower
           : follower // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccountRelationshipFollowUpdateItem,
-      following: following == freezed
+      following: null == following
           ? _value.following
           : following // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccountRelationshipFollowUpdateItem,
@@ -189,16 +166,16 @@ class __$PleromaApiAccountRelationshipFollowUpdateCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiAccountRelationshipFollowUpdate
+class _$PleromaApiAccountRelationshipFollowUpdateImpl
     implements _PleromaApiAccountRelationshipFollowUpdate {
-  const _$_PleromaApiAccountRelationshipFollowUpdate(
+  const _$PleromaApiAccountRelationshipFollowUpdateImpl(
       {@JsonKey(name: 'state') @HiveField(0) required this.state,
       @HiveField(1) required this.follower,
       @HiveField(2) required this.following});
 
-  factory _$_PleromaApiAccountRelationshipFollowUpdate.fromJson(
+  factory _$PleromaApiAccountRelationshipFollowUpdateImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_PleromaApiAccountRelationshipFollowUpdateFromJson(json);
+      _$$PleromaApiAccountRelationshipFollowUpdateImplFromJson(json);
 
   @override
   @JsonKey(name: 'state')
@@ -217,10 +194,10 @@ class _$_PleromaApiAccountRelationshipFollowUpdate
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiAccountRelationshipFollowUpdate &&
+            other is _$PleromaApiAccountRelationshipFollowUpdateImpl &&
             (identical(other.state, state) || other.state == state) &&
             (identical(other.follower, follower) ||
                 other.follower == follower) &&
@@ -228,37 +205,41 @@ class _$_PleromaApiAccountRelationshipFollowUpdate
                 other.following == following));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, state, follower, following);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiAccountRelationshipFollowUpdateCopyWith<
-          _PleromaApiAccountRelationshipFollowUpdate>
-      get copyWith => __$PleromaApiAccountRelationshipFollowUpdateCopyWithImpl<
-          _PleromaApiAccountRelationshipFollowUpdate>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiAccountRelationshipFollowUpdateImplCopyWith<
+          _$PleromaApiAccountRelationshipFollowUpdateImpl>
+      get copyWith =>
+          __$$PleromaApiAccountRelationshipFollowUpdateImplCopyWithImpl<
+                  _$PleromaApiAccountRelationshipFollowUpdateImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiAccountRelationshipFollowUpdateToJson(this);
+    return _$$PleromaApiAccountRelationshipFollowUpdateImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiAccountRelationshipFollowUpdate
     implements PleromaApiAccountRelationshipFollowUpdate {
   const factory _PleromaApiAccountRelationshipFollowUpdate(
-      {@JsonKey(name: 'state')
-      @HiveField(0)
-          required String state,
+      {@JsonKey(name: 'state') @HiveField(0) required final String state,
       @HiveField(1)
-          required PleromaApiAccountRelationshipFollowUpdateItem follower,
+      required final PleromaApiAccountRelationshipFollowUpdateItem follower,
       @HiveField(2)
-          required PleromaApiAccountRelationshipFollowUpdateItem
-              following}) = _$_PleromaApiAccountRelationshipFollowUpdate;
+      required final PleromaApiAccountRelationshipFollowUpdateItem
+          following}) = _$PleromaApiAccountRelationshipFollowUpdateImpl;
 
   factory _PleromaApiAccountRelationshipFollowUpdate.fromJson(
           Map<String, dynamic> json) =
-      _$_PleromaApiAccountRelationshipFollowUpdate.fromJson;
+      _$PleromaApiAccountRelationshipFollowUpdateImpl.fromJson;
 
   @override
   @JsonKey(name: 'state')
@@ -272,7 +253,7 @@ abstract class _PleromaApiAccountRelationshipFollowUpdate
   PleromaApiAccountRelationshipFollowUpdateItem get following;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiAccountRelationshipFollowUpdateCopyWith<
-          _PleromaApiAccountRelationshipFollowUpdate>
+  _$$PleromaApiAccountRelationshipFollowUpdateImplCopyWith<
+          _$PleromaApiAccountRelationshipFollowUpdateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

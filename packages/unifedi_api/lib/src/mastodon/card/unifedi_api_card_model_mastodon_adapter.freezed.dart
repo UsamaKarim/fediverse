@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_card_model_mastodon_adapter.dart';
 
@@ -11,30 +12,12 @@ part of 'unifedi_api_card_model_mastodon_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiCardMastodonAdapter _$UnifediApiCardMastodonAdapterFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiCardMastodonAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiCardMastodonAdapterTearOff {
-  const _$UnifediApiCardMastodonAdapterTearOff();
-
-  _UnifediApiCardMastodonAdapter call(@HiveField(0) MastodonApiCard value) {
-    return _UnifediApiCardMastodonAdapter(
-      value,
-    );
-  }
-
-  UnifediApiCardMastodonAdapter fromJson(Map<String, Object?> json) {
-    return UnifediApiCardMastodonAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiCardMastodonAdapter = _$UnifediApiCardMastodonAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiCardMastodonAdapter {
@@ -52,49 +35,56 @@ abstract class $UnifediApiCardMastodonAdapterCopyWith<$Res> {
   factory $UnifediApiCardMastodonAdapterCopyWith(
           UnifediApiCardMastodonAdapter value,
           $Res Function(UnifediApiCardMastodonAdapter) then) =
-      _$UnifediApiCardMastodonAdapterCopyWithImpl<$Res>;
+      _$UnifediApiCardMastodonAdapterCopyWithImpl<$Res,
+          UnifediApiCardMastodonAdapter>;
+  @useResult
   $Res call({@HiveField(0) MastodonApiCard value});
 
   $MastodonApiCardCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiCardMastodonAdapterCopyWithImpl<$Res>
+class _$UnifediApiCardMastodonAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiCardMastodonAdapter>
     implements $UnifediApiCardMastodonAdapterCopyWith<$Res> {
   _$UnifediApiCardMastodonAdapterCopyWithImpl(this._value, this._then);
 
-  final UnifediApiCardMastodonAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiCardMastodonAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiCard,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiCardCopyWith<$Res> get value {
     return $MastodonApiCardCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiCardMastodonAdapterCopyWith<$Res>
+abstract class _$$UnifediApiCardMastodonAdapterImplCopyWith<$Res>
     implements $UnifediApiCardMastodonAdapterCopyWith<$Res> {
-  factory _$UnifediApiCardMastodonAdapterCopyWith(
-          _UnifediApiCardMastodonAdapter value,
-          $Res Function(_UnifediApiCardMastodonAdapter) then) =
-      __$UnifediApiCardMastodonAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiCardMastodonAdapterImplCopyWith(
+          _$UnifediApiCardMastodonAdapterImpl value,
+          $Res Function(_$UnifediApiCardMastodonAdapterImpl) then) =
+      __$$UnifediApiCardMastodonAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) MastodonApiCard value});
 
   @override
@@ -102,24 +92,22 @@ abstract class _$UnifediApiCardMastodonAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiCardMastodonAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiCardMastodonAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiCardMastodonAdapterCopyWith<$Res> {
-  __$UnifediApiCardMastodonAdapterCopyWithImpl(
-      _UnifediApiCardMastodonAdapter _value,
-      $Res Function(_UnifediApiCardMastodonAdapter) _then)
-      : super(_value, (v) => _then(v as _UnifediApiCardMastodonAdapter));
+class __$$UnifediApiCardMastodonAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiCardMastodonAdapterCopyWithImpl<$Res,
+        _$UnifediApiCardMastodonAdapterImpl>
+    implements _$$UnifediApiCardMastodonAdapterImplCopyWith<$Res> {
+  __$$UnifediApiCardMastodonAdapterImplCopyWithImpl(
+      _$UnifediApiCardMastodonAdapterImpl _value,
+      $Res Function(_$UnifediApiCardMastodonAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiCardMastodonAdapter get _value =>
-      super._value as _UnifediApiCardMastodonAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiCardMastodonAdapter(
-      value == freezed
+    return _then(_$UnifediApiCardMastodonAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiCard,
@@ -129,12 +117,14 @@ class __$UnifediApiCardMastodonAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiCardMastodonAdapter extends _UnifediApiCardMastodonAdapter {
-  const _$_UnifediApiCardMastodonAdapter(@HiveField(0) this.value) : super._();
+class _$UnifediApiCardMastodonAdapterImpl
+    extends _UnifediApiCardMastodonAdapter {
+  const _$UnifediApiCardMastodonAdapterImpl(@HiveField(0) this.value)
+      : super._();
 
-  factory _$_UnifediApiCardMastodonAdapter.fromJson(
+  factory _$UnifediApiCardMastodonAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiCardMastodonAdapterFromJson(json);
+      _$$UnifediApiCardMastodonAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -146,42 +136,49 @@ class _$_UnifediApiCardMastodonAdapter extends _UnifediApiCardMastodonAdapter {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiCardMastodonAdapter &&
+            other is _$UnifediApiCardMastodonAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiCardMastodonAdapterCopyWith<_UnifediApiCardMastodonAdapter>
-      get copyWith => __$UnifediApiCardMastodonAdapterCopyWithImpl<
-          _UnifediApiCardMastodonAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiCardMastodonAdapterImplCopyWith<
+          _$UnifediApiCardMastodonAdapterImpl>
+      get copyWith => __$$UnifediApiCardMastodonAdapterImplCopyWithImpl<
+          _$UnifediApiCardMastodonAdapterImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiCardMastodonAdapterToJson(this);
+    return _$$UnifediApiCardMastodonAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiCardMastodonAdapter
     extends UnifediApiCardMastodonAdapter {
   const factory _UnifediApiCardMastodonAdapter(
-      @HiveField(0) MastodonApiCard value) = _$_UnifediApiCardMastodonAdapter;
+          @HiveField(0) final MastodonApiCard value) =
+      _$UnifediApiCardMastodonAdapterImpl;
   const _UnifediApiCardMastodonAdapter._() : super._();
 
   factory _UnifediApiCardMastodonAdapter.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiCardMastodonAdapter.fromJson;
+      _$UnifediApiCardMastodonAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   MastodonApiCard get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiCardMastodonAdapterCopyWith<_UnifediApiCardMastodonAdapter>
+  _$$UnifediApiCardMastodonAdapterImplCopyWith<
+          _$UnifediApiCardMastodonAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

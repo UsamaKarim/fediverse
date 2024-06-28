@@ -46,16 +46,16 @@ class UnifediApiMediaAttachmentFocusPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiMediaAttachmentFocusPleromaAdapter
-    _$$_UnifediApiMediaAttachmentFocusPleromaAdapterFromJson(
+_$UnifediApiMediaAttachmentFocusPleromaAdapterImpl
+    _$$UnifediApiMediaAttachmentFocusPleromaAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiMediaAttachmentFocusPleromaAdapter(
+        _$UnifediApiMediaAttachmentFocusPleromaAdapterImpl(
           PleromaApiMediaAttachmentFocus.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiMediaAttachmentFocusPleromaAdapterToJson(
-        _$_UnifediApiMediaAttachmentFocusPleromaAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiMediaAttachmentFocusPleromaAdapterImplToJson(
+        _$UnifediApiMediaAttachmentFocusPleromaAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

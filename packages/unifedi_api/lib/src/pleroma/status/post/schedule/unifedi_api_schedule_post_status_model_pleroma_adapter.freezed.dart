@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_schedule_post_status_model_pleroma_adapter.dart';
 
@@ -11,34 +12,13 @@ part of 'unifedi_api_schedule_post_status_model_pleroma_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiSchedulePostStatusPleromaAdapter
     _$UnifediApiSchedulePostStatusPleromaAdapterFromJson(
         Map<String, dynamic> json) {
   return _UnifediApiSchedulePostStatusPleromaAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiSchedulePostStatusPleromaAdapterTearOff {
-  const _$UnifediApiSchedulePostStatusPleromaAdapterTearOff();
-
-  _UnifediApiSchedulePostStatusPleromaAdapter call(
-      @HiveField(0) PleromaApiSchedulePostStatus value) {
-    return _UnifediApiSchedulePostStatusPleromaAdapter(
-      value,
-    );
-  }
-
-  UnifediApiSchedulePostStatusPleromaAdapter fromJson(
-      Map<String, Object?> json) {
-    return UnifediApiSchedulePostStatusPleromaAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiSchedulePostStatusPleromaAdapter =
-    _$UnifediApiSchedulePostStatusPleromaAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiSchedulePostStatusPleromaAdapter {
@@ -57,50 +37,58 @@ abstract class $UnifediApiSchedulePostStatusPleromaAdapterCopyWith<$Res> {
   factory $UnifediApiSchedulePostStatusPleromaAdapterCopyWith(
           UnifediApiSchedulePostStatusPleromaAdapter value,
           $Res Function(UnifediApiSchedulePostStatusPleromaAdapter) then) =
-      _$UnifediApiSchedulePostStatusPleromaAdapterCopyWithImpl<$Res>;
+      _$UnifediApiSchedulePostStatusPleromaAdapterCopyWithImpl<$Res,
+          UnifediApiSchedulePostStatusPleromaAdapter>;
+  @useResult
   $Res call({@HiveField(0) PleromaApiSchedulePostStatus value});
 
   $PleromaApiSchedulePostStatusCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiSchedulePostStatusPleromaAdapterCopyWithImpl<$Res>
+class _$UnifediApiSchedulePostStatusPleromaAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiSchedulePostStatusPleromaAdapter>
     implements $UnifediApiSchedulePostStatusPleromaAdapterCopyWith<$Res> {
   _$UnifediApiSchedulePostStatusPleromaAdapterCopyWithImpl(
       this._value, this._then);
 
-  final UnifediApiSchedulePostStatusPleromaAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiSchedulePostStatusPleromaAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiSchedulePostStatus,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiSchedulePostStatusCopyWith<$Res> get value {
     return $PleromaApiSchedulePostStatusCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiSchedulePostStatusPleromaAdapterCopyWith<$Res>
+abstract class _$$UnifediApiSchedulePostStatusPleromaAdapterImplCopyWith<$Res>
     implements $UnifediApiSchedulePostStatusPleromaAdapterCopyWith<$Res> {
-  factory _$UnifediApiSchedulePostStatusPleromaAdapterCopyWith(
-          _UnifediApiSchedulePostStatusPleromaAdapter value,
-          $Res Function(_UnifediApiSchedulePostStatusPleromaAdapter) then) =
-      __$UnifediApiSchedulePostStatusPleromaAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiSchedulePostStatusPleromaAdapterImplCopyWith(
+          _$UnifediApiSchedulePostStatusPleromaAdapterImpl value,
+          $Res Function(_$UnifediApiSchedulePostStatusPleromaAdapterImpl)
+              then) =
+      __$$UnifediApiSchedulePostStatusPleromaAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) PleromaApiSchedulePostStatus value});
 
   @override
@@ -108,25 +96,22 @@ abstract class _$UnifediApiSchedulePostStatusPleromaAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiSchedulePostStatusPleromaAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiSchedulePostStatusPleromaAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiSchedulePostStatusPleromaAdapterCopyWith<$Res> {
-  __$UnifediApiSchedulePostStatusPleromaAdapterCopyWithImpl(
-      _UnifediApiSchedulePostStatusPleromaAdapter _value,
-      $Res Function(_UnifediApiSchedulePostStatusPleromaAdapter) _then)
-      : super(_value,
-            (v) => _then(v as _UnifediApiSchedulePostStatusPleromaAdapter));
+class __$$UnifediApiSchedulePostStatusPleromaAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiSchedulePostStatusPleromaAdapterCopyWithImpl<$Res,
+        _$UnifediApiSchedulePostStatusPleromaAdapterImpl>
+    implements _$$UnifediApiSchedulePostStatusPleromaAdapterImplCopyWith<$Res> {
+  __$$UnifediApiSchedulePostStatusPleromaAdapterImplCopyWithImpl(
+      _$UnifediApiSchedulePostStatusPleromaAdapterImpl _value,
+      $Res Function(_$UnifediApiSchedulePostStatusPleromaAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiSchedulePostStatusPleromaAdapter get _value =>
-      super._value as _UnifediApiSchedulePostStatusPleromaAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiSchedulePostStatusPleromaAdapter(
-      value == freezed
+    return _then(_$UnifediApiSchedulePostStatusPleromaAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiSchedulePostStatus,
@@ -136,14 +121,15 @@ class __$UnifediApiSchedulePostStatusPleromaAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiSchedulePostStatusPleromaAdapter
+class _$UnifediApiSchedulePostStatusPleromaAdapterImpl
     extends _UnifediApiSchedulePostStatusPleromaAdapter {
-  const _$_UnifediApiSchedulePostStatusPleromaAdapter(@HiveField(0) this.value)
+  const _$UnifediApiSchedulePostStatusPleromaAdapterImpl(
+      @HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiSchedulePostStatusPleromaAdapter.fromJson(
+  factory _$UnifediApiSchedulePostStatusPleromaAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiSchedulePostStatusPleromaAdapterFromJson(json);
+      _$$UnifediApiSchedulePostStatusPleromaAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -155,46 +141,52 @@ class _$_UnifediApiSchedulePostStatusPleromaAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiSchedulePostStatusPleromaAdapter &&
+            other is _$UnifediApiSchedulePostStatusPleromaAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiSchedulePostStatusPleromaAdapterCopyWith<
-          _UnifediApiSchedulePostStatusPleromaAdapter>
-      get copyWith => __$UnifediApiSchedulePostStatusPleromaAdapterCopyWithImpl<
-          _UnifediApiSchedulePostStatusPleromaAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiSchedulePostStatusPleromaAdapterImplCopyWith<
+          _$UnifediApiSchedulePostStatusPleromaAdapterImpl>
+      get copyWith =>
+          __$$UnifediApiSchedulePostStatusPleromaAdapterImplCopyWithImpl<
+                  _$UnifediApiSchedulePostStatusPleromaAdapterImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiSchedulePostStatusPleromaAdapterToJson(this);
+    return _$$UnifediApiSchedulePostStatusPleromaAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiSchedulePostStatusPleromaAdapter
     extends UnifediApiSchedulePostStatusPleromaAdapter {
   const factory _UnifediApiSchedulePostStatusPleromaAdapter(
-          @HiveField(0) PleromaApiSchedulePostStatus value) =
-      _$_UnifediApiSchedulePostStatusPleromaAdapter;
+          @HiveField(0) final PleromaApiSchedulePostStatus value) =
+      _$UnifediApiSchedulePostStatusPleromaAdapterImpl;
   const _UnifediApiSchedulePostStatusPleromaAdapter._() : super._();
 
   factory _UnifediApiSchedulePostStatusPleromaAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiSchedulePostStatusPleromaAdapter.fromJson;
+      _$UnifediApiSchedulePostStatusPleromaAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   PleromaApiSchedulePostStatus get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiSchedulePostStatusPleromaAdapterCopyWith<
-          _UnifediApiSchedulePostStatusPleromaAdapter>
+  _$$UnifediApiSchedulePostStatusPleromaAdapterImplCopyWith<
+          _$UnifediApiSchedulePostStatusPleromaAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

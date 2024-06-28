@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_my_account_source_model_impl.dart';
 
@@ -11,51 +12,12 @@ part of 'pleroma_api_my_account_source_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiMyAccountSource _$PleromaApiMyAccountSourceFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiMyAccountSource.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiMyAccountSourceTearOff {
-  const _$PleromaApiMyAccountSourceTearOff();
-
-  _PleromaApiMyAccountSource call(
-      {@HiveField(1)
-          required String? privacy,
-      @HiveField(2)
-          required bool? sensitive,
-      @HiveField(3)
-          required String? language,
-      @HiveField(4)
-          required String? note,
-      @HiveField(5)
-          required List<PleromaApiField>? fields,
-      @HiveField(6)
-      @JsonKey(name: 'follow_requests_count')
-          required int? followRequestsCount,
-      @HiveField(7)
-          required PleromaApiMyAccountSourcePleromaPart? pleroma}) {
-    return _PleromaApiMyAccountSource(
-      privacy: privacy,
-      sensitive: sensitive,
-      language: language,
-      note: note,
-      fields: fields,
-      followRequestsCount: followRequestsCount,
-      pleroma: pleroma,
-    );
-  }
-
-  PleromaApiMyAccountSource fromJson(Map<String, Object?> json) {
-    return PleromaApiMyAccountSource.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiMyAccountSource = _$PleromaApiMyAccountSourceTearOff();
 
 /// @nodoc
 mixin _$PleromaApiMyAccountSource {
@@ -86,36 +48,34 @@ mixin _$PleromaApiMyAccountSource {
 abstract class $PleromaApiMyAccountSourceCopyWith<$Res> {
   factory $PleromaApiMyAccountSourceCopyWith(PleromaApiMyAccountSource value,
           $Res Function(PleromaApiMyAccountSource) then) =
-      _$PleromaApiMyAccountSourceCopyWithImpl<$Res>;
+      _$PleromaApiMyAccountSourceCopyWithImpl<$Res, PleromaApiMyAccountSource>;
+  @useResult
   $Res call(
-      {@HiveField(1)
-          String? privacy,
-      @HiveField(2)
-          bool? sensitive,
-      @HiveField(3)
-          String? language,
-      @HiveField(4)
-          String? note,
-      @HiveField(5)
-          List<PleromaApiField>? fields,
+      {@HiveField(1) String? privacy,
+      @HiveField(2) bool? sensitive,
+      @HiveField(3) String? language,
+      @HiveField(4) String? note,
+      @HiveField(5) List<PleromaApiField>? fields,
       @HiveField(6)
       @JsonKey(name: 'follow_requests_count')
-          int? followRequestsCount,
-      @HiveField(7)
-          PleromaApiMyAccountSourcePleromaPart? pleroma});
+      int? followRequestsCount,
+      @HiveField(7) PleromaApiMyAccountSourcePleromaPart? pleroma});
 
   $PleromaApiMyAccountSourcePleromaPartCopyWith<$Res>? get pleroma;
 }
 
 /// @nodoc
-class _$PleromaApiMyAccountSourceCopyWithImpl<$Res>
+class _$PleromaApiMyAccountSourceCopyWithImpl<$Res,
+        $Val extends PleromaApiMyAccountSource>
     implements $PleromaApiMyAccountSourceCopyWith<$Res> {
   _$PleromaApiMyAccountSourceCopyWithImpl(this._value, this._then);
 
-  final PleromaApiMyAccountSource _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiMyAccountSource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? privacy = freezed,
@@ -127,38 +87,39 @@ class _$PleromaApiMyAccountSourceCopyWithImpl<$Res>
     Object? pleroma = freezed,
   }) {
     return _then(_value.copyWith(
-      privacy: privacy == freezed
+      privacy: freezed == privacy
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
               as String?,
-      sensitive: sensitive == freezed
+      sensitive: freezed == sensitive
           ? _value.sensitive
           : sensitive // ignore: cast_nullable_to_non_nullable
               as bool?,
-      language: language == freezed
+      language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as String?,
-      note: note == freezed
+      note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
               as String?,
-      fields: fields == freezed
+      fields: freezed == fields
           ? _value.fields
           : fields // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiField>?,
-      followRequestsCount: followRequestsCount == freezed
+      followRequestsCount: freezed == followRequestsCount
           ? _value.followRequestsCount
           : followRequestsCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      pleroma: pleroma == freezed
+      pleroma: freezed == pleroma
           ? _value.pleroma
           : pleroma // ignore: cast_nullable_to_non_nullable
               as PleromaApiMyAccountSourcePleromaPart?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiMyAccountSourcePleromaPartCopyWith<$Res>? get pleroma {
     if (_value.pleroma == null) {
       return null;
@@ -166,51 +127,46 @@ class _$PleromaApiMyAccountSourceCopyWithImpl<$Res>
 
     return $PleromaApiMyAccountSourcePleromaPartCopyWith<$Res>(_value.pleroma!,
         (value) {
-      return _then(_value.copyWith(pleroma: value));
+      return _then(_value.copyWith(pleroma: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiMyAccountSourceCopyWith<$Res>
+abstract class _$$PleromaApiMyAccountSourceImplCopyWith<$Res>
     implements $PleromaApiMyAccountSourceCopyWith<$Res> {
-  factory _$PleromaApiMyAccountSourceCopyWith(_PleromaApiMyAccountSource value,
-          $Res Function(_PleromaApiMyAccountSource) then) =
-      __$PleromaApiMyAccountSourceCopyWithImpl<$Res>;
+  factory _$$PleromaApiMyAccountSourceImplCopyWith(
+          _$PleromaApiMyAccountSourceImpl value,
+          $Res Function(_$PleromaApiMyAccountSourceImpl) then) =
+      __$$PleromaApiMyAccountSourceImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(1)
-          String? privacy,
-      @HiveField(2)
-          bool? sensitive,
-      @HiveField(3)
-          String? language,
-      @HiveField(4)
-          String? note,
-      @HiveField(5)
-          List<PleromaApiField>? fields,
+      {@HiveField(1) String? privacy,
+      @HiveField(2) bool? sensitive,
+      @HiveField(3) String? language,
+      @HiveField(4) String? note,
+      @HiveField(5) List<PleromaApiField>? fields,
       @HiveField(6)
       @JsonKey(name: 'follow_requests_count')
-          int? followRequestsCount,
-      @HiveField(7)
-          PleromaApiMyAccountSourcePleromaPart? pleroma});
+      int? followRequestsCount,
+      @HiveField(7) PleromaApiMyAccountSourcePleromaPart? pleroma});
 
   @override
   $PleromaApiMyAccountSourcePleromaPartCopyWith<$Res>? get pleroma;
 }
 
 /// @nodoc
-class __$PleromaApiMyAccountSourceCopyWithImpl<$Res>
-    extends _$PleromaApiMyAccountSourceCopyWithImpl<$Res>
-    implements _$PleromaApiMyAccountSourceCopyWith<$Res> {
-  __$PleromaApiMyAccountSourceCopyWithImpl(_PleromaApiMyAccountSource _value,
-      $Res Function(_PleromaApiMyAccountSource) _then)
-      : super(_value, (v) => _then(v as _PleromaApiMyAccountSource));
+class __$$PleromaApiMyAccountSourceImplCopyWithImpl<$Res>
+    extends _$PleromaApiMyAccountSourceCopyWithImpl<$Res,
+        _$PleromaApiMyAccountSourceImpl>
+    implements _$$PleromaApiMyAccountSourceImplCopyWith<$Res> {
+  __$$PleromaApiMyAccountSourceImplCopyWithImpl(
+      _$PleromaApiMyAccountSourceImpl _value,
+      $Res Function(_$PleromaApiMyAccountSourceImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiMyAccountSource get _value =>
-      super._value as _PleromaApiMyAccountSource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? privacy = freezed,
@@ -221,32 +177,32 @@ class __$PleromaApiMyAccountSourceCopyWithImpl<$Res>
     Object? followRequestsCount = freezed,
     Object? pleroma = freezed,
   }) {
-    return _then(_PleromaApiMyAccountSource(
-      privacy: privacy == freezed
+    return _then(_$PleromaApiMyAccountSourceImpl(
+      privacy: freezed == privacy
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
               as String?,
-      sensitive: sensitive == freezed
+      sensitive: freezed == sensitive
           ? _value.sensitive
           : sensitive // ignore: cast_nullable_to_non_nullable
               as bool?,
-      language: language == freezed
+      language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as String?,
-      note: note == freezed
+      note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
               as String?,
-      fields: fields == freezed
-          ? _value.fields
+      fields: freezed == fields
+          ? _value._fields
           : fields // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiField>?,
-      followRequestsCount: followRequestsCount == freezed
+      followRequestsCount: freezed == followRequestsCount
           ? _value.followRequestsCount
           : followRequestsCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      pleroma: pleroma == freezed
+      pleroma: freezed == pleroma
           ? _value.pleroma
           : pleroma // ignore: cast_nullable_to_non_nullable
               as PleromaApiMyAccountSourcePleromaPart?,
@@ -256,26 +212,21 @@ class __$PleromaApiMyAccountSourceCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiMyAccountSource implements _PleromaApiMyAccountSource {
-  const _$_PleromaApiMyAccountSource(
-      {@HiveField(1)
-          required this.privacy,
-      @HiveField(2)
-          required this.sensitive,
-      @HiveField(3)
-          required this.language,
-      @HiveField(4)
-          required this.note,
-      @HiveField(5)
-          required this.fields,
+class _$PleromaApiMyAccountSourceImpl implements _PleromaApiMyAccountSource {
+  const _$PleromaApiMyAccountSourceImpl(
+      {@HiveField(1) required this.privacy,
+      @HiveField(2) required this.sensitive,
+      @HiveField(3) required this.language,
+      @HiveField(4) required this.note,
+      @HiveField(5) required final List<PleromaApiField>? fields,
       @HiveField(6)
       @JsonKey(name: 'follow_requests_count')
-          required this.followRequestsCount,
-      @HiveField(7)
-          required this.pleroma});
+      required this.followRequestsCount,
+      @HiveField(7) required this.pleroma})
+      : _fields = fields;
 
-  factory _$_PleromaApiMyAccountSource.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiMyAccountSourceFromJson(json);
+  factory _$PleromaApiMyAccountSourceImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiMyAccountSourceImplFromJson(json);
 
   @override
   @HiveField(1)
@@ -289,9 +240,17 @@ class _$_PleromaApiMyAccountSource implements _PleromaApiMyAccountSource {
   @override
   @HiveField(4)
   final String? note;
+  final List<PleromaApiField>? _fields;
   @override
   @HiveField(5)
-  final List<PleromaApiField>? fields;
+  List<PleromaApiField>? get fields {
+    final value = _fields;
+    if (value == null) return null;
+    if (_fields is EqualUnmodifiableListView) return _fields;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(6)
   @JsonKey(name: 'follow_requests_count')
@@ -306,22 +265,23 @@ class _$_PleromaApiMyAccountSource implements _PleromaApiMyAccountSource {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiMyAccountSource &&
+            other is _$PleromaApiMyAccountSourceImpl &&
             (identical(other.privacy, privacy) || other.privacy == privacy) &&
             (identical(other.sensitive, sensitive) ||
                 other.sensitive == sensitive) &&
             (identical(other.language, language) ||
                 other.language == language) &&
             (identical(other.note, note) || other.note == note) &&
-            const DeepCollectionEquality().equals(other.fields, fields) &&
+            const DeepCollectionEquality().equals(other._fields, _fields) &&
             (identical(other.followRequestsCount, followRequestsCount) ||
                 other.followRequestsCount == followRequestsCount) &&
             (identical(other.pleroma, pleroma) || other.pleroma == pleroma));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -329,44 +289,41 @@ class _$_PleromaApiMyAccountSource implements _PleromaApiMyAccountSource {
       sensitive,
       language,
       note,
-      const DeepCollectionEquality().hash(fields),
+      const DeepCollectionEquality().hash(_fields),
       followRequestsCount,
       pleroma);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiMyAccountSourceCopyWith<_PleromaApiMyAccountSource>
-      get copyWith =>
-          __$PleromaApiMyAccountSourceCopyWithImpl<_PleromaApiMyAccountSource>(
-              this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiMyAccountSourceImplCopyWith<_$PleromaApiMyAccountSourceImpl>
+      get copyWith => __$$PleromaApiMyAccountSourceImplCopyWithImpl<
+          _$PleromaApiMyAccountSourceImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiMyAccountSourceToJson(this);
+    return _$$PleromaApiMyAccountSourceImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiMyAccountSource implements PleromaApiMyAccountSource {
   const factory _PleromaApiMyAccountSource(
-          {@HiveField(1)
-              required String? privacy,
-          @HiveField(2)
-              required bool? sensitive,
-          @HiveField(3)
-              required String? language,
-          @HiveField(4)
-              required String? note,
-          @HiveField(5)
-              required List<PleromaApiField>? fields,
+          {@HiveField(1) required final String? privacy,
+          @HiveField(2) required final bool? sensitive,
+          @HiveField(3) required final String? language,
+          @HiveField(4) required final String? note,
+          @HiveField(5) required final List<PleromaApiField>? fields,
           @HiveField(6)
           @JsonKey(name: 'follow_requests_count')
-              required int? followRequestsCount,
+          required final int? followRequestsCount,
           @HiveField(7)
-              required PleromaApiMyAccountSourcePleromaPart? pleroma}) =
-      _$_PleromaApiMyAccountSource;
+          required final PleromaApiMyAccountSourcePleromaPart? pleroma}) =
+      _$PleromaApiMyAccountSourceImpl;
 
   factory _PleromaApiMyAccountSource.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiMyAccountSource.fromJson;
+      _$PleromaApiMyAccountSourceImpl.fromJson;
 
   @override
   @HiveField(1)
@@ -392,7 +349,7 @@ abstract class _PleromaApiMyAccountSource implements PleromaApiMyAccountSource {
   PleromaApiMyAccountSourcePleromaPart? get pleroma;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiMyAccountSourceCopyWith<_PleromaApiMyAccountSource>
+  _$$PleromaApiMyAccountSourceImplCopyWith<_$PleromaApiMyAccountSourceImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -400,32 +357,6 @@ PleromaApiMyAccountSourcePleromaPart
     _$PleromaApiMyAccountSourcePleromaPartFromJson(Map<String, dynamic> json) {
   return _PleromaApiMyAccountSourcePleromaPart.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiMyAccountSourcePleromaPartTearOff {
-  const _$PleromaApiMyAccountSourcePleromaPartTearOff();
-
-  _PleromaApiMyAccountSourcePleromaPart call(
-      {@HiveField(1) @JsonKey(name: 'show_role') required bool? showRole,
-      @HiveField(2) @JsonKey(name: 'no_rich_text') required bool? noRichText,
-      @HiveField(3) required bool? discoverable,
-      @HiveField(4) @JsonKey(name: 'actor_type') required String? actorType}) {
-    return _PleromaApiMyAccountSourcePleromaPart(
-      showRole: showRole,
-      noRichText: noRichText,
-      discoverable: discoverable,
-      actorType: actorType,
-    );
-  }
-
-  PleromaApiMyAccountSourcePleromaPart fromJson(Map<String, Object?> json) {
-    return PleromaApiMyAccountSourcePleromaPart.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiMyAccountSourcePleromaPart =
-    _$PleromaApiMyAccountSourcePleromaPartTearOff();
 
 /// @nodoc
 mixin _$PleromaApiMyAccountSourcePleromaPart {
@@ -453,7 +384,9 @@ abstract class $PleromaApiMyAccountSourcePleromaPartCopyWith<$Res> {
   factory $PleromaApiMyAccountSourcePleromaPartCopyWith(
           PleromaApiMyAccountSourcePleromaPart value,
           $Res Function(PleromaApiMyAccountSourcePleromaPart) then) =
-      _$PleromaApiMyAccountSourcePleromaPartCopyWithImpl<$Res>;
+      _$PleromaApiMyAccountSourcePleromaPartCopyWithImpl<$Res,
+          PleromaApiMyAccountSourcePleromaPart>;
+  @useResult
   $Res call(
       {@HiveField(1) @JsonKey(name: 'show_role') bool? showRole,
       @HiveField(2) @JsonKey(name: 'no_rich_text') bool? noRichText,
@@ -462,14 +395,17 @@ abstract class $PleromaApiMyAccountSourcePleromaPartCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiMyAccountSourcePleromaPartCopyWithImpl<$Res>
+class _$PleromaApiMyAccountSourcePleromaPartCopyWithImpl<$Res,
+        $Val extends PleromaApiMyAccountSourcePleromaPart>
     implements $PleromaApiMyAccountSourcePleromaPartCopyWith<$Res> {
   _$PleromaApiMyAccountSourcePleromaPartCopyWithImpl(this._value, this._then);
 
-  final PleromaApiMyAccountSourcePleromaPart _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiMyAccountSourcePleromaPart) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? showRole = freezed,
@@ -478,34 +414,35 @@ class _$PleromaApiMyAccountSourcePleromaPartCopyWithImpl<$Res>
     Object? actorType = freezed,
   }) {
     return _then(_value.copyWith(
-      showRole: showRole == freezed
+      showRole: freezed == showRole
           ? _value.showRole
           : showRole // ignore: cast_nullable_to_non_nullable
               as bool?,
-      noRichText: noRichText == freezed
+      noRichText: freezed == noRichText
           ? _value.noRichText
           : noRichText // ignore: cast_nullable_to_non_nullable
               as bool?,
-      discoverable: discoverable == freezed
+      discoverable: freezed == discoverable
           ? _value.discoverable
           : discoverable // ignore: cast_nullable_to_non_nullable
               as bool?,
-      actorType: actorType == freezed
+      actorType: freezed == actorType
           ? _value.actorType
           : actorType // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiMyAccountSourcePleromaPartCopyWith<$Res>
+abstract class _$$PleromaApiMyAccountSourcePleromaPartImplCopyWith<$Res>
     implements $PleromaApiMyAccountSourcePleromaPartCopyWith<$Res> {
-  factory _$PleromaApiMyAccountSourcePleromaPartCopyWith(
-          _PleromaApiMyAccountSourcePleromaPart value,
-          $Res Function(_PleromaApiMyAccountSourcePleromaPart) then) =
-      __$PleromaApiMyAccountSourcePleromaPartCopyWithImpl<$Res>;
+  factory _$$PleromaApiMyAccountSourcePleromaPartImplCopyWith(
+          _$PleromaApiMyAccountSourcePleromaPartImpl value,
+          $Res Function(_$PleromaApiMyAccountSourcePleromaPartImpl) then) =
+      __$$PleromaApiMyAccountSourcePleromaPartImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(1) @JsonKey(name: 'show_role') bool? showRole,
       @HiveField(2) @JsonKey(name: 'no_rich_text') bool? noRichText,
@@ -514,18 +451,16 @@ abstract class _$PleromaApiMyAccountSourcePleromaPartCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiMyAccountSourcePleromaPartCopyWithImpl<$Res>
-    extends _$PleromaApiMyAccountSourcePleromaPartCopyWithImpl<$Res>
-    implements _$PleromaApiMyAccountSourcePleromaPartCopyWith<$Res> {
-  __$PleromaApiMyAccountSourcePleromaPartCopyWithImpl(
-      _PleromaApiMyAccountSourcePleromaPart _value,
-      $Res Function(_PleromaApiMyAccountSourcePleromaPart) _then)
-      : super(_value, (v) => _then(v as _PleromaApiMyAccountSourcePleromaPart));
+class __$$PleromaApiMyAccountSourcePleromaPartImplCopyWithImpl<$Res>
+    extends _$PleromaApiMyAccountSourcePleromaPartCopyWithImpl<$Res,
+        _$PleromaApiMyAccountSourcePleromaPartImpl>
+    implements _$$PleromaApiMyAccountSourcePleromaPartImplCopyWith<$Res> {
+  __$$PleromaApiMyAccountSourcePleromaPartImplCopyWithImpl(
+      _$PleromaApiMyAccountSourcePleromaPartImpl _value,
+      $Res Function(_$PleromaApiMyAccountSourcePleromaPartImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiMyAccountSourcePleromaPart get _value =>
-      super._value as _PleromaApiMyAccountSourcePleromaPart;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? showRole = freezed,
@@ -533,20 +468,20 @@ class __$PleromaApiMyAccountSourcePleromaPartCopyWithImpl<$Res>
     Object? discoverable = freezed,
     Object? actorType = freezed,
   }) {
-    return _then(_PleromaApiMyAccountSourcePleromaPart(
-      showRole: showRole == freezed
+    return _then(_$PleromaApiMyAccountSourcePleromaPartImpl(
+      showRole: freezed == showRole
           ? _value.showRole
           : showRole // ignore: cast_nullable_to_non_nullable
               as bool?,
-      noRichText: noRichText == freezed
+      noRichText: freezed == noRichText
           ? _value.noRichText
           : noRichText // ignore: cast_nullable_to_non_nullable
               as bool?,
-      discoverable: discoverable == freezed
+      discoverable: freezed == discoverable
           ? _value.discoverable
           : discoverable // ignore: cast_nullable_to_non_nullable
               as bool?,
-      actorType: actorType == freezed
+      actorType: freezed == actorType
           ? _value.actorType
           : actorType // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -556,17 +491,17 @@ class __$PleromaApiMyAccountSourcePleromaPartCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiMyAccountSourcePleromaPart
+class _$PleromaApiMyAccountSourcePleromaPartImpl
     implements _PleromaApiMyAccountSourcePleromaPart {
-  const _$_PleromaApiMyAccountSourcePleromaPart(
+  const _$PleromaApiMyAccountSourcePleromaPartImpl(
       {@HiveField(1) @JsonKey(name: 'show_role') required this.showRole,
       @HiveField(2) @JsonKey(name: 'no_rich_text') required this.noRichText,
       @HiveField(3) required this.discoverable,
       @HiveField(4) @JsonKey(name: 'actor_type') required this.actorType});
 
-  factory _$_PleromaApiMyAccountSourcePleromaPart.fromJson(
+  factory _$PleromaApiMyAccountSourcePleromaPartImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_PleromaApiMyAccountSourcePleromaPartFromJson(json);
+      _$$PleromaApiMyAccountSourcePleromaPartImplFromJson(json);
 
   @override
   @HiveField(1)
@@ -590,10 +525,10 @@ class _$_PleromaApiMyAccountSourcePleromaPart
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiMyAccountSourcePleromaPart &&
+            other is _$PleromaApiMyAccountSourcePleromaPartImpl &&
             (identical(other.showRole, showRole) ||
                 other.showRole == showRole) &&
             (identical(other.noRichText, noRichText) ||
@@ -604,42 +539,43 @@ class _$_PleromaApiMyAccountSourcePleromaPart
                 other.actorType == actorType));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, showRole, noRichText, discoverable, actorType);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiMyAccountSourcePleromaPartCopyWith<
-          _PleromaApiMyAccountSourcePleromaPart>
-      get copyWith => __$PleromaApiMyAccountSourcePleromaPartCopyWithImpl<
-          _PleromaApiMyAccountSourcePleromaPart>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiMyAccountSourcePleromaPartImplCopyWith<
+          _$PleromaApiMyAccountSourcePleromaPartImpl>
+      get copyWith => __$$PleromaApiMyAccountSourcePleromaPartImplCopyWithImpl<
+          _$PleromaApiMyAccountSourcePleromaPartImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiMyAccountSourcePleromaPartToJson(this);
+    return _$$PleromaApiMyAccountSourcePleromaPartImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiMyAccountSourcePleromaPart
     implements PleromaApiMyAccountSourcePleromaPart {
   const factory _PleromaApiMyAccountSourcePleromaPart(
-          {@HiveField(1)
-          @JsonKey(name: 'show_role')
-              required bool? showRole,
-          @HiveField(2)
-          @JsonKey(name: 'no_rich_text')
-              required bool? noRichText,
-          @HiveField(3)
-              required bool? discoverable,
-          @HiveField(4)
-          @JsonKey(name: 'actor_type')
-              required String? actorType}) =
-      _$_PleromaApiMyAccountSourcePleromaPart;
+      {@HiveField(1) @JsonKey(name: 'show_role') required final bool? showRole,
+      @HiveField(2)
+      @JsonKey(name: 'no_rich_text')
+      required final bool? noRichText,
+      @HiveField(3) required final bool? discoverable,
+      @HiveField(4)
+      @JsonKey(name: 'actor_type')
+      required final String?
+          actorType}) = _$PleromaApiMyAccountSourcePleromaPartImpl;
 
   factory _PleromaApiMyAccountSourcePleromaPart.fromJson(
           Map<String, dynamic> json) =
-      _$_PleromaApiMyAccountSourcePleromaPart.fromJson;
+      _$PleromaApiMyAccountSourcePleromaPartImpl.fromJson;
 
   @override
   @HiveField(1)
@@ -658,7 +594,7 @@ abstract class _PleromaApiMyAccountSourcePleromaPart
   String? get actorType;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiMyAccountSourcePleromaPartCopyWith<
-          _PleromaApiMyAccountSourcePleromaPart>
+  _$$PleromaApiMyAccountSourcePleromaPartImplCopyWith<
+          _$PleromaApiMyAccountSourcePleromaPartImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'push_settings_model.dart';
 
@@ -11,51 +12,11 @@ part of 'push_settings_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PushSettings _$PushSettingsFromJson(Map<String, dynamic> json) {
   return _PushSettings.fromJson(json);
 }
-
-/// @nodoc
-class _$PushSettingsTearOff {
-  const _$PushSettingsTearOff();
-
-  _PushSettings call(
-      {@HiveField(1)
-          required bool? favourite,
-      @HiveField(2)
-          required bool? follow,
-      @HiveField(3)
-          required bool? mention,
-      @HiveField(4)
-          required bool? reblog,
-      @HiveField(5)
-          required bool? poll,
-      @JsonKey(name: 'chatMention')
-      @HiveField(6)
-          required bool? chatMention,
-      @JsonKey(name: 'emojiReaction')
-      @HiveField(7)
-          required bool? emojiReaction}) {
-    return _PushSettings(
-      favourite: favourite,
-      follow: follow,
-      mention: mention,
-      reblog: reblog,
-      poll: poll,
-      chatMention: chatMention,
-      emojiReaction: emojiReaction,
-    );
-  }
-
-  PushSettings fromJson(Map<String, Object?> json) {
-    return PushSettings.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PushSettings = _$PushSettingsTearOff();
 
 /// @nodoc
 mixin _$PushSettings {
@@ -86,7 +47,8 @@ mixin _$PushSettings {
 abstract class $PushSettingsCopyWith<$Res> {
   factory $PushSettingsCopyWith(
           PushSettings value, $Res Function(PushSettings) then) =
-      _$PushSettingsCopyWithImpl<$Res>;
+      _$PushSettingsCopyWithImpl<$Res, PushSettings>;
+  @useResult
   $Res call(
       {@HiveField(1) bool? favourite,
       @HiveField(2) bool? follow,
@@ -98,13 +60,16 @@ abstract class $PushSettingsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PushSettingsCopyWithImpl<$Res> implements $PushSettingsCopyWith<$Res> {
+class _$PushSettingsCopyWithImpl<$Res, $Val extends PushSettings>
+    implements $PushSettingsCopyWith<$Res> {
   _$PushSettingsCopyWithImpl(this._value, this._then);
 
-  final PushSettings _value;
   // ignore: unused_field
-  final $Res Function(PushSettings) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? favourite = freezed,
@@ -116,45 +81,46 @@ class _$PushSettingsCopyWithImpl<$Res> implements $PushSettingsCopyWith<$Res> {
     Object? emojiReaction = freezed,
   }) {
     return _then(_value.copyWith(
-      favourite: favourite == freezed
+      favourite: freezed == favourite
           ? _value.favourite
           : favourite // ignore: cast_nullable_to_non_nullable
               as bool?,
-      follow: follow == freezed
+      follow: freezed == follow
           ? _value.follow
           : follow // ignore: cast_nullable_to_non_nullable
               as bool?,
-      mention: mention == freezed
+      mention: freezed == mention
           ? _value.mention
           : mention // ignore: cast_nullable_to_non_nullable
               as bool?,
-      reblog: reblog == freezed
+      reblog: freezed == reblog
           ? _value.reblog
           : reblog // ignore: cast_nullable_to_non_nullable
               as bool?,
-      poll: poll == freezed
+      poll: freezed == poll
           ? _value.poll
           : poll // ignore: cast_nullable_to_non_nullable
               as bool?,
-      chatMention: chatMention == freezed
+      chatMention: freezed == chatMention
           ? _value.chatMention
           : chatMention // ignore: cast_nullable_to_non_nullable
               as bool?,
-      emojiReaction: emojiReaction == freezed
+      emojiReaction: freezed == emojiReaction
           ? _value.emojiReaction
           : emojiReaction // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PushSettingsCopyWith<$Res>
+abstract class _$$PushSettingsImplCopyWith<$Res>
     implements $PushSettingsCopyWith<$Res> {
-  factory _$PushSettingsCopyWith(
-          _PushSettings value, $Res Function(_PushSettings) then) =
-      __$PushSettingsCopyWithImpl<$Res>;
+  factory _$$PushSettingsImplCopyWith(
+          _$PushSettingsImpl value, $Res Function(_$PushSettingsImpl) then) =
+      __$$PushSettingsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(1) bool? favourite,
       @HiveField(2) bool? follow,
@@ -166,15 +132,14 @@ abstract class _$PushSettingsCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PushSettingsCopyWithImpl<$Res> extends _$PushSettingsCopyWithImpl<$Res>
-    implements _$PushSettingsCopyWith<$Res> {
-  __$PushSettingsCopyWithImpl(
-      _PushSettings _value, $Res Function(_PushSettings) _then)
-      : super(_value, (v) => _then(v as _PushSettings));
+class __$$PushSettingsImplCopyWithImpl<$Res>
+    extends _$PushSettingsCopyWithImpl<$Res, _$PushSettingsImpl>
+    implements _$$PushSettingsImplCopyWith<$Res> {
+  __$$PushSettingsImplCopyWithImpl(
+      _$PushSettingsImpl _value, $Res Function(_$PushSettingsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PushSettings get _value => super._value as _PushSettings;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? favourite = freezed,
@@ -185,32 +150,32 @@ class __$PushSettingsCopyWithImpl<$Res> extends _$PushSettingsCopyWithImpl<$Res>
     Object? chatMention = freezed,
     Object? emojiReaction = freezed,
   }) {
-    return _then(_PushSettings(
-      favourite: favourite == freezed
+    return _then(_$PushSettingsImpl(
+      favourite: freezed == favourite
           ? _value.favourite
           : favourite // ignore: cast_nullable_to_non_nullable
               as bool?,
-      follow: follow == freezed
+      follow: freezed == follow
           ? _value.follow
           : follow // ignore: cast_nullable_to_non_nullable
               as bool?,
-      mention: mention == freezed
+      mention: freezed == mention
           ? _value.mention
           : mention // ignore: cast_nullable_to_non_nullable
               as bool?,
-      reblog: reblog == freezed
+      reblog: freezed == reblog
           ? _value.reblog
           : reblog // ignore: cast_nullable_to_non_nullable
               as bool?,
-      poll: poll == freezed
+      poll: freezed == poll
           ? _value.poll
           : poll // ignore: cast_nullable_to_non_nullable
               as bool?,
-      chatMention: chatMention == freezed
+      chatMention: freezed == chatMention
           ? _value.chatMention
           : chatMention // ignore: cast_nullable_to_non_nullable
               as bool?,
-      emojiReaction: emojiReaction == freezed
+      emojiReaction: freezed == emojiReaction
           ? _value.emojiReaction
           : emojiReaction // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -220,28 +185,21 @@ class __$PushSettingsCopyWithImpl<$Res> extends _$PushSettingsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PushSettings extends _PushSettings {
-  const _$_PushSettings(
-      {@HiveField(1)
-          required this.favourite,
-      @HiveField(2)
-          required this.follow,
-      @HiveField(3)
-          required this.mention,
-      @HiveField(4)
-          required this.reblog,
-      @HiveField(5)
-          required this.poll,
-      @JsonKey(name: 'chatMention')
-      @HiveField(6)
-          required this.chatMention,
+class _$PushSettingsImpl extends _PushSettings {
+  const _$PushSettingsImpl(
+      {@HiveField(1) required this.favourite,
+      @HiveField(2) required this.follow,
+      @HiveField(3) required this.mention,
+      @HiveField(4) required this.reblog,
+      @HiveField(5) required this.poll,
+      @JsonKey(name: 'chatMention') @HiveField(6) required this.chatMention,
       @JsonKey(name: 'emojiReaction')
       @HiveField(7)
-          required this.emojiReaction})
+      required this.emojiReaction})
       : super._();
 
-  factory _$_PushSettings.fromJson(Map<String, dynamic> json) =>
-      _$$_PushSettingsFromJson(json);
+  factory _$PushSettingsImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PushSettingsImplFromJson(json);
 
   @override
   @HiveField(1)
@@ -273,10 +231,10 @@ class _$_PushSettings extends _PushSettings {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PushSettings &&
+            other is _$PushSettingsImpl &&
             (identical(other.favourite, favourite) ||
                 other.favourite == favourite) &&
             (identical(other.follow, follow) || other.follow == follow) &&
@@ -289,43 +247,42 @@ class _$_PushSettings extends _PushSettings {
                 other.emojiReaction == emojiReaction));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, favourite, follow, mention,
       reblog, poll, chatMention, emojiReaction);
 
   @JsonKey(ignore: true)
   @override
-  _$PushSettingsCopyWith<_PushSettings> get copyWith =>
-      __$PushSettingsCopyWithImpl<_PushSettings>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PushSettingsImplCopyWith<_$PushSettingsImpl> get copyWith =>
+      __$$PushSettingsImplCopyWithImpl<_$PushSettingsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PushSettingsToJson(this);
+    return _$$PushSettingsImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PushSettings extends PushSettings {
   const factory _PushSettings(
-      {@HiveField(1)
-          required bool? favourite,
-      @HiveField(2)
-          required bool? follow,
-      @HiveField(3)
-          required bool? mention,
-      @HiveField(4)
-          required bool? reblog,
-      @HiveField(5)
-          required bool? poll,
+      {@HiveField(1) required final bool? favourite,
+      @HiveField(2) required final bool? follow,
+      @HiveField(3) required final bool? mention,
+      @HiveField(4) required final bool? reblog,
+      @HiveField(5) required final bool? poll,
       @JsonKey(name: 'chatMention')
       @HiveField(6)
-          required bool? chatMention,
+      required final bool? chatMention,
       @JsonKey(name: 'emojiReaction')
       @HiveField(7)
-          required bool? emojiReaction}) = _$_PushSettings;
+      required final bool? emojiReaction}) = _$PushSettingsImpl;
   const _PushSettings._() : super._();
 
   factory _PushSettings.fromJson(Map<String, dynamic> json) =
-      _$_PushSettings.fromJson;
+      _$PushSettingsImpl.fromJson;
 
   @override
   @HiveField(1)
@@ -352,6 +309,6 @@ abstract class _PushSettings extends PushSettings {
   bool? get emojiReaction;
   @override
   @JsonKey(ignore: true)
-  _$PushSettingsCopyWith<_PushSettings> get copyWith =>
+  _$$PushSettingsImplCopyWith<_$PushSettingsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

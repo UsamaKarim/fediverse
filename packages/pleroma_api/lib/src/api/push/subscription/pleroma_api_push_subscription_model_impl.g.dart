@@ -54,9 +54,9 @@ class PleromaApiPushSubscriptionAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiPushSubscription _$$_PleromaApiPushSubscriptionFromJson(
+_$PleromaApiPushSubscriptionImpl _$$PleromaApiPushSubscriptionImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiPushSubscription(
+    _$PleromaApiPushSubscriptionImpl(
       id: json['id'] as String,
       endpoint: json['endpoint'] as String,
       alerts: PleromaApiPushSubscriptionAlerts.fromJson(
@@ -64,8 +64,8 @@ _$_PleromaApiPushSubscription _$$_PleromaApiPushSubscriptionFromJson(
       serverKey: json['server_key'] as String,
     );
 
-Map<String, dynamic> _$$_PleromaApiPushSubscriptionToJson(
-        _$_PleromaApiPushSubscription instance) =>
+Map<String, dynamic> _$$PleromaApiPushSubscriptionImplToJson(
+        _$PleromaApiPushSubscriptionImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'endpoint': instance.endpoint,

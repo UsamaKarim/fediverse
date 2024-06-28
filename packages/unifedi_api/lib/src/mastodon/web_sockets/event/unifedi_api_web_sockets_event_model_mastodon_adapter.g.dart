@@ -46,16 +46,16 @@ class UnifediApiWebSocketsEventMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiWebSocketsEventMastodonAdapter
-    _$$_UnifediApiWebSocketsEventMastodonAdapterFromJson(
+_$UnifediApiWebSocketsEventMastodonAdapterImpl
+    _$$UnifediApiWebSocketsEventMastodonAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiWebSocketsEventMastodonAdapter(
+        _$UnifediApiWebSocketsEventMastodonAdapterImpl(
           MastodonApiWebSocketsEvent.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiWebSocketsEventMastodonAdapterToJson(
-        _$_UnifediApiWebSocketsEventMastodonAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiWebSocketsEventMastodonAdapterImplToJson(
+        _$UnifediApiWebSocketsEventMastodonAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

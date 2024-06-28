@@ -81,9 +81,9 @@ class MastodonApiEditMyAccountAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiEditMyAccount _$$_MastodonApiEditMyAccountFromJson(
+_$MastodonApiEditMyAccountImpl _$$MastodonApiEditMyAccountImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiEditMyAccount(
+    _$MastodonApiEditMyAccountImpl(
       fieldsAttributes: (json['fields_attributes'] as List<dynamic>?)
           ?.map((e) => MastodonApiField.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -101,8 +101,8 @@ _$_MastodonApiEditMyAccount _$$_MastodonApiEditMyAccountFromJson(
       deleteHeader: json['delete_header'] as bool?,
     );
 
-Map<String, dynamic> _$$_MastodonApiEditMyAccountToJson(
-    _$_MastodonApiEditMyAccount instance) {
+Map<String, dynamic> _$$MastodonApiEditMyAccountImplToJson(
+    _$MastodonApiEditMyAccountImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

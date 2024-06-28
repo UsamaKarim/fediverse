@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_instance_poll_limits_model_impl.dart';
 
@@ -11,45 +12,12 @@ part of 'unifedi_api_instance_poll_limits_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiInstancePollLimits _$UnifediApiInstancePollLimitsFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiInstancePollLimits.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiInstancePollLimitsTearOff {
-  const _$UnifediApiInstancePollLimitsTearOff();
-
-  _UnifediApiInstancePollLimits call(
-      {@HiveField(0)
-      @JsonKey(name: 'max_expiration')
-          required int? maxExpiration,
-      @HiveField(1)
-      @JsonKey(name: 'max_option_chars')
-          required int? maxOptionChars,
-      @HiveField(2)
-      @JsonKey(name: 'max_options')
-          required int? maxOptions,
-      @HiveField(3)
-      @JsonKey(name: 'min_expiration')
-          required int? minExpiration}) {
-    return _UnifediApiInstancePollLimits(
-      maxExpiration: maxExpiration,
-      maxOptionChars: maxOptionChars,
-      maxOptions: maxOptions,
-      minExpiration: minExpiration,
-    );
-  }
-
-  UnifediApiInstancePollLimits fromJson(Map<String, Object?> json) {
-    return UnifediApiInstancePollLimits.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiInstancePollLimits = _$UnifediApiInstancePollLimitsTearOff();
 
 /// @nodoc
 mixin _$UnifediApiInstancePollLimits {
@@ -77,7 +45,9 @@ abstract class $UnifediApiInstancePollLimitsCopyWith<$Res> {
   factory $UnifediApiInstancePollLimitsCopyWith(
           UnifediApiInstancePollLimits value,
           $Res Function(UnifediApiInstancePollLimits) then) =
-      _$UnifediApiInstancePollLimitsCopyWithImpl<$Res>;
+      _$UnifediApiInstancePollLimitsCopyWithImpl<$Res,
+          UnifediApiInstancePollLimits>;
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'max_expiration') int? maxExpiration,
       @HiveField(1) @JsonKey(name: 'max_option_chars') int? maxOptionChars,
@@ -86,14 +56,17 @@ abstract class $UnifediApiInstancePollLimitsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UnifediApiInstancePollLimitsCopyWithImpl<$Res>
+class _$UnifediApiInstancePollLimitsCopyWithImpl<$Res,
+        $Val extends UnifediApiInstancePollLimits>
     implements $UnifediApiInstancePollLimitsCopyWith<$Res> {
   _$UnifediApiInstancePollLimitsCopyWithImpl(this._value, this._then);
 
-  final UnifediApiInstancePollLimits _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiInstancePollLimits) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? maxExpiration = freezed,
@@ -102,34 +75,35 @@ class _$UnifediApiInstancePollLimitsCopyWithImpl<$Res>
     Object? minExpiration = freezed,
   }) {
     return _then(_value.copyWith(
-      maxExpiration: maxExpiration == freezed
+      maxExpiration: freezed == maxExpiration
           ? _value.maxExpiration
           : maxExpiration // ignore: cast_nullable_to_non_nullable
               as int?,
-      maxOptionChars: maxOptionChars == freezed
+      maxOptionChars: freezed == maxOptionChars
           ? _value.maxOptionChars
           : maxOptionChars // ignore: cast_nullable_to_non_nullable
               as int?,
-      maxOptions: maxOptions == freezed
+      maxOptions: freezed == maxOptions
           ? _value.maxOptions
           : maxOptions // ignore: cast_nullable_to_non_nullable
               as int?,
-      minExpiration: minExpiration == freezed
+      minExpiration: freezed == minExpiration
           ? _value.minExpiration
           : minExpiration // ignore: cast_nullable_to_non_nullable
               as int?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiInstancePollLimitsCopyWith<$Res>
+abstract class _$$UnifediApiInstancePollLimitsImplCopyWith<$Res>
     implements $UnifediApiInstancePollLimitsCopyWith<$Res> {
-  factory _$UnifediApiInstancePollLimitsCopyWith(
-          _UnifediApiInstancePollLimits value,
-          $Res Function(_UnifediApiInstancePollLimits) then) =
-      __$UnifediApiInstancePollLimitsCopyWithImpl<$Res>;
+  factory _$$UnifediApiInstancePollLimitsImplCopyWith(
+          _$UnifediApiInstancePollLimitsImpl value,
+          $Res Function(_$UnifediApiInstancePollLimitsImpl) then) =
+      __$$UnifediApiInstancePollLimitsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'max_expiration') int? maxExpiration,
       @HiveField(1) @JsonKey(name: 'max_option_chars') int? maxOptionChars,
@@ -138,18 +112,16 @@ abstract class _$UnifediApiInstancePollLimitsCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiInstancePollLimitsCopyWithImpl<$Res>
-    extends _$UnifediApiInstancePollLimitsCopyWithImpl<$Res>
-    implements _$UnifediApiInstancePollLimitsCopyWith<$Res> {
-  __$UnifediApiInstancePollLimitsCopyWithImpl(
-      _UnifediApiInstancePollLimits _value,
-      $Res Function(_UnifediApiInstancePollLimits) _then)
-      : super(_value, (v) => _then(v as _UnifediApiInstancePollLimits));
+class __$$UnifediApiInstancePollLimitsImplCopyWithImpl<$Res>
+    extends _$UnifediApiInstancePollLimitsCopyWithImpl<$Res,
+        _$UnifediApiInstancePollLimitsImpl>
+    implements _$$UnifediApiInstancePollLimitsImplCopyWith<$Res> {
+  __$$UnifediApiInstancePollLimitsImplCopyWithImpl(
+      _$UnifediApiInstancePollLimitsImpl _value,
+      $Res Function(_$UnifediApiInstancePollLimitsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiInstancePollLimits get _value =>
-      super._value as _UnifediApiInstancePollLimits;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? maxExpiration = freezed,
@@ -157,20 +129,20 @@ class __$UnifediApiInstancePollLimitsCopyWithImpl<$Res>
     Object? maxOptions = freezed,
     Object? minExpiration = freezed,
   }) {
-    return _then(_UnifediApiInstancePollLimits(
-      maxExpiration: maxExpiration == freezed
+    return _then(_$UnifediApiInstancePollLimitsImpl(
+      maxExpiration: freezed == maxExpiration
           ? _value.maxExpiration
           : maxExpiration // ignore: cast_nullable_to_non_nullable
               as int?,
-      maxOptionChars: maxOptionChars == freezed
+      maxOptionChars: freezed == maxOptionChars
           ? _value.maxOptionChars
           : maxOptionChars // ignore: cast_nullable_to_non_nullable
               as int?,
-      maxOptions: maxOptions == freezed
+      maxOptions: freezed == maxOptions
           ? _value.maxOptions
           : maxOptions // ignore: cast_nullable_to_non_nullable
               as int?,
-      minExpiration: minExpiration == freezed
+      minExpiration: freezed == minExpiration
           ? _value.minExpiration
           : minExpiration // ignore: cast_nullable_to_non_nullable
               as int?,
@@ -180,23 +152,23 @@ class __$UnifediApiInstancePollLimitsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiInstancePollLimits implements _UnifediApiInstancePollLimits {
-  const _$_UnifediApiInstancePollLimits(
+class _$UnifediApiInstancePollLimitsImpl
+    implements _UnifediApiInstancePollLimits {
+  const _$UnifediApiInstancePollLimitsImpl(
       {@HiveField(0)
       @JsonKey(name: 'max_expiration')
-          required this.maxExpiration,
+      required this.maxExpiration,
       @HiveField(1)
       @JsonKey(name: 'max_option_chars')
-          required this.maxOptionChars,
-      @HiveField(2)
-      @JsonKey(name: 'max_options')
-          required this.maxOptions,
+      required this.maxOptionChars,
+      @HiveField(2) @JsonKey(name: 'max_options') required this.maxOptions,
       @HiveField(3)
       @JsonKey(name: 'min_expiration')
-          required this.minExpiration});
+      required this.minExpiration});
 
-  factory _$_UnifediApiInstancePollLimits.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiInstancePollLimitsFromJson(json);
+  factory _$UnifediApiInstancePollLimitsImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$UnifediApiInstancePollLimitsImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -221,10 +193,10 @@ class _$_UnifediApiInstancePollLimits implements _UnifediApiInstancePollLimits {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiInstancePollLimits &&
+            other is _$UnifediApiInstancePollLimitsImpl &&
             (identical(other.maxExpiration, maxExpiration) ||
                 other.maxExpiration == maxExpiration) &&
             (identical(other.maxOptionChars, maxOptionChars) ||
@@ -235,19 +207,24 @@ class _$_UnifediApiInstancePollLimits implements _UnifediApiInstancePollLimits {
                 other.minExpiration == minExpiration));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType, maxExpiration, maxOptionChars, maxOptions, minExpiration);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiInstancePollLimitsCopyWith<_UnifediApiInstancePollLimits>
-      get copyWith => __$UnifediApiInstancePollLimitsCopyWithImpl<
-          _UnifediApiInstancePollLimits>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiInstancePollLimitsImplCopyWith<
+          _$UnifediApiInstancePollLimitsImpl>
+      get copyWith => __$$UnifediApiInstancePollLimitsImplCopyWithImpl<
+          _$UnifediApiInstancePollLimitsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiInstancePollLimitsToJson(this);
+    return _$$UnifediApiInstancePollLimitsImplToJson(
+      this,
+    );
   }
 }
 
@@ -256,19 +233,19 @@ abstract class _UnifediApiInstancePollLimits
   const factory _UnifediApiInstancePollLimits(
       {@HiveField(0)
       @JsonKey(name: 'max_expiration')
-          required int? maxExpiration,
+      required final int? maxExpiration,
       @HiveField(1)
       @JsonKey(name: 'max_option_chars')
-          required int? maxOptionChars,
+      required final int? maxOptionChars,
       @HiveField(2)
       @JsonKey(name: 'max_options')
-          required int? maxOptions,
+      required final int? maxOptions,
       @HiveField(3)
       @JsonKey(name: 'min_expiration')
-          required int? minExpiration}) = _$_UnifediApiInstancePollLimits;
+      required final int? minExpiration}) = _$UnifediApiInstancePollLimitsImpl;
 
   factory _UnifediApiInstancePollLimits.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiInstancePollLimits.fromJson;
+      _$UnifediApiInstancePollLimitsImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -288,6 +265,7 @@ abstract class _UnifediApiInstancePollLimits
   int? get minExpiration;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiInstancePollLimitsCopyWith<_UnifediApiInstancePollLimits>
+  _$$UnifediApiInstancePollLimitsImplCopyWith<
+          _$UnifediApiInstancePollLimitsImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -45,14 +45,14 @@ class UnifediApiCardMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiCardMastodonAdapter _$$_UnifediApiCardMastodonAdapterFromJson(
-        Map<String, dynamic> json) =>
-    _$_UnifediApiCardMastodonAdapter(
-      MastodonApiCard.fromJson(json['value'] as Map<String, dynamic>),
-    );
+_$UnifediApiCardMastodonAdapterImpl
+    _$$UnifediApiCardMastodonAdapterImplFromJson(Map<String, dynamic> json) =>
+        _$UnifediApiCardMastodonAdapterImpl(
+          MastodonApiCard.fromJson(json['value'] as Map<String, dynamic>),
+        );
 
-Map<String, dynamic> _$$_UnifediApiCardMastodonAdapterToJson(
-        _$_UnifediApiCardMastodonAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiCardMastodonAdapterImplToJson(
+        _$UnifediApiCardMastodonAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

@@ -107,9 +107,9 @@ class PleromaApiMediaAttachmentPleromaPartAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiMediaAttachment _$$_PleromaApiMediaAttachmentFromJson(
+_$PleromaApiMediaAttachmentImpl _$$PleromaApiMediaAttachmentImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiMediaAttachment(
+    _$PleromaApiMediaAttachmentImpl(
       description: json['description'] as String?,
       id: json['id'] as String,
       previewUrl: json['preview_url'] as String?,
@@ -128,8 +128,8 @@ _$_PleromaApiMediaAttachment _$$_PleromaApiMediaAttachmentFromJson(
               json['pleroma'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_PleromaApiMediaAttachmentToJson(
-    _$_PleromaApiMediaAttachment instance) {
+Map<String, dynamic> _$$PleromaApiMediaAttachmentImplToJson(
+    _$PleromaApiMediaAttachmentImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {
@@ -151,15 +151,15 @@ Map<String, dynamic> _$$_PleromaApiMediaAttachmentToJson(
   return val;
 }
 
-_$_PleromaApiMediaAttachmentPleromaPart
-    _$$_PleromaApiMediaAttachmentPleromaPartFromJson(
+_$PleromaApiMediaAttachmentPleromaPartImpl
+    _$$PleromaApiMediaAttachmentPleromaPartImplFromJson(
             Map<String, dynamic> json) =>
-        _$_PleromaApiMediaAttachmentPleromaPart(
+        _$PleromaApiMediaAttachmentPleromaPartImpl(
           mimeType: json['mime_type'] as String?,
         );
 
-Map<String, dynamic> _$$_PleromaApiMediaAttachmentPleromaPartToJson(
-    _$_PleromaApiMediaAttachmentPleromaPart instance) {
+Map<String, dynamic> _$$PleromaApiMediaAttachmentPleromaPartImplToJson(
+    _$PleromaApiMediaAttachmentPleromaPartImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

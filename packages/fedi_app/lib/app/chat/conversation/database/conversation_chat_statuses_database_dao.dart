@@ -1,11 +1,11 @@
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/chat/conversation/database/conversation_chat_statuses_database_model.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/database/dao/database_dao.dart';
-import 'package:moor/moor.dart';
 
 part 'conversation_chat_statuses_database_dao.g.dart';
 
-@UseDao(
+@DriftAccessor(
   tables: [DbConversationStatuses],
 )
 class ConversationStatusesDao extends DatabaseDao<
@@ -21,7 +21,7 @@ class ConversationStatusesDao extends DatabaseDao<
   @override
   $DbConversationStatusesTable get table => dbConversationStatuses;
 
-  Selectable<DbConversationStatus> findByConversationRemoteId(
+  Selectable<Future<DbConversationStatus>> findByConversationRemoteId(
     String conversationRemoteId,
   ) =>
       customSelect(
@@ -30,7 +30,7 @@ class ConversationStatusesDao extends DatabaseDao<
           Variable<String>(conversationRemoteId),
         ],
         readsFrom: {dbConversationStatuses},
-      ).map(dbConversationStatuses.mapFromRow);
+      ).map((query) => dbConversationStatuses.mapFromRow(query));
 
   Future<int> deleteByConversationRemoteId(String conversationRemoteId) =>
       customUpdate(

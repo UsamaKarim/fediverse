@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_emoji_model_impl.dart';
 
@@ -11,45 +12,11 @@ part of 'unifedi_api_emoji_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiEmoji _$UnifediApiEmojiFromJson(Map<String, dynamic> json) {
   return _UnifediApiEmoji.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiEmojiTearOff {
-  const _$UnifediApiEmojiTearOff();
-
-  _UnifediApiEmoji call(
-      {@HiveField(0)
-          required String name,
-      @HiveField(1)
-          required String? url,
-      @HiveField(2)
-      @JsonKey(name: 'static_url')
-          required String? staticUrl,
-      @JsonKey(name: 'visible_in_picker')
-      @HiveField(3)
-          required bool? visibleInPicker,
-      @HiveField(4)
-          required List<String>? tags}) {
-    return _UnifediApiEmoji(
-      name: name,
-      url: url,
-      staticUrl: staticUrl,
-      visibleInPicker: visibleInPicker,
-      tags: tags,
-    );
-  }
-
-  UnifediApiEmoji fromJson(Map<String, Object?> json) {
-    return UnifediApiEmoji.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiEmoji = _$UnifediApiEmojiTearOff();
 
 /// @nodoc
 mixin _$UnifediApiEmoji {
@@ -76,7 +43,8 @@ mixin _$UnifediApiEmoji {
 abstract class $UnifediApiEmojiCopyWith<$Res> {
   factory $UnifediApiEmojiCopyWith(
           UnifediApiEmoji value, $Res Function(UnifediApiEmoji) then) =
-      _$UnifediApiEmojiCopyWithImpl<$Res>;
+      _$UnifediApiEmojiCopyWithImpl<$Res, UnifediApiEmoji>;
+  @useResult
   $Res call(
       {@HiveField(0) String name,
       @HiveField(1) String? url,
@@ -86,54 +54,57 @@ abstract class $UnifediApiEmojiCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UnifediApiEmojiCopyWithImpl<$Res>
+class _$UnifediApiEmojiCopyWithImpl<$Res, $Val extends UnifediApiEmoji>
     implements $UnifediApiEmojiCopyWith<$Res> {
   _$UnifediApiEmojiCopyWithImpl(this._value, this._then);
 
-  final UnifediApiEmoji _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiEmoji) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
+    Object? name = null,
     Object? url = freezed,
     Object? staticUrl = freezed,
     Object? visibleInPicker = freezed,
     Object? tags = freezed,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
-      staticUrl: staticUrl == freezed
+      staticUrl: freezed == staticUrl
           ? _value.staticUrl
           : staticUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      visibleInPicker: visibleInPicker == freezed
+      visibleInPicker: freezed == visibleInPicker
           ? _value.visibleInPicker
           : visibleInPicker // ignore: cast_nullable_to_non_nullable
               as bool?,
-      tags: tags == freezed
+      tags: freezed == tags
           ? _value.tags
           : tags // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiEmojiCopyWith<$Res>
+abstract class _$$UnifediApiEmojiImplCopyWith<$Res>
     implements $UnifediApiEmojiCopyWith<$Res> {
-  factory _$UnifediApiEmojiCopyWith(
-          _UnifediApiEmoji value, $Res Function(_UnifediApiEmoji) then) =
-      __$UnifediApiEmojiCopyWithImpl<$Res>;
+  factory _$$UnifediApiEmojiImplCopyWith(_$UnifediApiEmojiImpl value,
+          $Res Function(_$UnifediApiEmojiImpl) then) =
+      __$$UnifediApiEmojiImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) String name,
       @HiveField(1) String? url,
@@ -143,43 +114,41 @@ abstract class _$UnifediApiEmojiCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiEmojiCopyWithImpl<$Res>
-    extends _$UnifediApiEmojiCopyWithImpl<$Res>
-    implements _$UnifediApiEmojiCopyWith<$Res> {
-  __$UnifediApiEmojiCopyWithImpl(
-      _UnifediApiEmoji _value, $Res Function(_UnifediApiEmoji) _then)
-      : super(_value, (v) => _then(v as _UnifediApiEmoji));
+class __$$UnifediApiEmojiImplCopyWithImpl<$Res>
+    extends _$UnifediApiEmojiCopyWithImpl<$Res, _$UnifediApiEmojiImpl>
+    implements _$$UnifediApiEmojiImplCopyWith<$Res> {
+  __$$UnifediApiEmojiImplCopyWithImpl(
+      _$UnifediApiEmojiImpl _value, $Res Function(_$UnifediApiEmojiImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiEmoji get _value => super._value as _UnifediApiEmoji;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
+    Object? name = null,
     Object? url = freezed,
     Object? staticUrl = freezed,
     Object? visibleInPicker = freezed,
     Object? tags = freezed,
   }) {
-    return _then(_UnifediApiEmoji(
-      name: name == freezed
+    return _then(_$UnifediApiEmojiImpl(
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
-      staticUrl: staticUrl == freezed
+      staticUrl: freezed == staticUrl
           ? _value.staticUrl
           : staticUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      visibleInPicker: visibleInPicker == freezed
+      visibleInPicker: freezed == visibleInPicker
           ? _value.visibleInPicker
           : visibleInPicker // ignore: cast_nullable_to_non_nullable
               as bool?,
-      tags: tags == freezed
-          ? _value.tags
+      tags: freezed == tags
+          ? _value._tags
           : tags // ignore: cast_nullable_to_non_nullable
               as List<String>?,
     ));
@@ -188,23 +157,19 @@ class __$UnifediApiEmojiCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiEmoji implements _UnifediApiEmoji {
-  const _$_UnifediApiEmoji(
-      {@HiveField(0)
-          required this.name,
-      @HiveField(1)
-          required this.url,
-      @HiveField(2)
-      @JsonKey(name: 'static_url')
-          required this.staticUrl,
+class _$UnifediApiEmojiImpl implements _UnifediApiEmoji {
+  const _$UnifediApiEmojiImpl(
+      {@HiveField(0) required this.name,
+      @HiveField(1) required this.url,
+      @HiveField(2) @JsonKey(name: 'static_url') required this.staticUrl,
       @JsonKey(name: 'visible_in_picker')
       @HiveField(3)
-          required this.visibleInPicker,
-      @HiveField(4)
-          required this.tags});
+      required this.visibleInPicker,
+      @HiveField(4) required final List<String>? tags})
+      : _tags = tags;
 
-  factory _$_UnifediApiEmoji.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiEmojiFromJson(json);
+  factory _$UnifediApiEmojiImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiEmojiImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -220,9 +185,16 @@ class _$_UnifediApiEmoji implements _UnifediApiEmoji {
   @JsonKey(name: 'visible_in_picker')
   @HiveField(3)
   final bool? visibleInPicker;
+  final List<String>? _tags;
   @override
   @HiveField(4)
-  final List<String>? tags;
+  List<String>? get tags {
+    final value = _tags;
+    if (value == null) return null;
+    if (_tags is EqualUnmodifiableListView) return _tags;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   @override
   String toString() {
@@ -230,51 +202,53 @@ class _$_UnifediApiEmoji implements _UnifediApiEmoji {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiEmoji &&
+            other is _$UnifediApiEmojiImpl &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.url, url) || other.url == url) &&
             (identical(other.staticUrl, staticUrl) ||
                 other.staticUrl == staticUrl) &&
             (identical(other.visibleInPicker, visibleInPicker) ||
                 other.visibleInPicker == visibleInPicker) &&
-            const DeepCollectionEquality().equals(other.tags, tags));
+            const DeepCollectionEquality().equals(other._tags, _tags));
   }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, name, url, staticUrl,
-      visibleInPicker, const DeepCollectionEquality().hash(tags));
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiEmojiCopyWith<_UnifediApiEmoji> get copyWith =>
-      __$UnifediApiEmojiCopyWithImpl<_UnifediApiEmoji>(this, _$identity);
+  int get hashCode => Object.hash(runtimeType, name, url, staticUrl,
+      visibleInPicker, const DeepCollectionEquality().hash(_tags));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiEmojiImplCopyWith<_$UnifediApiEmojiImpl> get copyWith =>
+      __$$UnifediApiEmojiImplCopyWithImpl<_$UnifediApiEmojiImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiEmojiToJson(this);
+    return _$$UnifediApiEmojiImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiEmoji implements UnifediApiEmoji {
   const factory _UnifediApiEmoji(
-      {@HiveField(0)
-          required String name,
-      @HiveField(1)
-          required String? url,
+      {@HiveField(0) required final String name,
+      @HiveField(1) required final String? url,
       @HiveField(2)
       @JsonKey(name: 'static_url')
-          required String? staticUrl,
+      required final String? staticUrl,
       @JsonKey(name: 'visible_in_picker')
       @HiveField(3)
-          required bool? visibleInPicker,
-      @HiveField(4)
-          required List<String>? tags}) = _$_UnifediApiEmoji;
+      required final bool? visibleInPicker,
+      @HiveField(4) required final List<String>? tags}) = _$UnifediApiEmojiImpl;
 
   factory _UnifediApiEmoji.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiEmoji.fromJson;
+      _$UnifediApiEmojiImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -295,6 +269,6 @@ abstract class _UnifediApiEmoji implements UnifediApiEmoji {
   List<String>? get tags;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiEmojiCopyWith<_UnifediApiEmoji> get copyWith =>
+  _$$UnifediApiEmojiImplCopyWith<_$UnifediApiEmojiImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

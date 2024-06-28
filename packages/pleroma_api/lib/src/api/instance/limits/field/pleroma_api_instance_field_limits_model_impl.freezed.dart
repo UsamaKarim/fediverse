@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_instance_field_limits_model_impl.dart';
 
@@ -11,45 +12,12 @@ part of 'pleroma_api_instance_field_limits_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiInstanceFieldLimits _$PleromaApiInstanceFieldLimitsFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiInstanceFieldLimits.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiInstanceFieldLimitsTearOff {
-  const _$PleromaApiInstanceFieldLimitsTearOff();
-
-  _PleromaApiInstanceFieldLimits call(
-      {@HiveField(0)
-      @JsonKey(name: 'max_fields')
-          required int? maxFields,
-      @JsonKey(name: 'max_remote_fields')
-      @HiveField(1)
-          required int? maxRemoteFields,
-      @JsonKey(name: 'name_length')
-      @HiveField(2)
-          required int? nameLength,
-      @JsonKey(name: 'value_length')
-      @HiveField(3)
-          required int? valueLength}) {
-    return _PleromaApiInstanceFieldLimits(
-      maxFields: maxFields,
-      maxRemoteFields: maxRemoteFields,
-      nameLength: nameLength,
-      valueLength: valueLength,
-    );
-  }
-
-  PleromaApiInstanceFieldLimits fromJson(Map<String, Object?> json) {
-    return PleromaApiInstanceFieldLimits.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiInstanceFieldLimits = _$PleromaApiInstanceFieldLimitsTearOff();
 
 /// @nodoc
 mixin _$PleromaApiInstanceFieldLimits {
@@ -77,7 +45,9 @@ abstract class $PleromaApiInstanceFieldLimitsCopyWith<$Res> {
   factory $PleromaApiInstanceFieldLimitsCopyWith(
           PleromaApiInstanceFieldLimits value,
           $Res Function(PleromaApiInstanceFieldLimits) then) =
-      _$PleromaApiInstanceFieldLimitsCopyWithImpl<$Res>;
+      _$PleromaApiInstanceFieldLimitsCopyWithImpl<$Res,
+          PleromaApiInstanceFieldLimits>;
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'max_fields') int? maxFields,
       @JsonKey(name: 'max_remote_fields') @HiveField(1) int? maxRemoteFields,
@@ -86,14 +56,17 @@ abstract class $PleromaApiInstanceFieldLimitsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiInstanceFieldLimitsCopyWithImpl<$Res>
+class _$PleromaApiInstanceFieldLimitsCopyWithImpl<$Res,
+        $Val extends PleromaApiInstanceFieldLimits>
     implements $PleromaApiInstanceFieldLimitsCopyWith<$Res> {
   _$PleromaApiInstanceFieldLimitsCopyWithImpl(this._value, this._then);
 
-  final PleromaApiInstanceFieldLimits _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiInstanceFieldLimits) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? maxFields = freezed,
@@ -102,34 +75,35 @@ class _$PleromaApiInstanceFieldLimitsCopyWithImpl<$Res>
     Object? valueLength = freezed,
   }) {
     return _then(_value.copyWith(
-      maxFields: maxFields == freezed
+      maxFields: freezed == maxFields
           ? _value.maxFields
           : maxFields // ignore: cast_nullable_to_non_nullable
               as int?,
-      maxRemoteFields: maxRemoteFields == freezed
+      maxRemoteFields: freezed == maxRemoteFields
           ? _value.maxRemoteFields
           : maxRemoteFields // ignore: cast_nullable_to_non_nullable
               as int?,
-      nameLength: nameLength == freezed
+      nameLength: freezed == nameLength
           ? _value.nameLength
           : nameLength // ignore: cast_nullable_to_non_nullable
               as int?,
-      valueLength: valueLength == freezed
+      valueLength: freezed == valueLength
           ? _value.valueLength
           : valueLength // ignore: cast_nullable_to_non_nullable
               as int?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiInstanceFieldLimitsCopyWith<$Res>
+abstract class _$$PleromaApiInstanceFieldLimitsImplCopyWith<$Res>
     implements $PleromaApiInstanceFieldLimitsCopyWith<$Res> {
-  factory _$PleromaApiInstanceFieldLimitsCopyWith(
-          _PleromaApiInstanceFieldLimits value,
-          $Res Function(_PleromaApiInstanceFieldLimits) then) =
-      __$PleromaApiInstanceFieldLimitsCopyWithImpl<$Res>;
+  factory _$$PleromaApiInstanceFieldLimitsImplCopyWith(
+          _$PleromaApiInstanceFieldLimitsImpl value,
+          $Res Function(_$PleromaApiInstanceFieldLimitsImpl) then) =
+      __$$PleromaApiInstanceFieldLimitsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'max_fields') int? maxFields,
       @JsonKey(name: 'max_remote_fields') @HiveField(1) int? maxRemoteFields,
@@ -138,18 +112,16 @@ abstract class _$PleromaApiInstanceFieldLimitsCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiInstanceFieldLimitsCopyWithImpl<$Res>
-    extends _$PleromaApiInstanceFieldLimitsCopyWithImpl<$Res>
-    implements _$PleromaApiInstanceFieldLimitsCopyWith<$Res> {
-  __$PleromaApiInstanceFieldLimitsCopyWithImpl(
-      _PleromaApiInstanceFieldLimits _value,
-      $Res Function(_PleromaApiInstanceFieldLimits) _then)
-      : super(_value, (v) => _then(v as _PleromaApiInstanceFieldLimits));
+class __$$PleromaApiInstanceFieldLimitsImplCopyWithImpl<$Res>
+    extends _$PleromaApiInstanceFieldLimitsCopyWithImpl<$Res,
+        _$PleromaApiInstanceFieldLimitsImpl>
+    implements _$$PleromaApiInstanceFieldLimitsImplCopyWith<$Res> {
+  __$$PleromaApiInstanceFieldLimitsImplCopyWithImpl(
+      _$PleromaApiInstanceFieldLimitsImpl _value,
+      $Res Function(_$PleromaApiInstanceFieldLimitsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiInstanceFieldLimits get _value =>
-      super._value as _PleromaApiInstanceFieldLimits;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? maxFields = freezed,
@@ -157,20 +129,20 @@ class __$PleromaApiInstanceFieldLimitsCopyWithImpl<$Res>
     Object? nameLength = freezed,
     Object? valueLength = freezed,
   }) {
-    return _then(_PleromaApiInstanceFieldLimits(
-      maxFields: maxFields == freezed
+    return _then(_$PleromaApiInstanceFieldLimitsImpl(
+      maxFields: freezed == maxFields
           ? _value.maxFields
           : maxFields // ignore: cast_nullable_to_non_nullable
               as int?,
-      maxRemoteFields: maxRemoteFields == freezed
+      maxRemoteFields: freezed == maxRemoteFields
           ? _value.maxRemoteFields
           : maxRemoteFields // ignore: cast_nullable_to_non_nullable
               as int?,
-      nameLength: nameLength == freezed
+      nameLength: freezed == nameLength
           ? _value.nameLength
           : nameLength // ignore: cast_nullable_to_non_nullable
               as int?,
-      valueLength: valueLength == freezed
+      valueLength: freezed == valueLength
           ? _value.valueLength
           : valueLength // ignore: cast_nullable_to_non_nullable
               as int?,
@@ -180,25 +152,19 @@ class __$PleromaApiInstanceFieldLimitsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiInstanceFieldLimits
+class _$PleromaApiInstanceFieldLimitsImpl
     implements _PleromaApiInstanceFieldLimits {
-  const _$_PleromaApiInstanceFieldLimits(
-      {@HiveField(0)
-      @JsonKey(name: 'max_fields')
-          required this.maxFields,
+  const _$PleromaApiInstanceFieldLimitsImpl(
+      {@HiveField(0) @JsonKey(name: 'max_fields') required this.maxFields,
       @JsonKey(name: 'max_remote_fields')
       @HiveField(1)
-          required this.maxRemoteFields,
-      @JsonKey(name: 'name_length')
-      @HiveField(2)
-          required this.nameLength,
-      @JsonKey(name: 'value_length')
-      @HiveField(3)
-          required this.valueLength});
+      required this.maxRemoteFields,
+      @JsonKey(name: 'name_length') @HiveField(2) required this.nameLength,
+      @JsonKey(name: 'value_length') @HiveField(3) required this.valueLength});
 
-  factory _$_PleromaApiInstanceFieldLimits.fromJson(
+  factory _$PleromaApiInstanceFieldLimitsImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_PleromaApiInstanceFieldLimitsFromJson(json);
+      _$$PleromaApiInstanceFieldLimitsImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -223,10 +189,10 @@ class _$_PleromaApiInstanceFieldLimits
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiInstanceFieldLimits &&
+            other is _$PleromaApiInstanceFieldLimitsImpl &&
             (identical(other.maxFields, maxFields) ||
                 other.maxFields == maxFields) &&
             (identical(other.maxRemoteFields, maxRemoteFields) ||
@@ -237,40 +203,43 @@ class _$_PleromaApiInstanceFieldLimits
                 other.valueLength == valueLength));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType, maxFields, maxRemoteFields, nameLength, valueLength);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiInstanceFieldLimitsCopyWith<_PleromaApiInstanceFieldLimits>
-      get copyWith => __$PleromaApiInstanceFieldLimitsCopyWithImpl<
-          _PleromaApiInstanceFieldLimits>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiInstanceFieldLimitsImplCopyWith<
+          _$PleromaApiInstanceFieldLimitsImpl>
+      get copyWith => __$$PleromaApiInstanceFieldLimitsImplCopyWithImpl<
+          _$PleromaApiInstanceFieldLimitsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiInstanceFieldLimitsToJson(this);
+    return _$$PleromaApiInstanceFieldLimitsImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiInstanceFieldLimits
     implements PleromaApiInstanceFieldLimits {
   const factory _PleromaApiInstanceFieldLimits(
-      {@HiveField(0)
-      @JsonKey(name: 'max_fields')
-          required int? maxFields,
+      {@HiveField(0) @JsonKey(name: 'max_fields') required final int? maxFields,
       @JsonKey(name: 'max_remote_fields')
       @HiveField(1)
-          required int? maxRemoteFields,
+      required final int? maxRemoteFields,
       @JsonKey(name: 'name_length')
       @HiveField(2)
-          required int? nameLength,
+      required final int? nameLength,
       @JsonKey(name: 'value_length')
       @HiveField(3)
-          required int? valueLength}) = _$_PleromaApiInstanceFieldLimits;
+      required final int? valueLength}) = _$PleromaApiInstanceFieldLimitsImpl;
 
   factory _PleromaApiInstanceFieldLimits.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiInstanceFieldLimits.fromJson;
+      _$PleromaApiInstanceFieldLimitsImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -290,6 +259,7 @@ abstract class _PleromaApiInstanceFieldLimits
   int? get valueLength;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiInstanceFieldLimitsCopyWith<_PleromaApiInstanceFieldLimits>
+  _$$PleromaApiInstanceFieldLimitsImplCopyWith<
+          _$PleromaApiInstanceFieldLimitsImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -51,9 +51,10 @@ class PleromaApiRegisterAccountResponseAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiRegisterAccountResponse
-    _$$_PleromaApiRegisterAccountResponseFromJson(Map<String, dynamic> json) =>
-        _$_PleromaApiRegisterAccountResponse(
+_$PleromaApiRegisterAccountResponseImpl
+    _$$PleromaApiRegisterAccountResponseImplFromJson(
+            Map<String, dynamic> json) =>
+        _$PleromaApiRegisterAccountResponseImpl(
           approvalRequired: json['approval_required'] as bool?,
           emailConformationRequired:
               json['email_conformation_required'] as bool?,
@@ -63,8 +64,8 @@ _$_PleromaApiRegisterAccountResponse
                   json['auth_token'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_PleromaApiRegisterAccountResponseToJson(
-    _$_PleromaApiRegisterAccountResponse instance) {
+Map<String, dynamic> _$$PleromaApiRegisterAccountResponseImplToJson(
+    _$PleromaApiRegisterAccountResponseImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

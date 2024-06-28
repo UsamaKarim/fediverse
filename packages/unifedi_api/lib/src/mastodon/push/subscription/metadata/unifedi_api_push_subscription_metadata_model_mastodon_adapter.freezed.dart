@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_push_subscription_metadata_model_mastodon_adapter.dart';
 
@@ -11,34 +12,13 @@ part of 'unifedi_api_push_subscription_metadata_model_mastodon_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiPushSubscriptionMetadataMastodonAdapter
     _$UnifediApiPushSubscriptionMetadataMastodonAdapterFromJson(
         Map<String, dynamic> json) {
   return _UnifediApiPushSubscriptionMetadataMastodonAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiPushSubscriptionMetadataMastodonAdapterTearOff {
-  const _$UnifediApiPushSubscriptionMetadataMastodonAdapterTearOff();
-
-  _UnifediApiPushSubscriptionMetadataMastodonAdapter call(
-      @HiveField(0) MastodonApiPushSubscriptionMetadata value) {
-    return _UnifediApiPushSubscriptionMetadataMastodonAdapter(
-      value,
-    );
-  }
-
-  UnifediApiPushSubscriptionMetadataMastodonAdapter fromJson(
-      Map<String, Object?> json) {
-    return UnifediApiPushSubscriptionMetadataMastodonAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiPushSubscriptionMetadataMastodonAdapter =
-    _$UnifediApiPushSubscriptionMetadataMastodonAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiPushSubscriptionMetadataMastodonAdapter {
@@ -60,54 +40,63 @@ abstract class $UnifediApiPushSubscriptionMetadataMastodonAdapterCopyWith<
           UnifediApiPushSubscriptionMetadataMastodonAdapter value,
           $Res Function(UnifediApiPushSubscriptionMetadataMastodonAdapter)
               then) =
-      _$UnifediApiPushSubscriptionMetadataMastodonAdapterCopyWithImpl<$Res>;
+      _$UnifediApiPushSubscriptionMetadataMastodonAdapterCopyWithImpl<$Res,
+          UnifediApiPushSubscriptionMetadataMastodonAdapter>;
+  @useResult
   $Res call({@HiveField(0) MastodonApiPushSubscriptionMetadata value});
 
   $MastodonApiPushSubscriptionMetadataCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiPushSubscriptionMetadataMastodonAdapterCopyWithImpl<$Res>
+class _$UnifediApiPushSubscriptionMetadataMastodonAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiPushSubscriptionMetadataMastodonAdapter>
     implements
         $UnifediApiPushSubscriptionMetadataMastodonAdapterCopyWith<$Res> {
   _$UnifediApiPushSubscriptionMetadataMastodonAdapterCopyWithImpl(
       this._value, this._then);
 
-  final UnifediApiPushSubscriptionMetadataMastodonAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiPushSubscriptionMetadataMastodonAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiPushSubscriptionMetadata,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiPushSubscriptionMetadataCopyWith<$Res> get value {
     return $MastodonApiPushSubscriptionMetadataCopyWith<$Res>(_value.value,
         (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiPushSubscriptionMetadataMastodonAdapterCopyWith<$Res>
+abstract class _$$UnifediApiPushSubscriptionMetadataMastodonAdapterImplCopyWith<
+        $Res>
     implements
         $UnifediApiPushSubscriptionMetadataMastodonAdapterCopyWith<$Res> {
-  factory _$UnifediApiPushSubscriptionMetadataMastodonAdapterCopyWith(
-          _UnifediApiPushSubscriptionMetadataMastodonAdapter value,
-          $Res Function(_UnifediApiPushSubscriptionMetadataMastodonAdapter)
+  factory _$$UnifediApiPushSubscriptionMetadataMastodonAdapterImplCopyWith(
+          _$UnifediApiPushSubscriptionMetadataMastodonAdapterImpl value,
+          $Res Function(_$UnifediApiPushSubscriptionMetadataMastodonAdapterImpl)
               then) =
-      __$UnifediApiPushSubscriptionMetadataMastodonAdapterCopyWithImpl<$Res>;
+      __$$UnifediApiPushSubscriptionMetadataMastodonAdapterImplCopyWithImpl<
+          $Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) MastodonApiPushSubscriptionMetadata value});
 
   @override
@@ -115,29 +104,25 @@ abstract class _$UnifediApiPushSubscriptionMetadataMastodonAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiPushSubscriptionMetadataMastodonAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiPushSubscriptionMetadataMastodonAdapterCopyWithImpl<
+class __$$UnifediApiPushSubscriptionMetadataMastodonAdapterImplCopyWithImpl<
         $Res>
+    extends _$UnifediApiPushSubscriptionMetadataMastodonAdapterCopyWithImpl<
+        $Res, _$UnifediApiPushSubscriptionMetadataMastodonAdapterImpl>
     implements
-        _$UnifediApiPushSubscriptionMetadataMastodonAdapterCopyWith<$Res> {
-  __$UnifediApiPushSubscriptionMetadataMastodonAdapterCopyWithImpl(
-      _UnifediApiPushSubscriptionMetadataMastodonAdapter _value,
-      $Res Function(_UnifediApiPushSubscriptionMetadataMastodonAdapter) _then)
-      : super(
-            _value,
-            (v) =>
-                _then(v as _UnifediApiPushSubscriptionMetadataMastodonAdapter));
+        _$$UnifediApiPushSubscriptionMetadataMastodonAdapterImplCopyWith<$Res> {
+  __$$UnifediApiPushSubscriptionMetadataMastodonAdapterImplCopyWithImpl(
+      _$UnifediApiPushSubscriptionMetadataMastodonAdapterImpl _value,
+      $Res Function(_$UnifediApiPushSubscriptionMetadataMastodonAdapterImpl)
+          _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiPushSubscriptionMetadataMastodonAdapter get _value =>
-      super._value as _UnifediApiPushSubscriptionMetadataMastodonAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiPushSubscriptionMetadataMastodonAdapter(
-      value == freezed
+    return _then(_$UnifediApiPushSubscriptionMetadataMastodonAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiPushSubscriptionMetadata,
@@ -147,15 +132,15 @@ class __$UnifediApiPushSubscriptionMetadataMastodonAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiPushSubscriptionMetadataMastodonAdapter
+class _$UnifediApiPushSubscriptionMetadataMastodonAdapterImpl
     extends _UnifediApiPushSubscriptionMetadataMastodonAdapter {
-  const _$_UnifediApiPushSubscriptionMetadataMastodonAdapter(
+  const _$UnifediApiPushSubscriptionMetadataMastodonAdapterImpl(
       @HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiPushSubscriptionMetadataMastodonAdapter.fromJson(
+  factory _$UnifediApiPushSubscriptionMetadataMastodonAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiPushSubscriptionMetadataMastodonAdapterFromJson(json);
+      _$$UnifediApiPushSubscriptionMetadataMastodonAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -167,48 +152,52 @@ class _$_UnifediApiPushSubscriptionMetadataMastodonAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiPushSubscriptionMetadataMastodonAdapter &&
+            other is _$UnifediApiPushSubscriptionMetadataMastodonAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiPushSubscriptionMetadataMastodonAdapterCopyWith<
-          _UnifediApiPushSubscriptionMetadataMastodonAdapter>
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiPushSubscriptionMetadataMastodonAdapterImplCopyWith<
+          _$UnifediApiPushSubscriptionMetadataMastodonAdapterImpl>
       get copyWith =>
-          __$UnifediApiPushSubscriptionMetadataMastodonAdapterCopyWithImpl<
-                  _UnifediApiPushSubscriptionMetadataMastodonAdapter>(
+          __$$UnifediApiPushSubscriptionMetadataMastodonAdapterImplCopyWithImpl<
+                  _$UnifediApiPushSubscriptionMetadataMastodonAdapterImpl>(
               this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiPushSubscriptionMetadataMastodonAdapterToJson(this);
+    return _$$UnifediApiPushSubscriptionMetadataMastodonAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiPushSubscriptionMetadataMastodonAdapter
     extends UnifediApiPushSubscriptionMetadataMastodonAdapter {
   const factory _UnifediApiPushSubscriptionMetadataMastodonAdapter(
-          @HiveField(0) MastodonApiPushSubscriptionMetadata value) =
-      _$_UnifediApiPushSubscriptionMetadataMastodonAdapter;
+          @HiveField(0) final MastodonApiPushSubscriptionMetadata value) =
+      _$UnifediApiPushSubscriptionMetadataMastodonAdapterImpl;
   const _UnifediApiPushSubscriptionMetadataMastodonAdapter._() : super._();
 
   factory _UnifediApiPushSubscriptionMetadataMastodonAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiPushSubscriptionMetadataMastodonAdapter.fromJson;
+      _$UnifediApiPushSubscriptionMetadataMastodonAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   MastodonApiPushSubscriptionMetadata get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiPushSubscriptionMetadataMastodonAdapterCopyWith<
-          _UnifediApiPushSubscriptionMetadataMastodonAdapter>
+  _$$UnifediApiPushSubscriptionMetadataMastodonAdapterImplCopyWith<
+          _$UnifediApiPushSubscriptionMetadataMastodonAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

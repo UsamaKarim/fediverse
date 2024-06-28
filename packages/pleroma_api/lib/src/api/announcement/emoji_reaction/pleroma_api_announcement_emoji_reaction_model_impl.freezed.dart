@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_announcement_emoji_reaction_model_impl.dart';
 
@@ -11,40 +12,12 @@ part of 'pleroma_api_announcement_emoji_reaction_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiAnnouncementEmojiReaction
     _$PleromaApiAnnouncementEmojiReactionFromJson(Map<String, dynamic> json) {
   return _PleromaApiAnnouncementEmojiReaction.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiAnnouncementEmojiReactionTearOff {
-  const _$PleromaApiAnnouncementEmojiReactionTearOff();
-
-  _PleromaApiAnnouncementEmojiReaction call(
-      {@HiveField(0) required String name,
-      @HiveField(1) required int count,
-      @HiveField(2) required bool me,
-      @HiveField(3) required String? url,
-      @HiveField(4) @JsonKey(name: 'static_url') required String? staticUrl}) {
-    return _PleromaApiAnnouncementEmojiReaction(
-      name: name,
-      count: count,
-      me: me,
-      url: url,
-      staticUrl: staticUrl,
-    );
-  }
-
-  PleromaApiAnnouncementEmojiReaction fromJson(Map<String, Object?> json) {
-    return PleromaApiAnnouncementEmojiReaction.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiAnnouncementEmojiReaction =
-    _$PleromaApiAnnouncementEmojiReactionTearOff();
 
 /// @nodoc
 mixin _$PleromaApiAnnouncementEmojiReaction {
@@ -72,7 +45,9 @@ abstract class $PleromaApiAnnouncementEmojiReactionCopyWith<$Res> {
   factory $PleromaApiAnnouncementEmojiReactionCopyWith(
           PleromaApiAnnouncementEmojiReaction value,
           $Res Function(PleromaApiAnnouncementEmojiReaction) then) =
-      _$PleromaApiAnnouncementEmojiReactionCopyWithImpl<$Res>;
+      _$PleromaApiAnnouncementEmojiReactionCopyWithImpl<$Res,
+          PleromaApiAnnouncementEmojiReaction>;
+  @useResult
   $Res call(
       {@HiveField(0) String name,
       @HiveField(1) int count,
@@ -82,55 +57,59 @@ abstract class $PleromaApiAnnouncementEmojiReactionCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiAnnouncementEmojiReactionCopyWithImpl<$Res>
+class _$PleromaApiAnnouncementEmojiReactionCopyWithImpl<$Res,
+        $Val extends PleromaApiAnnouncementEmojiReaction>
     implements $PleromaApiAnnouncementEmojiReactionCopyWith<$Res> {
   _$PleromaApiAnnouncementEmojiReactionCopyWithImpl(this._value, this._then);
 
-  final PleromaApiAnnouncementEmojiReaction _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiAnnouncementEmojiReaction) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? count = freezed,
-    Object? me = freezed,
+    Object? name = null,
+    Object? count = null,
+    Object? me = null,
     Object? url = freezed,
     Object? staticUrl = freezed,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      count: count == freezed
+      count: null == count
           ? _value.count
           : count // ignore: cast_nullable_to_non_nullable
               as int,
-      me: me == freezed
+      me: null == me
           ? _value.me
           : me // ignore: cast_nullable_to_non_nullable
               as bool,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
-      staticUrl: staticUrl == freezed
+      staticUrl: freezed == staticUrl
           ? _value.staticUrl
           : staticUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiAnnouncementEmojiReactionCopyWith<$Res>
+abstract class _$$PleromaApiAnnouncementEmojiReactionImplCopyWith<$Res>
     implements $PleromaApiAnnouncementEmojiReactionCopyWith<$Res> {
-  factory _$PleromaApiAnnouncementEmojiReactionCopyWith(
-          _PleromaApiAnnouncementEmojiReaction value,
-          $Res Function(_PleromaApiAnnouncementEmojiReaction) then) =
-      __$PleromaApiAnnouncementEmojiReactionCopyWithImpl<$Res>;
+  factory _$$PleromaApiAnnouncementEmojiReactionImplCopyWith(
+          _$PleromaApiAnnouncementEmojiReactionImpl value,
+          $Res Function(_$PleromaApiAnnouncementEmojiReactionImpl) then) =
+      __$$PleromaApiAnnouncementEmojiReactionImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) String name,
       @HiveField(1) int count,
@@ -140,44 +119,42 @@ abstract class _$PleromaApiAnnouncementEmojiReactionCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiAnnouncementEmojiReactionCopyWithImpl<$Res>
-    extends _$PleromaApiAnnouncementEmojiReactionCopyWithImpl<$Res>
-    implements _$PleromaApiAnnouncementEmojiReactionCopyWith<$Res> {
-  __$PleromaApiAnnouncementEmojiReactionCopyWithImpl(
-      _PleromaApiAnnouncementEmojiReaction _value,
-      $Res Function(_PleromaApiAnnouncementEmojiReaction) _then)
-      : super(_value, (v) => _then(v as _PleromaApiAnnouncementEmojiReaction));
+class __$$PleromaApiAnnouncementEmojiReactionImplCopyWithImpl<$Res>
+    extends _$PleromaApiAnnouncementEmojiReactionCopyWithImpl<$Res,
+        _$PleromaApiAnnouncementEmojiReactionImpl>
+    implements _$$PleromaApiAnnouncementEmojiReactionImplCopyWith<$Res> {
+  __$$PleromaApiAnnouncementEmojiReactionImplCopyWithImpl(
+      _$PleromaApiAnnouncementEmojiReactionImpl _value,
+      $Res Function(_$PleromaApiAnnouncementEmojiReactionImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiAnnouncementEmojiReaction get _value =>
-      super._value as _PleromaApiAnnouncementEmojiReaction;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? count = freezed,
-    Object? me = freezed,
+    Object? name = null,
+    Object? count = null,
+    Object? me = null,
     Object? url = freezed,
     Object? staticUrl = freezed,
   }) {
-    return _then(_PleromaApiAnnouncementEmojiReaction(
-      name: name == freezed
+    return _then(_$PleromaApiAnnouncementEmojiReactionImpl(
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      count: count == freezed
+      count: null == count
           ? _value.count
           : count // ignore: cast_nullable_to_non_nullable
               as int,
-      me: me == freezed
+      me: null == me
           ? _value.me
           : me // ignore: cast_nullable_to_non_nullable
               as bool,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
-      staticUrl: staticUrl == freezed
+      staticUrl: freezed == staticUrl
           ? _value.staticUrl
           : staticUrl // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -187,18 +164,18 @@ class __$PleromaApiAnnouncementEmojiReactionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiAnnouncementEmojiReaction
+class _$PleromaApiAnnouncementEmojiReactionImpl
     implements _PleromaApiAnnouncementEmojiReaction {
-  const _$_PleromaApiAnnouncementEmojiReaction(
+  const _$PleromaApiAnnouncementEmojiReactionImpl(
       {@HiveField(0) required this.name,
       @HiveField(1) required this.count,
       @HiveField(2) required this.me,
       @HiveField(3) required this.url,
       @HiveField(4) @JsonKey(name: 'static_url') required this.staticUrl});
 
-  factory _$_PleromaApiAnnouncementEmojiReaction.fromJson(
+  factory _$PleromaApiAnnouncementEmojiReactionImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_PleromaApiAnnouncementEmojiReactionFromJson(json);
+      _$$PleromaApiAnnouncementEmojiReactionImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -223,10 +200,10 @@ class _$_PleromaApiAnnouncementEmojiReaction
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiAnnouncementEmojiReaction &&
+            other is _$PleromaApiAnnouncementEmojiReactionImpl &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.count, count) || other.count == count) &&
             (identical(other.me, me) || other.me == me) &&
@@ -235,40 +212,41 @@ class _$_PleromaApiAnnouncementEmojiReaction
                 other.staticUrl == staticUrl));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, name, count, me, url, staticUrl);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiAnnouncementEmojiReactionCopyWith<
-          _PleromaApiAnnouncementEmojiReaction>
-      get copyWith => __$PleromaApiAnnouncementEmojiReactionCopyWithImpl<
-          _PleromaApiAnnouncementEmojiReaction>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiAnnouncementEmojiReactionImplCopyWith<
+          _$PleromaApiAnnouncementEmojiReactionImpl>
+      get copyWith => __$$PleromaApiAnnouncementEmojiReactionImplCopyWithImpl<
+          _$PleromaApiAnnouncementEmojiReactionImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiAnnouncementEmojiReactionToJson(this);
+    return _$$PleromaApiAnnouncementEmojiReactionImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiAnnouncementEmojiReaction
     implements PleromaApiAnnouncementEmojiReaction {
   const factory _PleromaApiAnnouncementEmojiReaction(
-      {@HiveField(0)
-          required String name,
-      @HiveField(1)
-          required int count,
-      @HiveField(2)
-          required bool me,
-      @HiveField(3)
-          required String? url,
-      @HiveField(4)
-      @JsonKey(name: 'static_url')
-          required String? staticUrl}) = _$_PleromaApiAnnouncementEmojiReaction;
+          {@HiveField(0) required final String name,
+          @HiveField(1) required final int count,
+          @HiveField(2) required final bool me,
+          @HiveField(3) required final String? url,
+          @HiveField(4)
+          @JsonKey(name: 'static_url')
+          required final String? staticUrl}) =
+      _$PleromaApiAnnouncementEmojiReactionImpl;
 
   factory _PleromaApiAnnouncementEmojiReaction.fromJson(
           Map<String, dynamic> json) =
-      _$_PleromaApiAnnouncementEmojiReaction.fromJson;
+      _$PleromaApiAnnouncementEmojiReactionImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -288,7 +266,7 @@ abstract class _PleromaApiAnnouncementEmojiReaction
   String? get staticUrl;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiAnnouncementEmojiReactionCopyWith<
-          _PleromaApiAnnouncementEmojiReaction>
+  _$$PleromaApiAnnouncementEmojiReactionImplCopyWith<
+          _$PleromaApiAnnouncementEmojiReactionImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

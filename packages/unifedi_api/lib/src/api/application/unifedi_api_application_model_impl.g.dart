@@ -50,16 +50,16 @@ class UnifediApiApplicationAdapter extends TypeAdapter<UnifediApiApplication> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiApplication _$$_UnifediApiApplicationFromJson(
+_$UnifediApiApplicationImpl _$$UnifediApiApplicationImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiApplication(
+    _$UnifediApiApplicationImpl(
       name: json['name'] as String?,
       website: json['website'] as String?,
       vapidKey: json['vapid_key'] as String?,
     );
 
-Map<String, dynamic> _$$_UnifediApiApplicationToJson(
-    _$_UnifediApiApplication instance) {
+Map<String, dynamic> _$$UnifediApiApplicationImplToJson(
+    _$UnifediApiApplicationImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

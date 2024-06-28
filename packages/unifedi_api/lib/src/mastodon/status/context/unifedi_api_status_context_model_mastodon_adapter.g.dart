@@ -45,16 +45,16 @@ class UnifediApiStatusContextMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiStatusContextMastodonAdapter
-    _$$_UnifediApiStatusContextMastodonAdapterFromJson(
+_$UnifediApiStatusContextMastodonAdapterImpl
+    _$$UnifediApiStatusContextMastodonAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiStatusContextMastodonAdapter(
+        _$UnifediApiStatusContextMastodonAdapterImpl(
           MastodonApiStatusContext.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiStatusContextMastodonAdapterToJson(
-        _$_UnifediApiStatusContextMastodonAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiStatusContextMastodonAdapterImplToJson(
+        _$UnifediApiStatusContextMastodonAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

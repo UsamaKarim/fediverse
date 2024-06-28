@@ -2,10 +2,7 @@
 
 part of 'conversation_chat_database_dao.dart';
 
-// **************************************************************************
-// DaoGenerator
-// **************************************************************************
-
+// ignore_for_file: type=lint
 mixin _$ConversationDaoMixin on DatabaseAccessor<AppDatabase> {
   $DbConversationsTable get dbConversations => attachedDatabase.dbConversations;
 }

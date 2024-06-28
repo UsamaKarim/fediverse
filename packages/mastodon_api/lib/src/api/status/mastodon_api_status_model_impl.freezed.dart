@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_status_model_impl.dart';
 
@@ -11,120 +12,11 @@ part of 'mastodon_api_status_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiStatus _$MastodonApiStatusFromJson(Map<String, dynamic> json) {
   return _MastodonApiStatus.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiStatusTearOff {
-  const _$MastodonApiStatusTearOff();
-
-  _MastodonApiStatus call(
-      {@HiveField(0)
-          required String id,
-      @HiveField(1)
-      @JsonKey(name: 'created_at')
-          required DateTime createdAt,
-      @HiveField(2)
-      @JsonKey(name: 'in_reply_to_id')
-          required String? inReplyToId,
-      @HiveField(3)
-      @JsonKey(name: 'in_reply_to_account_id')
-          required String? inReplyToAccountId,
-      @HiveField(4)
-          required bool sensitive,
-      @HiveField(5)
-      @JsonKey(name: 'spoiler_text')
-          required String? spoilerText,
-      @HiveField(6)
-          required String uri,
-      @HiveField(7)
-          required String? url,
-      @HiveField(8)
-      @JsonKey(name: 'replies_count')
-          required int? repliesCount,
-      @HiveField(9)
-      @JsonKey(name: 'reblogs_count')
-          required int? reblogsCount,
-      @HiveField(10)
-      @JsonKey(name: 'favourites_count')
-          required int? favouritesCount,
-      @HiveField(11)
-          required bool? favourited,
-      @HiveField(12)
-          required bool? reblogged,
-      @HiveField(13)
-          required bool? muted,
-      @HiveField(14)
-          required bool? bookmarked,
-      @HiveField(15)
-          required bool? pinned,
-      @HiveField(16)
-          required String? content,
-      @HiveField(17)
-          required MastodonApiStatus? reblog,
-      @HiveField(18)
-          required MastodonApiApplication? application,
-      @HiveField(19)
-          required MastodonApiAccount account,
-      @HiveField(20)
-      @JsonKey(name: 'media_attachments')
-          required List<MastodonApiMediaAttachment>? mediaAttachments,
-      @HiveField(21)
-          required List<MastodonApiMention>? mentions,
-      @HiveField(22)
-          required List<MastodonApiTag>? tags,
-      @HiveField(23)
-          required List<MastodonApiEmoji>? emojis,
-      @HiveField(24)
-          required MastodonApiPoll? poll,
-      @HiveField(25)
-          required MastodonApiCard? card,
-      @HiveField(27)
-          required String? language,
-      @HiveField(28)
-          required String visibility}) {
-    return _MastodonApiStatus(
-      id: id,
-      createdAt: createdAt,
-      inReplyToId: inReplyToId,
-      inReplyToAccountId: inReplyToAccountId,
-      sensitive: sensitive,
-      spoilerText: spoilerText,
-      uri: uri,
-      url: url,
-      repliesCount: repliesCount,
-      reblogsCount: reblogsCount,
-      favouritesCount: favouritesCount,
-      favourited: favourited,
-      reblogged: reblogged,
-      muted: muted,
-      bookmarked: bookmarked,
-      pinned: pinned,
-      content: content,
-      reblog: reblog,
-      application: application,
-      account: account,
-      mediaAttachments: mediaAttachments,
-      mentions: mentions,
-      tags: tags,
-      emojis: emojis,
-      poll: poll,
-      card: card,
-      language: language,
-      visibility: visibility,
-    );
-  }
-
-  MastodonApiStatus fromJson(Map<String, Object?> json) {
-    return MastodonApiStatus.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiStatus = _$MastodonApiStatusTearOff();
 
 /// @nodoc
 mixin _$MastodonApiStatus {
@@ -204,72 +96,41 @@ mixin _$MastodonApiStatus {
 abstract class $MastodonApiStatusCopyWith<$Res> {
   factory $MastodonApiStatusCopyWith(
           MastodonApiStatus value, $Res Function(MastodonApiStatus) then) =
-      _$MastodonApiStatusCopyWithImpl<$Res>;
+      _$MastodonApiStatusCopyWithImpl<$Res, MastodonApiStatus>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-          String id,
-      @HiveField(1)
-      @JsonKey(name: 'created_at')
-          DateTime createdAt,
-      @HiveField(2)
-      @JsonKey(name: 'in_reply_to_id')
-          String? inReplyToId,
+      {@HiveField(0) String id,
+      @HiveField(1) @JsonKey(name: 'created_at') DateTime createdAt,
+      @HiveField(2) @JsonKey(name: 'in_reply_to_id') String? inReplyToId,
       @HiveField(3)
       @JsonKey(name: 'in_reply_to_account_id')
-          String? inReplyToAccountId,
-      @HiveField(4)
-          bool sensitive,
-      @HiveField(5)
-      @JsonKey(name: 'spoiler_text')
-          String? spoilerText,
-      @HiveField(6)
-          String uri,
-      @HiveField(7)
-          String? url,
-      @HiveField(8)
-      @JsonKey(name: 'replies_count')
-          int? repliesCount,
-      @HiveField(9)
-      @JsonKey(name: 'reblogs_count')
-          int? reblogsCount,
-      @HiveField(10)
-      @JsonKey(name: 'favourites_count')
-          int? favouritesCount,
-      @HiveField(11)
-          bool? favourited,
-      @HiveField(12)
-          bool? reblogged,
-      @HiveField(13)
-          bool? muted,
-      @HiveField(14)
-          bool? bookmarked,
-      @HiveField(15)
-          bool? pinned,
-      @HiveField(16)
-          String? content,
-      @HiveField(17)
-          MastodonApiStatus? reblog,
-      @HiveField(18)
-          MastodonApiApplication? application,
-      @HiveField(19)
-          MastodonApiAccount account,
+      String? inReplyToAccountId,
+      @HiveField(4) bool sensitive,
+      @HiveField(5) @JsonKey(name: 'spoiler_text') String? spoilerText,
+      @HiveField(6) String uri,
+      @HiveField(7) String? url,
+      @HiveField(8) @JsonKey(name: 'replies_count') int? repliesCount,
+      @HiveField(9) @JsonKey(name: 'reblogs_count') int? reblogsCount,
+      @HiveField(10) @JsonKey(name: 'favourites_count') int? favouritesCount,
+      @HiveField(11) bool? favourited,
+      @HiveField(12) bool? reblogged,
+      @HiveField(13) bool? muted,
+      @HiveField(14) bool? bookmarked,
+      @HiveField(15) bool? pinned,
+      @HiveField(16) String? content,
+      @HiveField(17) MastodonApiStatus? reblog,
+      @HiveField(18) MastodonApiApplication? application,
+      @HiveField(19) MastodonApiAccount account,
       @HiveField(20)
       @JsonKey(name: 'media_attachments')
-          List<MastodonApiMediaAttachment>? mediaAttachments,
-      @HiveField(21)
-          List<MastodonApiMention>? mentions,
-      @HiveField(22)
-          List<MastodonApiTag>? tags,
-      @HiveField(23)
-          List<MastodonApiEmoji>? emojis,
-      @HiveField(24)
-          MastodonApiPoll? poll,
-      @HiveField(25)
-          MastodonApiCard? card,
-      @HiveField(27)
-          String? language,
-      @HiveField(28)
-          String visibility});
+      List<MastodonApiMediaAttachment>? mediaAttachments,
+      @HiveField(21) List<MastodonApiMention>? mentions,
+      @HiveField(22) List<MastodonApiTag>? tags,
+      @HiveField(23) List<MastodonApiEmoji>? emojis,
+      @HiveField(24) MastodonApiPoll? poll,
+      @HiveField(25) MastodonApiCard? card,
+      @HiveField(27) String? language,
+      @HiveField(28) String visibility});
 
   $MastodonApiStatusCopyWith<$Res>? get reblog;
   $MastodonApiApplicationCopyWith<$Res>? get application;
@@ -279,23 +140,25 @@ abstract class $MastodonApiStatusCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MastodonApiStatusCopyWithImpl<$Res>
+class _$MastodonApiStatusCopyWithImpl<$Res, $Val extends MastodonApiStatus>
     implements $MastodonApiStatusCopyWith<$Res> {
   _$MastodonApiStatusCopyWithImpl(this._value, this._then);
 
-  final MastodonApiStatus _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiStatus) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? createdAt = freezed,
+    Object? id = null,
+    Object? createdAt = null,
     Object? inReplyToId = freezed,
     Object? inReplyToAccountId = freezed,
-    Object? sensitive = freezed,
+    Object? sensitive = null,
     Object? spoilerText = freezed,
-    Object? uri = freezed,
+    Object? uri = null,
     Object? url = freezed,
     Object? repliesCount = freezed,
     Object? reblogsCount = freezed,
@@ -308,7 +171,7 @@ class _$MastodonApiStatusCopyWithImpl<$Res>
     Object? content = freezed,
     Object? reblog = freezed,
     Object? application = freezed,
-    Object? account = freezed,
+    Object? account = null,
     Object? mediaAttachments = freezed,
     Object? mentions = freezed,
     Object? tags = freezed,
@@ -316,248 +179,222 @@ class _$MastodonApiStatusCopyWithImpl<$Res>
     Object? poll = freezed,
     Object? card = freezed,
     Object? language = freezed,
-    Object? visibility = freezed,
+    Object? visibility = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      createdAt: createdAt == freezed
+      createdAt: null == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      inReplyToId: inReplyToId == freezed
+      inReplyToId: freezed == inReplyToId
           ? _value.inReplyToId
           : inReplyToId // ignore: cast_nullable_to_non_nullable
               as String?,
-      inReplyToAccountId: inReplyToAccountId == freezed
+      inReplyToAccountId: freezed == inReplyToAccountId
           ? _value.inReplyToAccountId
           : inReplyToAccountId // ignore: cast_nullable_to_non_nullable
               as String?,
-      sensitive: sensitive == freezed
+      sensitive: null == sensitive
           ? _value.sensitive
           : sensitive // ignore: cast_nullable_to_non_nullable
               as bool,
-      spoilerText: spoilerText == freezed
+      spoilerText: freezed == spoilerText
           ? _value.spoilerText
           : spoilerText // ignore: cast_nullable_to_non_nullable
               as String?,
-      uri: uri == freezed
+      uri: null == uri
           ? _value.uri
           : uri // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
-      repliesCount: repliesCount == freezed
+      repliesCount: freezed == repliesCount
           ? _value.repliesCount
           : repliesCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      reblogsCount: reblogsCount == freezed
+      reblogsCount: freezed == reblogsCount
           ? _value.reblogsCount
           : reblogsCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      favouritesCount: favouritesCount == freezed
+      favouritesCount: freezed == favouritesCount
           ? _value.favouritesCount
           : favouritesCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      favourited: favourited == freezed
+      favourited: freezed == favourited
           ? _value.favourited
           : favourited // ignore: cast_nullable_to_non_nullable
               as bool?,
-      reblogged: reblogged == freezed
+      reblogged: freezed == reblogged
           ? _value.reblogged
           : reblogged // ignore: cast_nullable_to_non_nullable
               as bool?,
-      muted: muted == freezed
+      muted: freezed == muted
           ? _value.muted
           : muted // ignore: cast_nullable_to_non_nullable
               as bool?,
-      bookmarked: bookmarked == freezed
+      bookmarked: freezed == bookmarked
           ? _value.bookmarked
           : bookmarked // ignore: cast_nullable_to_non_nullable
               as bool?,
-      pinned: pinned == freezed
+      pinned: freezed == pinned
           ? _value.pinned
           : pinned // ignore: cast_nullable_to_non_nullable
               as bool?,
-      content: content == freezed
+      content: freezed == content
           ? _value.content
           : content // ignore: cast_nullable_to_non_nullable
               as String?,
-      reblog: reblog == freezed
+      reblog: freezed == reblog
           ? _value.reblog
           : reblog // ignore: cast_nullable_to_non_nullable
               as MastodonApiStatus?,
-      application: application == freezed
+      application: freezed == application
           ? _value.application
           : application // ignore: cast_nullable_to_non_nullable
               as MastodonApiApplication?,
-      account: account == freezed
+      account: null == account
           ? _value.account
           : account // ignore: cast_nullable_to_non_nullable
               as MastodonApiAccount,
-      mediaAttachments: mediaAttachments == freezed
+      mediaAttachments: freezed == mediaAttachments
           ? _value.mediaAttachments
           : mediaAttachments // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiMediaAttachment>?,
-      mentions: mentions == freezed
+      mentions: freezed == mentions
           ? _value.mentions
           : mentions // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiMention>?,
-      tags: tags == freezed
+      tags: freezed == tags
           ? _value.tags
           : tags // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiTag>?,
-      emojis: emojis == freezed
+      emojis: freezed == emojis
           ? _value.emojis
           : emojis // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiEmoji>?,
-      poll: poll == freezed
+      poll: freezed == poll
           ? _value.poll
           : poll // ignore: cast_nullable_to_non_nullable
               as MastodonApiPoll?,
-      card: card == freezed
+      card: freezed == card
           ? _value.card
           : card // ignore: cast_nullable_to_non_nullable
               as MastodonApiCard?,
-      language: language == freezed
+      language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as String?,
-      visibility: visibility == freezed
+      visibility: null == visibility
           ? _value.visibility
           : visibility // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiStatusCopyWith<$Res>? get reblog {
     if (_value.reblog == null) {
       return null;
     }
 
     return $MastodonApiStatusCopyWith<$Res>(_value.reblog!, (value) {
-      return _then(_value.copyWith(reblog: value));
+      return _then(_value.copyWith(reblog: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiApplicationCopyWith<$Res>? get application {
     if (_value.application == null) {
       return null;
     }
 
     return $MastodonApiApplicationCopyWith<$Res>(_value.application!, (value) {
-      return _then(_value.copyWith(application: value));
+      return _then(_value.copyWith(application: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiAccountCopyWith<$Res> get account {
     return $MastodonApiAccountCopyWith<$Res>(_value.account, (value) {
-      return _then(_value.copyWith(account: value));
+      return _then(_value.copyWith(account: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiPollCopyWith<$Res>? get poll {
     if (_value.poll == null) {
       return null;
     }
 
     return $MastodonApiPollCopyWith<$Res>(_value.poll!, (value) {
-      return _then(_value.copyWith(poll: value));
+      return _then(_value.copyWith(poll: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiCardCopyWith<$Res>? get card {
     if (_value.card == null) {
       return null;
     }
 
     return $MastodonApiCardCopyWith<$Res>(_value.card!, (value) {
-      return _then(_value.copyWith(card: value));
+      return _then(_value.copyWith(card: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiStatusCopyWith<$Res>
+abstract class _$$MastodonApiStatusImplCopyWith<$Res>
     implements $MastodonApiStatusCopyWith<$Res> {
-  factory _$MastodonApiStatusCopyWith(
-          _MastodonApiStatus value, $Res Function(_MastodonApiStatus) then) =
-      __$MastodonApiStatusCopyWithImpl<$Res>;
+  factory _$$MastodonApiStatusImplCopyWith(_$MastodonApiStatusImpl value,
+          $Res Function(_$MastodonApiStatusImpl) then) =
+      __$$MastodonApiStatusImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-          String id,
-      @HiveField(1)
-      @JsonKey(name: 'created_at')
-          DateTime createdAt,
-      @HiveField(2)
-      @JsonKey(name: 'in_reply_to_id')
-          String? inReplyToId,
+      {@HiveField(0) String id,
+      @HiveField(1) @JsonKey(name: 'created_at') DateTime createdAt,
+      @HiveField(2) @JsonKey(name: 'in_reply_to_id') String? inReplyToId,
       @HiveField(3)
       @JsonKey(name: 'in_reply_to_account_id')
-          String? inReplyToAccountId,
-      @HiveField(4)
-          bool sensitive,
-      @HiveField(5)
-      @JsonKey(name: 'spoiler_text')
-          String? spoilerText,
-      @HiveField(6)
-          String uri,
-      @HiveField(7)
-          String? url,
-      @HiveField(8)
-      @JsonKey(name: 'replies_count')
-          int? repliesCount,
-      @HiveField(9)
-      @JsonKey(name: 'reblogs_count')
-          int? reblogsCount,
-      @HiveField(10)
-      @JsonKey(name: 'favourites_count')
-          int? favouritesCount,
-      @HiveField(11)
-          bool? favourited,
-      @HiveField(12)
-          bool? reblogged,
-      @HiveField(13)
-          bool? muted,
-      @HiveField(14)
-          bool? bookmarked,
-      @HiveField(15)
-          bool? pinned,
-      @HiveField(16)
-          String? content,
-      @HiveField(17)
-          MastodonApiStatus? reblog,
-      @HiveField(18)
-          MastodonApiApplication? application,
-      @HiveField(19)
-          MastodonApiAccount account,
+      String? inReplyToAccountId,
+      @HiveField(4) bool sensitive,
+      @HiveField(5) @JsonKey(name: 'spoiler_text') String? spoilerText,
+      @HiveField(6) String uri,
+      @HiveField(7) String? url,
+      @HiveField(8) @JsonKey(name: 'replies_count') int? repliesCount,
+      @HiveField(9) @JsonKey(name: 'reblogs_count') int? reblogsCount,
+      @HiveField(10) @JsonKey(name: 'favourites_count') int? favouritesCount,
+      @HiveField(11) bool? favourited,
+      @HiveField(12) bool? reblogged,
+      @HiveField(13) bool? muted,
+      @HiveField(14) bool? bookmarked,
+      @HiveField(15) bool? pinned,
+      @HiveField(16) String? content,
+      @HiveField(17) MastodonApiStatus? reblog,
+      @HiveField(18) MastodonApiApplication? application,
+      @HiveField(19) MastodonApiAccount account,
       @HiveField(20)
       @JsonKey(name: 'media_attachments')
-          List<MastodonApiMediaAttachment>? mediaAttachments,
-      @HiveField(21)
-          List<MastodonApiMention>? mentions,
-      @HiveField(22)
-          List<MastodonApiTag>? tags,
-      @HiveField(23)
-          List<MastodonApiEmoji>? emojis,
-      @HiveField(24)
-          MastodonApiPoll? poll,
-      @HiveField(25)
-          MastodonApiCard? card,
-      @HiveField(27)
-          String? language,
-      @HiveField(28)
-          String visibility});
+      List<MastodonApiMediaAttachment>? mediaAttachments,
+      @HiveField(21) List<MastodonApiMention>? mentions,
+      @HiveField(22) List<MastodonApiTag>? tags,
+      @HiveField(23) List<MastodonApiEmoji>? emojis,
+      @HiveField(24) MastodonApiPoll? poll,
+      @HiveField(25) MastodonApiCard? card,
+      @HiveField(27) String? language,
+      @HiveField(28) String visibility});
 
   @override
   $MastodonApiStatusCopyWith<$Res>? get reblog;
@@ -572,25 +409,23 @@ abstract class _$MastodonApiStatusCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MastodonApiStatusCopyWithImpl<$Res>
-    extends _$MastodonApiStatusCopyWithImpl<$Res>
-    implements _$MastodonApiStatusCopyWith<$Res> {
-  __$MastodonApiStatusCopyWithImpl(
-      _MastodonApiStatus _value, $Res Function(_MastodonApiStatus) _then)
-      : super(_value, (v) => _then(v as _MastodonApiStatus));
+class __$$MastodonApiStatusImplCopyWithImpl<$Res>
+    extends _$MastodonApiStatusCopyWithImpl<$Res, _$MastodonApiStatusImpl>
+    implements _$$MastodonApiStatusImplCopyWith<$Res> {
+  __$$MastodonApiStatusImplCopyWithImpl(_$MastodonApiStatusImpl _value,
+      $Res Function(_$MastodonApiStatusImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiStatus get _value => super._value as _MastodonApiStatus;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? createdAt = freezed,
+    Object? id = null,
+    Object? createdAt = null,
     Object? inReplyToId = freezed,
     Object? inReplyToAccountId = freezed,
-    Object? sensitive = freezed,
+    Object? sensitive = null,
     Object? spoilerText = freezed,
-    Object? uri = freezed,
+    Object? uri = null,
     Object? url = freezed,
     Object? repliesCount = freezed,
     Object? reblogsCount = freezed,
@@ -603,7 +438,7 @@ class __$MastodonApiStatusCopyWithImpl<$Res>
     Object? content = freezed,
     Object? reblog = freezed,
     Object? application = freezed,
-    Object? account = freezed,
+    Object? account = null,
     Object? mediaAttachments = freezed,
     Object? mentions = freezed,
     Object? tags = freezed,
@@ -611,118 +446,118 @@ class __$MastodonApiStatusCopyWithImpl<$Res>
     Object? poll = freezed,
     Object? card = freezed,
     Object? language = freezed,
-    Object? visibility = freezed,
+    Object? visibility = null,
   }) {
-    return _then(_MastodonApiStatus(
-      id: id == freezed
+    return _then(_$MastodonApiStatusImpl(
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      createdAt: createdAt == freezed
+      createdAt: null == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      inReplyToId: inReplyToId == freezed
+      inReplyToId: freezed == inReplyToId
           ? _value.inReplyToId
           : inReplyToId // ignore: cast_nullable_to_non_nullable
               as String?,
-      inReplyToAccountId: inReplyToAccountId == freezed
+      inReplyToAccountId: freezed == inReplyToAccountId
           ? _value.inReplyToAccountId
           : inReplyToAccountId // ignore: cast_nullable_to_non_nullable
               as String?,
-      sensitive: sensitive == freezed
+      sensitive: null == sensitive
           ? _value.sensitive
           : sensitive // ignore: cast_nullable_to_non_nullable
               as bool,
-      spoilerText: spoilerText == freezed
+      spoilerText: freezed == spoilerText
           ? _value.spoilerText
           : spoilerText // ignore: cast_nullable_to_non_nullable
               as String?,
-      uri: uri == freezed
+      uri: null == uri
           ? _value.uri
           : uri // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
-      repliesCount: repliesCount == freezed
+      repliesCount: freezed == repliesCount
           ? _value.repliesCount
           : repliesCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      reblogsCount: reblogsCount == freezed
+      reblogsCount: freezed == reblogsCount
           ? _value.reblogsCount
           : reblogsCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      favouritesCount: favouritesCount == freezed
+      favouritesCount: freezed == favouritesCount
           ? _value.favouritesCount
           : favouritesCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      favourited: favourited == freezed
+      favourited: freezed == favourited
           ? _value.favourited
           : favourited // ignore: cast_nullable_to_non_nullable
               as bool?,
-      reblogged: reblogged == freezed
+      reblogged: freezed == reblogged
           ? _value.reblogged
           : reblogged // ignore: cast_nullable_to_non_nullable
               as bool?,
-      muted: muted == freezed
+      muted: freezed == muted
           ? _value.muted
           : muted // ignore: cast_nullable_to_non_nullable
               as bool?,
-      bookmarked: bookmarked == freezed
+      bookmarked: freezed == bookmarked
           ? _value.bookmarked
           : bookmarked // ignore: cast_nullable_to_non_nullable
               as bool?,
-      pinned: pinned == freezed
+      pinned: freezed == pinned
           ? _value.pinned
           : pinned // ignore: cast_nullable_to_non_nullable
               as bool?,
-      content: content == freezed
+      content: freezed == content
           ? _value.content
           : content // ignore: cast_nullable_to_non_nullable
               as String?,
-      reblog: reblog == freezed
+      reblog: freezed == reblog
           ? _value.reblog
           : reblog // ignore: cast_nullable_to_non_nullable
               as MastodonApiStatus?,
-      application: application == freezed
+      application: freezed == application
           ? _value.application
           : application // ignore: cast_nullable_to_non_nullable
               as MastodonApiApplication?,
-      account: account == freezed
+      account: null == account
           ? _value.account
           : account // ignore: cast_nullable_to_non_nullable
               as MastodonApiAccount,
-      mediaAttachments: mediaAttachments == freezed
-          ? _value.mediaAttachments
+      mediaAttachments: freezed == mediaAttachments
+          ? _value._mediaAttachments
           : mediaAttachments // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiMediaAttachment>?,
-      mentions: mentions == freezed
-          ? _value.mentions
+      mentions: freezed == mentions
+          ? _value._mentions
           : mentions // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiMention>?,
-      tags: tags == freezed
-          ? _value.tags
+      tags: freezed == tags
+          ? _value._tags
           : tags // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiTag>?,
-      emojis: emojis == freezed
-          ? _value.emojis
+      emojis: freezed == emojis
+          ? _value._emojis
           : emojis // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiEmoji>?,
-      poll: poll == freezed
+      poll: freezed == poll
           ? _value.poll
           : poll // ignore: cast_nullable_to_non_nullable
               as MastodonApiPoll?,
-      card: card == freezed
+      card: freezed == card
           ? _value.card
           : card // ignore: cast_nullable_to_non_nullable
               as MastodonApiCard?,
-      language: language == freezed
+      language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as String?,
-      visibility: visibility == freezed
+      visibility: null == visibility
           ? _value.visibility
           : visibility // ignore: cast_nullable_to_non_nullable
               as String,
@@ -732,75 +567,49 @@ class __$MastodonApiStatusCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiStatus implements _MastodonApiStatus {
-  const _$_MastodonApiStatus(
-      {@HiveField(0)
-          required this.id,
-      @HiveField(1)
-      @JsonKey(name: 'created_at')
-          required this.createdAt,
-      @HiveField(2)
-      @JsonKey(name: 'in_reply_to_id')
-          required this.inReplyToId,
+class _$MastodonApiStatusImpl implements _MastodonApiStatus {
+  const _$MastodonApiStatusImpl(
+      {@HiveField(0) required this.id,
+      @HiveField(1) @JsonKey(name: 'created_at') required this.createdAt,
+      @HiveField(2) @JsonKey(name: 'in_reply_to_id') required this.inReplyToId,
       @HiveField(3)
       @JsonKey(name: 'in_reply_to_account_id')
-          required this.inReplyToAccountId,
-      @HiveField(4)
-          required this.sensitive,
-      @HiveField(5)
-      @JsonKey(name: 'spoiler_text')
-          required this.spoilerText,
-      @HiveField(6)
-          required this.uri,
-      @HiveField(7)
-          required this.url,
-      @HiveField(8)
-      @JsonKey(name: 'replies_count')
-          required this.repliesCount,
-      @HiveField(9)
-      @JsonKey(name: 'reblogs_count')
-          required this.reblogsCount,
+      required this.inReplyToAccountId,
+      @HiveField(4) required this.sensitive,
+      @HiveField(5) @JsonKey(name: 'spoiler_text') required this.spoilerText,
+      @HiveField(6) required this.uri,
+      @HiveField(7) required this.url,
+      @HiveField(8) @JsonKey(name: 'replies_count') required this.repliesCount,
+      @HiveField(9) @JsonKey(name: 'reblogs_count') required this.reblogsCount,
       @HiveField(10)
       @JsonKey(name: 'favourites_count')
-          required this.favouritesCount,
-      @HiveField(11)
-          required this.favourited,
-      @HiveField(12)
-          required this.reblogged,
-      @HiveField(13)
-          required this.muted,
-      @HiveField(14)
-          required this.bookmarked,
-      @HiveField(15)
-          required this.pinned,
-      @HiveField(16)
-          required this.content,
-      @HiveField(17)
-          required this.reblog,
-      @HiveField(18)
-          required this.application,
-      @HiveField(19)
-          required this.account,
+      required this.favouritesCount,
+      @HiveField(11) required this.favourited,
+      @HiveField(12) required this.reblogged,
+      @HiveField(13) required this.muted,
+      @HiveField(14) required this.bookmarked,
+      @HiveField(15) required this.pinned,
+      @HiveField(16) required this.content,
+      @HiveField(17) required this.reblog,
+      @HiveField(18) required this.application,
+      @HiveField(19) required this.account,
       @HiveField(20)
       @JsonKey(name: 'media_attachments')
-          required this.mediaAttachments,
-      @HiveField(21)
-          required this.mentions,
-      @HiveField(22)
-          required this.tags,
-      @HiveField(23)
-          required this.emojis,
-      @HiveField(24)
-          required this.poll,
-      @HiveField(25)
-          required this.card,
-      @HiveField(27)
-          required this.language,
-      @HiveField(28)
-          required this.visibility});
+      required final List<MastodonApiMediaAttachment>? mediaAttachments,
+      @HiveField(21) required final List<MastodonApiMention>? mentions,
+      @HiveField(22) required final List<MastodonApiTag>? tags,
+      @HiveField(23) required final List<MastodonApiEmoji>? emojis,
+      @HiveField(24) required this.poll,
+      @HiveField(25) required this.card,
+      @HiveField(27) required this.language,
+      @HiveField(28) required this.visibility})
+      : _mediaAttachments = mediaAttachments,
+        _mentions = mentions,
+        _tags = tags,
+        _emojis = emojis;
 
-  factory _$_MastodonApiStatus.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiStatusFromJson(json);
+  factory _$MastodonApiStatusImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MastodonApiStatusImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -869,19 +678,52 @@ class _$_MastodonApiStatus implements _MastodonApiStatus {
   @override
   @HiveField(19)
   final MastodonApiAccount account;
+  final List<MastodonApiMediaAttachment>? _mediaAttachments;
   @override
   @HiveField(20)
   @JsonKey(name: 'media_attachments')
-  final List<MastodonApiMediaAttachment>? mediaAttachments;
+  List<MastodonApiMediaAttachment>? get mediaAttachments {
+    final value = _mediaAttachments;
+    if (value == null) return null;
+    if (_mediaAttachments is EqualUnmodifiableListView)
+      return _mediaAttachments;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  final List<MastodonApiMention>? _mentions;
   @override
   @HiveField(21)
-  final List<MastodonApiMention>? mentions;
+  List<MastodonApiMention>? get mentions {
+    final value = _mentions;
+    if (value == null) return null;
+    if (_mentions is EqualUnmodifiableListView) return _mentions;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  final List<MastodonApiTag>? _tags;
   @override
   @HiveField(22)
-  final List<MastodonApiTag>? tags;
+  List<MastodonApiTag>? get tags {
+    final value = _tags;
+    if (value == null) return null;
+    if (_tags is EqualUnmodifiableListView) return _tags;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  final List<MastodonApiEmoji>? _emojis;
   @override
   @HiveField(23)
-  final List<MastodonApiEmoji>? emojis;
+  List<MastodonApiEmoji>? get emojis {
+    final value = _emojis;
+    if (value == null) return null;
+    if (_emojis is EqualUnmodifiableListView) return _emojis;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(24)
   final MastodonApiPoll? poll;
@@ -901,10 +743,10 @@ class _$_MastodonApiStatus implements _MastodonApiStatus {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiStatus &&
+            other is _$MastodonApiStatusImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.createdAt, createdAt) ||
                 other.createdAt == createdAt) &&
@@ -938,10 +780,10 @@ class _$_MastodonApiStatus implements _MastodonApiStatus {
                 other.application == application) &&
             (identical(other.account, account) || other.account == account) &&
             const DeepCollectionEquality()
-                .equals(other.mediaAttachments, mediaAttachments) &&
-            const DeepCollectionEquality().equals(other.mentions, mentions) &&
-            const DeepCollectionEquality().equals(other.tags, tags) &&
-            const DeepCollectionEquality().equals(other.emojis, emojis) &&
+                .equals(other._mediaAttachments, _mediaAttachments) &&
+            const DeepCollectionEquality().equals(other._mentions, _mentions) &&
+            const DeepCollectionEquality().equals(other._tags, _tags) &&
+            const DeepCollectionEquality().equals(other._emojis, _emojis) &&
             (identical(other.poll, poll) || other.poll == poll) &&
             (identical(other.card, card) || other.card == card) &&
             (identical(other.language, language) ||
@@ -950,6 +792,7 @@ class _$_MastodonApiStatus implements _MastodonApiStatus {
                 other.visibility == visibility));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -973,10 +816,10 @@ class _$_MastodonApiStatus implements _MastodonApiStatus {
         reblog,
         application,
         account,
-        const DeepCollectionEquality().hash(mediaAttachments),
-        const DeepCollectionEquality().hash(mentions),
-        const DeepCollectionEquality().hash(tags),
-        const DeepCollectionEquality().hash(emojis),
+        const DeepCollectionEquality().hash(_mediaAttachments),
+        const DeepCollectionEquality().hash(_mentions),
+        const DeepCollectionEquality().hash(_tags),
+        const DeepCollectionEquality().hash(_emojis),
         poll,
         card,
         language,
@@ -985,84 +828,69 @@ class _$_MastodonApiStatus implements _MastodonApiStatus {
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiStatusCopyWith<_MastodonApiStatus> get copyWith =>
-      __$MastodonApiStatusCopyWithImpl<_MastodonApiStatus>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiStatusImplCopyWith<_$MastodonApiStatusImpl> get copyWith =>
+      __$$MastodonApiStatusImplCopyWithImpl<_$MastodonApiStatusImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiStatusToJson(this);
+    return _$$MastodonApiStatusImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiStatus implements MastodonApiStatus {
   const factory _MastodonApiStatus(
-      {@HiveField(0)
-          required String id,
-      @HiveField(1)
-      @JsonKey(name: 'created_at')
-          required DateTime createdAt,
-      @HiveField(2)
-      @JsonKey(name: 'in_reply_to_id')
-          required String? inReplyToId,
-      @HiveField(3)
-      @JsonKey(name: 'in_reply_to_account_id')
-          required String? inReplyToAccountId,
-      @HiveField(4)
-          required bool sensitive,
-      @HiveField(5)
-      @JsonKey(name: 'spoiler_text')
-          required String? spoilerText,
-      @HiveField(6)
-          required String uri,
-      @HiveField(7)
-          required String? url,
-      @HiveField(8)
-      @JsonKey(name: 'replies_count')
-          required int? repliesCount,
-      @HiveField(9)
-      @JsonKey(name: 'reblogs_count')
-          required int? reblogsCount,
-      @HiveField(10)
-      @JsonKey(name: 'favourites_count')
-          required int? favouritesCount,
-      @HiveField(11)
-          required bool? favourited,
-      @HiveField(12)
-          required bool? reblogged,
-      @HiveField(13)
-          required bool? muted,
-      @HiveField(14)
-          required bool? bookmarked,
-      @HiveField(15)
-          required bool? pinned,
-      @HiveField(16)
-          required String? content,
-      @HiveField(17)
-          required MastodonApiStatus? reblog,
-      @HiveField(18)
-          required MastodonApiApplication? application,
-      @HiveField(19)
-          required MastodonApiAccount account,
-      @HiveField(20)
-      @JsonKey(name: 'media_attachments')
-          required List<MastodonApiMediaAttachment>? mediaAttachments,
-      @HiveField(21)
-          required List<MastodonApiMention>? mentions,
-      @HiveField(22)
-          required List<MastodonApiTag>? tags,
-      @HiveField(23)
-          required List<MastodonApiEmoji>? emojis,
-      @HiveField(24)
-          required MastodonApiPoll? poll,
-      @HiveField(25)
-          required MastodonApiCard? card,
-      @HiveField(27)
-          required String? language,
-      @HiveField(28)
-          required String visibility}) = _$_MastodonApiStatus;
+          {@HiveField(0) required final String id,
+          @HiveField(1)
+          @JsonKey(name: 'created_at')
+          required final DateTime createdAt,
+          @HiveField(2)
+          @JsonKey(name: 'in_reply_to_id')
+          required final String? inReplyToId,
+          @HiveField(3)
+          @JsonKey(name: 'in_reply_to_account_id')
+          required final String? inReplyToAccountId,
+          @HiveField(4) required final bool sensitive,
+          @HiveField(5)
+          @JsonKey(name: 'spoiler_text')
+          required final String? spoilerText,
+          @HiveField(6) required final String uri,
+          @HiveField(7) required final String? url,
+          @HiveField(8)
+          @JsonKey(name: 'replies_count')
+          required final int? repliesCount,
+          @HiveField(9)
+          @JsonKey(name: 'reblogs_count')
+          required final int? reblogsCount,
+          @HiveField(10)
+          @JsonKey(name: 'favourites_count')
+          required final int? favouritesCount,
+          @HiveField(11) required final bool? favourited,
+          @HiveField(12) required final bool? reblogged,
+          @HiveField(13) required final bool? muted,
+          @HiveField(14) required final bool? bookmarked,
+          @HiveField(15) required final bool? pinned,
+          @HiveField(16) required final String? content,
+          @HiveField(17) required final MastodonApiStatus? reblog,
+          @HiveField(18) required final MastodonApiApplication? application,
+          @HiveField(19) required final MastodonApiAccount account,
+          @HiveField(20)
+          @JsonKey(name: 'media_attachments')
+          required final List<MastodonApiMediaAttachment>? mediaAttachments,
+          @HiveField(21) required final List<MastodonApiMention>? mentions,
+          @HiveField(22) required final List<MastodonApiTag>? tags,
+          @HiveField(23) required final List<MastodonApiEmoji>? emojis,
+          @HiveField(24) required final MastodonApiPoll? poll,
+          @HiveField(25) required final MastodonApiCard? card,
+          @HiveField(27) required final String? language,
+          @HiveField(28) required final String visibility}) =
+      _$MastodonApiStatusImpl;
 
   factory _MastodonApiStatus.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiStatus.fromJson;
+      _$MastodonApiStatusImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -1158,6 +986,6 @@ abstract class _MastodonApiStatus implements MastodonApiStatus {
   String get visibility;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiStatusCopyWith<_MastodonApiStatus> get copyWith =>
+  _$$MastodonApiStatusImplCopyWith<_$MastodonApiStatusImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

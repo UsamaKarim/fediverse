@@ -1,4 +1,5 @@
 import 'package:collection/collection.dart';
+import 'package:drift/drift.dart';
 import 'package:easy_dispose/easy_dispose.dart';
 import 'package:fedi_app/app/instance/announcement/instance_announcement_bloc.dart';
 import 'package:fedi_app/app/instance/announcement/instance_announcement_model.dart';
@@ -216,7 +217,7 @@ class InstanceAnnouncementBloc extends DisposableOwner
         dbInstanceAnnouncement: dbInstanceAnnouncementPopulatedWrapper
             .dbInstanceAnnouncementPopulated.dbInstanceAnnouncement
             .copyWith(
-          reactions: newReactionsList.toUnifediApiEmojiReactionList(),
+          reactions: Value(newReactionsList.toUnifediApiEmojiReactionList()),
         ),
       ),
     );

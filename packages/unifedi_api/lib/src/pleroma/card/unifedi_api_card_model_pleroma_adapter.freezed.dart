@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_card_model_pleroma_adapter.dart';
 
@@ -11,30 +12,12 @@ part of 'unifedi_api_card_model_pleroma_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiCardPleromaAdapter _$UnifediApiCardPleromaAdapterFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiCardPleromaAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiCardPleromaAdapterTearOff {
-  const _$UnifediApiCardPleromaAdapterTearOff();
-
-  _UnifediApiCardPleromaAdapter call(@HiveField(0) PleromaApiCard value) {
-    return _UnifediApiCardPleromaAdapter(
-      value,
-    );
-  }
-
-  UnifediApiCardPleromaAdapter fromJson(Map<String, Object?> json) {
-    return UnifediApiCardPleromaAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiCardPleromaAdapter = _$UnifediApiCardPleromaAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiCardPleromaAdapter {
@@ -52,49 +35,56 @@ abstract class $UnifediApiCardPleromaAdapterCopyWith<$Res> {
   factory $UnifediApiCardPleromaAdapterCopyWith(
           UnifediApiCardPleromaAdapter value,
           $Res Function(UnifediApiCardPleromaAdapter) then) =
-      _$UnifediApiCardPleromaAdapterCopyWithImpl<$Res>;
+      _$UnifediApiCardPleromaAdapterCopyWithImpl<$Res,
+          UnifediApiCardPleromaAdapter>;
+  @useResult
   $Res call({@HiveField(0) PleromaApiCard value});
 
   $PleromaApiCardCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiCardPleromaAdapterCopyWithImpl<$Res>
+class _$UnifediApiCardPleromaAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiCardPleromaAdapter>
     implements $UnifediApiCardPleromaAdapterCopyWith<$Res> {
   _$UnifediApiCardPleromaAdapterCopyWithImpl(this._value, this._then);
 
-  final UnifediApiCardPleromaAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiCardPleromaAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiCard,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiCardCopyWith<$Res> get value {
     return $PleromaApiCardCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiCardPleromaAdapterCopyWith<$Res>
+abstract class _$$UnifediApiCardPleromaAdapterImplCopyWith<$Res>
     implements $UnifediApiCardPleromaAdapterCopyWith<$Res> {
-  factory _$UnifediApiCardPleromaAdapterCopyWith(
-          _UnifediApiCardPleromaAdapter value,
-          $Res Function(_UnifediApiCardPleromaAdapter) then) =
-      __$UnifediApiCardPleromaAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiCardPleromaAdapterImplCopyWith(
+          _$UnifediApiCardPleromaAdapterImpl value,
+          $Res Function(_$UnifediApiCardPleromaAdapterImpl) then) =
+      __$$UnifediApiCardPleromaAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) PleromaApiCard value});
 
   @override
@@ -102,24 +92,22 @@ abstract class _$UnifediApiCardPleromaAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiCardPleromaAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiCardPleromaAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiCardPleromaAdapterCopyWith<$Res> {
-  __$UnifediApiCardPleromaAdapterCopyWithImpl(
-      _UnifediApiCardPleromaAdapter _value,
-      $Res Function(_UnifediApiCardPleromaAdapter) _then)
-      : super(_value, (v) => _then(v as _UnifediApiCardPleromaAdapter));
+class __$$UnifediApiCardPleromaAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiCardPleromaAdapterCopyWithImpl<$Res,
+        _$UnifediApiCardPleromaAdapterImpl>
+    implements _$$UnifediApiCardPleromaAdapterImplCopyWith<$Res> {
+  __$$UnifediApiCardPleromaAdapterImplCopyWithImpl(
+      _$UnifediApiCardPleromaAdapterImpl _value,
+      $Res Function(_$UnifediApiCardPleromaAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiCardPleromaAdapter get _value =>
-      super._value as _UnifediApiCardPleromaAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiCardPleromaAdapter(
-      value == freezed
+    return _then(_$UnifediApiCardPleromaAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiCard,
@@ -129,11 +117,13 @@ class __$UnifediApiCardPleromaAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiCardPleromaAdapter extends _UnifediApiCardPleromaAdapter {
-  const _$_UnifediApiCardPleromaAdapter(@HiveField(0) this.value) : super._();
+class _$UnifediApiCardPleromaAdapterImpl extends _UnifediApiCardPleromaAdapter {
+  const _$UnifediApiCardPleromaAdapterImpl(@HiveField(0) this.value)
+      : super._();
 
-  factory _$_UnifediApiCardPleromaAdapter.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiCardPleromaAdapterFromJson(json);
+  factory _$UnifediApiCardPleromaAdapterImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$UnifediApiCardPleromaAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -145,42 +135,49 @@ class _$_UnifediApiCardPleromaAdapter extends _UnifediApiCardPleromaAdapter {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiCardPleromaAdapter &&
+            other is _$UnifediApiCardPleromaAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiCardPleromaAdapterCopyWith<_UnifediApiCardPleromaAdapter>
-      get copyWith => __$UnifediApiCardPleromaAdapterCopyWithImpl<
-          _UnifediApiCardPleromaAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiCardPleromaAdapterImplCopyWith<
+          _$UnifediApiCardPleromaAdapterImpl>
+      get copyWith => __$$UnifediApiCardPleromaAdapterImplCopyWithImpl<
+          _$UnifediApiCardPleromaAdapterImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiCardPleromaAdapterToJson(this);
+    return _$$UnifediApiCardPleromaAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiCardPleromaAdapter
     extends UnifediApiCardPleromaAdapter {
   const factory _UnifediApiCardPleromaAdapter(
-      @HiveField(0) PleromaApiCard value) = _$_UnifediApiCardPleromaAdapter;
+          @HiveField(0) final PleromaApiCard value) =
+      _$UnifediApiCardPleromaAdapterImpl;
   const _UnifediApiCardPleromaAdapter._() : super._();
 
   factory _UnifediApiCardPleromaAdapter.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiCardPleromaAdapter.fromJson;
+      _$UnifediApiCardPleromaAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   PleromaApiCard get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiCardPleromaAdapterCopyWith<_UnifediApiCardPleromaAdapter>
+  _$$UnifediApiCardPleromaAdapterImplCopyWith<
+          _$UnifediApiCardPleromaAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

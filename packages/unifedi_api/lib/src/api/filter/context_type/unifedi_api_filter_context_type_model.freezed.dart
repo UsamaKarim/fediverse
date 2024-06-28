@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_filter_context_type_model.dart';
 
@@ -11,62 +12,11 @@ part of 'unifedi_api_filter_context_type_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$UnifediApiFilterContextTypeTearOff {
-  const _$UnifediApiFilterContextTypeTearOff();
-
-  _Home home(
-      {String stringValue = UnifediApiFilterContextType.homeStringValue}) {
-    return _Home(
-      stringValue: stringValue,
-    );
-  }
-
-  _Notifications notifications(
-      {String stringValue =
-          UnifediApiFilterContextType.notificationsStringValue}) {
-    return _Notifications(
-      stringValue: stringValue,
-    );
-  }
-
-  _Public public(
-      {String stringValue = UnifediApiFilterContextType.publicStringValue}) {
-    return _Public(
-      stringValue: stringValue,
-    );
-  }
-
-  _Thread thread(
-      {String stringValue = UnifediApiFilterContextType.threadStringValue}) {
-    return _Thread(
-      stringValue: stringValue,
-    );
-  }
-
-  _Account account(
-      {String stringValue = UnifediApiFilterContextType.accountStringValue}) {
-    return _Account(
-      stringValue: stringValue,
-    );
-  }
-
-  _Unknown unknown({required String stringValue}) {
-    return _Unknown(
-      stringValue: stringValue,
-    );
-  }
-}
-
-/// @nodoc
-const $UnifediApiFilterContextType = _$UnifediApiFilterContextTypeTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$UnifediApiFilterContextType {
   String get stringValue => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String stringValue) home,
@@ -79,12 +29,12 @@ mixin _$UnifediApiFilterContextType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? home,
-    TResult Function(String stringValue)? notifications,
-    TResult Function(String stringValue)? public,
-    TResult Function(String stringValue)? thread,
-    TResult Function(String stringValue)? account,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? home,
+    TResult? Function(String stringValue)? notifications,
+    TResult? Function(String stringValue)? public,
+    TResult? Function(String stringValue)? thread,
+    TResult? Function(String stringValue)? account,
+    TResult? Function(String stringValue)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -110,12 +60,12 @@ mixin _$UnifediApiFilterContextType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Home value)? home,
-    TResult Function(_Notifications value)? notifications,
-    TResult Function(_Public value)? public,
-    TResult Function(_Thread value)? thread,
-    TResult Function(_Account value)? account,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Home value)? home,
+    TResult? Function(_Notifications value)? notifications,
+    TResult? Function(_Public value)? public,
+    TResult? Function(_Thread value)? thread,
+    TResult? Function(_Account value)? account,
+    TResult? Function(_Unknown value)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -140,57 +90,62 @@ abstract class $UnifediApiFilterContextTypeCopyWith<$Res> {
   factory $UnifediApiFilterContextTypeCopyWith(
           UnifediApiFilterContextType value,
           $Res Function(UnifediApiFilterContextType) then) =
-      _$UnifediApiFilterContextTypeCopyWithImpl<$Res>;
+      _$UnifediApiFilterContextTypeCopyWithImpl<$Res,
+          UnifediApiFilterContextType>;
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class _$UnifediApiFilterContextTypeCopyWithImpl<$Res>
+class _$UnifediApiFilterContextTypeCopyWithImpl<$Res,
+        $Val extends UnifediApiFilterContextType>
     implements $UnifediApiFilterContextTypeCopyWith<$Res> {
   _$UnifediApiFilterContextTypeCopyWithImpl(this._value, this._then);
 
-  final UnifediApiFilterContextType _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiFilterContextType) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
     return _then(_value.copyWith(
-      stringValue: stringValue == freezed
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$HomeCopyWith<$Res>
+abstract class _$$HomeImplCopyWith<$Res>
     implements $UnifediApiFilterContextTypeCopyWith<$Res> {
-  factory _$HomeCopyWith(_Home value, $Res Function(_Home) then) =
-      __$HomeCopyWithImpl<$Res>;
+  factory _$$HomeImplCopyWith(
+          _$HomeImpl value, $Res Function(_$HomeImpl) then) =
+      __$$HomeImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$HomeCopyWithImpl<$Res>
-    extends _$UnifediApiFilterContextTypeCopyWithImpl<$Res>
-    implements _$HomeCopyWith<$Res> {
-  __$HomeCopyWithImpl(_Home _value, $Res Function(_Home) _then)
-      : super(_value, (v) => _then(v as _Home));
+class __$$HomeImplCopyWithImpl<$Res>
+    extends _$UnifediApiFilterContextTypeCopyWithImpl<$Res, _$HomeImpl>
+    implements _$$HomeImplCopyWith<$Res> {
+  __$$HomeImplCopyWithImpl(_$HomeImpl _value, $Res Function(_$HomeImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Home get _value => super._value as _Home;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Home(
-      stringValue: stringValue == freezed
+    return _then(_$HomeImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -200,12 +155,12 @@ class __$HomeCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Home implements _Home {
-  const _$_Home(
+class _$HomeImpl implements _Home {
+  const _$HomeImpl(
       {this.stringValue = UnifediApiFilterContextType.homeStringValue});
 
-  @JsonKey(defaultValue: UnifediApiFilterContextType.homeStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -214,10 +169,10 @@ class _$_Home implements _Home {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Home &&
+            other is _$HomeImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -227,8 +182,9 @@ class _$_Home implements _Home {
 
   @JsonKey(ignore: true)
   @override
-  _$HomeCopyWith<_Home> get copyWith =>
-      __$HomeCopyWithImpl<_Home>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$HomeImplCopyWith<_$HomeImpl> get copyWith =>
+      __$$HomeImplCopyWithImpl<_$HomeImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -246,12 +202,12 @@ class _$_Home implements _Home {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? home,
-    TResult Function(String stringValue)? notifications,
-    TResult Function(String stringValue)? public,
-    TResult Function(String stringValue)? thread,
-    TResult Function(String stringValue)? account,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? home,
+    TResult? Function(String stringValue)? notifications,
+    TResult? Function(String stringValue)? public,
+    TResult? Function(String stringValue)? thread,
+    TResult? Function(String stringValue)? account,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return home?.call(stringValue);
   }
@@ -289,12 +245,12 @@ class _$_Home implements _Home {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Home value)? home,
-    TResult Function(_Notifications value)? notifications,
-    TResult Function(_Public value)? public,
-    TResult Function(_Thread value)? thread,
-    TResult Function(_Account value)? account,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Home value)? home,
+    TResult? Function(_Notifications value)? notifications,
+    TResult? Function(_Public value)? public,
+    TResult? Function(_Thread value)? thread,
+    TResult? Function(_Account value)? account,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return home?.call(this);
   }
@@ -318,42 +274,42 @@ class _$_Home implements _Home {
 }
 
 abstract class _Home implements UnifediApiFilterContextType {
-  const factory _Home({String stringValue}) = _$_Home;
+  const factory _Home({final String stringValue}) = _$HomeImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$HomeCopyWith<_Home> get copyWith => throw _privateConstructorUsedError;
+  _$$HomeImplCopyWith<_$HomeImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$NotificationsCopyWith<$Res>
+abstract class _$$NotificationsImplCopyWith<$Res>
     implements $UnifediApiFilterContextTypeCopyWith<$Res> {
-  factory _$NotificationsCopyWith(
-          _Notifications value, $Res Function(_Notifications) then) =
-      __$NotificationsCopyWithImpl<$Res>;
+  factory _$$NotificationsImplCopyWith(
+          _$NotificationsImpl value, $Res Function(_$NotificationsImpl) then) =
+      __$$NotificationsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$NotificationsCopyWithImpl<$Res>
-    extends _$UnifediApiFilterContextTypeCopyWithImpl<$Res>
-    implements _$NotificationsCopyWith<$Res> {
-  __$NotificationsCopyWithImpl(
-      _Notifications _value, $Res Function(_Notifications) _then)
-      : super(_value, (v) => _then(v as _Notifications));
+class __$$NotificationsImplCopyWithImpl<$Res>
+    extends _$UnifediApiFilterContextTypeCopyWithImpl<$Res, _$NotificationsImpl>
+    implements _$$NotificationsImplCopyWith<$Res> {
+  __$$NotificationsImplCopyWithImpl(
+      _$NotificationsImpl _value, $Res Function(_$NotificationsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Notifications get _value => super._value as _Notifications;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Notifications(
-      stringValue: stringValue == freezed
+    return _then(_$NotificationsImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -363,13 +319,13 @@ class __$NotificationsCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Notifications implements _Notifications {
-  const _$_Notifications(
+class _$NotificationsImpl implements _Notifications {
+  const _$NotificationsImpl(
       {this.stringValue =
           UnifediApiFilterContextType.notificationsStringValue});
 
-  @JsonKey(defaultValue: UnifediApiFilterContextType.notificationsStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -378,10 +334,10 @@ class _$_Notifications implements _Notifications {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Notifications &&
+            other is _$NotificationsImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -391,8 +347,9 @@ class _$_Notifications implements _Notifications {
 
   @JsonKey(ignore: true)
   @override
-  _$NotificationsCopyWith<_Notifications> get copyWith =>
-      __$NotificationsCopyWithImpl<_Notifications>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$NotificationsImplCopyWith<_$NotificationsImpl> get copyWith =>
+      __$$NotificationsImplCopyWithImpl<_$NotificationsImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -410,12 +367,12 @@ class _$_Notifications implements _Notifications {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? home,
-    TResult Function(String stringValue)? notifications,
-    TResult Function(String stringValue)? public,
-    TResult Function(String stringValue)? thread,
-    TResult Function(String stringValue)? account,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? home,
+    TResult? Function(String stringValue)? notifications,
+    TResult? Function(String stringValue)? public,
+    TResult? Function(String stringValue)? thread,
+    TResult? Function(String stringValue)? account,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return notifications?.call(stringValue);
   }
@@ -453,12 +410,12 @@ class _$_Notifications implements _Notifications {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Home value)? home,
-    TResult Function(_Notifications value)? notifications,
-    TResult Function(_Public value)? public,
-    TResult Function(_Thread value)? thread,
-    TResult Function(_Account value)? account,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Home value)? home,
+    TResult? Function(_Notifications value)? notifications,
+    TResult? Function(_Public value)? public,
+    TResult? Function(_Thread value)? thread,
+    TResult? Function(_Account value)? account,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return notifications?.call(this);
   }
@@ -482,41 +439,43 @@ class _$_Notifications implements _Notifications {
 }
 
 abstract class _Notifications implements UnifediApiFilterContextType {
-  const factory _Notifications({String stringValue}) = _$_Notifications;
+  const factory _Notifications({final String stringValue}) =
+      _$NotificationsImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$NotificationsCopyWith<_Notifications> get copyWith =>
+  _$$NotificationsImplCopyWith<_$NotificationsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$PublicCopyWith<$Res>
+abstract class _$$PublicImplCopyWith<$Res>
     implements $UnifediApiFilterContextTypeCopyWith<$Res> {
-  factory _$PublicCopyWith(_Public value, $Res Function(_Public) then) =
-      __$PublicCopyWithImpl<$Res>;
+  factory _$$PublicImplCopyWith(
+          _$PublicImpl value, $Res Function(_$PublicImpl) then) =
+      __$$PublicImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$PublicCopyWithImpl<$Res>
-    extends _$UnifediApiFilterContextTypeCopyWithImpl<$Res>
-    implements _$PublicCopyWith<$Res> {
-  __$PublicCopyWithImpl(_Public _value, $Res Function(_Public) _then)
-      : super(_value, (v) => _then(v as _Public));
+class __$$PublicImplCopyWithImpl<$Res>
+    extends _$UnifediApiFilterContextTypeCopyWithImpl<$Res, _$PublicImpl>
+    implements _$$PublicImplCopyWith<$Res> {
+  __$$PublicImplCopyWithImpl(
+      _$PublicImpl _value, $Res Function(_$PublicImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Public get _value => super._value as _Public;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Public(
-      stringValue: stringValue == freezed
+    return _then(_$PublicImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -526,12 +485,12 @@ class __$PublicCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Public implements _Public {
-  const _$_Public(
+class _$PublicImpl implements _Public {
+  const _$PublicImpl(
       {this.stringValue = UnifediApiFilterContextType.publicStringValue});
 
-  @JsonKey(defaultValue: UnifediApiFilterContextType.publicStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -540,10 +499,10 @@ class _$_Public implements _Public {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Public &&
+            other is _$PublicImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -553,8 +512,9 @@ class _$_Public implements _Public {
 
   @JsonKey(ignore: true)
   @override
-  _$PublicCopyWith<_Public> get copyWith =>
-      __$PublicCopyWithImpl<_Public>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PublicImplCopyWith<_$PublicImpl> get copyWith =>
+      __$$PublicImplCopyWithImpl<_$PublicImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -572,12 +532,12 @@ class _$_Public implements _Public {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? home,
-    TResult Function(String stringValue)? notifications,
-    TResult Function(String stringValue)? public,
-    TResult Function(String stringValue)? thread,
-    TResult Function(String stringValue)? account,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? home,
+    TResult? Function(String stringValue)? notifications,
+    TResult? Function(String stringValue)? public,
+    TResult? Function(String stringValue)? thread,
+    TResult? Function(String stringValue)? account,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return public?.call(stringValue);
   }
@@ -615,12 +575,12 @@ class _$_Public implements _Public {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Home value)? home,
-    TResult Function(_Notifications value)? notifications,
-    TResult Function(_Public value)? public,
-    TResult Function(_Thread value)? thread,
-    TResult Function(_Account value)? account,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Home value)? home,
+    TResult? Function(_Notifications value)? notifications,
+    TResult? Function(_Public value)? public,
+    TResult? Function(_Thread value)? thread,
+    TResult? Function(_Account value)? account,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return public?.call(this);
   }
@@ -644,40 +604,42 @@ class _$_Public implements _Public {
 }
 
 abstract class _Public implements UnifediApiFilterContextType {
-  const factory _Public({String stringValue}) = _$_Public;
+  const factory _Public({final String stringValue}) = _$PublicImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$PublicCopyWith<_Public> get copyWith => throw _privateConstructorUsedError;
+  _$$PublicImplCopyWith<_$PublicImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ThreadCopyWith<$Res>
+abstract class _$$ThreadImplCopyWith<$Res>
     implements $UnifediApiFilterContextTypeCopyWith<$Res> {
-  factory _$ThreadCopyWith(_Thread value, $Res Function(_Thread) then) =
-      __$ThreadCopyWithImpl<$Res>;
+  factory _$$ThreadImplCopyWith(
+          _$ThreadImpl value, $Res Function(_$ThreadImpl) then) =
+      __$$ThreadImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$ThreadCopyWithImpl<$Res>
-    extends _$UnifediApiFilterContextTypeCopyWithImpl<$Res>
-    implements _$ThreadCopyWith<$Res> {
-  __$ThreadCopyWithImpl(_Thread _value, $Res Function(_Thread) _then)
-      : super(_value, (v) => _then(v as _Thread));
+class __$$ThreadImplCopyWithImpl<$Res>
+    extends _$UnifediApiFilterContextTypeCopyWithImpl<$Res, _$ThreadImpl>
+    implements _$$ThreadImplCopyWith<$Res> {
+  __$$ThreadImplCopyWithImpl(
+      _$ThreadImpl _value, $Res Function(_$ThreadImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Thread get _value => super._value as _Thread;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Thread(
-      stringValue: stringValue == freezed
+    return _then(_$ThreadImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -687,12 +649,12 @@ class __$ThreadCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Thread implements _Thread {
-  const _$_Thread(
+class _$ThreadImpl implements _Thread {
+  const _$ThreadImpl(
       {this.stringValue = UnifediApiFilterContextType.threadStringValue});
 
-  @JsonKey(defaultValue: UnifediApiFilterContextType.threadStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -701,10 +663,10 @@ class _$_Thread implements _Thread {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Thread &&
+            other is _$ThreadImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -714,8 +676,9 @@ class _$_Thread implements _Thread {
 
   @JsonKey(ignore: true)
   @override
-  _$ThreadCopyWith<_Thread> get copyWith =>
-      __$ThreadCopyWithImpl<_Thread>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ThreadImplCopyWith<_$ThreadImpl> get copyWith =>
+      __$$ThreadImplCopyWithImpl<_$ThreadImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -733,12 +696,12 @@ class _$_Thread implements _Thread {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? home,
-    TResult Function(String stringValue)? notifications,
-    TResult Function(String stringValue)? public,
-    TResult Function(String stringValue)? thread,
-    TResult Function(String stringValue)? account,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? home,
+    TResult? Function(String stringValue)? notifications,
+    TResult? Function(String stringValue)? public,
+    TResult? Function(String stringValue)? thread,
+    TResult? Function(String stringValue)? account,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return thread?.call(stringValue);
   }
@@ -776,12 +739,12 @@ class _$_Thread implements _Thread {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Home value)? home,
-    TResult Function(_Notifications value)? notifications,
-    TResult Function(_Public value)? public,
-    TResult Function(_Thread value)? thread,
-    TResult Function(_Account value)? account,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Home value)? home,
+    TResult? Function(_Notifications value)? notifications,
+    TResult? Function(_Public value)? public,
+    TResult? Function(_Thread value)? thread,
+    TResult? Function(_Account value)? account,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return thread?.call(this);
   }
@@ -805,40 +768,42 @@ class _$_Thread implements _Thread {
 }
 
 abstract class _Thread implements UnifediApiFilterContextType {
-  const factory _Thread({String stringValue}) = _$_Thread;
+  const factory _Thread({final String stringValue}) = _$ThreadImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$ThreadCopyWith<_Thread> get copyWith => throw _privateConstructorUsedError;
+  _$$ThreadImplCopyWith<_$ThreadImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$AccountCopyWith<$Res>
+abstract class _$$AccountImplCopyWith<$Res>
     implements $UnifediApiFilterContextTypeCopyWith<$Res> {
-  factory _$AccountCopyWith(_Account value, $Res Function(_Account) then) =
-      __$AccountCopyWithImpl<$Res>;
+  factory _$$AccountImplCopyWith(
+          _$AccountImpl value, $Res Function(_$AccountImpl) then) =
+      __$$AccountImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$AccountCopyWithImpl<$Res>
-    extends _$UnifediApiFilterContextTypeCopyWithImpl<$Res>
-    implements _$AccountCopyWith<$Res> {
-  __$AccountCopyWithImpl(_Account _value, $Res Function(_Account) _then)
-      : super(_value, (v) => _then(v as _Account));
+class __$$AccountImplCopyWithImpl<$Res>
+    extends _$UnifediApiFilterContextTypeCopyWithImpl<$Res, _$AccountImpl>
+    implements _$$AccountImplCopyWith<$Res> {
+  __$$AccountImplCopyWithImpl(
+      _$AccountImpl _value, $Res Function(_$AccountImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Account get _value => super._value as _Account;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Account(
-      stringValue: stringValue == freezed
+    return _then(_$AccountImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -848,12 +813,12 @@ class __$AccountCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Account implements _Account {
-  const _$_Account(
+class _$AccountImpl implements _Account {
+  const _$AccountImpl(
       {this.stringValue = UnifediApiFilterContextType.accountStringValue});
 
-  @JsonKey(defaultValue: UnifediApiFilterContextType.accountStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -862,10 +827,10 @@ class _$_Account implements _Account {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Account &&
+            other is _$AccountImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -875,8 +840,9 @@ class _$_Account implements _Account {
 
   @JsonKey(ignore: true)
   @override
-  _$AccountCopyWith<_Account> get copyWith =>
-      __$AccountCopyWithImpl<_Account>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AccountImplCopyWith<_$AccountImpl> get copyWith =>
+      __$$AccountImplCopyWithImpl<_$AccountImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -894,12 +860,12 @@ class _$_Account implements _Account {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? home,
-    TResult Function(String stringValue)? notifications,
-    TResult Function(String stringValue)? public,
-    TResult Function(String stringValue)? thread,
-    TResult Function(String stringValue)? account,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? home,
+    TResult? Function(String stringValue)? notifications,
+    TResult? Function(String stringValue)? public,
+    TResult? Function(String stringValue)? thread,
+    TResult? Function(String stringValue)? account,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return account?.call(stringValue);
   }
@@ -937,12 +903,12 @@ class _$_Account implements _Account {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Home value)? home,
-    TResult Function(_Notifications value)? notifications,
-    TResult Function(_Public value)? public,
-    TResult Function(_Thread value)? thread,
-    TResult Function(_Account value)? account,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Home value)? home,
+    TResult? Function(_Notifications value)? notifications,
+    TResult? Function(_Public value)? public,
+    TResult? Function(_Thread value)? thread,
+    TResult? Function(_Account value)? account,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return account?.call(this);
   }
@@ -966,41 +932,42 @@ class _$_Account implements _Account {
 }
 
 abstract class _Account implements UnifediApiFilterContextType {
-  const factory _Account({String stringValue}) = _$_Account;
+  const factory _Account({final String stringValue}) = _$AccountImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$AccountCopyWith<_Account> get copyWith =>
+  _$$AccountImplCopyWith<_$AccountImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$UnknownCopyWith<$Res>
+abstract class _$$UnknownImplCopyWith<$Res>
     implements $UnifediApiFilterContextTypeCopyWith<$Res> {
-  factory _$UnknownCopyWith(_Unknown value, $Res Function(_Unknown) then) =
-      __$UnknownCopyWithImpl<$Res>;
+  factory _$$UnknownImplCopyWith(
+          _$UnknownImpl value, $Res Function(_$UnknownImpl) then) =
+      __$$UnknownImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$UnknownCopyWithImpl<$Res>
-    extends _$UnifediApiFilterContextTypeCopyWithImpl<$Res>
-    implements _$UnknownCopyWith<$Res> {
-  __$UnknownCopyWithImpl(_Unknown _value, $Res Function(_Unknown) _then)
-      : super(_value, (v) => _then(v as _Unknown));
+class __$$UnknownImplCopyWithImpl<$Res>
+    extends _$UnifediApiFilterContextTypeCopyWithImpl<$Res, _$UnknownImpl>
+    implements _$$UnknownImplCopyWith<$Res> {
+  __$$UnknownImplCopyWithImpl(
+      _$UnknownImpl _value, $Res Function(_$UnknownImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Unknown get _value => super._value as _Unknown;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Unknown(
-      stringValue: stringValue == freezed
+    return _then(_$UnknownImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1010,8 +977,8 @@ class __$UnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Unknown implements _Unknown {
-  const _$_Unknown({required this.stringValue});
+class _$UnknownImpl implements _Unknown {
+  const _$UnknownImpl({required this.stringValue});
 
   @override
   final String stringValue;
@@ -1022,10 +989,10 @@ class _$_Unknown implements _Unknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Unknown &&
+            other is _$UnknownImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -1035,8 +1002,9 @@ class _$_Unknown implements _Unknown {
 
   @JsonKey(ignore: true)
   @override
-  _$UnknownCopyWith<_Unknown> get copyWith =>
-      __$UnknownCopyWithImpl<_Unknown>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnknownImplCopyWith<_$UnknownImpl> get copyWith =>
+      __$$UnknownImplCopyWithImpl<_$UnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1054,12 +1022,12 @@ class _$_Unknown implements _Unknown {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? home,
-    TResult Function(String stringValue)? notifications,
-    TResult Function(String stringValue)? public,
-    TResult Function(String stringValue)? thread,
-    TResult Function(String stringValue)? account,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? home,
+    TResult? Function(String stringValue)? notifications,
+    TResult? Function(String stringValue)? public,
+    TResult? Function(String stringValue)? thread,
+    TResult? Function(String stringValue)? account,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return unknown?.call(stringValue);
   }
@@ -1097,12 +1065,12 @@ class _$_Unknown implements _Unknown {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Home value)? home,
-    TResult Function(_Notifications value)? notifications,
-    TResult Function(_Public value)? public,
-    TResult Function(_Thread value)? thread,
-    TResult Function(_Account value)? account,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Home value)? home,
+    TResult? Function(_Notifications value)? notifications,
+    TResult? Function(_Public value)? public,
+    TResult? Function(_Thread value)? thread,
+    TResult? Function(_Account value)? account,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return unknown?.call(this);
   }
@@ -1126,12 +1094,12 @@ class _$_Unknown implements _Unknown {
 }
 
 abstract class _Unknown implements UnifediApiFilterContextType {
-  const factory _Unknown({required String stringValue}) = _$_Unknown;
+  const factory _Unknown({required final String stringValue}) = _$UnknownImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$UnknownCopyWith<_Unknown> get copyWith =>
+  _$$UnknownImplCopyWith<_$UnknownImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

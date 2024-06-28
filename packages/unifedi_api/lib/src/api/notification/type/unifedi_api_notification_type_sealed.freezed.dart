@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_notification_type_sealed.dart';
 
@@ -11,99 +12,11 @@ part of 'unifedi_api_notification_type_sealed.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$UnifediApiNotificationTypeTearOff {
-  const _$UnifediApiNotificationTypeTearOff();
-
-  _Follow follow(
-      {String stringValue = UnifediApiNotificationType.followStringValue}) {
-    return _Follow(
-      stringValue: stringValue,
-    );
-  }
-
-  _Favourite favourite(
-      {String stringValue = UnifediApiNotificationType.favouriteStringValue}) {
-    return _Favourite(
-      stringValue: stringValue,
-    );
-  }
-
-  _Reblog reblog(
-      {String stringValue = UnifediApiNotificationType.reblogStringValue}) {
-    return _Reblog(
-      stringValue: stringValue,
-    );
-  }
-
-  _Mention mention(
-      {String stringValue = UnifediApiNotificationType.mentionStringValue}) {
-    return _Mention(
-      stringValue: stringValue,
-    );
-  }
-
-  _Poll poll(
-      {String stringValue = UnifediApiNotificationType.pollStringValue}) {
-    return _Poll(
-      stringValue: stringValue,
-    );
-  }
-
-  _Move move(
-      {String stringValue = UnifediApiNotificationType.moveStringValue}) {
-    return _Move(
-      stringValue: stringValue,
-    );
-  }
-
-  _followRequest followRequest(
-      {String stringValue =
-          UnifediApiNotificationType.followRequestStringValue}) {
-    return _followRequest(
-      stringValue: stringValue,
-    );
-  }
-
-  _EmojiReaction emojiReaction(
-      {String stringValue =
-          UnifediApiNotificationType.emojiReactionStringValue}) {
-    return _EmojiReaction(
-      stringValue: stringValue,
-    );
-  }
-
-  _ChatMention chatMention(
-      {String stringValue =
-          UnifediApiNotificationType.chatMentionStringValue}) {
-    return _ChatMention(
-      stringValue: stringValue,
-    );
-  }
-
-  _Report report(
-      {String stringValue = UnifediApiNotificationType.reportStringValue}) {
-    return _Report(
-      stringValue: stringValue,
-    );
-  }
-
-  _Unknown unknown({required String stringValue}) {
-    return _Unknown(
-      stringValue: stringValue,
-    );
-  }
-}
-
-/// @nodoc
-const $UnifediApiNotificationType = _$UnifediApiNotificationTypeTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$UnifediApiNotificationType {
   String get stringValue => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String stringValue) follow,
@@ -121,17 +34,17 @@ mixin _$UnifediApiNotificationType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? follow,
-    TResult Function(String stringValue)? favourite,
-    TResult Function(String stringValue)? reblog,
-    TResult Function(String stringValue)? mention,
-    TResult Function(String stringValue)? poll,
-    TResult Function(String stringValue)? move,
-    TResult Function(String stringValue)? followRequest,
-    TResult Function(String stringValue)? emojiReaction,
-    TResult Function(String stringValue)? chatMention,
-    TResult Function(String stringValue)? report,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? follow,
+    TResult? Function(String stringValue)? favourite,
+    TResult? Function(String stringValue)? reblog,
+    TResult? Function(String stringValue)? mention,
+    TResult? Function(String stringValue)? poll,
+    TResult? Function(String stringValue)? move,
+    TResult? Function(String stringValue)? followRequest,
+    TResult? Function(String stringValue)? emojiReaction,
+    TResult? Function(String stringValue)? chatMention,
+    TResult? Function(String stringValue)? report,
+    TResult? Function(String stringValue)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -167,17 +80,17 @@ mixin _$UnifediApiNotificationType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Follow value)? follow,
-    TResult Function(_Favourite value)? favourite,
-    TResult Function(_Reblog value)? reblog,
-    TResult Function(_Mention value)? mention,
-    TResult Function(_Poll value)? poll,
-    TResult Function(_Move value)? move,
-    TResult Function(_followRequest value)? followRequest,
-    TResult Function(_EmojiReaction value)? emojiReaction,
-    TResult Function(_ChatMention value)? chatMention,
-    TResult Function(_Report value)? report,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Follow value)? follow,
+    TResult? Function(_Favourite value)? favourite,
+    TResult? Function(_Reblog value)? reblog,
+    TResult? Function(_Mention value)? mention,
+    TResult? Function(_Poll value)? poll,
+    TResult? Function(_Move value)? move,
+    TResult? Function(_followRequest value)? followRequest,
+    TResult? Function(_EmojiReaction value)? emojiReaction,
+    TResult? Function(_ChatMention value)? chatMention,
+    TResult? Function(_Report value)? report,
+    TResult? Function(_Unknown value)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -206,57 +119,63 @@ mixin _$UnifediApiNotificationType {
 abstract class $UnifediApiNotificationTypeCopyWith<$Res> {
   factory $UnifediApiNotificationTypeCopyWith(UnifediApiNotificationType value,
           $Res Function(UnifediApiNotificationType) then) =
-      _$UnifediApiNotificationTypeCopyWithImpl<$Res>;
+      _$UnifediApiNotificationTypeCopyWithImpl<$Res,
+          UnifediApiNotificationType>;
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class _$UnifediApiNotificationTypeCopyWithImpl<$Res>
+class _$UnifediApiNotificationTypeCopyWithImpl<$Res,
+        $Val extends UnifediApiNotificationType>
     implements $UnifediApiNotificationTypeCopyWith<$Res> {
   _$UnifediApiNotificationTypeCopyWithImpl(this._value, this._then);
 
-  final UnifediApiNotificationType _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiNotificationType) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
     return _then(_value.copyWith(
-      stringValue: stringValue == freezed
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$FollowCopyWith<$Res>
+abstract class _$$FollowImplCopyWith<$Res>
     implements $UnifediApiNotificationTypeCopyWith<$Res> {
-  factory _$FollowCopyWith(_Follow value, $Res Function(_Follow) then) =
-      __$FollowCopyWithImpl<$Res>;
+  factory _$$FollowImplCopyWith(
+          _$FollowImpl value, $Res Function(_$FollowImpl) then) =
+      __$$FollowImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$FollowCopyWithImpl<$Res>
-    extends _$UnifediApiNotificationTypeCopyWithImpl<$Res>
-    implements _$FollowCopyWith<$Res> {
-  __$FollowCopyWithImpl(_Follow _value, $Res Function(_Follow) _then)
-      : super(_value, (v) => _then(v as _Follow));
+class __$$FollowImplCopyWithImpl<$Res>
+    extends _$UnifediApiNotificationTypeCopyWithImpl<$Res, _$FollowImpl>
+    implements _$$FollowImplCopyWith<$Res> {
+  __$$FollowImplCopyWithImpl(
+      _$FollowImpl _value, $Res Function(_$FollowImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Follow get _value => super._value as _Follow;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Follow(
-      stringValue: stringValue == freezed
+    return _then(_$FollowImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -266,12 +185,12 @@ class __$FollowCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Follow implements _Follow {
-  const _$_Follow(
+class _$FollowImpl implements _Follow {
+  const _$FollowImpl(
       {this.stringValue = UnifediApiNotificationType.followStringValue});
 
-  @JsonKey(defaultValue: UnifediApiNotificationType.followStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -280,10 +199,10 @@ class _$_Follow implements _Follow {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Follow &&
+            other is _$FollowImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -293,8 +212,9 @@ class _$_Follow implements _Follow {
 
   @JsonKey(ignore: true)
   @override
-  _$FollowCopyWith<_Follow> get copyWith =>
-      __$FollowCopyWithImpl<_Follow>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$FollowImplCopyWith<_$FollowImpl> get copyWith =>
+      __$$FollowImplCopyWithImpl<_$FollowImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -317,17 +237,17 @@ class _$_Follow implements _Follow {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? follow,
-    TResult Function(String stringValue)? favourite,
-    TResult Function(String stringValue)? reblog,
-    TResult Function(String stringValue)? mention,
-    TResult Function(String stringValue)? poll,
-    TResult Function(String stringValue)? move,
-    TResult Function(String stringValue)? followRequest,
-    TResult Function(String stringValue)? emojiReaction,
-    TResult Function(String stringValue)? chatMention,
-    TResult Function(String stringValue)? report,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? follow,
+    TResult? Function(String stringValue)? favourite,
+    TResult? Function(String stringValue)? reblog,
+    TResult? Function(String stringValue)? mention,
+    TResult? Function(String stringValue)? poll,
+    TResult? Function(String stringValue)? move,
+    TResult? Function(String stringValue)? followRequest,
+    TResult? Function(String stringValue)? emojiReaction,
+    TResult? Function(String stringValue)? chatMention,
+    TResult? Function(String stringValue)? report,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return follow?.call(stringValue);
   }
@@ -375,17 +295,17 @@ class _$_Follow implements _Follow {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Follow value)? follow,
-    TResult Function(_Favourite value)? favourite,
-    TResult Function(_Reblog value)? reblog,
-    TResult Function(_Mention value)? mention,
-    TResult Function(_Poll value)? poll,
-    TResult Function(_Move value)? move,
-    TResult Function(_followRequest value)? followRequest,
-    TResult Function(_EmojiReaction value)? emojiReaction,
-    TResult Function(_ChatMention value)? chatMention,
-    TResult Function(_Report value)? report,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Follow value)? follow,
+    TResult? Function(_Favourite value)? favourite,
+    TResult? Function(_Reblog value)? reblog,
+    TResult? Function(_Mention value)? mention,
+    TResult? Function(_Poll value)? poll,
+    TResult? Function(_Move value)? move,
+    TResult? Function(_followRequest value)? followRequest,
+    TResult? Function(_EmojiReaction value)? emojiReaction,
+    TResult? Function(_ChatMention value)? chatMention,
+    TResult? Function(_Report value)? report,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return follow?.call(this);
   }
@@ -414,41 +334,42 @@ class _$_Follow implements _Follow {
 }
 
 abstract class _Follow implements UnifediApiNotificationType {
-  const factory _Follow({String stringValue}) = _$_Follow;
+  const factory _Follow({final String stringValue}) = _$FollowImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$FollowCopyWith<_Follow> get copyWith => throw _privateConstructorUsedError;
+  _$$FollowImplCopyWith<_$FollowImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$FavouriteCopyWith<$Res>
+abstract class _$$FavouriteImplCopyWith<$Res>
     implements $UnifediApiNotificationTypeCopyWith<$Res> {
-  factory _$FavouriteCopyWith(
-          _Favourite value, $Res Function(_Favourite) then) =
-      __$FavouriteCopyWithImpl<$Res>;
+  factory _$$FavouriteImplCopyWith(
+          _$FavouriteImpl value, $Res Function(_$FavouriteImpl) then) =
+      __$$FavouriteImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$FavouriteCopyWithImpl<$Res>
-    extends _$UnifediApiNotificationTypeCopyWithImpl<$Res>
-    implements _$FavouriteCopyWith<$Res> {
-  __$FavouriteCopyWithImpl(_Favourite _value, $Res Function(_Favourite) _then)
-      : super(_value, (v) => _then(v as _Favourite));
+class __$$FavouriteImplCopyWithImpl<$Res>
+    extends _$UnifediApiNotificationTypeCopyWithImpl<$Res, _$FavouriteImpl>
+    implements _$$FavouriteImplCopyWith<$Res> {
+  __$$FavouriteImplCopyWithImpl(
+      _$FavouriteImpl _value, $Res Function(_$FavouriteImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Favourite get _value => super._value as _Favourite;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Favourite(
-      stringValue: stringValue == freezed
+    return _then(_$FavouriteImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -458,12 +379,12 @@ class __$FavouriteCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Favourite implements _Favourite {
-  const _$_Favourite(
+class _$FavouriteImpl implements _Favourite {
+  const _$FavouriteImpl(
       {this.stringValue = UnifediApiNotificationType.favouriteStringValue});
 
-  @JsonKey(defaultValue: UnifediApiNotificationType.favouriteStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -472,10 +393,10 @@ class _$_Favourite implements _Favourite {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Favourite &&
+            other is _$FavouriteImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -485,8 +406,9 @@ class _$_Favourite implements _Favourite {
 
   @JsonKey(ignore: true)
   @override
-  _$FavouriteCopyWith<_Favourite> get copyWith =>
-      __$FavouriteCopyWithImpl<_Favourite>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$FavouriteImplCopyWith<_$FavouriteImpl> get copyWith =>
+      __$$FavouriteImplCopyWithImpl<_$FavouriteImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -509,17 +431,17 @@ class _$_Favourite implements _Favourite {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? follow,
-    TResult Function(String stringValue)? favourite,
-    TResult Function(String stringValue)? reblog,
-    TResult Function(String stringValue)? mention,
-    TResult Function(String stringValue)? poll,
-    TResult Function(String stringValue)? move,
-    TResult Function(String stringValue)? followRequest,
-    TResult Function(String stringValue)? emojiReaction,
-    TResult Function(String stringValue)? chatMention,
-    TResult Function(String stringValue)? report,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? follow,
+    TResult? Function(String stringValue)? favourite,
+    TResult? Function(String stringValue)? reblog,
+    TResult? Function(String stringValue)? mention,
+    TResult? Function(String stringValue)? poll,
+    TResult? Function(String stringValue)? move,
+    TResult? Function(String stringValue)? followRequest,
+    TResult? Function(String stringValue)? emojiReaction,
+    TResult? Function(String stringValue)? chatMention,
+    TResult? Function(String stringValue)? report,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return favourite?.call(stringValue);
   }
@@ -567,17 +489,17 @@ class _$_Favourite implements _Favourite {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Follow value)? follow,
-    TResult Function(_Favourite value)? favourite,
-    TResult Function(_Reblog value)? reblog,
-    TResult Function(_Mention value)? mention,
-    TResult Function(_Poll value)? poll,
-    TResult Function(_Move value)? move,
-    TResult Function(_followRequest value)? followRequest,
-    TResult Function(_EmojiReaction value)? emojiReaction,
-    TResult Function(_ChatMention value)? chatMention,
-    TResult Function(_Report value)? report,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Follow value)? follow,
+    TResult? Function(_Favourite value)? favourite,
+    TResult? Function(_Reblog value)? reblog,
+    TResult? Function(_Mention value)? mention,
+    TResult? Function(_Poll value)? poll,
+    TResult? Function(_Move value)? move,
+    TResult? Function(_followRequest value)? followRequest,
+    TResult? Function(_EmojiReaction value)? emojiReaction,
+    TResult? Function(_ChatMention value)? chatMention,
+    TResult? Function(_Report value)? report,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return favourite?.call(this);
   }
@@ -606,41 +528,42 @@ class _$_Favourite implements _Favourite {
 }
 
 abstract class _Favourite implements UnifediApiNotificationType {
-  const factory _Favourite({String stringValue}) = _$_Favourite;
+  const factory _Favourite({final String stringValue}) = _$FavouriteImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$FavouriteCopyWith<_Favourite> get copyWith =>
+  _$$FavouriteImplCopyWith<_$FavouriteImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ReblogCopyWith<$Res>
+abstract class _$$ReblogImplCopyWith<$Res>
     implements $UnifediApiNotificationTypeCopyWith<$Res> {
-  factory _$ReblogCopyWith(_Reblog value, $Res Function(_Reblog) then) =
-      __$ReblogCopyWithImpl<$Res>;
+  factory _$$ReblogImplCopyWith(
+          _$ReblogImpl value, $Res Function(_$ReblogImpl) then) =
+      __$$ReblogImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$ReblogCopyWithImpl<$Res>
-    extends _$UnifediApiNotificationTypeCopyWithImpl<$Res>
-    implements _$ReblogCopyWith<$Res> {
-  __$ReblogCopyWithImpl(_Reblog _value, $Res Function(_Reblog) _then)
-      : super(_value, (v) => _then(v as _Reblog));
+class __$$ReblogImplCopyWithImpl<$Res>
+    extends _$UnifediApiNotificationTypeCopyWithImpl<$Res, _$ReblogImpl>
+    implements _$$ReblogImplCopyWith<$Res> {
+  __$$ReblogImplCopyWithImpl(
+      _$ReblogImpl _value, $Res Function(_$ReblogImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Reblog get _value => super._value as _Reblog;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Reblog(
-      stringValue: stringValue == freezed
+    return _then(_$ReblogImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -650,12 +573,12 @@ class __$ReblogCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Reblog implements _Reblog {
-  const _$_Reblog(
+class _$ReblogImpl implements _Reblog {
+  const _$ReblogImpl(
       {this.stringValue = UnifediApiNotificationType.reblogStringValue});
 
-  @JsonKey(defaultValue: UnifediApiNotificationType.reblogStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -664,10 +587,10 @@ class _$_Reblog implements _Reblog {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Reblog &&
+            other is _$ReblogImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -677,8 +600,9 @@ class _$_Reblog implements _Reblog {
 
   @JsonKey(ignore: true)
   @override
-  _$ReblogCopyWith<_Reblog> get copyWith =>
-      __$ReblogCopyWithImpl<_Reblog>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ReblogImplCopyWith<_$ReblogImpl> get copyWith =>
+      __$$ReblogImplCopyWithImpl<_$ReblogImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -701,17 +625,17 @@ class _$_Reblog implements _Reblog {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? follow,
-    TResult Function(String stringValue)? favourite,
-    TResult Function(String stringValue)? reblog,
-    TResult Function(String stringValue)? mention,
-    TResult Function(String stringValue)? poll,
-    TResult Function(String stringValue)? move,
-    TResult Function(String stringValue)? followRequest,
-    TResult Function(String stringValue)? emojiReaction,
-    TResult Function(String stringValue)? chatMention,
-    TResult Function(String stringValue)? report,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? follow,
+    TResult? Function(String stringValue)? favourite,
+    TResult? Function(String stringValue)? reblog,
+    TResult? Function(String stringValue)? mention,
+    TResult? Function(String stringValue)? poll,
+    TResult? Function(String stringValue)? move,
+    TResult? Function(String stringValue)? followRequest,
+    TResult? Function(String stringValue)? emojiReaction,
+    TResult? Function(String stringValue)? chatMention,
+    TResult? Function(String stringValue)? report,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return reblog?.call(stringValue);
   }
@@ -759,17 +683,17 @@ class _$_Reblog implements _Reblog {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Follow value)? follow,
-    TResult Function(_Favourite value)? favourite,
-    TResult Function(_Reblog value)? reblog,
-    TResult Function(_Mention value)? mention,
-    TResult Function(_Poll value)? poll,
-    TResult Function(_Move value)? move,
-    TResult Function(_followRequest value)? followRequest,
-    TResult Function(_EmojiReaction value)? emojiReaction,
-    TResult Function(_ChatMention value)? chatMention,
-    TResult Function(_Report value)? report,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Follow value)? follow,
+    TResult? Function(_Favourite value)? favourite,
+    TResult? Function(_Reblog value)? reblog,
+    TResult? Function(_Mention value)? mention,
+    TResult? Function(_Poll value)? poll,
+    TResult? Function(_Move value)? move,
+    TResult? Function(_followRequest value)? followRequest,
+    TResult? Function(_EmojiReaction value)? emojiReaction,
+    TResult? Function(_ChatMention value)? chatMention,
+    TResult? Function(_Report value)? report,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return reblog?.call(this);
   }
@@ -798,40 +722,42 @@ class _$_Reblog implements _Reblog {
 }
 
 abstract class _Reblog implements UnifediApiNotificationType {
-  const factory _Reblog({String stringValue}) = _$_Reblog;
+  const factory _Reblog({final String stringValue}) = _$ReblogImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$ReblogCopyWith<_Reblog> get copyWith => throw _privateConstructorUsedError;
+  _$$ReblogImplCopyWith<_$ReblogImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$MentionCopyWith<$Res>
+abstract class _$$MentionImplCopyWith<$Res>
     implements $UnifediApiNotificationTypeCopyWith<$Res> {
-  factory _$MentionCopyWith(_Mention value, $Res Function(_Mention) then) =
-      __$MentionCopyWithImpl<$Res>;
+  factory _$$MentionImplCopyWith(
+          _$MentionImpl value, $Res Function(_$MentionImpl) then) =
+      __$$MentionImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$MentionCopyWithImpl<$Res>
-    extends _$UnifediApiNotificationTypeCopyWithImpl<$Res>
-    implements _$MentionCopyWith<$Res> {
-  __$MentionCopyWithImpl(_Mention _value, $Res Function(_Mention) _then)
-      : super(_value, (v) => _then(v as _Mention));
+class __$$MentionImplCopyWithImpl<$Res>
+    extends _$UnifediApiNotificationTypeCopyWithImpl<$Res, _$MentionImpl>
+    implements _$$MentionImplCopyWith<$Res> {
+  __$$MentionImplCopyWithImpl(
+      _$MentionImpl _value, $Res Function(_$MentionImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Mention get _value => super._value as _Mention;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Mention(
-      stringValue: stringValue == freezed
+    return _then(_$MentionImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -841,12 +767,12 @@ class __$MentionCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Mention implements _Mention {
-  const _$_Mention(
+class _$MentionImpl implements _Mention {
+  const _$MentionImpl(
       {this.stringValue = UnifediApiNotificationType.mentionStringValue});
 
-  @JsonKey(defaultValue: UnifediApiNotificationType.mentionStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -855,10 +781,10 @@ class _$_Mention implements _Mention {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Mention &&
+            other is _$MentionImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -868,8 +794,9 @@ class _$_Mention implements _Mention {
 
   @JsonKey(ignore: true)
   @override
-  _$MentionCopyWith<_Mention> get copyWith =>
-      __$MentionCopyWithImpl<_Mention>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MentionImplCopyWith<_$MentionImpl> get copyWith =>
+      __$$MentionImplCopyWithImpl<_$MentionImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -892,17 +819,17 @@ class _$_Mention implements _Mention {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? follow,
-    TResult Function(String stringValue)? favourite,
-    TResult Function(String stringValue)? reblog,
-    TResult Function(String stringValue)? mention,
-    TResult Function(String stringValue)? poll,
-    TResult Function(String stringValue)? move,
-    TResult Function(String stringValue)? followRequest,
-    TResult Function(String stringValue)? emojiReaction,
-    TResult Function(String stringValue)? chatMention,
-    TResult Function(String stringValue)? report,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? follow,
+    TResult? Function(String stringValue)? favourite,
+    TResult? Function(String stringValue)? reblog,
+    TResult? Function(String stringValue)? mention,
+    TResult? Function(String stringValue)? poll,
+    TResult? Function(String stringValue)? move,
+    TResult? Function(String stringValue)? followRequest,
+    TResult? Function(String stringValue)? emojiReaction,
+    TResult? Function(String stringValue)? chatMention,
+    TResult? Function(String stringValue)? report,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return mention?.call(stringValue);
   }
@@ -950,17 +877,17 @@ class _$_Mention implements _Mention {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Follow value)? follow,
-    TResult Function(_Favourite value)? favourite,
-    TResult Function(_Reblog value)? reblog,
-    TResult Function(_Mention value)? mention,
-    TResult Function(_Poll value)? poll,
-    TResult Function(_Move value)? move,
-    TResult Function(_followRequest value)? followRequest,
-    TResult Function(_EmojiReaction value)? emojiReaction,
-    TResult Function(_ChatMention value)? chatMention,
-    TResult Function(_Report value)? report,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Follow value)? follow,
+    TResult? Function(_Favourite value)? favourite,
+    TResult? Function(_Reblog value)? reblog,
+    TResult? Function(_Mention value)? mention,
+    TResult? Function(_Poll value)? poll,
+    TResult? Function(_Move value)? move,
+    TResult? Function(_followRequest value)? followRequest,
+    TResult? Function(_EmojiReaction value)? emojiReaction,
+    TResult? Function(_ChatMention value)? chatMention,
+    TResult? Function(_Report value)? report,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return mention?.call(this);
   }
@@ -989,41 +916,41 @@ class _$_Mention implements _Mention {
 }
 
 abstract class _Mention implements UnifediApiNotificationType {
-  const factory _Mention({String stringValue}) = _$_Mention;
+  const factory _Mention({final String stringValue}) = _$MentionImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$MentionCopyWith<_Mention> get copyWith =>
+  _$$MentionImplCopyWith<_$MentionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$PollCopyWith<$Res>
+abstract class _$$PollImplCopyWith<$Res>
     implements $UnifediApiNotificationTypeCopyWith<$Res> {
-  factory _$PollCopyWith(_Poll value, $Res Function(_Poll) then) =
-      __$PollCopyWithImpl<$Res>;
+  factory _$$PollImplCopyWith(
+          _$PollImpl value, $Res Function(_$PollImpl) then) =
+      __$$PollImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$PollCopyWithImpl<$Res>
-    extends _$UnifediApiNotificationTypeCopyWithImpl<$Res>
-    implements _$PollCopyWith<$Res> {
-  __$PollCopyWithImpl(_Poll _value, $Res Function(_Poll) _then)
-      : super(_value, (v) => _then(v as _Poll));
+class __$$PollImplCopyWithImpl<$Res>
+    extends _$UnifediApiNotificationTypeCopyWithImpl<$Res, _$PollImpl>
+    implements _$$PollImplCopyWith<$Res> {
+  __$$PollImplCopyWithImpl(_$PollImpl _value, $Res Function(_$PollImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Poll get _value => super._value as _Poll;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Poll(
-      stringValue: stringValue == freezed
+    return _then(_$PollImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1033,12 +960,12 @@ class __$PollCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Poll implements _Poll {
-  const _$_Poll(
+class _$PollImpl implements _Poll {
+  const _$PollImpl(
       {this.stringValue = UnifediApiNotificationType.pollStringValue});
 
-  @JsonKey(defaultValue: UnifediApiNotificationType.pollStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -1047,10 +974,10 @@ class _$_Poll implements _Poll {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Poll &&
+            other is _$PollImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -1060,8 +987,9 @@ class _$_Poll implements _Poll {
 
   @JsonKey(ignore: true)
   @override
-  _$PollCopyWith<_Poll> get copyWith =>
-      __$PollCopyWithImpl<_Poll>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PollImplCopyWith<_$PollImpl> get copyWith =>
+      __$$PollImplCopyWithImpl<_$PollImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1084,17 +1012,17 @@ class _$_Poll implements _Poll {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? follow,
-    TResult Function(String stringValue)? favourite,
-    TResult Function(String stringValue)? reblog,
-    TResult Function(String stringValue)? mention,
-    TResult Function(String stringValue)? poll,
-    TResult Function(String stringValue)? move,
-    TResult Function(String stringValue)? followRequest,
-    TResult Function(String stringValue)? emojiReaction,
-    TResult Function(String stringValue)? chatMention,
-    TResult Function(String stringValue)? report,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? follow,
+    TResult? Function(String stringValue)? favourite,
+    TResult? Function(String stringValue)? reblog,
+    TResult? Function(String stringValue)? mention,
+    TResult? Function(String stringValue)? poll,
+    TResult? Function(String stringValue)? move,
+    TResult? Function(String stringValue)? followRequest,
+    TResult? Function(String stringValue)? emojiReaction,
+    TResult? Function(String stringValue)? chatMention,
+    TResult? Function(String stringValue)? report,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return poll?.call(stringValue);
   }
@@ -1142,17 +1070,17 @@ class _$_Poll implements _Poll {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Follow value)? follow,
-    TResult Function(_Favourite value)? favourite,
-    TResult Function(_Reblog value)? reblog,
-    TResult Function(_Mention value)? mention,
-    TResult Function(_Poll value)? poll,
-    TResult Function(_Move value)? move,
-    TResult Function(_followRequest value)? followRequest,
-    TResult Function(_EmojiReaction value)? emojiReaction,
-    TResult Function(_ChatMention value)? chatMention,
-    TResult Function(_Report value)? report,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Follow value)? follow,
+    TResult? Function(_Favourite value)? favourite,
+    TResult? Function(_Reblog value)? reblog,
+    TResult? Function(_Mention value)? mention,
+    TResult? Function(_Poll value)? poll,
+    TResult? Function(_Move value)? move,
+    TResult? Function(_followRequest value)? followRequest,
+    TResult? Function(_EmojiReaction value)? emojiReaction,
+    TResult? Function(_ChatMention value)? chatMention,
+    TResult? Function(_Report value)? report,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return poll?.call(this);
   }
@@ -1181,40 +1109,41 @@ class _$_Poll implements _Poll {
 }
 
 abstract class _Poll implements UnifediApiNotificationType {
-  const factory _Poll({String stringValue}) = _$_Poll;
+  const factory _Poll({final String stringValue}) = _$PollImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$PollCopyWith<_Poll> get copyWith => throw _privateConstructorUsedError;
+  _$$PollImplCopyWith<_$PollImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$MoveCopyWith<$Res>
+abstract class _$$MoveImplCopyWith<$Res>
     implements $UnifediApiNotificationTypeCopyWith<$Res> {
-  factory _$MoveCopyWith(_Move value, $Res Function(_Move) then) =
-      __$MoveCopyWithImpl<$Res>;
+  factory _$$MoveImplCopyWith(
+          _$MoveImpl value, $Res Function(_$MoveImpl) then) =
+      __$$MoveImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$MoveCopyWithImpl<$Res>
-    extends _$UnifediApiNotificationTypeCopyWithImpl<$Res>
-    implements _$MoveCopyWith<$Res> {
-  __$MoveCopyWithImpl(_Move _value, $Res Function(_Move) _then)
-      : super(_value, (v) => _then(v as _Move));
+class __$$MoveImplCopyWithImpl<$Res>
+    extends _$UnifediApiNotificationTypeCopyWithImpl<$Res, _$MoveImpl>
+    implements _$$MoveImplCopyWith<$Res> {
+  __$$MoveImplCopyWithImpl(_$MoveImpl _value, $Res Function(_$MoveImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Move get _value => super._value as _Move;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Move(
-      stringValue: stringValue == freezed
+    return _then(_$MoveImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1224,12 +1153,12 @@ class __$MoveCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Move implements _Move {
-  const _$_Move(
+class _$MoveImpl implements _Move {
+  const _$MoveImpl(
       {this.stringValue = UnifediApiNotificationType.moveStringValue});
 
-  @JsonKey(defaultValue: UnifediApiNotificationType.moveStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -1238,10 +1167,10 @@ class _$_Move implements _Move {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Move &&
+            other is _$MoveImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -1251,8 +1180,9 @@ class _$_Move implements _Move {
 
   @JsonKey(ignore: true)
   @override
-  _$MoveCopyWith<_Move> get copyWith =>
-      __$MoveCopyWithImpl<_Move>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MoveImplCopyWith<_$MoveImpl> get copyWith =>
+      __$$MoveImplCopyWithImpl<_$MoveImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1275,17 +1205,17 @@ class _$_Move implements _Move {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? follow,
-    TResult Function(String stringValue)? favourite,
-    TResult Function(String stringValue)? reblog,
-    TResult Function(String stringValue)? mention,
-    TResult Function(String stringValue)? poll,
-    TResult Function(String stringValue)? move,
-    TResult Function(String stringValue)? followRequest,
-    TResult Function(String stringValue)? emojiReaction,
-    TResult Function(String stringValue)? chatMention,
-    TResult Function(String stringValue)? report,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? follow,
+    TResult? Function(String stringValue)? favourite,
+    TResult? Function(String stringValue)? reblog,
+    TResult? Function(String stringValue)? mention,
+    TResult? Function(String stringValue)? poll,
+    TResult? Function(String stringValue)? move,
+    TResult? Function(String stringValue)? followRequest,
+    TResult? Function(String stringValue)? emojiReaction,
+    TResult? Function(String stringValue)? chatMention,
+    TResult? Function(String stringValue)? report,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return move?.call(stringValue);
   }
@@ -1333,17 +1263,17 @@ class _$_Move implements _Move {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Follow value)? follow,
-    TResult Function(_Favourite value)? favourite,
-    TResult Function(_Reblog value)? reblog,
-    TResult Function(_Mention value)? mention,
-    TResult Function(_Poll value)? poll,
-    TResult Function(_Move value)? move,
-    TResult Function(_followRequest value)? followRequest,
-    TResult Function(_EmojiReaction value)? emojiReaction,
-    TResult Function(_ChatMention value)? chatMention,
-    TResult Function(_Report value)? report,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Follow value)? follow,
+    TResult? Function(_Favourite value)? favourite,
+    TResult? Function(_Reblog value)? reblog,
+    TResult? Function(_Mention value)? mention,
+    TResult? Function(_Poll value)? poll,
+    TResult? Function(_Move value)? move,
+    TResult? Function(_followRequest value)? followRequest,
+    TResult? Function(_EmojiReaction value)? emojiReaction,
+    TResult? Function(_ChatMention value)? chatMention,
+    TResult? Function(_Report value)? report,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return move?.call(this);
   }
@@ -1372,42 +1302,42 @@ class _$_Move implements _Move {
 }
 
 abstract class _Move implements UnifediApiNotificationType {
-  const factory _Move({String stringValue}) = _$_Move;
+  const factory _Move({final String stringValue}) = _$MoveImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$MoveCopyWith<_Move> get copyWith => throw _privateConstructorUsedError;
+  _$$MoveImplCopyWith<_$MoveImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$followRequestCopyWith<$Res>
+abstract class _$$followRequestImplCopyWith<$Res>
     implements $UnifediApiNotificationTypeCopyWith<$Res> {
-  factory _$followRequestCopyWith(
-          _followRequest value, $Res Function(_followRequest) then) =
-      __$followRequestCopyWithImpl<$Res>;
+  factory _$$followRequestImplCopyWith(
+          _$followRequestImpl value, $Res Function(_$followRequestImpl) then) =
+      __$$followRequestImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$followRequestCopyWithImpl<$Res>
-    extends _$UnifediApiNotificationTypeCopyWithImpl<$Res>
-    implements _$followRequestCopyWith<$Res> {
-  __$followRequestCopyWithImpl(
-      _followRequest _value, $Res Function(_followRequest) _then)
-      : super(_value, (v) => _then(v as _followRequest));
+class __$$followRequestImplCopyWithImpl<$Res>
+    extends _$UnifediApiNotificationTypeCopyWithImpl<$Res, _$followRequestImpl>
+    implements _$$followRequestImplCopyWith<$Res> {
+  __$$followRequestImplCopyWithImpl(
+      _$followRequestImpl _value, $Res Function(_$followRequestImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _followRequest get _value => super._value as _followRequest;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_followRequest(
-      stringValue: stringValue == freezed
+    return _then(_$followRequestImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1417,12 +1347,12 @@ class __$followRequestCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_followRequest implements _followRequest {
-  const _$_followRequest(
+class _$followRequestImpl implements _followRequest {
+  const _$followRequestImpl(
       {this.stringValue = UnifediApiNotificationType.followRequestStringValue});
 
-  @JsonKey(defaultValue: UnifediApiNotificationType.followRequestStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -1431,10 +1361,10 @@ class _$_followRequest implements _followRequest {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _followRequest &&
+            other is _$followRequestImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -1444,8 +1374,9 @@ class _$_followRequest implements _followRequest {
 
   @JsonKey(ignore: true)
   @override
-  _$followRequestCopyWith<_followRequest> get copyWith =>
-      __$followRequestCopyWithImpl<_followRequest>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$followRequestImplCopyWith<_$followRequestImpl> get copyWith =>
+      __$$followRequestImplCopyWithImpl<_$followRequestImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1468,17 +1399,17 @@ class _$_followRequest implements _followRequest {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? follow,
-    TResult Function(String stringValue)? favourite,
-    TResult Function(String stringValue)? reblog,
-    TResult Function(String stringValue)? mention,
-    TResult Function(String stringValue)? poll,
-    TResult Function(String stringValue)? move,
-    TResult Function(String stringValue)? followRequest,
-    TResult Function(String stringValue)? emojiReaction,
-    TResult Function(String stringValue)? chatMention,
-    TResult Function(String stringValue)? report,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? follow,
+    TResult? Function(String stringValue)? favourite,
+    TResult? Function(String stringValue)? reblog,
+    TResult? Function(String stringValue)? mention,
+    TResult? Function(String stringValue)? poll,
+    TResult? Function(String stringValue)? move,
+    TResult? Function(String stringValue)? followRequest,
+    TResult? Function(String stringValue)? emojiReaction,
+    TResult? Function(String stringValue)? chatMention,
+    TResult? Function(String stringValue)? report,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return followRequest?.call(stringValue);
   }
@@ -1526,17 +1457,17 @@ class _$_followRequest implements _followRequest {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Follow value)? follow,
-    TResult Function(_Favourite value)? favourite,
-    TResult Function(_Reblog value)? reblog,
-    TResult Function(_Mention value)? mention,
-    TResult Function(_Poll value)? poll,
-    TResult Function(_Move value)? move,
-    TResult Function(_followRequest value)? followRequest,
-    TResult Function(_EmojiReaction value)? emojiReaction,
-    TResult Function(_ChatMention value)? chatMention,
-    TResult Function(_Report value)? report,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Follow value)? follow,
+    TResult? Function(_Favourite value)? favourite,
+    TResult? Function(_Reblog value)? reblog,
+    TResult? Function(_Mention value)? mention,
+    TResult? Function(_Poll value)? poll,
+    TResult? Function(_Move value)? move,
+    TResult? Function(_followRequest value)? followRequest,
+    TResult? Function(_EmojiReaction value)? emojiReaction,
+    TResult? Function(_ChatMention value)? chatMention,
+    TResult? Function(_Report value)? report,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return followRequest?.call(this);
   }
@@ -1565,43 +1496,43 @@ class _$_followRequest implements _followRequest {
 }
 
 abstract class _followRequest implements UnifediApiNotificationType {
-  const factory _followRequest({String stringValue}) = _$_followRequest;
+  const factory _followRequest({final String stringValue}) =
+      _$followRequestImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$followRequestCopyWith<_followRequest> get copyWith =>
+  _$$followRequestImplCopyWith<_$followRequestImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$EmojiReactionCopyWith<$Res>
+abstract class _$$EmojiReactionImplCopyWith<$Res>
     implements $UnifediApiNotificationTypeCopyWith<$Res> {
-  factory _$EmojiReactionCopyWith(
-          _EmojiReaction value, $Res Function(_EmojiReaction) then) =
-      __$EmojiReactionCopyWithImpl<$Res>;
+  factory _$$EmojiReactionImplCopyWith(
+          _$EmojiReactionImpl value, $Res Function(_$EmojiReactionImpl) then) =
+      __$$EmojiReactionImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$EmojiReactionCopyWithImpl<$Res>
-    extends _$UnifediApiNotificationTypeCopyWithImpl<$Res>
-    implements _$EmojiReactionCopyWith<$Res> {
-  __$EmojiReactionCopyWithImpl(
-      _EmojiReaction _value, $Res Function(_EmojiReaction) _then)
-      : super(_value, (v) => _then(v as _EmojiReaction));
+class __$$EmojiReactionImplCopyWithImpl<$Res>
+    extends _$UnifediApiNotificationTypeCopyWithImpl<$Res, _$EmojiReactionImpl>
+    implements _$$EmojiReactionImplCopyWith<$Res> {
+  __$$EmojiReactionImplCopyWithImpl(
+      _$EmojiReactionImpl _value, $Res Function(_$EmojiReactionImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _EmojiReaction get _value => super._value as _EmojiReaction;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_EmojiReaction(
-      stringValue: stringValue == freezed
+    return _then(_$EmojiReactionImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1611,12 +1542,12 @@ class __$EmojiReactionCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_EmojiReaction implements _EmojiReaction {
-  const _$_EmojiReaction(
+class _$EmojiReactionImpl implements _EmojiReaction {
+  const _$EmojiReactionImpl(
       {this.stringValue = UnifediApiNotificationType.emojiReactionStringValue});
 
-  @JsonKey(defaultValue: UnifediApiNotificationType.emojiReactionStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -1625,10 +1556,10 @@ class _$_EmojiReaction implements _EmojiReaction {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _EmojiReaction &&
+            other is _$EmojiReactionImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -1638,8 +1569,9 @@ class _$_EmojiReaction implements _EmojiReaction {
 
   @JsonKey(ignore: true)
   @override
-  _$EmojiReactionCopyWith<_EmojiReaction> get copyWith =>
-      __$EmojiReactionCopyWithImpl<_EmojiReaction>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$EmojiReactionImplCopyWith<_$EmojiReactionImpl> get copyWith =>
+      __$$EmojiReactionImplCopyWithImpl<_$EmojiReactionImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1662,17 +1594,17 @@ class _$_EmojiReaction implements _EmojiReaction {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? follow,
-    TResult Function(String stringValue)? favourite,
-    TResult Function(String stringValue)? reblog,
-    TResult Function(String stringValue)? mention,
-    TResult Function(String stringValue)? poll,
-    TResult Function(String stringValue)? move,
-    TResult Function(String stringValue)? followRequest,
-    TResult Function(String stringValue)? emojiReaction,
-    TResult Function(String stringValue)? chatMention,
-    TResult Function(String stringValue)? report,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? follow,
+    TResult? Function(String stringValue)? favourite,
+    TResult? Function(String stringValue)? reblog,
+    TResult? Function(String stringValue)? mention,
+    TResult? Function(String stringValue)? poll,
+    TResult? Function(String stringValue)? move,
+    TResult? Function(String stringValue)? followRequest,
+    TResult? Function(String stringValue)? emojiReaction,
+    TResult? Function(String stringValue)? chatMention,
+    TResult? Function(String stringValue)? report,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return emojiReaction?.call(stringValue);
   }
@@ -1720,17 +1652,17 @@ class _$_EmojiReaction implements _EmojiReaction {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Follow value)? follow,
-    TResult Function(_Favourite value)? favourite,
-    TResult Function(_Reblog value)? reblog,
-    TResult Function(_Mention value)? mention,
-    TResult Function(_Poll value)? poll,
-    TResult Function(_Move value)? move,
-    TResult Function(_followRequest value)? followRequest,
-    TResult Function(_EmojiReaction value)? emojiReaction,
-    TResult Function(_ChatMention value)? chatMention,
-    TResult Function(_Report value)? report,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Follow value)? follow,
+    TResult? Function(_Favourite value)? favourite,
+    TResult? Function(_Reblog value)? reblog,
+    TResult? Function(_Mention value)? mention,
+    TResult? Function(_Poll value)? poll,
+    TResult? Function(_Move value)? move,
+    TResult? Function(_followRequest value)? followRequest,
+    TResult? Function(_EmojiReaction value)? emojiReaction,
+    TResult? Function(_ChatMention value)? chatMention,
+    TResult? Function(_Report value)? report,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return emojiReaction?.call(this);
   }
@@ -1759,43 +1691,43 @@ class _$_EmojiReaction implements _EmojiReaction {
 }
 
 abstract class _EmojiReaction implements UnifediApiNotificationType {
-  const factory _EmojiReaction({String stringValue}) = _$_EmojiReaction;
+  const factory _EmojiReaction({final String stringValue}) =
+      _$EmojiReactionImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$EmojiReactionCopyWith<_EmojiReaction> get copyWith =>
+  _$$EmojiReactionImplCopyWith<_$EmojiReactionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ChatMentionCopyWith<$Res>
+abstract class _$$ChatMentionImplCopyWith<$Res>
     implements $UnifediApiNotificationTypeCopyWith<$Res> {
-  factory _$ChatMentionCopyWith(
-          _ChatMention value, $Res Function(_ChatMention) then) =
-      __$ChatMentionCopyWithImpl<$Res>;
+  factory _$$ChatMentionImplCopyWith(
+          _$ChatMentionImpl value, $Res Function(_$ChatMentionImpl) then) =
+      __$$ChatMentionImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$ChatMentionCopyWithImpl<$Res>
-    extends _$UnifediApiNotificationTypeCopyWithImpl<$Res>
-    implements _$ChatMentionCopyWith<$Res> {
-  __$ChatMentionCopyWithImpl(
-      _ChatMention _value, $Res Function(_ChatMention) _then)
-      : super(_value, (v) => _then(v as _ChatMention));
+class __$$ChatMentionImplCopyWithImpl<$Res>
+    extends _$UnifediApiNotificationTypeCopyWithImpl<$Res, _$ChatMentionImpl>
+    implements _$$ChatMentionImplCopyWith<$Res> {
+  __$$ChatMentionImplCopyWithImpl(
+      _$ChatMentionImpl _value, $Res Function(_$ChatMentionImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _ChatMention get _value => super._value as _ChatMention;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_ChatMention(
-      stringValue: stringValue == freezed
+    return _then(_$ChatMentionImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1805,12 +1737,12 @@ class __$ChatMentionCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ChatMention implements _ChatMention {
-  const _$_ChatMention(
+class _$ChatMentionImpl implements _ChatMention {
+  const _$ChatMentionImpl(
       {this.stringValue = UnifediApiNotificationType.chatMentionStringValue});
 
-  @JsonKey(defaultValue: UnifediApiNotificationType.chatMentionStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -1819,10 +1751,10 @@ class _$_ChatMention implements _ChatMention {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ChatMention &&
+            other is _$ChatMentionImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -1832,8 +1764,9 @@ class _$_ChatMention implements _ChatMention {
 
   @JsonKey(ignore: true)
   @override
-  _$ChatMentionCopyWith<_ChatMention> get copyWith =>
-      __$ChatMentionCopyWithImpl<_ChatMention>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ChatMentionImplCopyWith<_$ChatMentionImpl> get copyWith =>
+      __$$ChatMentionImplCopyWithImpl<_$ChatMentionImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1856,17 +1789,17 @@ class _$_ChatMention implements _ChatMention {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? follow,
-    TResult Function(String stringValue)? favourite,
-    TResult Function(String stringValue)? reblog,
-    TResult Function(String stringValue)? mention,
-    TResult Function(String stringValue)? poll,
-    TResult Function(String stringValue)? move,
-    TResult Function(String stringValue)? followRequest,
-    TResult Function(String stringValue)? emojiReaction,
-    TResult Function(String stringValue)? chatMention,
-    TResult Function(String stringValue)? report,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? follow,
+    TResult? Function(String stringValue)? favourite,
+    TResult? Function(String stringValue)? reblog,
+    TResult? Function(String stringValue)? mention,
+    TResult? Function(String stringValue)? poll,
+    TResult? Function(String stringValue)? move,
+    TResult? Function(String stringValue)? followRequest,
+    TResult? Function(String stringValue)? emojiReaction,
+    TResult? Function(String stringValue)? chatMention,
+    TResult? Function(String stringValue)? report,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return chatMention?.call(stringValue);
   }
@@ -1914,17 +1847,17 @@ class _$_ChatMention implements _ChatMention {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Follow value)? follow,
-    TResult Function(_Favourite value)? favourite,
-    TResult Function(_Reblog value)? reblog,
-    TResult Function(_Mention value)? mention,
-    TResult Function(_Poll value)? poll,
-    TResult Function(_Move value)? move,
-    TResult Function(_followRequest value)? followRequest,
-    TResult Function(_EmojiReaction value)? emojiReaction,
-    TResult Function(_ChatMention value)? chatMention,
-    TResult Function(_Report value)? report,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Follow value)? follow,
+    TResult? Function(_Favourite value)? favourite,
+    TResult? Function(_Reblog value)? reblog,
+    TResult? Function(_Mention value)? mention,
+    TResult? Function(_Poll value)? poll,
+    TResult? Function(_Move value)? move,
+    TResult? Function(_followRequest value)? followRequest,
+    TResult? Function(_EmojiReaction value)? emojiReaction,
+    TResult? Function(_ChatMention value)? chatMention,
+    TResult? Function(_Report value)? report,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return chatMention?.call(this);
   }
@@ -1953,41 +1886,42 @@ class _$_ChatMention implements _ChatMention {
 }
 
 abstract class _ChatMention implements UnifediApiNotificationType {
-  const factory _ChatMention({String stringValue}) = _$_ChatMention;
+  const factory _ChatMention({final String stringValue}) = _$ChatMentionImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$ChatMentionCopyWith<_ChatMention> get copyWith =>
+  _$$ChatMentionImplCopyWith<_$ChatMentionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ReportCopyWith<$Res>
+abstract class _$$ReportImplCopyWith<$Res>
     implements $UnifediApiNotificationTypeCopyWith<$Res> {
-  factory _$ReportCopyWith(_Report value, $Res Function(_Report) then) =
-      __$ReportCopyWithImpl<$Res>;
+  factory _$$ReportImplCopyWith(
+          _$ReportImpl value, $Res Function(_$ReportImpl) then) =
+      __$$ReportImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$ReportCopyWithImpl<$Res>
-    extends _$UnifediApiNotificationTypeCopyWithImpl<$Res>
-    implements _$ReportCopyWith<$Res> {
-  __$ReportCopyWithImpl(_Report _value, $Res Function(_Report) _then)
-      : super(_value, (v) => _then(v as _Report));
+class __$$ReportImplCopyWithImpl<$Res>
+    extends _$UnifediApiNotificationTypeCopyWithImpl<$Res, _$ReportImpl>
+    implements _$$ReportImplCopyWith<$Res> {
+  __$$ReportImplCopyWithImpl(
+      _$ReportImpl _value, $Res Function(_$ReportImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Report get _value => super._value as _Report;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Report(
-      stringValue: stringValue == freezed
+    return _then(_$ReportImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1997,12 +1931,12 @@ class __$ReportCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Report implements _Report {
-  const _$_Report(
+class _$ReportImpl implements _Report {
+  const _$ReportImpl(
       {this.stringValue = UnifediApiNotificationType.reportStringValue});
 
-  @JsonKey(defaultValue: UnifediApiNotificationType.reportStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -2011,10 +1945,10 @@ class _$_Report implements _Report {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Report &&
+            other is _$ReportImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -2024,8 +1958,9 @@ class _$_Report implements _Report {
 
   @JsonKey(ignore: true)
   @override
-  _$ReportCopyWith<_Report> get copyWith =>
-      __$ReportCopyWithImpl<_Report>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ReportImplCopyWith<_$ReportImpl> get copyWith =>
+      __$$ReportImplCopyWithImpl<_$ReportImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2048,17 +1983,17 @@ class _$_Report implements _Report {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? follow,
-    TResult Function(String stringValue)? favourite,
-    TResult Function(String stringValue)? reblog,
-    TResult Function(String stringValue)? mention,
-    TResult Function(String stringValue)? poll,
-    TResult Function(String stringValue)? move,
-    TResult Function(String stringValue)? followRequest,
-    TResult Function(String stringValue)? emojiReaction,
-    TResult Function(String stringValue)? chatMention,
-    TResult Function(String stringValue)? report,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? follow,
+    TResult? Function(String stringValue)? favourite,
+    TResult? Function(String stringValue)? reblog,
+    TResult? Function(String stringValue)? mention,
+    TResult? Function(String stringValue)? poll,
+    TResult? Function(String stringValue)? move,
+    TResult? Function(String stringValue)? followRequest,
+    TResult? Function(String stringValue)? emojiReaction,
+    TResult? Function(String stringValue)? chatMention,
+    TResult? Function(String stringValue)? report,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return report?.call(stringValue);
   }
@@ -2106,17 +2041,17 @@ class _$_Report implements _Report {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Follow value)? follow,
-    TResult Function(_Favourite value)? favourite,
-    TResult Function(_Reblog value)? reblog,
-    TResult Function(_Mention value)? mention,
-    TResult Function(_Poll value)? poll,
-    TResult Function(_Move value)? move,
-    TResult Function(_followRequest value)? followRequest,
-    TResult Function(_EmojiReaction value)? emojiReaction,
-    TResult Function(_ChatMention value)? chatMention,
-    TResult Function(_Report value)? report,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Follow value)? follow,
+    TResult? Function(_Favourite value)? favourite,
+    TResult? Function(_Reblog value)? reblog,
+    TResult? Function(_Mention value)? mention,
+    TResult? Function(_Poll value)? poll,
+    TResult? Function(_Move value)? move,
+    TResult? Function(_followRequest value)? followRequest,
+    TResult? Function(_EmojiReaction value)? emojiReaction,
+    TResult? Function(_ChatMention value)? chatMention,
+    TResult? Function(_Report value)? report,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return report?.call(this);
   }
@@ -2145,40 +2080,42 @@ class _$_Report implements _Report {
 }
 
 abstract class _Report implements UnifediApiNotificationType {
-  const factory _Report({String stringValue}) = _$_Report;
+  const factory _Report({final String stringValue}) = _$ReportImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$ReportCopyWith<_Report> get copyWith => throw _privateConstructorUsedError;
+  _$$ReportImplCopyWith<_$ReportImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$UnknownCopyWith<$Res>
+abstract class _$$UnknownImplCopyWith<$Res>
     implements $UnifediApiNotificationTypeCopyWith<$Res> {
-  factory _$UnknownCopyWith(_Unknown value, $Res Function(_Unknown) then) =
-      __$UnknownCopyWithImpl<$Res>;
+  factory _$$UnknownImplCopyWith(
+          _$UnknownImpl value, $Res Function(_$UnknownImpl) then) =
+      __$$UnknownImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$UnknownCopyWithImpl<$Res>
-    extends _$UnifediApiNotificationTypeCopyWithImpl<$Res>
-    implements _$UnknownCopyWith<$Res> {
-  __$UnknownCopyWithImpl(_Unknown _value, $Res Function(_Unknown) _then)
-      : super(_value, (v) => _then(v as _Unknown));
+class __$$UnknownImplCopyWithImpl<$Res>
+    extends _$UnifediApiNotificationTypeCopyWithImpl<$Res, _$UnknownImpl>
+    implements _$$UnknownImplCopyWith<$Res> {
+  __$$UnknownImplCopyWithImpl(
+      _$UnknownImpl _value, $Res Function(_$UnknownImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Unknown get _value => super._value as _Unknown;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Unknown(
-      stringValue: stringValue == freezed
+    return _then(_$UnknownImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -2188,8 +2125,8 @@ class __$UnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Unknown implements _Unknown {
-  const _$_Unknown({required this.stringValue});
+class _$UnknownImpl implements _Unknown {
+  const _$UnknownImpl({required this.stringValue});
 
   @override
   final String stringValue;
@@ -2200,10 +2137,10 @@ class _$_Unknown implements _Unknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Unknown &&
+            other is _$UnknownImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -2213,8 +2150,9 @@ class _$_Unknown implements _Unknown {
 
   @JsonKey(ignore: true)
   @override
-  _$UnknownCopyWith<_Unknown> get copyWith =>
-      __$UnknownCopyWithImpl<_Unknown>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnknownImplCopyWith<_$UnknownImpl> get copyWith =>
+      __$$UnknownImplCopyWithImpl<_$UnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2237,17 +2175,17 @@ class _$_Unknown implements _Unknown {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? follow,
-    TResult Function(String stringValue)? favourite,
-    TResult Function(String stringValue)? reblog,
-    TResult Function(String stringValue)? mention,
-    TResult Function(String stringValue)? poll,
-    TResult Function(String stringValue)? move,
-    TResult Function(String stringValue)? followRequest,
-    TResult Function(String stringValue)? emojiReaction,
-    TResult Function(String stringValue)? chatMention,
-    TResult Function(String stringValue)? report,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? follow,
+    TResult? Function(String stringValue)? favourite,
+    TResult? Function(String stringValue)? reblog,
+    TResult? Function(String stringValue)? mention,
+    TResult? Function(String stringValue)? poll,
+    TResult? Function(String stringValue)? move,
+    TResult? Function(String stringValue)? followRequest,
+    TResult? Function(String stringValue)? emojiReaction,
+    TResult? Function(String stringValue)? chatMention,
+    TResult? Function(String stringValue)? report,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return unknown?.call(stringValue);
   }
@@ -2295,17 +2233,17 @@ class _$_Unknown implements _Unknown {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Follow value)? follow,
-    TResult Function(_Favourite value)? favourite,
-    TResult Function(_Reblog value)? reblog,
-    TResult Function(_Mention value)? mention,
-    TResult Function(_Poll value)? poll,
-    TResult Function(_Move value)? move,
-    TResult Function(_followRequest value)? followRequest,
-    TResult Function(_EmojiReaction value)? emojiReaction,
-    TResult Function(_ChatMention value)? chatMention,
-    TResult Function(_Report value)? report,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Follow value)? follow,
+    TResult? Function(_Favourite value)? favourite,
+    TResult? Function(_Reblog value)? reblog,
+    TResult? Function(_Mention value)? mention,
+    TResult? Function(_Poll value)? poll,
+    TResult? Function(_Move value)? move,
+    TResult? Function(_followRequest value)? followRequest,
+    TResult? Function(_EmojiReaction value)? emojiReaction,
+    TResult? Function(_ChatMention value)? chatMention,
+    TResult? Function(_Report value)? report,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return unknown?.call(this);
   }
@@ -2334,12 +2272,12 @@ class _$_Unknown implements _Unknown {
 }
 
 abstract class _Unknown implements UnifediApiNotificationType {
-  const factory _Unknown({required String stringValue}) = _$_Unknown;
+  const factory _Unknown({required final String stringValue}) = _$UnknownImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$UnknownCopyWith<_Unknown> get copyWith =>
+  _$$UnknownImplCopyWith<_$UnknownImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

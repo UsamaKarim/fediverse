@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_edit_my_account_model_impl.dart';
 
@@ -11,134 +12,12 @@ part of 'pleroma_api_edit_my_account_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiEditMyAccount _$PleromaApiEditMyAccountFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiEditMyAccount.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiEditMyAccountTearOff {
-  const _$PleromaApiEditMyAccountTearOff();
-
-  _PleromaApiEditMyAccount call(
-      {@JsonKey(name: 'fields_attributes')
-      @HiveField(1)
-          required List<PleromaApiField>? fieldsAttributes,
-      @HiveField(2)
-          required bool? discoverable,
-      @HiveField(3)
-          required bool? bot,
-      @JsonKey(name: 'display_name')
-      @HiveField(4)
-          required String? displayName,
-      @HiveField(5)
-          required String? note,
-      @HiveField(6)
-          required bool? locked,
-      @HiveField(7)
-          required String? privacy,
-      @HiveField(8)
-          required bool? sensitive,
-      @HiveField(9)
-          required String? language,
-      @JsonKey(name: 'avatar_local_file_path')
-      @HiveField(10)
-          required String? avatarLocalFilePath,
-      @JsonKey(name: 'delete_avatar')
-      @HiveField(11)
-          required bool? deleteAvatar,
-      @JsonKey(name: 'header_local_file_path')
-      @HiveField(12)
-          required String? headerLocalFilePath,
-      @JsonKey(name: 'delete_header')
-      @HiveField(13)
-          required bool? deleteHeader,
-      @JsonKey(name: 'no_rich_text')
-      @HiveField(14)
-          required bool? noRichText,
-      @JsonKey(name: 'hide_followers')
-      @HiveField(15)
-          required bool? hideFollowers,
-      @JsonKey(name: 'hide_follows')
-      @HiveField(16)
-          required bool? hideFollows,
-      @JsonKey(name: 'hide_followers_count')
-      @HiveField(17)
-          required bool? hideFollowersCount,
-      @JsonKey(name: 'hide_follows_count')
-      @HiveField(18)
-          required bool? hideFollowsCount,
-      @JsonKey(name: 'hide_favorites')
-      @HiveField(19)
-          required bool? hideFavorites,
-      @JsonKey(name: 'show_role')
-      @HiveField(20)
-          required bool? showRole,
-      @JsonKey(name: 'default_scope')
-      @HiveField(21)
-          required String? defaultScope,
-      @JsonKey(name: 'pleroma_settings_store')
-      @HiveField(22)
-          required Map<String, dynamic>? pleromaSettingsStore,
-      @JsonKey(name: 'skip_thread_containment')
-      @HiveField(23)
-          required bool? skipThreadContainment,
-      @JsonKey(name: 'allow_following_move')
-      @HiveField(24)
-          required bool? allowFollowingMove,
-      @JsonKey(name: 'accepts_chat_messages')
-      @HiveField(25)
-          required bool? acceptsChatMessages,
-      @JsonKey(name: 'also_known_as')
-      @HiveField(26)
-          required List<String>? alsoKnownAs,
-      @JsonKey(name: 'pleroma_background_image_local_file_path')
-      @HiveField(27)
-          required String? pleromaBackgroundImageLocalFilePath,
-      @JsonKey(name: 'delete_pleroma_background_image')
-      @HiveField(28)
-          required bool? deletePleromaBackgroundImage}) {
-    return _PleromaApiEditMyAccount(
-      fieldsAttributes: fieldsAttributes,
-      discoverable: discoverable,
-      bot: bot,
-      displayName: displayName,
-      note: note,
-      locked: locked,
-      privacy: privacy,
-      sensitive: sensitive,
-      language: language,
-      avatarLocalFilePath: avatarLocalFilePath,
-      deleteAvatar: deleteAvatar,
-      headerLocalFilePath: headerLocalFilePath,
-      deleteHeader: deleteHeader,
-      noRichText: noRichText,
-      hideFollowers: hideFollowers,
-      hideFollows: hideFollows,
-      hideFollowersCount: hideFollowersCount,
-      hideFollowsCount: hideFollowsCount,
-      hideFavorites: hideFavorites,
-      showRole: showRole,
-      defaultScope: defaultScope,
-      pleromaSettingsStore: pleromaSettingsStore,
-      skipThreadContainment: skipThreadContainment,
-      allowFollowingMove: allowFollowingMove,
-      acceptsChatMessages: acceptsChatMessages,
-      alsoKnownAs: alsoKnownAs,
-      pleromaBackgroundImageLocalFilePath: pleromaBackgroundImageLocalFilePath,
-      deletePleromaBackgroundImage: deletePleromaBackgroundImage,
-    );
-  }
-
-  PleromaApiEditMyAccount fromJson(Map<String, Object?> json) {
-    return PleromaApiEditMyAccount.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiEditMyAccount = _$PleromaApiEditMyAccountTearOff();
 
 /// @nodoc
 mixin _$PleromaApiEditMyAccount {
@@ -233,96 +112,73 @@ mixin _$PleromaApiEditMyAccount {
 abstract class $PleromaApiEditMyAccountCopyWith<$Res> {
   factory $PleromaApiEditMyAccountCopyWith(PleromaApiEditMyAccount value,
           $Res Function(PleromaApiEditMyAccount) then) =
-      _$PleromaApiEditMyAccountCopyWithImpl<$Res>;
+      _$PleromaApiEditMyAccountCopyWithImpl<$Res, PleromaApiEditMyAccount>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'fields_attributes')
       @HiveField(1)
-          List<PleromaApiField>? fieldsAttributes,
-      @HiveField(2)
-          bool? discoverable,
-      @HiveField(3)
-          bool? bot,
-      @JsonKey(name: 'display_name')
-      @HiveField(4)
-          String? displayName,
-      @HiveField(5)
-          String? note,
-      @HiveField(6)
-          bool? locked,
-      @HiveField(7)
-          String? privacy,
-      @HiveField(8)
-          bool? sensitive,
-      @HiveField(9)
-          String? language,
+      List<PleromaApiField>? fieldsAttributes,
+      @HiveField(2) bool? discoverable,
+      @HiveField(3) bool? bot,
+      @JsonKey(name: 'display_name') @HiveField(4) String? displayName,
+      @HiveField(5) String? note,
+      @HiveField(6) bool? locked,
+      @HiveField(7) String? privacy,
+      @HiveField(8) bool? sensitive,
+      @HiveField(9) String? language,
       @JsonKey(name: 'avatar_local_file_path')
       @HiveField(10)
-          String? avatarLocalFilePath,
-      @JsonKey(name: 'delete_avatar')
-      @HiveField(11)
-          bool? deleteAvatar,
+      String? avatarLocalFilePath,
+      @JsonKey(name: 'delete_avatar') @HiveField(11) bool? deleteAvatar,
       @JsonKey(name: 'header_local_file_path')
       @HiveField(12)
-          String? headerLocalFilePath,
-      @JsonKey(name: 'delete_header')
-      @HiveField(13)
-          bool? deleteHeader,
-      @JsonKey(name: 'no_rich_text')
-      @HiveField(14)
-          bool? noRichText,
-      @JsonKey(name: 'hide_followers')
-      @HiveField(15)
-          bool? hideFollowers,
-      @JsonKey(name: 'hide_follows')
-      @HiveField(16)
-          bool? hideFollows,
+      String? headerLocalFilePath,
+      @JsonKey(name: 'delete_header') @HiveField(13) bool? deleteHeader,
+      @JsonKey(name: 'no_rich_text') @HiveField(14) bool? noRichText,
+      @JsonKey(name: 'hide_followers') @HiveField(15) bool? hideFollowers,
+      @JsonKey(name: 'hide_follows') @HiveField(16) bool? hideFollows,
       @JsonKey(name: 'hide_followers_count')
       @HiveField(17)
-          bool? hideFollowersCount,
+      bool? hideFollowersCount,
       @JsonKey(name: 'hide_follows_count')
       @HiveField(18)
-          bool? hideFollowsCount,
-      @JsonKey(name: 'hide_favorites')
-      @HiveField(19)
-          bool? hideFavorites,
-      @JsonKey(name: 'show_role')
-      @HiveField(20)
-          bool? showRole,
-      @JsonKey(name: 'default_scope')
-      @HiveField(21)
-          String? defaultScope,
+      bool? hideFollowsCount,
+      @JsonKey(name: 'hide_favorites') @HiveField(19) bool? hideFavorites,
+      @JsonKey(name: 'show_role') @HiveField(20) bool? showRole,
+      @JsonKey(name: 'default_scope') @HiveField(21) String? defaultScope,
       @JsonKey(name: 'pleroma_settings_store')
       @HiveField(22)
-          Map<String, dynamic>? pleromaSettingsStore,
+      Map<String, dynamic>? pleromaSettingsStore,
       @JsonKey(name: 'skip_thread_containment')
       @HiveField(23)
-          bool? skipThreadContainment,
+      bool? skipThreadContainment,
       @JsonKey(name: 'allow_following_move')
       @HiveField(24)
-          bool? allowFollowingMove,
+      bool? allowFollowingMove,
       @JsonKey(name: 'accepts_chat_messages')
       @HiveField(25)
-          bool? acceptsChatMessages,
-      @JsonKey(name: 'also_known_as')
-      @HiveField(26)
-          List<String>? alsoKnownAs,
+      bool? acceptsChatMessages,
+      @JsonKey(name: 'also_known_as') @HiveField(26) List<String>? alsoKnownAs,
       @JsonKey(name: 'pleroma_background_image_local_file_path')
       @HiveField(27)
-          String? pleromaBackgroundImageLocalFilePath,
+      String? pleromaBackgroundImageLocalFilePath,
       @JsonKey(name: 'delete_pleroma_background_image')
       @HiveField(28)
-          bool? deletePleromaBackgroundImage});
+      bool? deletePleromaBackgroundImage});
 }
 
 /// @nodoc
-class _$PleromaApiEditMyAccountCopyWithImpl<$Res>
+class _$PleromaApiEditMyAccountCopyWithImpl<$Res,
+        $Val extends PleromaApiEditMyAccount>
     implements $PleromaApiEditMyAccountCopyWith<$Res> {
   _$PleromaApiEditMyAccountCopyWithImpl(this._value, this._then);
 
-  final PleromaApiEditMyAccount _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiEditMyAccount) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? fieldsAttributes = freezed,
@@ -355,222 +211,196 @@ class _$PleromaApiEditMyAccountCopyWithImpl<$Res>
     Object? deletePleromaBackgroundImage = freezed,
   }) {
     return _then(_value.copyWith(
-      fieldsAttributes: fieldsAttributes == freezed
+      fieldsAttributes: freezed == fieldsAttributes
           ? _value.fieldsAttributes
           : fieldsAttributes // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiField>?,
-      discoverable: discoverable == freezed
+      discoverable: freezed == discoverable
           ? _value.discoverable
           : discoverable // ignore: cast_nullable_to_non_nullable
               as bool?,
-      bot: bot == freezed
+      bot: freezed == bot
           ? _value.bot
           : bot // ignore: cast_nullable_to_non_nullable
               as bool?,
-      displayName: displayName == freezed
+      displayName: freezed == displayName
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
               as String?,
-      note: note == freezed
+      note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
               as String?,
-      locked: locked == freezed
+      locked: freezed == locked
           ? _value.locked
           : locked // ignore: cast_nullable_to_non_nullable
               as bool?,
-      privacy: privacy == freezed
+      privacy: freezed == privacy
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
               as String?,
-      sensitive: sensitive == freezed
+      sensitive: freezed == sensitive
           ? _value.sensitive
           : sensitive // ignore: cast_nullable_to_non_nullable
               as bool?,
-      language: language == freezed
+      language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as String?,
-      avatarLocalFilePath: avatarLocalFilePath == freezed
+      avatarLocalFilePath: freezed == avatarLocalFilePath
           ? _value.avatarLocalFilePath
           : avatarLocalFilePath // ignore: cast_nullable_to_non_nullable
               as String?,
-      deleteAvatar: deleteAvatar == freezed
+      deleteAvatar: freezed == deleteAvatar
           ? _value.deleteAvatar
           : deleteAvatar // ignore: cast_nullable_to_non_nullable
               as bool?,
-      headerLocalFilePath: headerLocalFilePath == freezed
+      headerLocalFilePath: freezed == headerLocalFilePath
           ? _value.headerLocalFilePath
           : headerLocalFilePath // ignore: cast_nullable_to_non_nullable
               as String?,
-      deleteHeader: deleteHeader == freezed
+      deleteHeader: freezed == deleteHeader
           ? _value.deleteHeader
           : deleteHeader // ignore: cast_nullable_to_non_nullable
               as bool?,
-      noRichText: noRichText == freezed
+      noRichText: freezed == noRichText
           ? _value.noRichText
           : noRichText // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFollowers: hideFollowers == freezed
+      hideFollowers: freezed == hideFollowers
           ? _value.hideFollowers
           : hideFollowers // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFollows: hideFollows == freezed
+      hideFollows: freezed == hideFollows
           ? _value.hideFollows
           : hideFollows // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFollowersCount: hideFollowersCount == freezed
+      hideFollowersCount: freezed == hideFollowersCount
           ? _value.hideFollowersCount
           : hideFollowersCount // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFollowsCount: hideFollowsCount == freezed
+      hideFollowsCount: freezed == hideFollowsCount
           ? _value.hideFollowsCount
           : hideFollowsCount // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFavorites: hideFavorites == freezed
+      hideFavorites: freezed == hideFavorites
           ? _value.hideFavorites
           : hideFavorites // ignore: cast_nullable_to_non_nullable
               as bool?,
-      showRole: showRole == freezed
+      showRole: freezed == showRole
           ? _value.showRole
           : showRole // ignore: cast_nullable_to_non_nullable
               as bool?,
-      defaultScope: defaultScope == freezed
+      defaultScope: freezed == defaultScope
           ? _value.defaultScope
           : defaultScope // ignore: cast_nullable_to_non_nullable
               as String?,
-      pleromaSettingsStore: pleromaSettingsStore == freezed
+      pleromaSettingsStore: freezed == pleromaSettingsStore
           ? _value.pleromaSettingsStore
           : pleromaSettingsStore // ignore: cast_nullable_to_non_nullable
               as Map<String, dynamic>?,
-      skipThreadContainment: skipThreadContainment == freezed
+      skipThreadContainment: freezed == skipThreadContainment
           ? _value.skipThreadContainment
           : skipThreadContainment // ignore: cast_nullable_to_non_nullable
               as bool?,
-      allowFollowingMove: allowFollowingMove == freezed
+      allowFollowingMove: freezed == allowFollowingMove
           ? _value.allowFollowingMove
           : allowFollowingMove // ignore: cast_nullable_to_non_nullable
               as bool?,
-      acceptsChatMessages: acceptsChatMessages == freezed
+      acceptsChatMessages: freezed == acceptsChatMessages
           ? _value.acceptsChatMessages
           : acceptsChatMessages // ignore: cast_nullable_to_non_nullable
               as bool?,
-      alsoKnownAs: alsoKnownAs == freezed
+      alsoKnownAs: freezed == alsoKnownAs
           ? _value.alsoKnownAs
           : alsoKnownAs // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      pleromaBackgroundImageLocalFilePath: pleromaBackgroundImageLocalFilePath ==
-              freezed
+      pleromaBackgroundImageLocalFilePath: freezed ==
+              pleromaBackgroundImageLocalFilePath
           ? _value.pleromaBackgroundImageLocalFilePath
           : pleromaBackgroundImageLocalFilePath // ignore: cast_nullable_to_non_nullable
               as String?,
-      deletePleromaBackgroundImage: deletePleromaBackgroundImage == freezed
+      deletePleromaBackgroundImage: freezed == deletePleromaBackgroundImage
           ? _value.deletePleromaBackgroundImage
           : deletePleromaBackgroundImage // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiEditMyAccountCopyWith<$Res>
+abstract class _$$PleromaApiEditMyAccountImplCopyWith<$Res>
     implements $PleromaApiEditMyAccountCopyWith<$Res> {
-  factory _$PleromaApiEditMyAccountCopyWith(_PleromaApiEditMyAccount value,
-          $Res Function(_PleromaApiEditMyAccount) then) =
-      __$PleromaApiEditMyAccountCopyWithImpl<$Res>;
+  factory _$$PleromaApiEditMyAccountImplCopyWith(
+          _$PleromaApiEditMyAccountImpl value,
+          $Res Function(_$PleromaApiEditMyAccountImpl) then) =
+      __$$PleromaApiEditMyAccountImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'fields_attributes')
       @HiveField(1)
-          List<PleromaApiField>? fieldsAttributes,
-      @HiveField(2)
-          bool? discoverable,
-      @HiveField(3)
-          bool? bot,
-      @JsonKey(name: 'display_name')
-      @HiveField(4)
-          String? displayName,
-      @HiveField(5)
-          String? note,
-      @HiveField(6)
-          bool? locked,
-      @HiveField(7)
-          String? privacy,
-      @HiveField(8)
-          bool? sensitive,
-      @HiveField(9)
-          String? language,
+      List<PleromaApiField>? fieldsAttributes,
+      @HiveField(2) bool? discoverable,
+      @HiveField(3) bool? bot,
+      @JsonKey(name: 'display_name') @HiveField(4) String? displayName,
+      @HiveField(5) String? note,
+      @HiveField(6) bool? locked,
+      @HiveField(7) String? privacy,
+      @HiveField(8) bool? sensitive,
+      @HiveField(9) String? language,
       @JsonKey(name: 'avatar_local_file_path')
       @HiveField(10)
-          String? avatarLocalFilePath,
-      @JsonKey(name: 'delete_avatar')
-      @HiveField(11)
-          bool? deleteAvatar,
+      String? avatarLocalFilePath,
+      @JsonKey(name: 'delete_avatar') @HiveField(11) bool? deleteAvatar,
       @JsonKey(name: 'header_local_file_path')
       @HiveField(12)
-          String? headerLocalFilePath,
-      @JsonKey(name: 'delete_header')
-      @HiveField(13)
-          bool? deleteHeader,
-      @JsonKey(name: 'no_rich_text')
-      @HiveField(14)
-          bool? noRichText,
-      @JsonKey(name: 'hide_followers')
-      @HiveField(15)
-          bool? hideFollowers,
-      @JsonKey(name: 'hide_follows')
-      @HiveField(16)
-          bool? hideFollows,
+      String? headerLocalFilePath,
+      @JsonKey(name: 'delete_header') @HiveField(13) bool? deleteHeader,
+      @JsonKey(name: 'no_rich_text') @HiveField(14) bool? noRichText,
+      @JsonKey(name: 'hide_followers') @HiveField(15) bool? hideFollowers,
+      @JsonKey(name: 'hide_follows') @HiveField(16) bool? hideFollows,
       @JsonKey(name: 'hide_followers_count')
       @HiveField(17)
-          bool? hideFollowersCount,
+      bool? hideFollowersCount,
       @JsonKey(name: 'hide_follows_count')
       @HiveField(18)
-          bool? hideFollowsCount,
-      @JsonKey(name: 'hide_favorites')
-      @HiveField(19)
-          bool? hideFavorites,
-      @JsonKey(name: 'show_role')
-      @HiveField(20)
-          bool? showRole,
-      @JsonKey(name: 'default_scope')
-      @HiveField(21)
-          String? defaultScope,
+      bool? hideFollowsCount,
+      @JsonKey(name: 'hide_favorites') @HiveField(19) bool? hideFavorites,
+      @JsonKey(name: 'show_role') @HiveField(20) bool? showRole,
+      @JsonKey(name: 'default_scope') @HiveField(21) String? defaultScope,
       @JsonKey(name: 'pleroma_settings_store')
       @HiveField(22)
-          Map<String, dynamic>? pleromaSettingsStore,
+      Map<String, dynamic>? pleromaSettingsStore,
       @JsonKey(name: 'skip_thread_containment')
       @HiveField(23)
-          bool? skipThreadContainment,
+      bool? skipThreadContainment,
       @JsonKey(name: 'allow_following_move')
       @HiveField(24)
-          bool? allowFollowingMove,
+      bool? allowFollowingMove,
       @JsonKey(name: 'accepts_chat_messages')
       @HiveField(25)
-          bool? acceptsChatMessages,
-      @JsonKey(name: 'also_known_as')
-      @HiveField(26)
-          List<String>? alsoKnownAs,
+      bool? acceptsChatMessages,
+      @JsonKey(name: 'also_known_as') @HiveField(26) List<String>? alsoKnownAs,
       @JsonKey(name: 'pleroma_background_image_local_file_path')
       @HiveField(27)
-          String? pleromaBackgroundImageLocalFilePath,
+      String? pleromaBackgroundImageLocalFilePath,
       @JsonKey(name: 'delete_pleroma_background_image')
       @HiveField(28)
-          bool? deletePleromaBackgroundImage});
+      bool? deletePleromaBackgroundImage});
 }
 
 /// @nodoc
-class __$PleromaApiEditMyAccountCopyWithImpl<$Res>
-    extends _$PleromaApiEditMyAccountCopyWithImpl<$Res>
-    implements _$PleromaApiEditMyAccountCopyWith<$Res> {
-  __$PleromaApiEditMyAccountCopyWithImpl(_PleromaApiEditMyAccount _value,
-      $Res Function(_PleromaApiEditMyAccount) _then)
-      : super(_value, (v) => _then(v as _PleromaApiEditMyAccount));
+class __$$PleromaApiEditMyAccountImplCopyWithImpl<$Res>
+    extends _$PleromaApiEditMyAccountCopyWithImpl<$Res,
+        _$PleromaApiEditMyAccountImpl>
+    implements _$$PleromaApiEditMyAccountImplCopyWith<$Res> {
+  __$$PleromaApiEditMyAccountImplCopyWithImpl(
+      _$PleromaApiEditMyAccountImpl _value,
+      $Res Function(_$PleromaApiEditMyAccountImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiEditMyAccount get _value =>
-      super._value as _PleromaApiEditMyAccount;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? fieldsAttributes = freezed,
@@ -602,117 +432,117 @@ class __$PleromaApiEditMyAccountCopyWithImpl<$Res>
     Object? pleromaBackgroundImageLocalFilePath = freezed,
     Object? deletePleromaBackgroundImage = freezed,
   }) {
-    return _then(_PleromaApiEditMyAccount(
-      fieldsAttributes: fieldsAttributes == freezed
-          ? _value.fieldsAttributes
+    return _then(_$PleromaApiEditMyAccountImpl(
+      fieldsAttributes: freezed == fieldsAttributes
+          ? _value._fieldsAttributes
           : fieldsAttributes // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiField>?,
-      discoverable: discoverable == freezed
+      discoverable: freezed == discoverable
           ? _value.discoverable
           : discoverable // ignore: cast_nullable_to_non_nullable
               as bool?,
-      bot: bot == freezed
+      bot: freezed == bot
           ? _value.bot
           : bot // ignore: cast_nullable_to_non_nullable
               as bool?,
-      displayName: displayName == freezed
+      displayName: freezed == displayName
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
               as String?,
-      note: note == freezed
+      note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
               as String?,
-      locked: locked == freezed
+      locked: freezed == locked
           ? _value.locked
           : locked // ignore: cast_nullable_to_non_nullable
               as bool?,
-      privacy: privacy == freezed
+      privacy: freezed == privacy
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
               as String?,
-      sensitive: sensitive == freezed
+      sensitive: freezed == sensitive
           ? _value.sensitive
           : sensitive // ignore: cast_nullable_to_non_nullable
               as bool?,
-      language: language == freezed
+      language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as String?,
-      avatarLocalFilePath: avatarLocalFilePath == freezed
+      avatarLocalFilePath: freezed == avatarLocalFilePath
           ? _value.avatarLocalFilePath
           : avatarLocalFilePath // ignore: cast_nullable_to_non_nullable
               as String?,
-      deleteAvatar: deleteAvatar == freezed
+      deleteAvatar: freezed == deleteAvatar
           ? _value.deleteAvatar
           : deleteAvatar // ignore: cast_nullable_to_non_nullable
               as bool?,
-      headerLocalFilePath: headerLocalFilePath == freezed
+      headerLocalFilePath: freezed == headerLocalFilePath
           ? _value.headerLocalFilePath
           : headerLocalFilePath // ignore: cast_nullable_to_non_nullable
               as String?,
-      deleteHeader: deleteHeader == freezed
+      deleteHeader: freezed == deleteHeader
           ? _value.deleteHeader
           : deleteHeader // ignore: cast_nullable_to_non_nullable
               as bool?,
-      noRichText: noRichText == freezed
+      noRichText: freezed == noRichText
           ? _value.noRichText
           : noRichText // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFollowers: hideFollowers == freezed
+      hideFollowers: freezed == hideFollowers
           ? _value.hideFollowers
           : hideFollowers // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFollows: hideFollows == freezed
+      hideFollows: freezed == hideFollows
           ? _value.hideFollows
           : hideFollows // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFollowersCount: hideFollowersCount == freezed
+      hideFollowersCount: freezed == hideFollowersCount
           ? _value.hideFollowersCount
           : hideFollowersCount // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFollowsCount: hideFollowsCount == freezed
+      hideFollowsCount: freezed == hideFollowsCount
           ? _value.hideFollowsCount
           : hideFollowsCount // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFavorites: hideFavorites == freezed
+      hideFavorites: freezed == hideFavorites
           ? _value.hideFavorites
           : hideFavorites // ignore: cast_nullable_to_non_nullable
               as bool?,
-      showRole: showRole == freezed
+      showRole: freezed == showRole
           ? _value.showRole
           : showRole // ignore: cast_nullable_to_non_nullable
               as bool?,
-      defaultScope: defaultScope == freezed
+      defaultScope: freezed == defaultScope
           ? _value.defaultScope
           : defaultScope // ignore: cast_nullable_to_non_nullable
               as String?,
-      pleromaSettingsStore: pleromaSettingsStore == freezed
-          ? _value.pleromaSettingsStore
+      pleromaSettingsStore: freezed == pleromaSettingsStore
+          ? _value._pleromaSettingsStore
           : pleromaSettingsStore // ignore: cast_nullable_to_non_nullable
               as Map<String, dynamic>?,
-      skipThreadContainment: skipThreadContainment == freezed
+      skipThreadContainment: freezed == skipThreadContainment
           ? _value.skipThreadContainment
           : skipThreadContainment // ignore: cast_nullable_to_non_nullable
               as bool?,
-      allowFollowingMove: allowFollowingMove == freezed
+      allowFollowingMove: freezed == allowFollowingMove
           ? _value.allowFollowingMove
           : allowFollowingMove // ignore: cast_nullable_to_non_nullable
               as bool?,
-      acceptsChatMessages: acceptsChatMessages == freezed
+      acceptsChatMessages: freezed == acceptsChatMessages
           ? _value.acceptsChatMessages
           : acceptsChatMessages // ignore: cast_nullable_to_non_nullable
               as bool?,
-      alsoKnownAs: alsoKnownAs == freezed
-          ? _value.alsoKnownAs
+      alsoKnownAs: freezed == alsoKnownAs
+          ? _value._alsoKnownAs
           : alsoKnownAs // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      pleromaBackgroundImageLocalFilePath: pleromaBackgroundImageLocalFilePath ==
-              freezed
+      pleromaBackgroundImageLocalFilePath: freezed ==
+              pleromaBackgroundImageLocalFilePath
           ? _value.pleromaBackgroundImageLocalFilePath
           : pleromaBackgroundImageLocalFilePath // ignore: cast_nullable_to_non_nullable
               as String?,
-      deletePleromaBackgroundImage: deletePleromaBackgroundImage == freezed
+      deletePleromaBackgroundImage: freezed == deletePleromaBackgroundImage
           ? _value.deletePleromaBackgroundImage
           : deletePleromaBackgroundImage // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -722,93 +552,84 @@ class __$PleromaApiEditMyAccountCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiEditMyAccount implements _PleromaApiEditMyAccount {
-  const _$_PleromaApiEditMyAccount(
+class _$PleromaApiEditMyAccountImpl implements _PleromaApiEditMyAccount {
+  const _$PleromaApiEditMyAccountImpl(
       {@JsonKey(name: 'fields_attributes')
       @HiveField(1)
-          required this.fieldsAttributes,
-      @HiveField(2)
-          required this.discoverable,
-      @HiveField(3)
-          required this.bot,
-      @JsonKey(name: 'display_name')
-      @HiveField(4)
-          required this.displayName,
-      @HiveField(5)
-          required this.note,
-      @HiveField(6)
-          required this.locked,
-      @HiveField(7)
-          required this.privacy,
-      @HiveField(8)
-          required this.sensitive,
-      @HiveField(9)
-          required this.language,
+      required final List<PleromaApiField>? fieldsAttributes,
+      @HiveField(2) required this.discoverable,
+      @HiveField(3) required this.bot,
+      @JsonKey(name: 'display_name') @HiveField(4) required this.displayName,
+      @HiveField(5) required this.note,
+      @HiveField(6) required this.locked,
+      @HiveField(7) required this.privacy,
+      @HiveField(8) required this.sensitive,
+      @HiveField(9) required this.language,
       @JsonKey(name: 'avatar_local_file_path')
       @HiveField(10)
-          required this.avatarLocalFilePath,
-      @JsonKey(name: 'delete_avatar')
-      @HiveField(11)
-          required this.deleteAvatar,
+      required this.avatarLocalFilePath,
+      @JsonKey(name: 'delete_avatar') @HiveField(11) required this.deleteAvatar,
       @JsonKey(name: 'header_local_file_path')
       @HiveField(12)
-          required this.headerLocalFilePath,
-      @JsonKey(name: 'delete_header')
-      @HiveField(13)
-          required this.deleteHeader,
-      @JsonKey(name: 'no_rich_text')
-      @HiveField(14)
-          required this.noRichText,
+      required this.headerLocalFilePath,
+      @JsonKey(name: 'delete_header') @HiveField(13) required this.deleteHeader,
+      @JsonKey(name: 'no_rich_text') @HiveField(14) required this.noRichText,
       @JsonKey(name: 'hide_followers')
       @HiveField(15)
-          required this.hideFollowers,
-      @JsonKey(name: 'hide_follows')
-      @HiveField(16)
-          required this.hideFollows,
+      required this.hideFollowers,
+      @JsonKey(name: 'hide_follows') @HiveField(16) required this.hideFollows,
       @JsonKey(name: 'hide_followers_count')
       @HiveField(17)
-          required this.hideFollowersCount,
+      required this.hideFollowersCount,
       @JsonKey(name: 'hide_follows_count')
       @HiveField(18)
-          required this.hideFollowsCount,
+      required this.hideFollowsCount,
       @JsonKey(name: 'hide_favorites')
       @HiveField(19)
-          required this.hideFavorites,
-      @JsonKey(name: 'show_role')
-      @HiveField(20)
-          required this.showRole,
-      @JsonKey(name: 'default_scope')
-      @HiveField(21)
-          required this.defaultScope,
+      required this.hideFavorites,
+      @JsonKey(name: 'show_role') @HiveField(20) required this.showRole,
+      @JsonKey(name: 'default_scope') @HiveField(21) required this.defaultScope,
       @JsonKey(name: 'pleroma_settings_store')
       @HiveField(22)
-          required this.pleromaSettingsStore,
+      required final Map<String, dynamic>? pleromaSettingsStore,
       @JsonKey(name: 'skip_thread_containment')
       @HiveField(23)
-          required this.skipThreadContainment,
+      required this.skipThreadContainment,
       @JsonKey(name: 'allow_following_move')
       @HiveField(24)
-          required this.allowFollowingMove,
+      required this.allowFollowingMove,
       @JsonKey(name: 'accepts_chat_messages')
       @HiveField(25)
-          required this.acceptsChatMessages,
+      required this.acceptsChatMessages,
       @JsonKey(name: 'also_known_as')
       @HiveField(26)
-          required this.alsoKnownAs,
+      required final List<String>? alsoKnownAs,
       @JsonKey(name: 'pleroma_background_image_local_file_path')
       @HiveField(27)
-          required this.pleromaBackgroundImageLocalFilePath,
+      required this.pleromaBackgroundImageLocalFilePath,
       @JsonKey(name: 'delete_pleroma_background_image')
       @HiveField(28)
-          required this.deletePleromaBackgroundImage});
+      required this.deletePleromaBackgroundImage})
+      : _fieldsAttributes = fieldsAttributes,
+        _pleromaSettingsStore = pleromaSettingsStore,
+        _alsoKnownAs = alsoKnownAs;
 
-  factory _$_PleromaApiEditMyAccount.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiEditMyAccountFromJson(json);
+  factory _$PleromaApiEditMyAccountImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiEditMyAccountImplFromJson(json);
 
+  final List<PleromaApiField>? _fieldsAttributes;
   @override
   @JsonKey(name: 'fields_attributes')
   @HiveField(1)
-  final List<PleromaApiField>? fieldsAttributes;
+  List<PleromaApiField>? get fieldsAttributes {
+    final value = _fieldsAttributes;
+    if (value == null) return null;
+    if (_fieldsAttributes is EqualUnmodifiableListView)
+      return _fieldsAttributes;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(2)
   final bool? discoverable;
@@ -882,10 +703,19 @@ class _$_PleromaApiEditMyAccount implements _PleromaApiEditMyAccount {
   @JsonKey(name: 'default_scope')
   @HiveField(21)
   final String? defaultScope;
+  final Map<String, dynamic>? _pleromaSettingsStore;
   @override
   @JsonKey(name: 'pleroma_settings_store')
   @HiveField(22)
-  final Map<String, dynamic>? pleromaSettingsStore;
+  Map<String, dynamic>? get pleromaSettingsStore {
+    final value = _pleromaSettingsStore;
+    if (value == null) return null;
+    if (_pleromaSettingsStore is EqualUnmodifiableMapView)
+      return _pleromaSettingsStore;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(value);
+  }
+
   @override
   @JsonKey(name: 'skip_thread_containment')
   @HiveField(23)
@@ -898,10 +728,18 @@ class _$_PleromaApiEditMyAccount implements _PleromaApiEditMyAccount {
   @JsonKey(name: 'accepts_chat_messages')
   @HiveField(25)
   final bool? acceptsChatMessages;
+  final List<String>? _alsoKnownAs;
   @override
   @JsonKey(name: 'also_known_as')
   @HiveField(26)
-  final List<String>? alsoKnownAs;
+  List<String>? get alsoKnownAs {
+    final value = _alsoKnownAs;
+    if (value == null) return null;
+    if (_alsoKnownAs is EqualUnmodifiableListView) return _alsoKnownAs;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @JsonKey(name: 'pleroma_background_image_local_file_path')
   @HiveField(27)
@@ -917,12 +755,12 @@ class _$_PleromaApiEditMyAccount implements _PleromaApiEditMyAccount {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiEditMyAccount &&
+            other is _$PleromaApiEditMyAccountImpl &&
             const DeepCollectionEquality()
-                .equals(other.fieldsAttributes, fieldsAttributes) &&
+                .equals(other._fieldsAttributes, _fieldsAttributes) &&
             (identical(other.discoverable, discoverable) ||
                 other.discoverable == discoverable) &&
             (identical(other.bot, bot) || other.bot == bot) &&
@@ -960,7 +798,7 @@ class _$_PleromaApiEditMyAccount implements _PleromaApiEditMyAccount {
             (identical(other.defaultScope, defaultScope) ||
                 other.defaultScope == defaultScope) &&
             const DeepCollectionEquality()
-                .equals(other.pleromaSettingsStore, pleromaSettingsStore) &&
+                .equals(other._pleromaSettingsStore, _pleromaSettingsStore) &&
             (identical(other.skipThreadContainment, skipThreadContainment) ||
                 other.skipThreadContainment == skipThreadContainment) &&
             (identical(other.allowFollowingMove, allowFollowingMove) ||
@@ -968,7 +806,7 @@ class _$_PleromaApiEditMyAccount implements _PleromaApiEditMyAccount {
             (identical(other.acceptsChatMessages, acceptsChatMessages) ||
                 other.acceptsChatMessages == acceptsChatMessages) &&
             const DeepCollectionEquality()
-                .equals(other.alsoKnownAs, alsoKnownAs) &&
+                .equals(other._alsoKnownAs, _alsoKnownAs) &&
             (identical(other.pleromaBackgroundImageLocalFilePath,
                     pleromaBackgroundImageLocalFilePath) ||
                 other.pleromaBackgroundImageLocalFilePath ==
@@ -979,10 +817,11 @@ class _$_PleromaApiEditMyAccount implements _PleromaApiEditMyAccount {
                     deletePleromaBackgroundImage));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
-        const DeepCollectionEquality().hash(fieldsAttributes),
+        const DeepCollectionEquality().hash(_fieldsAttributes),
         discoverable,
         bot,
         displayName,
@@ -1003,110 +842,104 @@ class _$_PleromaApiEditMyAccount implements _PleromaApiEditMyAccount {
         hideFavorites,
         showRole,
         defaultScope,
-        const DeepCollectionEquality().hash(pleromaSettingsStore),
+        const DeepCollectionEquality().hash(_pleromaSettingsStore),
         skipThreadContainment,
         allowFollowingMove,
         acceptsChatMessages,
-        const DeepCollectionEquality().hash(alsoKnownAs),
+        const DeepCollectionEquality().hash(_alsoKnownAs),
         pleromaBackgroundImageLocalFilePath,
         deletePleromaBackgroundImage
       ]);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiEditMyAccountCopyWith<_PleromaApiEditMyAccount> get copyWith =>
-      __$PleromaApiEditMyAccountCopyWithImpl<_PleromaApiEditMyAccount>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiEditMyAccountImplCopyWith<_$PleromaApiEditMyAccountImpl>
+      get copyWith => __$$PleromaApiEditMyAccountImplCopyWithImpl<
+          _$PleromaApiEditMyAccountImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiEditMyAccountToJson(this);
+    return _$$PleromaApiEditMyAccountImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiEditMyAccount implements PleromaApiEditMyAccount {
   const factory _PleromaApiEditMyAccount(
-          {@JsonKey(name: 'fields_attributes')
-          @HiveField(1)
-              required List<PleromaApiField>? fieldsAttributes,
-          @HiveField(2)
-              required bool? discoverable,
-          @HiveField(3)
-              required bool? bot,
-          @JsonKey(name: 'display_name')
-          @HiveField(4)
-              required String? displayName,
-          @HiveField(5)
-              required String? note,
-          @HiveField(6)
-              required bool? locked,
-          @HiveField(7)
-              required String? privacy,
-          @HiveField(8)
-              required bool? sensitive,
-          @HiveField(9)
-              required String? language,
-          @JsonKey(name: 'avatar_local_file_path')
-          @HiveField(10)
-              required String? avatarLocalFilePath,
-          @JsonKey(name: 'delete_avatar')
-          @HiveField(11)
-              required bool? deleteAvatar,
-          @JsonKey(name: 'header_local_file_path')
-          @HiveField(12)
-              required String? headerLocalFilePath,
-          @JsonKey(name: 'delete_header')
-          @HiveField(13)
-              required bool? deleteHeader,
-          @JsonKey(name: 'no_rich_text')
-          @HiveField(14)
-              required bool? noRichText,
-          @JsonKey(name: 'hide_followers')
-          @HiveField(15)
-              required bool? hideFollowers,
-          @JsonKey(name: 'hide_follows')
-          @HiveField(16)
-              required bool? hideFollows,
-          @JsonKey(name: 'hide_followers_count')
-          @HiveField(17)
-              required bool? hideFollowersCount,
-          @JsonKey(name: 'hide_follows_count')
-          @HiveField(18)
-              required bool? hideFollowsCount,
-          @JsonKey(name: 'hide_favorites')
-          @HiveField(19)
-              required bool? hideFavorites,
-          @JsonKey(name: 'show_role')
-          @HiveField(20)
-              required bool? showRole,
-          @JsonKey(name: 'default_scope')
-          @HiveField(21)
-              required String? defaultScope,
-          @JsonKey(name: 'pleroma_settings_store')
-          @HiveField(22)
-              required Map<String, dynamic>? pleromaSettingsStore,
-          @JsonKey(name: 'skip_thread_containment')
-          @HiveField(23)
-              required bool? skipThreadContainment,
-          @JsonKey(name: 'allow_following_move')
-          @HiveField(24)
-              required bool? allowFollowingMove,
-          @JsonKey(name: 'accepts_chat_messages')
-          @HiveField(25)
-              required bool? acceptsChatMessages,
-          @JsonKey(name: 'also_known_as')
-          @HiveField(26)
-              required List<String>? alsoKnownAs,
-          @JsonKey(name: 'pleroma_background_image_local_file_path')
-          @HiveField(27)
-              required String? pleromaBackgroundImageLocalFilePath,
-          @JsonKey(name: 'delete_pleroma_background_image')
-          @HiveField(28)
-              required bool? deletePleromaBackgroundImage}) =
-      _$_PleromaApiEditMyAccount;
+      {@JsonKey(name: 'fields_attributes')
+      @HiveField(1)
+      required final List<PleromaApiField>? fieldsAttributes,
+      @HiveField(2) required final bool? discoverable,
+      @HiveField(3) required final bool? bot,
+      @JsonKey(name: 'display_name')
+      @HiveField(4)
+      required final String? displayName,
+      @HiveField(5) required final String? note,
+      @HiveField(6) required final bool? locked,
+      @HiveField(7) required final String? privacy,
+      @HiveField(8) required final bool? sensitive,
+      @HiveField(9) required final String? language,
+      @JsonKey(name: 'avatar_local_file_path')
+      @HiveField(10)
+      required final String? avatarLocalFilePath,
+      @JsonKey(name: 'delete_avatar')
+      @HiveField(11)
+      required final bool? deleteAvatar,
+      @JsonKey(name: 'header_local_file_path')
+      @HiveField(12)
+      required final String? headerLocalFilePath,
+      @JsonKey(name: 'delete_header')
+      @HiveField(13)
+      required final bool? deleteHeader,
+      @JsonKey(name: 'no_rich_text')
+      @HiveField(14)
+      required final bool? noRichText,
+      @JsonKey(name: 'hide_followers')
+      @HiveField(15)
+      required final bool? hideFollowers,
+      @JsonKey(name: 'hide_follows')
+      @HiveField(16)
+      required final bool? hideFollows,
+      @JsonKey(name: 'hide_followers_count')
+      @HiveField(17)
+      required final bool? hideFollowersCount,
+      @JsonKey(name: 'hide_follows_count')
+      @HiveField(18)
+      required final bool? hideFollowsCount,
+      @JsonKey(name: 'hide_favorites')
+      @HiveField(19)
+      required final bool? hideFavorites,
+      @JsonKey(name: 'show_role') @HiveField(20) required final bool? showRole,
+      @JsonKey(name: 'default_scope')
+      @HiveField(21)
+      required final String? defaultScope,
+      @JsonKey(name: 'pleroma_settings_store')
+      @HiveField(22)
+      required final Map<String, dynamic>? pleromaSettingsStore,
+      @JsonKey(name: 'skip_thread_containment')
+      @HiveField(23)
+      required final bool? skipThreadContainment,
+      @JsonKey(name: 'allow_following_move')
+      @HiveField(24)
+      required final bool? allowFollowingMove,
+      @JsonKey(name: 'accepts_chat_messages')
+      @HiveField(25)
+      required final bool? acceptsChatMessages,
+      @JsonKey(name: 'also_known_as')
+      @HiveField(26)
+      required final List<String>? alsoKnownAs,
+      @JsonKey(name: 'pleroma_background_image_local_file_path')
+      @HiveField(27)
+      required final String? pleromaBackgroundImageLocalFilePath,
+      @JsonKey(name: 'delete_pleroma_background_image')
+      @HiveField(28)
+      required final bool?
+          deletePleromaBackgroundImage}) = _$PleromaApiEditMyAccountImpl;
 
   factory _PleromaApiEditMyAccount.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiEditMyAccount.fromJson;
+      _$PleromaApiEditMyAccountImpl.fromJson;
 
   @override
   @JsonKey(name: 'fields_attributes')
@@ -1215,6 +1048,6 @@ abstract class _PleromaApiEditMyAccount implements PleromaApiEditMyAccount {
   bool? get deletePleromaBackgroundImage;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiEditMyAccountCopyWith<_PleromaApiEditMyAccount> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PleromaApiEditMyAccountImplCopyWith<_$PleromaApiEditMyAccountImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

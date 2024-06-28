@@ -50,8 +50,9 @@ class PleromaApiFieldAdapter extends TypeAdapter<PleromaApiField> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiField _$$_PleromaApiFieldFromJson(Map<String, dynamic> json) =>
-    _$_PleromaApiField(
+_$PleromaApiFieldImpl _$$PleromaApiFieldImplFromJson(
+        Map<String, dynamic> json) =>
+    _$PleromaApiFieldImpl(
       name: json['name'] as String?,
       value: json['value'] as String?,
       verifiedAt: json['verified_at'] == null
@@ -59,7 +60,8 @@ _$_PleromaApiField _$$_PleromaApiFieldFromJson(Map<String, dynamic> json) =>
           : DateTime.parse(json['verified_at'] as String),
     );
 
-Map<String, dynamic> _$$_PleromaApiFieldToJson(_$_PleromaApiField instance) {
+Map<String, dynamic> _$$PleromaApiFieldImplToJson(
+    _$PleromaApiFieldImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

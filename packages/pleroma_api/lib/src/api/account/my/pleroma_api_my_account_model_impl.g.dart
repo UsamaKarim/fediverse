@@ -224,19 +224,19 @@ class PleromaApiMyAccountPleromaPartAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiMyAccount _$$_PleromaApiMyAccountFromJson(
+_$PleromaApiMyAccountImpl _$$PleromaApiMyAccountImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiMyAccount(
+    _$PleromaApiMyAccountImpl(
       username: json['username'] as String,
       url: json['url'] as String,
-      statusesCount: json['statuses_count'] as int,
+      statusesCount: (json['statuses_count'] as num).toInt(),
       note: json['note'] as String?,
       locked: json['locked'] as bool,
       id: json['id'] as String,
       headerStatic: json['header_static'] as String,
       header: json['header'] as String,
-      followingCount: json['following_count'] as int,
-      followersCount: json['followers_count'] as int,
+      followingCount: (json['following_count'] as num).toInt(),
+      followersCount: (json['followers_count'] as num).toInt(),
       fields: (json['fields'] as List<dynamic>?)
           ?.map((e) => PleromaApiField.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -261,7 +261,7 @@ _$_PleromaApiMyAccount _$$_PleromaApiMyAccountFromJson(
           : PleromaApiMyAccountSource.fromJson(
               json['source'] as Map<String, dynamic>),
       discoverable: json['discoverable'] as bool?,
-      followRequestsCount: json['follow_requests_count'] as int?,
+      followRequestsCount: (json['follow_requests_count'] as num?)?.toInt(),
       fqn: json['fqn'] as String?,
       suspended: json['suspended'] as bool?,
       muteExpiresAt: json['mute_expires_at'] == null
@@ -269,8 +269,8 @@ _$_PleromaApiMyAccount _$$_PleromaApiMyAccountFromJson(
           : DateTime.parse(json['mute_expires_at'] as String),
     );
 
-Map<String, dynamic> _$$_PleromaApiMyAccountToJson(
-    _$_PleromaApiMyAccount instance) {
+Map<String, dynamic> _$$PleromaApiMyAccountImplToJson(
+    _$PleromaApiMyAccountImpl instance) {
   final val = <String, dynamic>{
     'username': instance.username,
     'url': instance.url,
@@ -309,47 +309,49 @@ Map<String, dynamic> _$$_PleromaApiMyAccountToJson(
   return val;
 }
 
-_$_PleromaApiMyAccountPleromaPart _$$_PleromaApiMyAccountPleromaPartFromJson(
-        Map<String, dynamic> json) =>
-    _$_PleromaApiMyAccountPleromaPart(
-      backgroundImage: json['background_image'] as String?,
-      tags: (json['tags'] as List<dynamic>?)
-          ?.map((e) => PleromaApiTag.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      relationship: json['relationship'] == null
-          ? null
-          : PleromaApiAccountRelationship.fromJson(
-              json['relationship'] as Map<String, dynamic>),
-      isAdmin: json['is_admin'] as bool?,
-      isModerator: json['is_moderator'] as bool?,
-      confirmationPending: json['confirmation_pending'] as bool?,
-      hideFavorites: json['hide_favorites'] as bool?,
-      hideFollowers: json['hide_followers'] as bool?,
-      hideFollows: json['hide_follows'] as bool?,
-      hideFollowersCount: json['hide_followers_count'] as bool?,
-      hideFollowsCount: json['hide_follows_count'] as bool?,
-      settingsStore: json['settings_store'] as Map<String, dynamic>?,
-      chatToken: json['chat_token'] as String?,
-      deactivated: json['deactivated'] as bool?,
-      allowFollowingMove: json['allow_following_move'] as bool?,
-      unreadConversationCount: json['unread_conversation_count'] as int?,
-      notificationSettings: json['notifications_settings'] == null
-          ? null
-          : PleromaApiMyAccountNotificationsSettings.fromJson(
-              json['notifications_settings'] as Map<String, dynamic>),
-      skipThreadContainment: json['skip_thread_containment'] as bool?,
-      acceptsChatMessages: json['accepts_chat_messages'] as bool?,
-      isConfirmed: json['is_confirmed'] as bool?,
-      favicon: json['favicon'] as String?,
-      apId: json['ap_id'] as String?,
-      alsoKnownAs: (json['also_known_as'] as List<dynamic>?)
-          ?.map((e) => e as String)
-          .toList(),
-      unreadNotificationsCount: json['unread_notifications_count'] as int?,
-    );
+_$PleromaApiMyAccountPleromaPartImpl
+    _$$PleromaApiMyAccountPleromaPartImplFromJson(Map<String, dynamic> json) =>
+        _$PleromaApiMyAccountPleromaPartImpl(
+          backgroundImage: json['background_image'] as String?,
+          tags: (json['tags'] as List<dynamic>?)
+              ?.map((e) => PleromaApiTag.fromJson(e as Map<String, dynamic>))
+              .toList(),
+          relationship: json['relationship'] == null
+              ? null
+              : PleromaApiAccountRelationship.fromJson(
+                  json['relationship'] as Map<String, dynamic>),
+          isAdmin: json['is_admin'] as bool?,
+          isModerator: json['is_moderator'] as bool?,
+          confirmationPending: json['confirmation_pending'] as bool?,
+          hideFavorites: json['hide_favorites'] as bool?,
+          hideFollowers: json['hide_followers'] as bool?,
+          hideFollows: json['hide_follows'] as bool?,
+          hideFollowersCount: json['hide_followers_count'] as bool?,
+          hideFollowsCount: json['hide_follows_count'] as bool?,
+          settingsStore: json['settings_store'] as Map<String, dynamic>?,
+          chatToken: json['chat_token'] as String?,
+          deactivated: json['deactivated'] as bool?,
+          allowFollowingMove: json['allow_following_move'] as bool?,
+          unreadConversationCount:
+              (json['unread_conversation_count'] as num?)?.toInt(),
+          notificationSettings: json['notifications_settings'] == null
+              ? null
+              : PleromaApiMyAccountNotificationsSettings.fromJson(
+                  json['notifications_settings'] as Map<String, dynamic>),
+          skipThreadContainment: json['skip_thread_containment'] as bool?,
+          acceptsChatMessages: json['accepts_chat_messages'] as bool?,
+          isConfirmed: json['is_confirmed'] as bool?,
+          favicon: json['favicon'] as String?,
+          apId: json['ap_id'] as String?,
+          alsoKnownAs: (json['also_known_as'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList(),
+          unreadNotificationsCount:
+              (json['unread_notifications_count'] as num?)?.toInt(),
+        );
 
-Map<String, dynamic> _$$_PleromaApiMyAccountPleromaPartToJson(
-    _$_PleromaApiMyAccountPleromaPart instance) {
+Map<String, dynamic> _$$PleromaApiMyAccountPleromaPartImplToJson(
+    _$PleromaApiMyAccountPleromaPartImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

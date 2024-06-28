@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'hashtag_model.dart';
 
@@ -11,26 +12,7 @@ part of 'hashtag_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$HashtagTearOff {
-  const _$HashtagTearOff();
-
-  _Hashtag call(
-      {@override required String name,
-      @override required IUnifediApiTagHistory? history,
-      @override required String? url}) {
-    return _Hashtag(
-      name: name,
-      history: history,
-      url: url,
-    );
-  }
-}
-
-/// @nodoc
-const $Hashtag = _$HashtagTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$Hashtag {
@@ -48,7 +30,8 @@ mixin _$Hashtag {
 /// @nodoc
 abstract class $HashtagCopyWith<$Res> {
   factory $HashtagCopyWith(Hashtag value, $Res Function(Hashtag) then) =
-      _$HashtagCopyWithImpl<$Res>;
+      _$HashtagCopyWithImpl<$Res, Hashtag>;
+  @useResult
   $Res call(
       {@override String name,
       @override IUnifediApiTagHistory? history,
@@ -56,41 +39,46 @@ abstract class $HashtagCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$HashtagCopyWithImpl<$Res> implements $HashtagCopyWith<$Res> {
+class _$HashtagCopyWithImpl<$Res, $Val extends Hashtag>
+    implements $HashtagCopyWith<$Res> {
   _$HashtagCopyWithImpl(this._value, this._then);
 
-  final Hashtag _value;
   // ignore: unused_field
-  final $Res Function(Hashtag) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
+    Object? name = null,
     Object? history = freezed,
     Object? url = freezed,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      history: history == freezed
+      history: freezed == history
           ? _value.history
           : history // ignore: cast_nullable_to_non_nullable
               as IUnifediApiTagHistory?,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$HashtagCopyWith<$Res> implements $HashtagCopyWith<$Res> {
-  factory _$HashtagCopyWith(_Hashtag value, $Res Function(_Hashtag) then) =
-      __$HashtagCopyWithImpl<$Res>;
+abstract class _$$HashtagImplCopyWith<$Res> implements $HashtagCopyWith<$Res> {
+  factory _$$HashtagImplCopyWith(
+          _$HashtagImpl value, $Res Function(_$HashtagImpl) then) =
+      __$$HashtagImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@override String name,
       @override IUnifediApiTagHistory? history,
@@ -98,30 +86,30 @@ abstract class _$HashtagCopyWith<$Res> implements $HashtagCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$HashtagCopyWithImpl<$Res> extends _$HashtagCopyWithImpl<$Res>
-    implements _$HashtagCopyWith<$Res> {
-  __$HashtagCopyWithImpl(_Hashtag _value, $Res Function(_Hashtag) _then)
-      : super(_value, (v) => _then(v as _Hashtag));
+class __$$HashtagImplCopyWithImpl<$Res>
+    extends _$HashtagCopyWithImpl<$Res, _$HashtagImpl>
+    implements _$$HashtagImplCopyWith<$Res> {
+  __$$HashtagImplCopyWithImpl(
+      _$HashtagImpl _value, $Res Function(_$HashtagImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Hashtag get _value => super._value as _Hashtag;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
+    Object? name = null,
     Object? history = freezed,
     Object? url = freezed,
   }) {
-    return _then(_Hashtag(
-      name: name == freezed
+    return _then(_$HashtagImpl(
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      history: history == freezed
+      history: freezed == history
           ? _value.history
           : history // ignore: cast_nullable_to_non_nullable
               as IUnifediApiTagHistory?,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -131,8 +119,8 @@ class __$HashtagCopyWithImpl<$Res> extends _$HashtagCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Hashtag extends _Hashtag {
-  const _$_Hashtag(
+class _$HashtagImpl extends _Hashtag {
+  const _$HashtagImpl(
       {@override required this.name,
       @override required this.history,
       @override required this.url})
@@ -154,10 +142,10 @@ class _$_Hashtag extends _Hashtag {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Hashtag &&
+            other is _$HashtagImpl &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.history, history) || other.history == history) &&
             (identical(other.url, url) || other.url == url));
@@ -168,15 +156,16 @@ class _$_Hashtag extends _Hashtag {
 
   @JsonKey(ignore: true)
   @override
-  _$HashtagCopyWith<_Hashtag> get copyWith =>
-      __$HashtagCopyWithImpl<_Hashtag>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$HashtagImplCopyWith<_$HashtagImpl> get copyWith =>
+      __$$HashtagImplCopyWithImpl<_$HashtagImpl>(this, _$identity);
 }
 
 abstract class _Hashtag extends Hashtag {
   const factory _Hashtag(
-      {@override required String name,
-      @override required IUnifediApiTagHistory? history,
-      @override required String? url}) = _$_Hashtag;
+      {@override required final String name,
+      @override required final IUnifediApiTagHistory? history,
+      @override required final String? url}) = _$HashtagImpl;
   const _Hashtag._() : super._();
 
   @override
@@ -190,6 +179,6 @@ abstract class _Hashtag extends Hashtag {
   String? get url;
   @override
   @JsonKey(ignore: true)
-  _$HashtagCopyWith<_Hashtag> get copyWith =>
+  _$$HashtagImplCopyWith<_$HashtagImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'rest_request_type_sealed.dart';
 
@@ -11,56 +12,11 @@ part of 'rest_request_type_sealed.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$RestRequestTypeTearOff {
-  const _$RestRequestTypeTearOff();
-
-  _Get get({String stringValue = RestRequestType.getStringValue}) {
-    return _Get(
-      stringValue: stringValue,
-    );
-  }
-
-  _Post post({String stringValue = RestRequestType.postStringValue}) {
-    return _Post(
-      stringValue: stringValue,
-    );
-  }
-
-  _Head head({String stringValue = RestRequestType.headStringValue}) {
-    return _Head(
-      stringValue: stringValue,
-    );
-  }
-
-  _Put put({String stringValue = RestRequestType.putStringValue}) {
-    return _Put(
-      stringValue: stringValue,
-    );
-  }
-
-  _Patch patch({String stringValue = RestRequestType.patchStringValue}) {
-    return _Patch(
-      stringValue: stringValue,
-    );
-  }
-
-  _Delete delete({String stringValue = RestRequestType.deleteStringValue}) {
-    return _Delete(
-      stringValue: stringValue,
-    );
-  }
-}
-
-/// @nodoc
-const $RestRequestType = _$RestRequestTypeTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$RestRequestType {
   String get stringValue => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String stringValue) get,
@@ -73,12 +29,12 @@ mixin _$RestRequestType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? get,
-    TResult Function(String stringValue)? post,
-    TResult Function(String stringValue)? head,
-    TResult Function(String stringValue)? put,
-    TResult Function(String stringValue)? patch,
-    TResult Function(String stringValue)? delete,
+    TResult? Function(String stringValue)? get,
+    TResult? Function(String stringValue)? post,
+    TResult? Function(String stringValue)? head,
+    TResult? Function(String stringValue)? put,
+    TResult? Function(String stringValue)? patch,
+    TResult? Function(String stringValue)? delete,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -104,12 +60,12 @@ mixin _$RestRequestType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Get value)? get,
-    TResult Function(_Post value)? post,
-    TResult Function(_Head value)? head,
-    TResult Function(_Put value)? put,
-    TResult Function(_Patch value)? patch,
-    TResult Function(_Delete value)? delete,
+    TResult? Function(_Get value)? get,
+    TResult? Function(_Post value)? post,
+    TResult? Function(_Head value)? head,
+    TResult? Function(_Put value)? put,
+    TResult? Function(_Patch value)? patch,
+    TResult? Function(_Delete value)? delete,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -133,55 +89,59 @@ mixin _$RestRequestType {
 abstract class $RestRequestTypeCopyWith<$Res> {
   factory $RestRequestTypeCopyWith(
           RestRequestType value, $Res Function(RestRequestType) then) =
-      _$RestRequestTypeCopyWithImpl<$Res>;
+      _$RestRequestTypeCopyWithImpl<$Res, RestRequestType>;
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class _$RestRequestTypeCopyWithImpl<$Res>
+class _$RestRequestTypeCopyWithImpl<$Res, $Val extends RestRequestType>
     implements $RestRequestTypeCopyWith<$Res> {
   _$RestRequestTypeCopyWithImpl(this._value, this._then);
 
-  final RestRequestType _value;
   // ignore: unused_field
-  final $Res Function(RestRequestType) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
     return _then(_value.copyWith(
-      stringValue: stringValue == freezed
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$GetCopyWith<$Res> implements $RestRequestTypeCopyWith<$Res> {
-  factory _$GetCopyWith(_Get value, $Res Function(_Get) then) =
-      __$GetCopyWithImpl<$Res>;
+abstract class _$$GetImplCopyWith<$Res>
+    implements $RestRequestTypeCopyWith<$Res> {
+  factory _$$GetImplCopyWith(_$GetImpl value, $Res Function(_$GetImpl) then) =
+      __$$GetImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$GetCopyWithImpl<$Res> extends _$RestRequestTypeCopyWithImpl<$Res>
-    implements _$GetCopyWith<$Res> {
-  __$GetCopyWithImpl(_Get _value, $Res Function(_Get) _then)
-      : super(_value, (v) => _then(v as _Get));
+class __$$GetImplCopyWithImpl<$Res>
+    extends _$RestRequestTypeCopyWithImpl<$Res, _$GetImpl>
+    implements _$$GetImplCopyWith<$Res> {
+  __$$GetImplCopyWithImpl(_$GetImpl _value, $Res Function(_$GetImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Get get _value => super._value as _Get;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Get(
-      stringValue: stringValue == freezed
+    return _then(_$GetImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -191,11 +151,11 @@ class __$GetCopyWithImpl<$Res> extends _$RestRequestTypeCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Get implements _Get {
-  const _$_Get({this.stringValue = RestRequestType.getStringValue});
+class _$GetImpl implements _Get {
+  const _$GetImpl({this.stringValue = RestRequestType.getStringValue});
 
-  @JsonKey(defaultValue: RestRequestType.getStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -204,10 +164,10 @@ class _$_Get implements _Get {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Get &&
+            other is _$GetImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -217,8 +177,9 @@ class _$_Get implements _Get {
 
   @JsonKey(ignore: true)
   @override
-  _$GetCopyWith<_Get> get copyWith =>
-      __$GetCopyWithImpl<_Get>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$GetImplCopyWith<_$GetImpl> get copyWith =>
+      __$$GetImplCopyWithImpl<_$GetImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -236,12 +197,12 @@ class _$_Get implements _Get {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? get,
-    TResult Function(String stringValue)? post,
-    TResult Function(String stringValue)? head,
-    TResult Function(String stringValue)? put,
-    TResult Function(String stringValue)? patch,
-    TResult Function(String stringValue)? delete,
+    TResult? Function(String stringValue)? get,
+    TResult? Function(String stringValue)? post,
+    TResult? Function(String stringValue)? head,
+    TResult? Function(String stringValue)? put,
+    TResult? Function(String stringValue)? patch,
+    TResult? Function(String stringValue)? delete,
   }) {
     return get?.call(stringValue);
   }
@@ -279,12 +240,12 @@ class _$_Get implements _Get {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Get value)? get,
-    TResult Function(_Post value)? post,
-    TResult Function(_Head value)? head,
-    TResult Function(_Put value)? put,
-    TResult Function(_Patch value)? patch,
-    TResult Function(_Delete value)? delete,
+    TResult? Function(_Get value)? get,
+    TResult? Function(_Post value)? post,
+    TResult? Function(_Head value)? head,
+    TResult? Function(_Put value)? put,
+    TResult? Function(_Patch value)? patch,
+    TResult? Function(_Delete value)? delete,
   }) {
     return get?.call(this);
   }
@@ -308,38 +269,41 @@ class _$_Get implements _Get {
 }
 
 abstract class _Get implements RestRequestType {
-  const factory _Get({String stringValue}) = _$_Get;
+  const factory _Get({final String stringValue}) = _$GetImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$GetCopyWith<_Get> get copyWith => throw _privateConstructorUsedError;
+  _$$GetImplCopyWith<_$GetImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$PostCopyWith<$Res> implements $RestRequestTypeCopyWith<$Res> {
-  factory _$PostCopyWith(_Post value, $Res Function(_Post) then) =
-      __$PostCopyWithImpl<$Res>;
+abstract class _$$PostImplCopyWith<$Res>
+    implements $RestRequestTypeCopyWith<$Res> {
+  factory _$$PostImplCopyWith(
+          _$PostImpl value, $Res Function(_$PostImpl) then) =
+      __$$PostImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$PostCopyWithImpl<$Res> extends _$RestRequestTypeCopyWithImpl<$Res>
-    implements _$PostCopyWith<$Res> {
-  __$PostCopyWithImpl(_Post _value, $Res Function(_Post) _then)
-      : super(_value, (v) => _then(v as _Post));
+class __$$PostImplCopyWithImpl<$Res>
+    extends _$RestRequestTypeCopyWithImpl<$Res, _$PostImpl>
+    implements _$$PostImplCopyWith<$Res> {
+  __$$PostImplCopyWithImpl(_$PostImpl _value, $Res Function(_$PostImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Post get _value => super._value as _Post;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Post(
-      stringValue: stringValue == freezed
+    return _then(_$PostImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -349,11 +313,11 @@ class __$PostCopyWithImpl<$Res> extends _$RestRequestTypeCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Post implements _Post {
-  const _$_Post({this.stringValue = RestRequestType.postStringValue});
+class _$PostImpl implements _Post {
+  const _$PostImpl({this.stringValue = RestRequestType.postStringValue});
 
-  @JsonKey(defaultValue: RestRequestType.postStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -362,10 +326,10 @@ class _$_Post implements _Post {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Post &&
+            other is _$PostImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -375,8 +339,9 @@ class _$_Post implements _Post {
 
   @JsonKey(ignore: true)
   @override
-  _$PostCopyWith<_Post> get copyWith =>
-      __$PostCopyWithImpl<_Post>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PostImplCopyWith<_$PostImpl> get copyWith =>
+      __$$PostImplCopyWithImpl<_$PostImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -394,12 +359,12 @@ class _$_Post implements _Post {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? get,
-    TResult Function(String stringValue)? post,
-    TResult Function(String stringValue)? head,
-    TResult Function(String stringValue)? put,
-    TResult Function(String stringValue)? patch,
-    TResult Function(String stringValue)? delete,
+    TResult? Function(String stringValue)? get,
+    TResult? Function(String stringValue)? post,
+    TResult? Function(String stringValue)? head,
+    TResult? Function(String stringValue)? put,
+    TResult? Function(String stringValue)? patch,
+    TResult? Function(String stringValue)? delete,
   }) {
     return post?.call(stringValue);
   }
@@ -437,12 +402,12 @@ class _$_Post implements _Post {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Get value)? get,
-    TResult Function(_Post value)? post,
-    TResult Function(_Head value)? head,
-    TResult Function(_Put value)? put,
-    TResult Function(_Patch value)? patch,
-    TResult Function(_Delete value)? delete,
+    TResult? Function(_Get value)? get,
+    TResult? Function(_Post value)? post,
+    TResult? Function(_Head value)? head,
+    TResult? Function(_Put value)? put,
+    TResult? Function(_Patch value)? patch,
+    TResult? Function(_Delete value)? delete,
   }) {
     return post?.call(this);
   }
@@ -466,38 +431,41 @@ class _$_Post implements _Post {
 }
 
 abstract class _Post implements RestRequestType {
-  const factory _Post({String stringValue}) = _$_Post;
+  const factory _Post({final String stringValue}) = _$PostImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$PostCopyWith<_Post> get copyWith => throw _privateConstructorUsedError;
+  _$$PostImplCopyWith<_$PostImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$HeadCopyWith<$Res> implements $RestRequestTypeCopyWith<$Res> {
-  factory _$HeadCopyWith(_Head value, $Res Function(_Head) then) =
-      __$HeadCopyWithImpl<$Res>;
+abstract class _$$HeadImplCopyWith<$Res>
+    implements $RestRequestTypeCopyWith<$Res> {
+  factory _$$HeadImplCopyWith(
+          _$HeadImpl value, $Res Function(_$HeadImpl) then) =
+      __$$HeadImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$HeadCopyWithImpl<$Res> extends _$RestRequestTypeCopyWithImpl<$Res>
-    implements _$HeadCopyWith<$Res> {
-  __$HeadCopyWithImpl(_Head _value, $Res Function(_Head) _then)
-      : super(_value, (v) => _then(v as _Head));
+class __$$HeadImplCopyWithImpl<$Res>
+    extends _$RestRequestTypeCopyWithImpl<$Res, _$HeadImpl>
+    implements _$$HeadImplCopyWith<$Res> {
+  __$$HeadImplCopyWithImpl(_$HeadImpl _value, $Res Function(_$HeadImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Head get _value => super._value as _Head;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Head(
-      stringValue: stringValue == freezed
+    return _then(_$HeadImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -507,11 +475,11 @@ class __$HeadCopyWithImpl<$Res> extends _$RestRequestTypeCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Head implements _Head {
-  const _$_Head({this.stringValue = RestRequestType.headStringValue});
+class _$HeadImpl implements _Head {
+  const _$HeadImpl({this.stringValue = RestRequestType.headStringValue});
 
-  @JsonKey(defaultValue: RestRequestType.headStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -520,10 +488,10 @@ class _$_Head implements _Head {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Head &&
+            other is _$HeadImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -533,8 +501,9 @@ class _$_Head implements _Head {
 
   @JsonKey(ignore: true)
   @override
-  _$HeadCopyWith<_Head> get copyWith =>
-      __$HeadCopyWithImpl<_Head>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$HeadImplCopyWith<_$HeadImpl> get copyWith =>
+      __$$HeadImplCopyWithImpl<_$HeadImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -552,12 +521,12 @@ class _$_Head implements _Head {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? get,
-    TResult Function(String stringValue)? post,
-    TResult Function(String stringValue)? head,
-    TResult Function(String stringValue)? put,
-    TResult Function(String stringValue)? patch,
-    TResult Function(String stringValue)? delete,
+    TResult? Function(String stringValue)? get,
+    TResult? Function(String stringValue)? post,
+    TResult? Function(String stringValue)? head,
+    TResult? Function(String stringValue)? put,
+    TResult? Function(String stringValue)? patch,
+    TResult? Function(String stringValue)? delete,
   }) {
     return head?.call(stringValue);
   }
@@ -595,12 +564,12 @@ class _$_Head implements _Head {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Get value)? get,
-    TResult Function(_Post value)? post,
-    TResult Function(_Head value)? head,
-    TResult Function(_Put value)? put,
-    TResult Function(_Patch value)? patch,
-    TResult Function(_Delete value)? delete,
+    TResult? Function(_Get value)? get,
+    TResult? Function(_Post value)? post,
+    TResult? Function(_Head value)? head,
+    TResult? Function(_Put value)? put,
+    TResult? Function(_Patch value)? patch,
+    TResult? Function(_Delete value)? delete,
   }) {
     return head?.call(this);
   }
@@ -624,38 +593,40 @@ class _$_Head implements _Head {
 }
 
 abstract class _Head implements RestRequestType {
-  const factory _Head({String stringValue}) = _$_Head;
+  const factory _Head({final String stringValue}) = _$HeadImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$HeadCopyWith<_Head> get copyWith => throw _privateConstructorUsedError;
+  _$$HeadImplCopyWith<_$HeadImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$PutCopyWith<$Res> implements $RestRequestTypeCopyWith<$Res> {
-  factory _$PutCopyWith(_Put value, $Res Function(_Put) then) =
-      __$PutCopyWithImpl<$Res>;
+abstract class _$$PutImplCopyWith<$Res>
+    implements $RestRequestTypeCopyWith<$Res> {
+  factory _$$PutImplCopyWith(_$PutImpl value, $Res Function(_$PutImpl) then) =
+      __$$PutImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$PutCopyWithImpl<$Res> extends _$RestRequestTypeCopyWithImpl<$Res>
-    implements _$PutCopyWith<$Res> {
-  __$PutCopyWithImpl(_Put _value, $Res Function(_Put) _then)
-      : super(_value, (v) => _then(v as _Put));
+class __$$PutImplCopyWithImpl<$Res>
+    extends _$RestRequestTypeCopyWithImpl<$Res, _$PutImpl>
+    implements _$$PutImplCopyWith<$Res> {
+  __$$PutImplCopyWithImpl(_$PutImpl _value, $Res Function(_$PutImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Put get _value => super._value as _Put;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Put(
-      stringValue: stringValue == freezed
+    return _then(_$PutImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -665,11 +636,11 @@ class __$PutCopyWithImpl<$Res> extends _$RestRequestTypeCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Put implements _Put {
-  const _$_Put({this.stringValue = RestRequestType.putStringValue});
+class _$PutImpl implements _Put {
+  const _$PutImpl({this.stringValue = RestRequestType.putStringValue});
 
-  @JsonKey(defaultValue: RestRequestType.putStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -678,10 +649,10 @@ class _$_Put implements _Put {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Put &&
+            other is _$PutImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -691,8 +662,9 @@ class _$_Put implements _Put {
 
   @JsonKey(ignore: true)
   @override
-  _$PutCopyWith<_Put> get copyWith =>
-      __$PutCopyWithImpl<_Put>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PutImplCopyWith<_$PutImpl> get copyWith =>
+      __$$PutImplCopyWithImpl<_$PutImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -710,12 +682,12 @@ class _$_Put implements _Put {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? get,
-    TResult Function(String stringValue)? post,
-    TResult Function(String stringValue)? head,
-    TResult Function(String stringValue)? put,
-    TResult Function(String stringValue)? patch,
-    TResult Function(String stringValue)? delete,
+    TResult? Function(String stringValue)? get,
+    TResult? Function(String stringValue)? post,
+    TResult? Function(String stringValue)? head,
+    TResult? Function(String stringValue)? put,
+    TResult? Function(String stringValue)? patch,
+    TResult? Function(String stringValue)? delete,
   }) {
     return put?.call(stringValue);
   }
@@ -753,12 +725,12 @@ class _$_Put implements _Put {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Get value)? get,
-    TResult Function(_Post value)? post,
-    TResult Function(_Head value)? head,
-    TResult Function(_Put value)? put,
-    TResult Function(_Patch value)? patch,
-    TResult Function(_Delete value)? delete,
+    TResult? Function(_Get value)? get,
+    TResult? Function(_Post value)? post,
+    TResult? Function(_Head value)? head,
+    TResult? Function(_Put value)? put,
+    TResult? Function(_Patch value)? patch,
+    TResult? Function(_Delete value)? delete,
   }) {
     return put?.call(this);
   }
@@ -782,38 +754,42 @@ class _$_Put implements _Put {
 }
 
 abstract class _Put implements RestRequestType {
-  const factory _Put({String stringValue}) = _$_Put;
+  const factory _Put({final String stringValue}) = _$PutImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$PutCopyWith<_Put> get copyWith => throw _privateConstructorUsedError;
+  _$$PutImplCopyWith<_$PutImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$PatchCopyWith<$Res> implements $RestRequestTypeCopyWith<$Res> {
-  factory _$PatchCopyWith(_Patch value, $Res Function(_Patch) then) =
-      __$PatchCopyWithImpl<$Res>;
+abstract class _$$PatchImplCopyWith<$Res>
+    implements $RestRequestTypeCopyWith<$Res> {
+  factory _$$PatchImplCopyWith(
+          _$PatchImpl value, $Res Function(_$PatchImpl) then) =
+      __$$PatchImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$PatchCopyWithImpl<$Res> extends _$RestRequestTypeCopyWithImpl<$Res>
-    implements _$PatchCopyWith<$Res> {
-  __$PatchCopyWithImpl(_Patch _value, $Res Function(_Patch) _then)
-      : super(_value, (v) => _then(v as _Patch));
+class __$$PatchImplCopyWithImpl<$Res>
+    extends _$RestRequestTypeCopyWithImpl<$Res, _$PatchImpl>
+    implements _$$PatchImplCopyWith<$Res> {
+  __$$PatchImplCopyWithImpl(
+      _$PatchImpl _value, $Res Function(_$PatchImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Patch get _value => super._value as _Patch;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Patch(
-      stringValue: stringValue == freezed
+    return _then(_$PatchImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -823,11 +799,11 @@ class __$PatchCopyWithImpl<$Res> extends _$RestRequestTypeCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Patch implements _Patch {
-  const _$_Patch({this.stringValue = RestRequestType.patchStringValue});
+class _$PatchImpl implements _Patch {
+  const _$PatchImpl({this.stringValue = RestRequestType.patchStringValue});
 
-  @JsonKey(defaultValue: RestRequestType.patchStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -836,10 +812,10 @@ class _$_Patch implements _Patch {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Patch &&
+            other is _$PatchImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -849,8 +825,9 @@ class _$_Patch implements _Patch {
 
   @JsonKey(ignore: true)
   @override
-  _$PatchCopyWith<_Patch> get copyWith =>
-      __$PatchCopyWithImpl<_Patch>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PatchImplCopyWith<_$PatchImpl> get copyWith =>
+      __$$PatchImplCopyWithImpl<_$PatchImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -868,12 +845,12 @@ class _$_Patch implements _Patch {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? get,
-    TResult Function(String stringValue)? post,
-    TResult Function(String stringValue)? head,
-    TResult Function(String stringValue)? put,
-    TResult Function(String stringValue)? patch,
-    TResult Function(String stringValue)? delete,
+    TResult? Function(String stringValue)? get,
+    TResult? Function(String stringValue)? post,
+    TResult? Function(String stringValue)? head,
+    TResult? Function(String stringValue)? put,
+    TResult? Function(String stringValue)? patch,
+    TResult? Function(String stringValue)? delete,
   }) {
     return patch?.call(stringValue);
   }
@@ -911,12 +888,12 @@ class _$_Patch implements _Patch {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Get value)? get,
-    TResult Function(_Post value)? post,
-    TResult Function(_Head value)? head,
-    TResult Function(_Put value)? put,
-    TResult Function(_Patch value)? patch,
-    TResult Function(_Delete value)? delete,
+    TResult? Function(_Get value)? get,
+    TResult? Function(_Post value)? post,
+    TResult? Function(_Head value)? head,
+    TResult? Function(_Put value)? put,
+    TResult? Function(_Patch value)? patch,
+    TResult? Function(_Delete value)? delete,
   }) {
     return patch?.call(this);
   }
@@ -940,39 +917,42 @@ class _$_Patch implements _Patch {
 }
 
 abstract class _Patch implements RestRequestType {
-  const factory _Patch({String stringValue}) = _$_Patch;
+  const factory _Patch({final String stringValue}) = _$PatchImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$PatchCopyWith<_Patch> get copyWith => throw _privateConstructorUsedError;
+  _$$PatchImplCopyWith<_$PatchImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$DeleteCopyWith<$Res>
+abstract class _$$DeleteImplCopyWith<$Res>
     implements $RestRequestTypeCopyWith<$Res> {
-  factory _$DeleteCopyWith(_Delete value, $Res Function(_Delete) then) =
-      __$DeleteCopyWithImpl<$Res>;
+  factory _$$DeleteImplCopyWith(
+          _$DeleteImpl value, $Res Function(_$DeleteImpl) then) =
+      __$$DeleteImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$DeleteCopyWithImpl<$Res> extends _$RestRequestTypeCopyWithImpl<$Res>
-    implements _$DeleteCopyWith<$Res> {
-  __$DeleteCopyWithImpl(_Delete _value, $Res Function(_Delete) _then)
-      : super(_value, (v) => _then(v as _Delete));
+class __$$DeleteImplCopyWithImpl<$Res>
+    extends _$RestRequestTypeCopyWithImpl<$Res, _$DeleteImpl>
+    implements _$$DeleteImplCopyWith<$Res> {
+  __$$DeleteImplCopyWithImpl(
+      _$DeleteImpl _value, $Res Function(_$DeleteImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Delete get _value => super._value as _Delete;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Delete(
-      stringValue: stringValue == freezed
+    return _then(_$DeleteImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -982,11 +962,11 @@ class __$DeleteCopyWithImpl<$Res> extends _$RestRequestTypeCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Delete implements _Delete {
-  const _$_Delete({this.stringValue = RestRequestType.deleteStringValue});
+class _$DeleteImpl implements _Delete {
+  const _$DeleteImpl({this.stringValue = RestRequestType.deleteStringValue});
 
-  @JsonKey(defaultValue: RestRequestType.deleteStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -995,10 +975,10 @@ class _$_Delete implements _Delete {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Delete &&
+            other is _$DeleteImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -1008,8 +988,9 @@ class _$_Delete implements _Delete {
 
   @JsonKey(ignore: true)
   @override
-  _$DeleteCopyWith<_Delete> get copyWith =>
-      __$DeleteCopyWithImpl<_Delete>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DeleteImplCopyWith<_$DeleteImpl> get copyWith =>
+      __$$DeleteImplCopyWithImpl<_$DeleteImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1027,12 +1008,12 @@ class _$_Delete implements _Delete {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? get,
-    TResult Function(String stringValue)? post,
-    TResult Function(String stringValue)? head,
-    TResult Function(String stringValue)? put,
-    TResult Function(String stringValue)? patch,
-    TResult Function(String stringValue)? delete,
+    TResult? Function(String stringValue)? get,
+    TResult? Function(String stringValue)? post,
+    TResult? Function(String stringValue)? head,
+    TResult? Function(String stringValue)? put,
+    TResult? Function(String stringValue)? patch,
+    TResult? Function(String stringValue)? delete,
   }) {
     return delete?.call(stringValue);
   }
@@ -1070,12 +1051,12 @@ class _$_Delete implements _Delete {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Get value)? get,
-    TResult Function(_Post value)? post,
-    TResult Function(_Head value)? head,
-    TResult Function(_Put value)? put,
-    TResult Function(_Patch value)? patch,
-    TResult Function(_Delete value)? delete,
+    TResult? Function(_Get value)? get,
+    TResult? Function(_Post value)? post,
+    TResult? Function(_Head value)? head,
+    TResult? Function(_Put value)? put,
+    TResult? Function(_Patch value)? patch,
+    TResult? Function(_Delete value)? delete,
   }) {
     return delete?.call(this);
   }
@@ -1099,11 +1080,12 @@ class _$_Delete implements _Delete {
 }
 
 abstract class _Delete implements RestRequestType {
-  const factory _Delete({String stringValue}) = _$_Delete;
+  const factory _Delete({final String stringValue}) = _$DeleteImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$DeleteCopyWith<_Delete> get copyWith => throw _privateConstructorUsedError;
+  _$$DeleteImplCopyWith<_$DeleteImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }

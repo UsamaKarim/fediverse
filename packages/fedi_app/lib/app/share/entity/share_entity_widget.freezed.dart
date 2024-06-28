@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'share_entity_widget.dart';
 
@@ -11,24 +12,7 @@ part of 'share_entity_widget.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$ShareEntityCarouselItemTearOff {
-  const _$ShareEntityCarouselItemTearOff();
-
-  _ShareEntityCarouselItem call(
-      {required IUnifediApiMediaAttachment? unifediApiMediaAttachment,
-      required ShareEntityItemLocalMediaFile? localFile}) {
-    return _ShareEntityCarouselItem(
-      unifediApiMediaAttachment: unifediApiMediaAttachment,
-      localFile: localFile,
-    );
-  }
-}
-
-/// @nodoc
-const $ShareEntityCarouselItem = _$ShareEntityCarouselItemTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$ShareEntityCarouselItem {
@@ -46,7 +30,8 @@ mixin _$ShareEntityCarouselItem {
 abstract class $ShareEntityCarouselItemCopyWith<$Res> {
   factory $ShareEntityCarouselItemCopyWith(ShareEntityCarouselItem value,
           $Res Function(ShareEntityCarouselItem) then) =
-      _$ShareEntityCarouselItemCopyWithImpl<$Res>;
+      _$ShareEntityCarouselItemCopyWithImpl<$Res, ShareEntityCarouselItem>;
+  @useResult
   $Res call(
       {IUnifediApiMediaAttachment? unifediApiMediaAttachment,
       ShareEntityItemLocalMediaFile? localFile});
@@ -55,32 +40,36 @@ abstract class $ShareEntityCarouselItemCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ShareEntityCarouselItemCopyWithImpl<$Res>
+class _$ShareEntityCarouselItemCopyWithImpl<$Res,
+        $Val extends ShareEntityCarouselItem>
     implements $ShareEntityCarouselItemCopyWith<$Res> {
   _$ShareEntityCarouselItemCopyWithImpl(this._value, this._then);
 
-  final ShareEntityCarouselItem _value;
   // ignore: unused_field
-  final $Res Function(ShareEntityCarouselItem) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? unifediApiMediaAttachment = freezed,
     Object? localFile = freezed,
   }) {
     return _then(_value.copyWith(
-      unifediApiMediaAttachment: unifediApiMediaAttachment == freezed
+      unifediApiMediaAttachment: freezed == unifediApiMediaAttachment
           ? _value.unifediApiMediaAttachment
           : unifediApiMediaAttachment // ignore: cast_nullable_to_non_nullable
               as IUnifediApiMediaAttachment?,
-      localFile: localFile == freezed
+      localFile: freezed == localFile
           ? _value.localFile
           : localFile // ignore: cast_nullable_to_non_nullable
               as ShareEntityItemLocalMediaFile?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $ShareEntityItemLocalMediaFileCopyWith<$Res>? get localFile {
     if (_value.localFile == null) {
       return null;
@@ -88,18 +77,20 @@ class _$ShareEntityCarouselItemCopyWithImpl<$Res>
 
     return $ShareEntityItemLocalMediaFileCopyWith<$Res>(_value.localFile!,
         (value) {
-      return _then(_value.copyWith(localFile: value));
+      return _then(_value.copyWith(localFile: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$ShareEntityCarouselItemCopyWith<$Res>
+abstract class _$$ShareEntityCarouselItemImplCopyWith<$Res>
     implements $ShareEntityCarouselItemCopyWith<$Res> {
-  factory _$ShareEntityCarouselItemCopyWith(_ShareEntityCarouselItem value,
-          $Res Function(_ShareEntityCarouselItem) then) =
-      __$ShareEntityCarouselItemCopyWithImpl<$Res>;
+  factory _$$ShareEntityCarouselItemImplCopyWith(
+          _$ShareEntityCarouselItemImpl value,
+          $Res Function(_$ShareEntityCarouselItemImpl) then) =
+      __$$ShareEntityCarouselItemImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {IUnifediApiMediaAttachment? unifediApiMediaAttachment,
       ShareEntityItemLocalMediaFile? localFile});
@@ -109,28 +100,27 @@ abstract class _$ShareEntityCarouselItemCopyWith<$Res>
 }
 
 /// @nodoc
-class __$ShareEntityCarouselItemCopyWithImpl<$Res>
-    extends _$ShareEntityCarouselItemCopyWithImpl<$Res>
-    implements _$ShareEntityCarouselItemCopyWith<$Res> {
-  __$ShareEntityCarouselItemCopyWithImpl(_ShareEntityCarouselItem _value,
-      $Res Function(_ShareEntityCarouselItem) _then)
-      : super(_value, (v) => _then(v as _ShareEntityCarouselItem));
+class __$$ShareEntityCarouselItemImplCopyWithImpl<$Res>
+    extends _$ShareEntityCarouselItemCopyWithImpl<$Res,
+        _$ShareEntityCarouselItemImpl>
+    implements _$$ShareEntityCarouselItemImplCopyWith<$Res> {
+  __$$ShareEntityCarouselItemImplCopyWithImpl(
+      _$ShareEntityCarouselItemImpl _value,
+      $Res Function(_$ShareEntityCarouselItemImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _ShareEntityCarouselItem get _value =>
-      super._value as _ShareEntityCarouselItem;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? unifediApiMediaAttachment = freezed,
     Object? localFile = freezed,
   }) {
-    return _then(_ShareEntityCarouselItem(
-      unifediApiMediaAttachment: unifediApiMediaAttachment == freezed
+    return _then(_$ShareEntityCarouselItemImpl(
+      unifediApiMediaAttachment: freezed == unifediApiMediaAttachment
           ? _value.unifediApiMediaAttachment
           : unifediApiMediaAttachment // ignore: cast_nullable_to_non_nullable
               as IUnifediApiMediaAttachment?,
-      localFile: localFile == freezed
+      localFile: freezed == localFile
           ? _value.localFile
           : localFile // ignore: cast_nullable_to_non_nullable
               as ShareEntityItemLocalMediaFile?,
@@ -140,8 +130,8 @@ class __$ShareEntityCarouselItemCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ShareEntityCarouselItem implements _ShareEntityCarouselItem {
-  const _$_ShareEntityCarouselItem(
+class _$ShareEntityCarouselItemImpl implements _ShareEntityCarouselItem {
+  const _$ShareEntityCarouselItemImpl(
       {required this.unifediApiMediaAttachment, required this.localFile});
 
   @override
@@ -155,10 +145,10 @@ class _$_ShareEntityCarouselItem implements _ShareEntityCarouselItem {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ShareEntityCarouselItem &&
+            other is _$ShareEntityCarouselItemImpl &&
             (identical(other.unifediApiMediaAttachment,
                     unifediApiMediaAttachment) ||
                 other.unifediApiMediaAttachment == unifediApiMediaAttachment) &&
@@ -172,16 +162,17 @@ class _$_ShareEntityCarouselItem implements _ShareEntityCarouselItem {
 
   @JsonKey(ignore: true)
   @override
-  _$ShareEntityCarouselItemCopyWith<_ShareEntityCarouselItem> get copyWith =>
-      __$ShareEntityCarouselItemCopyWithImpl<_ShareEntityCarouselItem>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ShareEntityCarouselItemImplCopyWith<_$ShareEntityCarouselItemImpl>
+      get copyWith => __$$ShareEntityCarouselItemImplCopyWithImpl<
+          _$ShareEntityCarouselItemImpl>(this, _$identity);
 }
 
 abstract class _ShareEntityCarouselItem implements ShareEntityCarouselItem {
   const factory _ShareEntityCarouselItem(
-          {required IUnifediApiMediaAttachment? unifediApiMediaAttachment,
-          required ShareEntityItemLocalMediaFile? localFile}) =
-      _$_ShareEntityCarouselItem;
+          {required final IUnifediApiMediaAttachment? unifediApiMediaAttachment,
+          required final ShareEntityItemLocalMediaFile? localFile}) =
+      _$ShareEntityCarouselItemImpl;
 
   @override
   IUnifediApiMediaAttachment? get unifediApiMediaAttachment;
@@ -189,6 +180,6 @@ abstract class _ShareEntityCarouselItem implements ShareEntityCarouselItem {
   ShareEntityItemLocalMediaFile? get localFile;
   @override
   @JsonKey(ignore: true)
-  _$ShareEntityCarouselItemCopyWith<_ShareEntityCarouselItem> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$ShareEntityCarouselItemImplCopyWith<_$ShareEntityCarouselItemImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

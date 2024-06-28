@@ -92,17 +92,18 @@ class PleromaApiConversationAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiConversationPleromaPart
-    _$$_PleromaApiConversationPleromaPartFromJson(Map<String, dynamic> json) =>
-        _$_PleromaApiConversationPleromaPart(
+_$PleromaApiConversationPleromaPartImpl
+    _$$PleromaApiConversationPleromaPartImplFromJson(
+            Map<String, dynamic> json) =>
+        _$PleromaApiConversationPleromaPartImpl(
           recipients: (json['recipients'] as List<dynamic>?)
               ?.map(
                   (e) => PleromaApiAccount.fromJson(e as Map<String, dynamic>))
               .toList(),
         );
 
-Map<String, dynamic> _$$_PleromaApiConversationPleromaPartToJson(
-    _$_PleromaApiConversationPleromaPart instance) {
+Map<String, dynamic> _$$PleromaApiConversationPleromaPartImplToJson(
+    _$PleromaApiConversationPleromaPartImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {
@@ -116,9 +117,9 @@ Map<String, dynamic> _$$_PleromaApiConversationPleromaPartToJson(
   return val;
 }
 
-_$_PleromaApiConversation _$$_PleromaApiConversationFromJson(
+_$PleromaApiConversationImpl _$$PleromaApiConversationImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiConversation(
+    _$PleromaApiConversationImpl(
       unread: json['unread'] as bool?,
       lastStatus: json['last_status'] == null
           ? null
@@ -134,8 +135,8 @@ _$_PleromaApiConversation _$$_PleromaApiConversationFromJson(
               json['pleroma'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_PleromaApiConversationToJson(
-    _$_PleromaApiConversation instance) {
+Map<String, dynamic> _$$PleromaApiConversationImplToJson(
+    _$PleromaApiConversationImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

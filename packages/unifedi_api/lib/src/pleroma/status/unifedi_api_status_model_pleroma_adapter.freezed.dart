@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_status_model_pleroma_adapter.dart';
 
@@ -11,31 +12,12 @@ part of 'unifedi_api_status_model_pleroma_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiStatusPleromaAdapter _$UnifediApiStatusPleromaAdapterFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiStatusPleromaAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiStatusPleromaAdapterTearOff {
-  const _$UnifediApiStatusPleromaAdapterTearOff();
-
-  _UnifediApiStatusPleromaAdapter call(@HiveField(0) PleromaApiStatus value) {
-    return _UnifediApiStatusPleromaAdapter(
-      value,
-    );
-  }
-
-  UnifediApiStatusPleromaAdapter fromJson(Map<String, Object?> json) {
-    return UnifediApiStatusPleromaAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiStatusPleromaAdapter =
-    _$UnifediApiStatusPleromaAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiStatusPleromaAdapter {
@@ -53,49 +35,56 @@ abstract class $UnifediApiStatusPleromaAdapterCopyWith<$Res> {
   factory $UnifediApiStatusPleromaAdapterCopyWith(
           UnifediApiStatusPleromaAdapter value,
           $Res Function(UnifediApiStatusPleromaAdapter) then) =
-      _$UnifediApiStatusPleromaAdapterCopyWithImpl<$Res>;
+      _$UnifediApiStatusPleromaAdapterCopyWithImpl<$Res,
+          UnifediApiStatusPleromaAdapter>;
+  @useResult
   $Res call({@HiveField(0) PleromaApiStatus value});
 
   $PleromaApiStatusCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiStatusPleromaAdapterCopyWithImpl<$Res>
+class _$UnifediApiStatusPleromaAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiStatusPleromaAdapter>
     implements $UnifediApiStatusPleromaAdapterCopyWith<$Res> {
   _$UnifediApiStatusPleromaAdapterCopyWithImpl(this._value, this._then);
 
-  final UnifediApiStatusPleromaAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiStatusPleromaAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiStatus,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiStatusCopyWith<$Res> get value {
     return $PleromaApiStatusCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiStatusPleromaAdapterCopyWith<$Res>
+abstract class _$$UnifediApiStatusPleromaAdapterImplCopyWith<$Res>
     implements $UnifediApiStatusPleromaAdapterCopyWith<$Res> {
-  factory _$UnifediApiStatusPleromaAdapterCopyWith(
-          _UnifediApiStatusPleromaAdapter value,
-          $Res Function(_UnifediApiStatusPleromaAdapter) then) =
-      __$UnifediApiStatusPleromaAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiStatusPleromaAdapterImplCopyWith(
+          _$UnifediApiStatusPleromaAdapterImpl value,
+          $Res Function(_$UnifediApiStatusPleromaAdapterImpl) then) =
+      __$$UnifediApiStatusPleromaAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) PleromaApiStatus value});
 
   @override
@@ -103,24 +92,22 @@ abstract class _$UnifediApiStatusPleromaAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiStatusPleromaAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiStatusPleromaAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiStatusPleromaAdapterCopyWith<$Res> {
-  __$UnifediApiStatusPleromaAdapterCopyWithImpl(
-      _UnifediApiStatusPleromaAdapter _value,
-      $Res Function(_UnifediApiStatusPleromaAdapter) _then)
-      : super(_value, (v) => _then(v as _UnifediApiStatusPleromaAdapter));
+class __$$UnifediApiStatusPleromaAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiStatusPleromaAdapterCopyWithImpl<$Res,
+        _$UnifediApiStatusPleromaAdapterImpl>
+    implements _$$UnifediApiStatusPleromaAdapterImplCopyWith<$Res> {
+  __$$UnifediApiStatusPleromaAdapterImplCopyWithImpl(
+      _$UnifediApiStatusPleromaAdapterImpl _value,
+      $Res Function(_$UnifediApiStatusPleromaAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiStatusPleromaAdapter get _value =>
-      super._value as _UnifediApiStatusPleromaAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiStatusPleromaAdapter(
-      value == freezed
+    return _then(_$UnifediApiStatusPleromaAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiStatus,
@@ -130,13 +117,14 @@ class __$UnifediApiStatusPleromaAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiStatusPleromaAdapter
+class _$UnifediApiStatusPleromaAdapterImpl
     extends _UnifediApiStatusPleromaAdapter {
-  const _$_UnifediApiStatusPleromaAdapter(@HiveField(0) this.value) : super._();
+  const _$UnifediApiStatusPleromaAdapterImpl(@HiveField(0) this.value)
+      : super._();
 
-  factory _$_UnifediApiStatusPleromaAdapter.fromJson(
+  factory _$UnifediApiStatusPleromaAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiStatusPleromaAdapterFromJson(json);
+      _$$UnifediApiStatusPleromaAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -148,42 +136,49 @@ class _$_UnifediApiStatusPleromaAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiStatusPleromaAdapter &&
+            other is _$UnifediApiStatusPleromaAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiStatusPleromaAdapterCopyWith<_UnifediApiStatusPleromaAdapter>
-      get copyWith => __$UnifediApiStatusPleromaAdapterCopyWithImpl<
-          _UnifediApiStatusPleromaAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiStatusPleromaAdapterImplCopyWith<
+          _$UnifediApiStatusPleromaAdapterImpl>
+      get copyWith => __$$UnifediApiStatusPleromaAdapterImplCopyWithImpl<
+          _$UnifediApiStatusPleromaAdapterImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiStatusPleromaAdapterToJson(this);
+    return _$$UnifediApiStatusPleromaAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiStatusPleromaAdapter
     extends UnifediApiStatusPleromaAdapter {
   const factory _UnifediApiStatusPleromaAdapter(
-      @HiveField(0) PleromaApiStatus value) = _$_UnifediApiStatusPleromaAdapter;
+          @HiveField(0) final PleromaApiStatus value) =
+      _$UnifediApiStatusPleromaAdapterImpl;
   const _UnifediApiStatusPleromaAdapter._() : super._();
 
   factory _UnifediApiStatusPleromaAdapter.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiStatusPleromaAdapter.fromJson;
+      _$UnifediApiStatusPleromaAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   PleromaApiStatus get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiStatusPleromaAdapterCopyWith<_UnifediApiStatusPleromaAdapter>
+  _$$UnifediApiStatusPleromaAdapterImplCopyWith<
+          _$UnifediApiStatusPleromaAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_media_attachment_model_mastodon_adapter.dart';
 
@@ -11,33 +12,13 @@ part of 'unifedi_api_media_attachment_model_mastodon_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiMediaAttachmentMastodonAdapter
     _$UnifediApiMediaAttachmentMastodonAdapterFromJson(
         Map<String, dynamic> json) {
   return _UnifediApiMediaAttachmentMastodonAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiMediaAttachmentMastodonAdapterTearOff {
-  const _$UnifediApiMediaAttachmentMastodonAdapterTearOff();
-
-  _UnifediApiMediaAttachmentMastodonAdapter call(
-      @HiveField(0) MastodonApiMediaAttachment value) {
-    return _UnifediApiMediaAttachmentMastodonAdapter(
-      value,
-    );
-  }
-
-  UnifediApiMediaAttachmentMastodonAdapter fromJson(Map<String, Object?> json) {
-    return UnifediApiMediaAttachmentMastodonAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiMediaAttachmentMastodonAdapter =
-    _$UnifediApiMediaAttachmentMastodonAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiMediaAttachmentMastodonAdapter {
@@ -56,50 +37,57 @@ abstract class $UnifediApiMediaAttachmentMastodonAdapterCopyWith<$Res> {
   factory $UnifediApiMediaAttachmentMastodonAdapterCopyWith(
           UnifediApiMediaAttachmentMastodonAdapter value,
           $Res Function(UnifediApiMediaAttachmentMastodonAdapter) then) =
-      _$UnifediApiMediaAttachmentMastodonAdapterCopyWithImpl<$Res>;
+      _$UnifediApiMediaAttachmentMastodonAdapterCopyWithImpl<$Res,
+          UnifediApiMediaAttachmentMastodonAdapter>;
+  @useResult
   $Res call({@HiveField(0) MastodonApiMediaAttachment value});
 
   $MastodonApiMediaAttachmentCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiMediaAttachmentMastodonAdapterCopyWithImpl<$Res>
+class _$UnifediApiMediaAttachmentMastodonAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiMediaAttachmentMastodonAdapter>
     implements $UnifediApiMediaAttachmentMastodonAdapterCopyWith<$Res> {
   _$UnifediApiMediaAttachmentMastodonAdapterCopyWithImpl(
       this._value, this._then);
 
-  final UnifediApiMediaAttachmentMastodonAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiMediaAttachmentMastodonAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiMediaAttachment,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiMediaAttachmentCopyWith<$Res> get value {
     return $MastodonApiMediaAttachmentCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiMediaAttachmentMastodonAdapterCopyWith<$Res>
+abstract class _$$UnifediApiMediaAttachmentMastodonAdapterImplCopyWith<$Res>
     implements $UnifediApiMediaAttachmentMastodonAdapterCopyWith<$Res> {
-  factory _$UnifediApiMediaAttachmentMastodonAdapterCopyWith(
-          _UnifediApiMediaAttachmentMastodonAdapter value,
-          $Res Function(_UnifediApiMediaAttachmentMastodonAdapter) then) =
-      __$UnifediApiMediaAttachmentMastodonAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiMediaAttachmentMastodonAdapterImplCopyWith(
+          _$UnifediApiMediaAttachmentMastodonAdapterImpl value,
+          $Res Function(_$UnifediApiMediaAttachmentMastodonAdapterImpl) then) =
+      __$$UnifediApiMediaAttachmentMastodonAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) MastodonApiMediaAttachment value});
 
   @override
@@ -107,25 +95,22 @@ abstract class _$UnifediApiMediaAttachmentMastodonAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiMediaAttachmentMastodonAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiMediaAttachmentMastodonAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiMediaAttachmentMastodonAdapterCopyWith<$Res> {
-  __$UnifediApiMediaAttachmentMastodonAdapterCopyWithImpl(
-      _UnifediApiMediaAttachmentMastodonAdapter _value,
-      $Res Function(_UnifediApiMediaAttachmentMastodonAdapter) _then)
-      : super(_value,
-            (v) => _then(v as _UnifediApiMediaAttachmentMastodonAdapter));
+class __$$UnifediApiMediaAttachmentMastodonAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiMediaAttachmentMastodonAdapterCopyWithImpl<$Res,
+        _$UnifediApiMediaAttachmentMastodonAdapterImpl>
+    implements _$$UnifediApiMediaAttachmentMastodonAdapterImplCopyWith<$Res> {
+  __$$UnifediApiMediaAttachmentMastodonAdapterImplCopyWithImpl(
+      _$UnifediApiMediaAttachmentMastodonAdapterImpl _value,
+      $Res Function(_$UnifediApiMediaAttachmentMastodonAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiMediaAttachmentMastodonAdapter get _value =>
-      super._value as _UnifediApiMediaAttachmentMastodonAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiMediaAttachmentMastodonAdapter(
-      value == freezed
+    return _then(_$UnifediApiMediaAttachmentMastodonAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiMediaAttachment,
@@ -135,14 +120,14 @@ class __$UnifediApiMediaAttachmentMastodonAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiMediaAttachmentMastodonAdapter
+class _$UnifediApiMediaAttachmentMastodonAdapterImpl
     extends _UnifediApiMediaAttachmentMastodonAdapter {
-  const _$_UnifediApiMediaAttachmentMastodonAdapter(@HiveField(0) this.value)
+  const _$UnifediApiMediaAttachmentMastodonAdapterImpl(@HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiMediaAttachmentMastodonAdapter.fromJson(
+  factory _$UnifediApiMediaAttachmentMastodonAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiMediaAttachmentMastodonAdapterFromJson(json);
+      _$$UnifediApiMediaAttachmentMastodonAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -154,46 +139,51 @@ class _$_UnifediApiMediaAttachmentMastodonAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiMediaAttachmentMastodonAdapter &&
+            other is _$UnifediApiMediaAttachmentMastodonAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiMediaAttachmentMastodonAdapterCopyWith<
-          _UnifediApiMediaAttachmentMastodonAdapter>
-      get copyWith => __$UnifediApiMediaAttachmentMastodonAdapterCopyWithImpl<
-          _UnifediApiMediaAttachmentMastodonAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiMediaAttachmentMastodonAdapterImplCopyWith<
+          _$UnifediApiMediaAttachmentMastodonAdapterImpl>
+      get copyWith =>
+          __$$UnifediApiMediaAttachmentMastodonAdapterImplCopyWithImpl<
+              _$UnifediApiMediaAttachmentMastodonAdapterImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiMediaAttachmentMastodonAdapterToJson(this);
+    return _$$UnifediApiMediaAttachmentMastodonAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiMediaAttachmentMastodonAdapter
     extends UnifediApiMediaAttachmentMastodonAdapter {
   const factory _UnifediApiMediaAttachmentMastodonAdapter(
-          @HiveField(0) MastodonApiMediaAttachment value) =
-      _$_UnifediApiMediaAttachmentMastodonAdapter;
+          @HiveField(0) final MastodonApiMediaAttachment value) =
+      _$UnifediApiMediaAttachmentMastodonAdapterImpl;
   const _UnifediApiMediaAttachmentMastodonAdapter._() : super._();
 
   factory _UnifediApiMediaAttachmentMastodonAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiMediaAttachmentMastodonAdapter.fromJson;
+      _$UnifediApiMediaAttachmentMastodonAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   MastodonApiMediaAttachment get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiMediaAttachmentMastodonAdapterCopyWith<
-          _UnifediApiMediaAttachmentMastodonAdapter>
+  _$$UnifediApiMediaAttachmentMastodonAdapterImplCopyWith<
+          _$UnifediApiMediaAttachmentMastodonAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

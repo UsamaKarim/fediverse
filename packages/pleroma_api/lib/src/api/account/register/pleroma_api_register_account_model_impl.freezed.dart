@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_register_account_model_impl.dart';
 
@@ -11,70 +12,12 @@ part of 'pleroma_api_register_account_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiRegisterAccount _$PleromaApiRegisterAccountFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiRegisterAccount.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiRegisterAccountTearOff {
-  const _$PleromaApiRegisterAccountTearOff();
-
-  _PleromaApiRegisterAccount call(
-      {@HiveField(1)
-          required String username,
-      @HiveField(2)
-          required String email,
-      @HiveField(3)
-          required String password,
-      @HiveField(4)
-          required bool agreement,
-      @HiveField(5)
-          required String locale,
-      @HiveField(6)
-          required String? reason,
-      @JsonKey(name: 'captcha_token')
-      @HiveField(7)
-          required String? captchaToken,
-      @JsonKey(name: 'captcha_answer_data')
-      @HiveField(8)
-          required String? captchaAnswerData,
-      @JsonKey(name: 'captcha_solution')
-      @HiveField(9)
-          required String? captchaSolution,
-      @JsonKey(name: 'fullname')
-      @HiveField(10)
-          required String? fullName,
-      @HiveField(11)
-          required String? bio,
-      @JsonKey(name: 'token')
-      @HiveField(12)
-          required String? inviteToken}) {
-    return _PleromaApiRegisterAccount(
-      username: username,
-      email: email,
-      password: password,
-      agreement: agreement,
-      locale: locale,
-      reason: reason,
-      captchaToken: captchaToken,
-      captchaAnswerData: captchaAnswerData,
-      captchaSolution: captchaSolution,
-      fullName: fullName,
-      bio: bio,
-      inviteToken: inviteToken,
-    );
-  }
-
-  PleromaApiRegisterAccount fromJson(Map<String, Object?> json) {
-    return PleromaApiRegisterAccount.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiRegisterAccount = _$PleromaApiRegisterAccountTearOff();
 
 /// @nodoc
 mixin _$PleromaApiRegisterAccount {
@@ -118,55 +61,44 @@ mixin _$PleromaApiRegisterAccount {
 abstract class $PleromaApiRegisterAccountCopyWith<$Res> {
   factory $PleromaApiRegisterAccountCopyWith(PleromaApiRegisterAccount value,
           $Res Function(PleromaApiRegisterAccount) then) =
-      _$PleromaApiRegisterAccountCopyWithImpl<$Res>;
+      _$PleromaApiRegisterAccountCopyWithImpl<$Res, PleromaApiRegisterAccount>;
+  @useResult
   $Res call(
-      {@HiveField(1)
-          String username,
-      @HiveField(2)
-          String email,
-      @HiveField(3)
-          String password,
-      @HiveField(4)
-          bool agreement,
-      @HiveField(5)
-          String locale,
-      @HiveField(6)
-          String? reason,
-      @JsonKey(name: 'captcha_token')
-      @HiveField(7)
-          String? captchaToken,
+      {@HiveField(1) String username,
+      @HiveField(2) String email,
+      @HiveField(3) String password,
+      @HiveField(4) bool agreement,
+      @HiveField(5) String locale,
+      @HiveField(6) String? reason,
+      @JsonKey(name: 'captcha_token') @HiveField(7) String? captchaToken,
       @JsonKey(name: 'captcha_answer_data')
       @HiveField(8)
-          String? captchaAnswerData,
-      @JsonKey(name: 'captcha_solution')
-      @HiveField(9)
-          String? captchaSolution,
-      @JsonKey(name: 'fullname')
-      @HiveField(10)
-          String? fullName,
-      @HiveField(11)
-          String? bio,
-      @JsonKey(name: 'token')
-      @HiveField(12)
-          String? inviteToken});
+      String? captchaAnswerData,
+      @JsonKey(name: 'captcha_solution') @HiveField(9) String? captchaSolution,
+      @JsonKey(name: 'fullname') @HiveField(10) String? fullName,
+      @HiveField(11) String? bio,
+      @JsonKey(name: 'token') @HiveField(12) String? inviteToken});
 }
 
 /// @nodoc
-class _$PleromaApiRegisterAccountCopyWithImpl<$Res>
+class _$PleromaApiRegisterAccountCopyWithImpl<$Res,
+        $Val extends PleromaApiRegisterAccount>
     implements $PleromaApiRegisterAccountCopyWith<$Res> {
   _$PleromaApiRegisterAccountCopyWithImpl(this._value, this._then);
 
-  final PleromaApiRegisterAccount _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiRegisterAccount) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? username = freezed,
-    Object? email = freezed,
-    Object? password = freezed,
-    Object? agreement = freezed,
-    Object? locale = freezed,
+    Object? username = null,
+    Object? email = null,
+    Object? password = null,
+    Object? agreement = null,
+    Object? locale = null,
     Object? reason = freezed,
     Object? captchaToken = freezed,
     Object? captchaAnswerData = freezed,
@@ -176,116 +108,102 @@ class _$PleromaApiRegisterAccountCopyWithImpl<$Res>
     Object? inviteToken = freezed,
   }) {
     return _then(_value.copyWith(
-      username: username == freezed
+      username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
               as String,
-      email: email == freezed
+      email: null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String,
-      password: password == freezed
+      password: null == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as String,
-      agreement: agreement == freezed
+      agreement: null == agreement
           ? _value.agreement
           : agreement // ignore: cast_nullable_to_non_nullable
               as bool,
-      locale: locale == freezed
+      locale: null == locale
           ? _value.locale
           : locale // ignore: cast_nullable_to_non_nullable
               as String,
-      reason: reason == freezed
+      reason: freezed == reason
           ? _value.reason
           : reason // ignore: cast_nullable_to_non_nullable
               as String?,
-      captchaToken: captchaToken == freezed
+      captchaToken: freezed == captchaToken
           ? _value.captchaToken
           : captchaToken // ignore: cast_nullable_to_non_nullable
               as String?,
-      captchaAnswerData: captchaAnswerData == freezed
+      captchaAnswerData: freezed == captchaAnswerData
           ? _value.captchaAnswerData
           : captchaAnswerData // ignore: cast_nullable_to_non_nullable
               as String?,
-      captchaSolution: captchaSolution == freezed
+      captchaSolution: freezed == captchaSolution
           ? _value.captchaSolution
           : captchaSolution // ignore: cast_nullable_to_non_nullable
               as String?,
-      fullName: fullName == freezed
+      fullName: freezed == fullName
           ? _value.fullName
           : fullName // ignore: cast_nullable_to_non_nullable
               as String?,
-      bio: bio == freezed
+      bio: freezed == bio
           ? _value.bio
           : bio // ignore: cast_nullable_to_non_nullable
               as String?,
-      inviteToken: inviteToken == freezed
+      inviteToken: freezed == inviteToken
           ? _value.inviteToken
           : inviteToken // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiRegisterAccountCopyWith<$Res>
+abstract class _$$PleromaApiRegisterAccountImplCopyWith<$Res>
     implements $PleromaApiRegisterAccountCopyWith<$Res> {
-  factory _$PleromaApiRegisterAccountCopyWith(_PleromaApiRegisterAccount value,
-          $Res Function(_PleromaApiRegisterAccount) then) =
-      __$PleromaApiRegisterAccountCopyWithImpl<$Res>;
+  factory _$$PleromaApiRegisterAccountImplCopyWith(
+          _$PleromaApiRegisterAccountImpl value,
+          $Res Function(_$PleromaApiRegisterAccountImpl) then) =
+      __$$PleromaApiRegisterAccountImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(1)
-          String username,
-      @HiveField(2)
-          String email,
-      @HiveField(3)
-          String password,
-      @HiveField(4)
-          bool agreement,
-      @HiveField(5)
-          String locale,
-      @HiveField(6)
-          String? reason,
-      @JsonKey(name: 'captcha_token')
-      @HiveField(7)
-          String? captchaToken,
+      {@HiveField(1) String username,
+      @HiveField(2) String email,
+      @HiveField(3) String password,
+      @HiveField(4) bool agreement,
+      @HiveField(5) String locale,
+      @HiveField(6) String? reason,
+      @JsonKey(name: 'captcha_token') @HiveField(7) String? captchaToken,
       @JsonKey(name: 'captcha_answer_data')
       @HiveField(8)
-          String? captchaAnswerData,
-      @JsonKey(name: 'captcha_solution')
-      @HiveField(9)
-          String? captchaSolution,
-      @JsonKey(name: 'fullname')
-      @HiveField(10)
-          String? fullName,
-      @HiveField(11)
-          String? bio,
-      @JsonKey(name: 'token')
-      @HiveField(12)
-          String? inviteToken});
+      String? captchaAnswerData,
+      @JsonKey(name: 'captcha_solution') @HiveField(9) String? captchaSolution,
+      @JsonKey(name: 'fullname') @HiveField(10) String? fullName,
+      @HiveField(11) String? bio,
+      @JsonKey(name: 'token') @HiveField(12) String? inviteToken});
 }
 
 /// @nodoc
-class __$PleromaApiRegisterAccountCopyWithImpl<$Res>
-    extends _$PleromaApiRegisterAccountCopyWithImpl<$Res>
-    implements _$PleromaApiRegisterAccountCopyWith<$Res> {
-  __$PleromaApiRegisterAccountCopyWithImpl(_PleromaApiRegisterAccount _value,
-      $Res Function(_PleromaApiRegisterAccount) _then)
-      : super(_value, (v) => _then(v as _PleromaApiRegisterAccount));
+class __$$PleromaApiRegisterAccountImplCopyWithImpl<$Res>
+    extends _$PleromaApiRegisterAccountCopyWithImpl<$Res,
+        _$PleromaApiRegisterAccountImpl>
+    implements _$$PleromaApiRegisterAccountImplCopyWith<$Res> {
+  __$$PleromaApiRegisterAccountImplCopyWithImpl(
+      _$PleromaApiRegisterAccountImpl _value,
+      $Res Function(_$PleromaApiRegisterAccountImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiRegisterAccount get _value =>
-      super._value as _PleromaApiRegisterAccount;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? username = freezed,
-    Object? email = freezed,
-    Object? password = freezed,
-    Object? agreement = freezed,
-    Object? locale = freezed,
+    Object? username = null,
+    Object? email = null,
+    Object? password = null,
+    Object? agreement = null,
+    Object? locale = null,
     Object? reason = freezed,
     Object? captchaToken = freezed,
     Object? captchaAnswerData = freezed,
@@ -294,52 +212,52 @@ class __$PleromaApiRegisterAccountCopyWithImpl<$Res>
     Object? bio = freezed,
     Object? inviteToken = freezed,
   }) {
-    return _then(_PleromaApiRegisterAccount(
-      username: username == freezed
+    return _then(_$PleromaApiRegisterAccountImpl(
+      username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
               as String,
-      email: email == freezed
+      email: null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String,
-      password: password == freezed
+      password: null == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as String,
-      agreement: agreement == freezed
+      agreement: null == agreement
           ? _value.agreement
           : agreement // ignore: cast_nullable_to_non_nullable
               as bool,
-      locale: locale == freezed
+      locale: null == locale
           ? _value.locale
           : locale // ignore: cast_nullable_to_non_nullable
               as String,
-      reason: reason == freezed
+      reason: freezed == reason
           ? _value.reason
           : reason // ignore: cast_nullable_to_non_nullable
               as String?,
-      captchaToken: captchaToken == freezed
+      captchaToken: freezed == captchaToken
           ? _value.captchaToken
           : captchaToken // ignore: cast_nullable_to_non_nullable
               as String?,
-      captchaAnswerData: captchaAnswerData == freezed
+      captchaAnswerData: freezed == captchaAnswerData
           ? _value.captchaAnswerData
           : captchaAnswerData // ignore: cast_nullable_to_non_nullable
               as String?,
-      captchaSolution: captchaSolution == freezed
+      captchaSolution: freezed == captchaSolution
           ? _value.captchaSolution
           : captchaSolution // ignore: cast_nullable_to_non_nullable
               as String?,
-      fullName: fullName == freezed
+      fullName: freezed == fullName
           ? _value.fullName
           : fullName // ignore: cast_nullable_to_non_nullable
               as String?,
-      bio: bio == freezed
+      bio: freezed == bio
           ? _value.bio
           : bio // ignore: cast_nullable_to_non_nullable
               as String?,
-      inviteToken: inviteToken == freezed
+      inviteToken: freezed == inviteToken
           ? _value.inviteToken
           : inviteToken // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -349,40 +267,27 @@ class __$PleromaApiRegisterAccountCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiRegisterAccount implements _PleromaApiRegisterAccount {
-  const _$_PleromaApiRegisterAccount(
-      {@HiveField(1)
-          required this.username,
-      @HiveField(2)
-          required this.email,
-      @HiveField(3)
-          required this.password,
-      @HiveField(4)
-          required this.agreement,
-      @HiveField(5)
-          required this.locale,
-      @HiveField(6)
-          required this.reason,
-      @JsonKey(name: 'captcha_token')
-      @HiveField(7)
-          required this.captchaToken,
+class _$PleromaApiRegisterAccountImpl implements _PleromaApiRegisterAccount {
+  const _$PleromaApiRegisterAccountImpl(
+      {@HiveField(1) required this.username,
+      @HiveField(2) required this.email,
+      @HiveField(3) required this.password,
+      @HiveField(4) required this.agreement,
+      @HiveField(5) required this.locale,
+      @HiveField(6) required this.reason,
+      @JsonKey(name: 'captcha_token') @HiveField(7) required this.captchaToken,
       @JsonKey(name: 'captcha_answer_data')
       @HiveField(8)
-          required this.captchaAnswerData,
+      required this.captchaAnswerData,
       @JsonKey(name: 'captcha_solution')
       @HiveField(9)
-          required this.captchaSolution,
-      @JsonKey(name: 'fullname')
-      @HiveField(10)
-          required this.fullName,
-      @HiveField(11)
-          required this.bio,
-      @JsonKey(name: 'token')
-      @HiveField(12)
-          required this.inviteToken});
+      required this.captchaSolution,
+      @JsonKey(name: 'fullname') @HiveField(10) required this.fullName,
+      @HiveField(11) required this.bio,
+      @JsonKey(name: 'token') @HiveField(12) required this.inviteToken});
 
-  factory _$_PleromaApiRegisterAccount.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiRegisterAccountFromJson(json);
+  factory _$PleromaApiRegisterAccountImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiRegisterAccountImplFromJson(json);
 
   @override
   @HiveField(1)
@@ -432,10 +337,10 @@ class _$_PleromaApiRegisterAccount implements _PleromaApiRegisterAccount {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiRegisterAccount &&
+            other is _$PleromaApiRegisterAccountImpl &&
             (identical(other.username, username) ||
                 other.username == username) &&
             (identical(other.email, email) || other.email == email) &&
@@ -458,6 +363,7 @@ class _$_PleromaApiRegisterAccount implements _PleromaApiRegisterAccount {
                 other.inviteToken == inviteToken));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -476,51 +382,44 @@ class _$_PleromaApiRegisterAccount implements _PleromaApiRegisterAccount {
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiRegisterAccountCopyWith<_PleromaApiRegisterAccount>
-      get copyWith =>
-          __$PleromaApiRegisterAccountCopyWithImpl<_PleromaApiRegisterAccount>(
-              this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiRegisterAccountImplCopyWith<_$PleromaApiRegisterAccountImpl>
+      get copyWith => __$$PleromaApiRegisterAccountImplCopyWithImpl<
+          _$PleromaApiRegisterAccountImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiRegisterAccountToJson(this);
+    return _$$PleromaApiRegisterAccountImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiRegisterAccount implements PleromaApiRegisterAccount {
   const factory _PleromaApiRegisterAccount(
-      {@HiveField(1)
-          required String username,
-      @HiveField(2)
-          required String email,
-      @HiveField(3)
-          required String password,
-      @HiveField(4)
-          required bool agreement,
-      @HiveField(5)
-          required String locale,
-      @HiveField(6)
-          required String? reason,
+      {@HiveField(1) required final String username,
+      @HiveField(2) required final String email,
+      @HiveField(3) required final String password,
+      @HiveField(4) required final bool agreement,
+      @HiveField(5) required final String locale,
+      @HiveField(6) required final String? reason,
       @JsonKey(name: 'captcha_token')
       @HiveField(7)
-          required String? captchaToken,
+      required final String? captchaToken,
       @JsonKey(name: 'captcha_answer_data')
       @HiveField(8)
-          required String? captchaAnswerData,
+      required final String? captchaAnswerData,
       @JsonKey(name: 'captcha_solution')
       @HiveField(9)
-          required String? captchaSolution,
-      @JsonKey(name: 'fullname')
-      @HiveField(10)
-          required String? fullName,
-      @HiveField(11)
-          required String? bio,
+      required final String? captchaSolution,
+      @JsonKey(name: 'fullname') @HiveField(10) required final String? fullName,
+      @HiveField(11) required final String? bio,
       @JsonKey(name: 'token')
       @HiveField(12)
-          required String? inviteToken}) = _$_PleromaApiRegisterAccount;
+      required final String? inviteToken}) = _$PleromaApiRegisterAccountImpl;
 
   factory _PleromaApiRegisterAccount.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiRegisterAccount.fromJson;
+      _$PleromaApiRegisterAccountImpl.fromJson;
 
   @override
   @HiveField(1)
@@ -565,6 +464,6 @@ abstract class _PleromaApiRegisterAccount implements PleromaApiRegisterAccount {
   String? get inviteToken;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiRegisterAccountCopyWith<_PleromaApiRegisterAccount>
+  _$$PleromaApiRegisterAccountImplCopyWith<_$PleromaApiRegisterAccountImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

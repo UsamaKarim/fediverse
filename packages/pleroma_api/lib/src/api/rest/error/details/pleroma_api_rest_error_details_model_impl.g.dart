@@ -6,16 +6,16 @@ part of 'pleroma_api_rest_error_details_model_impl.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiRestErrorDetails _$$_PleromaApiRestErrorDetailsFromJson(
+_$PleromaApiRestErrorDetailsImpl _$$PleromaApiRestErrorDetailsImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiRestErrorDetails(
+    _$PleromaApiRestErrorDetailsImpl(
       error: json['error'] as String?,
       identifier: json['identifier'] as String?,
       message: json['message'] as String?,
     );
 
-Map<String, dynamic> _$$_PleromaApiRestErrorDetailsToJson(
-    _$_PleromaApiRestErrorDetails instance) {
+Map<String, dynamic> _$$PleromaApiRestErrorDetailsImplToJson(
+    _$PleromaApiRestErrorDetailsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

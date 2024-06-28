@@ -48,9 +48,9 @@ class PleromaApiAccessScopesAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiAccessScopes _$$_PleromaApiAccessScopesFromJson(
+_$PleromaApiAccessScopesImpl _$$PleromaApiAccessScopesImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiAccessScopes(
+    _$PleromaApiAccessScopesImpl(
       globalPermissions: (json['global_permissions'] as List<dynamic>)
           .map((e) => e as String)
           .toList(),
@@ -60,8 +60,8 @@ _$_PleromaApiAccessScopes _$$_PleromaApiAccessScopesFromJson(
           .toList(),
     );
 
-Map<String, dynamic> _$$_PleromaApiAccessScopesToJson(
-        _$_PleromaApiAccessScopes instance) =>
+Map<String, dynamic> _$$PleromaApiAccessScopesImplToJson(
+        _$PleromaApiAccessScopesImpl instance) =>
     <String, dynamic>{
       'global_permissions': instance.globalPermissions,
       'target_permissions':

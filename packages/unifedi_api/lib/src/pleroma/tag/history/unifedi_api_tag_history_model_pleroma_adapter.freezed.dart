@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_tag_history_model_pleroma_adapter.dart';
 
@@ -11,32 +12,12 @@ part of 'unifedi_api_tag_history_model_pleroma_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiTagHistoryPleromaAdapter _$UnifediApiTagHistoryPleromaAdapterFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiTagHistoryPleromaAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiTagHistoryPleromaAdapterTearOff {
-  const _$UnifediApiTagHistoryPleromaAdapterTearOff();
-
-  _UnifediApiTagHistoryPleromaAdapter call(
-      @HiveField(0) List<PleromaApiTagHistoryItem> value) {
-    return _UnifediApiTagHistoryPleromaAdapter(
-      value,
-    );
-  }
-
-  UnifediApiTagHistoryPleromaAdapter fromJson(Map<String, Object?> json) {
-    return UnifediApiTagHistoryPleromaAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiTagHistoryPleromaAdapter =
-    _$UnifediApiTagHistoryPleromaAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiTagHistoryPleromaAdapter {
@@ -56,63 +37,67 @@ abstract class $UnifediApiTagHistoryPleromaAdapterCopyWith<$Res> {
   factory $UnifediApiTagHistoryPleromaAdapterCopyWith(
           UnifediApiTagHistoryPleromaAdapter value,
           $Res Function(UnifediApiTagHistoryPleromaAdapter) then) =
-      _$UnifediApiTagHistoryPleromaAdapterCopyWithImpl<$Res>;
+      _$UnifediApiTagHistoryPleromaAdapterCopyWithImpl<$Res,
+          UnifediApiTagHistoryPleromaAdapter>;
+  @useResult
   $Res call({@HiveField(0) List<PleromaApiTagHistoryItem> value});
 }
 
 /// @nodoc
-class _$UnifediApiTagHistoryPleromaAdapterCopyWithImpl<$Res>
+class _$UnifediApiTagHistoryPleromaAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiTagHistoryPleromaAdapter>
     implements $UnifediApiTagHistoryPleromaAdapterCopyWith<$Res> {
   _$UnifediApiTagHistoryPleromaAdapterCopyWithImpl(this._value, this._then);
 
-  final UnifediApiTagHistoryPleromaAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiTagHistoryPleromaAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiTagHistoryItem>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiTagHistoryPleromaAdapterCopyWith<$Res>
+abstract class _$$UnifediApiTagHistoryPleromaAdapterImplCopyWith<$Res>
     implements $UnifediApiTagHistoryPleromaAdapterCopyWith<$Res> {
-  factory _$UnifediApiTagHistoryPleromaAdapterCopyWith(
-          _UnifediApiTagHistoryPleromaAdapter value,
-          $Res Function(_UnifediApiTagHistoryPleromaAdapter) then) =
-      __$UnifediApiTagHistoryPleromaAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiTagHistoryPleromaAdapterImplCopyWith(
+          _$UnifediApiTagHistoryPleromaAdapterImpl value,
+          $Res Function(_$UnifediApiTagHistoryPleromaAdapterImpl) then) =
+      __$$UnifediApiTagHistoryPleromaAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) List<PleromaApiTagHistoryItem> value});
 }
 
 /// @nodoc
-class __$UnifediApiTagHistoryPleromaAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiTagHistoryPleromaAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiTagHistoryPleromaAdapterCopyWith<$Res> {
-  __$UnifediApiTagHistoryPleromaAdapterCopyWithImpl(
-      _UnifediApiTagHistoryPleromaAdapter _value,
-      $Res Function(_UnifediApiTagHistoryPleromaAdapter) _then)
-      : super(_value, (v) => _then(v as _UnifediApiTagHistoryPleromaAdapter));
+class __$$UnifediApiTagHistoryPleromaAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiTagHistoryPleromaAdapterCopyWithImpl<$Res,
+        _$UnifediApiTagHistoryPleromaAdapterImpl>
+    implements _$$UnifediApiTagHistoryPleromaAdapterImplCopyWith<$Res> {
+  __$$UnifediApiTagHistoryPleromaAdapterImplCopyWithImpl(
+      _$UnifediApiTagHistoryPleromaAdapterImpl _value,
+      $Res Function(_$UnifediApiTagHistoryPleromaAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiTagHistoryPleromaAdapter get _value =>
-      super._value as _UnifediApiTagHistoryPleromaAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiTagHistoryPleromaAdapter(
-      value == freezed
-          ? _value.value
+    return _then(_$UnifediApiTagHistoryPleromaAdapterImpl(
+      null == value
+          ? _value._value
           : value // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiTagHistoryItem>,
     ));
@@ -121,18 +106,25 @@ class __$UnifediApiTagHistoryPleromaAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiTagHistoryPleromaAdapter
+class _$UnifediApiTagHistoryPleromaAdapterImpl
     extends _UnifediApiTagHistoryPleromaAdapter {
-  const _$_UnifediApiTagHistoryPleromaAdapter(@HiveField(0) this.value)
-      : super._();
+  const _$UnifediApiTagHistoryPleromaAdapterImpl(
+      @HiveField(0) final List<PleromaApiTagHistoryItem> value)
+      : _value = value,
+        super._();
 
-  factory _$_UnifediApiTagHistoryPleromaAdapter.fromJson(
+  factory _$UnifediApiTagHistoryPleromaAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiTagHistoryPleromaAdapterFromJson(json);
+      _$$UnifediApiTagHistoryPleromaAdapterImplFromJson(json);
 
+  final List<PleromaApiTagHistoryItem> _value;
   @override
   @HiveField(0)
-  final List<PleromaApiTagHistoryItem> value;
+  List<PleromaApiTagHistoryItem> get value {
+    if (_value is EqualUnmodifiableListView) return _value;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_value);
+  }
 
   @override
   String toString() {
@@ -140,48 +132,52 @@ class _$_UnifediApiTagHistoryPleromaAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiTagHistoryPleromaAdapter &&
-            const DeepCollectionEquality().equals(other.value, value));
+            other is _$UnifediApiTagHistoryPleromaAdapterImpl &&
+            const DeepCollectionEquality().equals(other._value, _value));
   }
-
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(value));
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiTagHistoryPleromaAdapterCopyWith<
-          _UnifediApiTagHistoryPleromaAdapter>
-      get copyWith => __$UnifediApiTagHistoryPleromaAdapterCopyWithImpl<
-          _UnifediApiTagHistoryPleromaAdapter>(this, _$identity);
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_value));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiTagHistoryPleromaAdapterImplCopyWith<
+          _$UnifediApiTagHistoryPleromaAdapterImpl>
+      get copyWith => __$$UnifediApiTagHistoryPleromaAdapterImplCopyWithImpl<
+          _$UnifediApiTagHistoryPleromaAdapterImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiTagHistoryPleromaAdapterToJson(this);
+    return _$$UnifediApiTagHistoryPleromaAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiTagHistoryPleromaAdapter
     extends UnifediApiTagHistoryPleromaAdapter {
   const factory _UnifediApiTagHistoryPleromaAdapter(
-          @HiveField(0) List<PleromaApiTagHistoryItem> value) =
-      _$_UnifediApiTagHistoryPleromaAdapter;
+          @HiveField(0) final List<PleromaApiTagHistoryItem> value) =
+      _$UnifediApiTagHistoryPleromaAdapterImpl;
   const _UnifediApiTagHistoryPleromaAdapter._() : super._();
 
   factory _UnifediApiTagHistoryPleromaAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiTagHistoryPleromaAdapter.fromJson;
+      _$UnifediApiTagHistoryPleromaAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   List<PleromaApiTagHistoryItem> get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiTagHistoryPleromaAdapterCopyWith<
-          _UnifediApiTagHistoryPleromaAdapter>
+  _$$UnifediApiTagHistoryPleromaAdapterImplCopyWith<
+          _$UnifediApiTagHistoryPleromaAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -190,26 +186,6 @@ UnifediApiTagHistoryItemPleromaAdapter
         Map<String, dynamic> json) {
   return _UnifediApiTagHistoryItemPleromaAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiTagHistoryItemPleromaAdapterTearOff {
-  const _$UnifediApiTagHistoryItemPleromaAdapterTearOff();
-
-  _UnifediApiTagHistoryItemPleromaAdapter call(
-      @HiveField(0) PleromaApiTagHistoryItem value) {
-    return _UnifediApiTagHistoryItemPleromaAdapter(
-      value,
-    );
-  }
-
-  UnifediApiTagHistoryItemPleromaAdapter fromJson(Map<String, Object?> json) {
-    return UnifediApiTagHistoryItemPleromaAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiTagHistoryItemPleromaAdapter =
-    _$UnifediApiTagHistoryItemPleromaAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiTagHistoryItemPleromaAdapter {
@@ -228,49 +204,56 @@ abstract class $UnifediApiTagHistoryItemPleromaAdapterCopyWith<$Res> {
   factory $UnifediApiTagHistoryItemPleromaAdapterCopyWith(
           UnifediApiTagHistoryItemPleromaAdapter value,
           $Res Function(UnifediApiTagHistoryItemPleromaAdapter) then) =
-      _$UnifediApiTagHistoryItemPleromaAdapterCopyWithImpl<$Res>;
+      _$UnifediApiTagHistoryItemPleromaAdapterCopyWithImpl<$Res,
+          UnifediApiTagHistoryItemPleromaAdapter>;
+  @useResult
   $Res call({@HiveField(0) PleromaApiTagHistoryItem value});
 
   $PleromaApiTagHistoryItemCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiTagHistoryItemPleromaAdapterCopyWithImpl<$Res>
+class _$UnifediApiTagHistoryItemPleromaAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiTagHistoryItemPleromaAdapter>
     implements $UnifediApiTagHistoryItemPleromaAdapterCopyWith<$Res> {
   _$UnifediApiTagHistoryItemPleromaAdapterCopyWithImpl(this._value, this._then);
 
-  final UnifediApiTagHistoryItemPleromaAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiTagHistoryItemPleromaAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiTagHistoryItem,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiTagHistoryItemCopyWith<$Res> get value {
     return $PleromaApiTagHistoryItemCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiTagHistoryItemPleromaAdapterCopyWith<$Res>
+abstract class _$$UnifediApiTagHistoryItemPleromaAdapterImplCopyWith<$Res>
     implements $UnifediApiTagHistoryItemPleromaAdapterCopyWith<$Res> {
-  factory _$UnifediApiTagHistoryItemPleromaAdapterCopyWith(
-          _UnifediApiTagHistoryItemPleromaAdapter value,
-          $Res Function(_UnifediApiTagHistoryItemPleromaAdapter) then) =
-      __$UnifediApiTagHistoryItemPleromaAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiTagHistoryItemPleromaAdapterImplCopyWith(
+          _$UnifediApiTagHistoryItemPleromaAdapterImpl value,
+          $Res Function(_$UnifediApiTagHistoryItemPleromaAdapterImpl) then) =
+      __$$UnifediApiTagHistoryItemPleromaAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) PleromaApiTagHistoryItem value});
 
   @override
@@ -278,25 +261,22 @@ abstract class _$UnifediApiTagHistoryItemPleromaAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiTagHistoryItemPleromaAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiTagHistoryItemPleromaAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiTagHistoryItemPleromaAdapterCopyWith<$Res> {
-  __$UnifediApiTagHistoryItemPleromaAdapterCopyWithImpl(
-      _UnifediApiTagHistoryItemPleromaAdapter _value,
-      $Res Function(_UnifediApiTagHistoryItemPleromaAdapter) _then)
-      : super(
-            _value, (v) => _then(v as _UnifediApiTagHistoryItemPleromaAdapter));
+class __$$UnifediApiTagHistoryItemPleromaAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiTagHistoryItemPleromaAdapterCopyWithImpl<$Res,
+        _$UnifediApiTagHistoryItemPleromaAdapterImpl>
+    implements _$$UnifediApiTagHistoryItemPleromaAdapterImplCopyWith<$Res> {
+  __$$UnifediApiTagHistoryItemPleromaAdapterImplCopyWithImpl(
+      _$UnifediApiTagHistoryItemPleromaAdapterImpl _value,
+      $Res Function(_$UnifediApiTagHistoryItemPleromaAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiTagHistoryItemPleromaAdapter get _value =>
-      super._value as _UnifediApiTagHistoryItemPleromaAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiTagHistoryItemPleromaAdapter(
-      value == freezed
+    return _then(_$UnifediApiTagHistoryItemPleromaAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiTagHistoryItem,
@@ -306,14 +286,14 @@ class __$UnifediApiTagHistoryItemPleromaAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiTagHistoryItemPleromaAdapter
+class _$UnifediApiTagHistoryItemPleromaAdapterImpl
     extends _UnifediApiTagHistoryItemPleromaAdapter {
-  const _$_UnifediApiTagHistoryItemPleromaAdapter(@HiveField(0) this.value)
+  const _$UnifediApiTagHistoryItemPleromaAdapterImpl(@HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiTagHistoryItemPleromaAdapter.fromJson(
+  factory _$UnifediApiTagHistoryItemPleromaAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiTagHistoryItemPleromaAdapterFromJson(json);
+      _$$UnifediApiTagHistoryItemPleromaAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -325,46 +305,51 @@ class _$_UnifediApiTagHistoryItemPleromaAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiTagHistoryItemPleromaAdapter &&
+            other is _$UnifediApiTagHistoryItemPleromaAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiTagHistoryItemPleromaAdapterCopyWith<
-          _UnifediApiTagHistoryItemPleromaAdapter>
-      get copyWith => __$UnifediApiTagHistoryItemPleromaAdapterCopyWithImpl<
-          _UnifediApiTagHistoryItemPleromaAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiTagHistoryItemPleromaAdapterImplCopyWith<
+          _$UnifediApiTagHistoryItemPleromaAdapterImpl>
+      get copyWith =>
+          __$$UnifediApiTagHistoryItemPleromaAdapterImplCopyWithImpl<
+              _$UnifediApiTagHistoryItemPleromaAdapterImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiTagHistoryItemPleromaAdapterToJson(this);
+    return _$$UnifediApiTagHistoryItemPleromaAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiTagHistoryItemPleromaAdapter
     extends UnifediApiTagHistoryItemPleromaAdapter {
   const factory _UnifediApiTagHistoryItemPleromaAdapter(
-          @HiveField(0) PleromaApiTagHistoryItem value) =
-      _$_UnifediApiTagHistoryItemPleromaAdapter;
+          @HiveField(0) final PleromaApiTagHistoryItem value) =
+      _$UnifediApiTagHistoryItemPleromaAdapterImpl;
   const _UnifediApiTagHistoryItemPleromaAdapter._() : super._();
 
   factory _UnifediApiTagHistoryItemPleromaAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiTagHistoryItemPleromaAdapter.fromJson;
+      _$UnifediApiTagHistoryItemPleromaAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   PleromaApiTagHistoryItem get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiTagHistoryItemPleromaAdapterCopyWith<
-          _UnifediApiTagHistoryItemPleromaAdapter>
+  _$$UnifediApiTagHistoryItemPleromaAdapterImplCopyWith<
+          _$UnifediApiTagHistoryItemPleromaAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

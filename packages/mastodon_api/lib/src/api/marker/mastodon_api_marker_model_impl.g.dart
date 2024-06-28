@@ -50,17 +50,18 @@ class MastodonApiMarkerAdapter extends TypeAdapter<MastodonApiMarker> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiMarker _$$_MastodonApiMarkerFromJson(Map<String, dynamic> json) =>
-    _$_MastodonApiMarker(
+_$MastodonApiMarkerImpl _$$MastodonApiMarkerImplFromJson(
+        Map<String, dynamic> json) =>
+    _$MastodonApiMarkerImpl(
       lastReadId: json['updated_last_read_id'] as String?,
-      version: json['version'] as int,
+      version: (json['version'] as num).toInt(),
       updatedAt: json['updated_at'] == null
           ? null
           : DateTime.parse(json['updated_at'] as String),
     );
 
-Map<String, dynamic> _$$_MastodonApiMarkerToJson(
-    _$_MastodonApiMarker instance) {
+Map<String, dynamic> _$$MastodonApiMarkerImplToJson(
+    _$MastodonApiMarkerImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

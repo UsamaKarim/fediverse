@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_instance_federation_mfr_object_age_model_impl.dart';
 
@@ -11,35 +12,13 @@ part of 'pleroma_api_instance_federation_mfr_object_age_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiInstanceFederationMfrObjectAge
     _$PleromaApiInstanceFederationMfrObjectAgeFromJson(
         Map<String, dynamic> json) {
   return _PleromaApiInstanceFederationMfrObjectAge.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiInstanceFederationMfrObjectAgeTearOff {
-  const _$PleromaApiInstanceFederationMfrObjectAgeTearOff();
-
-  _PleromaApiInstanceFederationMfrObjectAge call(
-      {@HiveField(0) required int? threshold,
-      @HiveField(1) required List<String>? actions}) {
-    return _PleromaApiInstanceFederationMfrObjectAge(
-      threshold: threshold,
-      actions: actions,
-    );
-  }
-
-  PleromaApiInstanceFederationMfrObjectAge fromJson(Map<String, Object?> json) {
-    return PleromaApiInstanceFederationMfrObjectAge.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiInstanceFederationMfrObjectAge =
-    _$PleromaApiInstanceFederationMfrObjectAgeTearOff();
 
 /// @nodoc
 mixin _$PleromaApiInstanceFederationMfrObjectAge {
@@ -60,77 +39,80 @@ abstract class $PleromaApiInstanceFederationMfrObjectAgeCopyWith<$Res> {
   factory $PleromaApiInstanceFederationMfrObjectAgeCopyWith(
           PleromaApiInstanceFederationMfrObjectAge value,
           $Res Function(PleromaApiInstanceFederationMfrObjectAge) then) =
-      _$PleromaApiInstanceFederationMfrObjectAgeCopyWithImpl<$Res>;
+      _$PleromaApiInstanceFederationMfrObjectAgeCopyWithImpl<$Res,
+          PleromaApiInstanceFederationMfrObjectAge>;
+  @useResult
   $Res call(
       {@HiveField(0) int? threshold, @HiveField(1) List<String>? actions});
 }
 
 /// @nodoc
-class _$PleromaApiInstanceFederationMfrObjectAgeCopyWithImpl<$Res>
+class _$PleromaApiInstanceFederationMfrObjectAgeCopyWithImpl<$Res,
+        $Val extends PleromaApiInstanceFederationMfrObjectAge>
     implements $PleromaApiInstanceFederationMfrObjectAgeCopyWith<$Res> {
   _$PleromaApiInstanceFederationMfrObjectAgeCopyWithImpl(
       this._value, this._then);
 
-  final PleromaApiInstanceFederationMfrObjectAge _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiInstanceFederationMfrObjectAge) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? threshold = freezed,
     Object? actions = freezed,
   }) {
     return _then(_value.copyWith(
-      threshold: threshold == freezed
+      threshold: freezed == threshold
           ? _value.threshold
           : threshold // ignore: cast_nullable_to_non_nullable
               as int?,
-      actions: actions == freezed
+      actions: freezed == actions
           ? _value.actions
           : actions // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiInstanceFederationMfrObjectAgeCopyWith<$Res>
+abstract class _$$PleromaApiInstanceFederationMfrObjectAgeImplCopyWith<$Res>
     implements $PleromaApiInstanceFederationMfrObjectAgeCopyWith<$Res> {
-  factory _$PleromaApiInstanceFederationMfrObjectAgeCopyWith(
-          _PleromaApiInstanceFederationMfrObjectAge value,
-          $Res Function(_PleromaApiInstanceFederationMfrObjectAge) then) =
-      __$PleromaApiInstanceFederationMfrObjectAgeCopyWithImpl<$Res>;
+  factory _$$PleromaApiInstanceFederationMfrObjectAgeImplCopyWith(
+          _$PleromaApiInstanceFederationMfrObjectAgeImpl value,
+          $Res Function(_$PleromaApiInstanceFederationMfrObjectAgeImpl) then) =
+      __$$PleromaApiInstanceFederationMfrObjectAgeImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) int? threshold, @HiveField(1) List<String>? actions});
 }
 
 /// @nodoc
-class __$PleromaApiInstanceFederationMfrObjectAgeCopyWithImpl<$Res>
-    extends _$PleromaApiInstanceFederationMfrObjectAgeCopyWithImpl<$Res>
-    implements _$PleromaApiInstanceFederationMfrObjectAgeCopyWith<$Res> {
-  __$PleromaApiInstanceFederationMfrObjectAgeCopyWithImpl(
-      _PleromaApiInstanceFederationMfrObjectAge _value,
-      $Res Function(_PleromaApiInstanceFederationMfrObjectAge) _then)
-      : super(_value,
-            (v) => _then(v as _PleromaApiInstanceFederationMfrObjectAge));
+class __$$PleromaApiInstanceFederationMfrObjectAgeImplCopyWithImpl<$Res>
+    extends _$PleromaApiInstanceFederationMfrObjectAgeCopyWithImpl<$Res,
+        _$PleromaApiInstanceFederationMfrObjectAgeImpl>
+    implements _$$PleromaApiInstanceFederationMfrObjectAgeImplCopyWith<$Res> {
+  __$$PleromaApiInstanceFederationMfrObjectAgeImplCopyWithImpl(
+      _$PleromaApiInstanceFederationMfrObjectAgeImpl _value,
+      $Res Function(_$PleromaApiInstanceFederationMfrObjectAgeImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiInstanceFederationMfrObjectAge get _value =>
-      super._value as _PleromaApiInstanceFederationMfrObjectAge;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? threshold = freezed,
     Object? actions = freezed,
   }) {
-    return _then(_PleromaApiInstanceFederationMfrObjectAge(
-      threshold: threshold == freezed
+    return _then(_$PleromaApiInstanceFederationMfrObjectAgeImpl(
+      threshold: freezed == threshold
           ? _value.threshold
           : threshold // ignore: cast_nullable_to_non_nullable
               as int?,
-      actions: actions == freezed
-          ? _value.actions
+      actions: freezed == actions
+          ? _value._actions
           : actions // ignore: cast_nullable_to_non_nullable
               as List<String>?,
     ));
@@ -139,22 +121,30 @@ class __$PleromaApiInstanceFederationMfrObjectAgeCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiInstanceFederationMfrObjectAge
+class _$PleromaApiInstanceFederationMfrObjectAgeImpl
     implements _PleromaApiInstanceFederationMfrObjectAge {
-  const _$_PleromaApiInstanceFederationMfrObjectAge(
+  const _$PleromaApiInstanceFederationMfrObjectAgeImpl(
       {@HiveField(0) required this.threshold,
-      @HiveField(1) required this.actions});
+      @HiveField(1) required final List<String>? actions})
+      : _actions = actions;
 
-  factory _$_PleromaApiInstanceFederationMfrObjectAge.fromJson(
+  factory _$PleromaApiInstanceFederationMfrObjectAgeImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_PleromaApiInstanceFederationMfrObjectAgeFromJson(json);
+      _$$PleromaApiInstanceFederationMfrObjectAgeImplFromJson(json);
 
   @override
   @HiveField(0)
   final int? threshold;
+  final List<String>? _actions;
   @override
   @HiveField(1)
-  final List<String>? actions;
+  List<String>? get actions {
+    final value = _actions;
+    if (value == null) return null;
+    if (_actions is EqualUnmodifiableListView) return _actions;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   @override
   String toString() {
@@ -162,42 +152,47 @@ class _$_PleromaApiInstanceFederationMfrObjectAge
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiInstanceFederationMfrObjectAge &&
+            other is _$PleromaApiInstanceFederationMfrObjectAgeImpl &&
             (identical(other.threshold, threshold) ||
                 other.threshold == threshold) &&
-            const DeepCollectionEquality().equals(other.actions, actions));
+            const DeepCollectionEquality().equals(other._actions, _actions));
   }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType, threshold, const DeepCollectionEquality().hash(actions));
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiInstanceFederationMfrObjectAgeCopyWith<
-          _PleromaApiInstanceFederationMfrObjectAge>
-      get copyWith => __$PleromaApiInstanceFederationMfrObjectAgeCopyWithImpl<
-          _PleromaApiInstanceFederationMfrObjectAge>(this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType, threshold, const DeepCollectionEquality().hash(_actions));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiInstanceFederationMfrObjectAgeImplCopyWith<
+          _$PleromaApiInstanceFederationMfrObjectAgeImpl>
+      get copyWith =>
+          __$$PleromaApiInstanceFederationMfrObjectAgeImplCopyWithImpl<
+              _$PleromaApiInstanceFederationMfrObjectAgeImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiInstanceFederationMfrObjectAgeToJson(this);
+    return _$$PleromaApiInstanceFederationMfrObjectAgeImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiInstanceFederationMfrObjectAge
     implements PleromaApiInstanceFederationMfrObjectAge {
   const factory _PleromaApiInstanceFederationMfrObjectAge(
-          {@HiveField(0) required int? threshold,
-          @HiveField(1) required List<String>? actions}) =
-      _$_PleromaApiInstanceFederationMfrObjectAge;
+          {@HiveField(0) required final int? threshold,
+          @HiveField(1) required final List<String>? actions}) =
+      _$PleromaApiInstanceFederationMfrObjectAgeImpl;
 
   factory _PleromaApiInstanceFederationMfrObjectAge.fromJson(
           Map<String, dynamic> json) =
-      _$_PleromaApiInstanceFederationMfrObjectAge.fromJson;
+      _$PleromaApiInstanceFederationMfrObjectAgeImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -207,7 +202,7 @@ abstract class _PleromaApiInstanceFederationMfrObjectAge
   List<String>? get actions;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiInstanceFederationMfrObjectAgeCopyWith<
-          _PleromaApiInstanceFederationMfrObjectAge>
+  _$$PleromaApiInstanceFederationMfrObjectAgeImplCopyWith<
+          _$PleromaApiInstanceFederationMfrObjectAgeImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

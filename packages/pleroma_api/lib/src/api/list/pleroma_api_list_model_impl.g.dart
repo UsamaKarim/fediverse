@@ -50,14 +50,15 @@ class PleromaApiListAdapter extends TypeAdapter<PleromaApiList> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiList _$$_PleromaApiListFromJson(Map<String, dynamic> json) =>
-    _$_PleromaApiList(
+_$PleromaApiListImpl _$$PleromaApiListImplFromJson(Map<String, dynamic> json) =>
+    _$PleromaApiListImpl(
       id: json['id'] as String,
       title: json['title'] as String,
       repliesPolicy: json['replies_policy'] as String?,
     );
 
-Map<String, dynamic> _$$_PleromaApiListToJson(_$_PleromaApiList instance) {
+Map<String, dynamic> _$$PleromaApiListImplToJson(
+    _$PleromaApiListImpl instance) {
   final val = <String, dynamic>{
     'id': instance.id,
     'title': instance.title,

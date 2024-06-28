@@ -45,15 +45,15 @@ class UnifediApiPollOptionMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiPollOptionMastodonAdapter
-    _$$_UnifediApiPollOptionMastodonAdapterFromJson(
+_$UnifediApiPollOptionMastodonAdapterImpl
+    _$$UnifediApiPollOptionMastodonAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiPollOptionMastodonAdapter(
+        _$UnifediApiPollOptionMastodonAdapterImpl(
           MastodonApiPollOption.fromJson(json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiPollOptionMastodonAdapterToJson(
-        _$_UnifediApiPollOptionMastodonAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiPollOptionMastodonAdapterImplToJson(
+        _$UnifediApiPollOptionMastodonAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

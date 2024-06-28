@@ -53,17 +53,19 @@ class UnifediApiMarkerAdapter extends TypeAdapter<UnifediApiMarker> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiMarker _$$_UnifediApiMarkerFromJson(Map<String, dynamic> json) =>
-    _$_UnifediApiMarker(
+_$UnifediApiMarkerImpl _$$UnifediApiMarkerImplFromJson(
+        Map<String, dynamic> json) =>
+    _$UnifediApiMarkerImpl(
       lastReadId: json['updated_last_read_id'] as String?,
-      version: json['version'] as int,
+      version: (json['version'] as num).toInt(),
       updatedAt: json['updated_at'] == null
           ? null
           : DateTime.parse(json['updated_at'] as String),
-      unreadCount: json['unread_count'] as int?,
+      unreadCount: (json['unread_count'] as num?)?.toInt(),
     );
 
-Map<String, dynamic> _$$_UnifediApiMarkerToJson(_$_UnifediApiMarker instance) {
+Map<String, dynamic> _$$UnifediApiMarkerImplToJson(
+    _$UnifediApiMarkerImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

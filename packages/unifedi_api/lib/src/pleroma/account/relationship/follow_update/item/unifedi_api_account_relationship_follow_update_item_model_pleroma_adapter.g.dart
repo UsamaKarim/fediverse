@@ -48,17 +48,17 @@ class UnifediApiAccountRelationshipFollowUpdateItemPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiAccountRelationshipFollowUpdateItemPleromaAdapter
-    _$$_UnifediApiAccountRelationshipFollowUpdateItemPleromaAdapterFromJson(
+_$UnifediApiAccountRelationshipFollowUpdateItemPleromaAdapterImpl
+    _$$UnifediApiAccountRelationshipFollowUpdateItemPleromaAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiAccountRelationshipFollowUpdateItemPleromaAdapter(
+        _$UnifediApiAccountRelationshipFollowUpdateItemPleromaAdapterImpl(
           PleromaApiAccountRelationshipFollowUpdateItem.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
 Map<String, dynamic>
-    _$$_UnifediApiAccountRelationshipFollowUpdateItemPleromaAdapterToJson(
-            _$_UnifediApiAccountRelationshipFollowUpdateItemPleromaAdapter
+    _$$UnifediApiAccountRelationshipFollowUpdateItemPleromaAdapterImplToJson(
+            _$UnifediApiAccountRelationshipFollowUpdateItemPleromaAdapterImpl
                 instance) =>
         <String, dynamic>{
           'value': instance.value.toJson(),

@@ -199,18 +199,19 @@ class PleromaApiAccountPleromaPartAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiAccount _$$_PleromaApiAccountFromJson(Map<String, dynamic> json) =>
-    _$_PleromaApiAccount(
+_$PleromaApiAccountImpl _$$PleromaApiAccountImplFromJson(
+        Map<String, dynamic> json) =>
+    _$PleromaApiAccountImpl(
       username: json['username'] as String,
       url: json['url'] as String,
-      statusesCount: json['statuses_count'] as int,
+      statusesCount: (json['statuses_count'] as num).toInt(),
       note: json['note'] as String?,
       locked: json['locked'] as bool,
       id: json['id'] as String,
       headerStatic: json['header_static'] as String,
       header: json['header'] as String,
-      followingCount: json['following_count'] as int,
-      followersCount: json['followers_count'] as int,
+      followingCount: (json['following_count'] as num).toInt(),
+      followersCount: (json['followers_count'] as num).toInt(),
       fields: (json['fields'] as List<dynamic>?)
           ?.map((e) => PleromaApiField.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -237,8 +238,8 @@ _$_PleromaApiAccount _$$_PleromaApiAccountFromJson(Map<String, dynamic> json) =>
           : DateTime.parse(json['mute_expires_at'] as String),
     );
 
-Map<String, dynamic> _$$_PleromaApiAccountToJson(
-    _$_PleromaApiAccount instance) {
+Map<String, dynamic> _$$PleromaApiAccountImplToJson(
+    _$PleromaApiAccountImpl instance) {
   final val = <String, dynamic>{
     'username': instance.username,
     'url': instance.url,
@@ -274,9 +275,9 @@ Map<String, dynamic> _$$_PleromaApiAccountToJson(
   return val;
 }
 
-_$_PleromaApiAccountPleromaPart _$$_PleromaApiAccountPleromaPartFromJson(
+_$PleromaApiAccountPleromaPartImpl _$$PleromaApiAccountPleromaPartImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiAccountPleromaPart(
+    _$PleromaApiAccountPleromaPartImpl(
       backgroundImage: json['background_image'] as String?,
       tags: PleromaApiTag.fromJsonListOrNullOnError(json['tags']),
       relationship: PleromaApiAccountRelationship.fromJsonOrNullOnError(
@@ -301,8 +302,8 @@ _$_PleromaApiAccountPleromaPart _$$_PleromaApiAccountPleromaPartFromJson(
               json['also_known_as']),
     );
 
-Map<String, dynamic> _$$_PleromaApiAccountPleromaPartToJson(
-    _$_PleromaApiAccountPleromaPart instance) {
+Map<String, dynamic> _$$PleromaApiAccountPleromaPartImplToJson(
+    _$PleromaApiAccountPleromaPartImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'notification_model.dart';
 
@@ -11,22 +12,7 @@ part of 'notification_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$NotificationStateTearOff {
-  const _$NotificationStateTearOff();
-
-  _NotificationState call({required bool? dismissed, required bool? unread}) {
-    return _NotificationState(
-      dismissed: dismissed,
-      unread: unread,
-    );
-  }
-}
-
-/// @nodoc
-const $NotificationState = _$NotificationStateTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$NotificationState {
@@ -42,69 +28,71 @@ mixin _$NotificationState {
 abstract class $NotificationStateCopyWith<$Res> {
   factory $NotificationStateCopyWith(
           NotificationState value, $Res Function(NotificationState) then) =
-      _$NotificationStateCopyWithImpl<$Res>;
+      _$NotificationStateCopyWithImpl<$Res, NotificationState>;
+  @useResult
   $Res call({bool? dismissed, bool? unread});
 }
 
 /// @nodoc
-class _$NotificationStateCopyWithImpl<$Res>
+class _$NotificationStateCopyWithImpl<$Res, $Val extends NotificationState>
     implements $NotificationStateCopyWith<$Res> {
   _$NotificationStateCopyWithImpl(this._value, this._then);
 
-  final NotificationState _value;
   // ignore: unused_field
-  final $Res Function(NotificationState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? dismissed = freezed,
     Object? unread = freezed,
   }) {
     return _then(_value.copyWith(
-      dismissed: dismissed == freezed
+      dismissed: freezed == dismissed
           ? _value.dismissed
           : dismissed // ignore: cast_nullable_to_non_nullable
               as bool?,
-      unread: unread == freezed
+      unread: freezed == unread
           ? _value.unread
           : unread // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$NotificationStateCopyWith<$Res>
+abstract class _$$NotificationStateImplCopyWith<$Res>
     implements $NotificationStateCopyWith<$Res> {
-  factory _$NotificationStateCopyWith(
-          _NotificationState value, $Res Function(_NotificationState) then) =
-      __$NotificationStateCopyWithImpl<$Res>;
+  factory _$$NotificationStateImplCopyWith(_$NotificationStateImpl value,
+          $Res Function(_$NotificationStateImpl) then) =
+      __$$NotificationStateImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({bool? dismissed, bool? unread});
 }
 
 /// @nodoc
-class __$NotificationStateCopyWithImpl<$Res>
-    extends _$NotificationStateCopyWithImpl<$Res>
-    implements _$NotificationStateCopyWith<$Res> {
-  __$NotificationStateCopyWithImpl(
-      _NotificationState _value, $Res Function(_NotificationState) _then)
-      : super(_value, (v) => _then(v as _NotificationState));
+class __$$NotificationStateImplCopyWithImpl<$Res>
+    extends _$NotificationStateCopyWithImpl<$Res, _$NotificationStateImpl>
+    implements _$$NotificationStateImplCopyWith<$Res> {
+  __$$NotificationStateImplCopyWithImpl(_$NotificationStateImpl _value,
+      $Res Function(_$NotificationStateImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _NotificationState get _value => super._value as _NotificationState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? dismissed = freezed,
     Object? unread = freezed,
   }) {
-    return _then(_NotificationState(
-      dismissed: dismissed == freezed
+    return _then(_$NotificationStateImpl(
+      dismissed: freezed == dismissed
           ? _value.dismissed
           : dismissed // ignore: cast_nullable_to_non_nullable
               as bool?,
-      unread: unread == freezed
+      unread: freezed == unread
           ? _value.unread
           : unread // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -114,8 +102,9 @@ class __$NotificationStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_NotificationState implements _NotificationState {
-  const _$_NotificationState({required this.dismissed, required this.unread});
+class _$NotificationStateImpl implements _NotificationState {
+  const _$NotificationStateImpl(
+      {required this.dismissed, required this.unread});
 
   @override
   final bool? dismissed;
@@ -128,10 +117,10 @@ class _$_NotificationState implements _NotificationState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _NotificationState &&
+            other is _$NotificationStateImpl &&
             (identical(other.dismissed, dismissed) ||
                 other.dismissed == dismissed) &&
             (identical(other.unread, unread) || other.unread == unread));
@@ -142,13 +131,16 @@ class _$_NotificationState implements _NotificationState {
 
   @JsonKey(ignore: true)
   @override
-  _$NotificationStateCopyWith<_NotificationState> get copyWith =>
-      __$NotificationStateCopyWithImpl<_NotificationState>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$NotificationStateImplCopyWith<_$NotificationStateImpl> get copyWith =>
+      __$$NotificationStateImplCopyWithImpl<_$NotificationStateImpl>(
+          this, _$identity);
 }
 
 abstract class _NotificationState implements NotificationState {
   const factory _NotificationState(
-      {required bool? dismissed, required bool? unread}) = _$_NotificationState;
+      {required final bool? dismissed,
+      required final bool? unread}) = _$NotificationStateImpl;
 
   @override
   bool? get dismissed;
@@ -156,25 +148,9 @@ abstract class _NotificationState implements NotificationState {
   bool? get unread;
   @override
   @JsonKey(ignore: true)
-  _$NotificationStateCopyWith<_NotificationState> get copyWith =>
+  _$$NotificationStateImplCopyWith<_$NotificationStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$DbNotificationPopulatedWrapperTearOff {
-  const _$DbNotificationPopulatedWrapperTearOff();
-
-  _DbNotificationPopulatedWrapper call(
-      {required DbNotificationPopulated dbNotificationPopulated}) {
-    return _DbNotificationPopulatedWrapper(
-      dbNotificationPopulated: dbNotificationPopulated,
-    );
-  }
-}
-
-/// @nodoc
-const $DbNotificationPopulatedWrapper =
-    _$DbNotificationPopulatedWrapperTearOff();
 
 /// @nodoc
 mixin _$DbNotificationPopulatedWrapper {
@@ -191,50 +167,57 @@ abstract class $DbNotificationPopulatedWrapperCopyWith<$Res> {
   factory $DbNotificationPopulatedWrapperCopyWith(
           DbNotificationPopulatedWrapper value,
           $Res Function(DbNotificationPopulatedWrapper) then) =
-      _$DbNotificationPopulatedWrapperCopyWithImpl<$Res>;
+      _$DbNotificationPopulatedWrapperCopyWithImpl<$Res,
+          DbNotificationPopulatedWrapper>;
+  @useResult
   $Res call({DbNotificationPopulated dbNotificationPopulated});
 
   $DbNotificationPopulatedCopyWith<$Res> get dbNotificationPopulated;
 }
 
 /// @nodoc
-class _$DbNotificationPopulatedWrapperCopyWithImpl<$Res>
+class _$DbNotificationPopulatedWrapperCopyWithImpl<$Res,
+        $Val extends DbNotificationPopulatedWrapper>
     implements $DbNotificationPopulatedWrapperCopyWith<$Res> {
   _$DbNotificationPopulatedWrapperCopyWithImpl(this._value, this._then);
 
-  final DbNotificationPopulatedWrapper _value;
   // ignore: unused_field
-  final $Res Function(DbNotificationPopulatedWrapper) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dbNotificationPopulated = freezed,
+    Object? dbNotificationPopulated = null,
   }) {
     return _then(_value.copyWith(
-      dbNotificationPopulated: dbNotificationPopulated == freezed
+      dbNotificationPopulated: null == dbNotificationPopulated
           ? _value.dbNotificationPopulated
           : dbNotificationPopulated // ignore: cast_nullable_to_non_nullable
               as DbNotificationPopulated,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $DbNotificationPopulatedCopyWith<$Res> get dbNotificationPopulated {
     return $DbNotificationPopulatedCopyWith<$Res>(
         _value.dbNotificationPopulated, (value) {
-      return _then(_value.copyWith(dbNotificationPopulated: value));
+      return _then(_value.copyWith(dbNotificationPopulated: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$DbNotificationPopulatedWrapperCopyWith<$Res>
+abstract class _$$DbNotificationPopulatedWrapperImplCopyWith<$Res>
     implements $DbNotificationPopulatedWrapperCopyWith<$Res> {
-  factory _$DbNotificationPopulatedWrapperCopyWith(
-          _DbNotificationPopulatedWrapper value,
-          $Res Function(_DbNotificationPopulatedWrapper) then) =
-      __$DbNotificationPopulatedWrapperCopyWithImpl<$Res>;
+  factory _$$DbNotificationPopulatedWrapperImplCopyWith(
+          _$DbNotificationPopulatedWrapperImpl value,
+          $Res Function(_$DbNotificationPopulatedWrapperImpl) then) =
+      __$$DbNotificationPopulatedWrapperImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({DbNotificationPopulated dbNotificationPopulated});
 
   @override
@@ -242,24 +225,22 @@ abstract class _$DbNotificationPopulatedWrapperCopyWith<$Res>
 }
 
 /// @nodoc
-class __$DbNotificationPopulatedWrapperCopyWithImpl<$Res>
-    extends _$DbNotificationPopulatedWrapperCopyWithImpl<$Res>
-    implements _$DbNotificationPopulatedWrapperCopyWith<$Res> {
-  __$DbNotificationPopulatedWrapperCopyWithImpl(
-      _DbNotificationPopulatedWrapper _value,
-      $Res Function(_DbNotificationPopulatedWrapper) _then)
-      : super(_value, (v) => _then(v as _DbNotificationPopulatedWrapper));
+class __$$DbNotificationPopulatedWrapperImplCopyWithImpl<$Res>
+    extends _$DbNotificationPopulatedWrapperCopyWithImpl<$Res,
+        _$DbNotificationPopulatedWrapperImpl>
+    implements _$$DbNotificationPopulatedWrapperImplCopyWith<$Res> {
+  __$$DbNotificationPopulatedWrapperImplCopyWithImpl(
+      _$DbNotificationPopulatedWrapperImpl _value,
+      $Res Function(_$DbNotificationPopulatedWrapperImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _DbNotificationPopulatedWrapper get _value =>
-      super._value as _DbNotificationPopulatedWrapper;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dbNotificationPopulated = freezed,
+    Object? dbNotificationPopulated = null,
   }) {
-    return _then(_DbNotificationPopulatedWrapper(
-      dbNotificationPopulated: dbNotificationPopulated == freezed
+    return _then(_$DbNotificationPopulatedWrapperImpl(
+      dbNotificationPopulated: null == dbNotificationPopulated
           ? _value.dbNotificationPopulated
           : dbNotificationPopulated // ignore: cast_nullable_to_non_nullable
               as DbNotificationPopulated,
@@ -269,9 +250,9 @@ class __$DbNotificationPopulatedWrapperCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DbNotificationPopulatedWrapper
+class _$DbNotificationPopulatedWrapperImpl
     extends _DbNotificationPopulatedWrapper {
-  const _$_DbNotificationPopulatedWrapper(
+  const _$DbNotificationPopulatedWrapperImpl(
       {required this.dbNotificationPopulated})
       : super._();
 
@@ -284,10 +265,10 @@ class _$_DbNotificationPopulatedWrapper
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DbNotificationPopulatedWrapper &&
+            other is _$DbNotificationPopulatedWrapperImpl &&
             (identical(
                     other.dbNotificationPopulated, dbNotificationPopulated) ||
                 other.dbNotificationPopulated == dbNotificationPopulated));
@@ -298,58 +279,28 @@ class _$_DbNotificationPopulatedWrapper
 
   @JsonKey(ignore: true)
   @override
-  _$DbNotificationPopulatedWrapperCopyWith<_DbNotificationPopulatedWrapper>
-      get copyWith => __$DbNotificationPopulatedWrapperCopyWithImpl<
-          _DbNotificationPopulatedWrapper>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DbNotificationPopulatedWrapperImplCopyWith<
+          _$DbNotificationPopulatedWrapperImpl>
+      get copyWith => __$$DbNotificationPopulatedWrapperImplCopyWithImpl<
+          _$DbNotificationPopulatedWrapperImpl>(this, _$identity);
 }
 
 abstract class _DbNotificationPopulatedWrapper
     extends DbNotificationPopulatedWrapper {
   const factory _DbNotificationPopulatedWrapper(
-          {required DbNotificationPopulated dbNotificationPopulated}) =
-      _$_DbNotificationPopulatedWrapper;
+          {required final DbNotificationPopulated dbNotificationPopulated}) =
+      _$DbNotificationPopulatedWrapperImpl;
   const _DbNotificationPopulatedWrapper._() : super._();
 
   @override
   DbNotificationPopulated get dbNotificationPopulated;
   @override
   @JsonKey(ignore: true)
-  _$DbNotificationPopulatedWrapperCopyWith<_DbNotificationPopulatedWrapper>
+  _$$DbNotificationPopulatedWrapperImplCopyWith<
+          _$DbNotificationPopulatedWrapperImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$DbNotificationPopulatedTearOff {
-  const _$DbNotificationPopulatedTearOff();
-
-  _DbNotificationPopulated call(
-      {required DbNotification dbNotification,
-      required DbAccount? dbAccount,
-      required DbStatus? dbStatus,
-      required DbAccount? dbStatusAccount,
-      required DbStatus? reblogDbStatus,
-      required DbAccount? reblogDbStatusAccount,
-      required DbStatus? replyDbStatus,
-      required DbAccount? replyDbStatusAccount,
-      required DbStatus? replyReblogDbStatus,
-      required DbAccount? replyReblogDbStatusAccount}) {
-    return _DbNotificationPopulated(
-      dbNotification: dbNotification,
-      dbAccount: dbAccount,
-      dbStatus: dbStatus,
-      dbStatusAccount: dbStatusAccount,
-      reblogDbStatus: reblogDbStatus,
-      reblogDbStatusAccount: reblogDbStatusAccount,
-      replyDbStatus: replyDbStatus,
-      replyDbStatusAccount: replyDbStatusAccount,
-      replyReblogDbStatus: replyReblogDbStatus,
-      replyReblogDbStatusAccount: replyReblogDbStatusAccount,
-    );
-  }
-}
-
-/// @nodoc
-const $DbNotificationPopulated = _$DbNotificationPopulatedTearOff();
 
 /// @nodoc
 mixin _$DbNotificationPopulated {
@@ -374,7 +325,8 @@ mixin _$DbNotificationPopulated {
 abstract class $DbNotificationPopulatedCopyWith<$Res> {
   factory $DbNotificationPopulatedCopyWith(DbNotificationPopulated value,
           $Res Function(DbNotificationPopulated) then) =
-      _$DbNotificationPopulatedCopyWithImpl<$Res>;
+      _$DbNotificationPopulatedCopyWithImpl<$Res, DbNotificationPopulated>;
+  @useResult
   $Res call(
       {DbNotification dbNotification,
       DbAccount? dbAccount,
@@ -389,14 +341,17 @@ abstract class $DbNotificationPopulatedCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$DbNotificationPopulatedCopyWithImpl<$Res>
+class _$DbNotificationPopulatedCopyWithImpl<$Res,
+        $Val extends DbNotificationPopulated>
     implements $DbNotificationPopulatedCopyWith<$Res> {
   _$DbNotificationPopulatedCopyWithImpl(this._value, this._then);
 
-  final DbNotificationPopulated _value;
   // ignore: unused_field
-  final $Res Function(DbNotificationPopulated) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? dbNotification = freezed,
@@ -411,57 +366,59 @@ class _$DbNotificationPopulatedCopyWithImpl<$Res>
     Object? replyReblogDbStatusAccount = freezed,
   }) {
     return _then(_value.copyWith(
-      dbNotification: dbNotification == freezed
+      dbNotification: freezed == dbNotification
           ? _value.dbNotification
           : dbNotification // ignore: cast_nullable_to_non_nullable
               as DbNotification,
-      dbAccount: dbAccount == freezed
+      dbAccount: freezed == dbAccount
           ? _value.dbAccount
           : dbAccount // ignore: cast_nullable_to_non_nullable
               as DbAccount?,
-      dbStatus: dbStatus == freezed
+      dbStatus: freezed == dbStatus
           ? _value.dbStatus
           : dbStatus // ignore: cast_nullable_to_non_nullable
               as DbStatus?,
-      dbStatusAccount: dbStatusAccount == freezed
+      dbStatusAccount: freezed == dbStatusAccount
           ? _value.dbStatusAccount
           : dbStatusAccount // ignore: cast_nullable_to_non_nullable
               as DbAccount?,
-      reblogDbStatus: reblogDbStatus == freezed
+      reblogDbStatus: freezed == reblogDbStatus
           ? _value.reblogDbStatus
           : reblogDbStatus // ignore: cast_nullable_to_non_nullable
               as DbStatus?,
-      reblogDbStatusAccount: reblogDbStatusAccount == freezed
+      reblogDbStatusAccount: freezed == reblogDbStatusAccount
           ? _value.reblogDbStatusAccount
           : reblogDbStatusAccount // ignore: cast_nullable_to_non_nullable
               as DbAccount?,
-      replyDbStatus: replyDbStatus == freezed
+      replyDbStatus: freezed == replyDbStatus
           ? _value.replyDbStatus
           : replyDbStatus // ignore: cast_nullable_to_non_nullable
               as DbStatus?,
-      replyDbStatusAccount: replyDbStatusAccount == freezed
+      replyDbStatusAccount: freezed == replyDbStatusAccount
           ? _value.replyDbStatusAccount
           : replyDbStatusAccount // ignore: cast_nullable_to_non_nullable
               as DbAccount?,
-      replyReblogDbStatus: replyReblogDbStatus == freezed
+      replyReblogDbStatus: freezed == replyReblogDbStatus
           ? _value.replyReblogDbStatus
           : replyReblogDbStatus // ignore: cast_nullable_to_non_nullable
               as DbStatus?,
-      replyReblogDbStatusAccount: replyReblogDbStatusAccount == freezed
+      replyReblogDbStatusAccount: freezed == replyReblogDbStatusAccount
           ? _value.replyReblogDbStatusAccount
           : replyReblogDbStatusAccount // ignore: cast_nullable_to_non_nullable
               as DbAccount?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$DbNotificationPopulatedCopyWith<$Res>
+abstract class _$$DbNotificationPopulatedImplCopyWith<$Res>
     implements $DbNotificationPopulatedCopyWith<$Res> {
-  factory _$DbNotificationPopulatedCopyWith(_DbNotificationPopulated value,
-          $Res Function(_DbNotificationPopulated) then) =
-      __$DbNotificationPopulatedCopyWithImpl<$Res>;
+  factory _$$DbNotificationPopulatedImplCopyWith(
+          _$DbNotificationPopulatedImpl value,
+          $Res Function(_$DbNotificationPopulatedImpl) then) =
+      __$$DbNotificationPopulatedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {DbNotification dbNotification,
       DbAccount? dbAccount,
@@ -476,17 +433,16 @@ abstract class _$DbNotificationPopulatedCopyWith<$Res>
 }
 
 /// @nodoc
-class __$DbNotificationPopulatedCopyWithImpl<$Res>
-    extends _$DbNotificationPopulatedCopyWithImpl<$Res>
-    implements _$DbNotificationPopulatedCopyWith<$Res> {
-  __$DbNotificationPopulatedCopyWithImpl(_DbNotificationPopulated _value,
-      $Res Function(_DbNotificationPopulated) _then)
-      : super(_value, (v) => _then(v as _DbNotificationPopulated));
+class __$$DbNotificationPopulatedImplCopyWithImpl<$Res>
+    extends _$DbNotificationPopulatedCopyWithImpl<$Res,
+        _$DbNotificationPopulatedImpl>
+    implements _$$DbNotificationPopulatedImplCopyWith<$Res> {
+  __$$DbNotificationPopulatedImplCopyWithImpl(
+      _$DbNotificationPopulatedImpl _value,
+      $Res Function(_$DbNotificationPopulatedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _DbNotificationPopulated get _value =>
-      super._value as _DbNotificationPopulated;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? dbNotification = freezed,
@@ -500,44 +456,44 @@ class __$DbNotificationPopulatedCopyWithImpl<$Res>
     Object? replyReblogDbStatus = freezed,
     Object? replyReblogDbStatusAccount = freezed,
   }) {
-    return _then(_DbNotificationPopulated(
-      dbNotification: dbNotification == freezed
+    return _then(_$DbNotificationPopulatedImpl(
+      dbNotification: freezed == dbNotification
           ? _value.dbNotification
           : dbNotification // ignore: cast_nullable_to_non_nullable
               as DbNotification,
-      dbAccount: dbAccount == freezed
+      dbAccount: freezed == dbAccount
           ? _value.dbAccount
           : dbAccount // ignore: cast_nullable_to_non_nullable
               as DbAccount?,
-      dbStatus: dbStatus == freezed
+      dbStatus: freezed == dbStatus
           ? _value.dbStatus
           : dbStatus // ignore: cast_nullable_to_non_nullable
               as DbStatus?,
-      dbStatusAccount: dbStatusAccount == freezed
+      dbStatusAccount: freezed == dbStatusAccount
           ? _value.dbStatusAccount
           : dbStatusAccount // ignore: cast_nullable_to_non_nullable
               as DbAccount?,
-      reblogDbStatus: reblogDbStatus == freezed
+      reblogDbStatus: freezed == reblogDbStatus
           ? _value.reblogDbStatus
           : reblogDbStatus // ignore: cast_nullable_to_non_nullable
               as DbStatus?,
-      reblogDbStatusAccount: reblogDbStatusAccount == freezed
+      reblogDbStatusAccount: freezed == reblogDbStatusAccount
           ? _value.reblogDbStatusAccount
           : reblogDbStatusAccount // ignore: cast_nullable_to_non_nullable
               as DbAccount?,
-      replyDbStatus: replyDbStatus == freezed
+      replyDbStatus: freezed == replyDbStatus
           ? _value.replyDbStatus
           : replyDbStatus // ignore: cast_nullable_to_non_nullable
               as DbStatus?,
-      replyDbStatusAccount: replyDbStatusAccount == freezed
+      replyDbStatusAccount: freezed == replyDbStatusAccount
           ? _value.replyDbStatusAccount
           : replyDbStatusAccount // ignore: cast_nullable_to_non_nullable
               as DbAccount?,
-      replyReblogDbStatus: replyReblogDbStatus == freezed
+      replyReblogDbStatus: freezed == replyReblogDbStatus
           ? _value.replyReblogDbStatus
           : replyReblogDbStatus // ignore: cast_nullable_to_non_nullable
               as DbStatus?,
-      replyReblogDbStatusAccount: replyReblogDbStatusAccount == freezed
+      replyReblogDbStatusAccount: freezed == replyReblogDbStatusAccount
           ? _value.replyReblogDbStatusAccount
           : replyReblogDbStatusAccount // ignore: cast_nullable_to_non_nullable
               as DbAccount?,
@@ -547,8 +503,8 @@ class __$DbNotificationPopulatedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DbNotificationPopulated extends _DbNotificationPopulated {
-  const _$_DbNotificationPopulated(
+class _$DbNotificationPopulatedImpl extends _DbNotificationPopulated {
+  const _$DbNotificationPopulatedImpl(
       {required this.dbNotification,
       required this.dbAccount,
       required this.dbStatus,
@@ -588,10 +544,10 @@ class _$_DbNotificationPopulated extends _DbNotificationPopulated {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DbNotificationPopulated &&
+            other is _$DbNotificationPopulatedImpl &&
             const DeepCollectionEquality()
                 .equals(other.dbNotification, dbNotification) &&
             const DeepCollectionEquality().equals(other.dbAccount, dbAccount) &&
@@ -628,24 +584,25 @@ class _$_DbNotificationPopulated extends _DbNotificationPopulated {
 
   @JsonKey(ignore: true)
   @override
-  _$DbNotificationPopulatedCopyWith<_DbNotificationPopulated> get copyWith =>
-      __$DbNotificationPopulatedCopyWithImpl<_DbNotificationPopulated>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DbNotificationPopulatedImplCopyWith<_$DbNotificationPopulatedImpl>
+      get copyWith => __$$DbNotificationPopulatedImplCopyWithImpl<
+          _$DbNotificationPopulatedImpl>(this, _$identity);
 }
 
 abstract class _DbNotificationPopulated extends DbNotificationPopulated {
   const factory _DbNotificationPopulated(
-          {required DbNotification dbNotification,
-          required DbAccount? dbAccount,
-          required DbStatus? dbStatus,
-          required DbAccount? dbStatusAccount,
-          required DbStatus? reblogDbStatus,
-          required DbAccount? reblogDbStatusAccount,
-          required DbStatus? replyDbStatus,
-          required DbAccount? replyDbStatusAccount,
-          required DbStatus? replyReblogDbStatus,
-          required DbAccount? replyReblogDbStatusAccount}) =
-      _$_DbNotificationPopulated;
+          {required final DbNotification dbNotification,
+          required final DbAccount? dbAccount,
+          required final DbStatus? dbStatus,
+          required final DbAccount? dbStatusAccount,
+          required final DbStatus? reblogDbStatus,
+          required final DbAccount? reblogDbStatusAccount,
+          required final DbStatus? replyDbStatus,
+          required final DbAccount? replyDbStatusAccount,
+          required final DbStatus? replyReblogDbStatus,
+          required final DbAccount? replyReblogDbStatusAccount}) =
+      _$DbNotificationPopulatedImpl;
   const _DbNotificationPopulated._() : super._();
 
   @override
@@ -670,6 +627,6 @@ abstract class _DbNotificationPopulated extends DbNotificationPopulated {
   DbAccount? get replyReblogDbStatusAccount;
   @override
   @JsonKey(ignore: true)
-  _$DbNotificationPopulatedCopyWith<_DbNotificationPopulated> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$DbNotificationPopulatedImplCopyWith<_$DbNotificationPopulatedImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

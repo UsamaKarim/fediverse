@@ -1,7 +1,7 @@
 import 'package:fedi_app/app/status/repository/status_repository_model.dart';
 import 'package:fedi_app/repository/repository_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:moor/moor.dart' as moor;
+import 'package:drift/drift.dart' as moor;
 import 'package:unifedi_api/unifedi_api.dart';
 
 part 'notification_repository_model.freezed.dart';

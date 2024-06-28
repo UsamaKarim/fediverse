@@ -57,9 +57,9 @@ class PleromaApiInstanceMetadataAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiInstanceMetadata _$$_PleromaApiInstanceMetadataFromJson(
+_$PleromaApiInstanceMetadataImpl _$$PleromaApiInstanceMetadataImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiInstanceMetadata(
+    _$PleromaApiInstanceMetadataImpl(
       features: (json['features'] as List<dynamic>?)
           ?.map((e) => e as String)
           .toList(),
@@ -77,8 +77,8 @@ _$_PleromaApiInstanceMetadata _$$_PleromaApiInstanceMetadataFromJson(
               json['federation'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_PleromaApiInstanceMetadataToJson(
-    _$_PleromaApiInstanceMetadata instance) {
+Map<String, dynamic> _$$PleromaApiInstanceMetadataImplToJson(
+    _$PleromaApiInstanceMetadataImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

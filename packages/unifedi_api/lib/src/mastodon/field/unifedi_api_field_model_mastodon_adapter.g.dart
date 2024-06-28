@@ -45,14 +45,15 @@ class UnifediApiFieldMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiFieldMastodonAdapter _$$_UnifediApiFieldMastodonAdapterFromJson(
-        Map<String, dynamic> json) =>
-    _$_UnifediApiFieldMastodonAdapter(
-      MastodonApiField.fromJson(json['value_field'] as Map<String, dynamic>),
-    );
+_$UnifediApiFieldMastodonAdapterImpl
+    _$$UnifediApiFieldMastodonAdapterImplFromJson(Map<String, dynamic> json) =>
+        _$UnifediApiFieldMastodonAdapterImpl(
+          MastodonApiField.fromJson(
+              json['value_field'] as Map<String, dynamic>),
+        );
 
-Map<String, dynamic> _$$_UnifediApiFieldMastodonAdapterToJson(
-        _$_UnifediApiFieldMastodonAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiFieldMastodonAdapterImplToJson(
+        _$UnifediApiFieldMastodonAdapterImpl instance) =>
     <String, dynamic>{
       'value_field': instance.valueField.toJson(),
     };

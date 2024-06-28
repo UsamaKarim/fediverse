@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_access_level_model_impl.dart';
 
@@ -11,33 +12,12 @@ part of 'mastodon_api_access_level_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiAccessLevel _$MastodonApiAccessLevelFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiAccessLevel.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiAccessLevelTearOff {
-  const _$MastodonApiAccessLevelTearOff();
-
-  _MastodonApiAccessLevel call(
-      {@HiveField(1)
-      @JsonKey(name: 'string_value')
-          required String stringValue}) {
-    return _MastodonApiAccessLevel(
-      stringValue: stringValue,
-    );
-  }
-
-  MastodonApiAccessLevel fromJson(Map<String, Object?> json) {
-    return MastodonApiAccessLevel.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiAccessLevel = _$MastodonApiAccessLevelTearOff();
 
 /// @nodoc
 mixin _$MastodonApiAccessLevel {
@@ -55,59 +35,65 @@ mixin _$MastodonApiAccessLevel {
 abstract class $MastodonApiAccessLevelCopyWith<$Res> {
   factory $MastodonApiAccessLevelCopyWith(MastodonApiAccessLevel value,
           $Res Function(MastodonApiAccessLevel) then) =
-      _$MastodonApiAccessLevelCopyWithImpl<$Res>;
+      _$MastodonApiAccessLevelCopyWithImpl<$Res, MastodonApiAccessLevel>;
+  @useResult
   $Res call({@HiveField(1) @JsonKey(name: 'string_value') String stringValue});
 }
 
 /// @nodoc
-class _$MastodonApiAccessLevelCopyWithImpl<$Res>
+class _$MastodonApiAccessLevelCopyWithImpl<$Res,
+        $Val extends MastodonApiAccessLevel>
     implements $MastodonApiAccessLevelCopyWith<$Res> {
   _$MastodonApiAccessLevelCopyWithImpl(this._value, this._then);
 
-  final MastodonApiAccessLevel _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiAccessLevel) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
     return _then(_value.copyWith(
-      stringValue: stringValue == freezed
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiAccessLevelCopyWith<$Res>
+abstract class _$$MastodonApiAccessLevelImplCopyWith<$Res>
     implements $MastodonApiAccessLevelCopyWith<$Res> {
-  factory _$MastodonApiAccessLevelCopyWith(_MastodonApiAccessLevel value,
-          $Res Function(_MastodonApiAccessLevel) then) =
-      __$MastodonApiAccessLevelCopyWithImpl<$Res>;
+  factory _$$MastodonApiAccessLevelImplCopyWith(
+          _$MastodonApiAccessLevelImpl value,
+          $Res Function(_$MastodonApiAccessLevelImpl) then) =
+      __$$MastodonApiAccessLevelImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(1) @JsonKey(name: 'string_value') String stringValue});
 }
 
 /// @nodoc
-class __$MastodonApiAccessLevelCopyWithImpl<$Res>
-    extends _$MastodonApiAccessLevelCopyWithImpl<$Res>
-    implements _$MastodonApiAccessLevelCopyWith<$Res> {
-  __$MastodonApiAccessLevelCopyWithImpl(_MastodonApiAccessLevel _value,
-      $Res Function(_MastodonApiAccessLevel) _then)
-      : super(_value, (v) => _then(v as _MastodonApiAccessLevel));
+class __$$MastodonApiAccessLevelImplCopyWithImpl<$Res>
+    extends _$MastodonApiAccessLevelCopyWithImpl<$Res,
+        _$MastodonApiAccessLevelImpl>
+    implements _$$MastodonApiAccessLevelImplCopyWith<$Res> {
+  __$$MastodonApiAccessLevelImplCopyWithImpl(
+      _$MastodonApiAccessLevelImpl _value,
+      $Res Function(_$MastodonApiAccessLevelImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiAccessLevel get _value => super._value as _MastodonApiAccessLevel;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_MastodonApiAccessLevel(
-      stringValue: stringValue == freezed
+    return _then(_$MastodonApiAccessLevelImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -117,12 +103,12 @@ class __$MastodonApiAccessLevelCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiAccessLevel implements _MastodonApiAccessLevel {
-  const _$_MastodonApiAccessLevel(
+class _$MastodonApiAccessLevelImpl implements _MastodonApiAccessLevel {
+  const _$MastodonApiAccessLevelImpl(
       {@HiveField(1) @JsonKey(name: 'string_value') required this.stringValue});
 
-  factory _$_MastodonApiAccessLevel.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiAccessLevelFromJson(json);
+  factory _$MastodonApiAccessLevelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MastodonApiAccessLevelImplFromJson(json);
 
   @override
   @HiveField(1)
@@ -135,26 +121,30 @@ class _$_MastodonApiAccessLevel implements _MastodonApiAccessLevel {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiAccessLevel &&
+            other is _$MastodonApiAccessLevelImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, stringValue);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiAccessLevelCopyWith<_MastodonApiAccessLevel> get copyWith =>
-      __$MastodonApiAccessLevelCopyWithImpl<_MastodonApiAccessLevel>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiAccessLevelImplCopyWith<_$MastodonApiAccessLevelImpl>
+      get copyWith => __$$MastodonApiAccessLevelImplCopyWithImpl<
+          _$MastodonApiAccessLevelImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiAccessLevelToJson(this);
+    return _$$MastodonApiAccessLevelImplToJson(
+      this,
+    );
   }
 }
 
@@ -162,10 +152,10 @@ abstract class _MastodonApiAccessLevel implements MastodonApiAccessLevel {
   const factory _MastodonApiAccessLevel(
       {@HiveField(1)
       @JsonKey(name: 'string_value')
-          required String stringValue}) = _$_MastodonApiAccessLevel;
+      required final String stringValue}) = _$MastodonApiAccessLevelImpl;
 
   factory _MastodonApiAccessLevel.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiAccessLevel.fromJson;
+      _$MastodonApiAccessLevelImpl.fromJson;
 
   @override
   @HiveField(1)
@@ -173,6 +163,6 @@ abstract class _MastodonApiAccessLevel implements MastodonApiAccessLevel {
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiAccessLevelCopyWith<_MastodonApiAccessLevel> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$MastodonApiAccessLevelImplCopyWith<_$MastodonApiAccessLevelImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

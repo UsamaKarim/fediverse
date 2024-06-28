@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_register_account_model_impl.dart';
 
@@ -11,69 +12,12 @@ part of 'unifedi_api_register_account_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiRegisterAccount _$UnifediApiRegisterAccountFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiRegisterAccount.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiRegisterAccountTearOff {
-  const _$UnifediApiRegisterAccountTearOff();
-
-  _UnifediApiRegisterAccount call(
-      {@HiveField(1)
-          required String username,
-      @HiveField(2)
-          required String email,
-      @HiveField(3)
-          required String password,
-      @HiveField(4)
-          required bool agreement,
-      @HiveField(5)
-          required String locale,
-      @HiveField(6)
-          required String? reason,
-      @JsonKey(name: 'captcha_token')
-      @HiveField(7)
-          required String? captchaToken,
-      @JsonKey(name: 'captcha_answer_data')
-      @HiveField(8)
-          required String? captchaAnswerData,
-      @JsonKey(name: 'captcha_solution')
-      @HiveField(9)
-          required String? captchaSolution,
-      @HiveField(10)
-          required String? fullName,
-      @HiveField(11)
-          required String? bio,
-      @JsonKey(name: 'token')
-      @HiveField(12)
-          required String? inviteToken}) {
-    return _UnifediApiRegisterAccount(
-      username: username,
-      email: email,
-      password: password,
-      agreement: agreement,
-      locale: locale,
-      reason: reason,
-      captchaToken: captchaToken,
-      captchaAnswerData: captchaAnswerData,
-      captchaSolution: captchaSolution,
-      fullName: fullName,
-      bio: bio,
-      inviteToken: inviteToken,
-    );
-  }
-
-  UnifediApiRegisterAccount fromJson(Map<String, Object?> json) {
-    return UnifediApiRegisterAccount.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiRegisterAccount = _$UnifediApiRegisterAccountTearOff();
 
 /// @nodoc
 mixin _$UnifediApiRegisterAccount {
@@ -116,54 +60,44 @@ mixin _$UnifediApiRegisterAccount {
 abstract class $UnifediApiRegisterAccountCopyWith<$Res> {
   factory $UnifediApiRegisterAccountCopyWith(UnifediApiRegisterAccount value,
           $Res Function(UnifediApiRegisterAccount) then) =
-      _$UnifediApiRegisterAccountCopyWithImpl<$Res>;
+      _$UnifediApiRegisterAccountCopyWithImpl<$Res, UnifediApiRegisterAccount>;
+  @useResult
   $Res call(
-      {@HiveField(1)
-          String username,
-      @HiveField(2)
-          String email,
-      @HiveField(3)
-          String password,
-      @HiveField(4)
-          bool agreement,
-      @HiveField(5)
-          String locale,
-      @HiveField(6)
-          String? reason,
-      @JsonKey(name: 'captcha_token')
-      @HiveField(7)
-          String? captchaToken,
+      {@HiveField(1) String username,
+      @HiveField(2) String email,
+      @HiveField(3) String password,
+      @HiveField(4) bool agreement,
+      @HiveField(5) String locale,
+      @HiveField(6) String? reason,
+      @JsonKey(name: 'captcha_token') @HiveField(7) String? captchaToken,
       @JsonKey(name: 'captcha_answer_data')
       @HiveField(8)
-          String? captchaAnswerData,
-      @JsonKey(name: 'captcha_solution')
-      @HiveField(9)
-          String? captchaSolution,
-      @HiveField(10)
-          String? fullName,
-      @HiveField(11)
-          String? bio,
-      @JsonKey(name: 'token')
-      @HiveField(12)
-          String? inviteToken});
+      String? captchaAnswerData,
+      @JsonKey(name: 'captcha_solution') @HiveField(9) String? captchaSolution,
+      @HiveField(10) String? fullName,
+      @HiveField(11) String? bio,
+      @JsonKey(name: 'token') @HiveField(12) String? inviteToken});
 }
 
 /// @nodoc
-class _$UnifediApiRegisterAccountCopyWithImpl<$Res>
+class _$UnifediApiRegisterAccountCopyWithImpl<$Res,
+        $Val extends UnifediApiRegisterAccount>
     implements $UnifediApiRegisterAccountCopyWith<$Res> {
   _$UnifediApiRegisterAccountCopyWithImpl(this._value, this._then);
 
-  final UnifediApiRegisterAccount _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiRegisterAccount) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? username = freezed,
-    Object? email = freezed,
-    Object? password = freezed,
-    Object? agreement = freezed,
-    Object? locale = freezed,
+    Object? username = null,
+    Object? email = null,
+    Object? password = null,
+    Object? agreement = null,
+    Object? locale = null,
     Object? reason = freezed,
     Object? captchaToken = freezed,
     Object? captchaAnswerData = freezed,
@@ -173,115 +107,102 @@ class _$UnifediApiRegisterAccountCopyWithImpl<$Res>
     Object? inviteToken = freezed,
   }) {
     return _then(_value.copyWith(
-      username: username == freezed
+      username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
               as String,
-      email: email == freezed
+      email: null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String,
-      password: password == freezed
+      password: null == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as String,
-      agreement: agreement == freezed
+      agreement: null == agreement
           ? _value.agreement
           : agreement // ignore: cast_nullable_to_non_nullable
               as bool,
-      locale: locale == freezed
+      locale: null == locale
           ? _value.locale
           : locale // ignore: cast_nullable_to_non_nullable
               as String,
-      reason: reason == freezed
+      reason: freezed == reason
           ? _value.reason
           : reason // ignore: cast_nullable_to_non_nullable
               as String?,
-      captchaToken: captchaToken == freezed
+      captchaToken: freezed == captchaToken
           ? _value.captchaToken
           : captchaToken // ignore: cast_nullable_to_non_nullable
               as String?,
-      captchaAnswerData: captchaAnswerData == freezed
+      captchaAnswerData: freezed == captchaAnswerData
           ? _value.captchaAnswerData
           : captchaAnswerData // ignore: cast_nullable_to_non_nullable
               as String?,
-      captchaSolution: captchaSolution == freezed
+      captchaSolution: freezed == captchaSolution
           ? _value.captchaSolution
           : captchaSolution // ignore: cast_nullable_to_non_nullable
               as String?,
-      fullName: fullName == freezed
+      fullName: freezed == fullName
           ? _value.fullName
           : fullName // ignore: cast_nullable_to_non_nullable
               as String?,
-      bio: bio == freezed
+      bio: freezed == bio
           ? _value.bio
           : bio // ignore: cast_nullable_to_non_nullable
               as String?,
-      inviteToken: inviteToken == freezed
+      inviteToken: freezed == inviteToken
           ? _value.inviteToken
           : inviteToken // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiRegisterAccountCopyWith<$Res>
+abstract class _$$UnifediApiRegisterAccountImplCopyWith<$Res>
     implements $UnifediApiRegisterAccountCopyWith<$Res> {
-  factory _$UnifediApiRegisterAccountCopyWith(_UnifediApiRegisterAccount value,
-          $Res Function(_UnifediApiRegisterAccount) then) =
-      __$UnifediApiRegisterAccountCopyWithImpl<$Res>;
+  factory _$$UnifediApiRegisterAccountImplCopyWith(
+          _$UnifediApiRegisterAccountImpl value,
+          $Res Function(_$UnifediApiRegisterAccountImpl) then) =
+      __$$UnifediApiRegisterAccountImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(1)
-          String username,
-      @HiveField(2)
-          String email,
-      @HiveField(3)
-          String password,
-      @HiveField(4)
-          bool agreement,
-      @HiveField(5)
-          String locale,
-      @HiveField(6)
-          String? reason,
-      @JsonKey(name: 'captcha_token')
-      @HiveField(7)
-          String? captchaToken,
+      {@HiveField(1) String username,
+      @HiveField(2) String email,
+      @HiveField(3) String password,
+      @HiveField(4) bool agreement,
+      @HiveField(5) String locale,
+      @HiveField(6) String? reason,
+      @JsonKey(name: 'captcha_token') @HiveField(7) String? captchaToken,
       @JsonKey(name: 'captcha_answer_data')
       @HiveField(8)
-          String? captchaAnswerData,
-      @JsonKey(name: 'captcha_solution')
-      @HiveField(9)
-          String? captchaSolution,
-      @HiveField(10)
-          String? fullName,
-      @HiveField(11)
-          String? bio,
-      @JsonKey(name: 'token')
-      @HiveField(12)
-          String? inviteToken});
+      String? captchaAnswerData,
+      @JsonKey(name: 'captcha_solution') @HiveField(9) String? captchaSolution,
+      @HiveField(10) String? fullName,
+      @HiveField(11) String? bio,
+      @JsonKey(name: 'token') @HiveField(12) String? inviteToken});
 }
 
 /// @nodoc
-class __$UnifediApiRegisterAccountCopyWithImpl<$Res>
-    extends _$UnifediApiRegisterAccountCopyWithImpl<$Res>
-    implements _$UnifediApiRegisterAccountCopyWith<$Res> {
-  __$UnifediApiRegisterAccountCopyWithImpl(_UnifediApiRegisterAccount _value,
-      $Res Function(_UnifediApiRegisterAccount) _then)
-      : super(_value, (v) => _then(v as _UnifediApiRegisterAccount));
+class __$$UnifediApiRegisterAccountImplCopyWithImpl<$Res>
+    extends _$UnifediApiRegisterAccountCopyWithImpl<$Res,
+        _$UnifediApiRegisterAccountImpl>
+    implements _$$UnifediApiRegisterAccountImplCopyWith<$Res> {
+  __$$UnifediApiRegisterAccountImplCopyWithImpl(
+      _$UnifediApiRegisterAccountImpl _value,
+      $Res Function(_$UnifediApiRegisterAccountImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiRegisterAccount get _value =>
-      super._value as _UnifediApiRegisterAccount;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? username = freezed,
-    Object? email = freezed,
-    Object? password = freezed,
-    Object? agreement = freezed,
-    Object? locale = freezed,
+    Object? username = null,
+    Object? email = null,
+    Object? password = null,
+    Object? agreement = null,
+    Object? locale = null,
     Object? reason = freezed,
     Object? captchaToken = freezed,
     Object? captchaAnswerData = freezed,
@@ -290,52 +211,52 @@ class __$UnifediApiRegisterAccountCopyWithImpl<$Res>
     Object? bio = freezed,
     Object? inviteToken = freezed,
   }) {
-    return _then(_UnifediApiRegisterAccount(
-      username: username == freezed
+    return _then(_$UnifediApiRegisterAccountImpl(
+      username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
               as String,
-      email: email == freezed
+      email: null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String,
-      password: password == freezed
+      password: null == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as String,
-      agreement: agreement == freezed
+      agreement: null == agreement
           ? _value.agreement
           : agreement // ignore: cast_nullable_to_non_nullable
               as bool,
-      locale: locale == freezed
+      locale: null == locale
           ? _value.locale
           : locale // ignore: cast_nullable_to_non_nullable
               as String,
-      reason: reason == freezed
+      reason: freezed == reason
           ? _value.reason
           : reason // ignore: cast_nullable_to_non_nullable
               as String?,
-      captchaToken: captchaToken == freezed
+      captchaToken: freezed == captchaToken
           ? _value.captchaToken
           : captchaToken // ignore: cast_nullable_to_non_nullable
               as String?,
-      captchaAnswerData: captchaAnswerData == freezed
+      captchaAnswerData: freezed == captchaAnswerData
           ? _value.captchaAnswerData
           : captchaAnswerData // ignore: cast_nullable_to_non_nullable
               as String?,
-      captchaSolution: captchaSolution == freezed
+      captchaSolution: freezed == captchaSolution
           ? _value.captchaSolution
           : captchaSolution // ignore: cast_nullable_to_non_nullable
               as String?,
-      fullName: fullName == freezed
+      fullName: freezed == fullName
           ? _value.fullName
           : fullName // ignore: cast_nullable_to_non_nullable
               as String?,
-      bio: bio == freezed
+      bio: freezed == bio
           ? _value.bio
           : bio // ignore: cast_nullable_to_non_nullable
               as String?,
-      inviteToken: inviteToken == freezed
+      inviteToken: freezed == inviteToken
           ? _value.inviteToken
           : inviteToken // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -345,39 +266,27 @@ class __$UnifediApiRegisterAccountCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiRegisterAccount implements _UnifediApiRegisterAccount {
-  const _$_UnifediApiRegisterAccount(
-      {@HiveField(1)
-          required this.username,
-      @HiveField(2)
-          required this.email,
-      @HiveField(3)
-          required this.password,
-      @HiveField(4)
-          required this.agreement,
-      @HiveField(5)
-          required this.locale,
-      @HiveField(6)
-          required this.reason,
-      @JsonKey(name: 'captcha_token')
-      @HiveField(7)
-          required this.captchaToken,
+class _$UnifediApiRegisterAccountImpl implements _UnifediApiRegisterAccount {
+  const _$UnifediApiRegisterAccountImpl(
+      {@HiveField(1) required this.username,
+      @HiveField(2) required this.email,
+      @HiveField(3) required this.password,
+      @HiveField(4) required this.agreement,
+      @HiveField(5) required this.locale,
+      @HiveField(6) required this.reason,
+      @JsonKey(name: 'captcha_token') @HiveField(7) required this.captchaToken,
       @JsonKey(name: 'captcha_answer_data')
       @HiveField(8)
-          required this.captchaAnswerData,
+      required this.captchaAnswerData,
       @JsonKey(name: 'captcha_solution')
       @HiveField(9)
-          required this.captchaSolution,
-      @HiveField(10)
-          required this.fullName,
-      @HiveField(11)
-          required this.bio,
-      @JsonKey(name: 'token')
-      @HiveField(12)
-          required this.inviteToken});
+      required this.captchaSolution,
+      @HiveField(10) required this.fullName,
+      @HiveField(11) required this.bio,
+      @JsonKey(name: 'token') @HiveField(12) required this.inviteToken});
 
-  factory _$_UnifediApiRegisterAccount.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiRegisterAccountFromJson(json);
+  factory _$UnifediApiRegisterAccountImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiRegisterAccountImplFromJson(json);
 
   @override
   @HiveField(1)
@@ -426,10 +335,10 @@ class _$_UnifediApiRegisterAccount implements _UnifediApiRegisterAccount {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiRegisterAccount &&
+            other is _$UnifediApiRegisterAccountImpl &&
             (identical(other.username, username) ||
                 other.username == username) &&
             (identical(other.email, email) || other.email == email) &&
@@ -452,6 +361,7 @@ class _$_UnifediApiRegisterAccount implements _UnifediApiRegisterAccount {
                 other.inviteToken == inviteToken));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -470,50 +380,44 @@ class _$_UnifediApiRegisterAccount implements _UnifediApiRegisterAccount {
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiRegisterAccountCopyWith<_UnifediApiRegisterAccount>
-      get copyWith =>
-          __$UnifediApiRegisterAccountCopyWithImpl<_UnifediApiRegisterAccount>(
-              this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiRegisterAccountImplCopyWith<_$UnifediApiRegisterAccountImpl>
+      get copyWith => __$$UnifediApiRegisterAccountImplCopyWithImpl<
+          _$UnifediApiRegisterAccountImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiRegisterAccountToJson(this);
+    return _$$UnifediApiRegisterAccountImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiRegisterAccount implements UnifediApiRegisterAccount {
   const factory _UnifediApiRegisterAccount(
-      {@HiveField(1)
-          required String username,
-      @HiveField(2)
-          required String email,
-      @HiveField(3)
-          required String password,
-      @HiveField(4)
-          required bool agreement,
-      @HiveField(5)
-          required String locale,
-      @HiveField(6)
-          required String? reason,
+      {@HiveField(1) required final String username,
+      @HiveField(2) required final String email,
+      @HiveField(3) required final String password,
+      @HiveField(4) required final bool agreement,
+      @HiveField(5) required final String locale,
+      @HiveField(6) required final String? reason,
       @JsonKey(name: 'captcha_token')
       @HiveField(7)
-          required String? captchaToken,
+      required final String? captchaToken,
       @JsonKey(name: 'captcha_answer_data')
       @HiveField(8)
-          required String? captchaAnswerData,
+      required final String? captchaAnswerData,
       @JsonKey(name: 'captcha_solution')
       @HiveField(9)
-          required String? captchaSolution,
-      @HiveField(10)
-          required String? fullName,
-      @HiveField(11)
-          required String? bio,
+      required final String? captchaSolution,
+      @HiveField(10) required final String? fullName,
+      @HiveField(11) required final String? bio,
       @JsonKey(name: 'token')
       @HiveField(12)
-          required String? inviteToken}) = _$_UnifediApiRegisterAccount;
+      required final String? inviteToken}) = _$UnifediApiRegisterAccountImpl;
 
   factory _UnifediApiRegisterAccount.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiRegisterAccount.fromJson;
+      _$UnifediApiRegisterAccountImpl.fromJson;
 
   @override
   @HiveField(1)
@@ -557,6 +461,6 @@ abstract class _UnifediApiRegisterAccount implements UnifediApiRegisterAccount {
   String? get inviteToken;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiRegisterAccountCopyWith<_UnifediApiRegisterAccount>
+  _$$UnifediApiRegisterAccountImplCopyWith<_$UnifediApiRegisterAccountImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

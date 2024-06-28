@@ -45,14 +45,14 @@ class UnifediApiFilterMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiFilterMastodonAdapter _$$_UnifediApiFilterMastodonAdapterFromJson(
-        Map<String, dynamic> json) =>
-    _$_UnifediApiFilterMastodonAdapter(
-      MastodonApiFilter.fromJson(json['value'] as Map<String, dynamic>),
-    );
+_$UnifediApiFilterMastodonAdapterImpl
+    _$$UnifediApiFilterMastodonAdapterImplFromJson(Map<String, dynamic> json) =>
+        _$UnifediApiFilterMastodonAdapterImpl(
+          MastodonApiFilter.fromJson(json['value'] as Map<String, dynamic>),
+        );
 
-Map<String, dynamic> _$$_UnifediApiFilterMastodonAdapterToJson(
-        _$_UnifediApiFilterMastodonAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiFilterMastodonAdapterImplToJson(
+        _$UnifediApiFilterMastodonAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

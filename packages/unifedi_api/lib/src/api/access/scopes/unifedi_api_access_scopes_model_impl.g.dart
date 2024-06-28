@@ -48,9 +48,9 @@ class UnifediApiAccessScopesAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiAccessScopes _$$_UnifediApiAccessScopesFromJson(
+_$UnifediApiAccessScopesImpl _$$UnifediApiAccessScopesImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiAccessScopes(
+    _$UnifediApiAccessScopesImpl(
       globalPermissions: (json['global_permissions'] as List<dynamic>)
           .map((e) => e as String)
           .toList(),
@@ -60,8 +60,8 @@ _$_UnifediApiAccessScopes _$$_UnifediApiAccessScopesFromJson(
           .toList(),
     );
 
-Map<String, dynamic> _$$_UnifediApiAccessScopesToJson(
-        _$_UnifediApiAccessScopes instance) =>
+Map<String, dynamic> _$$UnifediApiAccessScopesImplToJson(
+        _$UnifediApiAccessScopesImpl instance) =>
     <String, dynamic>{
       'global_permissions': instance.globalPermissions,
       'target_permissions':

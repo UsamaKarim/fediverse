@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'rest_response_redirect_code_type_sealed.dart';
 
@@ -11,80 +12,11 @@ part of 'rest_response_redirect_code_type_sealed.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$RestResponseRedirectCodeTypeTearOff {
-  const _$RestResponseRedirectCodeTypeTearOff();
-
-  _MultipleChoice multipleChoice(
-      {int intValue = RestResponseRedirectCodeType.multipleChoiceIntValue}) {
-    return _MultipleChoice(
-      intValue: intValue,
-    );
-  }
-
-  _Moved moved({int intValue = RestResponseRedirectCodeType.movedIntValue}) {
-    return _Moved(
-      intValue: intValue,
-    );
-  }
-
-  _Found found({int intValue = RestResponseRedirectCodeType.foundIntValue}) {
-    return _Found(
-      intValue: intValue,
-    );
-  }
-
-  _SeeOther seeOther(
-      {int intValue = RestResponseRedirectCodeType.seeOtherIntValue}) {
-    return _SeeOther(
-      intValue: intValue,
-    );
-  }
-
-  _NotModified notModified(
-      {int intValue = RestResponseRedirectCodeType.notModifiedIntValue}) {
-    return _NotModified(
-      intValue: intValue,
-    );
-  }
-
-  _UseProxy useProxy(
-      {int intValue = RestResponseRedirectCodeType.useProxyIntValue}) {
-    return _UseProxy(
-      intValue: intValue,
-    );
-  }
-
-  _Unused unused({int intValue = RestResponseRedirectCodeType.unusedIntValue}) {
-    return _Unused(
-      intValue: intValue,
-    );
-  }
-
-  _TemporaryRedirect temporaryRedirect(
-      {int intValue = RestResponseRedirectCodeType.temporaryRedirectIntValue}) {
-    return _TemporaryRedirect(
-      intValue: intValue,
-    );
-  }
-
-  _PermanentRedirect permanentRedirect(
-      {int intValue = RestResponseRedirectCodeType.permanentRedirectIntValue}) {
-    return _PermanentRedirect(
-      intValue: intValue,
-    );
-  }
-}
-
-/// @nodoc
-const $RestResponseRedirectCodeType = _$RestResponseRedirectCodeTypeTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$RestResponseRedirectCodeType {
   int get intValue => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(int intValue) multipleChoice,
@@ -100,15 +32,15 @@ mixin _$RestResponseRedirectCodeType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? multipleChoice,
-    TResult Function(int intValue)? moved,
-    TResult Function(int intValue)? found,
-    TResult Function(int intValue)? seeOther,
-    TResult Function(int intValue)? notModified,
-    TResult Function(int intValue)? useProxy,
-    TResult Function(int intValue)? unused,
-    TResult Function(int intValue)? temporaryRedirect,
-    TResult Function(int intValue)? permanentRedirect,
+    TResult? Function(int intValue)? multipleChoice,
+    TResult? Function(int intValue)? moved,
+    TResult? Function(int intValue)? found,
+    TResult? Function(int intValue)? seeOther,
+    TResult? Function(int intValue)? notModified,
+    TResult? Function(int intValue)? useProxy,
+    TResult? Function(int intValue)? unused,
+    TResult? Function(int intValue)? temporaryRedirect,
+    TResult? Function(int intValue)? permanentRedirect,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -140,15 +72,15 @@ mixin _$RestResponseRedirectCodeType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MultipleChoice value)? multipleChoice,
-    TResult Function(_Moved value)? moved,
-    TResult Function(_Found value)? found,
-    TResult Function(_SeeOther value)? seeOther,
-    TResult Function(_NotModified value)? notModified,
-    TResult Function(_UseProxy value)? useProxy,
-    TResult Function(_Unused value)? unused,
-    TResult Function(_TemporaryRedirect value)? temporaryRedirect,
-    TResult Function(_PermanentRedirect value)? permanentRedirect,
+    TResult? Function(_MultipleChoice value)? multipleChoice,
+    TResult? Function(_Moved value)? moved,
+    TResult? Function(_Found value)? found,
+    TResult? Function(_SeeOther value)? seeOther,
+    TResult? Function(_NotModified value)? notModified,
+    TResult? Function(_UseProxy value)? useProxy,
+    TResult? Function(_Unused value)? unused,
+    TResult? Function(_TemporaryRedirect value)? temporaryRedirect,
+    TResult? Function(_PermanentRedirect value)? permanentRedirect,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -176,59 +108,63 @@ abstract class $RestResponseRedirectCodeTypeCopyWith<$Res> {
   factory $RestResponseRedirectCodeTypeCopyWith(
           RestResponseRedirectCodeType value,
           $Res Function(RestResponseRedirectCodeType) then) =
-      _$RestResponseRedirectCodeTypeCopyWithImpl<$Res>;
+      _$RestResponseRedirectCodeTypeCopyWithImpl<$Res,
+          RestResponseRedirectCodeType>;
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class _$RestResponseRedirectCodeTypeCopyWithImpl<$Res>
+class _$RestResponseRedirectCodeTypeCopyWithImpl<$Res,
+        $Val extends RestResponseRedirectCodeType>
     implements $RestResponseRedirectCodeTypeCopyWith<$Res> {
   _$RestResponseRedirectCodeTypeCopyWithImpl(this._value, this._then);
 
-  final RestResponseRedirectCodeType _value;
   // ignore: unused_field
-  final $Res Function(RestResponseRedirectCodeType) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
     return _then(_value.copyWith(
-      intValue: intValue == freezed
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MultipleChoiceCopyWith<$Res>
+abstract class _$$MultipleChoiceImplCopyWith<$Res>
     implements $RestResponseRedirectCodeTypeCopyWith<$Res> {
-  factory _$MultipleChoiceCopyWith(
-          _MultipleChoice value, $Res Function(_MultipleChoice) then) =
-      __$MultipleChoiceCopyWithImpl<$Res>;
+  factory _$$MultipleChoiceImplCopyWith(_$MultipleChoiceImpl value,
+          $Res Function(_$MultipleChoiceImpl) then) =
+      __$$MultipleChoiceImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$MultipleChoiceCopyWithImpl<$Res>
-    extends _$RestResponseRedirectCodeTypeCopyWithImpl<$Res>
-    implements _$MultipleChoiceCopyWith<$Res> {
-  __$MultipleChoiceCopyWithImpl(
-      _MultipleChoice _value, $Res Function(_MultipleChoice) _then)
-      : super(_value, (v) => _then(v as _MultipleChoice));
+class __$$MultipleChoiceImplCopyWithImpl<$Res>
+    extends _$RestResponseRedirectCodeTypeCopyWithImpl<$Res,
+        _$MultipleChoiceImpl> implements _$$MultipleChoiceImplCopyWith<$Res> {
+  __$$MultipleChoiceImplCopyWithImpl(
+      _$MultipleChoiceImpl _value, $Res Function(_$MultipleChoiceImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MultipleChoice get _value => super._value as _MultipleChoice;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_MultipleChoice(
-      intValue: intValue == freezed
+    return _then(_$MultipleChoiceImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -238,12 +174,12 @@ class __$MultipleChoiceCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_MultipleChoice implements _MultipleChoice {
-  const _$_MultipleChoice(
+class _$MultipleChoiceImpl implements _MultipleChoice {
+  const _$MultipleChoiceImpl(
       {this.intValue = RestResponseRedirectCodeType.multipleChoiceIntValue});
 
-  @JsonKey(defaultValue: RestResponseRedirectCodeType.multipleChoiceIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -252,10 +188,10 @@ class _$_MultipleChoice implements _MultipleChoice {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MultipleChoice &&
+            other is _$MultipleChoiceImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -265,8 +201,10 @@ class _$_MultipleChoice implements _MultipleChoice {
 
   @JsonKey(ignore: true)
   @override
-  _$MultipleChoiceCopyWith<_MultipleChoice> get copyWith =>
-      __$MultipleChoiceCopyWithImpl<_MultipleChoice>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MultipleChoiceImplCopyWith<_$MultipleChoiceImpl> get copyWith =>
+      __$$MultipleChoiceImplCopyWithImpl<_$MultipleChoiceImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -287,15 +225,15 @@ class _$_MultipleChoice implements _MultipleChoice {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? multipleChoice,
-    TResult Function(int intValue)? moved,
-    TResult Function(int intValue)? found,
-    TResult Function(int intValue)? seeOther,
-    TResult Function(int intValue)? notModified,
-    TResult Function(int intValue)? useProxy,
-    TResult Function(int intValue)? unused,
-    TResult Function(int intValue)? temporaryRedirect,
-    TResult Function(int intValue)? permanentRedirect,
+    TResult? Function(int intValue)? multipleChoice,
+    TResult? Function(int intValue)? moved,
+    TResult? Function(int intValue)? found,
+    TResult? Function(int intValue)? seeOther,
+    TResult? Function(int intValue)? notModified,
+    TResult? Function(int intValue)? useProxy,
+    TResult? Function(int intValue)? unused,
+    TResult? Function(int intValue)? temporaryRedirect,
+    TResult? Function(int intValue)? permanentRedirect,
   }) {
     return multipleChoice?.call(intValue);
   }
@@ -339,15 +277,15 @@ class _$_MultipleChoice implements _MultipleChoice {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MultipleChoice value)? multipleChoice,
-    TResult Function(_Moved value)? moved,
-    TResult Function(_Found value)? found,
-    TResult Function(_SeeOther value)? seeOther,
-    TResult Function(_NotModified value)? notModified,
-    TResult Function(_UseProxy value)? useProxy,
-    TResult Function(_Unused value)? unused,
-    TResult Function(_TemporaryRedirect value)? temporaryRedirect,
-    TResult Function(_PermanentRedirect value)? permanentRedirect,
+    TResult? Function(_MultipleChoice value)? multipleChoice,
+    TResult? Function(_Moved value)? moved,
+    TResult? Function(_Found value)? found,
+    TResult? Function(_SeeOther value)? seeOther,
+    TResult? Function(_NotModified value)? notModified,
+    TResult? Function(_UseProxy value)? useProxy,
+    TResult? Function(_Unused value)? unused,
+    TResult? Function(_TemporaryRedirect value)? temporaryRedirect,
+    TResult? Function(_PermanentRedirect value)? permanentRedirect,
   }) {
     return multipleChoice?.call(this);
   }
@@ -374,41 +312,42 @@ class _$_MultipleChoice implements _MultipleChoice {
 }
 
 abstract class _MultipleChoice implements RestResponseRedirectCodeType {
-  const factory _MultipleChoice({int intValue}) = _$_MultipleChoice;
+  const factory _MultipleChoice({final int intValue}) = _$MultipleChoiceImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$MultipleChoiceCopyWith<_MultipleChoice> get copyWith =>
+  _$$MultipleChoiceImplCopyWith<_$MultipleChoiceImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$MovedCopyWith<$Res>
+abstract class _$$MovedImplCopyWith<$Res>
     implements $RestResponseRedirectCodeTypeCopyWith<$Res> {
-  factory _$MovedCopyWith(_Moved value, $Res Function(_Moved) then) =
-      __$MovedCopyWithImpl<$Res>;
+  factory _$$MovedImplCopyWith(
+          _$MovedImpl value, $Res Function(_$MovedImpl) then) =
+      __$$MovedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$MovedCopyWithImpl<$Res>
-    extends _$RestResponseRedirectCodeTypeCopyWithImpl<$Res>
-    implements _$MovedCopyWith<$Res> {
-  __$MovedCopyWithImpl(_Moved _value, $Res Function(_Moved) _then)
-      : super(_value, (v) => _then(v as _Moved));
+class __$$MovedImplCopyWithImpl<$Res>
+    extends _$RestResponseRedirectCodeTypeCopyWithImpl<$Res, _$MovedImpl>
+    implements _$$MovedImplCopyWith<$Res> {
+  __$$MovedImplCopyWithImpl(
+      _$MovedImpl _value, $Res Function(_$MovedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Moved get _value => super._value as _Moved;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_Moved(
-      intValue: intValue == freezed
+    return _then(_$MovedImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -418,11 +357,12 @@ class __$MovedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Moved implements _Moved {
-  const _$_Moved({this.intValue = RestResponseRedirectCodeType.movedIntValue});
+class _$MovedImpl implements _Moved {
+  const _$MovedImpl(
+      {this.intValue = RestResponseRedirectCodeType.movedIntValue});
 
-  @JsonKey(defaultValue: RestResponseRedirectCodeType.movedIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -431,10 +371,10 @@ class _$_Moved implements _Moved {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Moved &&
+            other is _$MovedImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -444,8 +384,9 @@ class _$_Moved implements _Moved {
 
   @JsonKey(ignore: true)
   @override
-  _$MovedCopyWith<_Moved> get copyWith =>
-      __$MovedCopyWithImpl<_Moved>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MovedImplCopyWith<_$MovedImpl> get copyWith =>
+      __$$MovedImplCopyWithImpl<_$MovedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -466,15 +407,15 @@ class _$_Moved implements _Moved {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? multipleChoice,
-    TResult Function(int intValue)? moved,
-    TResult Function(int intValue)? found,
-    TResult Function(int intValue)? seeOther,
-    TResult Function(int intValue)? notModified,
-    TResult Function(int intValue)? useProxy,
-    TResult Function(int intValue)? unused,
-    TResult Function(int intValue)? temporaryRedirect,
-    TResult Function(int intValue)? permanentRedirect,
+    TResult? Function(int intValue)? multipleChoice,
+    TResult? Function(int intValue)? moved,
+    TResult? Function(int intValue)? found,
+    TResult? Function(int intValue)? seeOther,
+    TResult? Function(int intValue)? notModified,
+    TResult? Function(int intValue)? useProxy,
+    TResult? Function(int intValue)? unused,
+    TResult? Function(int intValue)? temporaryRedirect,
+    TResult? Function(int intValue)? permanentRedirect,
   }) {
     return moved?.call(intValue);
   }
@@ -518,15 +459,15 @@ class _$_Moved implements _Moved {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MultipleChoice value)? multipleChoice,
-    TResult Function(_Moved value)? moved,
-    TResult Function(_Found value)? found,
-    TResult Function(_SeeOther value)? seeOther,
-    TResult Function(_NotModified value)? notModified,
-    TResult Function(_UseProxy value)? useProxy,
-    TResult Function(_Unused value)? unused,
-    TResult Function(_TemporaryRedirect value)? temporaryRedirect,
-    TResult Function(_PermanentRedirect value)? permanentRedirect,
+    TResult? Function(_MultipleChoice value)? multipleChoice,
+    TResult? Function(_Moved value)? moved,
+    TResult? Function(_Found value)? found,
+    TResult? Function(_SeeOther value)? seeOther,
+    TResult? Function(_NotModified value)? notModified,
+    TResult? Function(_UseProxy value)? useProxy,
+    TResult? Function(_Unused value)? unused,
+    TResult? Function(_TemporaryRedirect value)? temporaryRedirect,
+    TResult? Function(_PermanentRedirect value)? permanentRedirect,
   }) {
     return moved?.call(this);
   }
@@ -553,40 +494,42 @@ class _$_Moved implements _Moved {
 }
 
 abstract class _Moved implements RestResponseRedirectCodeType {
-  const factory _Moved({int intValue}) = _$_Moved;
+  const factory _Moved({final int intValue}) = _$MovedImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$MovedCopyWith<_Moved> get copyWith => throw _privateConstructorUsedError;
+  _$$MovedImplCopyWith<_$MovedImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$FoundCopyWith<$Res>
+abstract class _$$FoundImplCopyWith<$Res>
     implements $RestResponseRedirectCodeTypeCopyWith<$Res> {
-  factory _$FoundCopyWith(_Found value, $Res Function(_Found) then) =
-      __$FoundCopyWithImpl<$Res>;
+  factory _$$FoundImplCopyWith(
+          _$FoundImpl value, $Res Function(_$FoundImpl) then) =
+      __$$FoundImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$FoundCopyWithImpl<$Res>
-    extends _$RestResponseRedirectCodeTypeCopyWithImpl<$Res>
-    implements _$FoundCopyWith<$Res> {
-  __$FoundCopyWithImpl(_Found _value, $Res Function(_Found) _then)
-      : super(_value, (v) => _then(v as _Found));
+class __$$FoundImplCopyWithImpl<$Res>
+    extends _$RestResponseRedirectCodeTypeCopyWithImpl<$Res, _$FoundImpl>
+    implements _$$FoundImplCopyWith<$Res> {
+  __$$FoundImplCopyWithImpl(
+      _$FoundImpl _value, $Res Function(_$FoundImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Found get _value => super._value as _Found;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_Found(
-      intValue: intValue == freezed
+    return _then(_$FoundImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -596,11 +539,12 @@ class __$FoundCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Found implements _Found {
-  const _$_Found({this.intValue = RestResponseRedirectCodeType.foundIntValue});
+class _$FoundImpl implements _Found {
+  const _$FoundImpl(
+      {this.intValue = RestResponseRedirectCodeType.foundIntValue});
 
-  @JsonKey(defaultValue: RestResponseRedirectCodeType.foundIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -609,10 +553,10 @@ class _$_Found implements _Found {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Found &&
+            other is _$FoundImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -622,8 +566,9 @@ class _$_Found implements _Found {
 
   @JsonKey(ignore: true)
   @override
-  _$FoundCopyWith<_Found> get copyWith =>
-      __$FoundCopyWithImpl<_Found>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$FoundImplCopyWith<_$FoundImpl> get copyWith =>
+      __$$FoundImplCopyWithImpl<_$FoundImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -644,15 +589,15 @@ class _$_Found implements _Found {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? multipleChoice,
-    TResult Function(int intValue)? moved,
-    TResult Function(int intValue)? found,
-    TResult Function(int intValue)? seeOther,
-    TResult Function(int intValue)? notModified,
-    TResult Function(int intValue)? useProxy,
-    TResult Function(int intValue)? unused,
-    TResult Function(int intValue)? temporaryRedirect,
-    TResult Function(int intValue)? permanentRedirect,
+    TResult? Function(int intValue)? multipleChoice,
+    TResult? Function(int intValue)? moved,
+    TResult? Function(int intValue)? found,
+    TResult? Function(int intValue)? seeOther,
+    TResult? Function(int intValue)? notModified,
+    TResult? Function(int intValue)? useProxy,
+    TResult? Function(int intValue)? unused,
+    TResult? Function(int intValue)? temporaryRedirect,
+    TResult? Function(int intValue)? permanentRedirect,
   }) {
     return found?.call(intValue);
   }
@@ -696,15 +641,15 @@ class _$_Found implements _Found {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MultipleChoice value)? multipleChoice,
-    TResult Function(_Moved value)? moved,
-    TResult Function(_Found value)? found,
-    TResult Function(_SeeOther value)? seeOther,
-    TResult Function(_NotModified value)? notModified,
-    TResult Function(_UseProxy value)? useProxy,
-    TResult Function(_Unused value)? unused,
-    TResult Function(_TemporaryRedirect value)? temporaryRedirect,
-    TResult Function(_PermanentRedirect value)? permanentRedirect,
+    TResult? Function(_MultipleChoice value)? multipleChoice,
+    TResult? Function(_Moved value)? moved,
+    TResult? Function(_Found value)? found,
+    TResult? Function(_SeeOther value)? seeOther,
+    TResult? Function(_NotModified value)? notModified,
+    TResult? Function(_UseProxy value)? useProxy,
+    TResult? Function(_Unused value)? unused,
+    TResult? Function(_TemporaryRedirect value)? temporaryRedirect,
+    TResult? Function(_PermanentRedirect value)? permanentRedirect,
   }) {
     return found?.call(this);
   }
@@ -731,40 +676,42 @@ class _$_Found implements _Found {
 }
 
 abstract class _Found implements RestResponseRedirectCodeType {
-  const factory _Found({int intValue}) = _$_Found;
+  const factory _Found({final int intValue}) = _$FoundImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$FoundCopyWith<_Found> get copyWith => throw _privateConstructorUsedError;
+  _$$FoundImplCopyWith<_$FoundImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$SeeOtherCopyWith<$Res>
+abstract class _$$SeeOtherImplCopyWith<$Res>
     implements $RestResponseRedirectCodeTypeCopyWith<$Res> {
-  factory _$SeeOtherCopyWith(_SeeOther value, $Res Function(_SeeOther) then) =
-      __$SeeOtherCopyWithImpl<$Res>;
+  factory _$$SeeOtherImplCopyWith(
+          _$SeeOtherImpl value, $Res Function(_$SeeOtherImpl) then) =
+      __$$SeeOtherImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$SeeOtherCopyWithImpl<$Res>
-    extends _$RestResponseRedirectCodeTypeCopyWithImpl<$Res>
-    implements _$SeeOtherCopyWith<$Res> {
-  __$SeeOtherCopyWithImpl(_SeeOther _value, $Res Function(_SeeOther) _then)
-      : super(_value, (v) => _then(v as _SeeOther));
+class __$$SeeOtherImplCopyWithImpl<$Res>
+    extends _$RestResponseRedirectCodeTypeCopyWithImpl<$Res, _$SeeOtherImpl>
+    implements _$$SeeOtherImplCopyWith<$Res> {
+  __$$SeeOtherImplCopyWithImpl(
+      _$SeeOtherImpl _value, $Res Function(_$SeeOtherImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _SeeOther get _value => super._value as _SeeOther;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_SeeOther(
-      intValue: intValue == freezed
+    return _then(_$SeeOtherImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -774,12 +721,12 @@ class __$SeeOtherCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_SeeOther implements _SeeOther {
-  const _$_SeeOther(
+class _$SeeOtherImpl implements _SeeOther {
+  const _$SeeOtherImpl(
       {this.intValue = RestResponseRedirectCodeType.seeOtherIntValue});
 
-  @JsonKey(defaultValue: RestResponseRedirectCodeType.seeOtherIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -788,10 +735,10 @@ class _$_SeeOther implements _SeeOther {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _SeeOther &&
+            other is _$SeeOtherImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -801,8 +748,9 @@ class _$_SeeOther implements _SeeOther {
 
   @JsonKey(ignore: true)
   @override
-  _$SeeOtherCopyWith<_SeeOther> get copyWith =>
-      __$SeeOtherCopyWithImpl<_SeeOther>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$SeeOtherImplCopyWith<_$SeeOtherImpl> get copyWith =>
+      __$$SeeOtherImplCopyWithImpl<_$SeeOtherImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -823,15 +771,15 @@ class _$_SeeOther implements _SeeOther {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? multipleChoice,
-    TResult Function(int intValue)? moved,
-    TResult Function(int intValue)? found,
-    TResult Function(int intValue)? seeOther,
-    TResult Function(int intValue)? notModified,
-    TResult Function(int intValue)? useProxy,
-    TResult Function(int intValue)? unused,
-    TResult Function(int intValue)? temporaryRedirect,
-    TResult Function(int intValue)? permanentRedirect,
+    TResult? Function(int intValue)? multipleChoice,
+    TResult? Function(int intValue)? moved,
+    TResult? Function(int intValue)? found,
+    TResult? Function(int intValue)? seeOther,
+    TResult? Function(int intValue)? notModified,
+    TResult? Function(int intValue)? useProxy,
+    TResult? Function(int intValue)? unused,
+    TResult? Function(int intValue)? temporaryRedirect,
+    TResult? Function(int intValue)? permanentRedirect,
   }) {
     return seeOther?.call(intValue);
   }
@@ -875,15 +823,15 @@ class _$_SeeOther implements _SeeOther {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MultipleChoice value)? multipleChoice,
-    TResult Function(_Moved value)? moved,
-    TResult Function(_Found value)? found,
-    TResult Function(_SeeOther value)? seeOther,
-    TResult Function(_NotModified value)? notModified,
-    TResult Function(_UseProxy value)? useProxy,
-    TResult Function(_Unused value)? unused,
-    TResult Function(_TemporaryRedirect value)? temporaryRedirect,
-    TResult Function(_PermanentRedirect value)? permanentRedirect,
+    TResult? Function(_MultipleChoice value)? multipleChoice,
+    TResult? Function(_Moved value)? moved,
+    TResult? Function(_Found value)? found,
+    TResult? Function(_SeeOther value)? seeOther,
+    TResult? Function(_NotModified value)? notModified,
+    TResult? Function(_UseProxy value)? useProxy,
+    TResult? Function(_Unused value)? unused,
+    TResult? Function(_TemporaryRedirect value)? temporaryRedirect,
+    TResult? Function(_PermanentRedirect value)? permanentRedirect,
   }) {
     return seeOther?.call(this);
   }
@@ -910,43 +858,42 @@ class _$_SeeOther implements _SeeOther {
 }
 
 abstract class _SeeOther implements RestResponseRedirectCodeType {
-  const factory _SeeOther({int intValue}) = _$_SeeOther;
+  const factory _SeeOther({final int intValue}) = _$SeeOtherImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$SeeOtherCopyWith<_SeeOther> get copyWith =>
+  _$$SeeOtherImplCopyWith<_$SeeOtherImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$NotModifiedCopyWith<$Res>
+abstract class _$$NotModifiedImplCopyWith<$Res>
     implements $RestResponseRedirectCodeTypeCopyWith<$Res> {
-  factory _$NotModifiedCopyWith(
-          _NotModified value, $Res Function(_NotModified) then) =
-      __$NotModifiedCopyWithImpl<$Res>;
+  factory _$$NotModifiedImplCopyWith(
+          _$NotModifiedImpl value, $Res Function(_$NotModifiedImpl) then) =
+      __$$NotModifiedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$NotModifiedCopyWithImpl<$Res>
-    extends _$RestResponseRedirectCodeTypeCopyWithImpl<$Res>
-    implements _$NotModifiedCopyWith<$Res> {
-  __$NotModifiedCopyWithImpl(
-      _NotModified _value, $Res Function(_NotModified) _then)
-      : super(_value, (v) => _then(v as _NotModified));
+class __$$NotModifiedImplCopyWithImpl<$Res>
+    extends _$RestResponseRedirectCodeTypeCopyWithImpl<$Res, _$NotModifiedImpl>
+    implements _$$NotModifiedImplCopyWith<$Res> {
+  __$$NotModifiedImplCopyWithImpl(
+      _$NotModifiedImpl _value, $Res Function(_$NotModifiedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _NotModified get _value => super._value as _NotModified;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_NotModified(
-      intValue: intValue == freezed
+    return _then(_$NotModifiedImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -956,12 +903,12 @@ class __$NotModifiedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_NotModified implements _NotModified {
-  const _$_NotModified(
+class _$NotModifiedImpl implements _NotModified {
+  const _$NotModifiedImpl(
       {this.intValue = RestResponseRedirectCodeType.notModifiedIntValue});
 
-  @JsonKey(defaultValue: RestResponseRedirectCodeType.notModifiedIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -970,10 +917,10 @@ class _$_NotModified implements _NotModified {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _NotModified &&
+            other is _$NotModifiedImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -983,8 +930,9 @@ class _$_NotModified implements _NotModified {
 
   @JsonKey(ignore: true)
   @override
-  _$NotModifiedCopyWith<_NotModified> get copyWith =>
-      __$NotModifiedCopyWithImpl<_NotModified>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$NotModifiedImplCopyWith<_$NotModifiedImpl> get copyWith =>
+      __$$NotModifiedImplCopyWithImpl<_$NotModifiedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1005,15 +953,15 @@ class _$_NotModified implements _NotModified {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? multipleChoice,
-    TResult Function(int intValue)? moved,
-    TResult Function(int intValue)? found,
-    TResult Function(int intValue)? seeOther,
-    TResult Function(int intValue)? notModified,
-    TResult Function(int intValue)? useProxy,
-    TResult Function(int intValue)? unused,
-    TResult Function(int intValue)? temporaryRedirect,
-    TResult Function(int intValue)? permanentRedirect,
+    TResult? Function(int intValue)? multipleChoice,
+    TResult? Function(int intValue)? moved,
+    TResult? Function(int intValue)? found,
+    TResult? Function(int intValue)? seeOther,
+    TResult? Function(int intValue)? notModified,
+    TResult? Function(int intValue)? useProxy,
+    TResult? Function(int intValue)? unused,
+    TResult? Function(int intValue)? temporaryRedirect,
+    TResult? Function(int intValue)? permanentRedirect,
   }) {
     return notModified?.call(intValue);
   }
@@ -1057,15 +1005,15 @@ class _$_NotModified implements _NotModified {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MultipleChoice value)? multipleChoice,
-    TResult Function(_Moved value)? moved,
-    TResult Function(_Found value)? found,
-    TResult Function(_SeeOther value)? seeOther,
-    TResult Function(_NotModified value)? notModified,
-    TResult Function(_UseProxy value)? useProxy,
-    TResult Function(_Unused value)? unused,
-    TResult Function(_TemporaryRedirect value)? temporaryRedirect,
-    TResult Function(_PermanentRedirect value)? permanentRedirect,
+    TResult? Function(_MultipleChoice value)? multipleChoice,
+    TResult? Function(_Moved value)? moved,
+    TResult? Function(_Found value)? found,
+    TResult? Function(_SeeOther value)? seeOther,
+    TResult? Function(_NotModified value)? notModified,
+    TResult? Function(_UseProxy value)? useProxy,
+    TResult? Function(_Unused value)? unused,
+    TResult? Function(_TemporaryRedirect value)? temporaryRedirect,
+    TResult? Function(_PermanentRedirect value)? permanentRedirect,
   }) {
     return notModified?.call(this);
   }
@@ -1092,41 +1040,42 @@ class _$_NotModified implements _NotModified {
 }
 
 abstract class _NotModified implements RestResponseRedirectCodeType {
-  const factory _NotModified({int intValue}) = _$_NotModified;
+  const factory _NotModified({final int intValue}) = _$NotModifiedImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$NotModifiedCopyWith<_NotModified> get copyWith =>
+  _$$NotModifiedImplCopyWith<_$NotModifiedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$UseProxyCopyWith<$Res>
+abstract class _$$UseProxyImplCopyWith<$Res>
     implements $RestResponseRedirectCodeTypeCopyWith<$Res> {
-  factory _$UseProxyCopyWith(_UseProxy value, $Res Function(_UseProxy) then) =
-      __$UseProxyCopyWithImpl<$Res>;
+  factory _$$UseProxyImplCopyWith(
+          _$UseProxyImpl value, $Res Function(_$UseProxyImpl) then) =
+      __$$UseProxyImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$UseProxyCopyWithImpl<$Res>
-    extends _$RestResponseRedirectCodeTypeCopyWithImpl<$Res>
-    implements _$UseProxyCopyWith<$Res> {
-  __$UseProxyCopyWithImpl(_UseProxy _value, $Res Function(_UseProxy) _then)
-      : super(_value, (v) => _then(v as _UseProxy));
+class __$$UseProxyImplCopyWithImpl<$Res>
+    extends _$RestResponseRedirectCodeTypeCopyWithImpl<$Res, _$UseProxyImpl>
+    implements _$$UseProxyImplCopyWith<$Res> {
+  __$$UseProxyImplCopyWithImpl(
+      _$UseProxyImpl _value, $Res Function(_$UseProxyImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UseProxy get _value => super._value as _UseProxy;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_UseProxy(
-      intValue: intValue == freezed
+    return _then(_$UseProxyImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -1136,12 +1085,12 @@ class __$UseProxyCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_UseProxy implements _UseProxy {
-  const _$_UseProxy(
+class _$UseProxyImpl implements _UseProxy {
+  const _$UseProxyImpl(
       {this.intValue = RestResponseRedirectCodeType.useProxyIntValue});
 
-  @JsonKey(defaultValue: RestResponseRedirectCodeType.useProxyIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -1150,10 +1099,10 @@ class _$_UseProxy implements _UseProxy {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UseProxy &&
+            other is _$UseProxyImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -1163,8 +1112,9 @@ class _$_UseProxy implements _UseProxy {
 
   @JsonKey(ignore: true)
   @override
-  _$UseProxyCopyWith<_UseProxy> get copyWith =>
-      __$UseProxyCopyWithImpl<_UseProxy>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UseProxyImplCopyWith<_$UseProxyImpl> get copyWith =>
+      __$$UseProxyImplCopyWithImpl<_$UseProxyImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1185,15 +1135,15 @@ class _$_UseProxy implements _UseProxy {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? multipleChoice,
-    TResult Function(int intValue)? moved,
-    TResult Function(int intValue)? found,
-    TResult Function(int intValue)? seeOther,
-    TResult Function(int intValue)? notModified,
-    TResult Function(int intValue)? useProxy,
-    TResult Function(int intValue)? unused,
-    TResult Function(int intValue)? temporaryRedirect,
-    TResult Function(int intValue)? permanentRedirect,
+    TResult? Function(int intValue)? multipleChoice,
+    TResult? Function(int intValue)? moved,
+    TResult? Function(int intValue)? found,
+    TResult? Function(int intValue)? seeOther,
+    TResult? Function(int intValue)? notModified,
+    TResult? Function(int intValue)? useProxy,
+    TResult? Function(int intValue)? unused,
+    TResult? Function(int intValue)? temporaryRedirect,
+    TResult? Function(int intValue)? permanentRedirect,
   }) {
     return useProxy?.call(intValue);
   }
@@ -1237,15 +1187,15 @@ class _$_UseProxy implements _UseProxy {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MultipleChoice value)? multipleChoice,
-    TResult Function(_Moved value)? moved,
-    TResult Function(_Found value)? found,
-    TResult Function(_SeeOther value)? seeOther,
-    TResult Function(_NotModified value)? notModified,
-    TResult Function(_UseProxy value)? useProxy,
-    TResult Function(_Unused value)? unused,
-    TResult Function(_TemporaryRedirect value)? temporaryRedirect,
-    TResult Function(_PermanentRedirect value)? permanentRedirect,
+    TResult? Function(_MultipleChoice value)? multipleChoice,
+    TResult? Function(_Moved value)? moved,
+    TResult? Function(_Found value)? found,
+    TResult? Function(_SeeOther value)? seeOther,
+    TResult? Function(_NotModified value)? notModified,
+    TResult? Function(_UseProxy value)? useProxy,
+    TResult? Function(_Unused value)? unused,
+    TResult? Function(_TemporaryRedirect value)? temporaryRedirect,
+    TResult? Function(_PermanentRedirect value)? permanentRedirect,
   }) {
     return useProxy?.call(this);
   }
@@ -1272,41 +1222,42 @@ class _$_UseProxy implements _UseProxy {
 }
 
 abstract class _UseProxy implements RestResponseRedirectCodeType {
-  const factory _UseProxy({int intValue}) = _$_UseProxy;
+  const factory _UseProxy({final int intValue}) = _$UseProxyImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$UseProxyCopyWith<_UseProxy> get copyWith =>
+  _$$UseProxyImplCopyWith<_$UseProxyImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$UnusedCopyWith<$Res>
+abstract class _$$UnusedImplCopyWith<$Res>
     implements $RestResponseRedirectCodeTypeCopyWith<$Res> {
-  factory _$UnusedCopyWith(_Unused value, $Res Function(_Unused) then) =
-      __$UnusedCopyWithImpl<$Res>;
+  factory _$$UnusedImplCopyWith(
+          _$UnusedImpl value, $Res Function(_$UnusedImpl) then) =
+      __$$UnusedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$UnusedCopyWithImpl<$Res>
-    extends _$RestResponseRedirectCodeTypeCopyWithImpl<$Res>
-    implements _$UnusedCopyWith<$Res> {
-  __$UnusedCopyWithImpl(_Unused _value, $Res Function(_Unused) _then)
-      : super(_value, (v) => _then(v as _Unused));
+class __$$UnusedImplCopyWithImpl<$Res>
+    extends _$RestResponseRedirectCodeTypeCopyWithImpl<$Res, _$UnusedImpl>
+    implements _$$UnusedImplCopyWith<$Res> {
+  __$$UnusedImplCopyWithImpl(
+      _$UnusedImpl _value, $Res Function(_$UnusedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Unused get _value => super._value as _Unused;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_Unused(
-      intValue: intValue == freezed
+    return _then(_$UnusedImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -1316,12 +1267,12 @@ class __$UnusedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Unused implements _Unused {
-  const _$_Unused(
+class _$UnusedImpl implements _Unused {
+  const _$UnusedImpl(
       {this.intValue = RestResponseRedirectCodeType.unusedIntValue});
 
-  @JsonKey(defaultValue: RestResponseRedirectCodeType.unusedIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -1330,10 +1281,10 @@ class _$_Unused implements _Unused {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Unused &&
+            other is _$UnusedImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -1343,8 +1294,9 @@ class _$_Unused implements _Unused {
 
   @JsonKey(ignore: true)
   @override
-  _$UnusedCopyWith<_Unused> get copyWith =>
-      __$UnusedCopyWithImpl<_Unused>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnusedImplCopyWith<_$UnusedImpl> get copyWith =>
+      __$$UnusedImplCopyWithImpl<_$UnusedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1365,15 +1317,15 @@ class _$_Unused implements _Unused {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? multipleChoice,
-    TResult Function(int intValue)? moved,
-    TResult Function(int intValue)? found,
-    TResult Function(int intValue)? seeOther,
-    TResult Function(int intValue)? notModified,
-    TResult Function(int intValue)? useProxy,
-    TResult Function(int intValue)? unused,
-    TResult Function(int intValue)? temporaryRedirect,
-    TResult Function(int intValue)? permanentRedirect,
+    TResult? Function(int intValue)? multipleChoice,
+    TResult? Function(int intValue)? moved,
+    TResult? Function(int intValue)? found,
+    TResult? Function(int intValue)? seeOther,
+    TResult? Function(int intValue)? notModified,
+    TResult? Function(int intValue)? useProxy,
+    TResult? Function(int intValue)? unused,
+    TResult? Function(int intValue)? temporaryRedirect,
+    TResult? Function(int intValue)? permanentRedirect,
   }) {
     return unused?.call(intValue);
   }
@@ -1417,15 +1369,15 @@ class _$_Unused implements _Unused {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MultipleChoice value)? multipleChoice,
-    TResult Function(_Moved value)? moved,
-    TResult Function(_Found value)? found,
-    TResult Function(_SeeOther value)? seeOther,
-    TResult Function(_NotModified value)? notModified,
-    TResult Function(_UseProxy value)? useProxy,
-    TResult Function(_Unused value)? unused,
-    TResult Function(_TemporaryRedirect value)? temporaryRedirect,
-    TResult Function(_PermanentRedirect value)? permanentRedirect,
+    TResult? Function(_MultipleChoice value)? multipleChoice,
+    TResult? Function(_Moved value)? moved,
+    TResult? Function(_Found value)? found,
+    TResult? Function(_SeeOther value)? seeOther,
+    TResult? Function(_NotModified value)? notModified,
+    TResult? Function(_UseProxy value)? useProxy,
+    TResult? Function(_Unused value)? unused,
+    TResult? Function(_TemporaryRedirect value)? temporaryRedirect,
+    TResult? Function(_PermanentRedirect value)? permanentRedirect,
   }) {
     return unused?.call(this);
   }
@@ -1452,42 +1404,43 @@ class _$_Unused implements _Unused {
 }
 
 abstract class _Unused implements RestResponseRedirectCodeType {
-  const factory _Unused({int intValue}) = _$_Unused;
+  const factory _Unused({final int intValue}) = _$UnusedImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$UnusedCopyWith<_Unused> get copyWith => throw _privateConstructorUsedError;
+  _$$UnusedImplCopyWith<_$UnusedImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$TemporaryRedirectCopyWith<$Res>
+abstract class _$$TemporaryRedirectImplCopyWith<$Res>
     implements $RestResponseRedirectCodeTypeCopyWith<$Res> {
-  factory _$TemporaryRedirectCopyWith(
-          _TemporaryRedirect value, $Res Function(_TemporaryRedirect) then) =
-      __$TemporaryRedirectCopyWithImpl<$Res>;
+  factory _$$TemporaryRedirectImplCopyWith(_$TemporaryRedirectImpl value,
+          $Res Function(_$TemporaryRedirectImpl) then) =
+      __$$TemporaryRedirectImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$TemporaryRedirectCopyWithImpl<$Res>
-    extends _$RestResponseRedirectCodeTypeCopyWithImpl<$Res>
-    implements _$TemporaryRedirectCopyWith<$Res> {
-  __$TemporaryRedirectCopyWithImpl(
-      _TemporaryRedirect _value, $Res Function(_TemporaryRedirect) _then)
-      : super(_value, (v) => _then(v as _TemporaryRedirect));
+class __$$TemporaryRedirectImplCopyWithImpl<$Res>
+    extends _$RestResponseRedirectCodeTypeCopyWithImpl<$Res,
+        _$TemporaryRedirectImpl>
+    implements _$$TemporaryRedirectImplCopyWith<$Res> {
+  __$$TemporaryRedirectImplCopyWithImpl(_$TemporaryRedirectImpl _value,
+      $Res Function(_$TemporaryRedirectImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _TemporaryRedirect get _value => super._value as _TemporaryRedirect;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_TemporaryRedirect(
-      intValue: intValue == freezed
+    return _then(_$TemporaryRedirectImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -1497,12 +1450,12 @@ class __$TemporaryRedirectCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_TemporaryRedirect implements _TemporaryRedirect {
-  const _$_TemporaryRedirect(
+class _$TemporaryRedirectImpl implements _TemporaryRedirect {
+  const _$TemporaryRedirectImpl(
       {this.intValue = RestResponseRedirectCodeType.temporaryRedirectIntValue});
 
-  @JsonKey(defaultValue: RestResponseRedirectCodeType.temporaryRedirectIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -1511,10 +1464,10 @@ class _$_TemporaryRedirect implements _TemporaryRedirect {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _TemporaryRedirect &&
+            other is _$TemporaryRedirectImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -1524,8 +1477,10 @@ class _$_TemporaryRedirect implements _TemporaryRedirect {
 
   @JsonKey(ignore: true)
   @override
-  _$TemporaryRedirectCopyWith<_TemporaryRedirect> get copyWith =>
-      __$TemporaryRedirectCopyWithImpl<_TemporaryRedirect>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$TemporaryRedirectImplCopyWith<_$TemporaryRedirectImpl> get copyWith =>
+      __$$TemporaryRedirectImplCopyWithImpl<_$TemporaryRedirectImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1546,15 +1501,15 @@ class _$_TemporaryRedirect implements _TemporaryRedirect {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? multipleChoice,
-    TResult Function(int intValue)? moved,
-    TResult Function(int intValue)? found,
-    TResult Function(int intValue)? seeOther,
-    TResult Function(int intValue)? notModified,
-    TResult Function(int intValue)? useProxy,
-    TResult Function(int intValue)? unused,
-    TResult Function(int intValue)? temporaryRedirect,
-    TResult Function(int intValue)? permanentRedirect,
+    TResult? Function(int intValue)? multipleChoice,
+    TResult? Function(int intValue)? moved,
+    TResult? Function(int intValue)? found,
+    TResult? Function(int intValue)? seeOther,
+    TResult? Function(int intValue)? notModified,
+    TResult? Function(int intValue)? useProxy,
+    TResult? Function(int intValue)? unused,
+    TResult? Function(int intValue)? temporaryRedirect,
+    TResult? Function(int intValue)? permanentRedirect,
   }) {
     return temporaryRedirect?.call(intValue);
   }
@@ -1598,15 +1553,15 @@ class _$_TemporaryRedirect implements _TemporaryRedirect {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MultipleChoice value)? multipleChoice,
-    TResult Function(_Moved value)? moved,
-    TResult Function(_Found value)? found,
-    TResult Function(_SeeOther value)? seeOther,
-    TResult Function(_NotModified value)? notModified,
-    TResult Function(_UseProxy value)? useProxy,
-    TResult Function(_Unused value)? unused,
-    TResult Function(_TemporaryRedirect value)? temporaryRedirect,
-    TResult Function(_PermanentRedirect value)? permanentRedirect,
+    TResult? Function(_MultipleChoice value)? multipleChoice,
+    TResult? Function(_Moved value)? moved,
+    TResult? Function(_Found value)? found,
+    TResult? Function(_SeeOther value)? seeOther,
+    TResult? Function(_NotModified value)? notModified,
+    TResult? Function(_UseProxy value)? useProxy,
+    TResult? Function(_Unused value)? unused,
+    TResult? Function(_TemporaryRedirect value)? temporaryRedirect,
+    TResult? Function(_PermanentRedirect value)? permanentRedirect,
   }) {
     return temporaryRedirect?.call(this);
   }
@@ -1633,43 +1588,44 @@ class _$_TemporaryRedirect implements _TemporaryRedirect {
 }
 
 abstract class _TemporaryRedirect implements RestResponseRedirectCodeType {
-  const factory _TemporaryRedirect({int intValue}) = _$_TemporaryRedirect;
+  const factory _TemporaryRedirect({final int intValue}) =
+      _$TemporaryRedirectImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$TemporaryRedirectCopyWith<_TemporaryRedirect> get copyWith =>
+  _$$TemporaryRedirectImplCopyWith<_$TemporaryRedirectImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$PermanentRedirectCopyWith<$Res>
+abstract class _$$PermanentRedirectImplCopyWith<$Res>
     implements $RestResponseRedirectCodeTypeCopyWith<$Res> {
-  factory _$PermanentRedirectCopyWith(
-          _PermanentRedirect value, $Res Function(_PermanentRedirect) then) =
-      __$PermanentRedirectCopyWithImpl<$Res>;
+  factory _$$PermanentRedirectImplCopyWith(_$PermanentRedirectImpl value,
+          $Res Function(_$PermanentRedirectImpl) then) =
+      __$$PermanentRedirectImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$PermanentRedirectCopyWithImpl<$Res>
-    extends _$RestResponseRedirectCodeTypeCopyWithImpl<$Res>
-    implements _$PermanentRedirectCopyWith<$Res> {
-  __$PermanentRedirectCopyWithImpl(
-      _PermanentRedirect _value, $Res Function(_PermanentRedirect) _then)
-      : super(_value, (v) => _then(v as _PermanentRedirect));
+class __$$PermanentRedirectImplCopyWithImpl<$Res>
+    extends _$RestResponseRedirectCodeTypeCopyWithImpl<$Res,
+        _$PermanentRedirectImpl>
+    implements _$$PermanentRedirectImplCopyWith<$Res> {
+  __$$PermanentRedirectImplCopyWithImpl(_$PermanentRedirectImpl _value,
+      $Res Function(_$PermanentRedirectImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PermanentRedirect get _value => super._value as _PermanentRedirect;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_PermanentRedirect(
-      intValue: intValue == freezed
+    return _then(_$PermanentRedirectImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -1679,12 +1635,12 @@ class __$PermanentRedirectCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PermanentRedirect implements _PermanentRedirect {
-  const _$_PermanentRedirect(
+class _$PermanentRedirectImpl implements _PermanentRedirect {
+  const _$PermanentRedirectImpl(
       {this.intValue = RestResponseRedirectCodeType.permanentRedirectIntValue});
 
-  @JsonKey(defaultValue: RestResponseRedirectCodeType.permanentRedirectIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -1693,10 +1649,10 @@ class _$_PermanentRedirect implements _PermanentRedirect {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PermanentRedirect &&
+            other is _$PermanentRedirectImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -1706,8 +1662,10 @@ class _$_PermanentRedirect implements _PermanentRedirect {
 
   @JsonKey(ignore: true)
   @override
-  _$PermanentRedirectCopyWith<_PermanentRedirect> get copyWith =>
-      __$PermanentRedirectCopyWithImpl<_PermanentRedirect>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PermanentRedirectImplCopyWith<_$PermanentRedirectImpl> get copyWith =>
+      __$$PermanentRedirectImplCopyWithImpl<_$PermanentRedirectImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1728,15 +1686,15 @@ class _$_PermanentRedirect implements _PermanentRedirect {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? multipleChoice,
-    TResult Function(int intValue)? moved,
-    TResult Function(int intValue)? found,
-    TResult Function(int intValue)? seeOther,
-    TResult Function(int intValue)? notModified,
-    TResult Function(int intValue)? useProxy,
-    TResult Function(int intValue)? unused,
-    TResult Function(int intValue)? temporaryRedirect,
-    TResult Function(int intValue)? permanentRedirect,
+    TResult? Function(int intValue)? multipleChoice,
+    TResult? Function(int intValue)? moved,
+    TResult? Function(int intValue)? found,
+    TResult? Function(int intValue)? seeOther,
+    TResult? Function(int intValue)? notModified,
+    TResult? Function(int intValue)? useProxy,
+    TResult? Function(int intValue)? unused,
+    TResult? Function(int intValue)? temporaryRedirect,
+    TResult? Function(int intValue)? permanentRedirect,
   }) {
     return permanentRedirect?.call(intValue);
   }
@@ -1780,15 +1738,15 @@ class _$_PermanentRedirect implements _PermanentRedirect {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MultipleChoice value)? multipleChoice,
-    TResult Function(_Moved value)? moved,
-    TResult Function(_Found value)? found,
-    TResult Function(_SeeOther value)? seeOther,
-    TResult Function(_NotModified value)? notModified,
-    TResult Function(_UseProxy value)? useProxy,
-    TResult Function(_Unused value)? unused,
-    TResult Function(_TemporaryRedirect value)? temporaryRedirect,
-    TResult Function(_PermanentRedirect value)? permanentRedirect,
+    TResult? Function(_MultipleChoice value)? multipleChoice,
+    TResult? Function(_Moved value)? moved,
+    TResult? Function(_Found value)? found,
+    TResult? Function(_SeeOther value)? seeOther,
+    TResult? Function(_NotModified value)? notModified,
+    TResult? Function(_UseProxy value)? useProxy,
+    TResult? Function(_Unused value)? unused,
+    TResult? Function(_TemporaryRedirect value)? temporaryRedirect,
+    TResult? Function(_PermanentRedirect value)? permanentRedirect,
   }) {
     return permanentRedirect?.call(this);
   }
@@ -1815,12 +1773,13 @@ class _$_PermanentRedirect implements _PermanentRedirect {
 }
 
 abstract class _PermanentRedirect implements RestResponseRedirectCodeType {
-  const factory _PermanentRedirect({int intValue}) = _$_PermanentRedirect;
+  const factory _PermanentRedirect({final int intValue}) =
+      _$PermanentRedirectImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$PermanentRedirectCopyWith<_PermanentRedirect> get copyWith =>
+  _$$PermanentRedirectImplCopyWith<_$PermanentRedirectImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

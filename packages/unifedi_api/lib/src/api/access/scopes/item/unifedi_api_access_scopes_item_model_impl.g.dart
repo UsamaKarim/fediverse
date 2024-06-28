@@ -48,15 +48,15 @@ class UnifediApiAccessScopesItemAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiAccessScopesItem _$$_UnifediApiAccessScopesItemFromJson(
+_$UnifediApiAccessScopesItemImpl _$$UnifediApiAccessScopesItemImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiAccessScopesItem(
+    _$UnifediApiAccessScopesItemImpl(
       permission: json['permission'] as String,
       target: json['target'] as String,
     );
 
-Map<String, dynamic> _$$_UnifediApiAccessScopesItemToJson(
-        _$_UnifediApiAccessScopesItem instance) =>
+Map<String, dynamic> _$$UnifediApiAccessScopesItemImplToJson(
+        _$UnifediApiAccessScopesItemImpl instance) =>
     <String, dynamic>{
       'permission': instance.permission,
       'target': instance.target,

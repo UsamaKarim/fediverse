@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_instance_field_limits_model_impl.dart';
 
@@ -11,45 +12,12 @@ part of 'unifedi_api_instance_field_limits_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiInstanceFieldLimits _$UnifediApiInstanceFieldLimitsFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiInstanceFieldLimits.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiInstanceFieldLimitsTearOff {
-  const _$UnifediApiInstanceFieldLimitsTearOff();
-
-  _UnifediApiInstanceFieldLimits call(
-      {@HiveField(0)
-      @JsonKey(name: 'max_fields')
-          required int? maxFields,
-      @JsonKey(name: 'max_remote_fields')
-      @HiveField(1)
-          required int? maxRemoteFields,
-      @JsonKey(name: 'name_length')
-      @HiveField(2)
-          required int? nameLength,
-      @JsonKey(name: 'value_length')
-      @HiveField(3)
-          required int? valueLength}) {
-    return _UnifediApiInstanceFieldLimits(
-      maxFields: maxFields,
-      maxRemoteFields: maxRemoteFields,
-      nameLength: nameLength,
-      valueLength: valueLength,
-    );
-  }
-
-  UnifediApiInstanceFieldLimits fromJson(Map<String, Object?> json) {
-    return UnifediApiInstanceFieldLimits.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiInstanceFieldLimits = _$UnifediApiInstanceFieldLimitsTearOff();
 
 /// @nodoc
 mixin _$UnifediApiInstanceFieldLimits {
@@ -77,7 +45,9 @@ abstract class $UnifediApiInstanceFieldLimitsCopyWith<$Res> {
   factory $UnifediApiInstanceFieldLimitsCopyWith(
           UnifediApiInstanceFieldLimits value,
           $Res Function(UnifediApiInstanceFieldLimits) then) =
-      _$UnifediApiInstanceFieldLimitsCopyWithImpl<$Res>;
+      _$UnifediApiInstanceFieldLimitsCopyWithImpl<$Res,
+          UnifediApiInstanceFieldLimits>;
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'max_fields') int? maxFields,
       @JsonKey(name: 'max_remote_fields') @HiveField(1) int? maxRemoteFields,
@@ -86,14 +56,17 @@ abstract class $UnifediApiInstanceFieldLimitsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UnifediApiInstanceFieldLimitsCopyWithImpl<$Res>
+class _$UnifediApiInstanceFieldLimitsCopyWithImpl<$Res,
+        $Val extends UnifediApiInstanceFieldLimits>
     implements $UnifediApiInstanceFieldLimitsCopyWith<$Res> {
   _$UnifediApiInstanceFieldLimitsCopyWithImpl(this._value, this._then);
 
-  final UnifediApiInstanceFieldLimits _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiInstanceFieldLimits) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? maxFields = freezed,
@@ -102,34 +75,35 @@ class _$UnifediApiInstanceFieldLimitsCopyWithImpl<$Res>
     Object? valueLength = freezed,
   }) {
     return _then(_value.copyWith(
-      maxFields: maxFields == freezed
+      maxFields: freezed == maxFields
           ? _value.maxFields
           : maxFields // ignore: cast_nullable_to_non_nullable
               as int?,
-      maxRemoteFields: maxRemoteFields == freezed
+      maxRemoteFields: freezed == maxRemoteFields
           ? _value.maxRemoteFields
           : maxRemoteFields // ignore: cast_nullable_to_non_nullable
               as int?,
-      nameLength: nameLength == freezed
+      nameLength: freezed == nameLength
           ? _value.nameLength
           : nameLength // ignore: cast_nullable_to_non_nullable
               as int?,
-      valueLength: valueLength == freezed
+      valueLength: freezed == valueLength
           ? _value.valueLength
           : valueLength // ignore: cast_nullable_to_non_nullable
               as int?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiInstanceFieldLimitsCopyWith<$Res>
+abstract class _$$UnifediApiInstanceFieldLimitsImplCopyWith<$Res>
     implements $UnifediApiInstanceFieldLimitsCopyWith<$Res> {
-  factory _$UnifediApiInstanceFieldLimitsCopyWith(
-          _UnifediApiInstanceFieldLimits value,
-          $Res Function(_UnifediApiInstanceFieldLimits) then) =
-      __$UnifediApiInstanceFieldLimitsCopyWithImpl<$Res>;
+  factory _$$UnifediApiInstanceFieldLimitsImplCopyWith(
+          _$UnifediApiInstanceFieldLimitsImpl value,
+          $Res Function(_$UnifediApiInstanceFieldLimitsImpl) then) =
+      __$$UnifediApiInstanceFieldLimitsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'max_fields') int? maxFields,
       @JsonKey(name: 'max_remote_fields') @HiveField(1) int? maxRemoteFields,
@@ -138,18 +112,16 @@ abstract class _$UnifediApiInstanceFieldLimitsCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiInstanceFieldLimitsCopyWithImpl<$Res>
-    extends _$UnifediApiInstanceFieldLimitsCopyWithImpl<$Res>
-    implements _$UnifediApiInstanceFieldLimitsCopyWith<$Res> {
-  __$UnifediApiInstanceFieldLimitsCopyWithImpl(
-      _UnifediApiInstanceFieldLimits _value,
-      $Res Function(_UnifediApiInstanceFieldLimits) _then)
-      : super(_value, (v) => _then(v as _UnifediApiInstanceFieldLimits));
+class __$$UnifediApiInstanceFieldLimitsImplCopyWithImpl<$Res>
+    extends _$UnifediApiInstanceFieldLimitsCopyWithImpl<$Res,
+        _$UnifediApiInstanceFieldLimitsImpl>
+    implements _$$UnifediApiInstanceFieldLimitsImplCopyWith<$Res> {
+  __$$UnifediApiInstanceFieldLimitsImplCopyWithImpl(
+      _$UnifediApiInstanceFieldLimitsImpl _value,
+      $Res Function(_$UnifediApiInstanceFieldLimitsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiInstanceFieldLimits get _value =>
-      super._value as _UnifediApiInstanceFieldLimits;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? maxFields = freezed,
@@ -157,20 +129,20 @@ class __$UnifediApiInstanceFieldLimitsCopyWithImpl<$Res>
     Object? nameLength = freezed,
     Object? valueLength = freezed,
   }) {
-    return _then(_UnifediApiInstanceFieldLimits(
-      maxFields: maxFields == freezed
+    return _then(_$UnifediApiInstanceFieldLimitsImpl(
+      maxFields: freezed == maxFields
           ? _value.maxFields
           : maxFields // ignore: cast_nullable_to_non_nullable
               as int?,
-      maxRemoteFields: maxRemoteFields == freezed
+      maxRemoteFields: freezed == maxRemoteFields
           ? _value.maxRemoteFields
           : maxRemoteFields // ignore: cast_nullable_to_non_nullable
               as int?,
-      nameLength: nameLength == freezed
+      nameLength: freezed == nameLength
           ? _value.nameLength
           : nameLength // ignore: cast_nullable_to_non_nullable
               as int?,
-      valueLength: valueLength == freezed
+      valueLength: freezed == valueLength
           ? _value.valueLength
           : valueLength // ignore: cast_nullable_to_non_nullable
               as int?,
@@ -180,25 +152,19 @@ class __$UnifediApiInstanceFieldLimitsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiInstanceFieldLimits
+class _$UnifediApiInstanceFieldLimitsImpl
     implements _UnifediApiInstanceFieldLimits {
-  const _$_UnifediApiInstanceFieldLimits(
-      {@HiveField(0)
-      @JsonKey(name: 'max_fields')
-          required this.maxFields,
+  const _$UnifediApiInstanceFieldLimitsImpl(
+      {@HiveField(0) @JsonKey(name: 'max_fields') required this.maxFields,
       @JsonKey(name: 'max_remote_fields')
       @HiveField(1)
-          required this.maxRemoteFields,
-      @JsonKey(name: 'name_length')
-      @HiveField(2)
-          required this.nameLength,
-      @JsonKey(name: 'value_length')
-      @HiveField(3)
-          required this.valueLength});
+      required this.maxRemoteFields,
+      @JsonKey(name: 'name_length') @HiveField(2) required this.nameLength,
+      @JsonKey(name: 'value_length') @HiveField(3) required this.valueLength});
 
-  factory _$_UnifediApiInstanceFieldLimits.fromJson(
+  factory _$UnifediApiInstanceFieldLimitsImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiInstanceFieldLimitsFromJson(json);
+      _$$UnifediApiInstanceFieldLimitsImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -223,10 +189,10 @@ class _$_UnifediApiInstanceFieldLimits
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiInstanceFieldLimits &&
+            other is _$UnifediApiInstanceFieldLimitsImpl &&
             (identical(other.maxFields, maxFields) ||
                 other.maxFields == maxFields) &&
             (identical(other.maxRemoteFields, maxRemoteFields) ||
@@ -237,40 +203,43 @@ class _$_UnifediApiInstanceFieldLimits
                 other.valueLength == valueLength));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType, maxFields, maxRemoteFields, nameLength, valueLength);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiInstanceFieldLimitsCopyWith<_UnifediApiInstanceFieldLimits>
-      get copyWith => __$UnifediApiInstanceFieldLimitsCopyWithImpl<
-          _UnifediApiInstanceFieldLimits>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiInstanceFieldLimitsImplCopyWith<
+          _$UnifediApiInstanceFieldLimitsImpl>
+      get copyWith => __$$UnifediApiInstanceFieldLimitsImplCopyWithImpl<
+          _$UnifediApiInstanceFieldLimitsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiInstanceFieldLimitsToJson(this);
+    return _$$UnifediApiInstanceFieldLimitsImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiInstanceFieldLimits
     implements UnifediApiInstanceFieldLimits {
   const factory _UnifediApiInstanceFieldLimits(
-      {@HiveField(0)
-      @JsonKey(name: 'max_fields')
-          required int? maxFields,
+      {@HiveField(0) @JsonKey(name: 'max_fields') required final int? maxFields,
       @JsonKey(name: 'max_remote_fields')
       @HiveField(1)
-          required int? maxRemoteFields,
+      required final int? maxRemoteFields,
       @JsonKey(name: 'name_length')
       @HiveField(2)
-          required int? nameLength,
+      required final int? nameLength,
       @JsonKey(name: 'value_length')
       @HiveField(3)
-          required int? valueLength}) = _$_UnifediApiInstanceFieldLimits;
+      required final int? valueLength}) = _$UnifediApiInstanceFieldLimitsImpl;
 
   factory _UnifediApiInstanceFieldLimits.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiInstanceFieldLimits.fromJson;
+      _$UnifediApiInstanceFieldLimitsImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -290,6 +259,7 @@ abstract class _UnifediApiInstanceFieldLimits
   int? get valueLength;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiInstanceFieldLimitsCopyWith<_UnifediApiInstanceFieldLimits>
+  _$$UnifediApiInstanceFieldLimitsImplCopyWith<
+          _$UnifediApiInstanceFieldLimitsImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

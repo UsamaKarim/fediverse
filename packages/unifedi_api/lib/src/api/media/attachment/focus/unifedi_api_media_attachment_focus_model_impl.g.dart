@@ -48,15 +48,15 @@ class UnifediApiMediaAttachmentFocusAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiMediaAttachmentFocus _$$_UnifediApiMediaAttachmentFocusFromJson(
-        Map<String, dynamic> json) =>
-    _$_UnifediApiMediaAttachmentFocus(
-      x: (json['x'] as num).toDouble(),
-      y: (json['y'] as num).toDouble(),
-    );
+_$UnifediApiMediaAttachmentFocusImpl
+    _$$UnifediApiMediaAttachmentFocusImplFromJson(Map<String, dynamic> json) =>
+        _$UnifediApiMediaAttachmentFocusImpl(
+          x: (json['x'] as num).toDouble(),
+          y: (json['y'] as num).toDouble(),
+        );
 
-Map<String, dynamic> _$$_UnifediApiMediaAttachmentFocusToJson(
-        _$_UnifediApiMediaAttachmentFocus instance) =>
+Map<String, dynamic> _$$UnifediApiMediaAttachmentFocusImplToJson(
+        _$UnifediApiMediaAttachmentFocusImpl instance) =>
     <String, dynamic>{
       'x': instance.x,
       'y': instance.y,

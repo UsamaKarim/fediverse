@@ -50,8 +50,9 @@ class UnifediApiFieldAdapter extends TypeAdapter<UnifediApiField> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiField _$$_UnifediApiFieldFromJson(Map<String, dynamic> json) =>
-    _$_UnifediApiField(
+_$UnifediApiFieldImpl _$$UnifediApiFieldImplFromJson(
+        Map<String, dynamic> json) =>
+    _$UnifediApiFieldImpl(
       name: json['name'] as String?,
       value: json['value'] as String?,
       verifiedAt: json['verified_at'] == null
@@ -59,7 +60,8 @@ _$_UnifediApiField _$$_UnifediApiFieldFromJson(Map<String, dynamic> json) =>
           : DateTime.parse(json['verified_at'] as String),
     );
 
-Map<String, dynamic> _$$_UnifediApiFieldToJson(_$_UnifediApiField instance) {
+Map<String, dynamic> _$$UnifediApiFieldImplToJson(
+    _$UnifediApiFieldImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_tag_history_model_impl.dart';
 
@@ -11,30 +12,11 @@ part of 'unifedi_api_tag_history_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiTagHistory _$UnifediApiTagHistoryFromJson(Map<String, dynamic> json) {
   return _UnifediApiTagHistory.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiTagHistoryTearOff {
-  const _$UnifediApiTagHistoryTearOff();
-
-  _UnifediApiTagHistory call(
-      {@HiveField(0) required List<UnifediApiTagHistoryItem> items}) {
-    return _UnifediApiTagHistory(
-      items: items,
-    );
-  }
-
-  UnifediApiTagHistory fromJson(Map<String, Object?> json) {
-    return UnifediApiTagHistory.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiTagHistory = _$UnifediApiTagHistoryTearOff();
 
 /// @nodoc
 mixin _$UnifediApiTagHistory {
@@ -52,60 +34,63 @@ mixin _$UnifediApiTagHistory {
 abstract class $UnifediApiTagHistoryCopyWith<$Res> {
   factory $UnifediApiTagHistoryCopyWith(UnifediApiTagHistory value,
           $Res Function(UnifediApiTagHistory) then) =
-      _$UnifediApiTagHistoryCopyWithImpl<$Res>;
+      _$UnifediApiTagHistoryCopyWithImpl<$Res, UnifediApiTagHistory>;
+  @useResult
   $Res call({@HiveField(0) List<UnifediApiTagHistoryItem> items});
 }
 
 /// @nodoc
-class _$UnifediApiTagHistoryCopyWithImpl<$Res>
+class _$UnifediApiTagHistoryCopyWithImpl<$Res,
+        $Val extends UnifediApiTagHistory>
     implements $UnifediApiTagHistoryCopyWith<$Res> {
   _$UnifediApiTagHistoryCopyWithImpl(this._value, this._then);
 
-  final UnifediApiTagHistory _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiTagHistory) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? items = freezed,
+    Object? items = null,
   }) {
     return _then(_value.copyWith(
-      items: items == freezed
+      items: null == items
           ? _value.items
           : items // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiTagHistoryItem>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiTagHistoryCopyWith<$Res>
+abstract class _$$UnifediApiTagHistoryImplCopyWith<$Res>
     implements $UnifediApiTagHistoryCopyWith<$Res> {
-  factory _$UnifediApiTagHistoryCopyWith(_UnifediApiTagHistory value,
-          $Res Function(_UnifediApiTagHistory) then) =
-      __$UnifediApiTagHistoryCopyWithImpl<$Res>;
+  factory _$$UnifediApiTagHistoryImplCopyWith(_$UnifediApiTagHistoryImpl value,
+          $Res Function(_$UnifediApiTagHistoryImpl) then) =
+      __$$UnifediApiTagHistoryImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) List<UnifediApiTagHistoryItem> items});
 }
 
 /// @nodoc
-class __$UnifediApiTagHistoryCopyWithImpl<$Res>
-    extends _$UnifediApiTagHistoryCopyWithImpl<$Res>
-    implements _$UnifediApiTagHistoryCopyWith<$Res> {
-  __$UnifediApiTagHistoryCopyWithImpl(
-      _UnifediApiTagHistory _value, $Res Function(_UnifediApiTagHistory) _then)
-      : super(_value, (v) => _then(v as _UnifediApiTagHistory));
+class __$$UnifediApiTagHistoryImplCopyWithImpl<$Res>
+    extends _$UnifediApiTagHistoryCopyWithImpl<$Res, _$UnifediApiTagHistoryImpl>
+    implements _$$UnifediApiTagHistoryImplCopyWith<$Res> {
+  __$$UnifediApiTagHistoryImplCopyWithImpl(_$UnifediApiTagHistoryImpl _value,
+      $Res Function(_$UnifediApiTagHistoryImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiTagHistory get _value => super._value as _UnifediApiTagHistory;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? items = freezed,
+    Object? items = null,
   }) {
-    return _then(_UnifediApiTagHistory(
-      items: items == freezed
-          ? _value.items
+    return _then(_$UnifediApiTagHistoryImpl(
+      items: null == items
+          ? _value._items
           : items // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiTagHistoryItem>,
     ));
@@ -114,15 +99,22 @@ class __$UnifediApiTagHistoryCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiTagHistory implements _UnifediApiTagHistory {
-  const _$_UnifediApiTagHistory({@HiveField(0) required this.items});
+class _$UnifediApiTagHistoryImpl implements _UnifediApiTagHistory {
+  const _$UnifediApiTagHistoryImpl(
+      {@HiveField(0) required final List<UnifediApiTagHistoryItem> items})
+      : _items = items;
 
-  factory _$_UnifediApiTagHistory.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiTagHistoryFromJson(json);
+  factory _$UnifediApiTagHistoryImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiTagHistoryImplFromJson(json);
 
+  final List<UnifediApiTagHistoryItem> _items;
   @override
   @HiveField(0)
-  final List<UnifediApiTagHistoryItem> items;
+  List<UnifediApiTagHistoryItem> get items {
+    if (_items is EqualUnmodifiableListView) return _items;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_items);
+  }
 
   @override
   String toString() {
@@ -130,42 +122,47 @@ class _$_UnifediApiTagHistory implements _UnifediApiTagHistory {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiTagHistory &&
-            const DeepCollectionEquality().equals(other.items, items));
+            other is _$UnifediApiTagHistoryImpl &&
+            const DeepCollectionEquality().equals(other._items, _items));
   }
-
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(items));
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiTagHistoryCopyWith<_UnifediApiTagHistory> get copyWith =>
-      __$UnifediApiTagHistoryCopyWithImpl<_UnifediApiTagHistory>(
-          this, _$identity);
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_items));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiTagHistoryImplCopyWith<_$UnifediApiTagHistoryImpl>
+      get copyWith =>
+          __$$UnifediApiTagHistoryImplCopyWithImpl<_$UnifediApiTagHistoryImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiTagHistoryToJson(this);
+    return _$$UnifediApiTagHistoryImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiTagHistory implements UnifediApiTagHistory {
   const factory _UnifediApiTagHistory(
-          {@HiveField(0) required List<UnifediApiTagHistoryItem> items}) =
-      _$_UnifediApiTagHistory;
+          {@HiveField(0) required final List<UnifediApiTagHistoryItem> items}) =
+      _$UnifediApiTagHistoryImpl;
 
   factory _UnifediApiTagHistory.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiTagHistory.fromJson;
+      _$UnifediApiTagHistoryImpl.fromJson;
 
   @override
   @HiveField(0)
   List<UnifediApiTagHistoryItem> get items;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiTagHistoryCopyWith<_UnifediApiTagHistory> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$UnifediApiTagHistoryImplCopyWith<_$UnifediApiTagHistoryImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

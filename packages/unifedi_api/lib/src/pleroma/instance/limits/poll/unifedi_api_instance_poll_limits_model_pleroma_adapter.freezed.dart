@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_instance_poll_limits_model_pleroma_adapter.dart';
 
@@ -11,34 +12,13 @@ part of 'unifedi_api_instance_poll_limits_model_pleroma_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiInstancePollLimitsPleromaAdapter
     _$UnifediApiInstancePollLimitsPleromaAdapterFromJson(
         Map<String, dynamic> json) {
   return _UnifediApiInstancePollLimitsPleromaAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiInstancePollLimitsPleromaAdapterTearOff {
-  const _$UnifediApiInstancePollLimitsPleromaAdapterTearOff();
-
-  _UnifediApiInstancePollLimitsPleromaAdapter call(
-      @HiveField(0) PleromaApiInstancePollLimits value) {
-    return _UnifediApiInstancePollLimitsPleromaAdapter(
-      value,
-    );
-  }
-
-  UnifediApiInstancePollLimitsPleromaAdapter fromJson(
-      Map<String, Object?> json) {
-    return UnifediApiInstancePollLimitsPleromaAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiInstancePollLimitsPleromaAdapter =
-    _$UnifediApiInstancePollLimitsPleromaAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiInstancePollLimitsPleromaAdapter {
@@ -57,50 +37,58 @@ abstract class $UnifediApiInstancePollLimitsPleromaAdapterCopyWith<$Res> {
   factory $UnifediApiInstancePollLimitsPleromaAdapterCopyWith(
           UnifediApiInstancePollLimitsPleromaAdapter value,
           $Res Function(UnifediApiInstancePollLimitsPleromaAdapter) then) =
-      _$UnifediApiInstancePollLimitsPleromaAdapterCopyWithImpl<$Res>;
+      _$UnifediApiInstancePollLimitsPleromaAdapterCopyWithImpl<$Res,
+          UnifediApiInstancePollLimitsPleromaAdapter>;
+  @useResult
   $Res call({@HiveField(0) PleromaApiInstancePollLimits value});
 
   $PleromaApiInstancePollLimitsCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiInstancePollLimitsPleromaAdapterCopyWithImpl<$Res>
+class _$UnifediApiInstancePollLimitsPleromaAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiInstancePollLimitsPleromaAdapter>
     implements $UnifediApiInstancePollLimitsPleromaAdapterCopyWith<$Res> {
   _$UnifediApiInstancePollLimitsPleromaAdapterCopyWithImpl(
       this._value, this._then);
 
-  final UnifediApiInstancePollLimitsPleromaAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiInstancePollLimitsPleromaAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstancePollLimits,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiInstancePollLimitsCopyWith<$Res> get value {
     return $PleromaApiInstancePollLimitsCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiInstancePollLimitsPleromaAdapterCopyWith<$Res>
+abstract class _$$UnifediApiInstancePollLimitsPleromaAdapterImplCopyWith<$Res>
     implements $UnifediApiInstancePollLimitsPleromaAdapterCopyWith<$Res> {
-  factory _$UnifediApiInstancePollLimitsPleromaAdapterCopyWith(
-          _UnifediApiInstancePollLimitsPleromaAdapter value,
-          $Res Function(_UnifediApiInstancePollLimitsPleromaAdapter) then) =
-      __$UnifediApiInstancePollLimitsPleromaAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiInstancePollLimitsPleromaAdapterImplCopyWith(
+          _$UnifediApiInstancePollLimitsPleromaAdapterImpl value,
+          $Res Function(_$UnifediApiInstancePollLimitsPleromaAdapterImpl)
+              then) =
+      __$$UnifediApiInstancePollLimitsPleromaAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) PleromaApiInstancePollLimits value});
 
   @override
@@ -108,25 +96,22 @@ abstract class _$UnifediApiInstancePollLimitsPleromaAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiInstancePollLimitsPleromaAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiInstancePollLimitsPleromaAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiInstancePollLimitsPleromaAdapterCopyWith<$Res> {
-  __$UnifediApiInstancePollLimitsPleromaAdapterCopyWithImpl(
-      _UnifediApiInstancePollLimitsPleromaAdapter _value,
-      $Res Function(_UnifediApiInstancePollLimitsPleromaAdapter) _then)
-      : super(_value,
-            (v) => _then(v as _UnifediApiInstancePollLimitsPleromaAdapter));
+class __$$UnifediApiInstancePollLimitsPleromaAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiInstancePollLimitsPleromaAdapterCopyWithImpl<$Res,
+        _$UnifediApiInstancePollLimitsPleromaAdapterImpl>
+    implements _$$UnifediApiInstancePollLimitsPleromaAdapterImplCopyWith<$Res> {
+  __$$UnifediApiInstancePollLimitsPleromaAdapterImplCopyWithImpl(
+      _$UnifediApiInstancePollLimitsPleromaAdapterImpl _value,
+      $Res Function(_$UnifediApiInstancePollLimitsPleromaAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiInstancePollLimitsPleromaAdapter get _value =>
-      super._value as _UnifediApiInstancePollLimitsPleromaAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiInstancePollLimitsPleromaAdapter(
-      value == freezed
+    return _then(_$UnifediApiInstancePollLimitsPleromaAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstancePollLimits,
@@ -136,14 +121,15 @@ class __$UnifediApiInstancePollLimitsPleromaAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiInstancePollLimitsPleromaAdapter
+class _$UnifediApiInstancePollLimitsPleromaAdapterImpl
     extends _UnifediApiInstancePollLimitsPleromaAdapter {
-  const _$_UnifediApiInstancePollLimitsPleromaAdapter(@HiveField(0) this.value)
+  const _$UnifediApiInstancePollLimitsPleromaAdapterImpl(
+      @HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiInstancePollLimitsPleromaAdapter.fromJson(
+  factory _$UnifediApiInstancePollLimitsPleromaAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiInstancePollLimitsPleromaAdapterFromJson(json);
+      _$$UnifediApiInstancePollLimitsPleromaAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -155,46 +141,52 @@ class _$_UnifediApiInstancePollLimitsPleromaAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiInstancePollLimitsPleromaAdapter &&
+            other is _$UnifediApiInstancePollLimitsPleromaAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiInstancePollLimitsPleromaAdapterCopyWith<
-          _UnifediApiInstancePollLimitsPleromaAdapter>
-      get copyWith => __$UnifediApiInstancePollLimitsPleromaAdapterCopyWithImpl<
-          _UnifediApiInstancePollLimitsPleromaAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiInstancePollLimitsPleromaAdapterImplCopyWith<
+          _$UnifediApiInstancePollLimitsPleromaAdapterImpl>
+      get copyWith =>
+          __$$UnifediApiInstancePollLimitsPleromaAdapterImplCopyWithImpl<
+                  _$UnifediApiInstancePollLimitsPleromaAdapterImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiInstancePollLimitsPleromaAdapterToJson(this);
+    return _$$UnifediApiInstancePollLimitsPleromaAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiInstancePollLimitsPleromaAdapter
     extends UnifediApiInstancePollLimitsPleromaAdapter {
   const factory _UnifediApiInstancePollLimitsPleromaAdapter(
-          @HiveField(0) PleromaApiInstancePollLimits value) =
-      _$_UnifediApiInstancePollLimitsPleromaAdapter;
+          @HiveField(0) final PleromaApiInstancePollLimits value) =
+      _$UnifediApiInstancePollLimitsPleromaAdapterImpl;
   const _UnifediApiInstancePollLimitsPleromaAdapter._() : super._();
 
   factory _UnifediApiInstancePollLimitsPleromaAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiInstancePollLimitsPleromaAdapter.fromJson;
+      _$UnifediApiInstancePollLimitsPleromaAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   PleromaApiInstancePollLimits get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiInstancePollLimitsPleromaAdapterCopyWith<
-          _UnifediApiInstancePollLimitsPleromaAdapter>
+  _$$UnifediApiInstancePollLimitsPleromaAdapterImplCopyWith<
+          _$UnifediApiInstancePollLimitsPleromaAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

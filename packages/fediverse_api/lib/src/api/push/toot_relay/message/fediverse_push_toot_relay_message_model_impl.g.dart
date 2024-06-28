@@ -57,18 +57,18 @@ class FediversePushTootRelayMessageAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_FediversePushTootRelayMessage _$$_FediversePushTootRelayMessageFromJson(
-        Map<String, dynamic> json) =>
-    _$_FediversePushTootRelayMessage(
-      cryptoKey: json['crypto_key'] as String,
-      salt: json['salt'] as String,
-      payload: json['payload'] as String,
-      account: json['account'] as String,
-      server: json['server'] as String,
-    );
+_$FediversePushTootRelayMessageImpl
+    _$$FediversePushTootRelayMessageImplFromJson(Map<String, dynamic> json) =>
+        _$FediversePushTootRelayMessageImpl(
+          cryptoKey: json['crypto_key'] as String,
+          salt: json['salt'] as String,
+          payload: json['payload'] as String,
+          account: json['account'] as String,
+          server: json['server'] as String,
+        );
 
-Map<String, dynamic> _$$_FediversePushTootRelayMessageToJson(
-        _$_FediversePushTootRelayMessage instance) =>
+Map<String, dynamic> _$$FediversePushTootRelayMessageImplToJson(
+        _$FediversePushTootRelayMessageImpl instance) =>
     <String, dynamic>{
       'crypto_key': instance.cryptoKey,
       'salt': instance.salt,

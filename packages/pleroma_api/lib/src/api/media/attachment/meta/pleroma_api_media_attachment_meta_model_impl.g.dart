@@ -51,25 +51,25 @@ class PleromaApiMediaAttachmentMetaAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiMediaAttachmentMeta _$$_PleromaApiMediaAttachmentMetaFromJson(
-        Map<String, dynamic> json) =>
-    _$_PleromaApiMediaAttachmentMeta(
-      focus: json['focus'] == null
-          ? null
-          : PleromaApiMediaAttachmentFocus.fromJson(
-              json['focus'] as Map<String, dynamic>),
-      original: json['original'] == null
-          ? null
-          : PleromaApiMediaAttachmentSize.fromJson(
-              json['original'] as Map<String, dynamic>),
-      small: json['small'] == null
-          ? null
-          : PleromaApiMediaAttachmentSize.fromJson(
-              json['small'] as Map<String, dynamic>),
-    );
+_$PleromaApiMediaAttachmentMetaImpl
+    _$$PleromaApiMediaAttachmentMetaImplFromJson(Map<String, dynamic> json) =>
+        _$PleromaApiMediaAttachmentMetaImpl(
+          focus: json['focus'] == null
+              ? null
+              : PleromaApiMediaAttachmentFocus.fromJson(
+                  json['focus'] as Map<String, dynamic>),
+          original: json['original'] == null
+              ? null
+              : PleromaApiMediaAttachmentSize.fromJson(
+                  json['original'] as Map<String, dynamic>),
+          small: json['small'] == null
+              ? null
+              : PleromaApiMediaAttachmentSize.fromJson(
+                  json['small'] as Map<String, dynamic>),
+        );
 
-Map<String, dynamic> _$$_PleromaApiMediaAttachmentMetaToJson(
-    _$_PleromaApiMediaAttachmentMeta instance) {
+Map<String, dynamic> _$$PleromaApiMediaAttachmentMetaImplToJson(
+    _$PleromaApiMediaAttachmentMetaImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

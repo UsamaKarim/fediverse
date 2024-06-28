@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_frontend_configurations_model_impl.dart';
 
@@ -11,38 +12,12 @@ part of 'unifedi_api_frontend_configurations_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiFrontendConfigurations _$UnifediApiFrontendConfigurationsFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiFrontendConfigurations.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiFrontendConfigurationsTearOff {
-  const _$UnifediApiFrontendConfigurationsTearOff();
-
-  _UnifediApiFrontendConfigurations call(
-      {@JsonKey(name: 'brand_hex_color')
-      @HiveField(0)
-          required String? brandHexColor,
-      @JsonKey(name: 'background_image')
-      @HiveField(1)
-          required String? backgroundImage}) {
-    return _UnifediApiFrontendConfigurations(
-      brandHexColor: brandHexColor,
-      backgroundImage: backgroundImage,
-    );
-  }
-
-  UnifediApiFrontendConfigurations fromJson(Map<String, Object?> json) {
-    return UnifediApiFrontendConfigurations.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiFrontendConfigurations =
-    _$UnifediApiFrontendConfigurationsTearOff();
 
 /// @nodoc
 mixin _$UnifediApiFrontendConfigurations {
@@ -64,84 +39,84 @@ abstract class $UnifediApiFrontendConfigurationsCopyWith<$Res> {
   factory $UnifediApiFrontendConfigurationsCopyWith(
           UnifediApiFrontendConfigurations value,
           $Res Function(UnifediApiFrontendConfigurations) then) =
-      _$UnifediApiFrontendConfigurationsCopyWithImpl<$Res>;
+      _$UnifediApiFrontendConfigurationsCopyWithImpl<$Res,
+          UnifediApiFrontendConfigurations>;
+  @useResult
   $Res call(
-      {@JsonKey(name: 'brand_hex_color')
-      @HiveField(0)
-          String? brandHexColor,
+      {@JsonKey(name: 'brand_hex_color') @HiveField(0) String? brandHexColor,
       @JsonKey(name: 'background_image')
       @HiveField(1)
-          String? backgroundImage});
+      String? backgroundImage});
 }
 
 /// @nodoc
-class _$UnifediApiFrontendConfigurationsCopyWithImpl<$Res>
+class _$UnifediApiFrontendConfigurationsCopyWithImpl<$Res,
+        $Val extends UnifediApiFrontendConfigurations>
     implements $UnifediApiFrontendConfigurationsCopyWith<$Res> {
   _$UnifediApiFrontendConfigurationsCopyWithImpl(this._value, this._then);
 
-  final UnifediApiFrontendConfigurations _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiFrontendConfigurations) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? brandHexColor = freezed,
     Object? backgroundImage = freezed,
   }) {
     return _then(_value.copyWith(
-      brandHexColor: brandHexColor == freezed
+      brandHexColor: freezed == brandHexColor
           ? _value.brandHexColor
           : brandHexColor // ignore: cast_nullable_to_non_nullable
               as String?,
-      backgroundImage: backgroundImage == freezed
+      backgroundImage: freezed == backgroundImage
           ? _value.backgroundImage
           : backgroundImage // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiFrontendConfigurationsCopyWith<$Res>
+abstract class _$$UnifediApiFrontendConfigurationsImplCopyWith<$Res>
     implements $UnifediApiFrontendConfigurationsCopyWith<$Res> {
-  factory _$UnifediApiFrontendConfigurationsCopyWith(
-          _UnifediApiFrontendConfigurations value,
-          $Res Function(_UnifediApiFrontendConfigurations) then) =
-      __$UnifediApiFrontendConfigurationsCopyWithImpl<$Res>;
+  factory _$$UnifediApiFrontendConfigurationsImplCopyWith(
+          _$UnifediApiFrontendConfigurationsImpl value,
+          $Res Function(_$UnifediApiFrontendConfigurationsImpl) then) =
+      __$$UnifediApiFrontendConfigurationsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@JsonKey(name: 'brand_hex_color')
-      @HiveField(0)
-          String? brandHexColor,
+      {@JsonKey(name: 'brand_hex_color') @HiveField(0) String? brandHexColor,
       @JsonKey(name: 'background_image')
       @HiveField(1)
-          String? backgroundImage});
+      String? backgroundImage});
 }
 
 /// @nodoc
-class __$UnifediApiFrontendConfigurationsCopyWithImpl<$Res>
-    extends _$UnifediApiFrontendConfigurationsCopyWithImpl<$Res>
-    implements _$UnifediApiFrontendConfigurationsCopyWith<$Res> {
-  __$UnifediApiFrontendConfigurationsCopyWithImpl(
-      _UnifediApiFrontendConfigurations _value,
-      $Res Function(_UnifediApiFrontendConfigurations) _then)
-      : super(_value, (v) => _then(v as _UnifediApiFrontendConfigurations));
+class __$$UnifediApiFrontendConfigurationsImplCopyWithImpl<$Res>
+    extends _$UnifediApiFrontendConfigurationsCopyWithImpl<$Res,
+        _$UnifediApiFrontendConfigurationsImpl>
+    implements _$$UnifediApiFrontendConfigurationsImplCopyWith<$Res> {
+  __$$UnifediApiFrontendConfigurationsImplCopyWithImpl(
+      _$UnifediApiFrontendConfigurationsImpl _value,
+      $Res Function(_$UnifediApiFrontendConfigurationsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiFrontendConfigurations get _value =>
-      super._value as _UnifediApiFrontendConfigurations;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? brandHexColor = freezed,
     Object? backgroundImage = freezed,
   }) {
-    return _then(_UnifediApiFrontendConfigurations(
-      brandHexColor: brandHexColor == freezed
+    return _then(_$UnifediApiFrontendConfigurationsImpl(
+      brandHexColor: freezed == brandHexColor
           ? _value.brandHexColor
           : brandHexColor // ignore: cast_nullable_to_non_nullable
               as String?,
-      backgroundImage: backgroundImage == freezed
+      backgroundImage: freezed == backgroundImage
           ? _value.backgroundImage
           : backgroundImage // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -151,19 +126,19 @@ class __$UnifediApiFrontendConfigurationsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiFrontendConfigurations
+class _$UnifediApiFrontendConfigurationsImpl
     implements _UnifediApiFrontendConfigurations {
-  const _$_UnifediApiFrontendConfigurations(
+  const _$UnifediApiFrontendConfigurationsImpl(
       {@JsonKey(name: 'brand_hex_color')
       @HiveField(0)
-          required this.brandHexColor,
+      required this.brandHexColor,
       @JsonKey(name: 'background_image')
       @HiveField(1)
-          required this.backgroundImage});
+      required this.backgroundImage});
 
-  factory _$_UnifediApiFrontendConfigurations.fromJson(
+  factory _$UnifediApiFrontendConfigurationsImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiFrontendConfigurationsFromJson(json);
+      _$$UnifediApiFrontendConfigurationsImplFromJson(json);
 
   @override
   @JsonKey(name: 'brand_hex_color')
@@ -180,28 +155,33 @@ class _$_UnifediApiFrontendConfigurations
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiFrontendConfigurations &&
+            other is _$UnifediApiFrontendConfigurationsImpl &&
             (identical(other.brandHexColor, brandHexColor) ||
                 other.brandHexColor == brandHexColor) &&
             (identical(other.backgroundImage, backgroundImage) ||
                 other.backgroundImage == backgroundImage));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, brandHexColor, backgroundImage);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiFrontendConfigurationsCopyWith<_UnifediApiFrontendConfigurations>
-      get copyWith => __$UnifediApiFrontendConfigurationsCopyWithImpl<
-          _UnifediApiFrontendConfigurations>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiFrontendConfigurationsImplCopyWith<
+          _$UnifediApiFrontendConfigurationsImpl>
+      get copyWith => __$$UnifediApiFrontendConfigurationsImplCopyWithImpl<
+          _$UnifediApiFrontendConfigurationsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiFrontendConfigurationsToJson(this);
+    return _$$UnifediApiFrontendConfigurationsImplToJson(
+      this,
+    );
   }
 }
 
@@ -210,14 +190,15 @@ abstract class _UnifediApiFrontendConfigurations
   const factory _UnifediApiFrontendConfigurations(
           {@JsonKey(name: 'brand_hex_color')
           @HiveField(0)
-              required String? brandHexColor,
+          required final String? brandHexColor,
           @JsonKey(name: 'background_image')
           @HiveField(1)
-              required String? backgroundImage}) =
-      _$_UnifediApiFrontendConfigurations;
+          required final String? backgroundImage}) =
+      _$UnifediApiFrontendConfigurationsImpl;
 
   factory _UnifediApiFrontendConfigurations.fromJson(
-      Map<String, dynamic> json) = _$_UnifediApiFrontendConfigurations.fromJson;
+          Map<String, dynamic> json) =
+      _$UnifediApiFrontendConfigurationsImpl.fromJson;
 
   @override
   @JsonKey(name: 'brand_hex_color')
@@ -229,6 +210,7 @@ abstract class _UnifediApiFrontendConfigurations
   String? get backgroundImage;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiFrontendConfigurationsCopyWith<_UnifediApiFrontendConfigurations>
+  _$$UnifediApiFrontendConfigurationsImplCopyWith<
+          _$UnifediApiFrontendConfigurationsImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

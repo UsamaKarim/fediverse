@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'recent_search_model.dart';
 
@@ -11,32 +12,11 @@ part of 'recent_search_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 RecentSearchList _$RecentSearchListFromJson(Map<String, dynamic> json) {
   return _RecentSearchList.fromJson(json);
 }
-
-/// @nodoc
-class _$RecentSearchListTearOff {
-  const _$RecentSearchListTearOff();
-
-  _RecentSearchList call(
-      {@JsonKey(name: 'recentItems')
-      @HiveField(0)
-          required List<String> recentItems}) {
-    return _RecentSearchList(
-      recentItems: recentItems,
-    );
-  }
-
-  RecentSearchList fromJson(Map<String, Object?> json) {
-    return RecentSearchList.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $RecentSearchList = _$RecentSearchListTearOff();
 
 /// @nodoc
 mixin _$RecentSearchList {
@@ -54,62 +34,64 @@ mixin _$RecentSearchList {
 abstract class $RecentSearchListCopyWith<$Res> {
   factory $RecentSearchListCopyWith(
           RecentSearchList value, $Res Function(RecentSearchList) then) =
-      _$RecentSearchListCopyWithImpl<$Res>;
+      _$RecentSearchListCopyWithImpl<$Res, RecentSearchList>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'recentItems') @HiveField(0) List<String> recentItems});
 }
 
 /// @nodoc
-class _$RecentSearchListCopyWithImpl<$Res>
+class _$RecentSearchListCopyWithImpl<$Res, $Val extends RecentSearchList>
     implements $RecentSearchListCopyWith<$Res> {
   _$RecentSearchListCopyWithImpl(this._value, this._then);
 
-  final RecentSearchList _value;
   // ignore: unused_field
-  final $Res Function(RecentSearchList) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? recentItems = freezed,
+    Object? recentItems = null,
   }) {
     return _then(_value.copyWith(
-      recentItems: recentItems == freezed
+      recentItems: null == recentItems
           ? _value.recentItems
           : recentItems // ignore: cast_nullable_to_non_nullable
               as List<String>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$RecentSearchListCopyWith<$Res>
+abstract class _$$RecentSearchListImplCopyWith<$Res>
     implements $RecentSearchListCopyWith<$Res> {
-  factory _$RecentSearchListCopyWith(
-          _RecentSearchList value, $Res Function(_RecentSearchList) then) =
-      __$RecentSearchListCopyWithImpl<$Res>;
+  factory _$$RecentSearchListImplCopyWith(_$RecentSearchListImpl value,
+          $Res Function(_$RecentSearchListImpl) then) =
+      __$$RecentSearchListImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'recentItems') @HiveField(0) List<String> recentItems});
 }
 
 /// @nodoc
-class __$RecentSearchListCopyWithImpl<$Res>
-    extends _$RecentSearchListCopyWithImpl<$Res>
-    implements _$RecentSearchListCopyWith<$Res> {
-  __$RecentSearchListCopyWithImpl(
-      _RecentSearchList _value, $Res Function(_RecentSearchList) _then)
-      : super(_value, (v) => _then(v as _RecentSearchList));
+class __$$RecentSearchListImplCopyWithImpl<$Res>
+    extends _$RecentSearchListCopyWithImpl<$Res, _$RecentSearchListImpl>
+    implements _$$RecentSearchListImplCopyWith<$Res> {
+  __$$RecentSearchListImplCopyWithImpl(_$RecentSearchListImpl _value,
+      $Res Function(_$RecentSearchListImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _RecentSearchList get _value => super._value as _RecentSearchList;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? recentItems = freezed,
+    Object? recentItems = null,
   }) {
-    return _then(_RecentSearchList(
-      recentItems: recentItems == freezed
-          ? _value.recentItems
+    return _then(_$RecentSearchListImpl(
+      recentItems: null == recentItems
+          ? _value._recentItems
           : recentItems // ignore: cast_nullable_to_non_nullable
               as List<String>,
     ));
@@ -118,19 +100,27 @@ class __$RecentSearchListCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_RecentSearchList
+class _$RecentSearchListImpl
     with DiagnosticableTreeMixin
     implements _RecentSearchList {
-  const _$_RecentSearchList(
-      {@JsonKey(name: 'recentItems') @HiveField(0) required this.recentItems});
+  const _$RecentSearchListImpl(
+      {@JsonKey(name: 'recentItems')
+      @HiveField(0)
+      required final List<String> recentItems})
+      : _recentItems = recentItems;
 
-  factory _$_RecentSearchList.fromJson(Map<String, dynamic> json) =>
-      _$$_RecentSearchListFromJson(json);
+  factory _$RecentSearchListImpl.fromJson(Map<String, dynamic> json) =>
+      _$$RecentSearchListImplFromJson(json);
 
+  final List<String> _recentItems;
   @override
   @JsonKey(name: 'recentItems')
   @HiveField(0)
-  final List<String> recentItems;
+  List<String> get recentItems {
+    if (_recentItems is EqualUnmodifiableListView) return _recentItems;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_recentItems);
+  }
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -146,26 +136,31 @@ class _$_RecentSearchList
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _RecentSearchList &&
+            other is _$RecentSearchListImpl &&
             const DeepCollectionEquality()
-                .equals(other.recentItems, recentItems));
+                .equals(other._recentItems, _recentItems));
   }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(recentItems));
 
   @JsonKey(ignore: true)
   @override
-  _$RecentSearchListCopyWith<_RecentSearchList> get copyWith =>
-      __$RecentSearchListCopyWithImpl<_RecentSearchList>(this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType, const DeepCollectionEquality().hash(_recentItems));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$RecentSearchListImplCopyWith<_$RecentSearchListImpl> get copyWith =>
+      __$$RecentSearchListImplCopyWithImpl<_$RecentSearchListImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_RecentSearchListToJson(this);
+    return _$$RecentSearchListImplToJson(
+      this,
+    );
   }
 }
 
@@ -173,10 +168,10 @@ abstract class _RecentSearchList implements RecentSearchList {
   const factory _RecentSearchList(
       {@JsonKey(name: 'recentItems')
       @HiveField(0)
-          required List<String> recentItems}) = _$_RecentSearchList;
+      required final List<String> recentItems}) = _$RecentSearchListImpl;
 
   factory _RecentSearchList.fromJson(Map<String, dynamic> json) =
-      _$_RecentSearchList.fromJson;
+      _$RecentSearchListImpl.fromJson;
 
   @override
   @JsonKey(name: 'recentItems')
@@ -184,6 +179,6 @@ abstract class _RecentSearchList implements RecentSearchList {
   List<String> get recentItems;
   @override
   @JsonKey(ignore: true)
-  _$RecentSearchListCopyWith<_RecentSearchList> get copyWith =>
+  _$$RecentSearchListImplCopyWith<_$RecentSearchListImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

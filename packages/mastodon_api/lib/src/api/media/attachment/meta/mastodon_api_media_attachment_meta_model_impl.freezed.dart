@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_media_attachment_meta_model_impl.dart';
 
@@ -11,36 +12,12 @@ part of 'mastodon_api_media_attachment_meta_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiMediaAttachmentMeta _$MastodonApiMediaAttachmentMetaFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiMediaAttachmentMeta.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiMediaAttachmentMetaTearOff {
-  const _$MastodonApiMediaAttachmentMetaTearOff();
-
-  _MastodonApiMediaAttachmentMeta call(
-      {@HiveField(0) required MastodonApiMediaAttachmentFocus? focus,
-      @HiveField(1) required MastodonApiMediaAttachmentSize? original,
-      @HiveField(2) required MastodonApiMediaAttachmentSize? small}) {
-    return _MastodonApiMediaAttachmentMeta(
-      focus: focus,
-      original: original,
-      small: small,
-    );
-  }
-
-  MastodonApiMediaAttachmentMeta fromJson(Map<String, Object?> json) {
-    return MastodonApiMediaAttachmentMeta.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiMediaAttachmentMeta =
-    _$MastodonApiMediaAttachmentMetaTearOff();
 
 /// @nodoc
 mixin _$MastodonApiMediaAttachmentMeta {
@@ -65,7 +42,9 @@ abstract class $MastodonApiMediaAttachmentMetaCopyWith<$Res> {
   factory $MastodonApiMediaAttachmentMetaCopyWith(
           MastodonApiMediaAttachmentMeta value,
           $Res Function(MastodonApiMediaAttachmentMeta) then) =
-      _$MastodonApiMediaAttachmentMetaCopyWithImpl<$Res>;
+      _$MastodonApiMediaAttachmentMetaCopyWithImpl<$Res,
+          MastodonApiMediaAttachmentMeta>;
+  @useResult
   $Res call(
       {@HiveField(0) MastodonApiMediaAttachmentFocus? focus,
       @HiveField(1) MastodonApiMediaAttachmentSize? original,
@@ -77,14 +56,17 @@ abstract class $MastodonApiMediaAttachmentMetaCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MastodonApiMediaAttachmentMetaCopyWithImpl<$Res>
+class _$MastodonApiMediaAttachmentMetaCopyWithImpl<$Res,
+        $Val extends MastodonApiMediaAttachmentMeta>
     implements $MastodonApiMediaAttachmentMetaCopyWith<$Res> {
   _$MastodonApiMediaAttachmentMetaCopyWithImpl(this._value, this._then);
 
-  final MastodonApiMediaAttachmentMeta _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiMediaAttachmentMeta) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? focus = freezed,
@@ -92,22 +74,23 @@ class _$MastodonApiMediaAttachmentMetaCopyWithImpl<$Res>
     Object? small = freezed,
   }) {
     return _then(_value.copyWith(
-      focus: focus == freezed
+      focus: freezed == focus
           ? _value.focus
           : focus // ignore: cast_nullable_to_non_nullable
               as MastodonApiMediaAttachmentFocus?,
-      original: original == freezed
+      original: freezed == original
           ? _value.original
           : original // ignore: cast_nullable_to_non_nullable
               as MastodonApiMediaAttachmentSize?,
-      small: small == freezed
+      small: freezed == small
           ? _value.small
           : small // ignore: cast_nullable_to_non_nullable
               as MastodonApiMediaAttachmentSize?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiMediaAttachmentFocusCopyWith<$Res>? get focus {
     if (_value.focus == null) {
       return null;
@@ -115,11 +98,12 @@ class _$MastodonApiMediaAttachmentMetaCopyWithImpl<$Res>
 
     return $MastodonApiMediaAttachmentFocusCopyWith<$Res>(_value.focus!,
         (value) {
-      return _then(_value.copyWith(focus: value));
+      return _then(_value.copyWith(focus: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiMediaAttachmentSizeCopyWith<$Res>? get original {
     if (_value.original == null) {
       return null;
@@ -127,11 +111,12 @@ class _$MastodonApiMediaAttachmentMetaCopyWithImpl<$Res>
 
     return $MastodonApiMediaAttachmentSizeCopyWith<$Res>(_value.original!,
         (value) {
-      return _then(_value.copyWith(original: value));
+      return _then(_value.copyWith(original: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiMediaAttachmentSizeCopyWith<$Res>? get small {
     if (_value.small == null) {
       return null;
@@ -139,19 +124,20 @@ class _$MastodonApiMediaAttachmentMetaCopyWithImpl<$Res>
 
     return $MastodonApiMediaAttachmentSizeCopyWith<$Res>(_value.small!,
         (value) {
-      return _then(_value.copyWith(small: value));
+      return _then(_value.copyWith(small: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiMediaAttachmentMetaCopyWith<$Res>
+abstract class _$$MastodonApiMediaAttachmentMetaImplCopyWith<$Res>
     implements $MastodonApiMediaAttachmentMetaCopyWith<$Res> {
-  factory _$MastodonApiMediaAttachmentMetaCopyWith(
-          _MastodonApiMediaAttachmentMeta value,
-          $Res Function(_MastodonApiMediaAttachmentMeta) then) =
-      __$MastodonApiMediaAttachmentMetaCopyWithImpl<$Res>;
+  factory _$$MastodonApiMediaAttachmentMetaImplCopyWith(
+          _$MastodonApiMediaAttachmentMetaImpl value,
+          $Res Function(_$MastodonApiMediaAttachmentMetaImpl) then) =
+      __$$MastodonApiMediaAttachmentMetaImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) MastodonApiMediaAttachmentFocus? focus,
       @HiveField(1) MastodonApiMediaAttachmentSize? original,
@@ -166,34 +152,32 @@ abstract class _$MastodonApiMediaAttachmentMetaCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MastodonApiMediaAttachmentMetaCopyWithImpl<$Res>
-    extends _$MastodonApiMediaAttachmentMetaCopyWithImpl<$Res>
-    implements _$MastodonApiMediaAttachmentMetaCopyWith<$Res> {
-  __$MastodonApiMediaAttachmentMetaCopyWithImpl(
-      _MastodonApiMediaAttachmentMeta _value,
-      $Res Function(_MastodonApiMediaAttachmentMeta) _then)
-      : super(_value, (v) => _then(v as _MastodonApiMediaAttachmentMeta));
+class __$$MastodonApiMediaAttachmentMetaImplCopyWithImpl<$Res>
+    extends _$MastodonApiMediaAttachmentMetaCopyWithImpl<$Res,
+        _$MastodonApiMediaAttachmentMetaImpl>
+    implements _$$MastodonApiMediaAttachmentMetaImplCopyWith<$Res> {
+  __$$MastodonApiMediaAttachmentMetaImplCopyWithImpl(
+      _$MastodonApiMediaAttachmentMetaImpl _value,
+      $Res Function(_$MastodonApiMediaAttachmentMetaImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiMediaAttachmentMeta get _value =>
-      super._value as _MastodonApiMediaAttachmentMeta;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? focus = freezed,
     Object? original = freezed,
     Object? small = freezed,
   }) {
-    return _then(_MastodonApiMediaAttachmentMeta(
-      focus: focus == freezed
+    return _then(_$MastodonApiMediaAttachmentMetaImpl(
+      focus: freezed == focus
           ? _value.focus
           : focus // ignore: cast_nullable_to_non_nullable
               as MastodonApiMediaAttachmentFocus?,
-      original: original == freezed
+      original: freezed == original
           ? _value.original
           : original // ignore: cast_nullable_to_non_nullable
               as MastodonApiMediaAttachmentSize?,
-      small: small == freezed
+      small: freezed == small
           ? _value.small
           : small // ignore: cast_nullable_to_non_nullable
               as MastodonApiMediaAttachmentSize?,
@@ -203,16 +187,16 @@ class __$MastodonApiMediaAttachmentMetaCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiMediaAttachmentMeta
+class _$MastodonApiMediaAttachmentMetaImpl
     implements _MastodonApiMediaAttachmentMeta {
-  const _$_MastodonApiMediaAttachmentMeta(
+  const _$MastodonApiMediaAttachmentMetaImpl(
       {@HiveField(0) required this.focus,
       @HiveField(1) required this.original,
       @HiveField(2) required this.small});
 
-  factory _$_MastodonApiMediaAttachmentMeta.fromJson(
+  factory _$MastodonApiMediaAttachmentMetaImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_MastodonApiMediaAttachmentMetaFromJson(json);
+      _$$MastodonApiMediaAttachmentMetaImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -230,41 +214,46 @@ class _$_MastodonApiMediaAttachmentMeta
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiMediaAttachmentMeta &&
+            other is _$MastodonApiMediaAttachmentMetaImpl &&
             (identical(other.focus, focus) || other.focus == focus) &&
             (identical(other.original, original) ||
                 other.original == original) &&
             (identical(other.small, small) || other.small == small));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, focus, original, small);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiMediaAttachmentMetaCopyWith<_MastodonApiMediaAttachmentMeta>
-      get copyWith => __$MastodonApiMediaAttachmentMetaCopyWithImpl<
-          _MastodonApiMediaAttachmentMeta>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiMediaAttachmentMetaImplCopyWith<
+          _$MastodonApiMediaAttachmentMetaImpl>
+      get copyWith => __$$MastodonApiMediaAttachmentMetaImplCopyWithImpl<
+          _$MastodonApiMediaAttachmentMetaImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiMediaAttachmentMetaToJson(this);
+    return _$$MastodonApiMediaAttachmentMetaImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiMediaAttachmentMeta
     implements MastodonApiMediaAttachmentMeta {
   const factory _MastodonApiMediaAttachmentMeta(
-          {@HiveField(0) required MastodonApiMediaAttachmentFocus? focus,
-          @HiveField(1) required MastodonApiMediaAttachmentSize? original,
-          @HiveField(2) required MastodonApiMediaAttachmentSize? small}) =
-      _$_MastodonApiMediaAttachmentMeta;
+          {@HiveField(0) required final MastodonApiMediaAttachmentFocus? focus,
+          @HiveField(1) required final MastodonApiMediaAttachmentSize? original,
+          @HiveField(2) required final MastodonApiMediaAttachmentSize? small}) =
+      _$MastodonApiMediaAttachmentMetaImpl;
 
   factory _MastodonApiMediaAttachmentMeta.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiMediaAttachmentMeta.fromJson;
+      _$MastodonApiMediaAttachmentMetaImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -277,6 +266,7 @@ abstract class _MastodonApiMediaAttachmentMeta
   MastodonApiMediaAttachmentSize? get small;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiMediaAttachmentMetaCopyWith<_MastodonApiMediaAttachmentMeta>
+  _$$MastodonApiMediaAttachmentMetaImplCopyWith<
+          _$MastodonApiMediaAttachmentMetaImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

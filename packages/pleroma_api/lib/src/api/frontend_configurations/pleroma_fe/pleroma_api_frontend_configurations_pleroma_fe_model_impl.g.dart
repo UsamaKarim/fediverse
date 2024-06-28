@@ -121,10 +121,10 @@ class PleromaApiFrontendConfigurationsPleromaFeAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiFrontendConfigurationsPleromaFe
-    _$$_PleromaApiFrontendConfigurationsPleromaFeFromJson(
+_$PleromaApiFrontendConfigurationsPleromaFeImpl
+    _$$PleromaApiFrontendConfigurationsPleromaFeImplFromJson(
             Map<String, dynamic> json) =>
-        _$_PleromaApiFrontendConfigurationsPleromaFe(
+        _$PleromaApiFrontendConfigurationsPleromaFeImpl(
           alwaysShowSubjectInput: json['alwaysShowSubjectInput'] as bool?,
           background: json['background'] as String?,
           collapseMessageWithSubject:
@@ -154,8 +154,8 @@ _$_PleromaApiFrontendConfigurationsPleromaFe
           webPushNotifications: json['webPushNotifications'] as bool?,
         );
 
-Map<String, dynamic> _$$_PleromaApiFrontendConfigurationsPleromaFeToJson(
-    _$_PleromaApiFrontendConfigurationsPleromaFe instance) {
+Map<String, dynamic> _$$PleromaApiFrontendConfigurationsPleromaFeImplToJson(
+    _$PleromaApiFrontendConfigurationsPleromaFeImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'upload_media_exception.dart';
 
@@ -11,27 +12,7 @@ part of 'upload_media_exception.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$UploadMediaExceedFileSizeLimitExceptionTearOff {
-  const _$UploadMediaExceedFileSizeLimitExceptionTearOff();
-
-  _UploadMediaExceedFileSizeLimitException call(
-      {required File file,
-      required int? maximumFileSizeInBytes,
-      required int currentFileSizeInBytes}) {
-    return _UploadMediaExceedFileSizeLimitException(
-      file: file,
-      maximumFileSizeInBytes: maximumFileSizeInBytes,
-      currentFileSizeInBytes: currentFileSizeInBytes,
-    );
-  }
-}
-
-/// @nodoc
-const $UploadMediaExceedFileSizeLimitException =
-    _$UploadMediaExceedFileSizeLimitExceptionTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$UploadMediaExceedFileSizeLimitException {
@@ -50,86 +31,89 @@ abstract class $UploadMediaExceedFileSizeLimitExceptionCopyWith<$Res> {
   factory $UploadMediaExceedFileSizeLimitExceptionCopyWith(
           UploadMediaExceedFileSizeLimitException value,
           $Res Function(UploadMediaExceedFileSizeLimitException) then) =
-      _$UploadMediaExceedFileSizeLimitExceptionCopyWithImpl<$Res>;
+      _$UploadMediaExceedFileSizeLimitExceptionCopyWithImpl<$Res,
+          UploadMediaExceedFileSizeLimitException>;
+  @useResult
   $Res call(
       {File file, int? maximumFileSizeInBytes, int currentFileSizeInBytes});
 }
 
 /// @nodoc
-class _$UploadMediaExceedFileSizeLimitExceptionCopyWithImpl<$Res>
+class _$UploadMediaExceedFileSizeLimitExceptionCopyWithImpl<$Res,
+        $Val extends UploadMediaExceedFileSizeLimitException>
     implements $UploadMediaExceedFileSizeLimitExceptionCopyWith<$Res> {
   _$UploadMediaExceedFileSizeLimitExceptionCopyWithImpl(
       this._value, this._then);
 
-  final UploadMediaExceedFileSizeLimitException _value;
   // ignore: unused_field
-  final $Res Function(UploadMediaExceedFileSizeLimitException) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? file = freezed,
+    Object? file = null,
     Object? maximumFileSizeInBytes = freezed,
-    Object? currentFileSizeInBytes = freezed,
+    Object? currentFileSizeInBytes = null,
   }) {
     return _then(_value.copyWith(
-      file: file == freezed
+      file: null == file
           ? _value.file
           : file // ignore: cast_nullable_to_non_nullable
               as File,
-      maximumFileSizeInBytes: maximumFileSizeInBytes == freezed
+      maximumFileSizeInBytes: freezed == maximumFileSizeInBytes
           ? _value.maximumFileSizeInBytes
           : maximumFileSizeInBytes // ignore: cast_nullable_to_non_nullable
               as int?,
-      currentFileSizeInBytes: currentFileSizeInBytes == freezed
+      currentFileSizeInBytes: null == currentFileSizeInBytes
           ? _value.currentFileSizeInBytes
           : currentFileSizeInBytes // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UploadMediaExceedFileSizeLimitExceptionCopyWith<$Res>
+abstract class _$$UploadMediaExceedFileSizeLimitExceptionImplCopyWith<$Res>
     implements $UploadMediaExceedFileSizeLimitExceptionCopyWith<$Res> {
-  factory _$UploadMediaExceedFileSizeLimitExceptionCopyWith(
-          _UploadMediaExceedFileSizeLimitException value,
-          $Res Function(_UploadMediaExceedFileSizeLimitException) then) =
-      __$UploadMediaExceedFileSizeLimitExceptionCopyWithImpl<$Res>;
+  factory _$$UploadMediaExceedFileSizeLimitExceptionImplCopyWith(
+          _$UploadMediaExceedFileSizeLimitExceptionImpl value,
+          $Res Function(_$UploadMediaExceedFileSizeLimitExceptionImpl) then) =
+      __$$UploadMediaExceedFileSizeLimitExceptionImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {File file, int? maximumFileSizeInBytes, int currentFileSizeInBytes});
 }
 
 /// @nodoc
-class __$UploadMediaExceedFileSizeLimitExceptionCopyWithImpl<$Res>
-    extends _$UploadMediaExceedFileSizeLimitExceptionCopyWithImpl<$Res>
-    implements _$UploadMediaExceedFileSizeLimitExceptionCopyWith<$Res> {
-  __$UploadMediaExceedFileSizeLimitExceptionCopyWithImpl(
-      _UploadMediaExceedFileSizeLimitException _value,
-      $Res Function(_UploadMediaExceedFileSizeLimitException) _then)
-      : super(_value,
-            (v) => _then(v as _UploadMediaExceedFileSizeLimitException));
+class __$$UploadMediaExceedFileSizeLimitExceptionImplCopyWithImpl<$Res>
+    extends _$UploadMediaExceedFileSizeLimitExceptionCopyWithImpl<$Res,
+        _$UploadMediaExceedFileSizeLimitExceptionImpl>
+    implements _$$UploadMediaExceedFileSizeLimitExceptionImplCopyWith<$Res> {
+  __$$UploadMediaExceedFileSizeLimitExceptionImplCopyWithImpl(
+      _$UploadMediaExceedFileSizeLimitExceptionImpl _value,
+      $Res Function(_$UploadMediaExceedFileSizeLimitExceptionImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UploadMediaExceedFileSizeLimitException get _value =>
-      super._value as _UploadMediaExceedFileSizeLimitException;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? file = freezed,
+    Object? file = null,
     Object? maximumFileSizeInBytes = freezed,
-    Object? currentFileSizeInBytes = freezed,
+    Object? currentFileSizeInBytes = null,
   }) {
-    return _then(_UploadMediaExceedFileSizeLimitException(
-      file: file == freezed
+    return _then(_$UploadMediaExceedFileSizeLimitExceptionImpl(
+      file: null == file
           ? _value.file
           : file // ignore: cast_nullable_to_non_nullable
               as File,
-      maximumFileSizeInBytes: maximumFileSizeInBytes == freezed
+      maximumFileSizeInBytes: freezed == maximumFileSizeInBytes
           ? _value.maximumFileSizeInBytes
           : maximumFileSizeInBytes // ignore: cast_nullable_to_non_nullable
               as int?,
-      currentFileSizeInBytes: currentFileSizeInBytes == freezed
+      currentFileSizeInBytes: null == currentFileSizeInBytes
           ? _value.currentFileSizeInBytes
           : currentFileSizeInBytes // ignore: cast_nullable_to_non_nullable
               as int,
@@ -139,9 +123,9 @@ class __$UploadMediaExceedFileSizeLimitExceptionCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_UploadMediaExceedFileSizeLimitException
+class _$UploadMediaExceedFileSizeLimitExceptionImpl
     implements _UploadMediaExceedFileSizeLimitException {
-  const _$_UploadMediaExceedFileSizeLimitException(
+  const _$UploadMediaExceedFileSizeLimitExceptionImpl(
       {required this.file,
       required this.maximumFileSizeInBytes,
       required this.currentFileSizeInBytes});
@@ -159,10 +143,10 @@ class _$_UploadMediaExceedFileSizeLimitException
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UploadMediaExceedFileSizeLimitException &&
+            other is _$UploadMediaExceedFileSizeLimitExceptionImpl &&
             (identical(other.file, file) || other.file == file) &&
             (identical(other.maximumFileSizeInBytes, maximumFileSizeInBytes) ||
                 other.maximumFileSizeInBytes == maximumFileSizeInBytes) &&
@@ -176,19 +160,21 @@ class _$_UploadMediaExceedFileSizeLimitException
 
   @JsonKey(ignore: true)
   @override
-  _$UploadMediaExceedFileSizeLimitExceptionCopyWith<
-          _UploadMediaExceedFileSizeLimitException>
-      get copyWith => __$UploadMediaExceedFileSizeLimitExceptionCopyWithImpl<
-          _UploadMediaExceedFileSizeLimitException>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UploadMediaExceedFileSizeLimitExceptionImplCopyWith<
+          _$UploadMediaExceedFileSizeLimitExceptionImpl>
+      get copyWith =>
+          __$$UploadMediaExceedFileSizeLimitExceptionImplCopyWithImpl<
+              _$UploadMediaExceedFileSizeLimitExceptionImpl>(this, _$identity);
 }
 
 abstract class _UploadMediaExceedFileSizeLimitException
     implements UploadMediaExceedFileSizeLimitException {
   const factory _UploadMediaExceedFileSizeLimitException(
-          {required File file,
-          required int? maximumFileSizeInBytes,
-          required int currentFileSizeInBytes}) =
-      _$_UploadMediaExceedFileSizeLimitException;
+          {required final File file,
+          required final int? maximumFileSizeInBytes,
+          required final int currentFileSizeInBytes}) =
+      _$UploadMediaExceedFileSizeLimitExceptionImpl;
 
   @override
   File get file;
@@ -198,7 +184,7 @@ abstract class _UploadMediaExceedFileSizeLimitException
   int get currentFileSizeInBytes;
   @override
   @JsonKey(ignore: true)
-  _$UploadMediaExceedFileSizeLimitExceptionCopyWith<
-          _UploadMediaExceedFileSizeLimitException>
+  _$$UploadMediaExceedFileSizeLimitExceptionImplCopyWith<
+          _$UploadMediaExceedFileSizeLimitExceptionImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

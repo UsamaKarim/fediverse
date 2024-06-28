@@ -60,9 +60,9 @@ class MastodonApiRegisterAccountAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiRegisterAccount _$$_MastodonApiRegisterAccountFromJson(
+_$MastodonApiRegisterAccountImpl _$$MastodonApiRegisterAccountImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiRegisterAccount(
+    _$MastodonApiRegisterAccountImpl(
       username: json['username'] as String,
       email: json['email'] as String,
       password: json['password'] as String,
@@ -71,8 +71,8 @@ _$_MastodonApiRegisterAccount _$$_MastodonApiRegisterAccountFromJson(
       reason: json['reason'] as String?,
     );
 
-Map<String, dynamic> _$$_MastodonApiRegisterAccountToJson(
-    _$_MastodonApiRegisterAccount instance) {
+Map<String, dynamic> _$$MastodonApiRegisterAccountImplToJson(
+    _$MastodonApiRegisterAccountImpl instance) {
   final val = <String, dynamic>{
     'username': instance.username,
     'email': instance.email,

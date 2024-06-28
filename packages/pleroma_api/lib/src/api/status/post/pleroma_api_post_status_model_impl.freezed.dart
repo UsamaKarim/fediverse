@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_post_status_model_impl.dart';
 
@@ -11,73 +12,11 @@ part of 'pleroma_api_post_status_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiPostStatus _$PleromaApiPostStatusFromJson(Map<String, dynamic> json) {
   return _PleromaApiPostStatus.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiPostStatusTearOff {
-  const _$PleromaApiPostStatusTearOff();
-
-  _PleromaApiPostStatus call(
-      {@HiveField(0)
-      @JsonKey(name: 'content_type')
-          required String? contentType,
-      @HiveField(1)
-      @JsonKey(name: 'expires_in')
-          required int? expiresInSeconds,
-      @HiveField(2)
-      @JsonKey(name: 'in_reply_to_conversation_id', includeIfNull: false)
-          required String? inReplyToConversationId,
-      @HiveField(3)
-      @JsonKey(name: 'in_reply_to_id', includeIfNull: false)
-          required String? inReplyToId,
-      @HiveField(4)
-          required String? language,
-      @HiveField(5)
-          required String visibility,
-      @HiveField(6)
-      @JsonKey(name: 'media_ids')
-          required List<String>? mediaIds,
-      @HiveField(7)
-          required PleromaApiPostStatusPoll? poll,
-      @HiveField(8)
-          required bool? preview,
-      @HiveField(9)
-          required bool sensitive,
-      @HiveField(10)
-      @JsonKey(name: 'spoiler_text')
-          required String? spoilerText,
-      @HiveField(11)
-          required String? status,
-      @HiveField(12)
-          required List<String>? to}) {
-    return _PleromaApiPostStatus(
-      contentType: contentType,
-      expiresInSeconds: expiresInSeconds,
-      inReplyToConversationId: inReplyToConversationId,
-      inReplyToId: inReplyToId,
-      language: language,
-      visibility: visibility,
-      mediaIds: mediaIds,
-      poll: poll,
-      preview: preview,
-      sensitive: sensitive,
-      spoilerText: spoilerText,
-      status: status,
-      to: to,
-    );
-  }
-
-  PleromaApiPostStatus fromJson(Map<String, Object?> json) {
-    return PleromaApiPostStatus.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiPostStatus = _$PleromaApiPostStatusTearOff();
 
 /// @nodoc
 mixin _$PleromaApiPostStatus {
@@ -124,53 +63,42 @@ mixin _$PleromaApiPostStatus {
 abstract class $PleromaApiPostStatusCopyWith<$Res> {
   factory $PleromaApiPostStatusCopyWith(PleromaApiPostStatus value,
           $Res Function(PleromaApiPostStatus) then) =
-      _$PleromaApiPostStatusCopyWithImpl<$Res>;
+      _$PleromaApiPostStatusCopyWithImpl<$Res, PleromaApiPostStatus>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-      @JsonKey(name: 'content_type')
-          String? contentType,
-      @HiveField(1)
-      @JsonKey(name: 'expires_in')
-          int? expiresInSeconds,
+      {@HiveField(0) @JsonKey(name: 'content_type') String? contentType,
+      @HiveField(1) @JsonKey(name: 'expires_in') int? expiresInSeconds,
       @HiveField(2)
       @JsonKey(name: 'in_reply_to_conversation_id', includeIfNull: false)
-          String? inReplyToConversationId,
+      String? inReplyToConversationId,
       @HiveField(3)
       @JsonKey(name: 'in_reply_to_id', includeIfNull: false)
-          String? inReplyToId,
-      @HiveField(4)
-          String? language,
-      @HiveField(5)
-          String visibility,
-      @HiveField(6)
-      @JsonKey(name: 'media_ids')
-          List<String>? mediaIds,
-      @HiveField(7)
-          PleromaApiPostStatusPoll? poll,
-      @HiveField(8)
-          bool? preview,
-      @HiveField(9)
-          bool sensitive,
-      @HiveField(10)
-      @JsonKey(name: 'spoiler_text')
-          String? spoilerText,
-      @HiveField(11)
-          String? status,
-      @HiveField(12)
-          List<String>? to});
+      String? inReplyToId,
+      @HiveField(4) String? language,
+      @HiveField(5) String visibility,
+      @HiveField(6) @JsonKey(name: 'media_ids') List<String>? mediaIds,
+      @HiveField(7) PleromaApiPostStatusPoll? poll,
+      @HiveField(8) bool? preview,
+      @HiveField(9) bool sensitive,
+      @HiveField(10) @JsonKey(name: 'spoiler_text') String? spoilerText,
+      @HiveField(11) String? status,
+      @HiveField(12) List<String>? to});
 
   $PleromaApiPostStatusPollCopyWith<$Res>? get poll;
 }
 
 /// @nodoc
-class _$PleromaApiPostStatusCopyWithImpl<$Res>
+class _$PleromaApiPostStatusCopyWithImpl<$Res,
+        $Val extends PleromaApiPostStatus>
     implements $PleromaApiPostStatusCopyWith<$Res> {
   _$PleromaApiPostStatusCopyWithImpl(this._value, this._then);
 
-  final PleromaApiPostStatus _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiPostStatus) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? contentType = freezed,
@@ -178,139 +106,124 @@ class _$PleromaApiPostStatusCopyWithImpl<$Res>
     Object? inReplyToConversationId = freezed,
     Object? inReplyToId = freezed,
     Object? language = freezed,
-    Object? visibility = freezed,
+    Object? visibility = null,
     Object? mediaIds = freezed,
     Object? poll = freezed,
     Object? preview = freezed,
-    Object? sensitive = freezed,
+    Object? sensitive = null,
     Object? spoilerText = freezed,
     Object? status = freezed,
     Object? to = freezed,
   }) {
     return _then(_value.copyWith(
-      contentType: contentType == freezed
+      contentType: freezed == contentType
           ? _value.contentType
           : contentType // ignore: cast_nullable_to_non_nullable
               as String?,
-      expiresInSeconds: expiresInSeconds == freezed
+      expiresInSeconds: freezed == expiresInSeconds
           ? _value.expiresInSeconds
           : expiresInSeconds // ignore: cast_nullable_to_non_nullable
               as int?,
-      inReplyToConversationId: inReplyToConversationId == freezed
+      inReplyToConversationId: freezed == inReplyToConversationId
           ? _value.inReplyToConversationId
           : inReplyToConversationId // ignore: cast_nullable_to_non_nullable
               as String?,
-      inReplyToId: inReplyToId == freezed
+      inReplyToId: freezed == inReplyToId
           ? _value.inReplyToId
           : inReplyToId // ignore: cast_nullable_to_non_nullable
               as String?,
-      language: language == freezed
+      language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as String?,
-      visibility: visibility == freezed
+      visibility: null == visibility
           ? _value.visibility
           : visibility // ignore: cast_nullable_to_non_nullable
               as String,
-      mediaIds: mediaIds == freezed
+      mediaIds: freezed == mediaIds
           ? _value.mediaIds
           : mediaIds // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      poll: poll == freezed
+      poll: freezed == poll
           ? _value.poll
           : poll // ignore: cast_nullable_to_non_nullable
               as PleromaApiPostStatusPoll?,
-      preview: preview == freezed
+      preview: freezed == preview
           ? _value.preview
           : preview // ignore: cast_nullable_to_non_nullable
               as bool?,
-      sensitive: sensitive == freezed
+      sensitive: null == sensitive
           ? _value.sensitive
           : sensitive // ignore: cast_nullable_to_non_nullable
               as bool,
-      spoilerText: spoilerText == freezed
+      spoilerText: freezed == spoilerText
           ? _value.spoilerText
           : spoilerText // ignore: cast_nullable_to_non_nullable
               as String?,
-      status: status == freezed
+      status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String?,
-      to: to == freezed
+      to: freezed == to
           ? _value.to
           : to // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiPostStatusPollCopyWith<$Res>? get poll {
     if (_value.poll == null) {
       return null;
     }
 
     return $PleromaApiPostStatusPollCopyWith<$Res>(_value.poll!, (value) {
-      return _then(_value.copyWith(poll: value));
+      return _then(_value.copyWith(poll: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiPostStatusCopyWith<$Res>
+abstract class _$$PleromaApiPostStatusImplCopyWith<$Res>
     implements $PleromaApiPostStatusCopyWith<$Res> {
-  factory _$PleromaApiPostStatusCopyWith(_PleromaApiPostStatus value,
-          $Res Function(_PleromaApiPostStatus) then) =
-      __$PleromaApiPostStatusCopyWithImpl<$Res>;
+  factory _$$PleromaApiPostStatusImplCopyWith(_$PleromaApiPostStatusImpl value,
+          $Res Function(_$PleromaApiPostStatusImpl) then) =
+      __$$PleromaApiPostStatusImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-      @JsonKey(name: 'content_type')
-          String? contentType,
-      @HiveField(1)
-      @JsonKey(name: 'expires_in')
-          int? expiresInSeconds,
+      {@HiveField(0) @JsonKey(name: 'content_type') String? contentType,
+      @HiveField(1) @JsonKey(name: 'expires_in') int? expiresInSeconds,
       @HiveField(2)
       @JsonKey(name: 'in_reply_to_conversation_id', includeIfNull: false)
-          String? inReplyToConversationId,
+      String? inReplyToConversationId,
       @HiveField(3)
       @JsonKey(name: 'in_reply_to_id', includeIfNull: false)
-          String? inReplyToId,
-      @HiveField(4)
-          String? language,
-      @HiveField(5)
-          String visibility,
-      @HiveField(6)
-      @JsonKey(name: 'media_ids')
-          List<String>? mediaIds,
-      @HiveField(7)
-          PleromaApiPostStatusPoll? poll,
-      @HiveField(8)
-          bool? preview,
-      @HiveField(9)
-          bool sensitive,
-      @HiveField(10)
-      @JsonKey(name: 'spoiler_text')
-          String? spoilerText,
-      @HiveField(11)
-          String? status,
-      @HiveField(12)
-          List<String>? to});
+      String? inReplyToId,
+      @HiveField(4) String? language,
+      @HiveField(5) String visibility,
+      @HiveField(6) @JsonKey(name: 'media_ids') List<String>? mediaIds,
+      @HiveField(7) PleromaApiPostStatusPoll? poll,
+      @HiveField(8) bool? preview,
+      @HiveField(9) bool sensitive,
+      @HiveField(10) @JsonKey(name: 'spoiler_text') String? spoilerText,
+      @HiveField(11) String? status,
+      @HiveField(12) List<String>? to});
 
   @override
   $PleromaApiPostStatusPollCopyWith<$Res>? get poll;
 }
 
 /// @nodoc
-class __$PleromaApiPostStatusCopyWithImpl<$Res>
-    extends _$PleromaApiPostStatusCopyWithImpl<$Res>
-    implements _$PleromaApiPostStatusCopyWith<$Res> {
-  __$PleromaApiPostStatusCopyWithImpl(
-      _PleromaApiPostStatus _value, $Res Function(_PleromaApiPostStatus) _then)
-      : super(_value, (v) => _then(v as _PleromaApiPostStatus));
+class __$$PleromaApiPostStatusImplCopyWithImpl<$Res>
+    extends _$PleromaApiPostStatusCopyWithImpl<$Res, _$PleromaApiPostStatusImpl>
+    implements _$$PleromaApiPostStatusImplCopyWith<$Res> {
+  __$$PleromaApiPostStatusImplCopyWithImpl(_$PleromaApiPostStatusImpl _value,
+      $Res Function(_$PleromaApiPostStatusImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiPostStatus get _value => super._value as _PleromaApiPostStatus;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? contentType = freezed,
@@ -318,66 +231,66 @@ class __$PleromaApiPostStatusCopyWithImpl<$Res>
     Object? inReplyToConversationId = freezed,
     Object? inReplyToId = freezed,
     Object? language = freezed,
-    Object? visibility = freezed,
+    Object? visibility = null,
     Object? mediaIds = freezed,
     Object? poll = freezed,
     Object? preview = freezed,
-    Object? sensitive = freezed,
+    Object? sensitive = null,
     Object? spoilerText = freezed,
     Object? status = freezed,
     Object? to = freezed,
   }) {
-    return _then(_PleromaApiPostStatus(
-      contentType: contentType == freezed
+    return _then(_$PleromaApiPostStatusImpl(
+      contentType: freezed == contentType
           ? _value.contentType
           : contentType // ignore: cast_nullable_to_non_nullable
               as String?,
-      expiresInSeconds: expiresInSeconds == freezed
+      expiresInSeconds: freezed == expiresInSeconds
           ? _value.expiresInSeconds
           : expiresInSeconds // ignore: cast_nullable_to_non_nullable
               as int?,
-      inReplyToConversationId: inReplyToConversationId == freezed
+      inReplyToConversationId: freezed == inReplyToConversationId
           ? _value.inReplyToConversationId
           : inReplyToConversationId // ignore: cast_nullable_to_non_nullable
               as String?,
-      inReplyToId: inReplyToId == freezed
+      inReplyToId: freezed == inReplyToId
           ? _value.inReplyToId
           : inReplyToId // ignore: cast_nullable_to_non_nullable
               as String?,
-      language: language == freezed
+      language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as String?,
-      visibility: visibility == freezed
+      visibility: null == visibility
           ? _value.visibility
           : visibility // ignore: cast_nullable_to_non_nullable
               as String,
-      mediaIds: mediaIds == freezed
-          ? _value.mediaIds
+      mediaIds: freezed == mediaIds
+          ? _value._mediaIds
           : mediaIds // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      poll: poll == freezed
+      poll: freezed == poll
           ? _value.poll
           : poll // ignore: cast_nullable_to_non_nullable
               as PleromaApiPostStatusPoll?,
-      preview: preview == freezed
+      preview: freezed == preview
           ? _value.preview
           : preview // ignore: cast_nullable_to_non_nullable
               as bool?,
-      sensitive: sensitive == freezed
+      sensitive: null == sensitive
           ? _value.sensitive
           : sensitive // ignore: cast_nullable_to_non_nullable
               as bool,
-      spoilerText: spoilerText == freezed
+      spoilerText: freezed == spoilerText
           ? _value.spoilerText
           : spoilerText // ignore: cast_nullable_to_non_nullable
               as String?,
-      status: status == freezed
+      status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String?,
-      to: to == freezed
-          ? _value.to
+      to: freezed == to
+          ? _value._to
           : to // ignore: cast_nullable_to_non_nullable
               as List<String>?,
     ));
@@ -386,43 +299,32 @@ class __$PleromaApiPostStatusCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiPostStatus implements _PleromaApiPostStatus {
-  const _$_PleromaApiPostStatus(
-      {@HiveField(0)
-      @JsonKey(name: 'content_type')
-          required this.contentType,
-      @HiveField(1)
-      @JsonKey(name: 'expires_in')
-          required this.expiresInSeconds,
+class _$PleromaApiPostStatusImpl implements _PleromaApiPostStatus {
+  const _$PleromaApiPostStatusImpl(
+      {@HiveField(0) @JsonKey(name: 'content_type') required this.contentType,
+      @HiveField(1) @JsonKey(name: 'expires_in') required this.expiresInSeconds,
       @HiveField(2)
       @JsonKey(name: 'in_reply_to_conversation_id', includeIfNull: false)
-          required this.inReplyToConversationId,
+      required this.inReplyToConversationId,
       @HiveField(3)
       @JsonKey(name: 'in_reply_to_id', includeIfNull: false)
-          required this.inReplyToId,
-      @HiveField(4)
-          required this.language,
-      @HiveField(5)
-          required this.visibility,
+      required this.inReplyToId,
+      @HiveField(4) required this.language,
+      @HiveField(5) required this.visibility,
       @HiveField(6)
       @JsonKey(name: 'media_ids')
-          required this.mediaIds,
-      @HiveField(7)
-          required this.poll,
-      @HiveField(8)
-          required this.preview,
-      @HiveField(9)
-          required this.sensitive,
-      @HiveField(10)
-      @JsonKey(name: 'spoiler_text')
-          required this.spoilerText,
-      @HiveField(11)
-          required this.status,
-      @HiveField(12)
-          required this.to});
+      required final List<String>? mediaIds,
+      @HiveField(7) required this.poll,
+      @HiveField(8) required this.preview,
+      @HiveField(9) required this.sensitive,
+      @HiveField(10) @JsonKey(name: 'spoiler_text') required this.spoilerText,
+      @HiveField(11) required this.status,
+      @HiveField(12) required final List<String>? to})
+      : _mediaIds = mediaIds,
+        _to = to;
 
-  factory _$_PleromaApiPostStatus.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiPostStatusFromJson(json);
+  factory _$PleromaApiPostStatusImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiPostStatusImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -446,10 +348,18 @@ class _$_PleromaApiPostStatus implements _PleromaApiPostStatus {
   @override
   @HiveField(5)
   final String visibility;
+  final List<String>? _mediaIds;
   @override
   @HiveField(6)
   @JsonKey(name: 'media_ids')
-  final List<String>? mediaIds;
+  List<String>? get mediaIds {
+    final value = _mediaIds;
+    if (value == null) return null;
+    if (_mediaIds is EqualUnmodifiableListView) return _mediaIds;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(7)
   final PleromaApiPostStatusPoll? poll;
@@ -466,9 +376,16 @@ class _$_PleromaApiPostStatus implements _PleromaApiPostStatus {
   @override
   @HiveField(11)
   final String? status;
+  final List<String>? _to;
   @override
   @HiveField(12)
-  final List<String>? to;
+  List<String>? get to {
+    final value = _to;
+    if (value == null) return null;
+    if (_to is EqualUnmodifiableListView) return _to;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   @override
   String toString() {
@@ -476,10 +393,10 @@ class _$_PleromaApiPostStatus implements _PleromaApiPostStatus {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiPostStatus &&
+            other is _$PleromaApiPostStatusImpl &&
             (identical(other.contentType, contentType) ||
                 other.contentType == contentType) &&
             (identical(other.expiresInSeconds, expiresInSeconds) ||
@@ -493,7 +410,7 @@ class _$_PleromaApiPostStatus implements _PleromaApiPostStatus {
                 other.language == language) &&
             (identical(other.visibility, visibility) ||
                 other.visibility == visibility) &&
-            const DeepCollectionEquality().equals(other.mediaIds, mediaIds) &&
+            const DeepCollectionEquality().equals(other._mediaIds, _mediaIds) &&
             (identical(other.poll, poll) || other.poll == poll) &&
             (identical(other.preview, preview) || other.preview == preview) &&
             (identical(other.sensitive, sensitive) ||
@@ -501,9 +418,10 @@ class _$_PleromaApiPostStatus implements _PleromaApiPostStatus {
             (identical(other.spoilerText, spoilerText) ||
                 other.spoilerText == spoilerText) &&
             (identical(other.status, status) || other.status == status) &&
-            const DeepCollectionEquality().equals(other.to, to));
+            const DeepCollectionEquality().equals(other._to, _to));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -513,63 +431,61 @@ class _$_PleromaApiPostStatus implements _PleromaApiPostStatus {
       inReplyToId,
       language,
       visibility,
-      const DeepCollectionEquality().hash(mediaIds),
+      const DeepCollectionEquality().hash(_mediaIds),
       poll,
       preview,
       sensitive,
       spoilerText,
       status,
-      const DeepCollectionEquality().hash(to));
+      const DeepCollectionEquality().hash(_to));
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiPostStatusCopyWith<_PleromaApiPostStatus> get copyWith =>
-      __$PleromaApiPostStatusCopyWithImpl<_PleromaApiPostStatus>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiPostStatusImplCopyWith<_$PleromaApiPostStatusImpl>
+      get copyWith =>
+          __$$PleromaApiPostStatusImplCopyWithImpl<_$PleromaApiPostStatusImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiPostStatusToJson(this);
+    return _$$PleromaApiPostStatusImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiPostStatus implements PleromaApiPostStatus {
   const factory _PleromaApiPostStatus(
-      {@HiveField(0)
-      @JsonKey(name: 'content_type')
-          required String? contentType,
-      @HiveField(1)
-      @JsonKey(name: 'expires_in')
-          required int? expiresInSeconds,
-      @HiveField(2)
-      @JsonKey(name: 'in_reply_to_conversation_id', includeIfNull: false)
-          required String? inReplyToConversationId,
-      @HiveField(3)
-      @JsonKey(name: 'in_reply_to_id', includeIfNull: false)
-          required String? inReplyToId,
-      @HiveField(4)
-          required String? language,
-      @HiveField(5)
-          required String visibility,
-      @HiveField(6)
-      @JsonKey(name: 'media_ids')
-          required List<String>? mediaIds,
-      @HiveField(7)
-          required PleromaApiPostStatusPoll? poll,
-      @HiveField(8)
-          required bool? preview,
-      @HiveField(9)
-          required bool sensitive,
-      @HiveField(10)
-      @JsonKey(name: 'spoiler_text')
-          required String? spoilerText,
-      @HiveField(11)
-          required String? status,
-      @HiveField(12)
-          required List<String>? to}) = _$_PleromaApiPostStatus;
+          {@HiveField(0)
+          @JsonKey(name: 'content_type')
+          required final String? contentType,
+          @HiveField(1)
+          @JsonKey(name: 'expires_in')
+          required final int? expiresInSeconds,
+          @HiveField(2)
+          @JsonKey(name: 'in_reply_to_conversation_id', includeIfNull: false)
+          required final String? inReplyToConversationId,
+          @HiveField(3)
+          @JsonKey(name: 'in_reply_to_id', includeIfNull: false)
+          required final String? inReplyToId,
+          @HiveField(4) required final String? language,
+          @HiveField(5) required final String visibility,
+          @HiveField(6)
+          @JsonKey(name: 'media_ids')
+          required final List<String>? mediaIds,
+          @HiveField(7) required final PleromaApiPostStatusPoll? poll,
+          @HiveField(8) required final bool? preview,
+          @HiveField(9) required final bool sensitive,
+          @HiveField(10)
+          @JsonKey(name: 'spoiler_text')
+          required final String? spoilerText,
+          @HiveField(11) required final String? status,
+          @HiveField(12) required final List<String>? to}) =
+      _$PleromaApiPostStatusImpl;
 
   factory _PleromaApiPostStatus.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiPostStatus.fromJson;
+      _$PleromaApiPostStatusImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -618,6 +534,6 @@ abstract class _PleromaApiPostStatus implements PleromaApiPostStatus {
   List<String>? get to;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiPostStatusCopyWith<_PleromaApiPostStatus> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PleromaApiPostStatusImplCopyWith<_$PleromaApiPostStatusImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

@@ -54,18 +54,18 @@ class MastodonApiPostStatusPollAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiPostStatusPoll _$$_MastodonApiPostStatusPollFromJson(
+_$MastodonApiPostStatusPollImpl _$$MastodonApiPostStatusPollImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiPostStatusPoll(
-      expiresInSeconds: json['expires_in'] as int,
+    _$MastodonApiPostStatusPollImpl(
+      expiresInSeconds: (json['expires_in'] as num).toInt(),
       hideTotals: json['hide_totals'] as bool,
       multiple: json['multiple'] as bool,
       options:
           (json['options'] as List<dynamic>).map((e) => e as String).toList(),
     );
 
-Map<String, dynamic> _$$_MastodonApiPostStatusPollToJson(
-        _$_MastodonApiPostStatusPoll instance) =>
+Map<String, dynamic> _$$MastodonApiPostStatusPollImplToJson(
+        _$MastodonApiPostStatusPollImpl instance) =>
     <String, dynamic>{
       'expires_in': instance.expiresInSeconds,
       'hide_totals': instance.hideTotals,

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'web_sockets_mode_sealed.dart';
 
@@ -11,42 +12,11 @@ part of 'web_sockets_mode_sealed.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$WebSocketsModeTearOff {
-  const _$WebSocketsModeTearOff();
-
-  _Disabled disabled(
-      {String stringValue = WebSocketsMode.disabledStringValue}) {
-    return _Disabled(
-      stringValue: stringValue,
-    );
-  }
-
-  _OnlyForeground onlyForeground(
-      {String stringValue = WebSocketsMode.onlyForegroundStringValue}) {
-    return _OnlyForeground(
-      stringValue: stringValue,
-    );
-  }
-
-  _ForegroundAndBackground foregroundAndBackground(
-      {String stringValue =
-          WebSocketsMode.foregroundAndBackgroundStringValue}) {
-    return _ForegroundAndBackground(
-      stringValue: stringValue,
-    );
-  }
-}
-
-/// @nodoc
-const $WebSocketsMode = _$WebSocketsModeTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$WebSocketsMode {
   String get stringValue => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String stringValue) disabled,
@@ -56,9 +26,9 @@ mixin _$WebSocketsMode {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? disabled,
-    TResult Function(String stringValue)? onlyForeground,
-    TResult Function(String stringValue)? foregroundAndBackground,
+    TResult? Function(String stringValue)? disabled,
+    TResult? Function(String stringValue)? onlyForeground,
+    TResult? Function(String stringValue)? foregroundAndBackground,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -79,9 +49,9 @@ mixin _$WebSocketsMode {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Disabled value)? disabled,
-    TResult Function(_OnlyForeground value)? onlyForeground,
-    TResult Function(_ForegroundAndBackground value)? foregroundAndBackground,
+    TResult? Function(_Disabled value)? disabled,
+    TResult? Function(_OnlyForeground value)? onlyForeground,
+    TResult? Function(_ForegroundAndBackground value)? foregroundAndBackground,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -102,56 +72,61 @@ mixin _$WebSocketsMode {
 abstract class $WebSocketsModeCopyWith<$Res> {
   factory $WebSocketsModeCopyWith(
           WebSocketsMode value, $Res Function(WebSocketsMode) then) =
-      _$WebSocketsModeCopyWithImpl<$Res>;
+      _$WebSocketsModeCopyWithImpl<$Res, WebSocketsMode>;
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class _$WebSocketsModeCopyWithImpl<$Res>
+class _$WebSocketsModeCopyWithImpl<$Res, $Val extends WebSocketsMode>
     implements $WebSocketsModeCopyWith<$Res> {
   _$WebSocketsModeCopyWithImpl(this._value, this._then);
 
-  final WebSocketsMode _value;
   // ignore: unused_field
-  final $Res Function(WebSocketsMode) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
     return _then(_value.copyWith(
-      stringValue: stringValue == freezed
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$DisabledCopyWith<$Res>
+abstract class _$$DisabledImplCopyWith<$Res>
     implements $WebSocketsModeCopyWith<$Res> {
-  factory _$DisabledCopyWith(_Disabled value, $Res Function(_Disabled) then) =
-      __$DisabledCopyWithImpl<$Res>;
+  factory _$$DisabledImplCopyWith(
+          _$DisabledImpl value, $Res Function(_$DisabledImpl) then) =
+      __$$DisabledImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$DisabledCopyWithImpl<$Res> extends _$WebSocketsModeCopyWithImpl<$Res>
-    implements _$DisabledCopyWith<$Res> {
-  __$DisabledCopyWithImpl(_Disabled _value, $Res Function(_Disabled) _then)
-      : super(_value, (v) => _then(v as _Disabled));
+class __$$DisabledImplCopyWithImpl<$Res>
+    extends _$WebSocketsModeCopyWithImpl<$Res, _$DisabledImpl>
+    implements _$$DisabledImplCopyWith<$Res> {
+  __$$DisabledImplCopyWithImpl(
+      _$DisabledImpl _value, $Res Function(_$DisabledImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Disabled get _value => super._value as _Disabled;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Disabled(
-      stringValue: stringValue == freezed
+    return _then(_$DisabledImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -161,11 +136,11 @@ class __$DisabledCopyWithImpl<$Res> extends _$WebSocketsModeCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Disabled implements _Disabled {
-  const _$_Disabled({this.stringValue = WebSocketsMode.disabledStringValue});
+class _$DisabledImpl implements _Disabled {
+  const _$DisabledImpl({this.stringValue = WebSocketsMode.disabledStringValue});
 
-  @JsonKey(defaultValue: WebSocketsMode.disabledStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -174,10 +149,10 @@ class _$_Disabled implements _Disabled {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Disabled &&
+            other is _$DisabledImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -187,8 +162,9 @@ class _$_Disabled implements _Disabled {
 
   @JsonKey(ignore: true)
   @override
-  _$DisabledCopyWith<_Disabled> get copyWith =>
-      __$DisabledCopyWithImpl<_Disabled>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DisabledImplCopyWith<_$DisabledImpl> get copyWith =>
+      __$$DisabledImplCopyWithImpl<_$DisabledImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -203,9 +179,9 @@ class _$_Disabled implements _Disabled {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? disabled,
-    TResult Function(String stringValue)? onlyForeground,
-    TResult Function(String stringValue)? foregroundAndBackground,
+    TResult? Function(String stringValue)? disabled,
+    TResult? Function(String stringValue)? onlyForeground,
+    TResult? Function(String stringValue)? foregroundAndBackground,
   }) {
     return disabled?.call(stringValue);
   }
@@ -238,9 +214,9 @@ class _$_Disabled implements _Disabled {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Disabled value)? disabled,
-    TResult Function(_OnlyForeground value)? onlyForeground,
-    TResult Function(_ForegroundAndBackground value)? foregroundAndBackground,
+    TResult? Function(_Disabled value)? disabled,
+    TResult? Function(_OnlyForeground value)? onlyForeground,
+    TResult? Function(_ForegroundAndBackground value)? foregroundAndBackground,
   }) {
     return disabled?.call(this);
   }
@@ -261,43 +237,42 @@ class _$_Disabled implements _Disabled {
 }
 
 abstract class _Disabled implements WebSocketsMode {
-  const factory _Disabled({String stringValue}) = _$_Disabled;
+  const factory _Disabled({final String stringValue}) = _$DisabledImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$DisabledCopyWith<_Disabled> get copyWith =>
+  _$$DisabledImplCopyWith<_$DisabledImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$OnlyForegroundCopyWith<$Res>
+abstract class _$$OnlyForegroundImplCopyWith<$Res>
     implements $WebSocketsModeCopyWith<$Res> {
-  factory _$OnlyForegroundCopyWith(
-          _OnlyForeground value, $Res Function(_OnlyForeground) then) =
-      __$OnlyForegroundCopyWithImpl<$Res>;
+  factory _$$OnlyForegroundImplCopyWith(_$OnlyForegroundImpl value,
+          $Res Function(_$OnlyForegroundImpl) then) =
+      __$$OnlyForegroundImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$OnlyForegroundCopyWithImpl<$Res>
-    extends _$WebSocketsModeCopyWithImpl<$Res>
-    implements _$OnlyForegroundCopyWith<$Res> {
-  __$OnlyForegroundCopyWithImpl(
-      _OnlyForeground _value, $Res Function(_OnlyForeground) _then)
-      : super(_value, (v) => _then(v as _OnlyForeground));
+class __$$OnlyForegroundImplCopyWithImpl<$Res>
+    extends _$WebSocketsModeCopyWithImpl<$Res, _$OnlyForegroundImpl>
+    implements _$$OnlyForegroundImplCopyWith<$Res> {
+  __$$OnlyForegroundImplCopyWithImpl(
+      _$OnlyForegroundImpl _value, $Res Function(_$OnlyForegroundImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _OnlyForeground get _value => super._value as _OnlyForeground;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_OnlyForeground(
-      stringValue: stringValue == freezed
+    return _then(_$OnlyForegroundImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -307,12 +282,12 @@ class __$OnlyForegroundCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_OnlyForeground implements _OnlyForeground {
-  const _$_OnlyForeground(
+class _$OnlyForegroundImpl implements _OnlyForeground {
+  const _$OnlyForegroundImpl(
       {this.stringValue = WebSocketsMode.onlyForegroundStringValue});
 
-  @JsonKey(defaultValue: WebSocketsMode.onlyForegroundStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -321,10 +296,10 @@ class _$_OnlyForeground implements _OnlyForeground {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _OnlyForeground &&
+            other is _$OnlyForegroundImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -334,8 +309,10 @@ class _$_OnlyForeground implements _OnlyForeground {
 
   @JsonKey(ignore: true)
   @override
-  _$OnlyForegroundCopyWith<_OnlyForeground> get copyWith =>
-      __$OnlyForegroundCopyWithImpl<_OnlyForeground>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$OnlyForegroundImplCopyWith<_$OnlyForegroundImpl> get copyWith =>
+      __$$OnlyForegroundImplCopyWithImpl<_$OnlyForegroundImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -350,9 +327,9 @@ class _$_OnlyForeground implements _OnlyForeground {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? disabled,
-    TResult Function(String stringValue)? onlyForeground,
-    TResult Function(String stringValue)? foregroundAndBackground,
+    TResult? Function(String stringValue)? disabled,
+    TResult? Function(String stringValue)? onlyForeground,
+    TResult? Function(String stringValue)? foregroundAndBackground,
   }) {
     return onlyForeground?.call(stringValue);
   }
@@ -385,9 +362,9 @@ class _$_OnlyForeground implements _OnlyForeground {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Disabled value)? disabled,
-    TResult Function(_OnlyForeground value)? onlyForeground,
-    TResult Function(_ForegroundAndBackground value)? foregroundAndBackground,
+    TResult? Function(_Disabled value)? disabled,
+    TResult? Function(_OnlyForeground value)? onlyForeground,
+    TResult? Function(_ForegroundAndBackground value)? foregroundAndBackground,
   }) {
     return onlyForeground?.call(this);
   }
@@ -408,44 +385,45 @@ class _$_OnlyForeground implements _OnlyForeground {
 }
 
 abstract class _OnlyForeground implements WebSocketsMode {
-  const factory _OnlyForeground({String stringValue}) = _$_OnlyForeground;
+  const factory _OnlyForeground({final String stringValue}) =
+      _$OnlyForegroundImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$OnlyForegroundCopyWith<_OnlyForeground> get copyWith =>
+  _$$OnlyForegroundImplCopyWith<_$OnlyForegroundImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ForegroundAndBackgroundCopyWith<$Res>
+abstract class _$$ForegroundAndBackgroundImplCopyWith<$Res>
     implements $WebSocketsModeCopyWith<$Res> {
-  factory _$ForegroundAndBackgroundCopyWith(_ForegroundAndBackground value,
-          $Res Function(_ForegroundAndBackground) then) =
-      __$ForegroundAndBackgroundCopyWithImpl<$Res>;
+  factory _$$ForegroundAndBackgroundImplCopyWith(
+          _$ForegroundAndBackgroundImpl value,
+          $Res Function(_$ForegroundAndBackgroundImpl) then) =
+      __$$ForegroundAndBackgroundImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$ForegroundAndBackgroundCopyWithImpl<$Res>
-    extends _$WebSocketsModeCopyWithImpl<$Res>
-    implements _$ForegroundAndBackgroundCopyWith<$Res> {
-  __$ForegroundAndBackgroundCopyWithImpl(_ForegroundAndBackground _value,
-      $Res Function(_ForegroundAndBackground) _then)
-      : super(_value, (v) => _then(v as _ForegroundAndBackground));
+class __$$ForegroundAndBackgroundImplCopyWithImpl<$Res>
+    extends _$WebSocketsModeCopyWithImpl<$Res, _$ForegroundAndBackgroundImpl>
+    implements _$$ForegroundAndBackgroundImplCopyWith<$Res> {
+  __$$ForegroundAndBackgroundImplCopyWithImpl(
+      _$ForegroundAndBackgroundImpl _value,
+      $Res Function(_$ForegroundAndBackgroundImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _ForegroundAndBackground get _value =>
-      super._value as _ForegroundAndBackground;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_ForegroundAndBackground(
-      stringValue: stringValue == freezed
+    return _then(_$ForegroundAndBackgroundImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -455,12 +433,12 @@ class __$ForegroundAndBackgroundCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ForegroundAndBackground implements _ForegroundAndBackground {
-  const _$_ForegroundAndBackground(
+class _$ForegroundAndBackgroundImpl implements _ForegroundAndBackground {
+  const _$ForegroundAndBackgroundImpl(
       {this.stringValue = WebSocketsMode.foregroundAndBackgroundStringValue});
 
-  @JsonKey(defaultValue: WebSocketsMode.foregroundAndBackgroundStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -469,10 +447,10 @@ class _$_ForegroundAndBackground implements _ForegroundAndBackground {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ForegroundAndBackground &&
+            other is _$ForegroundAndBackgroundImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -482,9 +460,10 @@ class _$_ForegroundAndBackground implements _ForegroundAndBackground {
 
   @JsonKey(ignore: true)
   @override
-  _$ForegroundAndBackgroundCopyWith<_ForegroundAndBackground> get copyWith =>
-      __$ForegroundAndBackgroundCopyWithImpl<_ForegroundAndBackground>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ForegroundAndBackgroundImplCopyWith<_$ForegroundAndBackgroundImpl>
+      get copyWith => __$$ForegroundAndBackgroundImplCopyWithImpl<
+          _$ForegroundAndBackgroundImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -499,9 +478,9 @@ class _$_ForegroundAndBackground implements _ForegroundAndBackground {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? disabled,
-    TResult Function(String stringValue)? onlyForeground,
-    TResult Function(String stringValue)? foregroundAndBackground,
+    TResult? Function(String stringValue)? disabled,
+    TResult? Function(String stringValue)? onlyForeground,
+    TResult? Function(String stringValue)? foregroundAndBackground,
   }) {
     return foregroundAndBackground?.call(stringValue);
   }
@@ -534,9 +513,9 @@ class _$_ForegroundAndBackground implements _ForegroundAndBackground {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Disabled value)? disabled,
-    TResult Function(_OnlyForeground value)? onlyForeground,
-    TResult Function(_ForegroundAndBackground value)? foregroundAndBackground,
+    TResult? Function(_Disabled value)? disabled,
+    TResult? Function(_OnlyForeground value)? onlyForeground,
+    TResult? Function(_ForegroundAndBackground value)? foregroundAndBackground,
   }) {
     return foregroundAndBackground?.call(this);
   }
@@ -557,13 +536,13 @@ class _$_ForegroundAndBackground implements _ForegroundAndBackground {
 }
 
 abstract class _ForegroundAndBackground implements WebSocketsMode {
-  const factory _ForegroundAndBackground({String stringValue}) =
-      _$_ForegroundAndBackground;
+  const factory _ForegroundAndBackground({final String stringValue}) =
+      _$ForegroundAndBackgroundImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$ForegroundAndBackgroundCopyWith<_ForegroundAndBackground> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$ForegroundAndBackgroundImplCopyWith<_$ForegroundAndBackgroundImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

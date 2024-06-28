@@ -48,17 +48,17 @@ class UnifediApiInstanceMetadataVersionRequirementMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiInstanceMetadataVersionRequirementMastodonAdapter
-    _$$_UnifediApiInstanceMetadataVersionRequirementMastodonAdapterFromJson(
+_$UnifediApiInstanceMetadataVersionRequirementMastodonAdapterImpl
+    _$$UnifediApiInstanceMetadataVersionRequirementMastodonAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiInstanceMetadataVersionRequirementMastodonAdapter(
+        _$UnifediApiInstanceMetadataVersionRequirementMastodonAdapterImpl(
           MastodonApiInstanceMetadataVersionRequirement.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
 Map<String, dynamic>
-    _$$_UnifediApiInstanceMetadataVersionRequirementMastodonAdapterToJson(
-            _$_UnifediApiInstanceMetadataVersionRequirementMastodonAdapter
+    _$$UnifediApiInstanceMetadataVersionRequirementMastodonAdapterImplToJson(
+            _$UnifediApiInstanceMetadataVersionRequirementMastodonAdapterImpl
                 instance) =>
         <String, dynamic>{
           'value': instance.value.toJson(),

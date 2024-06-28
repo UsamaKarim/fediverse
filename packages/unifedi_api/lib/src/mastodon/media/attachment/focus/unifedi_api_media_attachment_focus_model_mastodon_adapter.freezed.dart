@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_media_attachment_focus_model_mastodon_adapter.dart';
 
@@ -11,34 +12,13 @@ part of 'unifedi_api_media_attachment_focus_model_mastodon_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiMediaAttachmentFocusMastodonAdapter
     _$UnifediApiMediaAttachmentFocusMastodonAdapterFromJson(
         Map<String, dynamic> json) {
   return _UnifediApiMediaAttachmentFocusMastodonAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiMediaAttachmentFocusMastodonAdapterTearOff {
-  const _$UnifediApiMediaAttachmentFocusMastodonAdapterTearOff();
-
-  _UnifediApiMediaAttachmentFocusMastodonAdapter call(
-      @HiveField(0) MastodonApiMediaAttachmentFocus value) {
-    return _UnifediApiMediaAttachmentFocusMastodonAdapter(
-      value,
-    );
-  }
-
-  UnifediApiMediaAttachmentFocusMastodonAdapter fromJson(
-      Map<String, Object?> json) {
-    return UnifediApiMediaAttachmentFocusMastodonAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiMediaAttachmentFocusMastodonAdapter =
-    _$UnifediApiMediaAttachmentFocusMastodonAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiMediaAttachmentFocusMastodonAdapter {
@@ -58,51 +38,60 @@ abstract class $UnifediApiMediaAttachmentFocusMastodonAdapterCopyWith<$Res> {
   factory $UnifediApiMediaAttachmentFocusMastodonAdapterCopyWith(
           UnifediApiMediaAttachmentFocusMastodonAdapter value,
           $Res Function(UnifediApiMediaAttachmentFocusMastodonAdapter) then) =
-      _$UnifediApiMediaAttachmentFocusMastodonAdapterCopyWithImpl<$Res>;
+      _$UnifediApiMediaAttachmentFocusMastodonAdapterCopyWithImpl<$Res,
+          UnifediApiMediaAttachmentFocusMastodonAdapter>;
+  @useResult
   $Res call({@HiveField(0) MastodonApiMediaAttachmentFocus value});
 
   $MastodonApiMediaAttachmentFocusCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiMediaAttachmentFocusMastodonAdapterCopyWithImpl<$Res>
+class _$UnifediApiMediaAttachmentFocusMastodonAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiMediaAttachmentFocusMastodonAdapter>
     implements $UnifediApiMediaAttachmentFocusMastodonAdapterCopyWith<$Res> {
   _$UnifediApiMediaAttachmentFocusMastodonAdapterCopyWithImpl(
       this._value, this._then);
 
-  final UnifediApiMediaAttachmentFocusMastodonAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiMediaAttachmentFocusMastodonAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiMediaAttachmentFocus,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiMediaAttachmentFocusCopyWith<$Res> get value {
     return $MastodonApiMediaAttachmentFocusCopyWith<$Res>(_value.value,
         (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiMediaAttachmentFocusMastodonAdapterCopyWith<$Res>
+abstract class _$$UnifediApiMediaAttachmentFocusMastodonAdapterImplCopyWith<
+        $Res>
     implements $UnifediApiMediaAttachmentFocusMastodonAdapterCopyWith<$Res> {
-  factory _$UnifediApiMediaAttachmentFocusMastodonAdapterCopyWith(
-          _UnifediApiMediaAttachmentFocusMastodonAdapter value,
-          $Res Function(_UnifediApiMediaAttachmentFocusMastodonAdapter) then) =
-      __$UnifediApiMediaAttachmentFocusMastodonAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiMediaAttachmentFocusMastodonAdapterImplCopyWith(
+          _$UnifediApiMediaAttachmentFocusMastodonAdapterImpl value,
+          $Res Function(_$UnifediApiMediaAttachmentFocusMastodonAdapterImpl)
+              then) =
+      __$$UnifediApiMediaAttachmentFocusMastodonAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) MastodonApiMediaAttachmentFocus value});
 
   @override
@@ -110,25 +99,23 @@ abstract class _$UnifediApiMediaAttachmentFocusMastodonAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiMediaAttachmentFocusMastodonAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiMediaAttachmentFocusMastodonAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiMediaAttachmentFocusMastodonAdapterCopyWith<$Res> {
-  __$UnifediApiMediaAttachmentFocusMastodonAdapterCopyWithImpl(
-      _UnifediApiMediaAttachmentFocusMastodonAdapter _value,
-      $Res Function(_UnifediApiMediaAttachmentFocusMastodonAdapter) _then)
-      : super(_value,
-            (v) => _then(v as _UnifediApiMediaAttachmentFocusMastodonAdapter));
+class __$$UnifediApiMediaAttachmentFocusMastodonAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiMediaAttachmentFocusMastodonAdapterCopyWithImpl<$Res,
+        _$UnifediApiMediaAttachmentFocusMastodonAdapterImpl>
+    implements
+        _$$UnifediApiMediaAttachmentFocusMastodonAdapterImplCopyWith<$Res> {
+  __$$UnifediApiMediaAttachmentFocusMastodonAdapterImplCopyWithImpl(
+      _$UnifediApiMediaAttachmentFocusMastodonAdapterImpl _value,
+      $Res Function(_$UnifediApiMediaAttachmentFocusMastodonAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiMediaAttachmentFocusMastodonAdapter get _value =>
-      super._value as _UnifediApiMediaAttachmentFocusMastodonAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiMediaAttachmentFocusMastodonAdapter(
-      value == freezed
+    return _then(_$UnifediApiMediaAttachmentFocusMastodonAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiMediaAttachmentFocus,
@@ -138,15 +125,15 @@ class __$UnifediApiMediaAttachmentFocusMastodonAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiMediaAttachmentFocusMastodonAdapter
+class _$UnifediApiMediaAttachmentFocusMastodonAdapterImpl
     extends _UnifediApiMediaAttachmentFocusMastodonAdapter {
-  const _$_UnifediApiMediaAttachmentFocusMastodonAdapter(
+  const _$UnifediApiMediaAttachmentFocusMastodonAdapterImpl(
       @HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiMediaAttachmentFocusMastodonAdapter.fromJson(
+  factory _$UnifediApiMediaAttachmentFocusMastodonAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiMediaAttachmentFocusMastodonAdapterFromJson(json);
+      _$$UnifediApiMediaAttachmentFocusMastodonAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -158,47 +145,52 @@ class _$_UnifediApiMediaAttachmentFocusMastodonAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiMediaAttachmentFocusMastodonAdapter &&
+            other is _$UnifediApiMediaAttachmentFocusMastodonAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiMediaAttachmentFocusMastodonAdapterCopyWith<
-          _UnifediApiMediaAttachmentFocusMastodonAdapter>
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiMediaAttachmentFocusMastodonAdapterImplCopyWith<
+          _$UnifediApiMediaAttachmentFocusMastodonAdapterImpl>
       get copyWith =>
-          __$UnifediApiMediaAttachmentFocusMastodonAdapterCopyWithImpl<
-              _UnifediApiMediaAttachmentFocusMastodonAdapter>(this, _$identity);
+          __$$UnifediApiMediaAttachmentFocusMastodonAdapterImplCopyWithImpl<
+                  _$UnifediApiMediaAttachmentFocusMastodonAdapterImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiMediaAttachmentFocusMastodonAdapterToJson(this);
+    return _$$UnifediApiMediaAttachmentFocusMastodonAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiMediaAttachmentFocusMastodonAdapter
     extends UnifediApiMediaAttachmentFocusMastodonAdapter {
   const factory _UnifediApiMediaAttachmentFocusMastodonAdapter(
-          @HiveField(0) MastodonApiMediaAttachmentFocus value) =
-      _$_UnifediApiMediaAttachmentFocusMastodonAdapter;
+          @HiveField(0) final MastodonApiMediaAttachmentFocus value) =
+      _$UnifediApiMediaAttachmentFocusMastodonAdapterImpl;
   const _UnifediApiMediaAttachmentFocusMastodonAdapter._() : super._();
 
   factory _UnifediApiMediaAttachmentFocusMastodonAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiMediaAttachmentFocusMastodonAdapter.fromJson;
+      _$UnifediApiMediaAttachmentFocusMastodonAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   MastodonApiMediaAttachmentFocus get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiMediaAttachmentFocusMastodonAdapterCopyWith<
-          _UnifediApiMediaAttachmentFocusMastodonAdapter>
+  _$$UnifediApiMediaAttachmentFocusMastodonAdapterImplCopyWith<
+          _$UnifediApiMediaAttachmentFocusMastodonAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -48,15 +48,15 @@ class CustomEmojiPickerImageUrlItemAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_CustomEmojiPickerImageUrlItem _$$_CustomEmojiPickerImageUrlItemFromJson(
-        Map<String, dynamic> json) =>
-    _$_CustomEmojiPickerImageUrlItem(
-      name: json['name'] as String,
-      imageUrl: json['image_url'] as String,
-    );
+_$CustomEmojiPickerImageUrlItemImpl
+    _$$CustomEmojiPickerImageUrlItemImplFromJson(Map<String, dynamic> json) =>
+        _$CustomEmojiPickerImageUrlItemImpl(
+          name: json['name'] as String,
+          imageUrl: json['image_url'] as String,
+        );
 
-Map<String, dynamic> _$$_CustomEmojiPickerImageUrlItemToJson(
-        _$_CustomEmojiPickerImageUrlItem instance) =>
+Map<String, dynamic> _$$CustomEmojiPickerImageUrlItemImplToJson(
+        _$CustomEmojiPickerImageUrlItemImpl instance) =>
     <String, dynamic>{
       'name': instance.name,
       'image_url': instance.imageUrl,

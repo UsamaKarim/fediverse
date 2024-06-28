@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_pagination_model_pleroma_adapter.dart';
 
@@ -11,32 +12,12 @@ part of 'unifedi_api_pagination_model_pleroma_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiPaginationPleromaAdapter _$UnifediApiPaginationPleromaAdapterFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiPaginationPleromaAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiPaginationPleromaAdapterTearOff {
-  const _$UnifediApiPaginationPleromaAdapterTearOff();
-
-  _UnifediApiPaginationPleromaAdapter call(
-      @HiveField(0) PleromaApiPagination valuePagination) {
-    return _UnifediApiPaginationPleromaAdapter(
-      valuePagination,
-    );
-  }
-
-  UnifediApiPaginationPleromaAdapter fromJson(Map<String, Object?> json) {
-    return UnifediApiPaginationPleromaAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiPaginationPleromaAdapter =
-    _$UnifediApiPaginationPleromaAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiPaginationPleromaAdapter {
@@ -56,49 +37,56 @@ abstract class $UnifediApiPaginationPleromaAdapterCopyWith<$Res> {
   factory $UnifediApiPaginationPleromaAdapterCopyWith(
           UnifediApiPaginationPleromaAdapter value,
           $Res Function(UnifediApiPaginationPleromaAdapter) then) =
-      _$UnifediApiPaginationPleromaAdapterCopyWithImpl<$Res>;
+      _$UnifediApiPaginationPleromaAdapterCopyWithImpl<$Res,
+          UnifediApiPaginationPleromaAdapter>;
+  @useResult
   $Res call({@HiveField(0) PleromaApiPagination valuePagination});
 
   $PleromaApiPaginationCopyWith<$Res> get valuePagination;
 }
 
 /// @nodoc
-class _$UnifediApiPaginationPleromaAdapterCopyWithImpl<$Res>
+class _$UnifediApiPaginationPleromaAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiPaginationPleromaAdapter>
     implements $UnifediApiPaginationPleromaAdapterCopyWith<$Res> {
   _$UnifediApiPaginationPleromaAdapterCopyWithImpl(this._value, this._then);
 
-  final UnifediApiPaginationPleromaAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiPaginationPleromaAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? valuePagination = freezed,
+    Object? valuePagination = null,
   }) {
     return _then(_value.copyWith(
-      valuePagination: valuePagination == freezed
+      valuePagination: null == valuePagination
           ? _value.valuePagination
           : valuePagination // ignore: cast_nullable_to_non_nullable
               as PleromaApiPagination,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiPaginationCopyWith<$Res> get valuePagination {
     return $PleromaApiPaginationCopyWith<$Res>(_value.valuePagination, (value) {
-      return _then(_value.copyWith(valuePagination: value));
+      return _then(_value.copyWith(valuePagination: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiPaginationPleromaAdapterCopyWith<$Res>
+abstract class _$$UnifediApiPaginationPleromaAdapterImplCopyWith<$Res>
     implements $UnifediApiPaginationPleromaAdapterCopyWith<$Res> {
-  factory _$UnifediApiPaginationPleromaAdapterCopyWith(
-          _UnifediApiPaginationPleromaAdapter value,
-          $Res Function(_UnifediApiPaginationPleromaAdapter) then) =
-      __$UnifediApiPaginationPleromaAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiPaginationPleromaAdapterImplCopyWith(
+          _$UnifediApiPaginationPleromaAdapterImpl value,
+          $Res Function(_$UnifediApiPaginationPleromaAdapterImpl) then) =
+      __$$UnifediApiPaginationPleromaAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) PleromaApiPagination valuePagination});
 
   @override
@@ -106,24 +94,22 @@ abstract class _$UnifediApiPaginationPleromaAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiPaginationPleromaAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiPaginationPleromaAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiPaginationPleromaAdapterCopyWith<$Res> {
-  __$UnifediApiPaginationPleromaAdapterCopyWithImpl(
-      _UnifediApiPaginationPleromaAdapter _value,
-      $Res Function(_UnifediApiPaginationPleromaAdapter) _then)
-      : super(_value, (v) => _then(v as _UnifediApiPaginationPleromaAdapter));
+class __$$UnifediApiPaginationPleromaAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiPaginationPleromaAdapterCopyWithImpl<$Res,
+        _$UnifediApiPaginationPleromaAdapterImpl>
+    implements _$$UnifediApiPaginationPleromaAdapterImplCopyWith<$Res> {
+  __$$UnifediApiPaginationPleromaAdapterImplCopyWithImpl(
+      _$UnifediApiPaginationPleromaAdapterImpl _value,
+      $Res Function(_$UnifediApiPaginationPleromaAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiPaginationPleromaAdapter get _value =>
-      super._value as _UnifediApiPaginationPleromaAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? valuePagination = freezed,
+    Object? valuePagination = null,
   }) {
-    return _then(_UnifediApiPaginationPleromaAdapter(
-      valuePagination == freezed
+    return _then(_$UnifediApiPaginationPleromaAdapterImpl(
+      null == valuePagination
           ? _value.valuePagination
           : valuePagination // ignore: cast_nullable_to_non_nullable
               as PleromaApiPagination,
@@ -133,15 +119,15 @@ class __$UnifediApiPaginationPleromaAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiPaginationPleromaAdapter
+class _$UnifediApiPaginationPleromaAdapterImpl
     extends _UnifediApiPaginationPleromaAdapter {
-  const _$_UnifediApiPaginationPleromaAdapter(
+  const _$UnifediApiPaginationPleromaAdapterImpl(
       @HiveField(0) this.valuePagination)
       : super._();
 
-  factory _$_UnifediApiPaginationPleromaAdapter.fromJson(
+  factory _$UnifediApiPaginationPleromaAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiPaginationPleromaAdapterFromJson(json);
+      _$$UnifediApiPaginationPleromaAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -153,47 +139,51 @@ class _$_UnifediApiPaginationPleromaAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiPaginationPleromaAdapter &&
+            other is _$UnifediApiPaginationPleromaAdapterImpl &&
             (identical(other.valuePagination, valuePagination) ||
                 other.valuePagination == valuePagination));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, valuePagination);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiPaginationPleromaAdapterCopyWith<
-          _UnifediApiPaginationPleromaAdapter>
-      get copyWith => __$UnifediApiPaginationPleromaAdapterCopyWithImpl<
-          _UnifediApiPaginationPleromaAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiPaginationPleromaAdapterImplCopyWith<
+          _$UnifediApiPaginationPleromaAdapterImpl>
+      get copyWith => __$$UnifediApiPaginationPleromaAdapterImplCopyWithImpl<
+          _$UnifediApiPaginationPleromaAdapterImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiPaginationPleromaAdapterToJson(this);
+    return _$$UnifediApiPaginationPleromaAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiPaginationPleromaAdapter
     extends UnifediApiPaginationPleromaAdapter {
   const factory _UnifediApiPaginationPleromaAdapter(
-          @HiveField(0) PleromaApiPagination valuePagination) =
-      _$_UnifediApiPaginationPleromaAdapter;
+          @HiveField(0) final PleromaApiPagination valuePagination) =
+      _$UnifediApiPaginationPleromaAdapterImpl;
   const _UnifediApiPaginationPleromaAdapter._() : super._();
 
   factory _UnifediApiPaginationPleromaAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiPaginationPleromaAdapter.fromJson;
+      _$UnifediApiPaginationPleromaAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   PleromaApiPagination get valuePagination;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiPaginationPleromaAdapterCopyWith<
-          _UnifediApiPaginationPleromaAdapter>
+  _$$UnifediApiPaginationPleromaAdapterImplCopyWith<
+          _$UnifediApiPaginationPleromaAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

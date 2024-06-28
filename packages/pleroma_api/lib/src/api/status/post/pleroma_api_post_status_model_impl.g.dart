@@ -80,11 +80,11 @@ class PleromaApiPostStatusAdapter extends TypeAdapter<PleromaApiPostStatus> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiPostStatus _$$_PleromaApiPostStatusFromJson(
+_$PleromaApiPostStatusImpl _$$PleromaApiPostStatusImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiPostStatus(
+    _$PleromaApiPostStatusImpl(
       contentType: json['content_type'] as String?,
-      expiresInSeconds: json['expires_in'] as int?,
+      expiresInSeconds: (json['expires_in'] as num?)?.toInt(),
       inReplyToConversationId: json['in_reply_to_conversation_id'] as String?,
       inReplyToId: json['in_reply_to_id'] as String?,
       language: json['language'] as String?,
@@ -103,8 +103,8 @@ _$_PleromaApiPostStatus _$$_PleromaApiPostStatusFromJson(
       to: (json['to'] as List<dynamic>?)?.map((e) => e as String).toList(),
     );
 
-Map<String, dynamic> _$$_PleromaApiPostStatusToJson(
-    _$_PleromaApiPostStatus instance) {
+Map<String, dynamic> _$$PleromaApiPostStatusImplToJson(
+    _$PleromaApiPostStatusImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

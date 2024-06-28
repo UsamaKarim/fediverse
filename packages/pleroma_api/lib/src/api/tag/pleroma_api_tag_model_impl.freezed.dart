@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_tag_model_impl.dart';
 
@@ -11,34 +12,11 @@ part of 'pleroma_api_tag_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiTag _$PleromaApiTagFromJson(Map<String, dynamic> json) {
   return _PleromaApiTag.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiTagTearOff {
-  const _$PleromaApiTagTearOff();
-
-  _PleromaApiTag call(
-      {@HiveField(0) required String name,
-      @HiveField(1) required String url,
-      @HiveField(2) required List<PleromaApiTagHistoryItem>? history}) {
-    return _PleromaApiTag(
-      name: name,
-      url: url,
-      history: history,
-    );
-  }
-
-  PleromaApiTag fromJson(Map<String, Object?> json) {
-    return PleromaApiTag.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiTag = _$PleromaApiTagTearOff();
 
 /// @nodoc
 mixin _$PleromaApiTag {
@@ -60,7 +38,8 @@ mixin _$PleromaApiTag {
 abstract class $PleromaApiTagCopyWith<$Res> {
   factory $PleromaApiTagCopyWith(
           PleromaApiTag value, $Res Function(PleromaApiTag) then) =
-      _$PleromaApiTagCopyWithImpl<$Res>;
+      _$PleromaApiTagCopyWithImpl<$Res, PleromaApiTag>;
+  @useResult
   $Res call(
       {@HiveField(0) String name,
       @HiveField(1) String url,
@@ -68,44 +47,47 @@ abstract class $PleromaApiTagCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiTagCopyWithImpl<$Res>
+class _$PleromaApiTagCopyWithImpl<$Res, $Val extends PleromaApiTag>
     implements $PleromaApiTagCopyWith<$Res> {
   _$PleromaApiTagCopyWithImpl(this._value, this._then);
 
-  final PleromaApiTag _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiTag) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? url = freezed,
+    Object? name = null,
+    Object? url = null,
     Object? history = freezed,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      history: history == freezed
+      history: freezed == history
           ? _value.history
           : history // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiTagHistoryItem>?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiTagCopyWith<$Res>
+abstract class _$$PleromaApiTagImplCopyWith<$Res>
     implements $PleromaApiTagCopyWith<$Res> {
-  factory _$PleromaApiTagCopyWith(
-          _PleromaApiTag value, $Res Function(_PleromaApiTag) then) =
-      __$PleromaApiTagCopyWithImpl<$Res>;
+  factory _$$PleromaApiTagImplCopyWith(
+          _$PleromaApiTagImpl value, $Res Function(_$PleromaApiTagImpl) then) =
+      __$$PleromaApiTagImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) String name,
       @HiveField(1) String url,
@@ -113,33 +95,31 @@ abstract class _$PleromaApiTagCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiTagCopyWithImpl<$Res>
-    extends _$PleromaApiTagCopyWithImpl<$Res>
-    implements _$PleromaApiTagCopyWith<$Res> {
-  __$PleromaApiTagCopyWithImpl(
-      _PleromaApiTag _value, $Res Function(_PleromaApiTag) _then)
-      : super(_value, (v) => _then(v as _PleromaApiTag));
+class __$$PleromaApiTagImplCopyWithImpl<$Res>
+    extends _$PleromaApiTagCopyWithImpl<$Res, _$PleromaApiTagImpl>
+    implements _$$PleromaApiTagImplCopyWith<$Res> {
+  __$$PleromaApiTagImplCopyWithImpl(
+      _$PleromaApiTagImpl _value, $Res Function(_$PleromaApiTagImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiTag get _value => super._value as _PleromaApiTag;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? url = freezed,
+    Object? name = null,
+    Object? url = null,
     Object? history = freezed,
   }) {
-    return _then(_PleromaApiTag(
-      name: name == freezed
+    return _then(_$PleromaApiTagImpl(
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      history: history == freezed
-          ? _value.history
+      history: freezed == history
+          ? _value._history
           : history // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiTagHistoryItem>?,
     ));
@@ -148,14 +128,15 @@ class __$PleromaApiTagCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiTag implements _PleromaApiTag {
-  const _$_PleromaApiTag(
+class _$PleromaApiTagImpl implements _PleromaApiTag {
+  const _$PleromaApiTagImpl(
       {@HiveField(0) required this.name,
       @HiveField(1) required this.url,
-      @HiveField(2) required this.history});
+      @HiveField(2) required final List<PleromaApiTagHistoryItem>? history})
+      : _history = history;
 
-  factory _$_PleromaApiTag.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiTagFromJson(json);
+  factory _$PleromaApiTagImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiTagImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -163,9 +144,16 @@ class _$_PleromaApiTag implements _PleromaApiTag {
   @override
   @HiveField(1)
   final String url;
+  final List<PleromaApiTagHistoryItem>? _history;
   @override
   @HiveField(2)
-  final List<PleromaApiTagHistoryItem>? history;
+  List<PleromaApiTagHistoryItem>? get history {
+    final value = _history;
+    if (value == null) return null;
+    if (_history is EqualUnmodifiableListView) return _history;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   @override
   String toString() {
@@ -173,39 +161,44 @@ class _$_PleromaApiTag implements _PleromaApiTag {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiTag &&
+            other is _$PleromaApiTagImpl &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.url, url) || other.url == url) &&
-            const DeepCollectionEquality().equals(other.history, history));
+            const DeepCollectionEquality().equals(other._history, _history));
   }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType, name, url, const DeepCollectionEquality().hash(history));
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiTagCopyWith<_PleromaApiTag> get copyWith =>
-      __$PleromaApiTagCopyWithImpl<_PleromaApiTag>(this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType, name, url, const DeepCollectionEquality().hash(_history));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiTagImplCopyWith<_$PleromaApiTagImpl> get copyWith =>
+      __$$PleromaApiTagImplCopyWithImpl<_$PleromaApiTagImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiTagToJson(this);
+    return _$$PleromaApiTagImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiTag implements PleromaApiTag {
   const factory _PleromaApiTag(
-          {@HiveField(0) required String name,
-          @HiveField(1) required String url,
-          @HiveField(2) required List<PleromaApiTagHistoryItem>? history}) =
-      _$_PleromaApiTag;
+          {@HiveField(0) required final String name,
+          @HiveField(1) required final String url,
+          @HiveField(2)
+          required final List<PleromaApiTagHistoryItem>? history}) =
+      _$PleromaApiTagImpl;
 
   factory _PleromaApiTag.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiTag.fromJson;
+      _$PleromaApiTagImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -218,6 +211,6 @@ abstract class _PleromaApiTag implements PleromaApiTag {
   List<PleromaApiTagHistoryItem>? get history;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiTagCopyWith<_PleromaApiTag> get copyWith =>
+  _$$PleromaApiTagImplCopyWith<_$PleromaApiTagImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

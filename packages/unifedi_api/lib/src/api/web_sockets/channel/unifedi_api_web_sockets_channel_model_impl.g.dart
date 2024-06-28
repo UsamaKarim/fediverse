@@ -72,9 +72,9 @@ class UnifediApiWebSocketsChannelAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiWebSocketsChannel _$$_UnifediApiWebSocketsChannelFromJson(
+_$UnifediApiWebSocketsChannelImpl _$$UnifediApiWebSocketsChannelImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiWebSocketsChannel(
+    _$UnifediApiWebSocketsChannelImpl(
       type: json['type'] as String,
       localOnly: json['local_only'] as bool?,
       remoteOnly: json['remote_only'] as bool?,
@@ -87,8 +87,8 @@ _$_UnifediApiWebSocketsChannel _$$_UnifediApiWebSocketsChannelFromJson(
       tag: json['tag'] as String?,
     );
 
-Map<String, dynamic> _$$_UnifediApiWebSocketsChannelToJson(
-    _$_UnifediApiWebSocketsChannel instance) {
+Map<String, dynamic> _$$UnifediApiWebSocketsChannelImplToJson(
+    _$UnifediApiWebSocketsChannelImpl instance) {
   final val = <String, dynamic>{
     'type': instance.type,
   };

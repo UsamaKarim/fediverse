@@ -95,9 +95,9 @@ class _DurationPickerBodyState extends State<_DurationPickerBody> {
             padding: const EdgeInsets.all(16.0),
             child: AspectRatio(
               aspectRatio: 1.0,
-              child: DialogPickerDial(
+              child: DurationPicker(
                 duration: currentSelectedDuration ?? const Duration(minutes: 1),
-                onChanged: (newSelectedDuration) {
+                onChange: (newSelectedDuration) {
                   setState(() {
                     currentSelectedDuration = newSelectedDuration;
                   });

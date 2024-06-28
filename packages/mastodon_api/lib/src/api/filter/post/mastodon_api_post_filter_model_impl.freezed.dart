@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_post_filter_model_impl.dart';
 
@@ -11,39 +12,12 @@ part of 'mastodon_api_post_filter_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiPostFilter _$MastodonApiPostFilterFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiPostFilter.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiPostFilterTearOff {
-  const _$MastodonApiPostFilterTearOff();
-
-  _MastodonApiPostFilter call(
-      {@HiveField(0) required List<String> context,
-      @HiveField(1) @JsonKey(name: 'expires_in') required Duration? expiresIn,
-      @HiveField(3) required bool irreversible,
-      @HiveField(4) required String phrase,
-      @HiveField(5) @JsonKey(name: 'whole_word') required bool wholeWord}) {
-    return _MastodonApiPostFilter(
-      context: context,
-      expiresIn: expiresIn,
-      irreversible: irreversible,
-      phrase: phrase,
-      wholeWord: wholeWord,
-    );
-  }
-
-  MastodonApiPostFilter fromJson(Map<String, Object?> json) {
-    return MastodonApiPostFilter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiPostFilter = _$MastodonApiPostFilterTearOff();
 
 /// @nodoc
 mixin _$MastodonApiPostFilter {
@@ -70,7 +44,8 @@ mixin _$MastodonApiPostFilter {
 abstract class $MastodonApiPostFilterCopyWith<$Res> {
   factory $MastodonApiPostFilterCopyWith(MastodonApiPostFilter value,
           $Res Function(MastodonApiPostFilter) then) =
-      _$MastodonApiPostFilterCopyWithImpl<$Res>;
+      _$MastodonApiPostFilterCopyWithImpl<$Res, MastodonApiPostFilter>;
+  @useResult
   $Res call(
       {@HiveField(0) List<String> context,
       @HiveField(1) @JsonKey(name: 'expires_in') Duration? expiresIn,
@@ -80,54 +55,59 @@ abstract class $MastodonApiPostFilterCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MastodonApiPostFilterCopyWithImpl<$Res>
+class _$MastodonApiPostFilterCopyWithImpl<$Res,
+        $Val extends MastodonApiPostFilter>
     implements $MastodonApiPostFilterCopyWith<$Res> {
   _$MastodonApiPostFilterCopyWithImpl(this._value, this._then);
 
-  final MastodonApiPostFilter _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiPostFilter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? context = freezed,
+    Object? context = null,
     Object? expiresIn = freezed,
-    Object? irreversible = freezed,
-    Object? phrase = freezed,
-    Object? wholeWord = freezed,
+    Object? irreversible = null,
+    Object? phrase = null,
+    Object? wholeWord = null,
   }) {
     return _then(_value.copyWith(
-      context: context == freezed
+      context: null == context
           ? _value.context
           : context // ignore: cast_nullable_to_non_nullable
               as List<String>,
-      expiresIn: expiresIn == freezed
+      expiresIn: freezed == expiresIn
           ? _value.expiresIn
           : expiresIn // ignore: cast_nullable_to_non_nullable
               as Duration?,
-      irreversible: irreversible == freezed
+      irreversible: null == irreversible
           ? _value.irreversible
           : irreversible // ignore: cast_nullable_to_non_nullable
               as bool,
-      phrase: phrase == freezed
+      phrase: null == phrase
           ? _value.phrase
           : phrase // ignore: cast_nullable_to_non_nullable
               as String,
-      wholeWord: wholeWord == freezed
+      wholeWord: null == wholeWord
           ? _value.wholeWord
           : wholeWord // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiPostFilterCopyWith<$Res>
+abstract class _$$MastodonApiPostFilterImplCopyWith<$Res>
     implements $MastodonApiPostFilterCopyWith<$Res> {
-  factory _$MastodonApiPostFilterCopyWith(_MastodonApiPostFilter value,
-          $Res Function(_MastodonApiPostFilter) then) =
-      __$MastodonApiPostFilterCopyWithImpl<$Res>;
+  factory _$$MastodonApiPostFilterImplCopyWith(
+          _$MastodonApiPostFilterImpl value,
+          $Res Function(_$MastodonApiPostFilterImpl) then) =
+      __$$MastodonApiPostFilterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) List<String> context,
       @HiveField(1) @JsonKey(name: 'expires_in') Duration? expiresIn,
@@ -137,42 +117,41 @@ abstract class _$MastodonApiPostFilterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MastodonApiPostFilterCopyWithImpl<$Res>
-    extends _$MastodonApiPostFilterCopyWithImpl<$Res>
-    implements _$MastodonApiPostFilterCopyWith<$Res> {
-  __$MastodonApiPostFilterCopyWithImpl(_MastodonApiPostFilter _value,
-      $Res Function(_MastodonApiPostFilter) _then)
-      : super(_value, (v) => _then(v as _MastodonApiPostFilter));
+class __$$MastodonApiPostFilterImplCopyWithImpl<$Res>
+    extends _$MastodonApiPostFilterCopyWithImpl<$Res,
+        _$MastodonApiPostFilterImpl>
+    implements _$$MastodonApiPostFilterImplCopyWith<$Res> {
+  __$$MastodonApiPostFilterImplCopyWithImpl(_$MastodonApiPostFilterImpl _value,
+      $Res Function(_$MastodonApiPostFilterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiPostFilter get _value => super._value as _MastodonApiPostFilter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? context = freezed,
+    Object? context = null,
     Object? expiresIn = freezed,
-    Object? irreversible = freezed,
-    Object? phrase = freezed,
-    Object? wholeWord = freezed,
+    Object? irreversible = null,
+    Object? phrase = null,
+    Object? wholeWord = null,
   }) {
-    return _then(_MastodonApiPostFilter(
-      context: context == freezed
-          ? _value.context
+    return _then(_$MastodonApiPostFilterImpl(
+      context: null == context
+          ? _value._context
           : context // ignore: cast_nullable_to_non_nullable
               as List<String>,
-      expiresIn: expiresIn == freezed
+      expiresIn: freezed == expiresIn
           ? _value.expiresIn
           : expiresIn // ignore: cast_nullable_to_non_nullable
               as Duration?,
-      irreversible: irreversible == freezed
+      irreversible: null == irreversible
           ? _value.irreversible
           : irreversible // ignore: cast_nullable_to_non_nullable
               as bool,
-      phrase: phrase == freezed
+      phrase: null == phrase
           ? _value.phrase
           : phrase // ignore: cast_nullable_to_non_nullable
               as String,
-      wholeWord: wholeWord == freezed
+      wholeWord: null == wholeWord
           ? _value.wholeWord
           : wholeWord // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -182,20 +161,27 @@ class __$MastodonApiPostFilterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiPostFilter implements _MastodonApiPostFilter {
-  const _$_MastodonApiPostFilter(
-      {@HiveField(0) required this.context,
+class _$MastodonApiPostFilterImpl implements _MastodonApiPostFilter {
+  const _$MastodonApiPostFilterImpl(
+      {@HiveField(0) required final List<String> context,
       @HiveField(1) @JsonKey(name: 'expires_in') required this.expiresIn,
       @HiveField(3) required this.irreversible,
       @HiveField(4) required this.phrase,
-      @HiveField(5) @JsonKey(name: 'whole_word') required this.wholeWord});
+      @HiveField(5) @JsonKey(name: 'whole_word') required this.wholeWord})
+      : _context = context;
 
-  factory _$_MastodonApiPostFilter.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiPostFilterFromJson(json);
+  factory _$MastodonApiPostFilterImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MastodonApiPostFilterImplFromJson(json);
 
+  final List<String> _context;
   @override
   @HiveField(0)
-  final List<String> context;
+  List<String> get context {
+    if (_context is EqualUnmodifiableListView) return _context;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_context);
+  }
+
   @override
   @HiveField(1)
   @JsonKey(name: 'expires_in')
@@ -217,11 +203,11 @@ class _$_MastodonApiPostFilter implements _MastodonApiPostFilter {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiPostFilter &&
-            const DeepCollectionEquality().equals(other.context, context) &&
+            other is _$MastodonApiPostFilterImpl &&
+            const DeepCollectionEquality().equals(other._context, _context) &&
             (identical(other.expiresIn, expiresIn) ||
                 other.expiresIn == expiresIn) &&
             (identical(other.irreversible, irreversible) ||
@@ -231,10 +217,11 @@ class _$_MastodonApiPostFilter implements _MastodonApiPostFilter {
                 other.wholeWord == wholeWord));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(context),
+      const DeepCollectionEquality().hash(_context),
       expiresIn,
       irreversible,
       phrase,
@@ -242,33 +229,33 @@ class _$_MastodonApiPostFilter implements _MastodonApiPostFilter {
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiPostFilterCopyWith<_MastodonApiPostFilter> get copyWith =>
-      __$MastodonApiPostFilterCopyWithImpl<_MastodonApiPostFilter>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiPostFilterImplCopyWith<_$MastodonApiPostFilterImpl>
+      get copyWith => __$$MastodonApiPostFilterImplCopyWithImpl<
+          _$MastodonApiPostFilterImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiPostFilterToJson(this);
+    return _$$MastodonApiPostFilterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiPostFilter implements MastodonApiPostFilter {
   const factory _MastodonApiPostFilter(
-      {@HiveField(0)
-          required List<String> context,
+      {@HiveField(0) required final List<String> context,
       @HiveField(1)
       @JsonKey(name: 'expires_in')
-          required Duration? expiresIn,
-      @HiveField(3)
-          required bool irreversible,
-      @HiveField(4)
-          required String phrase,
+      required final Duration? expiresIn,
+      @HiveField(3) required final bool irreversible,
+      @HiveField(4) required final String phrase,
       @HiveField(5)
       @JsonKey(name: 'whole_word')
-          required bool wholeWord}) = _$_MastodonApiPostFilter;
+      required final bool wholeWord}) = _$MastodonApiPostFilterImpl;
 
   factory _MastodonApiPostFilter.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiPostFilter.fromJson;
+      _$MastodonApiPostFilterImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -289,6 +276,6 @@ abstract class _MastodonApiPostFilter implements MastodonApiPostFilter {
   bool get wholeWord;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiPostFilterCopyWith<_MastodonApiPostFilter> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$MastodonApiPostFilterImplCopyWith<_$MastodonApiPostFilterImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

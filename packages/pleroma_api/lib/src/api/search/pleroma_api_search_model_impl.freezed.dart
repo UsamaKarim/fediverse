@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_search_model_impl.dart';
 
@@ -11,35 +12,12 @@ part of 'pleroma_api_search_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiSearchResult _$PleromaApiSearchResultFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiSearchResult.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiSearchResultTearOff {
-  const _$PleromaApiSearchResultTearOff();
-
-  _PleromaApiSearchResult call(
-      {@HiveField(0) required List<PleromaApiAccount> accounts,
-      @HiveField(1) required List<PleromaApiTag> hashtags,
-      @HiveField(2) required List<PleromaApiStatus> statuses}) {
-    return _PleromaApiSearchResult(
-      accounts: accounts,
-      hashtags: hashtags,
-      statuses: statuses,
-    );
-  }
-
-  PleromaApiSearchResult fromJson(Map<String, Object?> json) {
-    return PleromaApiSearchResult.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiSearchResult = _$PleromaApiSearchResultTearOff();
 
 /// @nodoc
 mixin _$PleromaApiSearchResult {
@@ -60,7 +38,8 @@ mixin _$PleromaApiSearchResult {
 abstract class $PleromaApiSearchResultCopyWith<$Res> {
   factory $PleromaApiSearchResultCopyWith(PleromaApiSearchResult value,
           $Res Function(PleromaApiSearchResult) then) =
-      _$PleromaApiSearchResultCopyWithImpl<$Res>;
+      _$PleromaApiSearchResultCopyWithImpl<$Res, PleromaApiSearchResult>;
+  @useResult
   $Res call(
       {@HiveField(0) List<PleromaApiAccount> accounts,
       @HiveField(1) List<PleromaApiTag> hashtags,
@@ -68,44 +47,49 @@ abstract class $PleromaApiSearchResultCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiSearchResultCopyWithImpl<$Res>
+class _$PleromaApiSearchResultCopyWithImpl<$Res,
+        $Val extends PleromaApiSearchResult>
     implements $PleromaApiSearchResultCopyWith<$Res> {
   _$PleromaApiSearchResultCopyWithImpl(this._value, this._then);
 
-  final PleromaApiSearchResult _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiSearchResult) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? accounts = freezed,
-    Object? hashtags = freezed,
-    Object? statuses = freezed,
+    Object? accounts = null,
+    Object? hashtags = null,
+    Object? statuses = null,
   }) {
     return _then(_value.copyWith(
-      accounts: accounts == freezed
+      accounts: null == accounts
           ? _value.accounts
           : accounts // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiAccount>,
-      hashtags: hashtags == freezed
+      hashtags: null == hashtags
           ? _value.hashtags
           : hashtags // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiTag>,
-      statuses: statuses == freezed
+      statuses: null == statuses
           ? _value.statuses
           : statuses // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiStatus>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiSearchResultCopyWith<$Res>
+abstract class _$$PleromaApiSearchResultImplCopyWith<$Res>
     implements $PleromaApiSearchResultCopyWith<$Res> {
-  factory _$PleromaApiSearchResultCopyWith(_PleromaApiSearchResult value,
-          $Res Function(_PleromaApiSearchResult) then) =
-      __$PleromaApiSearchResultCopyWithImpl<$Res>;
+  factory _$$PleromaApiSearchResultImplCopyWith(
+          _$PleromaApiSearchResultImpl value,
+          $Res Function(_$PleromaApiSearchResultImpl) then) =
+      __$$PleromaApiSearchResultImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) List<PleromaApiAccount> accounts,
       @HiveField(1) List<PleromaApiTag> hashtags,
@@ -113,33 +97,33 @@ abstract class _$PleromaApiSearchResultCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiSearchResultCopyWithImpl<$Res>
-    extends _$PleromaApiSearchResultCopyWithImpl<$Res>
-    implements _$PleromaApiSearchResultCopyWith<$Res> {
-  __$PleromaApiSearchResultCopyWithImpl(_PleromaApiSearchResult _value,
-      $Res Function(_PleromaApiSearchResult) _then)
-      : super(_value, (v) => _then(v as _PleromaApiSearchResult));
+class __$$PleromaApiSearchResultImplCopyWithImpl<$Res>
+    extends _$PleromaApiSearchResultCopyWithImpl<$Res,
+        _$PleromaApiSearchResultImpl>
+    implements _$$PleromaApiSearchResultImplCopyWith<$Res> {
+  __$$PleromaApiSearchResultImplCopyWithImpl(
+      _$PleromaApiSearchResultImpl _value,
+      $Res Function(_$PleromaApiSearchResultImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiSearchResult get _value => super._value as _PleromaApiSearchResult;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? accounts = freezed,
-    Object? hashtags = freezed,
-    Object? statuses = freezed,
+    Object? accounts = null,
+    Object? hashtags = null,
+    Object? statuses = null,
   }) {
-    return _then(_PleromaApiSearchResult(
-      accounts: accounts == freezed
-          ? _value.accounts
+    return _then(_$PleromaApiSearchResultImpl(
+      accounts: null == accounts
+          ? _value._accounts
           : accounts // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiAccount>,
-      hashtags: hashtags == freezed
-          ? _value.hashtags
+      hashtags: null == hashtags
+          ? _value._hashtags
           : hashtags // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiTag>,
-      statuses: statuses == freezed
-          ? _value.statuses
+      statuses: null == statuses
+          ? _value._statuses
           : statuses // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiStatus>,
     ));
@@ -148,24 +132,44 @@ class __$PleromaApiSearchResultCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiSearchResult implements _PleromaApiSearchResult {
-  const _$_PleromaApiSearchResult(
-      {@HiveField(0) required this.accounts,
-      @HiveField(1) required this.hashtags,
-      @HiveField(2) required this.statuses});
+class _$PleromaApiSearchResultImpl implements _PleromaApiSearchResult {
+  const _$PleromaApiSearchResultImpl(
+      {@HiveField(0) required final List<PleromaApiAccount> accounts,
+      @HiveField(1) required final List<PleromaApiTag> hashtags,
+      @HiveField(2) required final List<PleromaApiStatus> statuses})
+      : _accounts = accounts,
+        _hashtags = hashtags,
+        _statuses = statuses;
 
-  factory _$_PleromaApiSearchResult.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiSearchResultFromJson(json);
+  factory _$PleromaApiSearchResultImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiSearchResultImplFromJson(json);
 
+  final List<PleromaApiAccount> _accounts;
   @override
   @HiveField(0)
-  final List<PleromaApiAccount> accounts;
+  List<PleromaApiAccount> get accounts {
+    if (_accounts is EqualUnmodifiableListView) return _accounts;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_accounts);
+  }
+
+  final List<PleromaApiTag> _hashtags;
   @override
   @HiveField(1)
-  final List<PleromaApiTag> hashtags;
+  List<PleromaApiTag> get hashtags {
+    if (_hashtags is EqualUnmodifiableListView) return _hashtags;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_hashtags);
+  }
+
+  final List<PleromaApiStatus> _statuses;
   @override
   @HiveField(2)
-  final List<PleromaApiStatus> statuses;
+  List<PleromaApiStatus> get statuses {
+    if (_statuses is EqualUnmodifiableListView) return _statuses;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_statuses);
+  }
 
   @override
   String toString() {
@@ -173,43 +177,47 @@ class _$_PleromaApiSearchResult implements _PleromaApiSearchResult {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiSearchResult &&
-            const DeepCollectionEquality().equals(other.accounts, accounts) &&
-            const DeepCollectionEquality().equals(other.hashtags, hashtags) &&
-            const DeepCollectionEquality().equals(other.statuses, statuses));
+            other is _$PleromaApiSearchResultImpl &&
+            const DeepCollectionEquality().equals(other._accounts, _accounts) &&
+            const DeepCollectionEquality().equals(other._hashtags, _hashtags) &&
+            const DeepCollectionEquality().equals(other._statuses, _statuses));
   }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(accounts),
-      const DeepCollectionEquality().hash(hashtags),
-      const DeepCollectionEquality().hash(statuses));
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiSearchResultCopyWith<_PleromaApiSearchResult> get copyWith =>
-      __$PleromaApiSearchResultCopyWithImpl<_PleromaApiSearchResult>(
-          this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(_accounts),
+      const DeepCollectionEquality().hash(_hashtags),
+      const DeepCollectionEquality().hash(_statuses));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiSearchResultImplCopyWith<_$PleromaApiSearchResultImpl>
+      get copyWith => __$$PleromaApiSearchResultImplCopyWithImpl<
+          _$PleromaApiSearchResultImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiSearchResultToJson(this);
+    return _$$PleromaApiSearchResultImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiSearchResult implements PleromaApiSearchResult {
   const factory _PleromaApiSearchResult(
-          {@HiveField(0) required List<PleromaApiAccount> accounts,
-          @HiveField(1) required List<PleromaApiTag> hashtags,
-          @HiveField(2) required List<PleromaApiStatus> statuses}) =
-      _$_PleromaApiSearchResult;
+          {@HiveField(0) required final List<PleromaApiAccount> accounts,
+          @HiveField(1) required final List<PleromaApiTag> hashtags,
+          @HiveField(2) required final List<PleromaApiStatus> statuses}) =
+      _$PleromaApiSearchResultImpl;
 
   factory _PleromaApiSearchResult.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiSearchResult.fromJson;
+      _$PleromaApiSearchResultImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -222,6 +230,6 @@ abstract class _PleromaApiSearchResult implements PleromaApiSearchResult {
   List<PleromaApiStatus> get statuses;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiSearchResultCopyWith<_PleromaApiSearchResult> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PleromaApiSearchResultImplCopyWith<_$PleromaApiSearchResultImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

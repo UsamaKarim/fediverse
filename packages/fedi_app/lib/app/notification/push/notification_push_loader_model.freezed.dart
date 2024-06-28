@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'notification_push_loader_model.dart';
 
@@ -11,26 +12,7 @@ part of 'notification_push_loader_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$NotificationPushLoaderNotificationTearOff {
-  const _$NotificationPushLoaderNotificationTearOff();
-
-  _NotificationPushLoaderNotification call(
-      {required INotification notification,
-      required NotificationsPushHandlerMessage
-          notificationsPushHandlerMessage}) {
-    return _NotificationPushLoaderNotification(
-      notification: notification,
-      notificationsPushHandlerMessage: notificationsPushHandlerMessage,
-    );
-  }
-}
-
-/// @nodoc
-const $NotificationPushLoaderNotification =
-    _$NotificationPushLoaderNotificationTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$NotificationPushLoaderNotification {
@@ -49,7 +31,9 @@ abstract class $NotificationPushLoaderNotificationCopyWith<$Res> {
   factory $NotificationPushLoaderNotificationCopyWith(
           NotificationPushLoaderNotification value,
           $Res Function(NotificationPushLoaderNotification) then) =
-      _$NotificationPushLoaderNotificationCopyWithImpl<$Res>;
+      _$NotificationPushLoaderNotificationCopyWithImpl<$Res,
+          NotificationPushLoaderNotification>;
+  @useResult
   $Res call(
       {INotification notification,
       NotificationsPushHandlerMessage notificationsPushHandlerMessage});
@@ -59,50 +43,55 @@ abstract class $NotificationPushLoaderNotificationCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$NotificationPushLoaderNotificationCopyWithImpl<$Res>
+class _$NotificationPushLoaderNotificationCopyWithImpl<$Res,
+        $Val extends NotificationPushLoaderNotification>
     implements $NotificationPushLoaderNotificationCopyWith<$Res> {
   _$NotificationPushLoaderNotificationCopyWithImpl(this._value, this._then);
 
-  final NotificationPushLoaderNotification _value;
   // ignore: unused_field
-  final $Res Function(NotificationPushLoaderNotification) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? notification = freezed,
-    Object? notificationsPushHandlerMessage = freezed,
+    Object? notification = null,
+    Object? notificationsPushHandlerMessage = null,
   }) {
     return _then(_value.copyWith(
-      notification: notification == freezed
+      notification: null == notification
           ? _value.notification
           : notification // ignore: cast_nullable_to_non_nullable
               as INotification,
-      notificationsPushHandlerMessage: notificationsPushHandlerMessage ==
-              freezed
+      notificationsPushHandlerMessage: null == notificationsPushHandlerMessage
           ? _value.notificationsPushHandlerMessage
           : notificationsPushHandlerMessage // ignore: cast_nullable_to_non_nullable
               as NotificationsPushHandlerMessage,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NotificationsPushHandlerMessageCopyWith<$Res>
       get notificationsPushHandlerMessage {
     return $NotificationsPushHandlerMessageCopyWith<$Res>(
         _value.notificationsPushHandlerMessage, (value) {
-      return _then(_value.copyWith(notificationsPushHandlerMessage: value));
+      return _then(
+          _value.copyWith(notificationsPushHandlerMessage: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$NotificationPushLoaderNotificationCopyWith<$Res>
+abstract class _$$NotificationPushLoaderNotificationImplCopyWith<$Res>
     implements $NotificationPushLoaderNotificationCopyWith<$Res> {
-  factory _$NotificationPushLoaderNotificationCopyWith(
-          _NotificationPushLoaderNotification value,
-          $Res Function(_NotificationPushLoaderNotification) then) =
-      __$NotificationPushLoaderNotificationCopyWithImpl<$Res>;
+  factory _$$NotificationPushLoaderNotificationImplCopyWith(
+          _$NotificationPushLoaderNotificationImpl value,
+          $Res Function(_$NotificationPushLoaderNotificationImpl) then) =
+      __$$NotificationPushLoaderNotificationImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {INotification notification,
       NotificationsPushHandlerMessage notificationsPushHandlerMessage});
@@ -113,30 +102,27 @@ abstract class _$NotificationPushLoaderNotificationCopyWith<$Res>
 }
 
 /// @nodoc
-class __$NotificationPushLoaderNotificationCopyWithImpl<$Res>
-    extends _$NotificationPushLoaderNotificationCopyWithImpl<$Res>
-    implements _$NotificationPushLoaderNotificationCopyWith<$Res> {
-  __$NotificationPushLoaderNotificationCopyWithImpl(
-      _NotificationPushLoaderNotification _value,
-      $Res Function(_NotificationPushLoaderNotification) _then)
-      : super(_value, (v) => _then(v as _NotificationPushLoaderNotification));
+class __$$NotificationPushLoaderNotificationImplCopyWithImpl<$Res>
+    extends _$NotificationPushLoaderNotificationCopyWithImpl<$Res,
+        _$NotificationPushLoaderNotificationImpl>
+    implements _$$NotificationPushLoaderNotificationImplCopyWith<$Res> {
+  __$$NotificationPushLoaderNotificationImplCopyWithImpl(
+      _$NotificationPushLoaderNotificationImpl _value,
+      $Res Function(_$NotificationPushLoaderNotificationImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _NotificationPushLoaderNotification get _value =>
-      super._value as _NotificationPushLoaderNotification;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? notification = freezed,
-    Object? notificationsPushHandlerMessage = freezed,
+    Object? notification = null,
+    Object? notificationsPushHandlerMessage = null,
   }) {
-    return _then(_NotificationPushLoaderNotification(
-      notification: notification == freezed
+    return _then(_$NotificationPushLoaderNotificationImpl(
+      notification: null == notification
           ? _value.notification
           : notification // ignore: cast_nullable_to_non_nullable
               as INotification,
-      notificationsPushHandlerMessage: notificationsPushHandlerMessage ==
-              freezed
+      notificationsPushHandlerMessage: null == notificationsPushHandlerMessage
           ? _value.notificationsPushHandlerMessage
           : notificationsPushHandlerMessage // ignore: cast_nullable_to_non_nullable
               as NotificationsPushHandlerMessage,
@@ -146,9 +132,9 @@ class __$NotificationPushLoaderNotificationCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_NotificationPushLoaderNotification
+class _$NotificationPushLoaderNotificationImpl
     implements _NotificationPushLoaderNotification {
-  const _$_NotificationPushLoaderNotification(
+  const _$NotificationPushLoaderNotificationImpl(
       {required this.notification,
       required this.notificationsPushHandlerMessage});
 
@@ -163,10 +149,10 @@ class _$_NotificationPushLoaderNotification
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _NotificationPushLoaderNotification &&
+            other is _$NotificationPushLoaderNotificationImpl &&
             (identical(other.notification, notification) ||
                 other.notification == notification) &&
             (identical(other.notificationsPushHandlerMessage,
@@ -181,19 +167,20 @@ class _$_NotificationPushLoaderNotification
 
   @JsonKey(ignore: true)
   @override
-  _$NotificationPushLoaderNotificationCopyWith<
-          _NotificationPushLoaderNotification>
-      get copyWith => __$NotificationPushLoaderNotificationCopyWithImpl<
-          _NotificationPushLoaderNotification>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$NotificationPushLoaderNotificationImplCopyWith<
+          _$NotificationPushLoaderNotificationImpl>
+      get copyWith => __$$NotificationPushLoaderNotificationImplCopyWithImpl<
+          _$NotificationPushLoaderNotificationImpl>(this, _$identity);
 }
 
 abstract class _NotificationPushLoaderNotification
     implements NotificationPushLoaderNotification {
   const factory _NotificationPushLoaderNotification(
-          {required INotification notification,
-          required NotificationsPushHandlerMessage
+          {required final INotification notification,
+          required final NotificationsPushHandlerMessage
               notificationsPushHandlerMessage}) =
-      _$_NotificationPushLoaderNotification;
+      _$NotificationPushLoaderNotificationImpl;
 
   @override
   INotification get notification;
@@ -201,7 +188,7 @@ abstract class _NotificationPushLoaderNotification
   NotificationsPushHandlerMessage get notificationsPushHandlerMessage;
   @override
   @JsonKey(ignore: true)
-  _$NotificationPushLoaderNotificationCopyWith<
-          _NotificationPushLoaderNotification>
+  _$$NotificationPushLoaderNotificationImplCopyWith<
+          _$NotificationPushLoaderNotificationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

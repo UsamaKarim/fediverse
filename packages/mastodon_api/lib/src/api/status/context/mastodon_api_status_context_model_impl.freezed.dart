@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_status_context_model_impl.dart';
 
@@ -11,33 +12,12 @@ part of 'mastodon_api_status_context_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiStatusContext _$MastodonApiStatusContextFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiStatusContext.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiStatusContextTearOff {
-  const _$MastodonApiStatusContextTearOff();
-
-  _MastodonApiStatusContext call(
-      {@HiveField(0) required List<MastodonApiStatus> descendants,
-      @HiveField(1) required List<MastodonApiStatus> ancestors}) {
-    return _MastodonApiStatusContext(
-      descendants: descendants,
-      ancestors: ancestors,
-    );
-  }
-
-  MastodonApiStatusContext fromJson(Map<String, Object?> json) {
-    return MastodonApiStatusContext.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiStatusContext = _$MastodonApiStatusContextTearOff();
 
 /// @nodoc
 mixin _$MastodonApiStatusContext {
@@ -56,75 +36,80 @@ mixin _$MastodonApiStatusContext {
 abstract class $MastodonApiStatusContextCopyWith<$Res> {
   factory $MastodonApiStatusContextCopyWith(MastodonApiStatusContext value,
           $Res Function(MastodonApiStatusContext) then) =
-      _$MastodonApiStatusContextCopyWithImpl<$Res>;
+      _$MastodonApiStatusContextCopyWithImpl<$Res, MastodonApiStatusContext>;
+  @useResult
   $Res call(
       {@HiveField(0) List<MastodonApiStatus> descendants,
       @HiveField(1) List<MastodonApiStatus> ancestors});
 }
 
 /// @nodoc
-class _$MastodonApiStatusContextCopyWithImpl<$Res>
+class _$MastodonApiStatusContextCopyWithImpl<$Res,
+        $Val extends MastodonApiStatusContext>
     implements $MastodonApiStatusContextCopyWith<$Res> {
   _$MastodonApiStatusContextCopyWithImpl(this._value, this._then);
 
-  final MastodonApiStatusContext _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiStatusContext) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? descendants = freezed,
-    Object? ancestors = freezed,
+    Object? descendants = null,
+    Object? ancestors = null,
   }) {
     return _then(_value.copyWith(
-      descendants: descendants == freezed
+      descendants: null == descendants
           ? _value.descendants
           : descendants // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiStatus>,
-      ancestors: ancestors == freezed
+      ancestors: null == ancestors
           ? _value.ancestors
           : ancestors // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiStatus>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiStatusContextCopyWith<$Res>
+abstract class _$$MastodonApiStatusContextImplCopyWith<$Res>
     implements $MastodonApiStatusContextCopyWith<$Res> {
-  factory _$MastodonApiStatusContextCopyWith(_MastodonApiStatusContext value,
-          $Res Function(_MastodonApiStatusContext) then) =
-      __$MastodonApiStatusContextCopyWithImpl<$Res>;
+  factory _$$MastodonApiStatusContextImplCopyWith(
+          _$MastodonApiStatusContextImpl value,
+          $Res Function(_$MastodonApiStatusContextImpl) then) =
+      __$$MastodonApiStatusContextImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) List<MastodonApiStatus> descendants,
       @HiveField(1) List<MastodonApiStatus> ancestors});
 }
 
 /// @nodoc
-class __$MastodonApiStatusContextCopyWithImpl<$Res>
-    extends _$MastodonApiStatusContextCopyWithImpl<$Res>
-    implements _$MastodonApiStatusContextCopyWith<$Res> {
-  __$MastodonApiStatusContextCopyWithImpl(_MastodonApiStatusContext _value,
-      $Res Function(_MastodonApiStatusContext) _then)
-      : super(_value, (v) => _then(v as _MastodonApiStatusContext));
+class __$$MastodonApiStatusContextImplCopyWithImpl<$Res>
+    extends _$MastodonApiStatusContextCopyWithImpl<$Res,
+        _$MastodonApiStatusContextImpl>
+    implements _$$MastodonApiStatusContextImplCopyWith<$Res> {
+  __$$MastodonApiStatusContextImplCopyWithImpl(
+      _$MastodonApiStatusContextImpl _value,
+      $Res Function(_$MastodonApiStatusContextImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiStatusContext get _value =>
-      super._value as _MastodonApiStatusContext;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? descendants = freezed,
-    Object? ancestors = freezed,
+    Object? descendants = null,
+    Object? ancestors = null,
   }) {
-    return _then(_MastodonApiStatusContext(
-      descendants: descendants == freezed
-          ? _value.descendants
+    return _then(_$MastodonApiStatusContextImpl(
+      descendants: null == descendants
+          ? _value._descendants
           : descendants // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiStatus>,
-      ancestors: ancestors == freezed
-          ? _value.ancestors
+      ancestors: null == ancestors
+          ? _value._ancestors
           : ancestors // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiStatus>,
     ));
@@ -133,20 +118,33 @@ class __$MastodonApiStatusContextCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiStatusContext implements _MastodonApiStatusContext {
-  const _$_MastodonApiStatusContext(
-      {@HiveField(0) required this.descendants,
-      @HiveField(1) required this.ancestors});
+class _$MastodonApiStatusContextImpl implements _MastodonApiStatusContext {
+  const _$MastodonApiStatusContextImpl(
+      {@HiveField(0) required final List<MastodonApiStatus> descendants,
+      @HiveField(1) required final List<MastodonApiStatus> ancestors})
+      : _descendants = descendants,
+        _ancestors = ancestors;
 
-  factory _$_MastodonApiStatusContext.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiStatusContextFromJson(json);
+  factory _$MastodonApiStatusContextImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MastodonApiStatusContextImplFromJson(json);
 
+  final List<MastodonApiStatus> _descendants;
   @override
   @HiveField(0)
-  final List<MastodonApiStatus> descendants;
+  List<MastodonApiStatus> get descendants {
+    if (_descendants is EqualUnmodifiableListView) return _descendants;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_descendants);
+  }
+
+  final List<MastodonApiStatus> _ancestors;
   @override
   @HiveField(1)
-  final List<MastodonApiStatus> ancestors;
+  List<MastodonApiStatus> get ancestors {
+    if (_ancestors is EqualUnmodifiableListView) return _ancestors;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_ancestors);
+  }
 
   @override
   String toString() {
@@ -154,41 +152,46 @@ class _$_MastodonApiStatusContext implements _MastodonApiStatusContext {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiStatusContext &&
+            other is _$MastodonApiStatusContextImpl &&
             const DeepCollectionEquality()
-                .equals(other.descendants, descendants) &&
-            const DeepCollectionEquality().equals(other.ancestors, ancestors));
+                .equals(other._descendants, _descendants) &&
+            const DeepCollectionEquality()
+                .equals(other._ancestors, _ancestors));
   }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(descendants),
-      const DeepCollectionEquality().hash(ancestors));
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiStatusContextCopyWith<_MastodonApiStatusContext> get copyWith =>
-      __$MastodonApiStatusContextCopyWithImpl<_MastodonApiStatusContext>(
-          this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(_descendants),
+      const DeepCollectionEquality().hash(_ancestors));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiStatusContextImplCopyWith<_$MastodonApiStatusContextImpl>
+      get copyWith => __$$MastodonApiStatusContextImplCopyWithImpl<
+          _$MastodonApiStatusContextImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiStatusContextToJson(this);
+    return _$$MastodonApiStatusContextImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiStatusContext implements MastodonApiStatusContext {
   const factory _MastodonApiStatusContext(
-          {@HiveField(0) required List<MastodonApiStatus> descendants,
-          @HiveField(1) required List<MastodonApiStatus> ancestors}) =
-      _$_MastodonApiStatusContext;
+          {@HiveField(0) required final List<MastodonApiStatus> descendants,
+          @HiveField(1) required final List<MastodonApiStatus> ancestors}) =
+      _$MastodonApiStatusContextImpl;
 
   factory _MastodonApiStatusContext.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiStatusContext.fromJson;
+      _$MastodonApiStatusContextImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -198,6 +201,6 @@ abstract class _MastodonApiStatusContext implements MastodonApiStatusContext {
   List<MastodonApiStatus> get ancestors;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiStatusContextCopyWith<_MastodonApiStatusContext> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$MastodonApiStatusContextImplCopyWith<_$MastodonApiStatusContextImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

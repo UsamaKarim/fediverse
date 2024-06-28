@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_chat_message_repository_model.dart';
 
@@ -11,31 +12,7 @@ part of 'unifedi_chat_message_repository_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$UnifediChatMessageRepositoryFiltersTearOff {
-  const _$UnifediChatMessageRepositoryFiltersTearOff();
-
-  _UnifediChatMessageRepositoryFilters call(
-      {required List<IUnifediChat>? onlyInChats,
-      required bool onlyPendingStatePublishedOrNull,
-      required bool onlyNotDeleted,
-      required bool onlyNotHiddenLocallyOnDevice,
-      bool groupByChatId = false}) {
-    return _UnifediChatMessageRepositoryFilters(
-      onlyInChats: onlyInChats,
-      onlyPendingStatePublishedOrNull: onlyPendingStatePublishedOrNull,
-      onlyNotDeleted: onlyNotDeleted,
-      onlyNotHiddenLocallyOnDevice: onlyNotHiddenLocallyOnDevice,
-      groupByChatId: groupByChatId,
-    );
-  }
-}
-
-/// @nodoc
-const $UnifediChatMessageRepositoryFilters =
-    _$UnifediChatMessageRepositoryFiltersTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$UnifediChatMessageRepositoryFilters {
@@ -57,7 +34,9 @@ abstract class $UnifediChatMessageRepositoryFiltersCopyWith<$Res> {
   factory $UnifediChatMessageRepositoryFiltersCopyWith(
           UnifediChatMessageRepositoryFilters value,
           $Res Function(UnifediChatMessageRepositoryFilters) then) =
-      _$UnifediChatMessageRepositoryFiltersCopyWithImpl<$Res>;
+      _$UnifediChatMessageRepositoryFiltersCopyWithImpl<$Res,
+          UnifediChatMessageRepositoryFilters>;
+  @useResult
   $Res call(
       {List<IUnifediChat>? onlyInChats,
       bool onlyPendingStatePublishedOrNull,
@@ -67,56 +46,59 @@ abstract class $UnifediChatMessageRepositoryFiltersCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UnifediChatMessageRepositoryFiltersCopyWithImpl<$Res>
+class _$UnifediChatMessageRepositoryFiltersCopyWithImpl<$Res,
+        $Val extends UnifediChatMessageRepositoryFilters>
     implements $UnifediChatMessageRepositoryFiltersCopyWith<$Res> {
   _$UnifediChatMessageRepositoryFiltersCopyWithImpl(this._value, this._then);
 
-  final UnifediChatMessageRepositoryFilters _value;
   // ignore: unused_field
-  final $Res Function(UnifediChatMessageRepositoryFilters) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? onlyInChats = freezed,
-    Object? onlyPendingStatePublishedOrNull = freezed,
-    Object? onlyNotDeleted = freezed,
-    Object? onlyNotHiddenLocallyOnDevice = freezed,
-    Object? groupByChatId = freezed,
+    Object? onlyPendingStatePublishedOrNull = null,
+    Object? onlyNotDeleted = null,
+    Object? onlyNotHiddenLocallyOnDevice = null,
+    Object? groupByChatId = null,
   }) {
     return _then(_value.copyWith(
-      onlyInChats: onlyInChats == freezed
+      onlyInChats: freezed == onlyInChats
           ? _value.onlyInChats
           : onlyInChats // ignore: cast_nullable_to_non_nullable
               as List<IUnifediChat>?,
-      onlyPendingStatePublishedOrNull: onlyPendingStatePublishedOrNull ==
-              freezed
+      onlyPendingStatePublishedOrNull: null == onlyPendingStatePublishedOrNull
           ? _value.onlyPendingStatePublishedOrNull
           : onlyPendingStatePublishedOrNull // ignore: cast_nullable_to_non_nullable
               as bool,
-      onlyNotDeleted: onlyNotDeleted == freezed
+      onlyNotDeleted: null == onlyNotDeleted
           ? _value.onlyNotDeleted
           : onlyNotDeleted // ignore: cast_nullable_to_non_nullable
               as bool,
-      onlyNotHiddenLocallyOnDevice: onlyNotHiddenLocallyOnDevice == freezed
+      onlyNotHiddenLocallyOnDevice: null == onlyNotHiddenLocallyOnDevice
           ? _value.onlyNotHiddenLocallyOnDevice
           : onlyNotHiddenLocallyOnDevice // ignore: cast_nullable_to_non_nullable
               as bool,
-      groupByChatId: groupByChatId == freezed
+      groupByChatId: null == groupByChatId
           ? _value.groupByChatId
           : groupByChatId // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediChatMessageRepositoryFiltersCopyWith<$Res>
+abstract class _$$UnifediChatMessageRepositoryFiltersImplCopyWith<$Res>
     implements $UnifediChatMessageRepositoryFiltersCopyWith<$Res> {
-  factory _$UnifediChatMessageRepositoryFiltersCopyWith(
-          _UnifediChatMessageRepositoryFilters value,
-          $Res Function(_UnifediChatMessageRepositoryFilters) then) =
-      __$UnifediChatMessageRepositoryFiltersCopyWithImpl<$Res>;
+  factory _$$UnifediChatMessageRepositoryFiltersImplCopyWith(
+          _$UnifediChatMessageRepositoryFiltersImpl value,
+          $Res Function(_$UnifediChatMessageRepositoryFiltersImpl) then) =
+      __$$UnifediChatMessageRepositoryFiltersImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {List<IUnifediChat>? onlyInChats,
       bool onlyPendingStatePublishedOrNull,
@@ -126,45 +108,42 @@ abstract class _$UnifediChatMessageRepositoryFiltersCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediChatMessageRepositoryFiltersCopyWithImpl<$Res>
-    extends _$UnifediChatMessageRepositoryFiltersCopyWithImpl<$Res>
-    implements _$UnifediChatMessageRepositoryFiltersCopyWith<$Res> {
-  __$UnifediChatMessageRepositoryFiltersCopyWithImpl(
-      _UnifediChatMessageRepositoryFilters _value,
-      $Res Function(_UnifediChatMessageRepositoryFilters) _then)
-      : super(_value, (v) => _then(v as _UnifediChatMessageRepositoryFilters));
+class __$$UnifediChatMessageRepositoryFiltersImplCopyWithImpl<$Res>
+    extends _$UnifediChatMessageRepositoryFiltersCopyWithImpl<$Res,
+        _$UnifediChatMessageRepositoryFiltersImpl>
+    implements _$$UnifediChatMessageRepositoryFiltersImplCopyWith<$Res> {
+  __$$UnifediChatMessageRepositoryFiltersImplCopyWithImpl(
+      _$UnifediChatMessageRepositoryFiltersImpl _value,
+      $Res Function(_$UnifediChatMessageRepositoryFiltersImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediChatMessageRepositoryFilters get _value =>
-      super._value as _UnifediChatMessageRepositoryFilters;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? onlyInChats = freezed,
-    Object? onlyPendingStatePublishedOrNull = freezed,
-    Object? onlyNotDeleted = freezed,
-    Object? onlyNotHiddenLocallyOnDevice = freezed,
-    Object? groupByChatId = freezed,
+    Object? onlyPendingStatePublishedOrNull = null,
+    Object? onlyNotDeleted = null,
+    Object? onlyNotHiddenLocallyOnDevice = null,
+    Object? groupByChatId = null,
   }) {
-    return _then(_UnifediChatMessageRepositoryFilters(
-      onlyInChats: onlyInChats == freezed
-          ? _value.onlyInChats
+    return _then(_$UnifediChatMessageRepositoryFiltersImpl(
+      onlyInChats: freezed == onlyInChats
+          ? _value._onlyInChats
           : onlyInChats // ignore: cast_nullable_to_non_nullable
               as List<IUnifediChat>?,
-      onlyPendingStatePublishedOrNull: onlyPendingStatePublishedOrNull ==
-              freezed
+      onlyPendingStatePublishedOrNull: null == onlyPendingStatePublishedOrNull
           ? _value.onlyPendingStatePublishedOrNull
           : onlyPendingStatePublishedOrNull // ignore: cast_nullable_to_non_nullable
               as bool,
-      onlyNotDeleted: onlyNotDeleted == freezed
+      onlyNotDeleted: null == onlyNotDeleted
           ? _value.onlyNotDeleted
           : onlyNotDeleted // ignore: cast_nullable_to_non_nullable
               as bool,
-      onlyNotHiddenLocallyOnDevice: onlyNotHiddenLocallyOnDevice == freezed
+      onlyNotHiddenLocallyOnDevice: null == onlyNotHiddenLocallyOnDevice
           ? _value.onlyNotHiddenLocallyOnDevice
           : onlyNotHiddenLocallyOnDevice // ignore: cast_nullable_to_non_nullable
               as bool,
-      groupByChatId: groupByChatId == freezed
+      groupByChatId: null == groupByChatId
           ? _value.groupByChatId
           : groupByChatId // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -174,26 +153,35 @@ class __$UnifediChatMessageRepositoryFiltersCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_UnifediChatMessageRepositoryFilters
+class _$UnifediChatMessageRepositoryFiltersImpl
     extends _UnifediChatMessageRepositoryFilters {
-  const _$_UnifediChatMessageRepositoryFilters(
-      {required this.onlyInChats,
+  const _$UnifediChatMessageRepositoryFiltersImpl(
+      {required final List<IUnifediChat>? onlyInChats,
       required this.onlyPendingStatePublishedOrNull,
       required this.onlyNotDeleted,
       required this.onlyNotHiddenLocallyOnDevice,
       this.groupByChatId = false})
-      : super._();
+      : _onlyInChats = onlyInChats,
+        super._();
 
+  final List<IUnifediChat>? _onlyInChats;
   @override
-  final List<IUnifediChat>? onlyInChats;
+  List<IUnifediChat>? get onlyInChats {
+    final value = _onlyInChats;
+    if (value == null) return null;
+    if (_onlyInChats is EqualUnmodifiableListView) return _onlyInChats;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   final bool onlyPendingStatePublishedOrNull;
   @override
   final bool onlyNotDeleted;
   @override
   final bool onlyNotHiddenLocallyOnDevice;
-  @JsonKey(defaultValue: false)
   @override
+  @JsonKey()
   final bool groupByChatId;
 
   @override
@@ -202,12 +190,12 @@ class _$_UnifediChatMessageRepositoryFilters
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediChatMessageRepositoryFilters &&
+            other is _$UnifediChatMessageRepositoryFiltersImpl &&
             const DeepCollectionEquality()
-                .equals(other.onlyInChats, onlyInChats) &&
+                .equals(other._onlyInChats, _onlyInChats) &&
             (identical(other.onlyPendingStatePublishedOrNull,
                     onlyPendingStatePublishedOrNull) ||
                 other.onlyPendingStatePublishedOrNull ==
@@ -225,7 +213,7 @@ class _$_UnifediChatMessageRepositoryFilters
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(onlyInChats),
+      const DeepCollectionEquality().hash(_onlyInChats),
       onlyPendingStatePublishedOrNull,
       onlyNotDeleted,
       onlyNotHiddenLocallyOnDevice,
@@ -233,20 +221,21 @@ class _$_UnifediChatMessageRepositoryFilters
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediChatMessageRepositoryFiltersCopyWith<
-          _UnifediChatMessageRepositoryFilters>
-      get copyWith => __$UnifediChatMessageRepositoryFiltersCopyWithImpl<
-          _UnifediChatMessageRepositoryFilters>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediChatMessageRepositoryFiltersImplCopyWith<
+          _$UnifediChatMessageRepositoryFiltersImpl>
+      get copyWith => __$$UnifediChatMessageRepositoryFiltersImplCopyWithImpl<
+          _$UnifediChatMessageRepositoryFiltersImpl>(this, _$identity);
 }
 
 abstract class _UnifediChatMessageRepositoryFilters
     extends UnifediChatMessageRepositoryFilters {
   const factory _UnifediChatMessageRepositoryFilters(
-      {required List<IUnifediChat>? onlyInChats,
-      required bool onlyPendingStatePublishedOrNull,
-      required bool onlyNotDeleted,
-      required bool onlyNotHiddenLocallyOnDevice,
-      bool groupByChatId}) = _$_UnifediChatMessageRepositoryFilters;
+      {required final List<IUnifediChat>? onlyInChats,
+      required final bool onlyPendingStatePublishedOrNull,
+      required final bool onlyNotDeleted,
+      required final bool onlyNotHiddenLocallyOnDevice,
+      final bool groupByChatId}) = _$UnifediChatMessageRepositoryFiltersImpl;
   const _UnifediChatMessageRepositoryFilters._() : super._();
 
   @override
@@ -261,28 +250,10 @@ abstract class _UnifediChatMessageRepositoryFilters
   bool get groupByChatId;
   @override
   @JsonKey(ignore: true)
-  _$UnifediChatMessageRepositoryFiltersCopyWith<
-          _UnifediChatMessageRepositoryFilters>
+  _$$UnifediChatMessageRepositoryFiltersImplCopyWith<
+          _$UnifediChatMessageRepositoryFiltersImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$UnifediChatMessageRepositoryOrderingTermDataTearOff {
-  const _$UnifediChatMessageRepositoryOrderingTermDataTearOff();
-
-  _UnifediChatMessageRepositoryOrderingTermData call(
-      {required UnifediChatMessageOrderType orderType,
-      required moor.OrderingMode orderingMode}) {
-    return _UnifediChatMessageRepositoryOrderingTermData(
-      orderType: orderType,
-      orderingMode: orderingMode,
-    );
-  }
-}
-
-/// @nodoc
-const $UnifediChatMessageRepositoryOrderingTermData =
-    _$UnifediChatMessageRepositoryOrderingTermDataTearOff();
 
 /// @nodoc
 mixin _$UnifediChatMessageRepositoryOrderingTermData {
@@ -301,76 +272,81 @@ abstract class $UnifediChatMessageRepositoryOrderingTermDataCopyWith<$Res> {
   factory $UnifediChatMessageRepositoryOrderingTermDataCopyWith(
           UnifediChatMessageRepositoryOrderingTermData value,
           $Res Function(UnifediChatMessageRepositoryOrderingTermData) then) =
-      _$UnifediChatMessageRepositoryOrderingTermDataCopyWithImpl<$Res>;
+      _$UnifediChatMessageRepositoryOrderingTermDataCopyWithImpl<$Res,
+          UnifediChatMessageRepositoryOrderingTermData>;
+  @useResult
   $Res call(
       {UnifediChatMessageOrderType orderType, moor.OrderingMode orderingMode});
 }
 
 /// @nodoc
-class _$UnifediChatMessageRepositoryOrderingTermDataCopyWithImpl<$Res>
+class _$UnifediChatMessageRepositoryOrderingTermDataCopyWithImpl<$Res,
+        $Val extends UnifediChatMessageRepositoryOrderingTermData>
     implements $UnifediChatMessageRepositoryOrderingTermDataCopyWith<$Res> {
   _$UnifediChatMessageRepositoryOrderingTermDataCopyWithImpl(
       this._value, this._then);
 
-  final UnifediChatMessageRepositoryOrderingTermData _value;
   // ignore: unused_field
-  final $Res Function(UnifediChatMessageRepositoryOrderingTermData) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? orderType = freezed,
-    Object? orderingMode = freezed,
+    Object? orderType = null,
+    Object? orderingMode = null,
   }) {
     return _then(_value.copyWith(
-      orderType: orderType == freezed
+      orderType: null == orderType
           ? _value.orderType
           : orderType // ignore: cast_nullable_to_non_nullable
               as UnifediChatMessageOrderType,
-      orderingMode: orderingMode == freezed
+      orderingMode: null == orderingMode
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
               as moor.OrderingMode,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediChatMessageRepositoryOrderingTermDataCopyWith<$Res>
+abstract class _$$UnifediChatMessageRepositoryOrderingTermDataImplCopyWith<$Res>
     implements $UnifediChatMessageRepositoryOrderingTermDataCopyWith<$Res> {
-  factory _$UnifediChatMessageRepositoryOrderingTermDataCopyWith(
-          _UnifediChatMessageRepositoryOrderingTermData value,
-          $Res Function(_UnifediChatMessageRepositoryOrderingTermData) then) =
-      __$UnifediChatMessageRepositoryOrderingTermDataCopyWithImpl<$Res>;
+  factory _$$UnifediChatMessageRepositoryOrderingTermDataImplCopyWith(
+          _$UnifediChatMessageRepositoryOrderingTermDataImpl value,
+          $Res Function(_$UnifediChatMessageRepositoryOrderingTermDataImpl)
+              then) =
+      __$$UnifediChatMessageRepositoryOrderingTermDataImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {UnifediChatMessageOrderType orderType, moor.OrderingMode orderingMode});
 }
 
 /// @nodoc
-class __$UnifediChatMessageRepositoryOrderingTermDataCopyWithImpl<$Res>
-    extends _$UnifediChatMessageRepositoryOrderingTermDataCopyWithImpl<$Res>
-    implements _$UnifediChatMessageRepositoryOrderingTermDataCopyWith<$Res> {
-  __$UnifediChatMessageRepositoryOrderingTermDataCopyWithImpl(
-      _UnifediChatMessageRepositoryOrderingTermData _value,
-      $Res Function(_UnifediChatMessageRepositoryOrderingTermData) _then)
-      : super(_value,
-            (v) => _then(v as _UnifediChatMessageRepositoryOrderingTermData));
+class __$$UnifediChatMessageRepositoryOrderingTermDataImplCopyWithImpl<$Res>
+    extends _$UnifediChatMessageRepositoryOrderingTermDataCopyWithImpl<$Res,
+        _$UnifediChatMessageRepositoryOrderingTermDataImpl>
+    implements
+        _$$UnifediChatMessageRepositoryOrderingTermDataImplCopyWith<$Res> {
+  __$$UnifediChatMessageRepositoryOrderingTermDataImplCopyWithImpl(
+      _$UnifediChatMessageRepositoryOrderingTermDataImpl _value,
+      $Res Function(_$UnifediChatMessageRepositoryOrderingTermDataImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediChatMessageRepositoryOrderingTermData get _value =>
-      super._value as _UnifediChatMessageRepositoryOrderingTermData;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? orderType = freezed,
-    Object? orderingMode = freezed,
+    Object? orderType = null,
+    Object? orderingMode = null,
   }) {
-    return _then(_UnifediChatMessageRepositoryOrderingTermData(
-      orderType: orderType == freezed
+    return _then(_$UnifediChatMessageRepositoryOrderingTermDataImpl(
+      orderType: null == orderType
           ? _value.orderType
           : orderType // ignore: cast_nullable_to_non_nullable
               as UnifediChatMessageOrderType,
-      orderingMode: orderingMode == freezed
+      orderingMode: null == orderingMode
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
               as moor.OrderingMode,
@@ -380,9 +356,9 @@ class __$UnifediChatMessageRepositoryOrderingTermDataCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_UnifediChatMessageRepositoryOrderingTermData
+class _$UnifediChatMessageRepositoryOrderingTermDataImpl
     extends _UnifediChatMessageRepositoryOrderingTermData {
-  const _$_UnifediChatMessageRepositoryOrderingTermData(
+  const _$UnifediChatMessageRepositoryOrderingTermDataImpl(
       {required this.orderType, required this.orderingMode})
       : super._();
 
@@ -397,10 +373,10 @@ class _$_UnifediChatMessageRepositoryOrderingTermData
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediChatMessageRepositoryOrderingTermData &&
+            other is _$UnifediChatMessageRepositoryOrderingTermDataImpl &&
             (identical(other.orderType, orderType) ||
                 other.orderType == orderType) &&
             (identical(other.orderingMode, orderingMode) ||
@@ -412,19 +388,21 @@ class _$_UnifediChatMessageRepositoryOrderingTermData
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediChatMessageRepositoryOrderingTermDataCopyWith<
-          _UnifediChatMessageRepositoryOrderingTermData>
+  @pragma('vm:prefer-inline')
+  _$$UnifediChatMessageRepositoryOrderingTermDataImplCopyWith<
+          _$UnifediChatMessageRepositoryOrderingTermDataImpl>
       get copyWith =>
-          __$UnifediChatMessageRepositoryOrderingTermDataCopyWithImpl<
-              _UnifediChatMessageRepositoryOrderingTermData>(this, _$identity);
+          __$$UnifediChatMessageRepositoryOrderingTermDataImplCopyWithImpl<
+                  _$UnifediChatMessageRepositoryOrderingTermDataImpl>(
+              this, _$identity);
 }
 
 abstract class _UnifediChatMessageRepositoryOrderingTermData
     extends UnifediChatMessageRepositoryOrderingTermData {
   const factory _UnifediChatMessageRepositoryOrderingTermData(
-          {required UnifediChatMessageOrderType orderType,
-          required moor.OrderingMode orderingMode}) =
-      _$_UnifediChatMessageRepositoryOrderingTermData;
+          {required final UnifediChatMessageOrderType orderType,
+          required final moor.OrderingMode orderingMode}) =
+      _$UnifediChatMessageRepositoryOrderingTermDataImpl;
   const _UnifediChatMessageRepositoryOrderingTermData._() : super._();
 
   @override
@@ -433,7 +411,7 @@ abstract class _UnifediChatMessageRepositoryOrderingTermData
   moor.OrderingMode get orderingMode;
   @override
   @JsonKey(ignore: true)
-  _$UnifediChatMessageRepositoryOrderingTermDataCopyWith<
-          _UnifediChatMessageRepositoryOrderingTermData>
+  _$$UnifediChatMessageRepositoryOrderingTermDataImplCopyWith<
+          _$UnifediChatMessageRepositoryOrderingTermDataImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,3 +1,4 @@
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:unifedi_api/unifedi_api.dart';
@@ -65,13 +66,13 @@ class DbFilterPopulatedWrapper
       DbFilterPopulatedWrapper(
         dbFilterPopulated: DbFilterPopulated(
           dbFilter: dbFilterPopulated.dbFilter.copyWith(
-            id: localId ?? this.localId,
+            id: Value(localId ?? this.localId),
             remoteId: remoteId ?? this.remoteId,
             context: context ?? this.context,
             phrase: phrase ?? this.phrase,
             irreversible: irreversible ?? this.irreversible,
             wholeWord: wholeWord ?? this.wholeWord,
-            expiresAt: expiresAt ?? this.expiresAt,
+            expiresAt: Value(expiresAt ?? this.expiresAt),
           ),
         ),
       );

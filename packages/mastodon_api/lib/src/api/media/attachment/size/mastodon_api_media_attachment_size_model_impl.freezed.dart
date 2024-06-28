@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_media_attachment_size_model_impl.dart';
 
@@ -11,38 +12,12 @@ part of 'mastodon_api_media_attachment_size_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiMediaAttachmentSize _$MastodonApiMediaAttachmentSizeFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiMediaAttachmentSize.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiMediaAttachmentSizeTearOff {
-  const _$MastodonApiMediaAttachmentSizeTearOff();
-
-  _MastodonApiMediaAttachmentSize call(
-      {@HiveField(0) required int width,
-      @HiveField(1) required int height,
-      @HiveField(2) required String? size,
-      @HiveField(3) required double? aspect}) {
-    return _MastodonApiMediaAttachmentSize(
-      width: width,
-      height: height,
-      size: size,
-      aspect: aspect,
-    );
-  }
-
-  MastodonApiMediaAttachmentSize fromJson(Map<String, Object?> json) {
-    return MastodonApiMediaAttachmentSize.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiMediaAttachmentSize =
-    _$MastodonApiMediaAttachmentSizeTearOff();
 
 /// @nodoc
 mixin _$MastodonApiMediaAttachmentSize {
@@ -66,7 +41,9 @@ abstract class $MastodonApiMediaAttachmentSizeCopyWith<$Res> {
   factory $MastodonApiMediaAttachmentSizeCopyWith(
           MastodonApiMediaAttachmentSize value,
           $Res Function(MastodonApiMediaAttachmentSize) then) =
-      _$MastodonApiMediaAttachmentSizeCopyWithImpl<$Res>;
+      _$MastodonApiMediaAttachmentSizeCopyWithImpl<$Res,
+          MastodonApiMediaAttachmentSize>;
+  @useResult
   $Res call(
       {@HiveField(0) int width,
       @HiveField(1) int height,
@@ -75,50 +52,54 @@ abstract class $MastodonApiMediaAttachmentSizeCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MastodonApiMediaAttachmentSizeCopyWithImpl<$Res>
+class _$MastodonApiMediaAttachmentSizeCopyWithImpl<$Res,
+        $Val extends MastodonApiMediaAttachmentSize>
     implements $MastodonApiMediaAttachmentSizeCopyWith<$Res> {
   _$MastodonApiMediaAttachmentSizeCopyWithImpl(this._value, this._then);
 
-  final MastodonApiMediaAttachmentSize _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiMediaAttachmentSize) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? width = freezed,
-    Object? height = freezed,
+    Object? width = null,
+    Object? height = null,
     Object? size = freezed,
     Object? aspect = freezed,
   }) {
     return _then(_value.copyWith(
-      width: width == freezed
+      width: null == width
           ? _value.width
           : width // ignore: cast_nullable_to_non_nullable
               as int,
-      height: height == freezed
+      height: null == height
           ? _value.height
           : height // ignore: cast_nullable_to_non_nullable
               as int,
-      size: size == freezed
+      size: freezed == size
           ? _value.size
           : size // ignore: cast_nullable_to_non_nullable
               as String?,
-      aspect: aspect == freezed
+      aspect: freezed == aspect
           ? _value.aspect
           : aspect // ignore: cast_nullable_to_non_nullable
               as double?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiMediaAttachmentSizeCopyWith<$Res>
+abstract class _$$MastodonApiMediaAttachmentSizeImplCopyWith<$Res>
     implements $MastodonApiMediaAttachmentSizeCopyWith<$Res> {
-  factory _$MastodonApiMediaAttachmentSizeCopyWith(
-          _MastodonApiMediaAttachmentSize value,
-          $Res Function(_MastodonApiMediaAttachmentSize) then) =
-      __$MastodonApiMediaAttachmentSizeCopyWithImpl<$Res>;
+  factory _$$MastodonApiMediaAttachmentSizeImplCopyWith(
+          _$MastodonApiMediaAttachmentSizeImpl value,
+          $Res Function(_$MastodonApiMediaAttachmentSizeImpl) then) =
+      __$$MastodonApiMediaAttachmentSizeImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) int width,
       @HiveField(1) int height,
@@ -127,39 +108,37 @@ abstract class _$MastodonApiMediaAttachmentSizeCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MastodonApiMediaAttachmentSizeCopyWithImpl<$Res>
-    extends _$MastodonApiMediaAttachmentSizeCopyWithImpl<$Res>
-    implements _$MastodonApiMediaAttachmentSizeCopyWith<$Res> {
-  __$MastodonApiMediaAttachmentSizeCopyWithImpl(
-      _MastodonApiMediaAttachmentSize _value,
-      $Res Function(_MastodonApiMediaAttachmentSize) _then)
-      : super(_value, (v) => _then(v as _MastodonApiMediaAttachmentSize));
+class __$$MastodonApiMediaAttachmentSizeImplCopyWithImpl<$Res>
+    extends _$MastodonApiMediaAttachmentSizeCopyWithImpl<$Res,
+        _$MastodonApiMediaAttachmentSizeImpl>
+    implements _$$MastodonApiMediaAttachmentSizeImplCopyWith<$Res> {
+  __$$MastodonApiMediaAttachmentSizeImplCopyWithImpl(
+      _$MastodonApiMediaAttachmentSizeImpl _value,
+      $Res Function(_$MastodonApiMediaAttachmentSizeImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiMediaAttachmentSize get _value =>
-      super._value as _MastodonApiMediaAttachmentSize;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? width = freezed,
-    Object? height = freezed,
+    Object? width = null,
+    Object? height = null,
     Object? size = freezed,
     Object? aspect = freezed,
   }) {
-    return _then(_MastodonApiMediaAttachmentSize(
-      width: width == freezed
+    return _then(_$MastodonApiMediaAttachmentSizeImpl(
+      width: null == width
           ? _value.width
           : width // ignore: cast_nullable_to_non_nullable
               as int,
-      height: height == freezed
+      height: null == height
           ? _value.height
           : height // ignore: cast_nullable_to_non_nullable
               as int,
-      size: size == freezed
+      size: freezed == size
           ? _value.size
           : size // ignore: cast_nullable_to_non_nullable
               as String?,
-      aspect: aspect == freezed
+      aspect: freezed == aspect
           ? _value.aspect
           : aspect // ignore: cast_nullable_to_non_nullable
               as double?,
@@ -169,17 +148,17 @@ class __$MastodonApiMediaAttachmentSizeCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiMediaAttachmentSize
+class _$MastodonApiMediaAttachmentSizeImpl
     implements _MastodonApiMediaAttachmentSize {
-  const _$_MastodonApiMediaAttachmentSize(
+  const _$MastodonApiMediaAttachmentSizeImpl(
       {@HiveField(0) required this.width,
       @HiveField(1) required this.height,
       @HiveField(2) required this.size,
       @HiveField(3) required this.aspect});
 
-  factory _$_MastodonApiMediaAttachmentSize.fromJson(
+  factory _$MastodonApiMediaAttachmentSizeImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_MastodonApiMediaAttachmentSizeFromJson(json);
+      _$$MastodonApiMediaAttachmentSizeImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -200,42 +179,47 @@ class _$_MastodonApiMediaAttachmentSize
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiMediaAttachmentSize &&
+            other is _$MastodonApiMediaAttachmentSizeImpl &&
             (identical(other.width, width) || other.width == width) &&
             (identical(other.height, height) || other.height == height) &&
             (identical(other.size, size) || other.size == size) &&
             (identical(other.aspect, aspect) || other.aspect == aspect));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, width, height, size, aspect);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiMediaAttachmentSizeCopyWith<_MastodonApiMediaAttachmentSize>
-      get copyWith => __$MastodonApiMediaAttachmentSizeCopyWithImpl<
-          _MastodonApiMediaAttachmentSize>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiMediaAttachmentSizeImplCopyWith<
+          _$MastodonApiMediaAttachmentSizeImpl>
+      get copyWith => __$$MastodonApiMediaAttachmentSizeImplCopyWithImpl<
+          _$MastodonApiMediaAttachmentSizeImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiMediaAttachmentSizeToJson(this);
+    return _$$MastodonApiMediaAttachmentSizeImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiMediaAttachmentSize
     implements MastodonApiMediaAttachmentSize {
   const factory _MastodonApiMediaAttachmentSize(
-          {@HiveField(0) required int width,
-          @HiveField(1) required int height,
-          @HiveField(2) required String? size,
-          @HiveField(3) required double? aspect}) =
-      _$_MastodonApiMediaAttachmentSize;
+          {@HiveField(0) required final int width,
+          @HiveField(1) required final int height,
+          @HiveField(2) required final String? size,
+          @HiveField(3) required final double? aspect}) =
+      _$MastodonApiMediaAttachmentSizeImpl;
 
   factory _MastodonApiMediaAttachmentSize.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiMediaAttachmentSize.fromJson;
+      _$MastodonApiMediaAttachmentSizeImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -251,6 +235,7 @@ abstract class _MastodonApiMediaAttachmentSize
   double? get aspect;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiMediaAttachmentSizeCopyWith<_MastodonApiMediaAttachmentSize>
+  _$$MastodonApiMediaAttachmentSizeImplCopyWith<
+          _$MastodonApiMediaAttachmentSizeImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

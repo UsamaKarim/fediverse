@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'timelines_home_tab_storage_model.dart';
 
@@ -11,24 +12,7 @@ part of 'timelines_home_tab_storage_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$TimelinesHomeTabStorageListItemTearOff {
-  const _$TimelinesHomeTabStorageListItemTearOff();
-
-  _TimelinesHomeTabStorageListItem call(
-      {required Timeline timeline, required Key key}) {
-    return _TimelinesHomeTabStorageListItem(
-      timeline: timeline,
-      key: key,
-    );
-  }
-}
-
-/// @nodoc
-const $TimelinesHomeTabStorageListItem =
-    _$TimelinesHomeTabStorageListItemTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$TimelinesHomeTabStorageListItem {
@@ -45,54 +29,61 @@ abstract class $TimelinesHomeTabStorageListItemCopyWith<$Res> {
   factory $TimelinesHomeTabStorageListItemCopyWith(
           TimelinesHomeTabStorageListItem value,
           $Res Function(TimelinesHomeTabStorageListItem) then) =
-      _$TimelinesHomeTabStorageListItemCopyWithImpl<$Res>;
+      _$TimelinesHomeTabStorageListItemCopyWithImpl<$Res,
+          TimelinesHomeTabStorageListItem>;
+  @useResult
   $Res call({Timeline timeline, Key key});
 
   $TimelineCopyWith<$Res> get timeline;
 }
 
 /// @nodoc
-class _$TimelinesHomeTabStorageListItemCopyWithImpl<$Res>
+class _$TimelinesHomeTabStorageListItemCopyWithImpl<$Res,
+        $Val extends TimelinesHomeTabStorageListItem>
     implements $TimelinesHomeTabStorageListItemCopyWith<$Res> {
   _$TimelinesHomeTabStorageListItemCopyWithImpl(this._value, this._then);
 
-  final TimelinesHomeTabStorageListItem _value;
   // ignore: unused_field
-  final $Res Function(TimelinesHomeTabStorageListItem) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? timeline = freezed,
-    Object? key = freezed,
+    Object? timeline = null,
+    Object? key = null,
   }) {
     return _then(_value.copyWith(
-      timeline: timeline == freezed
+      timeline: null == timeline
           ? _value.timeline
           : timeline // ignore: cast_nullable_to_non_nullable
               as Timeline,
-      key: key == freezed
+      key: null == key
           ? _value.key
           : key // ignore: cast_nullable_to_non_nullable
               as Key,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $TimelineCopyWith<$Res> get timeline {
     return $TimelineCopyWith<$Res>(_value.timeline, (value) {
-      return _then(_value.copyWith(timeline: value));
+      return _then(_value.copyWith(timeline: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$TimelinesHomeTabStorageListItemCopyWith<$Res>
+abstract class _$$TimelinesHomeTabStorageListItemImplCopyWith<$Res>
     implements $TimelinesHomeTabStorageListItemCopyWith<$Res> {
-  factory _$TimelinesHomeTabStorageListItemCopyWith(
-          _TimelinesHomeTabStorageListItem value,
-          $Res Function(_TimelinesHomeTabStorageListItem) then) =
-      __$TimelinesHomeTabStorageListItemCopyWithImpl<$Res>;
+  factory _$$TimelinesHomeTabStorageListItemImplCopyWith(
+          _$TimelinesHomeTabStorageListItemImpl value,
+          $Res Function(_$TimelinesHomeTabStorageListItemImpl) then) =
+      __$$TimelinesHomeTabStorageListItemImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({Timeline timeline, Key key});
 
   @override
@@ -100,29 +91,27 @@ abstract class _$TimelinesHomeTabStorageListItemCopyWith<$Res>
 }
 
 /// @nodoc
-class __$TimelinesHomeTabStorageListItemCopyWithImpl<$Res>
-    extends _$TimelinesHomeTabStorageListItemCopyWithImpl<$Res>
-    implements _$TimelinesHomeTabStorageListItemCopyWith<$Res> {
-  __$TimelinesHomeTabStorageListItemCopyWithImpl(
-      _TimelinesHomeTabStorageListItem _value,
-      $Res Function(_TimelinesHomeTabStorageListItem) _then)
-      : super(_value, (v) => _then(v as _TimelinesHomeTabStorageListItem));
+class __$$TimelinesHomeTabStorageListItemImplCopyWithImpl<$Res>
+    extends _$TimelinesHomeTabStorageListItemCopyWithImpl<$Res,
+        _$TimelinesHomeTabStorageListItemImpl>
+    implements _$$TimelinesHomeTabStorageListItemImplCopyWith<$Res> {
+  __$$TimelinesHomeTabStorageListItemImplCopyWithImpl(
+      _$TimelinesHomeTabStorageListItemImpl _value,
+      $Res Function(_$TimelinesHomeTabStorageListItemImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _TimelinesHomeTabStorageListItem get _value =>
-      super._value as _TimelinesHomeTabStorageListItem;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? timeline = freezed,
-    Object? key = freezed,
+    Object? timeline = null,
+    Object? key = null,
   }) {
-    return _then(_TimelinesHomeTabStorageListItem(
-      timeline: timeline == freezed
+    return _then(_$TimelinesHomeTabStorageListItemImpl(
+      timeline: null == timeline
           ? _value.timeline
           : timeline // ignore: cast_nullable_to_non_nullable
               as Timeline,
-      key: key == freezed
+      key: null == key
           ? _value.key
           : key // ignore: cast_nullable_to_non_nullable
               as Key,
@@ -132,10 +121,10 @@ class __$TimelinesHomeTabStorageListItemCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_TimelinesHomeTabStorageListItem
+class _$TimelinesHomeTabStorageListItemImpl
     with DiagnosticableTreeMixin
     implements _TimelinesHomeTabStorageListItem {
-  const _$_TimelinesHomeTabStorageListItem(
+  const _$TimelinesHomeTabStorageListItemImpl(
       {required this.timeline, required this.key});
 
   @override
@@ -158,10 +147,10 @@ class _$_TimelinesHomeTabStorageListItem
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _TimelinesHomeTabStorageListItem &&
+            other is _$TimelinesHomeTabStorageListItemImpl &&
             (identical(other.timeline, timeline) ||
                 other.timeline == timeline) &&
             (identical(other.key, key) || other.key == key));
@@ -172,16 +161,18 @@ class _$_TimelinesHomeTabStorageListItem
 
   @JsonKey(ignore: true)
   @override
-  _$TimelinesHomeTabStorageListItemCopyWith<_TimelinesHomeTabStorageListItem>
-      get copyWith => __$TimelinesHomeTabStorageListItemCopyWithImpl<
-          _TimelinesHomeTabStorageListItem>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$TimelinesHomeTabStorageListItemImplCopyWith<
+          _$TimelinesHomeTabStorageListItemImpl>
+      get copyWith => __$$TimelinesHomeTabStorageListItemImplCopyWithImpl<
+          _$TimelinesHomeTabStorageListItemImpl>(this, _$identity);
 }
 
 abstract class _TimelinesHomeTabStorageListItem
     implements TimelinesHomeTabStorageListItem {
   const factory _TimelinesHomeTabStorageListItem(
-      {required Timeline timeline,
-      required Key key}) = _$_TimelinesHomeTabStorageListItem;
+      {required final Timeline timeline,
+      required final Key key}) = _$TimelinesHomeTabStorageListItemImpl;
 
   @override
   Timeline get timeline;
@@ -189,7 +180,8 @@ abstract class _TimelinesHomeTabStorageListItem
   Key get key;
   @override
   @JsonKey(ignore: true)
-  _$TimelinesHomeTabStorageListItemCopyWith<_TimelinesHomeTabStorageListItem>
+  _$$TimelinesHomeTabStorageListItemImplCopyWith<
+          _$TimelinesHomeTabStorageListItemImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -197,27 +189,6 @@ TimelinesHomeTabStorage _$TimelinesHomeTabStorageFromJson(
     Map<String, dynamic> json) {
   return _TimelinesHomeTabStorage.fromJson(json);
 }
-
-/// @nodoc
-class _$TimelinesHomeTabStorageTearOff {
-  const _$TimelinesHomeTabStorageTearOff();
-
-  _TimelinesHomeTabStorage call(
-      {@HiveField(0)
-      @JsonKey(name: 'timeline_ids')
-          required List<String> timelineIds}) {
-    return _TimelinesHomeTabStorage(
-      timelineIds: timelineIds,
-    );
-  }
-
-  TimelinesHomeTabStorage fromJson(Map<String, Object?> json) {
-    return TimelinesHomeTabStorage.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $TimelinesHomeTabStorage = _$TimelinesHomeTabStorageTearOff();
 
 /// @nodoc
 mixin _$TimelinesHomeTabStorage {
@@ -235,63 +206,68 @@ mixin _$TimelinesHomeTabStorage {
 abstract class $TimelinesHomeTabStorageCopyWith<$Res> {
   factory $TimelinesHomeTabStorageCopyWith(TimelinesHomeTabStorage value,
           $Res Function(TimelinesHomeTabStorage) then) =
-      _$TimelinesHomeTabStorageCopyWithImpl<$Res>;
+      _$TimelinesHomeTabStorageCopyWithImpl<$Res, TimelinesHomeTabStorage>;
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'timeline_ids') List<String> timelineIds});
 }
 
 /// @nodoc
-class _$TimelinesHomeTabStorageCopyWithImpl<$Res>
+class _$TimelinesHomeTabStorageCopyWithImpl<$Res,
+        $Val extends TimelinesHomeTabStorage>
     implements $TimelinesHomeTabStorageCopyWith<$Res> {
   _$TimelinesHomeTabStorageCopyWithImpl(this._value, this._then);
 
-  final TimelinesHomeTabStorage _value;
   // ignore: unused_field
-  final $Res Function(TimelinesHomeTabStorage) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? timelineIds = freezed,
+    Object? timelineIds = null,
   }) {
     return _then(_value.copyWith(
-      timelineIds: timelineIds == freezed
+      timelineIds: null == timelineIds
           ? _value.timelineIds
           : timelineIds // ignore: cast_nullable_to_non_nullable
               as List<String>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$TimelinesHomeTabStorageCopyWith<$Res>
+abstract class _$$TimelinesHomeTabStorageImplCopyWith<$Res>
     implements $TimelinesHomeTabStorageCopyWith<$Res> {
-  factory _$TimelinesHomeTabStorageCopyWith(_TimelinesHomeTabStorage value,
-          $Res Function(_TimelinesHomeTabStorage) then) =
-      __$TimelinesHomeTabStorageCopyWithImpl<$Res>;
+  factory _$$TimelinesHomeTabStorageImplCopyWith(
+          _$TimelinesHomeTabStorageImpl value,
+          $Res Function(_$TimelinesHomeTabStorageImpl) then) =
+      __$$TimelinesHomeTabStorageImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'timeline_ids') List<String> timelineIds});
 }
 
 /// @nodoc
-class __$TimelinesHomeTabStorageCopyWithImpl<$Res>
-    extends _$TimelinesHomeTabStorageCopyWithImpl<$Res>
-    implements _$TimelinesHomeTabStorageCopyWith<$Res> {
-  __$TimelinesHomeTabStorageCopyWithImpl(_TimelinesHomeTabStorage _value,
-      $Res Function(_TimelinesHomeTabStorage) _then)
-      : super(_value, (v) => _then(v as _TimelinesHomeTabStorage));
+class __$$TimelinesHomeTabStorageImplCopyWithImpl<$Res>
+    extends _$TimelinesHomeTabStorageCopyWithImpl<$Res,
+        _$TimelinesHomeTabStorageImpl>
+    implements _$$TimelinesHomeTabStorageImplCopyWith<$Res> {
+  __$$TimelinesHomeTabStorageImplCopyWithImpl(
+      _$TimelinesHomeTabStorageImpl _value,
+      $Res Function(_$TimelinesHomeTabStorageImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _TimelinesHomeTabStorage get _value =>
-      super._value as _TimelinesHomeTabStorage;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? timelineIds = freezed,
+    Object? timelineIds = null,
   }) {
-    return _then(_TimelinesHomeTabStorage(
-      timelineIds: timelineIds == freezed
-          ? _value.timelineIds
+    return _then(_$TimelinesHomeTabStorageImpl(
+      timelineIds: null == timelineIds
+          ? _value._timelineIds
           : timelineIds // ignore: cast_nullable_to_non_nullable
               as List<String>,
     ));
@@ -300,19 +276,27 @@ class __$TimelinesHomeTabStorageCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_TimelinesHomeTabStorage
+class _$TimelinesHomeTabStorageImpl
     with DiagnosticableTreeMixin
     implements _TimelinesHomeTabStorage {
-  const _$_TimelinesHomeTabStorage(
-      {@HiveField(0) @JsonKey(name: 'timeline_ids') required this.timelineIds});
+  const _$TimelinesHomeTabStorageImpl(
+      {@HiveField(0)
+      @JsonKey(name: 'timeline_ids')
+      required final List<String> timelineIds})
+      : _timelineIds = timelineIds;
 
-  factory _$_TimelinesHomeTabStorage.fromJson(Map<String, dynamic> json) =>
-      _$$_TimelinesHomeTabStorageFromJson(json);
+  factory _$TimelinesHomeTabStorageImpl.fromJson(Map<String, dynamic> json) =>
+      _$$TimelinesHomeTabStorageImplFromJson(json);
 
+  final List<String> _timelineIds;
   @override
   @HiveField(0)
   @JsonKey(name: 'timeline_ids')
-  final List<String> timelineIds;
+  List<String> get timelineIds {
+    if (_timelineIds is EqualUnmodifiableListView) return _timelineIds;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_timelineIds);
+  }
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -328,27 +312,31 @@ class _$_TimelinesHomeTabStorage
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _TimelinesHomeTabStorage &&
+            other is _$TimelinesHomeTabStorageImpl &&
             const DeepCollectionEquality()
-                .equals(other.timelineIds, timelineIds));
+                .equals(other._timelineIds, _timelineIds));
   }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(timelineIds));
 
   @JsonKey(ignore: true)
   @override
-  _$TimelinesHomeTabStorageCopyWith<_TimelinesHomeTabStorage> get copyWith =>
-      __$TimelinesHomeTabStorageCopyWithImpl<_TimelinesHomeTabStorage>(
-          this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType, const DeepCollectionEquality().hash(_timelineIds));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$TimelinesHomeTabStorageImplCopyWith<_$TimelinesHomeTabStorageImpl>
+      get copyWith => __$$TimelinesHomeTabStorageImplCopyWithImpl<
+          _$TimelinesHomeTabStorageImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_TimelinesHomeTabStorageToJson(this);
+    return _$$TimelinesHomeTabStorageImplToJson(
+      this,
+    );
   }
 }
 
@@ -356,10 +344,10 @@ abstract class _TimelinesHomeTabStorage implements TimelinesHomeTabStorage {
   const factory _TimelinesHomeTabStorage(
       {@HiveField(0)
       @JsonKey(name: 'timeline_ids')
-          required List<String> timelineIds}) = _$_TimelinesHomeTabStorage;
+      required final List<String> timelineIds}) = _$TimelinesHomeTabStorageImpl;
 
   factory _TimelinesHomeTabStorage.fromJson(Map<String, dynamic> json) =
-      _$_TimelinesHomeTabStorage.fromJson;
+      _$TimelinesHomeTabStorageImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -367,6 +355,6 @@ abstract class _TimelinesHomeTabStorage implements TimelinesHomeTabStorage {
   List<String> get timelineIds;
   @override
   @JsonKey(ignore: true)
-  _$TimelinesHomeTabStorageCopyWith<_TimelinesHomeTabStorage> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$TimelinesHomeTabStorageImplCopyWith<_$TimelinesHomeTabStorageImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

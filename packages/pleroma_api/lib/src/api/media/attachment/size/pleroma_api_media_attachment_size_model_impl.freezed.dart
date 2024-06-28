@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_media_attachment_size_model_impl.dart';
 
@@ -11,37 +12,12 @@ part of 'pleroma_api_media_attachment_size_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiMediaAttachmentSize _$PleromaApiMediaAttachmentSizeFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiMediaAttachmentSize.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiMediaAttachmentSizeTearOff {
-  const _$PleromaApiMediaAttachmentSizeTearOff();
-
-  _PleromaApiMediaAttachmentSize call(
-      {@HiveField(0) required int width,
-      @HiveField(1) required int height,
-      @HiveField(2) required String? size,
-      @HiveField(3) required double? aspect}) {
-    return _PleromaApiMediaAttachmentSize(
-      width: width,
-      height: height,
-      size: size,
-      aspect: aspect,
-    );
-  }
-
-  PleromaApiMediaAttachmentSize fromJson(Map<String, Object?> json) {
-    return PleromaApiMediaAttachmentSize.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiMediaAttachmentSize = _$PleromaApiMediaAttachmentSizeTearOff();
 
 /// @nodoc
 mixin _$PleromaApiMediaAttachmentSize {
@@ -65,7 +41,9 @@ abstract class $PleromaApiMediaAttachmentSizeCopyWith<$Res> {
   factory $PleromaApiMediaAttachmentSizeCopyWith(
           PleromaApiMediaAttachmentSize value,
           $Res Function(PleromaApiMediaAttachmentSize) then) =
-      _$PleromaApiMediaAttachmentSizeCopyWithImpl<$Res>;
+      _$PleromaApiMediaAttachmentSizeCopyWithImpl<$Res,
+          PleromaApiMediaAttachmentSize>;
+  @useResult
   $Res call(
       {@HiveField(0) int width,
       @HiveField(1) int height,
@@ -74,50 +52,54 @@ abstract class $PleromaApiMediaAttachmentSizeCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiMediaAttachmentSizeCopyWithImpl<$Res>
+class _$PleromaApiMediaAttachmentSizeCopyWithImpl<$Res,
+        $Val extends PleromaApiMediaAttachmentSize>
     implements $PleromaApiMediaAttachmentSizeCopyWith<$Res> {
   _$PleromaApiMediaAttachmentSizeCopyWithImpl(this._value, this._then);
 
-  final PleromaApiMediaAttachmentSize _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiMediaAttachmentSize) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? width = freezed,
-    Object? height = freezed,
+    Object? width = null,
+    Object? height = null,
     Object? size = freezed,
     Object? aspect = freezed,
   }) {
     return _then(_value.copyWith(
-      width: width == freezed
+      width: null == width
           ? _value.width
           : width // ignore: cast_nullable_to_non_nullable
               as int,
-      height: height == freezed
+      height: null == height
           ? _value.height
           : height // ignore: cast_nullable_to_non_nullable
               as int,
-      size: size == freezed
+      size: freezed == size
           ? _value.size
           : size // ignore: cast_nullable_to_non_nullable
               as String?,
-      aspect: aspect == freezed
+      aspect: freezed == aspect
           ? _value.aspect
           : aspect // ignore: cast_nullable_to_non_nullable
               as double?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiMediaAttachmentSizeCopyWith<$Res>
+abstract class _$$PleromaApiMediaAttachmentSizeImplCopyWith<$Res>
     implements $PleromaApiMediaAttachmentSizeCopyWith<$Res> {
-  factory _$PleromaApiMediaAttachmentSizeCopyWith(
-          _PleromaApiMediaAttachmentSize value,
-          $Res Function(_PleromaApiMediaAttachmentSize) then) =
-      __$PleromaApiMediaAttachmentSizeCopyWithImpl<$Res>;
+  factory _$$PleromaApiMediaAttachmentSizeImplCopyWith(
+          _$PleromaApiMediaAttachmentSizeImpl value,
+          $Res Function(_$PleromaApiMediaAttachmentSizeImpl) then) =
+      __$$PleromaApiMediaAttachmentSizeImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) int width,
       @HiveField(1) int height,
@@ -126,39 +108,37 @@ abstract class _$PleromaApiMediaAttachmentSizeCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiMediaAttachmentSizeCopyWithImpl<$Res>
-    extends _$PleromaApiMediaAttachmentSizeCopyWithImpl<$Res>
-    implements _$PleromaApiMediaAttachmentSizeCopyWith<$Res> {
-  __$PleromaApiMediaAttachmentSizeCopyWithImpl(
-      _PleromaApiMediaAttachmentSize _value,
-      $Res Function(_PleromaApiMediaAttachmentSize) _then)
-      : super(_value, (v) => _then(v as _PleromaApiMediaAttachmentSize));
+class __$$PleromaApiMediaAttachmentSizeImplCopyWithImpl<$Res>
+    extends _$PleromaApiMediaAttachmentSizeCopyWithImpl<$Res,
+        _$PleromaApiMediaAttachmentSizeImpl>
+    implements _$$PleromaApiMediaAttachmentSizeImplCopyWith<$Res> {
+  __$$PleromaApiMediaAttachmentSizeImplCopyWithImpl(
+      _$PleromaApiMediaAttachmentSizeImpl _value,
+      $Res Function(_$PleromaApiMediaAttachmentSizeImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiMediaAttachmentSize get _value =>
-      super._value as _PleromaApiMediaAttachmentSize;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? width = freezed,
-    Object? height = freezed,
+    Object? width = null,
+    Object? height = null,
     Object? size = freezed,
     Object? aspect = freezed,
   }) {
-    return _then(_PleromaApiMediaAttachmentSize(
-      width: width == freezed
+    return _then(_$PleromaApiMediaAttachmentSizeImpl(
+      width: null == width
           ? _value.width
           : width // ignore: cast_nullable_to_non_nullable
               as int,
-      height: height == freezed
+      height: null == height
           ? _value.height
           : height // ignore: cast_nullable_to_non_nullable
               as int,
-      size: size == freezed
+      size: freezed == size
           ? _value.size
           : size // ignore: cast_nullable_to_non_nullable
               as String?,
-      aspect: aspect == freezed
+      aspect: freezed == aspect
           ? _value.aspect
           : aspect // ignore: cast_nullable_to_non_nullable
               as double?,
@@ -168,17 +148,17 @@ class __$PleromaApiMediaAttachmentSizeCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiMediaAttachmentSize
+class _$PleromaApiMediaAttachmentSizeImpl
     implements _PleromaApiMediaAttachmentSize {
-  const _$_PleromaApiMediaAttachmentSize(
+  const _$PleromaApiMediaAttachmentSizeImpl(
       {@HiveField(0) required this.width,
       @HiveField(1) required this.height,
       @HiveField(2) required this.size,
       @HiveField(3) required this.aspect});
 
-  factory _$_PleromaApiMediaAttachmentSize.fromJson(
+  factory _$PleromaApiMediaAttachmentSizeImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_PleromaApiMediaAttachmentSizeFromJson(json);
+      _$$PleromaApiMediaAttachmentSizeImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -199,42 +179,47 @@ class _$_PleromaApiMediaAttachmentSize
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiMediaAttachmentSize &&
+            other is _$PleromaApiMediaAttachmentSizeImpl &&
             (identical(other.width, width) || other.width == width) &&
             (identical(other.height, height) || other.height == height) &&
             (identical(other.size, size) || other.size == size) &&
             (identical(other.aspect, aspect) || other.aspect == aspect));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, width, height, size, aspect);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiMediaAttachmentSizeCopyWith<_PleromaApiMediaAttachmentSize>
-      get copyWith => __$PleromaApiMediaAttachmentSizeCopyWithImpl<
-          _PleromaApiMediaAttachmentSize>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiMediaAttachmentSizeImplCopyWith<
+          _$PleromaApiMediaAttachmentSizeImpl>
+      get copyWith => __$$PleromaApiMediaAttachmentSizeImplCopyWithImpl<
+          _$PleromaApiMediaAttachmentSizeImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiMediaAttachmentSizeToJson(this);
+    return _$$PleromaApiMediaAttachmentSizeImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiMediaAttachmentSize
     implements PleromaApiMediaAttachmentSize {
   const factory _PleromaApiMediaAttachmentSize(
-          {@HiveField(0) required int width,
-          @HiveField(1) required int height,
-          @HiveField(2) required String? size,
-          @HiveField(3) required double? aspect}) =
-      _$_PleromaApiMediaAttachmentSize;
+          {@HiveField(0) required final int width,
+          @HiveField(1) required final int height,
+          @HiveField(2) required final String? size,
+          @HiveField(3) required final double? aspect}) =
+      _$PleromaApiMediaAttachmentSizeImpl;
 
   factory _PleromaApiMediaAttachmentSize.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiMediaAttachmentSize.fromJson;
+      _$PleromaApiMediaAttachmentSizeImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -250,6 +235,7 @@ abstract class _PleromaApiMediaAttachmentSize
   double? get aspect;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiMediaAttachmentSizeCopyWith<_PleromaApiMediaAttachmentSize>
+  _$$PleromaApiMediaAttachmentSizeImplCopyWith<
+          _$PleromaApiMediaAttachmentSizeImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

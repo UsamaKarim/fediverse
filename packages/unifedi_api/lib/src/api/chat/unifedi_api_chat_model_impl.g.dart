@@ -56,10 +56,10 @@ class UnifediApiChatAdapter extends TypeAdapter<UnifediApiChat> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiChat _$$_UnifediApiChatFromJson(Map<String, dynamic> json) =>
-    _$_UnifediApiChat(
+_$UnifediApiChatImpl _$$UnifediApiChatImplFromJson(Map<String, dynamic> json) =>
+    _$UnifediApiChatImpl(
       id: json['id'] as String,
-      unread: json['unread'] as int,
+      unread: (json['unread'] as num).toInt(),
       updatedAt: json['updated_at'] == null
           ? null
           : DateTime.parse(json['updated_at'] as String),
@@ -71,7 +71,8 @@ _$_UnifediApiChat _$$_UnifediApiChatFromJson(Map<String, dynamic> json) =>
               json['last_message'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_UnifediApiChatToJson(_$_UnifediApiChat instance) {
+Map<String, dynamic> _$$UnifediApiChatImplToJson(
+    _$UnifediApiChatImpl instance) {
   final val = <String, dynamic>{
     'id': instance.id,
     'unread': instance.unread,

@@ -47,16 +47,16 @@ class DatabaseCacheSettingsAdapter extends TypeAdapter<DatabaseCacheSettings> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_DatabaseCacheSettings _$$_DatabaseCacheSettingsFromJson(
+_$DatabaseCacheSettingsImpl _$$DatabaseCacheSettingsImplFromJson(
         Map<String, dynamic> json) =>
-    _$_DatabaseCacheSettings(
+    _$DatabaseCacheSettingsImpl(
       entriesCountByTypeLimitTypeString:
           json['entries_count_by_type_limit_type'] as String,
       ageLimitTypeString: json['age_limit_in_microseconds_type'] as String,
     );
 
-Map<String, dynamic> _$$_DatabaseCacheSettingsToJson(
-        _$_DatabaseCacheSettings instance) =>
+Map<String, dynamic> _$$DatabaseCacheSettingsImplToJson(
+        _$DatabaseCacheSettingsImpl instance) =>
     <String, dynamic>{
       'entries_count_by_type_limit_type':
           instance.entriesCountByTypeLimitTypeString,

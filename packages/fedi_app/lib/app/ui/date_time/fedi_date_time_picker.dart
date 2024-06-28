@@ -13,17 +13,17 @@ import 'package:fedi_app/localization/localization_model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
+import 'package:flutter_datetime_picker_plus/flutter_datetime_picker_plus.dart';
 
 // ignore: implementation_imports
-import 'package:flutter_datetime_picker/src/date_model.dart';
+import 'package:flutter_datetime_picker_plus/src/date_model.dart';
 
 // ignore: implementation_imports
-import 'package:flutter_datetime_picker/src/i18n_model.dart';
+import 'package:flutter_datetime_picker_plus/src/i18n_model.dart';
 
-export 'package:flutter_datetime_picker/src/date_model.dart';
-export 'package:flutter_datetime_picker/src/datetime_picker_theme.dart';
-export 'package:flutter_datetime_picker/src/i18n_model.dart';
+export 'package:flutter_datetime_picker_plus/src/date_model.dart';
+export 'package:flutter_datetime_picker_plus/src/datetime_picker_theme.dart';
+export 'package:flutter_datetime_picker_plus/src/i18n_model.dart';
 
 typedef DateChangedCallback = void Function(DateTime? time);
 typedef DateCancelledCallback = void Function();

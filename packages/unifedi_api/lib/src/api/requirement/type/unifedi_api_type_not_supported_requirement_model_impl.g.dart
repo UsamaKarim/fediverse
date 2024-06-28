@@ -6,15 +6,15 @@ part of 'unifedi_api_type_not_supported_requirement_model_impl.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiTypeNotSupportedRequirement
-    _$$_UnifediApiTypeNotSupportedRequirementFromJson(
+_$UnifediApiTypeNotSupportedRequirementImpl
+    _$$UnifediApiTypeNotSupportedRequirementImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiTypeNotSupportedRequirement(
+        _$UnifediApiTypeNotSupportedRequirementImpl(
           target: json['target'] as String,
         );
 
-Map<String, dynamic> _$$_UnifediApiTypeNotSupportedRequirementToJson(
-        _$_UnifediApiTypeNotSupportedRequirement instance) =>
+Map<String, dynamic> _$$UnifediApiTypeNotSupportedRequirementImplToJson(
+        _$UnifediApiTypeNotSupportedRequirementImpl instance) =>
     <String, dynamic>{
       'target': instance.target,
     };

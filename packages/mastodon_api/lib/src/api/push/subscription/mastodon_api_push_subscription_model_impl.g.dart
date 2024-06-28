@@ -54,9 +54,9 @@ class MastodonApiPushSubscriptionAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiPushSubscription _$$_MastodonApiPushSubscriptionFromJson(
+_$MastodonApiPushSubscriptionImpl _$$MastodonApiPushSubscriptionImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiPushSubscription(
+    _$MastodonApiPushSubscriptionImpl(
       id: JsonParseHelper.toStringFromAny(json['id']),
       endpoint: json['endpoint'] as String,
       alerts: MastodonApiPushSubscriptionAlerts.fromJson(
@@ -64,8 +64,8 @@ _$_MastodonApiPushSubscription _$$_MastodonApiPushSubscriptionFromJson(
       serverKey: json['server_key'] as String,
     );
 
-Map<String, dynamic> _$$_MastodonApiPushSubscriptionToJson(
-        _$_MastodonApiPushSubscription instance) =>
+Map<String, dynamic> _$$MastodonApiPushSubscriptionImplToJson(
+        _$MastodonApiPushSubscriptionImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'endpoint': instance.endpoint,

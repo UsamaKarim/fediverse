@@ -1,11 +1,11 @@
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/account/database/account_followings_database_model.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/database/dao/database_dao.dart';
-import 'package:moor/moor.dart';
 
 part 'account_followings_database_dao.g.dart';
 
-@UseDao(
+@DriftAccessor(
   tables: [
     DbAccountFollowings,
   ],
@@ -23,14 +23,14 @@ class AccountFollowingsDao extends DatabaseDao<
   @override
   $DbAccountFollowingsTable get table => dbAccountFollowings;
 
-  Selectable<DbAccountFollowing> findByAccountRemoteId(
+  Selectable<Future<DbAccountFollowing>> findByAccountRemoteId(
     String accountRemoteId,
   ) =>
       customSelect(
         'SELECT * FROM $tableName WHERE account_remote_id = :accountRemoteId;',
         variables: [Variable<String>(accountRemoteId)],
         readsFrom: {dbAccountFollowings},
-      ).map(dbAccountFollowings.mapFromRow);
+      ).map((query) => dbAccountFollowings.mapFromRow(query));
 
   Future<int> deleteByAccountRemoteIdAndFollowingAccountRemoteId({
     required String followingAccountRemoteId,

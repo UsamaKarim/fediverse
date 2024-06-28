@@ -1,14 +1,14 @@
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/database/dao/remote/populated_app_remote_database_dao.dart';
 import 'package:fedi_app/app/status/scheduled/database/scheduled_status_database_model.dart';
 import 'package:fedi_app/app/status/scheduled/repository/scheduled_status_repository_model.dart';
 import 'package:fedi_app/app/status/scheduled/scheduled_status_model.dart';
 import 'package:fedi_app/repository/repository_model.dart';
-import 'package:moor/moor.dart';
 
 part 'scheduled_status_database_dao.g.dart';
 
-@UseDao(
+@DriftAccessor(
   tables: [
     DbScheduledStatuses,
   ],
@@ -50,7 +50,7 @@ class ScheduledStatusDao extends PopulatedAppRemoteDatabaseDao<
         orderTerms
             .map(
               (orderTerm) => ($DbScheduledStatusesTable item) {
-                GeneratedColumn<String?> expression;
+                GeneratedColumn<String> expression;
                 switch (orderTerm.orderType) {
                   case ScheduledStatusRepositoryOrderType.remoteId:
                     expression = item.remoteId;

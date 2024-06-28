@@ -46,16 +46,16 @@ class UnifediApiWebSocketsChannelPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiWebSocketsChannelPleromaAdapter
-    _$$_UnifediApiWebSocketsChannelPleromaAdapterFromJson(
+_$UnifediApiWebSocketsChannelPleromaAdapterImpl
+    _$$UnifediApiWebSocketsChannelPleromaAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiWebSocketsChannelPleromaAdapter(
+        _$UnifediApiWebSocketsChannelPleromaAdapterImpl(
           PleromaApiWebSocketsChannel.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiWebSocketsChannelPleromaAdapterToJson(
-        _$_UnifediApiWebSocketsChannelPleromaAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiWebSocketsChannelPleromaAdapterImplToJson(
+        _$UnifediApiWebSocketsChannelPleromaAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

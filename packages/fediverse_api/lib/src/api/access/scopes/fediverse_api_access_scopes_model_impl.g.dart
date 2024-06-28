@@ -49,9 +49,9 @@ class FediverseApiAccessScopesAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_FediverseApiAccessScopes _$$_FediverseApiAccessScopesFromJson(
+_$FediverseApiAccessScopesImpl _$$FediverseApiAccessScopesImplFromJson(
         Map<String, dynamic> json) =>
-    _$_FediverseApiAccessScopes(
+    _$FediverseApiAccessScopesImpl(
       globalPermissions: (json['global_permissions'] as List<dynamic>)
           .map((e) => e as String)
           .toList(),
@@ -61,8 +61,8 @@ _$_FediverseApiAccessScopes _$$_FediverseApiAccessScopesFromJson(
           .toList(),
     );
 
-Map<String, dynamic> _$$_FediverseApiAccessScopesToJson(
-        _$_FediverseApiAccessScopes instance) =>
+Map<String, dynamic> _$$FediverseApiAccessScopesImplToJson(
+        _$FediverseApiAccessScopesImpl instance) =>
     <String, dynamic>{
       'global_permissions': instance.globalPermissions,
       'target_permissions':

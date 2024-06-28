@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_account_relationship_model_impl.dart';
 
@@ -11,77 +12,12 @@ part of 'unifedi_api_account_relationship_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiAccountRelationship _$UnifediApiAccountRelationshipFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiAccountRelationship.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiAccountRelationshipTearOff {
-  const _$UnifediApiAccountRelationshipTearOff();
-
-  _UnifediApiAccountRelationship call(
-      {@HiveField(1)
-          required bool? blocking,
-      @JsonKey(name: 'domain_blocking')
-      @HiveField(2)
-          required bool? domainBlocking,
-      @HiveField(3)
-          required bool? endorsed,
-      @HiveField(4)
-      @JsonKey(name: 'followed_by')
-          required bool? followedBy,
-      @HiveField(5)
-          required bool? following,
-      @HiveField(6)
-          required String? id,
-      @HiveField(7)
-          required bool? muting,
-      @HiveField(8)
-      @JsonKey(name: 'muting_notifications')
-      @HiveField(9)
-          required bool? mutingNotifications,
-      @HiveField(10)
-          required bool? requested,
-      @JsonKey(name: 'showing_reblogs')
-      @HiveField(11)
-          required bool? showingReblogs,
-      @HiveField(12)
-          required bool? subscribing,
-      @HiveField(13)
-      @JsonKey(name: 'blocked_by')
-          required bool? blockedBy,
-      @HiveField(14)
-          required String? note,
-      @HiveField(15)
-          required bool? notifying}) {
-    return _UnifediApiAccountRelationship(
-      blocking: blocking,
-      domainBlocking: domainBlocking,
-      endorsed: endorsed,
-      followedBy: followedBy,
-      following: following,
-      id: id,
-      muting: muting,
-      mutingNotifications: mutingNotifications,
-      requested: requested,
-      showingReblogs: showingReblogs,
-      subscribing: subscribing,
-      blockedBy: blockedBy,
-      note: note,
-      notifying: notifying,
-    );
-  }
-
-  UnifediApiAccountRelationship fromJson(Map<String, Object?> json) {
-    return UnifediApiAccountRelationship.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiAccountRelationship = _$UnifediApiAccountRelationshipTearOff();
 
 /// @nodoc
 mixin _$UnifediApiAccountRelationship {
@@ -131,53 +67,41 @@ abstract class $UnifediApiAccountRelationshipCopyWith<$Res> {
   factory $UnifediApiAccountRelationshipCopyWith(
           UnifediApiAccountRelationship value,
           $Res Function(UnifediApiAccountRelationship) then) =
-      _$UnifediApiAccountRelationshipCopyWithImpl<$Res>;
+      _$UnifediApiAccountRelationshipCopyWithImpl<$Res,
+          UnifediApiAccountRelationship>;
+  @useResult
   $Res call(
-      {@HiveField(1)
-          bool? blocking,
-      @JsonKey(name: 'domain_blocking')
-      @HiveField(2)
-          bool? domainBlocking,
-      @HiveField(3)
-          bool? endorsed,
-      @HiveField(4)
-      @JsonKey(name: 'followed_by')
-          bool? followedBy,
-      @HiveField(5)
-          bool? following,
-      @HiveField(6)
-          String? id,
-      @HiveField(7)
-          bool? muting,
+      {@HiveField(1) bool? blocking,
+      @JsonKey(name: 'domain_blocking') @HiveField(2) bool? domainBlocking,
+      @HiveField(3) bool? endorsed,
+      @HiveField(4) @JsonKey(name: 'followed_by') bool? followedBy,
+      @HiveField(5) bool? following,
+      @HiveField(6) String? id,
+      @HiveField(7) bool? muting,
       @HiveField(8)
       @JsonKey(name: 'muting_notifications')
       @HiveField(9)
-          bool? mutingNotifications,
-      @HiveField(10)
-          bool? requested,
-      @JsonKey(name: 'showing_reblogs')
-      @HiveField(11)
-          bool? showingReblogs,
-      @HiveField(12)
-          bool? subscribing,
-      @HiveField(13)
-      @JsonKey(name: 'blocked_by')
-          bool? blockedBy,
-      @HiveField(14)
-          String? note,
-      @HiveField(15)
-          bool? notifying});
+      bool? mutingNotifications,
+      @HiveField(10) bool? requested,
+      @JsonKey(name: 'showing_reblogs') @HiveField(11) bool? showingReblogs,
+      @HiveField(12) bool? subscribing,
+      @HiveField(13) @JsonKey(name: 'blocked_by') bool? blockedBy,
+      @HiveField(14) String? note,
+      @HiveField(15) bool? notifying});
 }
 
 /// @nodoc
-class _$UnifediApiAccountRelationshipCopyWithImpl<$Res>
+class _$UnifediApiAccountRelationshipCopyWithImpl<$Res,
+        $Val extends UnifediApiAccountRelationship>
     implements $UnifediApiAccountRelationshipCopyWith<$Res> {
   _$UnifediApiAccountRelationshipCopyWithImpl(this._value, this._then);
 
-  final UnifediApiAccountRelationship _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiAccountRelationship) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? blocking = freezed,
@@ -196,124 +120,106 @@ class _$UnifediApiAccountRelationshipCopyWithImpl<$Res>
     Object? notifying = freezed,
   }) {
     return _then(_value.copyWith(
-      blocking: blocking == freezed
+      blocking: freezed == blocking
           ? _value.blocking
           : blocking // ignore: cast_nullable_to_non_nullable
               as bool?,
-      domainBlocking: domainBlocking == freezed
+      domainBlocking: freezed == domainBlocking
           ? _value.domainBlocking
           : domainBlocking // ignore: cast_nullable_to_non_nullable
               as bool?,
-      endorsed: endorsed == freezed
+      endorsed: freezed == endorsed
           ? _value.endorsed
           : endorsed // ignore: cast_nullable_to_non_nullable
               as bool?,
-      followedBy: followedBy == freezed
+      followedBy: freezed == followedBy
           ? _value.followedBy
           : followedBy // ignore: cast_nullable_to_non_nullable
               as bool?,
-      following: following == freezed
+      following: freezed == following
           ? _value.following
           : following // ignore: cast_nullable_to_non_nullable
               as bool?,
-      id: id == freezed
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String?,
-      muting: muting == freezed
+      muting: freezed == muting
           ? _value.muting
           : muting // ignore: cast_nullable_to_non_nullable
               as bool?,
-      mutingNotifications: mutingNotifications == freezed
+      mutingNotifications: freezed == mutingNotifications
           ? _value.mutingNotifications
           : mutingNotifications // ignore: cast_nullable_to_non_nullable
               as bool?,
-      requested: requested == freezed
+      requested: freezed == requested
           ? _value.requested
           : requested // ignore: cast_nullable_to_non_nullable
               as bool?,
-      showingReblogs: showingReblogs == freezed
+      showingReblogs: freezed == showingReblogs
           ? _value.showingReblogs
           : showingReblogs // ignore: cast_nullable_to_non_nullable
               as bool?,
-      subscribing: subscribing == freezed
+      subscribing: freezed == subscribing
           ? _value.subscribing
           : subscribing // ignore: cast_nullable_to_non_nullable
               as bool?,
-      blockedBy: blockedBy == freezed
+      blockedBy: freezed == blockedBy
           ? _value.blockedBy
           : blockedBy // ignore: cast_nullable_to_non_nullable
               as bool?,
-      note: note == freezed
+      note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
               as String?,
-      notifying: notifying == freezed
+      notifying: freezed == notifying
           ? _value.notifying
           : notifying // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiAccountRelationshipCopyWith<$Res>
+abstract class _$$UnifediApiAccountRelationshipImplCopyWith<$Res>
     implements $UnifediApiAccountRelationshipCopyWith<$Res> {
-  factory _$UnifediApiAccountRelationshipCopyWith(
-          _UnifediApiAccountRelationship value,
-          $Res Function(_UnifediApiAccountRelationship) then) =
-      __$UnifediApiAccountRelationshipCopyWithImpl<$Res>;
+  factory _$$UnifediApiAccountRelationshipImplCopyWith(
+          _$UnifediApiAccountRelationshipImpl value,
+          $Res Function(_$UnifediApiAccountRelationshipImpl) then) =
+      __$$UnifediApiAccountRelationshipImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(1)
-          bool? blocking,
-      @JsonKey(name: 'domain_blocking')
-      @HiveField(2)
-          bool? domainBlocking,
-      @HiveField(3)
-          bool? endorsed,
-      @HiveField(4)
-      @JsonKey(name: 'followed_by')
-          bool? followedBy,
-      @HiveField(5)
-          bool? following,
-      @HiveField(6)
-          String? id,
-      @HiveField(7)
-          bool? muting,
+      {@HiveField(1) bool? blocking,
+      @JsonKey(name: 'domain_blocking') @HiveField(2) bool? domainBlocking,
+      @HiveField(3) bool? endorsed,
+      @HiveField(4) @JsonKey(name: 'followed_by') bool? followedBy,
+      @HiveField(5) bool? following,
+      @HiveField(6) String? id,
+      @HiveField(7) bool? muting,
       @HiveField(8)
       @JsonKey(name: 'muting_notifications')
       @HiveField(9)
-          bool? mutingNotifications,
-      @HiveField(10)
-          bool? requested,
-      @JsonKey(name: 'showing_reblogs')
-      @HiveField(11)
-          bool? showingReblogs,
-      @HiveField(12)
-          bool? subscribing,
-      @HiveField(13)
-      @JsonKey(name: 'blocked_by')
-          bool? blockedBy,
-      @HiveField(14)
-          String? note,
-      @HiveField(15)
-          bool? notifying});
+      bool? mutingNotifications,
+      @HiveField(10) bool? requested,
+      @JsonKey(name: 'showing_reblogs') @HiveField(11) bool? showingReblogs,
+      @HiveField(12) bool? subscribing,
+      @HiveField(13) @JsonKey(name: 'blocked_by') bool? blockedBy,
+      @HiveField(14) String? note,
+      @HiveField(15) bool? notifying});
 }
 
 /// @nodoc
-class __$UnifediApiAccountRelationshipCopyWithImpl<$Res>
-    extends _$UnifediApiAccountRelationshipCopyWithImpl<$Res>
-    implements _$UnifediApiAccountRelationshipCopyWith<$Res> {
-  __$UnifediApiAccountRelationshipCopyWithImpl(
-      _UnifediApiAccountRelationship _value,
-      $Res Function(_UnifediApiAccountRelationship) _then)
-      : super(_value, (v) => _then(v as _UnifediApiAccountRelationship));
+class __$$UnifediApiAccountRelationshipImplCopyWithImpl<$Res>
+    extends _$UnifediApiAccountRelationshipCopyWithImpl<$Res,
+        _$UnifediApiAccountRelationshipImpl>
+    implements _$$UnifediApiAccountRelationshipImplCopyWith<$Res> {
+  __$$UnifediApiAccountRelationshipImplCopyWithImpl(
+      _$UnifediApiAccountRelationshipImpl _value,
+      $Res Function(_$UnifediApiAccountRelationshipImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiAccountRelationship get _value =>
-      super._value as _UnifediApiAccountRelationship;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? blocking = freezed,
@@ -331,60 +237,60 @@ class __$UnifediApiAccountRelationshipCopyWithImpl<$Res>
     Object? note = freezed,
     Object? notifying = freezed,
   }) {
-    return _then(_UnifediApiAccountRelationship(
-      blocking: blocking == freezed
+    return _then(_$UnifediApiAccountRelationshipImpl(
+      blocking: freezed == blocking
           ? _value.blocking
           : blocking // ignore: cast_nullable_to_non_nullable
               as bool?,
-      domainBlocking: domainBlocking == freezed
+      domainBlocking: freezed == domainBlocking
           ? _value.domainBlocking
           : domainBlocking // ignore: cast_nullable_to_non_nullable
               as bool?,
-      endorsed: endorsed == freezed
+      endorsed: freezed == endorsed
           ? _value.endorsed
           : endorsed // ignore: cast_nullable_to_non_nullable
               as bool?,
-      followedBy: followedBy == freezed
+      followedBy: freezed == followedBy
           ? _value.followedBy
           : followedBy // ignore: cast_nullable_to_non_nullable
               as bool?,
-      following: following == freezed
+      following: freezed == following
           ? _value.following
           : following // ignore: cast_nullable_to_non_nullable
               as bool?,
-      id: id == freezed
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String?,
-      muting: muting == freezed
+      muting: freezed == muting
           ? _value.muting
           : muting // ignore: cast_nullable_to_non_nullable
               as bool?,
-      mutingNotifications: mutingNotifications == freezed
+      mutingNotifications: freezed == mutingNotifications
           ? _value.mutingNotifications
           : mutingNotifications // ignore: cast_nullable_to_non_nullable
               as bool?,
-      requested: requested == freezed
+      requested: freezed == requested
           ? _value.requested
           : requested // ignore: cast_nullable_to_non_nullable
               as bool?,
-      showingReblogs: showingReblogs == freezed
+      showingReblogs: freezed == showingReblogs
           ? _value.showingReblogs
           : showingReblogs // ignore: cast_nullable_to_non_nullable
               as bool?,
-      subscribing: subscribing == freezed
+      subscribing: freezed == subscribing
           ? _value.subscribing
           : subscribing // ignore: cast_nullable_to_non_nullable
               as bool?,
-      blockedBy: blockedBy == freezed
+      blockedBy: freezed == blockedBy
           ? _value.blockedBy
           : blockedBy // ignore: cast_nullable_to_non_nullable
               as bool?,
-      note: note == freezed
+      note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
               as String?,
-      notifying: notifying == freezed
+      notifying: freezed == notifying
           ? _value.notifying
           : notifying // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -394,47 +300,34 @@ class __$UnifediApiAccountRelationshipCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiAccountRelationship
+class _$UnifediApiAccountRelationshipImpl
     implements _UnifediApiAccountRelationship {
-  const _$_UnifediApiAccountRelationship(
-      {@HiveField(1)
-          required this.blocking,
+  const _$UnifediApiAccountRelationshipImpl(
+      {@HiveField(1) required this.blocking,
       @JsonKey(name: 'domain_blocking')
       @HiveField(2)
-          required this.domainBlocking,
-      @HiveField(3)
-          required this.endorsed,
-      @HiveField(4)
-      @JsonKey(name: 'followed_by')
-          required this.followedBy,
-      @HiveField(5)
-          required this.following,
-      @HiveField(6)
-          required this.id,
-      @HiveField(7)
-          required this.muting,
+      required this.domainBlocking,
+      @HiveField(3) required this.endorsed,
+      @HiveField(4) @JsonKey(name: 'followed_by') required this.followedBy,
+      @HiveField(5) required this.following,
+      @HiveField(6) required this.id,
+      @HiveField(7) required this.muting,
       @HiveField(8)
       @JsonKey(name: 'muting_notifications')
       @HiveField(9)
-          required this.mutingNotifications,
-      @HiveField(10)
-          required this.requested,
+      required this.mutingNotifications,
+      @HiveField(10) required this.requested,
       @JsonKey(name: 'showing_reblogs')
       @HiveField(11)
-          required this.showingReblogs,
-      @HiveField(12)
-          required this.subscribing,
-      @HiveField(13)
-      @JsonKey(name: 'blocked_by')
-          required this.blockedBy,
-      @HiveField(14)
-          required this.note,
-      @HiveField(15)
-          required this.notifying});
+      required this.showingReblogs,
+      @HiveField(12) required this.subscribing,
+      @HiveField(13) @JsonKey(name: 'blocked_by') required this.blockedBy,
+      @HiveField(14) required this.note,
+      @HiveField(15) required this.notifying});
 
-  factory _$_UnifediApiAccountRelationship.fromJson(
+  factory _$UnifediApiAccountRelationshipImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiAccountRelationshipFromJson(json);
+      _$$UnifediApiAccountRelationshipImplFromJson(json);
 
   @override
   @HiveField(1)
@@ -491,10 +384,10 @@ class _$_UnifediApiAccountRelationship
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiAccountRelationship &&
+            other is _$UnifediApiAccountRelationshipImpl &&
             (identical(other.blocking, blocking) ||
                 other.blocking == blocking) &&
             (identical(other.domainBlocking, domainBlocking) ||
@@ -522,6 +415,7 @@ class _$_UnifediApiAccountRelationship
                 other.notifying == notifying));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -542,56 +436,52 @@ class _$_UnifediApiAccountRelationship
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiAccountRelationshipCopyWith<_UnifediApiAccountRelationship>
-      get copyWith => __$UnifediApiAccountRelationshipCopyWithImpl<
-          _UnifediApiAccountRelationship>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiAccountRelationshipImplCopyWith<
+          _$UnifediApiAccountRelationshipImpl>
+      get copyWith => __$$UnifediApiAccountRelationshipImplCopyWithImpl<
+          _$UnifediApiAccountRelationshipImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiAccountRelationshipToJson(this);
+    return _$$UnifediApiAccountRelationshipImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiAccountRelationship
     implements UnifediApiAccountRelationship {
   const factory _UnifediApiAccountRelationship(
-      {@HiveField(1)
-          required bool? blocking,
-      @JsonKey(name: 'domain_blocking')
-      @HiveField(2)
-          required bool? domainBlocking,
-      @HiveField(3)
-          required bool? endorsed,
-      @HiveField(4)
-      @JsonKey(name: 'followed_by')
-          required bool? followedBy,
-      @HiveField(5)
-          required bool? following,
-      @HiveField(6)
-          required String? id,
-      @HiveField(7)
-          required bool? muting,
-      @HiveField(8)
-      @JsonKey(name: 'muting_notifications')
-      @HiveField(9)
-          required bool? mutingNotifications,
-      @HiveField(10)
-          required bool? requested,
-      @JsonKey(name: 'showing_reblogs')
-      @HiveField(11)
-          required bool? showingReblogs,
-      @HiveField(12)
-          required bool? subscribing,
-      @HiveField(13)
-      @JsonKey(name: 'blocked_by')
-          required bool? blockedBy,
-      @HiveField(14)
-          required String? note,
-      @HiveField(15)
-          required bool? notifying}) = _$_UnifediApiAccountRelationship;
+          {@HiveField(1) required final bool? blocking,
+          @JsonKey(name: 'domain_blocking')
+          @HiveField(2)
+          required final bool? domainBlocking,
+          @HiveField(3) required final bool? endorsed,
+          @HiveField(4)
+          @JsonKey(name: 'followed_by')
+          required final bool? followedBy,
+          @HiveField(5) required final bool? following,
+          @HiveField(6) required final String? id,
+          @HiveField(7) required final bool? muting,
+          @HiveField(8)
+          @JsonKey(name: 'muting_notifications')
+          @HiveField(9)
+          required final bool? mutingNotifications,
+          @HiveField(10) required final bool? requested,
+          @JsonKey(name: 'showing_reblogs')
+          @HiveField(11)
+          required final bool? showingReblogs,
+          @HiveField(12) required final bool? subscribing,
+          @HiveField(13)
+          @JsonKey(name: 'blocked_by')
+          required final bool? blockedBy,
+          @HiveField(14) required final String? note,
+          @HiveField(15) required final bool? notifying}) =
+      _$UnifediApiAccountRelationshipImpl;
 
   factory _UnifediApiAccountRelationship.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiAccountRelationship.fromJson;
+      _$UnifediApiAccountRelationshipImpl.fromJson;
 
   @override
   @HiveField(1)
@@ -643,6 +533,7 @@ abstract class _UnifediApiAccountRelationship
   bool? get notifying;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiAccountRelationshipCopyWith<_UnifediApiAccountRelationship>
+  _$$UnifediApiAccountRelationshipImplCopyWith<
+          _$UnifediApiAccountRelationshipImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

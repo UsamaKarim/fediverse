@@ -56,8 +56,9 @@ class MastodonApiEmojiAdapter extends TypeAdapter<MastodonApiEmoji> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiEmoji _$$_MastodonApiEmojiFromJson(Map<String, dynamic> json) =>
-    _$_MastodonApiEmoji(
+_$MastodonApiEmojiImpl _$$MastodonApiEmojiImplFromJson(
+        Map<String, dynamic> json) =>
+    _$MastodonApiEmojiImpl(
       shortcode: json['shortcode'] as String,
       url: json['url'] as String?,
       staticUrl: json['static_url'] as String?,
@@ -65,7 +66,8 @@ _$_MastodonApiEmoji _$$_MastodonApiEmojiFromJson(Map<String, dynamic> json) =>
       category: json['category'] as String?,
     );
 
-Map<String, dynamic> _$$_MastodonApiEmojiToJson(_$_MastodonApiEmoji instance) {
+Map<String, dynamic> _$$MastodonApiEmojiImplToJson(
+    _$MastodonApiEmojiImpl instance) {
   final val = <String, dynamic>{
     'shortcode': instance.shortcode,
   };

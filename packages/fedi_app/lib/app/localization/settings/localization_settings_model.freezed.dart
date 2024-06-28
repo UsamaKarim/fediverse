@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'localization_settings_model.dart';
 
@@ -11,32 +12,11 @@ part of 'localization_settings_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 LocalizationSettings _$LocalizationSettingsFromJson(Map<String, dynamic> json) {
   return _LocalizationSettings.fromJson(json);
 }
-
-/// @nodoc
-class _$LocalizationSettingsTearOff {
-  const _$LocalizationSettingsTearOff();
-
-  _LocalizationSettings call(
-      {@HiveField(0)
-      @JsonKey(name: 'localization_locale')
-          required LocalizationLocale? localizationLocale}) {
-    return _LocalizationSettings(
-      localizationLocale: localizationLocale,
-    );
-  }
-
-  LocalizationSettings fromJson(Map<String, Object?> json) {
-    return LocalizationSettings.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $LocalizationSettings = _$LocalizationSettingsTearOff();
 
 /// @nodoc
 mixin _$LocalizationSettings {
@@ -55,37 +35,42 @@ mixin _$LocalizationSettings {
 abstract class $LocalizationSettingsCopyWith<$Res> {
   factory $LocalizationSettingsCopyWith(LocalizationSettings value,
           $Res Function(LocalizationSettings) then) =
-      _$LocalizationSettingsCopyWithImpl<$Res>;
+      _$LocalizationSettingsCopyWithImpl<$Res, LocalizationSettings>;
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'localization_locale')
-          LocalizationLocale? localizationLocale});
+      LocalizationLocale? localizationLocale});
 
   $LocalizationLocaleCopyWith<$Res>? get localizationLocale;
 }
 
 /// @nodoc
-class _$LocalizationSettingsCopyWithImpl<$Res>
+class _$LocalizationSettingsCopyWithImpl<$Res,
+        $Val extends LocalizationSettings>
     implements $LocalizationSettingsCopyWith<$Res> {
   _$LocalizationSettingsCopyWithImpl(this._value, this._then);
 
-  final LocalizationSettings _value;
   // ignore: unused_field
-  final $Res Function(LocalizationSettings) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? localizationLocale = freezed,
   }) {
     return _then(_value.copyWith(
-      localizationLocale: localizationLocale == freezed
+      localizationLocale: freezed == localizationLocale
           ? _value.localizationLocale
           : localizationLocale // ignore: cast_nullable_to_non_nullable
               as LocalizationLocale?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $LocalizationLocaleCopyWith<$Res>? get localizationLocale {
     if (_value.localizationLocale == null) {
       return null;
@@ -93,44 +78,43 @@ class _$LocalizationSettingsCopyWithImpl<$Res>
 
     return $LocalizationLocaleCopyWith<$Res>(_value.localizationLocale!,
         (value) {
-      return _then(_value.copyWith(localizationLocale: value));
+      return _then(_value.copyWith(localizationLocale: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$LocalizationSettingsCopyWith<$Res>
+abstract class _$$LocalizationSettingsImplCopyWith<$Res>
     implements $LocalizationSettingsCopyWith<$Res> {
-  factory _$LocalizationSettingsCopyWith(_LocalizationSettings value,
-          $Res Function(_LocalizationSettings) then) =
-      __$LocalizationSettingsCopyWithImpl<$Res>;
+  factory _$$LocalizationSettingsImplCopyWith(_$LocalizationSettingsImpl value,
+          $Res Function(_$LocalizationSettingsImpl) then) =
+      __$$LocalizationSettingsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'localization_locale')
-          LocalizationLocale? localizationLocale});
+      LocalizationLocale? localizationLocale});
 
   @override
   $LocalizationLocaleCopyWith<$Res>? get localizationLocale;
 }
 
 /// @nodoc
-class __$LocalizationSettingsCopyWithImpl<$Res>
-    extends _$LocalizationSettingsCopyWithImpl<$Res>
-    implements _$LocalizationSettingsCopyWith<$Res> {
-  __$LocalizationSettingsCopyWithImpl(
-      _LocalizationSettings _value, $Res Function(_LocalizationSettings) _then)
-      : super(_value, (v) => _then(v as _LocalizationSettings));
+class __$$LocalizationSettingsImplCopyWithImpl<$Res>
+    extends _$LocalizationSettingsCopyWithImpl<$Res, _$LocalizationSettingsImpl>
+    implements _$$LocalizationSettingsImplCopyWith<$Res> {
+  __$$LocalizationSettingsImplCopyWithImpl(_$LocalizationSettingsImpl _value,
+      $Res Function(_$LocalizationSettingsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _LocalizationSettings get _value => super._value as _LocalizationSettings;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? localizationLocale = freezed,
   }) {
-    return _then(_LocalizationSettings(
-      localizationLocale: localizationLocale == freezed
+    return _then(_$LocalizationSettingsImpl(
+      localizationLocale: freezed == localizationLocale
           ? _value.localizationLocale
           : localizationLocale // ignore: cast_nullable_to_non_nullable
               as LocalizationLocale?,
@@ -140,15 +124,15 @@ class __$LocalizationSettingsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_LocalizationSettings extends _LocalizationSettings {
-  const _$_LocalizationSettings(
+class _$LocalizationSettingsImpl extends _LocalizationSettings {
+  const _$LocalizationSettingsImpl(
       {@HiveField(0)
       @JsonKey(name: 'localization_locale')
-          required this.localizationLocale})
+      required this.localizationLocale})
       : super._();
 
-  factory _$_LocalizationSettings.fromJson(Map<String, dynamic> json) =>
-      _$$_LocalizationSettingsFromJson(json);
+  factory _$LocalizationSettingsImpl.fromJson(Map<String, dynamic> json) =>
+      _$$LocalizationSettingsImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -161,26 +145,31 @@ class _$_LocalizationSettings extends _LocalizationSettings {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _LocalizationSettings &&
+            other is _$LocalizationSettingsImpl &&
             (identical(other.localizationLocale, localizationLocale) ||
                 other.localizationLocale == localizationLocale));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, localizationLocale);
 
   @JsonKey(ignore: true)
   @override
-  _$LocalizationSettingsCopyWith<_LocalizationSettings> get copyWith =>
-      __$LocalizationSettingsCopyWithImpl<_LocalizationSettings>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$LocalizationSettingsImplCopyWith<_$LocalizationSettingsImpl>
+      get copyWith =>
+          __$$LocalizationSettingsImplCopyWithImpl<_$LocalizationSettingsImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_LocalizationSettingsToJson(this);
+    return _$$LocalizationSettingsImplToJson(
+      this,
+    );
   }
 }
 
@@ -188,12 +177,12 @@ abstract class _LocalizationSettings extends LocalizationSettings {
   const factory _LocalizationSettings(
           {@HiveField(0)
           @JsonKey(name: 'localization_locale')
-              required LocalizationLocale? localizationLocale}) =
-      _$_LocalizationSettings;
+          required final LocalizationLocale? localizationLocale}) =
+      _$LocalizationSettingsImpl;
   const _LocalizationSettings._() : super._();
 
   factory _LocalizationSettings.fromJson(Map<String, dynamic> json) =
-      _$_LocalizationSettings.fromJson;
+      _$LocalizationSettingsImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -201,6 +190,6 @@ abstract class _LocalizationSettings extends LocalizationSettings {
   LocalizationLocale? get localizationLocale;
   @override
   @JsonKey(ignore: true)
-  _$LocalizationSettingsCopyWith<_LocalizationSettings> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$LocalizationSettingsImplCopyWith<_$LocalizationSettingsImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

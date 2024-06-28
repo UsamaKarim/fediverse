@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'income_share_model.dart';
 
@@ -11,23 +12,7 @@ part of 'income_share_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$IncomeShareEventTearOff {
-  const _$IncomeShareEventTearOff();
-
-  _IncomeShareEvent call(
-      {required String? text, required List<IncomeShareEventMedia>? medias}) {
-    return _IncomeShareEvent(
-      text: text,
-      medias: medias,
-    );
-  }
-}
-
-/// @nodoc
-const $IncomeShareEvent = _$IncomeShareEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$IncomeShareEvent {
@@ -43,70 +28,72 @@ mixin _$IncomeShareEvent {
 abstract class $IncomeShareEventCopyWith<$Res> {
   factory $IncomeShareEventCopyWith(
           IncomeShareEvent value, $Res Function(IncomeShareEvent) then) =
-      _$IncomeShareEventCopyWithImpl<$Res>;
+      _$IncomeShareEventCopyWithImpl<$Res, IncomeShareEvent>;
+  @useResult
   $Res call({String? text, List<IncomeShareEventMedia>? medias});
 }
 
 /// @nodoc
-class _$IncomeShareEventCopyWithImpl<$Res>
+class _$IncomeShareEventCopyWithImpl<$Res, $Val extends IncomeShareEvent>
     implements $IncomeShareEventCopyWith<$Res> {
   _$IncomeShareEventCopyWithImpl(this._value, this._then);
 
-  final IncomeShareEvent _value;
   // ignore: unused_field
-  final $Res Function(IncomeShareEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? text = freezed,
     Object? medias = freezed,
   }) {
     return _then(_value.copyWith(
-      text: text == freezed
+      text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String?,
-      medias: medias == freezed
+      medias: freezed == medias
           ? _value.medias
           : medias // ignore: cast_nullable_to_non_nullable
               as List<IncomeShareEventMedia>?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$IncomeShareEventCopyWith<$Res>
+abstract class _$$IncomeShareEventImplCopyWith<$Res>
     implements $IncomeShareEventCopyWith<$Res> {
-  factory _$IncomeShareEventCopyWith(
-          _IncomeShareEvent value, $Res Function(_IncomeShareEvent) then) =
-      __$IncomeShareEventCopyWithImpl<$Res>;
+  factory _$$IncomeShareEventImplCopyWith(_$IncomeShareEventImpl value,
+          $Res Function(_$IncomeShareEventImpl) then) =
+      __$$IncomeShareEventImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String? text, List<IncomeShareEventMedia>? medias});
 }
 
 /// @nodoc
-class __$IncomeShareEventCopyWithImpl<$Res>
-    extends _$IncomeShareEventCopyWithImpl<$Res>
-    implements _$IncomeShareEventCopyWith<$Res> {
-  __$IncomeShareEventCopyWithImpl(
-      _IncomeShareEvent _value, $Res Function(_IncomeShareEvent) _then)
-      : super(_value, (v) => _then(v as _IncomeShareEvent));
+class __$$IncomeShareEventImplCopyWithImpl<$Res>
+    extends _$IncomeShareEventCopyWithImpl<$Res, _$IncomeShareEventImpl>
+    implements _$$IncomeShareEventImplCopyWith<$Res> {
+  __$$IncomeShareEventImplCopyWithImpl(_$IncomeShareEventImpl _value,
+      $Res Function(_$IncomeShareEventImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _IncomeShareEvent get _value => super._value as _IncomeShareEvent;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? text = freezed,
     Object? medias = freezed,
   }) {
-    return _then(_IncomeShareEvent(
-      text: text == freezed
+    return _then(_$IncomeShareEventImpl(
+      text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String?,
-      medias: medias == freezed
-          ? _value.medias
+      medias: freezed == medias
+          ? _value._medias
           : medias // ignore: cast_nullable_to_non_nullable
               as List<IncomeShareEventMedia>?,
     ));
@@ -115,13 +102,22 @@ class __$IncomeShareEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_IncomeShareEvent implements _IncomeShareEvent {
-  const _$_IncomeShareEvent({required this.text, required this.medias});
+class _$IncomeShareEventImpl implements _IncomeShareEvent {
+  const _$IncomeShareEventImpl(
+      {required this.text, required final List<IncomeShareEventMedia>? medias})
+      : _medias = medias;
 
   @override
   final String? text;
+  final List<IncomeShareEventMedia>? _medias;
   @override
-  final List<IncomeShareEventMedia>? medias;
+  List<IncomeShareEventMedia>? get medias {
+    final value = _medias;
+    if (value == null) return null;
+    if (_medias is EqualUnmodifiableListView) return _medias;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   @override
   String toString() {
@@ -129,28 +125,31 @@ class _$_IncomeShareEvent implements _IncomeShareEvent {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _IncomeShareEvent &&
+            other is _$IncomeShareEventImpl &&
             (identical(other.text, text) || other.text == text) &&
-            const DeepCollectionEquality().equals(other.medias, medias));
+            const DeepCollectionEquality().equals(other._medias, _medias));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, text, const DeepCollectionEquality().hash(medias));
+      runtimeType, text, const DeepCollectionEquality().hash(_medias));
 
   @JsonKey(ignore: true)
   @override
-  _$IncomeShareEventCopyWith<_IncomeShareEvent> get copyWith =>
-      __$IncomeShareEventCopyWithImpl<_IncomeShareEvent>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$IncomeShareEventImplCopyWith<_$IncomeShareEventImpl> get copyWith =>
+      __$$IncomeShareEventImplCopyWithImpl<_$IncomeShareEventImpl>(
+          this, _$identity);
 }
 
 abstract class _IncomeShareEvent implements IncomeShareEvent {
   const factory _IncomeShareEvent(
-      {required String? text,
-      required List<IncomeShareEventMedia>? medias}) = _$_IncomeShareEvent;
+          {required final String? text,
+          required final List<IncomeShareEventMedia>? medias}) =
+      _$IncomeShareEventImpl;
 
   @override
   String? get text;
@@ -158,30 +157,9 @@ abstract class _IncomeShareEvent implements IncomeShareEvent {
   List<IncomeShareEventMedia>? get medias;
   @override
   @JsonKey(ignore: true)
-  _$IncomeShareEventCopyWith<_IncomeShareEvent> get copyWith =>
+  _$$IncomeShareEventImplCopyWith<_$IncomeShareEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$IncomeShareEventMediaTearOff {
-  const _$IncomeShareEventMediaTearOff();
-
-  _IncomeShareEventMedia call(
-      {required String path,
-      required String? thumbnail,
-      required int? duration,
-      required IncomeShareEventMediaType type}) {
-    return _IncomeShareEventMedia(
-      path: path,
-      thumbnail: thumbnail,
-      duration: duration,
-      type: type,
-    );
-  }
-}
-
-/// @nodoc
-const $IncomeShareEventMedia = _$IncomeShareEventMediaTearOff();
 
 /// @nodoc
 mixin _$IncomeShareEventMedia {
@@ -199,7 +177,8 @@ mixin _$IncomeShareEventMedia {
 abstract class $IncomeShareEventMediaCopyWith<$Res> {
   factory $IncomeShareEventMediaCopyWith(IncomeShareEventMedia value,
           $Res Function(IncomeShareEventMedia) then) =
-      _$IncomeShareEventMediaCopyWithImpl<$Res>;
+      _$IncomeShareEventMediaCopyWithImpl<$Res, IncomeShareEventMedia>;
+  @useResult
   $Res call(
       {String path,
       String? thumbnail,
@@ -208,49 +187,54 @@ abstract class $IncomeShareEventMediaCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$IncomeShareEventMediaCopyWithImpl<$Res>
+class _$IncomeShareEventMediaCopyWithImpl<$Res,
+        $Val extends IncomeShareEventMedia>
     implements $IncomeShareEventMediaCopyWith<$Res> {
   _$IncomeShareEventMediaCopyWithImpl(this._value, this._then);
 
-  final IncomeShareEventMedia _value;
   // ignore: unused_field
-  final $Res Function(IncomeShareEventMedia) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? path = freezed,
+    Object? path = null,
     Object? thumbnail = freezed,
     Object? duration = freezed,
-    Object? type = freezed,
+    Object? type = null,
   }) {
     return _then(_value.copyWith(
-      path: path == freezed
+      path: null == path
           ? _value.path
           : path // ignore: cast_nullable_to_non_nullable
               as String,
-      thumbnail: thumbnail == freezed
+      thumbnail: freezed == thumbnail
           ? _value.thumbnail
           : thumbnail // ignore: cast_nullable_to_non_nullable
               as String?,
-      duration: duration == freezed
+      duration: freezed == duration
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
               as int?,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as IncomeShareEventMediaType,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$IncomeShareEventMediaCopyWith<$Res>
+abstract class _$$IncomeShareEventMediaImplCopyWith<$Res>
     implements $IncomeShareEventMediaCopyWith<$Res> {
-  factory _$IncomeShareEventMediaCopyWith(_IncomeShareEventMedia value,
-          $Res Function(_IncomeShareEventMedia) then) =
-      __$IncomeShareEventMediaCopyWithImpl<$Res>;
+  factory _$$IncomeShareEventMediaImplCopyWith(
+          _$IncomeShareEventMediaImpl value,
+          $Res Function(_$IncomeShareEventMediaImpl) then) =
+      __$$IncomeShareEventMediaImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {String path,
       String? thumbnail,
@@ -259,37 +243,36 @@ abstract class _$IncomeShareEventMediaCopyWith<$Res>
 }
 
 /// @nodoc
-class __$IncomeShareEventMediaCopyWithImpl<$Res>
-    extends _$IncomeShareEventMediaCopyWithImpl<$Res>
-    implements _$IncomeShareEventMediaCopyWith<$Res> {
-  __$IncomeShareEventMediaCopyWithImpl(_IncomeShareEventMedia _value,
-      $Res Function(_IncomeShareEventMedia) _then)
-      : super(_value, (v) => _then(v as _IncomeShareEventMedia));
+class __$$IncomeShareEventMediaImplCopyWithImpl<$Res>
+    extends _$IncomeShareEventMediaCopyWithImpl<$Res,
+        _$IncomeShareEventMediaImpl>
+    implements _$$IncomeShareEventMediaImplCopyWith<$Res> {
+  __$$IncomeShareEventMediaImplCopyWithImpl(_$IncomeShareEventMediaImpl _value,
+      $Res Function(_$IncomeShareEventMediaImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _IncomeShareEventMedia get _value => super._value as _IncomeShareEventMedia;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? path = freezed,
+    Object? path = null,
     Object? thumbnail = freezed,
     Object? duration = freezed,
-    Object? type = freezed,
+    Object? type = null,
   }) {
-    return _then(_IncomeShareEventMedia(
-      path: path == freezed
+    return _then(_$IncomeShareEventMediaImpl(
+      path: null == path
           ? _value.path
           : path // ignore: cast_nullable_to_non_nullable
               as String,
-      thumbnail: thumbnail == freezed
+      thumbnail: freezed == thumbnail
           ? _value.thumbnail
           : thumbnail // ignore: cast_nullable_to_non_nullable
               as String?,
-      duration: duration == freezed
+      duration: freezed == duration
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
               as int?,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as IncomeShareEventMediaType,
@@ -299,8 +282,8 @@ class __$IncomeShareEventMediaCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_IncomeShareEventMedia implements _IncomeShareEventMedia {
-  const _$_IncomeShareEventMedia(
+class _$IncomeShareEventMediaImpl implements _IncomeShareEventMedia {
+  const _$IncomeShareEventMediaImpl(
       {required this.path,
       required this.thumbnail,
       required this.duration,
@@ -321,10 +304,10 @@ class _$_IncomeShareEventMedia implements _IncomeShareEventMedia {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _IncomeShareEventMedia &&
+            other is _$IncomeShareEventMediaImpl &&
             (identical(other.path, path) || other.path == path) &&
             (identical(other.thumbnail, thumbnail) ||
                 other.thumbnail == thumbnail) &&
@@ -338,17 +321,19 @@ class _$_IncomeShareEventMedia implements _IncomeShareEventMedia {
 
   @JsonKey(ignore: true)
   @override
-  _$IncomeShareEventMediaCopyWith<_IncomeShareEventMedia> get copyWith =>
-      __$IncomeShareEventMediaCopyWithImpl<_IncomeShareEventMedia>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$IncomeShareEventMediaImplCopyWith<_$IncomeShareEventMediaImpl>
+      get copyWith => __$$IncomeShareEventMediaImplCopyWithImpl<
+          _$IncomeShareEventMediaImpl>(this, _$identity);
 }
 
 abstract class _IncomeShareEventMedia implements IncomeShareEventMedia {
   const factory _IncomeShareEventMedia(
-      {required String path,
-      required String? thumbnail,
-      required int? duration,
-      required IncomeShareEventMediaType type}) = _$_IncomeShareEventMedia;
+          {required final String path,
+          required final String? thumbnail,
+          required final int? duration,
+          required final IncomeShareEventMediaType type}) =
+      _$IncomeShareEventMediaImpl;
 
   @override
   String get path;
@@ -360,6 +345,6 @@ abstract class _IncomeShareEventMedia implements IncomeShareEventMedia {
   IncomeShareEventMediaType get type;
   @override
   @JsonKey(ignore: true)
-  _$IncomeShareEventMediaCopyWith<_IncomeShareEventMedia> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$IncomeShareEventMediaImplCopyWith<_$IncomeShareEventMediaImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

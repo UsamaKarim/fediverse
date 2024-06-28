@@ -44,16 +44,16 @@ class AuthInstanceListOldAdapter extends TypeAdapter<AuthInstanceListOld> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_AuthInstanceListOld _$$_AuthInstanceListOldFromJson(
+_$AuthInstanceListOldImpl _$$AuthInstanceListOldImplFromJson(
         Map<String, dynamic> json) =>
-    _$_AuthInstanceListOld(
+    _$AuthInstanceListOldImpl(
       instances: (json['instances'] as List<dynamic>)
           .map((e) => AuthInstanceOld.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
-Map<String, dynamic> _$$_AuthInstanceListOldToJson(
-        _$_AuthInstanceListOld instance) =>
+Map<String, dynamic> _$$AuthInstanceListOldImplToJson(
+        _$AuthInstanceListOldImpl instance) =>
     <String, dynamic>{
       'instances': instance.instances.map((e) => e.toJson()).toList(),
     };

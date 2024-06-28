@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_push_subscription_alerts_model_impl.dart';
 
@@ -11,40 +12,12 @@ part of 'mastodon_api_push_subscription_alerts_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiPushSubscriptionAlerts _$MastodonApiPushSubscriptionAlertsFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiPushSubscribeRequestDataAlerts.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiPushSubscriptionAlertsTearOff {
-  const _$MastodonApiPushSubscriptionAlertsTearOff();
-
-  _MastodonApiPushSubscribeRequestDataAlerts call(
-      {@HiveField(0) required bool? favourite,
-      @HiveField(1) required bool? follow,
-      @HiveField(2) required bool? mention,
-      @HiveField(3) required bool? reblog,
-      @HiveField(4) required bool? poll}) {
-    return _MastodonApiPushSubscribeRequestDataAlerts(
-      favourite: favourite,
-      follow: follow,
-      mention: mention,
-      reblog: reblog,
-      poll: poll,
-    );
-  }
-
-  MastodonApiPushSubscriptionAlerts fromJson(Map<String, Object?> json) {
-    return MastodonApiPushSubscriptionAlerts.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiPushSubscriptionAlerts =
-    _$MastodonApiPushSubscriptionAlertsTearOff();
 
 /// @nodoc
 mixin _$MastodonApiPushSubscriptionAlerts {
@@ -70,7 +43,9 @@ abstract class $MastodonApiPushSubscriptionAlertsCopyWith<$Res> {
   factory $MastodonApiPushSubscriptionAlertsCopyWith(
           MastodonApiPushSubscriptionAlerts value,
           $Res Function(MastodonApiPushSubscriptionAlerts) then) =
-      _$MastodonApiPushSubscriptionAlertsCopyWithImpl<$Res>;
+      _$MastodonApiPushSubscriptionAlertsCopyWithImpl<$Res,
+          MastodonApiPushSubscriptionAlerts>;
+  @useResult
   $Res call(
       {@HiveField(0) bool? favourite,
       @HiveField(1) bool? follow,
@@ -80,14 +55,17 @@ abstract class $MastodonApiPushSubscriptionAlertsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MastodonApiPushSubscriptionAlertsCopyWithImpl<$Res>
+class _$MastodonApiPushSubscriptionAlertsCopyWithImpl<$Res,
+        $Val extends MastodonApiPushSubscriptionAlerts>
     implements $MastodonApiPushSubscriptionAlertsCopyWith<$Res> {
   _$MastodonApiPushSubscriptionAlertsCopyWithImpl(this._value, this._then);
 
-  final MastodonApiPushSubscriptionAlerts _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiPushSubscriptionAlerts) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? favourite = freezed,
@@ -97,38 +75,39 @@ class _$MastodonApiPushSubscriptionAlertsCopyWithImpl<$Res>
     Object? poll = freezed,
   }) {
     return _then(_value.copyWith(
-      favourite: favourite == freezed
+      favourite: freezed == favourite
           ? _value.favourite
           : favourite // ignore: cast_nullable_to_non_nullable
               as bool?,
-      follow: follow == freezed
+      follow: freezed == follow
           ? _value.follow
           : follow // ignore: cast_nullable_to_non_nullable
               as bool?,
-      mention: mention == freezed
+      mention: freezed == mention
           ? _value.mention
           : mention // ignore: cast_nullable_to_non_nullable
               as bool?,
-      reblog: reblog == freezed
+      reblog: freezed == reblog
           ? _value.reblog
           : reblog // ignore: cast_nullable_to_non_nullable
               as bool?,
-      poll: poll == freezed
+      poll: freezed == poll
           ? _value.poll
           : poll // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiPushSubscribeRequestDataAlertsCopyWith<$Res>
+abstract class _$$MastodonApiPushSubscribeRequestDataAlertsImplCopyWith<$Res>
     implements $MastodonApiPushSubscriptionAlertsCopyWith<$Res> {
-  factory _$MastodonApiPushSubscribeRequestDataAlertsCopyWith(
-          _MastodonApiPushSubscribeRequestDataAlerts value,
-          $Res Function(_MastodonApiPushSubscribeRequestDataAlerts) then) =
-      __$MastodonApiPushSubscribeRequestDataAlertsCopyWithImpl<$Res>;
+  factory _$$MastodonApiPushSubscribeRequestDataAlertsImplCopyWith(
+          _$MastodonApiPushSubscribeRequestDataAlertsImpl value,
+          $Res Function(_$MastodonApiPushSubscribeRequestDataAlertsImpl) then) =
+      __$$MastodonApiPushSubscribeRequestDataAlertsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) bool? favourite,
       @HiveField(1) bool? follow,
@@ -138,19 +117,16 @@ abstract class _$MastodonApiPushSubscribeRequestDataAlertsCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MastodonApiPushSubscribeRequestDataAlertsCopyWithImpl<$Res>
-    extends _$MastodonApiPushSubscriptionAlertsCopyWithImpl<$Res>
-    implements _$MastodonApiPushSubscribeRequestDataAlertsCopyWith<$Res> {
-  __$MastodonApiPushSubscribeRequestDataAlertsCopyWithImpl(
-      _MastodonApiPushSubscribeRequestDataAlerts _value,
-      $Res Function(_MastodonApiPushSubscribeRequestDataAlerts) _then)
-      : super(_value,
-            (v) => _then(v as _MastodonApiPushSubscribeRequestDataAlerts));
+class __$$MastodonApiPushSubscribeRequestDataAlertsImplCopyWithImpl<$Res>
+    extends _$MastodonApiPushSubscriptionAlertsCopyWithImpl<$Res,
+        _$MastodonApiPushSubscribeRequestDataAlertsImpl>
+    implements _$$MastodonApiPushSubscribeRequestDataAlertsImplCopyWith<$Res> {
+  __$$MastodonApiPushSubscribeRequestDataAlertsImplCopyWithImpl(
+      _$MastodonApiPushSubscribeRequestDataAlertsImpl _value,
+      $Res Function(_$MastodonApiPushSubscribeRequestDataAlertsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiPushSubscribeRequestDataAlerts get _value =>
-      super._value as _MastodonApiPushSubscribeRequestDataAlerts;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? favourite = freezed,
@@ -159,24 +135,24 @@ class __$MastodonApiPushSubscribeRequestDataAlertsCopyWithImpl<$Res>
     Object? reblog = freezed,
     Object? poll = freezed,
   }) {
-    return _then(_MastodonApiPushSubscribeRequestDataAlerts(
-      favourite: favourite == freezed
+    return _then(_$MastodonApiPushSubscribeRequestDataAlertsImpl(
+      favourite: freezed == favourite
           ? _value.favourite
           : favourite // ignore: cast_nullable_to_non_nullable
               as bool?,
-      follow: follow == freezed
+      follow: freezed == follow
           ? _value.follow
           : follow // ignore: cast_nullable_to_non_nullable
               as bool?,
-      mention: mention == freezed
+      mention: freezed == mention
           ? _value.mention
           : mention // ignore: cast_nullable_to_non_nullable
               as bool?,
-      reblog: reblog == freezed
+      reblog: freezed == reblog
           ? _value.reblog
           : reblog // ignore: cast_nullable_to_non_nullable
               as bool?,
-      poll: poll == freezed
+      poll: freezed == poll
           ? _value.poll
           : poll // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -186,18 +162,18 @@ class __$MastodonApiPushSubscribeRequestDataAlertsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiPushSubscribeRequestDataAlerts
+class _$MastodonApiPushSubscribeRequestDataAlertsImpl
     implements _MastodonApiPushSubscribeRequestDataAlerts {
-  const _$_MastodonApiPushSubscribeRequestDataAlerts(
+  const _$MastodonApiPushSubscribeRequestDataAlertsImpl(
       {@HiveField(0) required this.favourite,
       @HiveField(1) required this.follow,
       @HiveField(2) required this.mention,
       @HiveField(3) required this.reblog,
       @HiveField(4) required this.poll});
 
-  factory _$_MastodonApiPushSubscribeRequestDataAlerts.fromJson(
+  factory _$MastodonApiPushSubscribeRequestDataAlertsImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_MastodonApiPushSubscribeRequestDataAlertsFromJson(json);
+      _$$MastodonApiPushSubscribeRequestDataAlertsImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -221,10 +197,10 @@ class _$_MastodonApiPushSubscribeRequestDataAlerts
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiPushSubscribeRequestDataAlerts &&
+            other is _$MastodonApiPushSubscribeRequestDataAlertsImpl &&
             (identical(other.favourite, favourite) ||
                 other.favourite == favourite) &&
             (identical(other.follow, follow) || other.follow == follow) &&
@@ -233,36 +209,42 @@ class _$_MastodonApiPushSubscribeRequestDataAlerts
             (identical(other.poll, poll) || other.poll == poll));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, favourite, follow, mention, reblog, poll);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiPushSubscribeRequestDataAlertsCopyWith<
-          _MastodonApiPushSubscribeRequestDataAlerts>
-      get copyWith => __$MastodonApiPushSubscribeRequestDataAlertsCopyWithImpl<
-          _MastodonApiPushSubscribeRequestDataAlerts>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiPushSubscribeRequestDataAlertsImplCopyWith<
+          _$MastodonApiPushSubscribeRequestDataAlertsImpl>
+      get copyWith =>
+          __$$MastodonApiPushSubscribeRequestDataAlertsImplCopyWithImpl<
+                  _$MastodonApiPushSubscribeRequestDataAlertsImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiPushSubscribeRequestDataAlertsToJson(this);
+    return _$$MastodonApiPushSubscribeRequestDataAlertsImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiPushSubscribeRequestDataAlerts
     implements MastodonApiPushSubscriptionAlerts {
   const factory _MastodonApiPushSubscribeRequestDataAlerts(
-          {@HiveField(0) required bool? favourite,
-          @HiveField(1) required bool? follow,
-          @HiveField(2) required bool? mention,
-          @HiveField(3) required bool? reblog,
-          @HiveField(4) required bool? poll}) =
-      _$_MastodonApiPushSubscribeRequestDataAlerts;
+          {@HiveField(0) required final bool? favourite,
+          @HiveField(1) required final bool? follow,
+          @HiveField(2) required final bool? mention,
+          @HiveField(3) required final bool? reblog,
+          @HiveField(4) required final bool? poll}) =
+      _$MastodonApiPushSubscribeRequestDataAlertsImpl;
 
   factory _MastodonApiPushSubscribeRequestDataAlerts.fromJson(
           Map<String, dynamic> json) =
-      _$_MastodonApiPushSubscribeRequestDataAlerts.fromJson;
+      _$MastodonApiPushSubscribeRequestDataAlertsImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -281,7 +263,7 @@ abstract class _MastodonApiPushSubscribeRequestDataAlerts
   bool? get poll;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiPushSubscribeRequestDataAlertsCopyWith<
-          _MastodonApiPushSubscribeRequestDataAlerts>
+  _$$MastodonApiPushSubscribeRequestDataAlertsImplCopyWith<
+          _$MastodonApiPushSubscribeRequestDataAlertsImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

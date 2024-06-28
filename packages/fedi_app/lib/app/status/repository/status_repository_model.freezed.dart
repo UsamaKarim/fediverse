@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'status_repository_model.dart';
 
@@ -11,25 +12,7 @@ part of 'status_repository_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$UnifediApiReplyVisibilityFilterConditionTearOff {
-  const _$UnifediApiReplyVisibilityFilterConditionTearOff();
-
-  _UnifediApiReplyVisibilityFilterCondition call(
-      {required String? myAccountRemoteId,
-      required UnifediApiReplyVisibilityFilter? replyVisibilityFilter}) {
-    return _UnifediApiReplyVisibilityFilterCondition(
-      myAccountRemoteId: myAccountRemoteId,
-      replyVisibilityFilter: replyVisibilityFilter,
-    );
-  }
-}
-
-/// @nodoc
-const $UnifediApiReplyVisibilityFilterCondition =
-    _$UnifediApiReplyVisibilityFilterConditionTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$UnifediApiReplyVisibilityFilterCondition {
@@ -48,7 +31,9 @@ abstract class $UnifediApiReplyVisibilityFilterConditionCopyWith<$Res> {
   factory $UnifediApiReplyVisibilityFilterConditionCopyWith(
           UnifediApiReplyVisibilityFilterCondition value,
           $Res Function(UnifediApiReplyVisibilityFilterCondition) then) =
-      _$UnifediApiReplyVisibilityFilterConditionCopyWithImpl<$Res>;
+      _$UnifediApiReplyVisibilityFilterConditionCopyWithImpl<$Res,
+          UnifediApiReplyVisibilityFilterCondition>;
+  @useResult
   $Res call(
       {String? myAccountRemoteId,
       UnifediApiReplyVisibilityFilter? replyVisibilityFilter});
@@ -57,33 +42,37 @@ abstract class $UnifediApiReplyVisibilityFilterConditionCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UnifediApiReplyVisibilityFilterConditionCopyWithImpl<$Res>
+class _$UnifediApiReplyVisibilityFilterConditionCopyWithImpl<$Res,
+        $Val extends UnifediApiReplyVisibilityFilterCondition>
     implements $UnifediApiReplyVisibilityFilterConditionCopyWith<$Res> {
   _$UnifediApiReplyVisibilityFilterConditionCopyWithImpl(
       this._value, this._then);
 
-  final UnifediApiReplyVisibilityFilterCondition _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiReplyVisibilityFilterCondition) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? myAccountRemoteId = freezed,
     Object? replyVisibilityFilter = freezed,
   }) {
     return _then(_value.copyWith(
-      myAccountRemoteId: myAccountRemoteId == freezed
+      myAccountRemoteId: freezed == myAccountRemoteId
           ? _value.myAccountRemoteId
           : myAccountRemoteId // ignore: cast_nullable_to_non_nullable
               as String?,
-      replyVisibilityFilter: replyVisibilityFilter == freezed
+      replyVisibilityFilter: freezed == replyVisibilityFilter
           ? _value.replyVisibilityFilter
           : replyVisibilityFilter // ignore: cast_nullable_to_non_nullable
               as UnifediApiReplyVisibilityFilter?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiReplyVisibilityFilterCopyWith<$Res>? get replyVisibilityFilter {
     if (_value.replyVisibilityFilter == null) {
       return null;
@@ -91,19 +80,20 @@ class _$UnifediApiReplyVisibilityFilterConditionCopyWithImpl<$Res>
 
     return $UnifediApiReplyVisibilityFilterCopyWith<$Res>(
         _value.replyVisibilityFilter!, (value) {
-      return _then(_value.copyWith(replyVisibilityFilter: value));
+      return _then(_value.copyWith(replyVisibilityFilter: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiReplyVisibilityFilterConditionCopyWith<$Res>
+abstract class _$$UnifediApiReplyVisibilityFilterConditionImplCopyWith<$Res>
     implements $UnifediApiReplyVisibilityFilterConditionCopyWith<$Res> {
-  factory _$UnifediApiReplyVisibilityFilterConditionCopyWith(
-          _UnifediApiReplyVisibilityFilterCondition value,
-          $Res Function(_UnifediApiReplyVisibilityFilterCondition) then) =
-      __$UnifediApiReplyVisibilityFilterConditionCopyWithImpl<$Res>;
+  factory _$$UnifediApiReplyVisibilityFilterConditionImplCopyWith(
+          _$UnifediApiReplyVisibilityFilterConditionImpl value,
+          $Res Function(_$UnifediApiReplyVisibilityFilterConditionImpl) then) =
+      __$$UnifediApiReplyVisibilityFilterConditionImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {String? myAccountRemoteId,
       UnifediApiReplyVisibilityFilter? replyVisibilityFilter});
@@ -113,30 +103,27 @@ abstract class _$UnifediApiReplyVisibilityFilterConditionCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiReplyVisibilityFilterConditionCopyWithImpl<$Res>
-    extends _$UnifediApiReplyVisibilityFilterConditionCopyWithImpl<$Res>
-    implements _$UnifediApiReplyVisibilityFilterConditionCopyWith<$Res> {
-  __$UnifediApiReplyVisibilityFilterConditionCopyWithImpl(
-      _UnifediApiReplyVisibilityFilterCondition _value,
-      $Res Function(_UnifediApiReplyVisibilityFilterCondition) _then)
-      : super(_value,
-            (v) => _then(v as _UnifediApiReplyVisibilityFilterCondition));
+class __$$UnifediApiReplyVisibilityFilterConditionImplCopyWithImpl<$Res>
+    extends _$UnifediApiReplyVisibilityFilterConditionCopyWithImpl<$Res,
+        _$UnifediApiReplyVisibilityFilterConditionImpl>
+    implements _$$UnifediApiReplyVisibilityFilterConditionImplCopyWith<$Res> {
+  __$$UnifediApiReplyVisibilityFilterConditionImplCopyWithImpl(
+      _$UnifediApiReplyVisibilityFilterConditionImpl _value,
+      $Res Function(_$UnifediApiReplyVisibilityFilterConditionImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiReplyVisibilityFilterCondition get _value =>
-      super._value as _UnifediApiReplyVisibilityFilterCondition;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? myAccountRemoteId = freezed,
     Object? replyVisibilityFilter = freezed,
   }) {
-    return _then(_UnifediApiReplyVisibilityFilterCondition(
-      myAccountRemoteId: myAccountRemoteId == freezed
+    return _then(_$UnifediApiReplyVisibilityFilterConditionImpl(
+      myAccountRemoteId: freezed == myAccountRemoteId
           ? _value.myAccountRemoteId
           : myAccountRemoteId // ignore: cast_nullable_to_non_nullable
               as String?,
-      replyVisibilityFilter: replyVisibilityFilter == freezed
+      replyVisibilityFilter: freezed == replyVisibilityFilter
           ? _value.replyVisibilityFilter
           : replyVisibilityFilter // ignore: cast_nullable_to_non_nullable
               as UnifediApiReplyVisibilityFilter?,
@@ -146,9 +133,9 @@ class __$UnifediApiReplyVisibilityFilterConditionCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_UnifediApiReplyVisibilityFilterCondition
+class _$UnifediApiReplyVisibilityFilterConditionImpl
     implements _UnifediApiReplyVisibilityFilterCondition {
-  const _$_UnifediApiReplyVisibilityFilterCondition(
+  const _$UnifediApiReplyVisibilityFilterConditionImpl(
       {required this.myAccountRemoteId, required this.replyVisibilityFilter});
 
   @override
@@ -162,10 +149,10 @@ class _$_UnifediApiReplyVisibilityFilterCondition
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiReplyVisibilityFilterCondition &&
+            other is _$UnifediApiReplyVisibilityFilterConditionImpl &&
             (identical(other.myAccountRemoteId, myAccountRemoteId) ||
                 other.myAccountRemoteId == myAccountRemoteId) &&
             (identical(other.replyVisibilityFilter, replyVisibilityFilter) ||
@@ -178,18 +165,21 @@ class _$_UnifediApiReplyVisibilityFilterCondition
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiReplyVisibilityFilterConditionCopyWith<
-          _UnifediApiReplyVisibilityFilterCondition>
-      get copyWith => __$UnifediApiReplyVisibilityFilterConditionCopyWithImpl<
-          _UnifediApiReplyVisibilityFilterCondition>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiReplyVisibilityFilterConditionImplCopyWith<
+          _$UnifediApiReplyVisibilityFilterConditionImpl>
+      get copyWith =>
+          __$$UnifediApiReplyVisibilityFilterConditionImplCopyWithImpl<
+              _$UnifediApiReplyVisibilityFilterConditionImpl>(this, _$identity);
 }
 
 abstract class _UnifediApiReplyVisibilityFilterCondition
     implements UnifediApiReplyVisibilityFilterCondition {
   const factory _UnifediApiReplyVisibilityFilterCondition(
-          {required String? myAccountRemoteId,
-          required UnifediApiReplyVisibilityFilter? replyVisibilityFilter}) =
-      _$_UnifediApiReplyVisibilityFilterCondition;
+          {required final String? myAccountRemoteId,
+          required final UnifediApiReplyVisibilityFilter?
+              replyVisibilityFilter}) =
+      _$UnifediApiReplyVisibilityFilterConditionImpl;
 
   @override
   String? get myAccountRemoteId;
@@ -197,68 +187,10 @@ abstract class _UnifediApiReplyVisibilityFilterCondition
   UnifediApiReplyVisibilityFilter? get replyVisibilityFilter;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiReplyVisibilityFilterConditionCopyWith<
-          _UnifediApiReplyVisibilityFilterCondition>
+  _$$UnifediApiReplyVisibilityFilterConditionImplCopyWith<
+          _$UnifediApiReplyVisibilityFilterConditionImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$StatusRepositoryFiltersTearOff {
-  const _$StatusRepositoryFiltersTearOff();
-
-  _StatusRepositoryFilters call(
-      {required String? onlyInListWithRemoteId,
-      required String? onlyWithHashtag,
-      required IAccount? onlyFromAccountsFollowingByAccount,
-      required IAccount? onlyFromAccount,
-      required IConversationChat? onlyInConversation,
-      required StatusOnlyLocalCondition? onlyLocalCondition,
-      required bool? onlyWithMedia,
-      required bool? withMuted,
-      required List<UnifediApiVisibility>? excludeVisibilities,
-      required bool? onlyNoNsfwSensitive,
-      required bool? onlyNoReplies,
-      required bool? isFromHomeTimeline,
-      required bool? onlyFavourited,
-      required bool? onlyBookmarked,
-      required List<StatusTextCondition>? excludeTextConditions,
-      bool onlyNotDeleted = true,
-      bool onlyNotHiddenLocallyOnDevice = true,
-      required StatusOnlyRemoteCondition? onlyRemoteCondition,
-      bool mustBeConversationItem = false,
-      required String? onlyFromInstance,
-      required UnifediApiReplyVisibilityFilterCondition?
-          replyVisibilityFilterCondition,
-      bool onlyPendingStatePublishedOrNull = true}) {
-    return _StatusRepositoryFilters(
-      onlyInListWithRemoteId: onlyInListWithRemoteId,
-      onlyWithHashtag: onlyWithHashtag,
-      onlyFromAccountsFollowingByAccount: onlyFromAccountsFollowingByAccount,
-      onlyFromAccount: onlyFromAccount,
-      onlyInConversation: onlyInConversation,
-      onlyLocalCondition: onlyLocalCondition,
-      onlyWithMedia: onlyWithMedia,
-      withMuted: withMuted,
-      excludeVisibilities: excludeVisibilities,
-      onlyNoNsfwSensitive: onlyNoNsfwSensitive,
-      onlyNoReplies: onlyNoReplies,
-      isFromHomeTimeline: isFromHomeTimeline,
-      onlyFavourited: onlyFavourited,
-      onlyBookmarked: onlyBookmarked,
-      excludeTextConditions: excludeTextConditions,
-      onlyNotDeleted: onlyNotDeleted,
-      onlyNotHiddenLocallyOnDevice: onlyNotHiddenLocallyOnDevice,
-      onlyRemoteCondition: onlyRemoteCondition,
-      mustBeConversationItem: mustBeConversationItem,
-      onlyFromInstance: onlyFromInstance,
-      replyVisibilityFilterCondition: replyVisibilityFilterCondition,
-      onlyPendingStatePublishedOrNull: onlyPendingStatePublishedOrNull,
-    );
-  }
-}
-
-/// @nodoc
-const $StatusRepositoryFilters = _$StatusRepositoryFiltersTearOff();
 
 /// @nodoc
 mixin _$StatusRepositoryFilters {
@@ -302,7 +234,8 @@ mixin _$StatusRepositoryFilters {
 abstract class $StatusRepositoryFiltersCopyWith<$Res> {
   factory $StatusRepositoryFiltersCopyWith(StatusRepositoryFilters value,
           $Res Function(StatusRepositoryFilters) then) =
-      _$StatusRepositoryFiltersCopyWithImpl<$Res>;
+      _$StatusRepositoryFiltersCopyWithImpl<$Res, StatusRepositoryFilters>;
+  @useResult
   $Res call(
       {String? onlyInListWithRemoteId,
       String? onlyWithHashtag,
@@ -334,14 +267,17 @@ abstract class $StatusRepositoryFiltersCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$StatusRepositoryFiltersCopyWithImpl<$Res>
+class _$StatusRepositoryFiltersCopyWithImpl<$Res,
+        $Val extends StatusRepositoryFilters>
     implements $StatusRepositoryFiltersCopyWith<$Res> {
   _$StatusRepositoryFiltersCopyWithImpl(this._value, this._then);
 
-  final StatusRepositoryFilters _value;
   // ignore: unused_field
-  final $Res Function(StatusRepositoryFilters) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? onlyInListWithRemoteId = freezed,
@@ -359,109 +295,109 @@ class _$StatusRepositoryFiltersCopyWithImpl<$Res>
     Object? onlyFavourited = freezed,
     Object? onlyBookmarked = freezed,
     Object? excludeTextConditions = freezed,
-    Object? onlyNotDeleted = freezed,
-    Object? onlyNotHiddenLocallyOnDevice = freezed,
+    Object? onlyNotDeleted = null,
+    Object? onlyNotHiddenLocallyOnDevice = null,
     Object? onlyRemoteCondition = freezed,
-    Object? mustBeConversationItem = freezed,
+    Object? mustBeConversationItem = null,
     Object? onlyFromInstance = freezed,
     Object? replyVisibilityFilterCondition = freezed,
-    Object? onlyPendingStatePublishedOrNull = freezed,
+    Object? onlyPendingStatePublishedOrNull = null,
   }) {
     return _then(_value.copyWith(
-      onlyInListWithRemoteId: onlyInListWithRemoteId == freezed
+      onlyInListWithRemoteId: freezed == onlyInListWithRemoteId
           ? _value.onlyInListWithRemoteId
           : onlyInListWithRemoteId // ignore: cast_nullable_to_non_nullable
               as String?,
-      onlyWithHashtag: onlyWithHashtag == freezed
+      onlyWithHashtag: freezed == onlyWithHashtag
           ? _value.onlyWithHashtag
           : onlyWithHashtag // ignore: cast_nullable_to_non_nullable
               as String?,
-      onlyFromAccountsFollowingByAccount: onlyFromAccountsFollowingByAccount ==
-              freezed
+      onlyFromAccountsFollowingByAccount: freezed ==
+              onlyFromAccountsFollowingByAccount
           ? _value.onlyFromAccountsFollowingByAccount
           : onlyFromAccountsFollowingByAccount // ignore: cast_nullable_to_non_nullable
               as IAccount?,
-      onlyFromAccount: onlyFromAccount == freezed
+      onlyFromAccount: freezed == onlyFromAccount
           ? _value.onlyFromAccount
           : onlyFromAccount // ignore: cast_nullable_to_non_nullable
               as IAccount?,
-      onlyInConversation: onlyInConversation == freezed
+      onlyInConversation: freezed == onlyInConversation
           ? _value.onlyInConversation
           : onlyInConversation // ignore: cast_nullable_to_non_nullable
               as IConversationChat?,
-      onlyLocalCondition: onlyLocalCondition == freezed
+      onlyLocalCondition: freezed == onlyLocalCondition
           ? _value.onlyLocalCondition
           : onlyLocalCondition // ignore: cast_nullable_to_non_nullable
               as StatusOnlyLocalCondition?,
-      onlyWithMedia: onlyWithMedia == freezed
+      onlyWithMedia: freezed == onlyWithMedia
           ? _value.onlyWithMedia
           : onlyWithMedia // ignore: cast_nullable_to_non_nullable
               as bool?,
-      withMuted: withMuted == freezed
+      withMuted: freezed == withMuted
           ? _value.withMuted
           : withMuted // ignore: cast_nullable_to_non_nullable
               as bool?,
-      excludeVisibilities: excludeVisibilities == freezed
+      excludeVisibilities: freezed == excludeVisibilities
           ? _value.excludeVisibilities
           : excludeVisibilities // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiVisibility>?,
-      onlyNoNsfwSensitive: onlyNoNsfwSensitive == freezed
+      onlyNoNsfwSensitive: freezed == onlyNoNsfwSensitive
           ? _value.onlyNoNsfwSensitive
           : onlyNoNsfwSensitive // ignore: cast_nullable_to_non_nullable
               as bool?,
-      onlyNoReplies: onlyNoReplies == freezed
+      onlyNoReplies: freezed == onlyNoReplies
           ? _value.onlyNoReplies
           : onlyNoReplies // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isFromHomeTimeline: isFromHomeTimeline == freezed
+      isFromHomeTimeline: freezed == isFromHomeTimeline
           ? _value.isFromHomeTimeline
           : isFromHomeTimeline // ignore: cast_nullable_to_non_nullable
               as bool?,
-      onlyFavourited: onlyFavourited == freezed
+      onlyFavourited: freezed == onlyFavourited
           ? _value.onlyFavourited
           : onlyFavourited // ignore: cast_nullable_to_non_nullable
               as bool?,
-      onlyBookmarked: onlyBookmarked == freezed
+      onlyBookmarked: freezed == onlyBookmarked
           ? _value.onlyBookmarked
           : onlyBookmarked // ignore: cast_nullable_to_non_nullable
               as bool?,
-      excludeTextConditions: excludeTextConditions == freezed
+      excludeTextConditions: freezed == excludeTextConditions
           ? _value.excludeTextConditions
           : excludeTextConditions // ignore: cast_nullable_to_non_nullable
               as List<StatusTextCondition>?,
-      onlyNotDeleted: onlyNotDeleted == freezed
+      onlyNotDeleted: null == onlyNotDeleted
           ? _value.onlyNotDeleted
           : onlyNotDeleted // ignore: cast_nullable_to_non_nullable
               as bool,
-      onlyNotHiddenLocallyOnDevice: onlyNotHiddenLocallyOnDevice == freezed
+      onlyNotHiddenLocallyOnDevice: null == onlyNotHiddenLocallyOnDevice
           ? _value.onlyNotHiddenLocallyOnDevice
           : onlyNotHiddenLocallyOnDevice // ignore: cast_nullable_to_non_nullable
               as bool,
-      onlyRemoteCondition: onlyRemoteCondition == freezed
+      onlyRemoteCondition: freezed == onlyRemoteCondition
           ? _value.onlyRemoteCondition
           : onlyRemoteCondition // ignore: cast_nullable_to_non_nullable
               as StatusOnlyRemoteCondition?,
-      mustBeConversationItem: mustBeConversationItem == freezed
+      mustBeConversationItem: null == mustBeConversationItem
           ? _value.mustBeConversationItem
           : mustBeConversationItem // ignore: cast_nullable_to_non_nullable
               as bool,
-      onlyFromInstance: onlyFromInstance == freezed
+      onlyFromInstance: freezed == onlyFromInstance
           ? _value.onlyFromInstance
           : onlyFromInstance // ignore: cast_nullable_to_non_nullable
               as String?,
-      replyVisibilityFilterCondition: replyVisibilityFilterCondition == freezed
+      replyVisibilityFilterCondition: freezed == replyVisibilityFilterCondition
           ? _value.replyVisibilityFilterCondition
           : replyVisibilityFilterCondition // ignore: cast_nullable_to_non_nullable
               as UnifediApiReplyVisibilityFilterCondition?,
-      onlyPendingStatePublishedOrNull: onlyPendingStatePublishedOrNull ==
-              freezed
+      onlyPendingStatePublishedOrNull: null == onlyPendingStatePublishedOrNull
           ? _value.onlyPendingStatePublishedOrNull
           : onlyPendingStatePublishedOrNull // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $StatusOnlyLocalConditionCopyWith<$Res>? get onlyLocalCondition {
     if (_value.onlyLocalCondition == null) {
       return null;
@@ -469,11 +405,12 @@ class _$StatusRepositoryFiltersCopyWithImpl<$Res>
 
     return $StatusOnlyLocalConditionCopyWith<$Res>(_value.onlyLocalCondition!,
         (value) {
-      return _then(_value.copyWith(onlyLocalCondition: value));
+      return _then(_value.copyWith(onlyLocalCondition: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $StatusOnlyRemoteConditionCopyWith<$Res>? get onlyRemoteCondition {
     if (_value.onlyRemoteCondition == null) {
       return null;
@@ -481,11 +418,12 @@ class _$StatusRepositoryFiltersCopyWithImpl<$Res>
 
     return $StatusOnlyRemoteConditionCopyWith<$Res>(_value.onlyRemoteCondition!,
         (value) {
-      return _then(_value.copyWith(onlyRemoteCondition: value));
+      return _then(_value.copyWith(onlyRemoteCondition: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiReplyVisibilityFilterConditionCopyWith<$Res>?
       get replyVisibilityFilterCondition {
     if (_value.replyVisibilityFilterCondition == null) {
@@ -494,18 +432,21 @@ class _$StatusRepositoryFiltersCopyWithImpl<$Res>
 
     return $UnifediApiReplyVisibilityFilterConditionCopyWith<$Res>(
         _value.replyVisibilityFilterCondition!, (value) {
-      return _then(_value.copyWith(replyVisibilityFilterCondition: value));
+      return _then(
+          _value.copyWith(replyVisibilityFilterCondition: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$StatusRepositoryFiltersCopyWith<$Res>
+abstract class _$$StatusRepositoryFiltersImplCopyWith<$Res>
     implements $StatusRepositoryFiltersCopyWith<$Res> {
-  factory _$StatusRepositoryFiltersCopyWith(_StatusRepositoryFilters value,
-          $Res Function(_StatusRepositoryFilters) then) =
-      __$StatusRepositoryFiltersCopyWithImpl<$Res>;
+  factory _$$StatusRepositoryFiltersImplCopyWith(
+          _$StatusRepositoryFiltersImpl value,
+          $Res Function(_$StatusRepositoryFiltersImpl) then) =
+      __$$StatusRepositoryFiltersImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {String? onlyInListWithRemoteId,
       String? onlyWithHashtag,
@@ -540,17 +481,16 @@ abstract class _$StatusRepositoryFiltersCopyWith<$Res>
 }
 
 /// @nodoc
-class __$StatusRepositoryFiltersCopyWithImpl<$Res>
-    extends _$StatusRepositoryFiltersCopyWithImpl<$Res>
-    implements _$StatusRepositoryFiltersCopyWith<$Res> {
-  __$StatusRepositoryFiltersCopyWithImpl(_StatusRepositoryFilters _value,
-      $Res Function(_StatusRepositoryFilters) _then)
-      : super(_value, (v) => _then(v as _StatusRepositoryFilters));
+class __$$StatusRepositoryFiltersImplCopyWithImpl<$Res>
+    extends _$StatusRepositoryFiltersCopyWithImpl<$Res,
+        _$StatusRepositoryFiltersImpl>
+    implements _$$StatusRepositoryFiltersImplCopyWith<$Res> {
+  __$$StatusRepositoryFiltersImplCopyWithImpl(
+      _$StatusRepositoryFiltersImpl _value,
+      $Res Function(_$StatusRepositoryFiltersImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _StatusRepositoryFilters get _value =>
-      super._value as _StatusRepositoryFilters;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? onlyInListWithRemoteId = freezed,
@@ -568,102 +508,101 @@ class __$StatusRepositoryFiltersCopyWithImpl<$Res>
     Object? onlyFavourited = freezed,
     Object? onlyBookmarked = freezed,
     Object? excludeTextConditions = freezed,
-    Object? onlyNotDeleted = freezed,
-    Object? onlyNotHiddenLocallyOnDevice = freezed,
+    Object? onlyNotDeleted = null,
+    Object? onlyNotHiddenLocallyOnDevice = null,
     Object? onlyRemoteCondition = freezed,
-    Object? mustBeConversationItem = freezed,
+    Object? mustBeConversationItem = null,
     Object? onlyFromInstance = freezed,
     Object? replyVisibilityFilterCondition = freezed,
-    Object? onlyPendingStatePublishedOrNull = freezed,
+    Object? onlyPendingStatePublishedOrNull = null,
   }) {
-    return _then(_StatusRepositoryFilters(
-      onlyInListWithRemoteId: onlyInListWithRemoteId == freezed
+    return _then(_$StatusRepositoryFiltersImpl(
+      onlyInListWithRemoteId: freezed == onlyInListWithRemoteId
           ? _value.onlyInListWithRemoteId
           : onlyInListWithRemoteId // ignore: cast_nullable_to_non_nullable
               as String?,
-      onlyWithHashtag: onlyWithHashtag == freezed
+      onlyWithHashtag: freezed == onlyWithHashtag
           ? _value.onlyWithHashtag
           : onlyWithHashtag // ignore: cast_nullable_to_non_nullable
               as String?,
-      onlyFromAccountsFollowingByAccount: onlyFromAccountsFollowingByAccount ==
-              freezed
+      onlyFromAccountsFollowingByAccount: freezed ==
+              onlyFromAccountsFollowingByAccount
           ? _value.onlyFromAccountsFollowingByAccount
           : onlyFromAccountsFollowingByAccount // ignore: cast_nullable_to_non_nullable
               as IAccount?,
-      onlyFromAccount: onlyFromAccount == freezed
+      onlyFromAccount: freezed == onlyFromAccount
           ? _value.onlyFromAccount
           : onlyFromAccount // ignore: cast_nullable_to_non_nullable
               as IAccount?,
-      onlyInConversation: onlyInConversation == freezed
+      onlyInConversation: freezed == onlyInConversation
           ? _value.onlyInConversation
           : onlyInConversation // ignore: cast_nullable_to_non_nullable
               as IConversationChat?,
-      onlyLocalCondition: onlyLocalCondition == freezed
+      onlyLocalCondition: freezed == onlyLocalCondition
           ? _value.onlyLocalCondition
           : onlyLocalCondition // ignore: cast_nullable_to_non_nullable
               as StatusOnlyLocalCondition?,
-      onlyWithMedia: onlyWithMedia == freezed
+      onlyWithMedia: freezed == onlyWithMedia
           ? _value.onlyWithMedia
           : onlyWithMedia // ignore: cast_nullable_to_non_nullable
               as bool?,
-      withMuted: withMuted == freezed
+      withMuted: freezed == withMuted
           ? _value.withMuted
           : withMuted // ignore: cast_nullable_to_non_nullable
               as bool?,
-      excludeVisibilities: excludeVisibilities == freezed
-          ? _value.excludeVisibilities
+      excludeVisibilities: freezed == excludeVisibilities
+          ? _value._excludeVisibilities
           : excludeVisibilities // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiVisibility>?,
-      onlyNoNsfwSensitive: onlyNoNsfwSensitive == freezed
+      onlyNoNsfwSensitive: freezed == onlyNoNsfwSensitive
           ? _value.onlyNoNsfwSensitive
           : onlyNoNsfwSensitive // ignore: cast_nullable_to_non_nullable
               as bool?,
-      onlyNoReplies: onlyNoReplies == freezed
+      onlyNoReplies: freezed == onlyNoReplies
           ? _value.onlyNoReplies
           : onlyNoReplies // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isFromHomeTimeline: isFromHomeTimeline == freezed
+      isFromHomeTimeline: freezed == isFromHomeTimeline
           ? _value.isFromHomeTimeline
           : isFromHomeTimeline // ignore: cast_nullable_to_non_nullable
               as bool?,
-      onlyFavourited: onlyFavourited == freezed
+      onlyFavourited: freezed == onlyFavourited
           ? _value.onlyFavourited
           : onlyFavourited // ignore: cast_nullable_to_non_nullable
               as bool?,
-      onlyBookmarked: onlyBookmarked == freezed
+      onlyBookmarked: freezed == onlyBookmarked
           ? _value.onlyBookmarked
           : onlyBookmarked // ignore: cast_nullable_to_non_nullable
               as bool?,
-      excludeTextConditions: excludeTextConditions == freezed
-          ? _value.excludeTextConditions
+      excludeTextConditions: freezed == excludeTextConditions
+          ? _value._excludeTextConditions
           : excludeTextConditions // ignore: cast_nullable_to_non_nullable
               as List<StatusTextCondition>?,
-      onlyNotDeleted: onlyNotDeleted == freezed
+      onlyNotDeleted: null == onlyNotDeleted
           ? _value.onlyNotDeleted
           : onlyNotDeleted // ignore: cast_nullable_to_non_nullable
               as bool,
-      onlyNotHiddenLocallyOnDevice: onlyNotHiddenLocallyOnDevice == freezed
+      onlyNotHiddenLocallyOnDevice: null == onlyNotHiddenLocallyOnDevice
           ? _value.onlyNotHiddenLocallyOnDevice
           : onlyNotHiddenLocallyOnDevice // ignore: cast_nullable_to_non_nullable
               as bool,
-      onlyRemoteCondition: onlyRemoteCondition == freezed
+      onlyRemoteCondition: freezed == onlyRemoteCondition
           ? _value.onlyRemoteCondition
           : onlyRemoteCondition // ignore: cast_nullable_to_non_nullable
               as StatusOnlyRemoteCondition?,
-      mustBeConversationItem: mustBeConversationItem == freezed
+      mustBeConversationItem: null == mustBeConversationItem
           ? _value.mustBeConversationItem
           : mustBeConversationItem // ignore: cast_nullable_to_non_nullable
               as bool,
-      onlyFromInstance: onlyFromInstance == freezed
+      onlyFromInstance: freezed == onlyFromInstance
           ? _value.onlyFromInstance
           : onlyFromInstance // ignore: cast_nullable_to_non_nullable
               as String?,
-      replyVisibilityFilterCondition: replyVisibilityFilterCondition == freezed
+      replyVisibilityFilterCondition: freezed == replyVisibilityFilterCondition
           ? _value.replyVisibilityFilterCondition
           : replyVisibilityFilterCondition // ignore: cast_nullable_to_non_nullable
               as UnifediApiReplyVisibilityFilterCondition?,
-      onlyPendingStatePublishedOrNull: onlyPendingStatePublishedOrNull ==
-              freezed
+      onlyPendingStatePublishedOrNull: null == onlyPendingStatePublishedOrNull
           ? _value.onlyPendingStatePublishedOrNull
           : onlyPendingStatePublishedOrNull // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -673,8 +612,8 @@ class __$StatusRepositoryFiltersCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_StatusRepositoryFilters extends _StatusRepositoryFilters {
-  const _$_StatusRepositoryFilters(
+class _$StatusRepositoryFiltersImpl extends _StatusRepositoryFilters {
+  const _$StatusRepositoryFiltersImpl(
       {required this.onlyInListWithRemoteId,
       required this.onlyWithHashtag,
       required this.onlyFromAccountsFollowingByAccount,
@@ -683,13 +622,13 @@ class _$_StatusRepositoryFilters extends _StatusRepositoryFilters {
       required this.onlyLocalCondition,
       required this.onlyWithMedia,
       required this.withMuted,
-      required this.excludeVisibilities,
+      required final List<UnifediApiVisibility>? excludeVisibilities,
       required this.onlyNoNsfwSensitive,
       required this.onlyNoReplies,
       required this.isFromHomeTimeline,
       required this.onlyFavourited,
       required this.onlyBookmarked,
-      required this.excludeTextConditions,
+      required final List<StatusTextCondition>? excludeTextConditions,
       this.onlyNotDeleted = true,
       this.onlyNotHiddenLocallyOnDevice = true,
       required this.onlyRemoteCondition,
@@ -697,7 +636,9 @@ class _$_StatusRepositoryFilters extends _StatusRepositoryFilters {
       required this.onlyFromInstance,
       required this.replyVisibilityFilterCondition,
       this.onlyPendingStatePublishedOrNull = true})
-      : super._();
+      : _excludeVisibilities = excludeVisibilities,
+        _excludeTextConditions = excludeTextConditions,
+        super._();
 
   @override
   final String? onlyInListWithRemoteId;
@@ -715,8 +656,17 @@ class _$_StatusRepositoryFilters extends _StatusRepositoryFilters {
   final bool? onlyWithMedia;
   @override
   final bool? withMuted;
+  final List<UnifediApiVisibility>? _excludeVisibilities;
   @override
-  final List<UnifediApiVisibility>? excludeVisibilities;
+  List<UnifediApiVisibility>? get excludeVisibilities {
+    final value = _excludeVisibilities;
+    if (value == null) return null;
+    if (_excludeVisibilities is EqualUnmodifiableListView)
+      return _excludeVisibilities;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   final bool? onlyNoNsfwSensitive;
   @override
@@ -727,26 +677,35 @@ class _$_StatusRepositoryFilters extends _StatusRepositoryFilters {
   final bool? onlyFavourited;
   @override
   final bool? onlyBookmarked;
+  final List<StatusTextCondition>? _excludeTextConditions;
   @override
-  final List<StatusTextCondition>? excludeTextConditions;
-  @JsonKey(defaultValue: true)
+  List<StatusTextCondition>? get excludeTextConditions {
+    final value = _excludeTextConditions;
+    if (value == null) return null;
+    if (_excludeTextConditions is EqualUnmodifiableListView)
+      return _excludeTextConditions;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
+  @JsonKey()
   final bool onlyNotDeleted;
-  @JsonKey(defaultValue: true)
   @override
+  @JsonKey()
   final bool onlyNotHiddenLocallyOnDevice;
   @override
   final StatusOnlyRemoteCondition? onlyRemoteCondition;
-  @JsonKey(defaultValue: false)
   @override
+  @JsonKey()
   final bool mustBeConversationItem;
   @override
   final String? onlyFromInstance;
   @override
   final UnifediApiReplyVisibilityFilterCondition?
       replyVisibilityFilterCondition;
-  @JsonKey(defaultValue: true)
   @override
+  @JsonKey()
   final bool onlyPendingStatePublishedOrNull;
 
   @override
@@ -755,10 +714,10 @@ class _$_StatusRepositoryFilters extends _StatusRepositoryFilters {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _StatusRepositoryFilters &&
+            other is _$StatusRepositoryFiltersImpl &&
             (identical(other.onlyInListWithRemoteId, onlyInListWithRemoteId) ||
                 other.onlyInListWithRemoteId == onlyInListWithRemoteId) &&
             (identical(other.onlyWithHashtag, onlyWithHashtag) ||
@@ -778,7 +737,7 @@ class _$_StatusRepositoryFilters extends _StatusRepositoryFilters {
             (identical(other.withMuted, withMuted) ||
                 other.withMuted == withMuted) &&
             const DeepCollectionEquality()
-                .equals(other.excludeVisibilities, excludeVisibilities) &&
+                .equals(other._excludeVisibilities, _excludeVisibilities) &&
             (identical(other.onlyNoNsfwSensitive, onlyNoNsfwSensitive) ||
                 other.onlyNoNsfwSensitive == onlyNoNsfwSensitive) &&
             (identical(other.onlyNoReplies, onlyNoReplies) ||
@@ -790,7 +749,7 @@ class _$_StatusRepositoryFilters extends _StatusRepositoryFilters {
             (identical(other.onlyBookmarked, onlyBookmarked) ||
                 other.onlyBookmarked == onlyBookmarked) &&
             const DeepCollectionEquality()
-                .equals(other.excludeTextConditions, excludeTextConditions) &&
+                .equals(other._excludeTextConditions, _excludeTextConditions) &&
             (identical(other.onlyNotDeleted, onlyNotDeleted) ||
                 other.onlyNotDeleted == onlyNotDeleted) &&
             (identical(other.onlyNotHiddenLocallyOnDevice, onlyNotHiddenLocallyOnDevice) ||
@@ -822,13 +781,13 @@ class _$_StatusRepositoryFilters extends _StatusRepositoryFilters {
         onlyLocalCondition,
         onlyWithMedia,
         withMuted,
-        const DeepCollectionEquality().hash(excludeVisibilities),
+        const DeepCollectionEquality().hash(_excludeVisibilities),
         onlyNoNsfwSensitive,
         onlyNoReplies,
         isFromHomeTimeline,
         onlyFavourited,
         onlyBookmarked,
-        const DeepCollectionEquality().hash(excludeTextConditions),
+        const DeepCollectionEquality().hash(_excludeTextConditions),
         onlyNotDeleted,
         onlyNotHiddenLocallyOnDevice,
         onlyRemoteCondition,
@@ -840,36 +799,38 @@ class _$_StatusRepositoryFilters extends _StatusRepositoryFilters {
 
   @JsonKey(ignore: true)
   @override
-  _$StatusRepositoryFiltersCopyWith<_StatusRepositoryFilters> get copyWith =>
-      __$StatusRepositoryFiltersCopyWithImpl<_StatusRepositoryFilters>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$StatusRepositoryFiltersImplCopyWith<_$StatusRepositoryFiltersImpl>
+      get copyWith => __$$StatusRepositoryFiltersImplCopyWithImpl<
+          _$StatusRepositoryFiltersImpl>(this, _$identity);
 }
 
 abstract class _StatusRepositoryFilters extends StatusRepositoryFilters {
   const factory _StatusRepositoryFilters(
-      {required String? onlyInListWithRemoteId,
-      required String? onlyWithHashtag,
-      required IAccount? onlyFromAccountsFollowingByAccount,
-      required IAccount? onlyFromAccount,
-      required IConversationChat? onlyInConversation,
-      required StatusOnlyLocalCondition? onlyLocalCondition,
-      required bool? onlyWithMedia,
-      required bool? withMuted,
-      required List<UnifediApiVisibility>? excludeVisibilities,
-      required bool? onlyNoNsfwSensitive,
-      required bool? onlyNoReplies,
-      required bool? isFromHomeTimeline,
-      required bool? onlyFavourited,
-      required bool? onlyBookmarked,
-      required List<StatusTextCondition>? excludeTextConditions,
-      bool onlyNotDeleted,
-      bool onlyNotHiddenLocallyOnDevice,
-      required StatusOnlyRemoteCondition? onlyRemoteCondition,
-      bool mustBeConversationItem,
-      required String? onlyFromInstance,
-      required UnifediApiReplyVisibilityFilterCondition?
-          replyVisibilityFilterCondition,
-      bool onlyPendingStatePublishedOrNull}) = _$_StatusRepositoryFilters;
+          {required final String? onlyInListWithRemoteId,
+          required final String? onlyWithHashtag,
+          required final IAccount? onlyFromAccountsFollowingByAccount,
+          required final IAccount? onlyFromAccount,
+          required final IConversationChat? onlyInConversation,
+          required final StatusOnlyLocalCondition? onlyLocalCondition,
+          required final bool? onlyWithMedia,
+          required final bool? withMuted,
+          required final List<UnifediApiVisibility>? excludeVisibilities,
+          required final bool? onlyNoNsfwSensitive,
+          required final bool? onlyNoReplies,
+          required final bool? isFromHomeTimeline,
+          required final bool? onlyFavourited,
+          required final bool? onlyBookmarked,
+          required final List<StatusTextCondition>? excludeTextConditions,
+          final bool onlyNotDeleted,
+          final bool onlyNotHiddenLocallyOnDevice,
+          required final StatusOnlyRemoteCondition? onlyRemoteCondition,
+          final bool mustBeConversationItem,
+          required final String? onlyFromInstance,
+          required final UnifediApiReplyVisibilityFilterCondition?
+              replyVisibilityFilterCondition,
+          final bool onlyPendingStatePublishedOrNull}) =
+      _$StatusRepositoryFiltersImpl;
   const _StatusRepositoryFilters._() : super._();
 
   @override
@@ -918,27 +879,9 @@ abstract class _StatusRepositoryFilters extends StatusRepositoryFilters {
   bool get onlyPendingStatePublishedOrNull;
   @override
   @JsonKey(ignore: true)
-  _$StatusRepositoryFiltersCopyWith<_StatusRepositoryFilters> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$StatusRepositoryFiltersImplCopyWith<_$StatusRepositoryFiltersImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$StatusRepositoryOrderingTermDataTearOff {
-  const _$StatusRepositoryOrderingTermDataTearOff();
-
-  _StatusRepositoryOrderingTermData call(
-      {required StatusRepositoryOrderType orderByType,
-      required moor.OrderingMode orderingMode}) {
-    return _StatusRepositoryOrderingTermData(
-      orderByType: orderByType,
-      orderingMode: orderingMode,
-    );
-  }
-}
-
-/// @nodoc
-const $StatusRepositoryOrderingTermData =
-    _$StatusRepositoryOrderingTermDataTearOff();
 
 /// @nodoc
 mixin _$StatusRepositoryOrderingTermData {
@@ -956,74 +899,78 @@ abstract class $StatusRepositoryOrderingTermDataCopyWith<$Res> {
   factory $StatusRepositoryOrderingTermDataCopyWith(
           StatusRepositoryOrderingTermData value,
           $Res Function(StatusRepositoryOrderingTermData) then) =
-      _$StatusRepositoryOrderingTermDataCopyWithImpl<$Res>;
+      _$StatusRepositoryOrderingTermDataCopyWithImpl<$Res,
+          StatusRepositoryOrderingTermData>;
+  @useResult
   $Res call(
       {StatusRepositoryOrderType orderByType, moor.OrderingMode orderingMode});
 }
 
 /// @nodoc
-class _$StatusRepositoryOrderingTermDataCopyWithImpl<$Res>
+class _$StatusRepositoryOrderingTermDataCopyWithImpl<$Res,
+        $Val extends StatusRepositoryOrderingTermData>
     implements $StatusRepositoryOrderingTermDataCopyWith<$Res> {
   _$StatusRepositoryOrderingTermDataCopyWithImpl(this._value, this._then);
 
-  final StatusRepositoryOrderingTermData _value;
   // ignore: unused_field
-  final $Res Function(StatusRepositoryOrderingTermData) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? orderByType = freezed,
-    Object? orderingMode = freezed,
+    Object? orderByType = null,
+    Object? orderingMode = null,
   }) {
     return _then(_value.copyWith(
-      orderByType: orderByType == freezed
+      orderByType: null == orderByType
           ? _value.orderByType
           : orderByType // ignore: cast_nullable_to_non_nullable
               as StatusRepositoryOrderType,
-      orderingMode: orderingMode == freezed
+      orderingMode: null == orderingMode
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
               as moor.OrderingMode,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$StatusRepositoryOrderingTermDataCopyWith<$Res>
+abstract class _$$StatusRepositoryOrderingTermDataImplCopyWith<$Res>
     implements $StatusRepositoryOrderingTermDataCopyWith<$Res> {
-  factory _$StatusRepositoryOrderingTermDataCopyWith(
-          _StatusRepositoryOrderingTermData value,
-          $Res Function(_StatusRepositoryOrderingTermData) then) =
-      __$StatusRepositoryOrderingTermDataCopyWithImpl<$Res>;
+  factory _$$StatusRepositoryOrderingTermDataImplCopyWith(
+          _$StatusRepositoryOrderingTermDataImpl value,
+          $Res Function(_$StatusRepositoryOrderingTermDataImpl) then) =
+      __$$StatusRepositoryOrderingTermDataImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {StatusRepositoryOrderType orderByType, moor.OrderingMode orderingMode});
 }
 
 /// @nodoc
-class __$StatusRepositoryOrderingTermDataCopyWithImpl<$Res>
-    extends _$StatusRepositoryOrderingTermDataCopyWithImpl<$Res>
-    implements _$StatusRepositoryOrderingTermDataCopyWith<$Res> {
-  __$StatusRepositoryOrderingTermDataCopyWithImpl(
-      _StatusRepositoryOrderingTermData _value,
-      $Res Function(_StatusRepositoryOrderingTermData) _then)
-      : super(_value, (v) => _then(v as _StatusRepositoryOrderingTermData));
+class __$$StatusRepositoryOrderingTermDataImplCopyWithImpl<$Res>
+    extends _$StatusRepositoryOrderingTermDataCopyWithImpl<$Res,
+        _$StatusRepositoryOrderingTermDataImpl>
+    implements _$$StatusRepositoryOrderingTermDataImplCopyWith<$Res> {
+  __$$StatusRepositoryOrderingTermDataImplCopyWithImpl(
+      _$StatusRepositoryOrderingTermDataImpl _value,
+      $Res Function(_$StatusRepositoryOrderingTermDataImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _StatusRepositoryOrderingTermData get _value =>
-      super._value as _StatusRepositoryOrderingTermData;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? orderByType = freezed,
-    Object? orderingMode = freezed,
+    Object? orderByType = null,
+    Object? orderingMode = null,
   }) {
-    return _then(_StatusRepositoryOrderingTermData(
-      orderByType: orderByType == freezed
+    return _then(_$StatusRepositoryOrderingTermDataImpl(
+      orderByType: null == orderByType
           ? _value.orderByType
           : orderByType // ignore: cast_nullable_to_non_nullable
               as StatusRepositoryOrderType,
-      orderingMode: orderingMode == freezed
+      orderingMode: null == orderingMode
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
               as moor.OrderingMode,
@@ -1033,9 +980,9 @@ class __$StatusRepositoryOrderingTermDataCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_StatusRepositoryOrderingTermData
+class _$StatusRepositoryOrderingTermDataImpl
     implements _StatusRepositoryOrderingTermData {
-  const _$_StatusRepositoryOrderingTermData(
+  const _$StatusRepositoryOrderingTermDataImpl(
       {required this.orderByType, required this.orderingMode});
 
   @override
@@ -1049,10 +996,10 @@ class _$_StatusRepositoryOrderingTermData
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _StatusRepositoryOrderingTermData &&
+            other is _$StatusRepositoryOrderingTermDataImpl &&
             (identical(other.orderByType, orderByType) ||
                 other.orderByType == orderByType) &&
             (identical(other.orderingMode, orderingMode) ||
@@ -1064,17 +1011,19 @@ class _$_StatusRepositoryOrderingTermData
 
   @JsonKey(ignore: true)
   @override
-  _$StatusRepositoryOrderingTermDataCopyWith<_StatusRepositoryOrderingTermData>
-      get copyWith => __$StatusRepositoryOrderingTermDataCopyWithImpl<
-          _StatusRepositoryOrderingTermData>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$StatusRepositoryOrderingTermDataImplCopyWith<
+          _$StatusRepositoryOrderingTermDataImpl>
+      get copyWith => __$$StatusRepositoryOrderingTermDataImplCopyWithImpl<
+          _$StatusRepositoryOrderingTermDataImpl>(this, _$identity);
 }
 
 abstract class _StatusRepositoryOrderingTermData
     implements StatusRepositoryOrderingTermData {
   const factory _StatusRepositoryOrderingTermData(
-          {required StatusRepositoryOrderType orderByType,
-          required moor.OrderingMode orderingMode}) =
-      _$_StatusRepositoryOrderingTermData;
+          {required final StatusRepositoryOrderType orderByType,
+          required final moor.OrderingMode orderingMode}) =
+      _$StatusRepositoryOrderingTermDataImpl;
 
   @override
   StatusRepositoryOrderType get orderByType;
@@ -1082,23 +1031,10 @@ abstract class _StatusRepositoryOrderingTermData
   moor.OrderingMode get orderingMode;
   @override
   @JsonKey(ignore: true)
-  _$StatusRepositoryOrderingTermDataCopyWith<_StatusRepositoryOrderingTermData>
+  _$$StatusRepositoryOrderingTermDataImplCopyWith<
+          _$StatusRepositoryOrderingTermDataImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$StatusOnlyLocalConditionTearOff {
-  const _$StatusOnlyLocalConditionTearOff();
-
-  _StatusOnlyLocalCondition call({required String? localUrlHost}) {
-    return _StatusOnlyLocalCondition(
-      localUrlHost: localUrlHost,
-    );
-  }
-}
-
-/// @nodoc
-const $StatusOnlyLocalCondition = _$StatusOnlyLocalConditionTearOff();
 
 /// @nodoc
 mixin _$StatusOnlyLocalCondition {
@@ -1113,60 +1049,65 @@ mixin _$StatusOnlyLocalCondition {
 abstract class $StatusOnlyLocalConditionCopyWith<$Res> {
   factory $StatusOnlyLocalConditionCopyWith(StatusOnlyLocalCondition value,
           $Res Function(StatusOnlyLocalCondition) then) =
-      _$StatusOnlyLocalConditionCopyWithImpl<$Res>;
+      _$StatusOnlyLocalConditionCopyWithImpl<$Res, StatusOnlyLocalCondition>;
+  @useResult
   $Res call({String? localUrlHost});
 }
 
 /// @nodoc
-class _$StatusOnlyLocalConditionCopyWithImpl<$Res>
+class _$StatusOnlyLocalConditionCopyWithImpl<$Res,
+        $Val extends StatusOnlyLocalCondition>
     implements $StatusOnlyLocalConditionCopyWith<$Res> {
   _$StatusOnlyLocalConditionCopyWithImpl(this._value, this._then);
 
-  final StatusOnlyLocalCondition _value;
   // ignore: unused_field
-  final $Res Function(StatusOnlyLocalCondition) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? localUrlHost = freezed,
   }) {
     return _then(_value.copyWith(
-      localUrlHost: localUrlHost == freezed
+      localUrlHost: freezed == localUrlHost
           ? _value.localUrlHost
           : localUrlHost // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$StatusOnlyLocalConditionCopyWith<$Res>
+abstract class _$$StatusOnlyLocalConditionImplCopyWith<$Res>
     implements $StatusOnlyLocalConditionCopyWith<$Res> {
-  factory _$StatusOnlyLocalConditionCopyWith(_StatusOnlyLocalCondition value,
-          $Res Function(_StatusOnlyLocalCondition) then) =
-      __$StatusOnlyLocalConditionCopyWithImpl<$Res>;
+  factory _$$StatusOnlyLocalConditionImplCopyWith(
+          _$StatusOnlyLocalConditionImpl value,
+          $Res Function(_$StatusOnlyLocalConditionImpl) then) =
+      __$$StatusOnlyLocalConditionImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String? localUrlHost});
 }
 
 /// @nodoc
-class __$StatusOnlyLocalConditionCopyWithImpl<$Res>
-    extends _$StatusOnlyLocalConditionCopyWithImpl<$Res>
-    implements _$StatusOnlyLocalConditionCopyWith<$Res> {
-  __$StatusOnlyLocalConditionCopyWithImpl(_StatusOnlyLocalCondition _value,
-      $Res Function(_StatusOnlyLocalCondition) _then)
-      : super(_value, (v) => _then(v as _StatusOnlyLocalCondition));
+class __$$StatusOnlyLocalConditionImplCopyWithImpl<$Res>
+    extends _$StatusOnlyLocalConditionCopyWithImpl<$Res,
+        _$StatusOnlyLocalConditionImpl>
+    implements _$$StatusOnlyLocalConditionImplCopyWith<$Res> {
+  __$$StatusOnlyLocalConditionImplCopyWithImpl(
+      _$StatusOnlyLocalConditionImpl _value,
+      $Res Function(_$StatusOnlyLocalConditionImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _StatusOnlyLocalCondition get _value =>
-      super._value as _StatusOnlyLocalCondition;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? localUrlHost = freezed,
   }) {
-    return _then(_StatusOnlyLocalCondition(
-      localUrlHost: localUrlHost == freezed
+    return _then(_$StatusOnlyLocalConditionImpl(
+      localUrlHost: freezed == localUrlHost
           ? _value.localUrlHost
           : localUrlHost // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -1176,8 +1117,8 @@ class __$StatusOnlyLocalConditionCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_StatusOnlyLocalCondition implements _StatusOnlyLocalCondition {
-  const _$_StatusOnlyLocalCondition({required this.localUrlHost});
+class _$StatusOnlyLocalConditionImpl implements _StatusOnlyLocalCondition {
+  const _$StatusOnlyLocalConditionImpl({required this.localUrlHost});
 
   @override
   final String? localUrlHost;
@@ -1188,10 +1129,10 @@ class _$_StatusOnlyLocalCondition implements _StatusOnlyLocalCondition {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _StatusOnlyLocalCondition &&
+            other is _$StatusOnlyLocalConditionImpl &&
             (identical(other.localUrlHost, localUrlHost) ||
                 other.localUrlHost == localUrlHost));
   }
@@ -1201,36 +1142,23 @@ class _$_StatusOnlyLocalCondition implements _StatusOnlyLocalCondition {
 
   @JsonKey(ignore: true)
   @override
-  _$StatusOnlyLocalConditionCopyWith<_StatusOnlyLocalCondition> get copyWith =>
-      __$StatusOnlyLocalConditionCopyWithImpl<_StatusOnlyLocalCondition>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$StatusOnlyLocalConditionImplCopyWith<_$StatusOnlyLocalConditionImpl>
+      get copyWith => __$$StatusOnlyLocalConditionImplCopyWithImpl<
+          _$StatusOnlyLocalConditionImpl>(this, _$identity);
 }
 
 abstract class _StatusOnlyLocalCondition implements StatusOnlyLocalCondition {
-  const factory _StatusOnlyLocalCondition({required String? localUrlHost}) =
-      _$_StatusOnlyLocalCondition;
+  const factory _StatusOnlyLocalCondition(
+      {required final String? localUrlHost}) = _$StatusOnlyLocalConditionImpl;
 
   @override
   String? get localUrlHost;
   @override
   @JsonKey(ignore: true)
-  _$StatusOnlyLocalConditionCopyWith<_StatusOnlyLocalCondition> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$StatusOnlyLocalConditionImplCopyWith<_$StatusOnlyLocalConditionImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$StatusOnlyRemoteConditionTearOff {
-  const _$StatusOnlyRemoteConditionTearOff();
-
-  _StatusOnlyRemoteCondition call({required String? localUrlHost}) {
-    return _StatusOnlyRemoteCondition(
-      localUrlHost: localUrlHost,
-    );
-  }
-}
-
-/// @nodoc
-const $StatusOnlyRemoteCondition = _$StatusOnlyRemoteConditionTearOff();
 
 /// @nodoc
 mixin _$StatusOnlyRemoteCondition {
@@ -1245,60 +1173,65 @@ mixin _$StatusOnlyRemoteCondition {
 abstract class $StatusOnlyRemoteConditionCopyWith<$Res> {
   factory $StatusOnlyRemoteConditionCopyWith(StatusOnlyRemoteCondition value,
           $Res Function(StatusOnlyRemoteCondition) then) =
-      _$StatusOnlyRemoteConditionCopyWithImpl<$Res>;
+      _$StatusOnlyRemoteConditionCopyWithImpl<$Res, StatusOnlyRemoteCondition>;
+  @useResult
   $Res call({String? localUrlHost});
 }
 
 /// @nodoc
-class _$StatusOnlyRemoteConditionCopyWithImpl<$Res>
+class _$StatusOnlyRemoteConditionCopyWithImpl<$Res,
+        $Val extends StatusOnlyRemoteCondition>
     implements $StatusOnlyRemoteConditionCopyWith<$Res> {
   _$StatusOnlyRemoteConditionCopyWithImpl(this._value, this._then);
 
-  final StatusOnlyRemoteCondition _value;
   // ignore: unused_field
-  final $Res Function(StatusOnlyRemoteCondition) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? localUrlHost = freezed,
   }) {
     return _then(_value.copyWith(
-      localUrlHost: localUrlHost == freezed
+      localUrlHost: freezed == localUrlHost
           ? _value.localUrlHost
           : localUrlHost // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$StatusOnlyRemoteConditionCopyWith<$Res>
+abstract class _$$StatusOnlyRemoteConditionImplCopyWith<$Res>
     implements $StatusOnlyRemoteConditionCopyWith<$Res> {
-  factory _$StatusOnlyRemoteConditionCopyWith(_StatusOnlyRemoteCondition value,
-          $Res Function(_StatusOnlyRemoteCondition) then) =
-      __$StatusOnlyRemoteConditionCopyWithImpl<$Res>;
+  factory _$$StatusOnlyRemoteConditionImplCopyWith(
+          _$StatusOnlyRemoteConditionImpl value,
+          $Res Function(_$StatusOnlyRemoteConditionImpl) then) =
+      __$$StatusOnlyRemoteConditionImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String? localUrlHost});
 }
 
 /// @nodoc
-class __$StatusOnlyRemoteConditionCopyWithImpl<$Res>
-    extends _$StatusOnlyRemoteConditionCopyWithImpl<$Res>
-    implements _$StatusOnlyRemoteConditionCopyWith<$Res> {
-  __$StatusOnlyRemoteConditionCopyWithImpl(_StatusOnlyRemoteCondition _value,
-      $Res Function(_StatusOnlyRemoteCondition) _then)
-      : super(_value, (v) => _then(v as _StatusOnlyRemoteCondition));
+class __$$StatusOnlyRemoteConditionImplCopyWithImpl<$Res>
+    extends _$StatusOnlyRemoteConditionCopyWithImpl<$Res,
+        _$StatusOnlyRemoteConditionImpl>
+    implements _$$StatusOnlyRemoteConditionImplCopyWith<$Res> {
+  __$$StatusOnlyRemoteConditionImplCopyWithImpl(
+      _$StatusOnlyRemoteConditionImpl _value,
+      $Res Function(_$StatusOnlyRemoteConditionImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _StatusOnlyRemoteCondition get _value =>
-      super._value as _StatusOnlyRemoteCondition;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? localUrlHost = freezed,
   }) {
-    return _then(_StatusOnlyRemoteCondition(
-      localUrlHost: localUrlHost == freezed
+    return _then(_$StatusOnlyRemoteConditionImpl(
+      localUrlHost: freezed == localUrlHost
           ? _value.localUrlHost
           : localUrlHost // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -1308,8 +1241,8 @@ class __$StatusOnlyRemoteConditionCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_StatusOnlyRemoteCondition implements _StatusOnlyRemoteCondition {
-  const _$_StatusOnlyRemoteCondition({required this.localUrlHost});
+class _$StatusOnlyRemoteConditionImpl implements _StatusOnlyRemoteCondition {
+  const _$StatusOnlyRemoteConditionImpl({required this.localUrlHost});
 
   @override
   final String? localUrlHost;
@@ -1320,10 +1253,10 @@ class _$_StatusOnlyRemoteCondition implements _StatusOnlyRemoteCondition {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _StatusOnlyRemoteCondition &&
+            other is _$StatusOnlyRemoteConditionImpl &&
             (identical(other.localUrlHost, localUrlHost) ||
                 other.localUrlHost == localUrlHost));
   }
@@ -1333,38 +1266,23 @@ class _$_StatusOnlyRemoteCondition implements _StatusOnlyRemoteCondition {
 
   @JsonKey(ignore: true)
   @override
-  _$StatusOnlyRemoteConditionCopyWith<_StatusOnlyRemoteCondition>
-      get copyWith =>
-          __$StatusOnlyRemoteConditionCopyWithImpl<_StatusOnlyRemoteCondition>(
-              this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$StatusOnlyRemoteConditionImplCopyWith<_$StatusOnlyRemoteConditionImpl>
+      get copyWith => __$$StatusOnlyRemoteConditionImplCopyWithImpl<
+          _$StatusOnlyRemoteConditionImpl>(this, _$identity);
 }
 
 abstract class _StatusOnlyRemoteCondition implements StatusOnlyRemoteCondition {
-  const factory _StatusOnlyRemoteCondition({required String? localUrlHost}) =
-      _$_StatusOnlyRemoteCondition;
+  const factory _StatusOnlyRemoteCondition(
+      {required final String? localUrlHost}) = _$StatusOnlyRemoteConditionImpl;
 
   @override
   String? get localUrlHost;
   @override
   @JsonKey(ignore: true)
-  _$StatusOnlyRemoteConditionCopyWith<_StatusOnlyRemoteCondition>
+  _$$StatusOnlyRemoteConditionImplCopyWith<_$StatusOnlyRemoteConditionImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$StatusTextConditionTearOff {
-  const _$StatusTextConditionTearOff();
-
-  _StatusTextCondition call({required String phrase, required bool wholeWord}) {
-    return _StatusTextCondition(
-      phrase: phrase,
-      wholeWord: wholeWord,
-    );
-  }
-}
-
-/// @nodoc
-const $StatusTextCondition = _$StatusTextConditionTearOff();
 
 /// @nodoc
 mixin _$StatusTextCondition {
@@ -1380,69 +1298,71 @@ mixin _$StatusTextCondition {
 abstract class $StatusTextConditionCopyWith<$Res> {
   factory $StatusTextConditionCopyWith(
           StatusTextCondition value, $Res Function(StatusTextCondition) then) =
-      _$StatusTextConditionCopyWithImpl<$Res>;
+      _$StatusTextConditionCopyWithImpl<$Res, StatusTextCondition>;
+  @useResult
   $Res call({String phrase, bool wholeWord});
 }
 
 /// @nodoc
-class _$StatusTextConditionCopyWithImpl<$Res>
+class _$StatusTextConditionCopyWithImpl<$Res, $Val extends StatusTextCondition>
     implements $StatusTextConditionCopyWith<$Res> {
   _$StatusTextConditionCopyWithImpl(this._value, this._then);
 
-  final StatusTextCondition _value;
   // ignore: unused_field
-  final $Res Function(StatusTextCondition) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? phrase = freezed,
-    Object? wholeWord = freezed,
+    Object? phrase = null,
+    Object? wholeWord = null,
   }) {
     return _then(_value.copyWith(
-      phrase: phrase == freezed
+      phrase: null == phrase
           ? _value.phrase
           : phrase // ignore: cast_nullable_to_non_nullable
               as String,
-      wholeWord: wholeWord == freezed
+      wholeWord: null == wholeWord
           ? _value.wholeWord
           : wholeWord // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$StatusTextConditionCopyWith<$Res>
+abstract class _$$StatusTextConditionImplCopyWith<$Res>
     implements $StatusTextConditionCopyWith<$Res> {
-  factory _$StatusTextConditionCopyWith(_StatusTextCondition value,
-          $Res Function(_StatusTextCondition) then) =
-      __$StatusTextConditionCopyWithImpl<$Res>;
+  factory _$$StatusTextConditionImplCopyWith(_$StatusTextConditionImpl value,
+          $Res Function(_$StatusTextConditionImpl) then) =
+      __$$StatusTextConditionImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String phrase, bool wholeWord});
 }
 
 /// @nodoc
-class __$StatusTextConditionCopyWithImpl<$Res>
-    extends _$StatusTextConditionCopyWithImpl<$Res>
-    implements _$StatusTextConditionCopyWith<$Res> {
-  __$StatusTextConditionCopyWithImpl(
-      _StatusTextCondition _value, $Res Function(_StatusTextCondition) _then)
-      : super(_value, (v) => _then(v as _StatusTextCondition));
+class __$$StatusTextConditionImplCopyWithImpl<$Res>
+    extends _$StatusTextConditionCopyWithImpl<$Res, _$StatusTextConditionImpl>
+    implements _$$StatusTextConditionImplCopyWith<$Res> {
+  __$$StatusTextConditionImplCopyWithImpl(_$StatusTextConditionImpl _value,
+      $Res Function(_$StatusTextConditionImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _StatusTextCondition get _value => super._value as _StatusTextCondition;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? phrase = freezed,
-    Object? wholeWord = freezed,
+    Object? phrase = null,
+    Object? wholeWord = null,
   }) {
-    return _then(_StatusTextCondition(
-      phrase: phrase == freezed
+    return _then(_$StatusTextConditionImpl(
+      phrase: null == phrase
           ? _value.phrase
           : phrase // ignore: cast_nullable_to_non_nullable
               as String,
-      wholeWord: wholeWord == freezed
+      wholeWord: null == wholeWord
           ? _value.wholeWord
           : wholeWord // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -1452,8 +1372,9 @@ class __$StatusTextConditionCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_StatusTextCondition implements _StatusTextCondition {
-  const _$_StatusTextCondition({required this.phrase, required this.wholeWord});
+class _$StatusTextConditionImpl implements _StatusTextCondition {
+  const _$StatusTextConditionImpl(
+      {required this.phrase, required this.wholeWord});
 
   @override
   final String phrase;
@@ -1466,10 +1387,10 @@ class _$_StatusTextCondition implements _StatusTextCondition {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _StatusTextCondition &&
+            other is _$StatusTextConditionImpl &&
             (identical(other.phrase, phrase) || other.phrase == phrase) &&
             (identical(other.wholeWord, wholeWord) ||
                 other.wholeWord == wholeWord));
@@ -1480,15 +1401,16 @@ class _$_StatusTextCondition implements _StatusTextCondition {
 
   @JsonKey(ignore: true)
   @override
-  _$StatusTextConditionCopyWith<_StatusTextCondition> get copyWith =>
-      __$StatusTextConditionCopyWithImpl<_StatusTextCondition>(
+  @pragma('vm:prefer-inline')
+  _$$StatusTextConditionImplCopyWith<_$StatusTextConditionImpl> get copyWith =>
+      __$$StatusTextConditionImplCopyWithImpl<_$StatusTextConditionImpl>(
           this, _$identity);
 }
 
 abstract class _StatusTextCondition implements StatusTextCondition {
   const factory _StatusTextCondition(
-      {required String phrase,
-      required bool wholeWord}) = _$_StatusTextCondition;
+      {required final String phrase,
+      required final bool wholeWord}) = _$StatusTextConditionImpl;
 
   @override
   String get phrase;
@@ -1496,6 +1418,6 @@ abstract class _StatusTextCondition implements StatusTextCondition {
   bool get wholeWord;
   @override
   @JsonKey(ignore: true)
-  _$StatusTextConditionCopyWith<_StatusTextCondition> get copyWith =>
+  _$$StatusTextConditionImplCopyWith<_$StatusTextConditionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

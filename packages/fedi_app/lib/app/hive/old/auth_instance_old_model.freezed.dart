@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'auth_instance_old_model.dart';
 
@@ -11,56 +12,11 @@ part of 'auth_instance_old_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 AuthInstanceOld _$AuthInstanceOldFromJson(Map<String, dynamic> json) {
   return _AuthInstanceOld.fromJson(json);
 }
-
-/// @nodoc
-class _$AuthInstanceOldTearOff {
-  const _$AuthInstanceOldTearOff();
-
-  _AuthInstanceOld call(
-      {@HiveField(0)
-      @JsonKey(name: 'url_schema')
-          required String? urlSchema,
-      @HiveField(1)
-      @JsonKey(name: 'url_host')
-          required String urlHost,
-      @HiveField(2)
-          required String acct,
-      @HiveField(3)
-          required PleromaApiOAuthToken? token,
-      @HiveField(4)
-      @JsonKey(name: 'auth_code')
-          required String? authCode,
-      @HiveField(5)
-      @JsonKey(name: 'is_pleroma_instance')
-          required bool isPleroma,
-      @HiveField(6)
-          required PleromaApiClientApplication? application,
-      @HiveField(7)
-          required PleromaApiInstance? info}) {
-    return _AuthInstanceOld(
-      urlSchema: urlSchema,
-      urlHost: urlHost,
-      acct: acct,
-      token: token,
-      authCode: authCode,
-      isPleroma: isPleroma,
-      application: application,
-      info: info,
-    );
-  }
-
-  AuthInstanceOld fromJson(Map<String, Object?> json) {
-    return AuthInstanceOld.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $AuthInstanceOld = _$AuthInstanceOldTearOff();
 
 /// @nodoc
 mixin _$AuthInstanceOld {
@@ -96,7 +52,8 @@ mixin _$AuthInstanceOld {
 abstract class $AuthInstanceOldCopyWith<$Res> {
   factory $AuthInstanceOldCopyWith(
           AuthInstanceOld value, $Res Function(AuthInstanceOld) then) =
-      _$AuthInstanceOldCopyWithImpl<$Res>;
+      _$AuthInstanceOldCopyWithImpl<$Res, AuthInstanceOld>;
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'url_schema') String? urlSchema,
       @HiveField(1) @JsonKey(name: 'url_host') String urlHost,
@@ -113,73 +70,77 @@ abstract class $AuthInstanceOldCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$AuthInstanceOldCopyWithImpl<$Res>
+class _$AuthInstanceOldCopyWithImpl<$Res, $Val extends AuthInstanceOld>
     implements $AuthInstanceOldCopyWith<$Res> {
   _$AuthInstanceOldCopyWithImpl(this._value, this._then);
 
-  final AuthInstanceOld _value;
   // ignore: unused_field
-  final $Res Function(AuthInstanceOld) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? urlSchema = freezed,
-    Object? urlHost = freezed,
-    Object? acct = freezed,
+    Object? urlHost = null,
+    Object? acct = null,
     Object? token = freezed,
     Object? authCode = freezed,
-    Object? isPleroma = freezed,
+    Object? isPleroma = null,
     Object? application = freezed,
     Object? info = freezed,
   }) {
     return _then(_value.copyWith(
-      urlSchema: urlSchema == freezed
+      urlSchema: freezed == urlSchema
           ? _value.urlSchema
           : urlSchema // ignore: cast_nullable_to_non_nullable
               as String?,
-      urlHost: urlHost == freezed
+      urlHost: null == urlHost
           ? _value.urlHost
           : urlHost // ignore: cast_nullable_to_non_nullable
               as String,
-      acct: acct == freezed
+      acct: null == acct
           ? _value.acct
           : acct // ignore: cast_nullable_to_non_nullable
               as String,
-      token: token == freezed
+      token: freezed == token
           ? _value.token
           : token // ignore: cast_nullable_to_non_nullable
               as PleromaApiOAuthToken?,
-      authCode: authCode == freezed
+      authCode: freezed == authCode
           ? _value.authCode
           : authCode // ignore: cast_nullable_to_non_nullable
               as String?,
-      isPleroma: isPleroma == freezed
+      isPleroma: null == isPleroma
           ? _value.isPleroma
           : isPleroma // ignore: cast_nullable_to_non_nullable
               as bool,
-      application: application == freezed
+      application: freezed == application
           ? _value.application
           : application // ignore: cast_nullable_to_non_nullable
               as PleromaApiClientApplication?,
-      info: info == freezed
+      info: freezed == info
           ? _value.info
           : info // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstance?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiOAuthTokenCopyWith<$Res>? get token {
     if (_value.token == null) {
       return null;
     }
 
     return $PleromaApiOAuthTokenCopyWith<$Res>(_value.token!, (value) {
-      return _then(_value.copyWith(token: value));
+      return _then(_value.copyWith(token: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiClientApplicationCopyWith<$Res>? get application {
     if (_value.application == null) {
       return null;
@@ -187,29 +148,31 @@ class _$AuthInstanceOldCopyWithImpl<$Res>
 
     return $PleromaApiClientApplicationCopyWith<$Res>(_value.application!,
         (value) {
-      return _then(_value.copyWith(application: value));
+      return _then(_value.copyWith(application: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiInstanceCopyWith<$Res>? get info {
     if (_value.info == null) {
       return null;
     }
 
     return $PleromaApiInstanceCopyWith<$Res>(_value.info!, (value) {
-      return _then(_value.copyWith(info: value));
+      return _then(_value.copyWith(info: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$AuthInstanceOldCopyWith<$Res>
+abstract class _$$AuthInstanceOldImplCopyWith<$Res>
     implements $AuthInstanceOldCopyWith<$Res> {
-  factory _$AuthInstanceOldCopyWith(
-          _AuthInstanceOld value, $Res Function(_AuthInstanceOld) then) =
-      __$AuthInstanceOldCopyWithImpl<$Res>;
+  factory _$$AuthInstanceOldImplCopyWith(_$AuthInstanceOldImpl value,
+          $Res Function(_$AuthInstanceOldImpl) then) =
+      __$$AuthInstanceOldImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'url_schema') String? urlSchema,
       @HiveField(1) @JsonKey(name: 'url_host') String urlHost,
@@ -229,57 +192,55 @@ abstract class _$AuthInstanceOldCopyWith<$Res>
 }
 
 /// @nodoc
-class __$AuthInstanceOldCopyWithImpl<$Res>
-    extends _$AuthInstanceOldCopyWithImpl<$Res>
-    implements _$AuthInstanceOldCopyWith<$Res> {
-  __$AuthInstanceOldCopyWithImpl(
-      _AuthInstanceOld _value, $Res Function(_AuthInstanceOld) _then)
-      : super(_value, (v) => _then(v as _AuthInstanceOld));
+class __$$AuthInstanceOldImplCopyWithImpl<$Res>
+    extends _$AuthInstanceOldCopyWithImpl<$Res, _$AuthInstanceOldImpl>
+    implements _$$AuthInstanceOldImplCopyWith<$Res> {
+  __$$AuthInstanceOldImplCopyWithImpl(
+      _$AuthInstanceOldImpl _value, $Res Function(_$AuthInstanceOldImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _AuthInstanceOld get _value => super._value as _AuthInstanceOld;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? urlSchema = freezed,
-    Object? urlHost = freezed,
-    Object? acct = freezed,
+    Object? urlHost = null,
+    Object? acct = null,
     Object? token = freezed,
     Object? authCode = freezed,
-    Object? isPleroma = freezed,
+    Object? isPleroma = null,
     Object? application = freezed,
     Object? info = freezed,
   }) {
-    return _then(_AuthInstanceOld(
-      urlSchema: urlSchema == freezed
+    return _then(_$AuthInstanceOldImpl(
+      urlSchema: freezed == urlSchema
           ? _value.urlSchema
           : urlSchema // ignore: cast_nullable_to_non_nullable
               as String?,
-      urlHost: urlHost == freezed
+      urlHost: null == urlHost
           ? _value.urlHost
           : urlHost // ignore: cast_nullable_to_non_nullable
               as String,
-      acct: acct == freezed
+      acct: null == acct
           ? _value.acct
           : acct // ignore: cast_nullable_to_non_nullable
               as String,
-      token: token == freezed
+      token: freezed == token
           ? _value.token
           : token // ignore: cast_nullable_to_non_nullable
               as PleromaApiOAuthToken?,
-      authCode: authCode == freezed
+      authCode: freezed == authCode
           ? _value.authCode
           : authCode // ignore: cast_nullable_to_non_nullable
               as String?,
-      isPleroma: isPleroma == freezed
+      isPleroma: null == isPleroma
           ? _value.isPleroma
           : isPleroma // ignore: cast_nullable_to_non_nullable
               as bool,
-      application: application == freezed
+      application: freezed == application
           ? _value.application
           : application // ignore: cast_nullable_to_non_nullable
               as PleromaApiClientApplication?,
-      info: info == freezed
+      info: freezed == info
           ? _value.info
           : info // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstance?,
@@ -289,32 +250,22 @@ class __$AuthInstanceOldCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_AuthInstanceOld extends _AuthInstanceOld {
-  const _$_AuthInstanceOld(
-      {@HiveField(0)
-      @JsonKey(name: 'url_schema')
-          required this.urlSchema,
-      @HiveField(1)
-      @JsonKey(name: 'url_host')
-          required this.urlHost,
-      @HiveField(2)
-          required this.acct,
-      @HiveField(3)
-          required this.token,
-      @HiveField(4)
-      @JsonKey(name: 'auth_code')
-          required this.authCode,
+class _$AuthInstanceOldImpl extends _AuthInstanceOld {
+  const _$AuthInstanceOldImpl(
+      {@HiveField(0) @JsonKey(name: 'url_schema') required this.urlSchema,
+      @HiveField(1) @JsonKey(name: 'url_host') required this.urlHost,
+      @HiveField(2) required this.acct,
+      @HiveField(3) required this.token,
+      @HiveField(4) @JsonKey(name: 'auth_code') required this.authCode,
       @HiveField(5)
       @JsonKey(name: 'is_pleroma_instance')
-          required this.isPleroma,
-      @HiveField(6)
-          required this.application,
-      @HiveField(7)
-          required this.info})
+      required this.isPleroma,
+      @HiveField(6) required this.application,
+      @HiveField(7) required this.info})
       : super._();
 
-  factory _$_AuthInstanceOld.fromJson(Map<String, dynamic> json) =>
-      _$$_AuthInstanceOldFromJson(json);
+  factory _$AuthInstanceOldImpl.fromJson(Map<String, dynamic> json) =>
+      _$$AuthInstanceOldImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -351,10 +302,10 @@ class _$_AuthInstanceOld extends _AuthInstanceOld {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _AuthInstanceOld &&
+            other is _$AuthInstanceOldImpl &&
             (identical(other.urlSchema, urlSchema) ||
                 other.urlSchema == urlSchema) &&
             (identical(other.urlHost, urlHost) || other.urlHost == urlHost) &&
@@ -369,18 +320,23 @@ class _$_AuthInstanceOld extends _AuthInstanceOld {
             (identical(other.info, info) || other.info == info));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, urlSchema, urlHost, acct, token,
       authCode, isPleroma, application, info);
 
   @JsonKey(ignore: true)
   @override
-  _$AuthInstanceOldCopyWith<_AuthInstanceOld> get copyWith =>
-      __$AuthInstanceOldCopyWithImpl<_AuthInstanceOld>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AuthInstanceOldImplCopyWith<_$AuthInstanceOldImpl> get copyWith =>
+      __$$AuthInstanceOldImplCopyWithImpl<_$AuthInstanceOldImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_AuthInstanceOldToJson(this);
+    return _$$AuthInstanceOldImplToJson(
+      this,
+    );
   }
 }
 
@@ -388,28 +344,21 @@ abstract class _AuthInstanceOld extends AuthInstanceOld {
   const factory _AuthInstanceOld(
       {@HiveField(0)
       @JsonKey(name: 'url_schema')
-          required String? urlSchema,
-      @HiveField(1)
-      @JsonKey(name: 'url_host')
-          required String urlHost,
-      @HiveField(2)
-          required String acct,
-      @HiveField(3)
-          required PleromaApiOAuthToken? token,
-      @HiveField(4)
-      @JsonKey(name: 'auth_code')
-          required String? authCode,
+      required final String? urlSchema,
+      @HiveField(1) @JsonKey(name: 'url_host') required final String urlHost,
+      @HiveField(2) required final String acct,
+      @HiveField(3) required final PleromaApiOAuthToken? token,
+      @HiveField(4) @JsonKey(name: 'auth_code') required final String? authCode,
       @HiveField(5)
       @JsonKey(name: 'is_pleroma_instance')
-          required bool isPleroma,
-      @HiveField(6)
-          required PleromaApiClientApplication? application,
+      required final bool isPleroma,
+      @HiveField(6) required final PleromaApiClientApplication? application,
       @HiveField(7)
-          required PleromaApiInstance? info}) = _$_AuthInstanceOld;
+      required final PleromaApiInstance? info}) = _$AuthInstanceOldImpl;
   const _AuthInstanceOld._() : super._();
 
   factory _AuthInstanceOld.fromJson(Map<String, dynamic> json) =
-      _$_AuthInstanceOld.fromJson;
+      _$AuthInstanceOldImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -441,6 +390,6 @@ abstract class _AuthInstanceOld extends AuthInstanceOld {
   PleromaApiInstance? get info;
   @override
   @JsonKey(ignore: true)
-  _$AuthInstanceOldCopyWith<_AuthInstanceOld> get copyWith =>
+  _$$AuthInstanceOldImplCopyWith<_$AuthInstanceOldImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

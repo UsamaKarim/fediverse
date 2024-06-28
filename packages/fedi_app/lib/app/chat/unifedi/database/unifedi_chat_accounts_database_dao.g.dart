@@ -2,10 +2,7 @@
 
 part of 'unifedi_chat_accounts_database_dao.dart';
 
-// **************************************************************************
-// DaoGenerator
-// **************************************************************************
-
+// ignore_for_file: type=lint
 mixin _$ChatAccountsDaoMixin on DatabaseAccessor<AppDatabase> {
   $DbChatAccountsTable get dbChatAccounts => attachedDatabase.dbChatAccounts;
 }

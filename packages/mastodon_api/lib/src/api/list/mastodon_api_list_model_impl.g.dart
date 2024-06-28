@@ -50,14 +50,16 @@ class MastodonApiListAdapter extends TypeAdapter<MastodonApiList> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiList _$$_MastodonApiListFromJson(Map<String, dynamic> json) =>
-    _$_MastodonApiList(
+_$MastodonApiListImpl _$$MastodonApiListImplFromJson(
+        Map<String, dynamic> json) =>
+    _$MastodonApiListImpl(
       id: json['id'] as String,
       title: json['title'] as String,
       repliesPolicy: json['replies_policy'] as String?,
     );
 
-Map<String, dynamic> _$$_MastodonApiListToJson(_$_MastodonApiList instance) {
+Map<String, dynamic> _$$MastodonApiListImplToJson(
+    _$MastodonApiListImpl instance) {
   final val = <String, dynamic>{
     'id': instance.id,
     'title': instance.title,

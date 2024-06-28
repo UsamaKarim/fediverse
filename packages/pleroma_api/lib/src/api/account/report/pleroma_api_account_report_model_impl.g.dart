@@ -51,9 +51,9 @@ class PleromaApiAccountReportAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiAccountReport _$$_PleromaApiAccountReportFromJson(
+_$PleromaApiAccountReportImpl _$$PleromaApiAccountReportImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiAccountReport(
+    _$PleromaApiAccountReportImpl(
       account: json['account'] == null
           ? null
           : PleromaApiAccount.fromJson(json['account'] as Map<String, dynamic>),
@@ -65,8 +65,8 @@ _$_PleromaApiAccountReport _$$_PleromaApiAccountReportFromJson(
           : PleromaApiAccount.fromJson(json['user'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_PleromaApiAccountReportToJson(
-    _$_PleromaApiAccountReport instance) {
+Map<String, dynamic> _$$PleromaApiAccountReportImplToJson(
+    _$PleromaApiAccountReportImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

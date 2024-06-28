@@ -84,27 +84,27 @@ class PleromaApiAccountRelationshipAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiAccountRelationship _$$_PleromaApiAccountRelationshipFromJson(
-        Map<String, dynamic> json) =>
-    _$_PleromaApiAccountRelationship(
-      blocking: json['blocking'] as bool?,
-      domainBlocking: json['domain_blocking'] as bool?,
-      endorsed: json['endorsed'] as bool?,
-      followedBy: json['followed_by'] as bool?,
-      following: json['following'] as bool?,
-      id: json['id'] as String?,
-      muting: json['muting'] as bool?,
-      mutingNotifications: json['muting_notifications'] as bool?,
-      requested: json['requested'] as bool?,
-      showingReblogs: json['showing_reblogs'] as bool?,
-      subscribing: json['subscribing'] as bool?,
-      blockedBy: json['blocked_by'] as bool?,
-      note: json['note'] as String?,
-      notifying: json['notifying'] as bool?,
-    );
+_$PleromaApiAccountRelationshipImpl
+    _$$PleromaApiAccountRelationshipImplFromJson(Map<String, dynamic> json) =>
+        _$PleromaApiAccountRelationshipImpl(
+          blocking: json['blocking'] as bool?,
+          domainBlocking: json['domain_blocking'] as bool?,
+          endorsed: json['endorsed'] as bool?,
+          followedBy: json['followed_by'] as bool?,
+          following: json['following'] as bool?,
+          id: json['id'] as String?,
+          muting: json['muting'] as bool?,
+          mutingNotifications: json['muting_notifications'] as bool?,
+          requested: json['requested'] as bool?,
+          showingReblogs: json['showing_reblogs'] as bool?,
+          subscribing: json['subscribing'] as bool?,
+          blockedBy: json['blocked_by'] as bool?,
+          note: json['note'] as String?,
+          notifying: json['notifying'] as bool?,
+        );
 
-Map<String, dynamic> _$$_PleromaApiAccountRelationshipToJson(
-    _$_PleromaApiAccountRelationship instance) {
+Map<String, dynamic> _$$PleromaApiAccountRelationshipImplToJson(
+    _$PleromaApiAccountRelationshipImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

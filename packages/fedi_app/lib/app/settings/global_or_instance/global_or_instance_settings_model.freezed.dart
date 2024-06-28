@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'global_or_instance_settings_model.dart';
 
@@ -11,23 +12,7 @@ part of 'global_or_instance_settings_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$GlobalOrInstanceSettingsTearOff {
-  const _$GlobalOrInstanceSettingsTearOff();
-
-  _GlobalOrInstanceSettings<T> call<T>(
-      {required T settings, required GlobalOrInstanceSettingsType type}) {
-    return _GlobalOrInstanceSettings<T>(
-      settings: settings,
-      type: type,
-    );
-  }
-}
-
-/// @nodoc
-const $GlobalOrInstanceSettings = _$GlobalOrInstanceSettingsTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$GlobalOrInstanceSettings<T> {
@@ -43,70 +28,76 @@ mixin _$GlobalOrInstanceSettings<T> {
 abstract class $GlobalOrInstanceSettingsCopyWith<T, $Res> {
   factory $GlobalOrInstanceSettingsCopyWith(GlobalOrInstanceSettings<T> value,
           $Res Function(GlobalOrInstanceSettings<T>) then) =
-      _$GlobalOrInstanceSettingsCopyWithImpl<T, $Res>;
+      _$GlobalOrInstanceSettingsCopyWithImpl<T, $Res,
+          GlobalOrInstanceSettings<T>>;
+  @useResult
   $Res call({T settings, GlobalOrInstanceSettingsType type});
 }
 
 /// @nodoc
-class _$GlobalOrInstanceSettingsCopyWithImpl<T, $Res>
+class _$GlobalOrInstanceSettingsCopyWithImpl<T, $Res,
+        $Val extends GlobalOrInstanceSettings<T>>
     implements $GlobalOrInstanceSettingsCopyWith<T, $Res> {
   _$GlobalOrInstanceSettingsCopyWithImpl(this._value, this._then);
 
-  final GlobalOrInstanceSettings<T> _value;
   // ignore: unused_field
-  final $Res Function(GlobalOrInstanceSettings<T>) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? settings = freezed,
-    Object? type = freezed,
+    Object? type = null,
   }) {
     return _then(_value.copyWith(
-      settings: settings == freezed
+      settings: freezed == settings
           ? _value.settings
           : settings // ignore: cast_nullable_to_non_nullable
               as T,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as GlobalOrInstanceSettingsType,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$GlobalOrInstanceSettingsCopyWith<T, $Res>
+abstract class _$$GlobalOrInstanceSettingsImplCopyWith<T, $Res>
     implements $GlobalOrInstanceSettingsCopyWith<T, $Res> {
-  factory _$GlobalOrInstanceSettingsCopyWith(_GlobalOrInstanceSettings<T> value,
-          $Res Function(_GlobalOrInstanceSettings<T>) then) =
-      __$GlobalOrInstanceSettingsCopyWithImpl<T, $Res>;
+  factory _$$GlobalOrInstanceSettingsImplCopyWith(
+          _$GlobalOrInstanceSettingsImpl<T> value,
+          $Res Function(_$GlobalOrInstanceSettingsImpl<T>) then) =
+      __$$GlobalOrInstanceSettingsImplCopyWithImpl<T, $Res>;
   @override
+  @useResult
   $Res call({T settings, GlobalOrInstanceSettingsType type});
 }
 
 /// @nodoc
-class __$GlobalOrInstanceSettingsCopyWithImpl<T, $Res>
-    extends _$GlobalOrInstanceSettingsCopyWithImpl<T, $Res>
-    implements _$GlobalOrInstanceSettingsCopyWith<T, $Res> {
-  __$GlobalOrInstanceSettingsCopyWithImpl(_GlobalOrInstanceSettings<T> _value,
-      $Res Function(_GlobalOrInstanceSettings<T>) _then)
-      : super(_value, (v) => _then(v as _GlobalOrInstanceSettings<T>));
+class __$$GlobalOrInstanceSettingsImplCopyWithImpl<T, $Res>
+    extends _$GlobalOrInstanceSettingsCopyWithImpl<T, $Res,
+        _$GlobalOrInstanceSettingsImpl<T>>
+    implements _$$GlobalOrInstanceSettingsImplCopyWith<T, $Res> {
+  __$$GlobalOrInstanceSettingsImplCopyWithImpl(
+      _$GlobalOrInstanceSettingsImpl<T> _value,
+      $Res Function(_$GlobalOrInstanceSettingsImpl<T>) _then)
+      : super(_value, _then);
 
-  @override
-  _GlobalOrInstanceSettings<T> get _value =>
-      super._value as _GlobalOrInstanceSettings<T>;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? settings = freezed,
-    Object? type = freezed,
+    Object? type = null,
   }) {
-    return _then(_GlobalOrInstanceSettings<T>(
-      settings: settings == freezed
+    return _then(_$GlobalOrInstanceSettingsImpl<T>(
+      settings: freezed == settings
           ? _value.settings
           : settings // ignore: cast_nullable_to_non_nullable
               as T,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as GlobalOrInstanceSettingsType,
@@ -116,8 +107,8 @@ class __$GlobalOrInstanceSettingsCopyWithImpl<T, $Res>
 
 /// @nodoc
 
-class _$_GlobalOrInstanceSettings<T> extends _GlobalOrInstanceSettings<T> {
-  const _$_GlobalOrInstanceSettings(
+class _$GlobalOrInstanceSettingsImpl<T> extends _GlobalOrInstanceSettings<T> {
+  const _$GlobalOrInstanceSettingsImpl(
       {required this.settings, required this.type})
       : super._();
 
@@ -132,10 +123,10 @@ class _$_GlobalOrInstanceSettings<T> extends _GlobalOrInstanceSettings<T> {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _GlobalOrInstanceSettings<T> &&
+            other is _$GlobalOrInstanceSettingsImpl<T> &&
             const DeepCollectionEquality().equals(other.settings, settings) &&
             (identical(other.type, type) || other.type == type));
   }
@@ -146,16 +137,18 @@ class _$_GlobalOrInstanceSettings<T> extends _GlobalOrInstanceSettings<T> {
 
   @JsonKey(ignore: true)
   @override
-  _$GlobalOrInstanceSettingsCopyWith<T, _GlobalOrInstanceSettings<T>>
-      get copyWith => __$GlobalOrInstanceSettingsCopyWithImpl<T,
-          _GlobalOrInstanceSettings<T>>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$GlobalOrInstanceSettingsImplCopyWith<T, _$GlobalOrInstanceSettingsImpl<T>>
+      get copyWith => __$$GlobalOrInstanceSettingsImplCopyWithImpl<T,
+          _$GlobalOrInstanceSettingsImpl<T>>(this, _$identity);
 }
 
 abstract class _GlobalOrInstanceSettings<T>
     extends GlobalOrInstanceSettings<T> {
   const factory _GlobalOrInstanceSettings(
-          {required T settings, required GlobalOrInstanceSettingsType type}) =
-      _$_GlobalOrInstanceSettings<T>;
+          {required final T settings,
+          required final GlobalOrInstanceSettingsType type}) =
+      _$GlobalOrInstanceSettingsImpl<T>;
   const _GlobalOrInstanceSettings._() : super._();
 
   @override
@@ -164,6 +157,6 @@ abstract class _GlobalOrInstanceSettings<T>
   GlobalOrInstanceSettingsType get type;
   @override
   @JsonKey(ignore: true)
-  _$GlobalOrInstanceSettingsCopyWith<T, _GlobalOrInstanceSettings<T>>
+  _$$GlobalOrInstanceSettingsImplCopyWith<T, _$GlobalOrInstanceSettingsImpl<T>>
       get copyWith => throw _privateConstructorUsedError;
 }

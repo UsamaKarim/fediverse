@@ -45,16 +45,16 @@ class UnifediApiVersionRangeMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiVersionRangeMastodonAdapter
-    _$$_UnifediApiVersionRangeMastodonAdapterFromJson(
+_$UnifediApiVersionRangeMastodonAdapterImpl
+    _$$UnifediApiVersionRangeMastodonAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiVersionRangeMastodonAdapter(
+        _$UnifediApiVersionRangeMastodonAdapterImpl(
           MastodonApiVersionRange.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiVersionRangeMastodonAdapterToJson(
-        _$_UnifediApiVersionRangeMastodonAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiVersionRangeMastodonAdapterImplToJson(
+        _$UnifediApiVersionRangeMastodonAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

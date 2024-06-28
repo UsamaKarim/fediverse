@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_push_subscription_model_impl.dart';
 
@@ -11,37 +12,12 @@ part of 'unifedi_api_push_subscription_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiPushSubscription _$UnifediApiPushSubscriptionFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiPushSubscription.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiPushSubscriptionTearOff {
-  const _$UnifediApiPushSubscriptionTearOff();
-
-  _UnifediApiPushSubscription call(
-      {@HiveField(0) required String id,
-      @HiveField(1) required String endpoint,
-      @HiveField(2) required UnifediApiPushSubscriptionAlerts alerts,
-      @HiveField(3) @JsonKey(name: 'server_key') required String serverKey}) {
-    return _UnifediApiPushSubscription(
-      id: id,
-      endpoint: endpoint,
-      alerts: alerts,
-      serverKey: serverKey,
-    );
-  }
-
-  UnifediApiPushSubscription fromJson(Map<String, Object?> json) {
-    return UnifediApiPushSubscription.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiPushSubscription = _$UnifediApiPushSubscriptionTearOff();
 
 /// @nodoc
 mixin _$UnifediApiPushSubscription {
@@ -66,7 +42,9 @@ mixin _$UnifediApiPushSubscription {
 abstract class $UnifediApiPushSubscriptionCopyWith<$Res> {
   factory $UnifediApiPushSubscriptionCopyWith(UnifediApiPushSubscription value,
           $Res Function(UnifediApiPushSubscription) then) =
-      _$UnifediApiPushSubscriptionCopyWithImpl<$Res>;
+      _$UnifediApiPushSubscriptionCopyWithImpl<$Res,
+          UnifediApiPushSubscription>;
+  @useResult
   $Res call(
       {@HiveField(0) String id,
       @HiveField(1) String endpoint,
@@ -77,58 +55,63 @@ abstract class $UnifediApiPushSubscriptionCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UnifediApiPushSubscriptionCopyWithImpl<$Res>
+class _$UnifediApiPushSubscriptionCopyWithImpl<$Res,
+        $Val extends UnifediApiPushSubscription>
     implements $UnifediApiPushSubscriptionCopyWith<$Res> {
   _$UnifediApiPushSubscriptionCopyWithImpl(this._value, this._then);
 
-  final UnifediApiPushSubscription _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiPushSubscription) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? endpoint = freezed,
-    Object? alerts = freezed,
-    Object? serverKey = freezed,
+    Object? id = null,
+    Object? endpoint = null,
+    Object? alerts = null,
+    Object? serverKey = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      endpoint: endpoint == freezed
+      endpoint: null == endpoint
           ? _value.endpoint
           : endpoint // ignore: cast_nullable_to_non_nullable
               as String,
-      alerts: alerts == freezed
+      alerts: null == alerts
           ? _value.alerts
           : alerts // ignore: cast_nullable_to_non_nullable
               as UnifediApiPushSubscriptionAlerts,
-      serverKey: serverKey == freezed
+      serverKey: null == serverKey
           ? _value.serverKey
           : serverKey // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiPushSubscriptionAlertsCopyWith<$Res> get alerts {
     return $UnifediApiPushSubscriptionAlertsCopyWith<$Res>(_value.alerts,
         (value) {
-      return _then(_value.copyWith(alerts: value));
+      return _then(_value.copyWith(alerts: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiPushSubscriptionCopyWith<$Res>
+abstract class _$$UnifediApiPushSubscriptionImplCopyWith<$Res>
     implements $UnifediApiPushSubscriptionCopyWith<$Res> {
-  factory _$UnifediApiPushSubscriptionCopyWith(
-          _UnifediApiPushSubscription value,
-          $Res Function(_UnifediApiPushSubscription) then) =
-      __$UnifediApiPushSubscriptionCopyWithImpl<$Res>;
+  factory _$$UnifediApiPushSubscriptionImplCopyWith(
+          _$UnifediApiPushSubscriptionImpl value,
+          $Res Function(_$UnifediApiPushSubscriptionImpl) then) =
+      __$$UnifediApiPushSubscriptionImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) String id,
       @HiveField(1) String endpoint,
@@ -140,38 +123,37 @@ abstract class _$UnifediApiPushSubscriptionCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiPushSubscriptionCopyWithImpl<$Res>
-    extends _$UnifediApiPushSubscriptionCopyWithImpl<$Res>
-    implements _$UnifediApiPushSubscriptionCopyWith<$Res> {
-  __$UnifediApiPushSubscriptionCopyWithImpl(_UnifediApiPushSubscription _value,
-      $Res Function(_UnifediApiPushSubscription) _then)
-      : super(_value, (v) => _then(v as _UnifediApiPushSubscription));
+class __$$UnifediApiPushSubscriptionImplCopyWithImpl<$Res>
+    extends _$UnifediApiPushSubscriptionCopyWithImpl<$Res,
+        _$UnifediApiPushSubscriptionImpl>
+    implements _$$UnifediApiPushSubscriptionImplCopyWith<$Res> {
+  __$$UnifediApiPushSubscriptionImplCopyWithImpl(
+      _$UnifediApiPushSubscriptionImpl _value,
+      $Res Function(_$UnifediApiPushSubscriptionImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiPushSubscription get _value =>
-      super._value as _UnifediApiPushSubscription;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? endpoint = freezed,
-    Object? alerts = freezed,
-    Object? serverKey = freezed,
+    Object? id = null,
+    Object? endpoint = null,
+    Object? alerts = null,
+    Object? serverKey = null,
   }) {
-    return _then(_UnifediApiPushSubscription(
-      id: id == freezed
+    return _then(_$UnifediApiPushSubscriptionImpl(
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      endpoint: endpoint == freezed
+      endpoint: null == endpoint
           ? _value.endpoint
           : endpoint // ignore: cast_nullable_to_non_nullable
               as String,
-      alerts: alerts == freezed
+      alerts: null == alerts
           ? _value.alerts
           : alerts // ignore: cast_nullable_to_non_nullable
               as UnifediApiPushSubscriptionAlerts,
-      serverKey: serverKey == freezed
+      serverKey: null == serverKey
           ? _value.serverKey
           : serverKey // ignore: cast_nullable_to_non_nullable
               as String,
@@ -181,15 +163,16 @@ class __$UnifediApiPushSubscriptionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiPushSubscription implements _UnifediApiPushSubscription {
-  const _$_UnifediApiPushSubscription(
+class _$UnifediApiPushSubscriptionImpl implements _UnifediApiPushSubscription {
+  const _$UnifediApiPushSubscriptionImpl(
       {@HiveField(0) required this.id,
       @HiveField(1) required this.endpoint,
       @HiveField(2) required this.alerts,
       @HiveField(3) @JsonKey(name: 'server_key') required this.serverKey});
 
-  factory _$_UnifediApiPushSubscription.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiPushSubscriptionFromJson(json);
+  factory _$UnifediApiPushSubscriptionImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$UnifediApiPushSubscriptionImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -211,10 +194,10 @@ class _$_UnifediApiPushSubscription implements _UnifediApiPushSubscription {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiPushSubscription &&
+            other is _$UnifediApiPushSubscriptionImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.endpoint, endpoint) ||
                 other.endpoint == endpoint) &&
@@ -223,36 +206,37 @@ class _$_UnifediApiPushSubscription implements _UnifediApiPushSubscription {
                 other.serverKey == serverKey));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, id, endpoint, alerts, serverKey);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiPushSubscriptionCopyWith<_UnifediApiPushSubscription>
-      get copyWith => __$UnifediApiPushSubscriptionCopyWithImpl<
-          _UnifediApiPushSubscription>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiPushSubscriptionImplCopyWith<_$UnifediApiPushSubscriptionImpl>
+      get copyWith => __$$UnifediApiPushSubscriptionImplCopyWithImpl<
+          _$UnifediApiPushSubscriptionImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiPushSubscriptionToJson(this);
+    return _$$UnifediApiPushSubscriptionImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiPushSubscription
     implements UnifediApiPushSubscription {
   const factory _UnifediApiPushSubscription(
-      {@HiveField(0)
-          required String id,
-      @HiveField(1)
-          required String endpoint,
-      @HiveField(2)
-          required UnifediApiPushSubscriptionAlerts alerts,
+      {@HiveField(0) required final String id,
+      @HiveField(1) required final String endpoint,
+      @HiveField(2) required final UnifediApiPushSubscriptionAlerts alerts,
       @HiveField(3)
       @JsonKey(name: 'server_key')
-          required String serverKey}) = _$_UnifediApiPushSubscription;
+      required final String serverKey}) = _$UnifediApiPushSubscriptionImpl;
 
   factory _UnifediApiPushSubscription.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiPushSubscription.fromJson;
+      _$UnifediApiPushSubscriptionImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -269,6 +253,6 @@ abstract class _UnifediApiPushSubscription
   String get serverKey;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiPushSubscriptionCopyWith<_UnifediApiPushSubscription>
+  _$$UnifediApiPushSubscriptionImplCopyWith<_$UnifediApiPushSubscriptionImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

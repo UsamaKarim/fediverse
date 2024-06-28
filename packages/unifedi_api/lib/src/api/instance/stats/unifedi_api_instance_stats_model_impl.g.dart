@@ -51,16 +51,16 @@ class UnifediApiInstanceStatsAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiInstanceStats _$$_UnifediApiInstanceStatsFromJson(
+_$UnifediApiInstanceStatsImpl _$$UnifediApiInstanceStatsImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiInstanceStats(
-      userCount: json['user_count'] as int?,
-      statusCount: json['status_count'] as int?,
-      domainCount: json['domain_count'] as int?,
+    _$UnifediApiInstanceStatsImpl(
+      userCount: (json['user_count'] as num?)?.toInt(),
+      statusCount: (json['status_count'] as num?)?.toInt(),
+      domainCount: (json['domain_count'] as num?)?.toInt(),
     );
 
-Map<String, dynamic> _$$_UnifediApiInstanceStatsToJson(
-    _$_UnifediApiInstanceStats instance) {
+Map<String, dynamic> _$$UnifediApiInstanceStatsImplToJson(
+    _$UnifediApiInstanceStatsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

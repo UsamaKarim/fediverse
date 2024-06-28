@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_instance_metadata_version_requirement_model_impl.dart';
 
@@ -11,36 +12,13 @@ part of 'mastodon_api_instance_metadata_version_requirement_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiInstanceMetadataVersionRequirement
     _$MastodonApiInstanceMetadataVersionRequirementFromJson(
         Map<String, dynamic> json) {
   return _MastodonApiInstanceMetadataVersionRequirement.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiInstanceMetadataVersionRequirementTearOff {
-  const _$MastodonApiInstanceMetadataVersionRequirementTearOff();
-
-  _MastodonApiInstanceMetadataVersionRequirement call(
-      {@HiveField(0)
-      @JsonKey(name: 'version_range')
-          required MastodonApiVersionRange versionRange}) {
-    return _MastodonApiInstanceMetadataVersionRequirement(
-      versionRange: versionRange,
-    );
-  }
-
-  MastodonApiInstanceMetadataVersionRequirement fromJson(
-      Map<String, Object?> json) {
-    return MastodonApiInstanceMetadataVersionRequirement.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiInstanceMetadataVersionRequirement =
-    _$MastodonApiInstanceMetadataVersionRequirementTearOff();
 
 /// @nodoc
 mixin _$MastodonApiInstanceMetadataVersionRequirement {
@@ -61,82 +39,89 @@ abstract class $MastodonApiInstanceMetadataVersionRequirementCopyWith<$Res> {
   factory $MastodonApiInstanceMetadataVersionRequirementCopyWith(
           MastodonApiInstanceMetadataVersionRequirement value,
           $Res Function(MastodonApiInstanceMetadataVersionRequirement) then) =
-      _$MastodonApiInstanceMetadataVersionRequirementCopyWithImpl<$Res>;
+      _$MastodonApiInstanceMetadataVersionRequirementCopyWithImpl<$Res,
+          MastodonApiInstanceMetadataVersionRequirement>;
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'version_range')
-          MastodonApiVersionRange versionRange});
+      MastodonApiVersionRange versionRange});
 
   $MastodonApiVersionRangeCopyWith<$Res> get versionRange;
 }
 
 /// @nodoc
-class _$MastodonApiInstanceMetadataVersionRequirementCopyWithImpl<$Res>
+class _$MastodonApiInstanceMetadataVersionRequirementCopyWithImpl<$Res,
+        $Val extends MastodonApiInstanceMetadataVersionRequirement>
     implements $MastodonApiInstanceMetadataVersionRequirementCopyWith<$Res> {
   _$MastodonApiInstanceMetadataVersionRequirementCopyWithImpl(
       this._value, this._then);
 
-  final MastodonApiInstanceMetadataVersionRequirement _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiInstanceMetadataVersionRequirement) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? versionRange = freezed,
+    Object? versionRange = null,
   }) {
     return _then(_value.copyWith(
-      versionRange: versionRange == freezed
+      versionRange: null == versionRange
           ? _value.versionRange
           : versionRange // ignore: cast_nullable_to_non_nullable
               as MastodonApiVersionRange,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiVersionRangeCopyWith<$Res> get versionRange {
     return $MastodonApiVersionRangeCopyWith<$Res>(_value.versionRange, (value) {
-      return _then(_value.copyWith(versionRange: value));
+      return _then(_value.copyWith(versionRange: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiInstanceMetadataVersionRequirementCopyWith<$Res>
+abstract class _$$MastodonApiInstanceMetadataVersionRequirementImplCopyWith<
+        $Res>
     implements $MastodonApiInstanceMetadataVersionRequirementCopyWith<$Res> {
-  factory _$MastodonApiInstanceMetadataVersionRequirementCopyWith(
-          _MastodonApiInstanceMetadataVersionRequirement value,
-          $Res Function(_MastodonApiInstanceMetadataVersionRequirement) then) =
-      __$MastodonApiInstanceMetadataVersionRequirementCopyWithImpl<$Res>;
+  factory _$$MastodonApiInstanceMetadataVersionRequirementImplCopyWith(
+          _$MastodonApiInstanceMetadataVersionRequirementImpl value,
+          $Res Function(_$MastodonApiInstanceMetadataVersionRequirementImpl)
+              then) =
+      __$$MastodonApiInstanceMetadataVersionRequirementImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'version_range')
-          MastodonApiVersionRange versionRange});
+      MastodonApiVersionRange versionRange});
 
   @override
   $MastodonApiVersionRangeCopyWith<$Res> get versionRange;
 }
 
 /// @nodoc
-class __$MastodonApiInstanceMetadataVersionRequirementCopyWithImpl<$Res>
-    extends _$MastodonApiInstanceMetadataVersionRequirementCopyWithImpl<$Res>
-    implements _$MastodonApiInstanceMetadataVersionRequirementCopyWith<$Res> {
-  __$MastodonApiInstanceMetadataVersionRequirementCopyWithImpl(
-      _MastodonApiInstanceMetadataVersionRequirement _value,
-      $Res Function(_MastodonApiInstanceMetadataVersionRequirement) _then)
-      : super(_value,
-            (v) => _then(v as _MastodonApiInstanceMetadataVersionRequirement));
+class __$$MastodonApiInstanceMetadataVersionRequirementImplCopyWithImpl<$Res>
+    extends _$MastodonApiInstanceMetadataVersionRequirementCopyWithImpl<$Res,
+        _$MastodonApiInstanceMetadataVersionRequirementImpl>
+    implements
+        _$$MastodonApiInstanceMetadataVersionRequirementImplCopyWith<$Res> {
+  __$$MastodonApiInstanceMetadataVersionRequirementImplCopyWithImpl(
+      _$MastodonApiInstanceMetadataVersionRequirementImpl _value,
+      $Res Function(_$MastodonApiInstanceMetadataVersionRequirementImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiInstanceMetadataVersionRequirement get _value =>
-      super._value as _MastodonApiInstanceMetadataVersionRequirement;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? versionRange = freezed,
+    Object? versionRange = null,
   }) {
-    return _then(_MastodonApiInstanceMetadataVersionRequirement(
-      versionRange: versionRange == freezed
+    return _then(_$MastodonApiInstanceMetadataVersionRequirementImpl(
+      versionRange: null == versionRange
           ? _value.versionRange
           : versionRange // ignore: cast_nullable_to_non_nullable
               as MastodonApiVersionRange,
@@ -146,16 +131,16 @@ class __$MastodonApiInstanceMetadataVersionRequirementCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiInstanceMetadataVersionRequirement
+class _$MastodonApiInstanceMetadataVersionRequirementImpl
     implements _MastodonApiInstanceMetadataVersionRequirement {
-  const _$_MastodonApiInstanceMetadataVersionRequirement(
+  const _$MastodonApiInstanceMetadataVersionRequirementImpl(
       {@HiveField(0)
       @JsonKey(name: 'version_range')
-          required this.versionRange});
+      required this.versionRange});
 
-  factory _$_MastodonApiInstanceMetadataVersionRequirement.fromJson(
+  factory _$MastodonApiInstanceMetadataVersionRequirementImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_MastodonApiInstanceMetadataVersionRequirementFromJson(json);
+      _$$MastodonApiInstanceMetadataVersionRequirementImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -168,28 +153,33 @@ class _$_MastodonApiInstanceMetadataVersionRequirement
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiInstanceMetadataVersionRequirement &&
+            other is _$MastodonApiInstanceMetadataVersionRequirementImpl &&
             (identical(other.versionRange, versionRange) ||
                 other.versionRange == versionRange));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, versionRange);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiInstanceMetadataVersionRequirementCopyWith<
-          _MastodonApiInstanceMetadataVersionRequirement>
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiInstanceMetadataVersionRequirementImplCopyWith<
+          _$MastodonApiInstanceMetadataVersionRequirementImpl>
       get copyWith =>
-          __$MastodonApiInstanceMetadataVersionRequirementCopyWithImpl<
-              _MastodonApiInstanceMetadataVersionRequirement>(this, _$identity);
+          __$$MastodonApiInstanceMetadataVersionRequirementImplCopyWithImpl<
+                  _$MastodonApiInstanceMetadataVersionRequirementImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiInstanceMetadataVersionRequirementToJson(this);
+    return _$$MastodonApiInstanceMetadataVersionRequirementImplToJson(
+      this,
+    );
   }
 }
 
@@ -198,12 +188,12 @@ abstract class _MastodonApiInstanceMetadataVersionRequirement
   const factory _MastodonApiInstanceMetadataVersionRequirement(
           {@HiveField(0)
           @JsonKey(name: 'version_range')
-              required MastodonApiVersionRange versionRange}) =
-      _$_MastodonApiInstanceMetadataVersionRequirement;
+          required final MastodonApiVersionRange versionRange}) =
+      _$MastodonApiInstanceMetadataVersionRequirementImpl;
 
   factory _MastodonApiInstanceMetadataVersionRequirement.fromJson(
           Map<String, dynamic> json) =
-      _$_MastodonApiInstanceMetadataVersionRequirement.fromJson;
+      _$MastodonApiInstanceMetadataVersionRequirementImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -211,7 +201,7 @@ abstract class _MastodonApiInstanceMetadataVersionRequirement
   MastodonApiVersionRange get versionRange;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiInstanceMetadataVersionRequirementCopyWith<
-          _MastodonApiInstanceMetadataVersionRequirement>
+  _$$MastodonApiInstanceMetadataVersionRequirementImplCopyWith<
+          _$MastodonApiInstanceMetadataVersionRequirementImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'repository_model.dart';
 
@@ -11,25 +12,7 @@ part of 'repository_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$RepositoryPaginationTearOff {
-  const _$RepositoryPaginationTearOff();
-
-  _RepositoryPagination<T> call<T>(
-      {T? newerThanItem, T? olderThanItem, int? limit, int? offset}) {
-    return _RepositoryPagination<T>(
-      newerThanItem: newerThanItem,
-      olderThanItem: olderThanItem,
-      limit: limit,
-      offset: offset,
-    );
-  }
-}
-
-/// @nodoc
-const $RepositoryPagination = _$RepositoryPaginationTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$RepositoryPagination<T> {
@@ -47,19 +30,23 @@ mixin _$RepositoryPagination<T> {
 abstract class $RepositoryPaginationCopyWith<T, $Res> {
   factory $RepositoryPaginationCopyWith(RepositoryPagination<T> value,
           $Res Function(RepositoryPagination<T>) then) =
-      _$RepositoryPaginationCopyWithImpl<T, $Res>;
+      _$RepositoryPaginationCopyWithImpl<T, $Res, RepositoryPagination<T>>;
+  @useResult
   $Res call({T? newerThanItem, T? olderThanItem, int? limit, int? offset});
 }
 
 /// @nodoc
-class _$RepositoryPaginationCopyWithImpl<T, $Res>
+class _$RepositoryPaginationCopyWithImpl<T, $Res,
+        $Val extends RepositoryPagination<T>>
     implements $RepositoryPaginationCopyWith<T, $Res> {
   _$RepositoryPaginationCopyWithImpl(this._value, this._then);
 
-  final RepositoryPagination<T> _value;
   // ignore: unused_field
-  final $Res Function(RepositoryPagination<T>) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? newerThanItem = freezed,
@@ -68,48 +55,48 @@ class _$RepositoryPaginationCopyWithImpl<T, $Res>
     Object? offset = freezed,
   }) {
     return _then(_value.copyWith(
-      newerThanItem: newerThanItem == freezed
+      newerThanItem: freezed == newerThanItem
           ? _value.newerThanItem
           : newerThanItem // ignore: cast_nullable_to_non_nullable
               as T?,
-      olderThanItem: olderThanItem == freezed
+      olderThanItem: freezed == olderThanItem
           ? _value.olderThanItem
           : olderThanItem // ignore: cast_nullable_to_non_nullable
               as T?,
-      limit: limit == freezed
+      limit: freezed == limit
           ? _value.limit
           : limit // ignore: cast_nullable_to_non_nullable
               as int?,
-      offset: offset == freezed
+      offset: freezed == offset
           ? _value.offset
           : offset // ignore: cast_nullable_to_non_nullable
               as int?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$RepositoryPaginationCopyWith<T, $Res>
+abstract class _$$RepositoryPaginationImplCopyWith<T, $Res>
     implements $RepositoryPaginationCopyWith<T, $Res> {
-  factory _$RepositoryPaginationCopyWith(_RepositoryPagination<T> value,
-          $Res Function(_RepositoryPagination<T>) then) =
-      __$RepositoryPaginationCopyWithImpl<T, $Res>;
+  factory _$$RepositoryPaginationImplCopyWith(
+          _$RepositoryPaginationImpl<T> value,
+          $Res Function(_$RepositoryPaginationImpl<T>) then) =
+      __$$RepositoryPaginationImplCopyWithImpl<T, $Res>;
   @override
+  @useResult
   $Res call({T? newerThanItem, T? olderThanItem, int? limit, int? offset});
 }
 
 /// @nodoc
-class __$RepositoryPaginationCopyWithImpl<T, $Res>
-    extends _$RepositoryPaginationCopyWithImpl<T, $Res>
-    implements _$RepositoryPaginationCopyWith<T, $Res> {
-  __$RepositoryPaginationCopyWithImpl(_RepositoryPagination<T> _value,
-      $Res Function(_RepositoryPagination<T>) _then)
-      : super(_value, (v) => _then(v as _RepositoryPagination<T>));
+class __$$RepositoryPaginationImplCopyWithImpl<T, $Res>
+    extends _$RepositoryPaginationCopyWithImpl<T, $Res,
+        _$RepositoryPaginationImpl<T>>
+    implements _$$RepositoryPaginationImplCopyWith<T, $Res> {
+  __$$RepositoryPaginationImplCopyWithImpl(_$RepositoryPaginationImpl<T> _value,
+      $Res Function(_$RepositoryPaginationImpl<T>) _then)
+      : super(_value, _then);
 
-  @override
-  _RepositoryPagination<T> get _value =>
-      super._value as _RepositoryPagination<T>;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? newerThanItem = freezed,
@@ -117,20 +104,20 @@ class __$RepositoryPaginationCopyWithImpl<T, $Res>
     Object? limit = freezed,
     Object? offset = freezed,
   }) {
-    return _then(_RepositoryPagination<T>(
-      newerThanItem: newerThanItem == freezed
+    return _then(_$RepositoryPaginationImpl<T>(
+      newerThanItem: freezed == newerThanItem
           ? _value.newerThanItem
           : newerThanItem // ignore: cast_nullable_to_non_nullable
               as T?,
-      olderThanItem: olderThanItem == freezed
+      olderThanItem: freezed == olderThanItem
           ? _value.olderThanItem
           : olderThanItem // ignore: cast_nullable_to_non_nullable
               as T?,
-      limit: limit == freezed
+      limit: freezed == limit
           ? _value.limit
           : limit // ignore: cast_nullable_to_non_nullable
               as int?,
-      offset: offset == freezed
+      offset: freezed == offset
           ? _value.offset
           : offset // ignore: cast_nullable_to_non_nullable
               as int?,
@@ -140,8 +127,8 @@ class __$RepositoryPaginationCopyWithImpl<T, $Res>
 
 /// @nodoc
 
-class _$_RepositoryPagination<T> extends _RepositoryPagination<T> {
-  const _$_RepositoryPagination(
+class _$RepositoryPaginationImpl<T> extends _RepositoryPagination<T> {
+  const _$RepositoryPaginationImpl(
       {this.newerThanItem, this.olderThanItem, this.limit, this.offset})
       : super._();
 
@@ -160,10 +147,10 @@ class _$_RepositoryPagination<T> extends _RepositoryPagination<T> {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _RepositoryPagination<T> &&
+            other is _$RepositoryPaginationImpl<T> &&
             const DeepCollectionEquality()
                 .equals(other.newerThanItem, newerThanItem) &&
             const DeepCollectionEquality()
@@ -182,17 +169,18 @@ class _$_RepositoryPagination<T> extends _RepositoryPagination<T> {
 
   @JsonKey(ignore: true)
   @override
-  _$RepositoryPaginationCopyWith<T, _RepositoryPagination<T>> get copyWith =>
-      __$RepositoryPaginationCopyWithImpl<T, _RepositoryPagination<T>>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$RepositoryPaginationImplCopyWith<T, _$RepositoryPaginationImpl<T>>
+      get copyWith => __$$RepositoryPaginationImplCopyWithImpl<T,
+          _$RepositoryPaginationImpl<T>>(this, _$identity);
 }
 
 abstract class _RepositoryPagination<T> extends RepositoryPagination<T> {
   const factory _RepositoryPagination(
-      {T? newerThanItem,
-      T? olderThanItem,
-      int? limit,
-      int? offset}) = _$_RepositoryPagination<T>;
+      {final T? newerThanItem,
+      final T? olderThanItem,
+      final int? limit,
+      final int? offset}) = _$RepositoryPaginationImpl<T>;
   const _RepositoryPagination._() : super._();
 
   @override
@@ -205,6 +193,6 @@ abstract class _RepositoryPagination<T> extends RepositoryPagination<T> {
   int? get offset;
   @override
   @JsonKey(ignore: true)
-  _$RepositoryPaginationCopyWith<T, _RepositoryPagination<T>> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$RepositoryPaginationImplCopyWith<T, _$RepositoryPaginationImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
 }

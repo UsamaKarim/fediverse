@@ -2,10 +2,7 @@
 
 part of 'draft_status_database_dao.dart';
 
-// **************************************************************************
-// DaoGenerator
-// **************************************************************************
-
+// ignore_for_file: type=lint
 mixin _$DraftStatusDaoMixin on DatabaseAccessor<AppDatabase> {
   $DbDraftStatusesTable get dbDraftStatuses => attachedDatabase.dbDraftStatuses;
 }

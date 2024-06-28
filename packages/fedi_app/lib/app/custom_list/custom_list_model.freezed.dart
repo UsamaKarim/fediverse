@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'custom_list_model.dart';
 
@@ -11,22 +12,7 @@ part of 'custom_list_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$CustomListTearOff {
-  const _$CustomListTearOff();
-
-  _CustomList call({required String remoteId, required String title}) {
-    return _CustomList(
-      remoteId: remoteId,
-      title: title,
-    );
-  }
-}
-
-/// @nodoc
-const $CustomList = _$CustomListTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$CustomList {
@@ -42,66 +28,71 @@ mixin _$CustomList {
 abstract class $CustomListCopyWith<$Res> {
   factory $CustomListCopyWith(
           CustomList value, $Res Function(CustomList) then) =
-      _$CustomListCopyWithImpl<$Res>;
+      _$CustomListCopyWithImpl<$Res, CustomList>;
+  @useResult
   $Res call({String remoteId, String title});
 }
 
 /// @nodoc
-class _$CustomListCopyWithImpl<$Res> implements $CustomListCopyWith<$Res> {
+class _$CustomListCopyWithImpl<$Res, $Val extends CustomList>
+    implements $CustomListCopyWith<$Res> {
   _$CustomListCopyWithImpl(this._value, this._then);
 
-  final CustomList _value;
   // ignore: unused_field
-  final $Res Function(CustomList) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? remoteId = freezed,
-    Object? title = freezed,
+    Object? remoteId = null,
+    Object? title = null,
   }) {
     return _then(_value.copyWith(
-      remoteId: remoteId == freezed
+      remoteId: null == remoteId
           ? _value.remoteId
           : remoteId // ignore: cast_nullable_to_non_nullable
               as String,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$CustomListCopyWith<$Res> implements $CustomListCopyWith<$Res> {
-  factory _$CustomListCopyWith(
-          _CustomList value, $Res Function(_CustomList) then) =
-      __$CustomListCopyWithImpl<$Res>;
+abstract class _$$CustomListImplCopyWith<$Res>
+    implements $CustomListCopyWith<$Res> {
+  factory _$$CustomListImplCopyWith(
+          _$CustomListImpl value, $Res Function(_$CustomListImpl) then) =
+      __$$CustomListImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String remoteId, String title});
 }
 
 /// @nodoc
-class __$CustomListCopyWithImpl<$Res> extends _$CustomListCopyWithImpl<$Res>
-    implements _$CustomListCopyWith<$Res> {
-  __$CustomListCopyWithImpl(
-      _CustomList _value, $Res Function(_CustomList) _then)
-      : super(_value, (v) => _then(v as _CustomList));
+class __$$CustomListImplCopyWithImpl<$Res>
+    extends _$CustomListCopyWithImpl<$Res, _$CustomListImpl>
+    implements _$$CustomListImplCopyWith<$Res> {
+  __$$CustomListImplCopyWithImpl(
+      _$CustomListImpl _value, $Res Function(_$CustomListImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _CustomList get _value => super._value as _CustomList;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? remoteId = freezed,
-    Object? title = freezed,
+    Object? remoteId = null,
+    Object? title = null,
   }) {
-    return _then(_CustomList(
-      remoteId: remoteId == freezed
+    return _then(_$CustomListImpl(
+      remoteId: null == remoteId
           ? _value.remoteId
           : remoteId // ignore: cast_nullable_to_non_nullable
               as String,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
@@ -111,8 +102,8 @@ class __$CustomListCopyWithImpl<$Res> extends _$CustomListCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_CustomList implements _CustomList {
-  const _$_CustomList({required this.remoteId, required this.title});
+class _$CustomListImpl implements _CustomList {
+  const _$CustomListImpl({required this.remoteId, required this.title});
 
   @override
   final String remoteId;
@@ -125,10 +116,10 @@ class _$_CustomList implements _CustomList {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _CustomList &&
+            other is _$CustomListImpl &&
             (identical(other.remoteId, remoteId) ||
                 other.remoteId == remoteId) &&
             (identical(other.title, title) || other.title == title));
@@ -139,13 +130,15 @@ class _$_CustomList implements _CustomList {
 
   @JsonKey(ignore: true)
   @override
-  _$CustomListCopyWith<_CustomList> get copyWith =>
-      __$CustomListCopyWithImpl<_CustomList>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$CustomListImplCopyWith<_$CustomListImpl> get copyWith =>
+      __$$CustomListImplCopyWithImpl<_$CustomListImpl>(this, _$identity);
 }
 
 abstract class _CustomList implements CustomList {
-  const factory _CustomList({required String remoteId, required String title}) =
-      _$_CustomList;
+  const factory _CustomList(
+      {required final String remoteId,
+      required final String title}) = _$CustomListImpl;
 
   @override
   String get remoteId;
@@ -153,6 +146,6 @@ abstract class _CustomList implements CustomList {
   String get title;
   @override
   @JsonKey(ignore: true)
-  _$CustomListCopyWith<_CustomList> get copyWith =>
+  _$$CustomListImplCopyWith<_$CustomListImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

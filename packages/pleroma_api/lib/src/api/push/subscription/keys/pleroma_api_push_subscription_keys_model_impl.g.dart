@@ -48,15 +48,15 @@ class PleromaApiPushSubscriptionKeysAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiPushSubscriptionKeys _$$_PleromaApiPushSubscriptionKeysFromJson(
-        Map<String, dynamic> json) =>
-    _$_PleromaApiPushSubscriptionKeys(
-      p256dh: json['p256dh'] as String,
-      auth: json['auth'] as String,
-    );
+_$PleromaApiPushSubscriptionKeysImpl
+    _$$PleromaApiPushSubscriptionKeysImplFromJson(Map<String, dynamic> json) =>
+        _$PleromaApiPushSubscriptionKeysImpl(
+          p256dh: json['p256dh'] as String,
+          auth: json['auth'] as String,
+        );
 
-Map<String, dynamic> _$$_PleromaApiPushSubscriptionKeysToJson(
-        _$_PleromaApiPushSubscriptionKeys instance) =>
+Map<String, dynamic> _$$PleromaApiPushSubscriptionKeysImplToJson(
+        _$PleromaApiPushSubscriptionKeysImpl instance) =>
     <String, dynamic>{
       'p256dh': instance.p256dh,
       'auth': instance.auth,

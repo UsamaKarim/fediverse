@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_search_request_type_sealed.dart';
 
@@ -11,41 +12,11 @@ part of 'unifedi_api_search_request_type_sealed.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$UnifediApiSearchRequestTypeTearOff {
-  const _$UnifediApiSearchRequestTypeTearOff();
-
-  _Accounts accounts(
-      {String stringValue = UnifediApiSearchRequestType.accountsStringValue}) {
-    return _Accounts(
-      stringValue: stringValue,
-    );
-  }
-
-  _Hashtags hashtags(
-      {String stringValue = UnifediApiSearchRequestType.hashtagsStringValue}) {
-    return _Hashtags(
-      stringValue: stringValue,
-    );
-  }
-
-  _Statuses statuses(
-      {String stringValue = UnifediApiSearchRequestType.statusesStringValue}) {
-    return _Statuses(
-      stringValue: stringValue,
-    );
-  }
-}
-
-/// @nodoc
-const $UnifediApiSearchRequestType = _$UnifediApiSearchRequestTypeTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$UnifediApiSearchRequestType {
   String get stringValue => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String stringValue) accounts,
@@ -55,9 +26,9 @@ mixin _$UnifediApiSearchRequestType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? accounts,
-    TResult Function(String stringValue)? hashtags,
-    TResult Function(String stringValue)? statuses,
+    TResult? Function(String stringValue)? accounts,
+    TResult? Function(String stringValue)? hashtags,
+    TResult? Function(String stringValue)? statuses,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -77,9 +48,9 @@ mixin _$UnifediApiSearchRequestType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Accounts value)? accounts,
-    TResult Function(_Hashtags value)? hashtags,
-    TResult Function(_Statuses value)? statuses,
+    TResult? Function(_Accounts value)? accounts,
+    TResult? Function(_Hashtags value)? hashtags,
+    TResult? Function(_Statuses value)? statuses,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -101,57 +72,63 @@ abstract class $UnifediApiSearchRequestTypeCopyWith<$Res> {
   factory $UnifediApiSearchRequestTypeCopyWith(
           UnifediApiSearchRequestType value,
           $Res Function(UnifediApiSearchRequestType) then) =
-      _$UnifediApiSearchRequestTypeCopyWithImpl<$Res>;
+      _$UnifediApiSearchRequestTypeCopyWithImpl<$Res,
+          UnifediApiSearchRequestType>;
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class _$UnifediApiSearchRequestTypeCopyWithImpl<$Res>
+class _$UnifediApiSearchRequestTypeCopyWithImpl<$Res,
+        $Val extends UnifediApiSearchRequestType>
     implements $UnifediApiSearchRequestTypeCopyWith<$Res> {
   _$UnifediApiSearchRequestTypeCopyWithImpl(this._value, this._then);
 
-  final UnifediApiSearchRequestType _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiSearchRequestType) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
     return _then(_value.copyWith(
-      stringValue: stringValue == freezed
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$AccountsCopyWith<$Res>
+abstract class _$$AccountsImplCopyWith<$Res>
     implements $UnifediApiSearchRequestTypeCopyWith<$Res> {
-  factory _$AccountsCopyWith(_Accounts value, $Res Function(_Accounts) then) =
-      __$AccountsCopyWithImpl<$Res>;
+  factory _$$AccountsImplCopyWith(
+          _$AccountsImpl value, $Res Function(_$AccountsImpl) then) =
+      __$$AccountsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$AccountsCopyWithImpl<$Res>
-    extends _$UnifediApiSearchRequestTypeCopyWithImpl<$Res>
-    implements _$AccountsCopyWith<$Res> {
-  __$AccountsCopyWithImpl(_Accounts _value, $Res Function(_Accounts) _then)
-      : super(_value, (v) => _then(v as _Accounts));
+class __$$AccountsImplCopyWithImpl<$Res>
+    extends _$UnifediApiSearchRequestTypeCopyWithImpl<$Res, _$AccountsImpl>
+    implements _$$AccountsImplCopyWith<$Res> {
+  __$$AccountsImplCopyWithImpl(
+      _$AccountsImpl _value, $Res Function(_$AccountsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Accounts get _value => super._value as _Accounts;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Accounts(
-      stringValue: stringValue == freezed
+    return _then(_$AccountsImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -161,12 +138,12 @@ class __$AccountsCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Accounts implements _Accounts {
-  const _$_Accounts(
+class _$AccountsImpl implements _Accounts {
+  const _$AccountsImpl(
       {this.stringValue = UnifediApiSearchRequestType.accountsStringValue});
 
-  @JsonKey(defaultValue: UnifediApiSearchRequestType.accountsStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -175,10 +152,10 @@ class _$_Accounts implements _Accounts {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Accounts &&
+            other is _$AccountsImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -188,8 +165,9 @@ class _$_Accounts implements _Accounts {
 
   @JsonKey(ignore: true)
   @override
-  _$AccountsCopyWith<_Accounts> get copyWith =>
-      __$AccountsCopyWithImpl<_Accounts>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AccountsImplCopyWith<_$AccountsImpl> get copyWith =>
+      __$$AccountsImplCopyWithImpl<_$AccountsImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -204,9 +182,9 @@ class _$_Accounts implements _Accounts {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? accounts,
-    TResult Function(String stringValue)? hashtags,
-    TResult Function(String stringValue)? statuses,
+    TResult? Function(String stringValue)? accounts,
+    TResult? Function(String stringValue)? hashtags,
+    TResult? Function(String stringValue)? statuses,
   }) {
     return accounts?.call(stringValue);
   }
@@ -238,9 +216,9 @@ class _$_Accounts implements _Accounts {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Accounts value)? accounts,
-    TResult Function(_Hashtags value)? hashtags,
-    TResult Function(_Statuses value)? statuses,
+    TResult? Function(_Accounts value)? accounts,
+    TResult? Function(_Hashtags value)? hashtags,
+    TResult? Function(_Statuses value)? statuses,
   }) {
     return accounts?.call(this);
   }
@@ -261,41 +239,42 @@ class _$_Accounts implements _Accounts {
 }
 
 abstract class _Accounts implements UnifediApiSearchRequestType {
-  const factory _Accounts({String stringValue}) = _$_Accounts;
+  const factory _Accounts({final String stringValue}) = _$AccountsImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$AccountsCopyWith<_Accounts> get copyWith =>
+  _$$AccountsImplCopyWith<_$AccountsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$HashtagsCopyWith<$Res>
+abstract class _$$HashtagsImplCopyWith<$Res>
     implements $UnifediApiSearchRequestTypeCopyWith<$Res> {
-  factory _$HashtagsCopyWith(_Hashtags value, $Res Function(_Hashtags) then) =
-      __$HashtagsCopyWithImpl<$Res>;
+  factory _$$HashtagsImplCopyWith(
+          _$HashtagsImpl value, $Res Function(_$HashtagsImpl) then) =
+      __$$HashtagsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$HashtagsCopyWithImpl<$Res>
-    extends _$UnifediApiSearchRequestTypeCopyWithImpl<$Res>
-    implements _$HashtagsCopyWith<$Res> {
-  __$HashtagsCopyWithImpl(_Hashtags _value, $Res Function(_Hashtags) _then)
-      : super(_value, (v) => _then(v as _Hashtags));
+class __$$HashtagsImplCopyWithImpl<$Res>
+    extends _$UnifediApiSearchRequestTypeCopyWithImpl<$Res, _$HashtagsImpl>
+    implements _$$HashtagsImplCopyWith<$Res> {
+  __$$HashtagsImplCopyWithImpl(
+      _$HashtagsImpl _value, $Res Function(_$HashtagsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Hashtags get _value => super._value as _Hashtags;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Hashtags(
-      stringValue: stringValue == freezed
+    return _then(_$HashtagsImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -305,12 +284,12 @@ class __$HashtagsCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Hashtags implements _Hashtags {
-  const _$_Hashtags(
+class _$HashtagsImpl implements _Hashtags {
+  const _$HashtagsImpl(
       {this.stringValue = UnifediApiSearchRequestType.hashtagsStringValue});
 
-  @JsonKey(defaultValue: UnifediApiSearchRequestType.hashtagsStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -319,10 +298,10 @@ class _$_Hashtags implements _Hashtags {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Hashtags &&
+            other is _$HashtagsImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -332,8 +311,9 @@ class _$_Hashtags implements _Hashtags {
 
   @JsonKey(ignore: true)
   @override
-  _$HashtagsCopyWith<_Hashtags> get copyWith =>
-      __$HashtagsCopyWithImpl<_Hashtags>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$HashtagsImplCopyWith<_$HashtagsImpl> get copyWith =>
+      __$$HashtagsImplCopyWithImpl<_$HashtagsImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -348,9 +328,9 @@ class _$_Hashtags implements _Hashtags {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? accounts,
-    TResult Function(String stringValue)? hashtags,
-    TResult Function(String stringValue)? statuses,
+    TResult? Function(String stringValue)? accounts,
+    TResult? Function(String stringValue)? hashtags,
+    TResult? Function(String stringValue)? statuses,
   }) {
     return hashtags?.call(stringValue);
   }
@@ -382,9 +362,9 @@ class _$_Hashtags implements _Hashtags {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Accounts value)? accounts,
-    TResult Function(_Hashtags value)? hashtags,
-    TResult Function(_Statuses value)? statuses,
+    TResult? Function(_Accounts value)? accounts,
+    TResult? Function(_Hashtags value)? hashtags,
+    TResult? Function(_Statuses value)? statuses,
   }) {
     return hashtags?.call(this);
   }
@@ -405,41 +385,42 @@ class _$_Hashtags implements _Hashtags {
 }
 
 abstract class _Hashtags implements UnifediApiSearchRequestType {
-  const factory _Hashtags({String stringValue}) = _$_Hashtags;
+  const factory _Hashtags({final String stringValue}) = _$HashtagsImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$HashtagsCopyWith<_Hashtags> get copyWith =>
+  _$$HashtagsImplCopyWith<_$HashtagsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$StatusesCopyWith<$Res>
+abstract class _$$StatusesImplCopyWith<$Res>
     implements $UnifediApiSearchRequestTypeCopyWith<$Res> {
-  factory _$StatusesCopyWith(_Statuses value, $Res Function(_Statuses) then) =
-      __$StatusesCopyWithImpl<$Res>;
+  factory _$$StatusesImplCopyWith(
+          _$StatusesImpl value, $Res Function(_$StatusesImpl) then) =
+      __$$StatusesImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$StatusesCopyWithImpl<$Res>
-    extends _$UnifediApiSearchRequestTypeCopyWithImpl<$Res>
-    implements _$StatusesCopyWith<$Res> {
-  __$StatusesCopyWithImpl(_Statuses _value, $Res Function(_Statuses) _then)
-      : super(_value, (v) => _then(v as _Statuses));
+class __$$StatusesImplCopyWithImpl<$Res>
+    extends _$UnifediApiSearchRequestTypeCopyWithImpl<$Res, _$StatusesImpl>
+    implements _$$StatusesImplCopyWith<$Res> {
+  __$$StatusesImplCopyWithImpl(
+      _$StatusesImpl _value, $Res Function(_$StatusesImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Statuses get _value => super._value as _Statuses;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Statuses(
-      stringValue: stringValue == freezed
+    return _then(_$StatusesImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -449,12 +430,12 @@ class __$StatusesCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Statuses implements _Statuses {
-  const _$_Statuses(
+class _$StatusesImpl implements _Statuses {
+  const _$StatusesImpl(
       {this.stringValue = UnifediApiSearchRequestType.statusesStringValue});
 
-  @JsonKey(defaultValue: UnifediApiSearchRequestType.statusesStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -463,10 +444,10 @@ class _$_Statuses implements _Statuses {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Statuses &&
+            other is _$StatusesImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -476,8 +457,9 @@ class _$_Statuses implements _Statuses {
 
   @JsonKey(ignore: true)
   @override
-  _$StatusesCopyWith<_Statuses> get copyWith =>
-      __$StatusesCopyWithImpl<_Statuses>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$StatusesImplCopyWith<_$StatusesImpl> get copyWith =>
+      __$$StatusesImplCopyWithImpl<_$StatusesImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -492,9 +474,9 @@ class _$_Statuses implements _Statuses {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? accounts,
-    TResult Function(String stringValue)? hashtags,
-    TResult Function(String stringValue)? statuses,
+    TResult? Function(String stringValue)? accounts,
+    TResult? Function(String stringValue)? hashtags,
+    TResult? Function(String stringValue)? statuses,
   }) {
     return statuses?.call(stringValue);
   }
@@ -526,9 +508,9 @@ class _$_Statuses implements _Statuses {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Accounts value)? accounts,
-    TResult Function(_Hashtags value)? hashtags,
-    TResult Function(_Statuses value)? statuses,
+    TResult? Function(_Accounts value)? accounts,
+    TResult? Function(_Hashtags value)? hashtags,
+    TResult? Function(_Statuses value)? statuses,
   }) {
     return statuses?.call(this);
   }
@@ -549,12 +531,12 @@ class _$_Statuses implements _Statuses {
 }
 
 abstract class _Statuses implements UnifediApiSearchRequestType {
-  const factory _Statuses({String stringValue}) = _$_Statuses;
+  const factory _Statuses({final String stringValue}) = _$StatusesImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$StatusesCopyWith<_Statuses> get copyWith =>
+  _$$StatusesImplCopyWith<_$StatusesImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

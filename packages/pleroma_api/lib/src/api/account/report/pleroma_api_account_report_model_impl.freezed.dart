@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_account_report_model_impl.dart';
 
@@ -11,35 +12,12 @@ part of 'pleroma_api_account_report_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiAccountReport _$PleromaApiAccountReportFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiAccountReport.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiAccountReportTearOff {
-  const _$PleromaApiAccountReportTearOff();
-
-  _PleromaApiAccountReport call(
-      {@HiveField(0) required PleromaApiAccount? account,
-      @HiveField(1) required List<PleromaApiStatus>? statuses,
-      @HiveField(2) required PleromaApiAccount? user}) {
-    return _PleromaApiAccountReport(
-      account: account,
-      statuses: statuses,
-      user: user,
-    );
-  }
-
-  PleromaApiAccountReport fromJson(Map<String, Object?> json) {
-    return PleromaApiAccountReport.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiAccountReport = _$PleromaApiAccountReportTearOff();
 
 /// @nodoc
 mixin _$PleromaApiAccountReport {
@@ -60,7 +38,8 @@ mixin _$PleromaApiAccountReport {
 abstract class $PleromaApiAccountReportCopyWith<$Res> {
   factory $PleromaApiAccountReportCopyWith(PleromaApiAccountReport value,
           $Res Function(PleromaApiAccountReport) then) =
-      _$PleromaApiAccountReportCopyWithImpl<$Res>;
+      _$PleromaApiAccountReportCopyWithImpl<$Res, PleromaApiAccountReport>;
+  @useResult
   $Res call(
       {@HiveField(0) PleromaApiAccount? account,
       @HiveField(1) List<PleromaApiStatus>? statuses,
@@ -71,14 +50,17 @@ abstract class $PleromaApiAccountReportCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiAccountReportCopyWithImpl<$Res>
+class _$PleromaApiAccountReportCopyWithImpl<$Res,
+        $Val extends PleromaApiAccountReport>
     implements $PleromaApiAccountReportCopyWith<$Res> {
   _$PleromaApiAccountReportCopyWithImpl(this._value, this._then);
 
-  final PleromaApiAccountReport _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiAccountReport) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? account = freezed,
@@ -86,51 +68,55 @@ class _$PleromaApiAccountReportCopyWithImpl<$Res>
     Object? user = freezed,
   }) {
     return _then(_value.copyWith(
-      account: account == freezed
+      account: freezed == account
           ? _value.account
           : account // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccount?,
-      statuses: statuses == freezed
+      statuses: freezed == statuses
           ? _value.statuses
           : statuses // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiStatus>?,
-      user: user == freezed
+      user: freezed == user
           ? _value.user
           : user // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccount?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiAccountCopyWith<$Res>? get account {
     if (_value.account == null) {
       return null;
     }
 
     return $PleromaApiAccountCopyWith<$Res>(_value.account!, (value) {
-      return _then(_value.copyWith(account: value));
+      return _then(_value.copyWith(account: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiAccountCopyWith<$Res>? get user {
     if (_value.user == null) {
       return null;
     }
 
     return $PleromaApiAccountCopyWith<$Res>(_value.user!, (value) {
-      return _then(_value.copyWith(user: value));
+      return _then(_value.copyWith(user: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiAccountReportCopyWith<$Res>
+abstract class _$$PleromaApiAccountReportImplCopyWith<$Res>
     implements $PleromaApiAccountReportCopyWith<$Res> {
-  factory _$PleromaApiAccountReportCopyWith(_PleromaApiAccountReport value,
-          $Res Function(_PleromaApiAccountReport) then) =
-      __$PleromaApiAccountReportCopyWithImpl<$Res>;
+  factory _$$PleromaApiAccountReportImplCopyWith(
+          _$PleromaApiAccountReportImpl value,
+          $Res Function(_$PleromaApiAccountReportImpl) then) =
+      __$$PleromaApiAccountReportImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) PleromaApiAccount? account,
       @HiveField(1) List<PleromaApiStatus>? statuses,
@@ -143,33 +129,32 @@ abstract class _$PleromaApiAccountReportCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiAccountReportCopyWithImpl<$Res>
-    extends _$PleromaApiAccountReportCopyWithImpl<$Res>
-    implements _$PleromaApiAccountReportCopyWith<$Res> {
-  __$PleromaApiAccountReportCopyWithImpl(_PleromaApiAccountReport _value,
-      $Res Function(_PleromaApiAccountReport) _then)
-      : super(_value, (v) => _then(v as _PleromaApiAccountReport));
+class __$$PleromaApiAccountReportImplCopyWithImpl<$Res>
+    extends _$PleromaApiAccountReportCopyWithImpl<$Res,
+        _$PleromaApiAccountReportImpl>
+    implements _$$PleromaApiAccountReportImplCopyWith<$Res> {
+  __$$PleromaApiAccountReportImplCopyWithImpl(
+      _$PleromaApiAccountReportImpl _value,
+      $Res Function(_$PleromaApiAccountReportImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiAccountReport get _value =>
-      super._value as _PleromaApiAccountReport;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? account = freezed,
     Object? statuses = freezed,
     Object? user = freezed,
   }) {
-    return _then(_PleromaApiAccountReport(
-      account: account == freezed
+    return _then(_$PleromaApiAccountReportImpl(
+      account: freezed == account
           ? _value.account
           : account // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccount?,
-      statuses: statuses == freezed
-          ? _value.statuses
+      statuses: freezed == statuses
+          ? _value._statuses
           : statuses // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiStatus>?,
-      user: user == freezed
+      user: freezed == user
           ? _value.user
           : user // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccount?,
@@ -179,21 +164,30 @@ class __$PleromaApiAccountReportCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiAccountReport implements _PleromaApiAccountReport {
-  const _$_PleromaApiAccountReport(
+class _$PleromaApiAccountReportImpl implements _PleromaApiAccountReport {
+  const _$PleromaApiAccountReportImpl(
       {@HiveField(0) required this.account,
-      @HiveField(1) required this.statuses,
-      @HiveField(2) required this.user});
+      @HiveField(1) required final List<PleromaApiStatus>? statuses,
+      @HiveField(2) required this.user})
+      : _statuses = statuses;
 
-  factory _$_PleromaApiAccountReport.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiAccountReportFromJson(json);
+  factory _$PleromaApiAccountReportImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiAccountReportImplFromJson(json);
 
   @override
   @HiveField(0)
   final PleromaApiAccount? account;
+  final List<PleromaApiStatus>? _statuses;
   @override
   @HiveField(1)
-  final List<PleromaApiStatus>? statuses;
+  List<PleromaApiStatus>? get statuses {
+    final value = _statuses;
+    if (value == null) return null;
+    if (_statuses is EqualUnmodifiableListView) return _statuses;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(2)
   final PleromaApiAccount? user;
@@ -204,40 +198,44 @@ class _$_PleromaApiAccountReport implements _PleromaApiAccountReport {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiAccountReport &&
+            other is _$PleromaApiAccountReportImpl &&
             (identical(other.account, account) || other.account == account) &&
-            const DeepCollectionEquality().equals(other.statuses, statuses) &&
+            const DeepCollectionEquality().equals(other._statuses, _statuses) &&
             (identical(other.user, user) || other.user == user));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, account,
-      const DeepCollectionEquality().hash(statuses), user);
+      const DeepCollectionEquality().hash(_statuses), user);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiAccountReportCopyWith<_PleromaApiAccountReport> get copyWith =>
-      __$PleromaApiAccountReportCopyWithImpl<_PleromaApiAccountReport>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiAccountReportImplCopyWith<_$PleromaApiAccountReportImpl>
+      get copyWith => __$$PleromaApiAccountReportImplCopyWithImpl<
+          _$PleromaApiAccountReportImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiAccountReportToJson(this);
+    return _$$PleromaApiAccountReportImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiAccountReport implements PleromaApiAccountReport {
   const factory _PleromaApiAccountReport(
-          {@HiveField(0) required PleromaApiAccount? account,
-          @HiveField(1) required List<PleromaApiStatus>? statuses,
-          @HiveField(2) required PleromaApiAccount? user}) =
-      _$_PleromaApiAccountReport;
+          {@HiveField(0) required final PleromaApiAccount? account,
+          @HiveField(1) required final List<PleromaApiStatus>? statuses,
+          @HiveField(2) required final PleromaApiAccount? user}) =
+      _$PleromaApiAccountReportImpl;
 
   factory _PleromaApiAccountReport.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiAccountReport.fromJson;
+      _$PleromaApiAccountReportImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -250,6 +248,6 @@ abstract class _PleromaApiAccountReport implements PleromaApiAccountReport {
   PleromaApiAccount? get user;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiAccountReportCopyWith<_PleromaApiAccountReport> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PleromaApiAccountReportImplCopyWith<_$PleromaApiAccountReportImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

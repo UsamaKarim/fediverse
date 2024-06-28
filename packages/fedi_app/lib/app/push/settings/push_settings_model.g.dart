@@ -62,8 +62,8 @@ class PushSettingsAdapter extends TypeAdapter<PushSettings> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PushSettings _$$_PushSettingsFromJson(Map<String, dynamic> json) =>
-    _$_PushSettings(
+_$PushSettingsImpl _$$PushSettingsImplFromJson(Map<String, dynamic> json) =>
+    _$PushSettingsImpl(
       favourite: json['favourite'] as bool?,
       follow: json['follow'] as bool?,
       mention: json['mention'] as bool?,
@@ -73,7 +73,7 @@ _$_PushSettings _$$_PushSettingsFromJson(Map<String, dynamic> json) =>
       emojiReaction: json['emojiReaction'] as bool?,
     );
 
-Map<String, dynamic> _$$_PushSettingsToJson(_$_PushSettings instance) {
+Map<String, dynamic> _$$PushSettingsImplToJson(_$PushSettingsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

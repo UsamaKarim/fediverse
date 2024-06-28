@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_media_attachment_type_sealed.dart';
 
@@ -11,55 +12,11 @@ part of 'mastodon_api_media_attachment_type_sealed.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$MastodonApiMediaAttachmentTypeTearOff {
-  const _$MastodonApiMediaAttachmentTypeTearOff();
-
-  _Image image(
-      {String stringValue = MastodonApiMediaAttachmentType.imageStringValue}) {
-    return _Image(
-      stringValue: stringValue,
-    );
-  }
-
-  _Gifv gifv(
-      {String stringValue = MastodonApiMediaAttachmentType.gifvStringValue}) {
-    return _Gifv(
-      stringValue: stringValue,
-    );
-  }
-
-  _Video video(
-      {String stringValue = MastodonApiMediaAttachmentType.videoStringValue}) {
-    return _Video(
-      stringValue: stringValue,
-    );
-  }
-
-  _Audio audio(
-      {String stringValue = MastodonApiMediaAttachmentType.audioStringValue}) {
-    return _Audio(
-      stringValue: stringValue,
-    );
-  }
-
-  _Unknown unknown({required String stringValue}) {
-    return _Unknown(
-      stringValue: stringValue,
-    );
-  }
-}
-
-/// @nodoc
-const $MastodonApiMediaAttachmentType =
-    _$MastodonApiMediaAttachmentTypeTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$MastodonApiMediaAttachmentType {
   String get stringValue => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String stringValue) image,
@@ -71,11 +28,11 @@ mixin _$MastodonApiMediaAttachmentType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? image,
-    TResult Function(String stringValue)? gifv,
-    TResult Function(String stringValue)? video,
-    TResult Function(String stringValue)? audio,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? image,
+    TResult? Function(String stringValue)? gifv,
+    TResult? Function(String stringValue)? video,
+    TResult? Function(String stringValue)? audio,
+    TResult? Function(String stringValue)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -99,11 +56,11 @@ mixin _$MastodonApiMediaAttachmentType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Image value)? image,
-    TResult Function(_Gifv value)? gifv,
-    TResult Function(_Video value)? video,
-    TResult Function(_Audio value)? audio,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Image value)? image,
+    TResult? Function(_Gifv value)? gifv,
+    TResult? Function(_Video value)? video,
+    TResult? Function(_Audio value)? audio,
+    TResult? Function(_Unknown value)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -127,57 +84,63 @@ abstract class $MastodonApiMediaAttachmentTypeCopyWith<$Res> {
   factory $MastodonApiMediaAttachmentTypeCopyWith(
           MastodonApiMediaAttachmentType value,
           $Res Function(MastodonApiMediaAttachmentType) then) =
-      _$MastodonApiMediaAttachmentTypeCopyWithImpl<$Res>;
+      _$MastodonApiMediaAttachmentTypeCopyWithImpl<$Res,
+          MastodonApiMediaAttachmentType>;
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class _$MastodonApiMediaAttachmentTypeCopyWithImpl<$Res>
+class _$MastodonApiMediaAttachmentTypeCopyWithImpl<$Res,
+        $Val extends MastodonApiMediaAttachmentType>
     implements $MastodonApiMediaAttachmentTypeCopyWith<$Res> {
   _$MastodonApiMediaAttachmentTypeCopyWithImpl(this._value, this._then);
 
-  final MastodonApiMediaAttachmentType _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiMediaAttachmentType) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
     return _then(_value.copyWith(
-      stringValue: stringValue == freezed
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$ImageCopyWith<$Res>
+abstract class _$$ImageImplCopyWith<$Res>
     implements $MastodonApiMediaAttachmentTypeCopyWith<$Res> {
-  factory _$ImageCopyWith(_Image value, $Res Function(_Image) then) =
-      __$ImageCopyWithImpl<$Res>;
+  factory _$$ImageImplCopyWith(
+          _$ImageImpl value, $Res Function(_$ImageImpl) then) =
+      __$$ImageImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$ImageCopyWithImpl<$Res>
-    extends _$MastodonApiMediaAttachmentTypeCopyWithImpl<$Res>
-    implements _$ImageCopyWith<$Res> {
-  __$ImageCopyWithImpl(_Image _value, $Res Function(_Image) _then)
-      : super(_value, (v) => _then(v as _Image));
+class __$$ImageImplCopyWithImpl<$Res>
+    extends _$MastodonApiMediaAttachmentTypeCopyWithImpl<$Res, _$ImageImpl>
+    implements _$$ImageImplCopyWith<$Res> {
+  __$$ImageImplCopyWithImpl(
+      _$ImageImpl _value, $Res Function(_$ImageImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Image get _value => super._value as _Image;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Image(
-      stringValue: stringValue == freezed
+    return _then(_$ImageImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -187,12 +150,12 @@ class __$ImageCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Image implements _Image {
-  const _$_Image(
+class _$ImageImpl implements _Image {
+  const _$ImageImpl(
       {this.stringValue = MastodonApiMediaAttachmentType.imageStringValue});
 
-  @JsonKey(defaultValue: MastodonApiMediaAttachmentType.imageStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -201,10 +164,10 @@ class _$_Image implements _Image {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Image &&
+            other is _$ImageImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -214,8 +177,9 @@ class _$_Image implements _Image {
 
   @JsonKey(ignore: true)
   @override
-  _$ImageCopyWith<_Image> get copyWith =>
-      __$ImageCopyWithImpl<_Image>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ImageImplCopyWith<_$ImageImpl> get copyWith =>
+      __$$ImageImplCopyWithImpl<_$ImageImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -232,11 +196,11 @@ class _$_Image implements _Image {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? image,
-    TResult Function(String stringValue)? gifv,
-    TResult Function(String stringValue)? video,
-    TResult Function(String stringValue)? audio,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? image,
+    TResult? Function(String stringValue)? gifv,
+    TResult? Function(String stringValue)? video,
+    TResult? Function(String stringValue)? audio,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return image?.call(stringValue);
   }
@@ -272,11 +236,11 @@ class _$_Image implements _Image {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Image value)? image,
-    TResult Function(_Gifv value)? gifv,
-    TResult Function(_Video value)? video,
-    TResult Function(_Audio value)? audio,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Image value)? image,
+    TResult? Function(_Gifv value)? gifv,
+    TResult? Function(_Video value)? video,
+    TResult? Function(_Audio value)? audio,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return image?.call(this);
   }
@@ -299,40 +263,41 @@ class _$_Image implements _Image {
 }
 
 abstract class _Image implements MastodonApiMediaAttachmentType {
-  const factory _Image({String stringValue}) = _$_Image;
+  const factory _Image({final String stringValue}) = _$ImageImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$ImageCopyWith<_Image> get copyWith => throw _privateConstructorUsedError;
+  _$$ImageImplCopyWith<_$ImageImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$GifvCopyWith<$Res>
+abstract class _$$GifvImplCopyWith<$Res>
     implements $MastodonApiMediaAttachmentTypeCopyWith<$Res> {
-  factory _$GifvCopyWith(_Gifv value, $Res Function(_Gifv) then) =
-      __$GifvCopyWithImpl<$Res>;
+  factory _$$GifvImplCopyWith(
+          _$GifvImpl value, $Res Function(_$GifvImpl) then) =
+      __$$GifvImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$GifvCopyWithImpl<$Res>
-    extends _$MastodonApiMediaAttachmentTypeCopyWithImpl<$Res>
-    implements _$GifvCopyWith<$Res> {
-  __$GifvCopyWithImpl(_Gifv _value, $Res Function(_Gifv) _then)
-      : super(_value, (v) => _then(v as _Gifv));
+class __$$GifvImplCopyWithImpl<$Res>
+    extends _$MastodonApiMediaAttachmentTypeCopyWithImpl<$Res, _$GifvImpl>
+    implements _$$GifvImplCopyWith<$Res> {
+  __$$GifvImplCopyWithImpl(_$GifvImpl _value, $Res Function(_$GifvImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Gifv get _value => super._value as _Gifv;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Gifv(
-      stringValue: stringValue == freezed
+    return _then(_$GifvImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -342,12 +307,12 @@ class __$GifvCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Gifv implements _Gifv {
-  const _$_Gifv(
+class _$GifvImpl implements _Gifv {
+  const _$GifvImpl(
       {this.stringValue = MastodonApiMediaAttachmentType.gifvStringValue});
 
-  @JsonKey(defaultValue: MastodonApiMediaAttachmentType.gifvStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -356,10 +321,10 @@ class _$_Gifv implements _Gifv {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Gifv &&
+            other is _$GifvImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -369,8 +334,9 @@ class _$_Gifv implements _Gifv {
 
   @JsonKey(ignore: true)
   @override
-  _$GifvCopyWith<_Gifv> get copyWith =>
-      __$GifvCopyWithImpl<_Gifv>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$GifvImplCopyWith<_$GifvImpl> get copyWith =>
+      __$$GifvImplCopyWithImpl<_$GifvImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -387,11 +353,11 @@ class _$_Gifv implements _Gifv {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? image,
-    TResult Function(String stringValue)? gifv,
-    TResult Function(String stringValue)? video,
-    TResult Function(String stringValue)? audio,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? image,
+    TResult? Function(String stringValue)? gifv,
+    TResult? Function(String stringValue)? video,
+    TResult? Function(String stringValue)? audio,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return gifv?.call(stringValue);
   }
@@ -427,11 +393,11 @@ class _$_Gifv implements _Gifv {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Image value)? image,
-    TResult Function(_Gifv value)? gifv,
-    TResult Function(_Video value)? video,
-    TResult Function(_Audio value)? audio,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Image value)? image,
+    TResult? Function(_Gifv value)? gifv,
+    TResult? Function(_Video value)? video,
+    TResult? Function(_Audio value)? audio,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return gifv?.call(this);
   }
@@ -454,40 +420,42 @@ class _$_Gifv implements _Gifv {
 }
 
 abstract class _Gifv implements MastodonApiMediaAttachmentType {
-  const factory _Gifv({String stringValue}) = _$_Gifv;
+  const factory _Gifv({final String stringValue}) = _$GifvImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$GifvCopyWith<_Gifv> get copyWith => throw _privateConstructorUsedError;
+  _$$GifvImplCopyWith<_$GifvImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$VideoCopyWith<$Res>
+abstract class _$$VideoImplCopyWith<$Res>
     implements $MastodonApiMediaAttachmentTypeCopyWith<$Res> {
-  factory _$VideoCopyWith(_Video value, $Res Function(_Video) then) =
-      __$VideoCopyWithImpl<$Res>;
+  factory _$$VideoImplCopyWith(
+          _$VideoImpl value, $Res Function(_$VideoImpl) then) =
+      __$$VideoImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$VideoCopyWithImpl<$Res>
-    extends _$MastodonApiMediaAttachmentTypeCopyWithImpl<$Res>
-    implements _$VideoCopyWith<$Res> {
-  __$VideoCopyWithImpl(_Video _value, $Res Function(_Video) _then)
-      : super(_value, (v) => _then(v as _Video));
+class __$$VideoImplCopyWithImpl<$Res>
+    extends _$MastodonApiMediaAttachmentTypeCopyWithImpl<$Res, _$VideoImpl>
+    implements _$$VideoImplCopyWith<$Res> {
+  __$$VideoImplCopyWithImpl(
+      _$VideoImpl _value, $Res Function(_$VideoImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Video get _value => super._value as _Video;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Video(
-      stringValue: stringValue == freezed
+    return _then(_$VideoImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -497,12 +465,12 @@ class __$VideoCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Video implements _Video {
-  const _$_Video(
+class _$VideoImpl implements _Video {
+  const _$VideoImpl(
       {this.stringValue = MastodonApiMediaAttachmentType.videoStringValue});
 
-  @JsonKey(defaultValue: MastodonApiMediaAttachmentType.videoStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -511,10 +479,10 @@ class _$_Video implements _Video {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Video &&
+            other is _$VideoImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -524,8 +492,9 @@ class _$_Video implements _Video {
 
   @JsonKey(ignore: true)
   @override
-  _$VideoCopyWith<_Video> get copyWith =>
-      __$VideoCopyWithImpl<_Video>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$VideoImplCopyWith<_$VideoImpl> get copyWith =>
+      __$$VideoImplCopyWithImpl<_$VideoImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -542,11 +511,11 @@ class _$_Video implements _Video {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? image,
-    TResult Function(String stringValue)? gifv,
-    TResult Function(String stringValue)? video,
-    TResult Function(String stringValue)? audio,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? image,
+    TResult? Function(String stringValue)? gifv,
+    TResult? Function(String stringValue)? video,
+    TResult? Function(String stringValue)? audio,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return video?.call(stringValue);
   }
@@ -582,11 +551,11 @@ class _$_Video implements _Video {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Image value)? image,
-    TResult Function(_Gifv value)? gifv,
-    TResult Function(_Video value)? video,
-    TResult Function(_Audio value)? audio,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Image value)? image,
+    TResult? Function(_Gifv value)? gifv,
+    TResult? Function(_Video value)? video,
+    TResult? Function(_Audio value)? audio,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return video?.call(this);
   }
@@ -609,40 +578,42 @@ class _$_Video implements _Video {
 }
 
 abstract class _Video implements MastodonApiMediaAttachmentType {
-  const factory _Video({String stringValue}) = _$_Video;
+  const factory _Video({final String stringValue}) = _$VideoImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$VideoCopyWith<_Video> get copyWith => throw _privateConstructorUsedError;
+  _$$VideoImplCopyWith<_$VideoImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$AudioCopyWith<$Res>
+abstract class _$$AudioImplCopyWith<$Res>
     implements $MastodonApiMediaAttachmentTypeCopyWith<$Res> {
-  factory _$AudioCopyWith(_Audio value, $Res Function(_Audio) then) =
-      __$AudioCopyWithImpl<$Res>;
+  factory _$$AudioImplCopyWith(
+          _$AudioImpl value, $Res Function(_$AudioImpl) then) =
+      __$$AudioImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$AudioCopyWithImpl<$Res>
-    extends _$MastodonApiMediaAttachmentTypeCopyWithImpl<$Res>
-    implements _$AudioCopyWith<$Res> {
-  __$AudioCopyWithImpl(_Audio _value, $Res Function(_Audio) _then)
-      : super(_value, (v) => _then(v as _Audio));
+class __$$AudioImplCopyWithImpl<$Res>
+    extends _$MastodonApiMediaAttachmentTypeCopyWithImpl<$Res, _$AudioImpl>
+    implements _$$AudioImplCopyWith<$Res> {
+  __$$AudioImplCopyWithImpl(
+      _$AudioImpl _value, $Res Function(_$AudioImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Audio get _value => super._value as _Audio;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Audio(
-      stringValue: stringValue == freezed
+    return _then(_$AudioImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -652,12 +623,12 @@ class __$AudioCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Audio implements _Audio {
-  const _$_Audio(
+class _$AudioImpl implements _Audio {
+  const _$AudioImpl(
       {this.stringValue = MastodonApiMediaAttachmentType.audioStringValue});
 
-  @JsonKey(defaultValue: MastodonApiMediaAttachmentType.audioStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -666,10 +637,10 @@ class _$_Audio implements _Audio {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Audio &&
+            other is _$AudioImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -679,8 +650,9 @@ class _$_Audio implements _Audio {
 
   @JsonKey(ignore: true)
   @override
-  _$AudioCopyWith<_Audio> get copyWith =>
-      __$AudioCopyWithImpl<_Audio>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AudioImplCopyWith<_$AudioImpl> get copyWith =>
+      __$$AudioImplCopyWithImpl<_$AudioImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -697,11 +669,11 @@ class _$_Audio implements _Audio {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? image,
-    TResult Function(String stringValue)? gifv,
-    TResult Function(String stringValue)? video,
-    TResult Function(String stringValue)? audio,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? image,
+    TResult? Function(String stringValue)? gifv,
+    TResult? Function(String stringValue)? video,
+    TResult? Function(String stringValue)? audio,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return audio?.call(stringValue);
   }
@@ -737,11 +709,11 @@ class _$_Audio implements _Audio {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Image value)? image,
-    TResult Function(_Gifv value)? gifv,
-    TResult Function(_Video value)? video,
-    TResult Function(_Audio value)? audio,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Image value)? image,
+    TResult? Function(_Gifv value)? gifv,
+    TResult? Function(_Video value)? video,
+    TResult? Function(_Audio value)? audio,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return audio?.call(this);
   }
@@ -764,40 +736,42 @@ class _$_Audio implements _Audio {
 }
 
 abstract class _Audio implements MastodonApiMediaAttachmentType {
-  const factory _Audio({String stringValue}) = _$_Audio;
+  const factory _Audio({final String stringValue}) = _$AudioImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$AudioCopyWith<_Audio> get copyWith => throw _privateConstructorUsedError;
+  _$$AudioImplCopyWith<_$AudioImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$UnknownCopyWith<$Res>
+abstract class _$$UnknownImplCopyWith<$Res>
     implements $MastodonApiMediaAttachmentTypeCopyWith<$Res> {
-  factory _$UnknownCopyWith(_Unknown value, $Res Function(_Unknown) then) =
-      __$UnknownCopyWithImpl<$Res>;
+  factory _$$UnknownImplCopyWith(
+          _$UnknownImpl value, $Res Function(_$UnknownImpl) then) =
+      __$$UnknownImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$UnknownCopyWithImpl<$Res>
-    extends _$MastodonApiMediaAttachmentTypeCopyWithImpl<$Res>
-    implements _$UnknownCopyWith<$Res> {
-  __$UnknownCopyWithImpl(_Unknown _value, $Res Function(_Unknown) _then)
-      : super(_value, (v) => _then(v as _Unknown));
+class __$$UnknownImplCopyWithImpl<$Res>
+    extends _$MastodonApiMediaAttachmentTypeCopyWithImpl<$Res, _$UnknownImpl>
+    implements _$$UnknownImplCopyWith<$Res> {
+  __$$UnknownImplCopyWithImpl(
+      _$UnknownImpl _value, $Res Function(_$UnknownImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Unknown get _value => super._value as _Unknown;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Unknown(
-      stringValue: stringValue == freezed
+    return _then(_$UnknownImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -807,8 +781,8 @@ class __$UnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Unknown implements _Unknown {
-  const _$_Unknown({required this.stringValue});
+class _$UnknownImpl implements _Unknown {
+  const _$UnknownImpl({required this.stringValue});
 
   @override
   final String stringValue;
@@ -819,10 +793,10 @@ class _$_Unknown implements _Unknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Unknown &&
+            other is _$UnknownImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -832,8 +806,9 @@ class _$_Unknown implements _Unknown {
 
   @JsonKey(ignore: true)
   @override
-  _$UnknownCopyWith<_Unknown> get copyWith =>
-      __$UnknownCopyWithImpl<_Unknown>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnknownImplCopyWith<_$UnknownImpl> get copyWith =>
+      __$$UnknownImplCopyWithImpl<_$UnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -850,11 +825,11 @@ class _$_Unknown implements _Unknown {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? image,
-    TResult Function(String stringValue)? gifv,
-    TResult Function(String stringValue)? video,
-    TResult Function(String stringValue)? audio,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? image,
+    TResult? Function(String stringValue)? gifv,
+    TResult? Function(String stringValue)? video,
+    TResult? Function(String stringValue)? audio,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return unknown?.call(stringValue);
   }
@@ -890,11 +865,11 @@ class _$_Unknown implements _Unknown {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Image value)? image,
-    TResult Function(_Gifv value)? gifv,
-    TResult Function(_Video value)? video,
-    TResult Function(_Audio value)? audio,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Image value)? image,
+    TResult? Function(_Gifv value)? gifv,
+    TResult? Function(_Video value)? video,
+    TResult? Function(_Audio value)? audio,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return unknown?.call(this);
   }
@@ -917,12 +892,12 @@ class _$_Unknown implements _Unknown {
 }
 
 abstract class _Unknown implements MastodonApiMediaAttachmentType {
-  const factory _Unknown({required String stringValue}) = _$_Unknown;
+  const factory _Unknown({required final String stringValue}) = _$UnknownImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$UnknownCopyWith<_Unknown> get copyWith =>
+  _$$UnknownImplCopyWith<_$UnknownImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

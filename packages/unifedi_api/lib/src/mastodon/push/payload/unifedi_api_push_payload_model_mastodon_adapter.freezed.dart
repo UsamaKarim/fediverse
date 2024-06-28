@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_push_payload_model_mastodon_adapter.dart';
 
@@ -11,32 +12,12 @@ part of 'unifedi_api_push_payload_model_mastodon_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiPushPayloadMastodonAdapter
     _$UnifediApiPushPayloadMastodonAdapterFromJson(Map<String, dynamic> json) {
   return _UnifediApiPushPayloadMastodonAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiPushPayloadMastodonAdapterTearOff {
-  const _$UnifediApiPushPayloadMastodonAdapterTearOff();
-
-  _UnifediApiPushPayloadMastodonAdapter call(
-      @HiveField(0) MastodonApiPushPayload value) {
-    return _UnifediApiPushPayloadMastodonAdapter(
-      value,
-    );
-  }
-
-  UnifediApiPushPayloadMastodonAdapter fromJson(Map<String, Object?> json) {
-    return UnifediApiPushPayloadMastodonAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiPushPayloadMastodonAdapter =
-    _$UnifediApiPushPayloadMastodonAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiPushPayloadMastodonAdapter {
@@ -55,49 +36,56 @@ abstract class $UnifediApiPushPayloadMastodonAdapterCopyWith<$Res> {
   factory $UnifediApiPushPayloadMastodonAdapterCopyWith(
           UnifediApiPushPayloadMastodonAdapter value,
           $Res Function(UnifediApiPushPayloadMastodonAdapter) then) =
-      _$UnifediApiPushPayloadMastodonAdapterCopyWithImpl<$Res>;
+      _$UnifediApiPushPayloadMastodonAdapterCopyWithImpl<$Res,
+          UnifediApiPushPayloadMastodonAdapter>;
+  @useResult
   $Res call({@HiveField(0) MastodonApiPushPayload value});
 
   $MastodonApiPushPayloadCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiPushPayloadMastodonAdapterCopyWithImpl<$Res>
+class _$UnifediApiPushPayloadMastodonAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiPushPayloadMastodonAdapter>
     implements $UnifediApiPushPayloadMastodonAdapterCopyWith<$Res> {
   _$UnifediApiPushPayloadMastodonAdapterCopyWithImpl(this._value, this._then);
 
-  final UnifediApiPushPayloadMastodonAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiPushPayloadMastodonAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiPushPayload,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiPushPayloadCopyWith<$Res> get value {
     return $MastodonApiPushPayloadCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiPushPayloadMastodonAdapterCopyWith<$Res>
+abstract class _$$UnifediApiPushPayloadMastodonAdapterImplCopyWith<$Res>
     implements $UnifediApiPushPayloadMastodonAdapterCopyWith<$Res> {
-  factory _$UnifediApiPushPayloadMastodonAdapterCopyWith(
-          _UnifediApiPushPayloadMastodonAdapter value,
-          $Res Function(_UnifediApiPushPayloadMastodonAdapter) then) =
-      __$UnifediApiPushPayloadMastodonAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiPushPayloadMastodonAdapterImplCopyWith(
+          _$UnifediApiPushPayloadMastodonAdapterImpl value,
+          $Res Function(_$UnifediApiPushPayloadMastodonAdapterImpl) then) =
+      __$$UnifediApiPushPayloadMastodonAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) MastodonApiPushPayload value});
 
   @override
@@ -105,24 +93,22 @@ abstract class _$UnifediApiPushPayloadMastodonAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiPushPayloadMastodonAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiPushPayloadMastodonAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiPushPayloadMastodonAdapterCopyWith<$Res> {
-  __$UnifediApiPushPayloadMastodonAdapterCopyWithImpl(
-      _UnifediApiPushPayloadMastodonAdapter _value,
-      $Res Function(_UnifediApiPushPayloadMastodonAdapter) _then)
-      : super(_value, (v) => _then(v as _UnifediApiPushPayloadMastodonAdapter));
+class __$$UnifediApiPushPayloadMastodonAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiPushPayloadMastodonAdapterCopyWithImpl<$Res,
+        _$UnifediApiPushPayloadMastodonAdapterImpl>
+    implements _$$UnifediApiPushPayloadMastodonAdapterImplCopyWith<$Res> {
+  __$$UnifediApiPushPayloadMastodonAdapterImplCopyWithImpl(
+      _$UnifediApiPushPayloadMastodonAdapterImpl _value,
+      $Res Function(_$UnifediApiPushPayloadMastodonAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiPushPayloadMastodonAdapter get _value =>
-      super._value as _UnifediApiPushPayloadMastodonAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiPushPayloadMastodonAdapter(
-      value == freezed
+    return _then(_$UnifediApiPushPayloadMastodonAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiPushPayload,
@@ -132,14 +118,14 @@ class __$UnifediApiPushPayloadMastodonAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiPushPayloadMastodonAdapter
+class _$UnifediApiPushPayloadMastodonAdapterImpl
     extends _UnifediApiPushPayloadMastodonAdapter {
-  const _$_UnifediApiPushPayloadMastodonAdapter(@HiveField(0) this.value)
+  const _$UnifediApiPushPayloadMastodonAdapterImpl(@HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiPushPayloadMastodonAdapter.fromJson(
+  factory _$UnifediApiPushPayloadMastodonAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiPushPayloadMastodonAdapterFromJson(json);
+      _$$UnifediApiPushPayloadMastodonAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -151,46 +137,50 @@ class _$_UnifediApiPushPayloadMastodonAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiPushPayloadMastodonAdapter &&
+            other is _$UnifediApiPushPayloadMastodonAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiPushPayloadMastodonAdapterCopyWith<
-          _UnifediApiPushPayloadMastodonAdapter>
-      get copyWith => __$UnifediApiPushPayloadMastodonAdapterCopyWithImpl<
-          _UnifediApiPushPayloadMastodonAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiPushPayloadMastodonAdapterImplCopyWith<
+          _$UnifediApiPushPayloadMastodonAdapterImpl>
+      get copyWith => __$$UnifediApiPushPayloadMastodonAdapterImplCopyWithImpl<
+          _$UnifediApiPushPayloadMastodonAdapterImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiPushPayloadMastodonAdapterToJson(this);
+    return _$$UnifediApiPushPayloadMastodonAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiPushPayloadMastodonAdapter
     extends UnifediApiPushPayloadMastodonAdapter {
   const factory _UnifediApiPushPayloadMastodonAdapter(
-          @HiveField(0) MastodonApiPushPayload value) =
-      _$_UnifediApiPushPayloadMastodonAdapter;
+          @HiveField(0) final MastodonApiPushPayload value) =
+      _$UnifediApiPushPayloadMastodonAdapterImpl;
   const _UnifediApiPushPayloadMastodonAdapter._() : super._();
 
   factory _UnifediApiPushPayloadMastodonAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiPushPayloadMastodonAdapter.fromJson;
+      _$UnifediApiPushPayloadMastodonAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   MastodonApiPushPayload get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiPushPayloadMastodonAdapterCopyWith<
-          _UnifediApiPushPayloadMastodonAdapter>
+  _$$UnifediApiPushPayloadMastodonAdapterImplCopyWith<
+          _$UnifediApiPushPayloadMastodonAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

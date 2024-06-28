@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_featured_tags_model_impl.dart';
 
@@ -11,43 +12,12 @@ part of 'mastodon_api_featured_tags_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiFeaturedTag _$MastodonApiFeaturedTagFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiFeaturedTag.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiFeaturedTagTearOff {
-  const _$MastodonApiFeaturedTagTearOff();
-
-  _MastodonApiFeaturedTag call(
-      {@HiveField(0)
-          required String id,
-      @HiveField(1)
-      @JsonKey(name: 'last_status_at')
-          required DateTime? lastStatusAt,
-      @HiveField(2)
-      @JsonKey(name: 'statuses_count')
-          required int statusesCount,
-      @HiveField(3)
-          required String name}) {
-    return _MastodonApiFeaturedTag(
-      id: id,
-      lastStatusAt: lastStatusAt,
-      statusesCount: statusesCount,
-      name: name,
-    );
-  }
-
-  MastodonApiFeaturedTag fromJson(Map<String, Object?> json) {
-    return MastodonApiFeaturedTag.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiFeaturedTag = _$MastodonApiFeaturedTagTearOff();
 
 /// @nodoc
 mixin _$MastodonApiFeaturedTag {
@@ -72,7 +42,8 @@ mixin _$MastodonApiFeaturedTag {
 abstract class $MastodonApiFeaturedTagCopyWith<$Res> {
   factory $MastodonApiFeaturedTagCopyWith(MastodonApiFeaturedTag value,
           $Res Function(MastodonApiFeaturedTag) then) =
-      _$MastodonApiFeaturedTagCopyWithImpl<$Res>;
+      _$MastodonApiFeaturedTagCopyWithImpl<$Res, MastodonApiFeaturedTag>;
+  @useResult
   $Res call(
       {@HiveField(0) String id,
       @HiveField(1) @JsonKey(name: 'last_status_at') DateTime? lastStatusAt,
@@ -81,49 +52,54 @@ abstract class $MastodonApiFeaturedTagCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MastodonApiFeaturedTagCopyWithImpl<$Res>
+class _$MastodonApiFeaturedTagCopyWithImpl<$Res,
+        $Val extends MastodonApiFeaturedTag>
     implements $MastodonApiFeaturedTagCopyWith<$Res> {
   _$MastodonApiFeaturedTagCopyWithImpl(this._value, this._then);
 
-  final MastodonApiFeaturedTag _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiFeaturedTag) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
+    Object? id = null,
     Object? lastStatusAt = freezed,
-    Object? statusesCount = freezed,
-    Object? name = freezed,
+    Object? statusesCount = null,
+    Object? name = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      lastStatusAt: lastStatusAt == freezed
+      lastStatusAt: freezed == lastStatusAt
           ? _value.lastStatusAt
           : lastStatusAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      statusesCount: statusesCount == freezed
+      statusesCount: null == statusesCount
           ? _value.statusesCount
           : statusesCount // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiFeaturedTagCopyWith<$Res>
+abstract class _$$MastodonApiFeaturedTagImplCopyWith<$Res>
     implements $MastodonApiFeaturedTagCopyWith<$Res> {
-  factory _$MastodonApiFeaturedTagCopyWith(_MastodonApiFeaturedTag value,
-          $Res Function(_MastodonApiFeaturedTag) then) =
-      __$MastodonApiFeaturedTagCopyWithImpl<$Res>;
+  factory _$$MastodonApiFeaturedTagImplCopyWith(
+          _$MastodonApiFeaturedTagImpl value,
+          $Res Function(_$MastodonApiFeaturedTagImpl) then) =
+      __$$MastodonApiFeaturedTagImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) String id,
       @HiveField(1) @JsonKey(name: 'last_status_at') DateTime? lastStatusAt,
@@ -132,37 +108,37 @@ abstract class _$MastodonApiFeaturedTagCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MastodonApiFeaturedTagCopyWithImpl<$Res>
-    extends _$MastodonApiFeaturedTagCopyWithImpl<$Res>
-    implements _$MastodonApiFeaturedTagCopyWith<$Res> {
-  __$MastodonApiFeaturedTagCopyWithImpl(_MastodonApiFeaturedTag _value,
-      $Res Function(_MastodonApiFeaturedTag) _then)
-      : super(_value, (v) => _then(v as _MastodonApiFeaturedTag));
+class __$$MastodonApiFeaturedTagImplCopyWithImpl<$Res>
+    extends _$MastodonApiFeaturedTagCopyWithImpl<$Res,
+        _$MastodonApiFeaturedTagImpl>
+    implements _$$MastodonApiFeaturedTagImplCopyWith<$Res> {
+  __$$MastodonApiFeaturedTagImplCopyWithImpl(
+      _$MastodonApiFeaturedTagImpl _value,
+      $Res Function(_$MastodonApiFeaturedTagImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiFeaturedTag get _value => super._value as _MastodonApiFeaturedTag;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
+    Object? id = null,
     Object? lastStatusAt = freezed,
-    Object? statusesCount = freezed,
-    Object? name = freezed,
+    Object? statusesCount = null,
+    Object? name = null,
   }) {
-    return _then(_MastodonApiFeaturedTag(
-      id: id == freezed
+    return _then(_$MastodonApiFeaturedTagImpl(
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      lastStatusAt: lastStatusAt == freezed
+      lastStatusAt: freezed == lastStatusAt
           ? _value.lastStatusAt
           : lastStatusAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      statusesCount: statusesCount == freezed
+      statusesCount: null == statusesCount
           ? _value.statusesCount
           : statusesCount // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
@@ -172,21 +148,17 @@ class __$MastodonApiFeaturedTagCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiFeaturedTag implements _MastodonApiFeaturedTag {
-  const _$_MastodonApiFeaturedTag(
-      {@HiveField(0)
-          required this.id,
-      @HiveField(1)
-      @JsonKey(name: 'last_status_at')
-          required this.lastStatusAt,
+class _$MastodonApiFeaturedTagImpl implements _MastodonApiFeaturedTag {
+  const _$MastodonApiFeaturedTagImpl(
+      {@HiveField(0) required this.id,
+      @HiveField(1) @JsonKey(name: 'last_status_at') required this.lastStatusAt,
       @HiveField(2)
       @JsonKey(name: 'statuses_count')
-          required this.statusesCount,
-      @HiveField(3)
-          required this.name});
+      required this.statusesCount,
+      @HiveField(3) required this.name});
 
-  factory _$_MastodonApiFeaturedTag.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiFeaturedTagFromJson(json);
+  factory _$MastodonApiFeaturedTagImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MastodonApiFeaturedTagImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -209,10 +181,10 @@ class _$_MastodonApiFeaturedTag implements _MastodonApiFeaturedTag {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiFeaturedTag &&
+            other is _$MastodonApiFeaturedTagImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.lastStatusAt, lastStatusAt) ||
                 other.lastStatusAt == lastStatusAt) &&
@@ -221,37 +193,39 @@ class _$_MastodonApiFeaturedTag implements _MastodonApiFeaturedTag {
             (identical(other.name, name) || other.name == name));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, id, lastStatusAt, statusesCount, name);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiFeaturedTagCopyWith<_MastodonApiFeaturedTag> get copyWith =>
-      __$MastodonApiFeaturedTagCopyWithImpl<_MastodonApiFeaturedTag>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiFeaturedTagImplCopyWith<_$MastodonApiFeaturedTagImpl>
+      get copyWith => __$$MastodonApiFeaturedTagImplCopyWithImpl<
+          _$MastodonApiFeaturedTagImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiFeaturedTagToJson(this);
+    return _$$MastodonApiFeaturedTagImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiFeaturedTag implements MastodonApiFeaturedTag {
   const factory _MastodonApiFeaturedTag(
-      {@HiveField(0)
-          required String id,
+      {@HiveField(0) required final String id,
       @HiveField(1)
       @JsonKey(name: 'last_status_at')
-          required DateTime? lastStatusAt,
+      required final DateTime? lastStatusAt,
       @HiveField(2)
       @JsonKey(name: 'statuses_count')
-          required int statusesCount,
-      @HiveField(3)
-          required String name}) = _$_MastodonApiFeaturedTag;
+      required final int statusesCount,
+      @HiveField(3) required final String name}) = _$MastodonApiFeaturedTagImpl;
 
   factory _MastodonApiFeaturedTag.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiFeaturedTag.fromJson;
+      _$MastodonApiFeaturedTagImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -269,6 +243,6 @@ abstract class _MastodonApiFeaturedTag implements MastodonApiFeaturedTag {
   String get name;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiFeaturedTagCopyWith<_MastodonApiFeaturedTag> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$MastodonApiFeaturedTagImplCopyWith<_$MastodonApiFeaturedTagImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

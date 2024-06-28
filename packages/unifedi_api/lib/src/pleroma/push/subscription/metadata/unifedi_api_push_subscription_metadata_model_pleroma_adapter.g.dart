@@ -46,16 +46,17 @@ class UnifediApiPushSubscriptionMetadataPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiPushSubscriptionMetadataPleromaAdapter
-    _$$_UnifediApiPushSubscriptionMetadataPleromaAdapterFromJson(
+_$UnifediApiPushSubscriptionMetadataPleromaAdapterImpl
+    _$$UnifediApiPushSubscriptionMetadataPleromaAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiPushSubscriptionMetadataPleromaAdapter(
+        _$UnifediApiPushSubscriptionMetadataPleromaAdapterImpl(
           PleromaApiPushSubscriptionMetadata.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiPushSubscriptionMetadataPleromaAdapterToJson(
-        _$_UnifediApiPushSubscriptionMetadataPleromaAdapter instance) =>
-    <String, dynamic>{
-      'value': instance.value.toJson(),
-    };
+Map<String, dynamic>
+    _$$UnifediApiPushSubscriptionMetadataPleromaAdapterImplToJson(
+            _$UnifediApiPushSubscriptionMetadataPleromaAdapterImpl instance) =>
+        <String, dynamic>{
+          'value': instance.value.toJson(),
+        };

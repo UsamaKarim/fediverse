@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'fediverse_api_access_scopes_requirement_model_impl.dart';
 
@@ -11,34 +12,12 @@ part of 'fediverse_api_access_scopes_requirement_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 FediverseApiAccessScopesRequirement
     _$FediverseApiAccessScopesRequirementFromJson(Map<String, dynamic> json) {
   return _FediverseApiAccessScopesRequirement.fromJson(json);
 }
-
-/// @nodoc
-class _$FediverseApiAccessScopesRequirementTearOff {
-  const _$FediverseApiAccessScopesRequirementTearOff();
-
-  _FediverseApiAccessScopesRequirement call(
-      {@HiveField(0)
-      @JsonKey(name: 'scopes_variants')
-          required List<FediverseApiAccessScopes> scopesVariants}) {
-    return _FediverseApiAccessScopesRequirement(
-      scopesVariants: scopesVariants,
-    );
-  }
-
-  FediverseApiAccessScopesRequirement fromJson(Map<String, Object?> json) {
-    return FediverseApiAccessScopesRequirement.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $FediverseApiAccessScopesRequirement =
-    _$FediverseApiAccessScopesRequirementTearOff();
 
 /// @nodoc
 mixin _$FediverseApiAccessScopesRequirement {
@@ -59,69 +38,73 @@ abstract class $FediverseApiAccessScopesRequirementCopyWith<$Res> {
   factory $FediverseApiAccessScopesRequirementCopyWith(
           FediverseApiAccessScopesRequirement value,
           $Res Function(FediverseApiAccessScopesRequirement) then) =
-      _$FediverseApiAccessScopesRequirementCopyWithImpl<$Res>;
+      _$FediverseApiAccessScopesRequirementCopyWithImpl<$Res,
+          FediverseApiAccessScopesRequirement>;
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'scopes_variants')
-          List<FediverseApiAccessScopes> scopesVariants});
+      List<FediverseApiAccessScopes> scopesVariants});
 }
 
 /// @nodoc
-class _$FediverseApiAccessScopesRequirementCopyWithImpl<$Res>
+class _$FediverseApiAccessScopesRequirementCopyWithImpl<$Res,
+        $Val extends FediverseApiAccessScopesRequirement>
     implements $FediverseApiAccessScopesRequirementCopyWith<$Res> {
   _$FediverseApiAccessScopesRequirementCopyWithImpl(this._value, this._then);
 
-  final FediverseApiAccessScopesRequirement _value;
   // ignore: unused_field
-  final $Res Function(FediverseApiAccessScopesRequirement) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? scopesVariants = freezed,
+    Object? scopesVariants = null,
   }) {
     return _then(_value.copyWith(
-      scopesVariants: scopesVariants == freezed
+      scopesVariants: null == scopesVariants
           ? _value.scopesVariants
           : scopesVariants // ignore: cast_nullable_to_non_nullable
               as List<FediverseApiAccessScopes>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$FediverseApiAccessScopesRequirementCopyWith<$Res>
+abstract class _$$FediverseApiAccessScopesRequirementImplCopyWith<$Res>
     implements $FediverseApiAccessScopesRequirementCopyWith<$Res> {
-  factory _$FediverseApiAccessScopesRequirementCopyWith(
-          _FediverseApiAccessScopesRequirement value,
-          $Res Function(_FediverseApiAccessScopesRequirement) then) =
-      __$FediverseApiAccessScopesRequirementCopyWithImpl<$Res>;
+  factory _$$FediverseApiAccessScopesRequirementImplCopyWith(
+          _$FediverseApiAccessScopesRequirementImpl value,
+          $Res Function(_$FediverseApiAccessScopesRequirementImpl) then) =
+      __$$FediverseApiAccessScopesRequirementImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'scopes_variants')
-          List<FediverseApiAccessScopes> scopesVariants});
+      List<FediverseApiAccessScopes> scopesVariants});
 }
 
 /// @nodoc
-class __$FediverseApiAccessScopesRequirementCopyWithImpl<$Res>
-    extends _$FediverseApiAccessScopesRequirementCopyWithImpl<$Res>
-    implements _$FediverseApiAccessScopesRequirementCopyWith<$Res> {
-  __$FediverseApiAccessScopesRequirementCopyWithImpl(
-      _FediverseApiAccessScopesRequirement _value,
-      $Res Function(_FediverseApiAccessScopesRequirement) _then)
-      : super(_value, (v) => _then(v as _FediverseApiAccessScopesRequirement));
+class __$$FediverseApiAccessScopesRequirementImplCopyWithImpl<$Res>
+    extends _$FediverseApiAccessScopesRequirementCopyWithImpl<$Res,
+        _$FediverseApiAccessScopesRequirementImpl>
+    implements _$$FediverseApiAccessScopesRequirementImplCopyWith<$Res> {
+  __$$FediverseApiAccessScopesRequirementImplCopyWithImpl(
+      _$FediverseApiAccessScopesRequirementImpl _value,
+      $Res Function(_$FediverseApiAccessScopesRequirementImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _FediverseApiAccessScopesRequirement get _value =>
-      super._value as _FediverseApiAccessScopesRequirement;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? scopesVariants = freezed,
+    Object? scopesVariants = null,
   }) {
-    return _then(_FediverseApiAccessScopesRequirement(
-      scopesVariants: scopesVariants == freezed
-          ? _value.scopesVariants
+    return _then(_$FediverseApiAccessScopesRequirementImpl(
+      scopesVariants: null == scopesVariants
+          ? _value._scopesVariants
           : scopesVariants // ignore: cast_nullable_to_non_nullable
               as List<FediverseApiAccessScopes>,
     ));
@@ -130,21 +113,27 @@ class __$FediverseApiAccessScopesRequirementCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_FediverseApiAccessScopesRequirement
+class _$FediverseApiAccessScopesRequirementImpl
     implements _FediverseApiAccessScopesRequirement {
-  const _$_FediverseApiAccessScopesRequirement(
+  const _$FediverseApiAccessScopesRequirementImpl(
       {@HiveField(0)
       @JsonKey(name: 'scopes_variants')
-          required this.scopesVariants});
+      required final List<FediverseApiAccessScopes> scopesVariants})
+      : _scopesVariants = scopesVariants;
 
-  factory _$_FediverseApiAccessScopesRequirement.fromJson(
+  factory _$FediverseApiAccessScopesRequirementImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_FediverseApiAccessScopesRequirementFromJson(json);
+      _$$FediverseApiAccessScopesRequirementImplFromJson(json);
 
+  final List<FediverseApiAccessScopes> _scopesVariants;
   @override
   @HiveField(0)
   @JsonKey(name: 'scopes_variants')
-  final List<FediverseApiAccessScopes> scopesVariants;
+  List<FediverseApiAccessScopes> get scopesVariants {
+    if (_scopesVariants is EqualUnmodifiableListView) return _scopesVariants;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_scopesVariants);
+  }
 
   @override
   String toString() {
@@ -152,28 +141,32 @@ class _$_FediverseApiAccessScopesRequirement
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _FediverseApiAccessScopesRequirement &&
+            other is _$FediverseApiAccessScopesRequirementImpl &&
             const DeepCollectionEquality()
-                .equals(other.scopesVariants, scopesVariants));
+                .equals(other._scopesVariants, _scopesVariants));
   }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(scopesVariants));
 
   @JsonKey(ignore: true)
   @override
-  _$FediverseApiAccessScopesRequirementCopyWith<
-          _FediverseApiAccessScopesRequirement>
-      get copyWith => __$FediverseApiAccessScopesRequirementCopyWithImpl<
-          _FediverseApiAccessScopesRequirement>(this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType, const DeepCollectionEquality().hash(_scopesVariants));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$FediverseApiAccessScopesRequirementImplCopyWith<
+          _$FediverseApiAccessScopesRequirementImpl>
+      get copyWith => __$$FediverseApiAccessScopesRequirementImplCopyWithImpl<
+          _$FediverseApiAccessScopesRequirementImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_FediverseApiAccessScopesRequirementToJson(this);
+    return _$$FediverseApiAccessScopesRequirementImplToJson(
+      this,
+    );
   }
 }
 
@@ -182,12 +175,12 @@ abstract class _FediverseApiAccessScopesRequirement
   const factory _FediverseApiAccessScopesRequirement(
           {@HiveField(0)
           @JsonKey(name: 'scopes_variants')
-              required List<FediverseApiAccessScopes> scopesVariants}) =
-      _$_FediverseApiAccessScopesRequirement;
+          required final List<FediverseApiAccessScopes> scopesVariants}) =
+      _$FediverseApiAccessScopesRequirementImpl;
 
   factory _FediverseApiAccessScopesRequirement.fromJson(
           Map<String, dynamic> json) =
-      _$_FediverseApiAccessScopesRequirement.fromJson;
+      _$FediverseApiAccessScopesRequirementImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -195,7 +188,7 @@ abstract class _FediverseApiAccessScopesRequirement
   List<FediverseApiAccessScopes> get scopesVariants;
   @override
   @JsonKey(ignore: true)
-  _$FediverseApiAccessScopesRequirementCopyWith<
-          _FediverseApiAccessScopesRequirement>
+  _$$FediverseApiAccessScopesRequirementImplCopyWith<
+          _$FediverseApiAccessScopesRequirementImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

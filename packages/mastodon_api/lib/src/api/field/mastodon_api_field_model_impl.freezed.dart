@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_field_model_impl.dart';
 
@@ -11,38 +12,11 @@ part of 'mastodon_api_field_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiField _$MastodonApiFieldFromJson(Map<String, dynamic> json) {
   return _MastodonApiField.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiFieldTearOff {
-  const _$MastodonApiFieldTearOff();
-
-  _MastodonApiField call(
-      {@HiveField(0)
-          required String? name,
-      @HiveField(1)
-          required String? value,
-      @HiveField(2)
-      @JsonKey(name: 'verified_at')
-          required DateTime? verifiedAt}) {
-    return _MastodonApiField(
-      name: name,
-      value: value,
-      verifiedAt: verifiedAt,
-    );
-  }
-
-  MastodonApiField fromJson(Map<String, Object?> json) {
-    return MastodonApiField.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiField = _$MastodonApiFieldTearOff();
 
 /// @nodoc
 mixin _$MastodonApiField {
@@ -64,7 +38,8 @@ mixin _$MastodonApiField {
 abstract class $MastodonApiFieldCopyWith<$Res> {
   factory $MastodonApiFieldCopyWith(
           MastodonApiField value, $Res Function(MastodonApiField) then) =
-      _$MastodonApiFieldCopyWithImpl<$Res>;
+      _$MastodonApiFieldCopyWithImpl<$Res, MastodonApiField>;
+  @useResult
   $Res call(
       {@HiveField(0) String? name,
       @HiveField(1) String? value,
@@ -72,14 +47,16 @@ abstract class $MastodonApiFieldCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MastodonApiFieldCopyWithImpl<$Res>
+class _$MastodonApiFieldCopyWithImpl<$Res, $Val extends MastodonApiField>
     implements $MastodonApiFieldCopyWith<$Res> {
   _$MastodonApiFieldCopyWithImpl(this._value, this._then);
 
-  final MastodonApiField _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiField) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? name = freezed,
@@ -87,29 +64,30 @@ class _$MastodonApiFieldCopyWithImpl<$Res>
     Object? verifiedAt = freezed,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed
+      name: freezed == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String?,
-      value: value == freezed
+      value: freezed == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as String?,
-      verifiedAt: verifiedAt == freezed
+      verifiedAt: freezed == verifiedAt
           ? _value.verifiedAt
           : verifiedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiFieldCopyWith<$Res>
+abstract class _$$MastodonApiFieldImplCopyWith<$Res>
     implements $MastodonApiFieldCopyWith<$Res> {
-  factory _$MastodonApiFieldCopyWith(
-          _MastodonApiField value, $Res Function(_MastodonApiField) then) =
-      __$MastodonApiFieldCopyWithImpl<$Res>;
+  factory _$$MastodonApiFieldImplCopyWith(_$MastodonApiFieldImpl value,
+          $Res Function(_$MastodonApiFieldImpl) then) =
+      __$$MastodonApiFieldImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) String? name,
       @HiveField(1) String? value,
@@ -117,32 +95,30 @@ abstract class _$MastodonApiFieldCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MastodonApiFieldCopyWithImpl<$Res>
-    extends _$MastodonApiFieldCopyWithImpl<$Res>
-    implements _$MastodonApiFieldCopyWith<$Res> {
-  __$MastodonApiFieldCopyWithImpl(
-      _MastodonApiField _value, $Res Function(_MastodonApiField) _then)
-      : super(_value, (v) => _then(v as _MastodonApiField));
+class __$$MastodonApiFieldImplCopyWithImpl<$Res>
+    extends _$MastodonApiFieldCopyWithImpl<$Res, _$MastodonApiFieldImpl>
+    implements _$$MastodonApiFieldImplCopyWith<$Res> {
+  __$$MastodonApiFieldImplCopyWithImpl(_$MastodonApiFieldImpl _value,
+      $Res Function(_$MastodonApiFieldImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiField get _value => super._value as _MastodonApiField;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? name = freezed,
     Object? value = freezed,
     Object? verifiedAt = freezed,
   }) {
-    return _then(_MastodonApiField(
-      name: name == freezed
+    return _then(_$MastodonApiFieldImpl(
+      name: freezed == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String?,
-      value: value == freezed
+      value: freezed == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as String?,
-      verifiedAt: verifiedAt == freezed
+      verifiedAt: freezed == verifiedAt
           ? _value.verifiedAt
           : verifiedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
@@ -152,14 +128,14 @@ class __$MastodonApiFieldCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiField implements _MastodonApiField {
-  const _$_MastodonApiField(
+class _$MastodonApiFieldImpl implements _MastodonApiField {
+  const _$MastodonApiFieldImpl(
       {@HiveField(0) required this.name,
       @HiveField(1) required this.value,
       @HiveField(2) @JsonKey(name: 'verified_at') required this.verifiedAt});
 
-  factory _$_MastodonApiField.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiFieldFromJson(json);
+  factory _$MastodonApiFieldImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MastodonApiFieldImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -178,42 +154,45 @@ class _$_MastodonApiField implements _MastodonApiField {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiField &&
+            other is _$MastodonApiFieldImpl &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.value, value) || other.value == value) &&
             (identical(other.verifiedAt, verifiedAt) ||
                 other.verifiedAt == verifiedAt));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, name, value, verifiedAt);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiFieldCopyWith<_MastodonApiField> get copyWith =>
-      __$MastodonApiFieldCopyWithImpl<_MastodonApiField>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiFieldImplCopyWith<_$MastodonApiFieldImpl> get copyWith =>
+      __$$MastodonApiFieldImplCopyWithImpl<_$MastodonApiFieldImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiFieldToJson(this);
+    return _$$MastodonApiFieldImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiField implements MastodonApiField {
   const factory _MastodonApiField(
-      {@HiveField(0)
-          required String? name,
-      @HiveField(1)
-          required String? value,
+      {@HiveField(0) required final String? name,
+      @HiveField(1) required final String? value,
       @HiveField(2)
       @JsonKey(name: 'verified_at')
-          required DateTime? verifiedAt}) = _$_MastodonApiField;
+      required final DateTime? verifiedAt}) = _$MastodonApiFieldImpl;
 
   factory _MastodonApiField.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiField.fromJson;
+      _$MastodonApiFieldImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -227,6 +206,6 @@ abstract class _MastodonApiField implements MastodonApiField {
   DateTime? get verifiedAt;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiFieldCopyWith<_MastodonApiField> get copyWith =>
+  _$$MastodonApiFieldImplCopyWith<_$MastodonApiFieldImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

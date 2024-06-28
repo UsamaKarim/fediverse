@@ -46,16 +46,17 @@ class UnifediApiRegisterAccountResponseMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiRegisterAccountResponseMastodonAdapter
-    _$$_UnifediApiRegisterAccountResponseMastodonAdapterFromJson(
+_$UnifediApiRegisterAccountResponseMastodonAdapterImpl
+    _$$UnifediApiRegisterAccountResponseMastodonAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiRegisterAccountResponseMastodonAdapter(
+        _$UnifediApiRegisterAccountResponseMastodonAdapterImpl(
           MastodonApiRegisterAccountResponse.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiRegisterAccountResponseMastodonAdapterToJson(
-        _$_UnifediApiRegisterAccountResponseMastodonAdapter instance) =>
-    <String, dynamic>{
-      'value': instance.value.toJson(),
-    };
+Map<String, dynamic>
+    _$$UnifediApiRegisterAccountResponseMastodonAdapterImplToJson(
+            _$UnifediApiRegisterAccountResponseMastodonAdapterImpl instance) =>
+        <String, dynamic>{
+          'value': instance.value.toJson(),
+        };

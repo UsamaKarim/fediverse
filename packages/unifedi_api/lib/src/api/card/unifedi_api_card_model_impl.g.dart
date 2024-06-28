@@ -80,8 +80,8 @@ class UnifediApiCardAdapter extends TypeAdapter<UnifediApiCard> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiCard _$$_UnifediApiCardFromJson(Map<String, dynamic> json) =>
-    _$_UnifediApiCard(
+_$UnifediApiCardImpl _$$UnifediApiCardImplFromJson(Map<String, dynamic> json) =>
+    _$UnifediApiCardImpl(
       authorName: json['author_name'] as String?,
       authorUrl: json['author_url'] as String?,
       description: json['description'] as String?,
@@ -97,7 +97,8 @@ _$_UnifediApiCard _$$_UnifediApiCardFromJson(Map<String, dynamic> json) =>
       url: json['url'] as String?,
     );
 
-Map<String, dynamic> _$$_UnifediApiCardToJson(_$_UnifediApiCard instance) {
+Map<String, dynamic> _$$UnifediApiCardImplToJson(
+    _$UnifediApiCardImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

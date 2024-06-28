@@ -54,17 +54,17 @@ class UnifediApiInstancePollLimitsAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiInstancePollLimits _$$_UnifediApiInstancePollLimitsFromJson(
+_$UnifediApiInstancePollLimitsImpl _$$UnifediApiInstancePollLimitsImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiInstancePollLimits(
-      maxExpiration: json['max_expiration'] as int?,
-      maxOptionChars: json['max_option_chars'] as int?,
-      maxOptions: json['max_options'] as int?,
-      minExpiration: json['min_expiration'] as int?,
+    _$UnifediApiInstancePollLimitsImpl(
+      maxExpiration: (json['max_expiration'] as num?)?.toInt(),
+      maxOptionChars: (json['max_option_chars'] as num?)?.toInt(),
+      maxOptions: (json['max_options'] as num?)?.toInt(),
+      minExpiration: (json['min_expiration'] as num?)?.toInt(),
     );
 
-Map<String, dynamic> _$$_UnifediApiInstancePollLimitsToJson(
-    _$_UnifediApiInstancePollLimits instance) {
+Map<String, dynamic> _$$UnifediApiInstancePollLimitsImplToJson(
+    _$UnifediApiInstancePollLimitsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

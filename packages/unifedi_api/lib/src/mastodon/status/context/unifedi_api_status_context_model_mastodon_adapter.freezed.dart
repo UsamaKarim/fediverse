@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_status_context_model_mastodon_adapter.dart';
 
@@ -11,33 +12,13 @@ part of 'unifedi_api_status_context_model_mastodon_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiStatusContextMastodonAdapter
     _$UnifediApiStatusContextMastodonAdapterFromJson(
         Map<String, dynamic> json) {
   return _UnifediApiStatusContextMastodonAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiStatusContextMastodonAdapterTearOff {
-  const _$UnifediApiStatusContextMastodonAdapterTearOff();
-
-  _UnifediApiStatusContextMastodonAdapter call(
-      @HiveField(0) MastodonApiStatusContext value) {
-    return _UnifediApiStatusContextMastodonAdapter(
-      value,
-    );
-  }
-
-  UnifediApiStatusContextMastodonAdapter fromJson(Map<String, Object?> json) {
-    return UnifediApiStatusContextMastodonAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiStatusContextMastodonAdapter =
-    _$UnifediApiStatusContextMastodonAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiStatusContextMastodonAdapter {
@@ -56,49 +37,56 @@ abstract class $UnifediApiStatusContextMastodonAdapterCopyWith<$Res> {
   factory $UnifediApiStatusContextMastodonAdapterCopyWith(
           UnifediApiStatusContextMastodonAdapter value,
           $Res Function(UnifediApiStatusContextMastodonAdapter) then) =
-      _$UnifediApiStatusContextMastodonAdapterCopyWithImpl<$Res>;
+      _$UnifediApiStatusContextMastodonAdapterCopyWithImpl<$Res,
+          UnifediApiStatusContextMastodonAdapter>;
+  @useResult
   $Res call({@HiveField(0) MastodonApiStatusContext value});
 
   $MastodonApiStatusContextCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiStatusContextMastodonAdapterCopyWithImpl<$Res>
+class _$UnifediApiStatusContextMastodonAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiStatusContextMastodonAdapter>
     implements $UnifediApiStatusContextMastodonAdapterCopyWith<$Res> {
   _$UnifediApiStatusContextMastodonAdapterCopyWithImpl(this._value, this._then);
 
-  final UnifediApiStatusContextMastodonAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiStatusContextMastodonAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiStatusContext,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiStatusContextCopyWith<$Res> get value {
     return $MastodonApiStatusContextCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiStatusContextMastodonAdapterCopyWith<$Res>
+abstract class _$$UnifediApiStatusContextMastodonAdapterImplCopyWith<$Res>
     implements $UnifediApiStatusContextMastodonAdapterCopyWith<$Res> {
-  factory _$UnifediApiStatusContextMastodonAdapterCopyWith(
-          _UnifediApiStatusContextMastodonAdapter value,
-          $Res Function(_UnifediApiStatusContextMastodonAdapter) then) =
-      __$UnifediApiStatusContextMastodonAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiStatusContextMastodonAdapterImplCopyWith(
+          _$UnifediApiStatusContextMastodonAdapterImpl value,
+          $Res Function(_$UnifediApiStatusContextMastodonAdapterImpl) then) =
+      __$$UnifediApiStatusContextMastodonAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) MastodonApiStatusContext value});
 
   @override
@@ -106,25 +94,22 @@ abstract class _$UnifediApiStatusContextMastodonAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiStatusContextMastodonAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiStatusContextMastodonAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiStatusContextMastodonAdapterCopyWith<$Res> {
-  __$UnifediApiStatusContextMastodonAdapterCopyWithImpl(
-      _UnifediApiStatusContextMastodonAdapter _value,
-      $Res Function(_UnifediApiStatusContextMastodonAdapter) _then)
-      : super(
-            _value, (v) => _then(v as _UnifediApiStatusContextMastodonAdapter));
+class __$$UnifediApiStatusContextMastodonAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiStatusContextMastodonAdapterCopyWithImpl<$Res,
+        _$UnifediApiStatusContextMastodonAdapterImpl>
+    implements _$$UnifediApiStatusContextMastodonAdapterImplCopyWith<$Res> {
+  __$$UnifediApiStatusContextMastodonAdapterImplCopyWithImpl(
+      _$UnifediApiStatusContextMastodonAdapterImpl _value,
+      $Res Function(_$UnifediApiStatusContextMastodonAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiStatusContextMastodonAdapter get _value =>
-      super._value as _UnifediApiStatusContextMastodonAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiStatusContextMastodonAdapter(
-      value == freezed
+    return _then(_$UnifediApiStatusContextMastodonAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiStatusContext,
@@ -134,14 +119,14 @@ class __$UnifediApiStatusContextMastodonAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiStatusContextMastodonAdapter
+class _$UnifediApiStatusContextMastodonAdapterImpl
     extends _UnifediApiStatusContextMastodonAdapter {
-  const _$_UnifediApiStatusContextMastodonAdapter(@HiveField(0) this.value)
+  const _$UnifediApiStatusContextMastodonAdapterImpl(@HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiStatusContextMastodonAdapter.fromJson(
+  factory _$UnifediApiStatusContextMastodonAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiStatusContextMastodonAdapterFromJson(json);
+      _$$UnifediApiStatusContextMastodonAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -153,46 +138,51 @@ class _$_UnifediApiStatusContextMastodonAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiStatusContextMastodonAdapter &&
+            other is _$UnifediApiStatusContextMastodonAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiStatusContextMastodonAdapterCopyWith<
-          _UnifediApiStatusContextMastodonAdapter>
-      get copyWith => __$UnifediApiStatusContextMastodonAdapterCopyWithImpl<
-          _UnifediApiStatusContextMastodonAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiStatusContextMastodonAdapterImplCopyWith<
+          _$UnifediApiStatusContextMastodonAdapterImpl>
+      get copyWith =>
+          __$$UnifediApiStatusContextMastodonAdapterImplCopyWithImpl<
+              _$UnifediApiStatusContextMastodonAdapterImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiStatusContextMastodonAdapterToJson(this);
+    return _$$UnifediApiStatusContextMastodonAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiStatusContextMastodonAdapter
     extends UnifediApiStatusContextMastodonAdapter {
   const factory _UnifediApiStatusContextMastodonAdapter(
-          @HiveField(0) MastodonApiStatusContext value) =
-      _$_UnifediApiStatusContextMastodonAdapter;
+          @HiveField(0) final MastodonApiStatusContext value) =
+      _$UnifediApiStatusContextMastodonAdapterImpl;
   const _UnifediApiStatusContextMastodonAdapter._() : super._();
 
   factory _UnifediApiStatusContextMastodonAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiStatusContextMastodonAdapter.fromJson;
+      _$UnifediApiStatusContextMastodonAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   MastodonApiStatusContext get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiStatusContextMastodonAdapterCopyWith<
-          _UnifediApiStatusContextMastodonAdapter>
+  _$$UnifediApiStatusContextMastodonAdapterImplCopyWith<
+          _$UnifediApiStatusContextMastodonAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

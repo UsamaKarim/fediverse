@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'fediverse_api_access_scopes_model_impl.dart';
 
@@ -11,37 +12,12 @@ part of 'fediverse_api_access_scopes_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 FediverseApiAccessScopes _$FediverseApiAccessScopesFromJson(
     Map<String, dynamic> json) {
   return _FediverseApiAccessScopes.fromJson(json);
 }
-
-/// @nodoc
-class _$FediverseApiAccessScopesTearOff {
-  const _$FediverseApiAccessScopesTearOff();
-
-  _FediverseApiAccessScopes call(
-      {@HiveField(0)
-      @JsonKey(name: 'global_permissions')
-          required List<String> globalPermissions,
-      @HiveField(1)
-      @JsonKey(name: 'target_permissions')
-          required List<FediverseApiAccessScopesItem> targetPermissions}) {
-    return _FediverseApiAccessScopes(
-      globalPermissions: globalPermissions,
-      targetPermissions: targetPermissions,
-    );
-  }
-
-  FediverseApiAccessScopes fromJson(Map<String, Object?> json) {
-    return FediverseApiAccessScopes.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $FediverseApiAccessScopes = _$FediverseApiAccessScopesTearOff();
 
 /// @nodoc
 mixin _$FediverseApiAccessScopes {
@@ -63,83 +39,88 @@ mixin _$FediverseApiAccessScopes {
 abstract class $FediverseApiAccessScopesCopyWith<$Res> {
   factory $FediverseApiAccessScopesCopyWith(FediverseApiAccessScopes value,
           $Res Function(FediverseApiAccessScopes) then) =
-      _$FediverseApiAccessScopesCopyWithImpl<$Res>;
+      _$FediverseApiAccessScopesCopyWithImpl<$Res, FediverseApiAccessScopes>;
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'global_permissions')
-          List<String> globalPermissions,
+      List<String> globalPermissions,
       @HiveField(1)
       @JsonKey(name: 'target_permissions')
-          List<FediverseApiAccessScopesItem> targetPermissions});
+      List<FediverseApiAccessScopesItem> targetPermissions});
 }
 
 /// @nodoc
-class _$FediverseApiAccessScopesCopyWithImpl<$Res>
+class _$FediverseApiAccessScopesCopyWithImpl<$Res,
+        $Val extends FediverseApiAccessScopes>
     implements $FediverseApiAccessScopesCopyWith<$Res> {
   _$FediverseApiAccessScopesCopyWithImpl(this._value, this._then);
 
-  final FediverseApiAccessScopes _value;
   // ignore: unused_field
-  final $Res Function(FediverseApiAccessScopes) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? globalPermissions = freezed,
-    Object? targetPermissions = freezed,
+    Object? globalPermissions = null,
+    Object? targetPermissions = null,
   }) {
     return _then(_value.copyWith(
-      globalPermissions: globalPermissions == freezed
+      globalPermissions: null == globalPermissions
           ? _value.globalPermissions
           : globalPermissions // ignore: cast_nullable_to_non_nullable
               as List<String>,
-      targetPermissions: targetPermissions == freezed
+      targetPermissions: null == targetPermissions
           ? _value.targetPermissions
           : targetPermissions // ignore: cast_nullable_to_non_nullable
               as List<FediverseApiAccessScopesItem>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$FediverseApiAccessScopesCopyWith<$Res>
+abstract class _$$FediverseApiAccessScopesImplCopyWith<$Res>
     implements $FediverseApiAccessScopesCopyWith<$Res> {
-  factory _$FediverseApiAccessScopesCopyWith(_FediverseApiAccessScopes value,
-          $Res Function(_FediverseApiAccessScopes) then) =
-      __$FediverseApiAccessScopesCopyWithImpl<$Res>;
+  factory _$$FediverseApiAccessScopesImplCopyWith(
+          _$FediverseApiAccessScopesImpl value,
+          $Res Function(_$FediverseApiAccessScopesImpl) then) =
+      __$$FediverseApiAccessScopesImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'global_permissions')
-          List<String> globalPermissions,
+      List<String> globalPermissions,
       @HiveField(1)
       @JsonKey(name: 'target_permissions')
-          List<FediverseApiAccessScopesItem> targetPermissions});
+      List<FediverseApiAccessScopesItem> targetPermissions});
 }
 
 /// @nodoc
-class __$FediverseApiAccessScopesCopyWithImpl<$Res>
-    extends _$FediverseApiAccessScopesCopyWithImpl<$Res>
-    implements _$FediverseApiAccessScopesCopyWith<$Res> {
-  __$FediverseApiAccessScopesCopyWithImpl(_FediverseApiAccessScopes _value,
-      $Res Function(_FediverseApiAccessScopes) _then)
-      : super(_value, (v) => _then(v as _FediverseApiAccessScopes));
+class __$$FediverseApiAccessScopesImplCopyWithImpl<$Res>
+    extends _$FediverseApiAccessScopesCopyWithImpl<$Res,
+        _$FediverseApiAccessScopesImpl>
+    implements _$$FediverseApiAccessScopesImplCopyWith<$Res> {
+  __$$FediverseApiAccessScopesImplCopyWithImpl(
+      _$FediverseApiAccessScopesImpl _value,
+      $Res Function(_$FediverseApiAccessScopesImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _FediverseApiAccessScopes get _value =>
-      super._value as _FediverseApiAccessScopes;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? globalPermissions = freezed,
-    Object? targetPermissions = freezed,
+    Object? globalPermissions = null,
+    Object? targetPermissions = null,
   }) {
-    return _then(_FediverseApiAccessScopes(
-      globalPermissions: globalPermissions == freezed
-          ? _value.globalPermissions
+    return _then(_$FediverseApiAccessScopesImpl(
+      globalPermissions: null == globalPermissions
+          ? _value._globalPermissions
           : globalPermissions // ignore: cast_nullable_to_non_nullable
               as List<String>,
-      targetPermissions: targetPermissions == freezed
-          ? _value.targetPermissions
+      targetPermissions: null == targetPermissions
+          ? _value._targetPermissions
           : targetPermissions // ignore: cast_nullable_to_non_nullable
               as List<FediverseApiAccessScopesItem>,
     ));
@@ -148,26 +129,41 @@ class __$FediverseApiAccessScopesCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_FediverseApiAccessScopes implements _FediverseApiAccessScopes {
-  const _$_FediverseApiAccessScopes(
+class _$FediverseApiAccessScopesImpl implements _FediverseApiAccessScopes {
+  const _$FediverseApiAccessScopesImpl(
       {@HiveField(0)
       @JsonKey(name: 'global_permissions')
-          required this.globalPermissions,
+      required final List<String> globalPermissions,
       @HiveField(1)
       @JsonKey(name: 'target_permissions')
-          required this.targetPermissions});
+      required final List<FediverseApiAccessScopesItem> targetPermissions})
+      : _globalPermissions = globalPermissions,
+        _targetPermissions = targetPermissions;
 
-  factory _$_FediverseApiAccessScopes.fromJson(Map<String, dynamic> json) =>
-      _$$_FediverseApiAccessScopesFromJson(json);
+  factory _$FediverseApiAccessScopesImpl.fromJson(Map<String, dynamic> json) =>
+      _$$FediverseApiAccessScopesImplFromJson(json);
 
+  final List<String> _globalPermissions;
   @override
   @HiveField(0)
   @JsonKey(name: 'global_permissions')
-  final List<String> globalPermissions;
+  List<String> get globalPermissions {
+    if (_globalPermissions is EqualUnmodifiableListView)
+      return _globalPermissions;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_globalPermissions);
+  }
+
+  final List<FediverseApiAccessScopesItem> _targetPermissions;
   @override
   @HiveField(1)
   @JsonKey(name: 'target_permissions')
-  final List<FediverseApiAccessScopesItem> targetPermissions;
+  List<FediverseApiAccessScopesItem> get targetPermissions {
+    if (_targetPermissions is EqualUnmodifiableListView)
+      return _targetPermissions;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_targetPermissions);
+  }
 
   @override
   String toString() {
@@ -175,46 +171,50 @@ class _$_FediverseApiAccessScopes implements _FediverseApiAccessScopes {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _FediverseApiAccessScopes &&
+            other is _$FediverseApiAccessScopesImpl &&
             const DeepCollectionEquality()
-                .equals(other.globalPermissions, globalPermissions) &&
+                .equals(other._globalPermissions, _globalPermissions) &&
             const DeepCollectionEquality()
-                .equals(other.targetPermissions, targetPermissions));
+                .equals(other._targetPermissions, _targetPermissions));
   }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(globalPermissions),
-      const DeepCollectionEquality().hash(targetPermissions));
 
   @JsonKey(ignore: true)
   @override
-  _$FediverseApiAccessScopesCopyWith<_FediverseApiAccessScopes> get copyWith =>
-      __$FediverseApiAccessScopesCopyWithImpl<_FediverseApiAccessScopes>(
-          this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(_globalPermissions),
+      const DeepCollectionEquality().hash(_targetPermissions));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$FediverseApiAccessScopesImplCopyWith<_$FediverseApiAccessScopesImpl>
+      get copyWith => __$$FediverseApiAccessScopesImplCopyWithImpl<
+          _$FediverseApiAccessScopesImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_FediverseApiAccessScopesToJson(this);
+    return _$$FediverseApiAccessScopesImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _FediverseApiAccessScopes implements FediverseApiAccessScopes {
   const factory _FediverseApiAccessScopes(
-          {@HiveField(0)
-          @JsonKey(name: 'global_permissions')
-              required List<String> globalPermissions,
-          @HiveField(1)
-          @JsonKey(name: 'target_permissions')
-              required List<FediverseApiAccessScopesItem> targetPermissions}) =
-      _$_FediverseApiAccessScopes;
+      {@HiveField(0)
+      @JsonKey(name: 'global_permissions')
+      required final List<String> globalPermissions,
+      @HiveField(1)
+      @JsonKey(name: 'target_permissions')
+      required final List<FediverseApiAccessScopesItem>
+          targetPermissions}) = _$FediverseApiAccessScopesImpl;
 
   factory _FediverseApiAccessScopes.fromJson(Map<String, dynamic> json) =
-      _$_FediverseApiAccessScopes.fromJson;
+      _$FediverseApiAccessScopesImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -226,6 +226,6 @@ abstract class _FediverseApiAccessScopes implements FediverseApiAccessScopes {
   List<FediverseApiAccessScopesItem> get targetPermissions;
   @override
   @JsonKey(ignore: true)
-  _$FediverseApiAccessScopesCopyWith<_FediverseApiAccessScopes> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$FediverseApiAccessScopesImplCopyWith<_$FediverseApiAccessScopesImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

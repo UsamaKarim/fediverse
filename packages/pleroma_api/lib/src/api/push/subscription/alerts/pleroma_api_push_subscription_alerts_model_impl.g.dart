@@ -63,10 +63,10 @@ class PleromaApiPushSubscriptionAlertsAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiPushSubscribeRequestDataAlerts
-    _$$_PleromaApiPushSubscribeRequestDataAlertsFromJson(
+_$PleromaApiPushSubscribeRequestDataAlertsImpl
+    _$$PleromaApiPushSubscribeRequestDataAlertsImplFromJson(
             Map<String, dynamic> json) =>
-        _$_PleromaApiPushSubscribeRequestDataAlerts(
+        _$PleromaApiPushSubscribeRequestDataAlertsImpl(
           favourite: json['favourite'] as bool?,
           follow: json['follow'] as bool?,
           mention: json['mention'] as bool?,
@@ -76,8 +76,8 @@ _$_PleromaApiPushSubscribeRequestDataAlerts
           pleromaEmojiReaction: json['pleroma:emoji_reaction'] as bool?,
         );
 
-Map<String, dynamic> _$$_PleromaApiPushSubscribeRequestDataAlertsToJson(
-    _$_PleromaApiPushSubscribeRequestDataAlerts instance) {
+Map<String, dynamic> _$$PleromaApiPushSubscribeRequestDataAlertsImplToJson(
+    _$PleromaApiPushSubscribeRequestDataAlertsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

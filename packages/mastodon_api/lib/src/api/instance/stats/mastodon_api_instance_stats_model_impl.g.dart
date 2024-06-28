@@ -51,16 +51,16 @@ class MastodonApiInstanceStatsAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiInstanceStats _$$_MastodonApiInstanceStatsFromJson(
+_$MastodonApiInstanceStatsImpl _$$MastodonApiInstanceStatsImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiInstanceStats(
-      userCount: json['user_count'] as int?,
-      statusCount: json['status_count'] as int?,
-      domainCount: json['domain_count'] as int?,
+    _$MastodonApiInstanceStatsImpl(
+      userCount: (json['user_count'] as num?)?.toInt(),
+      statusCount: (json['status_count'] as num?)?.toInt(),
+      domainCount: (json['domain_count'] as num?)?.toInt(),
     );
 
-Map<String, dynamic> _$$_MastodonApiInstanceStatsToJson(
-    _$_MastodonApiInstanceStats instance) {
+Map<String, dynamic> _$$MastodonApiInstanceStatsImplToJson(
+    _$MastodonApiInstanceStatsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

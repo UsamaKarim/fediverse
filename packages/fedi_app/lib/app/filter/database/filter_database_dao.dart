@@ -1,19 +1,15 @@
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/database/dao/remote/populated_app_remote_database_dao.dart';
 import 'package:fedi_app/app/filter/database/filter_database_model.dart';
 import 'package:fedi_app/app/filter/filter_model.dart';
 import 'package:fedi_app/app/filter/repository/filter_repository_model.dart';
 import 'package:fedi_app/repository/repository_model.dart';
-import 'package:moor/moor.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 
 part 'filter_database_dao.g.dart';
 
-@UseDao(
-  tables: [
-    DbFilters,
-  ],
-)
+@DriftAccessor(tables: [DbFilters])
 class FilterDao extends PopulatedAppRemoteDatabaseDao<
     DbFilter,
     DbFilterPopulated,
@@ -71,7 +67,7 @@ class FilterDao extends PopulatedAppRemoteDatabaseDao<
         orderTerms
             .map(
               (orderTerm) => ($DbFiltersTable item) {
-                GeneratedColumn<String?> expression;
+                GeneratedColumn<String> expression;
                 switch (orderTerm.orderType) {
                   case FilterOrderType.remoteId:
                     expression = item.remoteId;

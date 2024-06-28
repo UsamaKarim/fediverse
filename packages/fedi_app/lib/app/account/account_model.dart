@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:flutter/widgets.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
@@ -336,45 +337,48 @@ class DbAccountPopulatedWrapper implements IAccount {
       DbAccountPopulatedWrapper(
         dbAccountPopulated: DbAccountPopulated(
           dbAccount: dbAccount.copyWith(
-            id: id,
+            id: Value(id),
             remoteId: remoteId,
             username: username,
             url: url,
-            note: note,
-            locked: locked,
-            headerStatic: headerStatic,
-            header: header,
-            followingCount: followingCount,
-            followersCount: followersCount,
-            statusesCount: statusesCount,
-            displayName: displayName,
+            note: Value(note),
+            locked: Value(locked),
+            headerStatic: Value(headerStatic),
+            header: Value(header),
+            followingCount: Value(followingCount),
+            followersCount: Value(followersCount),
+            statusesCount: Value(statusesCount),
+            displayName: Value(displayName),
             createdAt: createdAt,
-            bot: bot,
+            bot: Value(bot),
             avatarStatic: avatarStatic,
             avatar: avatar,
             acct: acct,
-            lastStatusAt: lastStatusAt,
-            fields: fields,
-            emojis: emojis,
-            relationship: relationship?.toUnifediApiAccountRelationship() ??
-                this.relationship,
-            tags: tags ?? this.tags,
-            isAdmin: isAdmin ?? this.isAdmin,
-            isModerator: isModerator ?? this.isModerator,
+            lastStatusAt: Value(lastStatusAt),
+            fields: Value(fields),
+            emojis: Value(emojis),
+            relationship: Value(
+                relationship?.toUnifediApiAccountRelationship() ??
+                    this.relationship),
+            tags: Value(tags ?? this.tags),
+            isAdmin: Value(isAdmin ?? this.isAdmin),
+            isModerator: Value(isModerator ?? this.isModerator),
             confirmationPending:
-                confirmationPending ?? this.confirmationPending,
-            hideFavorites: hideFavorites ?? this.hideFavorites,
-            hideFollowers: hideFollowers ?? this.hideFollowers,
-            hideFollows: hideFollows ?? this.hideFollows,
-            hideFollowersCount: hideFollowersCount ?? this.hideFollowersCount,
-            hideFollowsCount: hideFollowsCount ?? this.hideFollowsCount,
-            deactivated: deactivated ?? this.deactivated,
-            allowFollowingMove: allowFollowingMove ?? this.allowFollowingMove,
+                Value(confirmationPending ?? this.confirmationPending),
+            hideFavorites: Value(hideFavorites ?? this.hideFavorites),
+            hideFollowers: Value(hideFollowers ?? this.hideFollowers),
+            hideFollows: Value(hideFollows ?? this.hideFollows),
+            hideFollowersCount:
+                Value(hideFollowersCount ?? this.hideFollowersCount),
+            hideFollowsCount: Value(hideFollowsCount ?? this.hideFollowsCount),
+            deactivated: Value(deactivated ?? this.deactivated),
+            allowFollowingMove:
+                Value(allowFollowingMove ?? this.allowFollowingMove),
             skipThreadContainment:
-                skipThreadContainment ?? this.skipThreadContainment,
-            backgroundImage: backgroundImage ?? this.backgroundImage,
+                Value(skipThreadContainment ?? this.skipThreadContainment),
+            backgroundImage: Value(backgroundImage ?? this.backgroundImage),
             acceptsChatMessages:
-                acceptsChatMessages ?? this.acceptsChatMessages,
+                Value(acceptsChatMessages ?? this.acceptsChatMessages),
           ),
         ),
       );

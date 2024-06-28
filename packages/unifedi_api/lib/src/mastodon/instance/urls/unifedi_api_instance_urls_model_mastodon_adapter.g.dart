@@ -45,16 +45,16 @@ class UnifediApiInstanceUrlsMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiInstanceUrlsMastodonAdapter
-    _$$_UnifediApiInstanceUrlsMastodonAdapterFromJson(
+_$UnifediApiInstanceUrlsMastodonAdapterImpl
+    _$$UnifediApiInstanceUrlsMastodonAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiInstanceUrlsMastodonAdapter(
+        _$UnifediApiInstanceUrlsMastodonAdapterImpl(
           MastodonApiInstanceUrls.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiInstanceUrlsMastodonAdapterToJson(
-        _$_UnifediApiInstanceUrlsMastodonAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiInstanceUrlsMastodonAdapterImplToJson(
+        _$UnifediApiInstanceUrlsMastodonAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

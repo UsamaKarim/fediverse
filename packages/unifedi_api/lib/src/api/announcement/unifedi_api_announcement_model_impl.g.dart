@@ -81,9 +81,9 @@ class UnifediApiAnnouncementAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiAnnouncement _$$_UnifediApiAnnouncementFromJson(
+_$UnifediApiAnnouncementImpl _$$UnifediApiAnnouncementImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiAnnouncement(
+    _$UnifediApiAnnouncementImpl(
       id: json['id'] as String,
       content: json['content'] as String,
       allDay: json['all_day'] as bool,
@@ -114,8 +114,8 @@ _$_UnifediApiAnnouncement _$$_UnifediApiAnnouncementFromJson(
           : DateTime.parse(json['ends_at'] as String),
     );
 
-Map<String, dynamic> _$$_UnifediApiAnnouncementToJson(
-    _$_UnifediApiAnnouncement instance) {
+Map<String, dynamic> _$$UnifediApiAnnouncementImplToJson(
+    _$UnifediApiAnnouncementImpl instance) {
   final val = <String, dynamic>{
     'id': instance.id,
     'content': instance.content,

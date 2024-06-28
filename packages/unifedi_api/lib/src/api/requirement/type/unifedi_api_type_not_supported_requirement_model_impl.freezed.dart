@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_type_not_supported_requirement_model_impl.dart';
 
@@ -11,31 +12,12 @@ part of 'unifedi_api_type_not_supported_requirement_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiTypeNotSupportedRequirement
     _$UnifediApiTypeNotSupportedRequirementFromJson(Map<String, dynamic> json) {
   return _UnifediApiTypeNotSupportedRequirement.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiTypeNotSupportedRequirementTearOff {
-  const _$UnifediApiTypeNotSupportedRequirementTearOff();
-
-  _UnifediApiTypeNotSupportedRequirement call({required String target}) {
-    return _UnifediApiTypeNotSupportedRequirement(
-      target: target,
-    );
-  }
-
-  UnifediApiTypeNotSupportedRequirement fromJson(Map<String, Object?> json) {
-    return UnifediApiTypeNotSupportedRequirement.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiTypeNotSupportedRequirement =
-    _$UnifediApiTypeNotSupportedRequirementTearOff();
 
 /// @nodoc
 mixin _$UnifediApiTypeNotSupportedRequirement {
@@ -53,63 +35,66 @@ abstract class $UnifediApiTypeNotSupportedRequirementCopyWith<$Res> {
   factory $UnifediApiTypeNotSupportedRequirementCopyWith(
           UnifediApiTypeNotSupportedRequirement value,
           $Res Function(UnifediApiTypeNotSupportedRequirement) then) =
-      _$UnifediApiTypeNotSupportedRequirementCopyWithImpl<$Res>;
+      _$UnifediApiTypeNotSupportedRequirementCopyWithImpl<$Res,
+          UnifediApiTypeNotSupportedRequirement>;
+  @useResult
   $Res call({String target});
 }
 
 /// @nodoc
-class _$UnifediApiTypeNotSupportedRequirementCopyWithImpl<$Res>
+class _$UnifediApiTypeNotSupportedRequirementCopyWithImpl<$Res,
+        $Val extends UnifediApiTypeNotSupportedRequirement>
     implements $UnifediApiTypeNotSupportedRequirementCopyWith<$Res> {
   _$UnifediApiTypeNotSupportedRequirementCopyWithImpl(this._value, this._then);
 
-  final UnifediApiTypeNotSupportedRequirement _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiTypeNotSupportedRequirement) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? target = freezed,
+    Object? target = null,
   }) {
     return _then(_value.copyWith(
-      target: target == freezed
+      target: null == target
           ? _value.target
           : target // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiTypeNotSupportedRequirementCopyWith<$Res>
+abstract class _$$UnifediApiTypeNotSupportedRequirementImplCopyWith<$Res>
     implements $UnifediApiTypeNotSupportedRequirementCopyWith<$Res> {
-  factory _$UnifediApiTypeNotSupportedRequirementCopyWith(
-          _UnifediApiTypeNotSupportedRequirement value,
-          $Res Function(_UnifediApiTypeNotSupportedRequirement) then) =
-      __$UnifediApiTypeNotSupportedRequirementCopyWithImpl<$Res>;
+  factory _$$UnifediApiTypeNotSupportedRequirementImplCopyWith(
+          _$UnifediApiTypeNotSupportedRequirementImpl value,
+          $Res Function(_$UnifediApiTypeNotSupportedRequirementImpl) then) =
+      __$$UnifediApiTypeNotSupportedRequirementImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String target});
 }
 
 /// @nodoc
-class __$UnifediApiTypeNotSupportedRequirementCopyWithImpl<$Res>
-    extends _$UnifediApiTypeNotSupportedRequirementCopyWithImpl<$Res>
-    implements _$UnifediApiTypeNotSupportedRequirementCopyWith<$Res> {
-  __$UnifediApiTypeNotSupportedRequirementCopyWithImpl(
-      _UnifediApiTypeNotSupportedRequirement _value,
-      $Res Function(_UnifediApiTypeNotSupportedRequirement) _then)
-      : super(
-            _value, (v) => _then(v as _UnifediApiTypeNotSupportedRequirement));
+class __$$UnifediApiTypeNotSupportedRequirementImplCopyWithImpl<$Res>
+    extends _$UnifediApiTypeNotSupportedRequirementCopyWithImpl<$Res,
+        _$UnifediApiTypeNotSupportedRequirementImpl>
+    implements _$$UnifediApiTypeNotSupportedRequirementImplCopyWith<$Res> {
+  __$$UnifediApiTypeNotSupportedRequirementImplCopyWithImpl(
+      _$UnifediApiTypeNotSupportedRequirementImpl _value,
+      $Res Function(_$UnifediApiTypeNotSupportedRequirementImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiTypeNotSupportedRequirement get _value =>
-      super._value as _UnifediApiTypeNotSupportedRequirement;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? target = freezed,
+    Object? target = null,
   }) {
-    return _then(_UnifediApiTypeNotSupportedRequirement(
-      target: target == freezed
+    return _then(_$UnifediApiTypeNotSupportedRequirementImpl(
+      target: null == target
           ? _value.target
           : target // ignore: cast_nullable_to_non_nullable
               as String,
@@ -119,13 +104,13 @@ class __$UnifediApiTypeNotSupportedRequirementCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiTypeNotSupportedRequirement
+class _$UnifediApiTypeNotSupportedRequirementImpl
     implements _UnifediApiTypeNotSupportedRequirement {
-  const _$_UnifediApiTypeNotSupportedRequirement({required this.target});
+  const _$UnifediApiTypeNotSupportedRequirementImpl({required this.target});
 
-  factory _$_UnifediApiTypeNotSupportedRequirement.fromJson(
+  factory _$UnifediApiTypeNotSupportedRequirementImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiTypeNotSupportedRequirementFromJson(json);
+      _$$UnifediApiTypeNotSupportedRequirementImplFromJson(json);
 
   @override
   final String target;
@@ -136,43 +121,48 @@ class _$_UnifediApiTypeNotSupportedRequirement
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiTypeNotSupportedRequirement &&
+            other is _$UnifediApiTypeNotSupportedRequirementImpl &&
             (identical(other.target, target) || other.target == target));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, target);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiTypeNotSupportedRequirementCopyWith<
-          _UnifediApiTypeNotSupportedRequirement>
-      get copyWith => __$UnifediApiTypeNotSupportedRequirementCopyWithImpl<
-          _UnifediApiTypeNotSupportedRequirement>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiTypeNotSupportedRequirementImplCopyWith<
+          _$UnifediApiTypeNotSupportedRequirementImpl>
+      get copyWith => __$$UnifediApiTypeNotSupportedRequirementImplCopyWithImpl<
+          _$UnifediApiTypeNotSupportedRequirementImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiTypeNotSupportedRequirementToJson(this);
+    return _$$UnifediApiTypeNotSupportedRequirementImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiTypeNotSupportedRequirement
     implements UnifediApiTypeNotSupportedRequirement {
   const factory _UnifediApiTypeNotSupportedRequirement(
-      {required String target}) = _$_UnifediApiTypeNotSupportedRequirement;
+          {required final String target}) =
+      _$UnifediApiTypeNotSupportedRequirementImpl;
 
   factory _UnifediApiTypeNotSupportedRequirement.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiTypeNotSupportedRequirement.fromJson;
+      _$UnifediApiTypeNotSupportedRequirementImpl.fromJson;
 
   @override
   String get target;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiTypeNotSupportedRequirementCopyWith<
-          _UnifediApiTypeNotSupportedRequirement>
+  _$$UnifediApiTypeNotSupportedRequirementImplCopyWith<
+          _$UnifediApiTypeNotSupportedRequirementImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

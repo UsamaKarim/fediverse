@@ -54,9 +54,9 @@ class MastodonApiConversationAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiConversation _$$_MastodonApiConversationFromJson(
+_$MastodonApiConversationImpl _$$MastodonApiConversationImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiConversation(
+    _$MastodonApiConversationImpl(
       unread: json['unread'] as bool?,
       lastStatus: json['last_status'] == null
           ? null
@@ -68,8 +68,8 @@ _$_MastodonApiConversation _$$_MastodonApiConversationFromJson(
           .toList(),
     );
 
-Map<String, dynamic> _$$_MastodonApiConversationToJson(
-    _$_MastodonApiConversation instance) {
+Map<String, dynamic> _$$MastodonApiConversationImplToJson(
+    _$MastodonApiConversationImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

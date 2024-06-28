@@ -45,15 +45,16 @@ class MastodonApiAccessLevelRequirementAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiAccessLevelRequirement
-    _$$_MastodonApiAccessLevelRequirementFromJson(Map<String, dynamic> json) =>
-        _$_MastodonApiAccessLevelRequirement(
+_$MastodonApiAccessLevelRequirementImpl
+    _$$MastodonApiAccessLevelRequirementImplFromJson(
+            Map<String, dynamic> json) =>
+        _$MastodonApiAccessLevelRequirementImpl(
           requiredLevel: MastodonApiAccessLevel.fromJson(
               json['required_level'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_MastodonApiAccessLevelRequirementToJson(
-        _$_MastodonApiAccessLevelRequirement instance) =>
+Map<String, dynamic> _$$MastodonApiAccessLevelRequirementImplToJson(
+        _$MastodonApiAccessLevelRequirementImpl instance) =>
     <String, dynamic>{
       'required_level': instance.requiredLevel.toJson(),
     };

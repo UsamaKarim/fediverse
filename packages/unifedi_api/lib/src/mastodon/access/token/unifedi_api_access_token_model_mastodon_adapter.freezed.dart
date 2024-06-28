@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_access_token_model_mastodon_adapter.dart';
 
@@ -11,32 +12,12 @@ part of 'unifedi_api_access_token_model_mastodon_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiAccessTokenMastodonAdapter
     _$UnifediApiAccessTokenMastodonAdapterFromJson(Map<String, dynamic> json) {
   return _UnifediApiAccessTokenMastodonAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiAccessTokenMastodonAdapterTearOff {
-  const _$UnifediApiAccessTokenMastodonAdapterTearOff();
-
-  _UnifediApiAccessTokenMastodonAdapter call(
-      @HiveField(0) MastodonApiAccessToken value) {
-    return _UnifediApiAccessTokenMastodonAdapter(
-      value,
-    );
-  }
-
-  UnifediApiAccessTokenMastodonAdapter fromJson(Map<String, Object?> json) {
-    return UnifediApiAccessTokenMastodonAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiAccessTokenMastodonAdapter =
-    _$UnifediApiAccessTokenMastodonAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiAccessTokenMastodonAdapter {
@@ -55,49 +36,56 @@ abstract class $UnifediApiAccessTokenMastodonAdapterCopyWith<$Res> {
   factory $UnifediApiAccessTokenMastodonAdapterCopyWith(
           UnifediApiAccessTokenMastodonAdapter value,
           $Res Function(UnifediApiAccessTokenMastodonAdapter) then) =
-      _$UnifediApiAccessTokenMastodonAdapterCopyWithImpl<$Res>;
+      _$UnifediApiAccessTokenMastodonAdapterCopyWithImpl<$Res,
+          UnifediApiAccessTokenMastodonAdapter>;
+  @useResult
   $Res call({@HiveField(0) MastodonApiAccessToken value});
 
   $MastodonApiAccessTokenCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiAccessTokenMastodonAdapterCopyWithImpl<$Res>
+class _$UnifediApiAccessTokenMastodonAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiAccessTokenMastodonAdapter>
     implements $UnifediApiAccessTokenMastodonAdapterCopyWith<$Res> {
   _$UnifediApiAccessTokenMastodonAdapterCopyWithImpl(this._value, this._then);
 
-  final UnifediApiAccessTokenMastodonAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiAccessTokenMastodonAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiAccessToken,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiAccessTokenCopyWith<$Res> get value {
     return $MastodonApiAccessTokenCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiAccessTokenMastodonAdapterCopyWith<$Res>
+abstract class _$$UnifediApiAccessTokenMastodonAdapterImplCopyWith<$Res>
     implements $UnifediApiAccessTokenMastodonAdapterCopyWith<$Res> {
-  factory _$UnifediApiAccessTokenMastodonAdapterCopyWith(
-          _UnifediApiAccessTokenMastodonAdapter value,
-          $Res Function(_UnifediApiAccessTokenMastodonAdapter) then) =
-      __$UnifediApiAccessTokenMastodonAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiAccessTokenMastodonAdapterImplCopyWith(
+          _$UnifediApiAccessTokenMastodonAdapterImpl value,
+          $Res Function(_$UnifediApiAccessTokenMastodonAdapterImpl) then) =
+      __$$UnifediApiAccessTokenMastodonAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) MastodonApiAccessToken value});
 
   @override
@@ -105,24 +93,22 @@ abstract class _$UnifediApiAccessTokenMastodonAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiAccessTokenMastodonAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiAccessTokenMastodonAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiAccessTokenMastodonAdapterCopyWith<$Res> {
-  __$UnifediApiAccessTokenMastodonAdapterCopyWithImpl(
-      _UnifediApiAccessTokenMastodonAdapter _value,
-      $Res Function(_UnifediApiAccessTokenMastodonAdapter) _then)
-      : super(_value, (v) => _then(v as _UnifediApiAccessTokenMastodonAdapter));
+class __$$UnifediApiAccessTokenMastodonAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiAccessTokenMastodonAdapterCopyWithImpl<$Res,
+        _$UnifediApiAccessTokenMastodonAdapterImpl>
+    implements _$$UnifediApiAccessTokenMastodonAdapterImplCopyWith<$Res> {
+  __$$UnifediApiAccessTokenMastodonAdapterImplCopyWithImpl(
+      _$UnifediApiAccessTokenMastodonAdapterImpl _value,
+      $Res Function(_$UnifediApiAccessTokenMastodonAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiAccessTokenMastodonAdapter get _value =>
-      super._value as _UnifediApiAccessTokenMastodonAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiAccessTokenMastodonAdapter(
-      value == freezed
+    return _then(_$UnifediApiAccessTokenMastodonAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiAccessToken,
@@ -132,14 +118,14 @@ class __$UnifediApiAccessTokenMastodonAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiAccessTokenMastodonAdapter
+class _$UnifediApiAccessTokenMastodonAdapterImpl
     extends _UnifediApiAccessTokenMastodonAdapter {
-  const _$_UnifediApiAccessTokenMastodonAdapter(@HiveField(0) this.value)
+  const _$UnifediApiAccessTokenMastodonAdapterImpl(@HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiAccessTokenMastodonAdapter.fromJson(
+  factory _$UnifediApiAccessTokenMastodonAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiAccessTokenMastodonAdapterFromJson(json);
+      _$$UnifediApiAccessTokenMastodonAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -151,46 +137,50 @@ class _$_UnifediApiAccessTokenMastodonAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiAccessTokenMastodonAdapter &&
+            other is _$UnifediApiAccessTokenMastodonAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiAccessTokenMastodonAdapterCopyWith<
-          _UnifediApiAccessTokenMastodonAdapter>
-      get copyWith => __$UnifediApiAccessTokenMastodonAdapterCopyWithImpl<
-          _UnifediApiAccessTokenMastodonAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiAccessTokenMastodonAdapterImplCopyWith<
+          _$UnifediApiAccessTokenMastodonAdapterImpl>
+      get copyWith => __$$UnifediApiAccessTokenMastodonAdapterImplCopyWithImpl<
+          _$UnifediApiAccessTokenMastodonAdapterImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiAccessTokenMastodonAdapterToJson(this);
+    return _$$UnifediApiAccessTokenMastodonAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiAccessTokenMastodonAdapter
     extends UnifediApiAccessTokenMastodonAdapter {
   const factory _UnifediApiAccessTokenMastodonAdapter(
-          @HiveField(0) MastodonApiAccessToken value) =
-      _$_UnifediApiAccessTokenMastodonAdapter;
+          @HiveField(0) final MastodonApiAccessToken value) =
+      _$UnifediApiAccessTokenMastodonAdapterImpl;
   const _UnifediApiAccessTokenMastodonAdapter._() : super._();
 
   factory _UnifediApiAccessTokenMastodonAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiAccessTokenMastodonAdapter.fromJson;
+      _$UnifediApiAccessTokenMastodonAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   MastodonApiAccessToken get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiAccessTokenMastodonAdapterCopyWith<
-          _UnifediApiAccessTokenMastodonAdapter>
+  _$$UnifediApiAccessTokenMastodonAdapterImplCopyWith<
+          _$UnifediApiAccessTokenMastodonAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

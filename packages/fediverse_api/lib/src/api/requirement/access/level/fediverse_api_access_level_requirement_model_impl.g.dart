@@ -45,15 +45,16 @@ class FediverseApiAccessLevelRequirementAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_FediverseApiAccessLevelRequirement
-    _$$_FediverseApiAccessLevelRequirementFromJson(Map<String, dynamic> json) =>
-        _$_FediverseApiAccessLevelRequirement(
+_$FediverseApiAccessLevelRequirementImpl
+    _$$FediverseApiAccessLevelRequirementImplFromJson(
+            Map<String, dynamic> json) =>
+        _$FediverseApiAccessLevelRequirementImpl(
           requiredLevel: FediverseApiAccessLevel.fromJson(
               json['required_level'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_FediverseApiAccessLevelRequirementToJson(
-        _$_FediverseApiAccessLevelRequirement instance) =>
+Map<String, dynamic> _$$FediverseApiAccessLevelRequirementImplToJson(
+        _$FediverseApiAccessLevelRequirementImpl instance) =>
     <String, dynamic>{
       'required_level': instance.requiredLevel.toJson(),
     };

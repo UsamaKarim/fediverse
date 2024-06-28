@@ -54,19 +54,19 @@ class StatusSensitiveSettingsAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_StatusSensitiveSettings _$$_StatusSensitiveSettingsFromJson(
+_$StatusSensitiveSettingsImpl _$$StatusSensitiveSettingsImplFromJson(
         Map<String, dynamic> json) =>
-    _$_StatusSensitiveSettings(
+    _$StatusSensitiveSettingsImpl(
       isAlwaysShowSpoiler: json['is_always_show_spoiler'] as bool,
       isAlwaysShowNsfw: json['is_always_show_nsfw'] as bool,
       nsfwDisplayDelayDurationMicrosecondsTotal:
-          json['nsfw_display_delay_duration_seconds_total'] as int?,
+          (json['nsfw_display_delay_duration_seconds_total'] as num?)?.toInt(),
       isNeedReplaceBlurWithFill:
           json['is_need_replace_blur_with_fill'] as bool?,
     );
 
-Map<String, dynamic> _$$_StatusSensitiveSettingsToJson(
-    _$_StatusSensitiveSettings instance) {
+Map<String, dynamic> _$$StatusSensitiveSettingsImplToJson(
+    _$StatusSensitiveSettingsImpl instance) {
   final val = <String, dynamic>{
     'is_always_show_spoiler': instance.isAlwaysShowSpoiler,
     'is_always_show_nsfw': instance.isAlwaysShowNsfw,

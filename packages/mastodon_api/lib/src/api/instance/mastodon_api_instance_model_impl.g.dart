@@ -83,9 +83,9 @@ class MastodonApiInstanceAdapter extends TypeAdapter<MastodonApiInstance> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiInstance _$$_MastodonApiInstanceFromJson(
+_$MastodonApiInstanceImpl _$$MastodonApiInstanceImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiInstance(
+    _$MastodonApiInstanceImpl(
       uri: json['uri'] as String,
       title: json['title'] as String?,
       shortDescription: json['short_description'] as String?,
@@ -113,8 +113,8 @@ _$_MastodonApiInstance _$$_MastodonApiInstanceFromJson(
               json['contact_account'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_MastodonApiInstanceToJson(
-    _$_MastodonApiInstance instance) {
+Map<String, dynamic> _$$MastodonApiInstanceImplToJson(
+    _$MastodonApiInstanceImpl instance) {
   final val = <String, dynamic>{
     'uri': instance.uri,
   };

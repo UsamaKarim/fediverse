@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_rest_error_exception_pleroma_adapter.dart';
 
@@ -11,23 +12,7 @@ part of 'unifedi_api_rest_error_exception_pleroma_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$UnifediApiRestErrorExceptionPleromaAdapterTearOff {
-  const _$UnifediApiRestErrorExceptionPleromaAdapterTearOff();
-
-  _UnifediApiRestErrorExceptionPleromaAdapter call(
-      PleromaApiRestErrorException value) {
-    return _UnifediApiRestErrorExceptionPleromaAdapter(
-      value,
-    );
-  }
-}
-
-/// @nodoc
-const $UnifediApiRestErrorExceptionPleromaAdapter =
-    _$UnifediApiRestErrorExceptionPleromaAdapterTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$UnifediApiRestErrorExceptionPleromaAdapter {
@@ -44,50 +29,58 @@ abstract class $UnifediApiRestErrorExceptionPleromaAdapterCopyWith<$Res> {
   factory $UnifediApiRestErrorExceptionPleromaAdapterCopyWith(
           UnifediApiRestErrorExceptionPleromaAdapter value,
           $Res Function(UnifediApiRestErrorExceptionPleromaAdapter) then) =
-      _$UnifediApiRestErrorExceptionPleromaAdapterCopyWithImpl<$Res>;
+      _$UnifediApiRestErrorExceptionPleromaAdapterCopyWithImpl<$Res,
+          UnifediApiRestErrorExceptionPleromaAdapter>;
+  @useResult
   $Res call({PleromaApiRestErrorException value});
 
   $PleromaApiRestErrorExceptionCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiRestErrorExceptionPleromaAdapterCopyWithImpl<$Res>
+class _$UnifediApiRestErrorExceptionPleromaAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiRestErrorExceptionPleromaAdapter>
     implements $UnifediApiRestErrorExceptionPleromaAdapterCopyWith<$Res> {
   _$UnifediApiRestErrorExceptionPleromaAdapterCopyWithImpl(
       this._value, this._then);
 
-  final UnifediApiRestErrorExceptionPleromaAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiRestErrorExceptionPleromaAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiRestErrorException,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiRestErrorExceptionCopyWith<$Res> get value {
     return $PleromaApiRestErrorExceptionCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiRestErrorExceptionPleromaAdapterCopyWith<$Res>
+abstract class _$$UnifediApiRestErrorExceptionPleromaAdapterImplCopyWith<$Res>
     implements $UnifediApiRestErrorExceptionPleromaAdapterCopyWith<$Res> {
-  factory _$UnifediApiRestErrorExceptionPleromaAdapterCopyWith(
-          _UnifediApiRestErrorExceptionPleromaAdapter value,
-          $Res Function(_UnifediApiRestErrorExceptionPleromaAdapter) then) =
-      __$UnifediApiRestErrorExceptionPleromaAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiRestErrorExceptionPleromaAdapterImplCopyWith(
+          _$UnifediApiRestErrorExceptionPleromaAdapterImpl value,
+          $Res Function(_$UnifediApiRestErrorExceptionPleromaAdapterImpl)
+              then) =
+      __$$UnifediApiRestErrorExceptionPleromaAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({PleromaApiRestErrorException value});
 
   @override
@@ -95,25 +88,22 @@ abstract class _$UnifediApiRestErrorExceptionPleromaAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiRestErrorExceptionPleromaAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiRestErrorExceptionPleromaAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiRestErrorExceptionPleromaAdapterCopyWith<$Res> {
-  __$UnifediApiRestErrorExceptionPleromaAdapterCopyWithImpl(
-      _UnifediApiRestErrorExceptionPleromaAdapter _value,
-      $Res Function(_UnifediApiRestErrorExceptionPleromaAdapter) _then)
-      : super(_value,
-            (v) => _then(v as _UnifediApiRestErrorExceptionPleromaAdapter));
+class __$$UnifediApiRestErrorExceptionPleromaAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiRestErrorExceptionPleromaAdapterCopyWithImpl<$Res,
+        _$UnifediApiRestErrorExceptionPleromaAdapterImpl>
+    implements _$$UnifediApiRestErrorExceptionPleromaAdapterImplCopyWith<$Res> {
+  __$$UnifediApiRestErrorExceptionPleromaAdapterImplCopyWithImpl(
+      _$UnifediApiRestErrorExceptionPleromaAdapterImpl _value,
+      $Res Function(_$UnifediApiRestErrorExceptionPleromaAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiRestErrorExceptionPleromaAdapter get _value =>
-      super._value as _UnifediApiRestErrorExceptionPleromaAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiRestErrorExceptionPleromaAdapter(
-      value == freezed
+    return _then(_$UnifediApiRestErrorExceptionPleromaAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiRestErrorException,
@@ -123,9 +113,10 @@ class __$UnifediApiRestErrorExceptionPleromaAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_UnifediApiRestErrorExceptionPleromaAdapter
+class _$UnifediApiRestErrorExceptionPleromaAdapterImpl
     extends _UnifediApiRestErrorExceptionPleromaAdapter {
-  const _$_UnifediApiRestErrorExceptionPleromaAdapter(this.value) : super._();
+  const _$UnifediApiRestErrorExceptionPleromaAdapterImpl(this.value)
+      : super._();
 
   @override
   final PleromaApiRestErrorException value;
@@ -136,10 +127,10 @@ class _$_UnifediApiRestErrorExceptionPleromaAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiRestErrorExceptionPleromaAdapter &&
+            other is _$UnifediApiRestErrorExceptionPleromaAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
@@ -148,24 +139,27 @@ class _$_UnifediApiRestErrorExceptionPleromaAdapter
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiRestErrorExceptionPleromaAdapterCopyWith<
-          _UnifediApiRestErrorExceptionPleromaAdapter>
-      get copyWith => __$UnifediApiRestErrorExceptionPleromaAdapterCopyWithImpl<
-          _UnifediApiRestErrorExceptionPleromaAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiRestErrorExceptionPleromaAdapterImplCopyWith<
+          _$UnifediApiRestErrorExceptionPleromaAdapterImpl>
+      get copyWith =>
+          __$$UnifediApiRestErrorExceptionPleromaAdapterImplCopyWithImpl<
+                  _$UnifediApiRestErrorExceptionPleromaAdapterImpl>(
+              this, _$identity);
 }
 
 abstract class _UnifediApiRestErrorExceptionPleromaAdapter
     extends UnifediApiRestErrorExceptionPleromaAdapter {
   const factory _UnifediApiRestErrorExceptionPleromaAdapter(
-          PleromaApiRestErrorException value) =
-      _$_UnifediApiRestErrorExceptionPleromaAdapter;
+          final PleromaApiRestErrorException value) =
+      _$UnifediApiRestErrorExceptionPleromaAdapterImpl;
   const _UnifediApiRestErrorExceptionPleromaAdapter._() : super._();
 
   @override
   PleromaApiRestErrorException get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiRestErrorExceptionPleromaAdapterCopyWith<
-          _UnifediApiRestErrorExceptionPleromaAdapter>
+  _$$UnifediApiRestErrorExceptionPleromaAdapterImplCopyWith<
+          _$UnifediApiRestErrorExceptionPleromaAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,5 +1,5 @@
 import 'package:fedi_app/repository/repository_model.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 
 abstract class IBaseReadRepository<DbId> {
   Future<int> countAll();
@@ -226,7 +226,6 @@ abstract class IAppWriteRepository<DbItem extends DataClass, AppItem, DbId>
   //   required AppItem appItem,
   //   required Batch? batchTransaction,
   // });
-
 }
 
 abstract class IAppRemoteWriteRepository<
@@ -316,5 +315,5 @@ abstract class IAppRemoteReadWriteRepository<
     implements
         IAppRemoteReadRepository<DbItem, AppItem, RemoteItem, DbId, RemoteId,
             Filters, OrderingTerm>,
-        IAppRemoteWriteRepository<DbItem, AppItem, RemoteItem, DbId, RemoteId> {
-}
+        IAppRemoteWriteRepository<DbItem, AppItem, RemoteItem, DbId,
+            RemoteId> {}

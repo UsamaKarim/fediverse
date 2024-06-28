@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'custom_emoji_picker_image_url_item_model.dart';
 
@@ -11,33 +12,12 @@ part of 'custom_emoji_picker_image_url_item_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 CustomEmojiPickerImageUrlItem _$CustomEmojiPickerImageUrlItemFromJson(
     Map<String, dynamic> json) {
   return _CustomEmojiPickerImageUrlItem.fromJson(json);
 }
-
-/// @nodoc
-class _$CustomEmojiPickerImageUrlItemTearOff {
-  const _$CustomEmojiPickerImageUrlItemTearOff();
-
-  _CustomEmojiPickerImageUrlItem call(
-      {@HiveField(0) required String name,
-      @HiveField(1) @JsonKey(name: 'image_url') required String imageUrl}) {
-    return _CustomEmojiPickerImageUrlItem(
-      name: name,
-      imageUrl: imageUrl,
-    );
-  }
-
-  CustomEmojiPickerImageUrlItem fromJson(Map<String, Object?> json) {
-    return CustomEmojiPickerImageUrlItem.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $CustomEmojiPickerImageUrlItem = _$CustomEmojiPickerImageUrlItemTearOff();
 
 /// @nodoc
 mixin _$CustomEmojiPickerImageUrlItem {
@@ -58,76 +38,80 @@ abstract class $CustomEmojiPickerImageUrlItemCopyWith<$Res> {
   factory $CustomEmojiPickerImageUrlItemCopyWith(
           CustomEmojiPickerImageUrlItem value,
           $Res Function(CustomEmojiPickerImageUrlItem) then) =
-      _$CustomEmojiPickerImageUrlItemCopyWithImpl<$Res>;
+      _$CustomEmojiPickerImageUrlItemCopyWithImpl<$Res,
+          CustomEmojiPickerImageUrlItem>;
+  @useResult
   $Res call(
       {@HiveField(0) String name,
       @HiveField(1) @JsonKey(name: 'image_url') String imageUrl});
 }
 
 /// @nodoc
-class _$CustomEmojiPickerImageUrlItemCopyWithImpl<$Res>
+class _$CustomEmojiPickerImageUrlItemCopyWithImpl<$Res,
+        $Val extends CustomEmojiPickerImageUrlItem>
     implements $CustomEmojiPickerImageUrlItemCopyWith<$Res> {
   _$CustomEmojiPickerImageUrlItemCopyWithImpl(this._value, this._then);
 
-  final CustomEmojiPickerImageUrlItem _value;
   // ignore: unused_field
-  final $Res Function(CustomEmojiPickerImageUrlItem) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? imageUrl = freezed,
+    Object? name = null,
+    Object? imageUrl = null,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      imageUrl: imageUrl == freezed
+      imageUrl: null == imageUrl
           ? _value.imageUrl
           : imageUrl // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$CustomEmojiPickerImageUrlItemCopyWith<$Res>
+abstract class _$$CustomEmojiPickerImageUrlItemImplCopyWith<$Res>
     implements $CustomEmojiPickerImageUrlItemCopyWith<$Res> {
-  factory _$CustomEmojiPickerImageUrlItemCopyWith(
-          _CustomEmojiPickerImageUrlItem value,
-          $Res Function(_CustomEmojiPickerImageUrlItem) then) =
-      __$CustomEmojiPickerImageUrlItemCopyWithImpl<$Res>;
+  factory _$$CustomEmojiPickerImageUrlItemImplCopyWith(
+          _$CustomEmojiPickerImageUrlItemImpl value,
+          $Res Function(_$CustomEmojiPickerImageUrlItemImpl) then) =
+      __$$CustomEmojiPickerImageUrlItemImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) String name,
       @HiveField(1) @JsonKey(name: 'image_url') String imageUrl});
 }
 
 /// @nodoc
-class __$CustomEmojiPickerImageUrlItemCopyWithImpl<$Res>
-    extends _$CustomEmojiPickerImageUrlItemCopyWithImpl<$Res>
-    implements _$CustomEmojiPickerImageUrlItemCopyWith<$Res> {
-  __$CustomEmojiPickerImageUrlItemCopyWithImpl(
-      _CustomEmojiPickerImageUrlItem _value,
-      $Res Function(_CustomEmojiPickerImageUrlItem) _then)
-      : super(_value, (v) => _then(v as _CustomEmojiPickerImageUrlItem));
+class __$$CustomEmojiPickerImageUrlItemImplCopyWithImpl<$Res>
+    extends _$CustomEmojiPickerImageUrlItemCopyWithImpl<$Res,
+        _$CustomEmojiPickerImageUrlItemImpl>
+    implements _$$CustomEmojiPickerImageUrlItemImplCopyWith<$Res> {
+  __$$CustomEmojiPickerImageUrlItemImplCopyWithImpl(
+      _$CustomEmojiPickerImageUrlItemImpl _value,
+      $Res Function(_$CustomEmojiPickerImageUrlItemImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _CustomEmojiPickerImageUrlItem get _value =>
-      super._value as _CustomEmojiPickerImageUrlItem;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? imageUrl = freezed,
+    Object? name = null,
+    Object? imageUrl = null,
   }) {
-    return _then(_CustomEmojiPickerImageUrlItem(
-      name: name == freezed
+    return _then(_$CustomEmojiPickerImageUrlItemImpl(
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      imageUrl: imageUrl == freezed
+      imageUrl: null == imageUrl
           ? _value.imageUrl
           : imageUrl // ignore: cast_nullable_to_non_nullable
               as String,
@@ -137,15 +121,16 @@ class __$CustomEmojiPickerImageUrlItemCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_CustomEmojiPickerImageUrlItem extends _CustomEmojiPickerImageUrlItem {
-  const _$_CustomEmojiPickerImageUrlItem(
+class _$CustomEmojiPickerImageUrlItemImpl
+    extends _CustomEmojiPickerImageUrlItem {
+  const _$CustomEmojiPickerImageUrlItemImpl(
       {@HiveField(0) required this.name,
       @HiveField(1) @JsonKey(name: 'image_url') required this.imageUrl})
       : super._();
 
-  factory _$_CustomEmojiPickerImageUrlItem.fromJson(
+  factory _$CustomEmojiPickerImageUrlItemImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_CustomEmojiPickerImageUrlItemFromJson(json);
+      _$$CustomEmojiPickerImageUrlItemImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -161,40 +146,46 @@ class _$_CustomEmojiPickerImageUrlItem extends _CustomEmojiPickerImageUrlItem {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _CustomEmojiPickerImageUrlItem &&
+            other is _$CustomEmojiPickerImageUrlItemImpl &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.imageUrl, imageUrl) ||
                 other.imageUrl == imageUrl));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, name, imageUrl);
 
   @JsonKey(ignore: true)
   @override
-  _$CustomEmojiPickerImageUrlItemCopyWith<_CustomEmojiPickerImageUrlItem>
-      get copyWith => __$CustomEmojiPickerImageUrlItemCopyWithImpl<
-          _CustomEmojiPickerImageUrlItem>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$CustomEmojiPickerImageUrlItemImplCopyWith<
+          _$CustomEmojiPickerImageUrlItemImpl>
+      get copyWith => __$$CustomEmojiPickerImageUrlItemImplCopyWithImpl<
+          _$CustomEmojiPickerImageUrlItemImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CustomEmojiPickerImageUrlItemToJson(this);
+    return _$$CustomEmojiPickerImageUrlItemImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _CustomEmojiPickerImageUrlItem
     extends CustomEmojiPickerImageUrlItem {
   const factory _CustomEmojiPickerImageUrlItem(
-          {@HiveField(0) required String name,
-          @HiveField(1) @JsonKey(name: 'image_url') required String imageUrl}) =
-      _$_CustomEmojiPickerImageUrlItem;
+      {@HiveField(0) required final String name,
+      @HiveField(1)
+      @JsonKey(name: 'image_url')
+      required final String imageUrl}) = _$CustomEmojiPickerImageUrlItemImpl;
   const _CustomEmojiPickerImageUrlItem._() : super._();
 
   factory _CustomEmojiPickerImageUrlItem.fromJson(Map<String, dynamic> json) =
-      _$_CustomEmojiPickerImageUrlItem.fromJson;
+      _$CustomEmojiPickerImageUrlItemImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -205,6 +196,7 @@ abstract class _CustomEmojiPickerImageUrlItem
   String get imageUrl;
   @override
   @JsonKey(ignore: true)
-  _$CustomEmojiPickerImageUrlItemCopyWith<_CustomEmojiPickerImageUrlItem>
+  _$$CustomEmojiPickerImageUrlItemImplCopyWith<
+          _$CustomEmojiPickerImageUrlItemImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

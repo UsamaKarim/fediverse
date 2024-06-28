@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_access_scopes_item_model_mastodon_adapter.dart';
 
@@ -11,34 +12,13 @@ part of 'unifedi_api_access_scopes_item_model_mastodon_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiAccessScopesItemMastodonAdapter
     _$UnifediApiAccessScopesItemMastodonAdapterFromJson(
         Map<String, dynamic> json) {
   return _UnifediApiAccessScopesItemMastodonAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiAccessScopesItemMastodonAdapterTearOff {
-  const _$UnifediApiAccessScopesItemMastodonAdapterTearOff();
-
-  _UnifediApiAccessScopesItemMastodonAdapter call(
-      @HiveField(0) MastodonApiAccessScopesItem value) {
-    return _UnifediApiAccessScopesItemMastodonAdapter(
-      value,
-    );
-  }
-
-  UnifediApiAccessScopesItemMastodonAdapter fromJson(
-      Map<String, Object?> json) {
-    return UnifediApiAccessScopesItemMastodonAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiAccessScopesItemMastodonAdapter =
-    _$UnifediApiAccessScopesItemMastodonAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiAccessScopesItemMastodonAdapter {
@@ -57,50 +37,57 @@ abstract class $UnifediApiAccessScopesItemMastodonAdapterCopyWith<$Res> {
   factory $UnifediApiAccessScopesItemMastodonAdapterCopyWith(
           UnifediApiAccessScopesItemMastodonAdapter value,
           $Res Function(UnifediApiAccessScopesItemMastodonAdapter) then) =
-      _$UnifediApiAccessScopesItemMastodonAdapterCopyWithImpl<$Res>;
+      _$UnifediApiAccessScopesItemMastodonAdapterCopyWithImpl<$Res,
+          UnifediApiAccessScopesItemMastodonAdapter>;
+  @useResult
   $Res call({@HiveField(0) MastodonApiAccessScopesItem value});
 
   $MastodonApiAccessScopesItemCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiAccessScopesItemMastodonAdapterCopyWithImpl<$Res>
+class _$UnifediApiAccessScopesItemMastodonAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiAccessScopesItemMastodonAdapter>
     implements $UnifediApiAccessScopesItemMastodonAdapterCopyWith<$Res> {
   _$UnifediApiAccessScopesItemMastodonAdapterCopyWithImpl(
       this._value, this._then);
 
-  final UnifediApiAccessScopesItemMastodonAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiAccessScopesItemMastodonAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiAccessScopesItem,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiAccessScopesItemCopyWith<$Res> get value {
     return $MastodonApiAccessScopesItemCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiAccessScopesItemMastodonAdapterCopyWith<$Res>
+abstract class _$$UnifediApiAccessScopesItemMastodonAdapterImplCopyWith<$Res>
     implements $UnifediApiAccessScopesItemMastodonAdapterCopyWith<$Res> {
-  factory _$UnifediApiAccessScopesItemMastodonAdapterCopyWith(
-          _UnifediApiAccessScopesItemMastodonAdapter value,
-          $Res Function(_UnifediApiAccessScopesItemMastodonAdapter) then) =
-      __$UnifediApiAccessScopesItemMastodonAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiAccessScopesItemMastodonAdapterImplCopyWith(
+          _$UnifediApiAccessScopesItemMastodonAdapterImpl value,
+          $Res Function(_$UnifediApiAccessScopesItemMastodonAdapterImpl) then) =
+      __$$UnifediApiAccessScopesItemMastodonAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) MastodonApiAccessScopesItem value});
 
   @override
@@ -108,25 +95,22 @@ abstract class _$UnifediApiAccessScopesItemMastodonAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiAccessScopesItemMastodonAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiAccessScopesItemMastodonAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiAccessScopesItemMastodonAdapterCopyWith<$Res> {
-  __$UnifediApiAccessScopesItemMastodonAdapterCopyWithImpl(
-      _UnifediApiAccessScopesItemMastodonAdapter _value,
-      $Res Function(_UnifediApiAccessScopesItemMastodonAdapter) _then)
-      : super(_value,
-            (v) => _then(v as _UnifediApiAccessScopesItemMastodonAdapter));
+class __$$UnifediApiAccessScopesItemMastodonAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiAccessScopesItemMastodonAdapterCopyWithImpl<$Res,
+        _$UnifediApiAccessScopesItemMastodonAdapterImpl>
+    implements _$$UnifediApiAccessScopesItemMastodonAdapterImplCopyWith<$Res> {
+  __$$UnifediApiAccessScopesItemMastodonAdapterImplCopyWithImpl(
+      _$UnifediApiAccessScopesItemMastodonAdapterImpl _value,
+      $Res Function(_$UnifediApiAccessScopesItemMastodonAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiAccessScopesItemMastodonAdapter get _value =>
-      super._value as _UnifediApiAccessScopesItemMastodonAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiAccessScopesItemMastodonAdapter(
-      value == freezed
+    return _then(_$UnifediApiAccessScopesItemMastodonAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as MastodonApiAccessScopesItem,
@@ -136,14 +120,15 @@ class __$UnifediApiAccessScopesItemMastodonAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiAccessScopesItemMastodonAdapter
+class _$UnifediApiAccessScopesItemMastodonAdapterImpl
     extends _UnifediApiAccessScopesItemMastodonAdapter {
-  const _$_UnifediApiAccessScopesItemMastodonAdapter(@HiveField(0) this.value)
+  const _$UnifediApiAccessScopesItemMastodonAdapterImpl(
+      @HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiAccessScopesItemMastodonAdapter.fromJson(
+  factory _$UnifediApiAccessScopesItemMastodonAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiAccessScopesItemMastodonAdapterFromJson(json);
+      _$$UnifediApiAccessScopesItemMastodonAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -155,46 +140,52 @@ class _$_UnifediApiAccessScopesItemMastodonAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiAccessScopesItemMastodonAdapter &&
+            other is _$UnifediApiAccessScopesItemMastodonAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiAccessScopesItemMastodonAdapterCopyWith<
-          _UnifediApiAccessScopesItemMastodonAdapter>
-      get copyWith => __$UnifediApiAccessScopesItemMastodonAdapterCopyWithImpl<
-          _UnifediApiAccessScopesItemMastodonAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiAccessScopesItemMastodonAdapterImplCopyWith<
+          _$UnifediApiAccessScopesItemMastodonAdapterImpl>
+      get copyWith =>
+          __$$UnifediApiAccessScopesItemMastodonAdapterImplCopyWithImpl<
+                  _$UnifediApiAccessScopesItemMastodonAdapterImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiAccessScopesItemMastodonAdapterToJson(this);
+    return _$$UnifediApiAccessScopesItemMastodonAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiAccessScopesItemMastodonAdapter
     extends UnifediApiAccessScopesItemMastodonAdapter {
   const factory _UnifediApiAccessScopesItemMastodonAdapter(
-          @HiveField(0) MastodonApiAccessScopesItem value) =
-      _$_UnifediApiAccessScopesItemMastodonAdapter;
+          @HiveField(0) final MastodonApiAccessScopesItem value) =
+      _$UnifediApiAccessScopesItemMastodonAdapterImpl;
   const _UnifediApiAccessScopesItemMastodonAdapter._() : super._();
 
   factory _UnifediApiAccessScopesItemMastodonAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiAccessScopesItemMastodonAdapter.fromJson;
+      _$UnifediApiAccessScopesItemMastodonAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   MastodonApiAccessScopesItem get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiAccessScopesItemMastodonAdapterCopyWith<
-          _UnifediApiAccessScopesItemMastodonAdapter>
+  _$$UnifediApiAccessScopesItemMastodonAdapterImplCopyWith<
+          _$UnifediApiAccessScopesItemMastodonAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,3 +1,4 @@
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/chat/conversation/conversation_chat_model.dart';
 import 'package:fedi_app/app/chat/conversation/database/conversation_chat_database_model.dart';
 import 'package:fedi_app/app/chat/conversation/repository/conversation_chat_repository_model.dart';
@@ -5,7 +6,6 @@ import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/database/dao/remote/populated_app_remote_database_dao.dart';
 import 'package:fedi_app/app/status/status_model.dart';
 import 'package:fedi_app/repository/repository_model.dart';
-import 'package:moor/moor.dart';
 
 part 'conversation_chat_database_dao.g.dart';
 
@@ -21,7 +21,7 @@ var _statusReplyAccountAliasId = 'statusReplyAccount';
 var _statusReplyReblogAliasId = 'statusReplyReblog';
 var _statusReplyReblogAccountAliasId = 'statusReplyReblogAccount';
 
-@UseDao(
+@DriftAccessor(
   tables: [
     DbConversations,
   ],
@@ -100,7 +100,7 @@ class ConversationDao extends PopulatedAppRemoteDatabaseDao<
           orderTerms
               .map(
                 (orderTerm) => ($DbConversationsTable item) {
-                  GeneratedColumn<Object?> expression;
+                  GeneratedColumn<Object> expression;
                   switch (orderTerm.orderType) {
                     case ConversationChatOrderType.remoteId:
                       expression = item.remoteId;

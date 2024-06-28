@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_account_identity_proof_model_impl.dart';
 
@@ -11,48 +12,12 @@ part of 'mastodon_api_account_identity_proof_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiAccountIdentityProof _$MastodonApiAccountIdentityProofFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiAccountIdentityProof.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiAccountIdentityProofTearOff {
-  const _$MastodonApiAccountIdentityProofTearOff();
-
-  _MastodonApiAccountIdentityProof call(
-      {@JsonKey(name: 'profile_url')
-      @HiveField(0)
-          required String? profileUrl,
-      @JsonKey(name: 'proof_url')
-      @HiveField(1)
-          required String? proofUrl,
-      @HiveField(2)
-          required String? provider,
-      @JsonKey(name: 'provider_username')
-      @HiveField(3)
-          required String? providerUsername,
-      @HiveField(4)
-          required DateTime? updatedAt}) {
-    return _MastodonApiAccountIdentityProof(
-      profileUrl: profileUrl,
-      proofUrl: proofUrl,
-      provider: provider,
-      providerUsername: providerUsername,
-      updatedAt: updatedAt,
-    );
-  }
-
-  MastodonApiAccountIdentityProof fromJson(Map<String, Object?> json) {
-    return MastodonApiAccountIdentityProof.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiAccountIdentityProof =
-    _$MastodonApiAccountIdentityProofTearOff();
 
 /// @nodoc
 mixin _$MastodonApiAccountIdentityProof {
@@ -81,32 +46,31 @@ abstract class $MastodonApiAccountIdentityProofCopyWith<$Res> {
   factory $MastodonApiAccountIdentityProofCopyWith(
           MastodonApiAccountIdentityProof value,
           $Res Function(MastodonApiAccountIdentityProof) then) =
-      _$MastodonApiAccountIdentityProofCopyWithImpl<$Res>;
+      _$MastodonApiAccountIdentityProofCopyWithImpl<$Res,
+          MastodonApiAccountIdentityProof>;
+  @useResult
   $Res call(
-      {@JsonKey(name: 'profile_url')
-      @HiveField(0)
-          String? profileUrl,
-      @JsonKey(name: 'proof_url')
-      @HiveField(1)
-          String? proofUrl,
-      @HiveField(2)
-          String? provider,
+      {@JsonKey(name: 'profile_url') @HiveField(0) String? profileUrl,
+      @JsonKey(name: 'proof_url') @HiveField(1) String? proofUrl,
+      @HiveField(2) String? provider,
       @JsonKey(name: 'provider_username')
       @HiveField(3)
-          String? providerUsername,
-      @HiveField(4)
-          DateTime? updatedAt});
+      String? providerUsername,
+      @HiveField(4) DateTime? updatedAt});
 }
 
 /// @nodoc
-class _$MastodonApiAccountIdentityProofCopyWithImpl<$Res>
+class _$MastodonApiAccountIdentityProofCopyWithImpl<$Res,
+        $Val extends MastodonApiAccountIdentityProof>
     implements $MastodonApiAccountIdentityProofCopyWith<$Res> {
   _$MastodonApiAccountIdentityProofCopyWithImpl(this._value, this._then);
 
-  final MastodonApiAccountIdentityProof _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiAccountIdentityProof) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? profileUrl = freezed,
@@ -116,67 +80,60 @@ class _$MastodonApiAccountIdentityProofCopyWithImpl<$Res>
     Object? updatedAt = freezed,
   }) {
     return _then(_value.copyWith(
-      profileUrl: profileUrl == freezed
+      profileUrl: freezed == profileUrl
           ? _value.profileUrl
           : profileUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      proofUrl: proofUrl == freezed
+      proofUrl: freezed == proofUrl
           ? _value.proofUrl
           : proofUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      provider: provider == freezed
+      provider: freezed == provider
           ? _value.provider
           : provider // ignore: cast_nullable_to_non_nullable
               as String?,
-      providerUsername: providerUsername == freezed
+      providerUsername: freezed == providerUsername
           ? _value.providerUsername
           : providerUsername // ignore: cast_nullable_to_non_nullable
               as String?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiAccountIdentityProofCopyWith<$Res>
+abstract class _$$MastodonApiAccountIdentityProofImplCopyWith<$Res>
     implements $MastodonApiAccountIdentityProofCopyWith<$Res> {
-  factory _$MastodonApiAccountIdentityProofCopyWith(
-          _MastodonApiAccountIdentityProof value,
-          $Res Function(_MastodonApiAccountIdentityProof) then) =
-      __$MastodonApiAccountIdentityProofCopyWithImpl<$Res>;
+  factory _$$MastodonApiAccountIdentityProofImplCopyWith(
+          _$MastodonApiAccountIdentityProofImpl value,
+          $Res Function(_$MastodonApiAccountIdentityProofImpl) then) =
+      __$$MastodonApiAccountIdentityProofImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@JsonKey(name: 'profile_url')
-      @HiveField(0)
-          String? profileUrl,
-      @JsonKey(name: 'proof_url')
-      @HiveField(1)
-          String? proofUrl,
-      @HiveField(2)
-          String? provider,
+      {@JsonKey(name: 'profile_url') @HiveField(0) String? profileUrl,
+      @JsonKey(name: 'proof_url') @HiveField(1) String? proofUrl,
+      @HiveField(2) String? provider,
       @JsonKey(name: 'provider_username')
       @HiveField(3)
-          String? providerUsername,
-      @HiveField(4)
-          DateTime? updatedAt});
+      String? providerUsername,
+      @HiveField(4) DateTime? updatedAt});
 }
 
 /// @nodoc
-class __$MastodonApiAccountIdentityProofCopyWithImpl<$Res>
-    extends _$MastodonApiAccountIdentityProofCopyWithImpl<$Res>
-    implements _$MastodonApiAccountIdentityProofCopyWith<$Res> {
-  __$MastodonApiAccountIdentityProofCopyWithImpl(
-      _MastodonApiAccountIdentityProof _value,
-      $Res Function(_MastodonApiAccountIdentityProof) _then)
-      : super(_value, (v) => _then(v as _MastodonApiAccountIdentityProof));
+class __$$MastodonApiAccountIdentityProofImplCopyWithImpl<$Res>
+    extends _$MastodonApiAccountIdentityProofCopyWithImpl<$Res,
+        _$MastodonApiAccountIdentityProofImpl>
+    implements _$$MastodonApiAccountIdentityProofImplCopyWith<$Res> {
+  __$$MastodonApiAccountIdentityProofImplCopyWithImpl(
+      _$MastodonApiAccountIdentityProofImpl _value,
+      $Res Function(_$MastodonApiAccountIdentityProofImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiAccountIdentityProof get _value =>
-      super._value as _MastodonApiAccountIdentityProof;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? profileUrl = freezed,
@@ -185,24 +142,24 @@ class __$MastodonApiAccountIdentityProofCopyWithImpl<$Res>
     Object? providerUsername = freezed,
     Object? updatedAt = freezed,
   }) {
-    return _then(_MastodonApiAccountIdentityProof(
-      profileUrl: profileUrl == freezed
+    return _then(_$MastodonApiAccountIdentityProofImpl(
+      profileUrl: freezed == profileUrl
           ? _value.profileUrl
           : profileUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      proofUrl: proofUrl == freezed
+      proofUrl: freezed == proofUrl
           ? _value.proofUrl
           : proofUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      provider: provider == freezed
+      provider: freezed == provider
           ? _value.provider
           : provider // ignore: cast_nullable_to_non_nullable
               as String?,
-      providerUsername: providerUsername == freezed
+      providerUsername: freezed == providerUsername
           ? _value.providerUsername
           : providerUsername // ignore: cast_nullable_to_non_nullable
               as String?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
@@ -212,26 +169,20 @@ class __$MastodonApiAccountIdentityProofCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiAccountIdentityProof
+class _$MastodonApiAccountIdentityProofImpl
     implements _MastodonApiAccountIdentityProof {
-  const _$_MastodonApiAccountIdentityProof(
-      {@JsonKey(name: 'profile_url')
-      @HiveField(0)
-          required this.profileUrl,
-      @JsonKey(name: 'proof_url')
-      @HiveField(1)
-          required this.proofUrl,
-      @HiveField(2)
-          required this.provider,
+  const _$MastodonApiAccountIdentityProofImpl(
+      {@JsonKey(name: 'profile_url') @HiveField(0) required this.profileUrl,
+      @JsonKey(name: 'proof_url') @HiveField(1) required this.proofUrl,
+      @HiveField(2) required this.provider,
       @JsonKey(name: 'provider_username')
       @HiveField(3)
-          required this.providerUsername,
-      @HiveField(4)
-          required this.updatedAt});
+      required this.providerUsername,
+      @HiveField(4) required this.updatedAt});
 
-  factory _$_MastodonApiAccountIdentityProof.fromJson(
+  factory _$MastodonApiAccountIdentityProofImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_MastodonApiAccountIdentityProofFromJson(json);
+      _$$MastodonApiAccountIdentityProofImplFromJson(json);
 
   @override
   @JsonKey(name: 'profile_url')
@@ -258,10 +209,10 @@ class _$_MastodonApiAccountIdentityProof
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiAccountIdentityProof &&
+            other is _$MastodonApiAccountIdentityProofImpl &&
             (identical(other.profileUrl, profileUrl) ||
                 other.profileUrl == profileUrl) &&
             (identical(other.proofUrl, proofUrl) ||
@@ -274,19 +225,24 @@ class _$_MastodonApiAccountIdentityProof
                 other.updatedAt == updatedAt));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType, profileUrl, proofUrl, provider, providerUsername, updatedAt);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiAccountIdentityProofCopyWith<_MastodonApiAccountIdentityProof>
-      get copyWith => __$MastodonApiAccountIdentityProofCopyWithImpl<
-          _MastodonApiAccountIdentityProof>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiAccountIdentityProofImplCopyWith<
+          _$MastodonApiAccountIdentityProofImpl>
+      get copyWith => __$$MastodonApiAccountIdentityProofImplCopyWithImpl<
+          _$MastodonApiAccountIdentityProofImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiAccountIdentityProofToJson(this);
+    return _$$MastodonApiAccountIdentityProofImplToJson(
+      this,
+    );
   }
 }
 
@@ -295,20 +251,18 @@ abstract class _MastodonApiAccountIdentityProof
   const factory _MastodonApiAccountIdentityProof(
       {@JsonKey(name: 'profile_url')
       @HiveField(0)
-          required String? profileUrl,
-      @JsonKey(name: 'proof_url')
-      @HiveField(1)
-          required String? proofUrl,
-      @HiveField(2)
-          required String? provider,
+      required final String? profileUrl,
+      @JsonKey(name: 'proof_url') @HiveField(1) required final String? proofUrl,
+      @HiveField(2) required final String? provider,
       @JsonKey(name: 'provider_username')
       @HiveField(3)
-          required String? providerUsername,
+      required final String? providerUsername,
       @HiveField(4)
-          required DateTime? updatedAt}) = _$_MastodonApiAccountIdentityProof;
+      required final DateTime?
+          updatedAt}) = _$MastodonApiAccountIdentityProofImpl;
 
   factory _MastodonApiAccountIdentityProof.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiAccountIdentityProof.fromJson;
+      _$MastodonApiAccountIdentityProofImpl.fromJson;
 
   @override
   @JsonKey(name: 'profile_url')
@@ -330,6 +284,7 @@ abstract class _MastodonApiAccountIdentityProof
   DateTime? get updatedAt;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiAccountIdentityProofCopyWith<_MastodonApiAccountIdentityProof>
+  _$$MastodonApiAccountIdentityProofImplCopyWith<
+          _$MastodonApiAccountIdentityProofImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

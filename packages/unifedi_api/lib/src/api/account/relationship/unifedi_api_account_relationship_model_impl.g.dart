@@ -84,27 +84,27 @@ class UnifediApiAccountRelationshipAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiAccountRelationship _$$_UnifediApiAccountRelationshipFromJson(
-        Map<String, dynamic> json) =>
-    _$_UnifediApiAccountRelationship(
-      blocking: json['blocking'] as bool?,
-      domainBlocking: json['domain_blocking'] as bool?,
-      endorsed: json['endorsed'] as bool?,
-      followedBy: json['followed_by'] as bool?,
-      following: json['following'] as bool?,
-      id: json['id'] as String?,
-      muting: json['muting'] as bool?,
-      mutingNotifications: json['muting_notifications'] as bool?,
-      requested: json['requested'] as bool?,
-      showingReblogs: json['showing_reblogs'] as bool?,
-      subscribing: json['subscribing'] as bool?,
-      blockedBy: json['blocked_by'] as bool?,
-      note: json['note'] as String?,
-      notifying: json['notifying'] as bool?,
-    );
+_$UnifediApiAccountRelationshipImpl
+    _$$UnifediApiAccountRelationshipImplFromJson(Map<String, dynamic> json) =>
+        _$UnifediApiAccountRelationshipImpl(
+          blocking: json['blocking'] as bool?,
+          domainBlocking: json['domain_blocking'] as bool?,
+          endorsed: json['endorsed'] as bool?,
+          followedBy: json['followed_by'] as bool?,
+          following: json['following'] as bool?,
+          id: json['id'] as String?,
+          muting: json['muting'] as bool?,
+          mutingNotifications: json['muting_notifications'] as bool?,
+          requested: json['requested'] as bool?,
+          showingReblogs: json['showing_reblogs'] as bool?,
+          subscribing: json['subscribing'] as bool?,
+          blockedBy: json['blocked_by'] as bool?,
+          note: json['note'] as String?,
+          notifying: json['notifying'] as bool?,
+        );
 
-Map<String, dynamic> _$$_UnifediApiAccountRelationshipToJson(
-    _$_UnifediApiAccountRelationship instance) {
+Map<String, dynamic> _$$UnifediApiAccountRelationshipImplToJson(
+    _$UnifediApiAccountRelationshipImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

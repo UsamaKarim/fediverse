@@ -45,17 +45,17 @@ class UnifediApiInstanceActivityAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiInstanceActivity _$$_UnifediApiInstanceActivityFromJson(
+_$UnifediApiInstanceActivityImpl _$$UnifediApiInstanceActivityImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiInstanceActivity(
+    _$UnifediApiInstanceActivityImpl(
       items: (json['items'] as List<dynamic>)
           .map((e) => UnifediApiInstanceActivityItem.fromJson(
               e as Map<String, dynamic>))
           .toList(),
     );
 
-Map<String, dynamic> _$$_UnifediApiInstanceActivityToJson(
-        _$_UnifediApiInstanceActivity instance) =>
+Map<String, dynamic> _$$UnifediApiInstanceActivityImplToJson(
+        _$UnifediApiInstanceActivityImpl instance) =>
     <String, dynamic>{
       'items': instance.items.map((e) => e.toJson()).toList(),
     };

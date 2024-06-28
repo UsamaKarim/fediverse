@@ -48,9 +48,9 @@ class PleromaApiStatusContextAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiStatusContext _$$_PleromaApiStatusContextFromJson(
+_$PleromaApiStatusContextImpl _$$PleromaApiStatusContextImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiStatusContext(
+    _$PleromaApiStatusContextImpl(
       descendants: (json['descendants'] as List<dynamic>)
           .map((e) => PleromaApiStatus.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -59,8 +59,8 @@ _$_PleromaApiStatusContext _$$_PleromaApiStatusContextFromJson(
           .toList(),
     );
 
-Map<String, dynamic> _$$_PleromaApiStatusContextToJson(
-        _$_PleromaApiStatusContext instance) =>
+Map<String, dynamic> _$$PleromaApiStatusContextImplToJson(
+        _$PleromaApiStatusContextImpl instance) =>
     <String, dynamic>{
       'descendants': instance.descendants.map((e) => e.toJson()).toList(),
       'ancestors': instance.ancestors.map((e) => e.toJson()).toList(),

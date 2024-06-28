@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_pagination_model_impl.dart';
 
@@ -11,36 +12,11 @@ part of 'pleroma_api_pagination_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiPagination _$PleromaApiPaginationFromJson(Map<String, dynamic> json) {
   return _PleromaApiPagination.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiPaginationTearOff {
-  const _$PleromaApiPaginationTearOff();
-
-  _PleromaApiPagination call(
-      {@HiveField(0) required int? limit,
-      @HiveField(1) @JsonKey(name: 'max_id') required String? maxId,
-      @HiveField(2) @JsonKey(name: 'min_id') required String? minId,
-      @HiveField(3) @JsonKey(name: 'since_id') required String? sinceId}) {
-    return _PleromaApiPagination(
-      limit: limit,
-      maxId: maxId,
-      minId: minId,
-      sinceId: sinceId,
-    );
-  }
-
-  PleromaApiPagination fromJson(Map<String, Object?> json) {
-    return PleromaApiPagination.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiPagination = _$PleromaApiPaginationTearOff();
 
 /// @nodoc
 mixin _$PleromaApiPagination {
@@ -66,7 +42,8 @@ mixin _$PleromaApiPagination {
 abstract class $PleromaApiPaginationCopyWith<$Res> {
   factory $PleromaApiPaginationCopyWith(PleromaApiPagination value,
           $Res Function(PleromaApiPagination) then) =
-      _$PleromaApiPaginationCopyWithImpl<$Res>;
+      _$PleromaApiPaginationCopyWithImpl<$Res, PleromaApiPagination>;
+  @useResult
   $Res call(
       {@HiveField(0) int? limit,
       @HiveField(1) @JsonKey(name: 'max_id') String? maxId,
@@ -75,14 +52,17 @@ abstract class $PleromaApiPaginationCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiPaginationCopyWithImpl<$Res>
+class _$PleromaApiPaginationCopyWithImpl<$Res,
+        $Val extends PleromaApiPagination>
     implements $PleromaApiPaginationCopyWith<$Res> {
   _$PleromaApiPaginationCopyWithImpl(this._value, this._then);
 
-  final PleromaApiPagination _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiPagination) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? limit = freezed,
@@ -91,33 +71,34 @@ class _$PleromaApiPaginationCopyWithImpl<$Res>
     Object? sinceId = freezed,
   }) {
     return _then(_value.copyWith(
-      limit: limit == freezed
+      limit: freezed == limit
           ? _value.limit
           : limit // ignore: cast_nullable_to_non_nullable
               as int?,
-      maxId: maxId == freezed
+      maxId: freezed == maxId
           ? _value.maxId
           : maxId // ignore: cast_nullable_to_non_nullable
               as String?,
-      minId: minId == freezed
+      minId: freezed == minId
           ? _value.minId
           : minId // ignore: cast_nullable_to_non_nullable
               as String?,
-      sinceId: sinceId == freezed
+      sinceId: freezed == sinceId
           ? _value.sinceId
           : sinceId // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiPaginationCopyWith<$Res>
+abstract class _$$PleromaApiPaginationImplCopyWith<$Res>
     implements $PleromaApiPaginationCopyWith<$Res> {
-  factory _$PleromaApiPaginationCopyWith(_PleromaApiPagination value,
-          $Res Function(_PleromaApiPagination) then) =
-      __$PleromaApiPaginationCopyWithImpl<$Res>;
+  factory _$$PleromaApiPaginationImplCopyWith(_$PleromaApiPaginationImpl value,
+          $Res Function(_$PleromaApiPaginationImpl) then) =
+      __$$PleromaApiPaginationImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) int? limit,
       @HiveField(1) @JsonKey(name: 'max_id') String? maxId,
@@ -126,16 +107,14 @@ abstract class _$PleromaApiPaginationCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiPaginationCopyWithImpl<$Res>
-    extends _$PleromaApiPaginationCopyWithImpl<$Res>
-    implements _$PleromaApiPaginationCopyWith<$Res> {
-  __$PleromaApiPaginationCopyWithImpl(
-      _PleromaApiPagination _value, $Res Function(_PleromaApiPagination) _then)
-      : super(_value, (v) => _then(v as _PleromaApiPagination));
+class __$$PleromaApiPaginationImplCopyWithImpl<$Res>
+    extends _$PleromaApiPaginationCopyWithImpl<$Res, _$PleromaApiPaginationImpl>
+    implements _$$PleromaApiPaginationImplCopyWith<$Res> {
+  __$$PleromaApiPaginationImplCopyWithImpl(_$PleromaApiPaginationImpl _value,
+      $Res Function(_$PleromaApiPaginationImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiPagination get _value => super._value as _PleromaApiPagination;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? limit = freezed,
@@ -143,20 +122,20 @@ class __$PleromaApiPaginationCopyWithImpl<$Res>
     Object? minId = freezed,
     Object? sinceId = freezed,
   }) {
-    return _then(_PleromaApiPagination(
-      limit: limit == freezed
+    return _then(_$PleromaApiPaginationImpl(
+      limit: freezed == limit
           ? _value.limit
           : limit // ignore: cast_nullable_to_non_nullable
               as int?,
-      maxId: maxId == freezed
+      maxId: freezed == maxId
           ? _value.maxId
           : maxId // ignore: cast_nullable_to_non_nullable
               as String?,
-      minId: minId == freezed
+      minId: freezed == minId
           ? _value.minId
           : minId // ignore: cast_nullable_to_non_nullable
               as String?,
-      sinceId: sinceId == freezed
+      sinceId: freezed == sinceId
           ? _value.sinceId
           : sinceId // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -166,15 +145,15 @@ class __$PleromaApiPaginationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiPagination implements _PleromaApiPagination {
-  const _$_PleromaApiPagination(
+class _$PleromaApiPaginationImpl implements _PleromaApiPagination {
+  const _$PleromaApiPaginationImpl(
       {@HiveField(0) required this.limit,
       @HiveField(1) @JsonKey(name: 'max_id') required this.maxId,
       @HiveField(2) @JsonKey(name: 'min_id') required this.minId,
       @HiveField(3) @JsonKey(name: 'since_id') required this.sinceId});
 
-  factory _$_PleromaApiPagination.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiPaginationFromJson(json);
+  factory _$PleromaApiPaginationImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiPaginationImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -198,41 +177,47 @@ class _$_PleromaApiPagination implements _PleromaApiPagination {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiPagination &&
+            other is _$PleromaApiPaginationImpl &&
             (identical(other.limit, limit) || other.limit == limit) &&
             (identical(other.maxId, maxId) || other.maxId == maxId) &&
             (identical(other.minId, minId) || other.minId == minId) &&
             (identical(other.sinceId, sinceId) || other.sinceId == sinceId));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, limit, maxId, minId, sinceId);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiPaginationCopyWith<_PleromaApiPagination> get copyWith =>
-      __$PleromaApiPaginationCopyWithImpl<_PleromaApiPagination>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiPaginationImplCopyWith<_$PleromaApiPaginationImpl>
+      get copyWith =>
+          __$$PleromaApiPaginationImplCopyWithImpl<_$PleromaApiPaginationImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiPaginationToJson(this);
+    return _$$PleromaApiPaginationImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiPagination implements PleromaApiPagination {
   const factory _PleromaApiPagination(
-          {@HiveField(0) required int? limit,
-          @HiveField(1) @JsonKey(name: 'max_id') required String? maxId,
-          @HiveField(2) @JsonKey(name: 'min_id') required String? minId,
-          @HiveField(3) @JsonKey(name: 'since_id') required String? sinceId}) =
-      _$_PleromaApiPagination;
+      {@HiveField(0) required final int? limit,
+      @HiveField(1) @JsonKey(name: 'max_id') required final String? maxId,
+      @HiveField(2) @JsonKey(name: 'min_id') required final String? minId,
+      @HiveField(3)
+      @JsonKey(name: 'since_id')
+      required final String? sinceId}) = _$PleromaApiPaginationImpl;
 
   factory _PleromaApiPagination.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiPagination.fromJson;
+      _$PleromaApiPaginationImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -251,6 +236,6 @@ abstract class _PleromaApiPagination implements PleromaApiPagination {
   String? get sinceId;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiPaginationCopyWith<_PleromaApiPagination> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PleromaApiPaginationImplCopyWith<_$PleromaApiPaginationImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

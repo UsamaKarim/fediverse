@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_media_attachment_model_impl.dart';
 
@@ -11,47 +12,12 @@ part of 'mastodon_api_media_attachment_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiMediaAttachment _$MastodonApiMediaAttachmentFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiMediaAttachment.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiMediaAttachmentTearOff {
-  const _$MastodonApiMediaAttachmentTearOff();
-
-  _MastodonApiMediaAttachment call(
-      {@HiveField(0) required String? description,
-      @HiveField(1) required String id,
-      @HiveField(2) @JsonKey(name: 'preview_url') required String? previewUrl,
-      @HiveField(3) @JsonKey(name: 'remote_url') required String? remoteUrl,
-      @HiveField(5) @JsonKey(name: 'text_url') required String? textUrl,
-      @HiveField(6) @JsonKey(name: 'type') required String type,
-      @HiveField(7) required String? url,
-      @HiveField(8) required String? blurhash,
-      @HiveField(9) required MastodonApiMediaAttachmentMeta? meta}) {
-    return _MastodonApiMediaAttachment(
-      description: description,
-      id: id,
-      previewUrl: previewUrl,
-      remoteUrl: remoteUrl,
-      textUrl: textUrl,
-      type: type,
-      url: url,
-      blurhash: blurhash,
-      meta: meta,
-    );
-  }
-
-  MastodonApiMediaAttachment fromJson(Map<String, Object?> json) {
-    return MastodonApiMediaAttachment.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiMediaAttachment = _$MastodonApiMediaAttachmentTearOff();
 
 /// @nodoc
 mixin _$MastodonApiMediaAttachment {
@@ -89,7 +55,9 @@ mixin _$MastodonApiMediaAttachment {
 abstract class $MastodonApiMediaAttachmentCopyWith<$Res> {
   factory $MastodonApiMediaAttachmentCopyWith(MastodonApiMediaAttachment value,
           $Res Function(MastodonApiMediaAttachment) then) =
-      _$MastodonApiMediaAttachmentCopyWithImpl<$Res>;
+      _$MastodonApiMediaAttachmentCopyWithImpl<$Res,
+          MastodonApiMediaAttachment>;
+  @useResult
   $Res call(
       {@HiveField(0) String? description,
       @HiveField(1) String id,
@@ -105,86 +73,91 @@ abstract class $MastodonApiMediaAttachmentCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MastodonApiMediaAttachmentCopyWithImpl<$Res>
+class _$MastodonApiMediaAttachmentCopyWithImpl<$Res,
+        $Val extends MastodonApiMediaAttachment>
     implements $MastodonApiMediaAttachmentCopyWith<$Res> {
   _$MastodonApiMediaAttachmentCopyWithImpl(this._value, this._then);
 
-  final MastodonApiMediaAttachment _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiMediaAttachment) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? description = freezed,
-    Object? id = freezed,
+    Object? id = null,
     Object? previewUrl = freezed,
     Object? remoteUrl = freezed,
     Object? textUrl = freezed,
-    Object? type = freezed,
+    Object? type = null,
     Object? url = freezed,
     Object? blurhash = freezed,
     Object? meta = freezed,
   }) {
     return _then(_value.copyWith(
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      previewUrl: previewUrl == freezed
+      previewUrl: freezed == previewUrl
           ? _value.previewUrl
           : previewUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      remoteUrl: remoteUrl == freezed
+      remoteUrl: freezed == remoteUrl
           ? _value.remoteUrl
           : remoteUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      textUrl: textUrl == freezed
+      textUrl: freezed == textUrl
           ? _value.textUrl
           : textUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
-      blurhash: blurhash == freezed
+      blurhash: freezed == blurhash
           ? _value.blurhash
           : blurhash // ignore: cast_nullable_to_non_nullable
               as String?,
-      meta: meta == freezed
+      meta: freezed == meta
           ? _value.meta
           : meta // ignore: cast_nullable_to_non_nullable
               as MastodonApiMediaAttachmentMeta?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiMediaAttachmentMetaCopyWith<$Res>? get meta {
     if (_value.meta == null) {
       return null;
     }
 
     return $MastodonApiMediaAttachmentMetaCopyWith<$Res>(_value.meta!, (value) {
-      return _then(_value.copyWith(meta: value));
+      return _then(_value.copyWith(meta: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiMediaAttachmentCopyWith<$Res>
+abstract class _$$MastodonApiMediaAttachmentImplCopyWith<$Res>
     implements $MastodonApiMediaAttachmentCopyWith<$Res> {
-  factory _$MastodonApiMediaAttachmentCopyWith(
-          _MastodonApiMediaAttachment value,
-          $Res Function(_MastodonApiMediaAttachment) then) =
-      __$MastodonApiMediaAttachmentCopyWithImpl<$Res>;
+  factory _$$MastodonApiMediaAttachmentImplCopyWith(
+          _$MastodonApiMediaAttachmentImpl value,
+          $Res Function(_$MastodonApiMediaAttachmentImpl) then) =
+      __$$MastodonApiMediaAttachmentImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) String? description,
       @HiveField(1) String id,
@@ -201,63 +174,62 @@ abstract class _$MastodonApiMediaAttachmentCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MastodonApiMediaAttachmentCopyWithImpl<$Res>
-    extends _$MastodonApiMediaAttachmentCopyWithImpl<$Res>
-    implements _$MastodonApiMediaAttachmentCopyWith<$Res> {
-  __$MastodonApiMediaAttachmentCopyWithImpl(_MastodonApiMediaAttachment _value,
-      $Res Function(_MastodonApiMediaAttachment) _then)
-      : super(_value, (v) => _then(v as _MastodonApiMediaAttachment));
+class __$$MastodonApiMediaAttachmentImplCopyWithImpl<$Res>
+    extends _$MastodonApiMediaAttachmentCopyWithImpl<$Res,
+        _$MastodonApiMediaAttachmentImpl>
+    implements _$$MastodonApiMediaAttachmentImplCopyWith<$Res> {
+  __$$MastodonApiMediaAttachmentImplCopyWithImpl(
+      _$MastodonApiMediaAttachmentImpl _value,
+      $Res Function(_$MastodonApiMediaAttachmentImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiMediaAttachment get _value =>
-      super._value as _MastodonApiMediaAttachment;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? description = freezed,
-    Object? id = freezed,
+    Object? id = null,
     Object? previewUrl = freezed,
     Object? remoteUrl = freezed,
     Object? textUrl = freezed,
-    Object? type = freezed,
+    Object? type = null,
     Object? url = freezed,
     Object? blurhash = freezed,
     Object? meta = freezed,
   }) {
-    return _then(_MastodonApiMediaAttachment(
-      description: description == freezed
+    return _then(_$MastodonApiMediaAttachmentImpl(
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      previewUrl: previewUrl == freezed
+      previewUrl: freezed == previewUrl
           ? _value.previewUrl
           : previewUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      remoteUrl: remoteUrl == freezed
+      remoteUrl: freezed == remoteUrl
           ? _value.remoteUrl
           : remoteUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      textUrl: textUrl == freezed
+      textUrl: freezed == textUrl
           ? _value.textUrl
           : textUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
-      blurhash: blurhash == freezed
+      blurhash: freezed == blurhash
           ? _value.blurhash
           : blurhash // ignore: cast_nullable_to_non_nullable
               as String?,
-      meta: meta == freezed
+      meta: freezed == meta
           ? _value.meta
           : meta // ignore: cast_nullable_to_non_nullable
               as MastodonApiMediaAttachmentMeta?,
@@ -267,8 +239,8 @@ class __$MastodonApiMediaAttachmentCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiMediaAttachment implements _MastodonApiMediaAttachment {
-  const _$_MastodonApiMediaAttachment(
+class _$MastodonApiMediaAttachmentImpl implements _MastodonApiMediaAttachment {
+  const _$MastodonApiMediaAttachmentImpl(
       {@HiveField(0) required this.description,
       @HiveField(1) required this.id,
       @HiveField(2) @JsonKey(name: 'preview_url') required this.previewUrl,
@@ -279,8 +251,9 @@ class _$_MastodonApiMediaAttachment implements _MastodonApiMediaAttachment {
       @HiveField(8) required this.blurhash,
       @HiveField(9) required this.meta});
 
-  factory _$_MastodonApiMediaAttachment.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiMediaAttachmentFromJson(json);
+  factory _$MastodonApiMediaAttachmentImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$MastodonApiMediaAttachmentImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -320,10 +293,10 @@ class _$_MastodonApiMediaAttachment implements _MastodonApiMediaAttachment {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiMediaAttachment &&
+            other is _$MastodonApiMediaAttachmentImpl &&
             (identical(other.description, description) ||
                 other.description == description) &&
             (identical(other.id, id) || other.id == id) &&
@@ -339,51 +312,47 @@ class _$_MastodonApiMediaAttachment implements _MastodonApiMediaAttachment {
             (identical(other.meta, meta) || other.meta == meta));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, description, id, previewUrl,
       remoteUrl, textUrl, type, url, blurhash, meta);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiMediaAttachmentCopyWith<_MastodonApiMediaAttachment>
-      get copyWith => __$MastodonApiMediaAttachmentCopyWithImpl<
-          _MastodonApiMediaAttachment>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiMediaAttachmentImplCopyWith<_$MastodonApiMediaAttachmentImpl>
+      get copyWith => __$$MastodonApiMediaAttachmentImplCopyWithImpl<
+          _$MastodonApiMediaAttachmentImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiMediaAttachmentToJson(this);
+    return _$$MastodonApiMediaAttachmentImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiMediaAttachment
     implements MastodonApiMediaAttachment {
   const factory _MastodonApiMediaAttachment(
-          {@HiveField(0)
-              required String? description,
-          @HiveField(1)
-              required String id,
-          @HiveField(2)
-          @JsonKey(name: 'preview_url')
-              required String? previewUrl,
-          @HiveField(3)
-          @JsonKey(name: 'remote_url')
-              required String? remoteUrl,
-          @HiveField(5)
-          @JsonKey(name: 'text_url')
-              required String? textUrl,
-          @HiveField(6)
-          @JsonKey(name: 'type')
-              required String type,
-          @HiveField(7)
-              required String? url,
-          @HiveField(8)
-              required String? blurhash,
-          @HiveField(9)
-              required MastodonApiMediaAttachmentMeta? meta}) =
-      _$_MastodonApiMediaAttachment;
+      {@HiveField(0) required final String? description,
+      @HiveField(1) required final String id,
+      @HiveField(2)
+      @JsonKey(name: 'preview_url')
+      required final String? previewUrl,
+      @HiveField(3)
+      @JsonKey(name: 'remote_url')
+      required final String? remoteUrl,
+      @HiveField(5) @JsonKey(name: 'text_url') required final String? textUrl,
+      @HiveField(6) @JsonKey(name: 'type') required final String type,
+      @HiveField(7) required final String? url,
+      @HiveField(8) required final String? blurhash,
+      @HiveField(9)
+      required final MastodonApiMediaAttachmentMeta?
+          meta}) = _$MastodonApiMediaAttachmentImpl;
 
   factory _MastodonApiMediaAttachment.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiMediaAttachment.fromJson;
+      _$MastodonApiMediaAttachmentImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -418,6 +387,6 @@ abstract class _MastodonApiMediaAttachment
   MastodonApiMediaAttachmentMeta? get meta;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiMediaAttachmentCopyWith<_MastodonApiMediaAttachment>
+  _$$MastodonApiMediaAttachmentImplCopyWith<_$MastodonApiMediaAttachmentImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

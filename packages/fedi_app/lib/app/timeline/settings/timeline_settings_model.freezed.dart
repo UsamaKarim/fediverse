@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'timeline_settings_model.dart';
 
@@ -11,88 +12,11 @@ part of 'timeline_settings_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 TimelineSettings _$TimelineSettingsFromJson(Map<String, dynamic> json) {
   return _TimelineSettings.fromJson(json);
 }
-
-/// @nodoc
-class _$TimelineSettingsTearOff {
-  const _$TimelineSettingsTearOff();
-
-  _TimelineSettings call(
-      {@HiveField(1)
-      @JsonKey(name: 'only_with_media')
-          required bool? onlyWithMedia,
-      @HiveField(2)
-      @JsonKey(name: 'exclude_replies')
-          required bool? excludeReplies,
-      @HiveField(3)
-      @JsonKey(name: 'exclude_nsfw_sensitive')
-          required bool? excludeNsfwSensitive,
-      @HiveField(4)
-      @JsonKey(name: 'only_remote')
-          required bool? onlyRemote,
-      @HiveField(5)
-      @JsonKey(name: 'only_local')
-          required bool? onlyLocal,
-      @HiveField(6)
-      @JsonKey(name: 'with_muted')
-          required bool? withMuted,
-      @HiveField(7)
-      @JsonKey(name: 'exclude_visibilities_strings')
-          required List<String>? excludeVisibilitiesStrings,
-      @HiveField(9)
-      @JsonKey(name: 'only_in_list')
-          required UnifediApiList? onlyInRemoteList,
-      @HiveField(10)
-      @JsonKey(name: 'with_remote_hashtag')
-          required String? withRemoteHashtag,
-      @HiveField(11)
-      @JsonKey(name: 'reply_visibility_filter_string')
-          required String? replyVisibilityFilterString,
-      @HiveField(13)
-      @JsonKey(name: 'only_from_remote_account')
-          required UnifediApiAccount? onlyFromRemoteAccount,
-      @HiveField(14)
-      @JsonKey(name: 'only_pinned')
-          required bool? onlyPinned,
-      @HiveField(15)
-      @JsonKey(name: 'exclude_reblogs')
-          required bool? excludeReblogs,
-      @HiveField(16)
-      @JsonKey(name: 'web_sockets_updates')
-          required bool? webSocketsUpdates,
-      @HiveField(17)
-      @JsonKey(name: 'instance')
-          required String? onlyFromInstance}) {
-    return _TimelineSettings(
-      onlyWithMedia: onlyWithMedia,
-      excludeReplies: excludeReplies,
-      excludeNsfwSensitive: excludeNsfwSensitive,
-      onlyRemote: onlyRemote,
-      onlyLocal: onlyLocal,
-      withMuted: withMuted,
-      excludeVisibilitiesStrings: excludeVisibilitiesStrings,
-      onlyInRemoteList: onlyInRemoteList,
-      withRemoteHashtag: withRemoteHashtag,
-      replyVisibilityFilterString: replyVisibilityFilterString,
-      onlyFromRemoteAccount: onlyFromRemoteAccount,
-      onlyPinned: onlyPinned,
-      excludeReblogs: excludeReblogs,
-      webSocketsUpdates: webSocketsUpdates,
-      onlyFromInstance: onlyFromInstance,
-    );
-  }
-
-  TimelineSettings fromJson(Map<String, Object?> json) {
-    return TimelineSettings.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $TimelineSettings = _$TimelineSettingsTearOff();
 
 /// @nodoc
 mixin _$TimelineSettings {
@@ -154,67 +78,54 @@ mixin _$TimelineSettings {
 abstract class $TimelineSettingsCopyWith<$Res> {
   factory $TimelineSettingsCopyWith(
           TimelineSettings value, $Res Function(TimelineSettings) then) =
-      _$TimelineSettingsCopyWithImpl<$Res>;
+      _$TimelineSettingsCopyWithImpl<$Res, TimelineSettings>;
+  @useResult
   $Res call(
-      {@HiveField(1)
-      @JsonKey(name: 'only_with_media')
-          bool? onlyWithMedia,
-      @HiveField(2)
-      @JsonKey(name: 'exclude_replies')
-          bool? excludeReplies,
+      {@HiveField(1) @JsonKey(name: 'only_with_media') bool? onlyWithMedia,
+      @HiveField(2) @JsonKey(name: 'exclude_replies') bool? excludeReplies,
       @HiveField(3)
       @JsonKey(name: 'exclude_nsfw_sensitive')
-          bool? excludeNsfwSensitive,
-      @HiveField(4)
-      @JsonKey(name: 'only_remote')
-          bool? onlyRemote,
-      @HiveField(5)
-      @JsonKey(name: 'only_local')
-          bool? onlyLocal,
-      @HiveField(6)
-      @JsonKey(name: 'with_muted')
-          bool? withMuted,
+      bool? excludeNsfwSensitive,
+      @HiveField(4) @JsonKey(name: 'only_remote') bool? onlyRemote,
+      @HiveField(5) @JsonKey(name: 'only_local') bool? onlyLocal,
+      @HiveField(6) @JsonKey(name: 'with_muted') bool? withMuted,
       @HiveField(7)
       @JsonKey(name: 'exclude_visibilities_strings')
-          List<String>? excludeVisibilitiesStrings,
+      List<String>? excludeVisibilitiesStrings,
       @HiveField(9)
       @JsonKey(name: 'only_in_list')
-          UnifediApiList? onlyInRemoteList,
+      UnifediApiList? onlyInRemoteList,
       @HiveField(10)
       @JsonKey(name: 'with_remote_hashtag')
-          String? withRemoteHashtag,
+      String? withRemoteHashtag,
       @HiveField(11)
       @JsonKey(name: 'reply_visibility_filter_string')
-          String? replyVisibilityFilterString,
+      String? replyVisibilityFilterString,
       @HiveField(13)
       @JsonKey(name: 'only_from_remote_account')
-          UnifediApiAccount? onlyFromRemoteAccount,
-      @HiveField(14)
-      @JsonKey(name: 'only_pinned')
-          bool? onlyPinned,
-      @HiveField(15)
-      @JsonKey(name: 'exclude_reblogs')
-          bool? excludeReblogs,
+      UnifediApiAccount? onlyFromRemoteAccount,
+      @HiveField(14) @JsonKey(name: 'only_pinned') bool? onlyPinned,
+      @HiveField(15) @JsonKey(name: 'exclude_reblogs') bool? excludeReblogs,
       @HiveField(16)
       @JsonKey(name: 'web_sockets_updates')
-          bool? webSocketsUpdates,
-      @HiveField(17)
-      @JsonKey(name: 'instance')
-          String? onlyFromInstance});
+      bool? webSocketsUpdates,
+      @HiveField(17) @JsonKey(name: 'instance') String? onlyFromInstance});
 
   $UnifediApiListCopyWith<$Res>? get onlyInRemoteList;
   $UnifediApiAccountCopyWith<$Res>? get onlyFromRemoteAccount;
 }
 
 /// @nodoc
-class _$TimelineSettingsCopyWithImpl<$Res>
+class _$TimelineSettingsCopyWithImpl<$Res, $Val extends TimelineSettings>
     implements $TimelineSettingsCopyWith<$Res> {
   _$TimelineSettingsCopyWithImpl(this._value, this._then);
 
-  final TimelineSettings _value;
   // ignore: unused_field
-  final $Res Function(TimelineSettings) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? onlyWithMedia = freezed,
@@ -234,81 +145,83 @@ class _$TimelineSettingsCopyWithImpl<$Res>
     Object? onlyFromInstance = freezed,
   }) {
     return _then(_value.copyWith(
-      onlyWithMedia: onlyWithMedia == freezed
+      onlyWithMedia: freezed == onlyWithMedia
           ? _value.onlyWithMedia
           : onlyWithMedia // ignore: cast_nullable_to_non_nullable
               as bool?,
-      excludeReplies: excludeReplies == freezed
+      excludeReplies: freezed == excludeReplies
           ? _value.excludeReplies
           : excludeReplies // ignore: cast_nullable_to_non_nullable
               as bool?,
-      excludeNsfwSensitive: excludeNsfwSensitive == freezed
+      excludeNsfwSensitive: freezed == excludeNsfwSensitive
           ? _value.excludeNsfwSensitive
           : excludeNsfwSensitive // ignore: cast_nullable_to_non_nullable
               as bool?,
-      onlyRemote: onlyRemote == freezed
+      onlyRemote: freezed == onlyRemote
           ? _value.onlyRemote
           : onlyRemote // ignore: cast_nullable_to_non_nullable
               as bool?,
-      onlyLocal: onlyLocal == freezed
+      onlyLocal: freezed == onlyLocal
           ? _value.onlyLocal
           : onlyLocal // ignore: cast_nullable_to_non_nullable
               as bool?,
-      withMuted: withMuted == freezed
+      withMuted: freezed == withMuted
           ? _value.withMuted
           : withMuted // ignore: cast_nullable_to_non_nullable
               as bool?,
-      excludeVisibilitiesStrings: excludeVisibilitiesStrings == freezed
+      excludeVisibilitiesStrings: freezed == excludeVisibilitiesStrings
           ? _value.excludeVisibilitiesStrings
           : excludeVisibilitiesStrings // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      onlyInRemoteList: onlyInRemoteList == freezed
+      onlyInRemoteList: freezed == onlyInRemoteList
           ? _value.onlyInRemoteList
           : onlyInRemoteList // ignore: cast_nullable_to_non_nullable
               as UnifediApiList?,
-      withRemoteHashtag: withRemoteHashtag == freezed
+      withRemoteHashtag: freezed == withRemoteHashtag
           ? _value.withRemoteHashtag
           : withRemoteHashtag // ignore: cast_nullable_to_non_nullable
               as String?,
-      replyVisibilityFilterString: replyVisibilityFilterString == freezed
+      replyVisibilityFilterString: freezed == replyVisibilityFilterString
           ? _value.replyVisibilityFilterString
           : replyVisibilityFilterString // ignore: cast_nullable_to_non_nullable
               as String?,
-      onlyFromRemoteAccount: onlyFromRemoteAccount == freezed
+      onlyFromRemoteAccount: freezed == onlyFromRemoteAccount
           ? _value.onlyFromRemoteAccount
           : onlyFromRemoteAccount // ignore: cast_nullable_to_non_nullable
               as UnifediApiAccount?,
-      onlyPinned: onlyPinned == freezed
+      onlyPinned: freezed == onlyPinned
           ? _value.onlyPinned
           : onlyPinned // ignore: cast_nullable_to_non_nullable
               as bool?,
-      excludeReblogs: excludeReblogs == freezed
+      excludeReblogs: freezed == excludeReblogs
           ? _value.excludeReblogs
           : excludeReblogs // ignore: cast_nullable_to_non_nullable
               as bool?,
-      webSocketsUpdates: webSocketsUpdates == freezed
+      webSocketsUpdates: freezed == webSocketsUpdates
           ? _value.webSocketsUpdates
           : webSocketsUpdates // ignore: cast_nullable_to_non_nullable
               as bool?,
-      onlyFromInstance: onlyFromInstance == freezed
+      onlyFromInstance: freezed == onlyFromInstance
           ? _value.onlyFromInstance
           : onlyFromInstance // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiListCopyWith<$Res>? get onlyInRemoteList {
     if (_value.onlyInRemoteList == null) {
       return null;
     }
 
     return $UnifediApiListCopyWith<$Res>(_value.onlyInRemoteList!, (value) {
-      return _then(_value.copyWith(onlyInRemoteList: value));
+      return _then(_value.copyWith(onlyInRemoteList: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiAccountCopyWith<$Res>? get onlyFromRemoteAccount {
     if (_value.onlyFromRemoteAccount == null) {
       return null;
@@ -316,64 +229,49 @@ class _$TimelineSettingsCopyWithImpl<$Res>
 
     return $UnifediApiAccountCopyWith<$Res>(_value.onlyFromRemoteAccount!,
         (value) {
-      return _then(_value.copyWith(onlyFromRemoteAccount: value));
+      return _then(_value.copyWith(onlyFromRemoteAccount: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$TimelineSettingsCopyWith<$Res>
+abstract class _$$TimelineSettingsImplCopyWith<$Res>
     implements $TimelineSettingsCopyWith<$Res> {
-  factory _$TimelineSettingsCopyWith(
-          _TimelineSettings value, $Res Function(_TimelineSettings) then) =
-      __$TimelineSettingsCopyWithImpl<$Res>;
+  factory _$$TimelineSettingsImplCopyWith(_$TimelineSettingsImpl value,
+          $Res Function(_$TimelineSettingsImpl) then) =
+      __$$TimelineSettingsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(1)
-      @JsonKey(name: 'only_with_media')
-          bool? onlyWithMedia,
-      @HiveField(2)
-      @JsonKey(name: 'exclude_replies')
-          bool? excludeReplies,
+      {@HiveField(1) @JsonKey(name: 'only_with_media') bool? onlyWithMedia,
+      @HiveField(2) @JsonKey(name: 'exclude_replies') bool? excludeReplies,
       @HiveField(3)
       @JsonKey(name: 'exclude_nsfw_sensitive')
-          bool? excludeNsfwSensitive,
-      @HiveField(4)
-      @JsonKey(name: 'only_remote')
-          bool? onlyRemote,
-      @HiveField(5)
-      @JsonKey(name: 'only_local')
-          bool? onlyLocal,
-      @HiveField(6)
-      @JsonKey(name: 'with_muted')
-          bool? withMuted,
+      bool? excludeNsfwSensitive,
+      @HiveField(4) @JsonKey(name: 'only_remote') bool? onlyRemote,
+      @HiveField(5) @JsonKey(name: 'only_local') bool? onlyLocal,
+      @HiveField(6) @JsonKey(name: 'with_muted') bool? withMuted,
       @HiveField(7)
       @JsonKey(name: 'exclude_visibilities_strings')
-          List<String>? excludeVisibilitiesStrings,
+      List<String>? excludeVisibilitiesStrings,
       @HiveField(9)
       @JsonKey(name: 'only_in_list')
-          UnifediApiList? onlyInRemoteList,
+      UnifediApiList? onlyInRemoteList,
       @HiveField(10)
       @JsonKey(name: 'with_remote_hashtag')
-          String? withRemoteHashtag,
+      String? withRemoteHashtag,
       @HiveField(11)
       @JsonKey(name: 'reply_visibility_filter_string')
-          String? replyVisibilityFilterString,
+      String? replyVisibilityFilterString,
       @HiveField(13)
       @JsonKey(name: 'only_from_remote_account')
-          UnifediApiAccount? onlyFromRemoteAccount,
-      @HiveField(14)
-      @JsonKey(name: 'only_pinned')
-          bool? onlyPinned,
-      @HiveField(15)
-      @JsonKey(name: 'exclude_reblogs')
-          bool? excludeReblogs,
+      UnifediApiAccount? onlyFromRemoteAccount,
+      @HiveField(14) @JsonKey(name: 'only_pinned') bool? onlyPinned,
+      @HiveField(15) @JsonKey(name: 'exclude_reblogs') bool? excludeReblogs,
       @HiveField(16)
       @JsonKey(name: 'web_sockets_updates')
-          bool? webSocketsUpdates,
-      @HiveField(17)
-      @JsonKey(name: 'instance')
-          String? onlyFromInstance});
+      bool? webSocketsUpdates,
+      @HiveField(17) @JsonKey(name: 'instance') String? onlyFromInstance});
 
   @override
   $UnifediApiListCopyWith<$Res>? get onlyInRemoteList;
@@ -382,16 +280,14 @@ abstract class _$TimelineSettingsCopyWith<$Res>
 }
 
 /// @nodoc
-class __$TimelineSettingsCopyWithImpl<$Res>
-    extends _$TimelineSettingsCopyWithImpl<$Res>
-    implements _$TimelineSettingsCopyWith<$Res> {
-  __$TimelineSettingsCopyWithImpl(
-      _TimelineSettings _value, $Res Function(_TimelineSettings) _then)
-      : super(_value, (v) => _then(v as _TimelineSettings));
+class __$$TimelineSettingsImplCopyWithImpl<$Res>
+    extends _$TimelineSettingsCopyWithImpl<$Res, _$TimelineSettingsImpl>
+    implements _$$TimelineSettingsImplCopyWith<$Res> {
+  __$$TimelineSettingsImplCopyWithImpl(_$TimelineSettingsImpl _value,
+      $Res Function(_$TimelineSettingsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _TimelineSettings get _value => super._value as _TimelineSettings;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? onlyWithMedia = freezed,
@@ -410,64 +306,64 @@ class __$TimelineSettingsCopyWithImpl<$Res>
     Object? webSocketsUpdates = freezed,
     Object? onlyFromInstance = freezed,
   }) {
-    return _then(_TimelineSettings(
-      onlyWithMedia: onlyWithMedia == freezed
+    return _then(_$TimelineSettingsImpl(
+      onlyWithMedia: freezed == onlyWithMedia
           ? _value.onlyWithMedia
           : onlyWithMedia // ignore: cast_nullable_to_non_nullable
               as bool?,
-      excludeReplies: excludeReplies == freezed
+      excludeReplies: freezed == excludeReplies
           ? _value.excludeReplies
           : excludeReplies // ignore: cast_nullable_to_non_nullable
               as bool?,
-      excludeNsfwSensitive: excludeNsfwSensitive == freezed
+      excludeNsfwSensitive: freezed == excludeNsfwSensitive
           ? _value.excludeNsfwSensitive
           : excludeNsfwSensitive // ignore: cast_nullable_to_non_nullable
               as bool?,
-      onlyRemote: onlyRemote == freezed
+      onlyRemote: freezed == onlyRemote
           ? _value.onlyRemote
           : onlyRemote // ignore: cast_nullable_to_non_nullable
               as bool?,
-      onlyLocal: onlyLocal == freezed
+      onlyLocal: freezed == onlyLocal
           ? _value.onlyLocal
           : onlyLocal // ignore: cast_nullable_to_non_nullable
               as bool?,
-      withMuted: withMuted == freezed
+      withMuted: freezed == withMuted
           ? _value.withMuted
           : withMuted // ignore: cast_nullable_to_non_nullable
               as bool?,
-      excludeVisibilitiesStrings: excludeVisibilitiesStrings == freezed
-          ? _value.excludeVisibilitiesStrings
+      excludeVisibilitiesStrings: freezed == excludeVisibilitiesStrings
+          ? _value._excludeVisibilitiesStrings
           : excludeVisibilitiesStrings // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      onlyInRemoteList: onlyInRemoteList == freezed
+      onlyInRemoteList: freezed == onlyInRemoteList
           ? _value.onlyInRemoteList
           : onlyInRemoteList // ignore: cast_nullable_to_non_nullable
               as UnifediApiList?,
-      withRemoteHashtag: withRemoteHashtag == freezed
+      withRemoteHashtag: freezed == withRemoteHashtag
           ? _value.withRemoteHashtag
           : withRemoteHashtag // ignore: cast_nullable_to_non_nullable
               as String?,
-      replyVisibilityFilterString: replyVisibilityFilterString == freezed
+      replyVisibilityFilterString: freezed == replyVisibilityFilterString
           ? _value.replyVisibilityFilterString
           : replyVisibilityFilterString // ignore: cast_nullable_to_non_nullable
               as String?,
-      onlyFromRemoteAccount: onlyFromRemoteAccount == freezed
+      onlyFromRemoteAccount: freezed == onlyFromRemoteAccount
           ? _value.onlyFromRemoteAccount
           : onlyFromRemoteAccount // ignore: cast_nullable_to_non_nullable
               as UnifediApiAccount?,
-      onlyPinned: onlyPinned == freezed
+      onlyPinned: freezed == onlyPinned
           ? _value.onlyPinned
           : onlyPinned // ignore: cast_nullable_to_non_nullable
               as bool?,
-      excludeReblogs: excludeReblogs == freezed
+      excludeReblogs: freezed == excludeReblogs
           ? _value.excludeReblogs
           : excludeReblogs // ignore: cast_nullable_to_non_nullable
               as bool?,
-      webSocketsUpdates: webSocketsUpdates == freezed
+      webSocketsUpdates: freezed == webSocketsUpdates
           ? _value.webSocketsUpdates
           : webSocketsUpdates // ignore: cast_nullable_to_non_nullable
               as bool?,
-      onlyFromInstance: onlyFromInstance == freezed
+      onlyFromInstance: freezed == onlyFromInstance
           ? _value.onlyFromInstance
           : onlyFromInstance // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -477,58 +373,49 @@ class __$TimelineSettingsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_TimelineSettings extends _TimelineSettings
+class _$TimelineSettingsImpl extends _TimelineSettings
     with DiagnosticableTreeMixin {
-  const _$_TimelineSettings(
+  const _$TimelineSettingsImpl(
       {@HiveField(1)
       @JsonKey(name: 'only_with_media')
-          required this.onlyWithMedia,
+      required this.onlyWithMedia,
       @HiveField(2)
       @JsonKey(name: 'exclude_replies')
-          required this.excludeReplies,
+      required this.excludeReplies,
       @HiveField(3)
       @JsonKey(name: 'exclude_nsfw_sensitive')
-          required this.excludeNsfwSensitive,
-      @HiveField(4)
-      @JsonKey(name: 'only_remote')
-          required this.onlyRemote,
-      @HiveField(5)
-      @JsonKey(name: 'only_local')
-          required this.onlyLocal,
-      @HiveField(6)
-      @JsonKey(name: 'with_muted')
-          required this.withMuted,
+      required this.excludeNsfwSensitive,
+      @HiveField(4) @JsonKey(name: 'only_remote') required this.onlyRemote,
+      @HiveField(5) @JsonKey(name: 'only_local') required this.onlyLocal,
+      @HiveField(6) @JsonKey(name: 'with_muted') required this.withMuted,
       @HiveField(7)
       @JsonKey(name: 'exclude_visibilities_strings')
-          required this.excludeVisibilitiesStrings,
+      required final List<String>? excludeVisibilitiesStrings,
       @HiveField(9)
       @JsonKey(name: 'only_in_list')
-          required this.onlyInRemoteList,
+      required this.onlyInRemoteList,
       @HiveField(10)
       @JsonKey(name: 'with_remote_hashtag')
-          required this.withRemoteHashtag,
+      required this.withRemoteHashtag,
       @HiveField(11)
       @JsonKey(name: 'reply_visibility_filter_string')
-          required this.replyVisibilityFilterString,
+      required this.replyVisibilityFilterString,
       @HiveField(13)
       @JsonKey(name: 'only_from_remote_account')
-          required this.onlyFromRemoteAccount,
-      @HiveField(14)
-      @JsonKey(name: 'only_pinned')
-          required this.onlyPinned,
+      required this.onlyFromRemoteAccount,
+      @HiveField(14) @JsonKey(name: 'only_pinned') required this.onlyPinned,
       @HiveField(15)
       @JsonKey(name: 'exclude_reblogs')
-          required this.excludeReblogs,
+      required this.excludeReblogs,
       @HiveField(16)
       @JsonKey(name: 'web_sockets_updates')
-          required this.webSocketsUpdates,
-      @HiveField(17)
-      @JsonKey(name: 'instance')
-          required this.onlyFromInstance})
-      : super._();
+      required this.webSocketsUpdates,
+      @HiveField(17) @JsonKey(name: 'instance') required this.onlyFromInstance})
+      : _excludeVisibilitiesStrings = excludeVisibilitiesStrings,
+        super._();
 
-  factory _$_TimelineSettings.fromJson(Map<String, dynamic> json) =>
-      _$$_TimelineSettingsFromJson(json);
+  factory _$TimelineSettingsImpl.fromJson(Map<String, dynamic> json) =>
+      _$$TimelineSettingsImplFromJson(json);
 
   @override
   @HiveField(1)
@@ -554,10 +441,19 @@ class _$_TimelineSettings extends _TimelineSettings
   @HiveField(6)
   @JsonKey(name: 'with_muted')
   final bool? withMuted;
+  final List<String>? _excludeVisibilitiesStrings;
   @override
   @HiveField(7)
   @JsonKey(name: 'exclude_visibilities_strings')
-  final List<String>? excludeVisibilitiesStrings;
+  List<String>? get excludeVisibilitiesStrings {
+    final value = _excludeVisibilitiesStrings;
+    if (value == null) return null;
+    if (_excludeVisibilitiesStrings is EqualUnmodifiableListView)
+      return _excludeVisibilitiesStrings;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(9)
   @JsonKey(name: 'only_in_list')
@@ -621,10 +517,10 @@ class _$_TimelineSettings extends _TimelineSettings
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _TimelineSettings &&
+            other is _$TimelineSettingsImpl &&
             (identical(other.onlyWithMedia, onlyWithMedia) ||
                 other.onlyWithMedia == onlyWithMedia) &&
             (identical(other.excludeReplies, excludeReplies) ||
@@ -638,7 +534,8 @@ class _$_TimelineSettings extends _TimelineSettings
             (identical(other.withMuted, withMuted) ||
                 other.withMuted == withMuted) &&
             const DeepCollectionEquality().equals(
-                other.excludeVisibilitiesStrings, excludeVisibilitiesStrings) &&
+                other._excludeVisibilitiesStrings,
+                _excludeVisibilitiesStrings) &&
             (identical(other.onlyInRemoteList, onlyInRemoteList) ||
                 other.onlyInRemoteList == onlyInRemoteList) &&
             (identical(other.withRemoteHashtag, withRemoteHashtag) ||
@@ -659,6 +556,7 @@ class _$_TimelineSettings extends _TimelineSettings
                 other.onlyFromInstance == onlyFromInstance));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -668,7 +566,7 @@ class _$_TimelineSettings extends _TimelineSettings
       onlyRemote,
       onlyLocal,
       withMuted,
-      const DeepCollectionEquality().hash(excludeVisibilitiesStrings),
+      const DeepCollectionEquality().hash(_excludeVisibilitiesStrings),
       onlyInRemoteList,
       withRemoteHashtag,
       replyVisibilityFilterString,
@@ -680,12 +578,16 @@ class _$_TimelineSettings extends _TimelineSettings
 
   @JsonKey(ignore: true)
   @override
-  _$TimelineSettingsCopyWith<_TimelineSettings> get copyWith =>
-      __$TimelineSettingsCopyWithImpl<_TimelineSettings>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$TimelineSettingsImplCopyWith<_$TimelineSettingsImpl> get copyWith =>
+      __$$TimelineSettingsImplCopyWithImpl<_$TimelineSettingsImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_TimelineSettingsToJson(this);
+    return _$$TimelineSettingsImplToJson(
+      this,
+    );
   }
 }
 
@@ -693,53 +595,49 @@ abstract class _TimelineSettings extends TimelineSettings {
   const factory _TimelineSettings(
       {@HiveField(1)
       @JsonKey(name: 'only_with_media')
-          required bool? onlyWithMedia,
+      required final bool? onlyWithMedia,
       @HiveField(2)
       @JsonKey(name: 'exclude_replies')
-          required bool? excludeReplies,
+      required final bool? excludeReplies,
       @HiveField(3)
       @JsonKey(name: 'exclude_nsfw_sensitive')
-          required bool? excludeNsfwSensitive,
+      required final bool? excludeNsfwSensitive,
       @HiveField(4)
       @JsonKey(name: 'only_remote')
-          required bool? onlyRemote,
-      @HiveField(5)
-      @JsonKey(name: 'only_local')
-          required bool? onlyLocal,
-      @HiveField(6)
-      @JsonKey(name: 'with_muted')
-          required bool? withMuted,
+      required final bool? onlyRemote,
+      @HiveField(5) @JsonKey(name: 'only_local') required final bool? onlyLocal,
+      @HiveField(6) @JsonKey(name: 'with_muted') required final bool? withMuted,
       @HiveField(7)
       @JsonKey(name: 'exclude_visibilities_strings')
-          required List<String>? excludeVisibilitiesStrings,
+      required final List<String>? excludeVisibilitiesStrings,
       @HiveField(9)
       @JsonKey(name: 'only_in_list')
-          required UnifediApiList? onlyInRemoteList,
+      required final UnifediApiList? onlyInRemoteList,
       @HiveField(10)
       @JsonKey(name: 'with_remote_hashtag')
-          required String? withRemoteHashtag,
+      required final String? withRemoteHashtag,
       @HiveField(11)
       @JsonKey(name: 'reply_visibility_filter_string')
-          required String? replyVisibilityFilterString,
+      required final String? replyVisibilityFilterString,
       @HiveField(13)
       @JsonKey(name: 'only_from_remote_account')
-          required UnifediApiAccount? onlyFromRemoteAccount,
+      required final UnifediApiAccount? onlyFromRemoteAccount,
       @HiveField(14)
       @JsonKey(name: 'only_pinned')
-          required bool? onlyPinned,
+      required final bool? onlyPinned,
       @HiveField(15)
       @JsonKey(name: 'exclude_reblogs')
-          required bool? excludeReblogs,
+      required final bool? excludeReblogs,
       @HiveField(16)
       @JsonKey(name: 'web_sockets_updates')
-          required bool? webSocketsUpdates,
+      required final bool? webSocketsUpdates,
       @HiveField(17)
       @JsonKey(name: 'instance')
-          required String? onlyFromInstance}) = _$_TimelineSettings;
+      required final String? onlyFromInstance}) = _$TimelineSettingsImpl;
   const _TimelineSettings._() : super._();
 
   factory _TimelineSettings.fromJson(Map<String, dynamic> json) =
-      _$_TimelineSettings.fromJson;
+      _$TimelineSettingsImpl.fromJson;
 
   @override
   @HiveField(1)
@@ -803,6 +701,6 @@ abstract class _TimelineSettings extends TimelineSettings {
   String? get onlyFromInstance;
   @override
   @JsonKey(ignore: true)
-  _$TimelineSettingsCopyWith<_TimelineSettings> get copyWith =>
+  _$$TimelineSettingsImplCopyWith<_$TimelineSettingsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

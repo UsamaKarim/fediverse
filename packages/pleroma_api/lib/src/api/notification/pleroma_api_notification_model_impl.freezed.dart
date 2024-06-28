@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_notification_model_impl.dart';
 
@@ -11,34 +12,12 @@ part of 'pleroma_api_notification_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiNotificationPleromaPart _$PleromaApiNotificationPleromaPartFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiNotificationPleromaPart.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiNotificationPleromaPartTearOff {
-  const _$PleromaApiNotificationPleromaPartTearOff();
-
-  _PleromaApiNotificationPleromaPart call(
-      {@HiveField(0) @JsonKey(name: 'is_seen') required bool? isSeen,
-      @HiveField(1) @JsonKey(name: 'is_muted') required bool? isMuted}) {
-    return _PleromaApiNotificationPleromaPart(
-      isSeen: isSeen,
-      isMuted: isMuted,
-    );
-  }
-
-  PleromaApiNotificationPleromaPart fromJson(Map<String, Object?> json) {
-    return PleromaApiNotificationPleromaPart.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiNotificationPleromaPart =
-    _$PleromaApiNotificationPleromaPartTearOff();
 
 /// @nodoc
 mixin _$PleromaApiNotificationPleromaPart {
@@ -60,76 +39,80 @@ abstract class $PleromaApiNotificationPleromaPartCopyWith<$Res> {
   factory $PleromaApiNotificationPleromaPartCopyWith(
           PleromaApiNotificationPleromaPart value,
           $Res Function(PleromaApiNotificationPleromaPart) then) =
-      _$PleromaApiNotificationPleromaPartCopyWithImpl<$Res>;
+      _$PleromaApiNotificationPleromaPartCopyWithImpl<$Res,
+          PleromaApiNotificationPleromaPart>;
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'is_seen') bool? isSeen,
       @HiveField(1) @JsonKey(name: 'is_muted') bool? isMuted});
 }
 
 /// @nodoc
-class _$PleromaApiNotificationPleromaPartCopyWithImpl<$Res>
+class _$PleromaApiNotificationPleromaPartCopyWithImpl<$Res,
+        $Val extends PleromaApiNotificationPleromaPart>
     implements $PleromaApiNotificationPleromaPartCopyWith<$Res> {
   _$PleromaApiNotificationPleromaPartCopyWithImpl(this._value, this._then);
 
-  final PleromaApiNotificationPleromaPart _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiNotificationPleromaPart) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? isSeen = freezed,
     Object? isMuted = freezed,
   }) {
     return _then(_value.copyWith(
-      isSeen: isSeen == freezed
+      isSeen: freezed == isSeen
           ? _value.isSeen
           : isSeen // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isMuted: isMuted == freezed
+      isMuted: freezed == isMuted
           ? _value.isMuted
           : isMuted // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiNotificationPleromaPartCopyWith<$Res>
+abstract class _$$PleromaApiNotificationPleromaPartImplCopyWith<$Res>
     implements $PleromaApiNotificationPleromaPartCopyWith<$Res> {
-  factory _$PleromaApiNotificationPleromaPartCopyWith(
-          _PleromaApiNotificationPleromaPart value,
-          $Res Function(_PleromaApiNotificationPleromaPart) then) =
-      __$PleromaApiNotificationPleromaPartCopyWithImpl<$Res>;
+  factory _$$PleromaApiNotificationPleromaPartImplCopyWith(
+          _$PleromaApiNotificationPleromaPartImpl value,
+          $Res Function(_$PleromaApiNotificationPleromaPartImpl) then) =
+      __$$PleromaApiNotificationPleromaPartImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'is_seen') bool? isSeen,
       @HiveField(1) @JsonKey(name: 'is_muted') bool? isMuted});
 }
 
 /// @nodoc
-class __$PleromaApiNotificationPleromaPartCopyWithImpl<$Res>
-    extends _$PleromaApiNotificationPleromaPartCopyWithImpl<$Res>
-    implements _$PleromaApiNotificationPleromaPartCopyWith<$Res> {
-  __$PleromaApiNotificationPleromaPartCopyWithImpl(
-      _PleromaApiNotificationPleromaPart _value,
-      $Res Function(_PleromaApiNotificationPleromaPart) _then)
-      : super(_value, (v) => _then(v as _PleromaApiNotificationPleromaPart));
+class __$$PleromaApiNotificationPleromaPartImplCopyWithImpl<$Res>
+    extends _$PleromaApiNotificationPleromaPartCopyWithImpl<$Res,
+        _$PleromaApiNotificationPleromaPartImpl>
+    implements _$$PleromaApiNotificationPleromaPartImplCopyWith<$Res> {
+  __$$PleromaApiNotificationPleromaPartImplCopyWithImpl(
+      _$PleromaApiNotificationPleromaPartImpl _value,
+      $Res Function(_$PleromaApiNotificationPleromaPartImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiNotificationPleromaPart get _value =>
-      super._value as _PleromaApiNotificationPleromaPart;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? isSeen = freezed,
     Object? isMuted = freezed,
   }) {
-    return _then(_PleromaApiNotificationPleromaPart(
-      isSeen: isSeen == freezed
+    return _then(_$PleromaApiNotificationPleromaPartImpl(
+      isSeen: freezed == isSeen
           ? _value.isSeen
           : isSeen // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isMuted: isMuted == freezed
+      isMuted: freezed == isMuted
           ? _value.isMuted
           : isMuted // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -139,15 +122,15 @@ class __$PleromaApiNotificationPleromaPartCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiNotificationPleromaPart
+class _$PleromaApiNotificationPleromaPartImpl
     implements _PleromaApiNotificationPleromaPart {
-  const _$_PleromaApiNotificationPleromaPart(
+  const _$PleromaApiNotificationPleromaPartImpl(
       {@HiveField(0) @JsonKey(name: 'is_seen') required this.isSeen,
       @HiveField(1) @JsonKey(name: 'is_muted') required this.isMuted});
 
-  factory _$_PleromaApiNotificationPleromaPart.fromJson(
+  factory _$PleromaApiNotificationPleromaPartImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_PleromaApiNotificationPleromaPartFromJson(json);
+      _$$PleromaApiNotificationPleromaPartImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -164,40 +147,45 @@ class _$_PleromaApiNotificationPleromaPart
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiNotificationPleromaPart &&
+            other is _$PleromaApiNotificationPleromaPartImpl &&
             (identical(other.isSeen, isSeen) || other.isSeen == isSeen) &&
             (identical(other.isMuted, isMuted) || other.isMuted == isMuted));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, isSeen, isMuted);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiNotificationPleromaPartCopyWith<
-          _PleromaApiNotificationPleromaPart>
-      get copyWith => __$PleromaApiNotificationPleromaPartCopyWithImpl<
-          _PleromaApiNotificationPleromaPart>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiNotificationPleromaPartImplCopyWith<
+          _$PleromaApiNotificationPleromaPartImpl>
+      get copyWith => __$$PleromaApiNotificationPleromaPartImplCopyWithImpl<
+          _$PleromaApiNotificationPleromaPartImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiNotificationPleromaPartToJson(this);
+    return _$$PleromaApiNotificationPleromaPartImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiNotificationPleromaPart
     implements PleromaApiNotificationPleromaPart {
   const factory _PleromaApiNotificationPleromaPart(
-          {@HiveField(0) @JsonKey(name: 'is_seen') required bool? isSeen,
-          @HiveField(1) @JsonKey(name: 'is_muted') required bool? isMuted}) =
-      _$_PleromaApiNotificationPleromaPart;
+      {@HiveField(0) @JsonKey(name: 'is_seen') required final bool? isSeen,
+      @HiveField(1)
+      @JsonKey(name: 'is_muted')
+      required final bool? isMuted}) = _$PleromaApiNotificationPleromaPartImpl;
 
   factory _PleromaApiNotificationPleromaPart.fromJson(
           Map<String, dynamic> json) =
-      _$_PleromaApiNotificationPleromaPart.fromJson;
+      _$PleromaApiNotificationPleromaPartImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -209,8 +197,8 @@ abstract class _PleromaApiNotificationPleromaPart
   bool? get isMuted;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiNotificationPleromaPartCopyWith<
-          _PleromaApiNotificationPleromaPart>
+  _$$PleromaApiNotificationPleromaPartImplCopyWith<
+          _$PleromaApiNotificationPleromaPartImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -218,55 +206,6 @@ PleromaApiNotification _$PleromaApiNotificationFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiNotification.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiNotificationTearOff {
-  const _$PleromaApiNotificationTearOff();
-
-  _PleromaApiNotification call(
-      {@HiveField(0)
-          required PleromaApiAccount? account,
-      @HiveField(1)
-          required PleromaApiAccount? target,
-      @HiveField(2)
-      @JsonKey(name: 'created_at')
-          required DateTime createdAt,
-      @HiveField(3)
-          required String id,
-      @HiveField(4)
-          required String type,
-      @HiveField(5)
-          required PleromaApiStatus? status,
-      @HiveField(6)
-          required String? emoji,
-      @HiveField(7)
-          required PleromaApiNotificationPleromaPart? pleroma,
-      @HiveField(8)
-      @JsonKey(name: 'chat_message')
-          required PleromaApiChatMessage? chatMessage,
-      @HiveField(9)
-          required PleromaApiAccountReport? report}) {
-    return _PleromaApiNotification(
-      account: account,
-      target: target,
-      createdAt: createdAt,
-      id: id,
-      type: type,
-      status: status,
-      emoji: emoji,
-      pleroma: pleroma,
-      chatMessage: chatMessage,
-      report: report,
-    );
-  }
-
-  PleromaApiNotification fromJson(Map<String, Object?> json) {
-    return PleromaApiNotification.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiNotification = _$PleromaApiNotificationTearOff();
 
 /// @nodoc
 mixin _$PleromaApiNotification {
@@ -304,30 +243,21 @@ mixin _$PleromaApiNotification {
 abstract class $PleromaApiNotificationCopyWith<$Res> {
   factory $PleromaApiNotificationCopyWith(PleromaApiNotification value,
           $Res Function(PleromaApiNotification) then) =
-      _$PleromaApiNotificationCopyWithImpl<$Res>;
+      _$PleromaApiNotificationCopyWithImpl<$Res, PleromaApiNotification>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-          PleromaApiAccount? account,
-      @HiveField(1)
-          PleromaApiAccount? target,
-      @HiveField(2)
-      @JsonKey(name: 'created_at')
-          DateTime createdAt,
-      @HiveField(3)
-          String id,
-      @HiveField(4)
-          String type,
-      @HiveField(5)
-          PleromaApiStatus? status,
-      @HiveField(6)
-          String? emoji,
-      @HiveField(7)
-          PleromaApiNotificationPleromaPart? pleroma,
+      {@HiveField(0) PleromaApiAccount? account,
+      @HiveField(1) PleromaApiAccount? target,
+      @HiveField(2) @JsonKey(name: 'created_at') DateTime createdAt,
+      @HiveField(3) String id,
+      @HiveField(4) String type,
+      @HiveField(5) PleromaApiStatus? status,
+      @HiveField(6) String? emoji,
+      @HiveField(7) PleromaApiNotificationPleromaPart? pleroma,
       @HiveField(8)
       @JsonKey(name: 'chat_message')
-          PleromaApiChatMessage? chatMessage,
-      @HiveField(9)
-          PleromaApiAccountReport? report});
+      PleromaApiChatMessage? chatMessage,
+      @HiveField(9) PleromaApiAccountReport? report});
 
   $PleromaApiAccountCopyWith<$Res>? get account;
   $PleromaApiAccountCopyWith<$Res>? get target;
@@ -338,21 +268,24 @@ abstract class $PleromaApiNotificationCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiNotificationCopyWithImpl<$Res>
+class _$PleromaApiNotificationCopyWithImpl<$Res,
+        $Val extends PleromaApiNotification>
     implements $PleromaApiNotificationCopyWith<$Res> {
   _$PleromaApiNotificationCopyWithImpl(this._value, this._then);
 
-  final PleromaApiNotification _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiNotification) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? account = freezed,
     Object? target = freezed,
-    Object? createdAt = freezed,
-    Object? id = freezed,
-    Object? type = freezed,
+    Object? createdAt = null,
+    Object? id = null,
+    Object? type = null,
     Object? status = freezed,
     Object? emoji = freezed,
     Object? pleroma = freezed,
@@ -360,83 +293,87 @@ class _$PleromaApiNotificationCopyWithImpl<$Res>
     Object? report = freezed,
   }) {
     return _then(_value.copyWith(
-      account: account == freezed
+      account: freezed == account
           ? _value.account
           : account // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccount?,
-      target: target == freezed
+      target: freezed == target
           ? _value.target
           : target // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccount?,
-      createdAt: createdAt == freezed
+      createdAt: null == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      status: status == freezed
+      status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as PleromaApiStatus?,
-      emoji: emoji == freezed
+      emoji: freezed == emoji
           ? _value.emoji
           : emoji // ignore: cast_nullable_to_non_nullable
               as String?,
-      pleroma: pleroma == freezed
+      pleroma: freezed == pleroma
           ? _value.pleroma
           : pleroma // ignore: cast_nullable_to_non_nullable
               as PleromaApiNotificationPleromaPart?,
-      chatMessage: chatMessage == freezed
+      chatMessage: freezed == chatMessage
           ? _value.chatMessage
           : chatMessage // ignore: cast_nullable_to_non_nullable
               as PleromaApiChatMessage?,
-      report: report == freezed
+      report: freezed == report
           ? _value.report
           : report // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccountReport?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiAccountCopyWith<$Res>? get account {
     if (_value.account == null) {
       return null;
     }
 
     return $PleromaApiAccountCopyWith<$Res>(_value.account!, (value) {
-      return _then(_value.copyWith(account: value));
+      return _then(_value.copyWith(account: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiAccountCopyWith<$Res>? get target {
     if (_value.target == null) {
       return null;
     }
 
     return $PleromaApiAccountCopyWith<$Res>(_value.target!, (value) {
-      return _then(_value.copyWith(target: value));
+      return _then(_value.copyWith(target: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiStatusCopyWith<$Res>? get status {
     if (_value.status == null) {
       return null;
     }
 
     return $PleromaApiStatusCopyWith<$Res>(_value.status!, (value) {
-      return _then(_value.copyWith(status: value));
+      return _then(_value.copyWith(status: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiNotificationPleromaPartCopyWith<$Res>? get pleroma {
     if (_value.pleroma == null) {
       return null;
@@ -444,63 +381,57 @@ class _$PleromaApiNotificationCopyWithImpl<$Res>
 
     return $PleromaApiNotificationPleromaPartCopyWith<$Res>(_value.pleroma!,
         (value) {
-      return _then(_value.copyWith(pleroma: value));
+      return _then(_value.copyWith(pleroma: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiChatMessageCopyWith<$Res>? get chatMessage {
     if (_value.chatMessage == null) {
       return null;
     }
 
     return $PleromaApiChatMessageCopyWith<$Res>(_value.chatMessage!, (value) {
-      return _then(_value.copyWith(chatMessage: value));
+      return _then(_value.copyWith(chatMessage: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiAccountReportCopyWith<$Res>? get report {
     if (_value.report == null) {
       return null;
     }
 
     return $PleromaApiAccountReportCopyWith<$Res>(_value.report!, (value) {
-      return _then(_value.copyWith(report: value));
+      return _then(_value.copyWith(report: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiNotificationCopyWith<$Res>
+abstract class _$$PleromaApiNotificationImplCopyWith<$Res>
     implements $PleromaApiNotificationCopyWith<$Res> {
-  factory _$PleromaApiNotificationCopyWith(_PleromaApiNotification value,
-          $Res Function(_PleromaApiNotification) then) =
-      __$PleromaApiNotificationCopyWithImpl<$Res>;
+  factory _$$PleromaApiNotificationImplCopyWith(
+          _$PleromaApiNotificationImpl value,
+          $Res Function(_$PleromaApiNotificationImpl) then) =
+      __$$PleromaApiNotificationImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-          PleromaApiAccount? account,
-      @HiveField(1)
-          PleromaApiAccount? target,
-      @HiveField(2)
-      @JsonKey(name: 'created_at')
-          DateTime createdAt,
-      @HiveField(3)
-          String id,
-      @HiveField(4)
-          String type,
-      @HiveField(5)
-          PleromaApiStatus? status,
-      @HiveField(6)
-          String? emoji,
-      @HiveField(7)
-          PleromaApiNotificationPleromaPart? pleroma,
+      {@HiveField(0) PleromaApiAccount? account,
+      @HiveField(1) PleromaApiAccount? target,
+      @HiveField(2) @JsonKey(name: 'created_at') DateTime createdAt,
+      @HiveField(3) String id,
+      @HiveField(4) String type,
+      @HiveField(5) PleromaApiStatus? status,
+      @HiveField(6) String? emoji,
+      @HiveField(7) PleromaApiNotificationPleromaPart? pleroma,
       @HiveField(8)
       @JsonKey(name: 'chat_message')
-          PleromaApiChatMessage? chatMessage,
-      @HiveField(9)
-          PleromaApiAccountReport? report});
+      PleromaApiChatMessage? chatMessage,
+      @HiveField(9) PleromaApiAccountReport? report});
 
   @override
   $PleromaApiAccountCopyWith<$Res>? get account;
@@ -517,67 +448,67 @@ abstract class _$PleromaApiNotificationCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiNotificationCopyWithImpl<$Res>
-    extends _$PleromaApiNotificationCopyWithImpl<$Res>
-    implements _$PleromaApiNotificationCopyWith<$Res> {
-  __$PleromaApiNotificationCopyWithImpl(_PleromaApiNotification _value,
-      $Res Function(_PleromaApiNotification) _then)
-      : super(_value, (v) => _then(v as _PleromaApiNotification));
+class __$$PleromaApiNotificationImplCopyWithImpl<$Res>
+    extends _$PleromaApiNotificationCopyWithImpl<$Res,
+        _$PleromaApiNotificationImpl>
+    implements _$$PleromaApiNotificationImplCopyWith<$Res> {
+  __$$PleromaApiNotificationImplCopyWithImpl(
+      _$PleromaApiNotificationImpl _value,
+      $Res Function(_$PleromaApiNotificationImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiNotification get _value => super._value as _PleromaApiNotification;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? account = freezed,
     Object? target = freezed,
-    Object? createdAt = freezed,
-    Object? id = freezed,
-    Object? type = freezed,
+    Object? createdAt = null,
+    Object? id = null,
+    Object? type = null,
     Object? status = freezed,
     Object? emoji = freezed,
     Object? pleroma = freezed,
     Object? chatMessage = freezed,
     Object? report = freezed,
   }) {
-    return _then(_PleromaApiNotification(
-      account: account == freezed
+    return _then(_$PleromaApiNotificationImpl(
+      account: freezed == account
           ? _value.account
           : account // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccount?,
-      target: target == freezed
+      target: freezed == target
           ? _value.target
           : target // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccount?,
-      createdAt: createdAt == freezed
+      createdAt: null == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      status: status == freezed
+      status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as PleromaApiStatus?,
-      emoji: emoji == freezed
+      emoji: freezed == emoji
           ? _value.emoji
           : emoji // ignore: cast_nullable_to_non_nullable
               as String?,
-      pleroma: pleroma == freezed
+      pleroma: freezed == pleroma
           ? _value.pleroma
           : pleroma // ignore: cast_nullable_to_non_nullable
               as PleromaApiNotificationPleromaPart?,
-      chatMessage: chatMessage == freezed
+      chatMessage: freezed == chatMessage
           ? _value.chatMessage
           : chatMessage // ignore: cast_nullable_to_non_nullable
               as PleromaApiChatMessage?,
-      report: report == freezed
+      report: freezed == report
           ? _value.report
           : report // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccountReport?,
@@ -587,8 +518,8 @@ class __$PleromaApiNotificationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiNotification implements _PleromaApiNotification {
-  const _$_PleromaApiNotification(
+class _$PleromaApiNotificationImpl implements _PleromaApiNotification {
+  const _$PleromaApiNotificationImpl(
       {@HiveField(0) required this.account,
       @HiveField(1) required this.target,
       @HiveField(2) @JsonKey(name: 'created_at') required this.createdAt,
@@ -600,8 +531,8 @@ class _$_PleromaApiNotification implements _PleromaApiNotification {
       @HiveField(8) @JsonKey(name: 'chat_message') required this.chatMessage,
       @HiveField(9) required this.report});
 
-  factory _$_PleromaApiNotification.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiNotificationFromJson(json);
+  factory _$PleromaApiNotificationImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiNotificationImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -642,10 +573,10 @@ class _$_PleromaApiNotification implements _PleromaApiNotification {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiNotification &&
+            other is _$PleromaApiNotificationImpl &&
             (identical(other.account, account) || other.account == account) &&
             (identical(other.target, target) || other.target == target) &&
             (identical(other.createdAt, createdAt) ||
@@ -660,50 +591,47 @@ class _$_PleromaApiNotification implements _PleromaApiNotification {
             (identical(other.report, report) || other.report == report));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, account, target, createdAt, id,
       type, status, emoji, pleroma, chatMessage, report);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiNotificationCopyWith<_PleromaApiNotification> get copyWith =>
-      __$PleromaApiNotificationCopyWithImpl<_PleromaApiNotification>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiNotificationImplCopyWith<_$PleromaApiNotificationImpl>
+      get copyWith => __$$PleromaApiNotificationImplCopyWithImpl<
+          _$PleromaApiNotificationImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiNotificationToJson(this);
+    return _$$PleromaApiNotificationImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiNotification implements PleromaApiNotification {
   const factory _PleromaApiNotification(
-          {@HiveField(0)
-              required PleromaApiAccount? account,
-          @HiveField(1)
-              required PleromaApiAccount? target,
-          @HiveField(2)
-          @JsonKey(name: 'created_at')
-              required DateTime createdAt,
-          @HiveField(3)
-              required String id,
-          @HiveField(4)
-              required String type,
-          @HiveField(5)
-              required PleromaApiStatus? status,
-          @HiveField(6)
-              required String? emoji,
-          @HiveField(7)
-              required PleromaApiNotificationPleromaPart? pleroma,
-          @HiveField(8)
-          @JsonKey(name: 'chat_message')
-              required PleromaApiChatMessage? chatMessage,
-          @HiveField(9)
-              required PleromaApiAccountReport? report}) =
-      _$_PleromaApiNotification;
+      {@HiveField(0) required final PleromaApiAccount? account,
+      @HiveField(1) required final PleromaApiAccount? target,
+      @HiveField(2)
+      @JsonKey(name: 'created_at')
+      required final DateTime createdAt,
+      @HiveField(3) required final String id,
+      @HiveField(4) required final String type,
+      @HiveField(5) required final PleromaApiStatus? status,
+      @HiveField(6) required final String? emoji,
+      @HiveField(7) required final PleromaApiNotificationPleromaPart? pleroma,
+      @HiveField(8)
+      @JsonKey(name: 'chat_message')
+      required final PleromaApiChatMessage? chatMessage,
+      @HiveField(9)
+      required final PleromaApiAccountReport?
+          report}) = _$PleromaApiNotificationImpl;
 
   factory _PleromaApiNotification.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiNotification.fromJson;
+      _$PleromaApiNotificationImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -739,6 +667,6 @@ abstract class _PleromaApiNotification implements PleromaApiNotification {
   PleromaApiAccountReport? get report;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiNotificationCopyWith<_PleromaApiNotification> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PleromaApiNotificationImplCopyWith<_$PleromaApiNotificationImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

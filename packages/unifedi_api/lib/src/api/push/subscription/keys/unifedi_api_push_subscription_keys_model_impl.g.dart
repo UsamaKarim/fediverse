@@ -48,15 +48,15 @@ class UnifediApiPushSubscriptionKeysAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiPushSubscriptionKeys _$$_UnifediApiPushSubscriptionKeysFromJson(
-        Map<String, dynamic> json) =>
-    _$_UnifediApiPushSubscriptionKeys(
-      p256dh: json['p256dh'] as String,
-      auth: json['auth'] as String,
-    );
+_$UnifediApiPushSubscriptionKeysImpl
+    _$$UnifediApiPushSubscriptionKeysImplFromJson(Map<String, dynamic> json) =>
+        _$UnifediApiPushSubscriptionKeysImpl(
+          p256dh: json['p256dh'] as String,
+          auth: json['auth'] as String,
+        );
 
-Map<String, dynamic> _$$_UnifediApiPushSubscriptionKeysToJson(
-        _$_UnifediApiPushSubscriptionKeys instance) =>
+Map<String, dynamic> _$$UnifediApiPushSubscriptionKeysImplToJson(
+        _$UnifediApiPushSubscriptionKeysImpl instance) =>
     <String, dynamic>{
       'p256dh': instance.p256dh,
       'auth': instance.auth,

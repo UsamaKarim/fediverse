@@ -46,16 +46,16 @@ class UnifediApiMediaAttachmentSizePleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiMediaAttachmentSizePleromaAdapter
-    _$$_UnifediApiMediaAttachmentSizePleromaAdapterFromJson(
+_$UnifediApiMediaAttachmentSizePleromaAdapterImpl
+    _$$UnifediApiMediaAttachmentSizePleromaAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiMediaAttachmentSizePleromaAdapter(
+        _$UnifediApiMediaAttachmentSizePleromaAdapterImpl(
           PleromaApiMediaAttachmentSize.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiMediaAttachmentSizePleromaAdapterToJson(
-        _$_UnifediApiMediaAttachmentSizePleromaAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiMediaAttachmentSizePleromaAdapterImplToJson(
+        _$UnifediApiMediaAttachmentSizePleromaAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

@@ -50,16 +50,16 @@ class UnifediApiPaginationAdapter extends TypeAdapter<UnifediApiPagination> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiPagination _$$_UnifediApiPaginationFromJson(
+_$UnifediApiPaginationImpl _$$UnifediApiPaginationImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiPagination(
-      limit: json['limit'] as int?,
+    _$UnifediApiPaginationImpl(
+      limit: (json['limit'] as num?)?.toInt(),
       maxId: json['max_id'] as String?,
       minId: json['min_id'] as String?,
     );
 
-Map<String, dynamic> _$$_UnifediApiPaginationToJson(
-    _$_UnifediApiPagination instance) {
+Map<String, dynamic> _$$UnifediApiPaginationImplToJson(
+    _$UnifediApiPaginationImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

@@ -46,15 +46,15 @@ class UnifediApiInstanceMediaLimitsPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiInstanceMediaLimitsPleromaAdapter
-    _$$_UnifediApiInstanceMediaLimitsPleromaAdapterFromJson(
+_$UnifediApiInstanceMediaLimitsPleromaAdapterImpl
+    _$$UnifediApiInstanceMediaLimitsPleromaAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiInstanceMediaLimitsPleromaAdapter(
+        _$UnifediApiInstanceMediaLimitsPleromaAdapterImpl(
           PleromaApiInstance.fromJson(json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiInstanceMediaLimitsPleromaAdapterToJson(
-        _$_UnifediApiInstanceMediaLimitsPleromaAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiInstanceMediaLimitsPleromaAdapterImplToJson(
+        _$UnifediApiInstanceMediaLimitsPleromaAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

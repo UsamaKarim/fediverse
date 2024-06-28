@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_my_account_notifications_settings_model_impl.dart';
 
@@ -11,53 +12,13 @@ part of 'unifedi_api_my_account_notifications_settings_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiMyAccountNotificationsSettings
     _$UnifediApiMyAccountNotificationsSettingsFromJson(
         Map<String, dynamic> json) {
   return _UnifediApiMyAccountNotificationsSettings.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiMyAccountNotificationsSettingsTearOff {
-  const _$UnifediApiMyAccountNotificationsSettingsTearOff();
-
-  _UnifediApiMyAccountNotificationsSettings call(
-      {@HiveField(0)
-          required bool? followers,
-      @HiveField(1)
-          required bool? follows,
-      @JsonKey(name: 'non_followers')
-      @HiveField(2)
-          required bool? nonFollowers,
-      @JsonKey(name: 'non_follows')
-      @HiveField(3)
-          required bool? nonFollows,
-      @JsonKey(name: 'block_from_strangers')
-      @HiveField(4)
-          required bool? blockFromStrangers,
-      @JsonKey(name: 'hide_notification_contents')
-      @HiveField(5)
-          required bool? hideNotificationContents}) {
-    return _UnifediApiMyAccountNotificationsSettings(
-      followers: followers,
-      follows: follows,
-      nonFollowers: nonFollowers,
-      nonFollows: nonFollows,
-      blockFromStrangers: blockFromStrangers,
-      hideNotificationContents: hideNotificationContents,
-    );
-  }
-
-  UnifediApiMyAccountNotificationsSettings fromJson(Map<String, Object?> json) {
-    return UnifediApiMyAccountNotificationsSettings.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiMyAccountNotificationsSettings =
-    _$UnifediApiMyAccountNotificationsSettingsTearOff();
 
 /// @nodoc
 mixin _$UnifediApiMyAccountNotificationsSettings {
@@ -90,36 +51,35 @@ abstract class $UnifediApiMyAccountNotificationsSettingsCopyWith<$Res> {
   factory $UnifediApiMyAccountNotificationsSettingsCopyWith(
           UnifediApiMyAccountNotificationsSettings value,
           $Res Function(UnifediApiMyAccountNotificationsSettings) then) =
-      _$UnifediApiMyAccountNotificationsSettingsCopyWithImpl<$Res>;
+      _$UnifediApiMyAccountNotificationsSettingsCopyWithImpl<$Res,
+          UnifediApiMyAccountNotificationsSettings>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-          bool? followers,
-      @HiveField(1)
-          bool? follows,
-      @JsonKey(name: 'non_followers')
-      @HiveField(2)
-          bool? nonFollowers,
-      @JsonKey(name: 'non_follows')
-      @HiveField(3)
-          bool? nonFollows,
+      {@HiveField(0) bool? followers,
+      @HiveField(1) bool? follows,
+      @JsonKey(name: 'non_followers') @HiveField(2) bool? nonFollowers,
+      @JsonKey(name: 'non_follows') @HiveField(3) bool? nonFollows,
       @JsonKey(name: 'block_from_strangers')
       @HiveField(4)
-          bool? blockFromStrangers,
+      bool? blockFromStrangers,
       @JsonKey(name: 'hide_notification_contents')
       @HiveField(5)
-          bool? hideNotificationContents});
+      bool? hideNotificationContents});
 }
 
 /// @nodoc
-class _$UnifediApiMyAccountNotificationsSettingsCopyWithImpl<$Res>
+class _$UnifediApiMyAccountNotificationsSettingsCopyWithImpl<$Res,
+        $Val extends UnifediApiMyAccountNotificationsSettings>
     implements $UnifediApiMyAccountNotificationsSettingsCopyWith<$Res> {
   _$UnifediApiMyAccountNotificationsSettingsCopyWithImpl(
       this._value, this._then);
 
-  final UnifediApiMyAccountNotificationsSettings _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiMyAccountNotificationsSettings) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? followers = freezed,
@@ -130,75 +90,67 @@ class _$UnifediApiMyAccountNotificationsSettingsCopyWithImpl<$Res>
     Object? hideNotificationContents = freezed,
   }) {
     return _then(_value.copyWith(
-      followers: followers == freezed
+      followers: freezed == followers
           ? _value.followers
           : followers // ignore: cast_nullable_to_non_nullable
               as bool?,
-      follows: follows == freezed
+      follows: freezed == follows
           ? _value.follows
           : follows // ignore: cast_nullable_to_non_nullable
               as bool?,
-      nonFollowers: nonFollowers == freezed
+      nonFollowers: freezed == nonFollowers
           ? _value.nonFollowers
           : nonFollowers // ignore: cast_nullable_to_non_nullable
               as bool?,
-      nonFollows: nonFollows == freezed
+      nonFollows: freezed == nonFollows
           ? _value.nonFollows
           : nonFollows // ignore: cast_nullable_to_non_nullable
               as bool?,
-      blockFromStrangers: blockFromStrangers == freezed
+      blockFromStrangers: freezed == blockFromStrangers
           ? _value.blockFromStrangers
           : blockFromStrangers // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideNotificationContents: hideNotificationContents == freezed
+      hideNotificationContents: freezed == hideNotificationContents
           ? _value.hideNotificationContents
           : hideNotificationContents // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiMyAccountNotificationsSettingsCopyWith<$Res>
+abstract class _$$UnifediApiMyAccountNotificationsSettingsImplCopyWith<$Res>
     implements $UnifediApiMyAccountNotificationsSettingsCopyWith<$Res> {
-  factory _$UnifediApiMyAccountNotificationsSettingsCopyWith(
-          _UnifediApiMyAccountNotificationsSettings value,
-          $Res Function(_UnifediApiMyAccountNotificationsSettings) then) =
-      __$UnifediApiMyAccountNotificationsSettingsCopyWithImpl<$Res>;
+  factory _$$UnifediApiMyAccountNotificationsSettingsImplCopyWith(
+          _$UnifediApiMyAccountNotificationsSettingsImpl value,
+          $Res Function(_$UnifediApiMyAccountNotificationsSettingsImpl) then) =
+      __$$UnifediApiMyAccountNotificationsSettingsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-          bool? followers,
-      @HiveField(1)
-          bool? follows,
-      @JsonKey(name: 'non_followers')
-      @HiveField(2)
-          bool? nonFollowers,
-      @JsonKey(name: 'non_follows')
-      @HiveField(3)
-          bool? nonFollows,
+      {@HiveField(0) bool? followers,
+      @HiveField(1) bool? follows,
+      @JsonKey(name: 'non_followers') @HiveField(2) bool? nonFollowers,
+      @JsonKey(name: 'non_follows') @HiveField(3) bool? nonFollows,
       @JsonKey(name: 'block_from_strangers')
       @HiveField(4)
-          bool? blockFromStrangers,
+      bool? blockFromStrangers,
       @JsonKey(name: 'hide_notification_contents')
       @HiveField(5)
-          bool? hideNotificationContents});
+      bool? hideNotificationContents});
 }
 
 /// @nodoc
-class __$UnifediApiMyAccountNotificationsSettingsCopyWithImpl<$Res>
-    extends _$UnifediApiMyAccountNotificationsSettingsCopyWithImpl<$Res>
-    implements _$UnifediApiMyAccountNotificationsSettingsCopyWith<$Res> {
-  __$UnifediApiMyAccountNotificationsSettingsCopyWithImpl(
-      _UnifediApiMyAccountNotificationsSettings _value,
-      $Res Function(_UnifediApiMyAccountNotificationsSettings) _then)
-      : super(_value,
-            (v) => _then(v as _UnifediApiMyAccountNotificationsSettings));
+class __$$UnifediApiMyAccountNotificationsSettingsImplCopyWithImpl<$Res>
+    extends _$UnifediApiMyAccountNotificationsSettingsCopyWithImpl<$Res,
+        _$UnifediApiMyAccountNotificationsSettingsImpl>
+    implements _$$UnifediApiMyAccountNotificationsSettingsImplCopyWith<$Res> {
+  __$$UnifediApiMyAccountNotificationsSettingsImplCopyWithImpl(
+      _$UnifediApiMyAccountNotificationsSettingsImpl _value,
+      $Res Function(_$UnifediApiMyAccountNotificationsSettingsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiMyAccountNotificationsSettings get _value =>
-      super._value as _UnifediApiMyAccountNotificationsSettings;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? followers = freezed,
@@ -208,28 +160,28 @@ class __$UnifediApiMyAccountNotificationsSettingsCopyWithImpl<$Res>
     Object? blockFromStrangers = freezed,
     Object? hideNotificationContents = freezed,
   }) {
-    return _then(_UnifediApiMyAccountNotificationsSettings(
-      followers: followers == freezed
+    return _then(_$UnifediApiMyAccountNotificationsSettingsImpl(
+      followers: freezed == followers
           ? _value.followers
           : followers // ignore: cast_nullable_to_non_nullable
               as bool?,
-      follows: follows == freezed
+      follows: freezed == follows
           ? _value.follows
           : follows // ignore: cast_nullable_to_non_nullable
               as bool?,
-      nonFollowers: nonFollowers == freezed
+      nonFollowers: freezed == nonFollowers
           ? _value.nonFollowers
           : nonFollowers // ignore: cast_nullable_to_non_nullable
               as bool?,
-      nonFollows: nonFollows == freezed
+      nonFollows: freezed == nonFollows
           ? _value.nonFollows
           : nonFollows // ignore: cast_nullable_to_non_nullable
               as bool?,
-      blockFromStrangers: blockFromStrangers == freezed
+      blockFromStrangers: freezed == blockFromStrangers
           ? _value.blockFromStrangers
           : blockFromStrangers // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideNotificationContents: hideNotificationContents == freezed
+      hideNotificationContents: freezed == hideNotificationContents
           ? _value.hideNotificationContents
           : hideNotificationContents // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -239,29 +191,23 @@ class __$UnifediApiMyAccountNotificationsSettingsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiMyAccountNotificationsSettings
+class _$UnifediApiMyAccountNotificationsSettingsImpl
     implements _UnifediApiMyAccountNotificationsSettings {
-  const _$_UnifediApiMyAccountNotificationsSettings(
-      {@HiveField(0)
-          required this.followers,
-      @HiveField(1)
-          required this.follows,
-      @JsonKey(name: 'non_followers')
-      @HiveField(2)
-          required this.nonFollowers,
-      @JsonKey(name: 'non_follows')
-      @HiveField(3)
-          required this.nonFollows,
+  const _$UnifediApiMyAccountNotificationsSettingsImpl(
+      {@HiveField(0) required this.followers,
+      @HiveField(1) required this.follows,
+      @JsonKey(name: 'non_followers') @HiveField(2) required this.nonFollowers,
+      @JsonKey(name: 'non_follows') @HiveField(3) required this.nonFollows,
       @JsonKey(name: 'block_from_strangers')
       @HiveField(4)
-          required this.blockFromStrangers,
+      required this.blockFromStrangers,
       @JsonKey(name: 'hide_notification_contents')
       @HiveField(5)
-          required this.hideNotificationContents});
+      required this.hideNotificationContents});
 
-  factory _$_UnifediApiMyAccountNotificationsSettings.fromJson(
+  factory _$UnifediApiMyAccountNotificationsSettingsImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiMyAccountNotificationsSettingsFromJson(json);
+      _$$UnifediApiMyAccountNotificationsSettingsImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -292,10 +238,10 @@ class _$_UnifediApiMyAccountNotificationsSettings
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiMyAccountNotificationsSettings &&
+            other is _$UnifediApiMyAccountNotificationsSettingsImpl &&
             (identical(other.followers, followers) ||
                 other.followers == followers) &&
             (identical(other.follows, follows) || other.follows == follows) &&
@@ -310,47 +256,50 @@ class _$_UnifediApiMyAccountNotificationsSettings
                 other.hideNotificationContents == hideNotificationContents));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, followers, follows, nonFollowers,
       nonFollows, blockFromStrangers, hideNotificationContents);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiMyAccountNotificationsSettingsCopyWith<
-          _UnifediApiMyAccountNotificationsSettings>
-      get copyWith => __$UnifediApiMyAccountNotificationsSettingsCopyWithImpl<
-          _UnifediApiMyAccountNotificationsSettings>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiMyAccountNotificationsSettingsImplCopyWith<
+          _$UnifediApiMyAccountNotificationsSettingsImpl>
+      get copyWith =>
+          __$$UnifediApiMyAccountNotificationsSettingsImplCopyWithImpl<
+              _$UnifediApiMyAccountNotificationsSettingsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiMyAccountNotificationsSettingsToJson(this);
+    return _$$UnifediApiMyAccountNotificationsSettingsImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiMyAccountNotificationsSettings
     implements UnifediApiMyAccountNotificationsSettings {
   const factory _UnifediApiMyAccountNotificationsSettings(
-          {@HiveField(0)
-              required bool? followers,
-          @HiveField(1)
-              required bool? follows,
+          {@HiveField(0) required final bool? followers,
+          @HiveField(1) required final bool? follows,
           @JsonKey(name: 'non_followers')
           @HiveField(2)
-              required bool? nonFollowers,
+          required final bool? nonFollowers,
           @JsonKey(name: 'non_follows')
           @HiveField(3)
-              required bool? nonFollows,
+          required final bool? nonFollows,
           @JsonKey(name: 'block_from_strangers')
           @HiveField(4)
-              required bool? blockFromStrangers,
+          required final bool? blockFromStrangers,
           @JsonKey(name: 'hide_notification_contents')
           @HiveField(5)
-              required bool? hideNotificationContents}) =
-      _$_UnifediApiMyAccountNotificationsSettings;
+          required final bool? hideNotificationContents}) =
+      _$UnifediApiMyAccountNotificationsSettingsImpl;
 
   factory _UnifediApiMyAccountNotificationsSettings.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiMyAccountNotificationsSettings.fromJson;
+      _$UnifediApiMyAccountNotificationsSettingsImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -376,7 +325,7 @@ abstract class _UnifediApiMyAccountNotificationsSettings
   bool? get hideNotificationContents;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiMyAccountNotificationsSettingsCopyWith<
-          _UnifediApiMyAccountNotificationsSettings>
+  _$$UnifediApiMyAccountNotificationsSettingsImplCopyWith<
+          _$UnifediApiMyAccountNotificationsSettingsImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

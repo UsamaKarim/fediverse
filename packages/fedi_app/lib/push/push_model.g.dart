@@ -87,8 +87,8 @@ class PushNotificationAdapter extends TypeAdapter<PushNotification> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PushMessage _$$_PushMessageFromJson(Map<String, dynamic> json) =>
-    _$_PushMessage(
+_$PushMessageImpl _$$PushMessageImplFromJson(Map<String, dynamic> json) =>
+    _$PushMessageImpl(
       notification: json['notification'] == null
           ? null
           : PushNotification.fromJson(
@@ -97,7 +97,7 @@ _$_PushMessage _$$_PushMessageFromJson(Map<String, dynamic> json) =>
       typeString: json['typeString'] as String,
     );
 
-Map<String, dynamic> _$$_PushMessageToJson(_$_PushMessage instance) {
+Map<String, dynamic> _$$PushMessageImplToJson(_$PushMessageImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {
@@ -112,13 +112,15 @@ Map<String, dynamic> _$$_PushMessageToJson(_$_PushMessage instance) {
   return val;
 }
 
-_$_PushNotification _$$_PushNotificationFromJson(Map<String, dynamic> json) =>
-    _$_PushNotification(
+_$PushNotificationImpl _$$PushNotificationImplFromJson(
+        Map<String, dynamic> json) =>
+    _$PushNotificationImpl(
       title: json['title'] as String?,
       body: json['body'] as String?,
     );
 
-Map<String, dynamic> _$$_PushNotificationToJson(_$_PushNotification instance) {
+Map<String, dynamic> _$$PushNotificationImplToJson(
+    _$PushNotificationImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

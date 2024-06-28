@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 
 abstract class JsonDatabaseConverter<T> extends TypeConverter<T, String> {
   const JsonDatabaseConverter();
@@ -10,9 +10,9 @@ abstract class JsonDatabaseConverter<T> extends TypeConverter<T, String> {
   Map<String, dynamic> toJson(T obj);
 
   @override
-  T? mapToDart(String? fromDb) {
+  T fromSql(String? fromDb) {
     if (fromDb == null) {
-      return null;
+      return T as T;
     }
     // todo: check
 
@@ -20,9 +20,9 @@ abstract class JsonDatabaseConverter<T> extends TypeConverter<T, String> {
   }
 
   @override
-  String? mapToSql(T? value) {
+  String toSql(T? value) {
     if (value == null) {
-      return null;
+      return '';
     }
 
     var jsonMap = toJson(value);
@@ -40,9 +40,9 @@ abstract class JsonListDatabaseConverter<T>
   Map<String, dynamic> toJson(T obj);
 
   @override
-  List<T>? mapToDart(String? fromDb) {
+  List<T> fromSql(String? fromDb) {
     if (fromDb == null) {
-      return null;
+      return [];
     }
     var list = json.decode(fromDb) as List;
 
@@ -54,11 +54,11 @@ abstract class JsonListDatabaseConverter<T>
   }
 
   @override
-  String? mapToSql(List<T>? value) {
+  String toSql(List<T>? value) {
     if (value?.isNotEmpty == true) {
       return json.encode(value!.map(toJson).toList());
     } else {
-      return null;
+      return '';
     }
   }
 }
@@ -67,9 +67,9 @@ class StringListDatabaseConverter extends TypeConverter<List<String>, String> {
   const StringListDatabaseConverter();
 
   @override
-  List<String>? mapToDart(String? fromDb) {
+  List<String> fromSql(String? fromDb) {
     if (fromDb == null) {
-      return null;
+      return [];
     }
     var list = json.decode(fromDb) as List;
     // todo: rework
@@ -78,9 +78,9 @@ class StringListDatabaseConverter extends TypeConverter<List<String>, String> {
   }
 
   @override
-  String? mapToSql(List<String>? value) {
+  String toSql(List<String>? value) {
     if (value == null) {
-      return null;
+      return '';
     }
 
     return json.encode(value);

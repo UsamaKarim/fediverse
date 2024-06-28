@@ -45,14 +45,14 @@ class UnifediApiFieldPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiFieldPleromaAdapter _$$_UnifediApiFieldPleromaAdapterFromJson(
-        Map<String, dynamic> json) =>
-    _$_UnifediApiFieldPleromaAdapter(
-      PleromaApiField.fromJson(json['value_field'] as Map<String, dynamic>),
-    );
+_$UnifediApiFieldPleromaAdapterImpl
+    _$$UnifediApiFieldPleromaAdapterImplFromJson(Map<String, dynamic> json) =>
+        _$UnifediApiFieldPleromaAdapterImpl(
+          PleromaApiField.fromJson(json['value_field'] as Map<String, dynamic>),
+        );
 
-Map<String, dynamic> _$$_UnifediApiFieldPleromaAdapterToJson(
-        _$_UnifediApiFieldPleromaAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiFieldPleromaAdapterImplToJson(
+        _$UnifediApiFieldPleromaAdapterImpl instance) =>
     <String, dynamic>{
       'value_field': instance.valueField.toJson(),
     };

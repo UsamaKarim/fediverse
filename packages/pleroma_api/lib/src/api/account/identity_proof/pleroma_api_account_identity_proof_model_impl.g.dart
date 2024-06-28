@@ -57,20 +57,20 @@ class PleromaApiAccountIdentityProofAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiAccountIdentityProof _$$_PleromaApiAccountIdentityProofFromJson(
-        Map<String, dynamic> json) =>
-    _$_PleromaApiAccountIdentityProof(
-      profileUrl: json['profile_url'] as String?,
-      proofUrl: json['proof_url'] as String?,
-      provider: json['provider'] as String?,
-      providerUsername: json['provider_username'] as String?,
-      updatedAt: json['updated_at'] == null
-          ? null
-          : DateTime.parse(json['updated_at'] as String),
-    );
+_$PleromaApiAccountIdentityProofImpl
+    _$$PleromaApiAccountIdentityProofImplFromJson(Map<String, dynamic> json) =>
+        _$PleromaApiAccountIdentityProofImpl(
+          profileUrl: json['profile_url'] as String?,
+          proofUrl: json['proof_url'] as String?,
+          provider: json['provider'] as String?,
+          providerUsername: json['provider_username'] as String?,
+          updatedAt: json['updated_at'] == null
+              ? null
+              : DateTime.parse(json['updated_at'] as String),
+        );
 
-Map<String, dynamic> _$$_PleromaApiAccountIdentityProofToJson(
-    _$_PleromaApiAccountIdentityProof instance) {
+Map<String, dynamic> _$$PleromaApiAccountIdentityProofImplToJson(
+    _$PleromaApiAccountIdentityProofImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

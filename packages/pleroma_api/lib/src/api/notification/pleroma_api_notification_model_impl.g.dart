@@ -110,15 +110,16 @@ class PleromaApiNotificationAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiNotificationPleromaPart
-    _$$_PleromaApiNotificationPleromaPartFromJson(Map<String, dynamic> json) =>
-        _$_PleromaApiNotificationPleromaPart(
+_$PleromaApiNotificationPleromaPartImpl
+    _$$PleromaApiNotificationPleromaPartImplFromJson(
+            Map<String, dynamic> json) =>
+        _$PleromaApiNotificationPleromaPartImpl(
           isSeen: json['is_seen'] as bool?,
           isMuted: json['is_muted'] as bool?,
         );
 
-Map<String, dynamic> _$$_PleromaApiNotificationPleromaPartToJson(
-    _$_PleromaApiNotificationPleromaPart instance) {
+Map<String, dynamic> _$$PleromaApiNotificationPleromaPartImplToJson(
+    _$PleromaApiNotificationPleromaPartImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {
@@ -132,9 +133,9 @@ Map<String, dynamic> _$$_PleromaApiNotificationPleromaPartToJson(
   return val;
 }
 
-_$_PleromaApiNotification _$$_PleromaApiNotificationFromJson(
+_$PleromaApiNotificationImpl _$$PleromaApiNotificationImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiNotification(
+    _$PleromaApiNotificationImpl(
       account: json['account'] == null
           ? null
           : PleromaApiAccount.fromJson(json['account'] as Map<String, dynamic>),
@@ -162,8 +163,8 @@ _$_PleromaApiNotification _$$_PleromaApiNotificationFromJson(
               json['report'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_PleromaApiNotificationToJson(
-    _$_PleromaApiNotification instance) {
+Map<String, dynamic> _$$PleromaApiNotificationImplToJson(
+    _$PleromaApiNotificationImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

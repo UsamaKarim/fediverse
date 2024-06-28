@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'duration_picker_model.dart';
 
@@ -11,26 +12,7 @@ part of 'duration_picker_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$DurationPickerResultTearOff {
-  const _$DurationPickerResultTearOff();
-
-  _DurationPickerResult call(
-      {required Duration? duration,
-      required bool canceled,
-      required bool deleted}) {
-    return _DurationPickerResult(
-      duration: duration,
-      canceled: canceled,
-      deleted: deleted,
-    );
-  }
-}
-
-/// @nodoc
-const $DurationPickerResult = _$DurationPickerResultTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$DurationPickerResult {
@@ -47,79 +29,82 @@ mixin _$DurationPickerResult {
 abstract class $DurationPickerResultCopyWith<$Res> {
   factory $DurationPickerResultCopyWith(DurationPickerResult value,
           $Res Function(DurationPickerResult) then) =
-      _$DurationPickerResultCopyWithImpl<$Res>;
+      _$DurationPickerResultCopyWithImpl<$Res, DurationPickerResult>;
+  @useResult
   $Res call({Duration? duration, bool canceled, bool deleted});
 }
 
 /// @nodoc
-class _$DurationPickerResultCopyWithImpl<$Res>
+class _$DurationPickerResultCopyWithImpl<$Res,
+        $Val extends DurationPickerResult>
     implements $DurationPickerResultCopyWith<$Res> {
   _$DurationPickerResultCopyWithImpl(this._value, this._then);
 
-  final DurationPickerResult _value;
   // ignore: unused_field
-  final $Res Function(DurationPickerResult) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? duration = freezed,
-    Object? canceled = freezed,
-    Object? deleted = freezed,
+    Object? canceled = null,
+    Object? deleted = null,
   }) {
     return _then(_value.copyWith(
-      duration: duration == freezed
+      duration: freezed == duration
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
               as Duration?,
-      canceled: canceled == freezed
+      canceled: null == canceled
           ? _value.canceled
           : canceled // ignore: cast_nullable_to_non_nullable
               as bool,
-      deleted: deleted == freezed
+      deleted: null == deleted
           ? _value.deleted
           : deleted // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$DurationPickerResultCopyWith<$Res>
+abstract class _$$DurationPickerResultImplCopyWith<$Res>
     implements $DurationPickerResultCopyWith<$Res> {
-  factory _$DurationPickerResultCopyWith(_DurationPickerResult value,
-          $Res Function(_DurationPickerResult) then) =
-      __$DurationPickerResultCopyWithImpl<$Res>;
+  factory _$$DurationPickerResultImplCopyWith(_$DurationPickerResultImpl value,
+          $Res Function(_$DurationPickerResultImpl) then) =
+      __$$DurationPickerResultImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({Duration? duration, bool canceled, bool deleted});
 }
 
 /// @nodoc
-class __$DurationPickerResultCopyWithImpl<$Res>
-    extends _$DurationPickerResultCopyWithImpl<$Res>
-    implements _$DurationPickerResultCopyWith<$Res> {
-  __$DurationPickerResultCopyWithImpl(
-      _DurationPickerResult _value, $Res Function(_DurationPickerResult) _then)
-      : super(_value, (v) => _then(v as _DurationPickerResult));
+class __$$DurationPickerResultImplCopyWithImpl<$Res>
+    extends _$DurationPickerResultCopyWithImpl<$Res, _$DurationPickerResultImpl>
+    implements _$$DurationPickerResultImplCopyWith<$Res> {
+  __$$DurationPickerResultImplCopyWithImpl(_$DurationPickerResultImpl _value,
+      $Res Function(_$DurationPickerResultImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _DurationPickerResult get _value => super._value as _DurationPickerResult;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? duration = freezed,
-    Object? canceled = freezed,
-    Object? deleted = freezed,
+    Object? canceled = null,
+    Object? deleted = null,
   }) {
-    return _then(_DurationPickerResult(
-      duration: duration == freezed
+    return _then(_$DurationPickerResultImpl(
+      duration: freezed == duration
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
               as Duration?,
-      canceled: canceled == freezed
+      canceled: null == canceled
           ? _value.canceled
           : canceled // ignore: cast_nullable_to_non_nullable
               as bool,
-      deleted: deleted == freezed
+      deleted: null == deleted
           ? _value.deleted
           : deleted // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -129,8 +114,8 @@ class __$DurationPickerResultCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DurationPickerResult implements _DurationPickerResult {
-  const _$_DurationPickerResult(
+class _$DurationPickerResultImpl implements _DurationPickerResult {
+  const _$DurationPickerResultImpl(
       {required this.duration, required this.canceled, required this.deleted});
 
   @override
@@ -146,10 +131,10 @@ class _$_DurationPickerResult implements _DurationPickerResult {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DurationPickerResult &&
+            other is _$DurationPickerResultImpl &&
             (identical(other.duration, duration) ||
                 other.duration == duration) &&
             (identical(other.canceled, canceled) ||
@@ -162,16 +147,18 @@ class _$_DurationPickerResult implements _DurationPickerResult {
 
   @JsonKey(ignore: true)
   @override
-  _$DurationPickerResultCopyWith<_DurationPickerResult> get copyWith =>
-      __$DurationPickerResultCopyWithImpl<_DurationPickerResult>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DurationPickerResultImplCopyWith<_$DurationPickerResultImpl>
+      get copyWith =>
+          __$$DurationPickerResultImplCopyWithImpl<_$DurationPickerResultImpl>(
+              this, _$identity);
 }
 
 abstract class _DurationPickerResult implements DurationPickerResult {
   const factory _DurationPickerResult(
-      {required Duration? duration,
-      required bool canceled,
-      required bool deleted}) = _$_DurationPickerResult;
+      {required final Duration? duration,
+      required final bool canceled,
+      required final bool deleted}) = _$DurationPickerResultImpl;
 
   @override
   Duration? get duration;
@@ -181,6 +168,6 @@ abstract class _DurationPickerResult implements DurationPickerResult {
   bool get deleted;
   @override
   @JsonKey(ignore: true)
-  _$DurationPickerResultCopyWith<_DurationPickerResult> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$DurationPickerResultImplCopyWith<_$DurationPickerResultImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

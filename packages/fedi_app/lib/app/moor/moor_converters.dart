@@ -1,7 +1,7 @@
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/pending/pending_model.dart';
 import 'package:fedi_app/app/status/post/post_status_model.dart';
 import 'package:fedi_app/moor/moor_json_type_converter.dart';
-import 'package:moor/moor.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 
 class PendingStateDatabaseConverter
@@ -13,6 +13,12 @@ class PendingStateDatabaseConverter
 
   @override
   String? mapToSql(PendingState? value) => value?.toJsonValue();
+
+  @override
+  PendingState fromSql(String fromDb) => fromDb.toPendingState();
+
+  @override
+  String toSql(PendingState value) => value.toJsonValue();
 }
 
 class UnifediApplicationDatabaseConverter

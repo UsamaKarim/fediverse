@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_web_sockets_event_model_impl.dart';
 
@@ -11,57 +12,12 @@ part of 'unifedi_api_web_sockets_event_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiWebSocketsEvent _$UnifediApiWebSocketsEventFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiWebSocketsEvent.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiWebSocketsEventTearOff {
-  const _$UnifediApiWebSocketsEventTearOff();
-
-  _UnifediApiWebSocketsEvent call(
-      {@JsonKey(name: 'event')
-      @HiveField(0)
-          required String type,
-      @HiveField(2)
-          required UnifediApiWebSocketsChannel channel,
-      @HiveField(3)
-          required UnifediApiStatus? status,
-      @HiveField(4)
-          required UnifediApiNotification? notification,
-      @HiveField(5)
-          required UnifediApiAnnouncement? announcement,
-      @HiveField(6)
-          required UnifediApiChat? chat,
-      @HiveField(7)
-          required UnifediApiConversation? conversation,
-      @HiveField(8)
-          required String? id,
-      @HiveField(9)
-          required UnifediApiAccountRelationshipFollowUpdate? followUpdate}) {
-    return _UnifediApiWebSocketsEvent(
-      type: type,
-      channel: channel,
-      status: status,
-      notification: notification,
-      announcement: announcement,
-      chat: chat,
-      conversation: conversation,
-      id: id,
-      followUpdate: followUpdate,
-    );
-  }
-
-  UnifediApiWebSocketsEvent fromJson(Map<String, Object?> json) {
-    return UnifediApiWebSocketsEvent.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiWebSocketsEvent = _$UnifediApiWebSocketsEventTearOff();
 
 /// @nodoc
 mixin _$UnifediApiWebSocketsEvent {
@@ -99,7 +55,8 @@ mixin _$UnifediApiWebSocketsEvent {
 abstract class $UnifediApiWebSocketsEventCopyWith<$Res> {
   factory $UnifediApiWebSocketsEventCopyWith(UnifediApiWebSocketsEvent value,
           $Res Function(UnifediApiWebSocketsEvent) then) =
-      _$UnifediApiWebSocketsEventCopyWithImpl<$Res>;
+      _$UnifediApiWebSocketsEventCopyWithImpl<$Res, UnifediApiWebSocketsEvent>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'event') @HiveField(0) String type,
       @HiveField(2) UnifediApiWebSocketsChannel channel,
@@ -121,18 +78,21 @@ abstract class $UnifediApiWebSocketsEventCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UnifediApiWebSocketsEventCopyWithImpl<$Res>
+class _$UnifediApiWebSocketsEventCopyWithImpl<$Res,
+        $Val extends UnifediApiWebSocketsEvent>
     implements $UnifediApiWebSocketsEventCopyWith<$Res> {
   _$UnifediApiWebSocketsEventCopyWithImpl(this._value, this._then);
 
-  final UnifediApiWebSocketsEvent _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiWebSocketsEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? type = freezed,
-    Object? channel = freezed,
+    Object? type = null,
+    Object? channel = null,
     Object? status = freezed,
     Object? notification = freezed,
     Object? announcement = freezed,
@@ -142,108 +102,115 @@ class _$UnifediApiWebSocketsEventCopyWithImpl<$Res>
     Object? followUpdate = freezed,
   }) {
     return _then(_value.copyWith(
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      channel: channel == freezed
+      channel: null == channel
           ? _value.channel
           : channel // ignore: cast_nullable_to_non_nullable
               as UnifediApiWebSocketsChannel,
-      status: status == freezed
+      status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as UnifediApiStatus?,
-      notification: notification == freezed
+      notification: freezed == notification
           ? _value.notification
           : notification // ignore: cast_nullable_to_non_nullable
               as UnifediApiNotification?,
-      announcement: announcement == freezed
+      announcement: freezed == announcement
           ? _value.announcement
           : announcement // ignore: cast_nullable_to_non_nullable
               as UnifediApiAnnouncement?,
-      chat: chat == freezed
+      chat: freezed == chat
           ? _value.chat
           : chat // ignore: cast_nullable_to_non_nullable
               as UnifediApiChat?,
-      conversation: conversation == freezed
+      conversation: freezed == conversation
           ? _value.conversation
           : conversation // ignore: cast_nullable_to_non_nullable
               as UnifediApiConversation?,
-      id: id == freezed
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String?,
-      followUpdate: followUpdate == freezed
+      followUpdate: freezed == followUpdate
           ? _value.followUpdate
           : followUpdate // ignore: cast_nullable_to_non_nullable
               as UnifediApiAccountRelationshipFollowUpdate?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiWebSocketsChannelCopyWith<$Res> get channel {
     return $UnifediApiWebSocketsChannelCopyWith<$Res>(_value.channel, (value) {
-      return _then(_value.copyWith(channel: value));
+      return _then(_value.copyWith(channel: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiStatusCopyWith<$Res>? get status {
     if (_value.status == null) {
       return null;
     }
 
     return $UnifediApiStatusCopyWith<$Res>(_value.status!, (value) {
-      return _then(_value.copyWith(status: value));
+      return _then(_value.copyWith(status: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiNotificationCopyWith<$Res>? get notification {
     if (_value.notification == null) {
       return null;
     }
 
     return $UnifediApiNotificationCopyWith<$Res>(_value.notification!, (value) {
-      return _then(_value.copyWith(notification: value));
+      return _then(_value.copyWith(notification: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiAnnouncementCopyWith<$Res>? get announcement {
     if (_value.announcement == null) {
       return null;
     }
 
     return $UnifediApiAnnouncementCopyWith<$Res>(_value.announcement!, (value) {
-      return _then(_value.copyWith(announcement: value));
+      return _then(_value.copyWith(announcement: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiChatCopyWith<$Res>? get chat {
     if (_value.chat == null) {
       return null;
     }
 
     return $UnifediApiChatCopyWith<$Res>(_value.chat!, (value) {
-      return _then(_value.copyWith(chat: value));
+      return _then(_value.copyWith(chat: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiConversationCopyWith<$Res>? get conversation {
     if (_value.conversation == null) {
       return null;
     }
 
     return $UnifediApiConversationCopyWith<$Res>(_value.conversation!, (value) {
-      return _then(_value.copyWith(conversation: value));
+      return _then(_value.copyWith(conversation: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiAccountRelationshipFollowUpdateCopyWith<$Res>? get followUpdate {
     if (_value.followUpdate == null) {
       return null;
@@ -251,18 +218,20 @@ class _$UnifediApiWebSocketsEventCopyWithImpl<$Res>
 
     return $UnifediApiAccountRelationshipFollowUpdateCopyWith<$Res>(
         _value.followUpdate!, (value) {
-      return _then(_value.copyWith(followUpdate: value));
+      return _then(_value.copyWith(followUpdate: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiWebSocketsEventCopyWith<$Res>
+abstract class _$$UnifediApiWebSocketsEventImplCopyWith<$Res>
     implements $UnifediApiWebSocketsEventCopyWith<$Res> {
-  factory _$UnifediApiWebSocketsEventCopyWith(_UnifediApiWebSocketsEvent value,
-          $Res Function(_UnifediApiWebSocketsEvent) then) =
-      __$UnifediApiWebSocketsEventCopyWithImpl<$Res>;
+  factory _$$UnifediApiWebSocketsEventImplCopyWith(
+          _$UnifediApiWebSocketsEventImpl value,
+          $Res Function(_$UnifediApiWebSocketsEventImpl) then) =
+      __$$UnifediApiWebSocketsEventImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'event') @HiveField(0) String type,
       @HiveField(2) UnifediApiWebSocketsChannel channel,
@@ -291,21 +260,20 @@ abstract class _$UnifediApiWebSocketsEventCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiWebSocketsEventCopyWithImpl<$Res>
-    extends _$UnifediApiWebSocketsEventCopyWithImpl<$Res>
-    implements _$UnifediApiWebSocketsEventCopyWith<$Res> {
-  __$UnifediApiWebSocketsEventCopyWithImpl(_UnifediApiWebSocketsEvent _value,
-      $Res Function(_UnifediApiWebSocketsEvent) _then)
-      : super(_value, (v) => _then(v as _UnifediApiWebSocketsEvent));
+class __$$UnifediApiWebSocketsEventImplCopyWithImpl<$Res>
+    extends _$UnifediApiWebSocketsEventCopyWithImpl<$Res,
+        _$UnifediApiWebSocketsEventImpl>
+    implements _$$UnifediApiWebSocketsEventImplCopyWith<$Res> {
+  __$$UnifediApiWebSocketsEventImplCopyWithImpl(
+      _$UnifediApiWebSocketsEventImpl _value,
+      $Res Function(_$UnifediApiWebSocketsEventImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiWebSocketsEvent get _value =>
-      super._value as _UnifediApiWebSocketsEvent;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? type = freezed,
-    Object? channel = freezed,
+    Object? type = null,
+    Object? channel = null,
     Object? status = freezed,
     Object? notification = freezed,
     Object? announcement = freezed,
@@ -314,40 +282,40 @@ class __$UnifediApiWebSocketsEventCopyWithImpl<$Res>
     Object? id = freezed,
     Object? followUpdate = freezed,
   }) {
-    return _then(_UnifediApiWebSocketsEvent(
-      type: type == freezed
+    return _then(_$UnifediApiWebSocketsEventImpl(
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      channel: channel == freezed
+      channel: null == channel
           ? _value.channel
           : channel // ignore: cast_nullable_to_non_nullable
               as UnifediApiWebSocketsChannel,
-      status: status == freezed
+      status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as UnifediApiStatus?,
-      notification: notification == freezed
+      notification: freezed == notification
           ? _value.notification
           : notification // ignore: cast_nullable_to_non_nullable
               as UnifediApiNotification?,
-      announcement: announcement == freezed
+      announcement: freezed == announcement
           ? _value.announcement
           : announcement // ignore: cast_nullable_to_non_nullable
               as UnifediApiAnnouncement?,
-      chat: chat == freezed
+      chat: freezed == chat
           ? _value.chat
           : chat // ignore: cast_nullable_to_non_nullable
               as UnifediApiChat?,
-      conversation: conversation == freezed
+      conversation: freezed == conversation
           ? _value.conversation
           : conversation // ignore: cast_nullable_to_non_nullable
               as UnifediApiConversation?,
-      id: id == freezed
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String?,
-      followUpdate: followUpdate == freezed
+      followUpdate: freezed == followUpdate
           ? _value.followUpdate
           : followUpdate // ignore: cast_nullable_to_non_nullable
               as UnifediApiAccountRelationshipFollowUpdate?,
@@ -357,8 +325,8 @@ class __$UnifediApiWebSocketsEventCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiWebSocketsEvent implements _UnifediApiWebSocketsEvent {
-  const _$_UnifediApiWebSocketsEvent(
+class _$UnifediApiWebSocketsEventImpl implements _UnifediApiWebSocketsEvent {
+  const _$UnifediApiWebSocketsEventImpl(
       {@JsonKey(name: 'event') @HiveField(0) required this.type,
       @HiveField(2) required this.channel,
       @HiveField(3) required this.status,
@@ -369,8 +337,8 @@ class _$_UnifediApiWebSocketsEvent implements _UnifediApiWebSocketsEvent {
       @HiveField(8) required this.id,
       @HiveField(9) required this.followUpdate});
 
-  factory _$_UnifediApiWebSocketsEvent.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiWebSocketsEventFromJson(json);
+  factory _$UnifediApiWebSocketsEventImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiWebSocketsEventImplFromJson(json);
 
   @override
   @JsonKey(name: 'event')
@@ -407,10 +375,10 @@ class _$_UnifediApiWebSocketsEvent implements _UnifediApiWebSocketsEvent {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiWebSocketsEvent &&
+            other is _$UnifediApiWebSocketsEventImpl &&
             (identical(other.type, type) || other.type == type) &&
             (identical(other.channel, channel) || other.channel == channel) &&
             (identical(other.status, status) || other.status == status) &&
@@ -426,48 +394,42 @@ class _$_UnifediApiWebSocketsEvent implements _UnifediApiWebSocketsEvent {
                 other.followUpdate == followUpdate));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, type, channel, status,
       notification, announcement, chat, conversation, id, followUpdate);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiWebSocketsEventCopyWith<_UnifediApiWebSocketsEvent>
-      get copyWith =>
-          __$UnifediApiWebSocketsEventCopyWithImpl<_UnifediApiWebSocketsEvent>(
-              this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiWebSocketsEventImplCopyWith<_$UnifediApiWebSocketsEventImpl>
+      get copyWith => __$$UnifediApiWebSocketsEventImplCopyWithImpl<
+          _$UnifediApiWebSocketsEventImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiWebSocketsEventToJson(this);
+    return _$$UnifediApiWebSocketsEventImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiWebSocketsEvent implements UnifediApiWebSocketsEvent {
   const factory _UnifediApiWebSocketsEvent(
-      {@JsonKey(name: 'event')
-      @HiveField(0)
-          required String type,
-      @HiveField(2)
-          required UnifediApiWebSocketsChannel channel,
-      @HiveField(3)
-          required UnifediApiStatus? status,
-      @HiveField(4)
-          required UnifediApiNotification? notification,
-      @HiveField(5)
-          required UnifediApiAnnouncement? announcement,
-      @HiveField(6)
-          required UnifediApiChat? chat,
-      @HiveField(7)
-          required UnifediApiConversation? conversation,
-      @HiveField(8)
-          required String? id,
+      {@JsonKey(name: 'event') @HiveField(0) required final String type,
+      @HiveField(2) required final UnifediApiWebSocketsChannel channel,
+      @HiveField(3) required final UnifediApiStatus? status,
+      @HiveField(4) required final UnifediApiNotification? notification,
+      @HiveField(5) required final UnifediApiAnnouncement? announcement,
+      @HiveField(6) required final UnifediApiChat? chat,
+      @HiveField(7) required final UnifediApiConversation? conversation,
+      @HiveField(8) required final String? id,
       @HiveField(9)
-          required UnifediApiAccountRelationshipFollowUpdate?
-              followUpdate}) = _$_UnifediApiWebSocketsEvent;
+      required final UnifediApiAccountRelationshipFollowUpdate?
+          followUpdate}) = _$UnifediApiWebSocketsEventImpl;
 
   factory _UnifediApiWebSocketsEvent.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiWebSocketsEvent.fromJson;
+      _$UnifediApiWebSocketsEventImpl.fromJson;
 
   @override
   @JsonKey(name: 'event')
@@ -499,6 +461,6 @@ abstract class _UnifediApiWebSocketsEvent implements UnifediApiWebSocketsEvent {
   UnifediApiAccountRelationshipFollowUpdate? get followUpdate;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiWebSocketsEventCopyWith<_UnifediApiWebSocketsEvent>
+  _$$UnifediApiWebSocketsEventImplCopyWith<_$UnifediApiWebSocketsEventImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

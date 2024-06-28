@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_card_model_impl.dart';
 
@@ -11,74 +12,11 @@ part of 'mastodon_api_card_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiCard _$MastodonApiCardFromJson(Map<String, dynamic> json) {
   return _MastodonApiCard.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiCardTearOff {
-  const _$MastodonApiCardTearOff();
-
-  _MastodonApiCard call(
-      {@HiveField(0)
-      @JsonKey(name: 'author_name')
-          required String? authorName,
-      @HiveField(1)
-      @JsonKey(name: 'author_url')
-          required String? authorUrl,
-      @HiveField(2)
-          required String? description,
-      @HiveField(3)
-      @JsonKey(name: 'embed_url')
-          required String? embedUrl,
-      @HiveField(4)
-      @JsonKey(fromJson: JsonParseHelper.intFromJsonOrNullOnError)
-          required int? height,
-      @HiveField(5)
-      @JsonKey(fromJson: JsonParseHelper.intFromJsonOrNullOnError)
-          required int? width,
-      @HiveField(6)
-          required String? html,
-      @HiveField(7)
-          required String? image,
-      @HiveField(8)
-      @JsonKey(name: 'provider_name')
-          required String? providerName,
-      @HiveField(9)
-      @JsonKey(name: 'provider_url')
-          required String? providerUrl,
-      @HiveField(10)
-          required String? title,
-      @HiveField(11)
-          required String type,
-      @HiveField(12)
-          required String? url}) {
-    return _MastodonApiCard(
-      authorName: authorName,
-      authorUrl: authorUrl,
-      description: description,
-      embedUrl: embedUrl,
-      height: height,
-      width: width,
-      html: html,
-      image: image,
-      providerName: providerName,
-      providerUrl: providerUrl,
-      title: title,
-      type: type,
-      url: url,
-    );
-  }
-
-  MastodonApiCard fromJson(Map<String, Object?> json) {
-    return MastodonApiCard.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiCard = _$MastodonApiCardTearOff();
 
 /// @nodoc
 mixin _$MastodonApiCard {
@@ -126,52 +64,39 @@ mixin _$MastodonApiCard {
 abstract class $MastodonApiCardCopyWith<$Res> {
   factory $MastodonApiCardCopyWith(
           MastodonApiCard value, $Res Function(MastodonApiCard) then) =
-      _$MastodonApiCardCopyWithImpl<$Res>;
+      _$MastodonApiCardCopyWithImpl<$Res, MastodonApiCard>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-      @JsonKey(name: 'author_name')
-          String? authorName,
-      @HiveField(1)
-      @JsonKey(name: 'author_url')
-          String? authorUrl,
-      @HiveField(2)
-          String? description,
-      @HiveField(3)
-      @JsonKey(name: 'embed_url')
-          String? embedUrl,
+      {@HiveField(0) @JsonKey(name: 'author_name') String? authorName,
+      @HiveField(1) @JsonKey(name: 'author_url') String? authorUrl,
+      @HiveField(2) String? description,
+      @HiveField(3) @JsonKey(name: 'embed_url') String? embedUrl,
       @HiveField(4)
       @JsonKey(fromJson: JsonParseHelper.intFromJsonOrNullOnError)
-          int? height,
+      int? height,
       @HiveField(5)
       @JsonKey(fromJson: JsonParseHelper.intFromJsonOrNullOnError)
-          int? width,
-      @HiveField(6)
-          String? html,
-      @HiveField(7)
-          String? image,
-      @HiveField(8)
-      @JsonKey(name: 'provider_name')
-          String? providerName,
-      @HiveField(9)
-      @JsonKey(name: 'provider_url')
-          String? providerUrl,
-      @HiveField(10)
-          String? title,
-      @HiveField(11)
-          String type,
-      @HiveField(12)
-          String? url});
+      int? width,
+      @HiveField(6) String? html,
+      @HiveField(7) String? image,
+      @HiveField(8) @JsonKey(name: 'provider_name') String? providerName,
+      @HiveField(9) @JsonKey(name: 'provider_url') String? providerUrl,
+      @HiveField(10) String? title,
+      @HiveField(11) String type,
+      @HiveField(12) String? url});
 }
 
 /// @nodoc
-class _$MastodonApiCardCopyWithImpl<$Res>
+class _$MastodonApiCardCopyWithImpl<$Res, $Val extends MastodonApiCard>
     implements $MastodonApiCardCopyWith<$Res> {
   _$MastodonApiCardCopyWithImpl(this._value, this._then);
 
-  final MastodonApiCard _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiCard) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? authorName = freezed,
@@ -185,120 +110,103 @@ class _$MastodonApiCardCopyWithImpl<$Res>
     Object? providerName = freezed,
     Object? providerUrl = freezed,
     Object? title = freezed,
-    Object? type = freezed,
+    Object? type = null,
     Object? url = freezed,
   }) {
     return _then(_value.copyWith(
-      authorName: authorName == freezed
+      authorName: freezed == authorName
           ? _value.authorName
           : authorName // ignore: cast_nullable_to_non_nullable
               as String?,
-      authorUrl: authorUrl == freezed
+      authorUrl: freezed == authorUrl
           ? _value.authorUrl
           : authorUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      embedUrl: embedUrl == freezed
+      embedUrl: freezed == embedUrl
           ? _value.embedUrl
           : embedUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      height: height == freezed
+      height: freezed == height
           ? _value.height
           : height // ignore: cast_nullable_to_non_nullable
               as int?,
-      width: width == freezed
+      width: freezed == width
           ? _value.width
           : width // ignore: cast_nullable_to_non_nullable
               as int?,
-      html: html == freezed
+      html: freezed == html
           ? _value.html
           : html // ignore: cast_nullable_to_non_nullable
               as String?,
-      image: image == freezed
+      image: freezed == image
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
               as String?,
-      providerName: providerName == freezed
+      providerName: freezed == providerName
           ? _value.providerName
           : providerName // ignore: cast_nullable_to_non_nullable
               as String?,
-      providerUrl: providerUrl == freezed
+      providerUrl: freezed == providerUrl
           ? _value.providerUrl
           : providerUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      title: title == freezed
+      title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiCardCopyWith<$Res>
+abstract class _$$MastodonApiCardImplCopyWith<$Res>
     implements $MastodonApiCardCopyWith<$Res> {
-  factory _$MastodonApiCardCopyWith(
-          _MastodonApiCard value, $Res Function(_MastodonApiCard) then) =
-      __$MastodonApiCardCopyWithImpl<$Res>;
+  factory _$$MastodonApiCardImplCopyWith(_$MastodonApiCardImpl value,
+          $Res Function(_$MastodonApiCardImpl) then) =
+      __$$MastodonApiCardImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-      @JsonKey(name: 'author_name')
-          String? authorName,
-      @HiveField(1)
-      @JsonKey(name: 'author_url')
-          String? authorUrl,
-      @HiveField(2)
-          String? description,
-      @HiveField(3)
-      @JsonKey(name: 'embed_url')
-          String? embedUrl,
+      {@HiveField(0) @JsonKey(name: 'author_name') String? authorName,
+      @HiveField(1) @JsonKey(name: 'author_url') String? authorUrl,
+      @HiveField(2) String? description,
+      @HiveField(3) @JsonKey(name: 'embed_url') String? embedUrl,
       @HiveField(4)
       @JsonKey(fromJson: JsonParseHelper.intFromJsonOrNullOnError)
-          int? height,
+      int? height,
       @HiveField(5)
       @JsonKey(fromJson: JsonParseHelper.intFromJsonOrNullOnError)
-          int? width,
-      @HiveField(6)
-          String? html,
-      @HiveField(7)
-          String? image,
-      @HiveField(8)
-      @JsonKey(name: 'provider_name')
-          String? providerName,
-      @HiveField(9)
-      @JsonKey(name: 'provider_url')
-          String? providerUrl,
-      @HiveField(10)
-          String? title,
-      @HiveField(11)
-          String type,
-      @HiveField(12)
-          String? url});
+      int? width,
+      @HiveField(6) String? html,
+      @HiveField(7) String? image,
+      @HiveField(8) @JsonKey(name: 'provider_name') String? providerName,
+      @HiveField(9) @JsonKey(name: 'provider_url') String? providerUrl,
+      @HiveField(10) String? title,
+      @HiveField(11) String type,
+      @HiveField(12) String? url});
 }
 
 /// @nodoc
-class __$MastodonApiCardCopyWithImpl<$Res>
-    extends _$MastodonApiCardCopyWithImpl<$Res>
-    implements _$MastodonApiCardCopyWith<$Res> {
-  __$MastodonApiCardCopyWithImpl(
-      _MastodonApiCard _value, $Res Function(_MastodonApiCard) _then)
-      : super(_value, (v) => _then(v as _MastodonApiCard));
+class __$$MastodonApiCardImplCopyWithImpl<$Res>
+    extends _$MastodonApiCardCopyWithImpl<$Res, _$MastodonApiCardImpl>
+    implements _$$MastodonApiCardImplCopyWith<$Res> {
+  __$$MastodonApiCardImplCopyWithImpl(
+      _$MastodonApiCardImpl _value, $Res Function(_$MastodonApiCardImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiCard get _value => super._value as _MastodonApiCard;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? authorName = freezed,
@@ -312,59 +220,59 @@ class __$MastodonApiCardCopyWithImpl<$Res>
     Object? providerName = freezed,
     Object? providerUrl = freezed,
     Object? title = freezed,
-    Object? type = freezed,
+    Object? type = null,
     Object? url = freezed,
   }) {
-    return _then(_MastodonApiCard(
-      authorName: authorName == freezed
+    return _then(_$MastodonApiCardImpl(
+      authorName: freezed == authorName
           ? _value.authorName
           : authorName // ignore: cast_nullable_to_non_nullable
               as String?,
-      authorUrl: authorUrl == freezed
+      authorUrl: freezed == authorUrl
           ? _value.authorUrl
           : authorUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      embedUrl: embedUrl == freezed
+      embedUrl: freezed == embedUrl
           ? _value.embedUrl
           : embedUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      height: height == freezed
+      height: freezed == height
           ? _value.height
           : height // ignore: cast_nullable_to_non_nullable
               as int?,
-      width: width == freezed
+      width: freezed == width
           ? _value.width
           : width // ignore: cast_nullable_to_non_nullable
               as int?,
-      html: html == freezed
+      html: freezed == html
           ? _value.html
           : html // ignore: cast_nullable_to_non_nullable
               as String?,
-      image: image == freezed
+      image: freezed == image
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
               as String?,
-      providerName: providerName == freezed
+      providerName: freezed == providerName
           ? _value.providerName
           : providerName // ignore: cast_nullable_to_non_nullable
               as String?,
-      providerUrl: providerUrl == freezed
+      providerUrl: freezed == providerUrl
           ? _value.providerUrl
           : providerUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      title: title == freezed
+      title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -374,44 +282,28 @@ class __$MastodonApiCardCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiCard implements _MastodonApiCard {
-  const _$_MastodonApiCard(
-      {@HiveField(0)
-      @JsonKey(name: 'author_name')
-          required this.authorName,
-      @HiveField(1)
-      @JsonKey(name: 'author_url')
-          required this.authorUrl,
-      @HiveField(2)
-          required this.description,
-      @HiveField(3)
-      @JsonKey(name: 'embed_url')
-          required this.embedUrl,
+class _$MastodonApiCardImpl implements _MastodonApiCard {
+  const _$MastodonApiCardImpl(
+      {@HiveField(0) @JsonKey(name: 'author_name') required this.authorName,
+      @HiveField(1) @JsonKey(name: 'author_url') required this.authorUrl,
+      @HiveField(2) required this.description,
+      @HiveField(3) @JsonKey(name: 'embed_url') required this.embedUrl,
       @HiveField(4)
       @JsonKey(fromJson: JsonParseHelper.intFromJsonOrNullOnError)
-          required this.height,
+      required this.height,
       @HiveField(5)
       @JsonKey(fromJson: JsonParseHelper.intFromJsonOrNullOnError)
-          required this.width,
-      @HiveField(6)
-          required this.html,
-      @HiveField(7)
-          required this.image,
-      @HiveField(8)
-      @JsonKey(name: 'provider_name')
-          required this.providerName,
-      @HiveField(9)
-      @JsonKey(name: 'provider_url')
-          required this.providerUrl,
-      @HiveField(10)
-          required this.title,
-      @HiveField(11)
-          required this.type,
-      @HiveField(12)
-          required this.url});
+      required this.width,
+      @HiveField(6) required this.html,
+      @HiveField(7) required this.image,
+      @HiveField(8) @JsonKey(name: 'provider_name') required this.providerName,
+      @HiveField(9) @JsonKey(name: 'provider_url') required this.providerUrl,
+      @HiveField(10) required this.title,
+      @HiveField(11) required this.type,
+      @HiveField(12) required this.url});
 
-  factory _$_MastodonApiCard.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiCardFromJson(json);
+  factory _$MastodonApiCardImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MastodonApiCardImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -466,10 +358,10 @@ class _$_MastodonApiCard implements _MastodonApiCard {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiCard &&
+            other is _$MastodonApiCardImpl &&
             (identical(other.authorName, authorName) ||
                 other.authorName == authorName) &&
             (identical(other.authorUrl, authorUrl) ||
@@ -491,6 +383,7 @@ class _$_MastodonApiCard implements _MastodonApiCard {
             (identical(other.url, url) || other.url == url));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -510,12 +403,16 @@ class _$_MastodonApiCard implements _MastodonApiCard {
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiCardCopyWith<_MastodonApiCard> get copyWith =>
-      __$MastodonApiCardCopyWithImpl<_MastodonApiCard>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiCardImplCopyWith<_$MastodonApiCardImpl> get copyWith =>
+      __$$MastodonApiCardImplCopyWithImpl<_$MastodonApiCardImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiCardToJson(this);
+    return _$$MastodonApiCardImplToJson(
+      this,
+    );
   }
 }
 
@@ -523,40 +420,32 @@ abstract class _MastodonApiCard implements MastodonApiCard {
   const factory _MastodonApiCard(
       {@HiveField(0)
       @JsonKey(name: 'author_name')
-          required String? authorName,
+      required final String? authorName,
       @HiveField(1)
       @JsonKey(name: 'author_url')
-          required String? authorUrl,
-      @HiveField(2)
-          required String? description,
-      @HiveField(3)
-      @JsonKey(name: 'embed_url')
-          required String? embedUrl,
+      required final String? authorUrl,
+      @HiveField(2) required final String? description,
+      @HiveField(3) @JsonKey(name: 'embed_url') required final String? embedUrl,
       @HiveField(4)
       @JsonKey(fromJson: JsonParseHelper.intFromJsonOrNullOnError)
-          required int? height,
+      required final int? height,
       @HiveField(5)
       @JsonKey(fromJson: JsonParseHelper.intFromJsonOrNullOnError)
-          required int? width,
-      @HiveField(6)
-          required String? html,
-      @HiveField(7)
-          required String? image,
+      required final int? width,
+      @HiveField(6) required final String? html,
+      @HiveField(7) required final String? image,
       @HiveField(8)
       @JsonKey(name: 'provider_name')
-          required String? providerName,
+      required final String? providerName,
       @HiveField(9)
       @JsonKey(name: 'provider_url')
-          required String? providerUrl,
-      @HiveField(10)
-          required String? title,
-      @HiveField(11)
-          required String type,
-      @HiveField(12)
-          required String? url}) = _$_MastodonApiCard;
+      required final String? providerUrl,
+      @HiveField(10) required final String? title,
+      @HiveField(11) required final String type,
+      @HiveField(12) required final String? url}) = _$MastodonApiCardImpl;
 
   factory _MastodonApiCard.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiCard.fromJson;
+      _$MastodonApiCardImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -606,6 +495,6 @@ abstract class _MastodonApiCard implements MastodonApiCard {
   String? get url;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiCardCopyWith<_MastodonApiCard> get copyWith =>
+  _$$MastodonApiCardImplCopyWith<_$MastodonApiCardImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

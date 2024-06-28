@@ -54,18 +54,18 @@ class PleromaApiPostStatusPollAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiPostStatusPoll _$$_PleromaApiPostStatusPollFromJson(
+_$PleromaApiPostStatusPollImpl _$$PleromaApiPostStatusPollImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiPostStatusPoll(
-      expiresInSeconds: json['expires_in'] as int,
+    _$PleromaApiPostStatusPollImpl(
+      expiresInSeconds: (json['expires_in'] as num).toInt(),
       hideTotals: json['hide_totals'] as bool,
       multiple: json['multiple'] as bool,
       options:
           (json['options'] as List<dynamic>).map((e) => e as String).toList(),
     );
 
-Map<String, dynamic> _$$_PleromaApiPostStatusPollToJson(
-        _$_PleromaApiPostStatusPoll instance) =>
+Map<String, dynamic> _$$PleromaApiPostStatusPollImplToJson(
+        _$PleromaApiPostStatusPollImpl instance) =>
     <String, dynamic>{
       'expires_in': instance.expiresInSeconds,
       'hide_totals': instance.hideTotals,

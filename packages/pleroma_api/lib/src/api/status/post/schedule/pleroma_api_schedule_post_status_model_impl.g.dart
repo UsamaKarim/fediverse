@@ -84,11 +84,11 @@ class PleromaApiSchedulePostStatusAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiSchedulePostStatus _$$_PleromaApiSchedulePostStatusFromJson(
+_$PleromaApiSchedulePostStatusImpl _$$PleromaApiSchedulePostStatusImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiSchedulePostStatus(
+    _$PleromaApiSchedulePostStatusImpl(
       contentType: json['content_type'] as String?,
-      expiresInSeconds: json['expires_in'] as int?,
+      expiresInSeconds: (json['expires_in'] as num?)?.toInt(),
       inReplyToConversationId: json['in_reply_to_conversation_id'] as String?,
       inReplyToId: json['in_reply_to_id'] as String?,
       language: json['language'] as String?,
@@ -109,8 +109,8 @@ _$_PleromaApiSchedulePostStatus _$$_PleromaApiSchedulePostStatusFromJson(
           JsonParseHelper.fromUTCIsoString(json['scheduled_at'] as String),
     );
 
-Map<String, dynamic> _$$_PleromaApiSchedulePostStatusToJson(
-    _$_PleromaApiSchedulePostStatus instance) {
+Map<String, dynamic> _$$PleromaApiSchedulePostStatusImplToJson(
+    _$PleromaApiSchedulePostStatusImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {
@@ -132,7 +132,6 @@ Map<String, dynamic> _$$_PleromaApiSchedulePostStatusToJson(
   writeNotNull('spoiler_text', instance.spoilerText);
   writeNotNull('status', instance.status);
   writeNotNull('to', instance.to);
-  writeNotNull(
-      'scheduled_at', JsonParseHelper.toUTCIsoString(instance.scheduledAt));
+  val['scheduled_at'] = JsonParseHelper.toUTCIsoString(instance.scheduledAt);
   return val;
 }

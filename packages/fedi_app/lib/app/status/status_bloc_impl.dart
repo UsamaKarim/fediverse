@@ -1,4 +1,5 @@
 import 'package:collection/collection.dart' show IterableExtension;
+import 'package:drift/drift.dart';
 import 'package:easy_dispose/easy_dispose.dart';
 import 'package:fedi_app/app/account/account_model.dart';
 import 'package:fedi_app/app/emoji/text/emoji_text_model.dart';
@@ -473,7 +474,7 @@ abstract class StatusBloc extends DisposableOwner implements IStatusBloc {
     var updatedLocalStatus = dbStatusPopulatedWrapper.copyWith(
       dbStatusPopulated: dbStatusPopulatedWrapper.dbStatusPopulated.copyWith(
         dbStatus: dbStatusPopulatedWrapper.dbStatusPopulated.dbStatus.copyWith(
-          poll: poll?.toUnifediApiPoll(),
+          poll: Value(poll?.toUnifediApiPoll()),
         ),
       ),
     );

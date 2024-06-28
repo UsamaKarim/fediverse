@@ -46,15 +46,15 @@ class UnifediApiInstanceChatLimitsPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiInstanceChatLimitsPleromaAdapter
-    _$$_UnifediApiInstanceChatLimitsPleromaAdapterFromJson(
+_$UnifediApiInstanceChatLimitsPleromaAdapterImpl
+    _$$UnifediApiInstanceChatLimitsPleromaAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiInstanceChatLimitsPleromaAdapter(
+        _$UnifediApiInstanceChatLimitsPleromaAdapterImpl(
           PleromaApiInstance.fromJson(json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiInstanceChatLimitsPleromaAdapterToJson(
-        _$_UnifediApiInstanceChatLimitsPleromaAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiInstanceChatLimitsPleromaAdapterImplToJson(
+        _$UnifediApiInstanceChatLimitsPleromaAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

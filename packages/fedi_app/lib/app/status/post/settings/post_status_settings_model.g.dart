@@ -53,9 +53,9 @@ class PostStatusSettingsAdapter extends TypeAdapter<PostStatusSettings> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PostStatusSettings _$$_PostStatusSettingsFromJson(
+_$PostStatusSettingsImpl _$$PostStatusSettingsImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PostStatusSettings(
+    _$PostStatusSettingsImpl(
       markMediaAsNsfwOnAttach: json['mark_media_as_nsfw_on_attach'] as bool,
       defaultVisibilityString: json['default_visibility'] as String,
       defaultStatusLocale: json['default_status_locale'] == null
@@ -66,8 +66,8 @@ _$_PostStatusSettings _$$_PostStatusSettingsFromJson(
           json['dont_upload_media_during_editing_on_attach'] as bool,
     );
 
-Map<String, dynamic> _$$_PostStatusSettingsToJson(
-    _$_PostStatusSettings instance) {
+Map<String, dynamic> _$$PostStatusSettingsImplToJson(
+    _$PostStatusSettingsImpl instance) {
   final val = <String, dynamic>{
     'mark_media_as_nsfw_on_attach': instance.markMediaAsNsfwOnAttach,
     'default_visibility': instance.defaultVisibilityString,

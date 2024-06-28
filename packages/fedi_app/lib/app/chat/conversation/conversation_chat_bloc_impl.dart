@@ -22,7 +22,7 @@ import 'package:fedi_app/id/fake_id_helper.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 import 'package:logging/logging.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 import 'package:provider/provider.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:unifedi_api/unifedi_api.dart';
@@ -367,7 +367,7 @@ class ConversationChatBloc extends ChatBloc implements IConversationChatBloc {
       localStatusId = oldPendingFailedConversationChatMessage!.status.localId;
       dbStatus = oldPendingFailedConversationChatMessage.status
           .toDbStatus()
-          .copyWith(id: localStatusId);
+          .copyWith(id: Value(localStatusId));
 
       idempotencyKey = dbStatus.wasSentWithIdempotencyKey;
       var inReplyToConversationIdSupported =
@@ -392,7 +392,7 @@ class ConversationChatBloc extends ChatBloc implements IConversationChatBloc {
       await statusRepository.updateByDbIdInDbType(
         dbId: localStatusId!,
         dbItem: dbStatus.copyWith(
-          pendingState: PendingState.pending,
+          pendingState: Value(PendingState.pending),
         ),
         batchTransaction: null,
       );
@@ -425,9 +425,9 @@ class ConversationChatBloc extends ChatBloc implements IConversationChatBloc {
             fakeUniqueRemoteRemoteId: fakeUniqueRemoteRemoteId,
           )
           .copyWith(
-            directConversationId: conversationIdInt,
+            directConversationId: Value(conversationIdInt),
             // ignore: no-equal-arguments
-            conversationId: conversationIdInt,
+            conversationId: Value(conversationIdInt),
           );
 
       localStatusId = await statusRepository.upsertInDbType(
@@ -489,8 +489,8 @@ class ConversationChatBloc extends ChatBloc implements IConversationChatBloc {
       await statusRepository.updateByDbIdInDbType(
         dbId: localStatusId,
         dbItem: dbStatus.copyWith(
-          hiddenLocallyOnDevice: true,
-          pendingState: PendingState.published,
+          hiddenLocallyOnDevice: Value(true),
+          pendingState: Value(PendingState.published),
         ),
         batchTransaction: null,
       );
@@ -506,7 +506,7 @@ class ConversationChatBloc extends ChatBloc implements IConversationChatBloc {
       await statusRepository.updateByDbIdInDbType(
         dbId: localStatusId,
         dbItem: dbStatus.copyWith(
-          pendingState: PendingState.fail,
+          pendingState: Value(PendingState.fail),
         ),
         batchTransaction: null,
       );

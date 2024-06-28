@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'scheduled_status_model.dart';
 
@@ -11,22 +12,7 @@ part of 'scheduled_status_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$DbScheduledStatusPopulatedTearOff {
-  const _$DbScheduledStatusPopulatedTearOff();
-
-  _DbScheduledStatusPopulated call(
-      {required DbScheduledStatus dbScheduledStatus}) {
-    return _DbScheduledStatusPopulated(
-      dbScheduledStatus: dbScheduledStatus,
-    );
-  }
-}
-
-/// @nodoc
-const $DbScheduledStatusPopulated = _$DbScheduledStatusPopulatedTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$DbScheduledStatusPopulated {
@@ -41,61 +27,66 @@ mixin _$DbScheduledStatusPopulated {
 abstract class $DbScheduledStatusPopulatedCopyWith<$Res> {
   factory $DbScheduledStatusPopulatedCopyWith(DbScheduledStatusPopulated value,
           $Res Function(DbScheduledStatusPopulated) then) =
-      _$DbScheduledStatusPopulatedCopyWithImpl<$Res>;
+      _$DbScheduledStatusPopulatedCopyWithImpl<$Res,
+          DbScheduledStatusPopulated>;
+  @useResult
   $Res call({DbScheduledStatus dbScheduledStatus});
 }
 
 /// @nodoc
-class _$DbScheduledStatusPopulatedCopyWithImpl<$Res>
+class _$DbScheduledStatusPopulatedCopyWithImpl<$Res,
+        $Val extends DbScheduledStatusPopulated>
     implements $DbScheduledStatusPopulatedCopyWith<$Res> {
   _$DbScheduledStatusPopulatedCopyWithImpl(this._value, this._then);
 
-  final DbScheduledStatusPopulated _value;
   // ignore: unused_field
-  final $Res Function(DbScheduledStatusPopulated) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? dbScheduledStatus = freezed,
   }) {
     return _then(_value.copyWith(
-      dbScheduledStatus: dbScheduledStatus == freezed
+      dbScheduledStatus: freezed == dbScheduledStatus
           ? _value.dbScheduledStatus
           : dbScheduledStatus // ignore: cast_nullable_to_non_nullable
               as DbScheduledStatus,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$DbScheduledStatusPopulatedCopyWith<$Res>
+abstract class _$$DbScheduledStatusPopulatedImplCopyWith<$Res>
     implements $DbScheduledStatusPopulatedCopyWith<$Res> {
-  factory _$DbScheduledStatusPopulatedCopyWith(
-          _DbScheduledStatusPopulated value,
-          $Res Function(_DbScheduledStatusPopulated) then) =
-      __$DbScheduledStatusPopulatedCopyWithImpl<$Res>;
+  factory _$$DbScheduledStatusPopulatedImplCopyWith(
+          _$DbScheduledStatusPopulatedImpl value,
+          $Res Function(_$DbScheduledStatusPopulatedImpl) then) =
+      __$$DbScheduledStatusPopulatedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({DbScheduledStatus dbScheduledStatus});
 }
 
 /// @nodoc
-class __$DbScheduledStatusPopulatedCopyWithImpl<$Res>
-    extends _$DbScheduledStatusPopulatedCopyWithImpl<$Res>
-    implements _$DbScheduledStatusPopulatedCopyWith<$Res> {
-  __$DbScheduledStatusPopulatedCopyWithImpl(_DbScheduledStatusPopulated _value,
-      $Res Function(_DbScheduledStatusPopulated) _then)
-      : super(_value, (v) => _then(v as _DbScheduledStatusPopulated));
+class __$$DbScheduledStatusPopulatedImplCopyWithImpl<$Res>
+    extends _$DbScheduledStatusPopulatedCopyWithImpl<$Res,
+        _$DbScheduledStatusPopulatedImpl>
+    implements _$$DbScheduledStatusPopulatedImplCopyWith<$Res> {
+  __$$DbScheduledStatusPopulatedImplCopyWithImpl(
+      _$DbScheduledStatusPopulatedImpl _value,
+      $Res Function(_$DbScheduledStatusPopulatedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _DbScheduledStatusPopulated get _value =>
-      super._value as _DbScheduledStatusPopulated;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? dbScheduledStatus = freezed,
   }) {
-    return _then(_DbScheduledStatusPopulated(
-      dbScheduledStatus: dbScheduledStatus == freezed
+    return _then(_$DbScheduledStatusPopulatedImpl(
+      dbScheduledStatus: freezed == dbScheduledStatus
           ? _value.dbScheduledStatus
           : dbScheduledStatus // ignore: cast_nullable_to_non_nullable
               as DbScheduledStatus,
@@ -105,8 +96,8 @@ class __$DbScheduledStatusPopulatedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DbScheduledStatusPopulated implements _DbScheduledStatusPopulated {
-  const _$_DbScheduledStatusPopulated({required this.dbScheduledStatus});
+class _$DbScheduledStatusPopulatedImpl implements _DbScheduledStatusPopulated {
+  const _$DbScheduledStatusPopulatedImpl({required this.dbScheduledStatus});
 
   @override
   final DbScheduledStatus dbScheduledStatus;
@@ -117,10 +108,10 @@ class _$_DbScheduledStatusPopulated implements _DbScheduledStatusPopulated {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DbScheduledStatusPopulated &&
+            other is _$DbScheduledStatusPopulatedImpl &&
             const DeepCollectionEquality()
                 .equals(other.dbScheduledStatus, dbScheduledStatus));
   }
@@ -131,40 +122,25 @@ class _$_DbScheduledStatusPopulated implements _DbScheduledStatusPopulated {
 
   @JsonKey(ignore: true)
   @override
-  _$DbScheduledStatusPopulatedCopyWith<_DbScheduledStatusPopulated>
-      get copyWith => __$DbScheduledStatusPopulatedCopyWithImpl<
-          _DbScheduledStatusPopulated>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DbScheduledStatusPopulatedImplCopyWith<_$DbScheduledStatusPopulatedImpl>
+      get copyWith => __$$DbScheduledStatusPopulatedImplCopyWithImpl<
+          _$DbScheduledStatusPopulatedImpl>(this, _$identity);
 }
 
 abstract class _DbScheduledStatusPopulated
     implements DbScheduledStatusPopulated {
   const factory _DbScheduledStatusPopulated(
-          {required DbScheduledStatus dbScheduledStatus}) =
-      _$_DbScheduledStatusPopulated;
+          {required final DbScheduledStatus dbScheduledStatus}) =
+      _$DbScheduledStatusPopulatedImpl;
 
   @override
   DbScheduledStatus get dbScheduledStatus;
   @override
   @JsonKey(ignore: true)
-  _$DbScheduledStatusPopulatedCopyWith<_DbScheduledStatusPopulated>
+  _$$DbScheduledStatusPopulatedImplCopyWith<_$DbScheduledStatusPopulatedImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$DbScheduledStatusPopulatedWrapperTearOff {
-  const _$DbScheduledStatusPopulatedWrapperTearOff();
-
-  _DbScheduledStatusPopulatedWrapper call(
-      {required DbScheduledStatusPopulated dbScheduledStatusPopulated}) {
-    return _DbScheduledStatusPopulatedWrapper(
-      dbScheduledStatusPopulated: dbScheduledStatusPopulated,
-    );
-  }
-}
-
-/// @nodoc
-const $DbScheduledStatusPopulatedWrapper =
-    _$DbScheduledStatusPopulatedWrapperTearOff();
 
 /// @nodoc
 mixin _$DbScheduledStatusPopulatedWrapper {
@@ -181,50 +157,57 @@ abstract class $DbScheduledStatusPopulatedWrapperCopyWith<$Res> {
   factory $DbScheduledStatusPopulatedWrapperCopyWith(
           DbScheduledStatusPopulatedWrapper value,
           $Res Function(DbScheduledStatusPopulatedWrapper) then) =
-      _$DbScheduledStatusPopulatedWrapperCopyWithImpl<$Res>;
+      _$DbScheduledStatusPopulatedWrapperCopyWithImpl<$Res,
+          DbScheduledStatusPopulatedWrapper>;
+  @useResult
   $Res call({DbScheduledStatusPopulated dbScheduledStatusPopulated});
 
   $DbScheduledStatusPopulatedCopyWith<$Res> get dbScheduledStatusPopulated;
 }
 
 /// @nodoc
-class _$DbScheduledStatusPopulatedWrapperCopyWithImpl<$Res>
+class _$DbScheduledStatusPopulatedWrapperCopyWithImpl<$Res,
+        $Val extends DbScheduledStatusPopulatedWrapper>
     implements $DbScheduledStatusPopulatedWrapperCopyWith<$Res> {
   _$DbScheduledStatusPopulatedWrapperCopyWithImpl(this._value, this._then);
 
-  final DbScheduledStatusPopulatedWrapper _value;
   // ignore: unused_field
-  final $Res Function(DbScheduledStatusPopulatedWrapper) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dbScheduledStatusPopulated = freezed,
+    Object? dbScheduledStatusPopulated = null,
   }) {
     return _then(_value.copyWith(
-      dbScheduledStatusPopulated: dbScheduledStatusPopulated == freezed
+      dbScheduledStatusPopulated: null == dbScheduledStatusPopulated
           ? _value.dbScheduledStatusPopulated
           : dbScheduledStatusPopulated // ignore: cast_nullable_to_non_nullable
               as DbScheduledStatusPopulated,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $DbScheduledStatusPopulatedCopyWith<$Res> get dbScheduledStatusPopulated {
     return $DbScheduledStatusPopulatedCopyWith<$Res>(
         _value.dbScheduledStatusPopulated, (value) {
-      return _then(_value.copyWith(dbScheduledStatusPopulated: value));
+      return _then(_value.copyWith(dbScheduledStatusPopulated: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$DbScheduledStatusPopulatedWrapperCopyWith<$Res>
+abstract class _$$DbScheduledStatusPopulatedWrapperImplCopyWith<$Res>
     implements $DbScheduledStatusPopulatedWrapperCopyWith<$Res> {
-  factory _$DbScheduledStatusPopulatedWrapperCopyWith(
-          _DbScheduledStatusPopulatedWrapper value,
-          $Res Function(_DbScheduledStatusPopulatedWrapper) then) =
-      __$DbScheduledStatusPopulatedWrapperCopyWithImpl<$Res>;
+  factory _$$DbScheduledStatusPopulatedWrapperImplCopyWith(
+          _$DbScheduledStatusPopulatedWrapperImpl value,
+          $Res Function(_$DbScheduledStatusPopulatedWrapperImpl) then) =
+      __$$DbScheduledStatusPopulatedWrapperImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({DbScheduledStatusPopulated dbScheduledStatusPopulated});
 
   @override
@@ -232,24 +215,22 @@ abstract class _$DbScheduledStatusPopulatedWrapperCopyWith<$Res>
 }
 
 /// @nodoc
-class __$DbScheduledStatusPopulatedWrapperCopyWithImpl<$Res>
-    extends _$DbScheduledStatusPopulatedWrapperCopyWithImpl<$Res>
-    implements _$DbScheduledStatusPopulatedWrapperCopyWith<$Res> {
-  __$DbScheduledStatusPopulatedWrapperCopyWithImpl(
-      _DbScheduledStatusPopulatedWrapper _value,
-      $Res Function(_DbScheduledStatusPopulatedWrapper) _then)
-      : super(_value, (v) => _then(v as _DbScheduledStatusPopulatedWrapper));
+class __$$DbScheduledStatusPopulatedWrapperImplCopyWithImpl<$Res>
+    extends _$DbScheduledStatusPopulatedWrapperCopyWithImpl<$Res,
+        _$DbScheduledStatusPopulatedWrapperImpl>
+    implements _$$DbScheduledStatusPopulatedWrapperImplCopyWith<$Res> {
+  __$$DbScheduledStatusPopulatedWrapperImplCopyWithImpl(
+      _$DbScheduledStatusPopulatedWrapperImpl _value,
+      $Res Function(_$DbScheduledStatusPopulatedWrapperImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _DbScheduledStatusPopulatedWrapper get _value =>
-      super._value as _DbScheduledStatusPopulatedWrapper;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dbScheduledStatusPopulated = freezed,
+    Object? dbScheduledStatusPopulated = null,
   }) {
-    return _then(_DbScheduledStatusPopulatedWrapper(
-      dbScheduledStatusPopulated: dbScheduledStatusPopulated == freezed
+    return _then(_$DbScheduledStatusPopulatedWrapperImpl(
+      dbScheduledStatusPopulated: null == dbScheduledStatusPopulated
           ? _value.dbScheduledStatusPopulated
           : dbScheduledStatusPopulated // ignore: cast_nullable_to_non_nullable
               as DbScheduledStatusPopulated,
@@ -259,9 +240,9 @@ class __$DbScheduledStatusPopulatedWrapperCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DbScheduledStatusPopulatedWrapper
+class _$DbScheduledStatusPopulatedWrapperImpl
     extends _DbScheduledStatusPopulatedWrapper {
-  const _$_DbScheduledStatusPopulatedWrapper(
+  const _$DbScheduledStatusPopulatedWrapperImpl(
       {required this.dbScheduledStatusPopulated})
       : super._();
 
@@ -274,10 +255,10 @@ class _$_DbScheduledStatusPopulatedWrapper
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DbScheduledStatusPopulatedWrapper &&
+            other is _$DbScheduledStatusPopulatedWrapperImpl &&
             (identical(other.dbScheduledStatusPopulated,
                     dbScheduledStatusPopulated) ||
                 other.dbScheduledStatusPopulated ==
@@ -289,24 +270,26 @@ class _$_DbScheduledStatusPopulatedWrapper
 
   @JsonKey(ignore: true)
   @override
-  _$DbScheduledStatusPopulatedWrapperCopyWith<
-          _DbScheduledStatusPopulatedWrapper>
-      get copyWith => __$DbScheduledStatusPopulatedWrapperCopyWithImpl<
-          _DbScheduledStatusPopulatedWrapper>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DbScheduledStatusPopulatedWrapperImplCopyWith<
+          _$DbScheduledStatusPopulatedWrapperImpl>
+      get copyWith => __$$DbScheduledStatusPopulatedWrapperImplCopyWithImpl<
+          _$DbScheduledStatusPopulatedWrapperImpl>(this, _$identity);
 }
 
 abstract class _DbScheduledStatusPopulatedWrapper
     extends DbScheduledStatusPopulatedWrapper {
   const factory _DbScheduledStatusPopulatedWrapper(
-          {required DbScheduledStatusPopulated dbScheduledStatusPopulated}) =
-      _$_DbScheduledStatusPopulatedWrapper;
+          {required final DbScheduledStatusPopulated
+              dbScheduledStatusPopulated}) =
+      _$DbScheduledStatusPopulatedWrapperImpl;
   const _DbScheduledStatusPopulatedWrapper._() : super._();
 
   @override
   DbScheduledStatusPopulated get dbScheduledStatusPopulated;
   @override
   @JsonKey(ignore: true)
-  _$DbScheduledStatusPopulatedWrapperCopyWith<
-          _DbScheduledStatusPopulatedWrapper>
+  _$$DbScheduledStatusPopulatedWrapperImplCopyWith<
+          _$DbScheduledStatusPopulatedWrapperImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

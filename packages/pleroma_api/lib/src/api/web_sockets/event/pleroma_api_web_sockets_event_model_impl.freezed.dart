@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_web_sockets_event_model_impl.dart';
 
@@ -11,60 +12,12 @@ part of 'pleroma_api_web_sockets_event_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiWebSocketsEvent _$PleromaApiWebSocketsEventFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiWebSocketsEvent.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiWebSocketsEventTearOff {
-  const _$PleromaApiWebSocketsEventTearOff();
-
-  _PleromaApiWebSocketsEvent call(
-      {@JsonKey(name: 'event')
-      @HiveField(0)
-          required String type,
-      @HiveField(2)
-          required PleromaApiWebSocketsChannel channel,
-      @HiveField(3)
-          required PleromaApiStatus? status,
-      @HiveField(4)
-          required PleromaApiNotification? notification,
-      @HiveField(5)
-          required PleromaApiAnnouncement? announcement,
-      @HiveField(6)
-          required PleromaApiChat? chat,
-      @HiveField(7)
-          required PleromaApiConversation? conversation,
-      @HiveField(8)
-          required String? id,
-      @HiveField(9)
-          required PleromaApiAccountRelationshipFollowUpdate? followUpdate,
-      @HiveField(10)
-          required String? payload}) {
-    return _PleromaApiWebSocketsEvent(
-      type: type,
-      channel: channel,
-      status: status,
-      notification: notification,
-      announcement: announcement,
-      chat: chat,
-      conversation: conversation,
-      id: id,
-      followUpdate: followUpdate,
-      payload: payload,
-    );
-  }
-
-  PleromaApiWebSocketsEvent fromJson(Map<String, Object?> json) {
-    return PleromaApiWebSocketsEvent.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiWebSocketsEvent = _$PleromaApiWebSocketsEventTearOff();
 
 /// @nodoc
 mixin _$PleromaApiWebSocketsEvent {
@@ -104,7 +57,8 @@ mixin _$PleromaApiWebSocketsEvent {
 abstract class $PleromaApiWebSocketsEventCopyWith<$Res> {
   factory $PleromaApiWebSocketsEventCopyWith(PleromaApiWebSocketsEvent value,
           $Res Function(PleromaApiWebSocketsEvent) then) =
-      _$PleromaApiWebSocketsEventCopyWithImpl<$Res>;
+      _$PleromaApiWebSocketsEventCopyWithImpl<$Res, PleromaApiWebSocketsEvent>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'event') @HiveField(0) String type,
       @HiveField(2) PleromaApiWebSocketsChannel channel,
@@ -127,18 +81,21 @@ abstract class $PleromaApiWebSocketsEventCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiWebSocketsEventCopyWithImpl<$Res>
+class _$PleromaApiWebSocketsEventCopyWithImpl<$Res,
+        $Val extends PleromaApiWebSocketsEvent>
     implements $PleromaApiWebSocketsEventCopyWith<$Res> {
   _$PleromaApiWebSocketsEventCopyWithImpl(this._value, this._then);
 
-  final PleromaApiWebSocketsEvent _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiWebSocketsEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? type = freezed,
-    Object? channel = freezed,
+    Object? type = null,
+    Object? channel = null,
     Object? status = freezed,
     Object? notification = freezed,
     Object? announcement = freezed,
@@ -149,112 +106,119 @@ class _$PleromaApiWebSocketsEventCopyWithImpl<$Res>
     Object? payload = freezed,
   }) {
     return _then(_value.copyWith(
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      channel: channel == freezed
+      channel: null == channel
           ? _value.channel
           : channel // ignore: cast_nullable_to_non_nullable
               as PleromaApiWebSocketsChannel,
-      status: status == freezed
+      status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as PleromaApiStatus?,
-      notification: notification == freezed
+      notification: freezed == notification
           ? _value.notification
           : notification // ignore: cast_nullable_to_non_nullable
               as PleromaApiNotification?,
-      announcement: announcement == freezed
+      announcement: freezed == announcement
           ? _value.announcement
           : announcement // ignore: cast_nullable_to_non_nullable
               as PleromaApiAnnouncement?,
-      chat: chat == freezed
+      chat: freezed == chat
           ? _value.chat
           : chat // ignore: cast_nullable_to_non_nullable
               as PleromaApiChat?,
-      conversation: conversation == freezed
+      conversation: freezed == conversation
           ? _value.conversation
           : conversation // ignore: cast_nullable_to_non_nullable
               as PleromaApiConversation?,
-      id: id == freezed
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String?,
-      followUpdate: followUpdate == freezed
+      followUpdate: freezed == followUpdate
           ? _value.followUpdate
           : followUpdate // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccountRelationshipFollowUpdate?,
-      payload: payload == freezed
+      payload: freezed == payload
           ? _value.payload
           : payload // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiWebSocketsChannelCopyWith<$Res> get channel {
     return $PleromaApiWebSocketsChannelCopyWith<$Res>(_value.channel, (value) {
-      return _then(_value.copyWith(channel: value));
+      return _then(_value.copyWith(channel: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiStatusCopyWith<$Res>? get status {
     if (_value.status == null) {
       return null;
     }
 
     return $PleromaApiStatusCopyWith<$Res>(_value.status!, (value) {
-      return _then(_value.copyWith(status: value));
+      return _then(_value.copyWith(status: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiNotificationCopyWith<$Res>? get notification {
     if (_value.notification == null) {
       return null;
     }
 
     return $PleromaApiNotificationCopyWith<$Res>(_value.notification!, (value) {
-      return _then(_value.copyWith(notification: value));
+      return _then(_value.copyWith(notification: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiAnnouncementCopyWith<$Res>? get announcement {
     if (_value.announcement == null) {
       return null;
     }
 
     return $PleromaApiAnnouncementCopyWith<$Res>(_value.announcement!, (value) {
-      return _then(_value.copyWith(announcement: value));
+      return _then(_value.copyWith(announcement: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiChatCopyWith<$Res>? get chat {
     if (_value.chat == null) {
       return null;
     }
 
     return $PleromaApiChatCopyWith<$Res>(_value.chat!, (value) {
-      return _then(_value.copyWith(chat: value));
+      return _then(_value.copyWith(chat: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiConversationCopyWith<$Res>? get conversation {
     if (_value.conversation == null) {
       return null;
     }
 
     return $PleromaApiConversationCopyWith<$Res>(_value.conversation!, (value) {
-      return _then(_value.copyWith(conversation: value));
+      return _then(_value.copyWith(conversation: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiAccountRelationshipFollowUpdateCopyWith<$Res>? get followUpdate {
     if (_value.followUpdate == null) {
       return null;
@@ -262,18 +226,20 @@ class _$PleromaApiWebSocketsEventCopyWithImpl<$Res>
 
     return $PleromaApiAccountRelationshipFollowUpdateCopyWith<$Res>(
         _value.followUpdate!, (value) {
-      return _then(_value.copyWith(followUpdate: value));
+      return _then(_value.copyWith(followUpdate: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiWebSocketsEventCopyWith<$Res>
+abstract class _$$PleromaApiWebSocketsEventImplCopyWith<$Res>
     implements $PleromaApiWebSocketsEventCopyWith<$Res> {
-  factory _$PleromaApiWebSocketsEventCopyWith(_PleromaApiWebSocketsEvent value,
-          $Res Function(_PleromaApiWebSocketsEvent) then) =
-      __$PleromaApiWebSocketsEventCopyWithImpl<$Res>;
+  factory _$$PleromaApiWebSocketsEventImplCopyWith(
+          _$PleromaApiWebSocketsEventImpl value,
+          $Res Function(_$PleromaApiWebSocketsEventImpl) then) =
+      __$$PleromaApiWebSocketsEventImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'event') @HiveField(0) String type,
       @HiveField(2) PleromaApiWebSocketsChannel channel,
@@ -303,21 +269,20 @@ abstract class _$PleromaApiWebSocketsEventCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiWebSocketsEventCopyWithImpl<$Res>
-    extends _$PleromaApiWebSocketsEventCopyWithImpl<$Res>
-    implements _$PleromaApiWebSocketsEventCopyWith<$Res> {
-  __$PleromaApiWebSocketsEventCopyWithImpl(_PleromaApiWebSocketsEvent _value,
-      $Res Function(_PleromaApiWebSocketsEvent) _then)
-      : super(_value, (v) => _then(v as _PleromaApiWebSocketsEvent));
+class __$$PleromaApiWebSocketsEventImplCopyWithImpl<$Res>
+    extends _$PleromaApiWebSocketsEventCopyWithImpl<$Res,
+        _$PleromaApiWebSocketsEventImpl>
+    implements _$$PleromaApiWebSocketsEventImplCopyWith<$Res> {
+  __$$PleromaApiWebSocketsEventImplCopyWithImpl(
+      _$PleromaApiWebSocketsEventImpl _value,
+      $Res Function(_$PleromaApiWebSocketsEventImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiWebSocketsEvent get _value =>
-      super._value as _PleromaApiWebSocketsEvent;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? type = freezed,
-    Object? channel = freezed,
+    Object? type = null,
+    Object? channel = null,
     Object? status = freezed,
     Object? notification = freezed,
     Object? announcement = freezed,
@@ -327,44 +292,44 @@ class __$PleromaApiWebSocketsEventCopyWithImpl<$Res>
     Object? followUpdate = freezed,
     Object? payload = freezed,
   }) {
-    return _then(_PleromaApiWebSocketsEvent(
-      type: type == freezed
+    return _then(_$PleromaApiWebSocketsEventImpl(
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      channel: channel == freezed
+      channel: null == channel
           ? _value.channel
           : channel // ignore: cast_nullable_to_non_nullable
               as PleromaApiWebSocketsChannel,
-      status: status == freezed
+      status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as PleromaApiStatus?,
-      notification: notification == freezed
+      notification: freezed == notification
           ? _value.notification
           : notification // ignore: cast_nullable_to_non_nullable
               as PleromaApiNotification?,
-      announcement: announcement == freezed
+      announcement: freezed == announcement
           ? _value.announcement
           : announcement // ignore: cast_nullable_to_non_nullable
               as PleromaApiAnnouncement?,
-      chat: chat == freezed
+      chat: freezed == chat
           ? _value.chat
           : chat // ignore: cast_nullable_to_non_nullable
               as PleromaApiChat?,
-      conversation: conversation == freezed
+      conversation: freezed == conversation
           ? _value.conversation
           : conversation // ignore: cast_nullable_to_non_nullable
               as PleromaApiConversation?,
-      id: id == freezed
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String?,
-      followUpdate: followUpdate == freezed
+      followUpdate: freezed == followUpdate
           ? _value.followUpdate
           : followUpdate // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccountRelationshipFollowUpdate?,
-      payload: payload == freezed
+      payload: freezed == payload
           ? _value.payload
           : payload // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -374,8 +339,8 @@ class __$PleromaApiWebSocketsEventCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiWebSocketsEvent implements _PleromaApiWebSocketsEvent {
-  const _$_PleromaApiWebSocketsEvent(
+class _$PleromaApiWebSocketsEventImpl implements _PleromaApiWebSocketsEvent {
+  const _$PleromaApiWebSocketsEventImpl(
       {@JsonKey(name: 'event') @HiveField(0) required this.type,
       @HiveField(2) required this.channel,
       @HiveField(3) required this.status,
@@ -387,8 +352,8 @@ class _$_PleromaApiWebSocketsEvent implements _PleromaApiWebSocketsEvent {
       @HiveField(9) required this.followUpdate,
       @HiveField(10) required this.payload});
 
-  factory _$_PleromaApiWebSocketsEvent.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiWebSocketsEventFromJson(json);
+  factory _$PleromaApiWebSocketsEventImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiWebSocketsEventImplFromJson(json);
 
   @override
   @JsonKey(name: 'event')
@@ -428,10 +393,10 @@ class _$_PleromaApiWebSocketsEvent implements _PleromaApiWebSocketsEvent {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiWebSocketsEvent &&
+            other is _$PleromaApiWebSocketsEventImpl &&
             (identical(other.type, type) || other.type == type) &&
             (identical(other.channel, channel) || other.channel == channel) &&
             (identical(other.status, status) || other.status == status) &&
@@ -448,6 +413,7 @@ class _$_PleromaApiWebSocketsEvent implements _PleromaApiWebSocketsEvent {
             (identical(other.payload, payload) || other.payload == payload));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -464,43 +430,36 @@ class _$_PleromaApiWebSocketsEvent implements _PleromaApiWebSocketsEvent {
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiWebSocketsEventCopyWith<_PleromaApiWebSocketsEvent>
-      get copyWith =>
-          __$PleromaApiWebSocketsEventCopyWithImpl<_PleromaApiWebSocketsEvent>(
-              this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiWebSocketsEventImplCopyWith<_$PleromaApiWebSocketsEventImpl>
+      get copyWith => __$$PleromaApiWebSocketsEventImplCopyWithImpl<
+          _$PleromaApiWebSocketsEventImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiWebSocketsEventToJson(this);
+    return _$$PleromaApiWebSocketsEventImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiWebSocketsEvent implements PleromaApiWebSocketsEvent {
   const factory _PleromaApiWebSocketsEvent(
-      {@JsonKey(name: 'event')
-      @HiveField(0)
-          required String type,
-      @HiveField(2)
-          required PleromaApiWebSocketsChannel channel,
-      @HiveField(3)
-          required PleromaApiStatus? status,
-      @HiveField(4)
-          required PleromaApiNotification? notification,
-      @HiveField(5)
-          required PleromaApiAnnouncement? announcement,
-      @HiveField(6)
-          required PleromaApiChat? chat,
-      @HiveField(7)
-          required PleromaApiConversation? conversation,
-      @HiveField(8)
-          required String? id,
+      {@JsonKey(name: 'event') @HiveField(0) required final String type,
+      @HiveField(2) required final PleromaApiWebSocketsChannel channel,
+      @HiveField(3) required final PleromaApiStatus? status,
+      @HiveField(4) required final PleromaApiNotification? notification,
+      @HiveField(5) required final PleromaApiAnnouncement? announcement,
+      @HiveField(6) required final PleromaApiChat? chat,
+      @HiveField(7) required final PleromaApiConversation? conversation,
+      @HiveField(8) required final String? id,
       @HiveField(9)
-          required PleromaApiAccountRelationshipFollowUpdate? followUpdate,
+      required final PleromaApiAccountRelationshipFollowUpdate? followUpdate,
       @HiveField(10)
-          required String? payload}) = _$_PleromaApiWebSocketsEvent;
+      required final String? payload}) = _$PleromaApiWebSocketsEventImpl;
 
   factory _PleromaApiWebSocketsEvent.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiWebSocketsEvent.fromJson;
+      _$PleromaApiWebSocketsEventImpl.fromJson;
 
   @override
   @JsonKey(name: 'event')
@@ -535,7 +494,7 @@ abstract class _PleromaApiWebSocketsEvent implements PleromaApiWebSocketsEvent {
   String? get payload;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiWebSocketsEventCopyWith<_PleromaApiWebSocketsEvent>
+  _$$PleromaApiWebSocketsEventImplCopyWith<_$PleromaApiWebSocketsEventImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -543,27 +502,6 @@ PleromaApiWebSocketsRawEvent _$PleromaApiWebSocketsRawEventFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiWebSocketsRawEvent.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiWebSocketsRawEventTearOff {
-  const _$PleromaApiWebSocketsRawEventTearOff();
-
-  _PleromaApiWebSocketsRawEvent call(
-      {@JsonKey(name: 'event') @HiveField(0) required String type,
-      @JsonKey(name: 'payload') @HiveField(10) required String? payload}) {
-    return _PleromaApiWebSocketsRawEvent(
-      type: type,
-      payload: payload,
-    );
-  }
-
-  PleromaApiWebSocketsRawEvent fromJson(Map<String, Object?> json) {
-    return PleromaApiWebSocketsRawEvent.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiWebSocketsRawEvent = _$PleromaApiWebSocketsRawEventTearOff();
 
 /// @nodoc
 mixin _$PleromaApiWebSocketsRawEvent {
@@ -585,76 +523,80 @@ abstract class $PleromaApiWebSocketsRawEventCopyWith<$Res> {
   factory $PleromaApiWebSocketsRawEventCopyWith(
           PleromaApiWebSocketsRawEvent value,
           $Res Function(PleromaApiWebSocketsRawEvent) then) =
-      _$PleromaApiWebSocketsRawEventCopyWithImpl<$Res>;
+      _$PleromaApiWebSocketsRawEventCopyWithImpl<$Res,
+          PleromaApiWebSocketsRawEvent>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'event') @HiveField(0) String type,
       @JsonKey(name: 'payload') @HiveField(10) String? payload});
 }
 
 /// @nodoc
-class _$PleromaApiWebSocketsRawEventCopyWithImpl<$Res>
+class _$PleromaApiWebSocketsRawEventCopyWithImpl<$Res,
+        $Val extends PleromaApiWebSocketsRawEvent>
     implements $PleromaApiWebSocketsRawEventCopyWith<$Res> {
   _$PleromaApiWebSocketsRawEventCopyWithImpl(this._value, this._then);
 
-  final PleromaApiWebSocketsRawEvent _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiWebSocketsRawEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? type = freezed,
+    Object? type = null,
     Object? payload = freezed,
   }) {
     return _then(_value.copyWith(
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      payload: payload == freezed
+      payload: freezed == payload
           ? _value.payload
           : payload // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiWebSocketsRawEventCopyWith<$Res>
+abstract class _$$PleromaApiWebSocketsRawEventImplCopyWith<$Res>
     implements $PleromaApiWebSocketsRawEventCopyWith<$Res> {
-  factory _$PleromaApiWebSocketsRawEventCopyWith(
-          _PleromaApiWebSocketsRawEvent value,
-          $Res Function(_PleromaApiWebSocketsRawEvent) then) =
-      __$PleromaApiWebSocketsRawEventCopyWithImpl<$Res>;
+  factory _$$PleromaApiWebSocketsRawEventImplCopyWith(
+          _$PleromaApiWebSocketsRawEventImpl value,
+          $Res Function(_$PleromaApiWebSocketsRawEventImpl) then) =
+      __$$PleromaApiWebSocketsRawEventImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'event') @HiveField(0) String type,
       @JsonKey(name: 'payload') @HiveField(10) String? payload});
 }
 
 /// @nodoc
-class __$PleromaApiWebSocketsRawEventCopyWithImpl<$Res>
-    extends _$PleromaApiWebSocketsRawEventCopyWithImpl<$Res>
-    implements _$PleromaApiWebSocketsRawEventCopyWith<$Res> {
-  __$PleromaApiWebSocketsRawEventCopyWithImpl(
-      _PleromaApiWebSocketsRawEvent _value,
-      $Res Function(_PleromaApiWebSocketsRawEvent) _then)
-      : super(_value, (v) => _then(v as _PleromaApiWebSocketsRawEvent));
+class __$$PleromaApiWebSocketsRawEventImplCopyWithImpl<$Res>
+    extends _$PleromaApiWebSocketsRawEventCopyWithImpl<$Res,
+        _$PleromaApiWebSocketsRawEventImpl>
+    implements _$$PleromaApiWebSocketsRawEventImplCopyWith<$Res> {
+  __$$PleromaApiWebSocketsRawEventImplCopyWithImpl(
+      _$PleromaApiWebSocketsRawEventImpl _value,
+      $Res Function(_$PleromaApiWebSocketsRawEventImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiWebSocketsRawEvent get _value =>
-      super._value as _PleromaApiWebSocketsRawEvent;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? type = freezed,
+    Object? type = null,
     Object? payload = freezed,
   }) {
-    return _then(_PleromaApiWebSocketsRawEvent(
-      type: type == freezed
+    return _then(_$PleromaApiWebSocketsRawEventImpl(
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      payload: payload == freezed
+      payload: freezed == payload
           ? _value.payload
           : payload // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -664,13 +606,15 @@ class __$PleromaApiWebSocketsRawEventCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiWebSocketsRawEvent implements _PleromaApiWebSocketsRawEvent {
-  const _$_PleromaApiWebSocketsRawEvent(
+class _$PleromaApiWebSocketsRawEventImpl
+    implements _PleromaApiWebSocketsRawEvent {
+  const _$PleromaApiWebSocketsRawEventImpl(
       {@JsonKey(name: 'event') @HiveField(0) required this.type,
       @JsonKey(name: 'payload') @HiveField(10) required this.payload});
 
-  factory _$_PleromaApiWebSocketsRawEvent.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiWebSocketsRawEventFromJson(json);
+  factory _$PleromaApiWebSocketsRawEventImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$PleromaApiWebSocketsRawEventImplFromJson(json);
 
   @override
   @JsonKey(name: 'event')
@@ -687,38 +631,44 @@ class _$_PleromaApiWebSocketsRawEvent implements _PleromaApiWebSocketsRawEvent {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiWebSocketsRawEvent &&
+            other is _$PleromaApiWebSocketsRawEventImpl &&
             (identical(other.type, type) || other.type == type) &&
             (identical(other.payload, payload) || other.payload == payload));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, type, payload);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiWebSocketsRawEventCopyWith<_PleromaApiWebSocketsRawEvent>
-      get copyWith => __$PleromaApiWebSocketsRawEventCopyWithImpl<
-          _PleromaApiWebSocketsRawEvent>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiWebSocketsRawEventImplCopyWith<
+          _$PleromaApiWebSocketsRawEventImpl>
+      get copyWith => __$$PleromaApiWebSocketsRawEventImplCopyWithImpl<
+          _$PleromaApiWebSocketsRawEventImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiWebSocketsRawEventToJson(this);
+    return _$$PleromaApiWebSocketsRawEventImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiWebSocketsRawEvent
     implements PleromaApiWebSocketsRawEvent {
   const factory _PleromaApiWebSocketsRawEvent(
-          {@JsonKey(name: 'event') @HiveField(0) required String type,
-          @JsonKey(name: 'payload') @HiveField(10) required String? payload}) =
-      _$_PleromaApiWebSocketsRawEvent;
+      {@JsonKey(name: 'event') @HiveField(0) required final String type,
+      @JsonKey(name: 'payload')
+      @HiveField(10)
+      required final String? payload}) = _$PleromaApiWebSocketsRawEventImpl;
 
   factory _PleromaApiWebSocketsRawEvent.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiWebSocketsRawEvent.fromJson;
+      _$PleromaApiWebSocketsRawEventImpl.fromJson;
 
   @override
   @JsonKey(name: 'event')
@@ -730,6 +680,7 @@ abstract class _PleromaApiWebSocketsRawEvent
   String? get payload;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiWebSocketsRawEventCopyWith<_PleromaApiWebSocketsRawEvent>
+  _$$PleromaApiWebSocketsRawEventImplCopyWith<
+          _$PleromaApiWebSocketsRawEventImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

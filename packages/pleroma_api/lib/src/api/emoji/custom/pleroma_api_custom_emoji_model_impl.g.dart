@@ -50,16 +50,16 @@ class PleromaApiCustomEmojiAdapter extends TypeAdapter<PleromaApiCustomEmoji> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiCustomEmoji _$$_PleromaApiCustomEmojiFromJson(
+_$PleromaApiCustomEmojiImpl _$$PleromaApiCustomEmojiImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiCustomEmoji(
+    _$PleromaApiCustomEmojiImpl(
       tags: (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList(),
       imageUrl: json['image_url'] as String,
       name: json['name'] as String,
     );
 
-Map<String, dynamic> _$$_PleromaApiCustomEmojiToJson(
-    _$_PleromaApiCustomEmoji instance) {
+Map<String, dynamic> _$$PleromaApiCustomEmojiImplToJson(
+    _$PleromaApiCustomEmojiImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

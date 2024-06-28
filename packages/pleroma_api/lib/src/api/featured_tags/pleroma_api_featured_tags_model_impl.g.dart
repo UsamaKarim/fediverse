@@ -53,19 +53,19 @@ class PleromaApiFeaturedTagAdapter extends TypeAdapter<PleromaApiFeaturedTag> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiFeaturedTag _$$_PleromaApiFeaturedTagFromJson(
+_$PleromaApiFeaturedTagImpl _$$PleromaApiFeaturedTagImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiFeaturedTag(
+    _$PleromaApiFeaturedTagImpl(
       id: json['id'] as String,
       lastStatusAt: json['last_status_at'] == null
           ? null
           : DateTime.parse(json['last_status_at'] as String),
-      statusesCount: json['statuses_count'] as int,
+      statusesCount: (json['statuses_count'] as num).toInt(),
       name: json['name'] as String,
     );
 
-Map<String, dynamic> _$$_PleromaApiFeaturedTagToJson(
-    _$_PleromaApiFeaturedTag instance) {
+Map<String, dynamic> _$$PleromaApiFeaturedTagImplToJson(
+    _$PleromaApiFeaturedTagImpl instance) {
   final val = <String, dynamic>{
     'id': instance.id,
   };

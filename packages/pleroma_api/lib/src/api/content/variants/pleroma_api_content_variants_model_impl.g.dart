@@ -45,14 +45,14 @@ class PleromaApiContentVariantsAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiContentVariants _$$_PleromaApiContentVariantsFromJson(
+_$PleromaApiContentVariantsImpl _$$PleromaApiContentVariantsImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiContentVariants(
+    _$PleromaApiContentVariantsImpl(
       textPlain: json['text/plain'] as String?,
     );
 
-Map<String, dynamic> _$$_PleromaApiContentVariantsToJson(
-    _$_PleromaApiContentVariants instance) {
+Map<String, dynamic> _$$PleromaApiContentVariantsImplToJson(
+    _$PleromaApiContentVariantsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_filter_model_impl.dart';
 
@@ -11,40 +12,11 @@ part of 'unifedi_api_filter_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiFilter _$UnifediApiFilterFromJson(Map<String, dynamic> json) {
   return _UnifediApiFilter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiFilterTearOff {
-  const _$UnifediApiFilterTearOff();
-
-  _UnifediApiFilter call(
-      {@HiveField(0) required List<String> context,
-      @HiveField(1) @JsonKey(name: 'expires_at') required DateTime? expiresAt,
-      @HiveField(2) required String id,
-      @HiveField(3) required bool irreversible,
-      @HiveField(4) required String phrase,
-      @HiveField(5) @JsonKey(name: 'whole_word') required bool wholeWord}) {
-    return _UnifediApiFilter(
-      context: context,
-      expiresAt: expiresAt,
-      id: id,
-      irreversible: irreversible,
-      phrase: phrase,
-      wholeWord: wholeWord,
-    );
-  }
-
-  UnifediApiFilter fromJson(Map<String, Object?> json) {
-    return UnifediApiFilter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiFilter = _$UnifediApiFilterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiFilter {
@@ -73,7 +45,8 @@ mixin _$UnifediApiFilter {
 abstract class $UnifediApiFilterCopyWith<$Res> {
   factory $UnifediApiFilterCopyWith(
           UnifediApiFilter value, $Res Function(UnifediApiFilter) then) =
-      _$UnifediApiFilterCopyWithImpl<$Res>;
+      _$UnifediApiFilterCopyWithImpl<$Res, UnifediApiFilter>;
+  @useResult
   $Res call(
       {@HiveField(0) List<String> context,
       @HiveField(1) @JsonKey(name: 'expires_at') DateTime? expiresAt,
@@ -84,59 +57,62 @@ abstract class $UnifediApiFilterCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UnifediApiFilterCopyWithImpl<$Res>
+class _$UnifediApiFilterCopyWithImpl<$Res, $Val extends UnifediApiFilter>
     implements $UnifediApiFilterCopyWith<$Res> {
   _$UnifediApiFilterCopyWithImpl(this._value, this._then);
 
-  final UnifediApiFilter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiFilter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? context = freezed,
+    Object? context = null,
     Object? expiresAt = freezed,
-    Object? id = freezed,
-    Object? irreversible = freezed,
-    Object? phrase = freezed,
-    Object? wholeWord = freezed,
+    Object? id = null,
+    Object? irreversible = null,
+    Object? phrase = null,
+    Object? wholeWord = null,
   }) {
     return _then(_value.copyWith(
-      context: context == freezed
+      context: null == context
           ? _value.context
           : context // ignore: cast_nullable_to_non_nullable
               as List<String>,
-      expiresAt: expiresAt == freezed
+      expiresAt: freezed == expiresAt
           ? _value.expiresAt
           : expiresAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      irreversible: irreversible == freezed
+      irreversible: null == irreversible
           ? _value.irreversible
           : irreversible // ignore: cast_nullable_to_non_nullable
               as bool,
-      phrase: phrase == freezed
+      phrase: null == phrase
           ? _value.phrase
           : phrase // ignore: cast_nullable_to_non_nullable
               as String,
-      wholeWord: wholeWord == freezed
+      wholeWord: null == wholeWord
           ? _value.wholeWord
           : wholeWord // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiFilterCopyWith<$Res>
+abstract class _$$UnifediApiFilterImplCopyWith<$Res>
     implements $UnifediApiFilterCopyWith<$Res> {
-  factory _$UnifediApiFilterCopyWith(
-          _UnifediApiFilter value, $Res Function(_UnifediApiFilter) then) =
-      __$UnifediApiFilterCopyWithImpl<$Res>;
+  factory _$$UnifediApiFilterImplCopyWith(_$UnifediApiFilterImpl value,
+          $Res Function(_$UnifediApiFilterImpl) then) =
+      __$$UnifediApiFilterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) List<String> context,
       @HiveField(1) @JsonKey(name: 'expires_at') DateTime? expiresAt,
@@ -147,47 +123,45 @@ abstract class _$UnifediApiFilterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiFilterCopyWithImpl<$Res>
-    extends _$UnifediApiFilterCopyWithImpl<$Res>
-    implements _$UnifediApiFilterCopyWith<$Res> {
-  __$UnifediApiFilterCopyWithImpl(
-      _UnifediApiFilter _value, $Res Function(_UnifediApiFilter) _then)
-      : super(_value, (v) => _then(v as _UnifediApiFilter));
+class __$$UnifediApiFilterImplCopyWithImpl<$Res>
+    extends _$UnifediApiFilterCopyWithImpl<$Res, _$UnifediApiFilterImpl>
+    implements _$$UnifediApiFilterImplCopyWith<$Res> {
+  __$$UnifediApiFilterImplCopyWithImpl(_$UnifediApiFilterImpl _value,
+      $Res Function(_$UnifediApiFilterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiFilter get _value => super._value as _UnifediApiFilter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? context = freezed,
+    Object? context = null,
     Object? expiresAt = freezed,
-    Object? id = freezed,
-    Object? irreversible = freezed,
-    Object? phrase = freezed,
-    Object? wholeWord = freezed,
+    Object? id = null,
+    Object? irreversible = null,
+    Object? phrase = null,
+    Object? wholeWord = null,
   }) {
-    return _then(_UnifediApiFilter(
-      context: context == freezed
-          ? _value.context
+    return _then(_$UnifediApiFilterImpl(
+      context: null == context
+          ? _value._context
           : context // ignore: cast_nullable_to_non_nullable
               as List<String>,
-      expiresAt: expiresAt == freezed
+      expiresAt: freezed == expiresAt
           ? _value.expiresAt
           : expiresAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      irreversible: irreversible == freezed
+      irreversible: null == irreversible
           ? _value.irreversible
           : irreversible // ignore: cast_nullable_to_non_nullable
               as bool,
-      phrase: phrase == freezed
+      phrase: null == phrase
           ? _value.phrase
           : phrase // ignore: cast_nullable_to_non_nullable
               as String,
-      wholeWord: wholeWord == freezed
+      wholeWord: null == wholeWord
           ? _value.wholeWord
           : wholeWord // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -197,21 +171,28 @@ class __$UnifediApiFilterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiFilter implements _UnifediApiFilter {
-  const _$_UnifediApiFilter(
-      {@HiveField(0) required this.context,
+class _$UnifediApiFilterImpl implements _UnifediApiFilter {
+  const _$UnifediApiFilterImpl(
+      {@HiveField(0) required final List<String> context,
       @HiveField(1) @JsonKey(name: 'expires_at') required this.expiresAt,
       @HiveField(2) required this.id,
       @HiveField(3) required this.irreversible,
       @HiveField(4) required this.phrase,
-      @HiveField(5) @JsonKey(name: 'whole_word') required this.wholeWord});
+      @HiveField(5) @JsonKey(name: 'whole_word') required this.wholeWord})
+      : _context = context;
 
-  factory _$_UnifediApiFilter.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiFilterFromJson(json);
+  factory _$UnifediApiFilterImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiFilterImplFromJson(json);
 
+  final List<String> _context;
   @override
   @HiveField(0)
-  final List<String> context;
+  List<String> get context {
+    if (_context is EqualUnmodifiableListView) return _context;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_context);
+  }
+
   @override
   @HiveField(1)
   @JsonKey(name: 'expires_at')
@@ -236,11 +217,11 @@ class _$_UnifediApiFilter implements _UnifediApiFilter {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiFilter &&
-            const DeepCollectionEquality().equals(other.context, context) &&
+            other is _$UnifediApiFilterImpl &&
+            const DeepCollectionEquality().equals(other._context, _context) &&
             (identical(other.expiresAt, expiresAt) ||
                 other.expiresAt == expiresAt) &&
             (identical(other.id, id) || other.id == id) &&
@@ -251,10 +232,11 @@ class _$_UnifediApiFilter implements _UnifediApiFilter {
                 other.wholeWord == wholeWord));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(context),
+      const DeepCollectionEquality().hash(_context),
       expiresAt,
       id,
       irreversible,
@@ -263,34 +245,34 @@ class _$_UnifediApiFilter implements _UnifediApiFilter {
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiFilterCopyWith<_UnifediApiFilter> get copyWith =>
-      __$UnifediApiFilterCopyWithImpl<_UnifediApiFilter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiFilterImplCopyWith<_$UnifediApiFilterImpl> get copyWith =>
+      __$$UnifediApiFilterImplCopyWithImpl<_$UnifediApiFilterImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiFilterToJson(this);
+    return _$$UnifediApiFilterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiFilter implements UnifediApiFilter {
   const factory _UnifediApiFilter(
-      {@HiveField(0)
-          required List<String> context,
+      {@HiveField(0) required final List<String> context,
       @HiveField(1)
       @JsonKey(name: 'expires_at')
-          required DateTime? expiresAt,
-      @HiveField(2)
-          required String id,
-      @HiveField(3)
-          required bool irreversible,
-      @HiveField(4)
-          required String phrase,
+      required final DateTime? expiresAt,
+      @HiveField(2) required final String id,
+      @HiveField(3) required final bool irreversible,
+      @HiveField(4) required final String phrase,
       @HiveField(5)
       @JsonKey(name: 'whole_word')
-          required bool wholeWord}) = _$_UnifediApiFilter;
+      required final bool wholeWord}) = _$UnifediApiFilterImpl;
 
   factory _UnifediApiFilter.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiFilter.fromJson;
+      _$UnifediApiFilterImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -314,6 +296,6 @@ abstract class _UnifediApiFilter implements UnifediApiFilter {
   bool get wholeWord;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiFilterCopyWith<_UnifediApiFilter> get copyWith =>
+  _$$UnifediApiFilterImplCopyWith<_$UnifediApiFilterImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

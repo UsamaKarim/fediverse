@@ -69,28 +69,28 @@ class MastodonApiSchedulePostStatusAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiSchedulePostStatus _$$_MastodonApiSchedulePostStatusFromJson(
-        Map<String, dynamic> json) =>
-    _$_MastodonApiSchedulePostStatus(
-      inReplyToId: json['in_reply_to_id'] as String?,
-      language: json['language'] as String?,
-      visibility: json['visibility'] as String,
-      mediaIds: (json['media_ids'] as List<dynamic>?)
-          ?.map((e) => e as String)
-          .toList(),
-      poll: json['poll'] == null
-          ? null
-          : MastodonApiPostStatusPoll.fromJson(
-              json['poll'] as Map<String, dynamic>),
-      sensitive: json['sensitive'] as bool,
-      spoilerText: json['spoiler_text'] as String?,
-      status: json['status'] as String?,
-      scheduledAt:
-          JsonParseHelper.fromUTCIsoString(json['scheduled_at'] as String),
-    );
+_$MastodonApiSchedulePostStatusImpl
+    _$$MastodonApiSchedulePostStatusImplFromJson(Map<String, dynamic> json) =>
+        _$MastodonApiSchedulePostStatusImpl(
+          inReplyToId: json['in_reply_to_id'] as String?,
+          language: json['language'] as String?,
+          visibility: json['visibility'] as String,
+          mediaIds: (json['media_ids'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList(),
+          poll: json['poll'] == null
+              ? null
+              : MastodonApiPostStatusPoll.fromJson(
+                  json['poll'] as Map<String, dynamic>),
+          sensitive: json['sensitive'] as bool,
+          spoilerText: json['spoiler_text'] as String?,
+          status: json['status'] as String?,
+          scheduledAt:
+              JsonParseHelper.fromUTCIsoString(json['scheduled_at'] as String),
+        );
 
-Map<String, dynamic> _$$_MastodonApiSchedulePostStatusToJson(
-    _$_MastodonApiSchedulePostStatus instance) {
+Map<String, dynamic> _$$MastodonApiSchedulePostStatusImplToJson(
+    _$MastodonApiSchedulePostStatusImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {
@@ -107,7 +107,6 @@ Map<String, dynamic> _$$_MastodonApiSchedulePostStatusToJson(
   val['sensitive'] = instance.sensitive;
   writeNotNull('spoiler_text', instance.spoilerText);
   writeNotNull('status', instance.status);
-  writeNotNull(
-      'scheduled_at', JsonParseHelper.toUTCIsoString(instance.scheduledAt));
+  val['scheduled_at'] = JsonParseHelper.toUTCIsoString(instance.scheduledAt);
   return val;
 }

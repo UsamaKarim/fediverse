@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_rest_error_model_impl.dart';
 
@@ -11,26 +12,7 @@ part of 'pleroma_api_rest_error_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$PleromaApiRestErrorTearOff {
-  const _$PleromaApiRestErrorTearOff();
-
-  _PleromaApiRestError call(
-      {required RestResponseError restResponseError,
-      required MastodonApiRestErrorDetails? mastodonDetails,
-      required PleromaApiRestErrorDetails? details}) {
-    return _PleromaApiRestError(
-      restResponseError: restResponseError,
-      mastodonDetails: mastodonDetails,
-      details: details,
-    );
-  }
-}
-
-/// @nodoc
-const $PleromaApiRestError = _$PleromaApiRestErrorTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$PleromaApiRestError {
@@ -48,7 +30,8 @@ mixin _$PleromaApiRestError {
 abstract class $PleromaApiRestErrorCopyWith<$Res> {
   factory $PleromaApiRestErrorCopyWith(
           PleromaApiRestError value, $Res Function(PleromaApiRestError) then) =
-      _$PleromaApiRestErrorCopyWithImpl<$Res>;
+      _$PleromaApiRestErrorCopyWithImpl<$Res, PleromaApiRestError>;
+  @useResult
   $Res call(
       {RestResponseError restResponseError,
       MastodonApiRestErrorDetails? mastodonDetails,
@@ -60,44 +43,48 @@ abstract class $PleromaApiRestErrorCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiRestErrorCopyWithImpl<$Res>
+class _$PleromaApiRestErrorCopyWithImpl<$Res, $Val extends PleromaApiRestError>
     implements $PleromaApiRestErrorCopyWith<$Res> {
   _$PleromaApiRestErrorCopyWithImpl(this._value, this._then);
 
-  final PleromaApiRestError _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiRestError) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? restResponseError = freezed,
+    Object? restResponseError = null,
     Object? mastodonDetails = freezed,
     Object? details = freezed,
   }) {
     return _then(_value.copyWith(
-      restResponseError: restResponseError == freezed
+      restResponseError: null == restResponseError
           ? _value.restResponseError
           : restResponseError // ignore: cast_nullable_to_non_nullable
               as RestResponseError,
-      mastodonDetails: mastodonDetails == freezed
+      mastodonDetails: freezed == mastodonDetails
           ? _value.mastodonDetails
           : mastodonDetails // ignore: cast_nullable_to_non_nullable
               as MastodonApiRestErrorDetails?,
-      details: details == freezed
+      details: freezed == details
           ? _value.details
           : details // ignore: cast_nullable_to_non_nullable
               as PleromaApiRestErrorDetails?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $RestResponseErrorCopyWith<$Res> get restResponseError {
     return $RestResponseErrorCopyWith<$Res>(_value.restResponseError, (value) {
-      return _then(_value.copyWith(restResponseError: value));
+      return _then(_value.copyWith(restResponseError: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiRestErrorDetailsCopyWith<$Res>? get mastodonDetails {
     if (_value.mastodonDetails == null) {
       return null;
@@ -105,29 +92,31 @@ class _$PleromaApiRestErrorCopyWithImpl<$Res>
 
     return $MastodonApiRestErrorDetailsCopyWith<$Res>(_value.mastodonDetails!,
         (value) {
-      return _then(_value.copyWith(mastodonDetails: value));
+      return _then(_value.copyWith(mastodonDetails: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiRestErrorDetailsCopyWith<$Res>? get details {
     if (_value.details == null) {
       return null;
     }
 
     return $PleromaApiRestErrorDetailsCopyWith<$Res>(_value.details!, (value) {
-      return _then(_value.copyWith(details: value));
+      return _then(_value.copyWith(details: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiRestErrorCopyWith<$Res>
+abstract class _$$PleromaApiRestErrorImplCopyWith<$Res>
     implements $PleromaApiRestErrorCopyWith<$Res> {
-  factory _$PleromaApiRestErrorCopyWith(_PleromaApiRestError value,
-          $Res Function(_PleromaApiRestError) then) =
-      __$PleromaApiRestErrorCopyWithImpl<$Res>;
+  factory _$$PleromaApiRestErrorImplCopyWith(_$PleromaApiRestErrorImpl value,
+          $Res Function(_$PleromaApiRestErrorImpl) then) =
+      __$$PleromaApiRestErrorImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {RestResponseError restResponseError,
       MastodonApiRestErrorDetails? mastodonDetails,
@@ -142,32 +131,30 @@ abstract class _$PleromaApiRestErrorCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiRestErrorCopyWithImpl<$Res>
-    extends _$PleromaApiRestErrorCopyWithImpl<$Res>
-    implements _$PleromaApiRestErrorCopyWith<$Res> {
-  __$PleromaApiRestErrorCopyWithImpl(
-      _PleromaApiRestError _value, $Res Function(_PleromaApiRestError) _then)
-      : super(_value, (v) => _then(v as _PleromaApiRestError));
+class __$$PleromaApiRestErrorImplCopyWithImpl<$Res>
+    extends _$PleromaApiRestErrorCopyWithImpl<$Res, _$PleromaApiRestErrorImpl>
+    implements _$$PleromaApiRestErrorImplCopyWith<$Res> {
+  __$$PleromaApiRestErrorImplCopyWithImpl(_$PleromaApiRestErrorImpl _value,
+      $Res Function(_$PleromaApiRestErrorImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiRestError get _value => super._value as _PleromaApiRestError;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? restResponseError = freezed,
+    Object? restResponseError = null,
     Object? mastodonDetails = freezed,
     Object? details = freezed,
   }) {
-    return _then(_PleromaApiRestError(
-      restResponseError: restResponseError == freezed
+    return _then(_$PleromaApiRestErrorImpl(
+      restResponseError: null == restResponseError
           ? _value.restResponseError
           : restResponseError // ignore: cast_nullable_to_non_nullable
               as RestResponseError,
-      mastodonDetails: mastodonDetails == freezed
+      mastodonDetails: freezed == mastodonDetails
           ? _value.mastodonDetails
           : mastodonDetails // ignore: cast_nullable_to_non_nullable
               as MastodonApiRestErrorDetails?,
-      details: details == freezed
+      details: freezed == details
           ? _value.details
           : details // ignore: cast_nullable_to_non_nullable
               as PleromaApiRestErrorDetails?,
@@ -177,8 +164,8 @@ class __$PleromaApiRestErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PleromaApiRestError implements _PleromaApiRestError {
-  const _$_PleromaApiRestError(
+class _$PleromaApiRestErrorImpl implements _PleromaApiRestError {
+  const _$PleromaApiRestErrorImpl(
       {required this.restResponseError,
       required this.mastodonDetails,
       required this.details});
@@ -196,10 +183,10 @@ class _$_PleromaApiRestError implements _PleromaApiRestError {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiRestError &&
+            other is _$PleromaApiRestErrorImpl &&
             (identical(other.restResponseError, restResponseError) ||
                 other.restResponseError == restResponseError) &&
             (identical(other.mastodonDetails, mastodonDetails) ||
@@ -213,16 +200,18 @@ class _$_PleromaApiRestError implements _PleromaApiRestError {
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiRestErrorCopyWith<_PleromaApiRestError> get copyWith =>
-      __$PleromaApiRestErrorCopyWithImpl<_PleromaApiRestError>(
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiRestErrorImplCopyWith<_$PleromaApiRestErrorImpl> get copyWith =>
+      __$$PleromaApiRestErrorImplCopyWithImpl<_$PleromaApiRestErrorImpl>(
           this, _$identity);
 }
 
 abstract class _PleromaApiRestError implements PleromaApiRestError {
   const factory _PleromaApiRestError(
-      {required RestResponseError restResponseError,
-      required MastodonApiRestErrorDetails? mastodonDetails,
-      required PleromaApiRestErrorDetails? details}) = _$_PleromaApiRestError;
+          {required final RestResponseError restResponseError,
+          required final MastodonApiRestErrorDetails? mastodonDetails,
+          required final PleromaApiRestErrorDetails? details}) =
+      _$PleromaApiRestErrorImpl;
 
   @override
   RestResponseError get restResponseError;
@@ -232,6 +221,6 @@ abstract class _PleromaApiRestError implements PleromaApiRestError {
   PleromaApiRestErrorDetails? get details;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiRestErrorCopyWith<_PleromaApiRestError> get copyWith =>
+  _$$PleromaApiRestErrorImplCopyWith<_$PleromaApiRestErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

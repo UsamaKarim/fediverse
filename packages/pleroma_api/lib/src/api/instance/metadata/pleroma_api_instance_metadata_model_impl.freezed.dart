@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_instance_metadata_model_impl.dart';
 
@@ -11,47 +12,12 @@ part of 'pleroma_api_instance_metadata_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiInstanceMetadata _$PleromaApiInstanceMetadataFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiInstanceMetadata.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiInstanceMetadataTearOff {
-  const _$PleromaApiInstanceMetadataTearOff();
-
-  _PleromaApiInstanceMetadata call(
-      {@HiveField(0)
-          required List<String>? features,
-      @HiveField(2)
-      @JsonKey(name: 'post_formats')
-          required List<String>? postFormats,
-      @HiveField(3)
-      @JsonKey(name: 'account_activation_required')
-          required bool? accountActivationRequired,
-      @HiveField(4)
-      @JsonKey(name: 'fields_limits')
-          required PleromaApiInstanceFieldLimits? fieldsLimits,
-      @HiveField(5)
-          required PleromaApiInstanceFederation? federation}) {
-    return _PleromaApiInstanceMetadata(
-      features: features,
-      postFormats: postFormats,
-      accountActivationRequired: accountActivationRequired,
-      fieldsLimits: fieldsLimits,
-      federation: federation,
-    );
-  }
-
-  PleromaApiInstanceMetadata fromJson(Map<String, Object?> json) {
-    return PleromaApiInstanceMetadata.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiInstanceMetadata = _$PleromaApiInstanceMetadataTearOff();
 
 /// @nodoc
 mixin _$PleromaApiInstanceMetadata {
@@ -81,35 +47,36 @@ mixin _$PleromaApiInstanceMetadata {
 abstract class $PleromaApiInstanceMetadataCopyWith<$Res> {
   factory $PleromaApiInstanceMetadataCopyWith(PleromaApiInstanceMetadata value,
           $Res Function(PleromaApiInstanceMetadata) then) =
-      _$PleromaApiInstanceMetadataCopyWithImpl<$Res>;
+      _$PleromaApiInstanceMetadataCopyWithImpl<$Res,
+          PleromaApiInstanceMetadata>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-          List<String>? features,
-      @HiveField(2)
-      @JsonKey(name: 'post_formats')
-          List<String>? postFormats,
+      {@HiveField(0) List<String>? features,
+      @HiveField(2) @JsonKey(name: 'post_formats') List<String>? postFormats,
       @HiveField(3)
       @JsonKey(name: 'account_activation_required')
-          bool? accountActivationRequired,
+      bool? accountActivationRequired,
       @HiveField(4)
       @JsonKey(name: 'fields_limits')
-          PleromaApiInstanceFieldLimits? fieldsLimits,
-      @HiveField(5)
-          PleromaApiInstanceFederation? federation});
+      PleromaApiInstanceFieldLimits? fieldsLimits,
+      @HiveField(5) PleromaApiInstanceFederation? federation});
 
   $PleromaApiInstanceFieldLimitsCopyWith<$Res>? get fieldsLimits;
   $PleromaApiInstanceFederationCopyWith<$Res>? get federation;
 }
 
 /// @nodoc
-class _$PleromaApiInstanceMetadataCopyWithImpl<$Res>
+class _$PleromaApiInstanceMetadataCopyWithImpl<$Res,
+        $Val extends PleromaApiInstanceMetadata>
     implements $PleromaApiInstanceMetadataCopyWith<$Res> {
   _$PleromaApiInstanceMetadataCopyWithImpl(this._value, this._then);
 
-  final PleromaApiInstanceMetadata _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiInstanceMetadata) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? features = freezed,
@@ -119,30 +86,31 @@ class _$PleromaApiInstanceMetadataCopyWithImpl<$Res>
     Object? federation = freezed,
   }) {
     return _then(_value.copyWith(
-      features: features == freezed
+      features: freezed == features
           ? _value.features
           : features // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      postFormats: postFormats == freezed
+      postFormats: freezed == postFormats
           ? _value.postFormats
           : postFormats // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      accountActivationRequired: accountActivationRequired == freezed
+      accountActivationRequired: freezed == accountActivationRequired
           ? _value.accountActivationRequired
           : accountActivationRequired // ignore: cast_nullable_to_non_nullable
               as bool?,
-      fieldsLimits: fieldsLimits == freezed
+      fieldsLimits: freezed == fieldsLimits
           ? _value.fieldsLimits
           : fieldsLimits // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstanceFieldLimits?,
-      federation: federation == freezed
+      federation: freezed == federation
           ? _value.federation
           : federation // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstanceFederation?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiInstanceFieldLimitsCopyWith<$Res>? get fieldsLimits {
     if (_value.fieldsLimits == null) {
       return null;
@@ -150,11 +118,12 @@ class _$PleromaApiInstanceMetadataCopyWithImpl<$Res>
 
     return $PleromaApiInstanceFieldLimitsCopyWith<$Res>(_value.fieldsLimits!,
         (value) {
-      return _then(_value.copyWith(fieldsLimits: value));
+      return _then(_value.copyWith(fieldsLimits: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiInstanceFederationCopyWith<$Res>? get federation {
     if (_value.federation == null) {
       return null;
@@ -162,33 +131,30 @@ class _$PleromaApiInstanceMetadataCopyWithImpl<$Res>
 
     return $PleromaApiInstanceFederationCopyWith<$Res>(_value.federation!,
         (value) {
-      return _then(_value.copyWith(federation: value));
+      return _then(_value.copyWith(federation: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiInstanceMetadataCopyWith<$Res>
+abstract class _$$PleromaApiInstanceMetadataImplCopyWith<$Res>
     implements $PleromaApiInstanceMetadataCopyWith<$Res> {
-  factory _$PleromaApiInstanceMetadataCopyWith(
-          _PleromaApiInstanceMetadata value,
-          $Res Function(_PleromaApiInstanceMetadata) then) =
-      __$PleromaApiInstanceMetadataCopyWithImpl<$Res>;
+  factory _$$PleromaApiInstanceMetadataImplCopyWith(
+          _$PleromaApiInstanceMetadataImpl value,
+          $Res Function(_$PleromaApiInstanceMetadataImpl) then) =
+      __$$PleromaApiInstanceMetadataImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-          List<String>? features,
-      @HiveField(2)
-      @JsonKey(name: 'post_formats')
-          List<String>? postFormats,
+      {@HiveField(0) List<String>? features,
+      @HiveField(2) @JsonKey(name: 'post_formats') List<String>? postFormats,
       @HiveField(3)
       @JsonKey(name: 'account_activation_required')
-          bool? accountActivationRequired,
+      bool? accountActivationRequired,
       @HiveField(4)
       @JsonKey(name: 'fields_limits')
-          PleromaApiInstanceFieldLimits? fieldsLimits,
-      @HiveField(5)
-          PleromaApiInstanceFederation? federation});
+      PleromaApiInstanceFieldLimits? fieldsLimits,
+      @HiveField(5) PleromaApiInstanceFederation? federation});
 
   @override
   $PleromaApiInstanceFieldLimitsCopyWith<$Res>? get fieldsLimits;
@@ -197,17 +163,16 @@ abstract class _$PleromaApiInstanceMetadataCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiInstanceMetadataCopyWithImpl<$Res>
-    extends _$PleromaApiInstanceMetadataCopyWithImpl<$Res>
-    implements _$PleromaApiInstanceMetadataCopyWith<$Res> {
-  __$PleromaApiInstanceMetadataCopyWithImpl(_PleromaApiInstanceMetadata _value,
-      $Res Function(_PleromaApiInstanceMetadata) _then)
-      : super(_value, (v) => _then(v as _PleromaApiInstanceMetadata));
+class __$$PleromaApiInstanceMetadataImplCopyWithImpl<$Res>
+    extends _$PleromaApiInstanceMetadataCopyWithImpl<$Res,
+        _$PleromaApiInstanceMetadataImpl>
+    implements _$$PleromaApiInstanceMetadataImplCopyWith<$Res> {
+  __$$PleromaApiInstanceMetadataImplCopyWithImpl(
+      _$PleromaApiInstanceMetadataImpl _value,
+      $Res Function(_$PleromaApiInstanceMetadataImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiInstanceMetadata get _value =>
-      super._value as _PleromaApiInstanceMetadata;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? features = freezed,
@@ -216,24 +181,24 @@ class __$PleromaApiInstanceMetadataCopyWithImpl<$Res>
     Object? fieldsLimits = freezed,
     Object? federation = freezed,
   }) {
-    return _then(_PleromaApiInstanceMetadata(
-      features: features == freezed
-          ? _value.features
+    return _then(_$PleromaApiInstanceMetadataImpl(
+      features: freezed == features
+          ? _value._features
           : features // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      postFormats: postFormats == freezed
-          ? _value.postFormats
+      postFormats: freezed == postFormats
+          ? _value._postFormats
           : postFormats // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      accountActivationRequired: accountActivationRequired == freezed
+      accountActivationRequired: freezed == accountActivationRequired
           ? _value.accountActivationRequired
           : accountActivationRequired // ignore: cast_nullable_to_non_nullable
               as bool?,
-      fieldsLimits: fieldsLimits == freezed
+      fieldsLimits: freezed == fieldsLimits
           ? _value.fieldsLimits
           : fieldsLimits // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstanceFieldLimits?,
-      federation: federation == freezed
+      federation: freezed == federation
           ? _value.federation
           : federation // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstanceFederation?,
@@ -243,32 +208,47 @@ class __$PleromaApiInstanceMetadataCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiInstanceMetadata implements _PleromaApiInstanceMetadata {
-  const _$_PleromaApiInstanceMetadata(
-      {@HiveField(0)
-          required this.features,
+class _$PleromaApiInstanceMetadataImpl implements _PleromaApiInstanceMetadata {
+  const _$PleromaApiInstanceMetadataImpl(
+      {@HiveField(0) required final List<String>? features,
       @HiveField(2)
       @JsonKey(name: 'post_formats')
-          required this.postFormats,
+      required final List<String>? postFormats,
       @HiveField(3)
       @JsonKey(name: 'account_activation_required')
-          required this.accountActivationRequired,
-      @HiveField(4)
-      @JsonKey(name: 'fields_limits')
-          required this.fieldsLimits,
-      @HiveField(5)
-          required this.federation});
+      required this.accountActivationRequired,
+      @HiveField(4) @JsonKey(name: 'fields_limits') required this.fieldsLimits,
+      @HiveField(5) required this.federation})
+      : _features = features,
+        _postFormats = postFormats;
 
-  factory _$_PleromaApiInstanceMetadata.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiInstanceMetadataFromJson(json);
+  factory _$PleromaApiInstanceMetadataImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$PleromaApiInstanceMetadataImplFromJson(json);
 
+  final List<String>? _features;
   @override
   @HiveField(0)
-  final List<String>? features;
+  List<String>? get features {
+    final value = _features;
+    if (value == null) return null;
+    if (_features is EqualUnmodifiableListView) return _features;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  final List<String>? _postFormats;
   @override
   @HiveField(2)
   @JsonKey(name: 'post_formats')
-  final List<String>? postFormats;
+  List<String>? get postFormats {
+    final value = _postFormats;
+    if (value == null) return null;
+    if (_postFormats is EqualUnmodifiableListView) return _postFormats;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(3)
   @JsonKey(name: 'account_activation_required')
@@ -287,13 +267,13 @@ class _$_PleromaApiInstanceMetadata implements _PleromaApiInstanceMetadata {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiInstanceMetadata &&
-            const DeepCollectionEquality().equals(other.features, features) &&
+            other is _$PleromaApiInstanceMetadataImpl &&
+            const DeepCollectionEquality().equals(other._features, _features) &&
             const DeepCollectionEquality()
-                .equals(other.postFormats, postFormats) &&
+                .equals(other._postFormats, _postFormats) &&
             (identical(other.accountActivationRequired,
                     accountActivationRequired) ||
                 other.accountActivationRequired == accountActivationRequired) &&
@@ -303,47 +283,50 @@ class _$_PleromaApiInstanceMetadata implements _PleromaApiInstanceMetadata {
                 other.federation == federation));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(features),
-      const DeepCollectionEquality().hash(postFormats),
+      const DeepCollectionEquality().hash(_features),
+      const DeepCollectionEquality().hash(_postFormats),
       accountActivationRequired,
       fieldsLimits,
       federation);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiInstanceMetadataCopyWith<_PleromaApiInstanceMetadata>
-      get copyWith => __$PleromaApiInstanceMetadataCopyWithImpl<
-          _PleromaApiInstanceMetadata>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiInstanceMetadataImplCopyWith<_$PleromaApiInstanceMetadataImpl>
+      get copyWith => __$$PleromaApiInstanceMetadataImplCopyWithImpl<
+          _$PleromaApiInstanceMetadataImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiInstanceMetadataToJson(this);
+    return _$$PleromaApiInstanceMetadataImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiInstanceMetadata
     implements PleromaApiInstanceMetadata {
   const factory _PleromaApiInstanceMetadata(
-          {@HiveField(0)
-              required List<String>? features,
+          {@HiveField(0) required final List<String>? features,
           @HiveField(2)
           @JsonKey(name: 'post_formats')
-              required List<String>? postFormats,
+          required final List<String>? postFormats,
           @HiveField(3)
           @JsonKey(name: 'account_activation_required')
-              required bool? accountActivationRequired,
+          required final bool? accountActivationRequired,
           @HiveField(4)
           @JsonKey(name: 'fields_limits')
-              required PleromaApiInstanceFieldLimits? fieldsLimits,
+          required final PleromaApiInstanceFieldLimits? fieldsLimits,
           @HiveField(5)
-              required PleromaApiInstanceFederation? federation}) =
-      _$_PleromaApiInstanceMetadata;
+          required final PleromaApiInstanceFederation? federation}) =
+      _$PleromaApiInstanceMetadataImpl;
 
   factory _PleromaApiInstanceMetadata.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiInstanceMetadata.fromJson;
+      _$PleromaApiInstanceMetadataImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -365,6 +348,6 @@ abstract class _PleromaApiInstanceMetadata
   PleromaApiInstanceFederation? get federation;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiInstanceMetadataCopyWith<_PleromaApiInstanceMetadata>
+  _$$PleromaApiInstanceMetadataImplCopyWith<_$PleromaApiInstanceMetadataImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

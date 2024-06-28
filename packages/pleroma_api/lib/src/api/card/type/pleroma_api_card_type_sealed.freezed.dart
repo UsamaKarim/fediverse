@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_card_type_sealed.dart';
 
@@ -11,50 +12,11 @@ part of 'pleroma_api_card_type_sealed.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$PleromaApiCardTypeTearOff {
-  const _$PleromaApiCardTypeTearOff();
-
-  _Link link({String stringValue = PleromaApiCardType.linkStringValue}) {
-    return _Link(
-      stringValue: stringValue,
-    );
-  }
-
-  _Photo photo({String stringValue = PleromaApiCardType.photoStringValue}) {
-    return _Photo(
-      stringValue: stringValue,
-    );
-  }
-
-  _Video video({String stringValue = PleromaApiCardType.videoStringValue}) {
-    return _Video(
-      stringValue: stringValue,
-    );
-  }
-
-  _Rich rich({String stringValue = PleromaApiCardType.richStringValue}) {
-    return _Rich(
-      stringValue: stringValue,
-    );
-  }
-
-  _Unknown unknown({required String stringValue}) {
-    return _Unknown(
-      stringValue: stringValue,
-    );
-  }
-}
-
-/// @nodoc
-const $PleromaApiCardType = _$PleromaApiCardTypeTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$PleromaApiCardType {
   String get stringValue => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String stringValue) link,
@@ -66,11 +28,11 @@ mixin _$PleromaApiCardType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? link,
-    TResult Function(String stringValue)? photo,
-    TResult Function(String stringValue)? video,
-    TResult Function(String stringValue)? rich,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? link,
+    TResult? Function(String stringValue)? photo,
+    TResult? Function(String stringValue)? video,
+    TResult? Function(String stringValue)? rich,
+    TResult? Function(String stringValue)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -94,11 +56,11 @@ mixin _$PleromaApiCardType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Link value)? link,
-    TResult Function(_Photo value)? photo,
-    TResult Function(_Video value)? video,
-    TResult Function(_Rich value)? rich,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Link value)? link,
+    TResult? Function(_Photo value)? photo,
+    TResult? Function(_Video value)? video,
+    TResult? Function(_Rich value)? rich,
+    TResult? Function(_Unknown value)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -121,56 +83,60 @@ mixin _$PleromaApiCardType {
 abstract class $PleromaApiCardTypeCopyWith<$Res> {
   factory $PleromaApiCardTypeCopyWith(
           PleromaApiCardType value, $Res Function(PleromaApiCardType) then) =
-      _$PleromaApiCardTypeCopyWithImpl<$Res>;
+      _$PleromaApiCardTypeCopyWithImpl<$Res, PleromaApiCardType>;
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class _$PleromaApiCardTypeCopyWithImpl<$Res>
+class _$PleromaApiCardTypeCopyWithImpl<$Res, $Val extends PleromaApiCardType>
     implements $PleromaApiCardTypeCopyWith<$Res> {
   _$PleromaApiCardTypeCopyWithImpl(this._value, this._then);
 
-  final PleromaApiCardType _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiCardType) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
     return _then(_value.copyWith(
-      stringValue: stringValue == freezed
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$LinkCopyWith<$Res>
+abstract class _$$LinkImplCopyWith<$Res>
     implements $PleromaApiCardTypeCopyWith<$Res> {
-  factory _$LinkCopyWith(_Link value, $Res Function(_Link) then) =
-      __$LinkCopyWithImpl<$Res>;
+  factory _$$LinkImplCopyWith(
+          _$LinkImpl value, $Res Function(_$LinkImpl) then) =
+      __$$LinkImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$LinkCopyWithImpl<$Res> extends _$PleromaApiCardTypeCopyWithImpl<$Res>
-    implements _$LinkCopyWith<$Res> {
-  __$LinkCopyWithImpl(_Link _value, $Res Function(_Link) _then)
-      : super(_value, (v) => _then(v as _Link));
+class __$$LinkImplCopyWithImpl<$Res>
+    extends _$PleromaApiCardTypeCopyWithImpl<$Res, _$LinkImpl>
+    implements _$$LinkImplCopyWith<$Res> {
+  __$$LinkImplCopyWithImpl(_$LinkImpl _value, $Res Function(_$LinkImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Link get _value => super._value as _Link;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Link(
-      stringValue: stringValue == freezed
+    return _then(_$LinkImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -180,11 +146,11 @@ class __$LinkCopyWithImpl<$Res> extends _$PleromaApiCardTypeCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Link implements _Link {
-  const _$_Link({this.stringValue = PleromaApiCardType.linkStringValue});
+class _$LinkImpl implements _Link {
+  const _$LinkImpl({this.stringValue = PleromaApiCardType.linkStringValue});
 
-  @JsonKey(defaultValue: PleromaApiCardType.linkStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -193,10 +159,10 @@ class _$_Link implements _Link {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Link &&
+            other is _$LinkImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -206,8 +172,9 @@ class _$_Link implements _Link {
 
   @JsonKey(ignore: true)
   @override
-  _$LinkCopyWith<_Link> get copyWith =>
-      __$LinkCopyWithImpl<_Link>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$LinkImplCopyWith<_$LinkImpl> get copyWith =>
+      __$$LinkImplCopyWithImpl<_$LinkImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -224,11 +191,11 @@ class _$_Link implements _Link {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? link,
-    TResult Function(String stringValue)? photo,
-    TResult Function(String stringValue)? video,
-    TResult Function(String stringValue)? rich,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? link,
+    TResult? Function(String stringValue)? photo,
+    TResult? Function(String stringValue)? video,
+    TResult? Function(String stringValue)? rich,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return link?.call(stringValue);
   }
@@ -264,11 +231,11 @@ class _$_Link implements _Link {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Link value)? link,
-    TResult Function(_Photo value)? photo,
-    TResult Function(_Video value)? video,
-    TResult Function(_Rich value)? rich,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Link value)? link,
+    TResult? Function(_Photo value)? photo,
+    TResult? Function(_Video value)? video,
+    TResult? Function(_Rich value)? rich,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return link?.call(this);
   }
@@ -291,39 +258,42 @@ class _$_Link implements _Link {
 }
 
 abstract class _Link implements PleromaApiCardType {
-  const factory _Link({String stringValue}) = _$_Link;
+  const factory _Link({final String stringValue}) = _$LinkImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$LinkCopyWith<_Link> get copyWith => throw _privateConstructorUsedError;
+  _$$LinkImplCopyWith<_$LinkImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$PhotoCopyWith<$Res>
+abstract class _$$PhotoImplCopyWith<$Res>
     implements $PleromaApiCardTypeCopyWith<$Res> {
-  factory _$PhotoCopyWith(_Photo value, $Res Function(_Photo) then) =
-      __$PhotoCopyWithImpl<$Res>;
+  factory _$$PhotoImplCopyWith(
+          _$PhotoImpl value, $Res Function(_$PhotoImpl) then) =
+      __$$PhotoImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$PhotoCopyWithImpl<$Res> extends _$PleromaApiCardTypeCopyWithImpl<$Res>
-    implements _$PhotoCopyWith<$Res> {
-  __$PhotoCopyWithImpl(_Photo _value, $Res Function(_Photo) _then)
-      : super(_value, (v) => _then(v as _Photo));
+class __$$PhotoImplCopyWithImpl<$Res>
+    extends _$PleromaApiCardTypeCopyWithImpl<$Res, _$PhotoImpl>
+    implements _$$PhotoImplCopyWith<$Res> {
+  __$$PhotoImplCopyWithImpl(
+      _$PhotoImpl _value, $Res Function(_$PhotoImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Photo get _value => super._value as _Photo;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Photo(
-      stringValue: stringValue == freezed
+    return _then(_$PhotoImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -333,11 +303,11 @@ class __$PhotoCopyWithImpl<$Res> extends _$PleromaApiCardTypeCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Photo implements _Photo {
-  const _$_Photo({this.stringValue = PleromaApiCardType.photoStringValue});
+class _$PhotoImpl implements _Photo {
+  const _$PhotoImpl({this.stringValue = PleromaApiCardType.photoStringValue});
 
-  @JsonKey(defaultValue: PleromaApiCardType.photoStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -346,10 +316,10 @@ class _$_Photo implements _Photo {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Photo &&
+            other is _$PhotoImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -359,8 +329,9 @@ class _$_Photo implements _Photo {
 
   @JsonKey(ignore: true)
   @override
-  _$PhotoCopyWith<_Photo> get copyWith =>
-      __$PhotoCopyWithImpl<_Photo>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PhotoImplCopyWith<_$PhotoImpl> get copyWith =>
+      __$$PhotoImplCopyWithImpl<_$PhotoImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -377,11 +348,11 @@ class _$_Photo implements _Photo {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? link,
-    TResult Function(String stringValue)? photo,
-    TResult Function(String stringValue)? video,
-    TResult Function(String stringValue)? rich,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? link,
+    TResult? Function(String stringValue)? photo,
+    TResult? Function(String stringValue)? video,
+    TResult? Function(String stringValue)? rich,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return photo?.call(stringValue);
   }
@@ -417,11 +388,11 @@ class _$_Photo implements _Photo {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Link value)? link,
-    TResult Function(_Photo value)? photo,
-    TResult Function(_Video value)? video,
-    TResult Function(_Rich value)? rich,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Link value)? link,
+    TResult? Function(_Photo value)? photo,
+    TResult? Function(_Video value)? video,
+    TResult? Function(_Rich value)? rich,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return photo?.call(this);
   }
@@ -444,39 +415,42 @@ class _$_Photo implements _Photo {
 }
 
 abstract class _Photo implements PleromaApiCardType {
-  const factory _Photo({String stringValue}) = _$_Photo;
+  const factory _Photo({final String stringValue}) = _$PhotoImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$PhotoCopyWith<_Photo> get copyWith => throw _privateConstructorUsedError;
+  _$$PhotoImplCopyWith<_$PhotoImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$VideoCopyWith<$Res>
+abstract class _$$VideoImplCopyWith<$Res>
     implements $PleromaApiCardTypeCopyWith<$Res> {
-  factory _$VideoCopyWith(_Video value, $Res Function(_Video) then) =
-      __$VideoCopyWithImpl<$Res>;
+  factory _$$VideoImplCopyWith(
+          _$VideoImpl value, $Res Function(_$VideoImpl) then) =
+      __$$VideoImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$VideoCopyWithImpl<$Res> extends _$PleromaApiCardTypeCopyWithImpl<$Res>
-    implements _$VideoCopyWith<$Res> {
-  __$VideoCopyWithImpl(_Video _value, $Res Function(_Video) _then)
-      : super(_value, (v) => _then(v as _Video));
+class __$$VideoImplCopyWithImpl<$Res>
+    extends _$PleromaApiCardTypeCopyWithImpl<$Res, _$VideoImpl>
+    implements _$$VideoImplCopyWith<$Res> {
+  __$$VideoImplCopyWithImpl(
+      _$VideoImpl _value, $Res Function(_$VideoImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Video get _value => super._value as _Video;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Video(
-      stringValue: stringValue == freezed
+    return _then(_$VideoImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -486,11 +460,11 @@ class __$VideoCopyWithImpl<$Res> extends _$PleromaApiCardTypeCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Video implements _Video {
-  const _$_Video({this.stringValue = PleromaApiCardType.videoStringValue});
+class _$VideoImpl implements _Video {
+  const _$VideoImpl({this.stringValue = PleromaApiCardType.videoStringValue});
 
-  @JsonKey(defaultValue: PleromaApiCardType.videoStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -499,10 +473,10 @@ class _$_Video implements _Video {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Video &&
+            other is _$VideoImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -512,8 +486,9 @@ class _$_Video implements _Video {
 
   @JsonKey(ignore: true)
   @override
-  _$VideoCopyWith<_Video> get copyWith =>
-      __$VideoCopyWithImpl<_Video>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$VideoImplCopyWith<_$VideoImpl> get copyWith =>
+      __$$VideoImplCopyWithImpl<_$VideoImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -530,11 +505,11 @@ class _$_Video implements _Video {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? link,
-    TResult Function(String stringValue)? photo,
-    TResult Function(String stringValue)? video,
-    TResult Function(String stringValue)? rich,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? link,
+    TResult? Function(String stringValue)? photo,
+    TResult? Function(String stringValue)? video,
+    TResult? Function(String stringValue)? rich,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return video?.call(stringValue);
   }
@@ -570,11 +545,11 @@ class _$_Video implements _Video {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Link value)? link,
-    TResult Function(_Photo value)? photo,
-    TResult Function(_Video value)? video,
-    TResult Function(_Rich value)? rich,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Link value)? link,
+    TResult? Function(_Photo value)? photo,
+    TResult? Function(_Video value)? video,
+    TResult? Function(_Rich value)? rich,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return video?.call(this);
   }
@@ -597,39 +572,41 @@ class _$_Video implements _Video {
 }
 
 abstract class _Video implements PleromaApiCardType {
-  const factory _Video({String stringValue}) = _$_Video;
+  const factory _Video({final String stringValue}) = _$VideoImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$VideoCopyWith<_Video> get copyWith => throw _privateConstructorUsedError;
+  _$$VideoImplCopyWith<_$VideoImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$RichCopyWith<$Res>
+abstract class _$$RichImplCopyWith<$Res>
     implements $PleromaApiCardTypeCopyWith<$Res> {
-  factory _$RichCopyWith(_Rich value, $Res Function(_Rich) then) =
-      __$RichCopyWithImpl<$Res>;
+  factory _$$RichImplCopyWith(
+          _$RichImpl value, $Res Function(_$RichImpl) then) =
+      __$$RichImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$RichCopyWithImpl<$Res> extends _$PleromaApiCardTypeCopyWithImpl<$Res>
-    implements _$RichCopyWith<$Res> {
-  __$RichCopyWithImpl(_Rich _value, $Res Function(_Rich) _then)
-      : super(_value, (v) => _then(v as _Rich));
+class __$$RichImplCopyWithImpl<$Res>
+    extends _$PleromaApiCardTypeCopyWithImpl<$Res, _$RichImpl>
+    implements _$$RichImplCopyWith<$Res> {
+  __$$RichImplCopyWithImpl(_$RichImpl _value, $Res Function(_$RichImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Rich get _value => super._value as _Rich;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Rich(
-      stringValue: stringValue == freezed
+    return _then(_$RichImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -639,11 +616,11 @@ class __$RichCopyWithImpl<$Res> extends _$PleromaApiCardTypeCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Rich implements _Rich {
-  const _$_Rich({this.stringValue = PleromaApiCardType.richStringValue});
+class _$RichImpl implements _Rich {
+  const _$RichImpl({this.stringValue = PleromaApiCardType.richStringValue});
 
-  @JsonKey(defaultValue: PleromaApiCardType.richStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -652,10 +629,10 @@ class _$_Rich implements _Rich {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Rich &&
+            other is _$RichImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -665,8 +642,9 @@ class _$_Rich implements _Rich {
 
   @JsonKey(ignore: true)
   @override
-  _$RichCopyWith<_Rich> get copyWith =>
-      __$RichCopyWithImpl<_Rich>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$RichImplCopyWith<_$RichImpl> get copyWith =>
+      __$$RichImplCopyWithImpl<_$RichImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -683,11 +661,11 @@ class _$_Rich implements _Rich {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? link,
-    TResult Function(String stringValue)? photo,
-    TResult Function(String stringValue)? video,
-    TResult Function(String stringValue)? rich,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? link,
+    TResult? Function(String stringValue)? photo,
+    TResult? Function(String stringValue)? video,
+    TResult? Function(String stringValue)? rich,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return rich?.call(stringValue);
   }
@@ -723,11 +701,11 @@ class _$_Rich implements _Rich {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Link value)? link,
-    TResult Function(_Photo value)? photo,
-    TResult Function(_Video value)? video,
-    TResult Function(_Rich value)? rich,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Link value)? link,
+    TResult? Function(_Photo value)? photo,
+    TResult? Function(_Video value)? video,
+    TResult? Function(_Rich value)? rich,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return rich?.call(this);
   }
@@ -750,40 +728,42 @@ class _$_Rich implements _Rich {
 }
 
 abstract class _Rich implements PleromaApiCardType {
-  const factory _Rich({String stringValue}) = _$_Rich;
+  const factory _Rich({final String stringValue}) = _$RichImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$RichCopyWith<_Rich> get copyWith => throw _privateConstructorUsedError;
+  _$$RichImplCopyWith<_$RichImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$UnknownCopyWith<$Res>
+abstract class _$$UnknownImplCopyWith<$Res>
     implements $PleromaApiCardTypeCopyWith<$Res> {
-  factory _$UnknownCopyWith(_Unknown value, $Res Function(_Unknown) then) =
-      __$UnknownCopyWithImpl<$Res>;
+  factory _$$UnknownImplCopyWith(
+          _$UnknownImpl value, $Res Function(_$UnknownImpl) then) =
+      __$$UnknownImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$UnknownCopyWithImpl<$Res>
-    extends _$PleromaApiCardTypeCopyWithImpl<$Res>
-    implements _$UnknownCopyWith<$Res> {
-  __$UnknownCopyWithImpl(_Unknown _value, $Res Function(_Unknown) _then)
-      : super(_value, (v) => _then(v as _Unknown));
+class __$$UnknownImplCopyWithImpl<$Res>
+    extends _$PleromaApiCardTypeCopyWithImpl<$Res, _$UnknownImpl>
+    implements _$$UnknownImplCopyWith<$Res> {
+  __$$UnknownImplCopyWithImpl(
+      _$UnknownImpl _value, $Res Function(_$UnknownImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Unknown get _value => super._value as _Unknown;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Unknown(
-      stringValue: stringValue == freezed
+    return _then(_$UnknownImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -793,8 +773,8 @@ class __$UnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Unknown implements _Unknown {
-  const _$_Unknown({required this.stringValue});
+class _$UnknownImpl implements _Unknown {
+  const _$UnknownImpl({required this.stringValue});
 
   @override
   final String stringValue;
@@ -805,10 +785,10 @@ class _$_Unknown implements _Unknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Unknown &&
+            other is _$UnknownImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -818,8 +798,9 @@ class _$_Unknown implements _Unknown {
 
   @JsonKey(ignore: true)
   @override
-  _$UnknownCopyWith<_Unknown> get copyWith =>
-      __$UnknownCopyWithImpl<_Unknown>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnknownImplCopyWith<_$UnknownImpl> get copyWith =>
+      __$$UnknownImplCopyWithImpl<_$UnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -836,11 +817,11 @@ class _$_Unknown implements _Unknown {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? link,
-    TResult Function(String stringValue)? photo,
-    TResult Function(String stringValue)? video,
-    TResult Function(String stringValue)? rich,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? link,
+    TResult? Function(String stringValue)? photo,
+    TResult? Function(String stringValue)? video,
+    TResult? Function(String stringValue)? rich,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return unknown?.call(stringValue);
   }
@@ -876,11 +857,11 @@ class _$_Unknown implements _Unknown {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Link value)? link,
-    TResult Function(_Photo value)? photo,
-    TResult Function(_Video value)? video,
-    TResult Function(_Rich value)? rich,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Link value)? link,
+    TResult? Function(_Photo value)? photo,
+    TResult? Function(_Video value)? video,
+    TResult? Function(_Rich value)? rich,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return unknown?.call(this);
   }
@@ -903,12 +884,12 @@ class _$_Unknown implements _Unknown {
 }
 
 abstract class _Unknown implements PleromaApiCardType {
-  const factory _Unknown({required String stringValue}) = _$_Unknown;
+  const factory _Unknown({required final String stringValue}) = _$UnknownImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$UnknownCopyWith<_Unknown> get copyWith =>
+  _$$UnknownImplCopyWith<_$UnknownImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

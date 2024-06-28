@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'emoji_picker_recent_category_model.dart';
 
@@ -11,38 +12,12 @@ part of 'emoji_picker_recent_category_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 EmojiPickerRecentCategoryItemsList _$EmojiPickerRecentCategoryItemsListFromJson(
     Map<String, dynamic> json) {
   return _EmojiPickerRecentCategoryItemsList.fromJson(json);
 }
-
-/// @nodoc
-class _$EmojiPickerRecentCategoryItemsListTearOff {
-  const _$EmojiPickerRecentCategoryItemsListTearOff();
-
-  _EmojiPickerRecentCategoryItemsList call(
-      {@HiveField(2)
-      @JsonKey(name: 'recent_code_items')
-          required List<CustomEmojiPickerCodeItem> recentCodeItems,
-      @HiveField(3)
-      @JsonKey(name: 'recent_image_items')
-          required List<CustomEmojiPickerImageUrlItem> recentImageItems}) {
-    return _EmojiPickerRecentCategoryItemsList(
-      recentCodeItems: recentCodeItems,
-      recentImageItems: recentImageItems,
-    );
-  }
-
-  EmojiPickerRecentCategoryItemsList fromJson(Map<String, Object?> json) {
-    return EmojiPickerRecentCategoryItemsList.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $EmojiPickerRecentCategoryItemsList =
-    _$EmojiPickerRecentCategoryItemsListTearOff();
 
 /// @nodoc
 mixin _$EmojiPickerRecentCategoryItemsList {
@@ -67,85 +42,89 @@ abstract class $EmojiPickerRecentCategoryItemsListCopyWith<$Res> {
   factory $EmojiPickerRecentCategoryItemsListCopyWith(
           EmojiPickerRecentCategoryItemsList value,
           $Res Function(EmojiPickerRecentCategoryItemsList) then) =
-      _$EmojiPickerRecentCategoryItemsListCopyWithImpl<$Res>;
+      _$EmojiPickerRecentCategoryItemsListCopyWithImpl<$Res,
+          EmojiPickerRecentCategoryItemsList>;
+  @useResult
   $Res call(
       {@HiveField(2)
       @JsonKey(name: 'recent_code_items')
-          List<CustomEmojiPickerCodeItem> recentCodeItems,
+      List<CustomEmojiPickerCodeItem> recentCodeItems,
       @HiveField(3)
       @JsonKey(name: 'recent_image_items')
-          List<CustomEmojiPickerImageUrlItem> recentImageItems});
+      List<CustomEmojiPickerImageUrlItem> recentImageItems});
 }
 
 /// @nodoc
-class _$EmojiPickerRecentCategoryItemsListCopyWithImpl<$Res>
+class _$EmojiPickerRecentCategoryItemsListCopyWithImpl<$Res,
+        $Val extends EmojiPickerRecentCategoryItemsList>
     implements $EmojiPickerRecentCategoryItemsListCopyWith<$Res> {
   _$EmojiPickerRecentCategoryItemsListCopyWithImpl(this._value, this._then);
 
-  final EmojiPickerRecentCategoryItemsList _value;
   // ignore: unused_field
-  final $Res Function(EmojiPickerRecentCategoryItemsList) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? recentCodeItems = freezed,
-    Object? recentImageItems = freezed,
+    Object? recentCodeItems = null,
+    Object? recentImageItems = null,
   }) {
     return _then(_value.copyWith(
-      recentCodeItems: recentCodeItems == freezed
+      recentCodeItems: null == recentCodeItems
           ? _value.recentCodeItems
           : recentCodeItems // ignore: cast_nullable_to_non_nullable
               as List<CustomEmojiPickerCodeItem>,
-      recentImageItems: recentImageItems == freezed
+      recentImageItems: null == recentImageItems
           ? _value.recentImageItems
           : recentImageItems // ignore: cast_nullable_to_non_nullable
               as List<CustomEmojiPickerImageUrlItem>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$EmojiPickerRecentCategoryItemsListCopyWith<$Res>
+abstract class _$$EmojiPickerRecentCategoryItemsListImplCopyWith<$Res>
     implements $EmojiPickerRecentCategoryItemsListCopyWith<$Res> {
-  factory _$EmojiPickerRecentCategoryItemsListCopyWith(
-          _EmojiPickerRecentCategoryItemsList value,
-          $Res Function(_EmojiPickerRecentCategoryItemsList) then) =
-      __$EmojiPickerRecentCategoryItemsListCopyWithImpl<$Res>;
+  factory _$$EmojiPickerRecentCategoryItemsListImplCopyWith(
+          _$EmojiPickerRecentCategoryItemsListImpl value,
+          $Res Function(_$EmojiPickerRecentCategoryItemsListImpl) then) =
+      __$$EmojiPickerRecentCategoryItemsListImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(2)
       @JsonKey(name: 'recent_code_items')
-          List<CustomEmojiPickerCodeItem> recentCodeItems,
+      List<CustomEmojiPickerCodeItem> recentCodeItems,
       @HiveField(3)
       @JsonKey(name: 'recent_image_items')
-          List<CustomEmojiPickerImageUrlItem> recentImageItems});
+      List<CustomEmojiPickerImageUrlItem> recentImageItems});
 }
 
 /// @nodoc
-class __$EmojiPickerRecentCategoryItemsListCopyWithImpl<$Res>
-    extends _$EmojiPickerRecentCategoryItemsListCopyWithImpl<$Res>
-    implements _$EmojiPickerRecentCategoryItemsListCopyWith<$Res> {
-  __$EmojiPickerRecentCategoryItemsListCopyWithImpl(
-      _EmojiPickerRecentCategoryItemsList _value,
-      $Res Function(_EmojiPickerRecentCategoryItemsList) _then)
-      : super(_value, (v) => _then(v as _EmojiPickerRecentCategoryItemsList));
+class __$$EmojiPickerRecentCategoryItemsListImplCopyWithImpl<$Res>
+    extends _$EmojiPickerRecentCategoryItemsListCopyWithImpl<$Res,
+        _$EmojiPickerRecentCategoryItemsListImpl>
+    implements _$$EmojiPickerRecentCategoryItemsListImplCopyWith<$Res> {
+  __$$EmojiPickerRecentCategoryItemsListImplCopyWithImpl(
+      _$EmojiPickerRecentCategoryItemsListImpl _value,
+      $Res Function(_$EmojiPickerRecentCategoryItemsListImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _EmojiPickerRecentCategoryItemsList get _value =>
-      super._value as _EmojiPickerRecentCategoryItemsList;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? recentCodeItems = freezed,
-    Object? recentImageItems = freezed,
+    Object? recentCodeItems = null,
+    Object? recentImageItems = null,
   }) {
-    return _then(_EmojiPickerRecentCategoryItemsList(
-      recentCodeItems: recentCodeItems == freezed
-          ? _value.recentCodeItems
+    return _then(_$EmojiPickerRecentCategoryItemsListImpl(
+      recentCodeItems: null == recentCodeItems
+          ? _value._recentCodeItems
           : recentCodeItems // ignore: cast_nullable_to_non_nullable
               as List<CustomEmojiPickerCodeItem>,
-      recentImageItems: recentImageItems == freezed
-          ? _value.recentImageItems
+      recentImageItems: null == recentImageItems
+          ? _value._recentImageItems
           : recentImageItems // ignore: cast_nullable_to_non_nullable
               as List<CustomEmojiPickerImageUrlItem>,
     ));
@@ -154,29 +133,43 @@ class __$EmojiPickerRecentCategoryItemsListCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_EmojiPickerRecentCategoryItemsList
+class _$EmojiPickerRecentCategoryItemsListImpl
     extends _EmojiPickerRecentCategoryItemsList with DiagnosticableTreeMixin {
-  const _$_EmojiPickerRecentCategoryItemsList(
+  const _$EmojiPickerRecentCategoryItemsListImpl(
       {@HiveField(2)
       @JsonKey(name: 'recent_code_items')
-          required this.recentCodeItems,
+      required final List<CustomEmojiPickerCodeItem> recentCodeItems,
       @HiveField(3)
       @JsonKey(name: 'recent_image_items')
-          required this.recentImageItems})
-      : super._();
+      required final List<CustomEmojiPickerImageUrlItem> recentImageItems})
+      : _recentCodeItems = recentCodeItems,
+        _recentImageItems = recentImageItems,
+        super._();
 
-  factory _$_EmojiPickerRecentCategoryItemsList.fromJson(
+  factory _$EmojiPickerRecentCategoryItemsListImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_EmojiPickerRecentCategoryItemsListFromJson(json);
+      _$$EmojiPickerRecentCategoryItemsListImplFromJson(json);
 
+  final List<CustomEmojiPickerCodeItem> _recentCodeItems;
   @override
   @HiveField(2)
   @JsonKey(name: 'recent_code_items')
-  final List<CustomEmojiPickerCodeItem> recentCodeItems;
+  List<CustomEmojiPickerCodeItem> get recentCodeItems {
+    if (_recentCodeItems is EqualUnmodifiableListView) return _recentCodeItems;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_recentCodeItems);
+  }
+
+  final List<CustomEmojiPickerImageUrlItem> _recentImageItems;
   @override
   @HiveField(3)
   @JsonKey(name: 'recent_image_items')
-  final List<CustomEmojiPickerImageUrlItem> recentImageItems;
+  List<CustomEmojiPickerImageUrlItem> get recentImageItems {
+    if (_recentImageItems is EqualUnmodifiableListView)
+      return _recentImageItems;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_recentImageItems);
+  }
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -193,50 +186,54 @@ class _$_EmojiPickerRecentCategoryItemsList
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _EmojiPickerRecentCategoryItemsList &&
+            other is _$EmojiPickerRecentCategoryItemsListImpl &&
             const DeepCollectionEquality()
-                .equals(other.recentCodeItems, recentCodeItems) &&
+                .equals(other._recentCodeItems, _recentCodeItems) &&
             const DeepCollectionEquality()
-                .equals(other.recentImageItems, recentImageItems));
+                .equals(other._recentImageItems, _recentImageItems));
   }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(recentCodeItems),
-      const DeepCollectionEquality().hash(recentImageItems));
 
   @JsonKey(ignore: true)
   @override
-  _$EmojiPickerRecentCategoryItemsListCopyWith<
-          _EmojiPickerRecentCategoryItemsList>
-      get copyWith => __$EmojiPickerRecentCategoryItemsListCopyWithImpl<
-          _EmojiPickerRecentCategoryItemsList>(this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(_recentCodeItems),
+      const DeepCollectionEquality().hash(_recentImageItems));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$EmojiPickerRecentCategoryItemsListImplCopyWith<
+          _$EmojiPickerRecentCategoryItemsListImpl>
+      get copyWith => __$$EmojiPickerRecentCategoryItemsListImplCopyWithImpl<
+          _$EmojiPickerRecentCategoryItemsListImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_EmojiPickerRecentCategoryItemsListToJson(this);
+    return _$$EmojiPickerRecentCategoryItemsListImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _EmojiPickerRecentCategoryItemsList
     extends EmojiPickerRecentCategoryItemsList {
   const factory _EmojiPickerRecentCategoryItemsList(
-          {@HiveField(2)
-          @JsonKey(name: 'recent_code_items')
-              required List<CustomEmojiPickerCodeItem> recentCodeItems,
-          @HiveField(3)
-          @JsonKey(name: 'recent_image_items')
-              required List<CustomEmojiPickerImageUrlItem> recentImageItems}) =
-      _$_EmojiPickerRecentCategoryItemsList;
+      {@HiveField(2)
+      @JsonKey(name: 'recent_code_items')
+      required final List<CustomEmojiPickerCodeItem> recentCodeItems,
+      @HiveField(3)
+      @JsonKey(name: 'recent_image_items')
+      required final List<CustomEmojiPickerImageUrlItem>
+          recentImageItems}) = _$EmojiPickerRecentCategoryItemsListImpl;
   const _EmojiPickerRecentCategoryItemsList._() : super._();
 
   factory _EmojiPickerRecentCategoryItemsList.fromJson(
           Map<String, dynamic> json) =
-      _$_EmojiPickerRecentCategoryItemsList.fromJson;
+      _$EmojiPickerRecentCategoryItemsListImpl.fromJson;
 
   @override
   @HiveField(2)
@@ -248,7 +245,7 @@ abstract class _EmojiPickerRecentCategoryItemsList
   List<CustomEmojiPickerImageUrlItem> get recentImageItems;
   @override
   @JsonKey(ignore: true)
-  _$EmojiPickerRecentCategoryItemsListCopyWith<
-          _EmojiPickerRecentCategoryItemsList>
+  _$$EmojiPickerRecentCategoryItemsListImplCopyWith<
+          _$EmojiPickerRecentCategoryItemsListImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -51,28 +51,19 @@ class UnifediApiTagHistoryItemAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiTagHistoryItem _$$_UnifediApiTagHistoryItemFromJson(
+_$UnifediApiTagHistoryItemImpl _$$UnifediApiTagHistoryItemImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiTagHistoryItem(
+    _$UnifediApiTagHistoryItemImpl(
       accounts: JsonParseHelper.fromStringToInt(json['accounts'] as String),
       dayInUnixTimestamp:
           JsonParseHelper.fromStringToInt(json['day'] as String),
       uses: JsonParseHelper.fromStringToInt(json['uses'] as String),
     );
 
-Map<String, dynamic> _$$_UnifediApiTagHistoryItemToJson(
-    _$_UnifediApiTagHistoryItem instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('accounts', JsonParseHelper.toStringFromInt(instance.accounts));
-  writeNotNull(
-      'day', JsonParseHelper.toStringFromInt(instance.dayInUnixTimestamp));
-  writeNotNull('uses', JsonParseHelper.toStringFromInt(instance.uses));
-  return val;
-}
+Map<String, dynamic> _$$UnifediApiTagHistoryItemImplToJson(
+        _$UnifediApiTagHistoryItemImpl instance) =>
+    <String, dynamic>{
+      'accounts': JsonParseHelper.toStringFromInt(instance.accounts),
+      'day': JsonParseHelper.toStringFromInt(instance.dayInUnixTimestamp),
+      'uses': JsonParseHelper.toStringFromInt(instance.uses),
+    };

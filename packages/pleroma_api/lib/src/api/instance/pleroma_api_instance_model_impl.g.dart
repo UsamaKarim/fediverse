@@ -151,17 +151,17 @@ class PleromaApiInstanceAdapter extends TypeAdapter<PleromaApiInstance> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiInstancePleromaPart _$$_PleromaApiInstancePleromaPartFromJson(
-        Map<String, dynamic> json) =>
-    _$_PleromaApiInstancePleromaPart(
-      metadata: json['metadata'] == null
-          ? null
-          : PleromaApiInstanceMetadata.fromJson(
-              json['metadata'] as Map<String, dynamic>),
-    );
+_$PleromaApiInstancePleromaPartImpl
+    _$$PleromaApiInstancePleromaPartImplFromJson(Map<String, dynamic> json) =>
+        _$PleromaApiInstancePleromaPartImpl(
+          metadata: json['metadata'] == null
+              ? null
+              : PleromaApiInstanceMetadata.fromJson(
+                  json['metadata'] as Map<String, dynamic>),
+        );
 
-Map<String, dynamic> _$$_PleromaApiInstancePleromaPartToJson(
-    _$_PleromaApiInstancePleromaPart instance) {
+Map<String, dynamic> _$$PleromaApiInstancePleromaPartImplToJson(
+    _$PleromaApiInstancePleromaPartImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {
@@ -174,13 +174,13 @@ Map<String, dynamic> _$$_PleromaApiInstancePleromaPartToJson(
   return val;
 }
 
-_$_PleromaApiInstance _$$_PleromaApiInstanceFromJson(
+_$PleromaApiInstanceImpl _$$PleromaApiInstanceImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiInstance(
+    _$PleromaApiInstanceImpl(
       approvalRequired: json['approval_required'] as bool?,
-      avatarUploadLimit: json['avatar_upload_limit'] as int?,
-      backgroundUploadLimit: json['background_upload_limit'] as int?,
-      bannerUploadLimit: json['banner_upload_limit'] as int?,
+      avatarUploadLimit: (json['avatar_upload_limit'] as num?)?.toInt(),
+      backgroundUploadLimit: (json['background_upload_limit'] as num?)?.toInt(),
+      bannerUploadLimit: (json['banner_upload_limit'] as num?)?.toInt(),
       contactAccount: json['contact_account'] == null
           ? null
           : PleromaApiAccount.fromJson(
@@ -207,7 +207,7 @@ _$_PleromaApiInstance _$$_PleromaApiInstanceFromJson(
               json['stats'] as Map<String, dynamic>),
       thumbnail: json['thumbnail'] as String?,
       title: json['title'] as String?,
-      uploadLimit: json['upload_limit'] as int?,
+      uploadLimit: (json['upload_limit'] as num?)?.toInt(),
       uri: json['uri'] as String,
       urls: json['urls'] == null
           ? null
@@ -216,14 +216,14 @@ _$_PleromaApiInstance _$$_PleromaApiInstanceFromJson(
       vapidPublicKey: json['vapid_public_key'] as String?,
       versionString: json['version'] as String,
       backgroundImage: json['background_image'] as String?,
-      chatLimit: json['chat_limit'] as int?,
+      chatLimit: (json['chat_limit'] as num?)?.toInt(),
       description: json['description'] as String?,
-      descriptionLimit: json['description_limit'] as int?,
+      descriptionLimit: (json['description_limit'] as num?)?.toInt(),
       invitesEnabled: json['invites_enabled'] as bool?,
     );
 
-Map<String, dynamic> _$$_PleromaApiInstanceToJson(
-    _$_PleromaApiInstance instance) {
+Map<String, dynamic> _$$PleromaApiInstanceImplToJson(
+    _$PleromaApiInstanceImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

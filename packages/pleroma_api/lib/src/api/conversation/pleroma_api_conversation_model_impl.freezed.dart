@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_conversation_model_impl.dart';
 
@@ -11,32 +12,12 @@ part of 'pleroma_api_conversation_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiConversationPleromaPart _$PleromaApiConversationPleromaPartFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiConversationPleromaPart.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiConversationPleromaPartTearOff {
-  const _$PleromaApiConversationPleromaPartTearOff();
-
-  _PleromaApiConversationPleromaPart call(
-      {@HiveField(0) required List<PleromaApiAccount>? recipients}) {
-    return _PleromaApiConversationPleromaPart(
-      recipients: recipients,
-    );
-  }
-
-  PleromaApiConversationPleromaPart fromJson(Map<String, Object?> json) {
-    return PleromaApiConversationPleromaPart.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiConversationPleromaPart =
-    _$PleromaApiConversationPleromaPartTearOff();
 
 /// @nodoc
 mixin _$PleromaApiConversationPleromaPart {
@@ -54,63 +35,67 @@ abstract class $PleromaApiConversationPleromaPartCopyWith<$Res> {
   factory $PleromaApiConversationPleromaPartCopyWith(
           PleromaApiConversationPleromaPart value,
           $Res Function(PleromaApiConversationPleromaPart) then) =
-      _$PleromaApiConversationPleromaPartCopyWithImpl<$Res>;
+      _$PleromaApiConversationPleromaPartCopyWithImpl<$Res,
+          PleromaApiConversationPleromaPart>;
+  @useResult
   $Res call({@HiveField(0) List<PleromaApiAccount>? recipients});
 }
 
 /// @nodoc
-class _$PleromaApiConversationPleromaPartCopyWithImpl<$Res>
+class _$PleromaApiConversationPleromaPartCopyWithImpl<$Res,
+        $Val extends PleromaApiConversationPleromaPart>
     implements $PleromaApiConversationPleromaPartCopyWith<$Res> {
   _$PleromaApiConversationPleromaPartCopyWithImpl(this._value, this._then);
 
-  final PleromaApiConversationPleromaPart _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiConversationPleromaPart) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? recipients = freezed,
   }) {
     return _then(_value.copyWith(
-      recipients: recipients == freezed
+      recipients: freezed == recipients
           ? _value.recipients
           : recipients // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiAccount>?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiConversationPleromaPartCopyWith<$Res>
+abstract class _$$PleromaApiConversationPleromaPartImplCopyWith<$Res>
     implements $PleromaApiConversationPleromaPartCopyWith<$Res> {
-  factory _$PleromaApiConversationPleromaPartCopyWith(
-          _PleromaApiConversationPleromaPart value,
-          $Res Function(_PleromaApiConversationPleromaPart) then) =
-      __$PleromaApiConversationPleromaPartCopyWithImpl<$Res>;
+  factory _$$PleromaApiConversationPleromaPartImplCopyWith(
+          _$PleromaApiConversationPleromaPartImpl value,
+          $Res Function(_$PleromaApiConversationPleromaPartImpl) then) =
+      __$$PleromaApiConversationPleromaPartImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) List<PleromaApiAccount>? recipients});
 }
 
 /// @nodoc
-class __$PleromaApiConversationPleromaPartCopyWithImpl<$Res>
-    extends _$PleromaApiConversationPleromaPartCopyWithImpl<$Res>
-    implements _$PleromaApiConversationPleromaPartCopyWith<$Res> {
-  __$PleromaApiConversationPleromaPartCopyWithImpl(
-      _PleromaApiConversationPleromaPart _value,
-      $Res Function(_PleromaApiConversationPleromaPart) _then)
-      : super(_value, (v) => _then(v as _PleromaApiConversationPleromaPart));
+class __$$PleromaApiConversationPleromaPartImplCopyWithImpl<$Res>
+    extends _$PleromaApiConversationPleromaPartCopyWithImpl<$Res,
+        _$PleromaApiConversationPleromaPartImpl>
+    implements _$$PleromaApiConversationPleromaPartImplCopyWith<$Res> {
+  __$$PleromaApiConversationPleromaPartImplCopyWithImpl(
+      _$PleromaApiConversationPleromaPartImpl _value,
+      $Res Function(_$PleromaApiConversationPleromaPartImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiConversationPleromaPart get _value =>
-      super._value as _PleromaApiConversationPleromaPart;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? recipients = freezed,
   }) {
-    return _then(_PleromaApiConversationPleromaPart(
-      recipients: recipients == freezed
-          ? _value.recipients
+    return _then(_$PleromaApiConversationPleromaPartImpl(
+      recipients: freezed == recipients
+          ? _value._recipients
           : recipients // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiAccount>?,
     ));
@@ -119,18 +104,26 @@ class __$PleromaApiConversationPleromaPartCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiConversationPleromaPart
+class _$PleromaApiConversationPleromaPartImpl
     implements _PleromaApiConversationPleromaPart {
-  const _$_PleromaApiConversationPleromaPart(
-      {@HiveField(0) required this.recipients});
+  const _$PleromaApiConversationPleromaPartImpl(
+      {@HiveField(0) required final List<PleromaApiAccount>? recipients})
+      : _recipients = recipients;
 
-  factory _$_PleromaApiConversationPleromaPart.fromJson(
+  factory _$PleromaApiConversationPleromaPartImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_PleromaApiConversationPleromaPartFromJson(json);
+      _$$PleromaApiConversationPleromaPartImplFromJson(json);
 
+  final List<PleromaApiAccount>? _recipients;
   @override
   @HiveField(0)
-  final List<PleromaApiAccount>? recipients;
+  List<PleromaApiAccount>? get recipients {
+    final value = _recipients;
+    if (value == null) return null;
+    if (_recipients is EqualUnmodifiableListView) return _recipients;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   @override
   String toString() {
@@ -138,48 +131,52 @@ class _$_PleromaApiConversationPleromaPart
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiConversationPleromaPart &&
+            other is _$PleromaApiConversationPleromaPartImpl &&
             const DeepCollectionEquality()
-                .equals(other.recipients, recipients));
+                .equals(other._recipients, _recipients));
   }
-
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(recipients));
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiConversationPleromaPartCopyWith<
-          _PleromaApiConversationPleromaPart>
-      get copyWith => __$PleromaApiConversationPleromaPartCopyWithImpl<
-          _PleromaApiConversationPleromaPart>(this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType, const DeepCollectionEquality().hash(_recipients));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiConversationPleromaPartImplCopyWith<
+          _$PleromaApiConversationPleromaPartImpl>
+      get copyWith => __$$PleromaApiConversationPleromaPartImplCopyWithImpl<
+          _$PleromaApiConversationPleromaPartImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiConversationPleromaPartToJson(this);
+    return _$$PleromaApiConversationPleromaPartImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiConversationPleromaPart
     implements PleromaApiConversationPleromaPart {
   const factory _PleromaApiConversationPleromaPart(
-          {@HiveField(0) required List<PleromaApiAccount>? recipients}) =
-      _$_PleromaApiConversationPleromaPart;
+          {@HiveField(0) required final List<PleromaApiAccount>? recipients}) =
+      _$PleromaApiConversationPleromaPartImpl;
 
   factory _PleromaApiConversationPleromaPart.fromJson(
           Map<String, dynamic> json) =
-      _$_PleromaApiConversationPleromaPart.fromJson;
+      _$PleromaApiConversationPleromaPartImpl.fromJson;
 
   @override
   @HiveField(0)
   List<PleromaApiAccount>? get recipients;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiConversationPleromaPartCopyWith<
-          _PleromaApiConversationPleromaPart>
+  _$$PleromaApiConversationPleromaPartImplCopyWith<
+          _$PleromaApiConversationPleromaPartImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -187,39 +184,6 @@ PleromaApiConversation _$PleromaApiConversationFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiConversation.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiConversationTearOff {
-  const _$PleromaApiConversationTearOff();
-
-  _PleromaApiConversation call(
-      {@HiveField(0)
-          required bool? unread,
-      @HiveField(1)
-      @JsonKey(name: 'last_status')
-          required PleromaApiStatus? lastStatus,
-      @HiveField(2)
-          required String id,
-      @HiveField(3)
-          required List<PleromaApiAccount> accounts,
-      @HiveField(4)
-          required PleromaApiConversationPleromaPart? pleroma}) {
-    return _PleromaApiConversation(
-      unread: unread,
-      lastStatus: lastStatus,
-      id: id,
-      accounts: accounts,
-      pleroma: pleroma,
-    );
-  }
-
-  PleromaApiConversation fromJson(Map<String, Object?> json) {
-    return PleromaApiConversation.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiConversation = _$PleromaApiConversationTearOff();
 
 /// @nodoc
 mixin _$PleromaApiConversation {
@@ -246,7 +210,8 @@ mixin _$PleromaApiConversation {
 abstract class $PleromaApiConversationCopyWith<$Res> {
   factory $PleromaApiConversationCopyWith(PleromaApiConversation value,
           $Res Function(PleromaApiConversation) then) =
-      _$PleromaApiConversationCopyWithImpl<$Res>;
+      _$PleromaApiConversationCopyWithImpl<$Res, PleromaApiConversation>;
+  @useResult
   $Res call(
       {@HiveField(0) bool? unread,
       @HiveField(1) @JsonKey(name: 'last_status') PleromaApiStatus? lastStatus,
@@ -259,58 +224,63 @@ abstract class $PleromaApiConversationCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiConversationCopyWithImpl<$Res>
+class _$PleromaApiConversationCopyWithImpl<$Res,
+        $Val extends PleromaApiConversation>
     implements $PleromaApiConversationCopyWith<$Res> {
   _$PleromaApiConversationCopyWithImpl(this._value, this._then);
 
-  final PleromaApiConversation _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiConversation) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? unread = freezed,
     Object? lastStatus = freezed,
-    Object? id = freezed,
-    Object? accounts = freezed,
+    Object? id = null,
+    Object? accounts = null,
     Object? pleroma = freezed,
   }) {
     return _then(_value.copyWith(
-      unread: unread == freezed
+      unread: freezed == unread
           ? _value.unread
           : unread // ignore: cast_nullable_to_non_nullable
               as bool?,
-      lastStatus: lastStatus == freezed
+      lastStatus: freezed == lastStatus
           ? _value.lastStatus
           : lastStatus // ignore: cast_nullable_to_non_nullable
               as PleromaApiStatus?,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      accounts: accounts == freezed
+      accounts: null == accounts
           ? _value.accounts
           : accounts // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiAccount>,
-      pleroma: pleroma == freezed
+      pleroma: freezed == pleroma
           ? _value.pleroma
           : pleroma // ignore: cast_nullable_to_non_nullable
               as PleromaApiConversationPleromaPart?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiStatusCopyWith<$Res>? get lastStatus {
     if (_value.lastStatus == null) {
       return null;
     }
 
     return $PleromaApiStatusCopyWith<$Res>(_value.lastStatus!, (value) {
-      return _then(_value.copyWith(lastStatus: value));
+      return _then(_value.copyWith(lastStatus: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiConversationPleromaPartCopyWith<$Res>? get pleroma {
     if (_value.pleroma == null) {
       return null;
@@ -318,18 +288,20 @@ class _$PleromaApiConversationCopyWithImpl<$Res>
 
     return $PleromaApiConversationPleromaPartCopyWith<$Res>(_value.pleroma!,
         (value) {
-      return _then(_value.copyWith(pleroma: value));
+      return _then(_value.copyWith(pleroma: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiConversationCopyWith<$Res>
+abstract class _$$PleromaApiConversationImplCopyWith<$Res>
     implements $PleromaApiConversationCopyWith<$Res> {
-  factory _$PleromaApiConversationCopyWith(_PleromaApiConversation value,
-          $Res Function(_PleromaApiConversation) then) =
-      __$PleromaApiConversationCopyWithImpl<$Res>;
+  factory _$$PleromaApiConversationImplCopyWith(
+          _$PleromaApiConversationImpl value,
+          $Res Function(_$PleromaApiConversationImpl) then) =
+      __$$PleromaApiConversationImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) bool? unread,
       @HiveField(1) @JsonKey(name: 'last_status') PleromaApiStatus? lastStatus,
@@ -344,42 +316,42 @@ abstract class _$PleromaApiConversationCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiConversationCopyWithImpl<$Res>
-    extends _$PleromaApiConversationCopyWithImpl<$Res>
-    implements _$PleromaApiConversationCopyWith<$Res> {
-  __$PleromaApiConversationCopyWithImpl(_PleromaApiConversation _value,
-      $Res Function(_PleromaApiConversation) _then)
-      : super(_value, (v) => _then(v as _PleromaApiConversation));
+class __$$PleromaApiConversationImplCopyWithImpl<$Res>
+    extends _$PleromaApiConversationCopyWithImpl<$Res,
+        _$PleromaApiConversationImpl>
+    implements _$$PleromaApiConversationImplCopyWith<$Res> {
+  __$$PleromaApiConversationImplCopyWithImpl(
+      _$PleromaApiConversationImpl _value,
+      $Res Function(_$PleromaApiConversationImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiConversation get _value => super._value as _PleromaApiConversation;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? unread = freezed,
     Object? lastStatus = freezed,
-    Object? id = freezed,
-    Object? accounts = freezed,
+    Object? id = null,
+    Object? accounts = null,
     Object? pleroma = freezed,
   }) {
-    return _then(_PleromaApiConversation(
-      unread: unread == freezed
+    return _then(_$PleromaApiConversationImpl(
+      unread: freezed == unread
           ? _value.unread
           : unread // ignore: cast_nullable_to_non_nullable
               as bool?,
-      lastStatus: lastStatus == freezed
+      lastStatus: freezed == lastStatus
           ? _value.lastStatus
           : lastStatus // ignore: cast_nullable_to_non_nullable
               as PleromaApiStatus?,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      accounts: accounts == freezed
-          ? _value.accounts
+      accounts: null == accounts
+          ? _value._accounts
           : accounts // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiAccount>,
-      pleroma: pleroma == freezed
+      pleroma: freezed == pleroma
           ? _value.pleroma
           : pleroma // ignore: cast_nullable_to_non_nullable
               as PleromaApiConversationPleromaPart?,
@@ -389,16 +361,17 @@ class __$PleromaApiConversationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiConversation implements _PleromaApiConversation {
-  const _$_PleromaApiConversation(
+class _$PleromaApiConversationImpl implements _PleromaApiConversation {
+  const _$PleromaApiConversationImpl(
       {@HiveField(0) required this.unread,
       @HiveField(1) @JsonKey(name: 'last_status') required this.lastStatus,
       @HiveField(2) required this.id,
-      @HiveField(3) required this.accounts,
-      @HiveField(4) required this.pleroma});
+      @HiveField(3) required final List<PleromaApiAccount> accounts,
+      @HiveField(4) required this.pleroma})
+      : _accounts = accounts;
 
-  factory _$_PleromaApiConversation.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiConversationFromJson(json);
+  factory _$PleromaApiConversationImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiConversationImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -410,9 +383,15 @@ class _$_PleromaApiConversation implements _PleromaApiConversation {
   @override
   @HiveField(2)
   final String id;
+  final List<PleromaApiAccount> _accounts;
   @override
   @HiveField(3)
-  final List<PleromaApiAccount> accounts;
+  List<PleromaApiAccount> get accounts {
+    if (_accounts is EqualUnmodifiableListView) return _accounts;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_accounts);
+  }
+
   @override
   @HiveField(4)
   final PleromaApiConversationPleromaPart? pleroma;
@@ -423,51 +402,52 @@ class _$_PleromaApiConversation implements _PleromaApiConversation {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiConversation &&
+            other is _$PleromaApiConversationImpl &&
             (identical(other.unread, unread) || other.unread == unread) &&
             (identical(other.lastStatus, lastStatus) ||
                 other.lastStatus == lastStatus) &&
             (identical(other.id, id) || other.id == id) &&
-            const DeepCollectionEquality().equals(other.accounts, accounts) &&
+            const DeepCollectionEquality().equals(other._accounts, _accounts) &&
             (identical(other.pleroma, pleroma) || other.pleroma == pleroma));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, unread, lastStatus, id,
-      const DeepCollectionEquality().hash(accounts), pleroma);
+      const DeepCollectionEquality().hash(_accounts), pleroma);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiConversationCopyWith<_PleromaApiConversation> get copyWith =>
-      __$PleromaApiConversationCopyWithImpl<_PleromaApiConversation>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiConversationImplCopyWith<_$PleromaApiConversationImpl>
+      get copyWith => __$$PleromaApiConversationImplCopyWithImpl<
+          _$PleromaApiConversationImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiConversationToJson(this);
+    return _$$PleromaApiConversationImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiConversation implements PleromaApiConversation {
   const factory _PleromaApiConversation(
-          {@HiveField(0)
-              required bool? unread,
+          {@HiveField(0) required final bool? unread,
           @HiveField(1)
           @JsonKey(name: 'last_status')
-              required PleromaApiStatus? lastStatus,
-          @HiveField(2)
-              required String id,
-          @HiveField(3)
-              required List<PleromaApiAccount> accounts,
+          required final PleromaApiStatus? lastStatus,
+          @HiveField(2) required final String id,
+          @HiveField(3) required final List<PleromaApiAccount> accounts,
           @HiveField(4)
-              required PleromaApiConversationPleromaPart? pleroma}) =
-      _$_PleromaApiConversation;
+          required final PleromaApiConversationPleromaPart? pleroma}) =
+      _$PleromaApiConversationImpl;
 
   factory _PleromaApiConversation.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiConversation.fromJson;
+      _$PleromaApiConversationImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -487,6 +467,6 @@ abstract class _PleromaApiConversation implements PleromaApiConversation {
   PleromaApiConversationPleromaPart? get pleroma;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiConversationCopyWith<_PleromaApiConversation> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PleromaApiConversationImplCopyWith<_$PleromaApiConversationImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

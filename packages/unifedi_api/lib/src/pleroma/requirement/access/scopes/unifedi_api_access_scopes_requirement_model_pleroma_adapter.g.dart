@@ -46,16 +46,17 @@ class UnifediApiAccessScopesRequirementPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiAccessScopesRequirementPleromaAdapter
-    _$$_UnifediApiAccessScopesRequirementPleromaAdapterFromJson(
+_$UnifediApiAccessScopesRequirementPleromaAdapterImpl
+    _$$UnifediApiAccessScopesRequirementPleromaAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiAccessScopesRequirementPleromaAdapter(
+        _$UnifediApiAccessScopesRequirementPleromaAdapterImpl(
           PleromaApiAccessScopesRequirement.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiAccessScopesRequirementPleromaAdapterToJson(
-        _$_UnifediApiAccessScopesRequirementPleromaAdapter instance) =>
-    <String, dynamic>{
-      'value': instance.value.toJson(),
-    };
+Map<String, dynamic>
+    _$$UnifediApiAccessScopesRequirementPleromaAdapterImplToJson(
+            _$UnifediApiAccessScopesRequirementPleromaAdapterImpl instance) =>
+        <String, dynamic>{
+          'value': instance.value.toJson(),
+        };

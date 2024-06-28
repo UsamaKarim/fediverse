@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_push_payload_model_impl.dart';
 
@@ -11,46 +12,12 @@ part of 'mastodon_api_push_payload_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiPushPayload _$MastodonApiPushPayloadFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiPushPayload.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiPushPayloadTearOff {
-  const _$MastodonApiPushPayloadTearOff();
-
-  _MastodonApiPushPayload call(
-      {@HiveField(0)
-      @JsonKey(name: 'notification_id')
-          required String notificationId,
-      @HiveField(1)
-      @JsonKey(name: 'notification_type')
-          required String notificationType,
-      @HiveField(2)
-          required String? title,
-      @HiveField(3)
-          required String? body,
-      @HiveField(4)
-          required String? icon}) {
-    return _MastodonApiPushPayload(
-      notificationId: notificationId,
-      notificationType: notificationType,
-      title: title,
-      body: body,
-      icon: icon,
-    );
-  }
-
-  MastodonApiPushPayload fromJson(Map<String, Object?> json) {
-    return MastodonApiPushPayload.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiPushPayload = _$MastodonApiPushPayloadTearOff();
 
 /// @nodoc
 mixin _$MastodonApiPushPayload {
@@ -77,7 +44,8 @@ mixin _$MastodonApiPushPayload {
 abstract class $MastodonApiPushPayloadCopyWith<$Res> {
   factory $MastodonApiPushPayloadCopyWith(MastodonApiPushPayload value,
           $Res Function(MastodonApiPushPayload) then) =
-      _$MastodonApiPushPayloadCopyWithImpl<$Res>;
+      _$MastodonApiPushPayloadCopyWithImpl<$Res, MastodonApiPushPayload>;
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'notification_id') String notificationId,
       @HiveField(1) @JsonKey(name: 'notification_type') String notificationType,
@@ -87,54 +55,59 @@ abstract class $MastodonApiPushPayloadCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MastodonApiPushPayloadCopyWithImpl<$Res>
+class _$MastodonApiPushPayloadCopyWithImpl<$Res,
+        $Val extends MastodonApiPushPayload>
     implements $MastodonApiPushPayloadCopyWith<$Res> {
   _$MastodonApiPushPayloadCopyWithImpl(this._value, this._then);
 
-  final MastodonApiPushPayload _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiPushPayload) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? notificationId = freezed,
-    Object? notificationType = freezed,
+    Object? notificationId = null,
+    Object? notificationType = null,
     Object? title = freezed,
     Object? body = freezed,
     Object? icon = freezed,
   }) {
     return _then(_value.copyWith(
-      notificationId: notificationId == freezed
+      notificationId: null == notificationId
           ? _value.notificationId
           : notificationId // ignore: cast_nullable_to_non_nullable
               as String,
-      notificationType: notificationType == freezed
+      notificationType: null == notificationType
           ? _value.notificationType
           : notificationType // ignore: cast_nullable_to_non_nullable
               as String,
-      title: title == freezed
+      title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
-      body: body == freezed
+      body: freezed == body
           ? _value.body
           : body // ignore: cast_nullable_to_non_nullable
               as String?,
-      icon: icon == freezed
+      icon: freezed == icon
           ? _value.icon
           : icon // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiPushPayloadCopyWith<$Res>
+abstract class _$$MastodonApiPushPayloadImplCopyWith<$Res>
     implements $MastodonApiPushPayloadCopyWith<$Res> {
-  factory _$MastodonApiPushPayloadCopyWith(_MastodonApiPushPayload value,
-          $Res Function(_MastodonApiPushPayload) then) =
-      __$MastodonApiPushPayloadCopyWithImpl<$Res>;
+  factory _$$MastodonApiPushPayloadImplCopyWith(
+          _$MastodonApiPushPayloadImpl value,
+          $Res Function(_$MastodonApiPushPayloadImpl) then) =
+      __$$MastodonApiPushPayloadImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'notification_id') String notificationId,
       @HiveField(1) @JsonKey(name: 'notification_type') String notificationType,
@@ -144,42 +117,42 @@ abstract class _$MastodonApiPushPayloadCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MastodonApiPushPayloadCopyWithImpl<$Res>
-    extends _$MastodonApiPushPayloadCopyWithImpl<$Res>
-    implements _$MastodonApiPushPayloadCopyWith<$Res> {
-  __$MastodonApiPushPayloadCopyWithImpl(_MastodonApiPushPayload _value,
-      $Res Function(_MastodonApiPushPayload) _then)
-      : super(_value, (v) => _then(v as _MastodonApiPushPayload));
+class __$$MastodonApiPushPayloadImplCopyWithImpl<$Res>
+    extends _$MastodonApiPushPayloadCopyWithImpl<$Res,
+        _$MastodonApiPushPayloadImpl>
+    implements _$$MastodonApiPushPayloadImplCopyWith<$Res> {
+  __$$MastodonApiPushPayloadImplCopyWithImpl(
+      _$MastodonApiPushPayloadImpl _value,
+      $Res Function(_$MastodonApiPushPayloadImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiPushPayload get _value => super._value as _MastodonApiPushPayload;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? notificationId = freezed,
-    Object? notificationType = freezed,
+    Object? notificationId = null,
+    Object? notificationType = null,
     Object? title = freezed,
     Object? body = freezed,
     Object? icon = freezed,
   }) {
-    return _then(_MastodonApiPushPayload(
-      notificationId: notificationId == freezed
+    return _then(_$MastodonApiPushPayloadImpl(
+      notificationId: null == notificationId
           ? _value.notificationId
           : notificationId // ignore: cast_nullable_to_non_nullable
               as String,
-      notificationType: notificationType == freezed
+      notificationType: null == notificationType
           ? _value.notificationType
           : notificationType // ignore: cast_nullable_to_non_nullable
               as String,
-      title: title == freezed
+      title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
-      body: body == freezed
+      body: freezed == body
           ? _value.body
           : body // ignore: cast_nullable_to_non_nullable
               as String?,
-      icon: icon == freezed
+      icon: freezed == icon
           ? _value.icon
           : icon // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -189,23 +162,20 @@ class __$MastodonApiPushPayloadCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiPushPayload implements _MastodonApiPushPayload {
-  const _$_MastodonApiPushPayload(
+class _$MastodonApiPushPayloadImpl implements _MastodonApiPushPayload {
+  const _$MastodonApiPushPayloadImpl(
       {@HiveField(0)
       @JsonKey(name: 'notification_id')
-          required this.notificationId,
+      required this.notificationId,
       @HiveField(1)
       @JsonKey(name: 'notification_type')
-          required this.notificationType,
-      @HiveField(2)
-          required this.title,
-      @HiveField(3)
-          required this.body,
-      @HiveField(4)
-          required this.icon});
+      required this.notificationType,
+      @HiveField(2) required this.title,
+      @HiveField(3) required this.body,
+      @HiveField(4) required this.icon});
 
-  factory _$_MastodonApiPushPayload.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiPushPayloadFromJson(json);
+  factory _$MastodonApiPushPayloadImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MastodonApiPushPayloadImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -231,10 +201,10 @@ class _$_MastodonApiPushPayload implements _MastodonApiPushPayload {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiPushPayload &&
+            other is _$MastodonApiPushPayloadImpl &&
             (identical(other.notificationId, notificationId) ||
                 other.notificationId == notificationId) &&
             (identical(other.notificationType, notificationType) ||
@@ -244,39 +214,41 @@ class _$_MastodonApiPushPayload implements _MastodonApiPushPayload {
             (identical(other.icon, icon) || other.icon == icon));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType, notificationId, notificationType, title, body, icon);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiPushPayloadCopyWith<_MastodonApiPushPayload> get copyWith =>
-      __$MastodonApiPushPayloadCopyWithImpl<_MastodonApiPushPayload>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiPushPayloadImplCopyWith<_$MastodonApiPushPayloadImpl>
+      get copyWith => __$$MastodonApiPushPayloadImplCopyWithImpl<
+          _$MastodonApiPushPayloadImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiPushPayloadToJson(this);
+    return _$$MastodonApiPushPayloadImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiPushPayload implements MastodonApiPushPayload {
   const factory _MastodonApiPushPayload(
-      {@HiveField(0)
-      @JsonKey(name: 'notification_id')
-          required String notificationId,
-      @HiveField(1)
-      @JsonKey(name: 'notification_type')
-          required String notificationType,
-      @HiveField(2)
-          required String? title,
-      @HiveField(3)
-          required String? body,
-      @HiveField(4)
-          required String? icon}) = _$_MastodonApiPushPayload;
+          {@HiveField(0)
+          @JsonKey(name: 'notification_id')
+          required final String notificationId,
+          @HiveField(1)
+          @JsonKey(name: 'notification_type')
+          required final String notificationType,
+          @HiveField(2) required final String? title,
+          @HiveField(3) required final String? body,
+          @HiveField(4) required final String? icon}) =
+      _$MastodonApiPushPayloadImpl;
 
   factory _MastodonApiPushPayload.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiPushPayload.fromJson;
+      _$MastodonApiPushPayloadImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -297,6 +269,6 @@ abstract class _MastodonApiPushPayload implements MastodonApiPushPayload {
   String? get icon;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiPushPayloadCopyWith<_MastodonApiPushPayload> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$MastodonApiPushPayloadImplCopyWith<_$MastodonApiPushPayloadImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

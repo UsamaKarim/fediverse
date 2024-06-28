@@ -48,15 +48,16 @@ class UnifediApiFrontendConfigurationsAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiFrontendConfigurations
-    _$$_UnifediApiFrontendConfigurationsFromJson(Map<String, dynamic> json) =>
-        _$_UnifediApiFrontendConfigurations(
+_$UnifediApiFrontendConfigurationsImpl
+    _$$UnifediApiFrontendConfigurationsImplFromJson(
+            Map<String, dynamic> json) =>
+        _$UnifediApiFrontendConfigurationsImpl(
           brandHexColor: json['brand_hex_color'] as String?,
           backgroundImage: json['background_image'] as String?,
         );
 
-Map<String, dynamic> _$$_UnifediApiFrontendConfigurationsToJson(
-    _$_UnifediApiFrontendConfigurations instance) {
+Map<String, dynamic> _$$UnifediApiFrontendConfigurationsImplToJson(
+    _$UnifediApiFrontendConfigurationsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

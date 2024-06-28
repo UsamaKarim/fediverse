@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_register_account_response_model_impl.dart';
 
@@ -11,42 +12,12 @@ part of 'unifedi_api_register_account_response_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiRegisterAccountResponse _$UnifediApiRegisterAccountResponseFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiRegisterAccountResponse.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiRegisterAccountResponseTearOff {
-  const _$UnifediApiRegisterAccountResponseTearOff();
-
-  _UnifediApiRegisterAccountResponse call(
-      {@JsonKey(name: 'approval_required')
-      @HiveField(0)
-          required bool? approvalRequired,
-      @JsonKey(name: 'email_conformation_required')
-      @HiveField(1)
-          required bool? emailConformationRequired,
-      @JsonKey(name: 'auth_token')
-      @HiveField(2)
-          required UnifediApiOAuthToken? authToken}) {
-    return _UnifediApiRegisterAccountResponse(
-      approvalRequired: approvalRequired,
-      emailConformationRequired: emailConformationRequired,
-      authToken: authToken,
-    );
-  }
-
-  UnifediApiRegisterAccountResponse fromJson(Map<String, Object?> json) {
-    return UnifediApiRegisterAccountResponse.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiRegisterAccountResponse =
-    _$UnifediApiRegisterAccountResponseTearOff();
 
 /// @nodoc
 mixin _$UnifediApiRegisterAccountResponse {
@@ -71,30 +42,33 @@ abstract class $UnifediApiRegisterAccountResponseCopyWith<$Res> {
   factory $UnifediApiRegisterAccountResponseCopyWith(
           UnifediApiRegisterAccountResponse value,
           $Res Function(UnifediApiRegisterAccountResponse) then) =
-      _$UnifediApiRegisterAccountResponseCopyWithImpl<$Res>;
+      _$UnifediApiRegisterAccountResponseCopyWithImpl<$Res,
+          UnifediApiRegisterAccountResponse>;
+  @useResult
   $Res call(
-      {@JsonKey(name: 'approval_required')
-      @HiveField(0)
-          bool? approvalRequired,
+      {@JsonKey(name: 'approval_required') @HiveField(0) bool? approvalRequired,
       @JsonKey(name: 'email_conformation_required')
       @HiveField(1)
-          bool? emailConformationRequired,
+      bool? emailConformationRequired,
       @JsonKey(name: 'auth_token')
       @HiveField(2)
-          UnifediApiOAuthToken? authToken});
+      UnifediApiOAuthToken? authToken});
 
   $UnifediApiOAuthTokenCopyWith<$Res>? get authToken;
 }
 
 /// @nodoc
-class _$UnifediApiRegisterAccountResponseCopyWithImpl<$Res>
+class _$UnifediApiRegisterAccountResponseCopyWithImpl<$Res,
+        $Val extends UnifediApiRegisterAccountResponse>
     implements $UnifediApiRegisterAccountResponseCopyWith<$Res> {
   _$UnifediApiRegisterAccountResponseCopyWithImpl(this._value, this._then);
 
-  final UnifediApiRegisterAccountResponse _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiRegisterAccountResponse) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? approvalRequired = freezed,
@@ -102,85 +76,83 @@ class _$UnifediApiRegisterAccountResponseCopyWithImpl<$Res>
     Object? authToken = freezed,
   }) {
     return _then(_value.copyWith(
-      approvalRequired: approvalRequired == freezed
+      approvalRequired: freezed == approvalRequired
           ? _value.approvalRequired
           : approvalRequired // ignore: cast_nullable_to_non_nullable
               as bool?,
-      emailConformationRequired: emailConformationRequired == freezed
+      emailConformationRequired: freezed == emailConformationRequired
           ? _value.emailConformationRequired
           : emailConformationRequired // ignore: cast_nullable_to_non_nullable
               as bool?,
-      authToken: authToken == freezed
+      authToken: freezed == authToken
           ? _value.authToken
           : authToken // ignore: cast_nullable_to_non_nullable
               as UnifediApiOAuthToken?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiOAuthTokenCopyWith<$Res>? get authToken {
     if (_value.authToken == null) {
       return null;
     }
 
     return $UnifediApiOAuthTokenCopyWith<$Res>(_value.authToken!, (value) {
-      return _then(_value.copyWith(authToken: value));
+      return _then(_value.copyWith(authToken: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiRegisterAccountResponseCopyWith<$Res>
+abstract class _$$UnifediApiRegisterAccountResponseImplCopyWith<$Res>
     implements $UnifediApiRegisterAccountResponseCopyWith<$Res> {
-  factory _$UnifediApiRegisterAccountResponseCopyWith(
-          _UnifediApiRegisterAccountResponse value,
-          $Res Function(_UnifediApiRegisterAccountResponse) then) =
-      __$UnifediApiRegisterAccountResponseCopyWithImpl<$Res>;
+  factory _$$UnifediApiRegisterAccountResponseImplCopyWith(
+          _$UnifediApiRegisterAccountResponseImpl value,
+          $Res Function(_$UnifediApiRegisterAccountResponseImpl) then) =
+      __$$UnifediApiRegisterAccountResponseImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@JsonKey(name: 'approval_required')
-      @HiveField(0)
-          bool? approvalRequired,
+      {@JsonKey(name: 'approval_required') @HiveField(0) bool? approvalRequired,
       @JsonKey(name: 'email_conformation_required')
       @HiveField(1)
-          bool? emailConformationRequired,
+      bool? emailConformationRequired,
       @JsonKey(name: 'auth_token')
       @HiveField(2)
-          UnifediApiOAuthToken? authToken});
+      UnifediApiOAuthToken? authToken});
 
   @override
   $UnifediApiOAuthTokenCopyWith<$Res>? get authToken;
 }
 
 /// @nodoc
-class __$UnifediApiRegisterAccountResponseCopyWithImpl<$Res>
-    extends _$UnifediApiRegisterAccountResponseCopyWithImpl<$Res>
-    implements _$UnifediApiRegisterAccountResponseCopyWith<$Res> {
-  __$UnifediApiRegisterAccountResponseCopyWithImpl(
-      _UnifediApiRegisterAccountResponse _value,
-      $Res Function(_UnifediApiRegisterAccountResponse) _then)
-      : super(_value, (v) => _then(v as _UnifediApiRegisterAccountResponse));
+class __$$UnifediApiRegisterAccountResponseImplCopyWithImpl<$Res>
+    extends _$UnifediApiRegisterAccountResponseCopyWithImpl<$Res,
+        _$UnifediApiRegisterAccountResponseImpl>
+    implements _$$UnifediApiRegisterAccountResponseImplCopyWith<$Res> {
+  __$$UnifediApiRegisterAccountResponseImplCopyWithImpl(
+      _$UnifediApiRegisterAccountResponseImpl _value,
+      $Res Function(_$UnifediApiRegisterAccountResponseImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiRegisterAccountResponse get _value =>
-      super._value as _UnifediApiRegisterAccountResponse;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? approvalRequired = freezed,
     Object? emailConformationRequired = freezed,
     Object? authToken = freezed,
   }) {
-    return _then(_UnifediApiRegisterAccountResponse(
-      approvalRequired: approvalRequired == freezed
+    return _then(_$UnifediApiRegisterAccountResponseImpl(
+      approvalRequired: freezed == approvalRequired
           ? _value.approvalRequired
           : approvalRequired // ignore: cast_nullable_to_non_nullable
               as bool?,
-      emailConformationRequired: emailConformationRequired == freezed
+      emailConformationRequired: freezed == emailConformationRequired
           ? _value.emailConformationRequired
           : emailConformationRequired // ignore: cast_nullable_to_non_nullable
               as bool?,
-      authToken: authToken == freezed
+      authToken: freezed == authToken
           ? _value.authToken
           : authToken // ignore: cast_nullable_to_non_nullable
               as UnifediApiOAuthToken?,
@@ -190,22 +162,20 @@ class __$UnifediApiRegisterAccountResponseCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiRegisterAccountResponse
+class _$UnifediApiRegisterAccountResponseImpl
     implements _UnifediApiRegisterAccountResponse {
-  const _$_UnifediApiRegisterAccountResponse(
+  const _$UnifediApiRegisterAccountResponseImpl(
       {@JsonKey(name: 'approval_required')
       @HiveField(0)
-          required this.approvalRequired,
+      required this.approvalRequired,
       @JsonKey(name: 'email_conformation_required')
       @HiveField(1)
-          required this.emailConformationRequired,
-      @JsonKey(name: 'auth_token')
-      @HiveField(2)
-          required this.authToken});
+      required this.emailConformationRequired,
+      @JsonKey(name: 'auth_token') @HiveField(2) required this.authToken});
 
-  factory _$_UnifediApiRegisterAccountResponse.fromJson(
+  factory _$UnifediApiRegisterAccountResponseImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiRegisterAccountResponseFromJson(json);
+      _$$UnifediApiRegisterAccountResponseImplFromJson(json);
 
   @override
   @JsonKey(name: 'approval_required')
@@ -226,10 +196,10 @@ class _$_UnifediApiRegisterAccountResponse
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiRegisterAccountResponse &&
+            other is _$UnifediApiRegisterAccountResponseImpl &&
             (identical(other.approvalRequired, approvalRequired) ||
                 other.approvalRequired == approvalRequired) &&
             (identical(other.emailConformationRequired,
@@ -239,20 +209,24 @@ class _$_UnifediApiRegisterAccountResponse
                 other.authToken == authToken));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType, approvalRequired, emailConformationRequired, authToken);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiRegisterAccountResponseCopyWith<
-          _UnifediApiRegisterAccountResponse>
-      get copyWith => __$UnifediApiRegisterAccountResponseCopyWithImpl<
-          _UnifediApiRegisterAccountResponse>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiRegisterAccountResponseImplCopyWith<
+          _$UnifediApiRegisterAccountResponseImpl>
+      get copyWith => __$$UnifediApiRegisterAccountResponseImplCopyWithImpl<
+          _$UnifediApiRegisterAccountResponseImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiRegisterAccountResponseToJson(this);
+    return _$$UnifediApiRegisterAccountResponseImplToJson(
+      this,
+    );
   }
 }
 
@@ -261,18 +235,18 @@ abstract class _UnifediApiRegisterAccountResponse
   const factory _UnifediApiRegisterAccountResponse(
           {@JsonKey(name: 'approval_required')
           @HiveField(0)
-              required bool? approvalRequired,
+          required final bool? approvalRequired,
           @JsonKey(name: 'email_conformation_required')
           @HiveField(1)
-              required bool? emailConformationRequired,
+          required final bool? emailConformationRequired,
           @JsonKey(name: 'auth_token')
           @HiveField(2)
-              required UnifediApiOAuthToken? authToken}) =
-      _$_UnifediApiRegisterAccountResponse;
+          required final UnifediApiOAuthToken? authToken}) =
+      _$UnifediApiRegisterAccountResponseImpl;
 
   factory _UnifediApiRegisterAccountResponse.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiRegisterAccountResponse.fromJson;
+      _$UnifediApiRegisterAccountResponseImpl.fromJson;
 
   @override
   @JsonKey(name: 'approval_required')
@@ -288,7 +262,7 @@ abstract class _UnifediApiRegisterAccountResponse
   UnifediApiOAuthToken? get authToken;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiRegisterAccountResponseCopyWith<
-          _UnifediApiRegisterAccountResponse>
+  _$$UnifediApiRegisterAccountResponseImplCopyWith<
+          _$UnifediApiRegisterAccountResponseImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

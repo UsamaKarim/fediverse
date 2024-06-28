@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'fedi_push_notification_model_impl.dart';
 
@@ -11,54 +12,11 @@ part of 'fedi_push_notification_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 FediPushNotification _$FediPushNotificationFromJson(Map<String, dynamic> json) {
   return _FediPushNotification.fromJson(json);
 }
-
-/// @nodoc
-class _$FediPushNotificationTearOff {
-  const _$FediPushNotificationTearOff();
-
-  _FediPushNotification call(
-      {@HiveField(0)
-          required String account,
-      @HiveField(1)
-      @JsonKey(name: 'notification_action')
-          required String? notificationAction,
-      @HiveField(2)
-      @JsonKey(name: 'notification_action_input')
-          required String? notificationActionInput,
-      @HiveField(3)
-      @JsonKey(name: 'notification_id')
-          required String notificationId,
-      @HiveField(4)
-      @JsonKey(name: 'notification_type')
-          required String notificationType,
-      @HiveField(5)
-          required String server,
-      @HiveField(6)
-      @JsonKey(name: 'notification')
-          required UnifediApiNotification? unifediApiNotification}) {
-    return _FediPushNotification(
-      account: account,
-      notificationAction: notificationAction,
-      notificationActionInput: notificationActionInput,
-      notificationId: notificationId,
-      notificationType: notificationType,
-      server: server,
-      unifediApiNotification: unifediApiNotification,
-    );
-  }
-
-  FediPushNotification fromJson(Map<String, Object?> json) {
-    return FediPushNotification.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $FediPushNotification = _$FediPushNotificationTearOff();
 
 /// @nodoc
 mixin _$FediPushNotification {
@@ -93,83 +51,82 @@ mixin _$FediPushNotification {
 abstract class $FediPushNotificationCopyWith<$Res> {
   factory $FediPushNotificationCopyWith(FediPushNotification value,
           $Res Function(FediPushNotification) then) =
-      _$FediPushNotificationCopyWithImpl<$Res>;
+      _$FediPushNotificationCopyWithImpl<$Res, FediPushNotification>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-          String account,
+      {@HiveField(0) String account,
       @HiveField(1)
       @JsonKey(name: 'notification_action')
-          String? notificationAction,
+      String? notificationAction,
       @HiveField(2)
       @JsonKey(name: 'notification_action_input')
-          String? notificationActionInput,
-      @HiveField(3)
-      @JsonKey(name: 'notification_id')
-          String notificationId,
-      @HiveField(4)
-      @JsonKey(name: 'notification_type')
-          String notificationType,
-      @HiveField(5)
-          String server,
+      String? notificationActionInput,
+      @HiveField(3) @JsonKey(name: 'notification_id') String notificationId,
+      @HiveField(4) @JsonKey(name: 'notification_type') String notificationType,
+      @HiveField(5) String server,
       @HiveField(6)
       @JsonKey(name: 'notification')
-          UnifediApiNotification? unifediApiNotification});
+      UnifediApiNotification? unifediApiNotification});
 
   $UnifediApiNotificationCopyWith<$Res>? get unifediApiNotification;
 }
 
 /// @nodoc
-class _$FediPushNotificationCopyWithImpl<$Res>
+class _$FediPushNotificationCopyWithImpl<$Res,
+        $Val extends FediPushNotification>
     implements $FediPushNotificationCopyWith<$Res> {
   _$FediPushNotificationCopyWithImpl(this._value, this._then);
 
-  final FediPushNotification _value;
   // ignore: unused_field
-  final $Res Function(FediPushNotification) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? account = freezed,
+    Object? account = null,
     Object? notificationAction = freezed,
     Object? notificationActionInput = freezed,
-    Object? notificationId = freezed,
-    Object? notificationType = freezed,
-    Object? server = freezed,
+    Object? notificationId = null,
+    Object? notificationType = null,
+    Object? server = null,
     Object? unifediApiNotification = freezed,
   }) {
     return _then(_value.copyWith(
-      account: account == freezed
+      account: null == account
           ? _value.account
           : account // ignore: cast_nullable_to_non_nullable
               as String,
-      notificationAction: notificationAction == freezed
+      notificationAction: freezed == notificationAction
           ? _value.notificationAction
           : notificationAction // ignore: cast_nullable_to_non_nullable
               as String?,
-      notificationActionInput: notificationActionInput == freezed
+      notificationActionInput: freezed == notificationActionInput
           ? _value.notificationActionInput
           : notificationActionInput // ignore: cast_nullable_to_non_nullable
               as String?,
-      notificationId: notificationId == freezed
+      notificationId: null == notificationId
           ? _value.notificationId
           : notificationId // ignore: cast_nullable_to_non_nullable
               as String,
-      notificationType: notificationType == freezed
+      notificationType: null == notificationType
           ? _value.notificationType
           : notificationType // ignore: cast_nullable_to_non_nullable
               as String,
-      server: server == freezed
+      server: null == server
           ? _value.server
           : server // ignore: cast_nullable_to_non_nullable
               as String,
-      unifediApiNotification: unifediApiNotification == freezed
+      unifediApiNotification: freezed == unifediApiNotification
           ? _value.unifediApiNotification
           : unifediApiNotification // ignore: cast_nullable_to_non_nullable
               as UnifediApiNotification?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiNotificationCopyWith<$Res>? get unifediApiNotification {
     if (_value.unifediApiNotification == null) {
       return null;
@@ -177,90 +134,83 @@ class _$FediPushNotificationCopyWithImpl<$Res>
 
     return $UnifediApiNotificationCopyWith<$Res>(_value.unifediApiNotification!,
         (value) {
-      return _then(_value.copyWith(unifediApiNotification: value));
+      return _then(_value.copyWith(unifediApiNotification: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$FediPushNotificationCopyWith<$Res>
+abstract class _$$FediPushNotificationImplCopyWith<$Res>
     implements $FediPushNotificationCopyWith<$Res> {
-  factory _$FediPushNotificationCopyWith(_FediPushNotification value,
-          $Res Function(_FediPushNotification) then) =
-      __$FediPushNotificationCopyWithImpl<$Res>;
+  factory _$$FediPushNotificationImplCopyWith(_$FediPushNotificationImpl value,
+          $Res Function(_$FediPushNotificationImpl) then) =
+      __$$FediPushNotificationImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-          String account,
+      {@HiveField(0) String account,
       @HiveField(1)
       @JsonKey(name: 'notification_action')
-          String? notificationAction,
+      String? notificationAction,
       @HiveField(2)
       @JsonKey(name: 'notification_action_input')
-          String? notificationActionInput,
-      @HiveField(3)
-      @JsonKey(name: 'notification_id')
-          String notificationId,
-      @HiveField(4)
-      @JsonKey(name: 'notification_type')
-          String notificationType,
-      @HiveField(5)
-          String server,
+      String? notificationActionInput,
+      @HiveField(3) @JsonKey(name: 'notification_id') String notificationId,
+      @HiveField(4) @JsonKey(name: 'notification_type') String notificationType,
+      @HiveField(5) String server,
       @HiveField(6)
       @JsonKey(name: 'notification')
-          UnifediApiNotification? unifediApiNotification});
+      UnifediApiNotification? unifediApiNotification});
 
   @override
   $UnifediApiNotificationCopyWith<$Res>? get unifediApiNotification;
 }
 
 /// @nodoc
-class __$FediPushNotificationCopyWithImpl<$Res>
-    extends _$FediPushNotificationCopyWithImpl<$Res>
-    implements _$FediPushNotificationCopyWith<$Res> {
-  __$FediPushNotificationCopyWithImpl(
-      _FediPushNotification _value, $Res Function(_FediPushNotification) _then)
-      : super(_value, (v) => _then(v as _FediPushNotification));
+class __$$FediPushNotificationImplCopyWithImpl<$Res>
+    extends _$FediPushNotificationCopyWithImpl<$Res, _$FediPushNotificationImpl>
+    implements _$$FediPushNotificationImplCopyWith<$Res> {
+  __$$FediPushNotificationImplCopyWithImpl(_$FediPushNotificationImpl _value,
+      $Res Function(_$FediPushNotificationImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _FediPushNotification get _value => super._value as _FediPushNotification;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? account = freezed,
+    Object? account = null,
     Object? notificationAction = freezed,
     Object? notificationActionInput = freezed,
-    Object? notificationId = freezed,
-    Object? notificationType = freezed,
-    Object? server = freezed,
+    Object? notificationId = null,
+    Object? notificationType = null,
+    Object? server = null,
     Object? unifediApiNotification = freezed,
   }) {
-    return _then(_FediPushNotification(
-      account: account == freezed
+    return _then(_$FediPushNotificationImpl(
+      account: null == account
           ? _value.account
           : account // ignore: cast_nullable_to_non_nullable
               as String,
-      notificationAction: notificationAction == freezed
+      notificationAction: freezed == notificationAction
           ? _value.notificationAction
           : notificationAction // ignore: cast_nullable_to_non_nullable
               as String?,
-      notificationActionInput: notificationActionInput == freezed
+      notificationActionInput: freezed == notificationActionInput
           ? _value.notificationActionInput
           : notificationActionInput // ignore: cast_nullable_to_non_nullable
               as String?,
-      notificationId: notificationId == freezed
+      notificationId: null == notificationId
           ? _value.notificationId
           : notificationId // ignore: cast_nullable_to_non_nullable
               as String,
-      notificationType: notificationType == freezed
+      notificationType: null == notificationType
           ? _value.notificationType
           : notificationType // ignore: cast_nullable_to_non_nullable
               as String,
-      server: server == freezed
+      server: null == server
           ? _value.server
           : server // ignore: cast_nullable_to_non_nullable
               as String,
-      unifediApiNotification: unifediApiNotification == freezed
+      unifediApiNotification: freezed == unifediApiNotification
           ? _value.unifediApiNotification
           : unifediApiNotification // ignore: cast_nullable_to_non_nullable
               as UnifediApiNotification?,
@@ -270,30 +220,28 @@ class __$FediPushNotificationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_FediPushNotification implements _FediPushNotification {
-  const _$_FediPushNotification(
-      {@HiveField(0)
-          required this.account,
+class _$FediPushNotificationImpl implements _FediPushNotification {
+  const _$FediPushNotificationImpl(
+      {@HiveField(0) required this.account,
       @HiveField(1)
       @JsonKey(name: 'notification_action')
-          required this.notificationAction,
+      required this.notificationAction,
       @HiveField(2)
       @JsonKey(name: 'notification_action_input')
-          required this.notificationActionInput,
+      required this.notificationActionInput,
       @HiveField(3)
       @JsonKey(name: 'notification_id')
-          required this.notificationId,
+      required this.notificationId,
       @HiveField(4)
       @JsonKey(name: 'notification_type')
-          required this.notificationType,
-      @HiveField(5)
-          required this.server,
+      required this.notificationType,
+      @HiveField(5) required this.server,
       @HiveField(6)
       @JsonKey(name: 'notification')
-          required this.unifediApiNotification});
+      required this.unifediApiNotification});
 
-  factory _$_FediPushNotification.fromJson(Map<String, dynamic> json) =>
-      _$$_FediPushNotificationFromJson(json);
+  factory _$FediPushNotificationImpl.fromJson(Map<String, dynamic> json) =>
+      _$$FediPushNotificationImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -328,10 +276,10 @@ class _$_FediPushNotification implements _FediPushNotification {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _FediPushNotification &&
+            other is _$FediPushNotificationImpl &&
             (identical(other.account, account) || other.account == account) &&
             (identical(other.notificationAction, notificationAction) ||
                 other.notificationAction == notificationAction) &&
@@ -347,6 +295,7 @@ class _$_FediPushNotification implements _FediPushNotification {
                 other.unifediApiNotification == unifediApiNotification));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -360,41 +309,43 @@ class _$_FediPushNotification implements _FediPushNotification {
 
   @JsonKey(ignore: true)
   @override
-  _$FediPushNotificationCopyWith<_FediPushNotification> get copyWith =>
-      __$FediPushNotificationCopyWithImpl<_FediPushNotification>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$FediPushNotificationImplCopyWith<_$FediPushNotificationImpl>
+      get copyWith =>
+          __$$FediPushNotificationImplCopyWithImpl<_$FediPushNotificationImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_FediPushNotificationToJson(this);
+    return _$$FediPushNotificationImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _FediPushNotification implements FediPushNotification {
   const factory _FediPushNotification(
-          {@HiveField(0)
-              required String account,
+          {@HiveField(0) required final String account,
           @HiveField(1)
           @JsonKey(name: 'notification_action')
-              required String? notificationAction,
+          required final String? notificationAction,
           @HiveField(2)
           @JsonKey(name: 'notification_action_input')
-              required String? notificationActionInput,
+          required final String? notificationActionInput,
           @HiveField(3)
           @JsonKey(name: 'notification_id')
-              required String notificationId,
+          required final String notificationId,
           @HiveField(4)
           @JsonKey(name: 'notification_type')
-              required String notificationType,
-          @HiveField(5)
-              required String server,
+          required final String notificationType,
+          @HiveField(5) required final String server,
           @HiveField(6)
           @JsonKey(name: 'notification')
-              required UnifediApiNotification? unifediApiNotification}) =
-      _$_FediPushNotification;
+          required final UnifediApiNotification? unifediApiNotification}) =
+      _$FediPushNotificationImpl;
 
   factory _FediPushNotification.fromJson(Map<String, dynamic> json) =
-      _$_FediPushNotification.fromJson;
+      _$FediPushNotificationImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -424,6 +375,6 @@ abstract class _FediPushNotification implements FediPushNotification {
   UnifediApiNotification? get unifediApiNotification;
   @override
   @JsonKey(ignore: true)
-  _$FediPushNotificationCopyWith<_FediPushNotification> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$FediPushNotificationImplCopyWith<_$FediPushNotificationImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'chat_message_list_item_model.dart';
 
@@ -11,30 +12,7 @@ part of 'chat_message_list_item_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$ChatMessageListItemTearOff {
-  const _$ChatMessageListItemTearOff();
-
-  _ChatMessageListItem<T> call<T extends IChatMessage>(
-      {required T message,
-      required bool isFirstInMinuteGroup,
-      required bool isLastInMinuteGroup,
-      required bool isFirstInDayGroup,
-      required bool isLastInDayGroup}) {
-    return _ChatMessageListItem<T>(
-      message: message,
-      isFirstInMinuteGroup: isFirstInMinuteGroup,
-      isLastInMinuteGroup: isLastInMinuteGroup,
-      isFirstInDayGroup: isFirstInDayGroup,
-      isLastInDayGroup: isLastInDayGroup,
-    );
-  }
-}
-
-/// @nodoc
-const $ChatMessageListItem = _$ChatMessageListItemTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$ChatMessageListItem<T extends IChatMessage> {
@@ -53,7 +31,8 @@ mixin _$ChatMessageListItem<T extends IChatMessage> {
 abstract class $ChatMessageListItemCopyWith<T extends IChatMessage, $Res> {
   factory $ChatMessageListItemCopyWith(ChatMessageListItem<T> value,
           $Res Function(ChatMessageListItem<T>) then) =
-      _$ChatMessageListItemCopyWithImpl<T, $Res>;
+      _$ChatMessageListItemCopyWithImpl<T, $Res, ChatMessageListItem<T>>;
+  @useResult
   $Res call(
       {T message,
       bool isFirstInMinuteGroup,
@@ -63,54 +42,58 @@ abstract class $ChatMessageListItemCopyWith<T extends IChatMessage, $Res> {
 }
 
 /// @nodoc
-class _$ChatMessageListItemCopyWithImpl<T extends IChatMessage, $Res>
+class _$ChatMessageListItemCopyWithImpl<T extends IChatMessage, $Res,
+        $Val extends ChatMessageListItem<T>>
     implements $ChatMessageListItemCopyWith<T, $Res> {
   _$ChatMessageListItemCopyWithImpl(this._value, this._then);
 
-  final ChatMessageListItem<T> _value;
   // ignore: unused_field
-  final $Res Function(ChatMessageListItem<T>) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? message = freezed,
-    Object? isFirstInMinuteGroup = freezed,
-    Object? isLastInMinuteGroup = freezed,
-    Object? isFirstInDayGroup = freezed,
-    Object? isLastInDayGroup = freezed,
+    Object? message = null,
+    Object? isFirstInMinuteGroup = null,
+    Object? isLastInMinuteGroup = null,
+    Object? isFirstInDayGroup = null,
+    Object? isLastInDayGroup = null,
   }) {
     return _then(_value.copyWith(
-      message: message == freezed
+      message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
               as T,
-      isFirstInMinuteGroup: isFirstInMinuteGroup == freezed
+      isFirstInMinuteGroup: null == isFirstInMinuteGroup
           ? _value.isFirstInMinuteGroup
           : isFirstInMinuteGroup // ignore: cast_nullable_to_non_nullable
               as bool,
-      isLastInMinuteGroup: isLastInMinuteGroup == freezed
+      isLastInMinuteGroup: null == isLastInMinuteGroup
           ? _value.isLastInMinuteGroup
           : isLastInMinuteGroup // ignore: cast_nullable_to_non_nullable
               as bool,
-      isFirstInDayGroup: isFirstInDayGroup == freezed
+      isFirstInDayGroup: null == isFirstInDayGroup
           ? _value.isFirstInDayGroup
           : isFirstInDayGroup // ignore: cast_nullable_to_non_nullable
               as bool,
-      isLastInDayGroup: isLastInDayGroup == freezed
+      isLastInDayGroup: null == isLastInDayGroup
           ? _value.isLastInDayGroup
           : isLastInDayGroup // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$ChatMessageListItemCopyWith<T extends IChatMessage, $Res>
+abstract class _$$ChatMessageListItemImplCopyWith<T extends IChatMessage, $Res>
     implements $ChatMessageListItemCopyWith<T, $Res> {
-  factory _$ChatMessageListItemCopyWith(_ChatMessageListItem<T> value,
-          $Res Function(_ChatMessageListItem<T>) then) =
-      __$ChatMessageListItemCopyWithImpl<T, $Res>;
+  factory _$$ChatMessageListItemImplCopyWith(_$ChatMessageListItemImpl<T> value,
+          $Res Function(_$ChatMessageListItemImpl<T>) then) =
+      __$$ChatMessageListItemImplCopyWithImpl<T, $Res>;
   @override
+  @useResult
   $Res call(
       {T message,
       bool isFirstInMinuteGroup,
@@ -120,42 +103,41 @@ abstract class _$ChatMessageListItemCopyWith<T extends IChatMessage, $Res>
 }
 
 /// @nodoc
-class __$ChatMessageListItemCopyWithImpl<T extends IChatMessage, $Res>
-    extends _$ChatMessageListItemCopyWithImpl<T, $Res>
-    implements _$ChatMessageListItemCopyWith<T, $Res> {
-  __$ChatMessageListItemCopyWithImpl(_ChatMessageListItem<T> _value,
-      $Res Function(_ChatMessageListItem<T>) _then)
-      : super(_value, (v) => _then(v as _ChatMessageListItem<T>));
+class __$$ChatMessageListItemImplCopyWithImpl<T extends IChatMessage, $Res>
+    extends _$ChatMessageListItemCopyWithImpl<T, $Res,
+        _$ChatMessageListItemImpl<T>>
+    implements _$$ChatMessageListItemImplCopyWith<T, $Res> {
+  __$$ChatMessageListItemImplCopyWithImpl(_$ChatMessageListItemImpl<T> _value,
+      $Res Function(_$ChatMessageListItemImpl<T>) _then)
+      : super(_value, _then);
 
-  @override
-  _ChatMessageListItem<T> get _value => super._value as _ChatMessageListItem<T>;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? message = freezed,
-    Object? isFirstInMinuteGroup = freezed,
-    Object? isLastInMinuteGroup = freezed,
-    Object? isFirstInDayGroup = freezed,
-    Object? isLastInDayGroup = freezed,
+    Object? message = null,
+    Object? isFirstInMinuteGroup = null,
+    Object? isLastInMinuteGroup = null,
+    Object? isFirstInDayGroup = null,
+    Object? isLastInDayGroup = null,
   }) {
-    return _then(_ChatMessageListItem<T>(
-      message: message == freezed
+    return _then(_$ChatMessageListItemImpl<T>(
+      message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
               as T,
-      isFirstInMinuteGroup: isFirstInMinuteGroup == freezed
+      isFirstInMinuteGroup: null == isFirstInMinuteGroup
           ? _value.isFirstInMinuteGroup
           : isFirstInMinuteGroup // ignore: cast_nullable_to_non_nullable
               as bool,
-      isLastInMinuteGroup: isLastInMinuteGroup == freezed
+      isLastInMinuteGroup: null == isLastInMinuteGroup
           ? _value.isLastInMinuteGroup
           : isLastInMinuteGroup // ignore: cast_nullable_to_non_nullable
               as bool,
-      isFirstInDayGroup: isFirstInDayGroup == freezed
+      isFirstInDayGroup: null == isFirstInDayGroup
           ? _value.isFirstInDayGroup
           : isFirstInDayGroup // ignore: cast_nullable_to_non_nullable
               as bool,
-      isLastInDayGroup: isLastInDayGroup == freezed
+      isLastInDayGroup: null == isLastInDayGroup
           ? _value.isLastInDayGroup
           : isLastInDayGroup // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -165,9 +147,9 @@ class __$ChatMessageListItemCopyWithImpl<T extends IChatMessage, $Res>
 
 /// @nodoc
 
-class _$_ChatMessageListItem<T extends IChatMessage>
+class _$ChatMessageListItemImpl<T extends IChatMessage>
     implements _ChatMessageListItem<T> {
-  const _$_ChatMessageListItem(
+  const _$ChatMessageListItemImpl(
       {required this.message,
       required this.isFirstInMinuteGroup,
       required this.isLastInMinuteGroup,
@@ -191,10 +173,10 @@ class _$_ChatMessageListItem<T extends IChatMessage>
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ChatMessageListItem<T> &&
+            other is _$ChatMessageListItemImpl<T> &&
             const DeepCollectionEquality().equals(other.message, message) &&
             (identical(other.isFirstInMinuteGroup, isFirstInMinuteGroup) ||
                 other.isFirstInMinuteGroup == isFirstInMinuteGroup) &&
@@ -217,19 +199,20 @@ class _$_ChatMessageListItem<T extends IChatMessage>
 
   @JsonKey(ignore: true)
   @override
-  _$ChatMessageListItemCopyWith<T, _ChatMessageListItem<T>> get copyWith =>
-      __$ChatMessageListItemCopyWithImpl<T, _ChatMessageListItem<T>>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ChatMessageListItemImplCopyWith<T, _$ChatMessageListItemImpl<T>>
+      get copyWith => __$$ChatMessageListItemImplCopyWithImpl<T,
+          _$ChatMessageListItemImpl<T>>(this, _$identity);
 }
 
 abstract class _ChatMessageListItem<T extends IChatMessage>
     implements ChatMessageListItem<T> {
   const factory _ChatMessageListItem(
-      {required T message,
-      required bool isFirstInMinuteGroup,
-      required bool isLastInMinuteGroup,
-      required bool isFirstInDayGroup,
-      required bool isLastInDayGroup}) = _$_ChatMessageListItem<T>;
+      {required final T message,
+      required final bool isFirstInMinuteGroup,
+      required final bool isLastInMinuteGroup,
+      required final bool isFirstInDayGroup,
+      required final bool isLastInDayGroup}) = _$ChatMessageListItemImpl<T>;
 
   @override
   T get message;
@@ -243,6 +226,6 @@ abstract class _ChatMessageListItem<T extends IChatMessage>
   bool get isLastInDayGroup;
   @override
   @JsonKey(ignore: true)
-  _$ChatMessageListItemCopyWith<T, _ChatMessageListItem<T>> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$ChatMessageListItemImplCopyWith<T, _$ChatMessageListItemImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
 }

@@ -2,10 +2,7 @@
 
 part of 'account_followings_database_dao.dart';
 
-// **************************************************************************
-// DaoGenerator
-// **************************************************************************
-
+// ignore_for_file: type=lint
 mixin _$AccountFollowingsDaoMixin on DatabaseAccessor<AppDatabase> {
   $DbAccountFollowingsTable get dbAccountFollowings =>
       attachedDatabase.dbAccountFollowings;

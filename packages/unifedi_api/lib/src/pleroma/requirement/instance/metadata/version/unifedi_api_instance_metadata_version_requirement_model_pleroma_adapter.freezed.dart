@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_instance_metadata_version_requirement_model_pleroma_adapter.dart';
 
@@ -11,7 +12,7 @@ part of 'unifedi_api_instance_metadata_version_requirement_model_pleroma_adapter
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiInstanceMetadataVersionRequirementPleromaAdapter
     _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterFromJson(
@@ -19,28 +20,6 @@ UnifediApiInstanceMetadataVersionRequirementPleromaAdapter
   return _UnifediApiInstanceMetadataVersionRequirementPleromaAdapter.fromJson(
       json);
 }
-
-/// @nodoc
-class _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterTearOff {
-  const _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterTearOff();
-
-  _UnifediApiInstanceMetadataVersionRequirementPleromaAdapter call(
-      @HiveField(0) PleromaApiInstanceMetadataVersionRequirement value) {
-    return _UnifediApiInstanceMetadataVersionRequirementPleromaAdapter(
-      value,
-    );
-  }
-
-  UnifediApiInstanceMetadataVersionRequirementPleromaAdapter fromJson(
-      Map<String, Object?> json) {
-    return UnifediApiInstanceMetadataVersionRequirementPleromaAdapter.fromJson(
-        json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiInstanceMetadataVersionRequirementPleromaAdapter =
-    _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapter {
@@ -64,7 +43,8 @@ abstract class $UnifediApiInstanceMetadataVersionRequirementPleromaAdapterCopyWi
                   UnifediApiInstanceMetadataVersionRequirementPleromaAdapter)
               then) =
       _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterCopyWithImpl<
-          $Res>;
+          $Res, UnifediApiInstanceMetadataVersionRequirementPleromaAdapter>;
+  @useResult
   $Res call({@HiveField(0) PleromaApiInstanceMetadataVersionRequirement value});
 
   $PleromaApiInstanceMetadataVersionRequirementCopyWith<$Res> get value;
@@ -72,53 +52,57 @@ abstract class $UnifediApiInstanceMetadataVersionRequirementPleromaAdapterCopyWi
 
 /// @nodoc
 class _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterCopyWithImpl<
-        $Res>
+        $Res,
+        $Val extends UnifediApiInstanceMetadataVersionRequirementPleromaAdapter>
     implements
         $UnifediApiInstanceMetadataVersionRequirementPleromaAdapterCopyWith<
             $Res> {
   _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterCopyWithImpl(
       this._value, this._then);
 
-  final UnifediApiInstanceMetadataVersionRequirementPleromaAdapter _value;
   // ignore: unused_field
-  final $Res Function(
-      UnifediApiInstanceMetadataVersionRequirementPleromaAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstanceMetadataVersionRequirement,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiInstanceMetadataVersionRequirementCopyWith<$Res> get value {
     return $PleromaApiInstanceMetadataVersionRequirementCopyWith<$Res>(
         _value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterCopyWith<
+abstract class _$$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImplCopyWith<
         $Res>
     implements
         $UnifediApiInstanceMetadataVersionRequirementPleromaAdapterCopyWith<
             $Res> {
-  factory _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterCopyWith(
-          _UnifediApiInstanceMetadataVersionRequirementPleromaAdapter value,
+  factory _$$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImplCopyWith(
+          _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImpl value,
           $Res Function(
-                  _UnifediApiInstanceMetadataVersionRequirementPleromaAdapter)
+                  _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImpl)
               then) =
-      __$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterCopyWithImpl<
+      __$$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImplCopyWithImpl<
           $Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) PleromaApiInstanceMetadataVersionRequirement value});
 
   @override
@@ -126,33 +110,28 @@ abstract class _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterCopyW
 }
 
 /// @nodoc
-class __$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterCopyWithImpl<
+class __$$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImplCopyWithImpl<
         $Res>
     extends _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterCopyWithImpl<
-        $Res>
+        $Res, _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImpl>
     implements
-        _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterCopyWith<
+        _$$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImplCopyWith<
             $Res> {
-  __$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterCopyWithImpl(
-      _UnifediApiInstanceMetadataVersionRequirementPleromaAdapter _value,
-      $Res Function(_UnifediApiInstanceMetadataVersionRequirementPleromaAdapter)
+  __$$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImplCopyWithImpl(
+      _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImpl _value,
+      $Res Function(
+              _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImpl)
           _then)
-      : super(
-            _value,
-            (v) => _then(v
-                as _UnifediApiInstanceMetadataVersionRequirementPleromaAdapter));
+      : super(_value, _then);
 
-  @override
-  _UnifediApiInstanceMetadataVersionRequirementPleromaAdapter get _value =>
-      super._value
-          as _UnifediApiInstanceMetadataVersionRequirementPleromaAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiInstanceMetadataVersionRequirementPleromaAdapter(
-      value == freezed
+    return _then(
+        _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstanceMetadataVersionRequirement,
@@ -162,15 +141,15 @@ class __$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterCopyWithImpl<
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiInstanceMetadataVersionRequirementPleromaAdapter
+class _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImpl
     extends _UnifediApiInstanceMetadataVersionRequirementPleromaAdapter {
-  const _$_UnifediApiInstanceMetadataVersionRequirementPleromaAdapter(
+  const _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImpl(
       @HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiInstanceMetadataVersionRequirementPleromaAdapter.fromJson(
+  factory _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiInstanceMetadataVersionRequirementPleromaAdapterFromJson(
+      _$$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImplFromJson(
           json);
 
   @override
@@ -183,51 +162,55 @@ class _$_UnifediApiInstanceMetadataVersionRequirementPleromaAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other
-                is _UnifediApiInstanceMetadataVersionRequirementPleromaAdapter &&
+                is _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterCopyWith<
-          _UnifediApiInstanceMetadataVersionRequirementPleromaAdapter>
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImplCopyWith<
+          _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImpl>
       get copyWith =>
-          __$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterCopyWithImpl<
-                  _UnifediApiInstanceMetadataVersionRequirementPleromaAdapter>(
+          __$$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImplCopyWithImpl<
+                  _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImpl>(
               this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiInstanceMetadataVersionRequirementPleromaAdapterToJson(
-        this);
+    return _$$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiInstanceMetadataVersionRequirementPleromaAdapter
     extends UnifediApiInstanceMetadataVersionRequirementPleromaAdapter {
   const factory _UnifediApiInstanceMetadataVersionRequirementPleromaAdapter(
-          @HiveField(0) PleromaApiInstanceMetadataVersionRequirement value) =
-      _$_UnifediApiInstanceMetadataVersionRequirementPleromaAdapter;
+          @HiveField(0)
+          final PleromaApiInstanceMetadataVersionRequirement value) =
+      _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImpl;
   const _UnifediApiInstanceMetadataVersionRequirementPleromaAdapter._()
       : super._();
 
   factory _UnifediApiInstanceMetadataVersionRequirementPleromaAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiInstanceMetadataVersionRequirementPleromaAdapter.fromJson;
+      _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   PleromaApiInstanceMetadataVersionRequirement get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterCopyWith<
-          _UnifediApiInstanceMetadataVersionRequirementPleromaAdapter>
+  _$$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImplCopyWith<
+          _$UnifediApiInstanceMetadataVersionRequirementPleromaAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

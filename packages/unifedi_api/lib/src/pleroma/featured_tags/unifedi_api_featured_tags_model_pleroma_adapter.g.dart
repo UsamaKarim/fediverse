@@ -45,15 +45,15 @@ class UnifediApiFeaturedTagPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiFeaturedTagPleromaAdapter
-    _$$_UnifediApiFeaturedTagPleromaAdapterFromJson(
+_$UnifediApiFeaturedTagPleromaAdapterImpl
+    _$$UnifediApiFeaturedTagPleromaAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiFeaturedTagPleromaAdapter(
+        _$UnifediApiFeaturedTagPleromaAdapterImpl(
           PleromaApiFeaturedTag.fromJson(json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiFeaturedTagPleromaAdapterToJson(
-        _$_UnifediApiFeaturedTagPleromaAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiFeaturedTagPleromaAdapterImplToJson(
+        _$UnifediApiFeaturedTagPleromaAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

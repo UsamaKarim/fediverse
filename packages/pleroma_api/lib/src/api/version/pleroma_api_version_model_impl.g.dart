@@ -59,19 +59,20 @@ class PleromaApiVersionAdapter extends TypeAdapter<PleromaApiVersion> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiVersion _$$_PleromaApiVersionFromJson(Map<String, dynamic> json) =>
-    _$_PleromaApiVersion(
+_$PleromaApiVersionImpl _$$PleromaApiVersionImplFromJson(
+        Map<String, dynamic> json) =>
+    _$PleromaApiVersionImpl(
       mastodonCompatibilityVersion: MastodonApiVersion.fromJson(
           json['mastodon_compatibility_version'] as Map<String, dynamic>),
-      major: json['major'] as int,
-      minor: json['minor'] as int?,
-      patch: json['patch'] as int?,
-      buildNumber: json['build_number'] as int?,
+      major: (json['major'] as num).toInt(),
+      minor: (json['minor'] as num?)?.toInt(),
+      patch: (json['patch'] as num?)?.toInt(),
+      buildNumber: (json['build_number'] as num?)?.toInt(),
       commit: json['commit'] as String?,
     );
 
-Map<String, dynamic> _$$_PleromaApiVersionToJson(
-    _$_PleromaApiVersion instance) {
+Map<String, dynamic> _$$PleromaApiVersionImplToJson(
+    _$PleromaApiVersionImpl instance) {
   final val = <String, dynamic>{
     'mastodon_compatibility_version':
         instance.mastodonCompatibilityVersion.toJson(),

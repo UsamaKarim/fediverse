@@ -68,8 +68,9 @@ class MastodonApiPollAdapter extends TypeAdapter<MastodonApiPoll> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiPoll _$$_MastodonApiPollFromJson(Map<String, dynamic> json) =>
-    _$_MastodonApiPoll(
+_$MastodonApiPollImpl _$$MastodonApiPollImplFromJson(
+        Map<String, dynamic> json) =>
+    _$MastodonApiPollImpl(
       expired: json['expired'] as bool,
       expiresAt: json['expires_at'] == null
           ? null
@@ -79,14 +80,16 @@ _$_MastodonApiPoll _$$_MastodonApiPollFromJson(Map<String, dynamic> json) =>
       options: (json['options'] as List<dynamic>)
           .map((e) => MastodonApiPollOption.fromJson(e as Map<String, dynamic>))
           .toList(),
-      ownVotes:
-          (json['own_votes'] as List<dynamic>?)?.map((e) => e as int).toList(),
+      ownVotes: (json['own_votes'] as List<dynamic>?)
+          ?.map((e) => (e as num).toInt())
+          .toList(),
       voted: json['voted'] as bool?,
-      votersCount: json['voters_count'] as int?,
-      votesCount: json['votes_count'] as int?,
+      votersCount: (json['voters_count'] as num?)?.toInt(),
+      votesCount: (json['votes_count'] as num?)?.toInt(),
     );
 
-Map<String, dynamic> _$$_MastodonApiPollToJson(_$_MastodonApiPoll instance) {
+Map<String, dynamic> _$$MastodonApiPollImplToJson(
+    _$MastodonApiPollImpl instance) {
   final val = <String, dynamic>{
     'expired': instance.expired,
   };

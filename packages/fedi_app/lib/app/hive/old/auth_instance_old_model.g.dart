@@ -65,8 +65,9 @@ class AuthInstanceOldAdapter extends TypeAdapter<AuthInstanceOld> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_AuthInstanceOld _$$_AuthInstanceOldFromJson(Map<String, dynamic> json) =>
-    _$_AuthInstanceOld(
+_$AuthInstanceOldImpl _$$AuthInstanceOldImplFromJson(
+        Map<String, dynamic> json) =>
+    _$AuthInstanceOldImpl(
       urlSchema: json['url_schema'] as String?,
       urlHost: json['url_host'] as String,
       acct: json['acct'] as String,
@@ -85,7 +86,8 @@ _$_AuthInstanceOld _$$_AuthInstanceOldFromJson(Map<String, dynamic> json) =>
           : PleromaApiInstance.fromJson(json['info'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_AuthInstanceOldToJson(_$_AuthInstanceOld instance) {
+Map<String, dynamic> _$$AuthInstanceOldImplToJson(
+    _$AuthInstanceOldImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

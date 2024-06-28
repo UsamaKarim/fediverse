@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_custom_emoji_model_pleroma_adapter.dart';
 
@@ -11,32 +12,12 @@ part of 'unifedi_api_custom_emoji_model_pleroma_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiCustomEmojiPleromaAdapter
     _$UnifediApiCustomEmojiPleromaAdapterFromJson(Map<String, dynamic> json) {
   return _UnifediApiCustomEmojiPleromaAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiCustomEmojiPleromaAdapterTearOff {
-  const _$UnifediApiCustomEmojiPleromaAdapterTearOff();
-
-  _UnifediApiCustomEmojiPleromaAdapter call(
-      @HiveField(0) PleromaApiCustomEmoji value) {
-    return _UnifediApiCustomEmojiPleromaAdapter(
-      value,
-    );
-  }
-
-  UnifediApiCustomEmojiPleromaAdapter fromJson(Map<String, Object?> json) {
-    return UnifediApiCustomEmojiPleromaAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiCustomEmojiPleromaAdapter =
-    _$UnifediApiCustomEmojiPleromaAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiCustomEmojiPleromaAdapter {
@@ -55,49 +36,56 @@ abstract class $UnifediApiCustomEmojiPleromaAdapterCopyWith<$Res> {
   factory $UnifediApiCustomEmojiPleromaAdapterCopyWith(
           UnifediApiCustomEmojiPleromaAdapter value,
           $Res Function(UnifediApiCustomEmojiPleromaAdapter) then) =
-      _$UnifediApiCustomEmojiPleromaAdapterCopyWithImpl<$Res>;
+      _$UnifediApiCustomEmojiPleromaAdapterCopyWithImpl<$Res,
+          UnifediApiCustomEmojiPleromaAdapter>;
+  @useResult
   $Res call({@HiveField(0) PleromaApiCustomEmoji value});
 
   $PleromaApiCustomEmojiCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiCustomEmojiPleromaAdapterCopyWithImpl<$Res>
+class _$UnifediApiCustomEmojiPleromaAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiCustomEmojiPleromaAdapter>
     implements $UnifediApiCustomEmojiPleromaAdapterCopyWith<$Res> {
   _$UnifediApiCustomEmojiPleromaAdapterCopyWithImpl(this._value, this._then);
 
-  final UnifediApiCustomEmojiPleromaAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiCustomEmojiPleromaAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiCustomEmoji,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiCustomEmojiCopyWith<$Res> get value {
     return $PleromaApiCustomEmojiCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiCustomEmojiPleromaAdapterCopyWith<$Res>
+abstract class _$$UnifediApiCustomEmojiPleromaAdapterImplCopyWith<$Res>
     implements $UnifediApiCustomEmojiPleromaAdapterCopyWith<$Res> {
-  factory _$UnifediApiCustomEmojiPleromaAdapterCopyWith(
-          _UnifediApiCustomEmojiPleromaAdapter value,
-          $Res Function(_UnifediApiCustomEmojiPleromaAdapter) then) =
-      __$UnifediApiCustomEmojiPleromaAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiCustomEmojiPleromaAdapterImplCopyWith(
+          _$UnifediApiCustomEmojiPleromaAdapterImpl value,
+          $Res Function(_$UnifediApiCustomEmojiPleromaAdapterImpl) then) =
+      __$$UnifediApiCustomEmojiPleromaAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) PleromaApiCustomEmoji value});
 
   @override
@@ -105,24 +93,22 @@ abstract class _$UnifediApiCustomEmojiPleromaAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiCustomEmojiPleromaAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiCustomEmojiPleromaAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiCustomEmojiPleromaAdapterCopyWith<$Res> {
-  __$UnifediApiCustomEmojiPleromaAdapterCopyWithImpl(
-      _UnifediApiCustomEmojiPleromaAdapter _value,
-      $Res Function(_UnifediApiCustomEmojiPleromaAdapter) _then)
-      : super(_value, (v) => _then(v as _UnifediApiCustomEmojiPleromaAdapter));
+class __$$UnifediApiCustomEmojiPleromaAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiCustomEmojiPleromaAdapterCopyWithImpl<$Res,
+        _$UnifediApiCustomEmojiPleromaAdapterImpl>
+    implements _$$UnifediApiCustomEmojiPleromaAdapterImplCopyWith<$Res> {
+  __$$UnifediApiCustomEmojiPleromaAdapterImplCopyWithImpl(
+      _$UnifediApiCustomEmojiPleromaAdapterImpl _value,
+      $Res Function(_$UnifediApiCustomEmojiPleromaAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiCustomEmojiPleromaAdapter get _value =>
-      super._value as _UnifediApiCustomEmojiPleromaAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiCustomEmojiPleromaAdapter(
-      value == freezed
+    return _then(_$UnifediApiCustomEmojiPleromaAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiCustomEmoji,
@@ -132,14 +118,14 @@ class __$UnifediApiCustomEmojiPleromaAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiCustomEmojiPleromaAdapter
+class _$UnifediApiCustomEmojiPleromaAdapterImpl
     extends _UnifediApiCustomEmojiPleromaAdapter {
-  const _$_UnifediApiCustomEmojiPleromaAdapter(@HiveField(0) this.value)
+  const _$UnifediApiCustomEmojiPleromaAdapterImpl(@HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiCustomEmojiPleromaAdapter.fromJson(
+  factory _$UnifediApiCustomEmojiPleromaAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiCustomEmojiPleromaAdapterFromJson(json);
+      _$$UnifediApiCustomEmojiPleromaAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -151,46 +137,50 @@ class _$_UnifediApiCustomEmojiPleromaAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiCustomEmojiPleromaAdapter &&
+            other is _$UnifediApiCustomEmojiPleromaAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiCustomEmojiPleromaAdapterCopyWith<
-          _UnifediApiCustomEmojiPleromaAdapter>
-      get copyWith => __$UnifediApiCustomEmojiPleromaAdapterCopyWithImpl<
-          _UnifediApiCustomEmojiPleromaAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiCustomEmojiPleromaAdapterImplCopyWith<
+          _$UnifediApiCustomEmojiPleromaAdapterImpl>
+      get copyWith => __$$UnifediApiCustomEmojiPleromaAdapterImplCopyWithImpl<
+          _$UnifediApiCustomEmojiPleromaAdapterImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiCustomEmojiPleromaAdapterToJson(this);
+    return _$$UnifediApiCustomEmojiPleromaAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiCustomEmojiPleromaAdapter
     extends UnifediApiCustomEmojiPleromaAdapter {
   const factory _UnifediApiCustomEmojiPleromaAdapter(
-          @HiveField(0) PleromaApiCustomEmoji value) =
-      _$_UnifediApiCustomEmojiPleromaAdapter;
+          @HiveField(0) final PleromaApiCustomEmoji value) =
+      _$UnifediApiCustomEmojiPleromaAdapterImpl;
   const _UnifediApiCustomEmojiPleromaAdapter._() : super._();
 
   factory _UnifediApiCustomEmojiPleromaAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiCustomEmojiPleromaAdapter.fromJson;
+      _$UnifediApiCustomEmojiPleromaAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   PleromaApiCustomEmoji get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiCustomEmojiPleromaAdapterCopyWith<
-          _UnifediApiCustomEmojiPleromaAdapter>
+  _$$UnifediApiCustomEmojiPleromaAdapterImplCopyWith<
+          _$UnifediApiCustomEmojiPleromaAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

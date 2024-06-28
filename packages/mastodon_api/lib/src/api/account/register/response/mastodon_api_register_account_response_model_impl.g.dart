@@ -48,9 +48,10 @@ class MastodonApiRegisterAccountResponseAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiRegisterAccountResponse
-    _$$_MastodonApiRegisterAccountResponseFromJson(Map<String, dynamic> json) =>
-        _$_MastodonApiRegisterAccountResponse(
+_$MastodonApiRegisterAccountResponseImpl
+    _$$MastodonApiRegisterAccountResponseImplFromJson(
+            Map<String, dynamic> json) =>
+        _$MastodonApiRegisterAccountResponseImpl(
           approvalRequired: json['approval_required'] as bool?,
           authToken: json['auth_token'] == null
               ? null
@@ -58,8 +59,8 @@ _$_MastodonApiRegisterAccountResponse
                   json['auth_token'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_MastodonApiRegisterAccountResponseToJson(
-    _$_MastodonApiRegisterAccountResponse instance) {
+Map<String, dynamic> _$$MastodonApiRegisterAccountResponseImplToJson(
+    _$MastodonApiRegisterAccountResponseImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

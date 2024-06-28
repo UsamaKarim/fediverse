@@ -2,10 +2,7 @@
 
 part of 'filter_database_dao.dart';
 
-// **************************************************************************
-// DaoGenerator
-// **************************************************************************
-
+// ignore_for_file: type=lint
 mixin _$FilterDaoMixin on DatabaseAccessor<AppDatabase> {
   $DbFiltersTable get dbFilters => attachedDatabase.dbFilters;
 }

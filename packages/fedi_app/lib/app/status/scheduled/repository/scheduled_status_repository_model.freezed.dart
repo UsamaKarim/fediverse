@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'scheduled_status_repository_model.dart';
 
@@ -11,24 +12,7 @@ part of 'scheduled_status_repository_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$ScheduledStatusRepositoryFiltersTearOff {
-  const _$ScheduledStatusRepositoryFiltersTearOff();
-
-  _ScheduledStatusRepositoryFilters call(
-      {bool? excludeCanceled, bool? excludeScheduleAtExpired}) {
-    return _ScheduledStatusRepositoryFilters(
-      excludeCanceled: excludeCanceled,
-      excludeScheduleAtExpired: excludeScheduleAtExpired,
-    );
-  }
-}
-
-/// @nodoc
-const $ScheduledStatusRepositoryFilters =
-    _$ScheduledStatusRepositoryFiltersTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$ScheduledStatusRepositoryFilters {
@@ -45,72 +29,76 @@ abstract class $ScheduledStatusRepositoryFiltersCopyWith<$Res> {
   factory $ScheduledStatusRepositoryFiltersCopyWith(
           ScheduledStatusRepositoryFilters value,
           $Res Function(ScheduledStatusRepositoryFilters) then) =
-      _$ScheduledStatusRepositoryFiltersCopyWithImpl<$Res>;
+      _$ScheduledStatusRepositoryFiltersCopyWithImpl<$Res,
+          ScheduledStatusRepositoryFilters>;
+  @useResult
   $Res call({bool? excludeCanceled, bool? excludeScheduleAtExpired});
 }
 
 /// @nodoc
-class _$ScheduledStatusRepositoryFiltersCopyWithImpl<$Res>
+class _$ScheduledStatusRepositoryFiltersCopyWithImpl<$Res,
+        $Val extends ScheduledStatusRepositoryFilters>
     implements $ScheduledStatusRepositoryFiltersCopyWith<$Res> {
   _$ScheduledStatusRepositoryFiltersCopyWithImpl(this._value, this._then);
 
-  final ScheduledStatusRepositoryFilters _value;
   // ignore: unused_field
-  final $Res Function(ScheduledStatusRepositoryFilters) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? excludeCanceled = freezed,
     Object? excludeScheduleAtExpired = freezed,
   }) {
     return _then(_value.copyWith(
-      excludeCanceled: excludeCanceled == freezed
+      excludeCanceled: freezed == excludeCanceled
           ? _value.excludeCanceled
           : excludeCanceled // ignore: cast_nullable_to_non_nullable
               as bool?,
-      excludeScheduleAtExpired: excludeScheduleAtExpired == freezed
+      excludeScheduleAtExpired: freezed == excludeScheduleAtExpired
           ? _value.excludeScheduleAtExpired
           : excludeScheduleAtExpired // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$ScheduledStatusRepositoryFiltersCopyWith<$Res>
+abstract class _$$ScheduledStatusRepositoryFiltersImplCopyWith<$Res>
     implements $ScheduledStatusRepositoryFiltersCopyWith<$Res> {
-  factory _$ScheduledStatusRepositoryFiltersCopyWith(
-          _ScheduledStatusRepositoryFilters value,
-          $Res Function(_ScheduledStatusRepositoryFilters) then) =
-      __$ScheduledStatusRepositoryFiltersCopyWithImpl<$Res>;
+  factory _$$ScheduledStatusRepositoryFiltersImplCopyWith(
+          _$ScheduledStatusRepositoryFiltersImpl value,
+          $Res Function(_$ScheduledStatusRepositoryFiltersImpl) then) =
+      __$$ScheduledStatusRepositoryFiltersImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({bool? excludeCanceled, bool? excludeScheduleAtExpired});
 }
 
 /// @nodoc
-class __$ScheduledStatusRepositoryFiltersCopyWithImpl<$Res>
-    extends _$ScheduledStatusRepositoryFiltersCopyWithImpl<$Res>
-    implements _$ScheduledStatusRepositoryFiltersCopyWith<$Res> {
-  __$ScheduledStatusRepositoryFiltersCopyWithImpl(
-      _ScheduledStatusRepositoryFilters _value,
-      $Res Function(_ScheduledStatusRepositoryFilters) _then)
-      : super(_value, (v) => _then(v as _ScheduledStatusRepositoryFilters));
+class __$$ScheduledStatusRepositoryFiltersImplCopyWithImpl<$Res>
+    extends _$ScheduledStatusRepositoryFiltersCopyWithImpl<$Res,
+        _$ScheduledStatusRepositoryFiltersImpl>
+    implements _$$ScheduledStatusRepositoryFiltersImplCopyWith<$Res> {
+  __$$ScheduledStatusRepositoryFiltersImplCopyWithImpl(
+      _$ScheduledStatusRepositoryFiltersImpl _value,
+      $Res Function(_$ScheduledStatusRepositoryFiltersImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _ScheduledStatusRepositoryFilters get _value =>
-      super._value as _ScheduledStatusRepositoryFilters;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? excludeCanceled = freezed,
     Object? excludeScheduleAtExpired = freezed,
   }) {
-    return _then(_ScheduledStatusRepositoryFilters(
-      excludeCanceled: excludeCanceled == freezed
+    return _then(_$ScheduledStatusRepositoryFiltersImpl(
+      excludeCanceled: freezed == excludeCanceled
           ? _value.excludeCanceled
           : excludeCanceled // ignore: cast_nullable_to_non_nullable
               as bool?,
-      excludeScheduleAtExpired: excludeScheduleAtExpired == freezed
+      excludeScheduleAtExpired: freezed == excludeScheduleAtExpired
           ? _value.excludeScheduleAtExpired
           : excludeScheduleAtExpired // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -120,9 +108,9 @@ class __$ScheduledStatusRepositoryFiltersCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ScheduledStatusRepositoryFilters
+class _$ScheduledStatusRepositoryFiltersImpl
     implements _ScheduledStatusRepositoryFilters {
-  const _$_ScheduledStatusRepositoryFilters(
+  const _$ScheduledStatusRepositoryFiltersImpl(
       {this.excludeCanceled, this.excludeScheduleAtExpired});
 
   @override
@@ -136,10 +124,10 @@ class _$_ScheduledStatusRepositoryFilters
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ScheduledStatusRepositoryFilters &&
+            other is _$ScheduledStatusRepositoryFiltersImpl &&
             (identical(other.excludeCanceled, excludeCanceled) ||
                 other.excludeCanceled == excludeCanceled) &&
             (identical(
@@ -153,16 +141,18 @@ class _$_ScheduledStatusRepositoryFilters
 
   @JsonKey(ignore: true)
   @override
-  _$ScheduledStatusRepositoryFiltersCopyWith<_ScheduledStatusRepositoryFilters>
-      get copyWith => __$ScheduledStatusRepositoryFiltersCopyWithImpl<
-          _ScheduledStatusRepositoryFilters>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ScheduledStatusRepositoryFiltersImplCopyWith<
+          _$ScheduledStatusRepositoryFiltersImpl>
+      get copyWith => __$$ScheduledStatusRepositoryFiltersImplCopyWithImpl<
+          _$ScheduledStatusRepositoryFiltersImpl>(this, _$identity);
 }
 
 abstract class _ScheduledStatusRepositoryFilters
     implements ScheduledStatusRepositoryFilters {
   const factory _ScheduledStatusRepositoryFilters(
-      {bool? excludeCanceled,
-      bool? excludeScheduleAtExpired}) = _$_ScheduledStatusRepositoryFilters;
+          {final bool? excludeCanceled, final bool? excludeScheduleAtExpired}) =
+      _$ScheduledStatusRepositoryFiltersImpl;
 
   @override
   bool? get excludeCanceled;
@@ -170,27 +160,10 @@ abstract class _ScheduledStatusRepositoryFilters
   bool? get excludeScheduleAtExpired;
   @override
   @JsonKey(ignore: true)
-  _$ScheduledStatusRepositoryFiltersCopyWith<_ScheduledStatusRepositoryFilters>
+  _$$ScheduledStatusRepositoryFiltersImplCopyWith<
+          _$ScheduledStatusRepositoryFiltersImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$ScheduledStatusRepositoryOrderingTermDataTearOff {
-  const _$ScheduledStatusRepositoryOrderingTermDataTearOff();
-
-  _ScheduledStatusRepositoryOrderingTermData call(
-      {required ScheduledStatusRepositoryOrderType orderType,
-      required moor.OrderingMode orderingMode}) {
-    return _ScheduledStatusRepositoryOrderingTermData(
-      orderType: orderType,
-      orderingMode: orderingMode,
-    );
-  }
-}
-
-/// @nodoc
-const $ScheduledStatusRepositoryOrderingTermData =
-    _$ScheduledStatusRepositoryOrderingTermDataTearOff();
 
 /// @nodoc
 mixin _$ScheduledStatusRepositoryOrderingTermData {
@@ -209,78 +182,81 @@ abstract class $ScheduledStatusRepositoryOrderingTermDataCopyWith<$Res> {
   factory $ScheduledStatusRepositoryOrderingTermDataCopyWith(
           ScheduledStatusRepositoryOrderingTermData value,
           $Res Function(ScheduledStatusRepositoryOrderingTermData) then) =
-      _$ScheduledStatusRepositoryOrderingTermDataCopyWithImpl<$Res>;
+      _$ScheduledStatusRepositoryOrderingTermDataCopyWithImpl<$Res,
+          ScheduledStatusRepositoryOrderingTermData>;
+  @useResult
   $Res call(
       {ScheduledStatusRepositoryOrderType orderType,
       moor.OrderingMode orderingMode});
 }
 
 /// @nodoc
-class _$ScheduledStatusRepositoryOrderingTermDataCopyWithImpl<$Res>
+class _$ScheduledStatusRepositoryOrderingTermDataCopyWithImpl<$Res,
+        $Val extends ScheduledStatusRepositoryOrderingTermData>
     implements $ScheduledStatusRepositoryOrderingTermDataCopyWith<$Res> {
   _$ScheduledStatusRepositoryOrderingTermDataCopyWithImpl(
       this._value, this._then);
 
-  final ScheduledStatusRepositoryOrderingTermData _value;
   // ignore: unused_field
-  final $Res Function(ScheduledStatusRepositoryOrderingTermData) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? orderType = freezed,
-    Object? orderingMode = freezed,
+    Object? orderType = null,
+    Object? orderingMode = null,
   }) {
     return _then(_value.copyWith(
-      orderType: orderType == freezed
+      orderType: null == orderType
           ? _value.orderType
           : orderType // ignore: cast_nullable_to_non_nullable
               as ScheduledStatusRepositoryOrderType,
-      orderingMode: orderingMode == freezed
+      orderingMode: null == orderingMode
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
               as moor.OrderingMode,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$ScheduledStatusRepositoryOrderingTermDataCopyWith<$Res>
+abstract class _$$ScheduledStatusRepositoryOrderingTermDataImplCopyWith<$Res>
     implements $ScheduledStatusRepositoryOrderingTermDataCopyWith<$Res> {
-  factory _$ScheduledStatusRepositoryOrderingTermDataCopyWith(
-          _ScheduledStatusRepositoryOrderingTermData value,
-          $Res Function(_ScheduledStatusRepositoryOrderingTermData) then) =
-      __$ScheduledStatusRepositoryOrderingTermDataCopyWithImpl<$Res>;
+  factory _$$ScheduledStatusRepositoryOrderingTermDataImplCopyWith(
+          _$ScheduledStatusRepositoryOrderingTermDataImpl value,
+          $Res Function(_$ScheduledStatusRepositoryOrderingTermDataImpl) then) =
+      __$$ScheduledStatusRepositoryOrderingTermDataImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {ScheduledStatusRepositoryOrderType orderType,
       moor.OrderingMode orderingMode});
 }
 
 /// @nodoc
-class __$ScheduledStatusRepositoryOrderingTermDataCopyWithImpl<$Res>
-    extends _$ScheduledStatusRepositoryOrderingTermDataCopyWithImpl<$Res>
-    implements _$ScheduledStatusRepositoryOrderingTermDataCopyWith<$Res> {
-  __$ScheduledStatusRepositoryOrderingTermDataCopyWithImpl(
-      _ScheduledStatusRepositoryOrderingTermData _value,
-      $Res Function(_ScheduledStatusRepositoryOrderingTermData) _then)
-      : super(_value,
-            (v) => _then(v as _ScheduledStatusRepositoryOrderingTermData));
+class __$$ScheduledStatusRepositoryOrderingTermDataImplCopyWithImpl<$Res>
+    extends _$ScheduledStatusRepositoryOrderingTermDataCopyWithImpl<$Res,
+        _$ScheduledStatusRepositoryOrderingTermDataImpl>
+    implements _$$ScheduledStatusRepositoryOrderingTermDataImplCopyWith<$Res> {
+  __$$ScheduledStatusRepositoryOrderingTermDataImplCopyWithImpl(
+      _$ScheduledStatusRepositoryOrderingTermDataImpl _value,
+      $Res Function(_$ScheduledStatusRepositoryOrderingTermDataImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _ScheduledStatusRepositoryOrderingTermData get _value =>
-      super._value as _ScheduledStatusRepositoryOrderingTermData;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? orderType = freezed,
-    Object? orderingMode = freezed,
+    Object? orderType = null,
+    Object? orderingMode = null,
   }) {
-    return _then(_ScheduledStatusRepositoryOrderingTermData(
-      orderType: orderType == freezed
+    return _then(_$ScheduledStatusRepositoryOrderingTermDataImpl(
+      orderType: null == orderType
           ? _value.orderType
           : orderType // ignore: cast_nullable_to_non_nullable
               as ScheduledStatusRepositoryOrderType,
-      orderingMode: orderingMode == freezed
+      orderingMode: null == orderingMode
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
               as moor.OrderingMode,
@@ -290,9 +266,9 @@ class __$ScheduledStatusRepositoryOrderingTermDataCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ScheduledStatusRepositoryOrderingTermData
+class _$ScheduledStatusRepositoryOrderingTermDataImpl
     implements _ScheduledStatusRepositoryOrderingTermData {
-  const _$_ScheduledStatusRepositoryOrderingTermData(
+  const _$ScheduledStatusRepositoryOrderingTermDataImpl(
       {required this.orderType, required this.orderingMode});
 
   @override
@@ -306,10 +282,10 @@ class _$_ScheduledStatusRepositoryOrderingTermData
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ScheduledStatusRepositoryOrderingTermData &&
+            other is _$ScheduledStatusRepositoryOrderingTermDataImpl &&
             (identical(other.orderType, orderType) ||
                 other.orderType == orderType) &&
             (identical(other.orderingMode, orderingMode) ||
@@ -321,18 +297,21 @@ class _$_ScheduledStatusRepositoryOrderingTermData
 
   @JsonKey(ignore: true)
   @override
-  _$ScheduledStatusRepositoryOrderingTermDataCopyWith<
-          _ScheduledStatusRepositoryOrderingTermData>
-      get copyWith => __$ScheduledStatusRepositoryOrderingTermDataCopyWithImpl<
-          _ScheduledStatusRepositoryOrderingTermData>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ScheduledStatusRepositoryOrderingTermDataImplCopyWith<
+          _$ScheduledStatusRepositoryOrderingTermDataImpl>
+      get copyWith =>
+          __$$ScheduledStatusRepositoryOrderingTermDataImplCopyWithImpl<
+                  _$ScheduledStatusRepositoryOrderingTermDataImpl>(
+              this, _$identity);
 }
 
 abstract class _ScheduledStatusRepositoryOrderingTermData
     implements ScheduledStatusRepositoryOrderingTermData {
   const factory _ScheduledStatusRepositoryOrderingTermData(
-          {required ScheduledStatusRepositoryOrderType orderType,
-          required moor.OrderingMode orderingMode}) =
-      _$_ScheduledStatusRepositoryOrderingTermData;
+          {required final ScheduledStatusRepositoryOrderType orderType,
+          required final moor.OrderingMode orderingMode}) =
+      _$ScheduledStatusRepositoryOrderingTermDataImpl;
 
   @override
   ScheduledStatusRepositoryOrderType get orderType;
@@ -340,7 +319,7 @@ abstract class _ScheduledStatusRepositoryOrderingTermData
   moor.OrderingMode get orderingMode;
   @override
   @JsonKey(ignore: true)
-  _$ScheduledStatusRepositoryOrderingTermDataCopyWith<
-          _ScheduledStatusRepositoryOrderingTermData>
+  _$$ScheduledStatusRepositoryOrderingTermDataImplCopyWith<
+          _$ScheduledStatusRepositoryOrderingTermDataImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

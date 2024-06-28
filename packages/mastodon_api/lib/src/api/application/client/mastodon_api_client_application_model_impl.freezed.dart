@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_client_application_model_impl.dart';
 
@@ -11,47 +12,12 @@ part of 'mastodon_api_client_application_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiClientApplication _$MastodonApiClientApplicationFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiClientApplication.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiClientApplicationTearOff {
-  const _$MastodonApiClientApplicationTearOff();
-
-  _MastodonApiClientApplication call(
-      {@HiveField(0)
-          required String? name,
-      @HiveField(1)
-          required String? website,
-      @JsonKey(name: 'vapid_key')
-      @HiveField(2)
-          required String? vapidKey,
-      @JsonKey(name: 'client_id')
-      @HiveField(3)
-          required String clientId,
-      @JsonKey(name: 'client_secret')
-      @HiveField(4)
-          required String clientSecret}) {
-    return _MastodonApiClientApplication(
-      name: name,
-      website: website,
-      vapidKey: vapidKey,
-      clientId: clientId,
-      clientSecret: clientSecret,
-    );
-  }
-
-  MastodonApiClientApplication fromJson(Map<String, Object?> json) {
-    return MastodonApiClientApplication.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiClientApplication = _$MastodonApiClientApplicationTearOff();
 
 /// @nodoc
 mixin _$MastodonApiClientApplication {
@@ -80,7 +46,9 @@ abstract class $MastodonApiClientApplicationCopyWith<$Res> {
   factory $MastodonApiClientApplicationCopyWith(
           MastodonApiClientApplication value,
           $Res Function(MastodonApiClientApplication) then) =
-      _$MastodonApiClientApplicationCopyWithImpl<$Res>;
+      _$MastodonApiClientApplicationCopyWithImpl<$Res,
+          MastodonApiClientApplication>;
+  @useResult
   $Res call(
       {@HiveField(0) String? name,
       @HiveField(1) String? website,
@@ -90,55 +58,59 @@ abstract class $MastodonApiClientApplicationCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MastodonApiClientApplicationCopyWithImpl<$Res>
+class _$MastodonApiClientApplicationCopyWithImpl<$Res,
+        $Val extends MastodonApiClientApplication>
     implements $MastodonApiClientApplicationCopyWith<$Res> {
   _$MastodonApiClientApplicationCopyWithImpl(this._value, this._then);
 
-  final MastodonApiClientApplication _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiClientApplication) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? name = freezed,
     Object? website = freezed,
     Object? vapidKey = freezed,
-    Object? clientId = freezed,
-    Object? clientSecret = freezed,
+    Object? clientId = null,
+    Object? clientSecret = null,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed
+      name: freezed == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String?,
-      website: website == freezed
+      website: freezed == website
           ? _value.website
           : website // ignore: cast_nullable_to_non_nullable
               as String?,
-      vapidKey: vapidKey == freezed
+      vapidKey: freezed == vapidKey
           ? _value.vapidKey
           : vapidKey // ignore: cast_nullable_to_non_nullable
               as String?,
-      clientId: clientId == freezed
+      clientId: null == clientId
           ? _value.clientId
           : clientId // ignore: cast_nullable_to_non_nullable
               as String,
-      clientSecret: clientSecret == freezed
+      clientSecret: null == clientSecret
           ? _value.clientSecret
           : clientSecret // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiClientApplicationCopyWith<$Res>
+abstract class _$$MastodonApiClientApplicationImplCopyWith<$Res>
     implements $MastodonApiClientApplicationCopyWith<$Res> {
-  factory _$MastodonApiClientApplicationCopyWith(
-          _MastodonApiClientApplication value,
-          $Res Function(_MastodonApiClientApplication) then) =
-      __$MastodonApiClientApplicationCopyWithImpl<$Res>;
+  factory _$$MastodonApiClientApplicationImplCopyWith(
+          _$MastodonApiClientApplicationImpl value,
+          $Res Function(_$MastodonApiClientApplicationImpl) then) =
+      __$$MastodonApiClientApplicationImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) String? name,
       @HiveField(1) String? website,
@@ -148,44 +120,42 @@ abstract class _$MastodonApiClientApplicationCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MastodonApiClientApplicationCopyWithImpl<$Res>
-    extends _$MastodonApiClientApplicationCopyWithImpl<$Res>
-    implements _$MastodonApiClientApplicationCopyWith<$Res> {
-  __$MastodonApiClientApplicationCopyWithImpl(
-      _MastodonApiClientApplication _value,
-      $Res Function(_MastodonApiClientApplication) _then)
-      : super(_value, (v) => _then(v as _MastodonApiClientApplication));
+class __$$MastodonApiClientApplicationImplCopyWithImpl<$Res>
+    extends _$MastodonApiClientApplicationCopyWithImpl<$Res,
+        _$MastodonApiClientApplicationImpl>
+    implements _$$MastodonApiClientApplicationImplCopyWith<$Res> {
+  __$$MastodonApiClientApplicationImplCopyWithImpl(
+      _$MastodonApiClientApplicationImpl _value,
+      $Res Function(_$MastodonApiClientApplicationImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiClientApplication get _value =>
-      super._value as _MastodonApiClientApplication;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? name = freezed,
     Object? website = freezed,
     Object? vapidKey = freezed,
-    Object? clientId = freezed,
-    Object? clientSecret = freezed,
+    Object? clientId = null,
+    Object? clientSecret = null,
   }) {
-    return _then(_MastodonApiClientApplication(
-      name: name == freezed
+    return _then(_$MastodonApiClientApplicationImpl(
+      name: freezed == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String?,
-      website: website == freezed
+      website: freezed == website
           ? _value.website
           : website // ignore: cast_nullable_to_non_nullable
               as String?,
-      vapidKey: vapidKey == freezed
+      vapidKey: freezed == vapidKey
           ? _value.vapidKey
           : vapidKey // ignore: cast_nullable_to_non_nullable
               as String?,
-      clientId: clientId == freezed
+      clientId: null == clientId
           ? _value.clientId
           : clientId // ignore: cast_nullable_to_non_nullable
               as String,
-      clientSecret: clientSecret == freezed
+      clientSecret: null == clientSecret
           ? _value.clientSecret
           : clientSecret // ignore: cast_nullable_to_non_nullable
               as String,
@@ -195,24 +165,20 @@ class __$MastodonApiClientApplicationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiClientApplication implements _MastodonApiClientApplication {
-  const _$_MastodonApiClientApplication(
-      {@HiveField(0)
-          required this.name,
-      @HiveField(1)
-          required this.website,
-      @JsonKey(name: 'vapid_key')
-      @HiveField(2)
-          required this.vapidKey,
-      @JsonKey(name: 'client_id')
-      @HiveField(3)
-          required this.clientId,
+class _$MastodonApiClientApplicationImpl
+    implements _MastodonApiClientApplication {
+  const _$MastodonApiClientApplicationImpl(
+      {@HiveField(0) required this.name,
+      @HiveField(1) required this.website,
+      @JsonKey(name: 'vapid_key') @HiveField(2) required this.vapidKey,
+      @JsonKey(name: 'client_id') @HiveField(3) required this.clientId,
       @JsonKey(name: 'client_secret')
       @HiveField(4)
-          required this.clientSecret});
+      required this.clientSecret});
 
-  factory _$_MastodonApiClientApplication.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiClientApplicationFromJson(json);
+  factory _$MastodonApiClientApplicationImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$MastodonApiClientApplicationImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -239,10 +205,10 @@ class _$_MastodonApiClientApplication implements _MastodonApiClientApplication {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiClientApplication &&
+            other is _$MastodonApiClientApplicationImpl &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.website, website) || other.website == website) &&
             (identical(other.vapidKey, vapidKey) ||
@@ -253,41 +219,40 @@ class _$_MastodonApiClientApplication implements _MastodonApiClientApplication {
                 other.clientSecret == clientSecret));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, name, website, vapidKey, clientId, clientSecret);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiClientApplicationCopyWith<_MastodonApiClientApplication>
-      get copyWith => __$MastodonApiClientApplicationCopyWithImpl<
-          _MastodonApiClientApplication>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiClientApplicationImplCopyWith<
+          _$MastodonApiClientApplicationImpl>
+      get copyWith => __$$MastodonApiClientApplicationImplCopyWithImpl<
+          _$MastodonApiClientApplicationImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiClientApplicationToJson(this);
+    return _$$MastodonApiClientApplicationImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiClientApplication
     implements MastodonApiClientApplication {
   const factory _MastodonApiClientApplication(
-      {@HiveField(0)
-          required String? name,
-      @HiveField(1)
-          required String? website,
-      @JsonKey(name: 'vapid_key')
-      @HiveField(2)
-          required String? vapidKey,
-      @JsonKey(name: 'client_id')
-      @HiveField(3)
-          required String clientId,
+      {@HiveField(0) required final String? name,
+      @HiveField(1) required final String? website,
+      @JsonKey(name: 'vapid_key') @HiveField(2) required final String? vapidKey,
+      @JsonKey(name: 'client_id') @HiveField(3) required final String clientId,
       @JsonKey(name: 'client_secret')
       @HiveField(4)
-          required String clientSecret}) = _$_MastodonApiClientApplication;
+      required final String clientSecret}) = _$MastodonApiClientApplicationImpl;
 
   factory _MastodonApiClientApplication.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiClientApplication.fromJson;
+      _$MastodonApiClientApplicationImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -309,6 +274,7 @@ abstract class _MastodonApiClientApplication
   String get clientSecret;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiClientApplicationCopyWith<_MastodonApiClientApplication>
+  _$$MastodonApiClientApplicationImplCopyWith<
+          _$MastodonApiClientApplicationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

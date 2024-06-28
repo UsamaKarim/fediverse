@@ -153,8 +153,9 @@ class UnifediApiStatusAdapter extends TypeAdapter<UnifediApiStatus> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiStatus _$$_UnifediApiStatusFromJson(Map<String, dynamic> json) =>
-    _$_UnifediApiStatus(
+_$UnifediApiStatusImpl _$$UnifediApiStatusImplFromJson(
+        Map<String, dynamic> json) =>
+    _$UnifediApiStatusImpl(
       id: json['id'] as String,
       createdAt: DateTime.parse(json['created_at'] as String),
       inReplyToId: json['in_reply_to_id'] as String?,
@@ -163,9 +164,9 @@ _$_UnifediApiStatus _$$_UnifediApiStatusFromJson(Map<String, dynamic> json) =>
       spoilerText: json['spoiler_text'] as String?,
       uri: json['uri'] as String,
       url: json['url'] as String?,
-      repliesCount: json['replies_count'] as int?,
-      reblogsCount: json['reblogs_count'] as int?,
-      favouritesCount: json['favourites_count'] as int?,
+      repliesCount: (json['replies_count'] as num?)?.toInt(),
+      reblogsCount: (json['reblogs_count'] as num?)?.toInt(),
+      favouritesCount: (json['favourites_count'] as num?)?.toInt(),
       favourited: json['favourited'] as bool?,
       reblogged: json['reblogged'] as bool?,
       muted: json['muted'] as bool?,
@@ -206,8 +207,8 @@ _$_UnifediApiStatus _$$_UnifediApiStatusFromJson(Map<String, dynamic> json) =>
           ? null
           : UnifediApiContentVariants.fromJson(
               json['content_variants'] as Map<String, dynamic>),
-      conversationId: json['conversation_id'] as int?,
-      directConversationId: json['direct_conversation_id'] as int?,
+      conversationId: (json['conversation_id'] as num?)?.toInt(),
+      directConversationId: (json['direct_conversation_id'] as num?)?.toInt(),
       inReplyToAccountAcct: json['in_reply_to_account_acct'] as String?,
       local: json['local'] as bool?,
       spoilerTextVariants: json['spoiler_text_content_variants'] == null
@@ -224,7 +225,8 @@ _$_UnifediApiStatus _$$_UnifediApiStatusFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$_UnifediApiStatusToJson(_$_UnifediApiStatus instance) {
+Map<String, dynamic> _$$UnifediApiStatusImplToJson(
+    _$UnifediApiStatusImpl instance) {
   final val = <String, dynamic>{
     'id': instance.id,
     'created_at': instance.createdAt.toIso8601String(),

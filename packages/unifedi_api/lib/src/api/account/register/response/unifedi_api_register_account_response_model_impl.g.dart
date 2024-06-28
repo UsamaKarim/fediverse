@@ -51,9 +51,10 @@ class UnifediApiRegisterAccountResponseAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiRegisterAccountResponse
-    _$$_UnifediApiRegisterAccountResponseFromJson(Map<String, dynamic> json) =>
-        _$_UnifediApiRegisterAccountResponse(
+_$UnifediApiRegisterAccountResponseImpl
+    _$$UnifediApiRegisterAccountResponseImplFromJson(
+            Map<String, dynamic> json) =>
+        _$UnifediApiRegisterAccountResponseImpl(
           approvalRequired: json['approval_required'] as bool?,
           emailConformationRequired:
               json['email_conformation_required'] as bool?,
@@ -63,8 +64,8 @@ _$_UnifediApiRegisterAccountResponse
                   json['auth_token'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiRegisterAccountResponseToJson(
-    _$_UnifediApiRegisterAccountResponse instance) {
+Map<String, dynamic> _$$UnifediApiRegisterAccountResponseImplToJson(
+    _$UnifediApiRegisterAccountResponseImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

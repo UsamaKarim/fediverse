@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_instance_metadata_version_requirement_model_impl.dart';
 
@@ -11,36 +12,13 @@ part of 'pleroma_api_instance_metadata_version_requirement_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiInstanceMetadataVersionRequirement
     _$PleromaApiInstanceMetadataVersionRequirementFromJson(
         Map<String, dynamic> json) {
   return _PleromaApiInstanceMetadataVersionRequirement.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiInstanceMetadataVersionRequirementTearOff {
-  const _$PleromaApiInstanceMetadataVersionRequirementTearOff();
-
-  _PleromaApiInstanceMetadataVersionRequirement call(
-      {@HiveField(0)
-      @JsonKey(name: 'versionRange')
-          required PleromaApiVersionRange versionRange}) {
-    return _PleromaApiInstanceMetadataVersionRequirement(
-      versionRange: versionRange,
-    );
-  }
-
-  PleromaApiInstanceMetadataVersionRequirement fromJson(
-      Map<String, Object?> json) {
-    return PleromaApiInstanceMetadataVersionRequirement.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiInstanceMetadataVersionRequirement =
-    _$PleromaApiInstanceMetadataVersionRequirementTearOff();
 
 /// @nodoc
 mixin _$PleromaApiInstanceMetadataVersionRequirement {
@@ -60,82 +38,88 @@ abstract class $PleromaApiInstanceMetadataVersionRequirementCopyWith<$Res> {
   factory $PleromaApiInstanceMetadataVersionRequirementCopyWith(
           PleromaApiInstanceMetadataVersionRequirement value,
           $Res Function(PleromaApiInstanceMetadataVersionRequirement) then) =
-      _$PleromaApiInstanceMetadataVersionRequirementCopyWithImpl<$Res>;
+      _$PleromaApiInstanceMetadataVersionRequirementCopyWithImpl<$Res,
+          PleromaApiInstanceMetadataVersionRequirement>;
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'versionRange')
-          PleromaApiVersionRange versionRange});
+      PleromaApiVersionRange versionRange});
 
   $PleromaApiVersionRangeCopyWith<$Res> get versionRange;
 }
 
 /// @nodoc
-class _$PleromaApiInstanceMetadataVersionRequirementCopyWithImpl<$Res>
+class _$PleromaApiInstanceMetadataVersionRequirementCopyWithImpl<$Res,
+        $Val extends PleromaApiInstanceMetadataVersionRequirement>
     implements $PleromaApiInstanceMetadataVersionRequirementCopyWith<$Res> {
   _$PleromaApiInstanceMetadataVersionRequirementCopyWithImpl(
       this._value, this._then);
 
-  final PleromaApiInstanceMetadataVersionRequirement _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiInstanceMetadataVersionRequirement) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? versionRange = freezed,
+    Object? versionRange = null,
   }) {
     return _then(_value.copyWith(
-      versionRange: versionRange == freezed
+      versionRange: null == versionRange
           ? _value.versionRange
           : versionRange // ignore: cast_nullable_to_non_nullable
               as PleromaApiVersionRange,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiVersionRangeCopyWith<$Res> get versionRange {
     return $PleromaApiVersionRangeCopyWith<$Res>(_value.versionRange, (value) {
-      return _then(_value.copyWith(versionRange: value));
+      return _then(_value.copyWith(versionRange: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiInstanceMetadataVersionRequirementCopyWith<$Res>
+abstract class _$$PleromaApiInstanceMetadataVersionRequirementImplCopyWith<$Res>
     implements $PleromaApiInstanceMetadataVersionRequirementCopyWith<$Res> {
-  factory _$PleromaApiInstanceMetadataVersionRequirementCopyWith(
-          _PleromaApiInstanceMetadataVersionRequirement value,
-          $Res Function(_PleromaApiInstanceMetadataVersionRequirement) then) =
-      __$PleromaApiInstanceMetadataVersionRequirementCopyWithImpl<$Res>;
+  factory _$$PleromaApiInstanceMetadataVersionRequirementImplCopyWith(
+          _$PleromaApiInstanceMetadataVersionRequirementImpl value,
+          $Res Function(_$PleromaApiInstanceMetadataVersionRequirementImpl)
+              then) =
+      __$$PleromaApiInstanceMetadataVersionRequirementImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'versionRange')
-          PleromaApiVersionRange versionRange});
+      PleromaApiVersionRange versionRange});
 
   @override
   $PleromaApiVersionRangeCopyWith<$Res> get versionRange;
 }
 
 /// @nodoc
-class __$PleromaApiInstanceMetadataVersionRequirementCopyWithImpl<$Res>
-    extends _$PleromaApiInstanceMetadataVersionRequirementCopyWithImpl<$Res>
-    implements _$PleromaApiInstanceMetadataVersionRequirementCopyWith<$Res> {
-  __$PleromaApiInstanceMetadataVersionRequirementCopyWithImpl(
-      _PleromaApiInstanceMetadataVersionRequirement _value,
-      $Res Function(_PleromaApiInstanceMetadataVersionRequirement) _then)
-      : super(_value,
-            (v) => _then(v as _PleromaApiInstanceMetadataVersionRequirement));
+class __$$PleromaApiInstanceMetadataVersionRequirementImplCopyWithImpl<$Res>
+    extends _$PleromaApiInstanceMetadataVersionRequirementCopyWithImpl<$Res,
+        _$PleromaApiInstanceMetadataVersionRequirementImpl>
+    implements
+        _$$PleromaApiInstanceMetadataVersionRequirementImplCopyWith<$Res> {
+  __$$PleromaApiInstanceMetadataVersionRequirementImplCopyWithImpl(
+      _$PleromaApiInstanceMetadataVersionRequirementImpl _value,
+      $Res Function(_$PleromaApiInstanceMetadataVersionRequirementImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiInstanceMetadataVersionRequirement get _value =>
-      super._value as _PleromaApiInstanceMetadataVersionRequirement;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? versionRange = freezed,
+    Object? versionRange = null,
   }) {
-    return _then(_PleromaApiInstanceMetadataVersionRequirement(
-      versionRange: versionRange == freezed
+    return _then(_$PleromaApiInstanceMetadataVersionRequirementImpl(
+      versionRange: null == versionRange
           ? _value.versionRange
           : versionRange // ignore: cast_nullable_to_non_nullable
               as PleromaApiVersionRange,
@@ -145,16 +129,16 @@ class __$PleromaApiInstanceMetadataVersionRequirementCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiInstanceMetadataVersionRequirement
+class _$PleromaApiInstanceMetadataVersionRequirementImpl
     implements _PleromaApiInstanceMetadataVersionRequirement {
-  const _$_PleromaApiInstanceMetadataVersionRequirement(
+  const _$PleromaApiInstanceMetadataVersionRequirementImpl(
       {@HiveField(0)
       @JsonKey(name: 'versionRange')
-          required this.versionRange});
+      required this.versionRange});
 
-  factory _$_PleromaApiInstanceMetadataVersionRequirement.fromJson(
+  factory _$PleromaApiInstanceMetadataVersionRequirementImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_PleromaApiInstanceMetadataVersionRequirementFromJson(json);
+      _$$PleromaApiInstanceMetadataVersionRequirementImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -167,28 +151,33 @@ class _$_PleromaApiInstanceMetadataVersionRequirement
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiInstanceMetadataVersionRequirement &&
+            other is _$PleromaApiInstanceMetadataVersionRequirementImpl &&
             (identical(other.versionRange, versionRange) ||
                 other.versionRange == versionRange));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, versionRange);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiInstanceMetadataVersionRequirementCopyWith<
-          _PleromaApiInstanceMetadataVersionRequirement>
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiInstanceMetadataVersionRequirementImplCopyWith<
+          _$PleromaApiInstanceMetadataVersionRequirementImpl>
       get copyWith =>
-          __$PleromaApiInstanceMetadataVersionRequirementCopyWithImpl<
-              _PleromaApiInstanceMetadataVersionRequirement>(this, _$identity);
+          __$$PleromaApiInstanceMetadataVersionRequirementImplCopyWithImpl<
+                  _$PleromaApiInstanceMetadataVersionRequirementImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiInstanceMetadataVersionRequirementToJson(this);
+    return _$$PleromaApiInstanceMetadataVersionRequirementImplToJson(
+      this,
+    );
   }
 }
 
@@ -197,12 +186,12 @@ abstract class _PleromaApiInstanceMetadataVersionRequirement
   const factory _PleromaApiInstanceMetadataVersionRequirement(
           {@HiveField(0)
           @JsonKey(name: 'versionRange')
-              required PleromaApiVersionRange versionRange}) =
-      _$_PleromaApiInstanceMetadataVersionRequirement;
+          required final PleromaApiVersionRange versionRange}) =
+      _$PleromaApiInstanceMetadataVersionRequirementImpl;
 
   factory _PleromaApiInstanceMetadataVersionRequirement.fromJson(
           Map<String, dynamic> json) =
-      _$_PleromaApiInstanceMetadataVersionRequirement.fromJson;
+      _$PleromaApiInstanceMetadataVersionRequirementImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -210,7 +199,7 @@ abstract class _PleromaApiInstanceMetadataVersionRequirement
   PleromaApiVersionRange get versionRange;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiInstanceMetadataVersionRequirementCopyWith<
-          _PleromaApiInstanceMetadataVersionRequirement>
+  _$$PleromaApiInstanceMetadataVersionRequirementImplCopyWith<
+          _$PleromaApiInstanceMetadataVersionRequirementImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

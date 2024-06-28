@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_poll_model_impl.dart';
 
@@ -11,46 +12,11 @@ part of 'mastodon_api_poll_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiPoll _$MastodonApiPollFromJson(Map<String, dynamic> json) {
   return _MastodonApiPoll.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiPollTearOff {
-  const _$MastodonApiPollTearOff();
-
-  _MastodonApiPoll call(
-      {@HiveField(0) required bool expired,
-      @HiveField(1) @JsonKey(name: 'expires_at') required DateTime? expiresAt,
-      @HiveField(2) required String? id,
-      @HiveField(3) required bool multiple,
-      @HiveField(4) required List<MastodonApiPollOption> options,
-      @HiveField(5) @JsonKey(name: 'own_votes') required List<int>? ownVotes,
-      @HiveField(6) required bool? voted,
-      @HiveField(7) @JsonKey(name: 'voters_count') required int? votersCount,
-      @HiveField(8) @JsonKey(name: 'votes_count') required int? votesCount}) {
-    return _MastodonApiPoll(
-      expired: expired,
-      expiresAt: expiresAt,
-      id: id,
-      multiple: multiple,
-      options: options,
-      ownVotes: ownVotes,
-      voted: voted,
-      votersCount: votersCount,
-      votesCount: votesCount,
-    );
-  }
-
-  MastodonApiPoll fromJson(Map<String, Object?> json) {
-    return MastodonApiPoll.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiPoll = _$MastodonApiPollTearOff();
 
 /// @nodoc
 mixin _$MastodonApiPoll {
@@ -87,7 +53,8 @@ mixin _$MastodonApiPoll {
 abstract class $MastodonApiPollCopyWith<$Res> {
   factory $MastodonApiPollCopyWith(
           MastodonApiPoll value, $Res Function(MastodonApiPoll) then) =
-      _$MastodonApiPollCopyWithImpl<$Res>;
+      _$MastodonApiPollCopyWithImpl<$Res, MastodonApiPoll>;
+  @useResult
   $Res call(
       {@HiveField(0) bool expired,
       @HiveField(1) @JsonKey(name: 'expires_at') DateTime? expiresAt,
@@ -101,74 +68,77 @@ abstract class $MastodonApiPollCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MastodonApiPollCopyWithImpl<$Res>
+class _$MastodonApiPollCopyWithImpl<$Res, $Val extends MastodonApiPoll>
     implements $MastodonApiPollCopyWith<$Res> {
   _$MastodonApiPollCopyWithImpl(this._value, this._then);
 
-  final MastodonApiPoll _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiPoll) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? expired = freezed,
+    Object? expired = null,
     Object? expiresAt = freezed,
     Object? id = freezed,
-    Object? multiple = freezed,
-    Object? options = freezed,
+    Object? multiple = null,
+    Object? options = null,
     Object? ownVotes = freezed,
     Object? voted = freezed,
     Object? votersCount = freezed,
     Object? votesCount = freezed,
   }) {
     return _then(_value.copyWith(
-      expired: expired == freezed
+      expired: null == expired
           ? _value.expired
           : expired // ignore: cast_nullable_to_non_nullable
               as bool,
-      expiresAt: expiresAt == freezed
+      expiresAt: freezed == expiresAt
           ? _value.expiresAt
           : expiresAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      id: id == freezed
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String?,
-      multiple: multiple == freezed
+      multiple: null == multiple
           ? _value.multiple
           : multiple // ignore: cast_nullable_to_non_nullable
               as bool,
-      options: options == freezed
+      options: null == options
           ? _value.options
           : options // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiPollOption>,
-      ownVotes: ownVotes == freezed
+      ownVotes: freezed == ownVotes
           ? _value.ownVotes
           : ownVotes // ignore: cast_nullable_to_non_nullable
               as List<int>?,
-      voted: voted == freezed
+      voted: freezed == voted
           ? _value.voted
           : voted // ignore: cast_nullable_to_non_nullable
               as bool?,
-      votersCount: votersCount == freezed
+      votersCount: freezed == votersCount
           ? _value.votersCount
           : votersCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      votesCount: votesCount == freezed
+      votesCount: freezed == votesCount
           ? _value.votesCount
           : votesCount // ignore: cast_nullable_to_non_nullable
               as int?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiPollCopyWith<$Res>
+abstract class _$$MastodonApiPollImplCopyWith<$Res>
     implements $MastodonApiPollCopyWith<$Res> {
-  factory _$MastodonApiPollCopyWith(
-          _MastodonApiPoll value, $Res Function(_MastodonApiPoll) then) =
-      __$MastodonApiPollCopyWithImpl<$Res>;
+  factory _$$MastodonApiPollImplCopyWith(_$MastodonApiPollImpl value,
+          $Res Function(_$MastodonApiPollImpl) then) =
+      __$$MastodonApiPollImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) bool expired,
       @HiveField(1) @JsonKey(name: 'expires_at') DateTime? expiresAt,
@@ -182,62 +152,60 @@ abstract class _$MastodonApiPollCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MastodonApiPollCopyWithImpl<$Res>
-    extends _$MastodonApiPollCopyWithImpl<$Res>
-    implements _$MastodonApiPollCopyWith<$Res> {
-  __$MastodonApiPollCopyWithImpl(
-      _MastodonApiPoll _value, $Res Function(_MastodonApiPoll) _then)
-      : super(_value, (v) => _then(v as _MastodonApiPoll));
+class __$$MastodonApiPollImplCopyWithImpl<$Res>
+    extends _$MastodonApiPollCopyWithImpl<$Res, _$MastodonApiPollImpl>
+    implements _$$MastodonApiPollImplCopyWith<$Res> {
+  __$$MastodonApiPollImplCopyWithImpl(
+      _$MastodonApiPollImpl _value, $Res Function(_$MastodonApiPollImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiPoll get _value => super._value as _MastodonApiPoll;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? expired = freezed,
+    Object? expired = null,
     Object? expiresAt = freezed,
     Object? id = freezed,
-    Object? multiple = freezed,
-    Object? options = freezed,
+    Object? multiple = null,
+    Object? options = null,
     Object? ownVotes = freezed,
     Object? voted = freezed,
     Object? votersCount = freezed,
     Object? votesCount = freezed,
   }) {
-    return _then(_MastodonApiPoll(
-      expired: expired == freezed
+    return _then(_$MastodonApiPollImpl(
+      expired: null == expired
           ? _value.expired
           : expired // ignore: cast_nullable_to_non_nullable
               as bool,
-      expiresAt: expiresAt == freezed
+      expiresAt: freezed == expiresAt
           ? _value.expiresAt
           : expiresAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      id: id == freezed
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String?,
-      multiple: multiple == freezed
+      multiple: null == multiple
           ? _value.multiple
           : multiple // ignore: cast_nullable_to_non_nullable
               as bool,
-      options: options == freezed
-          ? _value.options
+      options: null == options
+          ? _value._options
           : options // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiPollOption>,
-      ownVotes: ownVotes == freezed
-          ? _value.ownVotes
+      ownVotes: freezed == ownVotes
+          ? _value._ownVotes
           : ownVotes // ignore: cast_nullable_to_non_nullable
               as List<int>?,
-      voted: voted == freezed
+      voted: freezed == voted
           ? _value.voted
           : voted // ignore: cast_nullable_to_non_nullable
               as bool?,
-      votersCount: votersCount == freezed
+      votersCount: freezed == votersCount
           ? _value.votersCount
           : votersCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      votesCount: votesCount == freezed
+      votesCount: freezed == votesCount
           ? _value.votesCount
           : votesCount // ignore: cast_nullable_to_non_nullable
               as int?,
@@ -247,20 +215,24 @@ class __$MastodonApiPollCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiPoll implements _MastodonApiPoll {
-  const _$_MastodonApiPoll(
+class _$MastodonApiPollImpl implements _MastodonApiPoll {
+  const _$MastodonApiPollImpl(
       {@HiveField(0) required this.expired,
       @HiveField(1) @JsonKey(name: 'expires_at') required this.expiresAt,
       @HiveField(2) required this.id,
       @HiveField(3) required this.multiple,
-      @HiveField(4) required this.options,
-      @HiveField(5) @JsonKey(name: 'own_votes') required this.ownVotes,
+      @HiveField(4) required final List<MastodonApiPollOption> options,
+      @HiveField(5)
+      @JsonKey(name: 'own_votes')
+      required final List<int>? ownVotes,
       @HiveField(6) required this.voted,
       @HiveField(7) @JsonKey(name: 'voters_count') required this.votersCount,
-      @HiveField(8) @JsonKey(name: 'votes_count') required this.votesCount});
+      @HiveField(8) @JsonKey(name: 'votes_count') required this.votesCount})
+      : _options = options,
+        _ownVotes = ownVotes;
 
-  factory _$_MastodonApiPoll.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiPollFromJson(json);
+  factory _$MastodonApiPollImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MastodonApiPollImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -275,13 +247,27 @@ class _$_MastodonApiPoll implements _MastodonApiPoll {
   @override
   @HiveField(3)
   final bool multiple;
+  final List<MastodonApiPollOption> _options;
   @override
   @HiveField(4)
-  final List<MastodonApiPollOption> options;
+  List<MastodonApiPollOption> get options {
+    if (_options is EqualUnmodifiableListView) return _options;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_options);
+  }
+
+  final List<int>? _ownVotes;
   @override
   @HiveField(5)
   @JsonKey(name: 'own_votes')
-  final List<int>? ownVotes;
+  List<int>? get ownVotes {
+    final value = _ownVotes;
+    if (value == null) return null;
+    if (_ownVotes is EqualUnmodifiableListView) return _ownVotes;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(6)
   final bool? voted;
@@ -300,18 +286,18 @@ class _$_MastodonApiPoll implements _MastodonApiPoll {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiPoll &&
+            other is _$MastodonApiPollImpl &&
             (identical(other.expired, expired) || other.expired == expired) &&
             (identical(other.expiresAt, expiresAt) ||
                 other.expiresAt == expiresAt) &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.multiple, multiple) ||
                 other.multiple == multiple) &&
-            const DeepCollectionEquality().equals(other.options, options) &&
-            const DeepCollectionEquality().equals(other.ownVotes, ownVotes) &&
+            const DeepCollectionEquality().equals(other._options, _options) &&
+            const DeepCollectionEquality().equals(other._ownVotes, _ownVotes) &&
             (identical(other.voted, voted) || other.voted == voted) &&
             (identical(other.votersCount, votersCount) ||
                 other.votersCount == votersCount) &&
@@ -319,6 +305,7 @@ class _$_MastodonApiPoll implements _MastodonApiPoll {
                 other.votesCount == votesCount));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -326,50 +313,49 @@ class _$_MastodonApiPoll implements _MastodonApiPoll {
       expiresAt,
       id,
       multiple,
-      const DeepCollectionEquality().hash(options),
-      const DeepCollectionEquality().hash(ownVotes),
+      const DeepCollectionEquality().hash(_options),
+      const DeepCollectionEquality().hash(_ownVotes),
       voted,
       votersCount,
       votesCount);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiPollCopyWith<_MastodonApiPoll> get copyWith =>
-      __$MastodonApiPollCopyWithImpl<_MastodonApiPoll>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiPollImplCopyWith<_$MastodonApiPollImpl> get copyWith =>
+      __$$MastodonApiPollImplCopyWithImpl<_$MastodonApiPollImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiPollToJson(this);
+    return _$$MastodonApiPollImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiPoll implements MastodonApiPoll {
   const factory _MastodonApiPoll(
-      {@HiveField(0)
-          required bool expired,
+      {@HiveField(0) required final bool expired,
       @HiveField(1)
       @JsonKey(name: 'expires_at')
-          required DateTime? expiresAt,
-      @HiveField(2)
-          required String? id,
-      @HiveField(3)
-          required bool multiple,
-      @HiveField(4)
-          required List<MastodonApiPollOption> options,
+      required final DateTime? expiresAt,
+      @HiveField(2) required final String? id,
+      @HiveField(3) required final bool multiple,
+      @HiveField(4) required final List<MastodonApiPollOption> options,
       @HiveField(5)
       @JsonKey(name: 'own_votes')
-          required List<int>? ownVotes,
-      @HiveField(6)
-          required bool? voted,
+      required final List<int>? ownVotes,
+      @HiveField(6) required final bool? voted,
       @HiveField(7)
       @JsonKey(name: 'voters_count')
-          required int? votersCount,
+      required final int? votersCount,
       @HiveField(8)
       @JsonKey(name: 'votes_count')
-          required int? votesCount}) = _$_MastodonApiPoll;
+      required final int? votesCount}) = _$MastodonApiPollImpl;
 
   factory _MastodonApiPoll.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiPoll.fromJson;
+      _$MastodonApiPollImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -404,6 +390,6 @@ abstract class _MastodonApiPoll implements MastodonApiPoll {
   int? get votesCount;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiPollCopyWith<_MastodonApiPoll> get copyWith =>
+  _$$MastodonApiPollImplCopyWith<_$MastodonApiPollImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

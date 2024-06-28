@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'photo_manager_media_device_file_model.dart';
 
@@ -11,25 +12,7 @@ part of 'photo_manager_media_device_file_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$PhotoManagerMediaDeviceFileMetadataTearOff {
-  const _$PhotoManagerMediaDeviceFileMetadataTearOff();
-
-  _PhotoManagerMediaDeviceFileMetadata call(
-      {required AssetEntity assetEntity,
-      required bool isNeedDeleteAfterUsage}) {
-    return _PhotoManagerMediaDeviceFileMetadata(
-      assetEntity: assetEntity,
-      isNeedDeleteAfterUsage: isNeedDeleteAfterUsage,
-    );
-  }
-}
-
-/// @nodoc
-const $PhotoManagerMediaDeviceFileMetadata =
-    _$PhotoManagerMediaDeviceFileMetadataTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$PhotoManagerMediaDeviceFileMetadata {
@@ -47,72 +30,76 @@ abstract class $PhotoManagerMediaDeviceFileMetadataCopyWith<$Res> {
   factory $PhotoManagerMediaDeviceFileMetadataCopyWith(
           PhotoManagerMediaDeviceFileMetadata value,
           $Res Function(PhotoManagerMediaDeviceFileMetadata) then) =
-      _$PhotoManagerMediaDeviceFileMetadataCopyWithImpl<$Res>;
+      _$PhotoManagerMediaDeviceFileMetadataCopyWithImpl<$Res,
+          PhotoManagerMediaDeviceFileMetadata>;
+  @useResult
   $Res call({AssetEntity assetEntity, bool isNeedDeleteAfterUsage});
 }
 
 /// @nodoc
-class _$PhotoManagerMediaDeviceFileMetadataCopyWithImpl<$Res>
+class _$PhotoManagerMediaDeviceFileMetadataCopyWithImpl<$Res,
+        $Val extends PhotoManagerMediaDeviceFileMetadata>
     implements $PhotoManagerMediaDeviceFileMetadataCopyWith<$Res> {
   _$PhotoManagerMediaDeviceFileMetadataCopyWithImpl(this._value, this._then);
 
-  final PhotoManagerMediaDeviceFileMetadata _value;
   // ignore: unused_field
-  final $Res Function(PhotoManagerMediaDeviceFileMetadata) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? assetEntity = freezed,
-    Object? isNeedDeleteAfterUsage = freezed,
+    Object? assetEntity = null,
+    Object? isNeedDeleteAfterUsage = null,
   }) {
     return _then(_value.copyWith(
-      assetEntity: assetEntity == freezed
+      assetEntity: null == assetEntity
           ? _value.assetEntity
           : assetEntity // ignore: cast_nullable_to_non_nullable
               as AssetEntity,
-      isNeedDeleteAfterUsage: isNeedDeleteAfterUsage == freezed
+      isNeedDeleteAfterUsage: null == isNeedDeleteAfterUsage
           ? _value.isNeedDeleteAfterUsage
           : isNeedDeleteAfterUsage // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PhotoManagerMediaDeviceFileMetadataCopyWith<$Res>
+abstract class _$$PhotoManagerMediaDeviceFileMetadataImplCopyWith<$Res>
     implements $PhotoManagerMediaDeviceFileMetadataCopyWith<$Res> {
-  factory _$PhotoManagerMediaDeviceFileMetadataCopyWith(
-          _PhotoManagerMediaDeviceFileMetadata value,
-          $Res Function(_PhotoManagerMediaDeviceFileMetadata) then) =
-      __$PhotoManagerMediaDeviceFileMetadataCopyWithImpl<$Res>;
+  factory _$$PhotoManagerMediaDeviceFileMetadataImplCopyWith(
+          _$PhotoManagerMediaDeviceFileMetadataImpl value,
+          $Res Function(_$PhotoManagerMediaDeviceFileMetadataImpl) then) =
+      __$$PhotoManagerMediaDeviceFileMetadataImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({AssetEntity assetEntity, bool isNeedDeleteAfterUsage});
 }
 
 /// @nodoc
-class __$PhotoManagerMediaDeviceFileMetadataCopyWithImpl<$Res>
-    extends _$PhotoManagerMediaDeviceFileMetadataCopyWithImpl<$Res>
-    implements _$PhotoManagerMediaDeviceFileMetadataCopyWith<$Res> {
-  __$PhotoManagerMediaDeviceFileMetadataCopyWithImpl(
-      _PhotoManagerMediaDeviceFileMetadata _value,
-      $Res Function(_PhotoManagerMediaDeviceFileMetadata) _then)
-      : super(_value, (v) => _then(v as _PhotoManagerMediaDeviceFileMetadata));
+class __$$PhotoManagerMediaDeviceFileMetadataImplCopyWithImpl<$Res>
+    extends _$PhotoManagerMediaDeviceFileMetadataCopyWithImpl<$Res,
+        _$PhotoManagerMediaDeviceFileMetadataImpl>
+    implements _$$PhotoManagerMediaDeviceFileMetadataImplCopyWith<$Res> {
+  __$$PhotoManagerMediaDeviceFileMetadataImplCopyWithImpl(
+      _$PhotoManagerMediaDeviceFileMetadataImpl _value,
+      $Res Function(_$PhotoManagerMediaDeviceFileMetadataImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PhotoManagerMediaDeviceFileMetadata get _value =>
-      super._value as _PhotoManagerMediaDeviceFileMetadata;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? assetEntity = freezed,
-    Object? isNeedDeleteAfterUsage = freezed,
+    Object? assetEntity = null,
+    Object? isNeedDeleteAfterUsage = null,
   }) {
-    return _then(_PhotoManagerMediaDeviceFileMetadata(
-      assetEntity: assetEntity == freezed
+    return _then(_$PhotoManagerMediaDeviceFileMetadataImpl(
+      assetEntity: null == assetEntity
           ? _value.assetEntity
           : assetEntity // ignore: cast_nullable_to_non_nullable
               as AssetEntity,
-      isNeedDeleteAfterUsage: isNeedDeleteAfterUsage == freezed
+      isNeedDeleteAfterUsage: null == isNeedDeleteAfterUsage
           ? _value.isNeedDeleteAfterUsage
           : isNeedDeleteAfterUsage // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -122,9 +109,9 @@ class __$PhotoManagerMediaDeviceFileMetadataCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PhotoManagerMediaDeviceFileMetadata
+class _$PhotoManagerMediaDeviceFileMetadataImpl
     extends _PhotoManagerMediaDeviceFileMetadata {
-  const _$_PhotoManagerMediaDeviceFileMetadata(
+  const _$PhotoManagerMediaDeviceFileMetadataImpl(
       {required this.assetEntity, required this.isNeedDeleteAfterUsage})
       : super._();
 
@@ -139,10 +126,10 @@ class _$_PhotoManagerMediaDeviceFileMetadata
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PhotoManagerMediaDeviceFileMetadata &&
+            other is _$PhotoManagerMediaDeviceFileMetadataImpl &&
             (identical(other.assetEntity, assetEntity) ||
                 other.assetEntity == assetEntity) &&
             (identical(other.isNeedDeleteAfterUsage, isNeedDeleteAfterUsage) ||
@@ -155,18 +142,19 @@ class _$_PhotoManagerMediaDeviceFileMetadata
 
   @JsonKey(ignore: true)
   @override
-  _$PhotoManagerMediaDeviceFileMetadataCopyWith<
-          _PhotoManagerMediaDeviceFileMetadata>
-      get copyWith => __$PhotoManagerMediaDeviceFileMetadataCopyWithImpl<
-          _PhotoManagerMediaDeviceFileMetadata>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PhotoManagerMediaDeviceFileMetadataImplCopyWith<
+          _$PhotoManagerMediaDeviceFileMetadataImpl>
+      get copyWith => __$$PhotoManagerMediaDeviceFileMetadataImplCopyWithImpl<
+          _$PhotoManagerMediaDeviceFileMetadataImpl>(this, _$identity);
 }
 
 abstract class _PhotoManagerMediaDeviceFileMetadata
     extends PhotoManagerMediaDeviceFileMetadata {
   const factory _PhotoManagerMediaDeviceFileMetadata(
-          {required AssetEntity assetEntity,
-          required bool isNeedDeleteAfterUsage}) =
-      _$_PhotoManagerMediaDeviceFileMetadata;
+          {required final AssetEntity assetEntity,
+          required final bool isNeedDeleteAfterUsage}) =
+      _$PhotoManagerMediaDeviceFileMetadataImpl;
   const _PhotoManagerMediaDeviceFileMetadata._() : super._();
 
   @override
@@ -175,27 +163,10 @@ abstract class _PhotoManagerMediaDeviceFileMetadata
   bool get isNeedDeleteAfterUsage;
   @override
   @JsonKey(ignore: true)
-  _$PhotoManagerMediaDeviceFileMetadataCopyWith<
-          _PhotoManagerMediaDeviceFileMetadata>
+  _$$PhotoManagerMediaDeviceFileMetadataImplCopyWith<
+          _$PhotoManagerMediaDeviceFileMetadataImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$PhotoManagerMediaDeviceFileTearOff {
-  const _$PhotoManagerMediaDeviceFileTearOff();
-
-  _PhotoManagerMediaDeviceFile call(
-      {required PhotoManagerMediaDeviceFileMetadata metadata,
-      required File? reCompressedFile}) {
-    return _PhotoManagerMediaDeviceFile(
-      metadata: metadata,
-      reCompressedFile: reCompressedFile,
-    );
-  }
-}
-
-/// @nodoc
-const $PhotoManagerMediaDeviceFile = _$PhotoManagerMediaDeviceFileTearOff();
 
 /// @nodoc
 mixin _$PhotoManagerMediaDeviceFile {
@@ -213,7 +184,9 @@ abstract class $PhotoManagerMediaDeviceFileCopyWith<$Res> {
   factory $PhotoManagerMediaDeviceFileCopyWith(
           PhotoManagerMediaDeviceFile value,
           $Res Function(PhotoManagerMediaDeviceFile) then) =
-      _$PhotoManagerMediaDeviceFileCopyWithImpl<$Res>;
+      _$PhotoManagerMediaDeviceFileCopyWithImpl<$Res,
+          PhotoManagerMediaDeviceFile>;
+  @useResult
   $Res call(
       {PhotoManagerMediaDeviceFileMetadata metadata, File? reCompressedFile});
 
@@ -221,48 +194,53 @@ abstract class $PhotoManagerMediaDeviceFileCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PhotoManagerMediaDeviceFileCopyWithImpl<$Res>
+class _$PhotoManagerMediaDeviceFileCopyWithImpl<$Res,
+        $Val extends PhotoManagerMediaDeviceFile>
     implements $PhotoManagerMediaDeviceFileCopyWith<$Res> {
   _$PhotoManagerMediaDeviceFileCopyWithImpl(this._value, this._then);
 
-  final PhotoManagerMediaDeviceFile _value;
   // ignore: unused_field
-  final $Res Function(PhotoManagerMediaDeviceFile) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? metadata = freezed,
+    Object? metadata = null,
     Object? reCompressedFile = freezed,
   }) {
     return _then(_value.copyWith(
-      metadata: metadata == freezed
+      metadata: null == metadata
           ? _value.metadata
           : metadata // ignore: cast_nullable_to_non_nullable
               as PhotoManagerMediaDeviceFileMetadata,
-      reCompressedFile: reCompressedFile == freezed
+      reCompressedFile: freezed == reCompressedFile
           ? _value.reCompressedFile
           : reCompressedFile // ignore: cast_nullable_to_non_nullable
               as File?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PhotoManagerMediaDeviceFileMetadataCopyWith<$Res> get metadata {
     return $PhotoManagerMediaDeviceFileMetadataCopyWith<$Res>(_value.metadata,
         (value) {
-      return _then(_value.copyWith(metadata: value));
+      return _then(_value.copyWith(metadata: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PhotoManagerMediaDeviceFileCopyWith<$Res>
+abstract class _$$PhotoManagerMediaDeviceFileImplCopyWith<$Res>
     implements $PhotoManagerMediaDeviceFileCopyWith<$Res> {
-  factory _$PhotoManagerMediaDeviceFileCopyWith(
-          _PhotoManagerMediaDeviceFile value,
-          $Res Function(_PhotoManagerMediaDeviceFile) then) =
-      __$PhotoManagerMediaDeviceFileCopyWithImpl<$Res>;
+  factory _$$PhotoManagerMediaDeviceFileImplCopyWith(
+          _$PhotoManagerMediaDeviceFileImpl value,
+          $Res Function(_$PhotoManagerMediaDeviceFileImpl) then) =
+      __$$PhotoManagerMediaDeviceFileImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {PhotoManagerMediaDeviceFileMetadata metadata, File? reCompressedFile});
 
@@ -271,29 +249,27 @@ abstract class _$PhotoManagerMediaDeviceFileCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PhotoManagerMediaDeviceFileCopyWithImpl<$Res>
-    extends _$PhotoManagerMediaDeviceFileCopyWithImpl<$Res>
-    implements _$PhotoManagerMediaDeviceFileCopyWith<$Res> {
-  __$PhotoManagerMediaDeviceFileCopyWithImpl(
-      _PhotoManagerMediaDeviceFile _value,
-      $Res Function(_PhotoManagerMediaDeviceFile) _then)
-      : super(_value, (v) => _then(v as _PhotoManagerMediaDeviceFile));
+class __$$PhotoManagerMediaDeviceFileImplCopyWithImpl<$Res>
+    extends _$PhotoManagerMediaDeviceFileCopyWithImpl<$Res,
+        _$PhotoManagerMediaDeviceFileImpl>
+    implements _$$PhotoManagerMediaDeviceFileImplCopyWith<$Res> {
+  __$$PhotoManagerMediaDeviceFileImplCopyWithImpl(
+      _$PhotoManagerMediaDeviceFileImpl _value,
+      $Res Function(_$PhotoManagerMediaDeviceFileImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PhotoManagerMediaDeviceFile get _value =>
-      super._value as _PhotoManagerMediaDeviceFile;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? metadata = freezed,
+    Object? metadata = null,
     Object? reCompressedFile = freezed,
   }) {
-    return _then(_PhotoManagerMediaDeviceFile(
-      metadata: metadata == freezed
+    return _then(_$PhotoManagerMediaDeviceFileImpl(
+      metadata: null == metadata
           ? _value.metadata
           : metadata // ignore: cast_nullable_to_non_nullable
               as PhotoManagerMediaDeviceFileMetadata,
-      reCompressedFile: reCompressedFile == freezed
+      reCompressedFile: freezed == reCompressedFile
           ? _value.reCompressedFile
           : reCompressedFile // ignore: cast_nullable_to_non_nullable
               as File?,
@@ -303,8 +279,8 @@ class __$PhotoManagerMediaDeviceFileCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PhotoManagerMediaDeviceFile extends _PhotoManagerMediaDeviceFile {
-  const _$_PhotoManagerMediaDeviceFile(
+class _$PhotoManagerMediaDeviceFileImpl extends _PhotoManagerMediaDeviceFile {
+  const _$PhotoManagerMediaDeviceFileImpl(
       {required this.metadata, required this.reCompressedFile})
       : super._();
 
@@ -319,10 +295,10 @@ class _$_PhotoManagerMediaDeviceFile extends _PhotoManagerMediaDeviceFile {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PhotoManagerMediaDeviceFile &&
+            other is _$PhotoManagerMediaDeviceFileImpl &&
             (identical(other.metadata, metadata) ||
                 other.metadata == metadata) &&
             (identical(other.reCompressedFile, reCompressedFile) ||
@@ -334,16 +310,18 @@ class _$_PhotoManagerMediaDeviceFile extends _PhotoManagerMediaDeviceFile {
 
   @JsonKey(ignore: true)
   @override
-  _$PhotoManagerMediaDeviceFileCopyWith<_PhotoManagerMediaDeviceFile>
-      get copyWith => __$PhotoManagerMediaDeviceFileCopyWithImpl<
-          _PhotoManagerMediaDeviceFile>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PhotoManagerMediaDeviceFileImplCopyWith<_$PhotoManagerMediaDeviceFileImpl>
+      get copyWith => __$$PhotoManagerMediaDeviceFileImplCopyWithImpl<
+          _$PhotoManagerMediaDeviceFileImpl>(this, _$identity);
 }
 
 abstract class _PhotoManagerMediaDeviceFile
     extends PhotoManagerMediaDeviceFile {
   const factory _PhotoManagerMediaDeviceFile(
-      {required PhotoManagerMediaDeviceFileMetadata metadata,
-      required File? reCompressedFile}) = _$_PhotoManagerMediaDeviceFile;
+          {required final PhotoManagerMediaDeviceFileMetadata metadata,
+          required final File? reCompressedFile}) =
+      _$PhotoManagerMediaDeviceFileImpl;
   const _PhotoManagerMediaDeviceFile._() : super._();
 
   @override
@@ -352,6 +330,6 @@ abstract class _PhotoManagerMediaDeviceFile
   File? get reCompressedFile;
   @override
   @JsonKey(ignore: true)
-  _$PhotoManagerMediaDeviceFileCopyWith<_PhotoManagerMediaDeviceFile>
+  _$$PhotoManagerMediaDeviceFileImplCopyWith<_$PhotoManagerMediaDeviceFileImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

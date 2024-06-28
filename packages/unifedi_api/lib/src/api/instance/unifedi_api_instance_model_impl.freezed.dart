@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_instance_model_impl.dart';
 
@@ -11,103 +12,11 @@ part of 'unifedi_api_instance_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiInstance _$UnifediApiInstanceFromJson(Map<String, dynamic> json) {
   return _UnifediApiInstance.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiInstanceTearOff {
-  const _$UnifediApiInstanceTearOff();
-
-  _UnifediApiInstance call(
-      {@HiveField(0)
-          required String type,
-      @JsonKey(name: 'version')
-      @HiveField(1)
-          required String versionString,
-      @HiveField(2)
-          required UnifediApiInstanceLimits? limits,
-      @JsonKey(name: 'vapid_public_key')
-      @HiveField(3)
-          required String? vapidPublicKey,
-      @JsonKey(name: 'background_image')
-      @HiveField(4)
-          required String? backgroundImage,
-      @JsonKey(name: 'contact_account')
-      @HiveField(5)
-          required UnifediApiAccount? contactAccount,
-      @HiveField(6)
-          required List<String>? features,
-      @JsonKey(name: 'post_formats')
-      @HiveField(7)
-          required List<String>? postFormats,
-      @HiveField(8)
-      @JsonKey(name: 'account_activation')
-          required bool? accountActivationRequired,
-      @HiveField(9)
-          required UnifediApiInstanceFederation? federation,
-      @HiveField(10)
-          required UnifediApiInstanceUrls? urls,
-      @HiveField(11)
-          required UnifediApiInstanceStats? stats,
-      @HiveField(12)
-          required String uri,
-      @HiveField(13)
-          required String? title,
-      @JsonKey(name: 'short_description')
-      @HiveField(14)
-          required String? shortDescription,
-      @HiveField(15)
-          required String? description,
-      @HiveField(16)
-          required String? email,
-      @HiveField(17)
-          required String? thumbnail,
-      @HiveField(18)
-          required List<String>? languages,
-      @HiveField(19)
-          required bool? registrations,
-      @JsonKey(name: 'approval_required')
-      @HiveField(20)
-          required bool? approvalRequired,
-      @JsonKey(name: 'invites_enabled')
-      @HiveField(21)
-          required bool? invitesEnabled}) {
-    return _UnifediApiInstance(
-      type: type,
-      versionString: versionString,
-      limits: limits,
-      vapidPublicKey: vapidPublicKey,
-      backgroundImage: backgroundImage,
-      contactAccount: contactAccount,
-      features: features,
-      postFormats: postFormats,
-      accountActivationRequired: accountActivationRequired,
-      federation: federation,
-      urls: urls,
-      stats: stats,
-      uri: uri,
-      title: title,
-      shortDescription: shortDescription,
-      description: description,
-      email: email,
-      thumbnail: thumbnail,
-      languages: languages,
-      registrations: registrations,
-      approvalRequired: approvalRequired,
-      invitesEnabled: invitesEnabled,
-    );
-  }
-
-  UnifediApiInstance fromJson(Map<String, Object?> json) {
-    return UnifediApiInstance.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiInstance = _$UnifediApiInstanceTearOff();
 
 /// @nodoc
 mixin _$UnifediApiInstance {
@@ -176,61 +85,37 @@ mixin _$UnifediApiInstance {
 abstract class $UnifediApiInstanceCopyWith<$Res> {
   factory $UnifediApiInstanceCopyWith(
           UnifediApiInstance value, $Res Function(UnifediApiInstance) then) =
-      _$UnifediApiInstanceCopyWithImpl<$Res>;
+      _$UnifediApiInstanceCopyWithImpl<$Res, UnifediApiInstance>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-          String type,
-      @JsonKey(name: 'version')
-      @HiveField(1)
-          String versionString,
-      @HiveField(2)
-          UnifediApiInstanceLimits? limits,
-      @JsonKey(name: 'vapid_public_key')
-      @HiveField(3)
-          String? vapidPublicKey,
-      @JsonKey(name: 'background_image')
-      @HiveField(4)
-          String? backgroundImage,
+      {@HiveField(0) String type,
+      @JsonKey(name: 'version') @HiveField(1) String versionString,
+      @HiveField(2) UnifediApiInstanceLimits? limits,
+      @JsonKey(name: 'vapid_public_key') @HiveField(3) String? vapidPublicKey,
+      @JsonKey(name: 'background_image') @HiveField(4) String? backgroundImage,
       @JsonKey(name: 'contact_account')
       @HiveField(5)
-          UnifediApiAccount? contactAccount,
-      @HiveField(6)
-          List<String>? features,
-      @JsonKey(name: 'post_formats')
-      @HiveField(7)
-          List<String>? postFormats,
+      UnifediApiAccount? contactAccount,
+      @HiveField(6) List<String>? features,
+      @JsonKey(name: 'post_formats') @HiveField(7) List<String>? postFormats,
       @HiveField(8)
       @JsonKey(name: 'account_activation')
-          bool? accountActivationRequired,
-      @HiveField(9)
-          UnifediApiInstanceFederation? federation,
-      @HiveField(10)
-          UnifediApiInstanceUrls? urls,
-      @HiveField(11)
-          UnifediApiInstanceStats? stats,
-      @HiveField(12)
-          String uri,
-      @HiveField(13)
-          String? title,
+      bool? accountActivationRequired,
+      @HiveField(9) UnifediApiInstanceFederation? federation,
+      @HiveField(10) UnifediApiInstanceUrls? urls,
+      @HiveField(11) UnifediApiInstanceStats? stats,
+      @HiveField(12) String uri,
+      @HiveField(13) String? title,
       @JsonKey(name: 'short_description')
       @HiveField(14)
-          String? shortDescription,
-      @HiveField(15)
-          String? description,
-      @HiveField(16)
-          String? email,
-      @HiveField(17)
-          String? thumbnail,
-      @HiveField(18)
-          List<String>? languages,
-      @HiveField(19)
-          bool? registrations,
-      @JsonKey(name: 'approval_required')
-      @HiveField(20)
-          bool? approvalRequired,
-      @JsonKey(name: 'invites_enabled')
-      @HiveField(21)
-          bool? invitesEnabled});
+      String? shortDescription,
+      @HiveField(15) String? description,
+      @HiveField(16) String? email,
+      @HiveField(17) String? thumbnail,
+      @HiveField(18) List<String>? languages,
+      @HiveField(19) bool? registrations,
+      @JsonKey(name: 'approval_required') @HiveField(20) bool? approvalRequired,
+      @JsonKey(name: 'invites_enabled') @HiveField(21) bool? invitesEnabled});
 
   $UnifediApiInstanceLimitsCopyWith<$Res>? get limits;
   $UnifediApiAccountCopyWith<$Res>? get contactAccount;
@@ -240,18 +125,20 @@ abstract class $UnifediApiInstanceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UnifediApiInstanceCopyWithImpl<$Res>
+class _$UnifediApiInstanceCopyWithImpl<$Res, $Val extends UnifediApiInstance>
     implements $UnifediApiInstanceCopyWith<$Res> {
   _$UnifediApiInstanceCopyWithImpl(this._value, this._then);
 
-  final UnifediApiInstance _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiInstance) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? type = freezed,
-    Object? versionString = freezed,
+    Object? type = null,
+    Object? versionString = null,
     Object? limits = freezed,
     Object? vapidPublicKey = freezed,
     Object? backgroundImage = freezed,
@@ -262,7 +149,7 @@ class _$UnifediApiInstanceCopyWithImpl<$Res>
     Object? federation = freezed,
     Object? urls = freezed,
     Object? stats = freezed,
-    Object? uri = freezed,
+    Object? uri = null,
     Object? title = freezed,
     Object? shortDescription = freezed,
     Object? description = freezed,
@@ -274,120 +161,123 @@ class _$UnifediApiInstanceCopyWithImpl<$Res>
     Object? invitesEnabled = freezed,
   }) {
     return _then(_value.copyWith(
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      versionString: versionString == freezed
+      versionString: null == versionString
           ? _value.versionString
           : versionString // ignore: cast_nullable_to_non_nullable
               as String,
-      limits: limits == freezed
+      limits: freezed == limits
           ? _value.limits
           : limits // ignore: cast_nullable_to_non_nullable
               as UnifediApiInstanceLimits?,
-      vapidPublicKey: vapidPublicKey == freezed
+      vapidPublicKey: freezed == vapidPublicKey
           ? _value.vapidPublicKey
           : vapidPublicKey // ignore: cast_nullable_to_non_nullable
               as String?,
-      backgroundImage: backgroundImage == freezed
+      backgroundImage: freezed == backgroundImage
           ? _value.backgroundImage
           : backgroundImage // ignore: cast_nullable_to_non_nullable
               as String?,
-      contactAccount: contactAccount == freezed
+      contactAccount: freezed == contactAccount
           ? _value.contactAccount
           : contactAccount // ignore: cast_nullable_to_non_nullable
               as UnifediApiAccount?,
-      features: features == freezed
+      features: freezed == features
           ? _value.features
           : features // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      postFormats: postFormats == freezed
+      postFormats: freezed == postFormats
           ? _value.postFormats
           : postFormats // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      accountActivationRequired: accountActivationRequired == freezed
+      accountActivationRequired: freezed == accountActivationRequired
           ? _value.accountActivationRequired
           : accountActivationRequired // ignore: cast_nullable_to_non_nullable
               as bool?,
-      federation: federation == freezed
+      federation: freezed == federation
           ? _value.federation
           : federation // ignore: cast_nullable_to_non_nullable
               as UnifediApiInstanceFederation?,
-      urls: urls == freezed
+      urls: freezed == urls
           ? _value.urls
           : urls // ignore: cast_nullable_to_non_nullable
               as UnifediApiInstanceUrls?,
-      stats: stats == freezed
+      stats: freezed == stats
           ? _value.stats
           : stats // ignore: cast_nullable_to_non_nullable
               as UnifediApiInstanceStats?,
-      uri: uri == freezed
+      uri: null == uri
           ? _value.uri
           : uri // ignore: cast_nullable_to_non_nullable
               as String,
-      title: title == freezed
+      title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
-      shortDescription: shortDescription == freezed
+      shortDescription: freezed == shortDescription
           ? _value.shortDescription
           : shortDescription // ignore: cast_nullable_to_non_nullable
               as String?,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      email: email == freezed
+      email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String?,
-      thumbnail: thumbnail == freezed
+      thumbnail: freezed == thumbnail
           ? _value.thumbnail
           : thumbnail // ignore: cast_nullable_to_non_nullable
               as String?,
-      languages: languages == freezed
+      languages: freezed == languages
           ? _value.languages
           : languages // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      registrations: registrations == freezed
+      registrations: freezed == registrations
           ? _value.registrations
           : registrations // ignore: cast_nullable_to_non_nullable
               as bool?,
-      approvalRequired: approvalRequired == freezed
+      approvalRequired: freezed == approvalRequired
           ? _value.approvalRequired
           : approvalRequired // ignore: cast_nullable_to_non_nullable
               as bool?,
-      invitesEnabled: invitesEnabled == freezed
+      invitesEnabled: freezed == invitesEnabled
           ? _value.invitesEnabled
           : invitesEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiInstanceLimitsCopyWith<$Res>? get limits {
     if (_value.limits == null) {
       return null;
     }
 
     return $UnifediApiInstanceLimitsCopyWith<$Res>(_value.limits!, (value) {
-      return _then(_value.copyWith(limits: value));
+      return _then(_value.copyWith(limits: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiAccountCopyWith<$Res>? get contactAccount {
     if (_value.contactAccount == null) {
       return null;
     }
 
     return $UnifediApiAccountCopyWith<$Res>(_value.contactAccount!, (value) {
-      return _then(_value.copyWith(contactAccount: value));
+      return _then(_value.copyWith(contactAccount: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiInstanceFederationCopyWith<$Res>? get federation {
     if (_value.federation == null) {
       return null;
@@ -395,94 +285,72 @@ class _$UnifediApiInstanceCopyWithImpl<$Res>
 
     return $UnifediApiInstanceFederationCopyWith<$Res>(_value.federation!,
         (value) {
-      return _then(_value.copyWith(federation: value));
+      return _then(_value.copyWith(federation: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiInstanceUrlsCopyWith<$Res>? get urls {
     if (_value.urls == null) {
       return null;
     }
 
     return $UnifediApiInstanceUrlsCopyWith<$Res>(_value.urls!, (value) {
-      return _then(_value.copyWith(urls: value));
+      return _then(_value.copyWith(urls: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiInstanceStatsCopyWith<$Res>? get stats {
     if (_value.stats == null) {
       return null;
     }
 
     return $UnifediApiInstanceStatsCopyWith<$Res>(_value.stats!, (value) {
-      return _then(_value.copyWith(stats: value));
+      return _then(_value.copyWith(stats: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiInstanceCopyWith<$Res>
+abstract class _$$UnifediApiInstanceImplCopyWith<$Res>
     implements $UnifediApiInstanceCopyWith<$Res> {
-  factory _$UnifediApiInstanceCopyWith(
-          _UnifediApiInstance value, $Res Function(_UnifediApiInstance) then) =
-      __$UnifediApiInstanceCopyWithImpl<$Res>;
+  factory _$$UnifediApiInstanceImplCopyWith(_$UnifediApiInstanceImpl value,
+          $Res Function(_$UnifediApiInstanceImpl) then) =
+      __$$UnifediApiInstanceImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-          String type,
-      @JsonKey(name: 'version')
-      @HiveField(1)
-          String versionString,
-      @HiveField(2)
-          UnifediApiInstanceLimits? limits,
-      @JsonKey(name: 'vapid_public_key')
-      @HiveField(3)
-          String? vapidPublicKey,
-      @JsonKey(name: 'background_image')
-      @HiveField(4)
-          String? backgroundImage,
+      {@HiveField(0) String type,
+      @JsonKey(name: 'version') @HiveField(1) String versionString,
+      @HiveField(2) UnifediApiInstanceLimits? limits,
+      @JsonKey(name: 'vapid_public_key') @HiveField(3) String? vapidPublicKey,
+      @JsonKey(name: 'background_image') @HiveField(4) String? backgroundImage,
       @JsonKey(name: 'contact_account')
       @HiveField(5)
-          UnifediApiAccount? contactAccount,
-      @HiveField(6)
-          List<String>? features,
-      @JsonKey(name: 'post_formats')
-      @HiveField(7)
-          List<String>? postFormats,
+      UnifediApiAccount? contactAccount,
+      @HiveField(6) List<String>? features,
+      @JsonKey(name: 'post_formats') @HiveField(7) List<String>? postFormats,
       @HiveField(8)
       @JsonKey(name: 'account_activation')
-          bool? accountActivationRequired,
-      @HiveField(9)
-          UnifediApiInstanceFederation? federation,
-      @HiveField(10)
-          UnifediApiInstanceUrls? urls,
-      @HiveField(11)
-          UnifediApiInstanceStats? stats,
-      @HiveField(12)
-          String uri,
-      @HiveField(13)
-          String? title,
+      bool? accountActivationRequired,
+      @HiveField(9) UnifediApiInstanceFederation? federation,
+      @HiveField(10) UnifediApiInstanceUrls? urls,
+      @HiveField(11) UnifediApiInstanceStats? stats,
+      @HiveField(12) String uri,
+      @HiveField(13) String? title,
       @JsonKey(name: 'short_description')
       @HiveField(14)
-          String? shortDescription,
-      @HiveField(15)
-          String? description,
-      @HiveField(16)
-          String? email,
-      @HiveField(17)
-          String? thumbnail,
-      @HiveField(18)
-          List<String>? languages,
-      @HiveField(19)
-          bool? registrations,
-      @JsonKey(name: 'approval_required')
-      @HiveField(20)
-          bool? approvalRequired,
-      @JsonKey(name: 'invites_enabled')
-      @HiveField(21)
-          bool? invitesEnabled});
+      String? shortDescription,
+      @HiveField(15) String? description,
+      @HiveField(16) String? email,
+      @HiveField(17) String? thumbnail,
+      @HiveField(18) List<String>? languages,
+      @HiveField(19) bool? registrations,
+      @JsonKey(name: 'approval_required') @HiveField(20) bool? approvalRequired,
+      @JsonKey(name: 'invites_enabled') @HiveField(21) bool? invitesEnabled});
 
   @override
   $UnifediApiInstanceLimitsCopyWith<$Res>? get limits;
@@ -497,20 +365,18 @@ abstract class _$UnifediApiInstanceCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiInstanceCopyWithImpl<$Res>
-    extends _$UnifediApiInstanceCopyWithImpl<$Res>
-    implements _$UnifediApiInstanceCopyWith<$Res> {
-  __$UnifediApiInstanceCopyWithImpl(
-      _UnifediApiInstance _value, $Res Function(_UnifediApiInstance) _then)
-      : super(_value, (v) => _then(v as _UnifediApiInstance));
+class __$$UnifediApiInstanceImplCopyWithImpl<$Res>
+    extends _$UnifediApiInstanceCopyWithImpl<$Res, _$UnifediApiInstanceImpl>
+    implements _$$UnifediApiInstanceImplCopyWith<$Res> {
+  __$$UnifediApiInstanceImplCopyWithImpl(_$UnifediApiInstanceImpl _value,
+      $Res Function(_$UnifediApiInstanceImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiInstance get _value => super._value as _UnifediApiInstance;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? type = freezed,
-    Object? versionString = freezed,
+    Object? type = null,
+    Object? versionString = null,
     Object? limits = freezed,
     Object? vapidPublicKey = freezed,
     Object? backgroundImage = freezed,
@@ -521,7 +387,7 @@ class __$UnifediApiInstanceCopyWithImpl<$Res>
     Object? federation = freezed,
     Object? urls = freezed,
     Object? stats = freezed,
-    Object? uri = freezed,
+    Object? uri = null,
     Object? title = freezed,
     Object? shortDescription = freezed,
     Object? description = freezed,
@@ -532,92 +398,92 @@ class __$UnifediApiInstanceCopyWithImpl<$Res>
     Object? approvalRequired = freezed,
     Object? invitesEnabled = freezed,
   }) {
-    return _then(_UnifediApiInstance(
-      type: type == freezed
+    return _then(_$UnifediApiInstanceImpl(
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      versionString: versionString == freezed
+      versionString: null == versionString
           ? _value.versionString
           : versionString // ignore: cast_nullable_to_non_nullable
               as String,
-      limits: limits == freezed
+      limits: freezed == limits
           ? _value.limits
           : limits // ignore: cast_nullable_to_non_nullable
               as UnifediApiInstanceLimits?,
-      vapidPublicKey: vapidPublicKey == freezed
+      vapidPublicKey: freezed == vapidPublicKey
           ? _value.vapidPublicKey
           : vapidPublicKey // ignore: cast_nullable_to_non_nullable
               as String?,
-      backgroundImage: backgroundImage == freezed
+      backgroundImage: freezed == backgroundImage
           ? _value.backgroundImage
           : backgroundImage // ignore: cast_nullable_to_non_nullable
               as String?,
-      contactAccount: contactAccount == freezed
+      contactAccount: freezed == contactAccount
           ? _value.contactAccount
           : contactAccount // ignore: cast_nullable_to_non_nullable
               as UnifediApiAccount?,
-      features: features == freezed
-          ? _value.features
+      features: freezed == features
+          ? _value._features
           : features // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      postFormats: postFormats == freezed
-          ? _value.postFormats
+      postFormats: freezed == postFormats
+          ? _value._postFormats
           : postFormats // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      accountActivationRequired: accountActivationRequired == freezed
+      accountActivationRequired: freezed == accountActivationRequired
           ? _value.accountActivationRequired
           : accountActivationRequired // ignore: cast_nullable_to_non_nullable
               as bool?,
-      federation: federation == freezed
+      federation: freezed == federation
           ? _value.federation
           : federation // ignore: cast_nullable_to_non_nullable
               as UnifediApiInstanceFederation?,
-      urls: urls == freezed
+      urls: freezed == urls
           ? _value.urls
           : urls // ignore: cast_nullable_to_non_nullable
               as UnifediApiInstanceUrls?,
-      stats: stats == freezed
+      stats: freezed == stats
           ? _value.stats
           : stats // ignore: cast_nullable_to_non_nullable
               as UnifediApiInstanceStats?,
-      uri: uri == freezed
+      uri: null == uri
           ? _value.uri
           : uri // ignore: cast_nullable_to_non_nullable
               as String,
-      title: title == freezed
+      title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
-      shortDescription: shortDescription == freezed
+      shortDescription: freezed == shortDescription
           ? _value.shortDescription
           : shortDescription // ignore: cast_nullable_to_non_nullable
               as String?,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      email: email == freezed
+      email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String?,
-      thumbnail: thumbnail == freezed
+      thumbnail: freezed == thumbnail
           ? _value.thumbnail
           : thumbnail // ignore: cast_nullable_to_non_nullable
               as String?,
-      languages: languages == freezed
-          ? _value.languages
+      languages: freezed == languages
+          ? _value._languages
           : languages // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      registrations: registrations == freezed
+      registrations: freezed == registrations
           ? _value.registrations
           : registrations // ignore: cast_nullable_to_non_nullable
               as bool?,
-      approvalRequired: approvalRequired == freezed
+      approvalRequired: freezed == approvalRequired
           ? _value.approvalRequired
           : approvalRequired // ignore: cast_nullable_to_non_nullable
               as bool?,
-      invitesEnabled: invitesEnabled == freezed
+      invitesEnabled: freezed == invitesEnabled
           ? _value.invitesEnabled
           : invitesEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -627,64 +493,52 @@ class __$UnifediApiInstanceCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiInstance implements _UnifediApiInstance {
-  const _$_UnifediApiInstance(
-      {@HiveField(0)
-          required this.type,
-      @JsonKey(name: 'version')
-      @HiveField(1)
-          required this.versionString,
-      @HiveField(2)
-          required this.limits,
+class _$UnifediApiInstanceImpl implements _UnifediApiInstance {
+  const _$UnifediApiInstanceImpl(
+      {@HiveField(0) required this.type,
+      @JsonKey(name: 'version') @HiveField(1) required this.versionString,
+      @HiveField(2) required this.limits,
       @JsonKey(name: 'vapid_public_key')
       @HiveField(3)
-          required this.vapidPublicKey,
+      required this.vapidPublicKey,
       @JsonKey(name: 'background_image')
       @HiveField(4)
-          required this.backgroundImage,
+      required this.backgroundImage,
       @JsonKey(name: 'contact_account')
       @HiveField(5)
-          required this.contactAccount,
-      @HiveField(6)
-          required this.features,
+      required this.contactAccount,
+      @HiveField(6) required final List<String>? features,
       @JsonKey(name: 'post_formats')
       @HiveField(7)
-          required this.postFormats,
+      required final List<String>? postFormats,
       @HiveField(8)
       @JsonKey(name: 'account_activation')
-          required this.accountActivationRequired,
-      @HiveField(9)
-          required this.federation,
-      @HiveField(10)
-          required this.urls,
-      @HiveField(11)
-          required this.stats,
-      @HiveField(12)
-          required this.uri,
-      @HiveField(13)
-          required this.title,
+      required this.accountActivationRequired,
+      @HiveField(9) required this.federation,
+      @HiveField(10) required this.urls,
+      @HiveField(11) required this.stats,
+      @HiveField(12) required this.uri,
+      @HiveField(13) required this.title,
       @JsonKey(name: 'short_description')
       @HiveField(14)
-          required this.shortDescription,
-      @HiveField(15)
-          required this.description,
-      @HiveField(16)
-          required this.email,
-      @HiveField(17)
-          required this.thumbnail,
-      @HiveField(18)
-          required this.languages,
-      @HiveField(19)
-          required this.registrations,
+      required this.shortDescription,
+      @HiveField(15) required this.description,
+      @HiveField(16) required this.email,
+      @HiveField(17) required this.thumbnail,
+      @HiveField(18) required final List<String>? languages,
+      @HiveField(19) required this.registrations,
       @JsonKey(name: 'approval_required')
       @HiveField(20)
-          required this.approvalRequired,
+      required this.approvalRequired,
       @JsonKey(name: 'invites_enabled')
       @HiveField(21)
-          required this.invitesEnabled});
+      required this.invitesEnabled})
+      : _features = features,
+        _postFormats = postFormats,
+        _languages = languages;
 
-  factory _$_UnifediApiInstance.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiInstanceFromJson(json);
+  factory _$UnifediApiInstanceImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiInstanceImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -708,13 +562,29 @@ class _$_UnifediApiInstance implements _UnifediApiInstance {
   @JsonKey(name: 'contact_account')
   @HiveField(5)
   final UnifediApiAccount? contactAccount;
+  final List<String>? _features;
   @override
   @HiveField(6)
-  final List<String>? features;
+  List<String>? get features {
+    final value = _features;
+    if (value == null) return null;
+    if (_features is EqualUnmodifiableListView) return _features;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  final List<String>? _postFormats;
   @override
   @JsonKey(name: 'post_formats')
   @HiveField(7)
-  final List<String>? postFormats;
+  List<String>? get postFormats {
+    final value = _postFormats;
+    if (value == null) return null;
+    if (_postFormats is EqualUnmodifiableListView) return _postFormats;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(8)
   @JsonKey(name: 'account_activation')
@@ -747,9 +617,17 @@ class _$_UnifediApiInstance implements _UnifediApiInstance {
   @override
   @HiveField(17)
   final String? thumbnail;
+  final List<String>? _languages;
   @override
   @HiveField(18)
-  final List<String>? languages;
+  List<String>? get languages {
+    final value = _languages;
+    if (value == null) return null;
+    if (_languages is EqualUnmodifiableListView) return _languages;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(19)
   final bool? registrations;
@@ -768,10 +646,10 @@ class _$_UnifediApiInstance implements _UnifediApiInstance {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiInstance &&
+            other is _$UnifediApiInstanceImpl &&
             (identical(other.type, type) || other.type == type) &&
             (identical(other.versionString, versionString) ||
                 other.versionString == versionString) &&
@@ -782,9 +660,9 @@ class _$_UnifediApiInstance implements _UnifediApiInstance {
                 other.backgroundImage == backgroundImage) &&
             (identical(other.contactAccount, contactAccount) ||
                 other.contactAccount == contactAccount) &&
-            const DeepCollectionEquality().equals(other.features, features) &&
+            const DeepCollectionEquality().equals(other._features, _features) &&
             const DeepCollectionEquality()
-                .equals(other.postFormats, postFormats) &&
+                .equals(other._postFormats, _postFormats) &&
             (identical(other.accountActivationRequired,
                     accountActivationRequired) ||
                 other.accountActivationRequired == accountActivationRequired) &&
@@ -801,7 +679,8 @@ class _$_UnifediApiInstance implements _UnifediApiInstance {
             (identical(other.email, email) || other.email == email) &&
             (identical(other.thumbnail, thumbnail) ||
                 other.thumbnail == thumbnail) &&
-            const DeepCollectionEquality().equals(other.languages, languages) &&
+            const DeepCollectionEquality()
+                .equals(other._languages, _languages) &&
             (identical(other.registrations, registrations) ||
                 other.registrations == registrations) &&
             (identical(other.approvalRequired, approvalRequired) ||
@@ -810,6 +689,7 @@ class _$_UnifediApiInstance implements _UnifediApiInstance {
                 other.invitesEnabled == invitesEnabled));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -819,8 +699,8 @@ class _$_UnifediApiInstance implements _UnifediApiInstance {
         vapidPublicKey,
         backgroundImage,
         contactAccount,
-        const DeepCollectionEquality().hash(features),
-        const DeepCollectionEquality().hash(postFormats),
+        const DeepCollectionEquality().hash(_features),
+        const DeepCollectionEquality().hash(_postFormats),
         accountActivationRequired,
         federation,
         urls,
@@ -831,7 +711,7 @@ class _$_UnifediApiInstance implements _UnifediApiInstance {
         description,
         email,
         thumbnail,
-        const DeepCollectionEquality().hash(languages),
+        const DeepCollectionEquality().hash(_languages),
         registrations,
         approvalRequired,
         invitesEnabled
@@ -839,73 +719,64 @@ class _$_UnifediApiInstance implements _UnifediApiInstance {
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiInstanceCopyWith<_UnifediApiInstance> get copyWith =>
-      __$UnifediApiInstanceCopyWithImpl<_UnifediApiInstance>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiInstanceImplCopyWith<_$UnifediApiInstanceImpl> get copyWith =>
+      __$$UnifediApiInstanceImplCopyWithImpl<_$UnifediApiInstanceImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiInstanceToJson(this);
+    return _$$UnifediApiInstanceImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiInstance implements UnifediApiInstance {
   const factory _UnifediApiInstance(
-      {@HiveField(0)
-          required String type,
+      {@HiveField(0) required final String type,
       @JsonKey(name: 'version')
       @HiveField(1)
-          required String versionString,
-      @HiveField(2)
-          required UnifediApiInstanceLimits? limits,
+      required final String versionString,
+      @HiveField(2) required final UnifediApiInstanceLimits? limits,
       @JsonKey(name: 'vapid_public_key')
       @HiveField(3)
-          required String? vapidPublicKey,
+      required final String? vapidPublicKey,
       @JsonKey(name: 'background_image')
       @HiveField(4)
-          required String? backgroundImage,
+      required final String? backgroundImage,
       @JsonKey(name: 'contact_account')
       @HiveField(5)
-          required UnifediApiAccount? contactAccount,
-      @HiveField(6)
-          required List<String>? features,
+      required final UnifediApiAccount? contactAccount,
+      @HiveField(6) required final List<String>? features,
       @JsonKey(name: 'post_formats')
       @HiveField(7)
-          required List<String>? postFormats,
+      required final List<String>? postFormats,
       @HiveField(8)
       @JsonKey(name: 'account_activation')
-          required bool? accountActivationRequired,
-      @HiveField(9)
-          required UnifediApiInstanceFederation? federation,
-      @HiveField(10)
-          required UnifediApiInstanceUrls? urls,
-      @HiveField(11)
-          required UnifediApiInstanceStats? stats,
-      @HiveField(12)
-          required String uri,
-      @HiveField(13)
-          required String? title,
+      required final bool? accountActivationRequired,
+      @HiveField(9) required final UnifediApiInstanceFederation? federation,
+      @HiveField(10) required final UnifediApiInstanceUrls? urls,
+      @HiveField(11) required final UnifediApiInstanceStats? stats,
+      @HiveField(12) required final String uri,
+      @HiveField(13) required final String? title,
       @JsonKey(name: 'short_description')
       @HiveField(14)
-          required String? shortDescription,
-      @HiveField(15)
-          required String? description,
-      @HiveField(16)
-          required String? email,
-      @HiveField(17)
-          required String? thumbnail,
-      @HiveField(18)
-          required List<String>? languages,
-      @HiveField(19)
-          required bool? registrations,
+      required final String? shortDescription,
+      @HiveField(15) required final String? description,
+      @HiveField(16) required final String? email,
+      @HiveField(17) required final String? thumbnail,
+      @HiveField(18) required final List<String>? languages,
+      @HiveField(19) required final bool? registrations,
       @JsonKey(name: 'approval_required')
       @HiveField(20)
-          required bool? approvalRequired,
+      required final bool? approvalRequired,
       @JsonKey(name: 'invites_enabled')
       @HiveField(21)
-          required bool? invitesEnabled}) = _$_UnifediApiInstance;
+      required final bool? invitesEnabled}) = _$UnifediApiInstanceImpl;
 
   factory _UnifediApiInstance.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiInstance.fromJson;
+      _$UnifediApiInstanceImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -984,6 +855,6 @@ abstract class _UnifediApiInstance implements UnifediApiInstance {
   bool? get invitesEnabled;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiInstanceCopyWith<_UnifediApiInstance> get copyWith =>
+  _$$UnifediApiInstanceImplCopyWith<_$UnifediApiInstanceImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

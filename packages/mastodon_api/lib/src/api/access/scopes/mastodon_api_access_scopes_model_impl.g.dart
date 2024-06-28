@@ -49,9 +49,9 @@ class MastodonApiAccessScopesAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiAccessScopes _$$_MastodonApiAccessScopesFromJson(
+_$MastodonApiAccessScopesImpl _$$MastodonApiAccessScopesImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiAccessScopes(
+    _$MastodonApiAccessScopesImpl(
       globalPermissions: (json['global_permissions'] as List<dynamic>)
           .map((e) => e as String)
           .toList(),
@@ -61,8 +61,8 @@ _$_MastodonApiAccessScopes _$$_MastodonApiAccessScopesFromJson(
           .toList(),
     );
 
-Map<String, dynamic> _$$_MastodonApiAccessScopesToJson(
-        _$_MastodonApiAccessScopes instance) =>
+Map<String, dynamic> _$$MastodonApiAccessScopesImplToJson(
+        _$MastodonApiAccessScopesImpl instance) =>
     <String, dynamic>{
       'global_permissions': instance.globalPermissions,
       'target_permissions':

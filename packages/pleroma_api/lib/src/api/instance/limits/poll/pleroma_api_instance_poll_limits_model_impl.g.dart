@@ -54,17 +54,17 @@ class PleromaApiInstancePollLimitsAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiInstancePollLimits _$$_PleromaApiInstancePollLimitsFromJson(
+_$PleromaApiInstancePollLimitsImpl _$$PleromaApiInstancePollLimitsImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiInstancePollLimits(
-      maxExpiration: json['max_expiration'] as int?,
-      maxOptionChars: json['max_option_chars'] as int?,
-      maxOptions: json['max_options'] as int?,
-      minExpiration: json['min_expiration'] as int?,
+    _$PleromaApiInstancePollLimitsImpl(
+      maxExpiration: (json['max_expiration'] as num?)?.toInt(),
+      maxOptionChars: (json['max_option_chars'] as num?)?.toInt(),
+      maxOptions: (json['max_options'] as num?)?.toInt(),
+      minExpiration: (json['min_expiration'] as num?)?.toInt(),
     );
 
-Map<String, dynamic> _$$_PleromaApiInstancePollLimitsToJson(
-    _$_PleromaApiInstancePollLimits instance) {
+Map<String, dynamic> _$$PleromaApiInstancePollLimitsImplToJson(
+    _$PleromaApiInstancePollLimitsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

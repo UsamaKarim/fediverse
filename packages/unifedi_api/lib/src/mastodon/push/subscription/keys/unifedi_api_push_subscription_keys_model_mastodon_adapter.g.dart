@@ -46,16 +46,16 @@ class UnifediApiPushSubscriptionKeysMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiPushSubscriptionKeysMastodonAdapter
-    _$$_UnifediApiPushSubscriptionKeysMastodonAdapterFromJson(
+_$UnifediApiPushSubscriptionKeysMastodonAdapterImpl
+    _$$UnifediApiPushSubscriptionKeysMastodonAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiPushSubscriptionKeysMastodonAdapter(
+        _$UnifediApiPushSubscriptionKeysMastodonAdapterImpl(
           MastodonApiPushSubscriptionKeys.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiPushSubscriptionKeysMastodonAdapterToJson(
-        _$_UnifediApiPushSubscriptionKeysMastodonAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiPushSubscriptionKeysMastodonAdapterImplToJson(
+        _$UnifediApiPushSubscriptionKeysMastodonAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

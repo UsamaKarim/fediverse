@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_poll_model_impl.dart';
 
@@ -11,46 +12,11 @@ part of 'pleroma_api_poll_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiPoll _$PleromaApiPollFromJson(Map<String, dynamic> json) {
   return _PleromaApiPoll.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiPollTearOff {
-  const _$PleromaApiPollTearOff();
-
-  _PleromaApiPoll call(
-      {@HiveField(0) required bool expired,
-      @HiveField(1) @JsonKey(name: 'expires_at') required DateTime? expiresAt,
-      @HiveField(2) required String? id,
-      @HiveField(3) required bool multiple,
-      @HiveField(4) required List<PleromaApiPollOption> options,
-      @HiveField(5) @JsonKey(name: 'own_votes') required List<int>? ownVotes,
-      @HiveField(6) required bool? voted,
-      @HiveField(7) @JsonKey(name: 'voters_count') required int? votersCount,
-      @HiveField(8) @JsonKey(name: 'votes_count') required int? votesCount}) {
-    return _PleromaApiPoll(
-      expired: expired,
-      expiresAt: expiresAt,
-      id: id,
-      multiple: multiple,
-      options: options,
-      ownVotes: ownVotes,
-      voted: voted,
-      votersCount: votersCount,
-      votesCount: votesCount,
-    );
-  }
-
-  PleromaApiPoll fromJson(Map<String, Object?> json) {
-    return PleromaApiPoll.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiPoll = _$PleromaApiPollTearOff();
 
 /// @nodoc
 mixin _$PleromaApiPoll {
@@ -87,7 +53,8 @@ mixin _$PleromaApiPoll {
 abstract class $PleromaApiPollCopyWith<$Res> {
   factory $PleromaApiPollCopyWith(
           PleromaApiPoll value, $Res Function(PleromaApiPoll) then) =
-      _$PleromaApiPollCopyWithImpl<$Res>;
+      _$PleromaApiPollCopyWithImpl<$Res, PleromaApiPoll>;
+  @useResult
   $Res call(
       {@HiveField(0) bool expired,
       @HiveField(1) @JsonKey(name: 'expires_at') DateTime? expiresAt,
@@ -101,74 +68,77 @@ abstract class $PleromaApiPollCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiPollCopyWithImpl<$Res>
+class _$PleromaApiPollCopyWithImpl<$Res, $Val extends PleromaApiPoll>
     implements $PleromaApiPollCopyWith<$Res> {
   _$PleromaApiPollCopyWithImpl(this._value, this._then);
 
-  final PleromaApiPoll _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiPoll) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? expired = freezed,
+    Object? expired = null,
     Object? expiresAt = freezed,
     Object? id = freezed,
-    Object? multiple = freezed,
-    Object? options = freezed,
+    Object? multiple = null,
+    Object? options = null,
     Object? ownVotes = freezed,
     Object? voted = freezed,
     Object? votersCount = freezed,
     Object? votesCount = freezed,
   }) {
     return _then(_value.copyWith(
-      expired: expired == freezed
+      expired: null == expired
           ? _value.expired
           : expired // ignore: cast_nullable_to_non_nullable
               as bool,
-      expiresAt: expiresAt == freezed
+      expiresAt: freezed == expiresAt
           ? _value.expiresAt
           : expiresAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      id: id == freezed
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String?,
-      multiple: multiple == freezed
+      multiple: null == multiple
           ? _value.multiple
           : multiple // ignore: cast_nullable_to_non_nullable
               as bool,
-      options: options == freezed
+      options: null == options
           ? _value.options
           : options // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiPollOption>,
-      ownVotes: ownVotes == freezed
+      ownVotes: freezed == ownVotes
           ? _value.ownVotes
           : ownVotes // ignore: cast_nullable_to_non_nullable
               as List<int>?,
-      voted: voted == freezed
+      voted: freezed == voted
           ? _value.voted
           : voted // ignore: cast_nullable_to_non_nullable
               as bool?,
-      votersCount: votersCount == freezed
+      votersCount: freezed == votersCount
           ? _value.votersCount
           : votersCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      votesCount: votesCount == freezed
+      votesCount: freezed == votesCount
           ? _value.votesCount
           : votesCount // ignore: cast_nullable_to_non_nullable
               as int?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiPollCopyWith<$Res>
+abstract class _$$PleromaApiPollImplCopyWith<$Res>
     implements $PleromaApiPollCopyWith<$Res> {
-  factory _$PleromaApiPollCopyWith(
-          _PleromaApiPoll value, $Res Function(_PleromaApiPoll) then) =
-      __$PleromaApiPollCopyWithImpl<$Res>;
+  factory _$$PleromaApiPollImplCopyWith(_$PleromaApiPollImpl value,
+          $Res Function(_$PleromaApiPollImpl) then) =
+      __$$PleromaApiPollImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) bool expired,
       @HiveField(1) @JsonKey(name: 'expires_at') DateTime? expiresAt,
@@ -182,62 +152,60 @@ abstract class _$PleromaApiPollCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiPollCopyWithImpl<$Res>
-    extends _$PleromaApiPollCopyWithImpl<$Res>
-    implements _$PleromaApiPollCopyWith<$Res> {
-  __$PleromaApiPollCopyWithImpl(
-      _PleromaApiPoll _value, $Res Function(_PleromaApiPoll) _then)
-      : super(_value, (v) => _then(v as _PleromaApiPoll));
+class __$$PleromaApiPollImplCopyWithImpl<$Res>
+    extends _$PleromaApiPollCopyWithImpl<$Res, _$PleromaApiPollImpl>
+    implements _$$PleromaApiPollImplCopyWith<$Res> {
+  __$$PleromaApiPollImplCopyWithImpl(
+      _$PleromaApiPollImpl _value, $Res Function(_$PleromaApiPollImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiPoll get _value => super._value as _PleromaApiPoll;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? expired = freezed,
+    Object? expired = null,
     Object? expiresAt = freezed,
     Object? id = freezed,
-    Object? multiple = freezed,
-    Object? options = freezed,
+    Object? multiple = null,
+    Object? options = null,
     Object? ownVotes = freezed,
     Object? voted = freezed,
     Object? votersCount = freezed,
     Object? votesCount = freezed,
   }) {
-    return _then(_PleromaApiPoll(
-      expired: expired == freezed
+    return _then(_$PleromaApiPollImpl(
+      expired: null == expired
           ? _value.expired
           : expired // ignore: cast_nullable_to_non_nullable
               as bool,
-      expiresAt: expiresAt == freezed
+      expiresAt: freezed == expiresAt
           ? _value.expiresAt
           : expiresAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      id: id == freezed
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String?,
-      multiple: multiple == freezed
+      multiple: null == multiple
           ? _value.multiple
           : multiple // ignore: cast_nullable_to_non_nullable
               as bool,
-      options: options == freezed
-          ? _value.options
+      options: null == options
+          ? _value._options
           : options // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiPollOption>,
-      ownVotes: ownVotes == freezed
-          ? _value.ownVotes
+      ownVotes: freezed == ownVotes
+          ? _value._ownVotes
           : ownVotes // ignore: cast_nullable_to_non_nullable
               as List<int>?,
-      voted: voted == freezed
+      voted: freezed == voted
           ? _value.voted
           : voted // ignore: cast_nullable_to_non_nullable
               as bool?,
-      votersCount: votersCount == freezed
+      votersCount: freezed == votersCount
           ? _value.votersCount
           : votersCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      votesCount: votesCount == freezed
+      votesCount: freezed == votesCount
           ? _value.votesCount
           : votesCount // ignore: cast_nullable_to_non_nullable
               as int?,
@@ -247,20 +215,24 @@ class __$PleromaApiPollCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiPoll implements _PleromaApiPoll {
-  const _$_PleromaApiPoll(
+class _$PleromaApiPollImpl implements _PleromaApiPoll {
+  const _$PleromaApiPollImpl(
       {@HiveField(0) required this.expired,
       @HiveField(1) @JsonKey(name: 'expires_at') required this.expiresAt,
       @HiveField(2) required this.id,
       @HiveField(3) required this.multiple,
-      @HiveField(4) required this.options,
-      @HiveField(5) @JsonKey(name: 'own_votes') required this.ownVotes,
+      @HiveField(4) required final List<PleromaApiPollOption> options,
+      @HiveField(5)
+      @JsonKey(name: 'own_votes')
+      required final List<int>? ownVotes,
       @HiveField(6) required this.voted,
       @HiveField(7) @JsonKey(name: 'voters_count') required this.votersCount,
-      @HiveField(8) @JsonKey(name: 'votes_count') required this.votesCount});
+      @HiveField(8) @JsonKey(name: 'votes_count') required this.votesCount})
+      : _options = options,
+        _ownVotes = ownVotes;
 
-  factory _$_PleromaApiPoll.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiPollFromJson(json);
+  factory _$PleromaApiPollImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiPollImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -275,13 +247,27 @@ class _$_PleromaApiPoll implements _PleromaApiPoll {
   @override
   @HiveField(3)
   final bool multiple;
+  final List<PleromaApiPollOption> _options;
   @override
   @HiveField(4)
-  final List<PleromaApiPollOption> options;
+  List<PleromaApiPollOption> get options {
+    if (_options is EqualUnmodifiableListView) return _options;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_options);
+  }
+
+  final List<int>? _ownVotes;
   @override
   @HiveField(5)
   @JsonKey(name: 'own_votes')
-  final List<int>? ownVotes;
+  List<int>? get ownVotes {
+    final value = _ownVotes;
+    if (value == null) return null;
+    if (_ownVotes is EqualUnmodifiableListView) return _ownVotes;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(6)
   final bool? voted;
@@ -300,18 +286,18 @@ class _$_PleromaApiPoll implements _PleromaApiPoll {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiPoll &&
+            other is _$PleromaApiPollImpl &&
             (identical(other.expired, expired) || other.expired == expired) &&
             (identical(other.expiresAt, expiresAt) ||
                 other.expiresAt == expiresAt) &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.multiple, multiple) ||
                 other.multiple == multiple) &&
-            const DeepCollectionEquality().equals(other.options, options) &&
-            const DeepCollectionEquality().equals(other.ownVotes, ownVotes) &&
+            const DeepCollectionEquality().equals(other._options, _options) &&
+            const DeepCollectionEquality().equals(other._ownVotes, _ownVotes) &&
             (identical(other.voted, voted) || other.voted == voted) &&
             (identical(other.votersCount, votersCount) ||
                 other.votersCount == votersCount) &&
@@ -319,6 +305,7 @@ class _$_PleromaApiPoll implements _PleromaApiPoll {
                 other.votesCount == votesCount));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -326,50 +313,49 @@ class _$_PleromaApiPoll implements _PleromaApiPoll {
       expiresAt,
       id,
       multiple,
-      const DeepCollectionEquality().hash(options),
-      const DeepCollectionEquality().hash(ownVotes),
+      const DeepCollectionEquality().hash(_options),
+      const DeepCollectionEquality().hash(_ownVotes),
       voted,
       votersCount,
       votesCount);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiPollCopyWith<_PleromaApiPoll> get copyWith =>
-      __$PleromaApiPollCopyWithImpl<_PleromaApiPoll>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiPollImplCopyWith<_$PleromaApiPollImpl> get copyWith =>
+      __$$PleromaApiPollImplCopyWithImpl<_$PleromaApiPollImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiPollToJson(this);
+    return _$$PleromaApiPollImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiPoll implements PleromaApiPoll {
   const factory _PleromaApiPoll(
-      {@HiveField(0)
-          required bool expired,
+      {@HiveField(0) required final bool expired,
       @HiveField(1)
       @JsonKey(name: 'expires_at')
-          required DateTime? expiresAt,
-      @HiveField(2)
-          required String? id,
-      @HiveField(3)
-          required bool multiple,
-      @HiveField(4)
-          required List<PleromaApiPollOption> options,
+      required final DateTime? expiresAt,
+      @HiveField(2) required final String? id,
+      @HiveField(3) required final bool multiple,
+      @HiveField(4) required final List<PleromaApiPollOption> options,
       @HiveField(5)
       @JsonKey(name: 'own_votes')
-          required List<int>? ownVotes,
-      @HiveField(6)
-          required bool? voted,
+      required final List<int>? ownVotes,
+      @HiveField(6) required final bool? voted,
       @HiveField(7)
       @JsonKey(name: 'voters_count')
-          required int? votersCount,
+      required final int? votersCount,
       @HiveField(8)
       @JsonKey(name: 'votes_count')
-          required int? votesCount}) = _$_PleromaApiPoll;
+      required final int? votesCount}) = _$PleromaApiPollImpl;
 
   factory _PleromaApiPoll.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiPoll.fromJson;
+      _$PleromaApiPollImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -404,6 +390,6 @@ abstract class _PleromaApiPoll implements PleromaApiPoll {
   int? get votesCount;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiPollCopyWith<_PleromaApiPoll> get copyWith =>
+  _$$PleromaApiPollImplCopyWith<_$PleromaApiPollImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

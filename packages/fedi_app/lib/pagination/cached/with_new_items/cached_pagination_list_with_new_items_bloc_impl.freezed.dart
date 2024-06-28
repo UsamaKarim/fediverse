@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'cached_pagination_list_with_new_items_bloc_impl.dart';
 
@@ -11,27 +12,7 @@ part of 'cached_pagination_list_with_new_items_bloc_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$CalculateNewItemsInputDataTearOff {
-  const _$CalculateNewItemsInputDataTearOff();
-
-  _CalculateNewItemsInputData<TItem>
-      call<TItem extends IEqualComparableObj<TItem>>(
-          {required List<TItem>? superItems,
-          required List<TItem>? mergedNewItems,
-          required List<TItem> updatedItems}) {
-    return _CalculateNewItemsInputData<TItem>(
-      superItems: superItems,
-      mergedNewItems: mergedNewItems,
-      updatedItems: updatedItems,
-    );
-  }
-}
-
-/// @nodoc
-const $CalculateNewItemsInputData = _$CalculateNewItemsInputDataTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$CalculateNewItemsInputData<TItem extends IEqualComparableObj<TItem>> {
@@ -50,7 +31,9 @@ abstract class $CalculateNewItemsInputDataCopyWith<
   factory $CalculateNewItemsInputDataCopyWith(
           CalculateNewItemsInputData<TItem> value,
           $Res Function(CalculateNewItemsInputData<TItem>) then) =
-      _$CalculateNewItemsInputDataCopyWithImpl<TItem, $Res>;
+      _$CalculateNewItemsInputDataCopyWithImpl<TItem, $Res,
+          CalculateNewItemsInputData<TItem>>;
+  @useResult
   $Res call(
       {List<TItem>? superItems,
       List<TItem>? mergedNewItems,
@@ -59,46 +42,51 @@ abstract class $CalculateNewItemsInputDataCopyWith<
 
 /// @nodoc
 class _$CalculateNewItemsInputDataCopyWithImpl<
-    TItem extends IEqualComparableObj<TItem>,
-    $Res> implements $CalculateNewItemsInputDataCopyWith<TItem, $Res> {
+        TItem extends IEqualComparableObj<TItem>,
+        $Res,
+        $Val extends CalculateNewItemsInputData<TItem>>
+    implements $CalculateNewItemsInputDataCopyWith<TItem, $Res> {
   _$CalculateNewItemsInputDataCopyWithImpl(this._value, this._then);
 
-  final CalculateNewItemsInputData<TItem> _value;
   // ignore: unused_field
-  final $Res Function(CalculateNewItemsInputData<TItem>) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? superItems = freezed,
     Object? mergedNewItems = freezed,
-    Object? updatedItems = freezed,
+    Object? updatedItems = null,
   }) {
     return _then(_value.copyWith(
-      superItems: superItems == freezed
+      superItems: freezed == superItems
           ? _value.superItems
           : superItems // ignore: cast_nullable_to_non_nullable
               as List<TItem>?,
-      mergedNewItems: mergedNewItems == freezed
+      mergedNewItems: freezed == mergedNewItems
           ? _value.mergedNewItems
           : mergedNewItems // ignore: cast_nullable_to_non_nullable
               as List<TItem>?,
-      updatedItems: updatedItems == freezed
+      updatedItems: null == updatedItems
           ? _value.updatedItems
           : updatedItems // ignore: cast_nullable_to_non_nullable
               as List<TItem>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$CalculateNewItemsInputDataCopyWith<
+abstract class _$$CalculateNewItemsInputDataImplCopyWith<
     TItem extends IEqualComparableObj<TItem>,
     $Res> implements $CalculateNewItemsInputDataCopyWith<TItem, $Res> {
-  factory _$CalculateNewItemsInputDataCopyWith(
-          _CalculateNewItemsInputData<TItem> value,
-          $Res Function(_CalculateNewItemsInputData<TItem>) then) =
-      __$CalculateNewItemsInputDataCopyWithImpl<TItem, $Res>;
+  factory _$$CalculateNewItemsInputDataImplCopyWith(
+          _$CalculateNewItemsInputDataImpl<TItem> value,
+          $Res Function(_$CalculateNewItemsInputDataImpl<TItem>) then) =
+      __$$CalculateNewItemsInputDataImplCopyWithImpl<TItem, $Res>;
   @override
+  @useResult
   $Res call(
       {List<TItem>? superItems,
       List<TItem>? mergedNewItems,
@@ -106,36 +94,34 @@ abstract class _$CalculateNewItemsInputDataCopyWith<
 }
 
 /// @nodoc
-class __$CalculateNewItemsInputDataCopyWithImpl<
-        TItem extends IEqualComparableObj<TItem>,
-        $Res> extends _$CalculateNewItemsInputDataCopyWithImpl<TItem, $Res>
-    implements _$CalculateNewItemsInputDataCopyWith<TItem, $Res> {
-  __$CalculateNewItemsInputDataCopyWithImpl(
-      _CalculateNewItemsInputData<TItem> _value,
-      $Res Function(_CalculateNewItemsInputData<TItem>) _then)
-      : super(_value, (v) => _then(v as _CalculateNewItemsInputData<TItem>));
+class __$$CalculateNewItemsInputDataImplCopyWithImpl<
+        TItem extends IEqualComparableObj<TItem>, $Res>
+    extends _$CalculateNewItemsInputDataCopyWithImpl<TItem, $Res,
+        _$CalculateNewItemsInputDataImpl<TItem>>
+    implements _$$CalculateNewItemsInputDataImplCopyWith<TItem, $Res> {
+  __$$CalculateNewItemsInputDataImplCopyWithImpl(
+      _$CalculateNewItemsInputDataImpl<TItem> _value,
+      $Res Function(_$CalculateNewItemsInputDataImpl<TItem>) _then)
+      : super(_value, _then);
 
-  @override
-  _CalculateNewItemsInputData<TItem> get _value =>
-      super._value as _CalculateNewItemsInputData<TItem>;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? superItems = freezed,
     Object? mergedNewItems = freezed,
-    Object? updatedItems = freezed,
+    Object? updatedItems = null,
   }) {
-    return _then(_CalculateNewItemsInputData<TItem>(
-      superItems: superItems == freezed
-          ? _value.superItems
+    return _then(_$CalculateNewItemsInputDataImpl<TItem>(
+      superItems: freezed == superItems
+          ? _value._superItems
           : superItems // ignore: cast_nullable_to_non_nullable
               as List<TItem>?,
-      mergedNewItems: mergedNewItems == freezed
-          ? _value.mergedNewItems
+      mergedNewItems: freezed == mergedNewItems
+          ? _value._mergedNewItems
           : mergedNewItems // ignore: cast_nullable_to_non_nullable
               as List<TItem>?,
-      updatedItems: updatedItems == freezed
-          ? _value.updatedItems
+      updatedItems: null == updatedItems
+          ? _value._updatedItems
           : updatedItems // ignore: cast_nullable_to_non_nullable
               as List<TItem>,
     ));
@@ -144,20 +130,44 @@ class __$CalculateNewItemsInputDataCopyWithImpl<
 
 /// @nodoc
 
-class _$_CalculateNewItemsInputData<TItem extends IEqualComparableObj<TItem>>
+class _$CalculateNewItemsInputDataImpl<TItem extends IEqualComparableObj<TItem>>
     with DiagnosticableTreeMixin
     implements _CalculateNewItemsInputData<TItem> {
-  const _$_CalculateNewItemsInputData(
-      {required this.superItems,
-      required this.mergedNewItems,
-      required this.updatedItems});
+  const _$CalculateNewItemsInputDataImpl(
+      {required final List<TItem>? superItems,
+      required final List<TItem>? mergedNewItems,
+      required final List<TItem> updatedItems})
+      : _superItems = superItems,
+        _mergedNewItems = mergedNewItems,
+        _updatedItems = updatedItems;
 
+  final List<TItem>? _superItems;
   @override
-  final List<TItem>? superItems;
+  List<TItem>? get superItems {
+    final value = _superItems;
+    if (value == null) return null;
+    if (_superItems is EqualUnmodifiableListView) return _superItems;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  final List<TItem>? _mergedNewItems;
   @override
-  final List<TItem>? mergedNewItems;
+  List<TItem>? get mergedNewItems {
+    final value = _mergedNewItems;
+    if (value == null) return null;
+    if (_mergedNewItems is EqualUnmodifiableListView) return _mergedNewItems;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  final List<TItem> _updatedItems;
   @override
-  final List<TItem> updatedItems;
+  List<TItem> get updatedItems {
+    if (_updatedItems is EqualUnmodifiableListView) return _updatedItems;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_updatedItems);
+  }
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -175,41 +185,42 @@ class _$_CalculateNewItemsInputData<TItem extends IEqualComparableObj<TItem>>
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _CalculateNewItemsInputData<TItem> &&
+            other is _$CalculateNewItemsInputDataImpl<TItem> &&
             const DeepCollectionEquality()
-                .equals(other.superItems, superItems) &&
+                .equals(other._superItems, _superItems) &&
             const DeepCollectionEquality()
-                .equals(other.mergedNewItems, mergedNewItems) &&
+                .equals(other._mergedNewItems, _mergedNewItems) &&
             const DeepCollectionEquality()
-                .equals(other.updatedItems, updatedItems));
+                .equals(other._updatedItems, _updatedItems));
   }
 
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(superItems),
-      const DeepCollectionEquality().hash(mergedNewItems),
-      const DeepCollectionEquality().hash(updatedItems));
+      const DeepCollectionEquality().hash(_superItems),
+      const DeepCollectionEquality().hash(_mergedNewItems),
+      const DeepCollectionEquality().hash(_updatedItems));
 
   @JsonKey(ignore: true)
   @override
-  _$CalculateNewItemsInputDataCopyWith<TItem,
-          _CalculateNewItemsInputData<TItem>>
-      get copyWith => __$CalculateNewItemsInputDataCopyWithImpl<TItem,
-          _CalculateNewItemsInputData<TItem>>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$CalculateNewItemsInputDataImplCopyWith<TItem,
+          _$CalculateNewItemsInputDataImpl<TItem>>
+      get copyWith => __$$CalculateNewItemsInputDataImplCopyWithImpl<TItem,
+          _$CalculateNewItemsInputDataImpl<TItem>>(this, _$identity);
 }
 
 abstract class _CalculateNewItemsInputData<
         TItem extends IEqualComparableObj<TItem>>
     implements CalculateNewItemsInputData<TItem> {
   const factory _CalculateNewItemsInputData(
-          {required List<TItem>? superItems,
-          required List<TItem>? mergedNewItems,
-          required List<TItem> updatedItems}) =
-      _$_CalculateNewItemsInputData<TItem>;
+          {required final List<TItem>? superItems,
+          required final List<TItem>? mergedNewItems,
+          required final List<TItem> updatedItems}) =
+      _$CalculateNewItemsInputDataImpl<TItem>;
 
   @override
   List<TItem>? get superItems;
@@ -219,29 +230,10 @@ abstract class _CalculateNewItemsInputData<
   List<TItem> get updatedItems;
   @override
   @JsonKey(ignore: true)
-  _$CalculateNewItemsInputDataCopyWith<TItem,
-          _CalculateNewItemsInputData<TItem>>
+  _$$CalculateNewItemsInputDataImplCopyWith<TItem,
+          _$CalculateNewItemsInputDataImpl<TItem>>
       get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$CalculateActuallyNewRequestTearOff {
-  const _$CalculateActuallyNewRequestTearOff();
-
-  _CalculateActuallyNewRequest<TItem> call<TItem>(
-      {required TItem? newerItem,
-      required List<TItem> newItems,
-      required List<TItem> currentItems}) {
-    return _CalculateActuallyNewRequest<TItem>(
-      newerItem: newerItem,
-      newItems: newItems,
-      currentItems: currentItems,
-    );
-  }
-}
-
-/// @nodoc
-const $CalculateActuallyNewRequest = _$CalculateActuallyNewRequestTearOff();
 
 /// @nodoc
 mixin _$CalculateActuallyNewRequest<TItem> {
@@ -260,83 +252,87 @@ abstract class $CalculateActuallyNewRequestCopyWith<TItem, $Res> {
   factory $CalculateActuallyNewRequestCopyWith(
           CalculateActuallyNewRequest<TItem> value,
           $Res Function(CalculateActuallyNewRequest<TItem>) then) =
-      _$CalculateActuallyNewRequestCopyWithImpl<TItem, $Res>;
+      _$CalculateActuallyNewRequestCopyWithImpl<TItem, $Res,
+          CalculateActuallyNewRequest<TItem>>;
+  @useResult
   $Res call({TItem? newerItem, List<TItem> newItems, List<TItem> currentItems});
 }
 
 /// @nodoc
-class _$CalculateActuallyNewRequestCopyWithImpl<TItem, $Res>
+class _$CalculateActuallyNewRequestCopyWithImpl<TItem, $Res,
+        $Val extends CalculateActuallyNewRequest<TItem>>
     implements $CalculateActuallyNewRequestCopyWith<TItem, $Res> {
   _$CalculateActuallyNewRequestCopyWithImpl(this._value, this._then);
 
-  final CalculateActuallyNewRequest<TItem> _value;
   // ignore: unused_field
-  final $Res Function(CalculateActuallyNewRequest<TItem>) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? newerItem = freezed,
-    Object? newItems = freezed,
-    Object? currentItems = freezed,
+    Object? newItems = null,
+    Object? currentItems = null,
   }) {
     return _then(_value.copyWith(
-      newerItem: newerItem == freezed
+      newerItem: freezed == newerItem
           ? _value.newerItem
           : newerItem // ignore: cast_nullable_to_non_nullable
               as TItem?,
-      newItems: newItems == freezed
+      newItems: null == newItems
           ? _value.newItems
           : newItems // ignore: cast_nullable_to_non_nullable
               as List<TItem>,
-      currentItems: currentItems == freezed
+      currentItems: null == currentItems
           ? _value.currentItems
           : currentItems // ignore: cast_nullable_to_non_nullable
               as List<TItem>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$CalculateActuallyNewRequestCopyWith<TItem, $Res>
+abstract class _$$CalculateActuallyNewRequestImplCopyWith<TItem, $Res>
     implements $CalculateActuallyNewRequestCopyWith<TItem, $Res> {
-  factory _$CalculateActuallyNewRequestCopyWith(
-          _CalculateActuallyNewRequest<TItem> value,
-          $Res Function(_CalculateActuallyNewRequest<TItem>) then) =
-      __$CalculateActuallyNewRequestCopyWithImpl<TItem, $Res>;
+  factory _$$CalculateActuallyNewRequestImplCopyWith(
+          _$CalculateActuallyNewRequestImpl<TItem> value,
+          $Res Function(_$CalculateActuallyNewRequestImpl<TItem>) then) =
+      __$$CalculateActuallyNewRequestImplCopyWithImpl<TItem, $Res>;
   @override
+  @useResult
   $Res call({TItem? newerItem, List<TItem> newItems, List<TItem> currentItems});
 }
 
 /// @nodoc
-class __$CalculateActuallyNewRequestCopyWithImpl<TItem, $Res>
-    extends _$CalculateActuallyNewRequestCopyWithImpl<TItem, $Res>
-    implements _$CalculateActuallyNewRequestCopyWith<TItem, $Res> {
-  __$CalculateActuallyNewRequestCopyWithImpl(
-      _CalculateActuallyNewRequest<TItem> _value,
-      $Res Function(_CalculateActuallyNewRequest<TItem>) _then)
-      : super(_value, (v) => _then(v as _CalculateActuallyNewRequest<TItem>));
+class __$$CalculateActuallyNewRequestImplCopyWithImpl<TItem, $Res>
+    extends _$CalculateActuallyNewRequestCopyWithImpl<TItem, $Res,
+        _$CalculateActuallyNewRequestImpl<TItem>>
+    implements _$$CalculateActuallyNewRequestImplCopyWith<TItem, $Res> {
+  __$$CalculateActuallyNewRequestImplCopyWithImpl(
+      _$CalculateActuallyNewRequestImpl<TItem> _value,
+      $Res Function(_$CalculateActuallyNewRequestImpl<TItem>) _then)
+      : super(_value, _then);
 
-  @override
-  _CalculateActuallyNewRequest<TItem> get _value =>
-      super._value as _CalculateActuallyNewRequest<TItem>;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? newerItem = freezed,
-    Object? newItems = freezed,
-    Object? currentItems = freezed,
+    Object? newItems = null,
+    Object? currentItems = null,
   }) {
-    return _then(_CalculateActuallyNewRequest<TItem>(
-      newerItem: newerItem == freezed
+    return _then(_$CalculateActuallyNewRequestImpl<TItem>(
+      newerItem: freezed == newerItem
           ? _value.newerItem
           : newerItem // ignore: cast_nullable_to_non_nullable
               as TItem?,
-      newItems: newItems == freezed
-          ? _value.newItems
+      newItems: null == newItems
+          ? _value._newItems
           : newItems // ignore: cast_nullable_to_non_nullable
               as List<TItem>,
-      currentItems: currentItems == freezed
-          ? _value.currentItems
+      currentItems: null == currentItems
+          ? _value._currentItems
           : currentItems // ignore: cast_nullable_to_non_nullable
               as List<TItem>,
     ));
@@ -345,20 +341,33 @@ class __$CalculateActuallyNewRequestCopyWithImpl<TItem, $Res>
 
 /// @nodoc
 
-class _$_CalculateActuallyNewRequest<TItem>
+class _$CalculateActuallyNewRequestImpl<TItem>
     with DiagnosticableTreeMixin
     implements _CalculateActuallyNewRequest<TItem> {
-  const _$_CalculateActuallyNewRequest(
+  const _$CalculateActuallyNewRequestImpl(
       {required this.newerItem,
-      required this.newItems,
-      required this.currentItems});
+      required final List<TItem> newItems,
+      required final List<TItem> currentItems})
+      : _newItems = newItems,
+        _currentItems = currentItems;
 
   @override
   final TItem? newerItem;
+  final List<TItem> _newItems;
   @override
-  final List<TItem> newItems;
+  List<TItem> get newItems {
+    if (_newItems is EqualUnmodifiableListView) return _newItems;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_newItems);
+  }
+
+  final List<TItem> _currentItems;
   @override
-  final List<TItem> currentItems;
+  List<TItem> get currentItems {
+    if (_currentItems is EqualUnmodifiableListView) return _currentItems;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_currentItems);
+  }
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -376,38 +385,39 @@ class _$_CalculateActuallyNewRequest<TItem>
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _CalculateActuallyNewRequest<TItem> &&
+            other is _$CalculateActuallyNewRequestImpl<TItem> &&
             const DeepCollectionEquality().equals(other.newerItem, newerItem) &&
-            const DeepCollectionEquality().equals(other.newItems, newItems) &&
+            const DeepCollectionEquality().equals(other._newItems, _newItems) &&
             const DeepCollectionEquality()
-                .equals(other.currentItems, currentItems));
+                .equals(other._currentItems, _currentItems));
   }
 
   @override
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(newerItem),
-      const DeepCollectionEquality().hash(newItems),
-      const DeepCollectionEquality().hash(currentItems));
+      const DeepCollectionEquality().hash(_newItems),
+      const DeepCollectionEquality().hash(_currentItems));
 
   @JsonKey(ignore: true)
   @override
-  _$CalculateActuallyNewRequestCopyWith<TItem,
-          _CalculateActuallyNewRequest<TItem>>
-      get copyWith => __$CalculateActuallyNewRequestCopyWithImpl<TItem,
-          _CalculateActuallyNewRequest<TItem>>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$CalculateActuallyNewRequestImplCopyWith<TItem,
+          _$CalculateActuallyNewRequestImpl<TItem>>
+      get copyWith => __$$CalculateActuallyNewRequestImplCopyWithImpl<TItem,
+          _$CalculateActuallyNewRequestImpl<TItem>>(this, _$identity);
 }
 
 abstract class _CalculateActuallyNewRequest<TItem>
     implements CalculateActuallyNewRequest<TItem> {
   const factory _CalculateActuallyNewRequest(
-          {required TItem? newerItem,
-          required List<TItem> newItems,
-          required List<TItem> currentItems}) =
-      _$_CalculateActuallyNewRequest<TItem>;
+          {required final TItem? newerItem,
+          required final List<TItem> newItems,
+          required final List<TItem> currentItems}) =
+      _$CalculateActuallyNewRequestImpl<TItem>;
 
   @override
   TItem? get newerItem;
@@ -417,7 +427,7 @@ abstract class _CalculateActuallyNewRequest<TItem>
   List<TItem> get currentItems;
   @override
   @JsonKey(ignore: true)
-  _$CalculateActuallyNewRequestCopyWith<TItem,
-          _CalculateActuallyNewRequest<TItem>>
+  _$$CalculateActuallyNewRequestImplCopyWith<TItem,
+          _$CalculateActuallyNewRequestImpl<TItem>>
       get copyWith => throw _privateConstructorUsedError;
 }

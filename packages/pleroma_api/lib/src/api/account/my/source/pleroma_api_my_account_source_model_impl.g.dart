@@ -107,9 +107,9 @@ class PleromaApiMyAccountSourcePleromaPartAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiMyAccountSource _$$_PleromaApiMyAccountSourceFromJson(
+_$PleromaApiMyAccountSourceImpl _$$PleromaApiMyAccountSourceImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiMyAccountSource(
+    _$PleromaApiMyAccountSourceImpl(
       privacy: json['privacy'] as String?,
       sensitive: json['sensitive'] as bool?,
       language: json['language'] as String?,
@@ -117,15 +117,15 @@ _$_PleromaApiMyAccountSource _$$_PleromaApiMyAccountSourceFromJson(
       fields: (json['fields'] as List<dynamic>?)
           ?.map((e) => PleromaApiField.fromJson(e as Map<String, dynamic>))
           .toList(),
-      followRequestsCount: json['follow_requests_count'] as int?,
+      followRequestsCount: (json['follow_requests_count'] as num?)?.toInt(),
       pleroma: json['pleroma'] == null
           ? null
           : PleromaApiMyAccountSourcePleromaPart.fromJson(
               json['pleroma'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_PleromaApiMyAccountSourceToJson(
-    _$_PleromaApiMyAccountSource instance) {
+Map<String, dynamic> _$$PleromaApiMyAccountSourceImplToJson(
+    _$PleromaApiMyAccountSourceImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {
@@ -144,18 +144,18 @@ Map<String, dynamic> _$$_PleromaApiMyAccountSourceToJson(
   return val;
 }
 
-_$_PleromaApiMyAccountSourcePleromaPart
-    _$$_PleromaApiMyAccountSourcePleromaPartFromJson(
+_$PleromaApiMyAccountSourcePleromaPartImpl
+    _$$PleromaApiMyAccountSourcePleromaPartImplFromJson(
             Map<String, dynamic> json) =>
-        _$_PleromaApiMyAccountSourcePleromaPart(
+        _$PleromaApiMyAccountSourcePleromaPartImpl(
           showRole: json['show_role'] as bool?,
           noRichText: json['no_rich_text'] as bool?,
           discoverable: json['discoverable'] as bool?,
           actorType: json['actor_type'] as String?,
         );
 
-Map<String, dynamic> _$$_PleromaApiMyAccountSourcePleromaPartToJson(
-    _$_PleromaApiMyAccountSourcePleromaPart instance) {
+Map<String, dynamic> _$$PleromaApiMyAccountSourcePleromaPartImplToJson(
+    _$PleromaApiMyAccountSourcePleromaPartImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

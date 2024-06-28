@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:drift/drift.dart';
+import 'package:drift/native.dart';
 import 'package:fedi_app/app/account/account_model.dart';
 import 'package:fedi_app/app/account/repository/account_repository_impl.dart';
 import 'package:fedi_app/app/chat/unifedi/message/repository/unifedi_chat_message_repository_impl.dart';
@@ -11,7 +13,6 @@ import 'package:fedi_app/app/chat/unifedi/unifedi_chat_model_adapter.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/repository/repository_model.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:moor/ffi.dart';
 
 import '../../../rxdart/rxdart_test_helper.dart';
 import '../../account/database/account_database_test_helper.dart';
@@ -38,7 +39,7 @@ void main() {
   late DbAccount dbAccount;
 
   setUp(() async {
-    database = AppDatabase(VmDatabase.memory());
+    database = AppDatabase(NativeDatabase.memory());
     accountRepository = AccountRepository(appDatabase: database);
     chatMessageRepository = UnifediChatMessageRepository(
       appDatabase: database,
@@ -57,7 +58,7 @@ void main() {
       mode: null,
     );
     // assign local id for further equal with data retrieved from db
-    dbAccount = dbAccount.copyWith(id: accountId);
+    dbAccount = dbAccount.copyWith(id: Value(accountId));
 
     dbChat = await ChatDatabaseMockHelper.createTestDbChat(
       seed: 'seed4',
@@ -175,7 +176,7 @@ void main() {
     var oldLocalChat = dbUnifediChatPopulatedWrapper.copyWith(
       dbChatPopulated: dbUnifediChatPopulatedWrapper.dbChatPopulated.copyWith(
         dbChat: dbUnifediChatPopulatedWrapper.dbChatPopulated.dbChat.copyWith(
-          id: id,
+          id: Value(id),
         ),
       ),
     );
@@ -189,7 +190,7 @@ void main() {
         .copyWith(
       dbChatPopulated: dbUnifediChatPopulatedWrapper.dbChatPopulated.copyWith(
         dbChat: dbUnifediChatPopulatedWrapper.dbChatPopulated.dbChat.copyWith(
-          id: id,
+          id: Value(id),
           remoteId: newRemoteId,
         ),
       ),
@@ -197,7 +198,7 @@ void main() {
         .toUnifediApiChat(
       lastChatMessage: DbUnifediChatMessagePopulatedWrapper(
         dbChatMessagePopulated: DbChatMessagePopulated(
-          dbChatMessage: dbChatMessage.copyWith(content: newContent),
+          dbChatMessage: dbChatMessage.copyWith(content: Value(newContent)),
           dbAccount: dbAccount.copyWith(
             acct: newAcct,
           ),
@@ -467,7 +468,7 @@ void main() {
         seed: 'seed2',
         dbAccount: dbAccount,
       ))
-          .copyWith(remoteId: 'remoteId4', updatedAt: DateTime(2004)),
+          .copyWith(remoteId: 'remoteId4', updatedAt: Value(DateTime(2004))),
     );
 
     expect((await query.get()).length, 0);
@@ -478,7 +479,7 @@ void main() {
         seed: 'seed2',
         dbAccount: dbAccount,
       ))
-          .copyWith(remoteId: 'remoteId5', updatedAt: DateTime(2005)),
+          .copyWith(remoteId: 'remoteId5', updatedAt: Value(DateTime(2005))),
     );
 
     expect((await query.get()).length, 0);
@@ -489,7 +490,7 @@ void main() {
         seed: 'seed1',
         dbAccount: dbAccount,
       ))
-          .copyWith(remoteId: 'remoteId6', updatedAt: DateTime(2006)),
+          .copyWith(remoteId: 'remoteId6', updatedAt: Value(DateTime(2006))),
     );
 
     expect((await query.get()).length, 1);

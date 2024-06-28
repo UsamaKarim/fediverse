@@ -46,16 +46,16 @@ class UnifediApiAccountIdentityProofPleromaAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiAccountIdentityProofPleromaAdapter
-    _$$_UnifediApiAccountIdentityProofPleromaAdapterFromJson(
+_$UnifediApiAccountIdentityProofPleromaAdapterImpl
+    _$$UnifediApiAccountIdentityProofPleromaAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiAccountIdentityProofPleromaAdapter(
+        _$UnifediApiAccountIdentityProofPleromaAdapterImpl(
           PleromaApiAccountIdentityProof.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiAccountIdentityProofPleromaAdapterToJson(
-        _$_UnifediApiAccountIdentityProofPleromaAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiAccountIdentityProofPleromaAdapterImplToJson(
+        _$UnifediApiAccountIdentityProofPleromaAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

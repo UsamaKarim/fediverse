@@ -1,5 +1,5 @@
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/database/app_database.dart';
-import 'package:moor/moor.dart';
 
 abstract class DatabaseDao<
         DbItem extends DataClass,
@@ -136,7 +136,7 @@ abstract class DatabaseDao<
   Selectable<DbItem> getAllSelectable() => customSelect(
         'SELECT * FROM $tableName',
         readsFrom: {table},
-      ).map(table.mapFromRow);
+      ).asyncMap(table.mapFromRow);
 
   Future<DbItem?> getNewestOrderById({required int? offset}) =>
       getNewestOrderByIdSelectable(offset: offset).getSingleOrNull();
@@ -151,7 +151,7 @@ abstract class DatabaseDao<
                 'LIMIT 1' +
             createOffsetContent(offset),
         readsFrom: {table},
-      ).map(table.mapFromRow);
+      ).asyncMap(table.mapFromRow);
 
   Future<DbItem?> getOldestOrderById({required int? offset}) =>
       getOldestOrderByIdSelectable(offset: offset).getSingleOrNull();
@@ -166,7 +166,7 @@ abstract class DatabaseDao<
                 'LIMIT 1' +
             createOffsetContent(offset),
         readsFrom: {table},
-      ).map(table.mapFromRow);
+      ).asyncMap(table.mapFromRow);
 
   String createOffsetContent(int? offset) =>
       offset != null ? ' OFFSET :offset' : '';
@@ -181,7 +181,7 @@ abstract class DatabaseDao<
         'WHERE ${createFindByDbIdWhereExpressionContent(id)} '
         'LIMIT 1',
         readsFrom: {table},
-      ).map(table.mapFromRow);
+      ).asyncMap(table.mapFromRow);
 
   String createFindByDbIdWhereExpressionContent(DbId id) =>
       createFindByDbIdWhereExpression(id).content;

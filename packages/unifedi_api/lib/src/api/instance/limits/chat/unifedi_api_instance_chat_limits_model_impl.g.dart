@@ -45,14 +45,14 @@ class UnifediApiInstanceChatLimitsAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiInstanceChatLimits _$$_UnifediApiInstanceChatLimitsFromJson(
+_$UnifediApiInstanceChatLimitsImpl _$$UnifediApiInstanceChatLimitsImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiInstanceChatLimits(
-      messageLimit: json['message_limit'] as int?,
+    _$UnifediApiInstanceChatLimitsImpl(
+      messageLimit: (json['message_limit'] as num?)?.toInt(),
     );
 
-Map<String, dynamic> _$$_UnifediApiInstanceChatLimitsToJson(
-    _$_UnifediApiInstanceChatLimits instance) {
+Map<String, dynamic> _$$UnifediApiInstanceChatLimitsImplToJson(
+    _$UnifediApiInstanceChatLimitsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

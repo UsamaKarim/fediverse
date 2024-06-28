@@ -57,18 +57,19 @@ class UnifediApiInstanceMediaLimitsAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiInstanceMediaLimits _$$_UnifediApiInstanceMediaLimitsFromJson(
-        Map<String, dynamic> json) =>
-    _$_UnifediApiInstanceMediaLimits(
-      uploadLimit: json['upload_limit'] as int?,
-      avatarUploadLimit: json['avatar_upload_limit'] as int?,
-      backgroundUploadLimit: json['background_upload_limit'] as int?,
-      bannerUploadLimit: json['banner_upload_limit'] as int?,
-      descriptionLimit: json['description_limit'] as int?,
-    );
+_$UnifediApiInstanceMediaLimitsImpl
+    _$$UnifediApiInstanceMediaLimitsImplFromJson(Map<String, dynamic> json) =>
+        _$UnifediApiInstanceMediaLimitsImpl(
+          uploadLimit: (json['upload_limit'] as num?)?.toInt(),
+          avatarUploadLimit: (json['avatar_upload_limit'] as num?)?.toInt(),
+          backgroundUploadLimit:
+              (json['background_upload_limit'] as num?)?.toInt(),
+          bannerUploadLimit: (json['banner_upload_limit'] as num?)?.toInt(),
+          descriptionLimit: (json['description_limit'] as num?)?.toInt(),
+        );
 
-Map<String, dynamic> _$$_UnifediApiInstanceMediaLimitsToJson(
-    _$_UnifediApiInstanceMediaLimits instance) {
+Map<String, dynamic> _$$UnifediApiInstanceMediaLimitsImplToJson(
+    _$UnifediApiInstanceMediaLimitsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

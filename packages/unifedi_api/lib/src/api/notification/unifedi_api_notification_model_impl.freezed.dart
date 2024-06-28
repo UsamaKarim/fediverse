@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_notification_model_impl.dart';
 
@@ -11,66 +12,12 @@ part of 'unifedi_api_notification_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiNotification _$UnifediApiNotificationFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiNotification.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiNotificationTearOff {
-  const _$UnifediApiNotificationTearOff();
-
-  _UnifediApiNotification call(
-      {@HiveField(0)
-          required UnifediApiAccount? account,
-      @HiveField(1)
-          required UnifediApiAccount? target,
-      @HiveField(2)
-      @JsonKey(name: 'created_at')
-          required DateTime createdAt,
-      @HiveField(3)
-          required String id,
-      @HiveField(4)
-          required String type,
-      @HiveField(5)
-          required UnifediApiStatus? status,
-      @HiveField(6)
-          required String? emoji,
-      @HiveField(8)
-      @JsonKey(name: 'chat_message')
-          required UnifediApiChatMessage? chatMessage,
-      @HiveField(9)
-          required UnifediApiAccountReport? report,
-      @HiveField(10 + 0)
-      @JsonKey(name: 'is_seen')
-          required bool? isSeen,
-      @HiveField(11 + 1)
-      @JsonKey(name: 'is_muted')
-          required bool? isMuted}) {
-    return _UnifediApiNotification(
-      account: account,
-      target: target,
-      createdAt: createdAt,
-      id: id,
-      type: type,
-      status: status,
-      emoji: emoji,
-      chatMessage: chatMessage,
-      report: report,
-      isSeen: isSeen,
-      isMuted: isMuted,
-    );
-  }
-
-  UnifediApiNotification fromJson(Map<String, Object?> json) {
-    return UnifediApiNotification.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiNotification = _$UnifediApiNotificationTearOff();
 
 /// @nodoc
 mixin _$UnifediApiNotification {
@@ -111,34 +58,22 @@ mixin _$UnifediApiNotification {
 abstract class $UnifediApiNotificationCopyWith<$Res> {
   factory $UnifediApiNotificationCopyWith(UnifediApiNotification value,
           $Res Function(UnifediApiNotification) then) =
-      _$UnifediApiNotificationCopyWithImpl<$Res>;
+      _$UnifediApiNotificationCopyWithImpl<$Res, UnifediApiNotification>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-          UnifediApiAccount? account,
-      @HiveField(1)
-          UnifediApiAccount? target,
-      @HiveField(2)
-      @JsonKey(name: 'created_at')
-          DateTime createdAt,
-      @HiveField(3)
-          String id,
-      @HiveField(4)
-          String type,
-      @HiveField(5)
-          UnifediApiStatus? status,
-      @HiveField(6)
-          String? emoji,
+      {@HiveField(0) UnifediApiAccount? account,
+      @HiveField(1) UnifediApiAccount? target,
+      @HiveField(2) @JsonKey(name: 'created_at') DateTime createdAt,
+      @HiveField(3) String id,
+      @HiveField(4) String type,
+      @HiveField(5) UnifediApiStatus? status,
+      @HiveField(6) String? emoji,
       @HiveField(8)
       @JsonKey(name: 'chat_message')
-          UnifediApiChatMessage? chatMessage,
-      @HiveField(9)
-          UnifediApiAccountReport? report,
-      @HiveField(10 + 0)
-      @JsonKey(name: 'is_seen')
-          bool? isSeen,
-      @HiveField(11 + 1)
-      @JsonKey(name: 'is_muted')
-          bool? isMuted});
+      UnifediApiChatMessage? chatMessage,
+      @HiveField(9) UnifediApiAccountReport? report,
+      @HiveField(10 + 0) @JsonKey(name: 'is_seen') bool? isSeen,
+      @HiveField(11 + 1) @JsonKey(name: 'is_muted') bool? isMuted});
 
   $UnifediApiAccountCopyWith<$Res>? get account;
   $UnifediApiAccountCopyWith<$Res>? get target;
@@ -148,21 +83,24 @@ abstract class $UnifediApiNotificationCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UnifediApiNotificationCopyWithImpl<$Res>
+class _$UnifediApiNotificationCopyWithImpl<$Res,
+        $Val extends UnifediApiNotification>
     implements $UnifediApiNotificationCopyWith<$Res> {
   _$UnifediApiNotificationCopyWithImpl(this._value, this._then);
 
-  final UnifediApiNotification _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiNotification) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? account = freezed,
     Object? target = freezed,
-    Object? createdAt = freezed,
-    Object? id = freezed,
-    Object? type = freezed,
+    Object? createdAt = null,
+    Object? id = null,
+    Object? type = null,
     Object? status = freezed,
     Object? emoji = freezed,
     Object? chatMessage = freezed,
@@ -171,143 +109,137 @@ class _$UnifediApiNotificationCopyWithImpl<$Res>
     Object? isMuted = freezed,
   }) {
     return _then(_value.copyWith(
-      account: account == freezed
+      account: freezed == account
           ? _value.account
           : account // ignore: cast_nullable_to_non_nullable
               as UnifediApiAccount?,
-      target: target == freezed
+      target: freezed == target
           ? _value.target
           : target // ignore: cast_nullable_to_non_nullable
               as UnifediApiAccount?,
-      createdAt: createdAt == freezed
+      createdAt: null == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      status: status == freezed
+      status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as UnifediApiStatus?,
-      emoji: emoji == freezed
+      emoji: freezed == emoji
           ? _value.emoji
           : emoji // ignore: cast_nullable_to_non_nullable
               as String?,
-      chatMessage: chatMessage == freezed
+      chatMessage: freezed == chatMessage
           ? _value.chatMessage
           : chatMessage // ignore: cast_nullable_to_non_nullable
               as UnifediApiChatMessage?,
-      report: report == freezed
+      report: freezed == report
           ? _value.report
           : report // ignore: cast_nullable_to_non_nullable
               as UnifediApiAccountReport?,
-      isSeen: isSeen == freezed
+      isSeen: freezed == isSeen
           ? _value.isSeen
           : isSeen // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isMuted: isMuted == freezed
+      isMuted: freezed == isMuted
           ? _value.isMuted
           : isMuted // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiAccountCopyWith<$Res>? get account {
     if (_value.account == null) {
       return null;
     }
 
     return $UnifediApiAccountCopyWith<$Res>(_value.account!, (value) {
-      return _then(_value.copyWith(account: value));
+      return _then(_value.copyWith(account: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiAccountCopyWith<$Res>? get target {
     if (_value.target == null) {
       return null;
     }
 
     return $UnifediApiAccountCopyWith<$Res>(_value.target!, (value) {
-      return _then(_value.copyWith(target: value));
+      return _then(_value.copyWith(target: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiStatusCopyWith<$Res>? get status {
     if (_value.status == null) {
       return null;
     }
 
     return $UnifediApiStatusCopyWith<$Res>(_value.status!, (value) {
-      return _then(_value.copyWith(status: value));
+      return _then(_value.copyWith(status: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiChatMessageCopyWith<$Res>? get chatMessage {
     if (_value.chatMessage == null) {
       return null;
     }
 
     return $UnifediApiChatMessageCopyWith<$Res>(_value.chatMessage!, (value) {
-      return _then(_value.copyWith(chatMessage: value));
+      return _then(_value.copyWith(chatMessage: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiAccountReportCopyWith<$Res>? get report {
     if (_value.report == null) {
       return null;
     }
 
     return $UnifediApiAccountReportCopyWith<$Res>(_value.report!, (value) {
-      return _then(_value.copyWith(report: value));
+      return _then(_value.copyWith(report: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiNotificationCopyWith<$Res>
+abstract class _$$UnifediApiNotificationImplCopyWith<$Res>
     implements $UnifediApiNotificationCopyWith<$Res> {
-  factory _$UnifediApiNotificationCopyWith(_UnifediApiNotification value,
-          $Res Function(_UnifediApiNotification) then) =
-      __$UnifediApiNotificationCopyWithImpl<$Res>;
+  factory _$$UnifediApiNotificationImplCopyWith(
+          _$UnifediApiNotificationImpl value,
+          $Res Function(_$UnifediApiNotificationImpl) then) =
+      __$$UnifediApiNotificationImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-          UnifediApiAccount? account,
-      @HiveField(1)
-          UnifediApiAccount? target,
-      @HiveField(2)
-      @JsonKey(name: 'created_at')
-          DateTime createdAt,
-      @HiveField(3)
-          String id,
-      @HiveField(4)
-          String type,
-      @HiveField(5)
-          UnifediApiStatus? status,
-      @HiveField(6)
-          String? emoji,
+      {@HiveField(0) UnifediApiAccount? account,
+      @HiveField(1) UnifediApiAccount? target,
+      @HiveField(2) @JsonKey(name: 'created_at') DateTime createdAt,
+      @HiveField(3) String id,
+      @HiveField(4) String type,
+      @HiveField(5) UnifediApiStatus? status,
+      @HiveField(6) String? emoji,
       @HiveField(8)
       @JsonKey(name: 'chat_message')
-          UnifediApiChatMessage? chatMessage,
-      @HiveField(9)
-          UnifediApiAccountReport? report,
-      @HiveField(10 + 0)
-      @JsonKey(name: 'is_seen')
-          bool? isSeen,
-      @HiveField(11 + 1)
-      @JsonKey(name: 'is_muted')
-          bool? isMuted});
+      UnifediApiChatMessage? chatMessage,
+      @HiveField(9) UnifediApiAccountReport? report,
+      @HiveField(10 + 0) @JsonKey(name: 'is_seen') bool? isSeen,
+      @HiveField(11 + 1) @JsonKey(name: 'is_muted') bool? isMuted});
 
   @override
   $UnifediApiAccountCopyWith<$Res>? get account;
@@ -322,23 +254,23 @@ abstract class _$UnifediApiNotificationCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiNotificationCopyWithImpl<$Res>
-    extends _$UnifediApiNotificationCopyWithImpl<$Res>
-    implements _$UnifediApiNotificationCopyWith<$Res> {
-  __$UnifediApiNotificationCopyWithImpl(_UnifediApiNotification _value,
-      $Res Function(_UnifediApiNotification) _then)
-      : super(_value, (v) => _then(v as _UnifediApiNotification));
+class __$$UnifediApiNotificationImplCopyWithImpl<$Res>
+    extends _$UnifediApiNotificationCopyWithImpl<$Res,
+        _$UnifediApiNotificationImpl>
+    implements _$$UnifediApiNotificationImplCopyWith<$Res> {
+  __$$UnifediApiNotificationImplCopyWithImpl(
+      _$UnifediApiNotificationImpl _value,
+      $Res Function(_$UnifediApiNotificationImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiNotification get _value => super._value as _UnifediApiNotification;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? account = freezed,
     Object? target = freezed,
-    Object? createdAt = freezed,
-    Object? id = freezed,
-    Object? type = freezed,
+    Object? createdAt = null,
+    Object? id = null,
+    Object? type = null,
     Object? status = freezed,
     Object? emoji = freezed,
     Object? chatMessage = freezed,
@@ -346,48 +278,48 @@ class __$UnifediApiNotificationCopyWithImpl<$Res>
     Object? isSeen = freezed,
     Object? isMuted = freezed,
   }) {
-    return _then(_UnifediApiNotification(
-      account: account == freezed
+    return _then(_$UnifediApiNotificationImpl(
+      account: freezed == account
           ? _value.account
           : account // ignore: cast_nullable_to_non_nullable
               as UnifediApiAccount?,
-      target: target == freezed
+      target: freezed == target
           ? _value.target
           : target // ignore: cast_nullable_to_non_nullable
               as UnifediApiAccount?,
-      createdAt: createdAt == freezed
+      createdAt: null == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      status: status == freezed
+      status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as UnifediApiStatus?,
-      emoji: emoji == freezed
+      emoji: freezed == emoji
           ? _value.emoji
           : emoji // ignore: cast_nullable_to_non_nullable
               as String?,
-      chatMessage: chatMessage == freezed
+      chatMessage: freezed == chatMessage
           ? _value.chatMessage
           : chatMessage // ignore: cast_nullable_to_non_nullable
               as UnifediApiChatMessage?,
-      report: report == freezed
+      report: freezed == report
           ? _value.report
           : report // ignore: cast_nullable_to_non_nullable
               as UnifediApiAccountReport?,
-      isSeen: isSeen == freezed
+      isSeen: freezed == isSeen
           ? _value.isSeen
           : isSeen // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isMuted: isMuted == freezed
+      isMuted: freezed == isMuted
           ? _value.isMuted
           : isMuted // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -397,8 +329,8 @@ class __$UnifediApiNotificationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiNotification implements _UnifediApiNotification {
-  const _$_UnifediApiNotification(
+class _$UnifediApiNotificationImpl implements _UnifediApiNotification {
+  const _$UnifediApiNotificationImpl(
       {@HiveField(0) required this.account,
       @HiveField(1) required this.target,
       @HiveField(2) @JsonKey(name: 'created_at') required this.createdAt,
@@ -411,8 +343,8 @@ class _$_UnifediApiNotification implements _UnifediApiNotification {
       @HiveField(10 + 0) @JsonKey(name: 'is_seen') required this.isSeen,
       @HiveField(11 + 1) @JsonKey(name: 'is_muted') required this.isMuted});
 
-  factory _$_UnifediApiNotification.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiNotificationFromJson(json);
+  factory _$UnifediApiNotificationImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiNotificationImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -458,10 +390,10 @@ class _$_UnifediApiNotification implements _UnifediApiNotification {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiNotification &&
+            other is _$UnifediApiNotificationImpl &&
             (identical(other.account, account) || other.account == account) &&
             (identical(other.target, target) || other.target == target) &&
             (identical(other.createdAt, createdAt) ||
@@ -477,53 +409,48 @@ class _$_UnifediApiNotification implements _UnifediApiNotification {
             (identical(other.isMuted, isMuted) || other.isMuted == isMuted));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, account, target, createdAt, id,
       type, status, emoji, chatMessage, report, isSeen, isMuted);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiNotificationCopyWith<_UnifediApiNotification> get copyWith =>
-      __$UnifediApiNotificationCopyWithImpl<_UnifediApiNotification>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiNotificationImplCopyWith<_$UnifediApiNotificationImpl>
+      get copyWith => __$$UnifediApiNotificationImplCopyWithImpl<
+          _$UnifediApiNotificationImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiNotificationToJson(this);
+    return _$$UnifediApiNotificationImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiNotification implements UnifediApiNotification {
   const factory _UnifediApiNotification(
-      {@HiveField(0)
-          required UnifediApiAccount? account,
-      @HiveField(1)
-          required UnifediApiAccount? target,
+      {@HiveField(0) required final UnifediApiAccount? account,
+      @HiveField(1) required final UnifediApiAccount? target,
       @HiveField(2)
       @JsonKey(name: 'created_at')
-          required DateTime createdAt,
-      @HiveField(3)
-          required String id,
-      @HiveField(4)
-          required String type,
-      @HiveField(5)
-          required UnifediApiStatus? status,
-      @HiveField(6)
-          required String? emoji,
+      required final DateTime createdAt,
+      @HiveField(3) required final String id,
+      @HiveField(4) required final String type,
+      @HiveField(5) required final UnifediApiStatus? status,
+      @HiveField(6) required final String? emoji,
       @HiveField(8)
       @JsonKey(name: 'chat_message')
-          required UnifediApiChatMessage? chatMessage,
-      @HiveField(9)
-          required UnifediApiAccountReport? report,
-      @HiveField(10 + 0)
-      @JsonKey(name: 'is_seen')
-          required bool? isSeen,
+      required final UnifediApiChatMessage? chatMessage,
+      @HiveField(9) required final UnifediApiAccountReport? report,
+      @HiveField(10 + 0) @JsonKey(name: 'is_seen') required final bool? isSeen,
       @HiveField(11 + 1)
       @JsonKey(name: 'is_muted')
-          required bool? isMuted}) = _$_UnifediApiNotification;
+      required final bool? isMuted}) = _$UnifediApiNotificationImpl;
 
   factory _UnifediApiNotification.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiNotification.fromJson;
+      _$UnifediApiNotificationImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -564,6 +491,6 @@ abstract class _UnifediApiNotification implements UnifediApiNotification {
   bool? get isMuted;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiNotificationCopyWith<_UnifediApiNotification> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$UnifediApiNotificationImplCopyWith<_$UnifediApiNotificationImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

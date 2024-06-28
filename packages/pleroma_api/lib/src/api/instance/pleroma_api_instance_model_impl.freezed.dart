@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_instance_model_impl.dart';
 
@@ -11,31 +12,12 @@ part of 'pleroma_api_instance_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiInstancePleromaPart _$PleromaApiInstancePleromaPartFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiInstancePleromaPart.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiInstancePleromaPartTearOff {
-  const _$PleromaApiInstancePleromaPartTearOff();
-
-  _PleromaApiInstancePleromaPart call(
-      {@HiveField(0) required PleromaApiInstanceMetadata? metadata}) {
-    return _PleromaApiInstancePleromaPart(
-      metadata: metadata,
-    );
-  }
-
-  PleromaApiInstancePleromaPart fromJson(Map<String, Object?> json) {
-    return PleromaApiInstancePleromaPart.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiInstancePleromaPart = _$PleromaApiInstancePleromaPartTearOff();
 
 /// @nodoc
 mixin _$PleromaApiInstancePleromaPart {
@@ -54,53 +36,60 @@ abstract class $PleromaApiInstancePleromaPartCopyWith<$Res> {
   factory $PleromaApiInstancePleromaPartCopyWith(
           PleromaApiInstancePleromaPart value,
           $Res Function(PleromaApiInstancePleromaPart) then) =
-      _$PleromaApiInstancePleromaPartCopyWithImpl<$Res>;
+      _$PleromaApiInstancePleromaPartCopyWithImpl<$Res,
+          PleromaApiInstancePleromaPart>;
+  @useResult
   $Res call({@HiveField(0) PleromaApiInstanceMetadata? metadata});
 
   $PleromaApiInstanceMetadataCopyWith<$Res>? get metadata;
 }
 
 /// @nodoc
-class _$PleromaApiInstancePleromaPartCopyWithImpl<$Res>
+class _$PleromaApiInstancePleromaPartCopyWithImpl<$Res,
+        $Val extends PleromaApiInstancePleromaPart>
     implements $PleromaApiInstancePleromaPartCopyWith<$Res> {
   _$PleromaApiInstancePleromaPartCopyWithImpl(this._value, this._then);
 
-  final PleromaApiInstancePleromaPart _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiInstancePleromaPart) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? metadata = freezed,
   }) {
     return _then(_value.copyWith(
-      metadata: metadata == freezed
+      metadata: freezed == metadata
           ? _value.metadata
           : metadata // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstanceMetadata?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiInstanceMetadataCopyWith<$Res>? get metadata {
     if (_value.metadata == null) {
       return null;
     }
 
     return $PleromaApiInstanceMetadataCopyWith<$Res>(_value.metadata!, (value) {
-      return _then(_value.copyWith(metadata: value));
+      return _then(_value.copyWith(metadata: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiInstancePleromaPartCopyWith<$Res>
+abstract class _$$PleromaApiInstancePleromaPartImplCopyWith<$Res>
     implements $PleromaApiInstancePleromaPartCopyWith<$Res> {
-  factory _$PleromaApiInstancePleromaPartCopyWith(
-          _PleromaApiInstancePleromaPart value,
-          $Res Function(_PleromaApiInstancePleromaPart) then) =
-      __$PleromaApiInstancePleromaPartCopyWithImpl<$Res>;
+  factory _$$PleromaApiInstancePleromaPartImplCopyWith(
+          _$PleromaApiInstancePleromaPartImpl value,
+          $Res Function(_$PleromaApiInstancePleromaPartImpl) then) =
+      __$$PleromaApiInstancePleromaPartImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) PleromaApiInstanceMetadata? metadata});
 
   @override
@@ -108,24 +97,22 @@ abstract class _$PleromaApiInstancePleromaPartCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiInstancePleromaPartCopyWithImpl<$Res>
-    extends _$PleromaApiInstancePleromaPartCopyWithImpl<$Res>
-    implements _$PleromaApiInstancePleromaPartCopyWith<$Res> {
-  __$PleromaApiInstancePleromaPartCopyWithImpl(
-      _PleromaApiInstancePleromaPart _value,
-      $Res Function(_PleromaApiInstancePleromaPart) _then)
-      : super(_value, (v) => _then(v as _PleromaApiInstancePleromaPart));
+class __$$PleromaApiInstancePleromaPartImplCopyWithImpl<$Res>
+    extends _$PleromaApiInstancePleromaPartCopyWithImpl<$Res,
+        _$PleromaApiInstancePleromaPartImpl>
+    implements _$$PleromaApiInstancePleromaPartImplCopyWith<$Res> {
+  __$$PleromaApiInstancePleromaPartImplCopyWithImpl(
+      _$PleromaApiInstancePleromaPartImpl _value,
+      $Res Function(_$PleromaApiInstancePleromaPartImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiInstancePleromaPart get _value =>
-      super._value as _PleromaApiInstancePleromaPart;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? metadata = freezed,
   }) {
-    return _then(_PleromaApiInstancePleromaPart(
-      metadata: metadata == freezed
+    return _then(_$PleromaApiInstancePleromaPartImpl(
+      metadata: freezed == metadata
           ? _value.metadata
           : metadata // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstanceMetadata?,
@@ -135,14 +122,14 @@ class __$PleromaApiInstancePleromaPartCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiInstancePleromaPart
+class _$PleromaApiInstancePleromaPartImpl
     implements _PleromaApiInstancePleromaPart {
-  const _$_PleromaApiInstancePleromaPart(
+  const _$PleromaApiInstancePleromaPartImpl(
       {@HiveField(0) required this.metadata});
 
-  factory _$_PleromaApiInstancePleromaPart.fromJson(
+  factory _$PleromaApiInstancePleromaPartImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_PleromaApiInstancePleromaPartFromJson(json);
+      _$$PleromaApiInstancePleromaPartImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -154,157 +141,56 @@ class _$_PleromaApiInstancePleromaPart
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiInstancePleromaPart &&
+            other is _$PleromaApiInstancePleromaPartImpl &&
             (identical(other.metadata, metadata) ||
                 other.metadata == metadata));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, metadata);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiInstancePleromaPartCopyWith<_PleromaApiInstancePleromaPart>
-      get copyWith => __$PleromaApiInstancePleromaPartCopyWithImpl<
-          _PleromaApiInstancePleromaPart>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiInstancePleromaPartImplCopyWith<
+          _$PleromaApiInstancePleromaPartImpl>
+      get copyWith => __$$PleromaApiInstancePleromaPartImplCopyWithImpl<
+          _$PleromaApiInstancePleromaPartImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiInstancePleromaPartToJson(this);
+    return _$$PleromaApiInstancePleromaPartImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiInstancePleromaPart
     implements PleromaApiInstancePleromaPart {
   const factory _PleromaApiInstancePleromaPart(
-          {@HiveField(0) required PleromaApiInstanceMetadata? metadata}) =
-      _$_PleromaApiInstancePleromaPart;
+          {@HiveField(0) required final PleromaApiInstanceMetadata? metadata}) =
+      _$PleromaApiInstancePleromaPartImpl;
 
   factory _PleromaApiInstancePleromaPart.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiInstancePleromaPart.fromJson;
+      _$PleromaApiInstancePleromaPartImpl.fromJson;
 
   @override
   @HiveField(0)
   PleromaApiInstanceMetadata? get metadata;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiInstancePleromaPartCopyWith<_PleromaApiInstancePleromaPart>
+  _$$PleromaApiInstancePleromaPartImplCopyWith<
+          _$PleromaApiInstancePleromaPartImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 PleromaApiInstance _$PleromaApiInstanceFromJson(Map<String, dynamic> json) {
   return _PleromaApiInstance.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiInstanceTearOff {
-  const _$PleromaApiInstanceTearOff();
-
-  _PleromaApiInstance call(
-      {@HiveField(0)
-      @JsonKey(name: 'approval_required')
-          required bool? approvalRequired,
-      @HiveField(1)
-      @JsonKey(name: 'avatar_upload_limit')
-          required int? avatarUploadLimit,
-      @HiveField(2)
-      @JsonKey(name: 'background_upload_limit')
-          required int? backgroundUploadLimit,
-      @HiveField(3)
-      @JsonKey(name: 'banner_upload_limit')
-          required int? bannerUploadLimit,
-      @HiveField(4)
-      @JsonKey(name: 'contact_account')
-          required PleromaApiAccount? contactAccount,
-      @HiveField(5)
-          required String? email,
-      @HiveField(6)
-          required List<String>? languages,
-      @HiveField(7)
-      @JsonKey(name: 'max_toot_chars', fromJson: JsonParseHelper.intFromJsonOrNullOnError)
-          required int? maxTootChars,
-      @HiveField(8)
-          required PleromaApiInstancePleromaPart? pleroma,
-      @HiveField(9)
-      @JsonKey(name: 'poll_limits')
-          required PleromaApiInstancePollLimits? pollLimits,
-      @HiveField(10)
-          required bool? registrations,
-      @HiveField(11)
-      @JsonKey(name: 'short_description')
-          required String? shortDescription,
-      @HiveField(12)
-          required PleromaApiInstanceStats? stats,
-      @HiveField(13)
-          required String? thumbnail,
-      @HiveField(14)
-          required String? title,
-      @HiveField(15)
-      @JsonKey(name: 'upload_limit')
-          required int? uploadLimit,
-      @HiveField(16)
-          required String uri,
-      @HiveField(17)
-          required PleromaApiInstanceUrls? urls,
-      @HiveField(18)
-      @JsonKey(name: 'vapid_public_key')
-          required String? vapidPublicKey,
-      @HiveField(19)
-      @JsonKey(name: 'version')
-          required String versionString,
-      @HiveField(20)
-      @JsonKey(name: 'background_image')
-          required String? backgroundImage,
-      @HiveField(21)
-      @JsonKey(name: 'chat_limit')
-          required int? chatLimit,
-      @HiveField(22)
-          required String? description,
-      @HiveField(23)
-      @JsonKey(name: 'description_limit')
-          required int? descriptionLimit,
-      @HiveField(24)
-      @JsonKey(name: 'invites_enabled')
-          required bool? invitesEnabled}) {
-    return _PleromaApiInstance(
-      approvalRequired: approvalRequired,
-      avatarUploadLimit: avatarUploadLimit,
-      backgroundUploadLimit: backgroundUploadLimit,
-      bannerUploadLimit: bannerUploadLimit,
-      contactAccount: contactAccount,
-      email: email,
-      languages: languages,
-      maxTootChars: maxTootChars,
-      pleroma: pleroma,
-      pollLimits: pollLimits,
-      registrations: registrations,
-      shortDescription: shortDescription,
-      stats: stats,
-      thumbnail: thumbnail,
-      title: title,
-      uploadLimit: uploadLimit,
-      uri: uri,
-      urls: urls,
-      vapidPublicKey: vapidPublicKey,
-      versionString: versionString,
-      backgroundImage: backgroundImage,
-      chatLimit: chatLimit,
-      description: description,
-      descriptionLimit: descriptionLimit,
-      invitesEnabled: invitesEnabled,
-    );
-  }
-
-  PleromaApiInstance fromJson(Map<String, Object?> json) {
-    return PleromaApiInstance.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiInstance = _$PleromaApiInstanceTearOff();
 
 /// @nodoc
 mixin _$PleromaApiInstance {
@@ -388,73 +274,50 @@ mixin _$PleromaApiInstance {
 abstract class $PleromaApiInstanceCopyWith<$Res> {
   factory $PleromaApiInstanceCopyWith(
           PleromaApiInstance value, $Res Function(PleromaApiInstance) then) =
-      _$PleromaApiInstanceCopyWithImpl<$Res>;
+      _$PleromaApiInstanceCopyWithImpl<$Res, PleromaApiInstance>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-      @JsonKey(name: 'approval_required')
-          bool? approvalRequired,
+      {@HiveField(0) @JsonKey(name: 'approval_required') bool? approvalRequired,
       @HiveField(1)
       @JsonKey(name: 'avatar_upload_limit')
-          int? avatarUploadLimit,
+      int? avatarUploadLimit,
       @HiveField(2)
       @JsonKey(name: 'background_upload_limit')
-          int? backgroundUploadLimit,
+      int? backgroundUploadLimit,
       @HiveField(3)
       @JsonKey(name: 'banner_upload_limit')
-          int? bannerUploadLimit,
+      int? bannerUploadLimit,
       @HiveField(4)
       @JsonKey(name: 'contact_account')
-          PleromaApiAccount? contactAccount,
-      @HiveField(5)
-          String? email,
-      @HiveField(6)
-          List<String>? languages,
+      PleromaApiAccount? contactAccount,
+      @HiveField(5) String? email,
+      @HiveField(6) List<String>? languages,
       @HiveField(7)
-      @JsonKey(name: 'max_toot_chars', fromJson: JsonParseHelper.intFromJsonOrNullOnError)
-          int? maxTootChars,
-      @HiveField(8)
-          PleromaApiInstancePleromaPart? pleroma,
+      @JsonKey(
+          name: 'max_toot_chars',
+          fromJson: JsonParseHelper.intFromJsonOrNullOnError)
+      int? maxTootChars,
+      @HiveField(8) PleromaApiInstancePleromaPart? pleroma,
       @HiveField(9)
       @JsonKey(name: 'poll_limits')
-          PleromaApiInstancePollLimits? pollLimits,
-      @HiveField(10)
-          bool? registrations,
+      PleromaApiInstancePollLimits? pollLimits,
+      @HiveField(10) bool? registrations,
       @HiveField(11)
       @JsonKey(name: 'short_description')
-          String? shortDescription,
-      @HiveField(12)
-          PleromaApiInstanceStats? stats,
-      @HiveField(13)
-          String? thumbnail,
-      @HiveField(14)
-          String? title,
-      @HiveField(15)
-      @JsonKey(name: 'upload_limit')
-          int? uploadLimit,
-      @HiveField(16)
-          String uri,
-      @HiveField(17)
-          PleromaApiInstanceUrls? urls,
-      @HiveField(18)
-      @JsonKey(name: 'vapid_public_key')
-          String? vapidPublicKey,
-      @HiveField(19)
-      @JsonKey(name: 'version')
-          String versionString,
-      @HiveField(20)
-      @JsonKey(name: 'background_image')
-          String? backgroundImage,
-      @HiveField(21)
-      @JsonKey(name: 'chat_limit')
-          int? chatLimit,
-      @HiveField(22)
-          String? description,
-      @HiveField(23)
-      @JsonKey(name: 'description_limit')
-          int? descriptionLimit,
-      @HiveField(24)
-      @JsonKey(name: 'invites_enabled')
-          bool? invitesEnabled});
+      String? shortDescription,
+      @HiveField(12) PleromaApiInstanceStats? stats,
+      @HiveField(13) String? thumbnail,
+      @HiveField(14) String? title,
+      @HiveField(15) @JsonKey(name: 'upload_limit') int? uploadLimit,
+      @HiveField(16) String uri,
+      @HiveField(17) PleromaApiInstanceUrls? urls,
+      @HiveField(18) @JsonKey(name: 'vapid_public_key') String? vapidPublicKey,
+      @HiveField(19) @JsonKey(name: 'version') String versionString,
+      @HiveField(20) @JsonKey(name: 'background_image') String? backgroundImage,
+      @HiveField(21) @JsonKey(name: 'chat_limit') int? chatLimit,
+      @HiveField(22) String? description,
+      @HiveField(23) @JsonKey(name: 'description_limit') int? descriptionLimit,
+      @HiveField(24) @JsonKey(name: 'invites_enabled') bool? invitesEnabled});
 
   $PleromaApiAccountCopyWith<$Res>? get contactAccount;
   $PleromaApiInstancePleromaPartCopyWith<$Res>? get pleroma;
@@ -464,14 +327,16 @@ abstract class $PleromaApiInstanceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiInstanceCopyWithImpl<$Res>
+class _$PleromaApiInstanceCopyWithImpl<$Res, $Val extends PleromaApiInstance>
     implements $PleromaApiInstanceCopyWith<$Res> {
   _$PleromaApiInstanceCopyWithImpl(this._value, this._then);
 
-  final PleromaApiInstance _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiInstance) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? approvalRequired = freezed,
@@ -490,10 +355,10 @@ class _$PleromaApiInstanceCopyWithImpl<$Res>
     Object? thumbnail = freezed,
     Object? title = freezed,
     Object? uploadLimit = freezed,
-    Object? uri = freezed,
+    Object? uri = null,
     Object? urls = freezed,
     Object? vapidPublicKey = freezed,
-    Object? versionString = freezed,
+    Object? versionString = null,
     Object? backgroundImage = freezed,
     Object? chatLimit = freezed,
     Object? description = freezed,
@@ -501,121 +366,123 @@ class _$PleromaApiInstanceCopyWithImpl<$Res>
     Object? invitesEnabled = freezed,
   }) {
     return _then(_value.copyWith(
-      approvalRequired: approvalRequired == freezed
+      approvalRequired: freezed == approvalRequired
           ? _value.approvalRequired
           : approvalRequired // ignore: cast_nullable_to_non_nullable
               as bool?,
-      avatarUploadLimit: avatarUploadLimit == freezed
+      avatarUploadLimit: freezed == avatarUploadLimit
           ? _value.avatarUploadLimit
           : avatarUploadLimit // ignore: cast_nullable_to_non_nullable
               as int?,
-      backgroundUploadLimit: backgroundUploadLimit == freezed
+      backgroundUploadLimit: freezed == backgroundUploadLimit
           ? _value.backgroundUploadLimit
           : backgroundUploadLimit // ignore: cast_nullable_to_non_nullable
               as int?,
-      bannerUploadLimit: bannerUploadLimit == freezed
+      bannerUploadLimit: freezed == bannerUploadLimit
           ? _value.bannerUploadLimit
           : bannerUploadLimit // ignore: cast_nullable_to_non_nullable
               as int?,
-      contactAccount: contactAccount == freezed
+      contactAccount: freezed == contactAccount
           ? _value.contactAccount
           : contactAccount // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccount?,
-      email: email == freezed
+      email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String?,
-      languages: languages == freezed
+      languages: freezed == languages
           ? _value.languages
           : languages // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      maxTootChars: maxTootChars == freezed
+      maxTootChars: freezed == maxTootChars
           ? _value.maxTootChars
           : maxTootChars // ignore: cast_nullable_to_non_nullable
               as int?,
-      pleroma: pleroma == freezed
+      pleroma: freezed == pleroma
           ? _value.pleroma
           : pleroma // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstancePleromaPart?,
-      pollLimits: pollLimits == freezed
+      pollLimits: freezed == pollLimits
           ? _value.pollLimits
           : pollLimits // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstancePollLimits?,
-      registrations: registrations == freezed
+      registrations: freezed == registrations
           ? _value.registrations
           : registrations // ignore: cast_nullable_to_non_nullable
               as bool?,
-      shortDescription: shortDescription == freezed
+      shortDescription: freezed == shortDescription
           ? _value.shortDescription
           : shortDescription // ignore: cast_nullable_to_non_nullable
               as String?,
-      stats: stats == freezed
+      stats: freezed == stats
           ? _value.stats
           : stats // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstanceStats?,
-      thumbnail: thumbnail == freezed
+      thumbnail: freezed == thumbnail
           ? _value.thumbnail
           : thumbnail // ignore: cast_nullable_to_non_nullable
               as String?,
-      title: title == freezed
+      title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
-      uploadLimit: uploadLimit == freezed
+      uploadLimit: freezed == uploadLimit
           ? _value.uploadLimit
           : uploadLimit // ignore: cast_nullable_to_non_nullable
               as int?,
-      uri: uri == freezed
+      uri: null == uri
           ? _value.uri
           : uri // ignore: cast_nullable_to_non_nullable
               as String,
-      urls: urls == freezed
+      urls: freezed == urls
           ? _value.urls
           : urls // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstanceUrls?,
-      vapidPublicKey: vapidPublicKey == freezed
+      vapidPublicKey: freezed == vapidPublicKey
           ? _value.vapidPublicKey
           : vapidPublicKey // ignore: cast_nullable_to_non_nullable
               as String?,
-      versionString: versionString == freezed
+      versionString: null == versionString
           ? _value.versionString
           : versionString // ignore: cast_nullable_to_non_nullable
               as String,
-      backgroundImage: backgroundImage == freezed
+      backgroundImage: freezed == backgroundImage
           ? _value.backgroundImage
           : backgroundImage // ignore: cast_nullable_to_non_nullable
               as String?,
-      chatLimit: chatLimit == freezed
+      chatLimit: freezed == chatLimit
           ? _value.chatLimit
           : chatLimit // ignore: cast_nullable_to_non_nullable
               as int?,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      descriptionLimit: descriptionLimit == freezed
+      descriptionLimit: freezed == descriptionLimit
           ? _value.descriptionLimit
           : descriptionLimit // ignore: cast_nullable_to_non_nullable
               as int?,
-      invitesEnabled: invitesEnabled == freezed
+      invitesEnabled: freezed == invitesEnabled
           ? _value.invitesEnabled
           : invitesEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiAccountCopyWith<$Res>? get contactAccount {
     if (_value.contactAccount == null) {
       return null;
     }
 
     return $PleromaApiAccountCopyWith<$Res>(_value.contactAccount!, (value) {
-      return _then(_value.copyWith(contactAccount: value));
+      return _then(_value.copyWith(contactAccount: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiInstancePleromaPartCopyWith<$Res>? get pleroma {
     if (_value.pleroma == null) {
       return null;
@@ -623,11 +490,12 @@ class _$PleromaApiInstanceCopyWithImpl<$Res>
 
     return $PleromaApiInstancePleromaPartCopyWith<$Res>(_value.pleroma!,
         (value) {
-      return _then(_value.copyWith(pleroma: value));
+      return _then(_value.copyWith(pleroma: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiInstancePollLimitsCopyWith<$Res>? get pollLimits {
     if (_value.pollLimits == null) {
       return null;
@@ -635,106 +503,85 @@ class _$PleromaApiInstanceCopyWithImpl<$Res>
 
     return $PleromaApiInstancePollLimitsCopyWith<$Res>(_value.pollLimits!,
         (value) {
-      return _then(_value.copyWith(pollLimits: value));
+      return _then(_value.copyWith(pollLimits: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiInstanceStatsCopyWith<$Res>? get stats {
     if (_value.stats == null) {
       return null;
     }
 
     return $PleromaApiInstanceStatsCopyWith<$Res>(_value.stats!, (value) {
-      return _then(_value.copyWith(stats: value));
+      return _then(_value.copyWith(stats: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiInstanceUrlsCopyWith<$Res>? get urls {
     if (_value.urls == null) {
       return null;
     }
 
     return $PleromaApiInstanceUrlsCopyWith<$Res>(_value.urls!, (value) {
-      return _then(_value.copyWith(urls: value));
+      return _then(_value.copyWith(urls: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiInstanceCopyWith<$Res>
+abstract class _$$PleromaApiInstanceImplCopyWith<$Res>
     implements $PleromaApiInstanceCopyWith<$Res> {
-  factory _$PleromaApiInstanceCopyWith(
-          _PleromaApiInstance value, $Res Function(_PleromaApiInstance) then) =
-      __$PleromaApiInstanceCopyWithImpl<$Res>;
+  factory _$$PleromaApiInstanceImplCopyWith(_$PleromaApiInstanceImpl value,
+          $Res Function(_$PleromaApiInstanceImpl) then) =
+      __$$PleromaApiInstanceImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-      @JsonKey(name: 'approval_required')
-          bool? approvalRequired,
+      {@HiveField(0) @JsonKey(name: 'approval_required') bool? approvalRequired,
       @HiveField(1)
       @JsonKey(name: 'avatar_upload_limit')
-          int? avatarUploadLimit,
+      int? avatarUploadLimit,
       @HiveField(2)
       @JsonKey(name: 'background_upload_limit')
-          int? backgroundUploadLimit,
+      int? backgroundUploadLimit,
       @HiveField(3)
       @JsonKey(name: 'banner_upload_limit')
-          int? bannerUploadLimit,
+      int? bannerUploadLimit,
       @HiveField(4)
       @JsonKey(name: 'contact_account')
-          PleromaApiAccount? contactAccount,
-      @HiveField(5)
-          String? email,
-      @HiveField(6)
-          List<String>? languages,
+      PleromaApiAccount? contactAccount,
+      @HiveField(5) String? email,
+      @HiveField(6) List<String>? languages,
       @HiveField(7)
-      @JsonKey(name: 'max_toot_chars', fromJson: JsonParseHelper.intFromJsonOrNullOnError)
-          int? maxTootChars,
-      @HiveField(8)
-          PleromaApiInstancePleromaPart? pleroma,
+      @JsonKey(
+          name: 'max_toot_chars',
+          fromJson: JsonParseHelper.intFromJsonOrNullOnError)
+      int? maxTootChars,
+      @HiveField(8) PleromaApiInstancePleromaPart? pleroma,
       @HiveField(9)
       @JsonKey(name: 'poll_limits')
-          PleromaApiInstancePollLimits? pollLimits,
-      @HiveField(10)
-          bool? registrations,
+      PleromaApiInstancePollLimits? pollLimits,
+      @HiveField(10) bool? registrations,
       @HiveField(11)
       @JsonKey(name: 'short_description')
-          String? shortDescription,
-      @HiveField(12)
-          PleromaApiInstanceStats? stats,
-      @HiveField(13)
-          String? thumbnail,
-      @HiveField(14)
-          String? title,
-      @HiveField(15)
-      @JsonKey(name: 'upload_limit')
-          int? uploadLimit,
-      @HiveField(16)
-          String uri,
-      @HiveField(17)
-          PleromaApiInstanceUrls? urls,
-      @HiveField(18)
-      @JsonKey(name: 'vapid_public_key')
-          String? vapidPublicKey,
-      @HiveField(19)
-      @JsonKey(name: 'version')
-          String versionString,
-      @HiveField(20)
-      @JsonKey(name: 'background_image')
-          String? backgroundImage,
-      @HiveField(21)
-      @JsonKey(name: 'chat_limit')
-          int? chatLimit,
-      @HiveField(22)
-          String? description,
-      @HiveField(23)
-      @JsonKey(name: 'description_limit')
-          int? descriptionLimit,
-      @HiveField(24)
-      @JsonKey(name: 'invites_enabled')
-          bool? invitesEnabled});
+      String? shortDescription,
+      @HiveField(12) PleromaApiInstanceStats? stats,
+      @HiveField(13) String? thumbnail,
+      @HiveField(14) String? title,
+      @HiveField(15) @JsonKey(name: 'upload_limit') int? uploadLimit,
+      @HiveField(16) String uri,
+      @HiveField(17) PleromaApiInstanceUrls? urls,
+      @HiveField(18) @JsonKey(name: 'vapid_public_key') String? vapidPublicKey,
+      @HiveField(19) @JsonKey(name: 'version') String versionString,
+      @HiveField(20) @JsonKey(name: 'background_image') String? backgroundImage,
+      @HiveField(21) @JsonKey(name: 'chat_limit') int? chatLimit,
+      @HiveField(22) String? description,
+      @HiveField(23) @JsonKey(name: 'description_limit') int? descriptionLimit,
+      @HiveField(24) @JsonKey(name: 'invites_enabled') bool? invitesEnabled});
 
   @override
   $PleromaApiAccountCopyWith<$Res>? get contactAccount;
@@ -749,16 +596,14 @@ abstract class _$PleromaApiInstanceCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiInstanceCopyWithImpl<$Res>
-    extends _$PleromaApiInstanceCopyWithImpl<$Res>
-    implements _$PleromaApiInstanceCopyWith<$Res> {
-  __$PleromaApiInstanceCopyWithImpl(
-      _PleromaApiInstance _value, $Res Function(_PleromaApiInstance) _then)
-      : super(_value, (v) => _then(v as _PleromaApiInstance));
+class __$$PleromaApiInstanceImplCopyWithImpl<$Res>
+    extends _$PleromaApiInstanceCopyWithImpl<$Res, _$PleromaApiInstanceImpl>
+    implements _$$PleromaApiInstanceImplCopyWith<$Res> {
+  __$$PleromaApiInstanceImplCopyWithImpl(_$PleromaApiInstanceImpl _value,
+      $Res Function(_$PleromaApiInstanceImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiInstance get _value => super._value as _PleromaApiInstance;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? approvalRequired = freezed,
@@ -777,114 +622,114 @@ class __$PleromaApiInstanceCopyWithImpl<$Res>
     Object? thumbnail = freezed,
     Object? title = freezed,
     Object? uploadLimit = freezed,
-    Object? uri = freezed,
+    Object? uri = null,
     Object? urls = freezed,
     Object? vapidPublicKey = freezed,
-    Object? versionString = freezed,
+    Object? versionString = null,
     Object? backgroundImage = freezed,
     Object? chatLimit = freezed,
     Object? description = freezed,
     Object? descriptionLimit = freezed,
     Object? invitesEnabled = freezed,
   }) {
-    return _then(_PleromaApiInstance(
-      approvalRequired: approvalRequired == freezed
+    return _then(_$PleromaApiInstanceImpl(
+      approvalRequired: freezed == approvalRequired
           ? _value.approvalRequired
           : approvalRequired // ignore: cast_nullable_to_non_nullable
               as bool?,
-      avatarUploadLimit: avatarUploadLimit == freezed
+      avatarUploadLimit: freezed == avatarUploadLimit
           ? _value.avatarUploadLimit
           : avatarUploadLimit // ignore: cast_nullable_to_non_nullable
               as int?,
-      backgroundUploadLimit: backgroundUploadLimit == freezed
+      backgroundUploadLimit: freezed == backgroundUploadLimit
           ? _value.backgroundUploadLimit
           : backgroundUploadLimit // ignore: cast_nullable_to_non_nullable
               as int?,
-      bannerUploadLimit: bannerUploadLimit == freezed
+      bannerUploadLimit: freezed == bannerUploadLimit
           ? _value.bannerUploadLimit
           : bannerUploadLimit // ignore: cast_nullable_to_non_nullable
               as int?,
-      contactAccount: contactAccount == freezed
+      contactAccount: freezed == contactAccount
           ? _value.contactAccount
           : contactAccount // ignore: cast_nullable_to_non_nullable
               as PleromaApiAccount?,
-      email: email == freezed
+      email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String?,
-      languages: languages == freezed
-          ? _value.languages
+      languages: freezed == languages
+          ? _value._languages
           : languages // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      maxTootChars: maxTootChars == freezed
+      maxTootChars: freezed == maxTootChars
           ? _value.maxTootChars
           : maxTootChars // ignore: cast_nullable_to_non_nullable
               as int?,
-      pleroma: pleroma == freezed
+      pleroma: freezed == pleroma
           ? _value.pleroma
           : pleroma // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstancePleromaPart?,
-      pollLimits: pollLimits == freezed
+      pollLimits: freezed == pollLimits
           ? _value.pollLimits
           : pollLimits // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstancePollLimits?,
-      registrations: registrations == freezed
+      registrations: freezed == registrations
           ? _value.registrations
           : registrations // ignore: cast_nullable_to_non_nullable
               as bool?,
-      shortDescription: shortDescription == freezed
+      shortDescription: freezed == shortDescription
           ? _value.shortDescription
           : shortDescription // ignore: cast_nullable_to_non_nullable
               as String?,
-      stats: stats == freezed
+      stats: freezed == stats
           ? _value.stats
           : stats // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstanceStats?,
-      thumbnail: thumbnail == freezed
+      thumbnail: freezed == thumbnail
           ? _value.thumbnail
           : thumbnail // ignore: cast_nullable_to_non_nullable
               as String?,
-      title: title == freezed
+      title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
-      uploadLimit: uploadLimit == freezed
+      uploadLimit: freezed == uploadLimit
           ? _value.uploadLimit
           : uploadLimit // ignore: cast_nullable_to_non_nullable
               as int?,
-      uri: uri == freezed
+      uri: null == uri
           ? _value.uri
           : uri // ignore: cast_nullable_to_non_nullable
               as String,
-      urls: urls == freezed
+      urls: freezed == urls
           ? _value.urls
           : urls // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstanceUrls?,
-      vapidPublicKey: vapidPublicKey == freezed
+      vapidPublicKey: freezed == vapidPublicKey
           ? _value.vapidPublicKey
           : vapidPublicKey // ignore: cast_nullable_to_non_nullable
               as String?,
-      versionString: versionString == freezed
+      versionString: null == versionString
           ? _value.versionString
           : versionString // ignore: cast_nullable_to_non_nullable
               as String,
-      backgroundImage: backgroundImage == freezed
+      backgroundImage: freezed == backgroundImage
           ? _value.backgroundImage
           : backgroundImage // ignore: cast_nullable_to_non_nullable
               as String?,
-      chatLimit: chatLimit == freezed
+      chatLimit: freezed == chatLimit
           ? _value.chatLimit
           : chatLimit // ignore: cast_nullable_to_non_nullable
               as int?,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      descriptionLimit: descriptionLimit == freezed
+      descriptionLimit: freezed == descriptionLimit
           ? _value.descriptionLimit
           : descriptionLimit // ignore: cast_nullable_to_non_nullable
               as int?,
-      invitesEnabled: invitesEnabled == freezed
+      invitesEnabled: freezed == invitesEnabled
           ? _value.invitesEnabled
           : invitesEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -894,76 +739,61 @@ class __$PleromaApiInstanceCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiInstance implements _PleromaApiInstance {
-  const _$_PleromaApiInstance(
+class _$PleromaApiInstanceImpl implements _PleromaApiInstance {
+  const _$PleromaApiInstanceImpl(
       {@HiveField(0)
       @JsonKey(name: 'approval_required')
-          required this.approvalRequired,
+      required this.approvalRequired,
       @HiveField(1)
       @JsonKey(name: 'avatar_upload_limit')
-          required this.avatarUploadLimit,
+      required this.avatarUploadLimit,
       @HiveField(2)
       @JsonKey(name: 'background_upload_limit')
-          required this.backgroundUploadLimit,
+      required this.backgroundUploadLimit,
       @HiveField(3)
       @JsonKey(name: 'banner_upload_limit')
-          required this.bannerUploadLimit,
+      required this.bannerUploadLimit,
       @HiveField(4)
       @JsonKey(name: 'contact_account')
-          required this.contactAccount,
-      @HiveField(5)
-          required this.email,
-      @HiveField(6)
-          required this.languages,
+      required this.contactAccount,
+      @HiveField(5) required this.email,
+      @HiveField(6) required final List<String>? languages,
       @HiveField(7)
-      @JsonKey(name: 'max_toot_chars', fromJson: JsonParseHelper.intFromJsonOrNullOnError)
-          required this.maxTootChars,
-      @HiveField(8)
-          required this.pleroma,
-      @HiveField(9)
-      @JsonKey(name: 'poll_limits')
-          required this.pollLimits,
-      @HiveField(10)
-          required this.registrations,
+      @JsonKey(
+          name: 'max_toot_chars',
+          fromJson: JsonParseHelper.intFromJsonOrNullOnError)
+      required this.maxTootChars,
+      @HiveField(8) required this.pleroma,
+      @HiveField(9) @JsonKey(name: 'poll_limits') required this.pollLimits,
+      @HiveField(10) required this.registrations,
       @HiveField(11)
       @JsonKey(name: 'short_description')
-          required this.shortDescription,
-      @HiveField(12)
-          required this.stats,
-      @HiveField(13)
-          required this.thumbnail,
-      @HiveField(14)
-          required this.title,
-      @HiveField(15)
-      @JsonKey(name: 'upload_limit')
-          required this.uploadLimit,
-      @HiveField(16)
-          required this.uri,
-      @HiveField(17)
-          required this.urls,
+      required this.shortDescription,
+      @HiveField(12) required this.stats,
+      @HiveField(13) required this.thumbnail,
+      @HiveField(14) required this.title,
+      @HiveField(15) @JsonKey(name: 'upload_limit') required this.uploadLimit,
+      @HiveField(16) required this.uri,
+      @HiveField(17) required this.urls,
       @HiveField(18)
       @JsonKey(name: 'vapid_public_key')
-          required this.vapidPublicKey,
-      @HiveField(19)
-      @JsonKey(name: 'version')
-          required this.versionString,
+      required this.vapidPublicKey,
+      @HiveField(19) @JsonKey(name: 'version') required this.versionString,
       @HiveField(20)
       @JsonKey(name: 'background_image')
-          required this.backgroundImage,
-      @HiveField(21)
-      @JsonKey(name: 'chat_limit')
-          required this.chatLimit,
-      @HiveField(22)
-          required this.description,
+      required this.backgroundImage,
+      @HiveField(21) @JsonKey(name: 'chat_limit') required this.chatLimit,
+      @HiveField(22) required this.description,
       @HiveField(23)
       @JsonKey(name: 'description_limit')
-          required this.descriptionLimit,
+      required this.descriptionLimit,
       @HiveField(24)
       @JsonKey(name: 'invites_enabled')
-          required this.invitesEnabled});
+      required this.invitesEnabled})
+      : _languages = languages;
 
-  factory _$_PleromaApiInstance.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiInstanceFromJson(json);
+  factory _$PleromaApiInstanceImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiInstanceImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -988,9 +818,17 @@ class _$_PleromaApiInstance implements _PleromaApiInstance {
   @override
   @HiveField(5)
   final String? email;
+  final List<String>? _languages;
   @override
   @HiveField(6)
-  final List<String>? languages;
+  List<String>? get languages {
+    final value = _languages;
+    if (value == null) return null;
+    if (_languages is EqualUnmodifiableListView) return _languages;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(7)
   @JsonKey(
@@ -1064,10 +902,10 @@ class _$_PleromaApiInstance implements _PleromaApiInstance {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiInstance &&
+            other is _$PleromaApiInstanceImpl &&
             (identical(other.approvalRequired, approvalRequired) ||
                 other.approvalRequired == approvalRequired) &&
             (identical(other.avatarUploadLimit, avatarUploadLimit) ||
@@ -1079,7 +917,8 @@ class _$_PleromaApiInstance implements _PleromaApiInstance {
             (identical(other.contactAccount, contactAccount) ||
                 other.contactAccount == contactAccount) &&
             (identical(other.email, email) || other.email == email) &&
-            const DeepCollectionEquality().equals(other.languages, languages) &&
+            const DeepCollectionEquality()
+                .equals(other._languages, _languages) &&
             (identical(other.maxTootChars, maxTootChars) ||
                 other.maxTootChars == maxTootChars) &&
             (identical(other.pleroma, pleroma) || other.pleroma == pleroma) &&
@@ -1113,6 +952,7 @@ class _$_PleromaApiInstance implements _PleromaApiInstance {
                 other.invitesEnabled == invitesEnabled));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1122,7 +962,7 @@ class _$_PleromaApiInstance implements _PleromaApiInstance {
         bannerUploadLimit,
         contactAccount,
         email,
-        const DeepCollectionEquality().hash(languages),
+        const DeepCollectionEquality().hash(_languages),
         maxTootChars,
         pleroma,
         pollLimits,
@@ -1145,12 +985,16 @@ class _$_PleromaApiInstance implements _PleromaApiInstance {
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiInstanceCopyWith<_PleromaApiInstance> get copyWith =>
-      __$PleromaApiInstanceCopyWithImpl<_PleromaApiInstance>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiInstanceImplCopyWith<_$PleromaApiInstanceImpl> get copyWith =>
+      __$$PleromaApiInstanceImplCopyWithImpl<_$PleromaApiInstanceImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiInstanceToJson(this);
+    return _$$PleromaApiInstanceImplToJson(
+      this,
+    );
   }
 }
 
@@ -1158,72 +1002,62 @@ abstract class _PleromaApiInstance implements PleromaApiInstance {
   const factory _PleromaApiInstance(
       {@HiveField(0)
       @JsonKey(name: 'approval_required')
-          required bool? approvalRequired,
+      required final bool? approvalRequired,
       @HiveField(1)
       @JsonKey(name: 'avatar_upload_limit')
-          required int? avatarUploadLimit,
+      required final int? avatarUploadLimit,
       @HiveField(2)
       @JsonKey(name: 'background_upload_limit')
-          required int? backgroundUploadLimit,
+      required final int? backgroundUploadLimit,
       @HiveField(3)
       @JsonKey(name: 'banner_upload_limit')
-          required int? bannerUploadLimit,
+      required final int? bannerUploadLimit,
       @HiveField(4)
       @JsonKey(name: 'contact_account')
-          required PleromaApiAccount? contactAccount,
-      @HiveField(5)
-          required String? email,
-      @HiveField(6)
-          required List<String>? languages,
+      required final PleromaApiAccount? contactAccount,
+      @HiveField(5) required final String? email,
+      @HiveField(6) required final List<String>? languages,
       @HiveField(7)
-      @JsonKey(name: 'max_toot_chars', fromJson: JsonParseHelper.intFromJsonOrNullOnError)
-          required int? maxTootChars,
-      @HiveField(8)
-          required PleromaApiInstancePleromaPart? pleroma,
+      @JsonKey(
+          name: 'max_toot_chars',
+          fromJson: JsonParseHelper.intFromJsonOrNullOnError)
+      required final int? maxTootChars,
+      @HiveField(8) required final PleromaApiInstancePleromaPart? pleroma,
       @HiveField(9)
       @JsonKey(name: 'poll_limits')
-          required PleromaApiInstancePollLimits? pollLimits,
-      @HiveField(10)
-          required bool? registrations,
+      required final PleromaApiInstancePollLimits? pollLimits,
+      @HiveField(10) required final bool? registrations,
       @HiveField(11)
       @JsonKey(name: 'short_description')
-          required String? shortDescription,
-      @HiveField(12)
-          required PleromaApiInstanceStats? stats,
-      @HiveField(13)
-          required String? thumbnail,
-      @HiveField(14)
-          required String? title,
+      required final String? shortDescription,
+      @HiveField(12) required final PleromaApiInstanceStats? stats,
+      @HiveField(13) required final String? thumbnail,
+      @HiveField(14) required final String? title,
       @HiveField(15)
       @JsonKey(name: 'upload_limit')
-          required int? uploadLimit,
-      @HiveField(16)
-          required String uri,
-      @HiveField(17)
-          required PleromaApiInstanceUrls? urls,
+      required final int? uploadLimit,
+      @HiveField(16) required final String uri,
+      @HiveField(17) required final PleromaApiInstanceUrls? urls,
       @HiveField(18)
       @JsonKey(name: 'vapid_public_key')
-          required String? vapidPublicKey,
+      required final String? vapidPublicKey,
       @HiveField(19)
       @JsonKey(name: 'version')
-          required String versionString,
+      required final String versionString,
       @HiveField(20)
       @JsonKey(name: 'background_image')
-          required String? backgroundImage,
-      @HiveField(21)
-      @JsonKey(name: 'chat_limit')
-          required int? chatLimit,
-      @HiveField(22)
-          required String? description,
+      required final String? backgroundImage,
+      @HiveField(21) @JsonKey(name: 'chat_limit') required final int? chatLimit,
+      @HiveField(22) required final String? description,
       @HiveField(23)
       @JsonKey(name: 'description_limit')
-          required int? descriptionLimit,
+      required final int? descriptionLimit,
       @HiveField(24)
       @JsonKey(name: 'invites_enabled')
-          required bool? invitesEnabled}) = _$_PleromaApiInstance;
+      required final bool? invitesEnabled}) = _$PleromaApiInstanceImpl;
 
   factory _PleromaApiInstance.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiInstance.fromJson;
+      _$PleromaApiInstanceImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -1319,6 +1153,6 @@ abstract class _PleromaApiInstance implements PleromaApiInstance {
   bool? get invitesEnabled;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiInstanceCopyWith<_PleromaApiInstance> get copyWith =>
+  _$$PleromaApiInstanceImplCopyWith<_$PleromaApiInstanceImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

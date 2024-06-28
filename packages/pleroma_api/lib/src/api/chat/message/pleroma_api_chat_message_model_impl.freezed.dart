@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_chat_message_model_impl.dart';
 
@@ -11,57 +12,12 @@ part of 'pleroma_api_chat_message_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiChatMessage _$PleromaApiChatMessageFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiChatMessage.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiChatMessageTearOff {
-  const _$PleromaApiChatMessageTearOff();
-
-  _PleromaApiChatMessage call(
-      {@HiveField(0)
-          required String id,
-      @HiveField(1)
-      @JsonKey(name: 'chat_id')
-          required String chatId,
-      @HiveField(2)
-      @JsonKey(name: 'account_id')
-          required String accountId,
-      @HiveField(3)
-          required String? content,
-      @HiveField(4)
-      @JsonKey(name: 'created_at')
-          required DateTime createdAt,
-      @HiveField(5)
-          required List<PleromaApiEmoji>? emojis,
-      @HiveField(6)
-      @JsonKey(name: 'attachment')
-          required PleromaApiMediaAttachment? mediaAttachment,
-      @HiveField(7)
-          required PleromaApiCard? card}) {
-    return _PleromaApiChatMessage(
-      id: id,
-      chatId: chatId,
-      accountId: accountId,
-      content: content,
-      createdAt: createdAt,
-      emojis: emojis,
-      mediaAttachment: mediaAttachment,
-      card: card,
-    );
-  }
-
-  PleromaApiChatMessage fromJson(Map<String, Object?> json) {
-    return PleromaApiChatMessage.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiChatMessage = _$PleromaApiChatMessageTearOff();
 
 /// @nodoc
 mixin _$PleromaApiChatMessage {
@@ -97,90 +53,85 @@ mixin _$PleromaApiChatMessage {
 abstract class $PleromaApiChatMessageCopyWith<$Res> {
   factory $PleromaApiChatMessageCopyWith(PleromaApiChatMessage value,
           $Res Function(PleromaApiChatMessage) then) =
-      _$PleromaApiChatMessageCopyWithImpl<$Res>;
+      _$PleromaApiChatMessageCopyWithImpl<$Res, PleromaApiChatMessage>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-          String id,
-      @HiveField(1)
-      @JsonKey(name: 'chat_id')
-          String chatId,
-      @HiveField(2)
-      @JsonKey(name: 'account_id')
-          String accountId,
-      @HiveField(3)
-          String? content,
-      @HiveField(4)
-      @JsonKey(name: 'created_at')
-          DateTime createdAt,
-      @HiveField(5)
-          List<PleromaApiEmoji>? emojis,
+      {@HiveField(0) String id,
+      @HiveField(1) @JsonKey(name: 'chat_id') String chatId,
+      @HiveField(2) @JsonKey(name: 'account_id') String accountId,
+      @HiveField(3) String? content,
+      @HiveField(4) @JsonKey(name: 'created_at') DateTime createdAt,
+      @HiveField(5) List<PleromaApiEmoji>? emojis,
       @HiveField(6)
       @JsonKey(name: 'attachment')
-          PleromaApiMediaAttachment? mediaAttachment,
-      @HiveField(7)
-          PleromaApiCard? card});
+      PleromaApiMediaAttachment? mediaAttachment,
+      @HiveField(7) PleromaApiCard? card});
 
   $PleromaApiMediaAttachmentCopyWith<$Res>? get mediaAttachment;
   $PleromaApiCardCopyWith<$Res>? get card;
 }
 
 /// @nodoc
-class _$PleromaApiChatMessageCopyWithImpl<$Res>
+class _$PleromaApiChatMessageCopyWithImpl<$Res,
+        $Val extends PleromaApiChatMessage>
     implements $PleromaApiChatMessageCopyWith<$Res> {
   _$PleromaApiChatMessageCopyWithImpl(this._value, this._then);
 
-  final PleromaApiChatMessage _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiChatMessage) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? chatId = freezed,
-    Object? accountId = freezed,
+    Object? id = null,
+    Object? chatId = null,
+    Object? accountId = null,
     Object? content = freezed,
-    Object? createdAt = freezed,
+    Object? createdAt = null,
     Object? emojis = freezed,
     Object? mediaAttachment = freezed,
     Object? card = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      chatId: chatId == freezed
+      chatId: null == chatId
           ? _value.chatId
           : chatId // ignore: cast_nullable_to_non_nullable
               as String,
-      accountId: accountId == freezed
+      accountId: null == accountId
           ? _value.accountId
           : accountId // ignore: cast_nullable_to_non_nullable
               as String,
-      content: content == freezed
+      content: freezed == content
           ? _value.content
           : content // ignore: cast_nullable_to_non_nullable
               as String?,
-      createdAt: createdAt == freezed
+      createdAt: null == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      emojis: emojis == freezed
+      emojis: freezed == emojis
           ? _value.emojis
           : emojis // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiEmoji>?,
-      mediaAttachment: mediaAttachment == freezed
+      mediaAttachment: freezed == mediaAttachment
           ? _value.mediaAttachment
           : mediaAttachment // ignore: cast_nullable_to_non_nullable
               as PleromaApiMediaAttachment?,
-      card: card == freezed
+      card: freezed == card
           ? _value.card
           : card // ignore: cast_nullable_to_non_nullable
               as PleromaApiCard?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiMediaAttachmentCopyWith<$Res>? get mediaAttachment {
     if (_value.mediaAttachment == null) {
       return null;
@@ -188,50 +139,43 @@ class _$PleromaApiChatMessageCopyWithImpl<$Res>
 
     return $PleromaApiMediaAttachmentCopyWith<$Res>(_value.mediaAttachment!,
         (value) {
-      return _then(_value.copyWith(mediaAttachment: value));
+      return _then(_value.copyWith(mediaAttachment: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiCardCopyWith<$Res>? get card {
     if (_value.card == null) {
       return null;
     }
 
     return $PleromaApiCardCopyWith<$Res>(_value.card!, (value) {
-      return _then(_value.copyWith(card: value));
+      return _then(_value.copyWith(card: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiChatMessageCopyWith<$Res>
+abstract class _$$PleromaApiChatMessageImplCopyWith<$Res>
     implements $PleromaApiChatMessageCopyWith<$Res> {
-  factory _$PleromaApiChatMessageCopyWith(_PleromaApiChatMessage value,
-          $Res Function(_PleromaApiChatMessage) then) =
-      __$PleromaApiChatMessageCopyWithImpl<$Res>;
+  factory _$$PleromaApiChatMessageImplCopyWith(
+          _$PleromaApiChatMessageImpl value,
+          $Res Function(_$PleromaApiChatMessageImpl) then) =
+      __$$PleromaApiChatMessageImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-          String id,
-      @HiveField(1)
-      @JsonKey(name: 'chat_id')
-          String chatId,
-      @HiveField(2)
-      @JsonKey(name: 'account_id')
-          String accountId,
-      @HiveField(3)
-          String? content,
-      @HiveField(4)
-      @JsonKey(name: 'created_at')
-          DateTime createdAt,
-      @HiveField(5)
-          List<PleromaApiEmoji>? emojis,
+      {@HiveField(0) String id,
+      @HiveField(1) @JsonKey(name: 'chat_id') String chatId,
+      @HiveField(2) @JsonKey(name: 'account_id') String accountId,
+      @HiveField(3) String? content,
+      @HiveField(4) @JsonKey(name: 'created_at') DateTime createdAt,
+      @HiveField(5) List<PleromaApiEmoji>? emojis,
       @HiveField(6)
       @JsonKey(name: 'attachment')
-          PleromaApiMediaAttachment? mediaAttachment,
-      @HiveField(7)
-          PleromaApiCard? card});
+      PleromaApiMediaAttachment? mediaAttachment,
+      @HiveField(7) PleromaApiCard? card});
 
   @override
   $PleromaApiMediaAttachmentCopyWith<$Res>? get mediaAttachment;
@@ -240,57 +184,56 @@ abstract class _$PleromaApiChatMessageCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiChatMessageCopyWithImpl<$Res>
-    extends _$PleromaApiChatMessageCopyWithImpl<$Res>
-    implements _$PleromaApiChatMessageCopyWith<$Res> {
-  __$PleromaApiChatMessageCopyWithImpl(_PleromaApiChatMessage _value,
-      $Res Function(_PleromaApiChatMessage) _then)
-      : super(_value, (v) => _then(v as _PleromaApiChatMessage));
+class __$$PleromaApiChatMessageImplCopyWithImpl<$Res>
+    extends _$PleromaApiChatMessageCopyWithImpl<$Res,
+        _$PleromaApiChatMessageImpl>
+    implements _$$PleromaApiChatMessageImplCopyWith<$Res> {
+  __$$PleromaApiChatMessageImplCopyWithImpl(_$PleromaApiChatMessageImpl _value,
+      $Res Function(_$PleromaApiChatMessageImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiChatMessage get _value => super._value as _PleromaApiChatMessage;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? chatId = freezed,
-    Object? accountId = freezed,
+    Object? id = null,
+    Object? chatId = null,
+    Object? accountId = null,
     Object? content = freezed,
-    Object? createdAt = freezed,
+    Object? createdAt = null,
     Object? emojis = freezed,
     Object? mediaAttachment = freezed,
     Object? card = freezed,
   }) {
-    return _then(_PleromaApiChatMessage(
-      id: id == freezed
+    return _then(_$PleromaApiChatMessageImpl(
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      chatId: chatId == freezed
+      chatId: null == chatId
           ? _value.chatId
           : chatId // ignore: cast_nullable_to_non_nullable
               as String,
-      accountId: accountId == freezed
+      accountId: null == accountId
           ? _value.accountId
           : accountId // ignore: cast_nullable_to_non_nullable
               as String,
-      content: content == freezed
+      content: freezed == content
           ? _value.content
           : content // ignore: cast_nullable_to_non_nullable
               as String?,
-      createdAt: createdAt == freezed
+      createdAt: null == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      emojis: emojis == freezed
-          ? _value.emojis
+      emojis: freezed == emojis
+          ? _value._emojis
           : emojis // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiEmoji>?,
-      mediaAttachment: mediaAttachment == freezed
+      mediaAttachment: freezed == mediaAttachment
           ? _value.mediaAttachment
           : mediaAttachment // ignore: cast_nullable_to_non_nullable
               as PleromaApiMediaAttachment?,
-      card: card == freezed
+      card: freezed == card
           ? _value.card
           : card // ignore: cast_nullable_to_non_nullable
               as PleromaApiCard?,
@@ -300,19 +243,20 @@ class __$PleromaApiChatMessageCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiChatMessage implements _PleromaApiChatMessage {
-  const _$_PleromaApiChatMessage(
+class _$PleromaApiChatMessageImpl implements _PleromaApiChatMessage {
+  const _$PleromaApiChatMessageImpl(
       {@HiveField(0) required this.id,
       @HiveField(1) @JsonKey(name: 'chat_id') required this.chatId,
       @HiveField(2) @JsonKey(name: 'account_id') required this.accountId,
       @HiveField(3) required this.content,
       @HiveField(4) @JsonKey(name: 'created_at') required this.createdAt,
-      @HiveField(5) required this.emojis,
+      @HiveField(5) required final List<PleromaApiEmoji>? emojis,
       @HiveField(6) @JsonKey(name: 'attachment') required this.mediaAttachment,
-      @HiveField(7) required this.card});
+      @HiveField(7) required this.card})
+      : _emojis = emojis;
 
-  factory _$_PleromaApiChatMessage.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiChatMessageFromJson(json);
+  factory _$PleromaApiChatMessageImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiChatMessageImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -332,9 +276,17 @@ class _$_PleromaApiChatMessage implements _PleromaApiChatMessage {
   @HiveField(4)
   @JsonKey(name: 'created_at')
   final DateTime createdAt;
+  final List<PleromaApiEmoji>? _emojis;
   @override
   @HiveField(5)
-  final List<PleromaApiEmoji>? emojis;
+  List<PleromaApiEmoji>? get emojis {
+    final value = _emojis;
+    if (value == null) return null;
+    if (_emojis is EqualUnmodifiableListView) return _emojis;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(6)
   @JsonKey(name: 'attachment')
@@ -349,10 +301,10 @@ class _$_PleromaApiChatMessage implements _PleromaApiChatMessage {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiChatMessage &&
+            other is _$PleromaApiChatMessageImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.chatId, chatId) || other.chatId == chatId) &&
             (identical(other.accountId, accountId) ||
@@ -360,12 +312,13 @@ class _$_PleromaApiChatMessage implements _PleromaApiChatMessage {
             (identical(other.content, content) || other.content == content) &&
             (identical(other.createdAt, createdAt) ||
                 other.createdAt == createdAt) &&
-            const DeepCollectionEquality().equals(other.emojis, emojis) &&
+            const DeepCollectionEquality().equals(other._emojis, _emojis) &&
             (identical(other.mediaAttachment, mediaAttachment) ||
                 other.mediaAttachment == mediaAttachment) &&
             (identical(other.card, card) || other.card == card));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -374,47 +327,45 @@ class _$_PleromaApiChatMessage implements _PleromaApiChatMessage {
       accountId,
       content,
       createdAt,
-      const DeepCollectionEquality().hash(emojis),
+      const DeepCollectionEquality().hash(_emojis),
       mediaAttachment,
       card);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiChatMessageCopyWith<_PleromaApiChatMessage> get copyWith =>
-      __$PleromaApiChatMessageCopyWithImpl<_PleromaApiChatMessage>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiChatMessageImplCopyWith<_$PleromaApiChatMessageImpl>
+      get copyWith => __$$PleromaApiChatMessageImplCopyWithImpl<
+          _$PleromaApiChatMessageImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiChatMessageToJson(this);
+    return _$$PleromaApiChatMessageImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiChatMessage implements PleromaApiChatMessage {
   const factory _PleromaApiChatMessage(
-      {@HiveField(0)
-          required String id,
-      @HiveField(1)
-      @JsonKey(name: 'chat_id')
-          required String chatId,
-      @HiveField(2)
-      @JsonKey(name: 'account_id')
-          required String accountId,
-      @HiveField(3)
-          required String? content,
-      @HiveField(4)
-      @JsonKey(name: 'created_at')
-          required DateTime createdAt,
-      @HiveField(5)
-          required List<PleromaApiEmoji>? emojis,
-      @HiveField(6)
-      @JsonKey(name: 'attachment')
-          required PleromaApiMediaAttachment? mediaAttachment,
-      @HiveField(7)
-          required PleromaApiCard? card}) = _$_PleromaApiChatMessage;
+          {@HiveField(0) required final String id,
+          @HiveField(1) @JsonKey(name: 'chat_id') required final String chatId,
+          @HiveField(2)
+          @JsonKey(name: 'account_id')
+          required final String accountId,
+          @HiveField(3) required final String? content,
+          @HiveField(4)
+          @JsonKey(name: 'created_at')
+          required final DateTime createdAt,
+          @HiveField(5) required final List<PleromaApiEmoji>? emojis,
+          @HiveField(6)
+          @JsonKey(name: 'attachment')
+          required final PleromaApiMediaAttachment? mediaAttachment,
+          @HiveField(7) required final PleromaApiCard? card}) =
+      _$PleromaApiChatMessageImpl;
 
   factory _PleromaApiChatMessage.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiChatMessage.fromJson;
+      _$PleromaApiChatMessageImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -446,6 +397,6 @@ abstract class _PleromaApiChatMessage implements PleromaApiChatMessage {
   PleromaApiCard? get card;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiChatMessageCopyWith<_PleromaApiChatMessage> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PleromaApiChatMessageImplCopyWith<_$PleromaApiChatMessageImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

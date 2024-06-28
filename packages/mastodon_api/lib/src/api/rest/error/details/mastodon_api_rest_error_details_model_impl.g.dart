@@ -6,9 +6,9 @@ part of 'mastodon_api_rest_error_details_model_impl.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiRestErrorDetails _$$_MastodonApiRestErrorDetailsFromJson(
+_$MastodonApiRestErrorDetailsImpl _$$MastodonApiRestErrorDetailsImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiRestErrorDetails(
+    _$MastodonApiRestErrorDetailsImpl(
       error: json['error'] as String,
       description: json['description'] as String?,
       details: (json['details'] as Map<String, dynamic>?)?.map(
@@ -21,8 +21,8 @@ _$_MastodonApiRestErrorDetails _$$_MastodonApiRestErrorDetailsFromJson(
       ),
     );
 
-Map<String, dynamic> _$$_MastodonApiRestErrorDetailsToJson(
-    _$_MastodonApiRestErrorDetails instance) {
+Map<String, dynamic> _$$MastodonApiRestErrorDetailsImplToJson(
+    _$MastodonApiRestErrorDetailsImpl instance) {
   final val = <String, dynamic>{
     'error': instance.error,
   };

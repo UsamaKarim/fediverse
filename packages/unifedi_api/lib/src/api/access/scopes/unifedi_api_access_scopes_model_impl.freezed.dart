@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_access_scopes_model_impl.dart';
 
@@ -11,37 +12,12 @@ part of 'unifedi_api_access_scopes_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiAccessScopes _$UnifediApiAccessScopesFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiAccessScopes.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiAccessScopesTearOff {
-  const _$UnifediApiAccessScopesTearOff();
-
-  _UnifediApiAccessScopes call(
-      {@HiveField(0)
-      @JsonKey(name: 'global_permissions')
-          required List<String> globalPermissions,
-      @HiveField(1)
-      @JsonKey(name: 'target_permissions')
-          required List<UnifediApiAccessScopesItem> targetPermissions}) {
-    return _UnifediApiAccessScopes(
-      globalPermissions: globalPermissions,
-      targetPermissions: targetPermissions,
-    );
-  }
-
-  UnifediApiAccessScopes fromJson(Map<String, Object?> json) {
-    return UnifediApiAccessScopes.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiAccessScopes = _$UnifediApiAccessScopesTearOff();
 
 /// @nodoc
 mixin _$UnifediApiAccessScopes {
@@ -63,82 +39,88 @@ mixin _$UnifediApiAccessScopes {
 abstract class $UnifediApiAccessScopesCopyWith<$Res> {
   factory $UnifediApiAccessScopesCopyWith(UnifediApiAccessScopes value,
           $Res Function(UnifediApiAccessScopes) then) =
-      _$UnifediApiAccessScopesCopyWithImpl<$Res>;
+      _$UnifediApiAccessScopesCopyWithImpl<$Res, UnifediApiAccessScopes>;
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'global_permissions')
-          List<String> globalPermissions,
+      List<String> globalPermissions,
       @HiveField(1)
       @JsonKey(name: 'target_permissions')
-          List<UnifediApiAccessScopesItem> targetPermissions});
+      List<UnifediApiAccessScopesItem> targetPermissions});
 }
 
 /// @nodoc
-class _$UnifediApiAccessScopesCopyWithImpl<$Res>
+class _$UnifediApiAccessScopesCopyWithImpl<$Res,
+        $Val extends UnifediApiAccessScopes>
     implements $UnifediApiAccessScopesCopyWith<$Res> {
   _$UnifediApiAccessScopesCopyWithImpl(this._value, this._then);
 
-  final UnifediApiAccessScopes _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiAccessScopes) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? globalPermissions = freezed,
-    Object? targetPermissions = freezed,
+    Object? globalPermissions = null,
+    Object? targetPermissions = null,
   }) {
     return _then(_value.copyWith(
-      globalPermissions: globalPermissions == freezed
+      globalPermissions: null == globalPermissions
           ? _value.globalPermissions
           : globalPermissions // ignore: cast_nullable_to_non_nullable
               as List<String>,
-      targetPermissions: targetPermissions == freezed
+      targetPermissions: null == targetPermissions
           ? _value.targetPermissions
           : targetPermissions // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiAccessScopesItem>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiAccessScopesCopyWith<$Res>
+abstract class _$$UnifediApiAccessScopesImplCopyWith<$Res>
     implements $UnifediApiAccessScopesCopyWith<$Res> {
-  factory _$UnifediApiAccessScopesCopyWith(_UnifediApiAccessScopes value,
-          $Res Function(_UnifediApiAccessScopes) then) =
-      __$UnifediApiAccessScopesCopyWithImpl<$Res>;
+  factory _$$UnifediApiAccessScopesImplCopyWith(
+          _$UnifediApiAccessScopesImpl value,
+          $Res Function(_$UnifediApiAccessScopesImpl) then) =
+      __$$UnifediApiAccessScopesImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'global_permissions')
-          List<String> globalPermissions,
+      List<String> globalPermissions,
       @HiveField(1)
       @JsonKey(name: 'target_permissions')
-          List<UnifediApiAccessScopesItem> targetPermissions});
+      List<UnifediApiAccessScopesItem> targetPermissions});
 }
 
 /// @nodoc
-class __$UnifediApiAccessScopesCopyWithImpl<$Res>
-    extends _$UnifediApiAccessScopesCopyWithImpl<$Res>
-    implements _$UnifediApiAccessScopesCopyWith<$Res> {
-  __$UnifediApiAccessScopesCopyWithImpl(_UnifediApiAccessScopes _value,
-      $Res Function(_UnifediApiAccessScopes) _then)
-      : super(_value, (v) => _then(v as _UnifediApiAccessScopes));
+class __$$UnifediApiAccessScopesImplCopyWithImpl<$Res>
+    extends _$UnifediApiAccessScopesCopyWithImpl<$Res,
+        _$UnifediApiAccessScopesImpl>
+    implements _$$UnifediApiAccessScopesImplCopyWith<$Res> {
+  __$$UnifediApiAccessScopesImplCopyWithImpl(
+      _$UnifediApiAccessScopesImpl _value,
+      $Res Function(_$UnifediApiAccessScopesImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiAccessScopes get _value => super._value as _UnifediApiAccessScopes;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? globalPermissions = freezed,
-    Object? targetPermissions = freezed,
+    Object? globalPermissions = null,
+    Object? targetPermissions = null,
   }) {
-    return _then(_UnifediApiAccessScopes(
-      globalPermissions: globalPermissions == freezed
-          ? _value.globalPermissions
+    return _then(_$UnifediApiAccessScopesImpl(
+      globalPermissions: null == globalPermissions
+          ? _value._globalPermissions
           : globalPermissions // ignore: cast_nullable_to_non_nullable
               as List<String>,
-      targetPermissions: targetPermissions == freezed
-          ? _value.targetPermissions
+      targetPermissions: null == targetPermissions
+          ? _value._targetPermissions
           : targetPermissions // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiAccessScopesItem>,
     ));
@@ -147,26 +129,41 @@ class __$UnifediApiAccessScopesCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiAccessScopes implements _UnifediApiAccessScopes {
-  const _$_UnifediApiAccessScopes(
+class _$UnifediApiAccessScopesImpl implements _UnifediApiAccessScopes {
+  const _$UnifediApiAccessScopesImpl(
       {@HiveField(0)
       @JsonKey(name: 'global_permissions')
-          required this.globalPermissions,
+      required final List<String> globalPermissions,
       @HiveField(1)
       @JsonKey(name: 'target_permissions')
-          required this.targetPermissions});
+      required final List<UnifediApiAccessScopesItem> targetPermissions})
+      : _globalPermissions = globalPermissions,
+        _targetPermissions = targetPermissions;
 
-  factory _$_UnifediApiAccessScopes.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiAccessScopesFromJson(json);
+  factory _$UnifediApiAccessScopesImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiAccessScopesImplFromJson(json);
 
+  final List<String> _globalPermissions;
   @override
   @HiveField(0)
   @JsonKey(name: 'global_permissions')
-  final List<String> globalPermissions;
+  List<String> get globalPermissions {
+    if (_globalPermissions is EqualUnmodifiableListView)
+      return _globalPermissions;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_globalPermissions);
+  }
+
+  final List<UnifediApiAccessScopesItem> _targetPermissions;
   @override
   @HiveField(1)
   @JsonKey(name: 'target_permissions')
-  final List<UnifediApiAccessScopesItem> targetPermissions;
+  List<UnifediApiAccessScopesItem> get targetPermissions {
+    if (_targetPermissions is EqualUnmodifiableListView)
+      return _targetPermissions;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_targetPermissions);
+  }
 
   @override
   String toString() {
@@ -174,31 +171,35 @@ class _$_UnifediApiAccessScopes implements _UnifediApiAccessScopes {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiAccessScopes &&
+            other is _$UnifediApiAccessScopesImpl &&
             const DeepCollectionEquality()
-                .equals(other.globalPermissions, globalPermissions) &&
+                .equals(other._globalPermissions, _globalPermissions) &&
             const DeepCollectionEquality()
-                .equals(other.targetPermissions, targetPermissions));
+                .equals(other._targetPermissions, _targetPermissions));
   }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(globalPermissions),
-      const DeepCollectionEquality().hash(targetPermissions));
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiAccessScopesCopyWith<_UnifediApiAccessScopes> get copyWith =>
-      __$UnifediApiAccessScopesCopyWithImpl<_UnifediApiAccessScopes>(
-          this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(_globalPermissions),
+      const DeepCollectionEquality().hash(_targetPermissions));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiAccessScopesImplCopyWith<_$UnifediApiAccessScopesImpl>
+      get copyWith => __$$UnifediApiAccessScopesImplCopyWithImpl<
+          _$UnifediApiAccessScopesImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiAccessScopesToJson(this);
+    return _$$UnifediApiAccessScopesImplToJson(
+      this,
+    );
   }
 }
 
@@ -206,14 +207,14 @@ abstract class _UnifediApiAccessScopes implements UnifediApiAccessScopes {
   const factory _UnifediApiAccessScopes(
           {@HiveField(0)
           @JsonKey(name: 'global_permissions')
-              required List<String> globalPermissions,
+          required final List<String> globalPermissions,
           @HiveField(1)
           @JsonKey(name: 'target_permissions')
-              required List<UnifediApiAccessScopesItem> targetPermissions}) =
-      _$_UnifediApiAccessScopes;
+          required final List<UnifediApiAccessScopesItem> targetPermissions}) =
+      _$UnifediApiAccessScopesImpl;
 
   factory _UnifediApiAccessScopes.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiAccessScopes.fromJson;
+      _$UnifediApiAccessScopesImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -225,6 +226,6 @@ abstract class _UnifediApiAccessScopes implements UnifediApiAccessScopes {
   List<UnifediApiAccessScopesItem> get targetPermissions;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiAccessScopesCopyWith<_UnifediApiAccessScopes> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$UnifediApiAccessScopesImplCopyWith<_$UnifediApiAccessScopesImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

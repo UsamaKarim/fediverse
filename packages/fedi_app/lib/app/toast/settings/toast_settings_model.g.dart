@@ -47,14 +47,14 @@ class ToastSettingsAdapter extends TypeAdapter<ToastSettings> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ToastSettings _$$_ToastSettingsFromJson(Map<String, dynamic> json) =>
-    _$_ToastSettings(
+_$ToastSettingsImpl _$$ToastSettingsImplFromJson(Map<String, dynamic> json) =>
+    _$ToastSettingsImpl(
       pushSettings:
           PushSettings.fromJson(json['push_settings'] as Map<String, dynamic>),
       handlingTypeString: json['handling_type_string'] as String,
     );
 
-Map<String, dynamic> _$$_ToastSettingsToJson(_$_ToastSettings instance) =>
+Map<String, dynamic> _$$ToastSettingsImplToJson(_$ToastSettingsImpl instance) =>
     <String, dynamic>{
       'push_settings': instance.pushSettings.toJson(),
       'handling_type_string': instance.handlingTypeString,

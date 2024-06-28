@@ -53,8 +53,9 @@ class MastodonApiAccessAdapter extends TypeAdapter<MastodonApiAccess> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiAccess _$$_MastodonApiAccessFromJson(Map<String, dynamic> json) =>
-    _$_MastodonApiAccess(
+_$MastodonApiAccessImpl _$$MastodonApiAccessImplFromJson(
+        Map<String, dynamic> json) =>
+    _$MastodonApiAccessImpl(
       url: json['url'] as String,
       instance: json['instance'] == null
           ? null
@@ -70,8 +71,8 @@ _$_MastodonApiAccess _$$_MastodonApiAccessFromJson(Map<String, dynamic> json) =>
               json['user_access_token'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_MastodonApiAccessToJson(
-    _$_MastodonApiAccess instance) {
+Map<String, dynamic> _$$MastodonApiAccessImplToJson(
+    _$MastodonApiAccessImpl instance) {
   final val = <String, dynamic>{
     'url': instance.url,
   };

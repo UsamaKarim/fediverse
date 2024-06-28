@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'status_thread_model.dart';
 
@@ -11,23 +12,7 @@ part of 'status_thread_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$StatusThreadStatusAtIndexTearOff {
-  const _$StatusThreadStatusAtIndexTearOff();
-
-  _StatusThreadStatusAtIndex call(
-      {required IStatus status, required int index}) {
-    return _StatusThreadStatusAtIndex(
-      status: status,
-      index: index,
-    );
-  }
-}
-
-/// @nodoc
-const $StatusThreadStatusAtIndex = _$StatusThreadStatusAtIndexTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$StatusThreadStatusAtIndex {
@@ -43,70 +28,75 @@ mixin _$StatusThreadStatusAtIndex {
 abstract class $StatusThreadStatusAtIndexCopyWith<$Res> {
   factory $StatusThreadStatusAtIndexCopyWith(StatusThreadStatusAtIndex value,
           $Res Function(StatusThreadStatusAtIndex) then) =
-      _$StatusThreadStatusAtIndexCopyWithImpl<$Res>;
+      _$StatusThreadStatusAtIndexCopyWithImpl<$Res, StatusThreadStatusAtIndex>;
+  @useResult
   $Res call({IStatus status, int index});
 }
 
 /// @nodoc
-class _$StatusThreadStatusAtIndexCopyWithImpl<$Res>
+class _$StatusThreadStatusAtIndexCopyWithImpl<$Res,
+        $Val extends StatusThreadStatusAtIndex>
     implements $StatusThreadStatusAtIndexCopyWith<$Res> {
   _$StatusThreadStatusAtIndexCopyWithImpl(this._value, this._then);
 
-  final StatusThreadStatusAtIndex _value;
   // ignore: unused_field
-  final $Res Function(StatusThreadStatusAtIndex) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? status = freezed,
-    Object? index = freezed,
+    Object? status = null,
+    Object? index = null,
   }) {
     return _then(_value.copyWith(
-      status: status == freezed
+      status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as IStatus,
-      index: index == freezed
+      index: null == index
           ? _value.index
           : index // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$StatusThreadStatusAtIndexCopyWith<$Res>
+abstract class _$$StatusThreadStatusAtIndexImplCopyWith<$Res>
     implements $StatusThreadStatusAtIndexCopyWith<$Res> {
-  factory _$StatusThreadStatusAtIndexCopyWith(_StatusThreadStatusAtIndex value,
-          $Res Function(_StatusThreadStatusAtIndex) then) =
-      __$StatusThreadStatusAtIndexCopyWithImpl<$Res>;
+  factory _$$StatusThreadStatusAtIndexImplCopyWith(
+          _$StatusThreadStatusAtIndexImpl value,
+          $Res Function(_$StatusThreadStatusAtIndexImpl) then) =
+      __$$StatusThreadStatusAtIndexImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({IStatus status, int index});
 }
 
 /// @nodoc
-class __$StatusThreadStatusAtIndexCopyWithImpl<$Res>
-    extends _$StatusThreadStatusAtIndexCopyWithImpl<$Res>
-    implements _$StatusThreadStatusAtIndexCopyWith<$Res> {
-  __$StatusThreadStatusAtIndexCopyWithImpl(_StatusThreadStatusAtIndex _value,
-      $Res Function(_StatusThreadStatusAtIndex) _then)
-      : super(_value, (v) => _then(v as _StatusThreadStatusAtIndex));
+class __$$StatusThreadStatusAtIndexImplCopyWithImpl<$Res>
+    extends _$StatusThreadStatusAtIndexCopyWithImpl<$Res,
+        _$StatusThreadStatusAtIndexImpl>
+    implements _$$StatusThreadStatusAtIndexImplCopyWith<$Res> {
+  __$$StatusThreadStatusAtIndexImplCopyWithImpl(
+      _$StatusThreadStatusAtIndexImpl _value,
+      $Res Function(_$StatusThreadStatusAtIndexImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _StatusThreadStatusAtIndex get _value =>
-      super._value as _StatusThreadStatusAtIndex;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? status = freezed,
-    Object? index = freezed,
+    Object? status = null,
+    Object? index = null,
   }) {
-    return _then(_StatusThreadStatusAtIndex(
-      status: status == freezed
+    return _then(_$StatusThreadStatusAtIndexImpl(
+      status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as IStatus,
-      index: index == freezed
+      index: null == index
           ? _value.index
           : index // ignore: cast_nullable_to_non_nullable
               as int,
@@ -116,8 +106,8 @@ class __$StatusThreadStatusAtIndexCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_StatusThreadStatusAtIndex implements _StatusThreadStatusAtIndex {
-  const _$_StatusThreadStatusAtIndex(
+class _$StatusThreadStatusAtIndexImpl implements _StatusThreadStatusAtIndex {
+  const _$StatusThreadStatusAtIndexImpl(
       {required this.status, required this.index});
 
   @override
@@ -131,10 +121,10 @@ class _$_StatusThreadStatusAtIndex implements _StatusThreadStatusAtIndex {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _StatusThreadStatusAtIndex &&
+            other is _$StatusThreadStatusAtIndexImpl &&
             (identical(other.status, status) || other.status == status) &&
             (identical(other.index, index) || other.index == index));
   }
@@ -144,16 +134,16 @@ class _$_StatusThreadStatusAtIndex implements _StatusThreadStatusAtIndex {
 
   @JsonKey(ignore: true)
   @override
-  _$StatusThreadStatusAtIndexCopyWith<_StatusThreadStatusAtIndex>
-      get copyWith =>
-          __$StatusThreadStatusAtIndexCopyWithImpl<_StatusThreadStatusAtIndex>(
-              this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$StatusThreadStatusAtIndexImplCopyWith<_$StatusThreadStatusAtIndexImpl>
+      get copyWith => __$$StatusThreadStatusAtIndexImplCopyWithImpl<
+          _$StatusThreadStatusAtIndexImpl>(this, _$identity);
 }
 
 abstract class _StatusThreadStatusAtIndex implements StatusThreadStatusAtIndex {
   const factory _StatusThreadStatusAtIndex(
-      {required IStatus status,
-      required int index}) = _$_StatusThreadStatusAtIndex;
+      {required final IStatus status,
+      required final int index}) = _$StatusThreadStatusAtIndexImpl;
 
   @override
   IStatus get status;
@@ -161,6 +151,6 @@ abstract class _StatusThreadStatusAtIndex implements StatusThreadStatusAtIndex {
   int get index;
   @override
   @JsonKey(ignore: true)
-  _$StatusThreadStatusAtIndexCopyWith<_StatusThreadStatusAtIndex>
+  _$$StatusThreadStatusAtIndexImplCopyWith<_$StatusThreadStatusAtIndexImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

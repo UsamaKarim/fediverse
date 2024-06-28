@@ -57,9 +57,9 @@ class PleromaApiInstanceFederationAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiInstanceFederation _$$_PleromaApiInstanceFederationFromJson(
+_$PleromaApiInstanceFederationImpl _$$PleromaApiInstanceFederationImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiInstanceFederation(
+    _$PleromaApiInstanceFederationImpl(
       enabled: json['enabled'] as bool?,
       exclusions: json['exclusions'] as bool?,
       mrfObjectAge: json['mrf_object_age'] == null
@@ -74,8 +74,8 @@ _$_PleromaApiInstanceFederation _$$_PleromaApiInstanceFederationFromJson(
           .toList(),
     );
 
-Map<String, dynamic> _$$_PleromaApiInstanceFederationToJson(
-    _$_PleromaApiInstanceFederation instance) {
+Map<String, dynamic> _$$PleromaApiInstanceFederationImplToJson(
+    _$PleromaApiInstanceFederationImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

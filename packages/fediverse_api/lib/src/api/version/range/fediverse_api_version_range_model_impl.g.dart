@@ -54,9 +54,9 @@ class FediverseApiVersionRangeAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_FediverseApiVersionRange _$$_FediverseApiVersionRangeFromJson(
+_$FediverseApiVersionRangeImpl _$$FediverseApiVersionRangeImplFromJson(
         Map<String, dynamic> json) =>
-    _$_FediverseApiVersionRange(
+    _$FediverseApiVersionRangeImpl(
       min: json['min'] == null
           ? null
           : FediverseApiVersion.fromJson(json['min'] as Map<String, dynamic>),
@@ -67,8 +67,8 @@ _$_FediverseApiVersionRange _$$_FediverseApiVersionRangeFromJson(
       maxInclusive: json['max_inclusive'] as bool? ?? false,
     );
 
-Map<String, dynamic> _$$_FediverseApiVersionRangeToJson(
-    _$_FediverseApiVersionRange instance) {
+Map<String, dynamic> _$$FediverseApiVersionRangeImplToJson(
+    _$FediverseApiVersionRangeImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

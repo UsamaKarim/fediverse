@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_instance_poll_limits_model_impl.dart';
 
@@ -11,45 +12,12 @@ part of 'pleroma_api_instance_poll_limits_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiInstancePollLimits _$PleromaApiInstancePollLimitsFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiInstancePollLimits.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiInstancePollLimitsTearOff {
-  const _$PleromaApiInstancePollLimitsTearOff();
-
-  _PleromaApiInstancePollLimits call(
-      {@HiveField(0)
-      @JsonKey(name: 'max_expiration')
-          required int? maxExpiration,
-      @HiveField(1)
-      @JsonKey(name: 'max_option_chars')
-          required int? maxOptionChars,
-      @HiveField(2)
-      @JsonKey(name: 'max_options')
-          required int? maxOptions,
-      @HiveField(3)
-      @JsonKey(name: 'min_expiration')
-          required int? minExpiration}) {
-    return _PleromaApiInstancePollLimits(
-      maxExpiration: maxExpiration,
-      maxOptionChars: maxOptionChars,
-      maxOptions: maxOptions,
-      minExpiration: minExpiration,
-    );
-  }
-
-  PleromaApiInstancePollLimits fromJson(Map<String, Object?> json) {
-    return PleromaApiInstancePollLimits.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiInstancePollLimits = _$PleromaApiInstancePollLimitsTearOff();
 
 /// @nodoc
 mixin _$PleromaApiInstancePollLimits {
@@ -77,7 +45,9 @@ abstract class $PleromaApiInstancePollLimitsCopyWith<$Res> {
   factory $PleromaApiInstancePollLimitsCopyWith(
           PleromaApiInstancePollLimits value,
           $Res Function(PleromaApiInstancePollLimits) then) =
-      _$PleromaApiInstancePollLimitsCopyWithImpl<$Res>;
+      _$PleromaApiInstancePollLimitsCopyWithImpl<$Res,
+          PleromaApiInstancePollLimits>;
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'max_expiration') int? maxExpiration,
       @HiveField(1) @JsonKey(name: 'max_option_chars') int? maxOptionChars,
@@ -86,14 +56,17 @@ abstract class $PleromaApiInstancePollLimitsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiInstancePollLimitsCopyWithImpl<$Res>
+class _$PleromaApiInstancePollLimitsCopyWithImpl<$Res,
+        $Val extends PleromaApiInstancePollLimits>
     implements $PleromaApiInstancePollLimitsCopyWith<$Res> {
   _$PleromaApiInstancePollLimitsCopyWithImpl(this._value, this._then);
 
-  final PleromaApiInstancePollLimits _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiInstancePollLimits) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? maxExpiration = freezed,
@@ -102,34 +75,35 @@ class _$PleromaApiInstancePollLimitsCopyWithImpl<$Res>
     Object? minExpiration = freezed,
   }) {
     return _then(_value.copyWith(
-      maxExpiration: maxExpiration == freezed
+      maxExpiration: freezed == maxExpiration
           ? _value.maxExpiration
           : maxExpiration // ignore: cast_nullable_to_non_nullable
               as int?,
-      maxOptionChars: maxOptionChars == freezed
+      maxOptionChars: freezed == maxOptionChars
           ? _value.maxOptionChars
           : maxOptionChars // ignore: cast_nullable_to_non_nullable
               as int?,
-      maxOptions: maxOptions == freezed
+      maxOptions: freezed == maxOptions
           ? _value.maxOptions
           : maxOptions // ignore: cast_nullable_to_non_nullable
               as int?,
-      minExpiration: minExpiration == freezed
+      minExpiration: freezed == minExpiration
           ? _value.minExpiration
           : minExpiration // ignore: cast_nullable_to_non_nullable
               as int?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiInstancePollLimitsCopyWith<$Res>
+abstract class _$$PleromaApiInstancePollLimitsImplCopyWith<$Res>
     implements $PleromaApiInstancePollLimitsCopyWith<$Res> {
-  factory _$PleromaApiInstancePollLimitsCopyWith(
-          _PleromaApiInstancePollLimits value,
-          $Res Function(_PleromaApiInstancePollLimits) then) =
-      __$PleromaApiInstancePollLimitsCopyWithImpl<$Res>;
+  factory _$$PleromaApiInstancePollLimitsImplCopyWith(
+          _$PleromaApiInstancePollLimitsImpl value,
+          $Res Function(_$PleromaApiInstancePollLimitsImpl) then) =
+      __$$PleromaApiInstancePollLimitsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) @JsonKey(name: 'max_expiration') int? maxExpiration,
       @HiveField(1) @JsonKey(name: 'max_option_chars') int? maxOptionChars,
@@ -138,18 +112,16 @@ abstract class _$PleromaApiInstancePollLimitsCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiInstancePollLimitsCopyWithImpl<$Res>
-    extends _$PleromaApiInstancePollLimitsCopyWithImpl<$Res>
-    implements _$PleromaApiInstancePollLimitsCopyWith<$Res> {
-  __$PleromaApiInstancePollLimitsCopyWithImpl(
-      _PleromaApiInstancePollLimits _value,
-      $Res Function(_PleromaApiInstancePollLimits) _then)
-      : super(_value, (v) => _then(v as _PleromaApiInstancePollLimits));
+class __$$PleromaApiInstancePollLimitsImplCopyWithImpl<$Res>
+    extends _$PleromaApiInstancePollLimitsCopyWithImpl<$Res,
+        _$PleromaApiInstancePollLimitsImpl>
+    implements _$$PleromaApiInstancePollLimitsImplCopyWith<$Res> {
+  __$$PleromaApiInstancePollLimitsImplCopyWithImpl(
+      _$PleromaApiInstancePollLimitsImpl _value,
+      $Res Function(_$PleromaApiInstancePollLimitsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiInstancePollLimits get _value =>
-      super._value as _PleromaApiInstancePollLimits;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? maxExpiration = freezed,
@@ -157,20 +129,20 @@ class __$PleromaApiInstancePollLimitsCopyWithImpl<$Res>
     Object? maxOptions = freezed,
     Object? minExpiration = freezed,
   }) {
-    return _then(_PleromaApiInstancePollLimits(
-      maxExpiration: maxExpiration == freezed
+    return _then(_$PleromaApiInstancePollLimitsImpl(
+      maxExpiration: freezed == maxExpiration
           ? _value.maxExpiration
           : maxExpiration // ignore: cast_nullable_to_non_nullable
               as int?,
-      maxOptionChars: maxOptionChars == freezed
+      maxOptionChars: freezed == maxOptionChars
           ? _value.maxOptionChars
           : maxOptionChars // ignore: cast_nullable_to_non_nullable
               as int?,
-      maxOptions: maxOptions == freezed
+      maxOptions: freezed == maxOptions
           ? _value.maxOptions
           : maxOptions // ignore: cast_nullable_to_non_nullable
               as int?,
-      minExpiration: minExpiration == freezed
+      minExpiration: freezed == minExpiration
           ? _value.minExpiration
           : minExpiration // ignore: cast_nullable_to_non_nullable
               as int?,
@@ -180,23 +152,23 @@ class __$PleromaApiInstancePollLimitsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiInstancePollLimits implements _PleromaApiInstancePollLimits {
-  const _$_PleromaApiInstancePollLimits(
+class _$PleromaApiInstancePollLimitsImpl
+    implements _PleromaApiInstancePollLimits {
+  const _$PleromaApiInstancePollLimitsImpl(
       {@HiveField(0)
       @JsonKey(name: 'max_expiration')
-          required this.maxExpiration,
+      required this.maxExpiration,
       @HiveField(1)
       @JsonKey(name: 'max_option_chars')
-          required this.maxOptionChars,
-      @HiveField(2)
-      @JsonKey(name: 'max_options')
-          required this.maxOptions,
+      required this.maxOptionChars,
+      @HiveField(2) @JsonKey(name: 'max_options') required this.maxOptions,
       @HiveField(3)
       @JsonKey(name: 'min_expiration')
-          required this.minExpiration});
+      required this.minExpiration});
 
-  factory _$_PleromaApiInstancePollLimits.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiInstancePollLimitsFromJson(json);
+  factory _$PleromaApiInstancePollLimitsImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$PleromaApiInstancePollLimitsImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -221,10 +193,10 @@ class _$_PleromaApiInstancePollLimits implements _PleromaApiInstancePollLimits {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiInstancePollLimits &&
+            other is _$PleromaApiInstancePollLimitsImpl &&
             (identical(other.maxExpiration, maxExpiration) ||
                 other.maxExpiration == maxExpiration) &&
             (identical(other.maxOptionChars, maxOptionChars) ||
@@ -235,19 +207,24 @@ class _$_PleromaApiInstancePollLimits implements _PleromaApiInstancePollLimits {
                 other.minExpiration == minExpiration));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType, maxExpiration, maxOptionChars, maxOptions, minExpiration);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiInstancePollLimitsCopyWith<_PleromaApiInstancePollLimits>
-      get copyWith => __$PleromaApiInstancePollLimitsCopyWithImpl<
-          _PleromaApiInstancePollLimits>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiInstancePollLimitsImplCopyWith<
+          _$PleromaApiInstancePollLimitsImpl>
+      get copyWith => __$$PleromaApiInstancePollLimitsImplCopyWithImpl<
+          _$PleromaApiInstancePollLimitsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiInstancePollLimitsToJson(this);
+    return _$$PleromaApiInstancePollLimitsImplToJson(
+      this,
+    );
   }
 }
 
@@ -256,19 +233,19 @@ abstract class _PleromaApiInstancePollLimits
   const factory _PleromaApiInstancePollLimits(
       {@HiveField(0)
       @JsonKey(name: 'max_expiration')
-          required int? maxExpiration,
+      required final int? maxExpiration,
       @HiveField(1)
       @JsonKey(name: 'max_option_chars')
-          required int? maxOptionChars,
+      required final int? maxOptionChars,
       @HiveField(2)
       @JsonKey(name: 'max_options')
-          required int? maxOptions,
+      required final int? maxOptions,
       @HiveField(3)
       @JsonKey(name: 'min_expiration')
-          required int? minExpiration}) = _$_PleromaApiInstancePollLimits;
+      required final int? minExpiration}) = _$PleromaApiInstancePollLimitsImpl;
 
   factory _PleromaApiInstancePollLimits.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiInstancePollLimits.fromJson;
+      _$PleromaApiInstancePollLimitsImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -288,6 +265,7 @@ abstract class _PleromaApiInstancePollLimits
   int? get minExpiration;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiInstancePollLimitsCopyWith<_PleromaApiInstancePollLimits>
+  _$$PleromaApiInstancePollLimitsImplCopyWith<
+          _$PleromaApiInstancePollLimitsImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

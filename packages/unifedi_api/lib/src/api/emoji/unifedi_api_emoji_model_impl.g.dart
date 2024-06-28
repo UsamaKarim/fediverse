@@ -56,8 +56,9 @@ class UnifediApiEmojiAdapter extends TypeAdapter<UnifediApiEmoji> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiEmoji _$$_UnifediApiEmojiFromJson(Map<String, dynamic> json) =>
-    _$_UnifediApiEmoji(
+_$UnifediApiEmojiImpl _$$UnifediApiEmojiImplFromJson(
+        Map<String, dynamic> json) =>
+    _$UnifediApiEmojiImpl(
       name: json['name'] as String,
       url: json['url'] as String?,
       staticUrl: json['static_url'] as String?,
@@ -65,7 +66,8 @@ _$_UnifediApiEmoji _$$_UnifediApiEmojiFromJson(Map<String, dynamic> json) =>
       tags: (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList(),
     );
 
-Map<String, dynamic> _$$_UnifediApiEmojiToJson(_$_UnifediApiEmoji instance) {
+Map<String, dynamic> _$$UnifediApiEmojiImplToJson(
+    _$UnifediApiEmojiImpl instance) {
   final val = <String, dynamic>{
     'name': instance.name,
   };

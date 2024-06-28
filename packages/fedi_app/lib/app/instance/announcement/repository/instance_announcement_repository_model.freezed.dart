@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'instance_announcement_repository_model.dart';
 
@@ -11,27 +12,7 @@ part of 'instance_announcement_repository_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$InstanceAnnouncementRepositoryFiltersTearOff {
-  const _$InstanceAnnouncementRepositoryFiltersTearOff();
-
-  _InstanceAnnouncementRepositoryFilters call(
-      {required bool? withDismissed,
-      required bool? withExpired,
-      required bool? withNotStartedYet}) {
-    return _InstanceAnnouncementRepositoryFilters(
-      withDismissed: withDismissed,
-      withExpired: withExpired,
-      withNotStartedYet: withNotStartedYet,
-    );
-  }
-}
-
-/// @nodoc
-const $InstanceAnnouncementRepositoryFilters =
-    _$InstanceAnnouncementRepositoryFiltersTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$InstanceAnnouncementRepositoryFilters {
@@ -50,19 +31,24 @@ abstract class $InstanceAnnouncementRepositoryFiltersCopyWith<$Res> {
   factory $InstanceAnnouncementRepositoryFiltersCopyWith(
           InstanceAnnouncementRepositoryFilters value,
           $Res Function(InstanceAnnouncementRepositoryFilters) then) =
-      _$InstanceAnnouncementRepositoryFiltersCopyWithImpl<$Res>;
+      _$InstanceAnnouncementRepositoryFiltersCopyWithImpl<$Res,
+          InstanceAnnouncementRepositoryFilters>;
+  @useResult
   $Res call({bool? withDismissed, bool? withExpired, bool? withNotStartedYet});
 }
 
 /// @nodoc
-class _$InstanceAnnouncementRepositoryFiltersCopyWithImpl<$Res>
+class _$InstanceAnnouncementRepositoryFiltersCopyWithImpl<$Res,
+        $Val extends InstanceAnnouncementRepositoryFilters>
     implements $InstanceAnnouncementRepositoryFiltersCopyWith<$Res> {
   _$InstanceAnnouncementRepositoryFiltersCopyWithImpl(this._value, this._then);
 
-  final InstanceAnnouncementRepositoryFilters _value;
   // ignore: unused_field
-  final $Res Function(InstanceAnnouncementRepositoryFilters) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? withDismissed = freezed,
@@ -70,63 +56,61 @@ class _$InstanceAnnouncementRepositoryFiltersCopyWithImpl<$Res>
     Object? withNotStartedYet = freezed,
   }) {
     return _then(_value.copyWith(
-      withDismissed: withDismissed == freezed
+      withDismissed: freezed == withDismissed
           ? _value.withDismissed
           : withDismissed // ignore: cast_nullable_to_non_nullable
               as bool?,
-      withExpired: withExpired == freezed
+      withExpired: freezed == withExpired
           ? _value.withExpired
           : withExpired // ignore: cast_nullable_to_non_nullable
               as bool?,
-      withNotStartedYet: withNotStartedYet == freezed
+      withNotStartedYet: freezed == withNotStartedYet
           ? _value.withNotStartedYet
           : withNotStartedYet // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$InstanceAnnouncementRepositoryFiltersCopyWith<$Res>
+abstract class _$$InstanceAnnouncementRepositoryFiltersImplCopyWith<$Res>
     implements $InstanceAnnouncementRepositoryFiltersCopyWith<$Res> {
-  factory _$InstanceAnnouncementRepositoryFiltersCopyWith(
-          _InstanceAnnouncementRepositoryFilters value,
-          $Res Function(_InstanceAnnouncementRepositoryFilters) then) =
-      __$InstanceAnnouncementRepositoryFiltersCopyWithImpl<$Res>;
+  factory _$$InstanceAnnouncementRepositoryFiltersImplCopyWith(
+          _$InstanceAnnouncementRepositoryFiltersImpl value,
+          $Res Function(_$InstanceAnnouncementRepositoryFiltersImpl) then) =
+      __$$InstanceAnnouncementRepositoryFiltersImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({bool? withDismissed, bool? withExpired, bool? withNotStartedYet});
 }
 
 /// @nodoc
-class __$InstanceAnnouncementRepositoryFiltersCopyWithImpl<$Res>
-    extends _$InstanceAnnouncementRepositoryFiltersCopyWithImpl<$Res>
-    implements _$InstanceAnnouncementRepositoryFiltersCopyWith<$Res> {
-  __$InstanceAnnouncementRepositoryFiltersCopyWithImpl(
-      _InstanceAnnouncementRepositoryFilters _value,
-      $Res Function(_InstanceAnnouncementRepositoryFilters) _then)
-      : super(
-            _value, (v) => _then(v as _InstanceAnnouncementRepositoryFilters));
+class __$$InstanceAnnouncementRepositoryFiltersImplCopyWithImpl<$Res>
+    extends _$InstanceAnnouncementRepositoryFiltersCopyWithImpl<$Res,
+        _$InstanceAnnouncementRepositoryFiltersImpl>
+    implements _$$InstanceAnnouncementRepositoryFiltersImplCopyWith<$Res> {
+  __$$InstanceAnnouncementRepositoryFiltersImplCopyWithImpl(
+      _$InstanceAnnouncementRepositoryFiltersImpl _value,
+      $Res Function(_$InstanceAnnouncementRepositoryFiltersImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _InstanceAnnouncementRepositoryFilters get _value =>
-      super._value as _InstanceAnnouncementRepositoryFilters;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? withDismissed = freezed,
     Object? withExpired = freezed,
     Object? withNotStartedYet = freezed,
   }) {
-    return _then(_InstanceAnnouncementRepositoryFilters(
-      withDismissed: withDismissed == freezed
+    return _then(_$InstanceAnnouncementRepositoryFiltersImpl(
+      withDismissed: freezed == withDismissed
           ? _value.withDismissed
           : withDismissed // ignore: cast_nullable_to_non_nullable
               as bool?,
-      withExpired: withExpired == freezed
+      withExpired: freezed == withExpired
           ? _value.withExpired
           : withExpired // ignore: cast_nullable_to_non_nullable
               as bool?,
-      withNotStartedYet: withNotStartedYet == freezed
+      withNotStartedYet: freezed == withNotStartedYet
           ? _value.withNotStartedYet
           : withNotStartedYet // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -136,9 +120,9 @@ class __$InstanceAnnouncementRepositoryFiltersCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_InstanceAnnouncementRepositoryFilters
+class _$InstanceAnnouncementRepositoryFiltersImpl
     extends _InstanceAnnouncementRepositoryFilters {
-  const _$_InstanceAnnouncementRepositoryFilters(
+  const _$InstanceAnnouncementRepositoryFiltersImpl(
       {required this.withDismissed,
       required this.withExpired,
       required this.withNotStartedYet})
@@ -157,10 +141,10 @@ class _$_InstanceAnnouncementRepositoryFilters
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _InstanceAnnouncementRepositoryFilters &&
+            other is _$InstanceAnnouncementRepositoryFiltersImpl &&
             (identical(other.withDismissed, withDismissed) ||
                 other.withDismissed == withDismissed) &&
             (identical(other.withExpired, withExpired) ||
@@ -175,19 +159,20 @@ class _$_InstanceAnnouncementRepositoryFilters
 
   @JsonKey(ignore: true)
   @override
-  _$InstanceAnnouncementRepositoryFiltersCopyWith<
-          _InstanceAnnouncementRepositoryFilters>
-      get copyWith => __$InstanceAnnouncementRepositoryFiltersCopyWithImpl<
-          _InstanceAnnouncementRepositoryFilters>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$InstanceAnnouncementRepositoryFiltersImplCopyWith<
+          _$InstanceAnnouncementRepositoryFiltersImpl>
+      get copyWith => __$$InstanceAnnouncementRepositoryFiltersImplCopyWithImpl<
+          _$InstanceAnnouncementRepositoryFiltersImpl>(this, _$identity);
 }
 
 abstract class _InstanceAnnouncementRepositoryFilters
     extends InstanceAnnouncementRepositoryFilters {
   const factory _InstanceAnnouncementRepositoryFilters(
-          {required bool? withDismissed,
-          required bool? withExpired,
-          required bool? withNotStartedYet}) =
-      _$_InstanceAnnouncementRepositoryFilters;
+          {required final bool? withDismissed,
+          required final bool? withExpired,
+          required final bool? withNotStartedYet}) =
+      _$InstanceAnnouncementRepositoryFiltersImpl;
   const _InstanceAnnouncementRepositoryFilters._() : super._();
 
   @override
@@ -198,28 +183,10 @@ abstract class _InstanceAnnouncementRepositoryFilters
   bool? get withNotStartedYet;
   @override
   @JsonKey(ignore: true)
-  _$InstanceAnnouncementRepositoryFiltersCopyWith<
-          _InstanceAnnouncementRepositoryFilters>
+  _$$InstanceAnnouncementRepositoryFiltersImplCopyWith<
+          _$InstanceAnnouncementRepositoryFiltersImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$InstanceAnnouncementOrderingTermDataTearOff {
-  const _$InstanceAnnouncementOrderingTermDataTearOff();
-
-  _InstanceAnnouncementOrderingTermData call(
-      {required InstanceAnnouncementOrderType orderType,
-      required moor.OrderingMode orderingMode}) {
-    return _InstanceAnnouncementOrderingTermData(
-      orderType: orderType,
-      orderingMode: orderingMode,
-    );
-  }
-}
-
-/// @nodoc
-const $InstanceAnnouncementOrderingTermData =
-    _$InstanceAnnouncementOrderingTermDataTearOff();
 
 /// @nodoc
 mixin _$InstanceAnnouncementOrderingTermData {
@@ -238,76 +205,80 @@ abstract class $InstanceAnnouncementOrderingTermDataCopyWith<$Res> {
   factory $InstanceAnnouncementOrderingTermDataCopyWith(
           InstanceAnnouncementOrderingTermData value,
           $Res Function(InstanceAnnouncementOrderingTermData) then) =
-      _$InstanceAnnouncementOrderingTermDataCopyWithImpl<$Res>;
+      _$InstanceAnnouncementOrderingTermDataCopyWithImpl<$Res,
+          InstanceAnnouncementOrderingTermData>;
+  @useResult
   $Res call(
       {InstanceAnnouncementOrderType orderType,
       moor.OrderingMode orderingMode});
 }
 
 /// @nodoc
-class _$InstanceAnnouncementOrderingTermDataCopyWithImpl<$Res>
+class _$InstanceAnnouncementOrderingTermDataCopyWithImpl<$Res,
+        $Val extends InstanceAnnouncementOrderingTermData>
     implements $InstanceAnnouncementOrderingTermDataCopyWith<$Res> {
   _$InstanceAnnouncementOrderingTermDataCopyWithImpl(this._value, this._then);
 
-  final InstanceAnnouncementOrderingTermData _value;
   // ignore: unused_field
-  final $Res Function(InstanceAnnouncementOrderingTermData) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? orderType = freezed,
-    Object? orderingMode = freezed,
+    Object? orderType = null,
+    Object? orderingMode = null,
   }) {
     return _then(_value.copyWith(
-      orderType: orderType == freezed
+      orderType: null == orderType
           ? _value.orderType
           : orderType // ignore: cast_nullable_to_non_nullable
               as InstanceAnnouncementOrderType,
-      orderingMode: orderingMode == freezed
+      orderingMode: null == orderingMode
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
               as moor.OrderingMode,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$InstanceAnnouncementOrderingTermDataCopyWith<$Res>
+abstract class _$$InstanceAnnouncementOrderingTermDataImplCopyWith<$Res>
     implements $InstanceAnnouncementOrderingTermDataCopyWith<$Res> {
-  factory _$InstanceAnnouncementOrderingTermDataCopyWith(
-          _InstanceAnnouncementOrderingTermData value,
-          $Res Function(_InstanceAnnouncementOrderingTermData) then) =
-      __$InstanceAnnouncementOrderingTermDataCopyWithImpl<$Res>;
+  factory _$$InstanceAnnouncementOrderingTermDataImplCopyWith(
+          _$InstanceAnnouncementOrderingTermDataImpl value,
+          $Res Function(_$InstanceAnnouncementOrderingTermDataImpl) then) =
+      __$$InstanceAnnouncementOrderingTermDataImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {InstanceAnnouncementOrderType orderType,
       moor.OrderingMode orderingMode});
 }
 
 /// @nodoc
-class __$InstanceAnnouncementOrderingTermDataCopyWithImpl<$Res>
-    extends _$InstanceAnnouncementOrderingTermDataCopyWithImpl<$Res>
-    implements _$InstanceAnnouncementOrderingTermDataCopyWith<$Res> {
-  __$InstanceAnnouncementOrderingTermDataCopyWithImpl(
-      _InstanceAnnouncementOrderingTermData _value,
-      $Res Function(_InstanceAnnouncementOrderingTermData) _then)
-      : super(_value, (v) => _then(v as _InstanceAnnouncementOrderingTermData));
+class __$$InstanceAnnouncementOrderingTermDataImplCopyWithImpl<$Res>
+    extends _$InstanceAnnouncementOrderingTermDataCopyWithImpl<$Res,
+        _$InstanceAnnouncementOrderingTermDataImpl>
+    implements _$$InstanceAnnouncementOrderingTermDataImplCopyWith<$Res> {
+  __$$InstanceAnnouncementOrderingTermDataImplCopyWithImpl(
+      _$InstanceAnnouncementOrderingTermDataImpl _value,
+      $Res Function(_$InstanceAnnouncementOrderingTermDataImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _InstanceAnnouncementOrderingTermData get _value =>
-      super._value as _InstanceAnnouncementOrderingTermData;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? orderType = freezed,
-    Object? orderingMode = freezed,
+    Object? orderType = null,
+    Object? orderingMode = null,
   }) {
-    return _then(_InstanceAnnouncementOrderingTermData(
-      orderType: orderType == freezed
+    return _then(_$InstanceAnnouncementOrderingTermDataImpl(
+      orderType: null == orderType
           ? _value.orderType
           : orderType // ignore: cast_nullable_to_non_nullable
               as InstanceAnnouncementOrderType,
-      orderingMode: orderingMode == freezed
+      orderingMode: null == orderingMode
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
               as moor.OrderingMode,
@@ -317,9 +288,9 @@ class __$InstanceAnnouncementOrderingTermDataCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_InstanceAnnouncementOrderingTermData
+class _$InstanceAnnouncementOrderingTermDataImpl
     extends _InstanceAnnouncementOrderingTermData {
-  const _$_InstanceAnnouncementOrderingTermData(
+  const _$InstanceAnnouncementOrderingTermDataImpl(
       {required this.orderType, required this.orderingMode})
       : super._();
 
@@ -334,10 +305,10 @@ class _$_InstanceAnnouncementOrderingTermData
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _InstanceAnnouncementOrderingTermData &&
+            other is _$InstanceAnnouncementOrderingTermDataImpl &&
             (identical(other.orderType, orderType) ||
                 other.orderType == orderType) &&
             (identical(other.orderingMode, orderingMode) ||
@@ -349,18 +320,19 @@ class _$_InstanceAnnouncementOrderingTermData
 
   @JsonKey(ignore: true)
   @override
-  _$InstanceAnnouncementOrderingTermDataCopyWith<
-          _InstanceAnnouncementOrderingTermData>
-      get copyWith => __$InstanceAnnouncementOrderingTermDataCopyWithImpl<
-          _InstanceAnnouncementOrderingTermData>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$InstanceAnnouncementOrderingTermDataImplCopyWith<
+          _$InstanceAnnouncementOrderingTermDataImpl>
+      get copyWith => __$$InstanceAnnouncementOrderingTermDataImplCopyWithImpl<
+          _$InstanceAnnouncementOrderingTermDataImpl>(this, _$identity);
 }
 
 abstract class _InstanceAnnouncementOrderingTermData
     extends InstanceAnnouncementOrderingTermData {
   const factory _InstanceAnnouncementOrderingTermData(
-          {required InstanceAnnouncementOrderType orderType,
-          required moor.OrderingMode orderingMode}) =
-      _$_InstanceAnnouncementOrderingTermData;
+          {required final InstanceAnnouncementOrderType orderType,
+          required final moor.OrderingMode orderingMode}) =
+      _$InstanceAnnouncementOrderingTermDataImpl;
   const _InstanceAnnouncementOrderingTermData._() : super._();
 
   @override
@@ -369,7 +341,7 @@ abstract class _InstanceAnnouncementOrderingTermData
   moor.OrderingMode get orderingMode;
   @override
   @JsonKey(ignore: true)
-  _$InstanceAnnouncementOrderingTermDataCopyWith<
-          _InstanceAnnouncementOrderingTermData>
+  _$$InstanceAnnouncementOrderingTermDataImplCopyWith<
+          _$InstanceAnnouncementOrderingTermDataImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

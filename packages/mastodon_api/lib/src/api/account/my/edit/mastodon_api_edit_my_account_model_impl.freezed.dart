@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_edit_my_account_model_impl.dart';
 
@@ -11,74 +12,12 @@ part of 'mastodon_api_edit_my_account_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiEditMyAccount _$MastodonApiEditMyAccountFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiEditMyAccount.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiEditMyAccountTearOff {
-  const _$MastodonApiEditMyAccountTearOff();
-
-  _MastodonApiEditMyAccount call(
-      {@JsonKey(name: 'fields_attributes')
-      @HiveField(1)
-          required List<MastodonApiField>? fieldsAttributes,
-      @HiveField(2)
-          required bool? discoverable,
-      @HiveField(3)
-          required bool? bot,
-      @JsonKey(name: 'display_name')
-      @HiveField(4)
-          required String? displayName,
-      @HiveField(5)
-          required String? note,
-      @HiveField(6)
-          required bool? locked,
-      @HiveField(7)
-          required String? privacy,
-      @HiveField(8)
-          required bool? sensitive,
-      @HiveField(9)
-          required String? language,
-      @JsonKey(name: 'avatar_local_file_path')
-      @HiveField(10)
-          required String? avatarLocalFilePath,
-      @JsonKey(name: 'delete_avatar')
-      @HiveField(11)
-          required bool? deleteAvatar,
-      @JsonKey(name: 'header_local_file_path')
-      @HiveField(12)
-          required String? headerLocalFilePath,
-      @JsonKey(name: 'delete_header')
-      @HiveField(13)
-          required bool? deleteHeader}) {
-    return _MastodonApiEditMyAccount(
-      fieldsAttributes: fieldsAttributes,
-      discoverable: discoverable,
-      bot: bot,
-      displayName: displayName,
-      note: note,
-      locked: locked,
-      privacy: privacy,
-      sensitive: sensitive,
-      language: language,
-      avatarLocalFilePath: avatarLocalFilePath,
-      deleteAvatar: deleteAvatar,
-      headerLocalFilePath: headerLocalFilePath,
-      deleteHeader: deleteHeader,
-    );
-  }
-
-  MastodonApiEditMyAccount fromJson(Map<String, Object?> json) {
-    return MastodonApiEditMyAccount.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiEditMyAccount = _$MastodonApiEditMyAccountTearOff();
 
 /// @nodoc
 mixin _$MastodonApiEditMyAccount {
@@ -126,51 +65,42 @@ mixin _$MastodonApiEditMyAccount {
 abstract class $MastodonApiEditMyAccountCopyWith<$Res> {
   factory $MastodonApiEditMyAccountCopyWith(MastodonApiEditMyAccount value,
           $Res Function(MastodonApiEditMyAccount) then) =
-      _$MastodonApiEditMyAccountCopyWithImpl<$Res>;
+      _$MastodonApiEditMyAccountCopyWithImpl<$Res, MastodonApiEditMyAccount>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'fields_attributes')
       @HiveField(1)
-          List<MastodonApiField>? fieldsAttributes,
-      @HiveField(2)
-          bool? discoverable,
-      @HiveField(3)
-          bool? bot,
-      @JsonKey(name: 'display_name')
-      @HiveField(4)
-          String? displayName,
-      @HiveField(5)
-          String? note,
-      @HiveField(6)
-          bool? locked,
-      @HiveField(7)
-          String? privacy,
-      @HiveField(8)
-          bool? sensitive,
-      @HiveField(9)
-          String? language,
+      List<MastodonApiField>? fieldsAttributes,
+      @HiveField(2) bool? discoverable,
+      @HiveField(3) bool? bot,
+      @JsonKey(name: 'display_name') @HiveField(4) String? displayName,
+      @HiveField(5) String? note,
+      @HiveField(6) bool? locked,
+      @HiveField(7) String? privacy,
+      @HiveField(8) bool? sensitive,
+      @HiveField(9) String? language,
       @JsonKey(name: 'avatar_local_file_path')
       @HiveField(10)
-          String? avatarLocalFilePath,
-      @JsonKey(name: 'delete_avatar')
-      @HiveField(11)
-          bool? deleteAvatar,
+      String? avatarLocalFilePath,
+      @JsonKey(name: 'delete_avatar') @HiveField(11) bool? deleteAvatar,
       @JsonKey(name: 'header_local_file_path')
       @HiveField(12)
-          String? headerLocalFilePath,
-      @JsonKey(name: 'delete_header')
-      @HiveField(13)
-          bool? deleteHeader});
+      String? headerLocalFilePath,
+      @JsonKey(name: 'delete_header') @HiveField(13) bool? deleteHeader});
 }
 
 /// @nodoc
-class _$MastodonApiEditMyAccountCopyWithImpl<$Res>
+class _$MastodonApiEditMyAccountCopyWithImpl<$Res,
+        $Val extends MastodonApiEditMyAccount>
     implements $MastodonApiEditMyAccountCopyWith<$Res> {
   _$MastodonApiEditMyAccountCopyWithImpl(this._value, this._then);
 
-  final MastodonApiEditMyAccount _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiEditMyAccount) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? fieldsAttributes = freezed,
@@ -188,116 +118,104 @@ class _$MastodonApiEditMyAccountCopyWithImpl<$Res>
     Object? deleteHeader = freezed,
   }) {
     return _then(_value.copyWith(
-      fieldsAttributes: fieldsAttributes == freezed
+      fieldsAttributes: freezed == fieldsAttributes
           ? _value.fieldsAttributes
           : fieldsAttributes // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiField>?,
-      discoverable: discoverable == freezed
+      discoverable: freezed == discoverable
           ? _value.discoverable
           : discoverable // ignore: cast_nullable_to_non_nullable
               as bool?,
-      bot: bot == freezed
+      bot: freezed == bot
           ? _value.bot
           : bot // ignore: cast_nullable_to_non_nullable
               as bool?,
-      displayName: displayName == freezed
+      displayName: freezed == displayName
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
               as String?,
-      note: note == freezed
+      note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
               as String?,
-      locked: locked == freezed
+      locked: freezed == locked
           ? _value.locked
           : locked // ignore: cast_nullable_to_non_nullable
               as bool?,
-      privacy: privacy == freezed
+      privacy: freezed == privacy
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
               as String?,
-      sensitive: sensitive == freezed
+      sensitive: freezed == sensitive
           ? _value.sensitive
           : sensitive // ignore: cast_nullable_to_non_nullable
               as bool?,
-      language: language == freezed
+      language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as String?,
-      avatarLocalFilePath: avatarLocalFilePath == freezed
+      avatarLocalFilePath: freezed == avatarLocalFilePath
           ? _value.avatarLocalFilePath
           : avatarLocalFilePath // ignore: cast_nullable_to_non_nullable
               as String?,
-      deleteAvatar: deleteAvatar == freezed
+      deleteAvatar: freezed == deleteAvatar
           ? _value.deleteAvatar
           : deleteAvatar // ignore: cast_nullable_to_non_nullable
               as bool?,
-      headerLocalFilePath: headerLocalFilePath == freezed
+      headerLocalFilePath: freezed == headerLocalFilePath
           ? _value.headerLocalFilePath
           : headerLocalFilePath // ignore: cast_nullable_to_non_nullable
               as String?,
-      deleteHeader: deleteHeader == freezed
+      deleteHeader: freezed == deleteHeader
           ? _value.deleteHeader
           : deleteHeader // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiEditMyAccountCopyWith<$Res>
+abstract class _$$MastodonApiEditMyAccountImplCopyWith<$Res>
     implements $MastodonApiEditMyAccountCopyWith<$Res> {
-  factory _$MastodonApiEditMyAccountCopyWith(_MastodonApiEditMyAccount value,
-          $Res Function(_MastodonApiEditMyAccount) then) =
-      __$MastodonApiEditMyAccountCopyWithImpl<$Res>;
+  factory _$$MastodonApiEditMyAccountImplCopyWith(
+          _$MastodonApiEditMyAccountImpl value,
+          $Res Function(_$MastodonApiEditMyAccountImpl) then) =
+      __$$MastodonApiEditMyAccountImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'fields_attributes')
       @HiveField(1)
-          List<MastodonApiField>? fieldsAttributes,
-      @HiveField(2)
-          bool? discoverable,
-      @HiveField(3)
-          bool? bot,
-      @JsonKey(name: 'display_name')
-      @HiveField(4)
-          String? displayName,
-      @HiveField(5)
-          String? note,
-      @HiveField(6)
-          bool? locked,
-      @HiveField(7)
-          String? privacy,
-      @HiveField(8)
-          bool? sensitive,
-      @HiveField(9)
-          String? language,
+      List<MastodonApiField>? fieldsAttributes,
+      @HiveField(2) bool? discoverable,
+      @HiveField(3) bool? bot,
+      @JsonKey(name: 'display_name') @HiveField(4) String? displayName,
+      @HiveField(5) String? note,
+      @HiveField(6) bool? locked,
+      @HiveField(7) String? privacy,
+      @HiveField(8) bool? sensitive,
+      @HiveField(9) String? language,
       @JsonKey(name: 'avatar_local_file_path')
       @HiveField(10)
-          String? avatarLocalFilePath,
-      @JsonKey(name: 'delete_avatar')
-      @HiveField(11)
-          bool? deleteAvatar,
+      String? avatarLocalFilePath,
+      @JsonKey(name: 'delete_avatar') @HiveField(11) bool? deleteAvatar,
       @JsonKey(name: 'header_local_file_path')
       @HiveField(12)
-          String? headerLocalFilePath,
-      @JsonKey(name: 'delete_header')
-      @HiveField(13)
-          bool? deleteHeader});
+      String? headerLocalFilePath,
+      @JsonKey(name: 'delete_header') @HiveField(13) bool? deleteHeader});
 }
 
 /// @nodoc
-class __$MastodonApiEditMyAccountCopyWithImpl<$Res>
-    extends _$MastodonApiEditMyAccountCopyWithImpl<$Res>
-    implements _$MastodonApiEditMyAccountCopyWith<$Res> {
-  __$MastodonApiEditMyAccountCopyWithImpl(_MastodonApiEditMyAccount _value,
-      $Res Function(_MastodonApiEditMyAccount) _then)
-      : super(_value, (v) => _then(v as _MastodonApiEditMyAccount));
+class __$$MastodonApiEditMyAccountImplCopyWithImpl<$Res>
+    extends _$MastodonApiEditMyAccountCopyWithImpl<$Res,
+        _$MastodonApiEditMyAccountImpl>
+    implements _$$MastodonApiEditMyAccountImplCopyWith<$Res> {
+  __$$MastodonApiEditMyAccountImplCopyWithImpl(
+      _$MastodonApiEditMyAccountImpl _value,
+      $Res Function(_$MastodonApiEditMyAccountImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiEditMyAccount get _value =>
-      super._value as _MastodonApiEditMyAccount;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? fieldsAttributes = freezed,
@@ -314,56 +232,56 @@ class __$MastodonApiEditMyAccountCopyWithImpl<$Res>
     Object? headerLocalFilePath = freezed,
     Object? deleteHeader = freezed,
   }) {
-    return _then(_MastodonApiEditMyAccount(
-      fieldsAttributes: fieldsAttributes == freezed
-          ? _value.fieldsAttributes
+    return _then(_$MastodonApiEditMyAccountImpl(
+      fieldsAttributes: freezed == fieldsAttributes
+          ? _value._fieldsAttributes
           : fieldsAttributes // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiField>?,
-      discoverable: discoverable == freezed
+      discoverable: freezed == discoverable
           ? _value.discoverable
           : discoverable // ignore: cast_nullable_to_non_nullable
               as bool?,
-      bot: bot == freezed
+      bot: freezed == bot
           ? _value.bot
           : bot // ignore: cast_nullable_to_non_nullable
               as bool?,
-      displayName: displayName == freezed
+      displayName: freezed == displayName
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
               as String?,
-      note: note == freezed
+      note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
               as String?,
-      locked: locked == freezed
+      locked: freezed == locked
           ? _value.locked
           : locked // ignore: cast_nullable_to_non_nullable
               as bool?,
-      privacy: privacy == freezed
+      privacy: freezed == privacy
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
               as String?,
-      sensitive: sensitive == freezed
+      sensitive: freezed == sensitive
           ? _value.sensitive
           : sensitive // ignore: cast_nullable_to_non_nullable
               as bool?,
-      language: language == freezed
+      language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as String?,
-      avatarLocalFilePath: avatarLocalFilePath == freezed
+      avatarLocalFilePath: freezed == avatarLocalFilePath
           ? _value.avatarLocalFilePath
           : avatarLocalFilePath // ignore: cast_nullable_to_non_nullable
               as String?,
-      deleteAvatar: deleteAvatar == freezed
+      deleteAvatar: freezed == deleteAvatar
           ? _value.deleteAvatar
           : deleteAvatar // ignore: cast_nullable_to_non_nullable
               as bool?,
-      headerLocalFilePath: headerLocalFilePath == freezed
+      headerLocalFilePath: freezed == headerLocalFilePath
           ? _value.headerLocalFilePath
           : headerLocalFilePath // ignore: cast_nullable_to_non_nullable
               as String?,
-      deleteHeader: deleteHeader == freezed
+      deleteHeader: freezed == deleteHeader
           ? _value.deleteHeader
           : deleteHeader // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -373,48 +291,47 @@ class __$MastodonApiEditMyAccountCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiEditMyAccount implements _MastodonApiEditMyAccount {
-  const _$_MastodonApiEditMyAccount(
+class _$MastodonApiEditMyAccountImpl implements _MastodonApiEditMyAccount {
+  const _$MastodonApiEditMyAccountImpl(
       {@JsonKey(name: 'fields_attributes')
       @HiveField(1)
-          required this.fieldsAttributes,
-      @HiveField(2)
-          required this.discoverable,
-      @HiveField(3)
-          required this.bot,
-      @JsonKey(name: 'display_name')
-      @HiveField(4)
-          required this.displayName,
-      @HiveField(5)
-          required this.note,
-      @HiveField(6)
-          required this.locked,
-      @HiveField(7)
-          required this.privacy,
-      @HiveField(8)
-          required this.sensitive,
-      @HiveField(9)
-          required this.language,
+      required final List<MastodonApiField>? fieldsAttributes,
+      @HiveField(2) required this.discoverable,
+      @HiveField(3) required this.bot,
+      @JsonKey(name: 'display_name') @HiveField(4) required this.displayName,
+      @HiveField(5) required this.note,
+      @HiveField(6) required this.locked,
+      @HiveField(7) required this.privacy,
+      @HiveField(8) required this.sensitive,
+      @HiveField(9) required this.language,
       @JsonKey(name: 'avatar_local_file_path')
       @HiveField(10)
-          required this.avatarLocalFilePath,
-      @JsonKey(name: 'delete_avatar')
-      @HiveField(11)
-          required this.deleteAvatar,
+      required this.avatarLocalFilePath,
+      @JsonKey(name: 'delete_avatar') @HiveField(11) required this.deleteAvatar,
       @JsonKey(name: 'header_local_file_path')
       @HiveField(12)
-          required this.headerLocalFilePath,
+      required this.headerLocalFilePath,
       @JsonKey(name: 'delete_header')
       @HiveField(13)
-          required this.deleteHeader});
+      required this.deleteHeader})
+      : _fieldsAttributes = fieldsAttributes;
 
-  factory _$_MastodonApiEditMyAccount.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiEditMyAccountFromJson(json);
+  factory _$MastodonApiEditMyAccountImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MastodonApiEditMyAccountImplFromJson(json);
 
+  final List<MastodonApiField>? _fieldsAttributes;
   @override
   @JsonKey(name: 'fields_attributes')
   @HiveField(1)
-  final List<MastodonApiField>? fieldsAttributes;
+  List<MastodonApiField>? get fieldsAttributes {
+    final value = _fieldsAttributes;
+    if (value == null) return null;
+    if (_fieldsAttributes is EqualUnmodifiableListView)
+      return _fieldsAttributes;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(2)
   final bool? discoverable;
@@ -463,12 +380,12 @@ class _$_MastodonApiEditMyAccount implements _MastodonApiEditMyAccount {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiEditMyAccount &&
+            other is _$MastodonApiEditMyAccountImpl &&
             const DeepCollectionEquality()
-                .equals(other.fieldsAttributes, fieldsAttributes) &&
+                .equals(other._fieldsAttributes, _fieldsAttributes) &&
             (identical(other.discoverable, discoverable) ||
                 other.discoverable == discoverable) &&
             (identical(other.bot, bot) || other.bot == bot) &&
@@ -491,10 +408,11 @@ class _$_MastodonApiEditMyAccount implements _MastodonApiEditMyAccount {
                 other.deleteHeader == deleteHeader));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(fieldsAttributes),
+      const DeepCollectionEquality().hash(_fieldsAttributes),
       discoverable,
       bot,
       displayName,
@@ -510,13 +428,16 @@ class _$_MastodonApiEditMyAccount implements _MastodonApiEditMyAccount {
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiEditMyAccountCopyWith<_MastodonApiEditMyAccount> get copyWith =>
-      __$MastodonApiEditMyAccountCopyWithImpl<_MastodonApiEditMyAccount>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiEditMyAccountImplCopyWith<_$MastodonApiEditMyAccountImpl>
+      get copyWith => __$$MastodonApiEditMyAccountImplCopyWithImpl<
+          _$MastodonApiEditMyAccountImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiEditMyAccountToJson(this);
+    return _$$MastodonApiEditMyAccountImplToJson(
+      this,
+    );
   }
 }
 
@@ -524,39 +445,32 @@ abstract class _MastodonApiEditMyAccount implements MastodonApiEditMyAccount {
   const factory _MastodonApiEditMyAccount(
       {@JsonKey(name: 'fields_attributes')
       @HiveField(1)
-          required List<MastodonApiField>? fieldsAttributes,
-      @HiveField(2)
-          required bool? discoverable,
-      @HiveField(3)
-          required bool? bot,
+      required final List<MastodonApiField>? fieldsAttributes,
+      @HiveField(2) required final bool? discoverable,
+      @HiveField(3) required final bool? bot,
       @JsonKey(name: 'display_name')
       @HiveField(4)
-          required String? displayName,
-      @HiveField(5)
-          required String? note,
-      @HiveField(6)
-          required bool? locked,
-      @HiveField(7)
-          required String? privacy,
-      @HiveField(8)
-          required bool? sensitive,
-      @HiveField(9)
-          required String? language,
+      required final String? displayName,
+      @HiveField(5) required final String? note,
+      @HiveField(6) required final bool? locked,
+      @HiveField(7) required final String? privacy,
+      @HiveField(8) required final bool? sensitive,
+      @HiveField(9) required final String? language,
       @JsonKey(name: 'avatar_local_file_path')
       @HiveField(10)
-          required String? avatarLocalFilePath,
+      required final String? avatarLocalFilePath,
       @JsonKey(name: 'delete_avatar')
       @HiveField(11)
-          required bool? deleteAvatar,
+      required final bool? deleteAvatar,
       @JsonKey(name: 'header_local_file_path')
       @HiveField(12)
-          required String? headerLocalFilePath,
+      required final String? headerLocalFilePath,
       @JsonKey(name: 'delete_header')
       @HiveField(13)
-          required bool? deleteHeader}) = _$_MastodonApiEditMyAccount;
+      required final bool? deleteHeader}) = _$MastodonApiEditMyAccountImpl;
 
   factory _MastodonApiEditMyAccount.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiEditMyAccount.fromJson;
+      _$MastodonApiEditMyAccountImpl.fromJson;
 
   @override
   @JsonKey(name: 'fields_attributes')
@@ -605,6 +519,6 @@ abstract class _MastodonApiEditMyAccount implements MastodonApiEditMyAccount {
   bool? get deleteHeader;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiEditMyAccountCopyWith<_MastodonApiEditMyAccount> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$MastodonApiEditMyAccountImplCopyWith<_$MastodonApiEditMyAccountImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

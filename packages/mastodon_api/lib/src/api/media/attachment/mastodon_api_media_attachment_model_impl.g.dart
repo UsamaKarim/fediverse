@@ -69,9 +69,9 @@ class MastodonApiMediaAttachmentAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiMediaAttachment _$$_MastodonApiMediaAttachmentFromJson(
+_$MastodonApiMediaAttachmentImpl _$$MastodonApiMediaAttachmentImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiMediaAttachment(
+    _$MastodonApiMediaAttachmentImpl(
       description: json['description'] as String?,
       id: json['id'] as String,
       previewUrl: json['preview_url'] as String?,
@@ -86,8 +86,8 @@ _$_MastodonApiMediaAttachment _$$_MastodonApiMediaAttachmentFromJson(
               json['meta'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_MastodonApiMediaAttachmentToJson(
-    _$_MastodonApiMediaAttachment instance) {
+Map<String, dynamic> _$$MastodonApiMediaAttachmentImplToJson(
+    _$MastodonApiMediaAttachmentImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

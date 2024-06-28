@@ -49,9 +49,10 @@ class EmojiPickerRecentCategoryItemsListAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_EmojiPickerRecentCategoryItemsList
-    _$$_EmojiPickerRecentCategoryItemsListFromJson(Map<String, dynamic> json) =>
-        _$_EmojiPickerRecentCategoryItemsList(
+_$EmojiPickerRecentCategoryItemsListImpl
+    _$$EmojiPickerRecentCategoryItemsListImplFromJson(
+            Map<String, dynamic> json) =>
+        _$EmojiPickerRecentCategoryItemsListImpl(
           recentCodeItems: (json['recent_code_items'] as List<dynamic>)
               .map((e) =>
                   CustomEmojiPickerCodeItem.fromJson(e as Map<String, dynamic>))
@@ -62,8 +63,8 @@ _$_EmojiPickerRecentCategoryItemsList
               .toList(),
         );
 
-Map<String, dynamic> _$$_EmojiPickerRecentCategoryItemsListToJson(
-        _$_EmojiPickerRecentCategoryItemsList instance) =>
+Map<String, dynamic> _$$EmojiPickerRecentCategoryItemsListImplToJson(
+        _$EmojiPickerRecentCategoryItemsListImpl instance) =>
     <String, dynamic>{
       'recent_code_items':
           instance.recentCodeItems.map((e) => e.toJson()).toList(),

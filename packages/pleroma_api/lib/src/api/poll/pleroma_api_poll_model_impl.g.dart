@@ -68,8 +68,8 @@ class PleromaApiPollAdapter extends TypeAdapter<PleromaApiPoll> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiPoll _$$_PleromaApiPollFromJson(Map<String, dynamic> json) =>
-    _$_PleromaApiPoll(
+_$PleromaApiPollImpl _$$PleromaApiPollImplFromJson(Map<String, dynamic> json) =>
+    _$PleromaApiPollImpl(
       expired: json['expired'] as bool,
       expiresAt: json['expires_at'] == null
           ? null
@@ -79,14 +79,16 @@ _$_PleromaApiPoll _$$_PleromaApiPollFromJson(Map<String, dynamic> json) =>
       options: (json['options'] as List<dynamic>)
           .map((e) => PleromaApiPollOption.fromJson(e as Map<String, dynamic>))
           .toList(),
-      ownVotes:
-          (json['own_votes'] as List<dynamic>?)?.map((e) => e as int).toList(),
+      ownVotes: (json['own_votes'] as List<dynamic>?)
+          ?.map((e) => (e as num).toInt())
+          .toList(),
       voted: json['voted'] as bool?,
-      votersCount: json['voters_count'] as int?,
-      votesCount: json['votes_count'] as int?,
+      votersCount: (json['voters_count'] as num?)?.toInt(),
+      votesCount: (json['votes_count'] as num?)?.toInt(),
     );
 
-Map<String, dynamic> _$$_PleromaApiPollToJson(_$_PleromaApiPoll instance) {
+Map<String, dynamic> _$$PleromaApiPollImplToJson(
+    _$PleromaApiPollImpl instance) {
   final val = <String, dynamic>{
     'expired': instance.expired,
   };

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_instance_activity_item_model_pleroma_adapter.dart';
 
@@ -11,34 +12,13 @@ part of 'unifedi_api_instance_activity_item_model_pleroma_adapter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiInstanceActivityItemPleromaAdapter
     _$UnifediApiInstanceActivityItemPleromaAdapterFromJson(
         Map<String, dynamic> json) {
   return _UnifediApiInstanceActivityItemPleromaAdapter.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiInstanceActivityItemPleromaAdapterTearOff {
-  const _$UnifediApiInstanceActivityItemPleromaAdapterTearOff();
-
-  _UnifediApiInstanceActivityItemPleromaAdapter call(
-      @HiveField(0) PleromaApiInstanceActivityItem value) {
-    return _UnifediApiInstanceActivityItemPleromaAdapter(
-      value,
-    );
-  }
-
-  UnifediApiInstanceActivityItemPleromaAdapter fromJson(
-      Map<String, Object?> json) {
-    return UnifediApiInstanceActivityItemPleromaAdapter.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiInstanceActivityItemPleromaAdapter =
-    _$UnifediApiInstanceActivityItemPleromaAdapterTearOff();
 
 /// @nodoc
 mixin _$UnifediApiInstanceActivityItemPleromaAdapter {
@@ -58,50 +38,58 @@ abstract class $UnifediApiInstanceActivityItemPleromaAdapterCopyWith<$Res> {
   factory $UnifediApiInstanceActivityItemPleromaAdapterCopyWith(
           UnifediApiInstanceActivityItemPleromaAdapter value,
           $Res Function(UnifediApiInstanceActivityItemPleromaAdapter) then) =
-      _$UnifediApiInstanceActivityItemPleromaAdapterCopyWithImpl<$Res>;
+      _$UnifediApiInstanceActivityItemPleromaAdapterCopyWithImpl<$Res,
+          UnifediApiInstanceActivityItemPleromaAdapter>;
+  @useResult
   $Res call({@HiveField(0) PleromaApiInstanceActivityItem value});
 
   $PleromaApiInstanceActivityItemCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class _$UnifediApiInstanceActivityItemPleromaAdapterCopyWithImpl<$Res>
+class _$UnifediApiInstanceActivityItemPleromaAdapterCopyWithImpl<$Res,
+        $Val extends UnifediApiInstanceActivityItemPleromaAdapter>
     implements $UnifediApiInstanceActivityItemPleromaAdapterCopyWith<$Res> {
   _$UnifediApiInstanceActivityItemPleromaAdapterCopyWithImpl(
       this._value, this._then);
 
-  final UnifediApiInstanceActivityItemPleromaAdapter _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiInstanceActivityItemPleromaAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstanceActivityItem,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiInstanceActivityItemCopyWith<$Res> get value {
     return $PleromaApiInstanceActivityItemCopyWith<$Res>(_value.value, (value) {
-      return _then(_value.copyWith(value: value));
+      return _then(_value.copyWith(value: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiInstanceActivityItemPleromaAdapterCopyWith<$Res>
+abstract class _$$UnifediApiInstanceActivityItemPleromaAdapterImplCopyWith<$Res>
     implements $UnifediApiInstanceActivityItemPleromaAdapterCopyWith<$Res> {
-  factory _$UnifediApiInstanceActivityItemPleromaAdapterCopyWith(
-          _UnifediApiInstanceActivityItemPleromaAdapter value,
-          $Res Function(_UnifediApiInstanceActivityItemPleromaAdapter) then) =
-      __$UnifediApiInstanceActivityItemPleromaAdapterCopyWithImpl<$Res>;
+  factory _$$UnifediApiInstanceActivityItemPleromaAdapterImplCopyWith(
+          _$UnifediApiInstanceActivityItemPleromaAdapterImpl value,
+          $Res Function(_$UnifediApiInstanceActivityItemPleromaAdapterImpl)
+              then) =
+      __$$UnifediApiInstanceActivityItemPleromaAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) PleromaApiInstanceActivityItem value});
 
   @override
@@ -109,25 +97,23 @@ abstract class _$UnifediApiInstanceActivityItemPleromaAdapterCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UnifediApiInstanceActivityItemPleromaAdapterCopyWithImpl<$Res>
-    extends _$UnifediApiInstanceActivityItemPleromaAdapterCopyWithImpl<$Res>
-    implements _$UnifediApiInstanceActivityItemPleromaAdapterCopyWith<$Res> {
-  __$UnifediApiInstanceActivityItemPleromaAdapterCopyWithImpl(
-      _UnifediApiInstanceActivityItemPleromaAdapter _value,
-      $Res Function(_UnifediApiInstanceActivityItemPleromaAdapter) _then)
-      : super(_value,
-            (v) => _then(v as _UnifediApiInstanceActivityItemPleromaAdapter));
+class __$$UnifediApiInstanceActivityItemPleromaAdapterImplCopyWithImpl<$Res>
+    extends _$UnifediApiInstanceActivityItemPleromaAdapterCopyWithImpl<$Res,
+        _$UnifediApiInstanceActivityItemPleromaAdapterImpl>
+    implements
+        _$$UnifediApiInstanceActivityItemPleromaAdapterImplCopyWith<$Res> {
+  __$$UnifediApiInstanceActivityItemPleromaAdapterImplCopyWithImpl(
+      _$UnifediApiInstanceActivityItemPleromaAdapterImpl _value,
+      $Res Function(_$UnifediApiInstanceActivityItemPleromaAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiInstanceActivityItemPleromaAdapter get _value =>
-      super._value as _UnifediApiInstanceActivityItemPleromaAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
+    Object? value = null,
   }) {
-    return _then(_UnifediApiInstanceActivityItemPleromaAdapter(
-      value == freezed
+    return _then(_$UnifediApiInstanceActivityItemPleromaAdapterImpl(
+      null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as PleromaApiInstanceActivityItem,
@@ -137,15 +123,15 @@ class __$UnifediApiInstanceActivityItemPleromaAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiInstanceActivityItemPleromaAdapter
+class _$UnifediApiInstanceActivityItemPleromaAdapterImpl
     extends _UnifediApiInstanceActivityItemPleromaAdapter {
-  const _$_UnifediApiInstanceActivityItemPleromaAdapter(
+  const _$UnifediApiInstanceActivityItemPleromaAdapterImpl(
       @HiveField(0) this.value)
       : super._();
 
-  factory _$_UnifediApiInstanceActivityItemPleromaAdapter.fromJson(
+  factory _$UnifediApiInstanceActivityItemPleromaAdapterImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiInstanceActivityItemPleromaAdapterFromJson(json);
+      _$$UnifediApiInstanceActivityItemPleromaAdapterImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -157,47 +143,52 @@ class _$_UnifediApiInstanceActivityItemPleromaAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiInstanceActivityItemPleromaAdapter &&
+            other is _$UnifediApiInstanceActivityItemPleromaAdapterImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiInstanceActivityItemPleromaAdapterCopyWith<
-          _UnifediApiInstanceActivityItemPleromaAdapter>
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiInstanceActivityItemPleromaAdapterImplCopyWith<
+          _$UnifediApiInstanceActivityItemPleromaAdapterImpl>
       get copyWith =>
-          __$UnifediApiInstanceActivityItemPleromaAdapterCopyWithImpl<
-              _UnifediApiInstanceActivityItemPleromaAdapter>(this, _$identity);
+          __$$UnifediApiInstanceActivityItemPleromaAdapterImplCopyWithImpl<
+                  _$UnifediApiInstanceActivityItemPleromaAdapterImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiInstanceActivityItemPleromaAdapterToJson(this);
+    return _$$UnifediApiInstanceActivityItemPleromaAdapterImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiInstanceActivityItemPleromaAdapter
     extends UnifediApiInstanceActivityItemPleromaAdapter {
   const factory _UnifediApiInstanceActivityItemPleromaAdapter(
-          @HiveField(0) PleromaApiInstanceActivityItem value) =
-      _$_UnifediApiInstanceActivityItemPleromaAdapter;
+          @HiveField(0) final PleromaApiInstanceActivityItem value) =
+      _$UnifediApiInstanceActivityItemPleromaAdapterImpl;
   const _UnifediApiInstanceActivityItemPleromaAdapter._() : super._();
 
   factory _UnifediApiInstanceActivityItemPleromaAdapter.fromJson(
           Map<String, dynamic> json) =
-      _$_UnifediApiInstanceActivityItemPleromaAdapter.fromJson;
+      _$UnifediApiInstanceActivityItemPleromaAdapterImpl.fromJson;
 
   @override
   @HiveField(0)
   PleromaApiInstanceActivityItem get value;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiInstanceActivityItemPleromaAdapterCopyWith<
-          _UnifediApiInstanceActivityItemPleromaAdapter>
+  _$$UnifediApiInstanceActivityItemPleromaAdapterImplCopyWith<
+          _$UnifediApiInstanceActivityItemPleromaAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

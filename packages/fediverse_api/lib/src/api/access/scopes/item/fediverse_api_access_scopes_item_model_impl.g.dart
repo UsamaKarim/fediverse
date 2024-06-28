@@ -48,15 +48,15 @@ class FediverseApiAccessScopesItemAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_FediverseApiAccessScopesItem _$$_FediverseApiAccessScopesItemFromJson(
+_$FediverseApiAccessScopesItemImpl _$$FediverseApiAccessScopesItemImplFromJson(
         Map<String, dynamic> json) =>
-    _$_FediverseApiAccessScopesItem(
+    _$FediverseApiAccessScopesItemImpl(
       permission: json['permission'] as String,
       target: json['target'] as String,
     );
 
-Map<String, dynamic> _$$_FediverseApiAccessScopesItemToJson(
-        _$_FediverseApiAccessScopesItem instance) =>
+Map<String, dynamic> _$$FediverseApiAccessScopesItemImplToJson(
+        _$FediverseApiAccessScopesItemImpl instance) =>
     <String, dynamic>{
       'permission': instance.permission,
       'target': instance.target,

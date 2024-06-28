@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'notifications_push_handler_unhandled_model.dart';
 
@@ -11,32 +12,12 @@ part of 'notifications_push_handler_unhandled_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 NotificationsPushHandlerUnhandledList
     _$NotificationsPushHandlerUnhandledListFromJson(Map<String, dynamic> json) {
   return _NotificationsPushHandlerUnhandledList.fromJson(json);
 }
-
-/// @nodoc
-class _$NotificationsPushHandlerUnhandledListTearOff {
-  const _$NotificationsPushHandlerUnhandledListTearOff();
-
-  _NotificationsPushHandlerUnhandledList call(
-      {@HiveField(0) required List<NotificationsPushHandlerMessage> messages}) {
-    return _NotificationsPushHandlerUnhandledList(
-      messages: messages,
-    );
-  }
-
-  NotificationsPushHandlerUnhandledList fromJson(Map<String, Object?> json) {
-    return NotificationsPushHandlerUnhandledList.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $NotificationsPushHandlerUnhandledList =
-    _$NotificationsPushHandlerUnhandledListTearOff();
 
 /// @nodoc
 mixin _$NotificationsPushHandlerUnhandledList {
@@ -56,64 +37,67 @@ abstract class $NotificationsPushHandlerUnhandledListCopyWith<$Res> {
   factory $NotificationsPushHandlerUnhandledListCopyWith(
           NotificationsPushHandlerUnhandledList value,
           $Res Function(NotificationsPushHandlerUnhandledList) then) =
-      _$NotificationsPushHandlerUnhandledListCopyWithImpl<$Res>;
+      _$NotificationsPushHandlerUnhandledListCopyWithImpl<$Res,
+          NotificationsPushHandlerUnhandledList>;
+  @useResult
   $Res call({@HiveField(0) List<NotificationsPushHandlerMessage> messages});
 }
 
 /// @nodoc
-class _$NotificationsPushHandlerUnhandledListCopyWithImpl<$Res>
+class _$NotificationsPushHandlerUnhandledListCopyWithImpl<$Res,
+        $Val extends NotificationsPushHandlerUnhandledList>
     implements $NotificationsPushHandlerUnhandledListCopyWith<$Res> {
   _$NotificationsPushHandlerUnhandledListCopyWithImpl(this._value, this._then);
 
-  final NotificationsPushHandlerUnhandledList _value;
   // ignore: unused_field
-  final $Res Function(NotificationsPushHandlerUnhandledList) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? messages = freezed,
+    Object? messages = null,
   }) {
     return _then(_value.copyWith(
-      messages: messages == freezed
+      messages: null == messages
           ? _value.messages
           : messages // ignore: cast_nullable_to_non_nullable
               as List<NotificationsPushHandlerMessage>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$NotificationsPushHandlerUnhandledListCopyWith<$Res>
+abstract class _$$NotificationsPushHandlerUnhandledListImplCopyWith<$Res>
     implements $NotificationsPushHandlerUnhandledListCopyWith<$Res> {
-  factory _$NotificationsPushHandlerUnhandledListCopyWith(
-          _NotificationsPushHandlerUnhandledList value,
-          $Res Function(_NotificationsPushHandlerUnhandledList) then) =
-      __$NotificationsPushHandlerUnhandledListCopyWithImpl<$Res>;
+  factory _$$NotificationsPushHandlerUnhandledListImplCopyWith(
+          _$NotificationsPushHandlerUnhandledListImpl value,
+          $Res Function(_$NotificationsPushHandlerUnhandledListImpl) then) =
+      __$$NotificationsPushHandlerUnhandledListImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@HiveField(0) List<NotificationsPushHandlerMessage> messages});
 }
 
 /// @nodoc
-class __$NotificationsPushHandlerUnhandledListCopyWithImpl<$Res>
-    extends _$NotificationsPushHandlerUnhandledListCopyWithImpl<$Res>
-    implements _$NotificationsPushHandlerUnhandledListCopyWith<$Res> {
-  __$NotificationsPushHandlerUnhandledListCopyWithImpl(
-      _NotificationsPushHandlerUnhandledList _value,
-      $Res Function(_NotificationsPushHandlerUnhandledList) _then)
-      : super(
-            _value, (v) => _then(v as _NotificationsPushHandlerUnhandledList));
+class __$$NotificationsPushHandlerUnhandledListImplCopyWithImpl<$Res>
+    extends _$NotificationsPushHandlerUnhandledListCopyWithImpl<$Res,
+        _$NotificationsPushHandlerUnhandledListImpl>
+    implements _$$NotificationsPushHandlerUnhandledListImplCopyWith<$Res> {
+  __$$NotificationsPushHandlerUnhandledListImplCopyWithImpl(
+      _$NotificationsPushHandlerUnhandledListImpl _value,
+      $Res Function(_$NotificationsPushHandlerUnhandledListImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _NotificationsPushHandlerUnhandledList get _value =>
-      super._value as _NotificationsPushHandlerUnhandledList;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? messages = freezed,
+    Object? messages = null,
   }) {
-    return _then(_NotificationsPushHandlerUnhandledList(
-      messages: messages == freezed
-          ? _value.messages
+    return _then(_$NotificationsPushHandlerUnhandledListImpl(
+      messages: null == messages
+          ? _value._messages
           : messages // ignore: cast_nullable_to_non_nullable
               as List<NotificationsPushHandlerMessage>,
     ));
@@ -122,18 +106,25 @@ class __$NotificationsPushHandlerUnhandledListCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_NotificationsPushHandlerUnhandledList
+class _$NotificationsPushHandlerUnhandledListImpl
     implements _NotificationsPushHandlerUnhandledList {
-  const _$_NotificationsPushHandlerUnhandledList(
-      {@HiveField(0) required this.messages});
+  const _$NotificationsPushHandlerUnhandledListImpl(
+      {@HiveField(0)
+      required final List<NotificationsPushHandlerMessage> messages})
+      : _messages = messages;
 
-  factory _$_NotificationsPushHandlerUnhandledList.fromJson(
+  factory _$NotificationsPushHandlerUnhandledListImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_NotificationsPushHandlerUnhandledListFromJson(json);
+      _$$NotificationsPushHandlerUnhandledListImplFromJson(json);
 
+  final List<NotificationsPushHandlerMessage> _messages;
   @override
   @HiveField(0)
-  final List<NotificationsPushHandlerMessage> messages;
+  List<NotificationsPushHandlerMessage> get messages {
+    if (_messages is EqualUnmodifiableListView) return _messages;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_messages);
+  }
 
   @override
   String toString() {
@@ -141,27 +132,31 @@ class _$_NotificationsPushHandlerUnhandledList
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _NotificationsPushHandlerUnhandledList &&
-            const DeepCollectionEquality().equals(other.messages, messages));
+            other is _$NotificationsPushHandlerUnhandledListImpl &&
+            const DeepCollectionEquality().equals(other._messages, _messages));
   }
-
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(messages));
 
   @JsonKey(ignore: true)
   @override
-  _$NotificationsPushHandlerUnhandledListCopyWith<
-          _NotificationsPushHandlerUnhandledList>
-      get copyWith => __$NotificationsPushHandlerUnhandledListCopyWithImpl<
-          _NotificationsPushHandlerUnhandledList>(this, _$identity);
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_messages));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$NotificationsPushHandlerUnhandledListImplCopyWith<
+          _$NotificationsPushHandlerUnhandledListImpl>
+      get copyWith => __$$NotificationsPushHandlerUnhandledListImplCopyWithImpl<
+          _$NotificationsPushHandlerUnhandledListImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_NotificationsPushHandlerUnhandledListToJson(this);
+    return _$$NotificationsPushHandlerUnhandledListImplToJson(
+      this,
+    );
   }
 }
 
@@ -169,19 +164,19 @@ abstract class _NotificationsPushHandlerUnhandledList
     implements NotificationsPushHandlerUnhandledList {
   const factory _NotificationsPushHandlerUnhandledList(
           {@HiveField(0)
-              required List<NotificationsPushHandlerMessage> messages}) =
-      _$_NotificationsPushHandlerUnhandledList;
+          required final List<NotificationsPushHandlerMessage> messages}) =
+      _$NotificationsPushHandlerUnhandledListImpl;
 
   factory _NotificationsPushHandlerUnhandledList.fromJson(
           Map<String, dynamic> json) =
-      _$_NotificationsPushHandlerUnhandledList.fromJson;
+      _$NotificationsPushHandlerUnhandledListImpl.fromJson;
 
   @override
   @HiveField(0)
   List<NotificationsPushHandlerMessage> get messages;
   @override
   @JsonKey(ignore: true)
-  _$NotificationsPushHandlerUnhandledListCopyWith<
-          _NotificationsPushHandlerUnhandledList>
+  _$$NotificationsPushHandlerUnhandledListImplCopyWith<
+          _$NotificationsPushHandlerUnhandledListImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_frontend_configurations_model_impl.dart';
 
@@ -11,42 +12,12 @@ part of 'pleroma_api_frontend_configurations_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiFrontendConfigurations _$PleromaApiFrontendConfigurationsFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiFrontendConfigurations.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiFrontendConfigurationsTearOff {
-  const _$PleromaApiFrontendConfigurationsTearOff();
-
-  _PleromaApiFrontendConfigurations call(
-      {@JsonKey(name: 'masto_fe')
-      @HiveField(0)
-          required PleromaApiFrontendConfigurationsMastoFe? mastoFe,
-      @JsonKey(name: 'pleroma_fe')
-      @HiveField(1)
-          required PleromaApiFrontendConfigurationsPleromaFe? pleromaFe,
-      @JsonKey(name: 'soapbox_fe')
-      @HiveField(2)
-          required PleromaApiFrontendConfigurationsSoapboxFe? soapboxFe}) {
-    return _PleromaApiFrontendConfigurations(
-      mastoFe: mastoFe,
-      pleromaFe: pleromaFe,
-      soapboxFe: soapboxFe,
-    );
-  }
-
-  PleromaApiFrontendConfigurations fromJson(Map<String, Object?> json) {
-    return PleromaApiFrontendConfigurations.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiFrontendConfigurations =
-    _$PleromaApiFrontendConfigurationsTearOff();
 
 /// @nodoc
 mixin _$PleromaApiFrontendConfigurations {
@@ -74,17 +45,19 @@ abstract class $PleromaApiFrontendConfigurationsCopyWith<$Res> {
   factory $PleromaApiFrontendConfigurationsCopyWith(
           PleromaApiFrontendConfigurations value,
           $Res Function(PleromaApiFrontendConfigurations) then) =
-      _$PleromaApiFrontendConfigurationsCopyWithImpl<$Res>;
+      _$PleromaApiFrontendConfigurationsCopyWithImpl<$Res,
+          PleromaApiFrontendConfigurations>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'masto_fe')
       @HiveField(0)
-          PleromaApiFrontendConfigurationsMastoFe? mastoFe,
+      PleromaApiFrontendConfigurationsMastoFe? mastoFe,
       @JsonKey(name: 'pleroma_fe')
       @HiveField(1)
-          PleromaApiFrontendConfigurationsPleromaFe? pleromaFe,
+      PleromaApiFrontendConfigurationsPleromaFe? pleromaFe,
       @JsonKey(name: 'soapbox_fe')
       @HiveField(2)
-          PleromaApiFrontendConfigurationsSoapboxFe? soapboxFe});
+      PleromaApiFrontendConfigurationsSoapboxFe? soapboxFe});
 
   $PleromaApiFrontendConfigurationsMastoFeCopyWith<$Res>? get mastoFe;
   $PleromaApiFrontendConfigurationsPleromaFeCopyWith<$Res>? get pleromaFe;
@@ -92,14 +65,17 @@ abstract class $PleromaApiFrontendConfigurationsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PleromaApiFrontendConfigurationsCopyWithImpl<$Res>
+class _$PleromaApiFrontendConfigurationsCopyWithImpl<$Res,
+        $Val extends PleromaApiFrontendConfigurations>
     implements $PleromaApiFrontendConfigurationsCopyWith<$Res> {
   _$PleromaApiFrontendConfigurationsCopyWithImpl(this._value, this._then);
 
-  final PleromaApiFrontendConfigurations _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiFrontendConfigurations) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? mastoFe = freezed,
@@ -107,22 +83,23 @@ class _$PleromaApiFrontendConfigurationsCopyWithImpl<$Res>
     Object? soapboxFe = freezed,
   }) {
     return _then(_value.copyWith(
-      mastoFe: mastoFe == freezed
+      mastoFe: freezed == mastoFe
           ? _value.mastoFe
           : mastoFe // ignore: cast_nullable_to_non_nullable
               as PleromaApiFrontendConfigurationsMastoFe?,
-      pleromaFe: pleromaFe == freezed
+      pleromaFe: freezed == pleromaFe
           ? _value.pleromaFe
           : pleromaFe // ignore: cast_nullable_to_non_nullable
               as PleromaApiFrontendConfigurationsPleromaFe?,
-      soapboxFe: soapboxFe == freezed
+      soapboxFe: freezed == soapboxFe
           ? _value.soapboxFe
           : soapboxFe // ignore: cast_nullable_to_non_nullable
               as PleromaApiFrontendConfigurationsSoapboxFe?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiFrontendConfigurationsMastoFeCopyWith<$Res>? get mastoFe {
     if (_value.mastoFe == null) {
       return null;
@@ -130,11 +107,12 @@ class _$PleromaApiFrontendConfigurationsCopyWithImpl<$Res>
 
     return $PleromaApiFrontendConfigurationsMastoFeCopyWith<$Res>(
         _value.mastoFe!, (value) {
-      return _then(_value.copyWith(mastoFe: value));
+      return _then(_value.copyWith(mastoFe: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiFrontendConfigurationsPleromaFeCopyWith<$Res>? get pleromaFe {
     if (_value.pleromaFe == null) {
       return null;
@@ -142,11 +120,12 @@ class _$PleromaApiFrontendConfigurationsCopyWithImpl<$Res>
 
     return $PleromaApiFrontendConfigurationsPleromaFeCopyWith<$Res>(
         _value.pleromaFe!, (value) {
-      return _then(_value.copyWith(pleromaFe: value));
+      return _then(_value.copyWith(pleromaFe: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiFrontendConfigurationsSoapboxFeCopyWith<$Res>? get soapboxFe {
     if (_value.soapboxFe == null) {
       return null;
@@ -154,29 +133,30 @@ class _$PleromaApiFrontendConfigurationsCopyWithImpl<$Res>
 
     return $PleromaApiFrontendConfigurationsSoapboxFeCopyWith<$Res>(
         _value.soapboxFe!, (value) {
-      return _then(_value.copyWith(soapboxFe: value));
+      return _then(_value.copyWith(soapboxFe: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiFrontendConfigurationsCopyWith<$Res>
+abstract class _$$PleromaApiFrontendConfigurationsImplCopyWith<$Res>
     implements $PleromaApiFrontendConfigurationsCopyWith<$Res> {
-  factory _$PleromaApiFrontendConfigurationsCopyWith(
-          _PleromaApiFrontendConfigurations value,
-          $Res Function(_PleromaApiFrontendConfigurations) then) =
-      __$PleromaApiFrontendConfigurationsCopyWithImpl<$Res>;
+  factory _$$PleromaApiFrontendConfigurationsImplCopyWith(
+          _$PleromaApiFrontendConfigurationsImpl value,
+          $Res Function(_$PleromaApiFrontendConfigurationsImpl) then) =
+      __$$PleromaApiFrontendConfigurationsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'masto_fe')
       @HiveField(0)
-          PleromaApiFrontendConfigurationsMastoFe? mastoFe,
+      PleromaApiFrontendConfigurationsMastoFe? mastoFe,
       @JsonKey(name: 'pleroma_fe')
       @HiveField(1)
-          PleromaApiFrontendConfigurationsPleromaFe? pleromaFe,
+      PleromaApiFrontendConfigurationsPleromaFe? pleromaFe,
       @JsonKey(name: 'soapbox_fe')
       @HiveField(2)
-          PleromaApiFrontendConfigurationsSoapboxFe? soapboxFe});
+      PleromaApiFrontendConfigurationsSoapboxFe? soapboxFe});
 
   @override
   $PleromaApiFrontendConfigurationsMastoFeCopyWith<$Res>? get mastoFe;
@@ -187,34 +167,32 @@ abstract class _$PleromaApiFrontendConfigurationsCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PleromaApiFrontendConfigurationsCopyWithImpl<$Res>
-    extends _$PleromaApiFrontendConfigurationsCopyWithImpl<$Res>
-    implements _$PleromaApiFrontendConfigurationsCopyWith<$Res> {
-  __$PleromaApiFrontendConfigurationsCopyWithImpl(
-      _PleromaApiFrontendConfigurations _value,
-      $Res Function(_PleromaApiFrontendConfigurations) _then)
-      : super(_value, (v) => _then(v as _PleromaApiFrontendConfigurations));
+class __$$PleromaApiFrontendConfigurationsImplCopyWithImpl<$Res>
+    extends _$PleromaApiFrontendConfigurationsCopyWithImpl<$Res,
+        _$PleromaApiFrontendConfigurationsImpl>
+    implements _$$PleromaApiFrontendConfigurationsImplCopyWith<$Res> {
+  __$$PleromaApiFrontendConfigurationsImplCopyWithImpl(
+      _$PleromaApiFrontendConfigurationsImpl _value,
+      $Res Function(_$PleromaApiFrontendConfigurationsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiFrontendConfigurations get _value =>
-      super._value as _PleromaApiFrontendConfigurations;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? mastoFe = freezed,
     Object? pleromaFe = freezed,
     Object? soapboxFe = freezed,
   }) {
-    return _then(_PleromaApiFrontendConfigurations(
-      mastoFe: mastoFe == freezed
+    return _then(_$PleromaApiFrontendConfigurationsImpl(
+      mastoFe: freezed == mastoFe
           ? _value.mastoFe
           : mastoFe // ignore: cast_nullable_to_non_nullable
               as PleromaApiFrontendConfigurationsMastoFe?,
-      pleromaFe: pleromaFe == freezed
+      pleromaFe: freezed == pleromaFe
           ? _value.pleromaFe
           : pleromaFe // ignore: cast_nullable_to_non_nullable
               as PleromaApiFrontendConfigurationsPleromaFe?,
-      soapboxFe: soapboxFe == freezed
+      soapboxFe: freezed == soapboxFe
           ? _value.soapboxFe
           : soapboxFe // ignore: cast_nullable_to_non_nullable
               as PleromaApiFrontendConfigurationsSoapboxFe?,
@@ -224,16 +202,16 @@ class __$PleromaApiFrontendConfigurationsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiFrontendConfigurations
+class _$PleromaApiFrontendConfigurationsImpl
     implements _PleromaApiFrontendConfigurations {
-  const _$_PleromaApiFrontendConfigurations(
+  const _$PleromaApiFrontendConfigurationsImpl(
       {@JsonKey(name: 'masto_fe') @HiveField(0) required this.mastoFe,
       @JsonKey(name: 'pleroma_fe') @HiveField(1) required this.pleromaFe,
       @JsonKey(name: 'soapbox_fe') @HiveField(2) required this.soapboxFe});
 
-  factory _$_PleromaApiFrontendConfigurations.fromJson(
+  factory _$PleromaApiFrontendConfigurationsImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_PleromaApiFrontendConfigurationsFromJson(json);
+      _$$PleromaApiFrontendConfigurationsImplFromJson(json);
 
   @override
   @JsonKey(name: 'masto_fe')
@@ -254,10 +232,10 @@ class _$_PleromaApiFrontendConfigurations
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiFrontendConfigurations &&
+            other is _$PleromaApiFrontendConfigurationsImpl &&
             (identical(other.mastoFe, mastoFe) || other.mastoFe == mastoFe) &&
             (identical(other.pleromaFe, pleromaFe) ||
                 other.pleromaFe == pleromaFe) &&
@@ -265,37 +243,43 @@ class _$_PleromaApiFrontendConfigurations
                 other.soapboxFe == soapboxFe));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, mastoFe, pleromaFe, soapboxFe);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiFrontendConfigurationsCopyWith<_PleromaApiFrontendConfigurations>
-      get copyWith => __$PleromaApiFrontendConfigurationsCopyWithImpl<
-          _PleromaApiFrontendConfigurations>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiFrontendConfigurationsImplCopyWith<
+          _$PleromaApiFrontendConfigurationsImpl>
+      get copyWith => __$$PleromaApiFrontendConfigurationsImplCopyWithImpl<
+          _$PleromaApiFrontendConfigurationsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiFrontendConfigurationsToJson(this);
+    return _$$PleromaApiFrontendConfigurationsImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiFrontendConfigurations
     implements PleromaApiFrontendConfigurations {
   const factory _PleromaApiFrontendConfigurations(
-          {@JsonKey(name: 'masto_fe')
-          @HiveField(0)
-              required PleromaApiFrontendConfigurationsMastoFe? mastoFe,
-          @JsonKey(name: 'pleroma_fe')
-          @HiveField(1)
-              required PleromaApiFrontendConfigurationsPleromaFe? pleromaFe,
-          @JsonKey(name: 'soapbox_fe')
-          @HiveField(2)
-              required PleromaApiFrontendConfigurationsSoapboxFe? soapboxFe}) =
-      _$_PleromaApiFrontendConfigurations;
+      {@JsonKey(name: 'masto_fe')
+      @HiveField(0)
+      required final PleromaApiFrontendConfigurationsMastoFe? mastoFe,
+      @JsonKey(name: 'pleroma_fe')
+      @HiveField(1)
+      required final PleromaApiFrontendConfigurationsPleromaFe? pleromaFe,
+      @JsonKey(name: 'soapbox_fe')
+      @HiveField(2)
+      required final PleromaApiFrontendConfigurationsSoapboxFe?
+          soapboxFe}) = _$PleromaApiFrontendConfigurationsImpl;
 
   factory _PleromaApiFrontendConfigurations.fromJson(
-      Map<String, dynamic> json) = _$_PleromaApiFrontendConfigurations.fromJson;
+          Map<String, dynamic> json) =
+      _$PleromaApiFrontendConfigurationsImpl.fromJson;
 
   @override
   @JsonKey(name: 'masto_fe')
@@ -311,6 +295,7 @@ abstract class _PleromaApiFrontendConfigurations
   PleromaApiFrontendConfigurationsSoapboxFe? get soapboxFe;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiFrontendConfigurationsCopyWith<_PleromaApiFrontendConfigurations>
+  _$$PleromaApiFrontendConfigurationsImplCopyWith<
+          _$PleromaApiFrontendConfigurationsImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

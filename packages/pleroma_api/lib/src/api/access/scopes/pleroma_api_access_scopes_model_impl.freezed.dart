@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_access_scopes_model_impl.dart';
 
@@ -11,35 +12,12 @@ part of 'pleroma_api_access_scopes_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiAccessScopes _$PleromaApiAccessScopesFromJson(
     Map<String, dynamic> json) {
   return _PleromaApiAccessScopes.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiAccessScopesTearOff {
-  const _$PleromaApiAccessScopesTearOff();
-
-  _PleromaApiAccessScopes call(
-      {@HiveField(0)
-          required List<String> globalPermissions,
-      @HiveField(1)
-          required List<PleromaApiAccessScopesItem> targetPermissions}) {
-    return _PleromaApiAccessScopes(
-      globalPermissions: globalPermissions,
-      targetPermissions: targetPermissions,
-    );
-  }
-
-  PleromaApiAccessScopes fromJson(Map<String, Object?> json) {
-    return PleromaApiAccessScopes.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiAccessScopes = _$PleromaApiAccessScopesTearOff();
 
 /// @nodoc
 mixin _$PleromaApiAccessScopes {
@@ -59,74 +37,80 @@ mixin _$PleromaApiAccessScopes {
 abstract class $PleromaApiAccessScopesCopyWith<$Res> {
   factory $PleromaApiAccessScopesCopyWith(PleromaApiAccessScopes value,
           $Res Function(PleromaApiAccessScopes) then) =
-      _$PleromaApiAccessScopesCopyWithImpl<$Res>;
+      _$PleromaApiAccessScopesCopyWithImpl<$Res, PleromaApiAccessScopes>;
+  @useResult
   $Res call(
       {@HiveField(0) List<String> globalPermissions,
       @HiveField(1) List<PleromaApiAccessScopesItem> targetPermissions});
 }
 
 /// @nodoc
-class _$PleromaApiAccessScopesCopyWithImpl<$Res>
+class _$PleromaApiAccessScopesCopyWithImpl<$Res,
+        $Val extends PleromaApiAccessScopes>
     implements $PleromaApiAccessScopesCopyWith<$Res> {
   _$PleromaApiAccessScopesCopyWithImpl(this._value, this._then);
 
-  final PleromaApiAccessScopes _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiAccessScopes) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? globalPermissions = freezed,
-    Object? targetPermissions = freezed,
+    Object? globalPermissions = null,
+    Object? targetPermissions = null,
   }) {
     return _then(_value.copyWith(
-      globalPermissions: globalPermissions == freezed
+      globalPermissions: null == globalPermissions
           ? _value.globalPermissions
           : globalPermissions // ignore: cast_nullable_to_non_nullable
               as List<String>,
-      targetPermissions: targetPermissions == freezed
+      targetPermissions: null == targetPermissions
           ? _value.targetPermissions
           : targetPermissions // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiAccessScopesItem>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiAccessScopesCopyWith<$Res>
+abstract class _$$PleromaApiAccessScopesImplCopyWith<$Res>
     implements $PleromaApiAccessScopesCopyWith<$Res> {
-  factory _$PleromaApiAccessScopesCopyWith(_PleromaApiAccessScopes value,
-          $Res Function(_PleromaApiAccessScopes) then) =
-      __$PleromaApiAccessScopesCopyWithImpl<$Res>;
+  factory _$$PleromaApiAccessScopesImplCopyWith(
+          _$PleromaApiAccessScopesImpl value,
+          $Res Function(_$PleromaApiAccessScopesImpl) then) =
+      __$$PleromaApiAccessScopesImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) List<String> globalPermissions,
       @HiveField(1) List<PleromaApiAccessScopesItem> targetPermissions});
 }
 
 /// @nodoc
-class __$PleromaApiAccessScopesCopyWithImpl<$Res>
-    extends _$PleromaApiAccessScopesCopyWithImpl<$Res>
-    implements _$PleromaApiAccessScopesCopyWith<$Res> {
-  __$PleromaApiAccessScopesCopyWithImpl(_PleromaApiAccessScopes _value,
-      $Res Function(_PleromaApiAccessScopes) _then)
-      : super(_value, (v) => _then(v as _PleromaApiAccessScopes));
+class __$$PleromaApiAccessScopesImplCopyWithImpl<$Res>
+    extends _$PleromaApiAccessScopesCopyWithImpl<$Res,
+        _$PleromaApiAccessScopesImpl>
+    implements _$$PleromaApiAccessScopesImplCopyWith<$Res> {
+  __$$PleromaApiAccessScopesImplCopyWithImpl(
+      _$PleromaApiAccessScopesImpl _value,
+      $Res Function(_$PleromaApiAccessScopesImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiAccessScopes get _value => super._value as _PleromaApiAccessScopes;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? globalPermissions = freezed,
-    Object? targetPermissions = freezed,
+    Object? globalPermissions = null,
+    Object? targetPermissions = null,
   }) {
-    return _then(_PleromaApiAccessScopes(
-      globalPermissions: globalPermissions == freezed
-          ? _value.globalPermissions
+    return _then(_$PleromaApiAccessScopesImpl(
+      globalPermissions: null == globalPermissions
+          ? _value._globalPermissions
           : globalPermissions // ignore: cast_nullable_to_non_nullable
               as List<String>,
-      targetPermissions: targetPermissions == freezed
-          ? _value.targetPermissions
+      targetPermissions: null == targetPermissions
+          ? _value._targetPermissions
           : targetPermissions // ignore: cast_nullable_to_non_nullable
               as List<PleromaApiAccessScopesItem>,
     ));
@@ -135,20 +119,36 @@ class __$PleromaApiAccessScopesCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiAccessScopes implements _PleromaApiAccessScopes {
-  const _$_PleromaApiAccessScopes(
-      {@HiveField(0) required this.globalPermissions,
-      @HiveField(1) required this.targetPermissions});
+class _$PleromaApiAccessScopesImpl implements _PleromaApiAccessScopes {
+  const _$PleromaApiAccessScopesImpl(
+      {@HiveField(0) required final List<String> globalPermissions,
+      @HiveField(1)
+      required final List<PleromaApiAccessScopesItem> targetPermissions})
+      : _globalPermissions = globalPermissions,
+        _targetPermissions = targetPermissions;
 
-  factory _$_PleromaApiAccessScopes.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiAccessScopesFromJson(json);
+  factory _$PleromaApiAccessScopesImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiAccessScopesImplFromJson(json);
 
+  final List<String> _globalPermissions;
   @override
   @HiveField(0)
-  final List<String> globalPermissions;
+  List<String> get globalPermissions {
+    if (_globalPermissions is EqualUnmodifiableListView)
+      return _globalPermissions;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_globalPermissions);
+  }
+
+  final List<PleromaApiAccessScopesItem> _targetPermissions;
   @override
   @HiveField(1)
-  final List<PleromaApiAccessScopesItem> targetPermissions;
+  List<PleromaApiAccessScopesItem> get targetPermissions {
+    if (_targetPermissions is EqualUnmodifiableListView)
+      return _targetPermissions;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_targetPermissions);
+  }
 
   @override
   String toString() {
@@ -156,44 +156,47 @@ class _$_PleromaApiAccessScopes implements _PleromaApiAccessScopes {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiAccessScopes &&
+            other is _$PleromaApiAccessScopesImpl &&
             const DeepCollectionEquality()
-                .equals(other.globalPermissions, globalPermissions) &&
+                .equals(other._globalPermissions, _globalPermissions) &&
             const DeepCollectionEquality()
-                .equals(other.targetPermissions, targetPermissions));
+                .equals(other._targetPermissions, _targetPermissions));
   }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(globalPermissions),
-      const DeepCollectionEquality().hash(targetPermissions));
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiAccessScopesCopyWith<_PleromaApiAccessScopes> get copyWith =>
-      __$PleromaApiAccessScopesCopyWithImpl<_PleromaApiAccessScopes>(
-          this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(_globalPermissions),
+      const DeepCollectionEquality().hash(_targetPermissions));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiAccessScopesImplCopyWith<_$PleromaApiAccessScopesImpl>
+      get copyWith => __$$PleromaApiAccessScopesImplCopyWithImpl<
+          _$PleromaApiAccessScopesImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiAccessScopesToJson(this);
+    return _$$PleromaApiAccessScopesImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiAccessScopes implements PleromaApiAccessScopes {
   const factory _PleromaApiAccessScopes(
-          {@HiveField(0)
-              required List<String> globalPermissions,
+          {@HiveField(0) required final List<String> globalPermissions,
           @HiveField(1)
-              required List<PleromaApiAccessScopesItem> targetPermissions}) =
-      _$_PleromaApiAccessScopes;
+          required final List<PleromaApiAccessScopesItem> targetPermissions}) =
+      _$PleromaApiAccessScopesImpl;
 
   factory _PleromaApiAccessScopes.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiAccessScopes.fromJson;
+      _$PleromaApiAccessScopesImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -203,6 +206,6 @@ abstract class _PleromaApiAccessScopes implements PleromaApiAccessScopes {
   List<PleromaApiAccessScopesItem> get targetPermissions;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiAccessScopesCopyWith<_PleromaApiAccessScopes> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PleromaApiAccessScopesImplCopyWith<_$PleromaApiAccessScopesImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

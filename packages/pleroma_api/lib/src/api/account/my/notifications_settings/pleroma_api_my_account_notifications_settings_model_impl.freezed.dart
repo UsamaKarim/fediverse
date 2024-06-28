@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_my_account_notifications_settings_model_impl.dart';
 
@@ -11,53 +12,13 @@ part of 'pleroma_api_my_account_notifications_settings_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiMyAccountNotificationsSettings
     _$PleromaApiMyAccountNotificationsSettingsFromJson(
         Map<String, dynamic> json) {
   return _PleromaApiMyAccountNotificationsSettings.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiMyAccountNotificationsSettingsTearOff {
-  const _$PleromaApiMyAccountNotificationsSettingsTearOff();
-
-  _PleromaApiMyAccountNotificationsSettings call(
-      {@HiveField(0)
-          required bool? followers,
-      @HiveField(1)
-          required bool? follows,
-      @JsonKey(name: 'non_followers')
-      @HiveField(2)
-          required bool? nonFollowers,
-      @JsonKey(name: 'non_follows')
-      @HiveField(3)
-          required bool? nonFollows,
-      @JsonKey(name: 'block_from_strangers')
-      @HiveField(4)
-          required bool? blockFromStrangers,
-      @JsonKey(name: 'hide_notification_contents')
-      @HiveField(5)
-          required bool? hideNotificationContents}) {
-    return _PleromaApiMyAccountNotificationsSettings(
-      followers: followers,
-      follows: follows,
-      nonFollowers: nonFollowers,
-      nonFollows: nonFollows,
-      blockFromStrangers: blockFromStrangers,
-      hideNotificationContents: hideNotificationContents,
-    );
-  }
-
-  PleromaApiMyAccountNotificationsSettings fromJson(Map<String, Object?> json) {
-    return PleromaApiMyAccountNotificationsSettings.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiMyAccountNotificationsSettings =
-    _$PleromaApiMyAccountNotificationsSettingsTearOff();
 
 /// @nodoc
 mixin _$PleromaApiMyAccountNotificationsSettings {
@@ -90,36 +51,35 @@ abstract class $PleromaApiMyAccountNotificationsSettingsCopyWith<$Res> {
   factory $PleromaApiMyAccountNotificationsSettingsCopyWith(
           PleromaApiMyAccountNotificationsSettings value,
           $Res Function(PleromaApiMyAccountNotificationsSettings) then) =
-      _$PleromaApiMyAccountNotificationsSettingsCopyWithImpl<$Res>;
+      _$PleromaApiMyAccountNotificationsSettingsCopyWithImpl<$Res,
+          PleromaApiMyAccountNotificationsSettings>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-          bool? followers,
-      @HiveField(1)
-          bool? follows,
-      @JsonKey(name: 'non_followers')
-      @HiveField(2)
-          bool? nonFollowers,
-      @JsonKey(name: 'non_follows')
-      @HiveField(3)
-          bool? nonFollows,
+      {@HiveField(0) bool? followers,
+      @HiveField(1) bool? follows,
+      @JsonKey(name: 'non_followers') @HiveField(2) bool? nonFollowers,
+      @JsonKey(name: 'non_follows') @HiveField(3) bool? nonFollows,
       @JsonKey(name: 'block_from_strangers')
       @HiveField(4)
-          bool? blockFromStrangers,
+      bool? blockFromStrangers,
       @JsonKey(name: 'hide_notification_contents')
       @HiveField(5)
-          bool? hideNotificationContents});
+      bool? hideNotificationContents});
 }
 
 /// @nodoc
-class _$PleromaApiMyAccountNotificationsSettingsCopyWithImpl<$Res>
+class _$PleromaApiMyAccountNotificationsSettingsCopyWithImpl<$Res,
+        $Val extends PleromaApiMyAccountNotificationsSettings>
     implements $PleromaApiMyAccountNotificationsSettingsCopyWith<$Res> {
   _$PleromaApiMyAccountNotificationsSettingsCopyWithImpl(
       this._value, this._then);
 
-  final PleromaApiMyAccountNotificationsSettings _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiMyAccountNotificationsSettings) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? followers = freezed,
@@ -130,75 +90,67 @@ class _$PleromaApiMyAccountNotificationsSettingsCopyWithImpl<$Res>
     Object? hideNotificationContents = freezed,
   }) {
     return _then(_value.copyWith(
-      followers: followers == freezed
+      followers: freezed == followers
           ? _value.followers
           : followers // ignore: cast_nullable_to_non_nullable
               as bool?,
-      follows: follows == freezed
+      follows: freezed == follows
           ? _value.follows
           : follows // ignore: cast_nullable_to_non_nullable
               as bool?,
-      nonFollowers: nonFollowers == freezed
+      nonFollowers: freezed == nonFollowers
           ? _value.nonFollowers
           : nonFollowers // ignore: cast_nullable_to_non_nullable
               as bool?,
-      nonFollows: nonFollows == freezed
+      nonFollows: freezed == nonFollows
           ? _value.nonFollows
           : nonFollows // ignore: cast_nullable_to_non_nullable
               as bool?,
-      blockFromStrangers: blockFromStrangers == freezed
+      blockFromStrangers: freezed == blockFromStrangers
           ? _value.blockFromStrangers
           : blockFromStrangers // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideNotificationContents: hideNotificationContents == freezed
+      hideNotificationContents: freezed == hideNotificationContents
           ? _value.hideNotificationContents
           : hideNotificationContents // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiMyAccountNotificationsSettingsCopyWith<$Res>
+abstract class _$$PleromaApiMyAccountNotificationsSettingsImplCopyWith<$Res>
     implements $PleromaApiMyAccountNotificationsSettingsCopyWith<$Res> {
-  factory _$PleromaApiMyAccountNotificationsSettingsCopyWith(
-          _PleromaApiMyAccountNotificationsSettings value,
-          $Res Function(_PleromaApiMyAccountNotificationsSettings) then) =
-      __$PleromaApiMyAccountNotificationsSettingsCopyWithImpl<$Res>;
+  factory _$$PleromaApiMyAccountNotificationsSettingsImplCopyWith(
+          _$PleromaApiMyAccountNotificationsSettingsImpl value,
+          $Res Function(_$PleromaApiMyAccountNotificationsSettingsImpl) then) =
+      __$$PleromaApiMyAccountNotificationsSettingsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-          bool? followers,
-      @HiveField(1)
-          bool? follows,
-      @JsonKey(name: 'non_followers')
-      @HiveField(2)
-          bool? nonFollowers,
-      @JsonKey(name: 'non_follows')
-      @HiveField(3)
-          bool? nonFollows,
+      {@HiveField(0) bool? followers,
+      @HiveField(1) bool? follows,
+      @JsonKey(name: 'non_followers') @HiveField(2) bool? nonFollowers,
+      @JsonKey(name: 'non_follows') @HiveField(3) bool? nonFollows,
       @JsonKey(name: 'block_from_strangers')
       @HiveField(4)
-          bool? blockFromStrangers,
+      bool? blockFromStrangers,
       @JsonKey(name: 'hide_notification_contents')
       @HiveField(5)
-          bool? hideNotificationContents});
+      bool? hideNotificationContents});
 }
 
 /// @nodoc
-class __$PleromaApiMyAccountNotificationsSettingsCopyWithImpl<$Res>
-    extends _$PleromaApiMyAccountNotificationsSettingsCopyWithImpl<$Res>
-    implements _$PleromaApiMyAccountNotificationsSettingsCopyWith<$Res> {
-  __$PleromaApiMyAccountNotificationsSettingsCopyWithImpl(
-      _PleromaApiMyAccountNotificationsSettings _value,
-      $Res Function(_PleromaApiMyAccountNotificationsSettings) _then)
-      : super(_value,
-            (v) => _then(v as _PleromaApiMyAccountNotificationsSettings));
+class __$$PleromaApiMyAccountNotificationsSettingsImplCopyWithImpl<$Res>
+    extends _$PleromaApiMyAccountNotificationsSettingsCopyWithImpl<$Res,
+        _$PleromaApiMyAccountNotificationsSettingsImpl>
+    implements _$$PleromaApiMyAccountNotificationsSettingsImplCopyWith<$Res> {
+  __$$PleromaApiMyAccountNotificationsSettingsImplCopyWithImpl(
+      _$PleromaApiMyAccountNotificationsSettingsImpl _value,
+      $Res Function(_$PleromaApiMyAccountNotificationsSettingsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiMyAccountNotificationsSettings get _value =>
-      super._value as _PleromaApiMyAccountNotificationsSettings;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? followers = freezed,
@@ -208,28 +160,28 @@ class __$PleromaApiMyAccountNotificationsSettingsCopyWithImpl<$Res>
     Object? blockFromStrangers = freezed,
     Object? hideNotificationContents = freezed,
   }) {
-    return _then(_PleromaApiMyAccountNotificationsSettings(
-      followers: followers == freezed
+    return _then(_$PleromaApiMyAccountNotificationsSettingsImpl(
+      followers: freezed == followers
           ? _value.followers
           : followers // ignore: cast_nullable_to_non_nullable
               as bool?,
-      follows: follows == freezed
+      follows: freezed == follows
           ? _value.follows
           : follows // ignore: cast_nullable_to_non_nullable
               as bool?,
-      nonFollowers: nonFollowers == freezed
+      nonFollowers: freezed == nonFollowers
           ? _value.nonFollowers
           : nonFollowers // ignore: cast_nullable_to_non_nullable
               as bool?,
-      nonFollows: nonFollows == freezed
+      nonFollows: freezed == nonFollows
           ? _value.nonFollows
           : nonFollows // ignore: cast_nullable_to_non_nullable
               as bool?,
-      blockFromStrangers: blockFromStrangers == freezed
+      blockFromStrangers: freezed == blockFromStrangers
           ? _value.blockFromStrangers
           : blockFromStrangers // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideNotificationContents: hideNotificationContents == freezed
+      hideNotificationContents: freezed == hideNotificationContents
           ? _value.hideNotificationContents
           : hideNotificationContents // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -239,29 +191,23 @@ class __$PleromaApiMyAccountNotificationsSettingsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiMyAccountNotificationsSettings
+class _$PleromaApiMyAccountNotificationsSettingsImpl
     implements _PleromaApiMyAccountNotificationsSettings {
-  const _$_PleromaApiMyAccountNotificationsSettings(
-      {@HiveField(0)
-          required this.followers,
-      @HiveField(1)
-          required this.follows,
-      @JsonKey(name: 'non_followers')
-      @HiveField(2)
-          required this.nonFollowers,
-      @JsonKey(name: 'non_follows')
-      @HiveField(3)
-          required this.nonFollows,
+  const _$PleromaApiMyAccountNotificationsSettingsImpl(
+      {@HiveField(0) required this.followers,
+      @HiveField(1) required this.follows,
+      @JsonKey(name: 'non_followers') @HiveField(2) required this.nonFollowers,
+      @JsonKey(name: 'non_follows') @HiveField(3) required this.nonFollows,
       @JsonKey(name: 'block_from_strangers')
       @HiveField(4)
-          required this.blockFromStrangers,
+      required this.blockFromStrangers,
       @JsonKey(name: 'hide_notification_contents')
       @HiveField(5)
-          required this.hideNotificationContents});
+      required this.hideNotificationContents});
 
-  factory _$_PleromaApiMyAccountNotificationsSettings.fromJson(
+  factory _$PleromaApiMyAccountNotificationsSettingsImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_PleromaApiMyAccountNotificationsSettingsFromJson(json);
+      _$$PleromaApiMyAccountNotificationsSettingsImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -292,10 +238,10 @@ class _$_PleromaApiMyAccountNotificationsSettings
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiMyAccountNotificationsSettings &&
+            other is _$PleromaApiMyAccountNotificationsSettingsImpl &&
             (identical(other.followers, followers) ||
                 other.followers == followers) &&
             (identical(other.follows, follows) || other.follows == follows) &&
@@ -310,47 +256,50 @@ class _$_PleromaApiMyAccountNotificationsSettings
                 other.hideNotificationContents == hideNotificationContents));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, followers, follows, nonFollowers,
       nonFollows, blockFromStrangers, hideNotificationContents);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiMyAccountNotificationsSettingsCopyWith<
-          _PleromaApiMyAccountNotificationsSettings>
-      get copyWith => __$PleromaApiMyAccountNotificationsSettingsCopyWithImpl<
-          _PleromaApiMyAccountNotificationsSettings>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiMyAccountNotificationsSettingsImplCopyWith<
+          _$PleromaApiMyAccountNotificationsSettingsImpl>
+      get copyWith =>
+          __$$PleromaApiMyAccountNotificationsSettingsImplCopyWithImpl<
+              _$PleromaApiMyAccountNotificationsSettingsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiMyAccountNotificationsSettingsToJson(this);
+    return _$$PleromaApiMyAccountNotificationsSettingsImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PleromaApiMyAccountNotificationsSettings
     implements PleromaApiMyAccountNotificationsSettings {
   const factory _PleromaApiMyAccountNotificationsSettings(
-          {@HiveField(0)
-              required bool? followers,
-          @HiveField(1)
-              required bool? follows,
+          {@HiveField(0) required final bool? followers,
+          @HiveField(1) required final bool? follows,
           @JsonKey(name: 'non_followers')
           @HiveField(2)
-              required bool? nonFollowers,
+          required final bool? nonFollowers,
           @JsonKey(name: 'non_follows')
           @HiveField(3)
-              required bool? nonFollows,
+          required final bool? nonFollows,
           @JsonKey(name: 'block_from_strangers')
           @HiveField(4)
-              required bool? blockFromStrangers,
+          required final bool? blockFromStrangers,
           @JsonKey(name: 'hide_notification_contents')
           @HiveField(5)
-              required bool? hideNotificationContents}) =
-      _$_PleromaApiMyAccountNotificationsSettings;
+          required final bool? hideNotificationContents}) =
+      _$PleromaApiMyAccountNotificationsSettingsImpl;
 
   factory _PleromaApiMyAccountNotificationsSettings.fromJson(
           Map<String, dynamic> json) =
-      _$_PleromaApiMyAccountNotificationsSettings.fromJson;
+      _$PleromaApiMyAccountNotificationsSettingsImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -376,7 +325,7 @@ abstract class _PleromaApiMyAccountNotificationsSettings
   bool? get hideNotificationContents;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiMyAccountNotificationsSettingsCopyWith<
-          _PleromaApiMyAccountNotificationsSettings>
+  _$$PleromaApiMyAccountNotificationsSettingsImplCopyWith<
+          _$PleromaApiMyAccountNotificationsSettingsImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

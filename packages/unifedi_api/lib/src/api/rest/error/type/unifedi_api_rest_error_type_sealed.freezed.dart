@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_rest_error_type_sealed.dart';
 
@@ -11,78 +12,11 @@ part of 'unifedi_api_rest_error_type_sealed.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$UnifediApiRestErrorTypeTearOff {
-  const _$UnifediApiRestErrorTypeTearOff();
-
-  _MissingConfirmedEmail missingConfirmedEmail(
-      {String stringValue =
-          UnifediApiRestErrorType.missingConfirmedEmailStringValue}) {
-    return _MissingConfirmedEmail(
-      stringValue: stringValue,
-    );
-  }
-
-  _AwaitingApproval awaitingApproval(
-      {String stringValue =
-          UnifediApiRestErrorType.awaitingApprovalStringValue}) {
-    return _AwaitingApproval(
-      stringValue: stringValue,
-    );
-  }
-
-  _InvalidGrant invalidGrant(
-      {String stringValue = UnifediApiRestErrorType.invalidGrantStringValue}) {
-    return _InvalidGrant(
-      stringValue: stringValue,
-    );
-  }
-
-  _AccessTokenRevoked accessTokenRevoked(
-      {String stringValue =
-          UnifediApiRestErrorType.accessTokenRevokedStringValue}) {
-    return _AccessTokenRevoked(
-      stringValue: stringValue,
-    );
-  }
-
-  _TooShort tooShort(
-      {String stringValue = UnifediApiRestErrorType.tooShortStringValue}) {
-    return _TooShort(
-      stringValue: stringValue,
-    );
-  }
-
-  _NotIncluded notIncluded(
-      {String stringValue = UnifediApiRestErrorType.notIncludedStringValue}) {
-    return _NotIncluded(
-      stringValue: stringValue,
-    );
-  }
-
-  _Unreachable unreachable(
-      {String stringValue = UnifediApiRestErrorType.unreachableStringValue}) {
-    return _Unreachable(
-      stringValue: stringValue,
-    );
-  }
-
-  _Unknown unknown({required String stringValue}) {
-    return _Unknown(
-      stringValue: stringValue,
-    );
-  }
-}
-
-/// @nodoc
-const $UnifediApiRestErrorType = _$UnifediApiRestErrorTypeTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$UnifediApiRestErrorType {
   String get stringValue => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String stringValue) missingConfirmedEmail,
@@ -97,14 +31,14 @@ mixin _$UnifediApiRestErrorType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? missingConfirmedEmail,
-    TResult Function(String stringValue)? awaitingApproval,
-    TResult Function(String stringValue)? invalidGrant,
-    TResult Function(String stringValue)? accessTokenRevoked,
-    TResult Function(String stringValue)? tooShort,
-    TResult Function(String stringValue)? notIncluded,
-    TResult Function(String stringValue)? unreachable,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? missingConfirmedEmail,
+    TResult? Function(String stringValue)? awaitingApproval,
+    TResult? Function(String stringValue)? invalidGrant,
+    TResult? Function(String stringValue)? accessTokenRevoked,
+    TResult? Function(String stringValue)? tooShort,
+    TResult? Function(String stringValue)? notIncluded,
+    TResult? Function(String stringValue)? unreachable,
+    TResult? Function(String stringValue)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -135,14 +69,14 @@ mixin _$UnifediApiRestErrorType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
-    TResult Function(_AwaitingApproval value)? awaitingApproval,
-    TResult Function(_InvalidGrant value)? invalidGrant,
-    TResult Function(_AccessTokenRevoked value)? accessTokenRevoked,
-    TResult Function(_TooShort value)? tooShort,
-    TResult Function(_NotIncluded value)? notIncluded,
-    TResult Function(_Unreachable value)? unreachable,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
+    TResult? Function(_AwaitingApproval value)? awaitingApproval,
+    TResult? Function(_InvalidGrant value)? invalidGrant,
+    TResult? Function(_AccessTokenRevoked value)? accessTokenRevoked,
+    TResult? Function(_TooShort value)? tooShort,
+    TResult? Function(_NotIncluded value)? notIncluded,
+    TResult? Function(_Unreachable value)? unreachable,
+    TResult? Function(_Unknown value)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -168,59 +102,64 @@ mixin _$UnifediApiRestErrorType {
 abstract class $UnifediApiRestErrorTypeCopyWith<$Res> {
   factory $UnifediApiRestErrorTypeCopyWith(UnifediApiRestErrorType value,
           $Res Function(UnifediApiRestErrorType) then) =
-      _$UnifediApiRestErrorTypeCopyWithImpl<$Res>;
+      _$UnifediApiRestErrorTypeCopyWithImpl<$Res, UnifediApiRestErrorType>;
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class _$UnifediApiRestErrorTypeCopyWithImpl<$Res>
+class _$UnifediApiRestErrorTypeCopyWithImpl<$Res,
+        $Val extends UnifediApiRestErrorType>
     implements $UnifediApiRestErrorTypeCopyWith<$Res> {
   _$UnifediApiRestErrorTypeCopyWithImpl(this._value, this._then);
 
-  final UnifediApiRestErrorType _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiRestErrorType) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
     return _then(_value.copyWith(
-      stringValue: stringValue == freezed
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MissingConfirmedEmailCopyWith<$Res>
+abstract class _$$MissingConfirmedEmailImplCopyWith<$Res>
     implements $UnifediApiRestErrorTypeCopyWith<$Res> {
-  factory _$MissingConfirmedEmailCopyWith(_MissingConfirmedEmail value,
-          $Res Function(_MissingConfirmedEmail) then) =
-      __$MissingConfirmedEmailCopyWithImpl<$Res>;
+  factory _$$MissingConfirmedEmailImplCopyWith(
+          _$MissingConfirmedEmailImpl value,
+          $Res Function(_$MissingConfirmedEmailImpl) then) =
+      __$$MissingConfirmedEmailImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$MissingConfirmedEmailCopyWithImpl<$Res>
-    extends _$UnifediApiRestErrorTypeCopyWithImpl<$Res>
-    implements _$MissingConfirmedEmailCopyWith<$Res> {
-  __$MissingConfirmedEmailCopyWithImpl(_MissingConfirmedEmail _value,
-      $Res Function(_MissingConfirmedEmail) _then)
-      : super(_value, (v) => _then(v as _MissingConfirmedEmail));
+class __$$MissingConfirmedEmailImplCopyWithImpl<$Res>
+    extends _$UnifediApiRestErrorTypeCopyWithImpl<$Res,
+        _$MissingConfirmedEmailImpl>
+    implements _$$MissingConfirmedEmailImplCopyWith<$Res> {
+  __$$MissingConfirmedEmailImplCopyWithImpl(_$MissingConfirmedEmailImpl _value,
+      $Res Function(_$MissingConfirmedEmailImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MissingConfirmedEmail get _value => super._value as _MissingConfirmedEmail;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_MissingConfirmedEmail(
-      stringValue: stringValue == freezed
+    return _then(_$MissingConfirmedEmailImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -230,14 +169,13 @@ class __$MissingConfirmedEmailCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_MissingConfirmedEmail implements _MissingConfirmedEmail {
-  const _$_MissingConfirmedEmail(
+class _$MissingConfirmedEmailImpl implements _MissingConfirmedEmail {
+  const _$MissingConfirmedEmailImpl(
       {this.stringValue =
           UnifediApiRestErrorType.missingConfirmedEmailStringValue});
 
-  @JsonKey(
-      defaultValue: UnifediApiRestErrorType.missingConfirmedEmailStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -246,10 +184,10 @@ class _$_MissingConfirmedEmail implements _MissingConfirmedEmail {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MissingConfirmedEmail &&
+            other is _$MissingConfirmedEmailImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -259,9 +197,10 @@ class _$_MissingConfirmedEmail implements _MissingConfirmedEmail {
 
   @JsonKey(ignore: true)
   @override
-  _$MissingConfirmedEmailCopyWith<_MissingConfirmedEmail> get copyWith =>
-      __$MissingConfirmedEmailCopyWithImpl<_MissingConfirmedEmail>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MissingConfirmedEmailImplCopyWith<_$MissingConfirmedEmailImpl>
+      get copyWith => __$$MissingConfirmedEmailImplCopyWithImpl<
+          _$MissingConfirmedEmailImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -281,14 +220,14 @@ class _$_MissingConfirmedEmail implements _MissingConfirmedEmail {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? missingConfirmedEmail,
-    TResult Function(String stringValue)? awaitingApproval,
-    TResult Function(String stringValue)? invalidGrant,
-    TResult Function(String stringValue)? accessTokenRevoked,
-    TResult Function(String stringValue)? tooShort,
-    TResult Function(String stringValue)? notIncluded,
-    TResult Function(String stringValue)? unreachable,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? missingConfirmedEmail,
+    TResult? Function(String stringValue)? awaitingApproval,
+    TResult? Function(String stringValue)? invalidGrant,
+    TResult? Function(String stringValue)? accessTokenRevoked,
+    TResult? Function(String stringValue)? tooShort,
+    TResult? Function(String stringValue)? notIncluded,
+    TResult? Function(String stringValue)? unreachable,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return missingConfirmedEmail?.call(stringValue);
   }
@@ -331,14 +270,14 @@ class _$_MissingConfirmedEmail implements _MissingConfirmedEmail {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
-    TResult Function(_AwaitingApproval value)? awaitingApproval,
-    TResult Function(_InvalidGrant value)? invalidGrant,
-    TResult Function(_AccessTokenRevoked value)? accessTokenRevoked,
-    TResult Function(_TooShort value)? tooShort,
-    TResult Function(_NotIncluded value)? notIncluded,
-    TResult Function(_Unreachable value)? unreachable,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
+    TResult? Function(_AwaitingApproval value)? awaitingApproval,
+    TResult? Function(_InvalidGrant value)? invalidGrant,
+    TResult? Function(_AccessTokenRevoked value)? accessTokenRevoked,
+    TResult? Function(_TooShort value)? tooShort,
+    TResult? Function(_NotIncluded value)? notIncluded,
+    TResult? Function(_Unreachable value)? unreachable,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return missingConfirmedEmail?.call(this);
   }
@@ -364,44 +303,43 @@ class _$_MissingConfirmedEmail implements _MissingConfirmedEmail {
 }
 
 abstract class _MissingConfirmedEmail implements UnifediApiRestErrorType {
-  const factory _MissingConfirmedEmail({String stringValue}) =
-      _$_MissingConfirmedEmail;
+  const factory _MissingConfirmedEmail({final String stringValue}) =
+      _$MissingConfirmedEmailImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$MissingConfirmedEmailCopyWith<_MissingConfirmedEmail> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$MissingConfirmedEmailImplCopyWith<_$MissingConfirmedEmailImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$AwaitingApprovalCopyWith<$Res>
+abstract class _$$AwaitingApprovalImplCopyWith<$Res>
     implements $UnifediApiRestErrorTypeCopyWith<$Res> {
-  factory _$AwaitingApprovalCopyWith(
-          _AwaitingApproval value, $Res Function(_AwaitingApproval) then) =
-      __$AwaitingApprovalCopyWithImpl<$Res>;
+  factory _$$AwaitingApprovalImplCopyWith(_$AwaitingApprovalImpl value,
+          $Res Function(_$AwaitingApprovalImpl) then) =
+      __$$AwaitingApprovalImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$AwaitingApprovalCopyWithImpl<$Res>
-    extends _$UnifediApiRestErrorTypeCopyWithImpl<$Res>
-    implements _$AwaitingApprovalCopyWith<$Res> {
-  __$AwaitingApprovalCopyWithImpl(
-      _AwaitingApproval _value, $Res Function(_AwaitingApproval) _then)
-      : super(_value, (v) => _then(v as _AwaitingApproval));
+class __$$AwaitingApprovalImplCopyWithImpl<$Res>
+    extends _$UnifediApiRestErrorTypeCopyWithImpl<$Res, _$AwaitingApprovalImpl>
+    implements _$$AwaitingApprovalImplCopyWith<$Res> {
+  __$$AwaitingApprovalImplCopyWithImpl(_$AwaitingApprovalImpl _value,
+      $Res Function(_$AwaitingApprovalImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _AwaitingApproval get _value => super._value as _AwaitingApproval;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_AwaitingApproval(
-      stringValue: stringValue == freezed
+    return _then(_$AwaitingApprovalImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -411,12 +349,12 @@ class __$AwaitingApprovalCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_AwaitingApproval implements _AwaitingApproval {
-  const _$_AwaitingApproval(
+class _$AwaitingApprovalImpl implements _AwaitingApproval {
+  const _$AwaitingApprovalImpl(
       {this.stringValue = UnifediApiRestErrorType.awaitingApprovalStringValue});
 
-  @JsonKey(defaultValue: UnifediApiRestErrorType.awaitingApprovalStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -425,10 +363,10 @@ class _$_AwaitingApproval implements _AwaitingApproval {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _AwaitingApproval &&
+            other is _$AwaitingApprovalImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -438,8 +376,10 @@ class _$_AwaitingApproval implements _AwaitingApproval {
 
   @JsonKey(ignore: true)
   @override
-  _$AwaitingApprovalCopyWith<_AwaitingApproval> get copyWith =>
-      __$AwaitingApprovalCopyWithImpl<_AwaitingApproval>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AwaitingApprovalImplCopyWith<_$AwaitingApprovalImpl> get copyWith =>
+      __$$AwaitingApprovalImplCopyWithImpl<_$AwaitingApprovalImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -459,14 +399,14 @@ class _$_AwaitingApproval implements _AwaitingApproval {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? missingConfirmedEmail,
-    TResult Function(String stringValue)? awaitingApproval,
-    TResult Function(String stringValue)? invalidGrant,
-    TResult Function(String stringValue)? accessTokenRevoked,
-    TResult Function(String stringValue)? tooShort,
-    TResult Function(String stringValue)? notIncluded,
-    TResult Function(String stringValue)? unreachable,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? missingConfirmedEmail,
+    TResult? Function(String stringValue)? awaitingApproval,
+    TResult? Function(String stringValue)? invalidGrant,
+    TResult? Function(String stringValue)? accessTokenRevoked,
+    TResult? Function(String stringValue)? tooShort,
+    TResult? Function(String stringValue)? notIncluded,
+    TResult? Function(String stringValue)? unreachable,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return awaitingApproval?.call(stringValue);
   }
@@ -509,14 +449,14 @@ class _$_AwaitingApproval implements _AwaitingApproval {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
-    TResult Function(_AwaitingApproval value)? awaitingApproval,
-    TResult Function(_InvalidGrant value)? invalidGrant,
-    TResult Function(_AccessTokenRevoked value)? accessTokenRevoked,
-    TResult Function(_TooShort value)? tooShort,
-    TResult Function(_NotIncluded value)? notIncluded,
-    TResult Function(_Unreachable value)? unreachable,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
+    TResult? Function(_AwaitingApproval value)? awaitingApproval,
+    TResult? Function(_InvalidGrant value)? invalidGrant,
+    TResult? Function(_AccessTokenRevoked value)? accessTokenRevoked,
+    TResult? Function(_TooShort value)? tooShort,
+    TResult? Function(_NotIncluded value)? notIncluded,
+    TResult? Function(_Unreachable value)? unreachable,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return awaitingApproval?.call(this);
   }
@@ -542,43 +482,43 @@ class _$_AwaitingApproval implements _AwaitingApproval {
 }
 
 abstract class _AwaitingApproval implements UnifediApiRestErrorType {
-  const factory _AwaitingApproval({String stringValue}) = _$_AwaitingApproval;
+  const factory _AwaitingApproval({final String stringValue}) =
+      _$AwaitingApprovalImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$AwaitingApprovalCopyWith<_AwaitingApproval> get copyWith =>
+  _$$AwaitingApprovalImplCopyWith<_$AwaitingApprovalImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$InvalidGrantCopyWith<$Res>
+abstract class _$$InvalidGrantImplCopyWith<$Res>
     implements $UnifediApiRestErrorTypeCopyWith<$Res> {
-  factory _$InvalidGrantCopyWith(
-          _InvalidGrant value, $Res Function(_InvalidGrant) then) =
-      __$InvalidGrantCopyWithImpl<$Res>;
+  factory _$$InvalidGrantImplCopyWith(
+          _$InvalidGrantImpl value, $Res Function(_$InvalidGrantImpl) then) =
+      __$$InvalidGrantImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$InvalidGrantCopyWithImpl<$Res>
-    extends _$UnifediApiRestErrorTypeCopyWithImpl<$Res>
-    implements _$InvalidGrantCopyWith<$Res> {
-  __$InvalidGrantCopyWithImpl(
-      _InvalidGrant _value, $Res Function(_InvalidGrant) _then)
-      : super(_value, (v) => _then(v as _InvalidGrant));
+class __$$InvalidGrantImplCopyWithImpl<$Res>
+    extends _$UnifediApiRestErrorTypeCopyWithImpl<$Res, _$InvalidGrantImpl>
+    implements _$$InvalidGrantImplCopyWith<$Res> {
+  __$$InvalidGrantImplCopyWithImpl(
+      _$InvalidGrantImpl _value, $Res Function(_$InvalidGrantImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _InvalidGrant get _value => super._value as _InvalidGrant;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_InvalidGrant(
-      stringValue: stringValue == freezed
+    return _then(_$InvalidGrantImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -588,12 +528,12 @@ class __$InvalidGrantCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_InvalidGrant implements _InvalidGrant {
-  const _$_InvalidGrant(
+class _$InvalidGrantImpl implements _InvalidGrant {
+  const _$InvalidGrantImpl(
       {this.stringValue = UnifediApiRestErrorType.invalidGrantStringValue});
 
-  @JsonKey(defaultValue: UnifediApiRestErrorType.invalidGrantStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -602,10 +542,10 @@ class _$_InvalidGrant implements _InvalidGrant {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _InvalidGrant &&
+            other is _$InvalidGrantImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -615,8 +555,9 @@ class _$_InvalidGrant implements _InvalidGrant {
 
   @JsonKey(ignore: true)
   @override
-  _$InvalidGrantCopyWith<_InvalidGrant> get copyWith =>
-      __$InvalidGrantCopyWithImpl<_InvalidGrant>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$InvalidGrantImplCopyWith<_$InvalidGrantImpl> get copyWith =>
+      __$$InvalidGrantImplCopyWithImpl<_$InvalidGrantImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -636,14 +577,14 @@ class _$_InvalidGrant implements _InvalidGrant {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? missingConfirmedEmail,
-    TResult Function(String stringValue)? awaitingApproval,
-    TResult Function(String stringValue)? invalidGrant,
-    TResult Function(String stringValue)? accessTokenRevoked,
-    TResult Function(String stringValue)? tooShort,
-    TResult Function(String stringValue)? notIncluded,
-    TResult Function(String stringValue)? unreachable,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? missingConfirmedEmail,
+    TResult? Function(String stringValue)? awaitingApproval,
+    TResult? Function(String stringValue)? invalidGrant,
+    TResult? Function(String stringValue)? accessTokenRevoked,
+    TResult? Function(String stringValue)? tooShort,
+    TResult? Function(String stringValue)? notIncluded,
+    TResult? Function(String stringValue)? unreachable,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return invalidGrant?.call(stringValue);
   }
@@ -686,14 +627,14 @@ class _$_InvalidGrant implements _InvalidGrant {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
-    TResult Function(_AwaitingApproval value)? awaitingApproval,
-    TResult Function(_InvalidGrant value)? invalidGrant,
-    TResult Function(_AccessTokenRevoked value)? accessTokenRevoked,
-    TResult Function(_TooShort value)? tooShort,
-    TResult Function(_NotIncluded value)? notIncluded,
-    TResult Function(_Unreachable value)? unreachable,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
+    TResult? Function(_AwaitingApproval value)? awaitingApproval,
+    TResult? Function(_InvalidGrant value)? invalidGrant,
+    TResult? Function(_AccessTokenRevoked value)? accessTokenRevoked,
+    TResult? Function(_TooShort value)? tooShort,
+    TResult? Function(_NotIncluded value)? notIncluded,
+    TResult? Function(_Unreachable value)? unreachable,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return invalidGrant?.call(this);
   }
@@ -719,43 +660,43 @@ class _$_InvalidGrant implements _InvalidGrant {
 }
 
 abstract class _InvalidGrant implements UnifediApiRestErrorType {
-  const factory _InvalidGrant({String stringValue}) = _$_InvalidGrant;
+  const factory _InvalidGrant({final String stringValue}) = _$InvalidGrantImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$InvalidGrantCopyWith<_InvalidGrant> get copyWith =>
+  _$$InvalidGrantImplCopyWith<_$InvalidGrantImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$AccessTokenRevokedCopyWith<$Res>
+abstract class _$$AccessTokenRevokedImplCopyWith<$Res>
     implements $UnifediApiRestErrorTypeCopyWith<$Res> {
-  factory _$AccessTokenRevokedCopyWith(
-          _AccessTokenRevoked value, $Res Function(_AccessTokenRevoked) then) =
-      __$AccessTokenRevokedCopyWithImpl<$Res>;
+  factory _$$AccessTokenRevokedImplCopyWith(_$AccessTokenRevokedImpl value,
+          $Res Function(_$AccessTokenRevokedImpl) then) =
+      __$$AccessTokenRevokedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$AccessTokenRevokedCopyWithImpl<$Res>
-    extends _$UnifediApiRestErrorTypeCopyWithImpl<$Res>
-    implements _$AccessTokenRevokedCopyWith<$Res> {
-  __$AccessTokenRevokedCopyWithImpl(
-      _AccessTokenRevoked _value, $Res Function(_AccessTokenRevoked) _then)
-      : super(_value, (v) => _then(v as _AccessTokenRevoked));
+class __$$AccessTokenRevokedImplCopyWithImpl<$Res>
+    extends _$UnifediApiRestErrorTypeCopyWithImpl<$Res,
+        _$AccessTokenRevokedImpl>
+    implements _$$AccessTokenRevokedImplCopyWith<$Res> {
+  __$$AccessTokenRevokedImplCopyWithImpl(_$AccessTokenRevokedImpl _value,
+      $Res Function(_$AccessTokenRevokedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _AccessTokenRevoked get _value => super._value as _AccessTokenRevoked;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_AccessTokenRevoked(
-      stringValue: stringValue == freezed
+    return _then(_$AccessTokenRevokedImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -765,13 +706,13 @@ class __$AccessTokenRevokedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_AccessTokenRevoked implements _AccessTokenRevoked {
-  const _$_AccessTokenRevoked(
+class _$AccessTokenRevokedImpl implements _AccessTokenRevoked {
+  const _$AccessTokenRevokedImpl(
       {this.stringValue =
           UnifediApiRestErrorType.accessTokenRevokedStringValue});
 
-  @JsonKey(defaultValue: UnifediApiRestErrorType.accessTokenRevokedStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -780,10 +721,10 @@ class _$_AccessTokenRevoked implements _AccessTokenRevoked {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _AccessTokenRevoked &&
+            other is _$AccessTokenRevokedImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -793,8 +734,10 @@ class _$_AccessTokenRevoked implements _AccessTokenRevoked {
 
   @JsonKey(ignore: true)
   @override
-  _$AccessTokenRevokedCopyWith<_AccessTokenRevoked> get copyWith =>
-      __$AccessTokenRevokedCopyWithImpl<_AccessTokenRevoked>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AccessTokenRevokedImplCopyWith<_$AccessTokenRevokedImpl> get copyWith =>
+      __$$AccessTokenRevokedImplCopyWithImpl<_$AccessTokenRevokedImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -814,14 +757,14 @@ class _$_AccessTokenRevoked implements _AccessTokenRevoked {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? missingConfirmedEmail,
-    TResult Function(String stringValue)? awaitingApproval,
-    TResult Function(String stringValue)? invalidGrant,
-    TResult Function(String stringValue)? accessTokenRevoked,
-    TResult Function(String stringValue)? tooShort,
-    TResult Function(String stringValue)? notIncluded,
-    TResult Function(String stringValue)? unreachable,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? missingConfirmedEmail,
+    TResult? Function(String stringValue)? awaitingApproval,
+    TResult? Function(String stringValue)? invalidGrant,
+    TResult? Function(String stringValue)? accessTokenRevoked,
+    TResult? Function(String stringValue)? tooShort,
+    TResult? Function(String stringValue)? notIncluded,
+    TResult? Function(String stringValue)? unreachable,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return accessTokenRevoked?.call(stringValue);
   }
@@ -864,14 +807,14 @@ class _$_AccessTokenRevoked implements _AccessTokenRevoked {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
-    TResult Function(_AwaitingApproval value)? awaitingApproval,
-    TResult Function(_InvalidGrant value)? invalidGrant,
-    TResult Function(_AccessTokenRevoked value)? accessTokenRevoked,
-    TResult Function(_TooShort value)? tooShort,
-    TResult Function(_NotIncluded value)? notIncluded,
-    TResult Function(_Unreachable value)? unreachable,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
+    TResult? Function(_AwaitingApproval value)? awaitingApproval,
+    TResult? Function(_InvalidGrant value)? invalidGrant,
+    TResult? Function(_AccessTokenRevoked value)? accessTokenRevoked,
+    TResult? Function(_TooShort value)? tooShort,
+    TResult? Function(_NotIncluded value)? notIncluded,
+    TResult? Function(_Unreachable value)? unreachable,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return accessTokenRevoked?.call(this);
   }
@@ -897,42 +840,43 @@ class _$_AccessTokenRevoked implements _AccessTokenRevoked {
 }
 
 abstract class _AccessTokenRevoked implements UnifediApiRestErrorType {
-  const factory _AccessTokenRevoked({String stringValue}) =
-      _$_AccessTokenRevoked;
+  const factory _AccessTokenRevoked({final String stringValue}) =
+      _$AccessTokenRevokedImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$AccessTokenRevokedCopyWith<_AccessTokenRevoked> get copyWith =>
+  _$$AccessTokenRevokedImplCopyWith<_$AccessTokenRevokedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$TooShortCopyWith<$Res>
+abstract class _$$TooShortImplCopyWith<$Res>
     implements $UnifediApiRestErrorTypeCopyWith<$Res> {
-  factory _$TooShortCopyWith(_TooShort value, $Res Function(_TooShort) then) =
-      __$TooShortCopyWithImpl<$Res>;
+  factory _$$TooShortImplCopyWith(
+          _$TooShortImpl value, $Res Function(_$TooShortImpl) then) =
+      __$$TooShortImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$TooShortCopyWithImpl<$Res>
-    extends _$UnifediApiRestErrorTypeCopyWithImpl<$Res>
-    implements _$TooShortCopyWith<$Res> {
-  __$TooShortCopyWithImpl(_TooShort _value, $Res Function(_TooShort) _then)
-      : super(_value, (v) => _then(v as _TooShort));
+class __$$TooShortImplCopyWithImpl<$Res>
+    extends _$UnifediApiRestErrorTypeCopyWithImpl<$Res, _$TooShortImpl>
+    implements _$$TooShortImplCopyWith<$Res> {
+  __$$TooShortImplCopyWithImpl(
+      _$TooShortImpl _value, $Res Function(_$TooShortImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _TooShort get _value => super._value as _TooShort;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_TooShort(
-      stringValue: stringValue == freezed
+    return _then(_$TooShortImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -942,12 +886,12 @@ class __$TooShortCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_TooShort implements _TooShort {
-  const _$_TooShort(
+class _$TooShortImpl implements _TooShort {
+  const _$TooShortImpl(
       {this.stringValue = UnifediApiRestErrorType.tooShortStringValue});
 
-  @JsonKey(defaultValue: UnifediApiRestErrorType.tooShortStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -956,10 +900,10 @@ class _$_TooShort implements _TooShort {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _TooShort &&
+            other is _$TooShortImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -969,8 +913,9 @@ class _$_TooShort implements _TooShort {
 
   @JsonKey(ignore: true)
   @override
-  _$TooShortCopyWith<_TooShort> get copyWith =>
-      __$TooShortCopyWithImpl<_TooShort>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$TooShortImplCopyWith<_$TooShortImpl> get copyWith =>
+      __$$TooShortImplCopyWithImpl<_$TooShortImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -990,14 +935,14 @@ class _$_TooShort implements _TooShort {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? missingConfirmedEmail,
-    TResult Function(String stringValue)? awaitingApproval,
-    TResult Function(String stringValue)? invalidGrant,
-    TResult Function(String stringValue)? accessTokenRevoked,
-    TResult Function(String stringValue)? tooShort,
-    TResult Function(String stringValue)? notIncluded,
-    TResult Function(String stringValue)? unreachable,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? missingConfirmedEmail,
+    TResult? Function(String stringValue)? awaitingApproval,
+    TResult? Function(String stringValue)? invalidGrant,
+    TResult? Function(String stringValue)? accessTokenRevoked,
+    TResult? Function(String stringValue)? tooShort,
+    TResult? Function(String stringValue)? notIncluded,
+    TResult? Function(String stringValue)? unreachable,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return tooShort?.call(stringValue);
   }
@@ -1040,14 +985,14 @@ class _$_TooShort implements _TooShort {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
-    TResult Function(_AwaitingApproval value)? awaitingApproval,
-    TResult Function(_InvalidGrant value)? invalidGrant,
-    TResult Function(_AccessTokenRevoked value)? accessTokenRevoked,
-    TResult Function(_TooShort value)? tooShort,
-    TResult Function(_NotIncluded value)? notIncluded,
-    TResult Function(_Unreachable value)? unreachable,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
+    TResult? Function(_AwaitingApproval value)? awaitingApproval,
+    TResult? Function(_InvalidGrant value)? invalidGrant,
+    TResult? Function(_AccessTokenRevoked value)? accessTokenRevoked,
+    TResult? Function(_TooShort value)? tooShort,
+    TResult? Function(_NotIncluded value)? notIncluded,
+    TResult? Function(_Unreachable value)? unreachable,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return tooShort?.call(this);
   }
@@ -1073,43 +1018,42 @@ class _$_TooShort implements _TooShort {
 }
 
 abstract class _TooShort implements UnifediApiRestErrorType {
-  const factory _TooShort({String stringValue}) = _$_TooShort;
+  const factory _TooShort({final String stringValue}) = _$TooShortImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$TooShortCopyWith<_TooShort> get copyWith =>
+  _$$TooShortImplCopyWith<_$TooShortImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$NotIncludedCopyWith<$Res>
+abstract class _$$NotIncludedImplCopyWith<$Res>
     implements $UnifediApiRestErrorTypeCopyWith<$Res> {
-  factory _$NotIncludedCopyWith(
-          _NotIncluded value, $Res Function(_NotIncluded) then) =
-      __$NotIncludedCopyWithImpl<$Res>;
+  factory _$$NotIncludedImplCopyWith(
+          _$NotIncludedImpl value, $Res Function(_$NotIncludedImpl) then) =
+      __$$NotIncludedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$NotIncludedCopyWithImpl<$Res>
-    extends _$UnifediApiRestErrorTypeCopyWithImpl<$Res>
-    implements _$NotIncludedCopyWith<$Res> {
-  __$NotIncludedCopyWithImpl(
-      _NotIncluded _value, $Res Function(_NotIncluded) _then)
-      : super(_value, (v) => _then(v as _NotIncluded));
+class __$$NotIncludedImplCopyWithImpl<$Res>
+    extends _$UnifediApiRestErrorTypeCopyWithImpl<$Res, _$NotIncludedImpl>
+    implements _$$NotIncludedImplCopyWith<$Res> {
+  __$$NotIncludedImplCopyWithImpl(
+      _$NotIncludedImpl _value, $Res Function(_$NotIncludedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _NotIncluded get _value => super._value as _NotIncluded;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_NotIncluded(
-      stringValue: stringValue == freezed
+    return _then(_$NotIncludedImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1119,12 +1063,12 @@ class __$NotIncludedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_NotIncluded implements _NotIncluded {
-  const _$_NotIncluded(
+class _$NotIncludedImpl implements _NotIncluded {
+  const _$NotIncludedImpl(
       {this.stringValue = UnifediApiRestErrorType.notIncludedStringValue});
 
-  @JsonKey(defaultValue: UnifediApiRestErrorType.notIncludedStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -1133,10 +1077,10 @@ class _$_NotIncluded implements _NotIncluded {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _NotIncluded &&
+            other is _$NotIncludedImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -1146,8 +1090,9 @@ class _$_NotIncluded implements _NotIncluded {
 
   @JsonKey(ignore: true)
   @override
-  _$NotIncludedCopyWith<_NotIncluded> get copyWith =>
-      __$NotIncludedCopyWithImpl<_NotIncluded>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$NotIncludedImplCopyWith<_$NotIncludedImpl> get copyWith =>
+      __$$NotIncludedImplCopyWithImpl<_$NotIncludedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1167,14 +1112,14 @@ class _$_NotIncluded implements _NotIncluded {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? missingConfirmedEmail,
-    TResult Function(String stringValue)? awaitingApproval,
-    TResult Function(String stringValue)? invalidGrant,
-    TResult Function(String stringValue)? accessTokenRevoked,
-    TResult Function(String stringValue)? tooShort,
-    TResult Function(String stringValue)? notIncluded,
-    TResult Function(String stringValue)? unreachable,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? missingConfirmedEmail,
+    TResult? Function(String stringValue)? awaitingApproval,
+    TResult? Function(String stringValue)? invalidGrant,
+    TResult? Function(String stringValue)? accessTokenRevoked,
+    TResult? Function(String stringValue)? tooShort,
+    TResult? Function(String stringValue)? notIncluded,
+    TResult? Function(String stringValue)? unreachable,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return notIncluded?.call(stringValue);
   }
@@ -1217,14 +1162,14 @@ class _$_NotIncluded implements _NotIncluded {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
-    TResult Function(_AwaitingApproval value)? awaitingApproval,
-    TResult Function(_InvalidGrant value)? invalidGrant,
-    TResult Function(_AccessTokenRevoked value)? accessTokenRevoked,
-    TResult Function(_TooShort value)? tooShort,
-    TResult Function(_NotIncluded value)? notIncluded,
-    TResult Function(_Unreachable value)? unreachable,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
+    TResult? Function(_AwaitingApproval value)? awaitingApproval,
+    TResult? Function(_InvalidGrant value)? invalidGrant,
+    TResult? Function(_AccessTokenRevoked value)? accessTokenRevoked,
+    TResult? Function(_TooShort value)? tooShort,
+    TResult? Function(_NotIncluded value)? notIncluded,
+    TResult? Function(_Unreachable value)? unreachable,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return notIncluded?.call(this);
   }
@@ -1250,43 +1195,42 @@ class _$_NotIncluded implements _NotIncluded {
 }
 
 abstract class _NotIncluded implements UnifediApiRestErrorType {
-  const factory _NotIncluded({String stringValue}) = _$_NotIncluded;
+  const factory _NotIncluded({final String stringValue}) = _$NotIncludedImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$NotIncludedCopyWith<_NotIncluded> get copyWith =>
+  _$$NotIncludedImplCopyWith<_$NotIncludedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$UnreachableCopyWith<$Res>
+abstract class _$$UnreachableImplCopyWith<$Res>
     implements $UnifediApiRestErrorTypeCopyWith<$Res> {
-  factory _$UnreachableCopyWith(
-          _Unreachable value, $Res Function(_Unreachable) then) =
-      __$UnreachableCopyWithImpl<$Res>;
+  factory _$$UnreachableImplCopyWith(
+          _$UnreachableImpl value, $Res Function(_$UnreachableImpl) then) =
+      __$$UnreachableImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$UnreachableCopyWithImpl<$Res>
-    extends _$UnifediApiRestErrorTypeCopyWithImpl<$Res>
-    implements _$UnreachableCopyWith<$Res> {
-  __$UnreachableCopyWithImpl(
-      _Unreachable _value, $Res Function(_Unreachable) _then)
-      : super(_value, (v) => _then(v as _Unreachable));
+class __$$UnreachableImplCopyWithImpl<$Res>
+    extends _$UnifediApiRestErrorTypeCopyWithImpl<$Res, _$UnreachableImpl>
+    implements _$$UnreachableImplCopyWith<$Res> {
+  __$$UnreachableImplCopyWithImpl(
+      _$UnreachableImpl _value, $Res Function(_$UnreachableImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Unreachable get _value => super._value as _Unreachable;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Unreachable(
-      stringValue: stringValue == freezed
+    return _then(_$UnreachableImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1296,12 +1240,12 @@ class __$UnreachableCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Unreachable implements _Unreachable {
-  const _$_Unreachable(
+class _$UnreachableImpl implements _Unreachable {
+  const _$UnreachableImpl(
       {this.stringValue = UnifediApiRestErrorType.unreachableStringValue});
 
-  @JsonKey(defaultValue: UnifediApiRestErrorType.unreachableStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -1310,10 +1254,10 @@ class _$_Unreachable implements _Unreachable {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Unreachable &&
+            other is _$UnreachableImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -1323,8 +1267,9 @@ class _$_Unreachable implements _Unreachable {
 
   @JsonKey(ignore: true)
   @override
-  _$UnreachableCopyWith<_Unreachable> get copyWith =>
-      __$UnreachableCopyWithImpl<_Unreachable>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnreachableImplCopyWith<_$UnreachableImpl> get copyWith =>
+      __$$UnreachableImplCopyWithImpl<_$UnreachableImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1344,14 +1289,14 @@ class _$_Unreachable implements _Unreachable {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? missingConfirmedEmail,
-    TResult Function(String stringValue)? awaitingApproval,
-    TResult Function(String stringValue)? invalidGrant,
-    TResult Function(String stringValue)? accessTokenRevoked,
-    TResult Function(String stringValue)? tooShort,
-    TResult Function(String stringValue)? notIncluded,
-    TResult Function(String stringValue)? unreachable,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? missingConfirmedEmail,
+    TResult? Function(String stringValue)? awaitingApproval,
+    TResult? Function(String stringValue)? invalidGrant,
+    TResult? Function(String stringValue)? accessTokenRevoked,
+    TResult? Function(String stringValue)? tooShort,
+    TResult? Function(String stringValue)? notIncluded,
+    TResult? Function(String stringValue)? unreachable,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return unreachable?.call(stringValue);
   }
@@ -1394,14 +1339,14 @@ class _$_Unreachable implements _Unreachable {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
-    TResult Function(_AwaitingApproval value)? awaitingApproval,
-    TResult Function(_InvalidGrant value)? invalidGrant,
-    TResult Function(_AccessTokenRevoked value)? accessTokenRevoked,
-    TResult Function(_TooShort value)? tooShort,
-    TResult Function(_NotIncluded value)? notIncluded,
-    TResult Function(_Unreachable value)? unreachable,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
+    TResult? Function(_AwaitingApproval value)? awaitingApproval,
+    TResult? Function(_InvalidGrant value)? invalidGrant,
+    TResult? Function(_AccessTokenRevoked value)? accessTokenRevoked,
+    TResult? Function(_TooShort value)? tooShort,
+    TResult? Function(_NotIncluded value)? notIncluded,
+    TResult? Function(_Unreachable value)? unreachable,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return unreachable?.call(this);
   }
@@ -1427,41 +1372,42 @@ class _$_Unreachable implements _Unreachable {
 }
 
 abstract class _Unreachable implements UnifediApiRestErrorType {
-  const factory _Unreachable({String stringValue}) = _$_Unreachable;
+  const factory _Unreachable({final String stringValue}) = _$UnreachableImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$UnreachableCopyWith<_Unreachable> get copyWith =>
+  _$$UnreachableImplCopyWith<_$UnreachableImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$UnknownCopyWith<$Res>
+abstract class _$$UnknownImplCopyWith<$Res>
     implements $UnifediApiRestErrorTypeCopyWith<$Res> {
-  factory _$UnknownCopyWith(_Unknown value, $Res Function(_Unknown) then) =
-      __$UnknownCopyWithImpl<$Res>;
+  factory _$$UnknownImplCopyWith(
+          _$UnknownImpl value, $Res Function(_$UnknownImpl) then) =
+      __$$UnknownImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$UnknownCopyWithImpl<$Res>
-    extends _$UnifediApiRestErrorTypeCopyWithImpl<$Res>
-    implements _$UnknownCopyWith<$Res> {
-  __$UnknownCopyWithImpl(_Unknown _value, $Res Function(_Unknown) _then)
-      : super(_value, (v) => _then(v as _Unknown));
+class __$$UnknownImplCopyWithImpl<$Res>
+    extends _$UnifediApiRestErrorTypeCopyWithImpl<$Res, _$UnknownImpl>
+    implements _$$UnknownImplCopyWith<$Res> {
+  __$$UnknownImplCopyWithImpl(
+      _$UnknownImpl _value, $Res Function(_$UnknownImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Unknown get _value => super._value as _Unknown;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Unknown(
-      stringValue: stringValue == freezed
+    return _then(_$UnknownImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1471,8 +1417,8 @@ class __$UnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Unknown implements _Unknown {
-  const _$_Unknown({required this.stringValue});
+class _$UnknownImpl implements _Unknown {
+  const _$UnknownImpl({required this.stringValue});
 
   @override
   final String stringValue;
@@ -1483,10 +1429,10 @@ class _$_Unknown implements _Unknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Unknown &&
+            other is _$UnknownImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -1496,8 +1442,9 @@ class _$_Unknown implements _Unknown {
 
   @JsonKey(ignore: true)
   @override
-  _$UnknownCopyWith<_Unknown> get copyWith =>
-      __$UnknownCopyWithImpl<_Unknown>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnknownImplCopyWith<_$UnknownImpl> get copyWith =>
+      __$$UnknownImplCopyWithImpl<_$UnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1517,14 +1464,14 @@ class _$_Unknown implements _Unknown {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? missingConfirmedEmail,
-    TResult Function(String stringValue)? awaitingApproval,
-    TResult Function(String stringValue)? invalidGrant,
-    TResult Function(String stringValue)? accessTokenRevoked,
-    TResult Function(String stringValue)? tooShort,
-    TResult Function(String stringValue)? notIncluded,
-    TResult Function(String stringValue)? unreachable,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? missingConfirmedEmail,
+    TResult? Function(String stringValue)? awaitingApproval,
+    TResult? Function(String stringValue)? invalidGrant,
+    TResult? Function(String stringValue)? accessTokenRevoked,
+    TResult? Function(String stringValue)? tooShort,
+    TResult? Function(String stringValue)? notIncluded,
+    TResult? Function(String stringValue)? unreachable,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return unknown?.call(stringValue);
   }
@@ -1567,14 +1514,14 @@ class _$_Unknown implements _Unknown {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
-    TResult Function(_AwaitingApproval value)? awaitingApproval,
-    TResult Function(_InvalidGrant value)? invalidGrant,
-    TResult Function(_AccessTokenRevoked value)? accessTokenRevoked,
-    TResult Function(_TooShort value)? tooShort,
-    TResult Function(_NotIncluded value)? notIncluded,
-    TResult Function(_Unreachable value)? unreachable,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_MissingConfirmedEmail value)? missingConfirmedEmail,
+    TResult? Function(_AwaitingApproval value)? awaitingApproval,
+    TResult? Function(_InvalidGrant value)? invalidGrant,
+    TResult? Function(_AccessTokenRevoked value)? accessTokenRevoked,
+    TResult? Function(_TooShort value)? tooShort,
+    TResult? Function(_NotIncluded value)? notIncluded,
+    TResult? Function(_Unreachable value)? unreachable,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return unknown?.call(this);
   }
@@ -1600,12 +1547,12 @@ class _$_Unknown implements _Unknown {
 }
 
 abstract class _Unknown implements UnifediApiRestErrorType {
-  const factory _Unknown({required String stringValue}) = _$_Unknown;
+  const factory _Unknown({required final String stringValue}) = _$UnknownImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$UnknownCopyWith<_Unknown> get copyWith =>
+  _$$UnknownImplCopyWith<_$UnknownImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

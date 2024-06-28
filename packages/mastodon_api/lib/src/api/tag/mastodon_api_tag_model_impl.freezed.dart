@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_tag_model_impl.dart';
 
@@ -11,34 +12,11 @@ part of 'mastodon_api_tag_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiTag _$MastodonApiTagFromJson(Map<String, dynamic> json) {
   return _MastodonApiTag.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiTagTearOff {
-  const _$MastodonApiTagTearOff();
-
-  _MastodonApiTag call(
-      {@HiveField(0) required String name,
-      @HiveField(1) required String url,
-      @HiveField(2) required List<MastodonApiTagHistoryItem>? history}) {
-    return _MastodonApiTag(
-      name: name,
-      url: url,
-      history: history,
-    );
-  }
-
-  MastodonApiTag fromJson(Map<String, Object?> json) {
-    return MastodonApiTag.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiTag = _$MastodonApiTagTearOff();
 
 /// @nodoc
 mixin _$MastodonApiTag {
@@ -60,7 +38,8 @@ mixin _$MastodonApiTag {
 abstract class $MastodonApiTagCopyWith<$Res> {
   factory $MastodonApiTagCopyWith(
           MastodonApiTag value, $Res Function(MastodonApiTag) then) =
-      _$MastodonApiTagCopyWithImpl<$Res>;
+      _$MastodonApiTagCopyWithImpl<$Res, MastodonApiTag>;
+  @useResult
   $Res call(
       {@HiveField(0) String name,
       @HiveField(1) String url,
@@ -68,44 +47,47 @@ abstract class $MastodonApiTagCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MastodonApiTagCopyWithImpl<$Res>
+class _$MastodonApiTagCopyWithImpl<$Res, $Val extends MastodonApiTag>
     implements $MastodonApiTagCopyWith<$Res> {
   _$MastodonApiTagCopyWithImpl(this._value, this._then);
 
-  final MastodonApiTag _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiTag) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? url = freezed,
+    Object? name = null,
+    Object? url = null,
     Object? history = freezed,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      history: history == freezed
+      history: freezed == history
           ? _value.history
           : history // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiTagHistoryItem>?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiTagCopyWith<$Res>
+abstract class _$$MastodonApiTagImplCopyWith<$Res>
     implements $MastodonApiTagCopyWith<$Res> {
-  factory _$MastodonApiTagCopyWith(
-          _MastodonApiTag value, $Res Function(_MastodonApiTag) then) =
-      __$MastodonApiTagCopyWithImpl<$Res>;
+  factory _$$MastodonApiTagImplCopyWith(_$MastodonApiTagImpl value,
+          $Res Function(_$MastodonApiTagImpl) then) =
+      __$$MastodonApiTagImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) String name,
       @HiveField(1) String url,
@@ -113,33 +95,31 @@ abstract class _$MastodonApiTagCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MastodonApiTagCopyWithImpl<$Res>
-    extends _$MastodonApiTagCopyWithImpl<$Res>
-    implements _$MastodonApiTagCopyWith<$Res> {
-  __$MastodonApiTagCopyWithImpl(
-      _MastodonApiTag _value, $Res Function(_MastodonApiTag) _then)
-      : super(_value, (v) => _then(v as _MastodonApiTag));
+class __$$MastodonApiTagImplCopyWithImpl<$Res>
+    extends _$MastodonApiTagCopyWithImpl<$Res, _$MastodonApiTagImpl>
+    implements _$$MastodonApiTagImplCopyWith<$Res> {
+  __$$MastodonApiTagImplCopyWithImpl(
+      _$MastodonApiTagImpl _value, $Res Function(_$MastodonApiTagImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiTag get _value => super._value as _MastodonApiTag;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? url = freezed,
+    Object? name = null,
+    Object? url = null,
     Object? history = freezed,
   }) {
-    return _then(_MastodonApiTag(
-      name: name == freezed
+    return _then(_$MastodonApiTagImpl(
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      history: history == freezed
-          ? _value.history
+      history: freezed == history
+          ? _value._history
           : history // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiTagHistoryItem>?,
     ));
@@ -148,14 +128,15 @@ class __$MastodonApiTagCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiTag implements _MastodonApiTag {
-  const _$_MastodonApiTag(
+class _$MastodonApiTagImpl implements _MastodonApiTag {
+  const _$MastodonApiTagImpl(
       {@HiveField(0) required this.name,
       @HiveField(1) required this.url,
-      @HiveField(2) required this.history});
+      @HiveField(2) required final List<MastodonApiTagHistoryItem>? history})
+      : _history = history;
 
-  factory _$_MastodonApiTag.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiTagFromJson(json);
+  factory _$MastodonApiTagImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MastodonApiTagImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -163,9 +144,16 @@ class _$_MastodonApiTag implements _MastodonApiTag {
   @override
   @HiveField(1)
   final String url;
+  final List<MastodonApiTagHistoryItem>? _history;
   @override
   @HiveField(2)
-  final List<MastodonApiTagHistoryItem>? history;
+  List<MastodonApiTagHistoryItem>? get history {
+    final value = _history;
+    if (value == null) return null;
+    if (_history is EqualUnmodifiableListView) return _history;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   @override
   String toString() {
@@ -173,39 +161,45 @@ class _$_MastodonApiTag implements _MastodonApiTag {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiTag &&
+            other is _$MastodonApiTagImpl &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.url, url) || other.url == url) &&
-            const DeepCollectionEquality().equals(other.history, history));
+            const DeepCollectionEquality().equals(other._history, _history));
   }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType, name, url, const DeepCollectionEquality().hash(history));
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiTagCopyWith<_MastodonApiTag> get copyWith =>
-      __$MastodonApiTagCopyWithImpl<_MastodonApiTag>(this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType, name, url, const DeepCollectionEquality().hash(_history));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiTagImplCopyWith<_$MastodonApiTagImpl> get copyWith =>
+      __$$MastodonApiTagImplCopyWithImpl<_$MastodonApiTagImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiTagToJson(this);
+    return _$$MastodonApiTagImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiTag implements MastodonApiTag {
   const factory _MastodonApiTag(
-          {@HiveField(0) required String name,
-          @HiveField(1) required String url,
-          @HiveField(2) required List<MastodonApiTagHistoryItem>? history}) =
-      _$_MastodonApiTag;
+          {@HiveField(0) required final String name,
+          @HiveField(1) required final String url,
+          @HiveField(2)
+          required final List<MastodonApiTagHistoryItem>? history}) =
+      _$MastodonApiTagImpl;
 
   factory _MastodonApiTag.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiTag.fromJson;
+      _$MastodonApiTagImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -218,6 +212,6 @@ abstract class _MastodonApiTag implements MastodonApiTag {
   List<MastodonApiTagHistoryItem>? get history;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiTagCopyWith<_MastodonApiTag> get copyWith =>
+  _$$MastodonApiTagImplCopyWith<_$MastodonApiTagImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

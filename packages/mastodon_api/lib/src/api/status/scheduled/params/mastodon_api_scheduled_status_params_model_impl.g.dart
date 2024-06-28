@@ -69,9 +69,10 @@ class MastodonApiScheduledStatusParamsAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiScheduledStatusParams
-    _$$_MastodonApiScheduledStatusParamsFromJson(Map<String, dynamic> json) =>
-        _$_MastodonApiScheduledStatusParams(
+_$MastodonApiScheduledStatusParamsImpl
+    _$$MastodonApiScheduledStatusParamsImplFromJson(
+            Map<String, dynamic> json) =>
+        _$MastodonApiScheduledStatusParamsImpl(
           text: json['text'] as String?,
           mediaIds: (json['media_ids'] as List<dynamic>?)
               ?.map((e) => e as String)
@@ -90,8 +91,8 @@ _$_MastodonApiScheduledStatusParams
           inReplyToId: json['in_reply_to_id'] as String?,
         );
 
-Map<String, dynamic> _$$_MastodonApiScheduledStatusParamsToJson(
-    _$_MastodonApiScheduledStatusParams instance) {
+Map<String, dynamic> _$$MastodonApiScheduledStatusParamsImplToJson(
+    _$MastodonApiScheduledStatusParamsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

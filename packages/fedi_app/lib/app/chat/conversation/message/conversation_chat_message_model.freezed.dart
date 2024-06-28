@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'conversation_chat_message_model.dart';
 
@@ -11,22 +12,7 @@ part of 'conversation_chat_message_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$ConversationChatMessageStatusAdapterTearOff {
-  const _$ConversationChatMessageStatusAdapterTearOff();
-
-  _ConversationChatMessageStatusAdapter call({required IStatus status}) {
-    return _ConversationChatMessageStatusAdapter(
-      status: status,
-    );
-  }
-}
-
-/// @nodoc
-const $ConversationChatMessageStatusAdapter =
-    _$ConversationChatMessageStatusAdapterTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$ConversationChatMessageStatusAdapter {
@@ -43,62 +29,66 @@ abstract class $ConversationChatMessageStatusAdapterCopyWith<$Res> {
   factory $ConversationChatMessageStatusAdapterCopyWith(
           ConversationChatMessageStatusAdapter value,
           $Res Function(ConversationChatMessageStatusAdapter) then) =
-      _$ConversationChatMessageStatusAdapterCopyWithImpl<$Res>;
+      _$ConversationChatMessageStatusAdapterCopyWithImpl<$Res,
+          ConversationChatMessageStatusAdapter>;
+  @useResult
   $Res call({IStatus status});
 }
 
 /// @nodoc
-class _$ConversationChatMessageStatusAdapterCopyWithImpl<$Res>
+class _$ConversationChatMessageStatusAdapterCopyWithImpl<$Res,
+        $Val extends ConversationChatMessageStatusAdapter>
     implements $ConversationChatMessageStatusAdapterCopyWith<$Res> {
   _$ConversationChatMessageStatusAdapterCopyWithImpl(this._value, this._then);
 
-  final ConversationChatMessageStatusAdapter _value;
   // ignore: unused_field
-  final $Res Function(ConversationChatMessageStatusAdapter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? status = freezed,
+    Object? status = null,
   }) {
     return _then(_value.copyWith(
-      status: status == freezed
+      status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as IStatus,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$ConversationChatMessageStatusAdapterCopyWith<$Res>
+abstract class _$$ConversationChatMessageStatusAdapterImplCopyWith<$Res>
     implements $ConversationChatMessageStatusAdapterCopyWith<$Res> {
-  factory _$ConversationChatMessageStatusAdapterCopyWith(
-          _ConversationChatMessageStatusAdapter value,
-          $Res Function(_ConversationChatMessageStatusAdapter) then) =
-      __$ConversationChatMessageStatusAdapterCopyWithImpl<$Res>;
+  factory _$$ConversationChatMessageStatusAdapterImplCopyWith(
+          _$ConversationChatMessageStatusAdapterImpl value,
+          $Res Function(_$ConversationChatMessageStatusAdapterImpl) then) =
+      __$$ConversationChatMessageStatusAdapterImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({IStatus status});
 }
 
 /// @nodoc
-class __$ConversationChatMessageStatusAdapterCopyWithImpl<$Res>
-    extends _$ConversationChatMessageStatusAdapterCopyWithImpl<$Res>
-    implements _$ConversationChatMessageStatusAdapterCopyWith<$Res> {
-  __$ConversationChatMessageStatusAdapterCopyWithImpl(
-      _ConversationChatMessageStatusAdapter _value,
-      $Res Function(_ConversationChatMessageStatusAdapter) _then)
-      : super(_value, (v) => _then(v as _ConversationChatMessageStatusAdapter));
+class __$$ConversationChatMessageStatusAdapterImplCopyWithImpl<$Res>
+    extends _$ConversationChatMessageStatusAdapterCopyWithImpl<$Res,
+        _$ConversationChatMessageStatusAdapterImpl>
+    implements _$$ConversationChatMessageStatusAdapterImplCopyWith<$Res> {
+  __$$ConversationChatMessageStatusAdapterImplCopyWithImpl(
+      _$ConversationChatMessageStatusAdapterImpl _value,
+      $Res Function(_$ConversationChatMessageStatusAdapterImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _ConversationChatMessageStatusAdapter get _value =>
-      super._value as _ConversationChatMessageStatusAdapter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? status = freezed,
+    Object? status = null,
   }) {
-    return _then(_ConversationChatMessageStatusAdapter(
-      status: status == freezed
+    return _then(_$ConversationChatMessageStatusAdapterImpl(
+      status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as IStatus,
@@ -108,9 +98,9 @@ class __$ConversationChatMessageStatusAdapterCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ConversationChatMessageStatusAdapter
+class _$ConversationChatMessageStatusAdapterImpl
     extends _ConversationChatMessageStatusAdapter {
-  const _$_ConversationChatMessageStatusAdapter({required this.status})
+  const _$ConversationChatMessageStatusAdapterImpl({required this.status})
       : super._();
 
   @override
@@ -122,10 +112,10 @@ class _$_ConversationChatMessageStatusAdapter
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ConversationChatMessageStatusAdapter &&
+            other is _$ConversationChatMessageStatusAdapterImpl &&
             (identical(other.status, status) || other.status == status));
   }
 
@@ -134,23 +124,25 @@ class _$_ConversationChatMessageStatusAdapter
 
   @JsonKey(ignore: true)
   @override
-  _$ConversationChatMessageStatusAdapterCopyWith<
-          _ConversationChatMessageStatusAdapter>
-      get copyWith => __$ConversationChatMessageStatusAdapterCopyWithImpl<
-          _ConversationChatMessageStatusAdapter>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ConversationChatMessageStatusAdapterImplCopyWith<
+          _$ConversationChatMessageStatusAdapterImpl>
+      get copyWith => __$$ConversationChatMessageStatusAdapterImplCopyWithImpl<
+          _$ConversationChatMessageStatusAdapterImpl>(this, _$identity);
 }
 
 abstract class _ConversationChatMessageStatusAdapter
     extends ConversationChatMessageStatusAdapter {
   const factory _ConversationChatMessageStatusAdapter(
-      {required IStatus status}) = _$_ConversationChatMessageStatusAdapter;
+          {required final IStatus status}) =
+      _$ConversationChatMessageStatusAdapterImpl;
   const _ConversationChatMessageStatusAdapter._() : super._();
 
   @override
   IStatus get status;
   @override
   @JsonKey(ignore: true)
-  _$ConversationChatMessageStatusAdapterCopyWith<
-          _ConversationChatMessageStatusAdapter>
+  _$$ConversationChatMessageStatusAdapterImplCopyWith<
+          _$ConversationChatMessageStatusAdapterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

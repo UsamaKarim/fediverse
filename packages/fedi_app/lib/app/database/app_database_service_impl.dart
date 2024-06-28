@@ -1,16 +1,14 @@
 import 'dart:io';
 import 'dart:math';
 
+import 'package:drift/native.dart';
 import 'package:easy_dispose/easy_dispose.dart';
 import 'package:fedi_app/app/config/config_service.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/async/loading/init/async_init_loading_bloc_impl.dart';
 import 'package:fedi_app/database/database_service.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 import 'package:logging/logging.dart';
-import 'package:moor/ffi.dart';
-import 'package:moor_inspector/moor_inspector.dart';
 import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
@@ -39,7 +37,7 @@ class AppDatabaseService extends AsyncInitLoadingBloc
   late AppDatabase appDatabase;
 
   // ignore: avoid-late-keyword
-  late MoorInspector inspector;
+  // late MoorInspector inspector;
 
   // ignore: avoid-late-keyword
   late String filePath;
@@ -56,7 +54,7 @@ class AppDatabaseService extends AsyncInitLoadingBloc
     file = File(filePath);
 
     appDatabase = AppDatabase(
-      VmDatabase(
+      NativeDatabase(
         file,
         logStatements: false,
       ),
@@ -64,27 +62,27 @@ class AppDatabaseService extends AsyncInitLoadingBloc
 
     addCustomDisposable(() => appDatabase.close());
 
-    if (!kReleaseMode) {
-      await _addMoorInspectorSupport();
-    }
+    // if (!kReleaseMode) {
+    //   await _addMoorInspectorSupport();
+    // }
   }
 
-  Future<void> _addMoorInspectorSupport() async {
-    var packageId = configService.appId;
+  // Future<void> _addMoorInspectorSupport() async {
+  //   var packageId = configService.appId;
 
-    final moorInspectorBuilder = MoorInspectorBuilder()
-      ..bundleId = packageId
-      ..icon = 'flutter'
-      ..addDatabase(filePath, appDatabase);
-    inspector = moorInspectorBuilder.build();
+  //   final moorInspectorBuilder = MoorInspectorBuilder()
+  //     ..bundleId = packageId
+  //     ..icon = 'flutter'
+  //     ..addDatabase(filePath, appDatabase);
+  //   inspector = moorInspectorBuilder.build();
 
-    //Start server and announcement server
-    await inspector.start();
+  //   //Start server and announcement server
+  //   await inspector.start();
 
-    addCustomDisposable(
-      () => inspector.stop(),
-    );
-  }
+  //   addCustomDisposable(
+  //     () => inspector.stop(),
+  //   );
+  // }
 
   static Future<String> calculateDatabaseFilePath(String dbName) async {
     var path = '$dbName.sqlite';

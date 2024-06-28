@@ -1,3 +1,4 @@
+import 'package:drift/native.dart';
 import 'package:fedi_app/app/account/account_model.dart';
 import 'package:fedi_app/app/account/repository/account_repository_impl.dart';
 import 'package:fedi_app/app/chat/conversation/conversation_chat_model.dart';
@@ -9,8 +10,7 @@ import 'package:fedi_app/app/status/repository/status_repository_impl.dart';
 import 'package:fedi_app/app/status/status_model.dart';
 import 'package:fedi_app/repository/repository_model.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:moor/ffi.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 
 import '../../account/account_test_helper.dart';
 import '../../account/database/account_database_test_helper.dart';
@@ -36,7 +36,7 @@ void main() {
   late DbAccount dbAccount;
 
   setUp(() async {
-    database = AppDatabase(VmDatabase.memory(logStatements: false));
+    database = AppDatabase(NativeDatabase.memory(logStatements: false));
     accountRepository = AccountRepository(appDatabase: database);
     statusRepository = StatusRepository(
       appDatabase: database,

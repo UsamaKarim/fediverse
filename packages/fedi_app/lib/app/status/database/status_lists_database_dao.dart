@@ -1,11 +1,11 @@
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/database/dao/database_dao.dart';
 import 'package:fedi_app/app/status/database/status_lists_database_model.dart';
-import 'package:moor/moor.dart';
 
 part 'status_lists_database_dao.g.dart';
 
-@UseDao(
+@DriftAccessor(
   tables: [
     DbStatusLists,
   ],
@@ -20,12 +20,12 @@ class StatusListsDao extends DatabaseDao<DbStatusList, int, $DbStatusListsTable,
   @override
   $DbStatusListsTable get table => dbStatusLists;
 
-  Selectable<DbStatusList> findByListRemoteId(String listRemoteId) =>
+  Selectable<Future<DbStatusList>> findByListRemoteId(String listRemoteId) =>
       customSelect(
         'SELECT * FROM $tableName WHERE list_remote_id = :listRemoteId;',
         variables: [Variable<String>(listRemoteId)],
         readsFrom: {dbStatusLists},
-      ).map(dbStatusLists.mapFromRow);
+      ).map((query) => dbStatusLists.mapFromRow(query));
 
   Future<int> deleteByListRemoteId(String listRemoteId) => customUpdate(
         'DELETE FROM $tableName '

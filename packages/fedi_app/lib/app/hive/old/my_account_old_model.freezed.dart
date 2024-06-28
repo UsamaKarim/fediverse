@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'my_account_old_model.dart';
 
@@ -11,33 +12,12 @@ part of 'my_account_old_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaMyAccountWrapperOld _$PleromaMyAccountWrapperOldFromJson(
     Map<String, dynamic> json) {
   return _PleromaMyAccountWrapperOld.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaMyAccountWrapperOldTearOff {
-  const _$PleromaMyAccountWrapperOldTearOff();
-
-  _PleromaMyAccountWrapperOld call(
-      {@HiveField(0)
-      @JsonKey(name: 'remote_account')
-          required PleromaApiMyAccount pleromaAccount}) {
-    return _PleromaMyAccountWrapperOld(
-      pleromaAccount: pleromaAccount,
-    );
-  }
-
-  PleromaMyAccountWrapperOld fromJson(Map<String, Object?> json) {
-    return PleromaMyAccountWrapperOld.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaMyAccountWrapperOld = _$PleromaMyAccountWrapperOldTearOff();
 
 /// @nodoc
 mixin _$PleromaMyAccountWrapperOld {
@@ -55,79 +35,85 @@ mixin _$PleromaMyAccountWrapperOld {
 abstract class $PleromaMyAccountWrapperOldCopyWith<$Res> {
   factory $PleromaMyAccountWrapperOldCopyWith(PleromaMyAccountWrapperOld value,
           $Res Function(PleromaMyAccountWrapperOld) then) =
-      _$PleromaMyAccountWrapperOldCopyWithImpl<$Res>;
+      _$PleromaMyAccountWrapperOldCopyWithImpl<$Res,
+          PleromaMyAccountWrapperOld>;
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'remote_account')
-          PleromaApiMyAccount pleromaAccount});
+      PleromaApiMyAccount pleromaAccount});
 
   $PleromaApiMyAccountCopyWith<$Res> get pleromaAccount;
 }
 
 /// @nodoc
-class _$PleromaMyAccountWrapperOldCopyWithImpl<$Res>
+class _$PleromaMyAccountWrapperOldCopyWithImpl<$Res,
+        $Val extends PleromaMyAccountWrapperOld>
     implements $PleromaMyAccountWrapperOldCopyWith<$Res> {
   _$PleromaMyAccountWrapperOldCopyWithImpl(this._value, this._then);
 
-  final PleromaMyAccountWrapperOld _value;
   // ignore: unused_field
-  final $Res Function(PleromaMyAccountWrapperOld) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? pleromaAccount = freezed,
+    Object? pleromaAccount = null,
   }) {
     return _then(_value.copyWith(
-      pleromaAccount: pleromaAccount == freezed
+      pleromaAccount: null == pleromaAccount
           ? _value.pleromaAccount
           : pleromaAccount // ignore: cast_nullable_to_non_nullable
               as PleromaApiMyAccount,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PleromaApiMyAccountCopyWith<$Res> get pleromaAccount {
     return $PleromaApiMyAccountCopyWith<$Res>(_value.pleromaAccount, (value) {
-      return _then(_value.copyWith(pleromaAccount: value));
+      return _then(_value.copyWith(pleromaAccount: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$PleromaMyAccountWrapperOldCopyWith<$Res>
+abstract class _$$PleromaMyAccountWrapperOldImplCopyWith<$Res>
     implements $PleromaMyAccountWrapperOldCopyWith<$Res> {
-  factory _$PleromaMyAccountWrapperOldCopyWith(
-          _PleromaMyAccountWrapperOld value,
-          $Res Function(_PleromaMyAccountWrapperOld) then) =
-      __$PleromaMyAccountWrapperOldCopyWithImpl<$Res>;
+  factory _$$PleromaMyAccountWrapperOldImplCopyWith(
+          _$PleromaMyAccountWrapperOldImpl value,
+          $Res Function(_$PleromaMyAccountWrapperOldImpl) then) =
+      __$$PleromaMyAccountWrapperOldImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'remote_account')
-          PleromaApiMyAccount pleromaAccount});
+      PleromaApiMyAccount pleromaAccount});
 
   @override
   $PleromaApiMyAccountCopyWith<$Res> get pleromaAccount;
 }
 
 /// @nodoc
-class __$PleromaMyAccountWrapperOldCopyWithImpl<$Res>
-    extends _$PleromaMyAccountWrapperOldCopyWithImpl<$Res>
-    implements _$PleromaMyAccountWrapperOldCopyWith<$Res> {
-  __$PleromaMyAccountWrapperOldCopyWithImpl(_PleromaMyAccountWrapperOld _value,
-      $Res Function(_PleromaMyAccountWrapperOld) _then)
-      : super(_value, (v) => _then(v as _PleromaMyAccountWrapperOld));
+class __$$PleromaMyAccountWrapperOldImplCopyWithImpl<$Res>
+    extends _$PleromaMyAccountWrapperOldCopyWithImpl<$Res,
+        _$PleromaMyAccountWrapperOldImpl>
+    implements _$$PleromaMyAccountWrapperOldImplCopyWith<$Res> {
+  __$$PleromaMyAccountWrapperOldImplCopyWithImpl(
+      _$PleromaMyAccountWrapperOldImpl _value,
+      $Res Function(_$PleromaMyAccountWrapperOldImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaMyAccountWrapperOld get _value =>
-      super._value as _PleromaMyAccountWrapperOld;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? pleromaAccount = freezed,
+    Object? pleromaAccount = null,
   }) {
-    return _then(_PleromaMyAccountWrapperOld(
-      pleromaAccount: pleromaAccount == freezed
+    return _then(_$PleromaMyAccountWrapperOldImpl(
+      pleromaAccount: null == pleromaAccount
           ? _value.pleromaAccount
           : pleromaAccount // ignore: cast_nullable_to_non_nullable
               as PleromaApiMyAccount,
@@ -137,14 +123,15 @@ class __$PleromaMyAccountWrapperOldCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaMyAccountWrapperOld implements _PleromaMyAccountWrapperOld {
-  const _$_PleromaMyAccountWrapperOld(
+class _$PleromaMyAccountWrapperOldImpl implements _PleromaMyAccountWrapperOld {
+  const _$PleromaMyAccountWrapperOldImpl(
       {@HiveField(0)
       @JsonKey(name: 'remote_account')
-          required this.pleromaAccount});
+      required this.pleromaAccount});
 
-  factory _$_PleromaMyAccountWrapperOld.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaMyAccountWrapperOldFromJson(json);
+  factory _$PleromaMyAccountWrapperOldImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$PleromaMyAccountWrapperOldImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -157,26 +144,30 @@ class _$_PleromaMyAccountWrapperOld implements _PleromaMyAccountWrapperOld {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaMyAccountWrapperOld &&
+            other is _$PleromaMyAccountWrapperOldImpl &&
             (identical(other.pleromaAccount, pleromaAccount) ||
                 other.pleromaAccount == pleromaAccount));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, pleromaAccount);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaMyAccountWrapperOldCopyWith<_PleromaMyAccountWrapperOld>
-      get copyWith => __$PleromaMyAccountWrapperOldCopyWithImpl<
-          _PleromaMyAccountWrapperOld>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaMyAccountWrapperOldImplCopyWith<_$PleromaMyAccountWrapperOldImpl>
+      get copyWith => __$$PleromaMyAccountWrapperOldImplCopyWithImpl<
+          _$PleromaMyAccountWrapperOldImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaMyAccountWrapperOldToJson(this);
+    return _$$PleromaMyAccountWrapperOldImplToJson(
+      this,
+    );
   }
 }
 
@@ -185,11 +176,11 @@ abstract class _PleromaMyAccountWrapperOld
   const factory _PleromaMyAccountWrapperOld(
           {@HiveField(0)
           @JsonKey(name: 'remote_account')
-              required PleromaApiMyAccount pleromaAccount}) =
-      _$_PleromaMyAccountWrapperOld;
+          required final PleromaApiMyAccount pleromaAccount}) =
+      _$PleromaMyAccountWrapperOldImpl;
 
   factory _PleromaMyAccountWrapperOld.fromJson(Map<String, dynamic> json) =
-      _$_PleromaMyAccountWrapperOld.fromJson;
+      _$PleromaMyAccountWrapperOldImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -197,6 +188,6 @@ abstract class _PleromaMyAccountWrapperOld
   PleromaApiMyAccount get pleromaAccount;
   @override
   @JsonKey(ignore: true)
-  _$PleromaMyAccountWrapperOldCopyWith<_PleromaMyAccountWrapperOld>
+  _$$PleromaMyAccountWrapperOldImplCopyWith<_$PleromaMyAccountWrapperOldImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

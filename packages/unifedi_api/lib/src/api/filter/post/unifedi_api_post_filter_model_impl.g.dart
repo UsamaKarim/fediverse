@@ -56,21 +56,21 @@ class UnifediApiPostFilterAdapter extends TypeAdapter<UnifediApiPostFilter> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiPostFilter _$$_UnifediApiPostFilterFromJson(
+_$UnifediApiPostFilterImpl _$$UnifediApiPostFilterImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiPostFilter(
+    _$UnifediApiPostFilterImpl(
       context:
           (json['context'] as List<dynamic>).map((e) => e as String).toList(),
       expiresIn: json['expires_in'] == null
           ? null
-          : Duration(microseconds: json['expires_in'] as int),
+          : Duration(microseconds: (json['expires_in'] as num).toInt()),
       irreversible: json['irreversible'] as bool,
       phrase: json['phrase'] as String,
       wholeWord: json['whole_word'] as bool,
     );
 
-Map<String, dynamic> _$$_UnifediApiPostFilterToJson(
-    _$_UnifediApiPostFilter instance) {
+Map<String, dynamic> _$$UnifediApiPostFilterImplToJson(
+    _$UnifediApiPostFilterImpl instance) {
   final val = <String, dynamic>{
     'context': instance.context,
   };

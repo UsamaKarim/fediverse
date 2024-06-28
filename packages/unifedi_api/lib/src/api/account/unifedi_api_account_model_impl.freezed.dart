@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_account_model_impl.dart';
 
@@ -11,176 +12,11 @@ part of 'unifedi_api_account_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiAccount _$UnifediApiAccountFromJson(Map<String, dynamic> json) {
   return _UnifediApiAccount.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiAccountTearOff {
-  const _$UnifediApiAccountTearOff();
-
-  _UnifediApiAccount call(
-      {@HiveField(0)
-          required String username,
-      @HiveField(1)
-          required String url,
-      @HiveField(2)
-      @JsonKey(name: 'statuses_count')
-          required int? statusesCount,
-      @HiveField(3)
-          required String? note,
-      @HiveField(4)
-          required bool? locked,
-      @HiveField(5)
-          required String id,
-      @HiveField(6)
-      @JsonKey(name: 'header_static')
-          required String? headerStatic,
-      @HiveField(7)
-          required String? header,
-      @HiveField(8)
-      @JsonKey(name: 'following_count')
-          required int? followingCount,
-      @HiveField(9)
-      @JsonKey(name: 'followers_count')
-          required int? followersCount,
-      @HiveField(10)
-          required List<UnifediApiField>? fields,
-      @HiveField(11)
-          required List<UnifediApiEmoji>? emojis,
-      @HiveField(12)
-      @JsonKey(name: 'display_name')
-          required String? displayName,
-      @HiveField(13)
-      @JsonKey(name: 'created_at')
-          required DateTime createdAt,
-      @HiveField(14)
-          required bool? bot,
-      @HiveField(15)
-      @JsonKey(name: 'avatar_static')
-          required String avatarStatic,
-      @HiveField(16)
-          required String avatar,
-      @HiveField(17)
-          required String acct,
-      @HiveField(20)
-      @JsonKey(name: 'last_status_at')
-          required DateTime? lastStatusAt,
-      @HiveField(21)
-          required String? fqn,
-      @HiveField(22)
-          required bool? suspended,
-      @JsonKey(name: 'mute_expires_at')
-      @HiveField(23)
-          required DateTime? muteExpiresAt,
-      @HiveField(23 + 1)
-      @JsonKey(name: 'background_image')
-          required String? backgroundImage,
-      @HiveField(23 + 2)
-      @JsonKey(fromJson: UnifediApiTag.fromJsonListOrNullOnError)
-          required List<UnifediApiTag>? tags,
-      @HiveField(23 + 3)
-      @JsonKey(fromJson: UnifediApiAccountRelationship.fromJsonOrNullOnError)
-          required UnifediApiAccountRelationship? relationship,
-      @HiveField(23 + 4)
-      @JsonKey(name: 'is_admin')
-          required bool? isAdmin,
-      @HiveField(23 + 5)
-      @JsonKey(name: 'is_moderator')
-          required bool? isModerator,
-      @HiveField(23 + 7)
-      @JsonKey(name: 'confirmation_pending')
-          required bool? confirmationPending,
-      @HiveField(23 + 8)
-      @JsonKey(name: 'hide_favorites')
-          required bool? hideFavorites,
-      @HiveField(23 + 9)
-      @JsonKey(name: 'hide_followers')
-          required bool? hideFollowers,
-      @HiveField(23 + 11)
-      @JsonKey(name: 'hide_follows')
-          required bool? hideFollows,
-      @HiveField(23 + 12)
-      @JsonKey(name: 'hide_followers_count')
-          required bool? hideFollowersCount,
-      @HiveField(23 + 13)
-      @JsonKey(name: 'hide_follows_count')
-          required bool? hideFollowsCount,
-      @HiveField(23 + 16)
-          required bool? deactivated,
-      @HiveField(23 + 17)
-      @JsonKey(name: 'allow_following_move')
-          required bool? allowFollowingMove,
-      @HiveField(23 + 18)
-      @JsonKey(name: 'skip_thread_containment')
-          required bool? skipThreadContainment,
-      @HiveField(23 + 19)
-      @JsonKey(name: 'accepts_chat_messages')
-          required bool? acceptsChatMessages,
-      @HiveField(23 + 20)
-      @JsonKey(name: 'is_confirmed')
-          required bool? isConfirmed,
-      @HiveField(23 + 21)
-          required String? favicon,
-      @HiveField(23 + 22)
-          required String? apId,
-      @HiveField(23 + 23)
-      @JsonKey(name: 'also_known_as', fromJson: UnifediApiAccount.fromJsonAlsoKnownAsListOrNullOnError)
-          required List<String>? alsoKnownAs}) {
-    return _UnifediApiAccount(
-      username: username,
-      url: url,
-      statusesCount: statusesCount,
-      note: note,
-      locked: locked,
-      id: id,
-      headerStatic: headerStatic,
-      header: header,
-      followingCount: followingCount,
-      followersCount: followersCount,
-      fields: fields,
-      emojis: emojis,
-      displayName: displayName,
-      createdAt: createdAt,
-      bot: bot,
-      avatarStatic: avatarStatic,
-      avatar: avatar,
-      acct: acct,
-      lastStatusAt: lastStatusAt,
-      fqn: fqn,
-      suspended: suspended,
-      muteExpiresAt: muteExpiresAt,
-      backgroundImage: backgroundImage,
-      tags: tags,
-      relationship: relationship,
-      isAdmin: isAdmin,
-      isModerator: isModerator,
-      confirmationPending: confirmationPending,
-      hideFavorites: hideFavorites,
-      hideFollowers: hideFollowers,
-      hideFollows: hideFollows,
-      hideFollowersCount: hideFollowersCount,
-      hideFollowsCount: hideFollowsCount,
-      deactivated: deactivated,
-      allowFollowingMove: allowFollowingMove,
-      skipThreadContainment: skipThreadContainment,
-      acceptsChatMessages: acceptsChatMessages,
-      isConfirmed: isConfirmed,
-      favicon: favicon,
-      apId: apId,
-      alsoKnownAs: alsoKnownAs,
-    );
-  }
-
-  UnifediApiAccount fromJson(Map<String, Object?> json) {
-    return UnifediApiAccount.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiAccount = _$UnifediApiAccountTearOff();
 
 /// @nodoc
 mixin _$UnifediApiAccount {
@@ -305,136 +141,95 @@ mixin _$UnifediApiAccount {
 abstract class $UnifediApiAccountCopyWith<$Res> {
   factory $UnifediApiAccountCopyWith(
           UnifediApiAccount value, $Res Function(UnifediApiAccount) then) =
-      _$UnifediApiAccountCopyWithImpl<$Res>;
+      _$UnifediApiAccountCopyWithImpl<$Res, UnifediApiAccount>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-          String username,
-      @HiveField(1)
-          String url,
-      @HiveField(2)
-      @JsonKey(name: 'statuses_count')
-          int? statusesCount,
-      @HiveField(3)
-          String? note,
-      @HiveField(4)
-          bool? locked,
-      @HiveField(5)
-          String id,
-      @HiveField(6)
-      @JsonKey(name: 'header_static')
-          String? headerStatic,
-      @HiveField(7)
-          String? header,
-      @HiveField(8)
-      @JsonKey(name: 'following_count')
-          int? followingCount,
-      @HiveField(9)
-      @JsonKey(name: 'followers_count')
-          int? followersCount,
-      @HiveField(10)
-          List<UnifediApiField>? fields,
-      @HiveField(11)
-          List<UnifediApiEmoji>? emojis,
-      @HiveField(12)
-      @JsonKey(name: 'display_name')
-          String? displayName,
-      @HiveField(13)
-      @JsonKey(name: 'created_at')
-          DateTime createdAt,
-      @HiveField(14)
-          bool? bot,
-      @HiveField(15)
-      @JsonKey(name: 'avatar_static')
-          String avatarStatic,
-      @HiveField(16)
-          String avatar,
-      @HiveField(17)
-          String acct,
-      @HiveField(20)
-      @JsonKey(name: 'last_status_at')
-          DateTime? lastStatusAt,
-      @HiveField(21)
-          String? fqn,
-      @HiveField(22)
-          bool? suspended,
-      @JsonKey(name: 'mute_expires_at')
-      @HiveField(23)
-          DateTime? muteExpiresAt,
+      {@HiveField(0) String username,
+      @HiveField(1) String url,
+      @HiveField(2) @JsonKey(name: 'statuses_count') int? statusesCount,
+      @HiveField(3) String? note,
+      @HiveField(4) bool? locked,
+      @HiveField(5) String id,
+      @HiveField(6) @JsonKey(name: 'header_static') String? headerStatic,
+      @HiveField(7) String? header,
+      @HiveField(8) @JsonKey(name: 'following_count') int? followingCount,
+      @HiveField(9) @JsonKey(name: 'followers_count') int? followersCount,
+      @HiveField(10) List<UnifediApiField>? fields,
+      @HiveField(11) List<UnifediApiEmoji>? emojis,
+      @HiveField(12) @JsonKey(name: 'display_name') String? displayName,
+      @HiveField(13) @JsonKey(name: 'created_at') DateTime createdAt,
+      @HiveField(14) bool? bot,
+      @HiveField(15) @JsonKey(name: 'avatar_static') String avatarStatic,
+      @HiveField(16) String avatar,
+      @HiveField(17) String acct,
+      @HiveField(20) @JsonKey(name: 'last_status_at') DateTime? lastStatusAt,
+      @HiveField(21) String? fqn,
+      @HiveField(22) bool? suspended,
+      @JsonKey(name: 'mute_expires_at') @HiveField(23) DateTime? muteExpiresAt,
       @HiveField(23 + 1)
       @JsonKey(name: 'background_image')
-          String? backgroundImage,
+      String? backgroundImage,
       @HiveField(23 + 2)
       @JsonKey(fromJson: UnifediApiTag.fromJsonListOrNullOnError)
-          List<UnifediApiTag>? tags,
+      List<UnifediApiTag>? tags,
       @HiveField(23 + 3)
       @JsonKey(fromJson: UnifediApiAccountRelationship.fromJsonOrNullOnError)
-          UnifediApiAccountRelationship? relationship,
-      @HiveField(23 + 4)
-      @JsonKey(name: 'is_admin')
-          bool? isAdmin,
-      @HiveField(23 + 5)
-      @JsonKey(name: 'is_moderator')
-          bool? isModerator,
+      UnifediApiAccountRelationship? relationship,
+      @HiveField(23 + 4) @JsonKey(name: 'is_admin') bool? isAdmin,
+      @HiveField(23 + 5) @JsonKey(name: 'is_moderator') bool? isModerator,
       @HiveField(23 + 7)
       @JsonKey(name: 'confirmation_pending')
-          bool? confirmationPending,
-      @HiveField(23 + 8)
-      @JsonKey(name: 'hide_favorites')
-          bool? hideFavorites,
-      @HiveField(23 + 9)
-      @JsonKey(name: 'hide_followers')
-          bool? hideFollowers,
-      @HiveField(23 + 11)
-      @JsonKey(name: 'hide_follows')
-          bool? hideFollows,
+      bool? confirmationPending,
+      @HiveField(23 + 8) @JsonKey(name: 'hide_favorites') bool? hideFavorites,
+      @HiveField(23 + 9) @JsonKey(name: 'hide_followers') bool? hideFollowers,
+      @HiveField(23 + 11) @JsonKey(name: 'hide_follows') bool? hideFollows,
       @HiveField(23 + 12)
       @JsonKey(name: 'hide_followers_count')
-          bool? hideFollowersCount,
+      bool? hideFollowersCount,
       @HiveField(23 + 13)
       @JsonKey(name: 'hide_follows_count')
-          bool? hideFollowsCount,
-      @HiveField(23 + 16)
-          bool? deactivated,
+      bool? hideFollowsCount,
+      @HiveField(23 + 16) bool? deactivated,
       @HiveField(23 + 17)
       @JsonKey(name: 'allow_following_move')
-          bool? allowFollowingMove,
+      bool? allowFollowingMove,
       @HiveField(23 + 18)
       @JsonKey(name: 'skip_thread_containment')
-          bool? skipThreadContainment,
+      bool? skipThreadContainment,
       @HiveField(23 + 19)
       @JsonKey(name: 'accepts_chat_messages')
-          bool? acceptsChatMessages,
-      @HiveField(23 + 20)
-      @JsonKey(name: 'is_confirmed')
-          bool? isConfirmed,
-      @HiveField(23 + 21)
-          String? favicon,
-      @HiveField(23 + 22)
-          String? apId,
+      bool? acceptsChatMessages,
+      @HiveField(23 + 20) @JsonKey(name: 'is_confirmed') bool? isConfirmed,
+      @HiveField(23 + 21) String? favicon,
+      @HiveField(23 + 22) String? apId,
       @HiveField(23 + 23)
-      @JsonKey(name: 'also_known_as', fromJson: UnifediApiAccount.fromJsonAlsoKnownAsListOrNullOnError)
-          List<String>? alsoKnownAs});
+      @JsonKey(
+          name: 'also_known_as',
+          fromJson: UnifediApiAccount.fromJsonAlsoKnownAsListOrNullOnError)
+      List<String>? alsoKnownAs});
 
   $UnifediApiAccountRelationshipCopyWith<$Res>? get relationship;
 }
 
 /// @nodoc
-class _$UnifediApiAccountCopyWithImpl<$Res>
+class _$UnifediApiAccountCopyWithImpl<$Res, $Val extends UnifediApiAccount>
     implements $UnifediApiAccountCopyWith<$Res> {
   _$UnifediApiAccountCopyWithImpl(this._value, this._then);
 
-  final UnifediApiAccount _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiAccount) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? username = freezed,
-    Object? url = freezed,
+    Object? username = null,
+    Object? url = null,
     Object? statusesCount = freezed,
     Object? note = freezed,
     Object? locked = freezed,
-    Object? id = freezed,
+    Object? id = null,
     Object? headerStatic = freezed,
     Object? header = freezed,
     Object? followingCount = freezed,
@@ -442,11 +237,11 @@ class _$UnifediApiAccountCopyWithImpl<$Res>
     Object? fields = freezed,
     Object? emojis = freezed,
     Object? displayName = freezed,
-    Object? createdAt = freezed,
+    Object? createdAt = null,
     Object? bot = freezed,
-    Object? avatarStatic = freezed,
-    Object? avatar = freezed,
-    Object? acct = freezed,
+    Object? avatarStatic = null,
+    Object? avatar = null,
+    Object? acct = null,
     Object? lastStatusAt = freezed,
     Object? fqn = freezed,
     Object? suspended = freezed,
@@ -472,174 +267,175 @@ class _$UnifediApiAccountCopyWithImpl<$Res>
     Object? alsoKnownAs = freezed,
   }) {
     return _then(_value.copyWith(
-      username: username == freezed
+      username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      statusesCount: statusesCount == freezed
+      statusesCount: freezed == statusesCount
           ? _value.statusesCount
           : statusesCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      note: note == freezed
+      note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
               as String?,
-      locked: locked == freezed
+      locked: freezed == locked
           ? _value.locked
           : locked // ignore: cast_nullable_to_non_nullable
               as bool?,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      headerStatic: headerStatic == freezed
+      headerStatic: freezed == headerStatic
           ? _value.headerStatic
           : headerStatic // ignore: cast_nullable_to_non_nullable
               as String?,
-      header: header == freezed
+      header: freezed == header
           ? _value.header
           : header // ignore: cast_nullable_to_non_nullable
               as String?,
-      followingCount: followingCount == freezed
+      followingCount: freezed == followingCount
           ? _value.followingCount
           : followingCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      followersCount: followersCount == freezed
+      followersCount: freezed == followersCount
           ? _value.followersCount
           : followersCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      fields: fields == freezed
+      fields: freezed == fields
           ? _value.fields
           : fields // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiField>?,
-      emojis: emojis == freezed
+      emojis: freezed == emojis
           ? _value.emojis
           : emojis // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiEmoji>?,
-      displayName: displayName == freezed
+      displayName: freezed == displayName
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
               as String?,
-      createdAt: createdAt == freezed
+      createdAt: null == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      bot: bot == freezed
+      bot: freezed == bot
           ? _value.bot
           : bot // ignore: cast_nullable_to_non_nullable
               as bool?,
-      avatarStatic: avatarStatic == freezed
+      avatarStatic: null == avatarStatic
           ? _value.avatarStatic
           : avatarStatic // ignore: cast_nullable_to_non_nullable
               as String,
-      avatar: avatar == freezed
+      avatar: null == avatar
           ? _value.avatar
           : avatar // ignore: cast_nullable_to_non_nullable
               as String,
-      acct: acct == freezed
+      acct: null == acct
           ? _value.acct
           : acct // ignore: cast_nullable_to_non_nullable
               as String,
-      lastStatusAt: lastStatusAt == freezed
+      lastStatusAt: freezed == lastStatusAt
           ? _value.lastStatusAt
           : lastStatusAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      fqn: fqn == freezed
+      fqn: freezed == fqn
           ? _value.fqn
           : fqn // ignore: cast_nullable_to_non_nullable
               as String?,
-      suspended: suspended == freezed
+      suspended: freezed == suspended
           ? _value.suspended
           : suspended // ignore: cast_nullable_to_non_nullable
               as bool?,
-      muteExpiresAt: muteExpiresAt == freezed
+      muteExpiresAt: freezed == muteExpiresAt
           ? _value.muteExpiresAt
           : muteExpiresAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      backgroundImage: backgroundImage == freezed
+      backgroundImage: freezed == backgroundImage
           ? _value.backgroundImage
           : backgroundImage // ignore: cast_nullable_to_non_nullable
               as String?,
-      tags: tags == freezed
+      tags: freezed == tags
           ? _value.tags
           : tags // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiTag>?,
-      relationship: relationship == freezed
+      relationship: freezed == relationship
           ? _value.relationship
           : relationship // ignore: cast_nullable_to_non_nullable
               as UnifediApiAccountRelationship?,
-      isAdmin: isAdmin == freezed
+      isAdmin: freezed == isAdmin
           ? _value.isAdmin
           : isAdmin // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isModerator: isModerator == freezed
+      isModerator: freezed == isModerator
           ? _value.isModerator
           : isModerator // ignore: cast_nullable_to_non_nullable
               as bool?,
-      confirmationPending: confirmationPending == freezed
+      confirmationPending: freezed == confirmationPending
           ? _value.confirmationPending
           : confirmationPending // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFavorites: hideFavorites == freezed
+      hideFavorites: freezed == hideFavorites
           ? _value.hideFavorites
           : hideFavorites // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFollowers: hideFollowers == freezed
+      hideFollowers: freezed == hideFollowers
           ? _value.hideFollowers
           : hideFollowers // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFollows: hideFollows == freezed
+      hideFollows: freezed == hideFollows
           ? _value.hideFollows
           : hideFollows // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFollowersCount: hideFollowersCount == freezed
+      hideFollowersCount: freezed == hideFollowersCount
           ? _value.hideFollowersCount
           : hideFollowersCount // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFollowsCount: hideFollowsCount == freezed
+      hideFollowsCount: freezed == hideFollowsCount
           ? _value.hideFollowsCount
           : hideFollowsCount // ignore: cast_nullable_to_non_nullable
               as bool?,
-      deactivated: deactivated == freezed
+      deactivated: freezed == deactivated
           ? _value.deactivated
           : deactivated // ignore: cast_nullable_to_non_nullable
               as bool?,
-      allowFollowingMove: allowFollowingMove == freezed
+      allowFollowingMove: freezed == allowFollowingMove
           ? _value.allowFollowingMove
           : allowFollowingMove // ignore: cast_nullable_to_non_nullable
               as bool?,
-      skipThreadContainment: skipThreadContainment == freezed
+      skipThreadContainment: freezed == skipThreadContainment
           ? _value.skipThreadContainment
           : skipThreadContainment // ignore: cast_nullable_to_non_nullable
               as bool?,
-      acceptsChatMessages: acceptsChatMessages == freezed
+      acceptsChatMessages: freezed == acceptsChatMessages
           ? _value.acceptsChatMessages
           : acceptsChatMessages // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isConfirmed: isConfirmed == freezed
+      isConfirmed: freezed == isConfirmed
           ? _value.isConfirmed
           : isConfirmed // ignore: cast_nullable_to_non_nullable
               as bool?,
-      favicon: favicon == freezed
+      favicon: freezed == favicon
           ? _value.favicon
           : favicon // ignore: cast_nullable_to_non_nullable
               as String?,
-      apId: apId == freezed
+      apId: freezed == apId
           ? _value.apId
           : apId // ignore: cast_nullable_to_non_nullable
               as String?,
-      alsoKnownAs: alsoKnownAs == freezed
+      alsoKnownAs: freezed == alsoKnownAs
           ? _value.alsoKnownAs
           : alsoKnownAs // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UnifediApiAccountRelationshipCopyWith<$Res>? get relationship {
     if (_value.relationship == null) {
       return null;
@@ -647,150 +443,105 @@ class _$UnifediApiAccountCopyWithImpl<$Res>
 
     return $UnifediApiAccountRelationshipCopyWith<$Res>(_value.relationship!,
         (value) {
-      return _then(_value.copyWith(relationship: value));
+      return _then(_value.copyWith(relationship: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiAccountCopyWith<$Res>
+abstract class _$$UnifediApiAccountImplCopyWith<$Res>
     implements $UnifediApiAccountCopyWith<$Res> {
-  factory _$UnifediApiAccountCopyWith(
-          _UnifediApiAccount value, $Res Function(_UnifediApiAccount) then) =
-      __$UnifediApiAccountCopyWithImpl<$Res>;
+  factory _$$UnifediApiAccountImplCopyWith(_$UnifediApiAccountImpl value,
+          $Res Function(_$UnifediApiAccountImpl) then) =
+      __$$UnifediApiAccountImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-          String username,
-      @HiveField(1)
-          String url,
-      @HiveField(2)
-      @JsonKey(name: 'statuses_count')
-          int? statusesCount,
-      @HiveField(3)
-          String? note,
-      @HiveField(4)
-          bool? locked,
-      @HiveField(5)
-          String id,
-      @HiveField(6)
-      @JsonKey(name: 'header_static')
-          String? headerStatic,
-      @HiveField(7)
-          String? header,
-      @HiveField(8)
-      @JsonKey(name: 'following_count')
-          int? followingCount,
-      @HiveField(9)
-      @JsonKey(name: 'followers_count')
-          int? followersCount,
-      @HiveField(10)
-          List<UnifediApiField>? fields,
-      @HiveField(11)
-          List<UnifediApiEmoji>? emojis,
-      @HiveField(12)
-      @JsonKey(name: 'display_name')
-          String? displayName,
-      @HiveField(13)
-      @JsonKey(name: 'created_at')
-          DateTime createdAt,
-      @HiveField(14)
-          bool? bot,
-      @HiveField(15)
-      @JsonKey(name: 'avatar_static')
-          String avatarStatic,
-      @HiveField(16)
-          String avatar,
-      @HiveField(17)
-          String acct,
-      @HiveField(20)
-      @JsonKey(name: 'last_status_at')
-          DateTime? lastStatusAt,
-      @HiveField(21)
-          String? fqn,
-      @HiveField(22)
-          bool? suspended,
-      @JsonKey(name: 'mute_expires_at')
-      @HiveField(23)
-          DateTime? muteExpiresAt,
+      {@HiveField(0) String username,
+      @HiveField(1) String url,
+      @HiveField(2) @JsonKey(name: 'statuses_count') int? statusesCount,
+      @HiveField(3) String? note,
+      @HiveField(4) bool? locked,
+      @HiveField(5) String id,
+      @HiveField(6) @JsonKey(name: 'header_static') String? headerStatic,
+      @HiveField(7) String? header,
+      @HiveField(8) @JsonKey(name: 'following_count') int? followingCount,
+      @HiveField(9) @JsonKey(name: 'followers_count') int? followersCount,
+      @HiveField(10) List<UnifediApiField>? fields,
+      @HiveField(11) List<UnifediApiEmoji>? emojis,
+      @HiveField(12) @JsonKey(name: 'display_name') String? displayName,
+      @HiveField(13) @JsonKey(name: 'created_at') DateTime createdAt,
+      @HiveField(14) bool? bot,
+      @HiveField(15) @JsonKey(name: 'avatar_static') String avatarStatic,
+      @HiveField(16) String avatar,
+      @HiveField(17) String acct,
+      @HiveField(20) @JsonKey(name: 'last_status_at') DateTime? lastStatusAt,
+      @HiveField(21) String? fqn,
+      @HiveField(22) bool? suspended,
+      @JsonKey(name: 'mute_expires_at') @HiveField(23) DateTime? muteExpiresAt,
       @HiveField(23 + 1)
       @JsonKey(name: 'background_image')
-          String? backgroundImage,
+      String? backgroundImage,
       @HiveField(23 + 2)
       @JsonKey(fromJson: UnifediApiTag.fromJsonListOrNullOnError)
-          List<UnifediApiTag>? tags,
+      List<UnifediApiTag>? tags,
       @HiveField(23 + 3)
       @JsonKey(fromJson: UnifediApiAccountRelationship.fromJsonOrNullOnError)
-          UnifediApiAccountRelationship? relationship,
-      @HiveField(23 + 4)
-      @JsonKey(name: 'is_admin')
-          bool? isAdmin,
-      @HiveField(23 + 5)
-      @JsonKey(name: 'is_moderator')
-          bool? isModerator,
+      UnifediApiAccountRelationship? relationship,
+      @HiveField(23 + 4) @JsonKey(name: 'is_admin') bool? isAdmin,
+      @HiveField(23 + 5) @JsonKey(name: 'is_moderator') bool? isModerator,
       @HiveField(23 + 7)
       @JsonKey(name: 'confirmation_pending')
-          bool? confirmationPending,
-      @HiveField(23 + 8)
-      @JsonKey(name: 'hide_favorites')
-          bool? hideFavorites,
-      @HiveField(23 + 9)
-      @JsonKey(name: 'hide_followers')
-          bool? hideFollowers,
-      @HiveField(23 + 11)
-      @JsonKey(name: 'hide_follows')
-          bool? hideFollows,
+      bool? confirmationPending,
+      @HiveField(23 + 8) @JsonKey(name: 'hide_favorites') bool? hideFavorites,
+      @HiveField(23 + 9) @JsonKey(name: 'hide_followers') bool? hideFollowers,
+      @HiveField(23 + 11) @JsonKey(name: 'hide_follows') bool? hideFollows,
       @HiveField(23 + 12)
       @JsonKey(name: 'hide_followers_count')
-          bool? hideFollowersCount,
+      bool? hideFollowersCount,
       @HiveField(23 + 13)
       @JsonKey(name: 'hide_follows_count')
-          bool? hideFollowsCount,
-      @HiveField(23 + 16)
-          bool? deactivated,
+      bool? hideFollowsCount,
+      @HiveField(23 + 16) bool? deactivated,
       @HiveField(23 + 17)
       @JsonKey(name: 'allow_following_move')
-          bool? allowFollowingMove,
+      bool? allowFollowingMove,
       @HiveField(23 + 18)
       @JsonKey(name: 'skip_thread_containment')
-          bool? skipThreadContainment,
+      bool? skipThreadContainment,
       @HiveField(23 + 19)
       @JsonKey(name: 'accepts_chat_messages')
-          bool? acceptsChatMessages,
-      @HiveField(23 + 20)
-      @JsonKey(name: 'is_confirmed')
-          bool? isConfirmed,
-      @HiveField(23 + 21)
-          String? favicon,
-      @HiveField(23 + 22)
-          String? apId,
+      bool? acceptsChatMessages,
+      @HiveField(23 + 20) @JsonKey(name: 'is_confirmed') bool? isConfirmed,
+      @HiveField(23 + 21) String? favicon,
+      @HiveField(23 + 22) String? apId,
       @HiveField(23 + 23)
-      @JsonKey(name: 'also_known_as', fromJson: UnifediApiAccount.fromJsonAlsoKnownAsListOrNullOnError)
-          List<String>? alsoKnownAs});
+      @JsonKey(
+          name: 'also_known_as',
+          fromJson: UnifediApiAccount.fromJsonAlsoKnownAsListOrNullOnError)
+      List<String>? alsoKnownAs});
 
   @override
   $UnifediApiAccountRelationshipCopyWith<$Res>? get relationship;
 }
 
 /// @nodoc
-class __$UnifediApiAccountCopyWithImpl<$Res>
-    extends _$UnifediApiAccountCopyWithImpl<$Res>
-    implements _$UnifediApiAccountCopyWith<$Res> {
-  __$UnifediApiAccountCopyWithImpl(
-      _UnifediApiAccount _value, $Res Function(_UnifediApiAccount) _then)
-      : super(_value, (v) => _then(v as _UnifediApiAccount));
+class __$$UnifediApiAccountImplCopyWithImpl<$Res>
+    extends _$UnifediApiAccountCopyWithImpl<$Res, _$UnifediApiAccountImpl>
+    implements _$$UnifediApiAccountImplCopyWith<$Res> {
+  __$$UnifediApiAccountImplCopyWithImpl(_$UnifediApiAccountImpl _value,
+      $Res Function(_$UnifediApiAccountImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiAccount get _value => super._value as _UnifediApiAccount;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? username = freezed,
-    Object? url = freezed,
+    Object? username = null,
+    Object? url = null,
     Object? statusesCount = freezed,
     Object? note = freezed,
     Object? locked = freezed,
-    Object? id = freezed,
+    Object? id = null,
     Object? headerStatic = freezed,
     Object? header = freezed,
     Object? followingCount = freezed,
@@ -798,11 +549,11 @@ class __$UnifediApiAccountCopyWithImpl<$Res>
     Object? fields = freezed,
     Object? emojis = freezed,
     Object? displayName = freezed,
-    Object? createdAt = freezed,
+    Object? createdAt = null,
     Object? bot = freezed,
-    Object? avatarStatic = freezed,
-    Object? avatar = freezed,
-    Object? acct = freezed,
+    Object? avatarStatic = null,
+    Object? avatar = null,
+    Object? acct = null,
     Object? lastStatusAt = freezed,
     Object? fqn = freezed,
     Object? suspended = freezed,
@@ -827,169 +578,169 @@ class __$UnifediApiAccountCopyWithImpl<$Res>
     Object? apId = freezed,
     Object? alsoKnownAs = freezed,
   }) {
-    return _then(_UnifediApiAccount(
-      username: username == freezed
+    return _then(_$UnifediApiAccountImpl(
+      username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      statusesCount: statusesCount == freezed
+      statusesCount: freezed == statusesCount
           ? _value.statusesCount
           : statusesCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      note: note == freezed
+      note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
               as String?,
-      locked: locked == freezed
+      locked: freezed == locked
           ? _value.locked
           : locked // ignore: cast_nullable_to_non_nullable
               as bool?,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      headerStatic: headerStatic == freezed
+      headerStatic: freezed == headerStatic
           ? _value.headerStatic
           : headerStatic // ignore: cast_nullable_to_non_nullable
               as String?,
-      header: header == freezed
+      header: freezed == header
           ? _value.header
           : header // ignore: cast_nullable_to_non_nullable
               as String?,
-      followingCount: followingCount == freezed
+      followingCount: freezed == followingCount
           ? _value.followingCount
           : followingCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      followersCount: followersCount == freezed
+      followersCount: freezed == followersCount
           ? _value.followersCount
           : followersCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      fields: fields == freezed
-          ? _value.fields
+      fields: freezed == fields
+          ? _value._fields
           : fields // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiField>?,
-      emojis: emojis == freezed
-          ? _value.emojis
+      emojis: freezed == emojis
+          ? _value._emojis
           : emojis // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiEmoji>?,
-      displayName: displayName == freezed
+      displayName: freezed == displayName
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
               as String?,
-      createdAt: createdAt == freezed
+      createdAt: null == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      bot: bot == freezed
+      bot: freezed == bot
           ? _value.bot
           : bot // ignore: cast_nullable_to_non_nullable
               as bool?,
-      avatarStatic: avatarStatic == freezed
+      avatarStatic: null == avatarStatic
           ? _value.avatarStatic
           : avatarStatic // ignore: cast_nullable_to_non_nullable
               as String,
-      avatar: avatar == freezed
+      avatar: null == avatar
           ? _value.avatar
           : avatar // ignore: cast_nullable_to_non_nullable
               as String,
-      acct: acct == freezed
+      acct: null == acct
           ? _value.acct
           : acct // ignore: cast_nullable_to_non_nullable
               as String,
-      lastStatusAt: lastStatusAt == freezed
+      lastStatusAt: freezed == lastStatusAt
           ? _value.lastStatusAt
           : lastStatusAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      fqn: fqn == freezed
+      fqn: freezed == fqn
           ? _value.fqn
           : fqn // ignore: cast_nullable_to_non_nullable
               as String?,
-      suspended: suspended == freezed
+      suspended: freezed == suspended
           ? _value.suspended
           : suspended // ignore: cast_nullable_to_non_nullable
               as bool?,
-      muteExpiresAt: muteExpiresAt == freezed
+      muteExpiresAt: freezed == muteExpiresAt
           ? _value.muteExpiresAt
           : muteExpiresAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      backgroundImage: backgroundImage == freezed
+      backgroundImage: freezed == backgroundImage
           ? _value.backgroundImage
           : backgroundImage // ignore: cast_nullable_to_non_nullable
               as String?,
-      tags: tags == freezed
-          ? _value.tags
+      tags: freezed == tags
+          ? _value._tags
           : tags // ignore: cast_nullable_to_non_nullable
               as List<UnifediApiTag>?,
-      relationship: relationship == freezed
+      relationship: freezed == relationship
           ? _value.relationship
           : relationship // ignore: cast_nullable_to_non_nullable
               as UnifediApiAccountRelationship?,
-      isAdmin: isAdmin == freezed
+      isAdmin: freezed == isAdmin
           ? _value.isAdmin
           : isAdmin // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isModerator: isModerator == freezed
+      isModerator: freezed == isModerator
           ? _value.isModerator
           : isModerator // ignore: cast_nullable_to_non_nullable
               as bool?,
-      confirmationPending: confirmationPending == freezed
+      confirmationPending: freezed == confirmationPending
           ? _value.confirmationPending
           : confirmationPending // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFavorites: hideFavorites == freezed
+      hideFavorites: freezed == hideFavorites
           ? _value.hideFavorites
           : hideFavorites // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFollowers: hideFollowers == freezed
+      hideFollowers: freezed == hideFollowers
           ? _value.hideFollowers
           : hideFollowers // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFollows: hideFollows == freezed
+      hideFollows: freezed == hideFollows
           ? _value.hideFollows
           : hideFollows // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFollowersCount: hideFollowersCount == freezed
+      hideFollowersCount: freezed == hideFollowersCount
           ? _value.hideFollowersCount
           : hideFollowersCount // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideFollowsCount: hideFollowsCount == freezed
+      hideFollowsCount: freezed == hideFollowsCount
           ? _value.hideFollowsCount
           : hideFollowsCount // ignore: cast_nullable_to_non_nullable
               as bool?,
-      deactivated: deactivated == freezed
+      deactivated: freezed == deactivated
           ? _value.deactivated
           : deactivated // ignore: cast_nullable_to_non_nullable
               as bool?,
-      allowFollowingMove: allowFollowingMove == freezed
+      allowFollowingMove: freezed == allowFollowingMove
           ? _value.allowFollowingMove
           : allowFollowingMove // ignore: cast_nullable_to_non_nullable
               as bool?,
-      skipThreadContainment: skipThreadContainment == freezed
+      skipThreadContainment: freezed == skipThreadContainment
           ? _value.skipThreadContainment
           : skipThreadContainment // ignore: cast_nullable_to_non_nullable
               as bool?,
-      acceptsChatMessages: acceptsChatMessages == freezed
+      acceptsChatMessages: freezed == acceptsChatMessages
           ? _value.acceptsChatMessages
           : acceptsChatMessages // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isConfirmed: isConfirmed == freezed
+      isConfirmed: freezed == isConfirmed
           ? _value.isConfirmed
           : isConfirmed // ignore: cast_nullable_to_non_nullable
               as bool?,
-      favicon: favicon == freezed
+      favicon: freezed == favicon
           ? _value.favicon
           : favicon // ignore: cast_nullable_to_non_nullable
               as String?,
-      apId: apId == freezed
+      apId: freezed == apId
           ? _value.apId
           : apId // ignore: cast_nullable_to_non_nullable
               as String?,
-      alsoKnownAs: alsoKnownAs == freezed
-          ? _value.alsoKnownAs
+      alsoKnownAs: freezed == alsoKnownAs
+          ? _value._alsoKnownAs
           : alsoKnownAs // ignore: cast_nullable_to_non_nullable
               as List<String>?,
     ));
@@ -998,118 +749,98 @@ class __$UnifediApiAccountCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiAccount implements _UnifediApiAccount {
-  const _$_UnifediApiAccount(
-      {@HiveField(0)
-          required this.username,
-      @HiveField(1)
-          required this.url,
+class _$UnifediApiAccountImpl implements _UnifediApiAccount {
+  const _$UnifediApiAccountImpl(
+      {@HiveField(0) required this.username,
+      @HiveField(1) required this.url,
       @HiveField(2)
       @JsonKey(name: 'statuses_count')
-          required this.statusesCount,
-      @HiveField(3)
-          required this.note,
-      @HiveField(4)
-          required this.locked,
-      @HiveField(5)
-          required this.id,
-      @HiveField(6)
-      @JsonKey(name: 'header_static')
-          required this.headerStatic,
-      @HiveField(7)
-          required this.header,
+      required this.statusesCount,
+      @HiveField(3) required this.note,
+      @HiveField(4) required this.locked,
+      @HiveField(5) required this.id,
+      @HiveField(6) @JsonKey(name: 'header_static') required this.headerStatic,
+      @HiveField(7) required this.header,
       @HiveField(8)
       @JsonKey(name: 'following_count')
-          required this.followingCount,
+      required this.followingCount,
       @HiveField(9)
       @JsonKey(name: 'followers_count')
-          required this.followersCount,
-      @HiveField(10)
-          required this.fields,
-      @HiveField(11)
-          required this.emojis,
-      @HiveField(12)
-      @JsonKey(name: 'display_name')
-          required this.displayName,
-      @HiveField(13)
-      @JsonKey(name: 'created_at')
-          required this.createdAt,
-      @HiveField(14)
-          required this.bot,
-      @HiveField(15)
-      @JsonKey(name: 'avatar_static')
-          required this.avatarStatic,
-      @HiveField(16)
-          required this.avatar,
-      @HiveField(17)
-          required this.acct,
+      required this.followersCount,
+      @HiveField(10) required final List<UnifediApiField>? fields,
+      @HiveField(11) required final List<UnifediApiEmoji>? emojis,
+      @HiveField(12) @JsonKey(name: 'display_name') required this.displayName,
+      @HiveField(13) @JsonKey(name: 'created_at') required this.createdAt,
+      @HiveField(14) required this.bot,
+      @HiveField(15) @JsonKey(name: 'avatar_static') required this.avatarStatic,
+      @HiveField(16) required this.avatar,
+      @HiveField(17) required this.acct,
       @HiveField(20)
       @JsonKey(name: 'last_status_at')
-          required this.lastStatusAt,
-      @HiveField(21)
-          required this.fqn,
-      @HiveField(22)
-          required this.suspended,
+      required this.lastStatusAt,
+      @HiveField(21) required this.fqn,
+      @HiveField(22) required this.suspended,
       @JsonKey(name: 'mute_expires_at')
       @HiveField(23)
-          required this.muteExpiresAt,
+      required this.muteExpiresAt,
       @HiveField(23 + 1)
       @JsonKey(name: 'background_image')
-          required this.backgroundImage,
+      required this.backgroundImage,
       @HiveField(23 + 2)
       @JsonKey(fromJson: UnifediApiTag.fromJsonListOrNullOnError)
-          required this.tags,
+      required final List<UnifediApiTag>? tags,
       @HiveField(23 + 3)
       @JsonKey(fromJson: UnifediApiAccountRelationship.fromJsonOrNullOnError)
-          required this.relationship,
-      @HiveField(23 + 4)
-      @JsonKey(name: 'is_admin')
-          required this.isAdmin,
+      required this.relationship,
+      @HiveField(23 + 4) @JsonKey(name: 'is_admin') required this.isAdmin,
       @HiveField(23 + 5)
       @JsonKey(name: 'is_moderator')
-          required this.isModerator,
+      required this.isModerator,
       @HiveField(23 + 7)
       @JsonKey(name: 'confirmation_pending')
-          required this.confirmationPending,
+      required this.confirmationPending,
       @HiveField(23 + 8)
       @JsonKey(name: 'hide_favorites')
-          required this.hideFavorites,
+      required this.hideFavorites,
       @HiveField(23 + 9)
       @JsonKey(name: 'hide_followers')
-          required this.hideFollowers,
+      required this.hideFollowers,
       @HiveField(23 + 11)
       @JsonKey(name: 'hide_follows')
-          required this.hideFollows,
+      required this.hideFollows,
       @HiveField(23 + 12)
       @JsonKey(name: 'hide_followers_count')
-          required this.hideFollowersCount,
+      required this.hideFollowersCount,
       @HiveField(23 + 13)
       @JsonKey(name: 'hide_follows_count')
-          required this.hideFollowsCount,
-      @HiveField(23 + 16)
-          required this.deactivated,
+      required this.hideFollowsCount,
+      @HiveField(23 + 16) required this.deactivated,
       @HiveField(23 + 17)
       @JsonKey(name: 'allow_following_move')
-          required this.allowFollowingMove,
+      required this.allowFollowingMove,
       @HiveField(23 + 18)
       @JsonKey(name: 'skip_thread_containment')
-          required this.skipThreadContainment,
+      required this.skipThreadContainment,
       @HiveField(23 + 19)
       @JsonKey(name: 'accepts_chat_messages')
-          required this.acceptsChatMessages,
+      required this.acceptsChatMessages,
       @HiveField(23 + 20)
       @JsonKey(name: 'is_confirmed')
-          required this.isConfirmed,
-      @HiveField(23 + 21)
-          required this.favicon,
-      @HiveField(23 + 22)
-          required this.apId,
+      required this.isConfirmed,
+      @HiveField(23 + 21) required this.favicon,
+      @HiveField(23 + 22) required this.apId,
       @HiveField(23 + 23)
-      @JsonKey(name: 'also_known_as', fromJson: UnifediApiAccount.fromJsonAlsoKnownAsListOrNullOnError)
-          required this.alsoKnownAs});
+      @JsonKey(
+          name: 'also_known_as',
+          fromJson: UnifediApiAccount.fromJsonAlsoKnownAsListOrNullOnError)
+      required final List<String>? alsoKnownAs})
+      : _fields = fields,
+        _emojis = emojis,
+        _tags = tags,
+        _alsoKnownAs = alsoKnownAs;
 
-  factory _$_UnifediApiAccount.fromJson(Map<String, dynamic> json) =>
-      _$$_UnifediApiAccountFromJson(json);
+  factory _$UnifediApiAccountImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UnifediApiAccountImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -1145,12 +876,28 @@ class _$_UnifediApiAccount implements _UnifediApiAccount {
   @HiveField(9)
   @JsonKey(name: 'followers_count')
   final int? followersCount;
+  final List<UnifediApiField>? _fields;
   @override
   @HiveField(10)
-  final List<UnifediApiField>? fields;
+  List<UnifediApiField>? get fields {
+    final value = _fields;
+    if (value == null) return null;
+    if (_fields is EqualUnmodifiableListView) return _fields;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  final List<UnifediApiEmoji>? _emojis;
   @override
   @HiveField(11)
-  final List<UnifediApiEmoji>? emojis;
+  List<UnifediApiEmoji>? get emojis {
+    final value = _emojis;
+    if (value == null) return null;
+    if (_emojis is EqualUnmodifiableListView) return _emojis;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(12)
   @JsonKey(name: 'display_name')
@@ -1190,10 +937,18 @@ class _$_UnifediApiAccount implements _UnifediApiAccount {
   @HiveField(23 + 1)
   @JsonKey(name: 'background_image')
   final String? backgroundImage;
+  final List<UnifediApiTag>? _tags;
   @override
   @HiveField(23 + 2)
   @JsonKey(fromJson: UnifediApiTag.fromJsonListOrNullOnError)
-  final List<UnifediApiTag>? tags;
+  List<UnifediApiTag>? get tags {
+    final value = _tags;
+    if (value == null) return null;
+    if (_tags is EqualUnmodifiableListView) return _tags;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(23 + 3)
   @JsonKey(fromJson: UnifediApiAccountRelationship.fromJsonOrNullOnError)
@@ -1255,12 +1010,19 @@ class _$_UnifediApiAccount implements _UnifediApiAccount {
   @override
   @HiveField(23 + 22)
   final String? apId;
+  final List<String>? _alsoKnownAs;
   @override
   @HiveField(23 + 23)
   @JsonKey(
       name: 'also_known_as',
       fromJson: UnifediApiAccount.fromJsonAlsoKnownAsListOrNullOnError)
-  final List<String>? alsoKnownAs;
+  List<String>? get alsoKnownAs {
+    final value = _alsoKnownAs;
+    if (value == null) return null;
+    if (_alsoKnownAs is EqualUnmodifiableListView) return _alsoKnownAs;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   @override
   String toString() {
@@ -1268,10 +1030,10 @@ class _$_UnifediApiAccount implements _UnifediApiAccount {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiAccount &&
+            other is _$UnifediApiAccountImpl &&
             (identical(other.username, username) ||
                 other.username == username) &&
             (identical(other.url, url) || other.url == url) &&
@@ -1287,8 +1049,8 @@ class _$_UnifediApiAccount implements _UnifediApiAccount {
                 other.followingCount == followingCount) &&
             (identical(other.followersCount, followersCount) ||
                 other.followersCount == followersCount) &&
-            const DeepCollectionEquality().equals(other.fields, fields) &&
-            const DeepCollectionEquality().equals(other.emojis, emojis) &&
+            const DeepCollectionEquality().equals(other._fields, _fields) &&
+            const DeepCollectionEquality().equals(other._emojis, _emojis) &&
             (identical(other.displayName, displayName) ||
                 other.displayName == displayName) &&
             (identical(other.createdAt, createdAt) ||
@@ -1307,7 +1069,7 @@ class _$_UnifediApiAccount implements _UnifediApiAccount {
                 other.muteExpiresAt == muteExpiresAt) &&
             (identical(other.backgroundImage, backgroundImage) ||
                 other.backgroundImage == backgroundImage) &&
-            const DeepCollectionEquality().equals(other.tags, tags) &&
+            const DeepCollectionEquality().equals(other._tags, _tags) &&
             (identical(other.relationship, relationship) ||
                 other.relationship == relationship) &&
             (identical(other.isAdmin, isAdmin) || other.isAdmin == isAdmin) &&
@@ -1338,9 +1100,10 @@ class _$_UnifediApiAccount implements _UnifediApiAccount {
             (identical(other.favicon, favicon) || other.favicon == favicon) &&
             (identical(other.apId, apId) || other.apId == apId) &&
             const DeepCollectionEquality()
-                .equals(other.alsoKnownAs, alsoKnownAs));
+                .equals(other._alsoKnownAs, _alsoKnownAs));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1354,8 +1117,8 @@ class _$_UnifediApiAccount implements _UnifediApiAccount {
         header,
         followingCount,
         followersCount,
-        const DeepCollectionEquality().hash(fields),
-        const DeepCollectionEquality().hash(emojis),
+        const DeepCollectionEquality().hash(_fields),
+        const DeepCollectionEquality().hash(_emojis),
         displayName,
         createdAt,
         bot,
@@ -1367,7 +1130,7 @@ class _$_UnifediApiAccount implements _UnifediApiAccount {
         suspended,
         muteExpiresAt,
         backgroundImage,
-        const DeepCollectionEquality().hash(tags),
+        const DeepCollectionEquality().hash(_tags),
         relationship,
         isAdmin,
         isModerator,
@@ -1384,132 +1147,122 @@ class _$_UnifediApiAccount implements _UnifediApiAccount {
         isConfirmed,
         favicon,
         apId,
-        const DeepCollectionEquality().hash(alsoKnownAs)
+        const DeepCollectionEquality().hash(_alsoKnownAs)
       ]);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiAccountCopyWith<_UnifediApiAccount> get copyWith =>
-      __$UnifediApiAccountCopyWithImpl<_UnifediApiAccount>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiAccountImplCopyWith<_$UnifediApiAccountImpl> get copyWith =>
+      __$$UnifediApiAccountImplCopyWithImpl<_$UnifediApiAccountImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiAccountToJson(this);
+    return _$$UnifediApiAccountImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UnifediApiAccount implements UnifediApiAccount {
   const factory _UnifediApiAccount(
-      {@HiveField(0)
-          required String username,
-      @HiveField(1)
-          required String url,
+      {@HiveField(0) required final String username,
+      @HiveField(1) required final String url,
       @HiveField(2)
       @JsonKey(name: 'statuses_count')
-          required int? statusesCount,
-      @HiveField(3)
-          required String? note,
-      @HiveField(4)
-          required bool? locked,
-      @HiveField(5)
-          required String id,
+      required final int? statusesCount,
+      @HiveField(3) required final String? note,
+      @HiveField(4) required final bool? locked,
+      @HiveField(5) required final String id,
       @HiveField(6)
       @JsonKey(name: 'header_static')
-          required String? headerStatic,
-      @HiveField(7)
-          required String? header,
+      required final String? headerStatic,
+      @HiveField(7) required final String? header,
       @HiveField(8)
       @JsonKey(name: 'following_count')
-          required int? followingCount,
+      required final int? followingCount,
       @HiveField(9)
       @JsonKey(name: 'followers_count')
-          required int? followersCount,
-      @HiveField(10)
-          required List<UnifediApiField>? fields,
-      @HiveField(11)
-          required List<UnifediApiEmoji>? emojis,
+      required final int? followersCount,
+      @HiveField(10) required final List<UnifediApiField>? fields,
+      @HiveField(11) required final List<UnifediApiEmoji>? emojis,
       @HiveField(12)
       @JsonKey(name: 'display_name')
-          required String? displayName,
+      required final String? displayName,
       @HiveField(13)
       @JsonKey(name: 'created_at')
-          required DateTime createdAt,
-      @HiveField(14)
-          required bool? bot,
+      required final DateTime createdAt,
+      @HiveField(14) required final bool? bot,
       @HiveField(15)
       @JsonKey(name: 'avatar_static')
-          required String avatarStatic,
-      @HiveField(16)
-          required String avatar,
-      @HiveField(17)
-          required String acct,
+      required final String avatarStatic,
+      @HiveField(16) required final String avatar,
+      @HiveField(17) required final String acct,
       @HiveField(20)
       @JsonKey(name: 'last_status_at')
-          required DateTime? lastStatusAt,
-      @HiveField(21)
-          required String? fqn,
-      @HiveField(22)
-          required bool? suspended,
+      required final DateTime? lastStatusAt,
+      @HiveField(21) required final String? fqn,
+      @HiveField(22) required final bool? suspended,
       @JsonKey(name: 'mute_expires_at')
       @HiveField(23)
-          required DateTime? muteExpiresAt,
+      required final DateTime? muteExpiresAt,
       @HiveField(23 + 1)
       @JsonKey(name: 'background_image')
-          required String? backgroundImage,
+      required final String? backgroundImage,
       @HiveField(23 + 2)
       @JsonKey(fromJson: UnifediApiTag.fromJsonListOrNullOnError)
-          required List<UnifediApiTag>? tags,
+      required final List<UnifediApiTag>? tags,
       @HiveField(23 + 3)
       @JsonKey(fromJson: UnifediApiAccountRelationship.fromJsonOrNullOnError)
-          required UnifediApiAccountRelationship? relationship,
+      required final UnifediApiAccountRelationship? relationship,
       @HiveField(23 + 4)
       @JsonKey(name: 'is_admin')
-          required bool? isAdmin,
+      required final bool? isAdmin,
       @HiveField(23 + 5)
       @JsonKey(name: 'is_moderator')
-          required bool? isModerator,
+      required final bool? isModerator,
       @HiveField(23 + 7)
       @JsonKey(name: 'confirmation_pending')
-          required bool? confirmationPending,
+      required final bool? confirmationPending,
       @HiveField(23 + 8)
       @JsonKey(name: 'hide_favorites')
-          required bool? hideFavorites,
+      required final bool? hideFavorites,
       @HiveField(23 + 9)
       @JsonKey(name: 'hide_followers')
-          required bool? hideFollowers,
+      required final bool? hideFollowers,
       @HiveField(23 + 11)
       @JsonKey(name: 'hide_follows')
-          required bool? hideFollows,
+      required final bool? hideFollows,
       @HiveField(23 + 12)
       @JsonKey(name: 'hide_followers_count')
-          required bool? hideFollowersCount,
+      required final bool? hideFollowersCount,
       @HiveField(23 + 13)
       @JsonKey(name: 'hide_follows_count')
-          required bool? hideFollowsCount,
-      @HiveField(23 + 16)
-          required bool? deactivated,
+      required final bool? hideFollowsCount,
+      @HiveField(23 + 16) required final bool? deactivated,
       @HiveField(23 + 17)
       @JsonKey(name: 'allow_following_move')
-          required bool? allowFollowingMove,
+      required final bool? allowFollowingMove,
       @HiveField(23 + 18)
       @JsonKey(name: 'skip_thread_containment')
-          required bool? skipThreadContainment,
+      required final bool? skipThreadContainment,
       @HiveField(23 + 19)
       @JsonKey(name: 'accepts_chat_messages')
-          required bool? acceptsChatMessages,
+      required final bool? acceptsChatMessages,
       @HiveField(23 + 20)
       @JsonKey(name: 'is_confirmed')
-          required bool? isConfirmed,
-      @HiveField(23 + 21)
-          required String? favicon,
-      @HiveField(23 + 22)
-          required String? apId,
+      required final bool? isConfirmed,
+      @HiveField(23 + 21) required final String? favicon,
+      @HiveField(23 + 22) required final String? apId,
       @HiveField(23 + 23)
-      @JsonKey(name: 'also_known_as', fromJson: UnifediApiAccount.fromJsonAlsoKnownAsListOrNullOnError)
-          required List<String>? alsoKnownAs}) = _$_UnifediApiAccount;
+      @JsonKey(
+          name: 'also_known_as',
+          fromJson: UnifediApiAccount.fromJsonAlsoKnownAsListOrNullOnError)
+      required final List<String>? alsoKnownAs}) = _$UnifediApiAccountImpl;
 
   factory _UnifediApiAccount.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiAccount.fromJson;
+      _$UnifediApiAccountImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -1663,6 +1416,6 @@ abstract class _UnifediApiAccount implements UnifediApiAccount {
   List<String>? get alsoKnownAs;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiAccountCopyWith<_UnifediApiAccount> get copyWith =>
+  _$$UnifediApiAccountImplCopyWith<_$UnifediApiAccountImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

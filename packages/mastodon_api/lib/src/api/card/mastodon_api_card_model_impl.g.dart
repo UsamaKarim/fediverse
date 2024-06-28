@@ -80,8 +80,9 @@ class MastodonApiCardAdapter extends TypeAdapter<MastodonApiCard> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiCard _$$_MastodonApiCardFromJson(Map<String, dynamic> json) =>
-    _$_MastodonApiCard(
+_$MastodonApiCardImpl _$$MastodonApiCardImplFromJson(
+        Map<String, dynamic> json) =>
+    _$MastodonApiCardImpl(
       authorName: json['author_name'] as String?,
       authorUrl: json['author_url'] as String?,
       description: json['description'] as String?,
@@ -97,7 +98,8 @@ _$_MastodonApiCard _$$_MastodonApiCardFromJson(Map<String, dynamic> json) =>
       url: json['url'] as String?,
     );
 
-Map<String, dynamic> _$$_MastodonApiCardToJson(_$_MastodonApiCard instance) {
+Map<String, dynamic> _$$MastodonApiCardImplToJson(
+    _$MastodonApiCardImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

@@ -51,16 +51,16 @@ class MastodonApiApplicationAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiApplication _$$_MastodonApiApplicationFromJson(
+_$MastodonApiApplicationImpl _$$MastodonApiApplicationImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiApplication(
+    _$MastodonApiApplicationImpl(
       name: json['name'] as String?,
       website: json['website'] as String?,
       vapidKey: json['vapid_key'] as String?,
     );
 
-Map<String, dynamic> _$$_MastodonApiApplicationToJson(
-    _$_MastodonApiApplication instance) {
+Map<String, dynamic> _$$MastodonApiApplicationImplToJson(
+    _$MastodonApiApplicationImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

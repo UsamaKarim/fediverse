@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mastodon_api_scheduled_status_model_impl.dart';
 
@@ -11,44 +12,12 @@ part of 'mastodon_api_scheduled_status_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MastodonApiScheduledStatus _$MastodonApiScheduledStatusFromJson(
     Map<String, dynamic> json) {
   return _MastodonApiScheduledStatus.fromJson(json);
 }
-
-/// @nodoc
-class _$MastodonApiScheduledStatusTearOff {
-  const _$MastodonApiScheduledStatusTearOff();
-
-  _MastodonApiScheduledStatus call(
-      {@HiveField(0)
-      @override
-          required String id,
-      @HiveField(1)
-      @JsonKey(name: 'media_attachments')
-          required List<MastodonApiMediaAttachment>? mediaAttachments,
-      @HiveField(2)
-          required MastodonApiScheduledStatusParams params,
-      @HiveField(3)
-      @JsonKey(name: 'scheduled_at')
-          required DateTime scheduledAt}) {
-    return _MastodonApiScheduledStatus(
-      id: id,
-      mediaAttachments: mediaAttachments,
-      params: params,
-      scheduledAt: scheduledAt,
-    );
-  }
-
-  MastodonApiScheduledStatus fromJson(Map<String, Object?> json) {
-    return MastodonApiScheduledStatus.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MastodonApiScheduledStatus = _$MastodonApiScheduledStatusTearOff();
 
 /// @nodoc
 mixin _$MastodonApiScheduledStatus {
@@ -76,126 +45,122 @@ mixin _$MastodonApiScheduledStatus {
 abstract class $MastodonApiScheduledStatusCopyWith<$Res> {
   factory $MastodonApiScheduledStatusCopyWith(MastodonApiScheduledStatus value,
           $Res Function(MastodonApiScheduledStatus) then) =
-      _$MastodonApiScheduledStatusCopyWithImpl<$Res>;
+      _$MastodonApiScheduledStatusCopyWithImpl<$Res,
+          MastodonApiScheduledStatus>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-      @override
-          String id,
+      {@HiveField(0) @override String id,
       @HiveField(1)
       @JsonKey(name: 'media_attachments')
-          List<MastodonApiMediaAttachment>? mediaAttachments,
-      @HiveField(2)
-          MastodonApiScheduledStatusParams params,
-      @HiveField(3)
-      @JsonKey(name: 'scheduled_at')
-          DateTime scheduledAt});
+      List<MastodonApiMediaAttachment>? mediaAttachments,
+      @HiveField(2) MastodonApiScheduledStatusParams params,
+      @HiveField(3) @JsonKey(name: 'scheduled_at') DateTime scheduledAt});
 
   $MastodonApiScheduledStatusParamsCopyWith<$Res> get params;
 }
 
 /// @nodoc
-class _$MastodonApiScheduledStatusCopyWithImpl<$Res>
+class _$MastodonApiScheduledStatusCopyWithImpl<$Res,
+        $Val extends MastodonApiScheduledStatus>
     implements $MastodonApiScheduledStatusCopyWith<$Res> {
   _$MastodonApiScheduledStatusCopyWithImpl(this._value, this._then);
 
-  final MastodonApiScheduledStatus _value;
   // ignore: unused_field
-  final $Res Function(MastodonApiScheduledStatus) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
+    Object? id = null,
     Object? mediaAttachments = freezed,
-    Object? params = freezed,
-    Object? scheduledAt = freezed,
+    Object? params = null,
+    Object? scheduledAt = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      mediaAttachments: mediaAttachments == freezed
+      mediaAttachments: freezed == mediaAttachments
           ? _value.mediaAttachments
           : mediaAttachments // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiMediaAttachment>?,
-      params: params == freezed
+      params: null == params
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as MastodonApiScheduledStatusParams,
-      scheduledAt: scheduledAt == freezed
+      scheduledAt: null == scheduledAt
           ? _value.scheduledAt
           : scheduledAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MastodonApiScheduledStatusParamsCopyWith<$Res> get params {
     return $MastodonApiScheduledStatusParamsCopyWith<$Res>(_value.params,
         (value) {
-      return _then(_value.copyWith(params: value));
+      return _then(_value.copyWith(params: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$MastodonApiScheduledStatusCopyWith<$Res>
+abstract class _$$MastodonApiScheduledStatusImplCopyWith<$Res>
     implements $MastodonApiScheduledStatusCopyWith<$Res> {
-  factory _$MastodonApiScheduledStatusCopyWith(
-          _MastodonApiScheduledStatus value,
-          $Res Function(_MastodonApiScheduledStatus) then) =
-      __$MastodonApiScheduledStatusCopyWithImpl<$Res>;
+  factory _$$MastodonApiScheduledStatusImplCopyWith(
+          _$MastodonApiScheduledStatusImpl value,
+          $Res Function(_$MastodonApiScheduledStatusImpl) then) =
+      __$$MastodonApiScheduledStatusImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-      @override
-          String id,
+      {@HiveField(0) @override String id,
       @HiveField(1)
       @JsonKey(name: 'media_attachments')
-          List<MastodonApiMediaAttachment>? mediaAttachments,
-      @HiveField(2)
-          MastodonApiScheduledStatusParams params,
-      @HiveField(3)
-      @JsonKey(name: 'scheduled_at')
-          DateTime scheduledAt});
+      List<MastodonApiMediaAttachment>? mediaAttachments,
+      @HiveField(2) MastodonApiScheduledStatusParams params,
+      @HiveField(3) @JsonKey(name: 'scheduled_at') DateTime scheduledAt});
 
   @override
   $MastodonApiScheduledStatusParamsCopyWith<$Res> get params;
 }
 
 /// @nodoc
-class __$MastodonApiScheduledStatusCopyWithImpl<$Res>
-    extends _$MastodonApiScheduledStatusCopyWithImpl<$Res>
-    implements _$MastodonApiScheduledStatusCopyWith<$Res> {
-  __$MastodonApiScheduledStatusCopyWithImpl(_MastodonApiScheduledStatus _value,
-      $Res Function(_MastodonApiScheduledStatus) _then)
-      : super(_value, (v) => _then(v as _MastodonApiScheduledStatus));
+class __$$MastodonApiScheduledStatusImplCopyWithImpl<$Res>
+    extends _$MastodonApiScheduledStatusCopyWithImpl<$Res,
+        _$MastodonApiScheduledStatusImpl>
+    implements _$$MastodonApiScheduledStatusImplCopyWith<$Res> {
+  __$$MastodonApiScheduledStatusImplCopyWithImpl(
+      _$MastodonApiScheduledStatusImpl _value,
+      $Res Function(_$MastodonApiScheduledStatusImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MastodonApiScheduledStatus get _value =>
-      super._value as _MastodonApiScheduledStatus;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
+    Object? id = null,
     Object? mediaAttachments = freezed,
-    Object? params = freezed,
-    Object? scheduledAt = freezed,
+    Object? params = null,
+    Object? scheduledAt = null,
   }) {
-    return _then(_MastodonApiScheduledStatus(
-      id: id == freezed
+    return _then(_$MastodonApiScheduledStatusImpl(
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      mediaAttachments: mediaAttachments == freezed
-          ? _value.mediaAttachments
+      mediaAttachments: freezed == mediaAttachments
+          ? _value._mediaAttachments
           : mediaAttachments // ignore: cast_nullable_to_non_nullable
               as List<MastodonApiMediaAttachment>?,
-      params: params == freezed
+      params: null == params
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as MastodonApiScheduledStatusParams,
-      scheduledAt: scheduledAt == freezed
+      scheduledAt: null == scheduledAt
           ? _value.scheduledAt
           : scheduledAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
@@ -205,31 +170,37 @@ class __$MastodonApiScheduledStatusCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MastodonApiScheduledStatus implements _MastodonApiScheduledStatus {
-  const _$_MastodonApiScheduledStatus(
-      {@HiveField(0)
-      @override
-          required this.id,
+class _$MastodonApiScheduledStatusImpl implements _MastodonApiScheduledStatus {
+  const _$MastodonApiScheduledStatusImpl(
+      {@HiveField(0) @override required this.id,
       @HiveField(1)
       @JsonKey(name: 'media_attachments')
-          required this.mediaAttachments,
-      @HiveField(2)
-          required this.params,
-      @HiveField(3)
-      @JsonKey(name: 'scheduled_at')
-          required this.scheduledAt});
+      required final List<MastodonApiMediaAttachment>? mediaAttachments,
+      @HiveField(2) required this.params,
+      @HiveField(3) @JsonKey(name: 'scheduled_at') required this.scheduledAt})
+      : _mediaAttachments = mediaAttachments;
 
-  factory _$_MastodonApiScheduledStatus.fromJson(Map<String, dynamic> json) =>
-      _$$_MastodonApiScheduledStatusFromJson(json);
+  factory _$MastodonApiScheduledStatusImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$MastodonApiScheduledStatusImplFromJson(json);
 
   @override
   @HiveField(0)
   @override
   final String id;
+  final List<MastodonApiMediaAttachment>? _mediaAttachments;
   @override
   @HiveField(1)
   @JsonKey(name: 'media_attachments')
-  final List<MastodonApiMediaAttachment>? mediaAttachments;
+  List<MastodonApiMediaAttachment>? get mediaAttachments {
+    final value = _mediaAttachments;
+    if (value == null) return null;
+    if (_mediaAttachments is EqualUnmodifiableListView)
+      return _mediaAttachments;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @HiveField(2)
   final MastodonApiScheduledStatusParams params;
@@ -244,55 +215,56 @@ class _$_MastodonApiScheduledStatus implements _MastodonApiScheduledStatus {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MastodonApiScheduledStatus &&
+            other is _$MastodonApiScheduledStatusImpl &&
             (identical(other.id, id) || other.id == id) &&
             const DeepCollectionEquality()
-                .equals(other.mediaAttachments, mediaAttachments) &&
+                .equals(other._mediaAttachments, _mediaAttachments) &&
             (identical(other.params, params) || other.params == params) &&
             (identical(other.scheduledAt, scheduledAt) ||
                 other.scheduledAt == scheduledAt));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       id,
-      const DeepCollectionEquality().hash(mediaAttachments),
+      const DeepCollectionEquality().hash(_mediaAttachments),
       params,
       scheduledAt);
 
   @JsonKey(ignore: true)
   @override
-  _$MastodonApiScheduledStatusCopyWith<_MastodonApiScheduledStatus>
-      get copyWith => __$MastodonApiScheduledStatusCopyWithImpl<
-          _MastodonApiScheduledStatus>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MastodonApiScheduledStatusImplCopyWith<_$MastodonApiScheduledStatusImpl>
+      get copyWith => __$$MastodonApiScheduledStatusImplCopyWithImpl<
+          _$MastodonApiScheduledStatusImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MastodonApiScheduledStatusToJson(this);
+    return _$$MastodonApiScheduledStatusImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MastodonApiScheduledStatus
     implements MastodonApiScheduledStatus {
   const factory _MastodonApiScheduledStatus(
-      {@HiveField(0)
-      @override
-          required String id,
+      {@HiveField(0) @override required final String id,
       @HiveField(1)
       @JsonKey(name: 'media_attachments')
-          required List<MastodonApiMediaAttachment>? mediaAttachments,
-      @HiveField(2)
-          required MastodonApiScheduledStatusParams params,
+      required final List<MastodonApiMediaAttachment>? mediaAttachments,
+      @HiveField(2) required final MastodonApiScheduledStatusParams params,
       @HiveField(3)
       @JsonKey(name: 'scheduled_at')
-          required DateTime scheduledAt}) = _$_MastodonApiScheduledStatus;
+      required final DateTime scheduledAt}) = _$MastodonApiScheduledStatusImpl;
 
   factory _MastodonApiScheduledStatus.fromJson(Map<String, dynamic> json) =
-      _$_MastodonApiScheduledStatus.fromJson;
+      _$MastodonApiScheduledStatusImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -311,6 +283,6 @@ abstract class _MastodonApiScheduledStatus
   DateTime get scheduledAt;
   @override
   @JsonKey(ignore: true)
-  _$MastodonApiScheduledStatusCopyWith<_MastodonApiScheduledStatus>
+  _$$MastodonApiScheduledStatusImplCopyWith<_$MastodonApiScheduledStatusImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

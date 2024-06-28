@@ -1,3 +1,4 @@
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/chat/unifedi/message/database/unifedi_chat_message_database_model.dart';
 import 'package:fedi_app/app/chat/unifedi/message/repository/unifedi_chat_message_repository_model.dart';
 import 'package:fedi_app/app/chat/unifedi/message/unifedi_chat_message_model.dart';
@@ -5,13 +6,12 @@ import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/database/dao/remote/populated_app_remote_database_dao.dart';
 import 'package:fedi_app/app/pending/pending_model.dart';
 import 'package:fedi_app/repository/repository_model.dart';
-import 'package:moor/moor.dart';
 
 part 'unifedi_chat_message_database_dao.g.dart';
 
 var _accountAliasId = 'account';
 
-@UseDao(
+@DriftAccessor(
   tables: [DbChatMessages],
 )
 class ChatMessageDao extends PopulatedAppRemoteDatabaseDao<
@@ -159,7 +159,7 @@ class ChatMessageDao extends PopulatedAppRemoteDatabaseDao<
         orderTerms
             .map(
               (orderTerm) => ($DbChatMessagesTable item) {
-                GeneratedColumn<Object?> expression;
+                GeneratedColumn<Object> expression;
                 switch (orderTerm.orderType) {
                   case UnifediChatMessageOrderType.remoteId:
                     expression = item.remoteId;

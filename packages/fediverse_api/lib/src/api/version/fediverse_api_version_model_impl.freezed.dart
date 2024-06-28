@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'fediverse_api_version_model_impl.dart';
 
@@ -11,38 +12,11 @@ part of 'fediverse_api_version_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 FediverseApiVersion _$FediverseApiVersionFromJson(Map<String, dynamic> json) {
   return _FediverseApiVersion.fromJson(json);
 }
-
-/// @nodoc
-class _$FediverseApiVersionTearOff {
-  const _$FediverseApiVersionTearOff();
-
-  _FediverseApiVersion call(
-      {@HiveField(0) required int major,
-      @HiveField(1) required int? minor,
-      @HiveField(2) required int? patch,
-      @HiveField(3) @JsonKey(name: 'buildNumber') required int? buildNumber,
-      @HiveField(4) required String? commit}) {
-    return _FediverseApiVersion(
-      major: major,
-      minor: minor,
-      patch: patch,
-      buildNumber: buildNumber,
-      commit: commit,
-    );
-  }
-
-  FediverseApiVersion fromJson(Map<String, Object?> json) {
-    return FediverseApiVersion.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $FediverseApiVersion = _$FediverseApiVersionTearOff();
 
 /// @nodoc
 mixin _$FediverseApiVersion {
@@ -68,7 +42,8 @@ mixin _$FediverseApiVersion {
 abstract class $FediverseApiVersionCopyWith<$Res> {
   factory $FediverseApiVersionCopyWith(
           FediverseApiVersion value, $Res Function(FediverseApiVersion) then) =
-      _$FediverseApiVersionCopyWithImpl<$Res>;
+      _$FediverseApiVersionCopyWithImpl<$Res, FediverseApiVersion>;
+  @useResult
   $Res call(
       {@HiveField(0) int major,
       @HiveField(1) int? minor,
@@ -78,54 +53,57 @@ abstract class $FediverseApiVersionCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$FediverseApiVersionCopyWithImpl<$Res>
+class _$FediverseApiVersionCopyWithImpl<$Res, $Val extends FediverseApiVersion>
     implements $FediverseApiVersionCopyWith<$Res> {
   _$FediverseApiVersionCopyWithImpl(this._value, this._then);
 
-  final FediverseApiVersion _value;
   // ignore: unused_field
-  final $Res Function(FediverseApiVersion) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? major = freezed,
+    Object? major = null,
     Object? minor = freezed,
     Object? patch = freezed,
     Object? buildNumber = freezed,
     Object? commit = freezed,
   }) {
     return _then(_value.copyWith(
-      major: major == freezed
+      major: null == major
           ? _value.major
           : major // ignore: cast_nullable_to_non_nullable
               as int,
-      minor: minor == freezed
+      minor: freezed == minor
           ? _value.minor
           : minor // ignore: cast_nullable_to_non_nullable
               as int?,
-      patch: patch == freezed
+      patch: freezed == patch
           ? _value.patch
           : patch // ignore: cast_nullable_to_non_nullable
               as int?,
-      buildNumber: buildNumber == freezed
+      buildNumber: freezed == buildNumber
           ? _value.buildNumber
           : buildNumber // ignore: cast_nullable_to_non_nullable
               as int?,
-      commit: commit == freezed
+      commit: freezed == commit
           ? _value.commit
           : commit // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$FediverseApiVersionCopyWith<$Res>
+abstract class _$$FediverseApiVersionImplCopyWith<$Res>
     implements $FediverseApiVersionCopyWith<$Res> {
-  factory _$FediverseApiVersionCopyWith(_FediverseApiVersion value,
-          $Res Function(_FediverseApiVersion) then) =
-      __$FediverseApiVersionCopyWithImpl<$Res>;
+  factory _$$FediverseApiVersionImplCopyWith(_$FediverseApiVersionImpl value,
+          $Res Function(_$FediverseApiVersionImpl) then) =
+      __$$FediverseApiVersionImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0) int major,
       @HiveField(1) int? minor,
@@ -135,42 +113,40 @@ abstract class _$FediverseApiVersionCopyWith<$Res>
 }
 
 /// @nodoc
-class __$FediverseApiVersionCopyWithImpl<$Res>
-    extends _$FediverseApiVersionCopyWithImpl<$Res>
-    implements _$FediverseApiVersionCopyWith<$Res> {
-  __$FediverseApiVersionCopyWithImpl(
-      _FediverseApiVersion _value, $Res Function(_FediverseApiVersion) _then)
-      : super(_value, (v) => _then(v as _FediverseApiVersion));
+class __$$FediverseApiVersionImplCopyWithImpl<$Res>
+    extends _$FediverseApiVersionCopyWithImpl<$Res, _$FediverseApiVersionImpl>
+    implements _$$FediverseApiVersionImplCopyWith<$Res> {
+  __$$FediverseApiVersionImplCopyWithImpl(_$FediverseApiVersionImpl _value,
+      $Res Function(_$FediverseApiVersionImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _FediverseApiVersion get _value => super._value as _FediverseApiVersion;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? major = freezed,
+    Object? major = null,
     Object? minor = freezed,
     Object? patch = freezed,
     Object? buildNumber = freezed,
     Object? commit = freezed,
   }) {
-    return _then(_FediverseApiVersion(
-      major: major == freezed
+    return _then(_$FediverseApiVersionImpl(
+      major: null == major
           ? _value.major
           : major // ignore: cast_nullable_to_non_nullable
               as int,
-      minor: minor == freezed
+      minor: freezed == minor
           ? _value.minor
           : minor // ignore: cast_nullable_to_non_nullable
               as int?,
-      patch: patch == freezed
+      patch: freezed == patch
           ? _value.patch
           : patch // ignore: cast_nullable_to_non_nullable
               as int?,
-      buildNumber: buildNumber == freezed
+      buildNumber: freezed == buildNumber
           ? _value.buildNumber
           : buildNumber // ignore: cast_nullable_to_non_nullable
               as int?,
-      commit: commit == freezed
+      commit: freezed == commit
           ? _value.commit
           : commit // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -180,16 +156,16 @@ class __$FediverseApiVersionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_FediverseApiVersion implements _FediverseApiVersion {
-  const _$_FediverseApiVersion(
+class _$FediverseApiVersionImpl implements _FediverseApiVersion {
+  const _$FediverseApiVersionImpl(
       {@HiveField(0) required this.major,
       @HiveField(1) required this.minor,
       @HiveField(2) required this.patch,
       @HiveField(3) @JsonKey(name: 'buildNumber') required this.buildNumber,
       @HiveField(4) required this.commit});
 
-  factory _$_FediverseApiVersion.fromJson(Map<String, dynamic> json) =>
-      _$$_FediverseApiVersionFromJson(json);
+  factory _$FediverseApiVersionImpl.fromJson(Map<String, dynamic> json) =>
+      _$$FediverseApiVersionImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -214,10 +190,10 @@ class _$_FediverseApiVersion implements _FediverseApiVersion {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _FediverseApiVersion &&
+            other is _$FediverseApiVersionImpl &&
             (identical(other.major, major) || other.major == major) &&
             (identical(other.minor, minor) || other.minor == minor) &&
             (identical(other.patch, patch) || other.patch == patch) &&
@@ -226,32 +202,38 @@ class _$_FediverseApiVersion implements _FediverseApiVersion {
             (identical(other.commit, commit) || other.commit == commit));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, major, minor, patch, buildNumber, commit);
 
   @JsonKey(ignore: true)
   @override
-  _$FediverseApiVersionCopyWith<_FediverseApiVersion> get copyWith =>
-      __$FediverseApiVersionCopyWithImpl<_FediverseApiVersion>(
+  @pragma('vm:prefer-inline')
+  _$$FediverseApiVersionImplCopyWith<_$FediverseApiVersionImpl> get copyWith =>
+      __$$FediverseApiVersionImplCopyWithImpl<_$FediverseApiVersionImpl>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_FediverseApiVersionToJson(this);
+    return _$$FediverseApiVersionImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _FediverseApiVersion implements FediverseApiVersion {
   const factory _FediverseApiVersion(
-      {@HiveField(0) required int major,
-      @HiveField(1) required int? minor,
-      @HiveField(2) required int? patch,
-      @HiveField(3) @JsonKey(name: 'buildNumber') required int? buildNumber,
-      @HiveField(4) required String? commit}) = _$_FediverseApiVersion;
+      {@HiveField(0) required final int major,
+      @HiveField(1) required final int? minor,
+      @HiveField(2) required final int? patch,
+      @HiveField(3)
+      @JsonKey(name: 'buildNumber')
+      required final int? buildNumber,
+      @HiveField(4) required final String? commit}) = _$FediverseApiVersionImpl;
 
   factory _FediverseApiVersion.fromJson(Map<String, dynamic> json) =
-      _$_FediverseApiVersion.fromJson;
+      _$FediverseApiVersionImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -271,6 +253,6 @@ abstract class _FediverseApiVersion implements FediverseApiVersion {
   String? get commit;
   @override
   @JsonKey(ignore: true)
-  _$FediverseApiVersionCopyWith<_FediverseApiVersion> get copyWith =>
+  _$$FediverseApiVersionImplCopyWith<_$FediverseApiVersionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

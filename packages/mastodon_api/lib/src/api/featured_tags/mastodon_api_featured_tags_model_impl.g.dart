@@ -54,19 +54,19 @@ class MastodonApiFeaturedTagAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiFeaturedTag _$$_MastodonApiFeaturedTagFromJson(
+_$MastodonApiFeaturedTagImpl _$$MastodonApiFeaturedTagImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MastodonApiFeaturedTag(
+    _$MastodonApiFeaturedTagImpl(
       id: json['id'] as String,
       lastStatusAt: json['last_status_at'] == null
           ? null
           : DateTime.parse(json['last_status_at'] as String),
-      statusesCount: json['statuses_count'] as int,
+      statusesCount: (json['statuses_count'] as num).toInt(),
       name: json['name'] as String,
     );
 
-Map<String, dynamic> _$$_MastodonApiFeaturedTagToJson(
-    _$_MastodonApiFeaturedTag instance) {
+Map<String, dynamic> _$$MastodonApiFeaturedTagImplToJson(
+    _$MastodonApiFeaturedTagImpl instance) {
   final val = <String, dynamic>{
     'id': instance.id,
   };

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_oauth_model_impl.dart';
 
@@ -11,43 +12,11 @@ part of 'pleroma_api_oauth_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PleromaApiOAuthToken _$PleromaApiOAuthTokenFromJson(Map<String, dynamic> json) {
   return _PleromaApiOAuthToken.fromJson(json);
 }
-
-/// @nodoc
-class _$PleromaApiOAuthTokenTearOff {
-  const _$PleromaApiOAuthTokenTearOff();
-
-  _PleromaApiOAuthToken call(
-      {@HiveField(0)
-      @JsonKey(name: 'access_token')
-          required String accessToken,
-      @HiveField(1)
-      @JsonKey(name: 'token_type')
-          required String tokenType,
-      @HiveField(2)
-      @JsonKey(fromJson: JsonParseHelper.toStringFromAnyNullable)
-          required String? id,
-      @HiveField(3)
-          required String? me}) {
-    return _PleromaApiOAuthToken(
-      accessToken: accessToken,
-      tokenType: tokenType,
-      id: id,
-      me: me,
-    );
-  }
-
-  PleromaApiOAuthToken fromJson(Map<String, Object?> json) {
-    return PleromaApiOAuthToken.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PleromaApiOAuthToken = _$PleromaApiOAuthTokenTearOff();
 
 /// @nodoc
 mixin _$PleromaApiOAuthToken {
@@ -73,111 +42,104 @@ mixin _$PleromaApiOAuthToken {
 abstract class $PleromaApiOAuthTokenCopyWith<$Res> {
   factory $PleromaApiOAuthTokenCopyWith(PleromaApiOAuthToken value,
           $Res Function(PleromaApiOAuthToken) then) =
-      _$PleromaApiOAuthTokenCopyWithImpl<$Res>;
+      _$PleromaApiOAuthTokenCopyWithImpl<$Res, PleromaApiOAuthToken>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-      @JsonKey(name: 'access_token')
-          String accessToken,
-      @HiveField(1)
-      @JsonKey(name: 'token_type')
-          String tokenType,
+      {@HiveField(0) @JsonKey(name: 'access_token') String accessToken,
+      @HiveField(1) @JsonKey(name: 'token_type') String tokenType,
       @HiveField(2)
       @JsonKey(fromJson: JsonParseHelper.toStringFromAnyNullable)
-          String? id,
-      @HiveField(3)
-          String? me});
+      String? id,
+      @HiveField(3) String? me});
 }
 
 /// @nodoc
-class _$PleromaApiOAuthTokenCopyWithImpl<$Res>
+class _$PleromaApiOAuthTokenCopyWithImpl<$Res,
+        $Val extends PleromaApiOAuthToken>
     implements $PleromaApiOAuthTokenCopyWith<$Res> {
   _$PleromaApiOAuthTokenCopyWithImpl(this._value, this._then);
 
-  final PleromaApiOAuthToken _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiOAuthToken) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? accessToken = freezed,
-    Object? tokenType = freezed,
+    Object? accessToken = null,
+    Object? tokenType = null,
     Object? id = freezed,
     Object? me = freezed,
   }) {
     return _then(_value.copyWith(
-      accessToken: accessToken == freezed
+      accessToken: null == accessToken
           ? _value.accessToken
           : accessToken // ignore: cast_nullable_to_non_nullable
               as String,
-      tokenType: tokenType == freezed
+      tokenType: null == tokenType
           ? _value.tokenType
           : tokenType // ignore: cast_nullable_to_non_nullable
               as String,
-      id: id == freezed
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String?,
-      me: me == freezed
+      me: freezed == me
           ? _value.me
           : me // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PleromaApiOAuthTokenCopyWith<$Res>
+abstract class _$$PleromaApiOAuthTokenImplCopyWith<$Res>
     implements $PleromaApiOAuthTokenCopyWith<$Res> {
-  factory _$PleromaApiOAuthTokenCopyWith(_PleromaApiOAuthToken value,
-          $Res Function(_PleromaApiOAuthToken) then) =
-      __$PleromaApiOAuthTokenCopyWithImpl<$Res>;
+  factory _$$PleromaApiOAuthTokenImplCopyWith(_$PleromaApiOAuthTokenImpl value,
+          $Res Function(_$PleromaApiOAuthTokenImpl) then) =
+      __$$PleromaApiOAuthTokenImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-      @JsonKey(name: 'access_token')
-          String accessToken,
-      @HiveField(1)
-      @JsonKey(name: 'token_type')
-          String tokenType,
+      {@HiveField(0) @JsonKey(name: 'access_token') String accessToken,
+      @HiveField(1) @JsonKey(name: 'token_type') String tokenType,
       @HiveField(2)
       @JsonKey(fromJson: JsonParseHelper.toStringFromAnyNullable)
-          String? id,
-      @HiveField(3)
-          String? me});
+      String? id,
+      @HiveField(3) String? me});
 }
 
 /// @nodoc
-class __$PleromaApiOAuthTokenCopyWithImpl<$Res>
-    extends _$PleromaApiOAuthTokenCopyWithImpl<$Res>
-    implements _$PleromaApiOAuthTokenCopyWith<$Res> {
-  __$PleromaApiOAuthTokenCopyWithImpl(
-      _PleromaApiOAuthToken _value, $Res Function(_PleromaApiOAuthToken) _then)
-      : super(_value, (v) => _then(v as _PleromaApiOAuthToken));
+class __$$PleromaApiOAuthTokenImplCopyWithImpl<$Res>
+    extends _$PleromaApiOAuthTokenCopyWithImpl<$Res, _$PleromaApiOAuthTokenImpl>
+    implements _$$PleromaApiOAuthTokenImplCopyWith<$Res> {
+  __$$PleromaApiOAuthTokenImplCopyWithImpl(_$PleromaApiOAuthTokenImpl _value,
+      $Res Function(_$PleromaApiOAuthTokenImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PleromaApiOAuthToken get _value => super._value as _PleromaApiOAuthToken;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? accessToken = freezed,
-    Object? tokenType = freezed,
+    Object? accessToken = null,
+    Object? tokenType = null,
     Object? id = freezed,
     Object? me = freezed,
   }) {
-    return _then(_PleromaApiOAuthToken(
-      accessToken: accessToken == freezed
+    return _then(_$PleromaApiOAuthTokenImpl(
+      accessToken: null == accessToken
           ? _value.accessToken
           : accessToken // ignore: cast_nullable_to_non_nullable
               as String,
-      tokenType: tokenType == freezed
+      tokenType: null == tokenType
           ? _value.tokenType
           : tokenType // ignore: cast_nullable_to_non_nullable
               as String,
-      id: id == freezed
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String?,
-      me: me == freezed
+      me: freezed == me
           ? _value.me
           : me // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -187,22 +149,17 @@ class __$PleromaApiOAuthTokenCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PleromaApiOAuthToken implements _PleromaApiOAuthToken {
-  const _$_PleromaApiOAuthToken(
-      {@HiveField(0)
-      @JsonKey(name: 'access_token')
-          required this.accessToken,
-      @HiveField(1)
-      @JsonKey(name: 'token_type')
-          required this.tokenType,
+class _$PleromaApiOAuthTokenImpl implements _PleromaApiOAuthToken {
+  const _$PleromaApiOAuthTokenImpl(
+      {@HiveField(0) @JsonKey(name: 'access_token') required this.accessToken,
+      @HiveField(1) @JsonKey(name: 'token_type') required this.tokenType,
       @HiveField(2)
       @JsonKey(fromJson: JsonParseHelper.toStringFromAnyNullable)
-          required this.id,
-      @HiveField(3)
-          required this.me});
+      required this.id,
+      @HiveField(3) required this.me});
 
-  factory _$_PleromaApiOAuthToken.fromJson(Map<String, dynamic> json) =>
-      _$$_PleromaApiOAuthTokenFromJson(json);
+  factory _$PleromaApiOAuthTokenImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PleromaApiOAuthTokenImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -226,10 +183,10 @@ class _$_PleromaApiOAuthToken implements _PleromaApiOAuthToken {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PleromaApiOAuthToken &&
+            other is _$PleromaApiOAuthTokenImpl &&
             (identical(other.accessToken, accessToken) ||
                 other.accessToken == accessToken) &&
             (identical(other.tokenType, tokenType) ||
@@ -238,18 +195,23 @@ class _$_PleromaApiOAuthToken implements _PleromaApiOAuthToken {
             (identical(other.me, me) || other.me == me));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, accessToken, tokenType, id, me);
 
   @JsonKey(ignore: true)
   @override
-  _$PleromaApiOAuthTokenCopyWith<_PleromaApiOAuthToken> get copyWith =>
-      __$PleromaApiOAuthTokenCopyWithImpl<_PleromaApiOAuthToken>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PleromaApiOAuthTokenImplCopyWith<_$PleromaApiOAuthTokenImpl>
+      get copyWith =>
+          __$$PleromaApiOAuthTokenImplCopyWithImpl<_$PleromaApiOAuthTokenImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PleromaApiOAuthTokenToJson(this);
+    return _$$PleromaApiOAuthTokenImplToJson(
+      this,
+    );
   }
 }
 
@@ -257,18 +219,17 @@ abstract class _PleromaApiOAuthToken implements PleromaApiOAuthToken {
   const factory _PleromaApiOAuthToken(
       {@HiveField(0)
       @JsonKey(name: 'access_token')
-          required String accessToken,
+      required final String accessToken,
       @HiveField(1)
       @JsonKey(name: 'token_type')
-          required String tokenType,
+      required final String tokenType,
       @HiveField(2)
       @JsonKey(fromJson: JsonParseHelper.toStringFromAnyNullable)
-          required String? id,
-      @HiveField(3)
-          required String? me}) = _$_PleromaApiOAuthToken;
+      required final String? id,
+      @HiveField(3) required final String? me}) = _$PleromaApiOAuthTokenImpl;
 
   factory _PleromaApiOAuthToken.fromJson(Map<String, dynamic> json) =
-      _$_PleromaApiOAuthToken.fromJson;
+      _$PleromaApiOAuthTokenImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -287,6 +248,6 @@ abstract class _PleromaApiOAuthToken implements PleromaApiOAuthToken {
   String? get me;
   @override
   @JsonKey(ignore: true)
-  _$PleromaApiOAuthTokenCopyWith<_PleromaApiOAuthToken> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PleromaApiOAuthTokenImplCopyWith<_$PleromaApiOAuthTokenImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

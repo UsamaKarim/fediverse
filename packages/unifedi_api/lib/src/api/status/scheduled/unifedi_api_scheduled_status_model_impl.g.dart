@@ -54,9 +54,9 @@ class UnifediApiScheduledStatusAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiScheduledStatus _$$_UnifediApiScheduledStatusFromJson(
+_$UnifediApiScheduledStatusImpl _$$UnifediApiScheduledStatusImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiScheduledStatus(
+    _$UnifediApiScheduledStatusImpl(
       id: json['id'] as String,
       mediaAttachments: (json['media_attachments'] as List<dynamic>?)
           ?.map((e) =>
@@ -67,8 +67,8 @@ _$_UnifediApiScheduledStatus _$$_UnifediApiScheduledStatusFromJson(
       scheduledAt: DateTime.parse(json['scheduled_at'] as String),
     );
 
-Map<String, dynamic> _$$_UnifediApiScheduledStatusToJson(
-    _$_UnifediApiScheduledStatus instance) {
+Map<String, dynamic> _$$UnifediApiScheduledStatusImplToJson(
+    _$UnifediApiScheduledStatusImpl instance) {
   final val = <String, dynamic>{
     'id': instance.id,
   };

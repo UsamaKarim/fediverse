@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'fediverse_api_instance_metadata_version_requirement_model_impl.dart';
 
@@ -11,36 +12,13 @@ part of 'fediverse_api_instance_metadata_version_requirement_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 FediverseApiInstanceMetadataVersionRequirement
     _$FediverseApiInstanceMetadataVersionRequirementFromJson(
         Map<String, dynamic> json) {
   return _FediverseApiInstanceMetadataVersionRequirement.fromJson(json);
 }
-
-/// @nodoc
-class _$FediverseApiInstanceMetadataVersionRequirementTearOff {
-  const _$FediverseApiInstanceMetadataVersionRequirementTearOff();
-
-  _FediverseApiInstanceMetadataVersionRequirement call(
-      {@HiveField(0)
-      @JsonKey(name: 'version_range')
-          required FediverseApiVersionRange versionRange}) {
-    return _FediverseApiInstanceMetadataVersionRequirement(
-      versionRange: versionRange,
-    );
-  }
-
-  FediverseApiInstanceMetadataVersionRequirement fromJson(
-      Map<String, Object?> json) {
-    return FediverseApiInstanceMetadataVersionRequirement.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $FediverseApiInstanceMetadataVersionRequirement =
-    _$FediverseApiInstanceMetadataVersionRequirementTearOff();
 
 /// @nodoc
 mixin _$FediverseApiInstanceMetadataVersionRequirement {
@@ -61,83 +39,90 @@ abstract class $FediverseApiInstanceMetadataVersionRequirementCopyWith<$Res> {
   factory $FediverseApiInstanceMetadataVersionRequirementCopyWith(
           FediverseApiInstanceMetadataVersionRequirement value,
           $Res Function(FediverseApiInstanceMetadataVersionRequirement) then) =
-      _$FediverseApiInstanceMetadataVersionRequirementCopyWithImpl<$Res>;
+      _$FediverseApiInstanceMetadataVersionRequirementCopyWithImpl<$Res,
+          FediverseApiInstanceMetadataVersionRequirement>;
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'version_range')
-          FediverseApiVersionRange versionRange});
+      FediverseApiVersionRange versionRange});
 
   $FediverseApiVersionRangeCopyWith<$Res> get versionRange;
 }
 
 /// @nodoc
-class _$FediverseApiInstanceMetadataVersionRequirementCopyWithImpl<$Res>
+class _$FediverseApiInstanceMetadataVersionRequirementCopyWithImpl<$Res,
+        $Val extends FediverseApiInstanceMetadataVersionRequirement>
     implements $FediverseApiInstanceMetadataVersionRequirementCopyWith<$Res> {
   _$FediverseApiInstanceMetadataVersionRequirementCopyWithImpl(
       this._value, this._then);
 
-  final FediverseApiInstanceMetadataVersionRequirement _value;
   // ignore: unused_field
-  final $Res Function(FediverseApiInstanceMetadataVersionRequirement) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? versionRange = freezed,
+    Object? versionRange = null,
   }) {
     return _then(_value.copyWith(
-      versionRange: versionRange == freezed
+      versionRange: null == versionRange
           ? _value.versionRange
           : versionRange // ignore: cast_nullable_to_non_nullable
               as FediverseApiVersionRange,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $FediverseApiVersionRangeCopyWith<$Res> get versionRange {
     return $FediverseApiVersionRangeCopyWith<$Res>(_value.versionRange,
         (value) {
-      return _then(_value.copyWith(versionRange: value));
+      return _then(_value.copyWith(versionRange: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$FediverseApiInstanceMetadataVersionRequirementCopyWith<$Res>
+abstract class _$$FediverseApiInstanceMetadataVersionRequirementImplCopyWith<
+        $Res>
     implements $FediverseApiInstanceMetadataVersionRequirementCopyWith<$Res> {
-  factory _$FediverseApiInstanceMetadataVersionRequirementCopyWith(
-          _FediverseApiInstanceMetadataVersionRequirement value,
-          $Res Function(_FediverseApiInstanceMetadataVersionRequirement) then) =
-      __$FediverseApiInstanceMetadataVersionRequirementCopyWithImpl<$Res>;
+  factory _$$FediverseApiInstanceMetadataVersionRequirementImplCopyWith(
+          _$FediverseApiInstanceMetadataVersionRequirementImpl value,
+          $Res Function(_$FediverseApiInstanceMetadataVersionRequirementImpl)
+              then) =
+      __$$FediverseApiInstanceMetadataVersionRequirementImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@HiveField(0)
       @JsonKey(name: 'version_range')
-          FediverseApiVersionRange versionRange});
+      FediverseApiVersionRange versionRange});
 
   @override
   $FediverseApiVersionRangeCopyWith<$Res> get versionRange;
 }
 
 /// @nodoc
-class __$FediverseApiInstanceMetadataVersionRequirementCopyWithImpl<$Res>
-    extends _$FediverseApiInstanceMetadataVersionRequirementCopyWithImpl<$Res>
-    implements _$FediverseApiInstanceMetadataVersionRequirementCopyWith<$Res> {
-  __$FediverseApiInstanceMetadataVersionRequirementCopyWithImpl(
-      _FediverseApiInstanceMetadataVersionRequirement _value,
-      $Res Function(_FediverseApiInstanceMetadataVersionRequirement) _then)
-      : super(_value,
-            (v) => _then(v as _FediverseApiInstanceMetadataVersionRequirement));
+class __$$FediverseApiInstanceMetadataVersionRequirementImplCopyWithImpl<$Res>
+    extends _$FediverseApiInstanceMetadataVersionRequirementCopyWithImpl<$Res,
+        _$FediverseApiInstanceMetadataVersionRequirementImpl>
+    implements
+        _$$FediverseApiInstanceMetadataVersionRequirementImplCopyWith<$Res> {
+  __$$FediverseApiInstanceMetadataVersionRequirementImplCopyWithImpl(
+      _$FediverseApiInstanceMetadataVersionRequirementImpl _value,
+      $Res Function(_$FediverseApiInstanceMetadataVersionRequirementImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _FediverseApiInstanceMetadataVersionRequirement get _value =>
-      super._value as _FediverseApiInstanceMetadataVersionRequirement;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? versionRange = freezed,
+    Object? versionRange = null,
   }) {
-    return _then(_FediverseApiInstanceMetadataVersionRequirement(
-      versionRange: versionRange == freezed
+    return _then(_$FediverseApiInstanceMetadataVersionRequirementImpl(
+      versionRange: null == versionRange
           ? _value.versionRange
           : versionRange // ignore: cast_nullable_to_non_nullable
               as FediverseApiVersionRange,
@@ -147,16 +132,16 @@ class __$FediverseApiInstanceMetadataVersionRequirementCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_FediverseApiInstanceMetadataVersionRequirement
+class _$FediverseApiInstanceMetadataVersionRequirementImpl
     implements _FediverseApiInstanceMetadataVersionRequirement {
-  const _$_FediverseApiInstanceMetadataVersionRequirement(
+  const _$FediverseApiInstanceMetadataVersionRequirementImpl(
       {@HiveField(0)
       @JsonKey(name: 'version_range')
-          required this.versionRange});
+      required this.versionRange});
 
-  factory _$_FediverseApiInstanceMetadataVersionRequirement.fromJson(
+  factory _$FediverseApiInstanceMetadataVersionRequirementImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_FediverseApiInstanceMetadataVersionRequirementFromJson(json);
+      _$$FediverseApiInstanceMetadataVersionRequirementImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -169,29 +154,33 @@ class _$_FediverseApiInstanceMetadataVersionRequirement
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _FediverseApiInstanceMetadataVersionRequirement &&
+            other is _$FediverseApiInstanceMetadataVersionRequirementImpl &&
             (identical(other.versionRange, versionRange) ||
                 other.versionRange == versionRange));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, versionRange);
 
   @JsonKey(ignore: true)
   @override
-  _$FediverseApiInstanceMetadataVersionRequirementCopyWith<
-          _FediverseApiInstanceMetadataVersionRequirement>
+  @pragma('vm:prefer-inline')
+  _$$FediverseApiInstanceMetadataVersionRequirementImplCopyWith<
+          _$FediverseApiInstanceMetadataVersionRequirementImpl>
       get copyWith =>
-          __$FediverseApiInstanceMetadataVersionRequirementCopyWithImpl<
-                  _FediverseApiInstanceMetadataVersionRequirement>(
+          __$$FediverseApiInstanceMetadataVersionRequirementImplCopyWithImpl<
+                  _$FediverseApiInstanceMetadataVersionRequirementImpl>(
               this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_FediverseApiInstanceMetadataVersionRequirementToJson(this);
+    return _$$FediverseApiInstanceMetadataVersionRequirementImplToJson(
+      this,
+    );
   }
 }
 
@@ -200,12 +189,12 @@ abstract class _FediverseApiInstanceMetadataVersionRequirement
   const factory _FediverseApiInstanceMetadataVersionRequirement(
           {@HiveField(0)
           @JsonKey(name: 'version_range')
-              required FediverseApiVersionRange versionRange}) =
-      _$_FediverseApiInstanceMetadataVersionRequirement;
+          required final FediverseApiVersionRange versionRange}) =
+      _$FediverseApiInstanceMetadataVersionRequirementImpl;
 
   factory _FediverseApiInstanceMetadataVersionRequirement.fromJson(
           Map<String, dynamic> json) =
-      _$_FediverseApiInstanceMetadataVersionRequirement.fromJson;
+      _$FediverseApiInstanceMetadataVersionRequirementImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -213,7 +202,7 @@ abstract class _FediverseApiInstanceMetadataVersionRequirement
   FediverseApiVersionRange get versionRange;
   @override
   @JsonKey(ignore: true)
-  _$FediverseApiInstanceMetadataVersionRequirementCopyWith<
-          _FediverseApiInstanceMetadataVersionRequirement>
+  _$$FediverseApiInstanceMetadataVersionRequirementImplCopyWith<
+          _$FediverseApiInstanceMetadataVersionRequirementImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

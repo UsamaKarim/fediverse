@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'toast_settings_model.dart';
 
@@ -11,36 +12,11 @@ part of 'toast_settings_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 ToastSettings _$ToastSettingsFromJson(Map<String, dynamic> json) {
   return _ToastSettings.fromJson(json);
 }
-
-/// @nodoc
-class _$ToastSettingsTearOff {
-  const _$ToastSettingsTearOff();
-
-  _ToastSettings call(
-      {@HiveField(3)
-      @JsonKey(name: 'push_settings')
-          required PushSettings pushSettings,
-      @HiveField(4)
-      @JsonKey(name: 'handling_type_string')
-          required String handlingTypeString}) {
-    return _ToastSettings(
-      pushSettings: pushSettings,
-      handlingTypeString: handlingTypeString,
-    );
-  }
-
-  ToastSettings fromJson(Map<String, Object?> json) {
-    return ToastSettings.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ToastSettings = _$ToastSettingsTearOff();
 
 /// @nodoc
 mixin _$ToastSettings {
@@ -61,93 +37,92 @@ mixin _$ToastSettings {
 abstract class $ToastSettingsCopyWith<$Res> {
   factory $ToastSettingsCopyWith(
           ToastSettings value, $Res Function(ToastSettings) then) =
-      _$ToastSettingsCopyWithImpl<$Res>;
+      _$ToastSettingsCopyWithImpl<$Res, ToastSettings>;
+  @useResult
   $Res call(
-      {@HiveField(3)
-      @JsonKey(name: 'push_settings')
-          PushSettings pushSettings,
+      {@HiveField(3) @JsonKey(name: 'push_settings') PushSettings pushSettings,
       @HiveField(4)
       @JsonKey(name: 'handling_type_string')
-          String handlingTypeString});
+      String handlingTypeString});
 
   $PushSettingsCopyWith<$Res> get pushSettings;
 }
 
 /// @nodoc
-class _$ToastSettingsCopyWithImpl<$Res>
+class _$ToastSettingsCopyWithImpl<$Res, $Val extends ToastSettings>
     implements $ToastSettingsCopyWith<$Res> {
   _$ToastSettingsCopyWithImpl(this._value, this._then);
 
-  final ToastSettings _value;
   // ignore: unused_field
-  final $Res Function(ToastSettings) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? pushSettings = freezed,
-    Object? handlingTypeString = freezed,
+    Object? pushSettings = null,
+    Object? handlingTypeString = null,
   }) {
     return _then(_value.copyWith(
-      pushSettings: pushSettings == freezed
+      pushSettings: null == pushSettings
           ? _value.pushSettings
           : pushSettings // ignore: cast_nullable_to_non_nullable
               as PushSettings,
-      handlingTypeString: handlingTypeString == freezed
+      handlingTypeString: null == handlingTypeString
           ? _value.handlingTypeString
           : handlingTypeString // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PushSettingsCopyWith<$Res> get pushSettings {
     return $PushSettingsCopyWith<$Res>(_value.pushSettings, (value) {
-      return _then(_value.copyWith(pushSettings: value));
+      return _then(_value.copyWith(pushSettings: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$ToastSettingsCopyWith<$Res>
+abstract class _$$ToastSettingsImplCopyWith<$Res>
     implements $ToastSettingsCopyWith<$Res> {
-  factory _$ToastSettingsCopyWith(
-          _ToastSettings value, $Res Function(_ToastSettings) then) =
-      __$ToastSettingsCopyWithImpl<$Res>;
+  factory _$$ToastSettingsImplCopyWith(
+          _$ToastSettingsImpl value, $Res Function(_$ToastSettingsImpl) then) =
+      __$$ToastSettingsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(3)
-      @JsonKey(name: 'push_settings')
-          PushSettings pushSettings,
+      {@HiveField(3) @JsonKey(name: 'push_settings') PushSettings pushSettings,
       @HiveField(4)
       @JsonKey(name: 'handling_type_string')
-          String handlingTypeString});
+      String handlingTypeString});
 
   @override
   $PushSettingsCopyWith<$Res> get pushSettings;
 }
 
 /// @nodoc
-class __$ToastSettingsCopyWithImpl<$Res>
-    extends _$ToastSettingsCopyWithImpl<$Res>
-    implements _$ToastSettingsCopyWith<$Res> {
-  __$ToastSettingsCopyWithImpl(
-      _ToastSettings _value, $Res Function(_ToastSettings) _then)
-      : super(_value, (v) => _then(v as _ToastSettings));
+class __$$ToastSettingsImplCopyWithImpl<$Res>
+    extends _$ToastSettingsCopyWithImpl<$Res, _$ToastSettingsImpl>
+    implements _$$ToastSettingsImplCopyWith<$Res> {
+  __$$ToastSettingsImplCopyWithImpl(
+      _$ToastSettingsImpl _value, $Res Function(_$ToastSettingsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _ToastSettings get _value => super._value as _ToastSettings;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? pushSettings = freezed,
-    Object? handlingTypeString = freezed,
+    Object? pushSettings = null,
+    Object? handlingTypeString = null,
   }) {
-    return _then(_ToastSettings(
-      pushSettings: pushSettings == freezed
+    return _then(_$ToastSettingsImpl(
+      pushSettings: null == pushSettings
           ? _value.pushSettings
           : pushSettings // ignore: cast_nullable_to_non_nullable
               as PushSettings,
-      handlingTypeString: handlingTypeString == freezed
+      handlingTypeString: null == handlingTypeString
           ? _value.handlingTypeString
           : handlingTypeString // ignore: cast_nullable_to_non_nullable
               as String,
@@ -157,18 +132,16 @@ class __$ToastSettingsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_ToastSettings extends _ToastSettings {
-  const _$_ToastSettings(
-      {@HiveField(3)
-      @JsonKey(name: 'push_settings')
-          required this.pushSettings,
+class _$ToastSettingsImpl extends _ToastSettings {
+  const _$ToastSettingsImpl(
+      {@HiveField(3) @JsonKey(name: 'push_settings') required this.pushSettings,
       @HiveField(4)
       @JsonKey(name: 'handling_type_string')
-          required this.handlingTypeString})
+      required this.handlingTypeString})
       : super._();
 
-  factory _$_ToastSettings.fromJson(Map<String, dynamic> json) =>
-      _$$_ToastSettingsFromJson(json);
+  factory _$ToastSettingsImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ToastSettingsImplFromJson(json);
 
   @override
   @HiveField(3)
@@ -185,28 +158,32 @@ class _$_ToastSettings extends _ToastSettings {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ToastSettings &&
+            other is _$ToastSettingsImpl &&
             (identical(other.pushSettings, pushSettings) ||
                 other.pushSettings == pushSettings) &&
             (identical(other.handlingTypeString, handlingTypeString) ||
                 other.handlingTypeString == handlingTypeString));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, pushSettings, handlingTypeString);
 
   @JsonKey(ignore: true)
   @override
-  _$ToastSettingsCopyWith<_ToastSettings> get copyWith =>
-      __$ToastSettingsCopyWithImpl<_ToastSettings>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ToastSettingsImplCopyWith<_$ToastSettingsImpl> get copyWith =>
+      __$$ToastSettingsImplCopyWithImpl<_$ToastSettingsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ToastSettingsToJson(this);
+    return _$$ToastSettingsImplToJson(
+      this,
+    );
   }
 }
 
@@ -214,14 +191,14 @@ abstract class _ToastSettings extends ToastSettings {
   const factory _ToastSettings(
       {@HiveField(3)
       @JsonKey(name: 'push_settings')
-          required PushSettings pushSettings,
+      required final PushSettings pushSettings,
       @HiveField(4)
       @JsonKey(name: 'handling_type_string')
-          required String handlingTypeString}) = _$_ToastSettings;
+      required final String handlingTypeString}) = _$ToastSettingsImpl;
   const _ToastSettings._() : super._();
 
   factory _ToastSettings.fromJson(Map<String, dynamic> json) =
-      _$_ToastSettings.fromJson;
+      _$ToastSettingsImpl.fromJson;
 
   @override
   @HiveField(3)
@@ -233,6 +210,6 @@ abstract class _ToastSettings extends ToastSettings {
   String get handlingTypeString;
   @override
   @JsonKey(ignore: true)
-  _$ToastSettingsCopyWith<_ToastSettings> get copyWith =>
+  _$$ToastSettingsImplCopyWith<_$ToastSettingsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'unifedi_api_instance_status_limits_model_impl.dart';
 
@@ -11,38 +12,12 @@ part of 'unifedi_api_instance_status_limits_model_impl.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UnifediApiInstanceStatusLimits _$UnifediApiInstanceStatusLimitsFromJson(
     Map<String, dynamic> json) {
   return _UnifediApiInstanceStatusLimits.fromJson(json);
 }
-
-/// @nodoc
-class _$UnifediApiInstanceStatusLimitsTearOff {
-  const _$UnifediApiInstanceStatusLimitsTearOff();
-
-  _UnifediApiInstanceStatusLimits call(
-      {@HiveField(0)
-      @JsonKey(name: 'max_toot_chars')
-          required int? maxTootChars,
-      @HiveField(1)
-      @JsonKey(name: 'max_media_attachments_count')
-          required int? maxMediaAttachmentsCount}) {
-    return _UnifediApiInstanceStatusLimits(
-      maxTootChars: maxTootChars,
-      maxMediaAttachmentsCount: maxMediaAttachmentsCount,
-    );
-  }
-
-  UnifediApiInstanceStatusLimits fromJson(Map<String, Object?> json) {
-    return UnifediApiInstanceStatusLimits.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UnifediApiInstanceStatusLimits =
-    _$UnifediApiInstanceStatusLimitsTearOff();
 
 /// @nodoc
 mixin _$UnifediApiInstanceStatusLimits {
@@ -64,84 +39,84 @@ abstract class $UnifediApiInstanceStatusLimitsCopyWith<$Res> {
   factory $UnifediApiInstanceStatusLimitsCopyWith(
           UnifediApiInstanceStatusLimits value,
           $Res Function(UnifediApiInstanceStatusLimits) then) =
-      _$UnifediApiInstanceStatusLimitsCopyWithImpl<$Res>;
+      _$UnifediApiInstanceStatusLimitsCopyWithImpl<$Res,
+          UnifediApiInstanceStatusLimits>;
+  @useResult
   $Res call(
-      {@HiveField(0)
-      @JsonKey(name: 'max_toot_chars')
-          int? maxTootChars,
+      {@HiveField(0) @JsonKey(name: 'max_toot_chars') int? maxTootChars,
       @HiveField(1)
       @JsonKey(name: 'max_media_attachments_count')
-          int? maxMediaAttachmentsCount});
+      int? maxMediaAttachmentsCount});
 }
 
 /// @nodoc
-class _$UnifediApiInstanceStatusLimitsCopyWithImpl<$Res>
+class _$UnifediApiInstanceStatusLimitsCopyWithImpl<$Res,
+        $Val extends UnifediApiInstanceStatusLimits>
     implements $UnifediApiInstanceStatusLimitsCopyWith<$Res> {
   _$UnifediApiInstanceStatusLimitsCopyWithImpl(this._value, this._then);
 
-  final UnifediApiInstanceStatusLimits _value;
   // ignore: unused_field
-  final $Res Function(UnifediApiInstanceStatusLimits) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? maxTootChars = freezed,
     Object? maxMediaAttachmentsCount = freezed,
   }) {
     return _then(_value.copyWith(
-      maxTootChars: maxTootChars == freezed
+      maxTootChars: freezed == maxTootChars
           ? _value.maxTootChars
           : maxTootChars // ignore: cast_nullable_to_non_nullable
               as int?,
-      maxMediaAttachmentsCount: maxMediaAttachmentsCount == freezed
+      maxMediaAttachmentsCount: freezed == maxMediaAttachmentsCount
           ? _value.maxMediaAttachmentsCount
           : maxMediaAttachmentsCount // ignore: cast_nullable_to_non_nullable
               as int?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UnifediApiInstanceStatusLimitsCopyWith<$Res>
+abstract class _$$UnifediApiInstanceStatusLimitsImplCopyWith<$Res>
     implements $UnifediApiInstanceStatusLimitsCopyWith<$Res> {
-  factory _$UnifediApiInstanceStatusLimitsCopyWith(
-          _UnifediApiInstanceStatusLimits value,
-          $Res Function(_UnifediApiInstanceStatusLimits) then) =
-      __$UnifediApiInstanceStatusLimitsCopyWithImpl<$Res>;
+  factory _$$UnifediApiInstanceStatusLimitsImplCopyWith(
+          _$UnifediApiInstanceStatusLimitsImpl value,
+          $Res Function(_$UnifediApiInstanceStatusLimitsImpl) then) =
+      __$$UnifediApiInstanceStatusLimitsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@HiveField(0)
-      @JsonKey(name: 'max_toot_chars')
-          int? maxTootChars,
+      {@HiveField(0) @JsonKey(name: 'max_toot_chars') int? maxTootChars,
       @HiveField(1)
       @JsonKey(name: 'max_media_attachments_count')
-          int? maxMediaAttachmentsCount});
+      int? maxMediaAttachmentsCount});
 }
 
 /// @nodoc
-class __$UnifediApiInstanceStatusLimitsCopyWithImpl<$Res>
-    extends _$UnifediApiInstanceStatusLimitsCopyWithImpl<$Res>
-    implements _$UnifediApiInstanceStatusLimitsCopyWith<$Res> {
-  __$UnifediApiInstanceStatusLimitsCopyWithImpl(
-      _UnifediApiInstanceStatusLimits _value,
-      $Res Function(_UnifediApiInstanceStatusLimits) _then)
-      : super(_value, (v) => _then(v as _UnifediApiInstanceStatusLimits));
+class __$$UnifediApiInstanceStatusLimitsImplCopyWithImpl<$Res>
+    extends _$UnifediApiInstanceStatusLimitsCopyWithImpl<$Res,
+        _$UnifediApiInstanceStatusLimitsImpl>
+    implements _$$UnifediApiInstanceStatusLimitsImplCopyWith<$Res> {
+  __$$UnifediApiInstanceStatusLimitsImplCopyWithImpl(
+      _$UnifediApiInstanceStatusLimitsImpl _value,
+      $Res Function(_$UnifediApiInstanceStatusLimitsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _UnifediApiInstanceStatusLimits get _value =>
-      super._value as _UnifediApiInstanceStatusLimits;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? maxTootChars = freezed,
     Object? maxMediaAttachmentsCount = freezed,
   }) {
-    return _then(_UnifediApiInstanceStatusLimits(
-      maxTootChars: maxTootChars == freezed
+    return _then(_$UnifediApiInstanceStatusLimitsImpl(
+      maxTootChars: freezed == maxTootChars
           ? _value.maxTootChars
           : maxTootChars // ignore: cast_nullable_to_non_nullable
               as int?,
-      maxMediaAttachmentsCount: maxMediaAttachmentsCount == freezed
+      maxMediaAttachmentsCount: freezed == maxMediaAttachmentsCount
           ? _value.maxMediaAttachmentsCount
           : maxMediaAttachmentsCount // ignore: cast_nullable_to_non_nullable
               as int?,
@@ -151,19 +126,19 @@ class __$UnifediApiInstanceStatusLimitsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UnifediApiInstanceStatusLimits
+class _$UnifediApiInstanceStatusLimitsImpl
     implements _UnifediApiInstanceStatusLimits {
-  const _$_UnifediApiInstanceStatusLimits(
+  const _$UnifediApiInstanceStatusLimitsImpl(
       {@HiveField(0)
       @JsonKey(name: 'max_toot_chars')
-          required this.maxTootChars,
+      required this.maxTootChars,
       @HiveField(1)
       @JsonKey(name: 'max_media_attachments_count')
-          required this.maxMediaAttachmentsCount});
+      required this.maxMediaAttachmentsCount});
 
-  factory _$_UnifediApiInstanceStatusLimits.fromJson(
+  factory _$UnifediApiInstanceStatusLimitsImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_UnifediApiInstanceStatusLimitsFromJson(json);
+      _$$UnifediApiInstanceStatusLimitsImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -180,10 +155,10 @@ class _$_UnifediApiInstanceStatusLimits
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UnifediApiInstanceStatusLimits &&
+            other is _$UnifediApiInstanceStatusLimitsImpl &&
             (identical(other.maxTootChars, maxTootChars) ||
                 other.maxTootChars == maxTootChars) &&
             (identical(
@@ -191,19 +166,24 @@ class _$_UnifediApiInstanceStatusLimits
                 other.maxMediaAttachmentsCount == maxMediaAttachmentsCount));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, maxTootChars, maxMediaAttachmentsCount);
 
   @JsonKey(ignore: true)
   @override
-  _$UnifediApiInstanceStatusLimitsCopyWith<_UnifediApiInstanceStatusLimits>
-      get copyWith => __$UnifediApiInstanceStatusLimitsCopyWithImpl<
-          _UnifediApiInstanceStatusLimits>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnifediApiInstanceStatusLimitsImplCopyWith<
+          _$UnifediApiInstanceStatusLimitsImpl>
+      get copyWith => __$$UnifediApiInstanceStatusLimitsImplCopyWithImpl<
+          _$UnifediApiInstanceStatusLimitsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UnifediApiInstanceStatusLimitsToJson(this);
+    return _$$UnifediApiInstanceStatusLimitsImplToJson(
+      this,
+    );
   }
 }
 
@@ -212,14 +192,14 @@ abstract class _UnifediApiInstanceStatusLimits
   const factory _UnifediApiInstanceStatusLimits(
           {@HiveField(0)
           @JsonKey(name: 'max_toot_chars')
-              required int? maxTootChars,
+          required final int? maxTootChars,
           @HiveField(1)
           @JsonKey(name: 'max_media_attachments_count')
-              required int? maxMediaAttachmentsCount}) =
-      _$_UnifediApiInstanceStatusLimits;
+          required final int? maxMediaAttachmentsCount}) =
+      _$UnifediApiInstanceStatusLimitsImpl;
 
   factory _UnifediApiInstanceStatusLimits.fromJson(Map<String, dynamic> json) =
-      _$_UnifediApiInstanceStatusLimits.fromJson;
+      _$UnifediApiInstanceStatusLimitsImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -231,6 +211,7 @@ abstract class _UnifediApiInstanceStatusLimits
   int? get maxMediaAttachmentsCount;
   @override
   @JsonKey(ignore: true)
-  _$UnifediApiInstanceStatusLimitsCopyWith<_UnifediApiInstanceStatusLimits>
+  _$$UnifediApiInstanceStatusLimitsImplCopyWith<
+          _$UnifediApiInstanceStatusLimitsImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

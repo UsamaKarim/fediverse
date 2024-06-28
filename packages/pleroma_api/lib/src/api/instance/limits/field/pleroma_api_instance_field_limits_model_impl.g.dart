@@ -54,17 +54,17 @@ class PleromaApiInstanceFieldLimitsAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiInstanceFieldLimits _$$_PleromaApiInstanceFieldLimitsFromJson(
-        Map<String, dynamic> json) =>
-    _$_PleromaApiInstanceFieldLimits(
-      maxFields: json['max_fields'] as int?,
-      maxRemoteFields: json['max_remote_fields'] as int?,
-      nameLength: json['name_length'] as int?,
-      valueLength: json['value_length'] as int?,
-    );
+_$PleromaApiInstanceFieldLimitsImpl
+    _$$PleromaApiInstanceFieldLimitsImplFromJson(Map<String, dynamic> json) =>
+        _$PleromaApiInstanceFieldLimitsImpl(
+          maxFields: (json['max_fields'] as num?)?.toInt(),
+          maxRemoteFields: (json['max_remote_fields'] as num?)?.toInt(),
+          nameLength: (json['name_length'] as num?)?.toInt(),
+          valueLength: (json['value_length'] as num?)?.toInt(),
+        );
 
-Map<String, dynamic> _$$_PleromaApiInstanceFieldLimitsToJson(
-    _$_PleromaApiInstanceFieldLimits instance) {
+Map<String, dynamic> _$$PleromaApiInstanceFieldLimitsImplToJson(
+    _$PleromaApiInstanceFieldLimitsImpl instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

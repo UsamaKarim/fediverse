@@ -164,18 +164,19 @@ class UnifediApiAccountAdapter extends TypeAdapter<UnifediApiAccount> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiAccount _$$_UnifediApiAccountFromJson(Map<String, dynamic> json) =>
-    _$_UnifediApiAccount(
+_$UnifediApiAccountImpl _$$UnifediApiAccountImplFromJson(
+        Map<String, dynamic> json) =>
+    _$UnifediApiAccountImpl(
       username: json['username'] as String,
       url: json['url'] as String,
-      statusesCount: json['statuses_count'] as int?,
+      statusesCount: (json['statuses_count'] as num?)?.toInt(),
       note: json['note'] as String?,
       locked: json['locked'] as bool?,
       id: json['id'] as String,
       headerStatic: json['header_static'] as String?,
       header: json['header'] as String?,
-      followingCount: json['following_count'] as int?,
-      followersCount: json['followers_count'] as int?,
+      followingCount: (json['following_count'] as num?)?.toInt(),
+      followersCount: (json['followers_count'] as num?)?.toInt(),
       fields: (json['fields'] as List<dynamic>?)
           ?.map((e) => UnifediApiField.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -219,8 +220,8 @@ _$_UnifediApiAccount _$$_UnifediApiAccountFromJson(Map<String, dynamic> json) =>
           json['also_known_as']),
     );
 
-Map<String, dynamic> _$$_UnifediApiAccountToJson(
-    _$_UnifediApiAccount instance) {
+Map<String, dynamic> _$$UnifediApiAccountImplToJson(
+    _$UnifediApiAccountImpl instance) {
   final val = <String, dynamic>{
     'username': instance.username,
     'url': instance.url,

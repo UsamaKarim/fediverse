@@ -204,19 +204,19 @@ class UnifediApiMyAccountAdapter extends TypeAdapter<UnifediApiMyAccount> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiMyAccount _$$_UnifediApiMyAccountFromJson(
+_$UnifediApiMyAccountImpl _$$UnifediApiMyAccountImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiMyAccount(
+    _$UnifediApiMyAccountImpl(
       username: json['username'] as String,
       url: json['url'] as String,
-      statusesCount: json['statuses_count'] as int?,
+      statusesCount: (json['statuses_count'] as num?)?.toInt(),
       note: json['note'] as String?,
       locked: json['locked'] as bool?,
       id: json['id'] as String,
       headerStatic: json['header_static'] as String?,
       header: json['header'] as String?,
-      followingCount: json['following_count'] as int?,
-      followersCount: json['followers_count'] as int?,
+      followingCount: (json['following_count'] as num?)?.toInt(),
+      followersCount: (json['followers_count'] as num?)?.toInt(),
       fields: (json['fields'] as List<dynamic>?)
           ?.map((e) => UnifediApiField.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -233,7 +233,7 @@ _$_UnifediApiMyAccount _$$_UnifediApiMyAccountFromJson(
           ? null
           : DateTime.parse(json['last_status_at'] as String),
       discoverable: json['discoverable'] as bool?,
-      followRequestsCount: json['follow_requests_count'] as int?,
+      followRequestsCount: (json['follow_requests_count'] as num?)?.toInt(),
       fqn: json['fqn'] as String?,
       suspended: json['suspended'] as bool?,
       muteExpiresAt: json['mute_expires_at'] == null
@@ -259,7 +259,8 @@ _$_UnifediApiMyAccount _$$_UnifediApiMyAccountFromJson(
       chatToken: json['chat_token'] as String?,
       deactivated: json['deactivated'] as bool?,
       allowFollowingMove: json['allow_following_move'] as bool?,
-      unreadConversationCount: json['unread_conversation_count'] as int?,
+      unreadConversationCount:
+          (json['unread_conversation_count'] as num?)?.toInt(),
       notificationSettings: json['notifications_settings'] == null
           ? null
           : UnifediApiMyAccountNotificationsSettings.fromJson(
@@ -272,7 +273,8 @@ _$_UnifediApiMyAccount _$$_UnifediApiMyAccountFromJson(
       alsoKnownAs: (json['also_known_as'] as List<dynamic>?)
           ?.map((e) => e as String)
           .toList(),
-      unreadNotificationsCount: json['unread_notifications_count'] as int?,
+      unreadNotificationsCount:
+          (json['unread_notifications_count'] as num?)?.toInt(),
       privacy: json['privacy'] as String?,
       sensitive: json['sensitive'] as bool?,
       language: json['language'] as String?,
@@ -281,8 +283,8 @@ _$_UnifediApiMyAccount _$$_UnifediApiMyAccountFromJson(
       actorType: json['actor_type'] as String?,
     );
 
-Map<String, dynamic> _$$_UnifediApiMyAccountToJson(
-    _$_UnifediApiMyAccount instance) {
+Map<String, dynamic> _$$UnifediApiMyAccountImplToJson(
+    _$UnifediApiMyAccountImpl instance) {
   final val = <String, dynamic>{
     'username': instance.username,
     'url': instance.url,

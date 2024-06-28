@@ -48,17 +48,17 @@ class PleromaApiPushSubscriptionMetadataAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiPushSubscribeRequestSubscription
-    _$$_PleromaApiPushSubscribeRequestSubscriptionFromJson(
+_$PleromaApiPushSubscribeRequestSubscriptionImpl
+    _$$PleromaApiPushSubscribeRequestSubscriptionImplFromJson(
             Map<String, dynamic> json) =>
-        _$_PleromaApiPushSubscribeRequestSubscription(
+        _$PleromaApiPushSubscribeRequestSubscriptionImpl(
           endpoint: json['endpoint'] as String,
           keys: PleromaApiPushSubscriptionKeys.fromJson(
               json['keys'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_PleromaApiPushSubscribeRequestSubscriptionToJson(
-        _$_PleromaApiPushSubscribeRequestSubscription instance) =>
+Map<String, dynamic> _$$PleromaApiPushSubscribeRequestSubscriptionImplToJson(
+        _$PleromaApiPushSubscribeRequestSubscriptionImpl instance) =>
     <String, dynamic>{
       'endpoint': instance.endpoint,
       'keys': instance.keys.toJson(),

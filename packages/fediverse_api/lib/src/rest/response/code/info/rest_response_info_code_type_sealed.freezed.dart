@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'rest_response_info_code_type_sealed.dart';
 
@@ -11,48 +12,11 @@ part of 'rest_response_info_code_type_sealed.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$RestResponseInfoCodeTypeTearOff {
-  const _$RestResponseInfoCodeTypeTearOff();
-
-  _ContinueOk continueOk(
-      {int intValue = RestResponseInfoCodeType.continueOkIntValue}) {
-    return _ContinueOk(
-      intValue: intValue,
-    );
-  }
-
-  _SwitchingProtocol switchingProtocol(
-      {int intValue = RestResponseInfoCodeType.switchingProtocolIntValue}) {
-    return _SwitchingProtocol(
-      intValue: intValue,
-    );
-  }
-
-  _Processing processing(
-      {int intValue = RestResponseInfoCodeType.processingIntValue}) {
-    return _Processing(
-      intValue: intValue,
-    );
-  }
-
-  _EarlyHints earlyHints(
-      {int intValue = RestResponseInfoCodeType.earlyHintsIntValue}) {
-    return _EarlyHints(
-      intValue: intValue,
-    );
-  }
-}
-
-/// @nodoc
-const $RestResponseInfoCodeType = _$RestResponseInfoCodeTypeTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$RestResponseInfoCodeType {
   int get intValue => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(int intValue) continueOk,
@@ -63,10 +27,10 @@ mixin _$RestResponseInfoCodeType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? continueOk,
-    TResult Function(int intValue)? switchingProtocol,
-    TResult Function(int intValue)? processing,
-    TResult Function(int intValue)? earlyHints,
+    TResult? Function(int intValue)? continueOk,
+    TResult? Function(int intValue)? switchingProtocol,
+    TResult? Function(int intValue)? processing,
+    TResult? Function(int intValue)? earlyHints,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -88,10 +52,10 @@ mixin _$RestResponseInfoCodeType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_ContinueOk value)? continueOk,
-    TResult Function(_SwitchingProtocol value)? switchingProtocol,
-    TResult Function(_Processing value)? processing,
-    TResult Function(_EarlyHints value)? earlyHints,
+    TResult? Function(_ContinueOk value)? continueOk,
+    TResult? Function(_SwitchingProtocol value)? switchingProtocol,
+    TResult? Function(_Processing value)? processing,
+    TResult? Function(_EarlyHints value)? earlyHints,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -113,59 +77,62 @@ mixin _$RestResponseInfoCodeType {
 abstract class $RestResponseInfoCodeTypeCopyWith<$Res> {
   factory $RestResponseInfoCodeTypeCopyWith(RestResponseInfoCodeType value,
           $Res Function(RestResponseInfoCodeType) then) =
-      _$RestResponseInfoCodeTypeCopyWithImpl<$Res>;
+      _$RestResponseInfoCodeTypeCopyWithImpl<$Res, RestResponseInfoCodeType>;
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class _$RestResponseInfoCodeTypeCopyWithImpl<$Res>
+class _$RestResponseInfoCodeTypeCopyWithImpl<$Res,
+        $Val extends RestResponseInfoCodeType>
     implements $RestResponseInfoCodeTypeCopyWith<$Res> {
   _$RestResponseInfoCodeTypeCopyWithImpl(this._value, this._then);
 
-  final RestResponseInfoCodeType _value;
   // ignore: unused_field
-  final $Res Function(RestResponseInfoCodeType) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
     return _then(_value.copyWith(
-      intValue: intValue == freezed
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$ContinueOkCopyWith<$Res>
+abstract class _$$ContinueOkImplCopyWith<$Res>
     implements $RestResponseInfoCodeTypeCopyWith<$Res> {
-  factory _$ContinueOkCopyWith(
-          _ContinueOk value, $Res Function(_ContinueOk) then) =
-      __$ContinueOkCopyWithImpl<$Res>;
+  factory _$$ContinueOkImplCopyWith(
+          _$ContinueOkImpl value, $Res Function(_$ContinueOkImpl) then) =
+      __$$ContinueOkImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$ContinueOkCopyWithImpl<$Res>
-    extends _$RestResponseInfoCodeTypeCopyWithImpl<$Res>
-    implements _$ContinueOkCopyWith<$Res> {
-  __$ContinueOkCopyWithImpl(
-      _ContinueOk _value, $Res Function(_ContinueOk) _then)
-      : super(_value, (v) => _then(v as _ContinueOk));
+class __$$ContinueOkImplCopyWithImpl<$Res>
+    extends _$RestResponseInfoCodeTypeCopyWithImpl<$Res, _$ContinueOkImpl>
+    implements _$$ContinueOkImplCopyWith<$Res> {
+  __$$ContinueOkImplCopyWithImpl(
+      _$ContinueOkImpl _value, $Res Function(_$ContinueOkImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _ContinueOk get _value => super._value as _ContinueOk;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_ContinueOk(
-      intValue: intValue == freezed
+    return _then(_$ContinueOkImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -175,12 +142,12 @@ class __$ContinueOkCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ContinueOk implements _ContinueOk {
-  const _$_ContinueOk(
+class _$ContinueOkImpl implements _ContinueOk {
+  const _$ContinueOkImpl(
       {this.intValue = RestResponseInfoCodeType.continueOkIntValue});
 
-  @JsonKey(defaultValue: RestResponseInfoCodeType.continueOkIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -189,10 +156,10 @@ class _$_ContinueOk implements _ContinueOk {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ContinueOk &&
+            other is _$ContinueOkImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -202,8 +169,9 @@ class _$_ContinueOk implements _ContinueOk {
 
   @JsonKey(ignore: true)
   @override
-  _$ContinueOkCopyWith<_ContinueOk> get copyWith =>
-      __$ContinueOkCopyWithImpl<_ContinueOk>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ContinueOkImplCopyWith<_$ContinueOkImpl> get copyWith =>
+      __$$ContinueOkImplCopyWithImpl<_$ContinueOkImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -219,10 +187,10 @@ class _$_ContinueOk implements _ContinueOk {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? continueOk,
-    TResult Function(int intValue)? switchingProtocol,
-    TResult Function(int intValue)? processing,
-    TResult Function(int intValue)? earlyHints,
+    TResult? Function(int intValue)? continueOk,
+    TResult? Function(int intValue)? switchingProtocol,
+    TResult? Function(int intValue)? processing,
+    TResult? Function(int intValue)? earlyHints,
   }) {
     return continueOk?.call(intValue);
   }
@@ -256,10 +224,10 @@ class _$_ContinueOk implements _ContinueOk {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_ContinueOk value)? continueOk,
-    TResult Function(_SwitchingProtocol value)? switchingProtocol,
-    TResult Function(_Processing value)? processing,
-    TResult Function(_EarlyHints value)? earlyHints,
+    TResult? Function(_ContinueOk value)? continueOk,
+    TResult? Function(_SwitchingProtocol value)? switchingProtocol,
+    TResult? Function(_Processing value)? processing,
+    TResult? Function(_EarlyHints value)? earlyHints,
   }) {
     return continueOk?.call(this);
   }
@@ -281,43 +249,43 @@ class _$_ContinueOk implements _ContinueOk {
 }
 
 abstract class _ContinueOk implements RestResponseInfoCodeType {
-  const factory _ContinueOk({int intValue}) = _$_ContinueOk;
+  const factory _ContinueOk({final int intValue}) = _$ContinueOkImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$ContinueOkCopyWith<_ContinueOk> get copyWith =>
+  _$$ContinueOkImplCopyWith<_$ContinueOkImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$SwitchingProtocolCopyWith<$Res>
+abstract class _$$SwitchingProtocolImplCopyWith<$Res>
     implements $RestResponseInfoCodeTypeCopyWith<$Res> {
-  factory _$SwitchingProtocolCopyWith(
-          _SwitchingProtocol value, $Res Function(_SwitchingProtocol) then) =
-      __$SwitchingProtocolCopyWithImpl<$Res>;
+  factory _$$SwitchingProtocolImplCopyWith(_$SwitchingProtocolImpl value,
+          $Res Function(_$SwitchingProtocolImpl) then) =
+      __$$SwitchingProtocolImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$SwitchingProtocolCopyWithImpl<$Res>
-    extends _$RestResponseInfoCodeTypeCopyWithImpl<$Res>
-    implements _$SwitchingProtocolCopyWith<$Res> {
-  __$SwitchingProtocolCopyWithImpl(
-      _SwitchingProtocol _value, $Res Function(_SwitchingProtocol) _then)
-      : super(_value, (v) => _then(v as _SwitchingProtocol));
+class __$$SwitchingProtocolImplCopyWithImpl<$Res>
+    extends _$RestResponseInfoCodeTypeCopyWithImpl<$Res,
+        _$SwitchingProtocolImpl>
+    implements _$$SwitchingProtocolImplCopyWith<$Res> {
+  __$$SwitchingProtocolImplCopyWithImpl(_$SwitchingProtocolImpl _value,
+      $Res Function(_$SwitchingProtocolImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _SwitchingProtocol get _value => super._value as _SwitchingProtocol;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_SwitchingProtocol(
-      intValue: intValue == freezed
+    return _then(_$SwitchingProtocolImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -327,12 +295,12 @@ class __$SwitchingProtocolCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_SwitchingProtocol implements _SwitchingProtocol {
-  const _$_SwitchingProtocol(
+class _$SwitchingProtocolImpl implements _SwitchingProtocol {
+  const _$SwitchingProtocolImpl(
       {this.intValue = RestResponseInfoCodeType.switchingProtocolIntValue});
 
-  @JsonKey(defaultValue: RestResponseInfoCodeType.switchingProtocolIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -341,10 +309,10 @@ class _$_SwitchingProtocol implements _SwitchingProtocol {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _SwitchingProtocol &&
+            other is _$SwitchingProtocolImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -354,8 +322,10 @@ class _$_SwitchingProtocol implements _SwitchingProtocol {
 
   @JsonKey(ignore: true)
   @override
-  _$SwitchingProtocolCopyWith<_SwitchingProtocol> get copyWith =>
-      __$SwitchingProtocolCopyWithImpl<_SwitchingProtocol>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$SwitchingProtocolImplCopyWith<_$SwitchingProtocolImpl> get copyWith =>
+      __$$SwitchingProtocolImplCopyWithImpl<_$SwitchingProtocolImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -371,10 +341,10 @@ class _$_SwitchingProtocol implements _SwitchingProtocol {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? continueOk,
-    TResult Function(int intValue)? switchingProtocol,
-    TResult Function(int intValue)? processing,
-    TResult Function(int intValue)? earlyHints,
+    TResult? Function(int intValue)? continueOk,
+    TResult? Function(int intValue)? switchingProtocol,
+    TResult? Function(int intValue)? processing,
+    TResult? Function(int intValue)? earlyHints,
   }) {
     return switchingProtocol?.call(intValue);
   }
@@ -408,10 +378,10 @@ class _$_SwitchingProtocol implements _SwitchingProtocol {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_ContinueOk value)? continueOk,
-    TResult Function(_SwitchingProtocol value)? switchingProtocol,
-    TResult Function(_Processing value)? processing,
-    TResult Function(_EarlyHints value)? earlyHints,
+    TResult? Function(_ContinueOk value)? continueOk,
+    TResult? Function(_SwitchingProtocol value)? switchingProtocol,
+    TResult? Function(_Processing value)? processing,
+    TResult? Function(_EarlyHints value)? earlyHints,
   }) {
     return switchingProtocol?.call(this);
   }
@@ -433,43 +403,43 @@ class _$_SwitchingProtocol implements _SwitchingProtocol {
 }
 
 abstract class _SwitchingProtocol implements RestResponseInfoCodeType {
-  const factory _SwitchingProtocol({int intValue}) = _$_SwitchingProtocol;
+  const factory _SwitchingProtocol({final int intValue}) =
+      _$SwitchingProtocolImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$SwitchingProtocolCopyWith<_SwitchingProtocol> get copyWith =>
+  _$$SwitchingProtocolImplCopyWith<_$SwitchingProtocolImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ProcessingCopyWith<$Res>
+abstract class _$$ProcessingImplCopyWith<$Res>
     implements $RestResponseInfoCodeTypeCopyWith<$Res> {
-  factory _$ProcessingCopyWith(
-          _Processing value, $Res Function(_Processing) then) =
-      __$ProcessingCopyWithImpl<$Res>;
+  factory _$$ProcessingImplCopyWith(
+          _$ProcessingImpl value, $Res Function(_$ProcessingImpl) then) =
+      __$$ProcessingImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$ProcessingCopyWithImpl<$Res>
-    extends _$RestResponseInfoCodeTypeCopyWithImpl<$Res>
-    implements _$ProcessingCopyWith<$Res> {
-  __$ProcessingCopyWithImpl(
-      _Processing _value, $Res Function(_Processing) _then)
-      : super(_value, (v) => _then(v as _Processing));
+class __$$ProcessingImplCopyWithImpl<$Res>
+    extends _$RestResponseInfoCodeTypeCopyWithImpl<$Res, _$ProcessingImpl>
+    implements _$$ProcessingImplCopyWith<$Res> {
+  __$$ProcessingImplCopyWithImpl(
+      _$ProcessingImpl _value, $Res Function(_$ProcessingImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Processing get _value => super._value as _Processing;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_Processing(
-      intValue: intValue == freezed
+    return _then(_$ProcessingImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -479,12 +449,12 @@ class __$ProcessingCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Processing implements _Processing {
-  const _$_Processing(
+class _$ProcessingImpl implements _Processing {
+  const _$ProcessingImpl(
       {this.intValue = RestResponseInfoCodeType.processingIntValue});
 
-  @JsonKey(defaultValue: RestResponseInfoCodeType.processingIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -493,10 +463,10 @@ class _$_Processing implements _Processing {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Processing &&
+            other is _$ProcessingImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -506,8 +476,9 @@ class _$_Processing implements _Processing {
 
   @JsonKey(ignore: true)
   @override
-  _$ProcessingCopyWith<_Processing> get copyWith =>
-      __$ProcessingCopyWithImpl<_Processing>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ProcessingImplCopyWith<_$ProcessingImpl> get copyWith =>
+      __$$ProcessingImplCopyWithImpl<_$ProcessingImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -523,10 +494,10 @@ class _$_Processing implements _Processing {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? continueOk,
-    TResult Function(int intValue)? switchingProtocol,
-    TResult Function(int intValue)? processing,
-    TResult Function(int intValue)? earlyHints,
+    TResult? Function(int intValue)? continueOk,
+    TResult? Function(int intValue)? switchingProtocol,
+    TResult? Function(int intValue)? processing,
+    TResult? Function(int intValue)? earlyHints,
   }) {
     return processing?.call(intValue);
   }
@@ -560,10 +531,10 @@ class _$_Processing implements _Processing {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_ContinueOk value)? continueOk,
-    TResult Function(_SwitchingProtocol value)? switchingProtocol,
-    TResult Function(_Processing value)? processing,
-    TResult Function(_EarlyHints value)? earlyHints,
+    TResult? Function(_ContinueOk value)? continueOk,
+    TResult? Function(_SwitchingProtocol value)? switchingProtocol,
+    TResult? Function(_Processing value)? processing,
+    TResult? Function(_EarlyHints value)? earlyHints,
   }) {
     return processing?.call(this);
   }
@@ -585,43 +556,42 @@ class _$_Processing implements _Processing {
 }
 
 abstract class _Processing implements RestResponseInfoCodeType {
-  const factory _Processing({int intValue}) = _$_Processing;
+  const factory _Processing({final int intValue}) = _$ProcessingImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$ProcessingCopyWith<_Processing> get copyWith =>
+  _$$ProcessingImplCopyWith<_$ProcessingImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$EarlyHintsCopyWith<$Res>
+abstract class _$$EarlyHintsImplCopyWith<$Res>
     implements $RestResponseInfoCodeTypeCopyWith<$Res> {
-  factory _$EarlyHintsCopyWith(
-          _EarlyHints value, $Res Function(_EarlyHints) then) =
-      __$EarlyHintsCopyWithImpl<$Res>;
+  factory _$$EarlyHintsImplCopyWith(
+          _$EarlyHintsImpl value, $Res Function(_$EarlyHintsImpl) then) =
+      __$$EarlyHintsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int intValue});
 }
 
 /// @nodoc
-class __$EarlyHintsCopyWithImpl<$Res>
-    extends _$RestResponseInfoCodeTypeCopyWithImpl<$Res>
-    implements _$EarlyHintsCopyWith<$Res> {
-  __$EarlyHintsCopyWithImpl(
-      _EarlyHints _value, $Res Function(_EarlyHints) _then)
-      : super(_value, (v) => _then(v as _EarlyHints));
+class __$$EarlyHintsImplCopyWithImpl<$Res>
+    extends _$RestResponseInfoCodeTypeCopyWithImpl<$Res, _$EarlyHintsImpl>
+    implements _$$EarlyHintsImplCopyWith<$Res> {
+  __$$EarlyHintsImplCopyWithImpl(
+      _$EarlyHintsImpl _value, $Res Function(_$EarlyHintsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _EarlyHints get _value => super._value as _EarlyHints;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? intValue = freezed,
+    Object? intValue = null,
   }) {
-    return _then(_EarlyHints(
-      intValue: intValue == freezed
+    return _then(_$EarlyHintsImpl(
+      intValue: null == intValue
           ? _value.intValue
           : intValue // ignore: cast_nullable_to_non_nullable
               as int,
@@ -631,12 +601,12 @@ class __$EarlyHintsCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_EarlyHints implements _EarlyHints {
-  const _$_EarlyHints(
+class _$EarlyHintsImpl implements _EarlyHints {
+  const _$EarlyHintsImpl(
       {this.intValue = RestResponseInfoCodeType.earlyHintsIntValue});
 
-  @JsonKey(defaultValue: RestResponseInfoCodeType.earlyHintsIntValue)
   @override
+  @JsonKey()
   final int intValue;
 
   @override
@@ -645,10 +615,10 @@ class _$_EarlyHints implements _EarlyHints {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _EarlyHints &&
+            other is _$EarlyHintsImpl &&
             (identical(other.intValue, intValue) ||
                 other.intValue == intValue));
   }
@@ -658,8 +628,9 @@ class _$_EarlyHints implements _EarlyHints {
 
   @JsonKey(ignore: true)
   @override
-  _$EarlyHintsCopyWith<_EarlyHints> get copyWith =>
-      __$EarlyHintsCopyWithImpl<_EarlyHints>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$EarlyHintsImplCopyWith<_$EarlyHintsImpl> get copyWith =>
+      __$$EarlyHintsImplCopyWithImpl<_$EarlyHintsImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -675,10 +646,10 @@ class _$_EarlyHints implements _EarlyHints {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int intValue)? continueOk,
-    TResult Function(int intValue)? switchingProtocol,
-    TResult Function(int intValue)? processing,
-    TResult Function(int intValue)? earlyHints,
+    TResult? Function(int intValue)? continueOk,
+    TResult? Function(int intValue)? switchingProtocol,
+    TResult? Function(int intValue)? processing,
+    TResult? Function(int intValue)? earlyHints,
   }) {
     return earlyHints?.call(intValue);
   }
@@ -712,10 +683,10 @@ class _$_EarlyHints implements _EarlyHints {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_ContinueOk value)? continueOk,
-    TResult Function(_SwitchingProtocol value)? switchingProtocol,
-    TResult Function(_Processing value)? processing,
-    TResult Function(_EarlyHints value)? earlyHints,
+    TResult? Function(_ContinueOk value)? continueOk,
+    TResult? Function(_SwitchingProtocol value)? switchingProtocol,
+    TResult? Function(_Processing value)? processing,
+    TResult? Function(_EarlyHints value)? earlyHints,
   }) {
     return earlyHints?.call(this);
   }
@@ -737,12 +708,12 @@ class _$_EarlyHints implements _EarlyHints {
 }
 
 abstract class _EarlyHints implements RestResponseInfoCodeType {
-  const factory _EarlyHints({int intValue}) = _$_EarlyHints;
+  const factory _EarlyHints({final int intValue}) = _$EarlyHintsImpl;
 
   @override
   int get intValue;
   @override
   @JsonKey(ignore: true)
-  _$EarlyHintsCopyWith<_EarlyHints> get copyWith =>
+  _$$EarlyHintsImplCopyWith<_$EarlyHintsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -47,15 +47,15 @@ class PleromaApiPollOptionAdapter extends TypeAdapter<PleromaApiPollOption> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PleromaApiPollOption _$$_PleromaApiPollOptionFromJson(
+_$PleromaApiPollOptionImpl _$$PleromaApiPollOptionImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PleromaApiPollOption(
+    _$PleromaApiPollOptionImpl(
       title: json['title'] as String,
-      votesCount: json['votes_count'] as int?,
+      votesCount: (json['votes_count'] as num?)?.toInt(),
     );
 
-Map<String, dynamic> _$$_PleromaApiPollOptionToJson(
-    _$_PleromaApiPollOption instance) {
+Map<String, dynamic> _$$PleromaApiPollOptionImplToJson(
+    _$PleromaApiPollOptionImpl instance) {
   final val = <String, dynamic>{
     'title': instance.title,
   };

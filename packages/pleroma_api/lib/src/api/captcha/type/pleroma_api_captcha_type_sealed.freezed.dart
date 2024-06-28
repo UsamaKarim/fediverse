@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pleroma_api_captcha_type_sealed.dart';
 
@@ -11,46 +12,11 @@ part of 'pleroma_api_captcha_type_sealed.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$PleromaApiCaptchaTypeTearOff {
-  const _$PleromaApiCaptchaTypeTearOff();
-
-  _Native native(
-      {String stringValue = PleromaApiCaptchaType.nativeStringValue}) {
-    return _Native(
-      stringValue: stringValue,
-    );
-  }
-
-  _Kocaptcha kocaptcha(
-      {String stringValue = PleromaApiCaptchaType.kocaptchaStringValue}) {
-    return _Kocaptcha(
-      stringValue: stringValue,
-    );
-  }
-
-  _None none({String stringValue = PleromaApiCaptchaType.noneStringValue}) {
-    return _None(
-      stringValue: stringValue,
-    );
-  }
-
-  _Unknown unknown({required String stringValue}) {
-    return _Unknown(
-      stringValue: stringValue,
-    );
-  }
-}
-
-/// @nodoc
-const $PleromaApiCaptchaType = _$PleromaApiCaptchaTypeTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$PleromaApiCaptchaType {
   String get stringValue => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String stringValue) native,
@@ -61,10 +27,10 @@ mixin _$PleromaApiCaptchaType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? native,
-    TResult Function(String stringValue)? kocaptcha,
-    TResult Function(String stringValue)? none,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? native,
+    TResult? Function(String stringValue)? kocaptcha,
+    TResult? Function(String stringValue)? none,
+    TResult? Function(String stringValue)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -86,10 +52,10 @@ mixin _$PleromaApiCaptchaType {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Native value)? native,
-    TResult Function(_Kocaptcha value)? kocaptcha,
-    TResult Function(_None value)? none,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Native value)? native,
+    TResult? Function(_Kocaptcha value)? kocaptcha,
+    TResult? Function(_None value)? none,
+    TResult? Function(_Unknown value)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -111,57 +77,62 @@ mixin _$PleromaApiCaptchaType {
 abstract class $PleromaApiCaptchaTypeCopyWith<$Res> {
   factory $PleromaApiCaptchaTypeCopyWith(PleromaApiCaptchaType value,
           $Res Function(PleromaApiCaptchaType) then) =
-      _$PleromaApiCaptchaTypeCopyWithImpl<$Res>;
+      _$PleromaApiCaptchaTypeCopyWithImpl<$Res, PleromaApiCaptchaType>;
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class _$PleromaApiCaptchaTypeCopyWithImpl<$Res>
+class _$PleromaApiCaptchaTypeCopyWithImpl<$Res,
+        $Val extends PleromaApiCaptchaType>
     implements $PleromaApiCaptchaTypeCopyWith<$Res> {
   _$PleromaApiCaptchaTypeCopyWithImpl(this._value, this._then);
 
-  final PleromaApiCaptchaType _value;
   // ignore: unused_field
-  final $Res Function(PleromaApiCaptchaType) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
     return _then(_value.copyWith(
-      stringValue: stringValue == freezed
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$NativeCopyWith<$Res>
+abstract class _$$NativeImplCopyWith<$Res>
     implements $PleromaApiCaptchaTypeCopyWith<$Res> {
-  factory _$NativeCopyWith(_Native value, $Res Function(_Native) then) =
-      __$NativeCopyWithImpl<$Res>;
+  factory _$$NativeImplCopyWith(
+          _$NativeImpl value, $Res Function(_$NativeImpl) then) =
+      __$$NativeImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$NativeCopyWithImpl<$Res>
-    extends _$PleromaApiCaptchaTypeCopyWithImpl<$Res>
-    implements _$NativeCopyWith<$Res> {
-  __$NativeCopyWithImpl(_Native _value, $Res Function(_Native) _then)
-      : super(_value, (v) => _then(v as _Native));
+class __$$NativeImplCopyWithImpl<$Res>
+    extends _$PleromaApiCaptchaTypeCopyWithImpl<$Res, _$NativeImpl>
+    implements _$$NativeImplCopyWith<$Res> {
+  __$$NativeImplCopyWithImpl(
+      _$NativeImpl _value, $Res Function(_$NativeImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Native get _value => super._value as _Native;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Native(
-      stringValue: stringValue == freezed
+    return _then(_$NativeImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -171,11 +142,12 @@ class __$NativeCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Native implements _Native {
-  const _$_Native({this.stringValue = PleromaApiCaptchaType.nativeStringValue});
+class _$NativeImpl implements _Native {
+  const _$NativeImpl(
+      {this.stringValue = PleromaApiCaptchaType.nativeStringValue});
 
-  @JsonKey(defaultValue: PleromaApiCaptchaType.nativeStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -184,10 +156,10 @@ class _$_Native implements _Native {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Native &&
+            other is _$NativeImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -197,8 +169,9 @@ class _$_Native implements _Native {
 
   @JsonKey(ignore: true)
   @override
-  _$NativeCopyWith<_Native> get copyWith =>
-      __$NativeCopyWithImpl<_Native>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$NativeImplCopyWith<_$NativeImpl> get copyWith =>
+      __$$NativeImplCopyWithImpl<_$NativeImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -214,10 +187,10 @@ class _$_Native implements _Native {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? native,
-    TResult Function(String stringValue)? kocaptcha,
-    TResult Function(String stringValue)? none,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? native,
+    TResult? Function(String stringValue)? kocaptcha,
+    TResult? Function(String stringValue)? none,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return native?.call(stringValue);
   }
@@ -251,10 +224,10 @@ class _$_Native implements _Native {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Native value)? native,
-    TResult Function(_Kocaptcha value)? kocaptcha,
-    TResult Function(_None value)? none,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Native value)? native,
+    TResult? Function(_Kocaptcha value)? kocaptcha,
+    TResult? Function(_None value)? none,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return native?.call(this);
   }
@@ -276,41 +249,42 @@ class _$_Native implements _Native {
 }
 
 abstract class _Native implements PleromaApiCaptchaType {
-  const factory _Native({String stringValue}) = _$_Native;
+  const factory _Native({final String stringValue}) = _$NativeImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$NativeCopyWith<_Native> get copyWith => throw _privateConstructorUsedError;
+  _$$NativeImplCopyWith<_$NativeImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$KocaptchaCopyWith<$Res>
+abstract class _$$KocaptchaImplCopyWith<$Res>
     implements $PleromaApiCaptchaTypeCopyWith<$Res> {
-  factory _$KocaptchaCopyWith(
-          _Kocaptcha value, $Res Function(_Kocaptcha) then) =
-      __$KocaptchaCopyWithImpl<$Res>;
+  factory _$$KocaptchaImplCopyWith(
+          _$KocaptchaImpl value, $Res Function(_$KocaptchaImpl) then) =
+      __$$KocaptchaImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$KocaptchaCopyWithImpl<$Res>
-    extends _$PleromaApiCaptchaTypeCopyWithImpl<$Res>
-    implements _$KocaptchaCopyWith<$Res> {
-  __$KocaptchaCopyWithImpl(_Kocaptcha _value, $Res Function(_Kocaptcha) _then)
-      : super(_value, (v) => _then(v as _Kocaptcha));
+class __$$KocaptchaImplCopyWithImpl<$Res>
+    extends _$PleromaApiCaptchaTypeCopyWithImpl<$Res, _$KocaptchaImpl>
+    implements _$$KocaptchaImplCopyWith<$Res> {
+  __$$KocaptchaImplCopyWithImpl(
+      _$KocaptchaImpl _value, $Res Function(_$KocaptchaImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Kocaptcha get _value => super._value as _Kocaptcha;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Kocaptcha(
-      stringValue: stringValue == freezed
+    return _then(_$KocaptchaImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -320,12 +294,12 @@ class __$KocaptchaCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Kocaptcha implements _Kocaptcha {
-  const _$_Kocaptcha(
+class _$KocaptchaImpl implements _Kocaptcha {
+  const _$KocaptchaImpl(
       {this.stringValue = PleromaApiCaptchaType.kocaptchaStringValue});
 
-  @JsonKey(defaultValue: PleromaApiCaptchaType.kocaptchaStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -334,10 +308,10 @@ class _$_Kocaptcha implements _Kocaptcha {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Kocaptcha &&
+            other is _$KocaptchaImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -347,8 +321,9 @@ class _$_Kocaptcha implements _Kocaptcha {
 
   @JsonKey(ignore: true)
   @override
-  _$KocaptchaCopyWith<_Kocaptcha> get copyWith =>
-      __$KocaptchaCopyWithImpl<_Kocaptcha>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$KocaptchaImplCopyWith<_$KocaptchaImpl> get copyWith =>
+      __$$KocaptchaImplCopyWithImpl<_$KocaptchaImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -364,10 +339,10 @@ class _$_Kocaptcha implements _Kocaptcha {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? native,
-    TResult Function(String stringValue)? kocaptcha,
-    TResult Function(String stringValue)? none,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? native,
+    TResult? Function(String stringValue)? kocaptcha,
+    TResult? Function(String stringValue)? none,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return kocaptcha?.call(stringValue);
   }
@@ -401,10 +376,10 @@ class _$_Kocaptcha implements _Kocaptcha {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Native value)? native,
-    TResult Function(_Kocaptcha value)? kocaptcha,
-    TResult Function(_None value)? none,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Native value)? native,
+    TResult? Function(_Kocaptcha value)? kocaptcha,
+    TResult? Function(_None value)? none,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return kocaptcha?.call(this);
   }
@@ -426,41 +401,41 @@ class _$_Kocaptcha implements _Kocaptcha {
 }
 
 abstract class _Kocaptcha implements PleromaApiCaptchaType {
-  const factory _Kocaptcha({String stringValue}) = _$_Kocaptcha;
+  const factory _Kocaptcha({final String stringValue}) = _$KocaptchaImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$KocaptchaCopyWith<_Kocaptcha> get copyWith =>
+  _$$KocaptchaImplCopyWith<_$KocaptchaImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$NoneCopyWith<$Res>
+abstract class _$$NoneImplCopyWith<$Res>
     implements $PleromaApiCaptchaTypeCopyWith<$Res> {
-  factory _$NoneCopyWith(_None value, $Res Function(_None) then) =
-      __$NoneCopyWithImpl<$Res>;
+  factory _$$NoneImplCopyWith(
+          _$NoneImpl value, $Res Function(_$NoneImpl) then) =
+      __$$NoneImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$NoneCopyWithImpl<$Res>
-    extends _$PleromaApiCaptchaTypeCopyWithImpl<$Res>
-    implements _$NoneCopyWith<$Res> {
-  __$NoneCopyWithImpl(_None _value, $Res Function(_None) _then)
-      : super(_value, (v) => _then(v as _None));
+class __$$NoneImplCopyWithImpl<$Res>
+    extends _$PleromaApiCaptchaTypeCopyWithImpl<$Res, _$NoneImpl>
+    implements _$$NoneImplCopyWith<$Res> {
+  __$$NoneImplCopyWithImpl(_$NoneImpl _value, $Res Function(_$NoneImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _None get _value => super._value as _None;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_None(
-      stringValue: stringValue == freezed
+    return _then(_$NoneImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -470,11 +445,11 @@ class __$NoneCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_None implements _None {
-  const _$_None({this.stringValue = PleromaApiCaptchaType.noneStringValue});
+class _$NoneImpl implements _None {
+  const _$NoneImpl({this.stringValue = PleromaApiCaptchaType.noneStringValue});
 
-  @JsonKey(defaultValue: PleromaApiCaptchaType.noneStringValue)
   @override
+  @JsonKey()
   final String stringValue;
 
   @override
@@ -483,10 +458,10 @@ class _$_None implements _None {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _None &&
+            other is _$NoneImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -496,8 +471,9 @@ class _$_None implements _None {
 
   @JsonKey(ignore: true)
   @override
-  _$NoneCopyWith<_None> get copyWith =>
-      __$NoneCopyWithImpl<_None>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$NoneImplCopyWith<_$NoneImpl> get copyWith =>
+      __$$NoneImplCopyWithImpl<_$NoneImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -513,10 +489,10 @@ class _$_None implements _None {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? native,
-    TResult Function(String stringValue)? kocaptcha,
-    TResult Function(String stringValue)? none,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? native,
+    TResult? Function(String stringValue)? kocaptcha,
+    TResult? Function(String stringValue)? none,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return none?.call(stringValue);
   }
@@ -550,10 +526,10 @@ class _$_None implements _None {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Native value)? native,
-    TResult Function(_Kocaptcha value)? kocaptcha,
-    TResult Function(_None value)? none,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Native value)? native,
+    TResult? Function(_Kocaptcha value)? kocaptcha,
+    TResult? Function(_None value)? none,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return none?.call(this);
   }
@@ -575,40 +551,42 @@ class _$_None implements _None {
 }
 
 abstract class _None implements PleromaApiCaptchaType {
-  const factory _None({String stringValue}) = _$_None;
+  const factory _None({final String stringValue}) = _$NoneImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$NoneCopyWith<_None> get copyWith => throw _privateConstructorUsedError;
+  _$$NoneImplCopyWith<_$NoneImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$UnknownCopyWith<$Res>
+abstract class _$$UnknownImplCopyWith<$Res>
     implements $PleromaApiCaptchaTypeCopyWith<$Res> {
-  factory _$UnknownCopyWith(_Unknown value, $Res Function(_Unknown) then) =
-      __$UnknownCopyWithImpl<$Res>;
+  factory _$$UnknownImplCopyWith(
+          _$UnknownImpl value, $Res Function(_$UnknownImpl) then) =
+      __$$UnknownImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String stringValue});
 }
 
 /// @nodoc
-class __$UnknownCopyWithImpl<$Res>
-    extends _$PleromaApiCaptchaTypeCopyWithImpl<$Res>
-    implements _$UnknownCopyWith<$Res> {
-  __$UnknownCopyWithImpl(_Unknown _value, $Res Function(_Unknown) _then)
-      : super(_value, (v) => _then(v as _Unknown));
+class __$$UnknownImplCopyWithImpl<$Res>
+    extends _$PleromaApiCaptchaTypeCopyWithImpl<$Res, _$UnknownImpl>
+    implements _$$UnknownImplCopyWith<$Res> {
+  __$$UnknownImplCopyWithImpl(
+      _$UnknownImpl _value, $Res Function(_$UnknownImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Unknown get _value => super._value as _Unknown;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stringValue = freezed,
+    Object? stringValue = null,
   }) {
-    return _then(_Unknown(
-      stringValue: stringValue == freezed
+    return _then(_$UnknownImpl(
+      stringValue: null == stringValue
           ? _value.stringValue
           : stringValue // ignore: cast_nullable_to_non_nullable
               as String,
@@ -618,8 +596,8 @@ class __$UnknownCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Unknown implements _Unknown {
-  const _$_Unknown({required this.stringValue});
+class _$UnknownImpl implements _Unknown {
+  const _$UnknownImpl({required this.stringValue});
 
   @override
   final String stringValue;
@@ -630,10 +608,10 @@ class _$_Unknown implements _Unknown {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Unknown &&
+            other is _$UnknownImpl &&
             (identical(other.stringValue, stringValue) ||
                 other.stringValue == stringValue));
   }
@@ -643,8 +621,9 @@ class _$_Unknown implements _Unknown {
 
   @JsonKey(ignore: true)
   @override
-  _$UnknownCopyWith<_Unknown> get copyWith =>
-      __$UnknownCopyWithImpl<_Unknown>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnknownImplCopyWith<_$UnknownImpl> get copyWith =>
+      __$$UnknownImplCopyWithImpl<_$UnknownImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -660,10 +639,10 @@ class _$_Unknown implements _Unknown {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String stringValue)? native,
-    TResult Function(String stringValue)? kocaptcha,
-    TResult Function(String stringValue)? none,
-    TResult Function(String stringValue)? unknown,
+    TResult? Function(String stringValue)? native,
+    TResult? Function(String stringValue)? kocaptcha,
+    TResult? Function(String stringValue)? none,
+    TResult? Function(String stringValue)? unknown,
   }) {
     return unknown?.call(stringValue);
   }
@@ -697,10 +676,10 @@ class _$_Unknown implements _Unknown {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Native value)? native,
-    TResult Function(_Kocaptcha value)? kocaptcha,
-    TResult Function(_None value)? none,
-    TResult Function(_Unknown value)? unknown,
+    TResult? Function(_Native value)? native,
+    TResult? Function(_Kocaptcha value)? kocaptcha,
+    TResult? Function(_None value)? none,
+    TResult? Function(_Unknown value)? unknown,
   }) {
     return unknown?.call(this);
   }
@@ -722,12 +701,12 @@ class _$_Unknown implements _Unknown {
 }
 
 abstract class _Unknown implements PleromaApiCaptchaType {
-  const factory _Unknown({required String stringValue}) = _$_Unknown;
+  const factory _Unknown({required final String stringValue}) = _$UnknownImpl;
 
   @override
   String get stringValue;
   @override
   @JsonKey(ignore: true)
-  _$UnknownCopyWith<_Unknown> get copyWith =>
+  _$$UnknownImplCopyWith<_$UnknownImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

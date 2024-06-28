@@ -44,12 +44,14 @@ class AppAnalyticsDataAdapter extends TypeAdapter<AppAnalyticsData> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_AppAnalyticsData _$$_AppAnalyticsDataFromJson(Map<String, dynamic> json) =>
-    _$_AppAnalyticsData(
-      appOpenedCount: json['appOpenedCount'] as int,
+_$AppAnalyticsDataImpl _$$AppAnalyticsDataImplFromJson(
+        Map<String, dynamic> json) =>
+    _$AppAnalyticsDataImpl(
+      appOpenedCount: (json['appOpenedCount'] as num).toInt(),
     );
 
-Map<String, dynamic> _$$_AppAnalyticsDataToJson(_$_AppAnalyticsData instance) =>
+Map<String, dynamic> _$$AppAnalyticsDataImplToJson(
+        _$AppAnalyticsDataImpl instance) =>
     <String, dynamic>{
       'appOpenedCount': instance.appOpenedCount,
     };

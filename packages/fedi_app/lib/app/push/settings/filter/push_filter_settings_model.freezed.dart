@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'push_filter_settings_model.dart';
 
@@ -11,36 +12,11 @@ part of 'push_filter_settings_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PushFilterSettings _$PushFilterSettingsFromJson(Map<String, dynamic> json) {
   return _PushFilterSettings.fromJson(json);
 }
-
-/// @nodoc
-class _$PushFilterSettingsTearOff {
-  const _$PushFilterSettingsTearOff();
-
-  _PushFilterSettings call(
-      {@JsonKey(name: 'blockFromStrangers')
-      @HiveField(1)
-          required bool? blockFromStrangers,
-      @JsonKey(name: 'hideNotificationContents')
-      @HiveField(2)
-          required bool? hideNotificationContents}) {
-    return _PushFilterSettings(
-      blockFromStrangers: blockFromStrangers,
-      hideNotificationContents: hideNotificationContents,
-    );
-  }
-
-  PushFilterSettings fromJson(Map<String, Object?> json) {
-    return PushFilterSettings.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PushFilterSettings = _$PushFilterSettingsTearOff();
 
 /// @nodoc
 mixin _$PushFilterSettings {
@@ -61,81 +37,83 @@ mixin _$PushFilterSettings {
 abstract class $PushFilterSettingsCopyWith<$Res> {
   factory $PushFilterSettingsCopyWith(
           PushFilterSettings value, $Res Function(PushFilterSettings) then) =
-      _$PushFilterSettingsCopyWithImpl<$Res>;
+      _$PushFilterSettingsCopyWithImpl<$Res, PushFilterSettings>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'blockFromStrangers')
       @HiveField(1)
-          bool? blockFromStrangers,
+      bool? blockFromStrangers,
       @JsonKey(name: 'hideNotificationContents')
       @HiveField(2)
-          bool? hideNotificationContents});
+      bool? hideNotificationContents});
 }
 
 /// @nodoc
-class _$PushFilterSettingsCopyWithImpl<$Res>
+class _$PushFilterSettingsCopyWithImpl<$Res, $Val extends PushFilterSettings>
     implements $PushFilterSettingsCopyWith<$Res> {
   _$PushFilterSettingsCopyWithImpl(this._value, this._then);
 
-  final PushFilterSettings _value;
   // ignore: unused_field
-  final $Res Function(PushFilterSettings) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? blockFromStrangers = freezed,
     Object? hideNotificationContents = freezed,
   }) {
     return _then(_value.copyWith(
-      blockFromStrangers: blockFromStrangers == freezed
+      blockFromStrangers: freezed == blockFromStrangers
           ? _value.blockFromStrangers
           : blockFromStrangers // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideNotificationContents: hideNotificationContents == freezed
+      hideNotificationContents: freezed == hideNotificationContents
           ? _value.hideNotificationContents
           : hideNotificationContents // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$PushFilterSettingsCopyWith<$Res>
+abstract class _$$PushFilterSettingsImplCopyWith<$Res>
     implements $PushFilterSettingsCopyWith<$Res> {
-  factory _$PushFilterSettingsCopyWith(
-          _PushFilterSettings value, $Res Function(_PushFilterSettings) then) =
-      __$PushFilterSettingsCopyWithImpl<$Res>;
+  factory _$$PushFilterSettingsImplCopyWith(_$PushFilterSettingsImpl value,
+          $Res Function(_$PushFilterSettingsImpl) then) =
+      __$$PushFilterSettingsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'blockFromStrangers')
       @HiveField(1)
-          bool? blockFromStrangers,
+      bool? blockFromStrangers,
       @JsonKey(name: 'hideNotificationContents')
       @HiveField(2)
-          bool? hideNotificationContents});
+      bool? hideNotificationContents});
 }
 
 /// @nodoc
-class __$PushFilterSettingsCopyWithImpl<$Res>
-    extends _$PushFilterSettingsCopyWithImpl<$Res>
-    implements _$PushFilterSettingsCopyWith<$Res> {
-  __$PushFilterSettingsCopyWithImpl(
-      _PushFilterSettings _value, $Res Function(_PushFilterSettings) _then)
-      : super(_value, (v) => _then(v as _PushFilterSettings));
+class __$$PushFilterSettingsImplCopyWithImpl<$Res>
+    extends _$PushFilterSettingsCopyWithImpl<$Res, _$PushFilterSettingsImpl>
+    implements _$$PushFilterSettingsImplCopyWith<$Res> {
+  __$$PushFilterSettingsImplCopyWithImpl(_$PushFilterSettingsImpl _value,
+      $Res Function(_$PushFilterSettingsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _PushFilterSettings get _value => super._value as _PushFilterSettings;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? blockFromStrangers = freezed,
     Object? hideNotificationContents = freezed,
   }) {
-    return _then(_PushFilterSettings(
-      blockFromStrangers: blockFromStrangers == freezed
+    return _then(_$PushFilterSettingsImpl(
+      blockFromStrangers: freezed == blockFromStrangers
           ? _value.blockFromStrangers
           : blockFromStrangers // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hideNotificationContents: hideNotificationContents == freezed
+      hideNotificationContents: freezed == hideNotificationContents
           ? _value.hideNotificationContents
           : hideNotificationContents // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -145,18 +123,18 @@ class __$PushFilterSettingsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PushFilterSettings extends _PushFilterSettings {
-  const _$_PushFilterSettings(
+class _$PushFilterSettingsImpl extends _PushFilterSettings {
+  const _$PushFilterSettingsImpl(
       {@JsonKey(name: 'blockFromStrangers')
       @HiveField(1)
-          required this.blockFromStrangers,
+      required this.blockFromStrangers,
       @JsonKey(name: 'hideNotificationContents')
       @HiveField(2)
-          required this.hideNotificationContents})
+      required this.hideNotificationContents})
       : super._();
 
-  factory _$_PushFilterSettings.fromJson(Map<String, dynamic> json) =>
-      _$$_PushFilterSettingsFromJson(json);
+  factory _$PushFilterSettingsImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PushFilterSettingsImplFromJson(json);
 
   @override
   @JsonKey(name: 'blockFromStrangers')
@@ -173,10 +151,10 @@ class _$_PushFilterSettings extends _PushFilterSettings {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PushFilterSettings &&
+            other is _$PushFilterSettingsImpl &&
             (identical(other.blockFromStrangers, blockFromStrangers) ||
                 other.blockFromStrangers == blockFromStrangers) &&
             (identical(
@@ -184,33 +162,39 @@ class _$_PushFilterSettings extends _PushFilterSettings {
                 other.hideNotificationContents == hideNotificationContents));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, blockFromStrangers, hideNotificationContents);
 
   @JsonKey(ignore: true)
   @override
-  _$PushFilterSettingsCopyWith<_PushFilterSettings> get copyWith =>
-      __$PushFilterSettingsCopyWithImpl<_PushFilterSettings>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PushFilterSettingsImplCopyWith<_$PushFilterSettingsImpl> get copyWith =>
+      __$$PushFilterSettingsImplCopyWithImpl<_$PushFilterSettingsImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PushFilterSettingsToJson(this);
+    return _$$PushFilterSettingsImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PushFilterSettings extends PushFilterSettings {
   const factory _PushFilterSettings(
-      {@JsonKey(name: 'blockFromStrangers')
-      @HiveField(1)
-          required bool? blockFromStrangers,
-      @JsonKey(name: 'hideNotificationContents')
-      @HiveField(2)
-          required bool? hideNotificationContents}) = _$_PushFilterSettings;
+          {@JsonKey(name: 'blockFromStrangers')
+          @HiveField(1)
+          required final bool? blockFromStrangers,
+          @JsonKey(name: 'hideNotificationContents')
+          @HiveField(2)
+          required final bool? hideNotificationContents}) =
+      _$PushFilterSettingsImpl;
   const _PushFilterSettings._() : super._();
 
   factory _PushFilterSettings.fromJson(Map<String, dynamic> json) =
-      _$_PushFilterSettings.fromJson;
+      _$PushFilterSettingsImpl.fromJson;
 
   @override
   @JsonKey(name: 'blockFromStrangers')
@@ -222,6 +206,6 @@ abstract class _PushFilterSettings extends PushFilterSettings {
   bool? get hideNotificationContents;
   @override
   @JsonKey(ignore: true)
-  _$PushFilterSettingsCopyWith<_PushFilterSettings> get copyWith =>
+  _$$PushFilterSettingsImplCopyWith<_$PushFilterSettingsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

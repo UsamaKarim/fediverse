@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'account_repository_model.dart';
 
@@ -11,34 +12,7 @@ part of 'account_repository_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$AccountRepositoryFiltersTearOff {
-  const _$AccountRepositoryFiltersTearOff();
-
-  _AccountRepositoryFilters call(
-      {required IConversationChat? onlyInConversation,
-      required IUnifediChat? onlyInChat,
-      required IStatus? onlyInStatusRebloggedBy,
-      required IStatus? onlyInStatusFavouritedBy,
-      required IAccount? onlyInAccountFollowers,
-      required IAccount? onlyInAccountFollowing,
-      required String? searchQuery}) {
-    return _AccountRepositoryFilters(
-      onlyInConversation: onlyInConversation,
-      onlyInChat: onlyInChat,
-      onlyInStatusRebloggedBy: onlyInStatusRebloggedBy,
-      onlyInStatusFavouritedBy: onlyInStatusFavouritedBy,
-      onlyInAccountFollowers: onlyInAccountFollowers,
-      onlyInAccountFollowing: onlyInAccountFollowing,
-      searchQuery: searchQuery,
-    );
-  }
-}
-
-/// @nodoc
-const $AccountRepositoryFilters = _$AccountRepositoryFiltersTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$AccountRepositoryFilters {
@@ -60,7 +34,8 @@ mixin _$AccountRepositoryFilters {
 abstract class $AccountRepositoryFiltersCopyWith<$Res> {
   factory $AccountRepositoryFiltersCopyWith(AccountRepositoryFilters value,
           $Res Function(AccountRepositoryFilters) then) =
-      _$AccountRepositoryFiltersCopyWithImpl<$Res>;
+      _$AccountRepositoryFiltersCopyWithImpl<$Res, AccountRepositoryFilters>;
+  @useResult
   $Res call(
       {IConversationChat? onlyInConversation,
       IUnifediChat? onlyInChat,
@@ -72,14 +47,17 @@ abstract class $AccountRepositoryFiltersCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$AccountRepositoryFiltersCopyWithImpl<$Res>
+class _$AccountRepositoryFiltersCopyWithImpl<$Res,
+        $Val extends AccountRepositoryFilters>
     implements $AccountRepositoryFiltersCopyWith<$Res> {
   _$AccountRepositoryFiltersCopyWithImpl(this._value, this._then);
 
-  final AccountRepositoryFilters _value;
   // ignore: unused_field
-  final $Res Function(AccountRepositoryFilters) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? onlyInConversation = freezed,
@@ -91,45 +69,47 @@ class _$AccountRepositoryFiltersCopyWithImpl<$Res>
     Object? searchQuery = freezed,
   }) {
     return _then(_value.copyWith(
-      onlyInConversation: onlyInConversation == freezed
+      onlyInConversation: freezed == onlyInConversation
           ? _value.onlyInConversation
           : onlyInConversation // ignore: cast_nullable_to_non_nullable
               as IConversationChat?,
-      onlyInChat: onlyInChat == freezed
+      onlyInChat: freezed == onlyInChat
           ? _value.onlyInChat
           : onlyInChat // ignore: cast_nullable_to_non_nullable
               as IUnifediChat?,
-      onlyInStatusRebloggedBy: onlyInStatusRebloggedBy == freezed
+      onlyInStatusRebloggedBy: freezed == onlyInStatusRebloggedBy
           ? _value.onlyInStatusRebloggedBy
           : onlyInStatusRebloggedBy // ignore: cast_nullable_to_non_nullable
               as IStatus?,
-      onlyInStatusFavouritedBy: onlyInStatusFavouritedBy == freezed
+      onlyInStatusFavouritedBy: freezed == onlyInStatusFavouritedBy
           ? _value.onlyInStatusFavouritedBy
           : onlyInStatusFavouritedBy // ignore: cast_nullable_to_non_nullable
               as IStatus?,
-      onlyInAccountFollowers: onlyInAccountFollowers == freezed
+      onlyInAccountFollowers: freezed == onlyInAccountFollowers
           ? _value.onlyInAccountFollowers
           : onlyInAccountFollowers // ignore: cast_nullable_to_non_nullable
               as IAccount?,
-      onlyInAccountFollowing: onlyInAccountFollowing == freezed
+      onlyInAccountFollowing: freezed == onlyInAccountFollowing
           ? _value.onlyInAccountFollowing
           : onlyInAccountFollowing // ignore: cast_nullable_to_non_nullable
               as IAccount?,
-      searchQuery: searchQuery == freezed
+      searchQuery: freezed == searchQuery
           ? _value.searchQuery
           : searchQuery // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$AccountRepositoryFiltersCopyWith<$Res>
+abstract class _$$AccountRepositoryFiltersImplCopyWith<$Res>
     implements $AccountRepositoryFiltersCopyWith<$Res> {
-  factory _$AccountRepositoryFiltersCopyWith(_AccountRepositoryFilters value,
-          $Res Function(_AccountRepositoryFilters) then) =
-      __$AccountRepositoryFiltersCopyWithImpl<$Res>;
+  factory _$$AccountRepositoryFiltersImplCopyWith(
+          _$AccountRepositoryFiltersImpl value,
+          $Res Function(_$AccountRepositoryFiltersImpl) then) =
+      __$$AccountRepositoryFiltersImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {IConversationChat? onlyInConversation,
       IUnifediChat? onlyInChat,
@@ -141,17 +121,16 @@ abstract class _$AccountRepositoryFiltersCopyWith<$Res>
 }
 
 /// @nodoc
-class __$AccountRepositoryFiltersCopyWithImpl<$Res>
-    extends _$AccountRepositoryFiltersCopyWithImpl<$Res>
-    implements _$AccountRepositoryFiltersCopyWith<$Res> {
-  __$AccountRepositoryFiltersCopyWithImpl(_AccountRepositoryFilters _value,
-      $Res Function(_AccountRepositoryFilters) _then)
-      : super(_value, (v) => _then(v as _AccountRepositoryFilters));
+class __$$AccountRepositoryFiltersImplCopyWithImpl<$Res>
+    extends _$AccountRepositoryFiltersCopyWithImpl<$Res,
+        _$AccountRepositoryFiltersImpl>
+    implements _$$AccountRepositoryFiltersImplCopyWith<$Res> {
+  __$$AccountRepositoryFiltersImplCopyWithImpl(
+      _$AccountRepositoryFiltersImpl _value,
+      $Res Function(_$AccountRepositoryFiltersImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _AccountRepositoryFilters get _value =>
-      super._value as _AccountRepositoryFilters;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? onlyInConversation = freezed,
@@ -162,32 +141,32 @@ class __$AccountRepositoryFiltersCopyWithImpl<$Res>
     Object? onlyInAccountFollowing = freezed,
     Object? searchQuery = freezed,
   }) {
-    return _then(_AccountRepositoryFilters(
-      onlyInConversation: onlyInConversation == freezed
+    return _then(_$AccountRepositoryFiltersImpl(
+      onlyInConversation: freezed == onlyInConversation
           ? _value.onlyInConversation
           : onlyInConversation // ignore: cast_nullable_to_non_nullable
               as IConversationChat?,
-      onlyInChat: onlyInChat == freezed
+      onlyInChat: freezed == onlyInChat
           ? _value.onlyInChat
           : onlyInChat // ignore: cast_nullable_to_non_nullable
               as IUnifediChat?,
-      onlyInStatusRebloggedBy: onlyInStatusRebloggedBy == freezed
+      onlyInStatusRebloggedBy: freezed == onlyInStatusRebloggedBy
           ? _value.onlyInStatusRebloggedBy
           : onlyInStatusRebloggedBy // ignore: cast_nullable_to_non_nullable
               as IStatus?,
-      onlyInStatusFavouritedBy: onlyInStatusFavouritedBy == freezed
+      onlyInStatusFavouritedBy: freezed == onlyInStatusFavouritedBy
           ? _value.onlyInStatusFavouritedBy
           : onlyInStatusFavouritedBy // ignore: cast_nullable_to_non_nullable
               as IStatus?,
-      onlyInAccountFollowers: onlyInAccountFollowers == freezed
+      onlyInAccountFollowers: freezed == onlyInAccountFollowers
           ? _value.onlyInAccountFollowers
           : onlyInAccountFollowers // ignore: cast_nullable_to_non_nullable
               as IAccount?,
-      onlyInAccountFollowing: onlyInAccountFollowing == freezed
+      onlyInAccountFollowing: freezed == onlyInAccountFollowing
           ? _value.onlyInAccountFollowing
           : onlyInAccountFollowing // ignore: cast_nullable_to_non_nullable
               as IAccount?,
-      searchQuery: searchQuery == freezed
+      searchQuery: freezed == searchQuery
           ? _value.searchQuery
           : searchQuery // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -197,8 +176,8 @@ class __$AccountRepositoryFiltersCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_AccountRepositoryFilters extends _AccountRepositoryFilters {
-  const _$_AccountRepositoryFilters(
+class _$AccountRepositoryFiltersImpl extends _AccountRepositoryFilters {
+  const _$AccountRepositoryFiltersImpl(
       {required this.onlyInConversation,
       required this.onlyInChat,
       required this.onlyInStatusRebloggedBy,
@@ -229,10 +208,10 @@ class _$_AccountRepositoryFilters extends _AccountRepositoryFilters {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _AccountRepositoryFilters &&
+            other is _$AccountRepositoryFiltersImpl &&
             (identical(other.onlyInConversation, onlyInConversation) ||
                 other.onlyInConversation == onlyInConversation) &&
             (identical(other.onlyInChat, onlyInChat) ||
@@ -264,20 +243,21 @@ class _$_AccountRepositoryFilters extends _AccountRepositoryFilters {
 
   @JsonKey(ignore: true)
   @override
-  _$AccountRepositoryFiltersCopyWith<_AccountRepositoryFilters> get copyWith =>
-      __$AccountRepositoryFiltersCopyWithImpl<_AccountRepositoryFilters>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AccountRepositoryFiltersImplCopyWith<_$AccountRepositoryFiltersImpl>
+      get copyWith => __$$AccountRepositoryFiltersImplCopyWithImpl<
+          _$AccountRepositoryFiltersImpl>(this, _$identity);
 }
 
 abstract class _AccountRepositoryFilters extends AccountRepositoryFilters {
   const factory _AccountRepositoryFilters(
-      {required IConversationChat? onlyInConversation,
-      required IUnifediChat? onlyInChat,
-      required IStatus? onlyInStatusRebloggedBy,
-      required IStatus? onlyInStatusFavouritedBy,
-      required IAccount? onlyInAccountFollowers,
-      required IAccount? onlyInAccountFollowing,
-      required String? searchQuery}) = _$_AccountRepositoryFilters;
+      {required final IConversationChat? onlyInConversation,
+      required final IUnifediChat? onlyInChat,
+      required final IStatus? onlyInStatusRebloggedBy,
+      required final IStatus? onlyInStatusFavouritedBy,
+      required final IAccount? onlyInAccountFollowers,
+      required final IAccount? onlyInAccountFollowing,
+      required final String? searchQuery}) = _$AccountRepositoryFiltersImpl;
   const _AccountRepositoryFilters._() : super._();
 
   @override
@@ -296,27 +276,9 @@ abstract class _AccountRepositoryFilters extends AccountRepositoryFilters {
   String? get searchQuery;
   @override
   @JsonKey(ignore: true)
-  _$AccountRepositoryFiltersCopyWith<_AccountRepositoryFilters> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$AccountRepositoryFiltersImplCopyWith<_$AccountRepositoryFiltersImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$AccountRepositoryOrderingTermDataTearOff {
-  const _$AccountRepositoryOrderingTermDataTearOff();
-
-  _AccountRepositoryOrderingTermData call(
-      {required AccountOrderType orderType,
-      required moor.OrderingMode orderingMode}) {
-    return _AccountRepositoryOrderingTermData(
-      orderType: orderType,
-      orderingMode: orderingMode,
-    );
-  }
-}
-
-/// @nodoc
-const $AccountRepositoryOrderingTermData =
-    _$AccountRepositoryOrderingTermDataTearOff();
 
 /// @nodoc
 mixin _$AccountRepositoryOrderingTermData {
@@ -333,72 +295,76 @@ abstract class $AccountRepositoryOrderingTermDataCopyWith<$Res> {
   factory $AccountRepositoryOrderingTermDataCopyWith(
           AccountRepositoryOrderingTermData value,
           $Res Function(AccountRepositoryOrderingTermData) then) =
-      _$AccountRepositoryOrderingTermDataCopyWithImpl<$Res>;
+      _$AccountRepositoryOrderingTermDataCopyWithImpl<$Res,
+          AccountRepositoryOrderingTermData>;
+  @useResult
   $Res call({AccountOrderType orderType, moor.OrderingMode orderingMode});
 }
 
 /// @nodoc
-class _$AccountRepositoryOrderingTermDataCopyWithImpl<$Res>
+class _$AccountRepositoryOrderingTermDataCopyWithImpl<$Res,
+        $Val extends AccountRepositoryOrderingTermData>
     implements $AccountRepositoryOrderingTermDataCopyWith<$Res> {
   _$AccountRepositoryOrderingTermDataCopyWithImpl(this._value, this._then);
 
-  final AccountRepositoryOrderingTermData _value;
   // ignore: unused_field
-  final $Res Function(AccountRepositoryOrderingTermData) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? orderType = freezed,
-    Object? orderingMode = freezed,
+    Object? orderType = null,
+    Object? orderingMode = null,
   }) {
     return _then(_value.copyWith(
-      orderType: orderType == freezed
+      orderType: null == orderType
           ? _value.orderType
           : orderType // ignore: cast_nullable_to_non_nullable
               as AccountOrderType,
-      orderingMode: orderingMode == freezed
+      orderingMode: null == orderingMode
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
               as moor.OrderingMode,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$AccountRepositoryOrderingTermDataCopyWith<$Res>
+abstract class _$$AccountRepositoryOrderingTermDataImplCopyWith<$Res>
     implements $AccountRepositoryOrderingTermDataCopyWith<$Res> {
-  factory _$AccountRepositoryOrderingTermDataCopyWith(
-          _AccountRepositoryOrderingTermData value,
-          $Res Function(_AccountRepositoryOrderingTermData) then) =
-      __$AccountRepositoryOrderingTermDataCopyWithImpl<$Res>;
+  factory _$$AccountRepositoryOrderingTermDataImplCopyWith(
+          _$AccountRepositoryOrderingTermDataImpl value,
+          $Res Function(_$AccountRepositoryOrderingTermDataImpl) then) =
+      __$$AccountRepositoryOrderingTermDataImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({AccountOrderType orderType, moor.OrderingMode orderingMode});
 }
 
 /// @nodoc
-class __$AccountRepositoryOrderingTermDataCopyWithImpl<$Res>
-    extends _$AccountRepositoryOrderingTermDataCopyWithImpl<$Res>
-    implements _$AccountRepositoryOrderingTermDataCopyWith<$Res> {
-  __$AccountRepositoryOrderingTermDataCopyWithImpl(
-      _AccountRepositoryOrderingTermData _value,
-      $Res Function(_AccountRepositoryOrderingTermData) _then)
-      : super(_value, (v) => _then(v as _AccountRepositoryOrderingTermData));
+class __$$AccountRepositoryOrderingTermDataImplCopyWithImpl<$Res>
+    extends _$AccountRepositoryOrderingTermDataCopyWithImpl<$Res,
+        _$AccountRepositoryOrderingTermDataImpl>
+    implements _$$AccountRepositoryOrderingTermDataImplCopyWith<$Res> {
+  __$$AccountRepositoryOrderingTermDataImplCopyWithImpl(
+      _$AccountRepositoryOrderingTermDataImpl _value,
+      $Res Function(_$AccountRepositoryOrderingTermDataImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _AccountRepositoryOrderingTermData get _value =>
-      super._value as _AccountRepositoryOrderingTermData;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? orderType = freezed,
-    Object? orderingMode = freezed,
+    Object? orderType = null,
+    Object? orderingMode = null,
   }) {
-    return _then(_AccountRepositoryOrderingTermData(
-      orderType: orderType == freezed
+    return _then(_$AccountRepositoryOrderingTermDataImpl(
+      orderType: null == orderType
           ? _value.orderType
           : orderType // ignore: cast_nullable_to_non_nullable
               as AccountOrderType,
-      orderingMode: orderingMode == freezed
+      orderingMode: null == orderingMode
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
               as moor.OrderingMode,
@@ -408,9 +374,9 @@ class __$AccountRepositoryOrderingTermDataCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_AccountRepositoryOrderingTermData
+class _$AccountRepositoryOrderingTermDataImpl
     extends _AccountRepositoryOrderingTermData {
-  const _$_AccountRepositoryOrderingTermData(
+  const _$AccountRepositoryOrderingTermDataImpl(
       {required this.orderType, required this.orderingMode})
       : super._();
 
@@ -425,10 +391,10 @@ class _$_AccountRepositoryOrderingTermData
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _AccountRepositoryOrderingTermData &&
+            other is _$AccountRepositoryOrderingTermDataImpl &&
             (identical(other.orderType, orderType) ||
                 other.orderType == orderType) &&
             (identical(other.orderingMode, orderingMode) ||
@@ -440,18 +406,19 @@ class _$_AccountRepositoryOrderingTermData
 
   @JsonKey(ignore: true)
   @override
-  _$AccountRepositoryOrderingTermDataCopyWith<
-          _AccountRepositoryOrderingTermData>
-      get copyWith => __$AccountRepositoryOrderingTermDataCopyWithImpl<
-          _AccountRepositoryOrderingTermData>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AccountRepositoryOrderingTermDataImplCopyWith<
+          _$AccountRepositoryOrderingTermDataImpl>
+      get copyWith => __$$AccountRepositoryOrderingTermDataImplCopyWithImpl<
+          _$AccountRepositoryOrderingTermDataImpl>(this, _$identity);
 }
 
 abstract class _AccountRepositoryOrderingTermData
     extends AccountRepositoryOrderingTermData {
   const factory _AccountRepositoryOrderingTermData(
-          {required AccountOrderType orderType,
-          required moor.OrderingMode orderingMode}) =
-      _$_AccountRepositoryOrderingTermData;
+          {required final AccountOrderType orderType,
+          required final moor.OrderingMode orderingMode}) =
+      _$AccountRepositoryOrderingTermDataImpl;
   const _AccountRepositoryOrderingTermData._() : super._();
 
   @override
@@ -460,7 +427,7 @@ abstract class _AccountRepositoryOrderingTermData
   moor.OrderingMode get orderingMode;
   @override
   @JsonKey(ignore: true)
-  _$AccountRepositoryOrderingTermDataCopyWith<
-          _AccountRepositoryOrderingTermData>
+  _$$AccountRepositoryOrderingTermDataImplCopyWith<
+          _$AccountRepositoryOrderingTermDataImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

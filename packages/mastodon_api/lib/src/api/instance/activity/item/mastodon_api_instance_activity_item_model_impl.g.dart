@@ -54,30 +54,21 @@ class MastodonApiInstanceActivityItemAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MastodonApiInstanceActivityItem _$$_MastodonApiInstanceActivityItemFromJson(
-        Map<String, dynamic> json) =>
-    _$_MastodonApiInstanceActivityItem(
-      week: JsonParseHelper.fromStringToInt(json['week'] as String),
-      statuses: JsonParseHelper.fromStringToInt(json['statuses'] as String),
-      logins: JsonParseHelper.fromStringToInt(json['logins'] as String),
-      registrations:
-          JsonParseHelper.fromStringToInt(json['registrations'] as String),
-    );
+_$MastodonApiInstanceActivityItemImpl
+    _$$MastodonApiInstanceActivityItemImplFromJson(Map<String, dynamic> json) =>
+        _$MastodonApiInstanceActivityItemImpl(
+          week: JsonParseHelper.fromStringToInt(json['week'] as String),
+          statuses: JsonParseHelper.fromStringToInt(json['statuses'] as String),
+          logins: JsonParseHelper.fromStringToInt(json['logins'] as String),
+          registrations:
+              JsonParseHelper.fromStringToInt(json['registrations'] as String),
+        );
 
-Map<String, dynamic> _$$_MastodonApiInstanceActivityItemToJson(
-    _$_MastodonApiInstanceActivityItem instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('week', JsonParseHelper.toStringFromInt(instance.week));
-  writeNotNull('statuses', JsonParseHelper.toStringFromInt(instance.statuses));
-  writeNotNull('logins', JsonParseHelper.toStringFromInt(instance.logins));
-  writeNotNull(
-      'registrations', JsonParseHelper.toStringFromInt(instance.registrations));
-  return val;
-}
+Map<String, dynamic> _$$MastodonApiInstanceActivityItemImplToJson(
+        _$MastodonApiInstanceActivityItemImpl instance) =>
+    <String, dynamic>{
+      'week': JsonParseHelper.toStringFromInt(instance.week),
+      'statuses': JsonParseHelper.toStringFromInt(instance.statuses),
+      'logins': JsonParseHelper.toStringFromInt(instance.logins),
+      'registrations': JsonParseHelper.toStringFromInt(instance.registrations),
+    };

@@ -45,16 +45,16 @@ class UnifediApiConversationMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiConversationMastodonAdapter
-    _$$_UnifediApiConversationMastodonAdapterFromJson(
+_$UnifediApiConversationMastodonAdapterImpl
+    _$$UnifediApiConversationMastodonAdapterImplFromJson(
             Map<String, dynamic> json) =>
-        _$_UnifediApiConversationMastodonAdapter(
+        _$UnifediApiConversationMastodonAdapterImpl(
           MastodonApiConversation.fromJson(
               json['value'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$$_UnifediApiConversationMastodonAdapterToJson(
-        _$_UnifediApiConversationMastodonAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiConversationMastodonAdapterImplToJson(
+        _$UnifediApiConversationMastodonAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };

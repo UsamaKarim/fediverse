@@ -45,14 +45,14 @@ class UnifediApiTagMastodonAdapterAdapter
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UnifediApiTagMastodonAdapter _$$_UnifediApiTagMastodonAdapterFromJson(
+_$UnifediApiTagMastodonAdapterImpl _$$UnifediApiTagMastodonAdapterImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UnifediApiTagMastodonAdapter(
+    _$UnifediApiTagMastodonAdapterImpl(
       MastodonApiTag.fromJson(json['value'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_UnifediApiTagMastodonAdapterToJson(
-        _$_UnifediApiTagMastodonAdapter instance) =>
+Map<String, dynamic> _$$UnifediApiTagMastodonAdapterImplToJson(
+        _$UnifediApiTagMastodonAdapterImpl instance) =>
     <String, dynamic>{
       'value': instance.value.toJson(),
     };
