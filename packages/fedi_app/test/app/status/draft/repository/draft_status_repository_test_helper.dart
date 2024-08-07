@@ -1,7 +1,7 @@
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/status/draft/repository/draft_status_repository_impl.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:drift/drift.dart';
 
 class DraftStatusRepositoryMockHelper {
   static Future<DbDraftStatus> insertDbDraftStatus(
@@ -14,7 +14,7 @@ class DraftStatusRepositoryMockHelper {
       mode: null,
     );
     assert(id > 0, true);
-    var dbDraftStatus = draftStatusData.copyWith(id: id);
+    var dbDraftStatus = draftStatusData.copyWith(id: Value(id));
 
     return dbDraftStatus;
   }

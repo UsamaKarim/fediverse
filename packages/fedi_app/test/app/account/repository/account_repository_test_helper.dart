@@ -1,3 +1,4 @@
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/account/repository/account_repository_impl.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -12,7 +13,7 @@ class AccountRepositoryMockHelper {
       mode: null,
     );
     assert(id > 0, true);
-    var dbAccount = accountData.copyWith(id: id);
+    var dbAccount = accountData.copyWith(id: Value(id));
 
     return dbAccount;
   }

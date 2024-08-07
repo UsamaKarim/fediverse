@@ -1,3 +1,4 @@
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/chat/unifedi/repository/unifedi_chat_repository_impl.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -12,7 +13,7 @@ class ChatRepositoryMockHelper {
       mode: null,
     );
     assert(id > 0, true);
-    var dbChat = chatData.copyWith(id: id);
+    var dbChat = chatData.copyWith(id: Value(id));
 
     return dbChat;
   }

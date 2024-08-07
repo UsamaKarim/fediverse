@@ -72,6 +72,7 @@ part 'app_database.g.dart';
     DbChatMessages,
     DbHomeTimelineStatuses, DbDraftStatuses, //  DbAccountRelationships
     DbInstanceAnnouncements,
+    DbFilters,
   ],
   daos: [
     StatusDao,
@@ -94,8 +95,7 @@ part 'app_database.g.dart';
     DraftStatusDao,
     FilterDao,
     InstanceAnnouncementDao,
-
-//  AccountRelationshipsDao
+    // AccountRelationshipsDao
   ],
   include: {'app_database.drift'},
 )

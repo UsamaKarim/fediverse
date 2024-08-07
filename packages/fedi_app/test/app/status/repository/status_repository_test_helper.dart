@@ -1,3 +1,4 @@
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/status/repository/status_repository_impl.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -12,7 +13,7 @@ class StatusRepositoryMockHelper {
       mode: null,
     );
     assert(id > 0, true);
-    var dbStatus = statusData.copyWith(id: id);
+    var dbStatus = statusData.copyWith(id: Value(id));
 
     return dbStatus;
   }

@@ -84,14 +84,14 @@ void main() {
 
     var oldLocalAccount = DbAccountPopulatedWrapper(
       dbAccountPopulated: DbAccountPopulated(
-        dbAccount: dbAccount1.copyWith(id: id),
+        dbAccount: dbAccount1.copyWith(id: Value(id)),
       ),
     );
     var newAcct = 'newAcct';
     var newRemoteAccount = DbAccountPopulatedWrapper(
       dbAccountPopulated: DbAccountPopulated(
         dbAccount: dbAccount1.copyWith(
-          id: id,
+          id: Value(id),
           acct: newAcct,
         ),
       ),

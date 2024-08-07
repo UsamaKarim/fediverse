@@ -2,7 +2,7 @@ import 'package:fedi_app/app/account/account_model.dart';
 import 'package:fediverse_api/fediverse_api_utils.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:hive/hive.dart';
-import 'package:json_annotation/json_annotation.dart';
+// import 'package:json_annotation/json_annotation.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 
 part 'my_account_model.freezed.dart';
@@ -169,7 +169,7 @@ class UnifediApiMyAccountWrapper
   const factory UnifediApiMyAccountWrapper({
     @HiveField(0)
     @JsonKey(name: 'remote_account')
-        required UnifediApiMyAccount unifediApiAccount,
+    required UnifediApiMyAccount unifediApiAccount,
   }) = _UnifediApiMyAccountWrapper;
 
   @override

@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:drift/drift.dart';
 import 'package:drift/native.dart';
 import 'package:fedi_app/app/account/account_model.dart';
 import 'package:fedi_app/app/account/account_model_adapter.dart';
@@ -89,7 +90,7 @@ void main() {
     );
 
     testDbNotification = testDbNotification.copyWith(
-      report: UnifediApiAccountReport(
+      report: Value(UnifediApiAccountReport(
         account: account1.toUnifediApiAccount(),
         statuses: [
           (await StatusMockHelper.createTestStatus(seed: 'status1'))
@@ -99,7 +100,7 @@ void main() {
         ],
         user: (await AccountMockHelper.createTestAccount(seed: 'reportUser'))
             .toUnifediApiAccount(),
-      ),
+      )),
     );
     await notificationDao.insert(
       entity: testDbNotification,
@@ -126,7 +127,7 @@ void main() {
     );
 
     testDbNotification = testDbNotification.copyWith(
-      target: account1.toUnifediApiAccount(),
+      target: Value(account1.toUnifediApiAccount()),
     );
     await notificationDao.insert(
       entity: testDbNotification,
@@ -152,9 +153,9 @@ void main() {
     );
 
     testDbNotification = testDbNotification.copyWith(
-      chatMessage:
+      chatMessage: Value(
           (await ChatMessageMockHelper.createTestChatMessage(seed: 'seed1'))
-              .toUnifediApiChatMessage(),
+              .toUnifediApiChatMessage()),
     );
     await notificationDao.insert(
       entity: testDbNotification,

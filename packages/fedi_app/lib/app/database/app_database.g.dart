@@ -311,7 +311,7 @@ class $DbStatusesTable extends DbStatuses
       pendingState = GeneratedColumn<String>('pending_state', aliasedName, true,
               type: DriftSqlType.string, requiredDuringInsert: false)
           .withConverter<PendingState?>(
-              $DbStatusesTable.$converterpendingStaten);
+              $DbStatusesTable.$converterpendingState);
   static const VerificationMeta _oldPendingRemoteIdMeta =
       const VerificationMeta('oldPendingRemoteId');
   @override
@@ -677,7 +677,7 @@ class $DbStatusesTable extends DbStatuses
       hiddenLocallyOnDevice: attachedDatabase.typeMapping.read(
           DriftSqlType.bool,
           data['${effectivePrefix}hidden_locally_on_device']),
-      pendingState: $DbStatusesTable.$converterpendingStaten.fromSql(
+      pendingState: $DbStatusesTable.$converterpendingState.fromSql(
           attachedDatabase.typeMapping.read(
               DriftSqlType.string, data['${effectivePrefix}pending_state'])),
       oldPendingRemoteId: attachedDatabase.typeMapping.read(
@@ -740,10 +740,8 @@ class $DbStatusesTable extends DbStatuses
   static TypeConverter<List<UnifediApiEmojiReaction>?, String?>
       $converteremojiReactionsn =
       NullAwareTypeConverter.wrap($converteremojiReactions);
-  static TypeConverter<PendingState, String> $converterpendingState =
+  static TypeConverter<PendingState?, String?> $converterpendingState =
       const PendingStateDatabaseConverter();
-  static TypeConverter<PendingState?, String?> $converterpendingStaten =
-      NullAwareTypeConverter.wrap($converterpendingState);
 }
 
 class DbStatus extends DataClass implements Insertable<DbStatus> {
@@ -952,7 +950,7 @@ class DbStatus extends DataClass implements Insertable<DbStatus> {
     }
     if (!nullToAbsent || pendingState != null) {
       map['pending_state'] = Variable<String>(
-          $DbStatusesTable.$converterpendingStaten.toSql(pendingState));
+          $DbStatusesTable.$converterpendingState.toSql(pendingState));
     }
     if (!nullToAbsent || oldPendingRemoteId != null) {
       map['old_pending_remote_id'] = Variable<String>(oldPendingRemoteId);
@@ -1924,7 +1922,7 @@ class DbStatusesCompanion extends UpdateCompanion<DbStatus> {
     }
     if (pendingState.present) {
       map['pending_state'] = Variable<String>(
-          $DbStatusesTable.$converterpendingStaten.toSql(pendingState.value));
+          $DbStatusesTable.$converterpendingState.toSql(pendingState.value));
     }
     if (oldPendingRemoteId.present) {
       map['old_pending_remote_id'] = Variable<String>(oldPendingRemoteId.value);
@@ -7371,7 +7369,7 @@ class $DbChatMessagesTable extends DbChatMessages
       pendingState = GeneratedColumn<String>('pending_state', aliasedName, true,
               type: DriftSqlType.string, requiredDuringInsert: false)
           .withConverter<PendingState?>(
-              $DbChatMessagesTable.$converterpendingStaten);
+              $DbChatMessagesTable.$converterpendingState);
   static const VerificationMeta _deletedMeta =
       const VerificationMeta('deleted');
   @override
@@ -7522,7 +7520,7 @@ class $DbChatMessagesTable extends DbChatMessages
       card: $DbChatMessagesTable.$convertercardn.fromSql(attachedDatabase
           .typeMapping
           .read(DriftSqlType.string, data['${effectivePrefix}card'])),
-      pendingState: $DbChatMessagesTable.$converterpendingStaten.fromSql(
+      pendingState: $DbChatMessagesTable.$converterpendingState.fromSql(
           attachedDatabase.typeMapping.read(
               DriftSqlType.string, data['${effectivePrefix}pending_state'])),
       deleted: attachedDatabase.typeMapping
@@ -7557,10 +7555,8 @@ class $DbChatMessagesTable extends DbChatMessages
       const UnifediCardDatabaseConverter();
   static TypeConverter<UnifediApiCard?, String?> $convertercardn =
       NullAwareTypeConverter.wrap($convertercard);
-  static TypeConverter<PendingState, String> $converterpendingState =
+  static TypeConverter<PendingState?, String?> $converterpendingState =
       const PendingStateDatabaseConverter();
-  static TypeConverter<PendingState?, String?> $converterpendingStaten =
-      NullAwareTypeConverter.wrap($converterpendingState);
 }
 
 class DbChatMessage extends DataClass implements Insertable<DbChatMessage> {
@@ -7621,7 +7617,7 @@ class DbChatMessage extends DataClass implements Insertable<DbChatMessage> {
     }
     if (!nullToAbsent || pendingState != null) {
       map['pending_state'] = Variable<String>(
-          $DbChatMessagesTable.$converterpendingStaten.toSql(pendingState));
+          $DbChatMessagesTable.$converterpendingState.toSql(pendingState));
     }
     if (!nullToAbsent || deleted != null) {
       map['deleted'] = Variable<bool>(deleted);
@@ -7977,7 +7973,7 @@ class DbChatMessagesCompanion extends UpdateCompanion<DbChatMessage> {
     }
     if (pendingState.present) {
       map['pending_state'] = Variable<String>($DbChatMessagesTable
-          .$converterpendingStaten
+          .$converterpendingState
           .toSql(pendingState.value));
     }
     if (deleted.present) {

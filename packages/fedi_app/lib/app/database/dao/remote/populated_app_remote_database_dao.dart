@@ -1,8 +1,8 @@
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/database/dao/populated_database_dao_mixin.dart';
 import 'package:fedi_app/app/database/dao/remote/app_remote_database_dao.dart';
 import 'package:fedi_app/repository/repository_model.dart';
-import 'package:drift/drift.dart';
 
 abstract class PopulatedAppRemoteDatabaseDao<
         DbItem extends DataClass,
@@ -18,7 +18,7 @@ abstract class PopulatedAppRemoteDatabaseDao<
     with
         PopulatedDatabaseDaoMixin<DbItem, DbPopulatedItem, DbId, TableDsl,
             TableInfoDsl, Filters, OrderingTerm> {
-  PopulatedAppRemoteDatabaseDao(AppDatabase db) : super(db);
+  PopulatedAppRemoteDatabaseDao(super.db);
 
   Future<DbPopulatedItem?> findByRemoteIdPopulated(RemoteId remoteId) =>
       findByRemoteIdPopulatedSelectable(remoteId).getSingleOrNull();

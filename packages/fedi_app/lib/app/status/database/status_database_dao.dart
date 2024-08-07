@@ -26,11 +26,7 @@ var _statusListsAliasId = 'statusLists';
 var _conversationStatusesAliasId = 'conversationStatuses';
 var _homeTimelineStatusesAliasId = 'homeTimelineStatuses';
 
-@DriftAccessor(
-  tables: [
-    DbStatuses,
-  ],
-)
+@DriftAccessor(tables: [DbStatuses])
 class StatusDao extends PopulatedAppRemoteDatabaseDao<
     DbStatus,
     DbStatusPopulated,

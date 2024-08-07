@@ -1,3 +1,4 @@
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/notification/repository/notification_repository_impl.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -12,7 +13,7 @@ class NotificationRepositoryMockHelper {
       mode: null,
     );
     assert(id > 0, true);
-    var dbNotification = notificationData.copyWith(id: id);
+    var dbNotification = notificationData.copyWith(id: Value(id));
 
     return dbNotification;
   }

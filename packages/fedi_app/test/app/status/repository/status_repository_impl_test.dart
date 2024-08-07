@@ -53,7 +53,7 @@ void main() {
       mode: null,
     );
     // assign local id for further equal with data retrieved from db
-    dbAccount = dbAccount.copyWith(id: accountId);
+    dbAccount = dbAccount.copyWith(id: Value(accountId));
 
     dbStatus = await StatusDatabaseMockHelper.createTestDbStatus(
       seed: 'seed3',
@@ -112,7 +112,8 @@ void main() {
       mode: null,
     );
 
-    dbStatus = dbStatus.copyWith(reblogStatusRemoteId: reblogDbStatus.remoteId);
+    dbStatus =
+        dbStatus.copyWith(reblogStatusRemoteId: Value(reblogDbStatus.remoteId));
 
     dbStatusPopulated = DbStatusPopulated(
       dbStatus: dbStatus,
@@ -285,7 +286,7 @@ void main() {
   test('updateLocalStatusByRemoteStatus', () async {
     var id = await statusRepository.insertInDbType(
       dbStatus.copyWith(
-        content: 'oldContent',
+        content: Value('oldContent'),
       ),
       mode: null,
     );
@@ -293,7 +294,7 @@ void main() {
 
     var oldLocalStatus = DbStatusPopulatedWrapper(
       dbStatusPopulated: DbStatusPopulated(
-        dbStatus: dbStatus.copyWith(id: id),
+        dbStatus: dbStatus.copyWith(id: Value(id)),
         dbAccount: dbAccount,
         reblogDbStatus: null,
         reblogDbStatusAccount: null,
@@ -308,8 +309,8 @@ void main() {
     var newRemoteStatus = DbStatusPopulatedWrapper(
       dbStatusPopulated: DbStatusPopulated(
         dbStatus: dbStatus.copyWith(
-          id: id,
-          content: newContent,
+          id: Value(id),
+          content: Value(newContent),
         ),
         dbAccount: dbAccount.copyWith(acct: newAcct),
         reblogDbStatus: null,
@@ -392,7 +393,7 @@ void main() {
         seed: 'seed1',
         dbAccount: dbAccount,
       ))
-          .copyWith(local: false, url: 'https://unifedi.com/one'),
+          .copyWith(local: Value(false), url: Value('https://unifedi.com/one')),
     );
 
     expect((await query.get()).length, 1);
@@ -403,7 +404,7 @@ void main() {
         seed: 'seed2',
         dbAccount: dbAccount,
       ))
-          .copyWith(local: false, url: 'https://google.com/one'),
+          .copyWith(local: Value(false), url: Value('https://google.com/one')),
     );
 
     expect((await query.get()).length, 1);
@@ -415,7 +416,7 @@ void main() {
         seed: 'seed3',
         dbAccount: dbAccount,
       ))
-          .copyWith(local: false, url: 'https://unifedi.com/two'),
+          .copyWith(local: Value(false), url: Value('https://unifedi.com/two')),
     );
 
     // check local flag
@@ -427,8 +428,8 @@ void main() {
         dbAccount: dbAccount,
       ))
           .copyWith(
-        local: true,
-        url: 'https://google.com/one',
+        local: Value(true),
+        url: Value('https://google.com/one'),
       ),
     );
 
@@ -450,7 +451,7 @@ void main() {
         seed: 'seed1',
         dbAccount: dbAccount,
       ))
-          .copyWith(mediaAttachments: null),
+          .copyWith(mediaAttachments: Value(null)),
     );
 
     expect((await query.get()).length, 0);
@@ -461,7 +462,7 @@ void main() {
         seed: 'seed2',
         dbAccount: dbAccount,
       ))
-          .copyWith(mediaAttachments: []),
+          .copyWith(mediaAttachments: Value([])),
     );
 
     expect((await query.get()).length, 0);
@@ -473,11 +474,11 @@ void main() {
         dbAccount: dbAccount,
       ))
           .copyWith(
-        mediaAttachments: [
+        mediaAttachments: Value([
           UnifediApiMediaAttachmentMockHelper.generate(
             seed: 'seed',
           ),
-        ],
+        ]),
       ),
     );
 
@@ -1040,7 +1041,7 @@ void main() {
         seed: 'seed1',
         dbAccount: dbAccount,
       ))
-          .copyWith(inReplyToRemoteId: 'inReplyToRemoteId'),
+          .copyWith(inReplyToRemoteId: Value('inReplyToRemoteId')),
     );
 
     expect((await query.get()).length, 0);
@@ -1136,7 +1137,7 @@ void main() {
       seed: 'seed1',
       dbAccount: dbAccount,
     ))
-        .copyWith(tags: null);
+        .copyWith(tags: Value(null));
     await statusRepository.updateStatusTags(
       statusRemoteId: dbStatus1.remoteId,
       tags: dbStatus1.tags,
@@ -1153,7 +1154,7 @@ void main() {
       seed: 'seed2',
       dbAccount: dbAccount,
     ))
-        .copyWith(tags: []);
+        .copyWith(tags: Value([]));
     await statusRepository.updateStatusTags(
       statusRemoteId: dbStatus2.remoteId,
       tags: dbStatus2.tags,
@@ -1171,9 +1172,9 @@ void main() {
       dbAccount: dbAccount,
     ))
         .copyWith(
-      tags: [
+      tags: Value([
         UnifediApiTagMockHelper.generate(seed: '#dogs'),
-      ],
+      ]),
     );
     await statusRepository.updateStatusTags(
       statusRemoteId: dbStatus3.remoteId,
@@ -1192,9 +1193,9 @@ void main() {
       dbAccount: dbAccount,
     ))
         .copyWith(
-      tags: [
+      tags: Value([
         UnifediApiTagMockHelper.generate(seed: '#cats'),
-      ],
+      ]),
     );
     await statusRepository.updateStatusTags(
       statusRemoteId: dbStatus4.remoteId,
@@ -1213,10 +1214,10 @@ void main() {
       dbAccount: dbAccount,
     ))
         .copyWith(
-      tags: [
+      tags: Value([
         UnifediApiTagMockHelper.generate(seed: '#dogs'),
         UnifediApiTagMockHelper.generate(seed: '#cats'),
-      ],
+      ]),
     );
     await statusRepository.updateStatusTags(
       statusRemoteId: dbStatus5.remoteId,
@@ -1235,9 +1236,9 @@ void main() {
       dbAccount: dbAccount,
     ))
         .copyWith(
-      tags: [
+      tags: Value([
         UnifediApiTagMockHelper.generate(seed: '#ca'),
-      ],
+      ]),
     );
     await statusRepository.updateStatusTags(
       statusRemoteId: dbStatus6.remoteId,
@@ -1852,8 +1853,8 @@ void main() {
       dbAccount: dbAccount,
     ))
         .copyWith(
-      spoilerText: 'test',
-      content: '',
+      spoilerText: Value('test'),
+      content: Value(''),
     );
     await StatusRepositoryMockHelper.insertDbStatus(
       statusRepository,
@@ -1867,8 +1868,8 @@ void main() {
       dbAccount: dbAccount,
     ))
         .copyWith(
-      spoilerText: '',
-      content: 'test',
+      spoilerText: Value(''),
+      content: Value('test'),
     );
     await StatusRepositoryMockHelper.insertDbStatus(
       statusRepository,
@@ -1882,8 +1883,8 @@ void main() {
       dbAccount: dbAccount,
     ))
         .copyWith(
-      spoilerText: '',
-      content: 'testing',
+      spoilerText: Value(''),
+      content: Value('testing'),
     );
     await StatusRepositoryMockHelper.insertDbStatus(
       statusRepository,
@@ -1897,8 +1898,8 @@ void main() {
       dbAccount: dbAccount,
     ))
         .copyWith(
-      spoilerText: '',
-      content: 'aaaa',
+      spoilerText: Value(''),
+      content: Value('aaaa'),
     );
     await StatusRepositoryMockHelper.insertDbStatus(
       statusRepository,
@@ -1924,8 +1925,8 @@ void main() {
       dbAccount: dbAccount,
     ))
         .copyWith(
-      spoilerText: 'test',
-      content: '',
+      spoilerText: Value('test'),
+      content: Value(''),
     );
     await StatusRepositoryMockHelper.insertDbStatus(
       statusRepository,
@@ -1939,8 +1940,8 @@ void main() {
       dbAccount: dbAccount,
     ))
         .copyWith(
-      spoilerText: '',
-      content: 'test',
+      spoilerText: Value(''),
+      content: Value('test'),
     );
     await StatusRepositoryMockHelper.insertDbStatus(
       statusRepository,
@@ -1954,8 +1955,8 @@ void main() {
       dbAccount: dbAccount,
     ))
         .copyWith(
-      spoilerText: '',
-      content: 'testing',
+      spoilerText: Value(''),
+      content: Value('testing'),
     );
     await StatusRepositoryMockHelper.insertDbStatus(
       statusRepository,
@@ -1969,8 +1970,8 @@ void main() {
       dbAccount: dbAccount,
     ))
         .copyWith(
-      spoilerText: '',
-      content: 'aaaa',
+      spoilerText: Value(''),
+      content: Value('aaaa'),
     );
     await StatusRepositoryMockHelper.insertDbStatus(
       statusRepository,
@@ -1984,8 +1985,8 @@ void main() {
       dbAccount: dbAccount,
     ))
         .copyWith(
-      spoilerText: '',
-      content: 'one test one',
+      spoilerText: Value(''),
+      content: Value('one test one'),
     );
     await StatusRepositoryMockHelper.insertDbStatus(
       statusRepository,
@@ -2011,8 +2012,8 @@ void main() {
       dbAccount: dbAccount,
     ))
         .copyWith(
-      spoilerText: 'test',
-      content: '',
+      spoilerText: Value('test'),
+      content: Value(''),
     );
     await StatusRepositoryMockHelper.insertDbStatus(
       statusRepository,
@@ -2026,8 +2027,8 @@ void main() {
       dbAccount: dbAccount,
     ))
         .copyWith(
-      spoilerText: 'aaa',
-      content: 'bbb',
+      spoilerText: Value('aaa'),
+      content: Value('bbb'),
     );
     await StatusRepositoryMockHelper.insertDbStatus(
       statusRepository,
@@ -2041,8 +2042,8 @@ void main() {
       dbAccount: dbAccount,
     ))
         .copyWith(
-      spoilerText: 'aaa',
-      content: 'bbb',
+      spoilerText: Value('aaa'),
+      content: Value('bbb'),
     );
 
     dbStatus3 = await StatusRepositoryMockHelper.insertDbStatus(
@@ -2055,9 +2056,9 @@ void main() {
       dbAccount: dbAccount,
     ))
         .copyWith(
-      spoilerText: 'aaa',
-      content: 'bbb',
-      reblogStatusRemoteId: dbStatus3.remoteId,
+      spoilerText: Value('aaa'),
+      content: Value('bbb'),
+      reblogStatusRemoteId: Value(dbStatus3.remoteId),
     );
     await StatusRepositoryMockHelper.insertDbStatus(
       statusRepository,
@@ -2067,8 +2068,8 @@ void main() {
     expect((await query.get()).length, 3);
 
     dbStatus3 = dbStatus3.copyWith(
-      spoilerText: 'test',
-      content: '',
+      spoilerText: Value('test'),
+      content: Value(''),
     );
 
     await statusRepository.updateByDbIdInDbType(
@@ -2178,8 +2179,8 @@ void main() {
         dbAccount: dbAccount,
       ))
           .copyWith(
-        local: false,
-        url: 'https://unifedi.com/one',
+        local: Value(false),
+        url: Value('https://unifedi.com/one'),
       ),
     );
 
@@ -2192,8 +2193,8 @@ void main() {
         dbAccount: dbAccount,
       ))
           .copyWith(
-        local: false,
-        url: 'https://google.com/one',
+        local: Value(false),
+        url: Value('https://google.com/one'),
       ),
     );
 
@@ -2207,8 +2208,8 @@ void main() {
         dbAccount: dbAccount,
       ))
           .copyWith(
-        local: false,
-        url: 'https://unifedi.com/two',
+        local: Value(false),
+        url: Value('https://unifedi.com/two'),
       ),
     );
 
@@ -2221,8 +2222,8 @@ void main() {
         dbAccount: dbAccount,
       ))
           .copyWith(
-        local: true,
-        url: 'https://google.com/one',
+        local: Value(true),
+        url: Value('https://google.com/one'),
       ),
     );
 
@@ -2247,8 +2248,8 @@ void main() {
         dbAccount: dbAccount,
       ))
           .copyWith(
-        local: false,
-        url: 'https://unifedi.com/one',
+        local: Value(false),
+        url: Value('https://unifedi.com/one'),
       ),
     );
 
@@ -2261,8 +2262,8 @@ void main() {
         dbAccount: dbAccount,
       ))
           .copyWith(
-        local: false,
-        url: 'https://google.com/one',
+        local: Value(false),
+        url: Value('https://google.com/one'),
       ),
     );
 
@@ -2276,8 +2277,8 @@ void main() {
         dbAccount: dbAccount,
       ))
           .copyWith(
-        local: false,
-        url: 'https://unifedi.com/two',
+        local: Value(false),
+        url: Value('https://unifedi.com/two'),
       ),
     );
 
@@ -2290,8 +2291,8 @@ void main() {
         dbAccount: dbAccount,
       ))
           .copyWith(
-        local: true,
-        url: 'https://google.com/one',
+        local: Value(true),
+        url: Value('https://google.com/one'),
       ),
     );
 
@@ -2350,7 +2351,7 @@ void main() {
         seed: 'seed1',
         dbAccount: dbAccount,
       ))
-          .copyWith(url: 'https://unifedi.com/'),
+          .copyWith(url: Value('https://unifedi.com/')),
     );
 
     expect((await query.get()).length, 0);
@@ -2361,7 +2362,7 @@ void main() {
         seed: 'seed2',
         dbAccount: dbAccount,
       ))
-          .copyWith(url: 'https://google.com/'),
+          .copyWith(url: Value('https://google.com/')),
     );
     expect((await query.get()).length, 1);
   });
@@ -2412,7 +2413,7 @@ void main() {
         seed: 'seed1',
         dbAccount: dbAccount,
       ))
-          .copyWith(bookmarked: false),
+          .copyWith(bookmarked: Value(false)),
     );
 
     expect((await query.get()).length, 0);
@@ -2423,7 +2424,7 @@ void main() {
         seed: 'seed2',
         dbAccount: dbAccount,
       ))
-          .copyWith(bookmarked: true),
+          .copyWith(bookmarked: Value(true)),
     );
     expect((await query.get()).length, 1);
   });
@@ -2601,7 +2602,7 @@ void main() {
         seed: 'seed1',
         dbAccount: dbAccount,
       ))
-          .copyWith(deleted: false),
+          .copyWith(deleted: Value(false)),
     );
 
     expect((await query.get()).length, 1);
@@ -2612,7 +2613,7 @@ void main() {
         seed: 'seed2',
         dbAccount: dbAccount,
       ))
-          .copyWith(deleted: true),
+          .copyWith(deleted: Value(true)),
     );
     expect((await query.get()).length, 1);
   });

@@ -1,4 +1,4 @@
-import 'package:drift/drift.dart';
+import 'package:drift/drift.dart' hide JsonKey;
 import 'package:fedi_app/app/account/account_model.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/pending/pending_model.dart';

@@ -5,20 +5,14 @@ import 'package:fedi_app/moor/moor_json_type_converter.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 
 class PendingStateDatabaseConverter
-    extends TypeConverter<PendingState, String> {
+    extends TypeConverter<PendingState?, String?> {
   const PendingStateDatabaseConverter();
 
   @override
-  PendingState? mapToDart(String? fromDb) => fromDb?.toPendingState();
+  PendingState? fromSql(String? fromDb) => fromDb?.toPendingState();
 
   @override
-  String? mapToSql(PendingState? value) => value?.toJsonValue();
-
-  @override
-  PendingState fromSql(String fromDb) => fromDb.toPendingState();
-
-  @override
-  String toSql(PendingState value) => value.toJsonValue();
+  String? toSql(PendingState? value) => value?.toJsonValue();
 }
 
 class UnifediApplicationDatabaseConverter

@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:drift/drift.dart';
+import 'package:drift/native.dart';
 import 'package:fedi_app/app/account/repository/account_repository_impl.dart';
 import 'package:fedi_app/app/chat/unifedi/message/repository/unifedi_chat_message_repository_impl.dart';
 import 'package:fedi_app/app/database/app_database.dart';
@@ -39,7 +41,7 @@ void main() {
   late DbAccount dbAccount;
 
   setUp(() async {
-    database = AppDatabase(VmDatabase.memory());
+    database = AppDatabase(NativeDatabase.memory());
     accountRepository = AccountRepository(appDatabase: database);
     statusRepository = StatusRepository(
       appDatabase: database,
@@ -63,7 +65,7 @@ void main() {
       mode: null,
     );
     // assign local id for further equal with data retrieved from db
-    dbAccount = dbAccount.copyWith(id: accountId);
+    dbAccount = dbAccount.copyWith(id: Value(accountId));
 
     dbStatus = await StatusDatabaseMockHelper.createTestDbStatus(
       seed: 'seed3',
@@ -91,7 +93,8 @@ void main() {
       mode: null,
     );
 
-    dbStatus = dbStatus.copyWith(reblogStatusRemoteId: reblogDbStatus.remoteId);
+    dbStatus =
+        dbStatus.copyWith(reblogStatusRemoteId: Value(reblogDbStatus.remoteId));
 
     dbStatusPopulated = DbStatusPopulated(
       dbStatus: dbStatus,
@@ -209,7 +212,7 @@ void main() {
 
     var oldLocalNotification = DbNotificationPopulatedWrapper(
       dbNotificationPopulated: DbNotificationPopulated.statusPopulated(
-        dbNotification: dbNotification.copyWith(id: id),
+        dbNotification: dbNotification.copyWith(id: Value(id)),
         dbAccount: dbAccount,
         dbStatusPopulated: dbStatusPopulated,
       ),
@@ -219,10 +222,10 @@ void main() {
     var newType = UnifediApiNotificationType.reblogValue;
     var newRemoteNotification = DbNotificationPopulatedWrapper(
       dbNotificationPopulated: DbNotificationPopulated.statusPopulated(
-        dbNotification: dbNotification.copyWith(id: id),
+        dbNotification: dbNotification.copyWith(id: Value(id)),
         dbAccount: dbAccount.copyWith(acct: newAcct),
         dbStatusPopulated: DbStatusPopulated(
-          dbStatus: dbStatus.copyWith(content: newContent),
+          dbStatus: dbStatus.copyWith(content: Value(newContent)),
           dbAccount: dbAccount.copyWith(acct: newAcct),
           reblogDbStatusAccount: null,
           reblogDbStatus: null,
@@ -907,7 +910,7 @@ void main() {
       ))
           .copyWith(
         type: UnifediApiNotificationType.followValue.stringValue,
-        unread: true,
+        unread: Value(true),
       ),
     );
 
@@ -946,7 +949,7 @@ void main() {
       ))
           .copyWith(
         type: UnifediApiNotificationType.followValue.stringValue,
-        unread: false,
+        unread: Value(false),
       ),
     );
 
@@ -985,7 +988,7 @@ void main() {
       ))
           .copyWith(
         type: UnifediApiNotificationType.reblogValue.stringValue,
-        unread: true,
+        unread: Value(true),
       ),
     );
 

@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:drift/drift.dart';
 import 'package:drift/native.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -47,7 +48,7 @@ void main() {
 
     var hiddenLocallyOnDevice = false;
     dbStatus = dbStatus.copyWith(
-      hiddenLocallyOnDevice: hiddenLocallyOnDevice,
+      hiddenLocallyOnDevice: Value(hiddenLocallyOnDevice),
     );
 
     await statusDao.insert(entity: dbStatus, mode: null);
@@ -67,7 +68,7 @@ void main() {
     await statusDao.updateByRemoteId(
       dbStatus.remoteId,
       dbStatus.copyWith(
-        hiddenLocallyOnDevice: true,
+        hiddenLocallyOnDevice: const Value(true),
       ),
     );
 
@@ -97,7 +98,7 @@ void main() {
 
       var wasSentWithIdempotencyKey = 'wasSentWithIdempotencyKey1';
       dbStatus = dbStatus.copyWith(
-        wasSentWithIdempotencyKey: wasSentWithIdempotencyKey,
+        wasSentWithIdempotencyKey: Value(wasSentWithIdempotencyKey),
       );
 
       await statusDao.insert(entity: dbStatus, mode: null);
@@ -117,7 +118,7 @@ void main() {
       await statusDao.updateByRemoteId(
         dbStatus.remoteId,
         dbStatus.copyWith(
-          wasSentWithIdempotencyKey: 'wasSentWithIdempotencyKey2',
+          wasSentWithIdempotencyKey: const Value('wasSentWithIdempotencyKey2'),
         ),
       );
 
@@ -148,7 +149,7 @@ void main() {
 
       var hiddenLocallyOnDevice = false;
       dbChatMessage = dbChatMessage.copyWith(
-        hiddenLocallyOnDevice: hiddenLocallyOnDevice,
+        hiddenLocallyOnDevice: Value(hiddenLocallyOnDevice),
       );
 
       await chatMessageDao.insert(entity: dbChatMessage, mode: null);
@@ -168,7 +169,7 @@ void main() {
       await chatMessageDao.updateByRemoteId(
         dbChatMessage.remoteId,
         dbChatMessage.copyWith(
-          hiddenLocallyOnDevice: true,
+          hiddenLocallyOnDevice: Value(true),
         ),
       );
 
@@ -200,7 +201,7 @@ void main() {
 
       var wasSentWithIdempotencyKey = 'wasSentWithIdempotencyKey1';
       dbChatMessage = dbChatMessage.copyWith(
-        wasSentWithIdempotencyKey: wasSentWithIdempotencyKey,
+        wasSentWithIdempotencyKey: Value(wasSentWithIdempotencyKey),
       );
 
       await chatMessageDao.insert(entity: dbChatMessage, mode: null);
@@ -220,7 +221,7 @@ void main() {
       await chatMessageDao.updateByRemoteId(
         dbChatMessage.remoteId,
         dbChatMessage.copyWith(
-          wasSentWithIdempotencyKey: 'wasSentWithIdempotencyKey2',
+          wasSentWithIdempotencyKey: const Value('wasSentWithIdempotencyKey2'),
         ),
       );
 

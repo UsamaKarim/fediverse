@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:drift/drift.dart';
 import 'package:drift/native.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/status/scheduled/repository/scheduled_status_repository_impl.dart';
@@ -110,7 +111,7 @@ void main() {
 
     var oldLocalScheduledStatus = DbScheduledStatusPopulatedWrapper(
       dbScheduledStatusPopulated: DbScheduledStatusPopulated(
-        dbScheduledStatus: dbScheduledStatus!.copyWith(id: id),
+        dbScheduledStatus: dbScheduledStatus!.copyWith(id: Value(id)),
       ),
     );
 
@@ -118,7 +119,7 @@ void main() {
     var newRemoteScheduledStatus = DbScheduledStatusPopulatedWrapper(
       dbScheduledStatusPopulated: DbScheduledStatusPopulated(
         dbScheduledStatus: dbScheduledStatus!.copyWith(
-          id: id,
+          id: Value(id),
           remoteId: newRemoteId,
         ),
       ),
@@ -151,7 +152,7 @@ void main() {
       dbScheduledStatus!,
       mode: null,
     );
-    dbScheduledStatus = dbScheduledStatus!.copyWith(id: id);
+    dbScheduledStatus = dbScheduledStatus!.copyWith(id: Value(id));
     expect(
       (await scheduledStatusRepository
               .findByRemoteIdInAppType(dbScheduledStatus!.remoteId))!

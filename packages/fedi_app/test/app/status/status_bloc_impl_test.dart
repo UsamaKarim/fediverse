@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:drift/drift.dart';
 import 'package:drift/native.dart';
 import 'package:fedi_app/app/account/repository/account_repository.dart';
 import 'package:fedi_app/app/account/repository/account_repository_impl.dart';
@@ -225,7 +226,7 @@ Future<void> main() async {
         dbStatusPopulated: dbStatusPopulatedWrapper.dbStatusPopulated.copyWith(
           dbStatus:
               dbStatusPopulatedWrapper.dbStatusPopulated.dbStatus.copyWith(
-            content: newValue,
+            content: Value(newValue),
           ),
         ),
       ),
@@ -260,7 +261,7 @@ Future<void> main() async {
         dbStatusPopulated: dbStatusPopulatedWrapper.dbStatusPopulated.copyWith(
           dbStatus:
               dbStatusPopulatedWrapper.dbStatusPopulated.dbStatus.copyWith(
-            content: newValue,
+            content: Value(newValue),
           ),
         ),
       ),
@@ -288,23 +289,25 @@ Future<void> main() async {
         dbStatusPopulated: dbStatusPopulatedWrapper.dbStatusPopulated.copyWith(
           dbStatus:
               dbStatusPopulatedWrapper.dbStatusPopulated.dbStatus.copyWith(
-            content: newValue,
-            emojis: [
-              UnifediApiEmoji(
-                name: 'emoji1',
-                url: 'https://fedi.app/emoji1.png',
-                visibleInPicker: null,
-                tags: null,
-                staticUrl: null,
-              ),
-              UnifediApiEmoji(
-                name: 'emoji2',
-                url: 'https://fedi.app/emoji2.png',
-                visibleInPicker: null,
-                tags: null,
-                staticUrl: null,
-              ),
-            ],
+            content: Value(newValue),
+            emojis: Value(
+              [
+                UnifediApiEmoji(
+                  name: 'emoji1',
+                  url: 'https://fedi.app/emoji1.png',
+                  visibleInPicker: null,
+                  tags: null,
+                  staticUrl: null,
+                ),
+                UnifediApiEmoji(
+                  name: 'emoji2',
+                  url: 'https://fedi.app/emoji2.png',
+                  visibleInPicker: null,
+                  tags: null,
+                  staticUrl: null,
+                ),
+              ],
+            ),
           ),
         ),
       ),
@@ -387,7 +390,7 @@ Future<void> main() async {
         dbStatusPopulated: dbStatusPopulatedWrapper.dbStatusPopulated.copyWith(
           dbStatus:
               dbStatusPopulatedWrapper.dbStatusPopulated.dbStatus.copyWith(
-            card: newValue,
+            card: Value(newValue),
           ),
         ),
       ),

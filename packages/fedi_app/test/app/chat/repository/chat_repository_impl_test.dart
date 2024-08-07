@@ -500,7 +500,7 @@ void main() {
         seed: 'seed1',
         dbAccount: dbAccount,
       ))
-          .copyWith(remoteId: 'remoteId7', updatedAt: DateTime(2007)),
+          .copyWith(remoteId: 'remoteId7', updatedAt: Value(DateTime(2007))),
     );
 
     expect((await query.get()).length, 2);
@@ -525,7 +525,7 @@ void main() {
         seed: 'seed2',
         dbAccount: dbAccount,
       ))
-          .copyWith(remoteId: 'remoteId3', updatedAt: DateTime(2003)),
+          .copyWith(remoteId: 'remoteId3', updatedAt: Value(DateTime(2003))),
     );
 
     expect((await query.get()).length, 1);
@@ -535,7 +535,7 @@ void main() {
         seed: 'seed2',
         dbAccount: dbAccount,
       ))
-          .copyWith(remoteId: 'remoteId4', updatedAt: DateTime(2004)),
+          .copyWith(remoteId: 'remoteId4', updatedAt: Value(DateTime(2004))),
     );
 
     expect((await query.get()).length, 2);
@@ -546,7 +546,7 @@ void main() {
         seed: 'seed2',
         dbAccount: dbAccount,
       ))
-          .copyWith(remoteId: 'remoteId5', updatedAt: DateTime(2005)),
+          .copyWith(remoteId: 'remoteId5', updatedAt: Value(DateTime(2005))),
     );
 
     expect((await query.get()).length, 2);
@@ -557,7 +557,7 @@ void main() {
         seed: 'seed1',
         dbAccount: dbAccount,
       ))
-          .copyWith(remoteId: 'remoteId6', updatedAt: DateTime(2006)),
+          .copyWith(remoteId: 'remoteId6', updatedAt: Value(DateTime(2006))),
     );
 
     expect((await query.get()).length, 2);
@@ -587,7 +587,7 @@ void main() {
         seed: 'seed1',
         dbAccount: dbAccount,
       ))
-          .copyWith(remoteId: 'remoteId1', updatedAt: DateTime(2001)),
+          .copyWith(remoteId: 'remoteId1', updatedAt: Value(DateTime(2001))),
     );
 
     expect((await query.get()).length, 0);
@@ -598,7 +598,7 @@ void main() {
         seed: 'seed2',
         dbAccount: dbAccount,
       ))
-          .copyWith(remoteId: 'remoteId2', updatedAt: DateTime(2002)),
+          .copyWith(remoteId: 'remoteId2', updatedAt: Value(DateTime(2002))),
     );
 
     expect((await query.get()).length, 0);
@@ -608,7 +608,7 @@ void main() {
         seed: 'seed3',
         dbAccount: dbAccount,
       ))
-          .copyWith(remoteId: 'remoteId3', updatedAt: DateTime(2003)),
+          .copyWith(remoteId: 'remoteId3', updatedAt: Value(DateTime(2003))),
     );
 
     expect((await query.get()).length, 1);
@@ -619,7 +619,7 @@ void main() {
         seed: 'seed4',
         dbAccount: dbAccount,
       ))
-          .copyWith(remoteId: 'remoteId4', updatedAt: DateTime(2004)),
+          .copyWith(remoteId: 'remoteId4', updatedAt: Value(DateTime(2004))),
     );
 
     expect((await query.get()).length, 2);
@@ -630,7 +630,7 @@ void main() {
         seed: 'seed5',
         dbAccount: dbAccount,
       ))
-          .copyWith(remoteId: 'remoteId5', updatedAt: DateTime(2005)),
+          .copyWith(remoteId: 'remoteId5', updatedAt: Value(DateTime(2005))),
     );
 
     expect((await query.get()).length, 2);
@@ -641,7 +641,7 @@ void main() {
         seed: 'seed6',
         dbAccount: dbAccount,
       ))
-          .copyWith(remoteId: 'remoteId6', updatedAt: DateTime(2006)),
+          .copyWith(remoteId: 'remoteId6', updatedAt: Value(DateTime(2006))),
     );
 
     expect((await query.get()).length, 2);

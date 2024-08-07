@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:drift/drift.dart';
 import 'package:drift/native.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -40,7 +41,7 @@ void main() {
 
       var acceptsChatMessages = true;
       dbAccount = dbAccount.copyWith(
-        acceptsChatMessages: acceptsChatMessages,
+        acceptsChatMessages: Value(acceptsChatMessages),
       );
 
       await accountDao.insert(entity: dbAccount, mode: null);
@@ -57,7 +58,7 @@ void main() {
       await accountDao.updateByRemoteId(
         dbAccount.remoteId,
         dbAccount.copyWith(
-          acceptsChatMessages: false,
+          acceptsChatMessages: const Value(false),
         ),
       );
 

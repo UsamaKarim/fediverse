@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:drift/drift.dart';
 import 'package:drift/native.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -36,7 +37,8 @@ void main() {
     var backgroundImage = 'backgroundImage11';
     var testDbAccount =
         await AccountDatabaseMockHelper.createTestDbAccount(seed: 'seed1');
-    testDbAccount = testDbAccount.copyWith(backgroundImage: backgroundImage);
+    testDbAccount =
+        testDbAccount.copyWith(backgroundImage: Value(backgroundImage));
     await accountDao.insert(
       entity: testDbAccount,
       mode: null,

@@ -1,3 +1,4 @@
+import 'package:drift/drift.dart';
 import 'package:drift/native.dart';
 import 'package:fedi_app/app/account/account_model.dart';
 import 'package:fedi_app/app/account/repository/account_repository_impl.dart';
@@ -10,7 +11,6 @@ import 'package:fedi_app/app/status/repository/status_repository_impl.dart';
 import 'package:fedi_app/app/status/status_model.dart';
 import 'package:fedi_app/repository/repository_model.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:drift/drift.dart';
 
 import '../../account/account_test_helper.dart';
 import '../../account/database/account_database_test_helper.dart';
@@ -55,7 +55,7 @@ void main() {
       mode: null,
     );
     // assign local id for further equal with data retrieved from db
-    dbAccount = dbAccount.copyWith(id: accountId);
+    dbAccount = dbAccount.copyWith(id: Value(accountId));
 
     dbStatus = await StatusDatabaseMockHelper.createTestDbStatus(
       seed: 'seed3',
@@ -84,7 +84,7 @@ void main() {
     );
 
     dbStatus = dbStatus.copyWith(
-      reblogStatusRemoteId: reblogDbStatus.remoteId,
+      reblogStatusRemoteId: Value(reblogDbStatus.remoteId),
     );
 
     dbStatusPopulated = DbStatusPopulated(
@@ -189,7 +189,7 @@ void main() {
     var oldLocalConversation = DbConversationChatPopulatedWrapper(
       dbConversationPopulated: DbConversationPopulated(
         dbConversation: dbConversation.copyWith(
-          id: id,
+          id: Value(id),
         ),
       ),
     );
@@ -200,14 +200,14 @@ void main() {
     var newRemoteConversation = DbConversationChatPopulatedWrapper(
       dbConversationPopulated: DbConversationPopulated(
         dbConversation: dbConversation.copyWith(
-          id: id,
+          id: Value(id),
           remoteId: newRemoteId,
         ),
       ),
     ).toUnifediConversation(
       lastStatus: DbStatusPopulatedWrapper(
         dbStatusPopulated: DbStatusPopulated(
-          dbStatus: dbStatus.copyWith(content: newContent),
+          dbStatus: dbStatus.copyWith(content: Value(newContent)),
           dbAccount: dbAccount.copyWith(acct: newAcct),
           reblogDbStatus: null,
           reblogDbStatusAccount: null,

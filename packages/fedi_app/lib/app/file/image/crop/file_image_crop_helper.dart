@@ -23,17 +23,17 @@ Future<File?> goToCropImagePage({
             ratioX: 1,
           )
         : null,
-    aspectRatioPresets: isForceCropToSquare
-        ? [
-            CropAspectRatioPreset.square,
-          ]
-        : [
-            CropAspectRatioPreset.square,
-            CropAspectRatioPreset.ratio3x2,
-            CropAspectRatioPreset.original,
-            CropAspectRatioPreset.ratio4x3,
-            CropAspectRatioPreset.ratio16x9,
-          ],
+    // aspectRatioPresets: isForceCropToSquare
+    //     ? [
+    //         CropAspectRatioPreset.square,
+    //       ]
+    //     : [
+    //         CropAspectRatioPreset.square,
+    //         CropAspectRatioPreset.ratio3x2,
+    //         CropAspectRatioPreset.original,
+    //         CropAspectRatioPreset.ratio4x3,
+    //         CropAspectRatioPreset.ratio16x9,
+    //       ],
     uiSettings: [
       AndroidUiSettings(
         toolbarTitle: S.of(context).app_file_image_crop_title,
@@ -50,4 +50,5 @@ Future<File?> goToCropImagePage({
     ],
   );
   if (image != null) return File(image.path);
+  return null;
 }

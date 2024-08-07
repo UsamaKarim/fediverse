@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:drift/drift.dart';
 import 'package:drift/native.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/filter/filter_model.dart';
@@ -118,12 +119,12 @@ void main() {
 
     var oldLocalFilter = DbFilterPopulatedWrapper(
       dbFilterPopulated: DbFilterPopulated(
-        dbFilter: dbFilter.copyWith(id: id),
+        dbFilter: dbFilter.copyWith(id: Value(id)),
       ),
     );
     var newRemoteFilter = DbFilterPopulatedWrapper(
       dbFilterPopulated: DbFilterPopulated(
-        dbFilter: dbFilter.copyWith(id: id, phrase: 'phrase3'),
+        dbFilter: dbFilter.copyWith(id: Value(id), phrase: 'phrase3'),
       ),
     ).toUnifediFilter();
     await filterRepository.updateAppTypeByRemoteType(

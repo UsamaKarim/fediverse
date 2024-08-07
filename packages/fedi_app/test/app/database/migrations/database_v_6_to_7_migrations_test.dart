@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:drift/drift.dart';
 import 'package:drift/native.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -42,7 +43,7 @@ void main() {
       2000,
     );
     dbConversation = dbConversation.copyWith(
-      updatedAt: dateTime,
+      updatedAt: Value(dateTime),
     );
 
     await conversationDao.insert(entity: dbConversation, mode: null);
@@ -59,7 +60,7 @@ void main() {
     await conversationDao.updateByRemoteId(
       dbConversation.remoteId,
       dbConversation.copyWith(
-        updatedAt: DateTime(2001),
+        updatedAt: Value(DateTime(2001)),
       ),
     );
 

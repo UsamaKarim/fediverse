@@ -1,3 +1,4 @@
+import 'package:drift/drift.dart';
 import 'package:drift/native.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/status/draft/repository/draft_status_repository_impl.dart';
@@ -49,13 +50,13 @@ void main() {
         (await DraftStatusDatabaseMockHelper.createTestDbDraftStatus(
       seed: 'seed5',
     ))
-            .copyWith(id: 1);
+            .copyWith(id: Value(1));
     // same remote id
     var dbDraftStatus2 =
         (await DraftStatusDatabaseMockHelper.createTestDbDraftStatus(
       seed: 'seed6',
     ))
-            .copyWith(id: 1);
+            .copyWith(id: Value(1));
 
     await draftStatusRepository.upsertAllInDbType(
       [dbDraftStatus1],

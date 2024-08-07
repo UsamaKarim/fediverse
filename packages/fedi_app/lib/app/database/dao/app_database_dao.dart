@@ -1,7 +1,6 @@
-import 'package:fedi_app/app/database/app_database.dart';
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/database/dao/database_dao.dart';
 import 'package:fedi_app/repository/repository_model.dart';
-import 'package:drift/drift.dart';
 
 abstract class AppDatabaseDao<
         DbItem extends DataClass,
@@ -11,7 +10,7 @@ abstract class AppDatabaseDao<
         Filters,
         OrderingTerm extends RepositoryOrderingTerm>
     extends DatabaseDao<DbItem, DbId, TableDsl, TableInfoDsl> {
-  AppDatabaseDao(AppDatabase db) : super(db);
+  AppDatabaseDao(super.db);
 
   void addNewerOlderDbItemPagination({
     required SimpleSelectStatement<TableDsl, DbItem> query,

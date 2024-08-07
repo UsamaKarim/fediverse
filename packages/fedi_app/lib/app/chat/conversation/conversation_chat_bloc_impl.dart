@@ -364,7 +364,7 @@ class ConversationChatBloc extends ChatBloc implements IConversationChatBloc {
     String? idempotencyKey;
     var oldMessageExist = oldPendingFailedConversationChatMessage != null;
     if (oldMessageExist) {
-      localStatusId = oldPendingFailedConversationChatMessage!.status.localId;
+      localStatusId = oldPendingFailedConversationChatMessage.status.localId;
       dbStatus = oldPendingFailedConversationChatMessage.status
           .toDbStatus()
           .copyWith(id: Value(localStatusId));

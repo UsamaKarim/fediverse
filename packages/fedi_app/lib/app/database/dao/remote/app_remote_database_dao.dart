@@ -1,7 +1,6 @@
-import 'package:fedi_app/app/database/app_database.dart';
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/database/dao/app_database_dao.dart';
 import 'package:fedi_app/repository/repository_model.dart';
-import 'package:drift/drift.dart';
 
 abstract class AppRemoteDatabaseDao<
         DbItem extends DataClass,
@@ -15,7 +14,7 @@ abstract class AppRemoteDatabaseDao<
         OrderingTerm> {
   String get remoteIdFieldName => 'remote_id';
 
-  AppRemoteDatabaseDao(AppDatabase db) : super(db);
+  AppRemoteDatabaseDao(super.db);
 
   Future<int> deleteByRemoteId(RemoteId remoteId) => customUpdate(
         'DELETE FROM $tableName '

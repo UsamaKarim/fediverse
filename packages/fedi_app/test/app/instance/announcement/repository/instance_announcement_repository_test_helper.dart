@@ -1,3 +1,4 @@
+import 'package:drift/drift.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/instance/announcement/repository/instance_announcement_repository_impl.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -12,7 +13,8 @@ class InstanceAnnouncementRepositoryMockHelper {
       mode: null,
     );
     assert(id > 0, true);
-    var dbInstanceAnnouncement = instanceAnnouncementData.copyWith(id: id);
+    var dbInstanceAnnouncement =
+        instanceAnnouncementData.copyWith(id: Value(id));
 
     return dbInstanceAnnouncement;
   }

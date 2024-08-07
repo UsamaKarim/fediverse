@@ -15,6 +15,6 @@ dependency_overrides:
   unifedi_api:
     path: ../unifedi_api
   http: ^1.2.1
-  meta: ^1.15.0
-  analyzer: ^6.3.0
-  intl: ^0.18.1
+  # meta: ^1.15.0
+  # analyzer: ^6.3.0
+  # intl: ^0.18.1

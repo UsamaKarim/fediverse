@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:drift/drift.dart';
 import 'package:drift/native.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/pending/pending_model.dart';
@@ -49,7 +50,7 @@ void main() {
 
     var pendingState = PendingState.pending;
     dbStatus = dbStatus.copyWith(
-      pendingState: pendingState,
+      pendingState: Value(pendingState),
     );
 
     await statusDao.insert(entity: dbStatus, mode: null);
@@ -69,7 +70,7 @@ void main() {
     await statusDao.updateByRemoteId(
       dbStatus.remoteId,
       dbStatus.copyWith(
-        pendingState: PendingState.fail,
+        pendingState: const Value(PendingState.fail),
       ),
     );
 
@@ -97,7 +98,7 @@ void main() {
 
     var oldPendingRemoteId = 'oldPendingRemoteId1';
     dbStatus = dbStatus.copyWith(
-      oldPendingRemoteId: oldPendingRemoteId,
+      oldPendingRemoteId: Value(oldPendingRemoteId),
     );
 
     await statusDao.insert(entity: dbStatus, mode: null);
@@ -117,7 +118,7 @@ void main() {
     await statusDao.updateByRemoteId(
       dbStatus.remoteId,
       dbStatus.copyWith(
-        oldPendingRemoteId: 'oldPendingRemoteId2',
+        oldPendingRemoteId: const Value('oldPendingRemoteId2'),
       ),
     );
 
@@ -146,7 +147,7 @@ void main() {
 
     var pendingState = PendingState.pending;
     dbChatMessage = dbChatMessage.copyWith(
-      pendingState: pendingState,
+      pendingState: Value(pendingState),
     );
 
     await chatMessageDao.insert(entity: dbChatMessage, mode: null);
@@ -166,7 +167,7 @@ void main() {
     await chatMessageDao.updateByRemoteId(
       dbChatMessage.remoteId,
       dbChatMessage.copyWith(
-        pendingState: PendingState.fail,
+        pendingState: Value(PendingState.fail),
       ),
     );
 
@@ -195,7 +196,7 @@ void main() {
 
     var oldPendingRemoteId = 'oldPendingRemoteId1';
     dbChatMessage = dbChatMessage.copyWith(
-      oldPendingRemoteId: oldPendingRemoteId,
+      oldPendingRemoteId: Value(oldPendingRemoteId),
     );
 
     await chatMessageDao.insert(entity: dbChatMessage, mode: null);
@@ -215,7 +216,7 @@ void main() {
     await chatMessageDao.updateByRemoteId(
       dbChatMessage.remoteId,
       dbChatMessage.copyWith(
-        oldPendingRemoteId: 'oldPendingRemoteId2',
+        oldPendingRemoteId: Value('oldPendingRemoteId2'),
       ),
     );
 
